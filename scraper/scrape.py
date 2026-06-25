@@ -142,6 +142,16 @@ def fetch_project_list(session):
         # depending on the page version — try both
         cards = soup.select("div.ible-thumb, article.ible-thumb, div[class*='ible']")
 
+        # Profile nav links that look like project URLs -- exclude these
+        BLOCKED_URLS = {
+            f"{BASE_URL}/member/{USERNAME}/favorites/",
+            f"{BASE_URL}/member/{USERNAME}/comments/",
+            f"{BASE_URL}/member/{USERNAME}/settings/",
+            f"{BASE_URL}/member/{USERNAME}/collections/",
+            f"{BASE_URL}/member/{USERNAME}/instructables/",
+            f"{BASE_URL}/member/{USERNAME}/",
+        }
+
         # Fallback: find all links that look like project URLs
         if not cards:
             links = soup.find_all("a", href=re.compile(
@@ -152,6 +162,8 @@ def fetch_project_list(session):
             for a in links:
                 href = a["href"].rstrip("/") + "/"
                 title = a.get_text(strip=True) or a.get("title", "")
+                if href in BLOCKED_URLS:
+                    continue
                 if href not in seen and title and len(title) > 4:
                     seen.add(href)
                     projects.append({"title": title, "url": href})
