@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hack Any Radio Into a Guitar Amp V2</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Hack Any Radio Into a Guitar Amp V2</span>
+</nav>
+<h1>Hack Any Radio Into a Guitar Amp V2</h1><div class="source"><a href="https://www.instructables.com/Hack-Any-Radio-Into-a-Guitar-Amp-V2/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Hack Any Radio Into a Guitar Amp V2" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"></div><p>Parts1. Vintage radio.  If you don't have one lying around, then try a thrift store, 2nd hand shop or eBay2. 220uf Cap - eBay  This is a good quality audio cap.  You can use a cheaper one if you want to but it might affect the sound quality.3. 100nf Cap - eBay4. SPDT Switch - eBay5. 10K Potentiometer - eBay6. 1/4 mono, input jack - eBay7. Prototype board - eBay8. WiresTools:1. Soldering Iron 2. Guitar 3. Guitar cord 4. Drill 5. Screwdriver / Phillips head</p><h2><span class="step-num">STEP 2</span>Step 2: Finding the Right Radio</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Finding the Right Radio image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Finding the Right Radio image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Finding the Right Radio image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Finding the Right Radio image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Finding the Right Radio image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Finding the Right Radio image 6" loading="lazy"></div><p>I'm no expert on this hack, but after some research and a little experimentation, I worked out that there are some radio's that will work better than others.  I have included some notes below on what to look for when your out searching for a vintage radio to convert.The trick is to find one that has some style and is large enough to pump out some decent sound. You can modify small transistor radios but you'll probably find that they aren't very loud or have any distortion.  If the radio has no handle and a wrist strap or is in a little leather case it will be a bit too small to waste you time with. This is due to the small, crappy speaker that they come with. Look for a radio that's at least a 3 inch speaker. It will ensure the speaker is big enough to have an effect on the tone.  The size and quantity of the batteries that the radio takes will also effect the tone!  The bigger the size of battery the fuller the tone and the more volume the radio will have. Try and find a radio which takes "C" or "D" batteries as these will give you the best result.  The radio I used takes 6 X "D" cell batteries so has plenty of power to drice the 5 amp speaker.If your radio has extra controls like bass, tone or trebble, then you are in radio amp heaven.  These will give you extra ways to change the sound and tone of the amp.Radios which take a 9v or AA batteries won't give you the best sound. It is definitely worth experimenting though and seeing what type of sound you can get out of the small "transistor" type radio's. You never know...</p><h2><span class="step-num">STEP 3</span>Step 3: Open Up You Radio</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Open Up You Radio image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Open Up You Radio image 2" loading="lazy"></div><p>The first thing you'll need to do is to open the back of the radio.  You need to be able to get to the volume potentiometer do be able to do this mod.  This hack won't affect the radio's ability to play music either so you'll still be able to listen to music through it.Steps:1. Flip the radio over and remove the screws holding the back into place2. With a screwdriver, lever off the knobs and switches. They should pop off with some jiggling.3. Gently remove the cover making sure that no wires are pulled out.4. You should be able to see the volume pot and also the solder points.</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Breadboarding</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Circuit - Breadboarding image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Circuit - Breadboarding image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Circuit - Breadboarding image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Circuit - Breadboarding image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making the Circuit - Breadboarding image 5" loading="lazy"></div><p>The circuit is pretty simple to make.  I'd prototype it first though on a breadboard and then test it first, you may have to change the value of the capacitors for your radio.Steps:1. Breadboard the circuit first then test it on the radio.  2. To test you'll need to solder a jumper cable to a ground point on the radio - I used the ground solder point on the speaker3. The other jumper cable which will be the positive one will be used to probe the volume pot to determine which is gthe right solder point.  Once you have found it (you will be able to hear the guitar through the speaker when strummed), then you can solder the jumper wire to it and experiment further.  4. Put the radio onto AM and tune it so it's not on a radio station.  You may hear some static or noise, if you, turn down the radio until you don't hear it any longer.The next step will go through ghow to find the right solder point.</p><h2><span class="step-num">STEP 5</span>Step 5: Finding the Right Solder Point on the Volume Pot</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 4" loading="lazy"></div><p>When deciding on where to add the positive wire on the voltage pot, you need to do a little bit of testing. There are usually about 5 solder points that the voltage pot has, and the wire from the jack will need to be soldered to the right one for the amp to work. Steps:1. With the breadboarded circuit connected to ground on the radio and the lead plugged into the 1/4" jack and the guitar, you can start to probe and work out where to attach the positive to the volume pot2. Place the jumper lead against the first solder point on the volume pot and strum the guitar.  If you near nothing, move onto the next one.3.  Once you find the right one (you'll here the guitar through the speaker) solder the jumper lead to it4. Experiment with different cap values if necessary until you are happy with the sound</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Making the Circuit image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Making the Circuit image 2" loading="lazy"></div><p>I've included a schematic for the circuit along with the fritzing file in case you want to make any changes.  You can download fritzing here to make your own circuit shematics.Steps:1. Use the schematic and start to build the circuit2. You'll need to add some wires so you can connect these to the pot, switch and 1/4' socket.  Make sure that they are longer then necessary - it's easier to trim then to add.3. Once the curcuit is built, you then need to add the components into the radioRadio Amp Hack.fzzDownload</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Components to the Radio</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Components to the Radio image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Components to the Radio image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Components to the Radio image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Components to the Radio image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the Components to the Radio image 5" loading="lazy"></div><p>To be able to plug the guitar inot the radio, you'll need to find a good spot to add the jack (and other components).  The good thing is, most radio's have empty space inside to add extra components.  Steps: 1. First identfy where to add the 3 components to the case of the radio.  You'll also need to be able to stick the circuit down as well so make sure there's enough room inside for that as well. 2. Drill 3 holes into the radio and secure the pot, switch and jack into the case 3. Place the circuit inside and make sure you can secure it in place later on</p><h2><span class="step-num">STEP 8</span>Step 8: Connecting the Circuit</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Connecting the Circuit image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Connecting the Circuit image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Connecting the Circuit image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Connecting the Circuit image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Connecting the Circuit image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Connecting the Circuit image 6" loading="lazy"></div><p>Steps:1. It's now time to wire-up the circuit to the components.  2. Start with wiring-up the switch to the 100nf cap and ground on the speaker.  You can attach the ground wire to any ground point on the radio3. Next wire-up the 10k pot.  This is used for volume control and helps filter the sound4. Lastly, wire-up the 1/4" jack and attach the wire to the solder point on the radio volume pot 5. Plug in your guitar and test to make sure the curcuit is working.  If everything is working  you should start to hear some sweet sounds coming from the speaker.</p><h2><span class="step-num">STEP 9</span>Step 9: How to Use the Amp</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: How to Use the Amp image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: How to Use the Amp image 2" loading="lazy"></div><p>As I mentioned earlier, the hack won't damage the radio at all and you can still use it just as a radio.  Using the amp is very simple but I thought I would add a couple of tipsSteps:1. Don't have the volume up too loud.  As a matter of fact, turn it right down and just have it on2. You can use either AM or FM, I don't find there is any real difference3. Tune in the radio so it's not on a station4. Plug the cord into the jack on the radio and then plug it into your guitar5. Try adjusting the 10K pot you added and strumming the guitar.  Find the sweet spot for the volume.  You can also turn it up on the radio volume pot as well.  Just note that you might hear some background static if it is too loud.  The radio I used can be turned right up without any noise.  The amp does become too sensitive though and the sound starts to decay a little.6. If your radio has bass and trebble control then play around with these as well.  You can get some awesome sounds by adjusting them.7. Try flicking the switch.  You'll find that you either have a very clean sound or a grungy, lo-fi sound.8. Lastly, have fun playing your amp and experiment to see what other sounds you can get out of it.</p>
+</body>
+</html>

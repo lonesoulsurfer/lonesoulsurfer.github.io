@@ -1,4 +1,4 @@
-# CMOS Counter Clock : 5 Steps (with Pictures) - Instructables
+# CMOS Counter Clock
 
 Source: https://www.instructables.com/CMOS-Counter-Clock/
 
@@ -7,4 +7,106 @@ Source: https://www.instructables.com/CMOS-Counter-Clock/
 ![Cover](images/cover.jpg)
 
 
-## Step 1
+## Introduction
+
+![Intro 1](images/intro_01.jpg)
+
+![Intro 2](images/intro_02.jpg)
+
+![Intro 3](images/intro_03.jpg)
+
+![Intro 4](images/intro_04.jpg)
+
+
+## Supplies
+
+![Supplies image 1](images/step02_01.jpg)
+
+![Supplies image 2](images/step02_02.jpg)
+
+![Supplies image 3](images/step02_03.jpg)
+
+![Supplies image 4](images/step02_04.jpg)
+
+![Supplies image 5](images/step02_05.jpg)
+
+![Supplies image 6](images/step02_06.png)
+
+![Supplies image 7](images/step02_07.jpg)
+
+PCB info can be found on the next stepThe parts below are for the 5V all adapter version. The battery version parts list and Gerber files can be found in my Google drivePARTS:Resistors (metal Film)1M X 11K X 122K X 1LED Display 7 Segment 5101AS X 5IC'sDecade Counter 4033 X 5Binary Counter 4060 X 2Switchesmomentary switch SKRCADD010 X 1micro slide switch MSK-12D19 X 2USB C X 1Crystal Oscillator 32.768kHz X 1Red Translucent acrylic X 1
+
+
+## Step 1: Designing the Circuit & Getting Your Own PCB Printed
+
+![Step 1: Designing the Circuit & Getting Your Own PCB Printed image 1](images/step03_01.png)
+
+![Step 1: Designing the Circuit & Getting Your Own PCB Printed image 2](images/step03_02.png)
+
+![Step 1: Designing the Circuit & Getting Your Own PCB Printed image 3](images/step03_03.png)
+
+![Step 1: Designing the Circuit & Getting Your Own PCB Printed image 4](images/step03_04.jpg)
+
+When designing this PCB I wanted to make sure that it was a complete unit with no need for added wires or external components to make it work. It can be powered directly via USB C.All of the information including the Gerber file, Eagle files and schematic can be found on my GitHub PageThere are 2 versions available - one that is powered by 5V USB C and the other by a 9V battery and USB C - you choose which one you want to buildGetting the PCB Printed – StepsDownload the ‘Gerber file’ folder from my GitHub Page and save it somewhere on your computerYou’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Just follow the steps and download the Gerber files to the website.You will see the PCB once it has been loaded. Now you can choose your colour by ticking which one in the list belowEvery PCB printed has an order number automatically added. However, you can opt to have it added to a ‘specific’ spot.  Make sure you click the specific tick box and it will be located on the back of the PCB.Now sit back and wait for your 5 boards to arrive.
+
+
+## Step 2: About the Integrated Circuits Used in This Build
+
+![Step 2: About the Integrated Circuits Used in This Build image 1](images/step04_01.jpg)
+
+![Step 2: About the Integrated Circuits Used in This Build image 2](images/step04_02.jpg)
+
+![Step 2: About the Integrated Circuits Used in This Build image 3](images/step04_03.jpg)
+
+The circuit used in this build can be broken up into 2 sections. The first is the 4060 binary IC’s which generate the 1 second pulse output and the other is the 7-segment display section with the 4033 Decade counters. So let’s start with the 4060’s. To be able to generate a 1Hz clock frequency I’ve used a 32.768 Khz quartz crystal oscillator. These are the same ones you find in digital watches etc.  The crystal oscillator needs to oscillate at 32768 Hz so to be able to do this we use a couple 4060 binary counters. The reason why we need to use 2 is 1 won’t be able to divide the input frequency of the crystal oscillator enough to reach 32768 Hz whist using 2 gets us thereThe pulse output (1 second) and pin 5 of the 2nd 4060 IC, can be connected to an LED which will flash at 1 sec intervals. Nice but boring. So what if we use this pulse to drive a 7 segment display? Well this takes us to the second part of the circuitIf you connect the output pulse to the clock input of a 4033 decade counter and then wire up a 7 segment LED display to the 4033 IC you’ll be able to get it to count to 10 over and over at 1 second intervals.The next logical step is to start to string a few 4033 and 7 segment displays together so they trigger each other in a way that makes them count. This is pretty straight forward as all you need to do is to is connect pin 5 from the first 4033 IC to pin 1 (clock) of the next 4033 and so on. In theory you could connect 100 or more this way and build a gargantuan counter.  So that’s a really quick rundown on how this works. Note - I’m far from an expert so if I don’t get it quite right don’t worry – you get the gist.
+
+
+## Step 3: Adding Components to the Board
+
+![Step 3: Adding Components to the Board image 1](images/step05_01.jpg)
+
+![Step 3: Adding Components to the Board image 2](images/step05_02.jpg)
+
+![Step 3: Adding Components to the Board image 3](images/step05_03.jpg)
+
+![Step 3: Adding Components to the Board image 4](images/step05_04.jpg)
+
+![Step 3: Adding Components to the Board image 5](images/step05_05.jpg)
+
+![Step 3: Adding Components to the Board image 6](images/step05_06.jpg)
+
+![Step 3: Adding Components to the Board image 7](images/step05_07.jpg)
+
+Whenever you start to add components to a PCB it is best practice to add them from lowest profile to the highest. This way when you flip it over to solder the legs into place you don’t have parts falling out because they aren’t sitting against the table. So with that, lets start with the resistorsSTEPSI don’t think I have ever built an electronic project with such few resistors!  Anyhow, add the 3 of them into the PCB and solder the legs into placeNow you can go ahead and add the crystal oscillator. Be careful here as the legs are thin and you don’t want them twisted when adding it to the PCB.Usually now I’d say it’s time to add the IC sockets. However, I decided not to add them to this build. They raise the IC’s quite a bit off the board and I wanted a cleaner look. Up to you if you want to add them or notSolder into place all of the 7 IC’sYou can now solder in the 7 segment displays. Make sure that they are up the right way and sitting flat on the PCB before soldering into placeThe last thing to do is to solder the 2 right angle slide switches and momentary switch into place
+
+
+## Step 4: Adding the Red Acrylic Front
+
+![Step 4: Adding the Red Acrylic Front image 1](images/step06_01.jpg)
+
+![Step 4: Adding the Red Acrylic Front image 2](images/step06_02.jpg)
+
+![Step 4: Adding the Red Acrylic Front image 3](images/step06_03.jpg)
+
+![Step 4: Adding the Red Acrylic Front image 4](images/step06_04.jpg)
+
+![Step 4: Adding the Red Acrylic Front image 5](images/step06_05.jpg)
+
+![Step 4: Adding the Red Acrylic Front image 6](images/step06_06.jpg)
+
+![Step 4: Adding the Red Acrylic Front image 7](images/step06_07.jpg)
+
+This isn't necessary but it does give a great finish to the build so You should consider doing something similarSTEPS:Place a blank circuit board onto the red acrylic and measure out the size on the backing of the acrylicIf you have a band saw then use this to cut the acrylic.  If not you can use a fine tooth saw to cut it outSand and then file the sides to make them smooth.Place the board back onot the acrylic and mark out the 4 drill holes in each corner.  Use a 2.5mm drill piece to drill out the holesTo secure the acrylic into place you'll need to use some spacers.  Check the parts list on where to get theseSecure the spacers to the board and acrylic using the screws that come with the spacers
+
+
+## Step 5: Mounting the CMOS Counter
+
+![Step 5: Mounting the CMOS Counter image 1](images/step07_01.jpg)
+
+![Step 5: Mounting the CMOS Counter image 2](images/step07_02.jpg)
+
+I decided to mount mine to the wall.  You could also make a witre stand and have it sit on a desk table.  STEPS:Decide where you want to have your clock counter.  Prob best to have it close to a power source so it's easy to power.Use a couple snall screws and add them to the 2 small holes about half way up the PCB.  You might need to remove the acrilic cover first if you ahve already added itConnect a USB C cord to the adapter on the PCB and power it up
+
+
+---
+*34 images archived*

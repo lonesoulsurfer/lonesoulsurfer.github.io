@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Loading</span>
+</nav>
+<h1>Loading</h1><div class="source"><a href="https://www.instructables.com/member/lonesoulsurfer/settings/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">STEP 1</span>Step 1</h2>
+</body>
+</html>

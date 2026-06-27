@@ -1,4 +1,4 @@
-# Light Sensitive Junkbot : 14 Steps (with Pictures) - Instructables
+# Light Sensitive Junkbot
 
 Source: https://www.instructables.com/Light-Sensitive-Junkbot/
 
@@ -7,4 +7,210 @@ Source: https://www.instructables.com/Light-Sensitive-Junkbot/
 ![Cover](images/cover.jpg)
 
 
-## Step 1
+## Introduction
+
+![Intro 1](images/intro_01.jpg)
+
+![Intro 2](images/intro_02.jpg)
+
+![Intro 3](images/intro_03.jpg)
+
+![Intro 4](images/intro_04.jpg)
+
+
+## Step 1: Parts and Tools
+
+![Step 1: Parts and Tools image 1](images/step02_01.jpg)
+
+![Step 1: Parts and Tools image 2](images/step02_02.jpg)
+
+![Step 1: Parts and Tools image 3](images/step02_03.jpg)
+
+Parts:Junkbot1.        Old Shaver – eBay2.       Umbrella.  You want to use a small, portable type of umbrella as the rib and stretcher assembly is small and makes for better legs. Electronics1.      4017 IC – eBay2.       555 IC – eBay3.       1uf Capacitor – eBay4. cds photoresistor (Photo Cell) – eBay5.       68k Resistor – eBay6.       120R Resistor – eBay7.       Prototype Board – eBay8.       10 X 1N4148 Diodes – eBay9.       6 X LED’s – eBay11.   9V Battery Holder – eBay12.   Thin wireTools:1.       Soldering Iron,2.       Drill,3.       Epoxy Glue4.       Pliers 5.       Good wire cutters6.       Stanley Knife7.       Hot Glue8.       Screwdrivers and the usual other basic tools for a build like this
+
+
+## Step 2: The Circuit and Breadboarding
+
+![Step 2: The Circuit and Breadboarding image 1](images/step03_01.jpg)
+
+![Step 2: The Circuit and Breadboarding image 2](images/step03_02.gif)
+
+The first thing to do is to breadboard the circuit.  It’s not too difficult but it can get a little tricky when adding all of the diodes in place.  If you find that after prototyping the circuit that an LED doesn’t flash, then you probably have a diode round the wrong way.  The original circuit schematic can be found here.  You will notice that I have modified it slightly to simplify and ensure that it works with a photo cell instead of a potentiometer.  Once you have the circuit all worked out and running, it’s then time to build it
+
+
+## Step 3: Adding the IC's and First Connections
+
+![Step 3: Adding the IC's and First Connections image 1](images/step04_01.jpg)
+
+![Step 3: Adding the IC's and First Connections image 2](images/step04_02.jpg)
+
+Steps:1.  Solder the IC's to the prototype board.  Solder the 555 IC first and then the 417 IC.  Leave a small gap between them so you can place wires between them at a later time2.  I first wired the 555 IC up and then the 4017.  Attach pin 1 from the 555 to ground3.  Solder pin 2 and 6 together.  I usually do this by connecting the 2 pins together with leg from a resistor.
+
+
+## Step 4: Capacitor and More Wiring on the 555
+
+![Step 4: Capacitor and More Wiring on the 555 image 1](images/step05_01.jpg)
+
+![Step 4: Capacitor and More Wiring on the 555 image 2](images/step05_02.jpg)
+
+![Step 4: Capacitor and More Wiring on the 555 image 3](images/step05_03.jpg)
+
+![Step 4: Capacitor and More Wiring on the 555 image 4](images/step05_04.jpg)
+
+Steps:1.  Solder the positive leg of the 1uf capacitor to pin 2 and the negative to ground2.  Solder pin 4 to positive3.  Solder the 68K resistor from pin 7 to positive4.  Solder pin 8 to positive
+
+
+## Step 5: Connecting the Positive, Negative and the 2 IC's
+
+![Step 5: Connecting the Positive, Negative and the 2 IC's image 1](images/step06_01.jpg)
+
+![Step 5: Connecting the Positive, Negative and the 2 IC's image 2](images/step06_02.jpg)
+
+![Step 5: Connecting the Positive, Negative and the 2 IC's image 3](images/step06_03.jpg)
+
+On the prototype board, on either side, there are 2 strips for ground and positive.  To connect these together I added some wire to each strip and soldered these to the corresponding one.  This way I could have a positive and ground on both sides of the prototype board.Steps:1.  Attach a wire to each of the positive and ground strips on the prototype board and connect them together2.  Solder a wire from pin 3 on the 555 to pin 1 on the 4017 IC3.  Solder 2 wires to pins 6 and 7 on the 555.  On the end of these solder the photo cell.
+
+
+## Step 6: Connecting the 4017 IC
+
+![Step 6: Connecting the 4017 IC image 1](images/step07_01.jpg)
+
+Steps:1.  Connect pins 8, 13 and 14 to ground2.  Connect pin 16 to positive
+
+
+## Step 7: Adding the Diodes
+
+![Step 7: Adding the Diodes image 1](images/step08_01.jpg)
+
+![Step 7: Adding the Diodes image 2](images/step08_02.jpg)
+
+![Step 7: Adding the Diodes image 3](images/step08_03.jpg)
+
+![Step 7: Adding the Diodes image 4](images/step08_04.jpg)
+
+![Step 7: Adding the Diodes image 5](images/step08_05.jpg)
+
+You need to connect a bunch of diodes to the 4017 which are then connected to the LED's.  There isn't an easy way to describe how to do this so make sure you read the schematic carefully and breadboard the circuit before you start to solder every thing togetherSteps:1.  Connect pins 6 and 7 with a diode making sure it is orientated correctly.2.  Solder a diode to pin 1 and pin 10 as shown in the 2nd image3.  Connect pins 4 and 9 together with a diode.4.  Solder a diode to pin 2 and 95.  Solder a diode between pins 2 and 11
+
+
+## Step 8: Soldering the LED's
+
+![Step 8: Soldering the LED's image 1](images/step09_01.jpg)
+
+![Step 8: Soldering the LED's image 2](images/step09_02.jpg)
+
+![Step 8: Soldering the LED's image 3](images/step09_03.jpg)
+
+Steps:1.  Cut a strip of prototype board 2 holes wide2.  Place the LED's into the strip and make sure that the polarities are orientated the same way3.  Solder the legs to the strip4.  Solder all of the negative legs together5.  Lastly, solder the 120R resistor to one of the negative LED legs
+
+
+## Step 9: Attaching the LED's to the Circuit Board
+
+![Step 9: Attaching the LED's to the Circuit Board image 1](images/step10_01.jpg)
+
+![Step 9: Attaching the LED's to the Circuit Board image 2](images/step10_02.jpg)
+
+![Step 9: Attaching the LED's to the Circuit Board image 3](images/step10_03.jpg)
+
+I decided to complete the circuit board to make sure that everything worked correctly before I put it into the Junkbot.Steps:1.  Solder a length of wire to each of the positive legs of the LED's2.  Follow the schematic and solder each of the wires to the correct diode.  3.  You will need to attach an on/off switch later on but to test it out, solder the 9v battery terminal to the positive and ground on the circuit board4.  Attach a battery and test.  the LED's should move back and forth.  If you cover the photo cell, then the LED's should slow down.  If you find that one of the LED's doesn't flash it's probably because you have wired one of the diodes round the wrong way.  trace back which one it is and replace it.If everything works as it should it's then time to add it to the junkbot.
+
+
+## Step 10: Pulling Apart the Umbrella
+
+![Step 10: Pulling Apart the Umbrella image 1](images/step11_01.png)
+
+![Step 10: Pulling Apart the Umbrella image 2](images/step11_02.jpg)
+
+![Step 10: Pulling Apart the Umbrella image 3](images/step11_03.jpg)
+
+![Step 10: Pulling Apart the Umbrella image 4](images/step11_04.jpg)
+
+![Step 10: Pulling Apart the Umbrella image 5](images/step11_05.jpg)
+
+![Step 10: Pulling Apart the Umbrella image 6](images/step11_06.jpg)
+
+![Step 10: Pulling Apart the Umbrella image 7](images/step11_07.jpg)
+
+The legs are made out of the rib and stretcher parts of the umbrella.  I have included a drawing which shows these parts so you know what I’m talking about.Steps:1.       First cut away the thread that is holding the canopy to the tip, rib and stretcher.  You want to remove all of the canopy material so you are only left with the umbrella skeleton 2.       Next cut the rib and stretcher on the umbrella as I have done below.  These will form the basis of the legs3.       Don’t worry about refining the legs too much, and cutting them to size it’s best to do this once you have the shaver ready for them so you can work out how long you want to make them4.       Remove the tips from the umbrella if you have removable ones – you can use these as feet.
+
+
+## Step 11: Making the Legs
+
+![Step 11: Making the Legs image 1](images/step12_01.jpg)
+
+![Step 11: Making the Legs image 2](images/step12_02.jpg)
+
+![Step 11: Making the Legs image 3](images/step12_03.jpg)
+
+![Step 11: Making the Legs image 4](images/step12_04.jpg)
+
+![Step 11: Making the Legs image 5](images/step12_05.jpg)
+
+![Step 11: Making the Legs image 6](images/step12_06.jpg)
+
+Steps:1.  First, decide how long you want to make the legs.  It's probably to make them longer then necessary so you can trim them later if you want to.2.  Cut each of the ribs (this is the section of the leg that goes from the "knee" to the "foot" the same length on each of he 6 legs3.  Cut the stretcher (This is the section that goes from the shaver to the "knee").  You will also need to cut the thin wire which forms part of the leg.  The wire should be longer then the stretcher section by about 20-25mm. You may need to trim them later
+
+
+## Step 12: Pulling the Shaver Apart
+
+![Step 12: Pulling the Shaver Apart image 1](images/step13_01.jpg)
+
+![Step 12: Pulling the Shaver Apart image 2](images/step13_02.jpg)
+
+![Step 12: Pulling the Shaver Apart image 3](images/step13_03.jpg)
+
+![Step 12: Pulling the Shaver Apart image 4](images/step13_04.jpg)
+
+![Step 12: Pulling the Shaver Apart image 5](images/step13_05.jpg)
+
+![Step 12: Pulling the Shaver Apart image 6](images/step13_06.jpg)
+
+Steps:1.  Remove the blade at the front.  2.  Un-screw the 2 screws holding the case together3.  Remove any screws inside the case and remove the motor4.  Also, remove the on/off switch and the plastic blade release.  Keep these as you will need to replace them later in a slightly modified version5.  Lastly, Check to make sure that the circuit and battery fit inside the case.  If you are also using a Ronson shaver like mine you should be able to fit everything inside.  Remember though you need to add a switch and the photo cell as well.
+
+
+## Step 13: Adding the Legs to the Shaver
+
+![Step 13: Adding the Legs to the Shaver image 1](images/step14_01.jpg)
+
+![Step 13: Adding the Legs to the Shaver image 2](images/step14_02.jpg)
+
+![Step 13: Adding the Legs to the Shaver image 3](images/step14_03.jpg)
+
+![Step 13: Adding the Legs to the Shaver image 4](images/step14_04.jpg)
+
+![Step 13: Adding the Legs to the Shaver image 5](images/step14_05.jpg)
+
+![Step 13: Adding the Legs to the Shaver image 6](images/step14_06.jpg)
+
+![Step 13: Adding the Legs to the Shaver image 7](images/step14_07.jpg)
+
+Next step is to secure the legs into the shaver.   Remember that you need to also fit inside the shaver, a battery and the circuit board so it is important that the legs aren't pushed too deep into the body of the shaver.  You can always time though later if you find that there isn't enough room.Steps:1.  I started with one leg to work out how it would sit and if I needed to reduce the size of the legs at all.  Once I figured that the size was right, you can start to drill the holes in the case.  Make sure that the holes are a tight fit for the legs.2.  Push the first 3 legs into place and trim the wire if you have to (I did)3.  Next, place the circuit board into the shaver.  If you don't you might struggle trying to put it in when all 6 leg are in place4.  Push the other 3 legs int the shaver body
+
+
+## Step 14: Adding the Switch, Photo Cell and Rest
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 1](images/step15_01.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 2](images/step15_02.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 3](images/step15_03.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 4](images/step15_04.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 5](images/step15_05.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 6](images/step15_06.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 7](images/step15_07.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 8](images/step15_08.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 9](images/step15_09.jpg)
+
+![Step 14: Adding the Switch, Photo Cell and Rest image 10](images/step15_10.jpg)
+
+Steps:1.  I found that the best spot to add a switch is at the back of the shaver.   Drill a hole and attach the switch2.  Next I had to pull the switch apart and trim some of the plastic of the release section so they would fit back into the shaver.  Glue them into place with some epoxy.3.  Drill a hole into the top of the shaver just big enough to add the photo cell.  Add some superglue to hold it in place.4.  Next you have to glue the LED circuit board into place.  I just used some hot glue for this as it's quick drying.5.  Lastly, screw the shaver back together and place the shaver head in place6.  That's it!  turn him on and what him react to the light.
+
+
+---
+*66 images archived*

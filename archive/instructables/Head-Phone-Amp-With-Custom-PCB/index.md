@@ -1,4 +1,4 @@
-# Head Phone Amp With Custom PCB : 8 Steps (with Pictures) - Instructables
+# Head Phone Amp With Custom PCB
 
 Source: https://www.instructables.com/Head-Phone-Amp-With-Custom-PCB/
 
@@ -7,4 +7,157 @@ Source: https://www.instructables.com/Head-Phone-Amp-With-Custom-PCB/
 ![Cover](images/cover.jpg)
 
 
-## Step 1
+## Introduction
+
+![Intro 1](images/intro_01.jpg)
+
+![Intro 2](images/intro_02.jpg)
+
+![Intro 3](images/intro_03.jpg)
+
+
+## Step 1: Parts
+
+![Step 1: Parts image 1](images/step02_01.jpg)
+
+![Step 1: Parts image 2](images/step02_02.jpg)
+
+Circuit
+1. PCB. You can find the gerber files here. Instructables don't allow you to add zip files so I had to link it to my Google drive
+2. 220 uF capacitors X 3 - eBay
+3. 4.7uF Capacitors X 3 - eBay
+4. 22pf Capacitor X 2 - eBay
+5. 3.5mm Headphone Jack Connector X 2 - eBay
+6. 5532 IC - eBay
+7. IC Dip 8 pin dip socket - eBay
+8. 18K Resistor X 2 - eBay
+9. 68K Resistor X 4 - eBay
+10. 470K Resistor - eBay
+11. 20K Duel Potentiometer - eBay
+12. Knob - eBay
+12. 5mm LED - eBay
+13. SPDT Switch - eBay
+Power
+You can use a 9V battery if you want to. I wanted to be able to re-charge the amp so I used the following
+1. Voltage regulator - eBay
+2. Mobile Battery - I get most of mine from phone recycle bins but you can also buy them on eBay
+Check out this Instructable on how to use these
+Other Parts
+1. Case - I used an old Tobacco tin
+3. Wires
+
+
+## Step 2: Schematic, Board and Gerber Files
+
+![Step 2: Schematic, Board and Gerber Files image 1](images/step03_01.jpg)
+
+![Step 2: Schematic, Board and Gerber Files image 2](images/step03_02.jpg)
+
+In the link below you can find the schematic, board and gerber files. If you already use eagle then you can save the schematic and the board and add them to eagle to play around with.
+If you want to just get the board made then save the Headphone Amp Zip file and you can then just send it to someone like JLCPCB (not affiliated) who will print it for you. Hit the "quote now" button on the website and then just upload the gerber files. easy.
+FYI - I'm not affiliated with JLCPCB in any way - just find them easy to use.
+Link to Gerber files, eagle schematic and PCB - Version 1
+Link to Gerber files, eagle schematic and PCB - Version 2
+NOTE: I revisited this PCB and made a smaller. The files can be found in version 2 linkHeadphone Amp 1.pdfDownload
+
+
+## Step 3:
+
+
+## Step 4: Soldering the PCB Together
+
+![Step 4: Soldering the PCB Together image 1](images/step05_01.jpg)
+
+![Step 4: Soldering the PCB Together image 2](images/step05_02.jpg)
+
+![Step 4: Soldering the PCB Together image 3](images/step05_03.jpg)
+
+![Step 4: Soldering the PCB Together image 4](images/step05_04.jpg)
+
+![Step 4: Soldering the PCB Together image 5](images/step05_05.jpg)
+
+![Step 4: Soldering the PCB Together image 6](images/step05_06.jpg)
+
+![Step 4: Soldering the PCB Together image 7](images/step05_07.jpg)
+
+I'm not going to do a step by step on how to do this as it's pretty straight forward. All of the values of the components are on the board and you just need to follow this. However, below are a few tips on the best way to do it.
+Steps:
+1. The best components to start with in my opinion are the resistors. These are all the same size and you can lay the board on it's back and they will sit flush with the board making them easy to solder into place
+2. When adding the audio jacks you might find that one of the 5 legs is slightly off. Just take your time and use a small screwdriver to slightly bend it out so it fits into the hole.
+3. Use good quality capacitors. These will help get great sound out of the amp
+4. If you know what case you are going to add the amp to, ensure that the capacitors aren't too high for the case. If they are you can always lay them down like I did in order for them to fit. Actually didn't need to do it in the end because I used a difference case.
+5. The circuit board will be attached via the audio jacks and volume potentiometer. make sure you take that into consideration when thinking about a case.
+6. It's always good to test the board once it has been built and before it's added into a case.
+
+
+## Step 5: What Case to Use
+
+![Step 5: What Case to Use image 1](images/step06_01.jpg)
+
+![Step 5: What Case to Use image 2](images/step06_02.jpg)
+
+![Step 5: What Case to Use image 3](images/step06_03.jpg)
+
+![Step 5: What Case to Use image 4](images/step06_04.jpg)
+
+You can use whatever case that takes your fancy. I like to add them into old tobacco tins as they come all ready to use. I've used NES controllers before as well which are fun to do but there is a lot less room in one of those.
+If you can't find any tobacco tins then you could an Altoids tin, projects box, literally any small container that will fit the parts inside will do.
+
+
+## Step 6: Adding the Parts to the Case - Circuit Board
+
+![Step 6: Adding the Parts to the Case - Circuit Board image 1](images/step07_01.jpg)
+
+![Step 6: Adding the Parts to the Case - Circuit Board image 2](images/step07_02.jpg)
+
+![Step 6: Adding the Parts to the Case - Circuit Board image 3](images/step07_03.jpg)
+
+![Step 6: Adding the Parts to the Case - Circuit Board image 4](images/step07_04.jpg)
+
+![Step 6: Adding the Parts to the Case - Circuit Board image 5](images/step07_05.jpg)
+
+Steps:
+1. First, place all of the parts inside the case and work out how you want everything laid out inside. You need to fit the circuit board, battery and charging module (if you aren't using a 9v battery). Once you know where everything is going, the next thing to is to secure the circuit board
+2. Make a small template of the front of the board using a piece of masking tape. Make there the potentiometer and 2 audio jacks are on the tape and then stick this to the case
+3. Carefully drill the holes for each of the components. Tobacco tins are quite thin so be careful when drilling.
+4. Secure the pot and audio jacks in place with the nuts that come with them
+
+
+## Step 7: Adding the Parts to the Case - Battery, Switch & LED
+
+![Step 7: Adding the Parts to the Case - Battery, Switch & LED image 1](images/step08_01.jpg)
+
+![Step 7: Adding the Parts to the Case - Battery, Switch & LED image 2](images/step08_02.jpg)
+
+![Step 7: Adding the Parts to the Case - Battery, Switch & LED image 3](images/step08_03.jpg)
+
+![Step 7: Adding the Parts to the Case - Battery, Switch & LED image 4](images/step08_04.jpg)
+
+I went with a rechargeable battery and charging module to power the circuit. If you don't want to do this then just use a 9v battery. I did an Instructable on how to use the module and adding it to a Li-ion battery which you can find here
+Steps:
+1. First, secure the charging module to the battery with some good, double sided tape
+2. Place the battery inside the case and mark where the micro USB on the module needs to accessed.
+3. Make a couple small holes in the case for the micro USB and use some small files to make the hole rectangular.
+4. Secure the battery into the case with some more double sided tape and make sure that the USB aligns with the hole in the case
+5. For the switch, I initially was going to add this to the side of the case and made a hole for it but decided to add it inside the case. The main reason being, the other ones I have made the amp sometimes turns on in my pocket because of the switch. having it inside the case means this can't happen.
+6. I used the hole I made for the switch for the LED. As the hole was rectangle I decided to add a small piece of opal acrylic which is a great diffuser and place the LED behind this.
+
+
+## Step 8: Using Your Amp
+
+![Step 8: Using Your Amp image 1](images/step09_01.jpg)
+
+![Step 8: Using Your Amp image 2](images/step09_02.jpg)
+
+![Step 8: Using Your Amp image 3](images/step09_03.jpg)
+
+![Step 8: Using Your Amp image 4](images/step09_04.jpg)
+
+Now that the build is done it's time to try out your amp
+1. You have an audio input and output jack. The one on the left is output and that's where you plug your headphones into. The other is where you plug your phone or MP3 player into.
+2. make sure that the volume is turned down at at least mid-way. you don't want to blow your eardrums if it is too loud!
+3. Turn on the amp and start to play music. The sound should be clear, have more bass, and overall have a richer sound then just listening through your headphone.
+
+
+---
+*31 images archived*

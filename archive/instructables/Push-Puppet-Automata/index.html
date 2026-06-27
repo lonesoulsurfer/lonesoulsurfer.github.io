@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Push Puppet Automata</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Push Puppet Automata</span>
+</nav>
+<h1>Push Puppet Automata</h1><div class="source"><a href="https://www.instructables.com/Push-Puppet-Automata/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Push Puppet Automata" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Watch the Video</h2><p>You'll have to excuse my singing - only way I could get the little fella to move about.</p><h2><span class="step-num">STEP 2</span>Step 2: Parts and Tools</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Parts and Tools image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Parts and Tools image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Parts and Tools image 3" loading="lazy"></div><p>Parts:1.  Picture Frame.  Needs to be one like in the picture.  I purchased mine at Kmart (Australia) but I'm sure you will be able to find something similar on-line or at your local shops2.  Little bits:  At a minimum, you will need the following:ServoMicrophonePowerI also used:LEDGet one of these if you don't want to solderwire3.  3 x AA battery holder - ebay4.  Push puppet - eBay5.  Toggle switch6.  Small screwsTools:1.  Drill2. Hot glue3.  Files4.  Soldering iron</p><h2><span class="step-num">STEP 3</span>Step 3: Modding the Frame</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Modding the Frame image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Modding the Frame image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Modding the Frame image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Modding the Frame image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Modding the Frame image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Modding the Frame image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Modding the Frame image 7" loading="lazy"></div><p>In order to have the servo push against the bottom of the push puppet, you will need to make a large hole in the bottom of the frame.Steps:1.  Mark on the frame, the best position for the push puppet to sit.  Remember that it will need to sit forward a little so the back of the frame can fit correctly2.  I used a 22mm hole drill piece to make the hole.  Place the puppet over the hole and make sure that it can be pushed and is not sticking anywhere.</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Servo</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Servo image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Servo image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Servo image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Servo image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Servo image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Servo image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Adding the Servo image 7" loading="lazy"></div><p>Steps:1.  Attach the shorter arm top the end of the servo.2.  Have a play and work out the best position for the servo to the attached to the frame.  Place the puppet over the hole and hold the servo in place.  Activate the servo and make the arm hit the bottom of the puppet.  You want the puppet to flop over each time the servo arm hits the bottom.3.  Hot glue the servo into place</p><h2><span class="step-num">STEP 5</span>Step 5: Attaching the Push Puppet</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Attaching the Push Puppet image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Attaching the Push Puppet image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Attaching the Push Puppet image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Attaching the Push Puppet image 4" loading="lazy"></div><p>Steps:1.  Drill 2 holes into the bottom of the frame.  These holes will allow you use a phillips head to screw in the screws.2.  It's probably best to make a paper template of the bottom of the push puppet at this stage.  This will help you work out where to best add the screws.  I didn't do this and just winged it.  Not the smartest ideas but it worked fine.3.  Drill a couple of smaller holes in the frame for the screws to go through.  Carefully screw the push puppet to the frame.4.  Lastly, do a test and make sure that the servo arm is making the puppet move.  If not, you will need to make some adjustments.</p><h2><span class="step-num">STEP 6</span>Step 6: Microphone, Switch and Power</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Microphone, Switch and Power image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Microphone, Switch and Power image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Microphone, Switch and Power image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Microphone, Switch and Power image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Microphone, Switch and Power image 5" loading="lazy"></div><p>In order for the microphone little bit to be attached to the frame, you need to add some wires.  Steps:1.  Solder 3 wires to the solder points on the microphone little bit.  These can be found on the bottom of the little bit.  2  Solder the ends of the wire to the power module little bit.  The thing to make sure of is that the wires are correctly orientated and soldered on the right solder point.  3.  Test to make sure that the little bits have been wired correctly 4.  To power the module, I used the 5v power cord that came with it.  Just cut the cord, strip the plastic off the end and keep the red (positive) and black (negative).  5.  Solder a couple of sires onto the toggle switch</p><h2><span class="step-num">STEP 7</span>Step 7: Wiring the Switch and Power</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Wiring the Switch and Power image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Wiring the Switch and Power image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Wiring the Switch and Power image 3" loading="lazy"></div><p>Steps:1.  Drill a hole into the side of the frame and attach the switch.2.  Solder the negative wire from the battery holder to one of the wires to the switch.3.  Next solder the negative wire from the power cord to the other terminal of the switch4.  lastly, solder the positive wire from the battery holder to the positive on the power cord5.  Once all the wires have been soldered, superglue the power module and microphone little bit togetjer.</p><h2><span class="step-num">STEP 8</span>Step 8: Attaching the Microphone to the Frame</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Attaching the Microphone to the Frame image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Attaching the Microphone to the Frame image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Attaching the Microphone to the Frame image 3" loading="lazy"></div><p>Steps:1.  Drill a hole in the frame large enough for the microphone.2.  Drill a smaller hole for the microphone adjuster3.  Hot glue into place.4.  Plug the power cord into the power module.</p><h2><span class="step-num">STEP 9</span>Step 9: Add the LED</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Add the LED image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Add the LED image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Add the LED image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Add the LED image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Add the LED image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Add the LED image 6" loading="lazy"></div><p>Steps:1.  Drill a hole in the top of the frame big enough to fit the LED into.  Hot glue into place2.  Superglue the LED little bit to the Servo little bit.</p><h2><span class="step-num">STEP 10</span>Step 10: Test</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Test image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Test image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Test image 3" loading="lazy"></div><p>Steps:1.  Place the back onto the frame and test the robot.2.  You might have to adjust the sensitivity of the microphone to order for the microphone to pick-up sound.3.  If the puppet is not moving right, try to adjust the arms or legs.  You might have to also adjust the servo (hopefully not as it's been hot glued into place!)  4.  Lastly, add a sheet of paper to the inside of the frame.  This will be the "background"</p>
+</body>
+</html>

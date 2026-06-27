@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Fire Piston</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Simple Fire Piston</span>
+</nav>
+<h1>Simple Fire Piston</h1><div class="source"><a href="https://www.instructables.com/Simple-Fire-Piston/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Simple Fire Piston" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 1: Parts and Tools image 10" loading="lazy"></div><p>Parts:</p>
+<p>Fire Piston</p>
+<ul>
+<li>9.5mm wooden dowel. You shouldn’t have any issues getting this size dowel at your local hardware store. Don’t get pine as it isn’t strong enough.</li>
+<li>12.7mm copper tube. You can find this in the plumbing section at your hardware store. If you can't get this size exact, then close enough will do.</li>
+<li>2 X 15mm brass cap. Same place you got the tube from</li>
+<li>15mm coupling to 15mm male screw. –hardware store.</li>
+<li>15mm female screw lid – hardware store</li>
+<li>O ring. You can get assorted ones in the plumbing section of your local hardware store. The O ring needs to fit tight around the dowel or check out eBay</li>
+<li>Small brass eye hook</li>
+<li>Silicone plumbers grease (this is to lubricate the O ring). You can add motor oil but I've been told that this can break down the O ring. You can buy this at any hardware store (plumbing section)</li>
+</ul>
+<p>Char Cloth</p>
+<ul>
+<li>Tin with lid. I use an old tobacco tin</li>
+<li>Piece of old clothing. Best to use 100% cotton or denim.</li>
+</ul>
+<p>Tools</p>
+<ul>
+<li>Grinder</li>
+<li>Solder</li>
+<li>Solder flux</li>
+<li>Small blow torch</li>
+<li>Saw</li>
+<li>Drill</li>
+<li>Epoxy glue</li>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Cut and Solder the Cap to the Tube</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: Cut and Solder the Cap to the Tube image 8" loading="lazy"></div><p>First thing is to decide how long you want to make your fire piston. There is no correct length that you should use but if this is your first one, I would make it at least 150mm long.</p>
+<p>Steps:</p>
+<ul>
+<li>Cut the copper tubing with an angle grinder</li>
+<li>File and remove any sharp edges.</li>
+<li>Add some flux to the end of the tube and push on the 15mm cap</li>
+<li>Heat-up the end with a small blow torch and touch with some solder until the cap is fully sealed to the copper tube.</li>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Attaching the Screw Section to the Tube</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Attaching the Screw Section to the Tube image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Attaching the Screw Section to the Tube image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Attaching the Screw Section to the Tube image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Attaching the Screw Section to the Tube image 4" loading="lazy"></div><p>This isn’t a necessary part and if you don’t attach it, then the fire piston will still work. The reason why I attached this is so I could screw a lid onto the fire piston and make sure that the rod wouldn’t come out. It’s a good way to store your fire piston as allows you to also carry it easily.</p>
+<p>Steps:</p>
+<ul>
+<li>Add some flux to the other end of the copper tube</li>
+<li>Attach the screw section to the tube, heat-up with a blow torch and add some solder.</li>
+<li>Place the cap on top to make sure everything fits ok.</li>
+<li>Next drill a small hole into the top of the cap.</li>
+<li>Grab an eye hook and cut off the screw section so only a few millimetres are left.</li>
+<li>Place the screw section onto the hole, add some flux and solder into place.</li>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Piston</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Piston image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Piston image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Piston image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Piston image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making the Piston image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Making the Piston image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Making the Piston image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 4: Making the Piston image 8" loading="lazy"><img src="images/step05_09.jpg" alt="Step 4: Making the Piston image 9" loading="lazy"><img src="images/step05_10.jpg" alt="Step 4: Making the Piston image 10" loading="lazy"></div><p>The actual piston is simple as it’s just a piece of dowel. The tricky part is to make the incision the right size so the O ring makes a good seal inside the tube. I tried several times to get this right and discovered that adding a little oil is the key. If any air leaks then you won’t get the compression and heat you need to ignite the char cloth.</p>
+<p>Steps:</p>
+<ul>
+<li>Cut a piece of dowel a little longer than the actual tube. Mine was about 10mm longer</li>
+<li>Next, put the dowel into a drill and secure the drill so it won’t move. I put mine in a vice to keep it upright. Turn on the drill.</li>
+<li>The best way to make the groove I found was to use the side of a small, thin file. Push the side of the file against the wood and move it up and down. Take your time and don’t go too deep or wide. The groove should only be as wide as the O ring. You can also use a small screwdriver or something similar to make the groove.</li>
+</ul>
+<p>NOTE: TimothyK34 recently made one of these and came up with a good way to make the groove. Just brake a hack saw blade in 2, tape them together and slowly role the dowel along the blade. He said that this made a perfect sized groove for the O ring.</p>
+<ul>
+<li>Stop and check regularly. Once you have an even groove, remove the dowel and add the O ring to the groove. If the O ring sits even in the groove, then you are ready to see if it fits into the tube. HERE’S THE IMPORTANT BIT. Make sure you add a little bit of oil to the O ring. This will ensure that it moves easily and smoothly inside the tube. I didn’t do this initially and my O ring kept on getting stuck inside.</li>
+<li>To test you need to push the rod into the tube. You should feel a “cushion” of compressed air as you push the rod down. This will force the rod to bounce back up again. If you find that the rod isn’t bouncing back, or that it’s too hard to push into the tube, then you will either need to make the groove larger or start again. Don’t despair if your first couple don’t work, getting the seal right will probably take a couple turns. You will know though when it is right as soon as you feel the “cushion” of air forcing the piston back up again.</li>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Drilling a Hole in the End of the Piston</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Drilling a Hole in the End of the Piston image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Drilling a Hole in the End of the Piston image 2" loading="lazy"></div><p>To ensure the char cloth has a place to sit, you need to drill a hole into the end of the dowel.</p>
+<p>Steps:</p>
+<ul>
+<li>Secure the dowel into a vice</li>
+<li>Carefully drill a hole into the end of the dowel. It needs to be about 10mm deep. Remember, it needs to be big enough to hold the char cloth in place</li>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding a Cap to the End of the Rod</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding a Cap to the End of the Rod image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding a Cap to the End of the Rod image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding a Cap to the End of the Rod image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding a Cap to the End of the Rod image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding a Cap to the End of the Rod image 5" loading="lazy"></div><p>Initially I was going to attach the copper screw cap to the end of the rod. I decided against this in the end as I thought it would be too hard to attach it to the wooden dowel.</p>
+<p>Instead I just glued a small copper cap to the end to protect the wood. I also made another rod and added a nut instead of the copper cap</p>
+<p>Steps:</p>
+<p>Adding the cap</p>
+<ul>
+<li>Mix some epoxy up and put it into the cap.</li>
+<li>Place the end of the dowel inside and leave to dry</li>
+</ul>
+<p>Adding a Nut</p>
+<ul>
+<li>Find a nut that is slightly smaller than the end of the dowel</li>
+<li>Carefully either screw onto the wood or lightly hammer until secure</li>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Making Char Cloth</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making Char Cloth image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making Char Cloth image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making Char Cloth image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making Char Cloth image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Making Char Cloth image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Making Char Cloth image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 7: Making Char Cloth image 7" loading="lazy"></div><p>Making char cloth is super easy and there are plenty of good instructions on the net on how to make it. The below shows you how to do it. link for more</p>
+<p>Check out this wikipedia link to see how it all works</p>
+<p>Steps:</p>
+<ul>
+<li>First cut up some cloth. 100% cotton is the way to go. Cut up the cloth into small pieces.</li>
+<li>Next grab a small tin like a tobacco tin and make a small hole in the top. Place the cut up cloth into the tin and place the lid on top.</li>
+<li>Place the tin onto a fire source. You'll start to first see some smoke and then a flames come out the hole. Once the flame has died down and gone out you then should block the hole with a stick. The reason being the char cloth can start to smolder and ignite once it has been removed from the fire.</li>
+<li>That's it! your char cloth is ready to use in your fire piston.</li>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Using Your Fire Piston</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Using Your Fire Piston image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Using Your Fire Piston image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Using Your Fire Piston image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Using Your Fire Piston image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Using Your Fire Piston image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Using Your Fire Piston image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Using Your Fire Piston image 7" loading="lazy"></div><p>So now you’ve finished your piston, it’s time to get it to work. It does take a little practice but once you get it, it should work for you each time. Don’t be put off if it doesn’t work straight away though.</p>
+<p>Here’s what you do:</p>
+<p>Steps:</p>
+<ul>
+<li>Place a small piece of char cloth into the drilled hole in the piston</li>
+<li>Add a little oil to the O ring. You don’t have to do this each time, just the first time or until the O ring is dry.</li>
+</ul>
+<p>UPDATE - As DaBoSSs has mentioned in the comments below, it's better to use silicone grease instead. It won't break down the rubber like motor oil will. However, just use motor oil if that's all you have around - I have been and it seems to do the job well.</p>
+<ul>
+<li>Push the end of the rod into the piston just to the O ring is inside</li>
+<li>Now you can either push the piston in with the palm of your hand (which can hurt after multiple times believe me) or do what I did which was:</li>
+</ul>
+<p>a. Turn the tube upside-down with the piston touching the table</p>
+<p>b. Grab hold of the tube with one hand and put your thumb on top of the tube</p>
+<p>c. Place your other hand on top and give the tube a quick push down</p>
+<p>d. immediately remove the piston and check the char cloth to see if it is lit</p>
+<p>e. If not, try it again until it’s lit</p><h2><span class="step-num">STEP 9</span>Step 9: Troubleshooting</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Troubleshooting image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Troubleshooting image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Troubleshooting image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Troubleshooting image 4" loading="lazy"></div><p>If you are having issues getting the Char cloth to light, then check out the below hints</p>
+<p>There is no push back (compression) on the piston</p>
+<p>You should always feel the piston pushing back when you go to push it in. If not, you may need to try the following:</p>
+<ul>
+<li>Add a little oil to the O ring</li>
+<li>Remove some of the oil by wiping the piston. It can get dirty and you can lose compression.</li>
+<li>Pull the O ring out of the groove, clean it and put it back.</li>
+<li>Re-visit the groove that you added. If you aren’t getting any compression, it could be because the groove is too deep.</li>
+<li>Change the O ring</li>
+</ul>
+<p>Can’t get the piston into the tube</p>
+<ul>
+<li>It could mean that you need to make the groove larger. Check and make sure that there are no bumps on the groove and that it is a smooth as possible. It doesn’t have to be perfect though.</li>
+<li>Add some oil</li>
+<li>Check the size of your O ring</li>
+</ul>
+<p>I’ve pushed down a hundred times and still nothing</p>
+<ul>
+<li>When you push the piston into the tube you need to make sure that it is a quick, sharp action. Push down hard but don’t try to hold it down, let the piston come up naturally which it will because of the compression.</li>
+<li>Check you char cloth. If it doesn’t light after a few pushes then change it.</li>
+<li>Try a different method. There isn’t one sure way to get the char cloth to ignite so find what works best for you.</li>
+</ul>
+</body>
+</html>

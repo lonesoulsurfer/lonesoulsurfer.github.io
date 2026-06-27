@@ -1,8 +1,5 @@
 # lonesoulsurfer -- Instructables Archive
-Local backup of 260 Instructables by lonesoulsurfer.
-Each folder contains `index.md` (all steps as markdown) and `images/`.
 
----
 
 ## Electronics
 - [Yahtzee - Raspberry Pi Handheld Game](instructables/Yahtzee-Raspberry-Pi-Handheld-Game/index.md) (-- views)
@@ -124,9 +121,6 @@ Each folder contains `index.md` (all steps as markdown) and `images/`.
 - [How to Make an Easy Electric Lantern](instructables/How-to-Make-an-Easy-Electric-Lantern/index.md) (-- views)
 
 ## Making
-- [Favorites (135)](instructables/favorites/index.md) (-- views)
-- [Discussions (3.0K)](instructables/comments/index.md) (-- views)
-- [Settings](instructables/settings/index.md) (-- views)
 - [The Ultimate Photo Editing Tool - Made for Instrucables](instructables/The-Ultimate-Photo-Editing-Tool-Made-for-Instrucab/index.md) (-- views)
 - [Instructables Contest Winners - Top 50](instructables/Instructables-Contest-Winners-Top-50/index.md) (-- views)
 - [7 Channel Mixer (& a 4 Channel Option!)](instructables/7-Channel-Mixer-a-4-Channel-Option/index.md) (209 views)

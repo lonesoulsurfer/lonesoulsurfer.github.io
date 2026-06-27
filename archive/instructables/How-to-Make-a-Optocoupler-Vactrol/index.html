@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Make a Optocoupler (Vactrol)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">How to Make a Optocoupler (Vactrol)</span>
+</nav>
+<h1>How to Make a Optocoupler (Vactrol)</h1><div class="source"><a href="https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="How to Make a Optocoupler (Vactrol)" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Identifying an Optocoupler in a Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Identifying an Optocoupler in a Circuit image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Identifying an Optocoupler in a Circuit image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Identifying an Optocoupler in a Circuit image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Identifying an Optocoupler in a Circuit image 4" loading="lazy"><img src="images/step02_05.png" alt="Step 1: Identifying an Optocoupler in a Circuit image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Identifying an Optocoupler in a Circuit image 6" loading="lazy"></div><p>Below are some of the more common optocoupler schematic symbols you might come across.  You can see that the symbol is made up of an LED and photoresistor symbol. Actually, the symbol depicts what an optocoupler is quite well.  I did find it a little confusing however when I first come across one as I didn’t realize they were connected partsI have also added a couple of schematics that show you an optocoupler being used</p><h2><span class="step-num">STEP 2</span>Step 2: Parts and Tools</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Parts and Tools image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Parts and Tools image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Parts and Tools image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Parts and Tools image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Parts and Tools image 5" loading="lazy"></div><p>Parts List1.       5mm LED – eBay2.       LDR – eBay3.       Heat Shrink 6 to 7mm – eBayTools:1.       Lighter2.       Scissors</p><h2><span class="step-num">STEP 3</span>Step 3: How the Optocoupler Goes Together</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: How the Optocoupler Goes Together image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: How the Optocoupler Goes Together image 2" loading="lazy"></div><p>The images in this step shows how the components go together.  You can see that the LED and the LDR face each other inside the heat shrink.  The LED acts as an input and the LDR is the output receiver.</p><h2><span class="step-num">STEP 4</span>Step 4: Placing the LED and LDR Inside the Head Shrink</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Placing the LED and LDR Inside the Head Shrink image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Placing the LED and LDR Inside the Head Shrink image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Placing the LED and LDR Inside the Head Shrink image 3" loading="lazy"></div><p>Steps:1. First, grab your heat shrink and cut a 20mm piece2. Next, Place the LED into the heat shrink.  If you have troubles pushing the LED into the heat shrink due to the rim on the LED, you can remove it with a file.3. Push the LED into the heat shrink so there's about 5mm over the LED legs.</p><h2><span class="step-num">STEP 5</span>Step 5: Shrinking the Heat Shrink</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Shrinking the Heat Shrink image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Shrinking the Heat Shrink image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Shrinking the Heat Shrink image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Shrinking the Heat Shrink image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Shrinking the Heat Shrink image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Shrinking the Heat Shrink image 6" loading="lazy"></div><p>Steps:1. Whilst holding the LED legs, start to add some heat to the heat shrink around the LED section2. Make sue you only add heat to the section where the LED is as you only want the heat shrink to shrink around it.3. Once the heat shrink has melted enough, use a pair of needle nose pliers to squash the heat shrink around the LED legs, effectively forming a seal.  What you are trying to do is to seal any potential outside light reaching the LDR - you only want the light from the LED to affect it.4. Do the exact same for the LDR.</p><h2><span class="step-num">STEP 6</span>Step 6: Bending and Cutting the Legs</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Bending and Cutting the Legs image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Bending and Cutting the Legs image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Bending and Cutting the Legs image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Bending and Cutting the Legs image 4" loading="lazy"></div><p>Steps:1. Take note of which leg is the positive on the LED.  A good idea before you trim the legs is to snip a small corner away from the heat shrink next to the positive leg.  This way you will always know which one it is.2. Bend both the legs of the LED and the LDR down3. Trim the legs on both the LED and the LDRThat's it.  You have now made your own optocoupler  which will work just as good as any store brought one.</p>
+</body>
+</html>

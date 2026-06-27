@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portable Ruby Guitar Amp</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Portable Ruby Guitar Amp</span>
+</nav>
+<h1>Portable Ruby Guitar Amp</h1><div class="source"><a href="https://www.instructables.com/Portable-Ruby-Amp/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Portable Ruby Guitar Amp" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Parts:1.       LM386 IC – eBayBuy your capacitors and resistors in assorted lots - it's cheaper and easier2.       100uf Capacitor – eBay3.       220uf Capacitor – eBay4. 100n Capacitor – eBay5.       2 X 47n Capacitor – eBay6.       10R Resistor – eBay7.       3.9K Resistor – eBay8.       1.5M Resistor – eBay9.       4.7K Resistor - eBay10.   MPF102 Transistor – eBay11.   10K Potentiometer – eBay12.   1K Potentiometer – eBay13.   6.5mm Jack Socket – eBay14.   9v Battery Holder - eBay15.   9V Battery16.   SPDT Toggle Switch - eBay17.   5mm LED – eBay18.   Small Tin - eBay19.  Prototype Board - eBayTools:1.       Soldering Iron2.       Drill 3.       Pliers4.       Wire cutters5.       Hot glue</p><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit – Pins 3, 4 and 6 and 7</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Making the Circuit – Pins 3, 4 and 6 and 7 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Making the Circuit – Pins 3, 4 and 6 and 7 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Making the Circuit – Pins 3, 4 and 6 and 7 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Making the Circuit – Pins 3, 4 and 6 and 7 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Making the Circuit – Pins 3, 4 and 6 and 7 image 5" loading="lazy"></div><p>First thing you will need to do is to breadboard your circuit.  Try it out and make sure the circuit works before you move onto actually soldering onto a prototype boardSteps:1.       Solder the LM386 IC onto the prototype board2.       Next I like to make all of the easy connections first so connect pins 3 and 4 to ground3.       Connect the 100n cap to pin 7 and ground4. Connect pin 6 to positive</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit – Pins 6, 1 and 8</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Making the Circuit – Pins 6, 1 and 8 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Making the Circuit – Pins 6, 1 and 8 image 2" loading="lazy"></div><p>In the schematic, it shows that you need to add a 100uf cap from positive to ground which is shown on the schematic coming from pin 6.  This cap should be placed as close to the IC as possible to help forestall oscillation.Steps:1.  Solder the positive leg of the cap to pin 6 on the 386 IC2.  Solder the ground leg from the cap to ground.</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit – Pin 2 (Part 1)</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Circuit – Pin 2 (Part 1) image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Circuit – Pin 2 (Part 1) image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Circuit – Pin 2 (Part 1) image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Circuit – Pin 2 (Part 1) image 4" loading="lazy"></div><p>Pin 2 is connected to a whole bunch of parts but it isn’t too difficult if you just follow the flow of the schematicSteps:1.        Connect a wire to pin 2.  This will later be soldered onto the middle pin on the 10K pot2.       Solder a wire to an empty spot close by on the prototype board.  Both these will also be connected to the 10K pot later on4.       Connect the wire on the empty stop to one of the legs of the 47n Cap</p><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit – Pin 2 (Part 2)</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making the Circuit – Pin 2 (Part 2) image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making the Circuit – Pin 2 (Part 2) image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making the Circuit – Pin 2 (Part 2) image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making the Circuit – Pin 2 (Part 2) image 4" loading="lazy"></div><p>Steps:1.       Connect the right hand side leg of the transistor to the other leg of the 47n Cap2.  On the same leg on the transistor leg, solder a 3.kK resistor and connect the other leg to ground3.       The middle leg on the transistor is connected to the 1.5m resistor, which is then connect to ground. 4.  Connect the left hand leg on the transistor to positive5.  Lastly, add a wire to ground and the middle leg on the transistor.  These will be connected to the jack socket later on.</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit – Pins 1, 2 and 5</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Making the Circuit – Pins 1, 2 and 5 image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Making the Circuit – Pins 1, 2 and 5 image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Making the Circuit – Pins 1, 2 and 5 image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Making the Circuit – Pins 1, 2 and 5 image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Making the Circuit – Pins 1, 2 and 5 image 5" loading="lazy"></div><p>Steps:1.       Add a wire to pin 1 and also pin 8.  This will be connected to the 1k gain pot later on2. Solder a 10R resistor to pin 5 3. Attach the other end of the 10R resistor to a 47n cap and connect the other leg from the cap to ground.2.       Next attach a 220uf cap to pin 5 (positive leg of the cap) and the other end on an empty spot on the prototype board3.       Add a wire to the ground leg on the cap.  This will be connected to the positive solder point on the speaker4.       Solder another wire to ground.  This will be soldered onto the ground solder point on the speaker</p><h2><span class="step-num">STEP 7</span>Step 7: Connecting Ground and Positive and Trim the Prototype Board</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Connecting Ground and Positive and Trim the Prototype Board image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Connecting Ground and Positive and Trim the Prototype Board image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Connecting Ground and Positive and Trim the Prototype Board image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Connecting Ground and Positive and Trim the Prototype Board image 4" loading="lazy"></div><p>Steps:1. You need to make sure that the positive and ground strips on the protype board are connected together.  Add a couple of wires as shown to connect them2. In order to fit the board inside the tin you will have to trim it.  Use a pair of wire cutters to trim away the excess board.3.  Place inside the tin to make sure it fits.  Try and make it as small as possible as you'll need as much room as possible.</p><h2><span class="step-num">STEP 8</span>Step 8: Modding the Tobacco Tin - Adding the Pots</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Modding the Tobacco Tin - Adding the Pots image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Modding the Tobacco Tin - Adding the Pots image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Modding the Tobacco Tin - Adding the Pots image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Modding the Tobacco Tin - Adding the Pots image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Modding the Tobacco Tin - Adding the Pots image 5" loading="lazy"></div><p>Now you have completed the circuit, it’s time to mod the case.  There isn’t much room inside the case so make sure you plan how you are going to attach all of the auxiliary parts.Steps:1.       First, you need to decide where the 2 potentiometers are going to go.  I placed mine in the lid of the tobacco tin.2.       Drill a couple of holes into the case for the potentiometers.  I tried to align these holes as best before I drilled3.       Secure the pots into the holes</p><h2><span class="step-num">STEP 9</span>Step 9: Make Some Speaker Holes</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Make Some Speaker Holes image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Make Some Speaker Holes image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Make Some Speaker Holes image 3" loading="lazy"></div><p>Steps:1.       First, find the centre of the top of the tin and drill a hole.  This will be your reference point for the other holes.2.       Carefully measure and drill 4 more holes around the outside of the first hole.  Making the holes align will make the finished produce look a lot better3.       Don’t glue the speaker down yet.  Wait until you have tried the amp before doing so in case you need to add more holes or make them larger</p><h2><span class="step-num">STEP 10</span>Step 10: Adding the 6.5mm and 3.5mm Jack Socket and Switch</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Adding the 6.5mm and 3.5mm Jack Socket and Switch image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Adding the 6.5mm and 3.5mm Jack Socket and Switch image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Adding the 6.5mm and 3.5mm Jack Socket and Switch image 3" loading="lazy"></div><p>Next thing to do is to add the 6.5mm socket and switch.  You can also add the 3.5mm jack socket at the same time. Steps:1.       Place the circuit inside the tin before starting to drill the holes.  This way you can make sure that the placement of the parts won’t affect the circuit and will also leave enough room for the battery.2.       Drill the holes and secure the 6.5mm socket, 3.5mm socket and the switch.3. Add some masking take to the bottom of the tin to inslulate it from the circuit board.  It will short if you don't.</p><h2><span class="step-num">STEP 11</span>Step 11: Attaching the Wires to the Components</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: Attaching the Wires to the Components image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: Attaching the Wires to the Components image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 11: Attaching the Wires to the Components image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 11: Attaching the Wires to the Components image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 11: Attaching the Wires to the Components image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 11: Attaching the Wires to the Components image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 11: Attaching the Wires to the Components image 7" loading="lazy"></div><p>Now that you have all of the auxiliary components attached, it’s time to wire the circuit to all of them.  Wires seem to take-up a lot of space inside builds like this so it’s important that you trim as much off as you can whilst still being able to open and close the lid easily.Steps:1.       Lay the lid next to the tobacco tin2.       Trim the wires on the circuit that are to be connected to the pots and solder them into place3.       Trim the wires for the LED’s and solder them to the LED legs.  Make sure that the polarities are correct!4.       Attach the wires to the 2 jack sockets.  5.       Attach the wires to the speaker.  Remember that the 3.5mm jack socket is a switching one so the speaker will need to be attached to one of the switch solder lugs on the jack and the wire on the circuit for the speaker attached to the other solder lug6.       Lastly, you need to connect the battery connector and the switch</p><h2><span class="step-num">STEP 12</span>Step 12: How to Use the Amp</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 12: How to Use the Amp image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 12: How to Use the Amp image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 12: How to Use the Amp image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 12: How to Use the Amp image 4" loading="lazy"></div><p>Using the amp is straightforward but I thought I would add a few tips.The Gain/Volume pots are highly interactive.  Try the below to get different sounds from the amp.Clean sound: Set the Volume pot to max and slowly turn up the Gain pot. Find the point just before the sound starts to break up and you have the maximum clean volume availableOverdrive sound: Turn up the Gain pot to the desired maximum gain and adjust the Volume pot.If you have the Gain pot set high and you are still not getting desirable overdrive, you'll have to turn up the Volume pot to let more signal pass to the 386.Switching Audio JackWhen you put a jack into the 3.5mm socket, it shuts off the speaker in the amp.  This is great when you want to practice using some headphones and not have to bug anyone else with your playing.You can also plug in an external speaker to increase the loudness of the amp.</p>
+</body>
+</html>

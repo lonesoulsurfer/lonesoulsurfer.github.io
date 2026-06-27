@@ -1,4 +1,4 @@
-# Shotgun Shell Lighter V2 : 11 Steps (with Pictures) - Instructables
+# Oops!
 
 Source: https://www.instructables.com/Shotgun-Shell-Lighter-V2/
 
@@ -7,4 +7,5 @@ Source: https://www.instructables.com/Shotgun-Shell-Lighter-V2/
 ![Cover](images/cover.jpg)
 
 
-## Step 1
+---
+*0 images archived*

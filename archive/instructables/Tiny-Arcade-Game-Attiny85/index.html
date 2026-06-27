@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiny Arcade Game - Attiny85 Build</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Tiny Arcade Game - Attiny85 Build</span>
+</nav>
+<h1>Tiny Arcade Game - Attiny85 Build</h1><div class="source"><a href="https://www.instructables.com/Tiny-Arcade-Game-Attiny85/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Tiny Arcade Game - Attiny85 Build" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>The following parts list is for the Mini Arcade components. Step 2 has all of the information needed to program the ATtiny.You will get 5 PCB's when you have them printed so you may as well ensure that you order enough parts to build 5!Parts:PCB - See next step on how to get them printedATtiny85 X 1 - Ali Express. Tip - Buy them in lots of 5 - it's cheaper and you can always use them in more games. Make sure you buy 'through hole' IC'sOLED Display Module (SSD1306) - Ali Express Buy the single colour ones. Mine are white OLED but you can get them in blue as well.Buzzer (speaker) - Ali Express. I used the low profile ones like this Ali ExpressResistors - metal film 1% - Ali Express10K X 21K X 16.8K X 1Momentary Tactile Push Button X 3 - Ali Express.Micro on/off switch vertical - Ali Express you can also use these types as well - Ali ExpressCR2032 battery holder X 1 - Ali ExpressCR2032 Battery - Ali Express</p><h2><span class="step-num">STEP 1</span>Step 1: The PCB & Schematic</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 1: The PCB & Schematic image 1" loading="lazy"><img src="images/step03_02.png" alt="Step 1: The PCB & Schematic image 2" loading="lazy"><img src="images/step03_03.png" alt="Step 1: The PCB & Schematic image 3" loading="lazy"></div><p>Firstly, all the files that you need to get the circuit board printed can be found in my GitHub Page. I've also included the Eagle files for the schematic and the board in my Google Drive so you can play around with these if you want to.You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice. Make sure you keep it zipped.I've put together an Instructable on how to get your broads printed which you can find here.NOTE: The manufacture will include an order number on the PCB. However, you can 'specify a location' once the Gerber files have been loaded. Click 'specify a location' when the board has been loaded and the manufacturer will add it to the back where I have indicated.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 2: Adding the Components to the PCB image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 2: Adding the Components to the PCB image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 2: Adding the Components to the PCB image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 2: Adding the Components to the PCB image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 2: Adding the Components to the PCB image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 2: Adding the Components to the PCB image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 2: Adding the Components to the PCB image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 2: Adding the Components to the PCB image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 2: Adding the Components to the PCB image 9" loading="lazy"></div><p>The component list is quite low and as mentioned, I've only used through hole components (no SMD) so it's super simple to solder everything in place. Note that the PCB is double sided and the battery holder and on/off switch is added to the back of the PCB. The order that you add the components is important. If you add the OLED module before the battery holder you won't be able to get to the solder points for the battery holder so pay attention to the following stepsSTEPS:As usual it's best to start with the lowest profile components which in this case is the resistors. These have been added to the PCB so they are hidden by the OLED module and also act as supports for the module. Solder these in place.Next solder the tactile switches into placeYou can now solder the programmed IC into place. If you add a IC socket you can always easily remove the ATtiny and re-program it with other games. It also allows you to remove the ATtiny if something goes wrong with the programming. I like to test the ATtiny first via a breadboard to make sure it is working correctly before soldering it into place.Now solder the buzzer (speaker) into place.Before you solder the OLED module, flip the PCB and solder into place the battery holder and on/off switch.Now you can solder the OLED into place.Add a battery to the back and turn on the game to make sure everything works.</p><h2><span class="step-num">STEP 3</span>Step 3: Programming the ATtiny85</h2><div class="step-images"><img src="images/step05_01.png" alt="Step 3: Programming the ATtiny85 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 3: Programming the ATtiny85 image 2" loading="lazy"></div><p>When I first started to investigate and learn how to program the ATtiny I was totally confused!  The tutorials that I found on line didn't give a complete step by step guide and I had to work my way through a number of them to finally work out how to do it.  Luckily for you I've recently put together an Instructable on exactly how to do this and it really isn't that hard.You will however need to get yourself an Arduino Uno which you'll need to program the ATtiny.  Again, I want to reiterate that this really isn't hard to do and if you follow the Instructable below you will be able to program your ATtiny with any of the games included in this InstructableHow to Program ATtiny with an ArduinoOnce you know how to program an ATtiny, you are ready to install one of the games onto it.</p><h2><span class="step-num">STEP 4</span>Step 4: Programming a Game on the ATtiny85 - Step 1</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 4: Programming a Game on the ATtiny85 - Step 1 image 1" loading="lazy"><img src="images/step06_02.png" alt="Step 4: Programming a Game on the ATtiny85 - Step 1 image 2" loading="lazy"></div><p>Now that you know how to program the ATtiny, it's time to try and add one of the games I have included. All of the games can be found in my GitHub Page in the 'Tiny Arcade - Games' folder and have been fully tested and work perfectly.You will need to add a library to the Arduino. This couldn't be easier. As a matter of fact, Arduino have included a number of libraries that you just need to install directly from Arduino IDE. The library is needed so the ATtiny can drive the OLED screenSTEPS:In Arduino IDE go to Sketch / Include Libraries / Manage LibrariesType the following in the search bar - ssd1306xled which will bring up the sketch and then hit install.That's it! You have now added the library for the OLED module and there is nothing further to so.Now you can open the sketch for whatever game you want to program to the ATtiny and upload it via Arduino.Just click onto the sketch which will open Arduino and follow the steps above to load the game to the ATtiny.</p><h2><span class="step-num">STEP 5</span>Step 5: Programming a Game on the ATtiny85 - Step 2</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 5: Programming a Game on the ATtiny85 - Step 2 image 1" loading="lazy"><img src="images/step07_02.png" alt="Step 5: Programming a Game on the ATtiny85 - Step 2 image 2" loading="lazy"><img src="images/step07_03.png" alt="Step 5: Programming a Game on the ATtiny85 - Step 2 image 3" loading="lazy"></div><p>Now that you have added the sdd1306xled library - you need to change a couple things under Tools to make suree everything works ok.  If you don't do this then you might find that the games restart constantly.STEPS:In the game sketch that you have opened go to: Tools / Override Clock Source and click on 'Internal Oscillator 8MhzNext go to: Tools / Processor speed and click on 8Mhz Internal OcsillatorLastly, go to: Tools / Brown Out Detection Level and click 1.8V.  Actually not 100% sure you need to do this but it won't hurtNow you can upload the sketch into the ATtiny85.</p><h2><span class="step-num">STEP 6</span>Step 6: Playing the Game</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 6: Playing the Game image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 6: Playing the Game image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 6: Playing the Game image 3" loading="lazy"></div><p>Most of the games are quite simple to play so you don't really need instructions on how to play them. I have included the instructions on how to play in the next step.I haven't included Pacman or Tetris in this build. They are available but Pacman needs some additional steps and I didn't want to confuse anyone. Tetris uses a different style OLED so that's for another build.If you are looking for other games then just do a search on Google for ATtiny85 games and see what you can find. Make sure you test them on a breadboard first before committing them to a PCB.A lot of the games only use 2 buttons but I have included 3 (left, jump, right) so you can play multiple games on the one boardThat's it! Build a bunch more using the other games and give them away to your friends and family.</p><h2><span class="step-num">STEP 7</span>Step 7: Game Instructions</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 7: Game Instructions image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 7: Game Instructions image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 7: Game Instructions image 3" loading="lazy"></div><p>Bat BonanzaBat bonanza is a clone of the classic pongPressing and releasing the left button cycles through modes, including two-player games and one-player modes with varying degrees of difficulty. Also, from standby, press and hold the left button to reset all settings BreakoutUse the left and right buttons to control the paddle at the bottom of the screenFroggerUse the left & right buttons move the frog across the screenThe middle button moves the frog forwardFrom standby, press and hold left button to turn sound on and offFrom standby, press and hold left button with the right button held to reset high scoreRun Dude runLEFT and RIGHT buttons move the little dude.  Just don't let any missiles hit you!Snake Classic snake game which only uses the left button to control the snakeSpace AttackLEFT and RIGHT buttons move the spaceshipMiddle button to fireFrom standby, press and hold left button to turn sound on and offPress and hold left button with the right button held to reset high scoreUFO & Stacker - 2 games on one ATtinyTo play Stacker - press and release left buttonTo play UFO - with the right button held, press and release left buttonTo turn sound on and off - press and HOLD left buttonTo reset high scores to zero - whilst HOLDING the right button, press and HOLD the left button</p>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>555 Fizzle Loop Synth V4</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">555 Fizzle Loop Synth V4</span>
+</nav>
+<h1>555 Fizzle Loop Synth V4</h1><div class="source"><a href="https://www.instructables.com/555-Fizzle-Loop-Synth-V4/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="555 Fizzle Loop Synth V4" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: The Circuit & Board</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: The Circuit & Board image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: The Circuit & Board image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: The Circuit & Board image 3" loading="lazy"></div><p>I created a schematic and board files in Eagle which makes life a lot easier when putting the PCB together.  You can find the schematic and board files along with the gerber files in this Google Drive link.  All you need to do if you want to get one printed is to save the gerber file and send it to someone like JCLPCB (Not affiliated) and they'll print up the board for you.If you know how to use Eagle then please take a look at the schematic and board and see if you can make any improvements.  If you have never used Eagle before, then I highly recommend the following 2 Sparkfun's tutorials.Creating SchematicsCreating BoardsYou can download Eagle for free hereIt's actually easier then it seems and a lot of fun as wellI've included a PDF of the schematic along with a parts list.  You can also find this information in the Google drive link above.555 Fizzle Loop Synth.pdfDownload555 Fizzle Loop Synth.pdfDownloadParts List - 555 Fizzle Loop Synth Circuit.pdfDownload</p><h2><span class="step-num">STEP 2</span>Step 2: The Rest of the Parts</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 2: The Rest of the Parts image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: The Rest of the Parts image 2" loading="lazy"><img src="images/step03_03.png" alt="Step 2: The Rest of the Parts image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: The Rest of the Parts image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: The Rest of the Parts image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: The Rest of the Parts image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: The Rest of the Parts image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: The Rest of the Parts image 8" loading="lazy"></div><p>Along with the circuit, you'll need a few other parts to be able to build this synth.  Parts:1. Opal Acrylic - eBay.  You can use any colour you want 2. 40mm X 80mm X 10mm length of hard wood (for making the case) - Hardware store3. Potentiometer Knobs x 5 - eBay4. Potentiometer slider Knob - eBay5.  Rotary Switch 3 positions - eBay6. 2 X SPDT switches - eBay7. Momentary 'lock' switches - Ali Express.  The ones I got have LED's in them but I had issues getting to work.  8. Water Decal - eBay9. Voltage regulator and Charger module - eBay10. Battery.  I like to use mobile batteries as i can usually get them for free from my local e-waste.  However, if you can't then you could use any li-po style battery.  you could even just use a 9v and you wouldn't need the voltage regulator module</p><h2><span class="step-num">STEP 3</span>Step 3: Putting the Circuit Board Together</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Putting the Circuit Board Together image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Putting the Circuit Board Together image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Putting the Circuit Board Together image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Putting the Circuit Board Together image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Putting the Circuit Board Together image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Putting the Circuit Board Together image 6" loading="lazy"></div><p>This is pretty straight forward as all you need to do is to add the components as per what the board has printed on it.  However, I've added a bit of a diagram to show where the the parts not soldered onto the board need to go.Steps:1. As always, I start with the flattest components which happens to be the resistors2. Once these are soldered on I start then with the IC sockets.  You might notice that there isn't any sockets for the 555 timers.  Only reason why is I ran out of them!3. I usually add the pin connectors next and then the rest of the components like the caps and transistors.4. Once everything has been soldered I then do a test of the board to make sure everything is working ok.  It wasn't!  I missed connecting pins 2 and 6 together on the board so had to add a bodge wire to connect them together.  For some reason as well, one of the timers wasn't getting positive so I connected the pin to a positive connection via a bodge wire.  Don't worry - I have fixed these on the PCB and schematic so you won't have this issue.5. If the board works then congrats - you are ready to move onto the next step</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Front Panel</h2><div class="step-images single"><img src="images/step05_01.jpg" alt="Step 4: Making the Front Panel image 1" loading="lazy"></div><p>To design the panels I used Inkscape, a vector graphics editor which you can download for free! There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it beforeI did a video on how to design knob scales and also make a front panel which I have included above. There is even an extension that you can download so you can design knob scales easily and simply which you can download hereHowever, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also included the Inkscape file which can be found in my Google drive so you can play around with that as well if you want to.555 fizzle loop synth 2.pdfDownload</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Water Acrylic to the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Water Acrylic to the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Water Acrylic to the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Water Acrylic to the Front Panel image 3" loading="lazy"></div><p>Steps:1. Once you have your design you should print a few copies of it on normal A4 paper. This will allow you to use it as a template to decide how big to cut the opal acrylic which is what the front panel is made from.2. Cut the acrylic panel to the right size. I used a band saw to do this but you could do it by hand as well.  3. Next, print the panel design directly onto decal paper and leave to dry for 30 minutes. 4. Add the water decal to the acrylic by placing the decal into some warm water and once it start to lift off, carefully slide it onto the acrylic. Ensure everything is lined up right and remove any excess water. 5. Once fully dried, spray some clear acrylic paint on the panel and repeat 2 to 3 times.</p><h2><span class="step-num">STEP 6</span>Step 6: Drilling and Cutting the Front Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Drilling and Cutting the Front Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Drilling and Cutting the Front Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Drilling and Cutting the Front Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Drilling and Cutting the Front Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Drilling and Cutting the Front Panel image 5" loading="lazy"></div><p>Most of the drilling is pretty straight forward if you use a stepped drill piece.  There is one tricky art though and that is making the slit for the slider potentiometer.  I used a demel with a cutting blade to make the initial cut and then had to use some small files to finish it off.Steps:1. Before I started to drill any holes, I used a punch first to help ensure I drilled in the centre.2. Next, use a stepped drill piece to drill out the holes for the pots, switches and speaker grill3. Once all the holes have been drilled it's time to make the slit for the slider pot.  To do this I placed a metal ruler against the panel and aligned it up the the line where the slot needs to go. I then secured it in place with a couple of clamps and carefully made the cut with a cutting wheel on a dremel4. Once I had the initial cut I then enlarged and cleaned the skit up with some small files5. Laslty, I drilled a couple small holes for the screws that are used to attched the slider pot to the front panel</p><h2><span class="step-num">STEP 7</span>Step 7: Making the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Making the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Making the Case image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 7: Making the Case image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 7: Making the Case image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 7: Making the Case image 9" loading="lazy"></div><p>I used some strips of hardwood to make the case. It's used for edging and can be brought at any hardware store. The dimensions are 40mm X 10mm X 1000mmSteps: 1. The first thing you need to do is to cut a groove along the wood in order to secure the panel into. I use a dremel with a router attachment to do this. 2. Secure the wood with some clamps and run the bit near the top of the wood. Take your time and make sure you keep the dremel nice and straight. 3. Measure and cut the wood to size. The best way to do this is to just slip in the front panel into the groove of the wood and measure where to make the cuts 4. Once the wood is cut I like to then round off the edges.  The easiest way to do this is to use a belt sander and just round the edges this way.  You could do it once the panel as been added but there is a danger that you might sand the front panel (I have done this in the past and its not good)4. Before you secure the front panel into the case, paint the top edges of the wood. When the panels in place it will make it hard to do and you might get paint on the panel. I used some clear stain to highlight the grain in the wood. The reason why you don't paint it all is you need to sand the wood once the case is complete. 5. Place the front panel into the grooves of the wood and use some PVC to glue it together. If you find the panel is a little big and the wood doesn't right then just remove a little of the acrylic along the edge with a sander. 6. Clamp and leave to dry for 12 hours.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Components to the Front Panel</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Adding the Components to the Front Panel image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Adding the Components to the Front Panel image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Adding the Components to the Front Panel image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Adding the Components to the Front Panel image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Adding the Components to the Front Panel image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Adding the Components to the Front Panel image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Adding the Components to the Front Panel image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Adding the Components to the Front Panel image 8" loading="lazy"></div><p>Now that you have the front panel secured into the case, it's time to add the components.Steps:1. Secure the potentiometers to the front panel.  Be careful when tightening the nuts as you don't want to damage the front panel graphics.2. Next, add the slider pot.  You will need to drill a couple small holes if you haven't already for the screws used to hold the slider pot into place.  The best way I find to ensure that they holes are drill right is to use a caliper to measure the hole distance.  I've used masking tape before to make a template but there is a danger that the tape could lift up the graphics on the front panel3. Secure all of the switches including the momentary ones</p><h2><span class="step-num">STEP 9</span>Step 9: Making the Base for the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Making the Base for the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Making the Base for the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Making the Base for the Case image 3" loading="lazy"></div><p>Steps:1. The base is pretty straight forward.  Just measure and cut a piece of ply wood to fit onto the bottom of the case.2. Secure the base to the case with some screws3. Next, to finish off the case and make the base flush with the case, you will need to sand the sides.  This is why you secure the base now, so you can sand everything together.  I use a belt sander to do the job4. Once everything is flush you can finish painting the case and remove the base once dried</p><h2><span class="step-num">STEP 10</span>Step 10: Adding the Battery</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Adding the Battery image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Adding the Battery image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Adding the Battery image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 10: Adding the Battery image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 10: Adding the Battery image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 10: Adding the Battery image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 10: Adding the Battery image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 10: Adding the Battery image 8" loading="lazy"></div><p>Now that the base has been done, you can now go ahead and add the battery to the base.  I used an old mobile battery to run the synth as they are pretty reliable, work well on projects like this even if they are old and can be recharged meaning I don't have to remove the base every time I need to change a battery.Steps:1. To be able to charge and set the voltage I use a small module which can do both things.  I did an ible on how to use and wire-up one of these modules which can be found here2. Glue or tape the module onto the battery and connect the ground to the battery.  If you connect the positive to the module as well, I found that the module will slowly drain the power so it's best to connect the positive to the on/off switch.  Check out the wiring diagram I did below for reference3. You will also need to wire-up a micro USB module as well to the 'in' positive and negative.  The reason I don't use the one on the module is it is too recessed on the board (only fault with these modules) and it makes it hard to access.  4. To add a micro USB module to the case, use a small file and make a small cut-out, large enough for the module to sit flush in.  Glue into place.5. You can probably stop there as the rest of the wiring will be done to the front panel which is the next step</p><h2><span class="step-num">STEP 11</span>Step 11: Wiring Everything Up</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: Wiring Everything Up image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: Wiring Everything Up image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 11: Wiring Everything Up image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 11: Wiring Everything Up image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 11: Wiring Everything Up image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 11: Wiring Everything Up image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 11: Wiring Everything Up image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 11: Wiring Everything Up image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 11: Wiring Everything Up image 9" loading="lazy"></div><p>The first image shows you how to wire all of the components up to the circuit board.  Whenever I wire something like this I always do 2 things; first, I make sure that I lay the base next to the main section of the case.  This will allow you to easily lay everything flat when adding the wires and will help if you ever have to take it apart again.  Second, I make the wires as short as I can but ensure that the case and base can lay flat.Steps:1. First, wire-up the momentary latching switches. Note that one solder point on the switch needs to be wired to one of the 'key' solder points on the PCB. Wire from left to right. The last solder point (the 7th one) on the PCB needs to be attached to each of the other wire solder points on the switch. The easiest way to do this is to just connect all of the solder points on the momentary switches together and then connect them to the PCB.2. next, wire up is all of the pots.  Take your time and refer to the reference image to make sure you wire them the right way.3. Wire-up the rest of the switches, LED, LDR and speaker.  4. If you want to be able to plug in an external speaker (recommended) you will need to add an audio socket as well.  Use a switching one so when you plug in the jack, the speaker in the synth turns off and only the external speaker can be heard4. Lastly, connect the PCB to the solder points on the voltage regulator module.5. before closing, give the synth a test to make sure it is working properly</p><h2><span class="step-num">STEP 12</span>Step 12: So What's Next?</h2><p>I'm really pleased with the way that this little synth turned out!  It's a lot of fun to play and the tones produced are actually pertty decent.  I think my favourite thing about this build would be the the different beats it can generate and the 'playability' of it.I think for version 5 I will look at adding an extra vactrol like I did in V2 and see if I can can a couple different filters.  Maybe I'll add 2 LDR's as well so you can play 2 different tones at the same time.There are so many different mods you could do this this synth and I guess that's why I keep on coming back to it and tryig different things out.</p>
+</body>
+</html>

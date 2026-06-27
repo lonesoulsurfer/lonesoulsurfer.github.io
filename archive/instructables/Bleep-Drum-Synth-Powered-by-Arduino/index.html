@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bleep Drum Synth - Powered by Arduino</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Bleep Drum Synth - Powered by Arduino</span>
+</nav>
+<h1>Bleep Drum Synth - Powered by Arduino</h1><div class="source"><a href="https://www.instructables.com/Bleep-Drum-Synth-Powered-by-Arduino/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Bleep Drum Synth - Powered by Arduino" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.Parts List.pdfDownload</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step03_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step03_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.STEPS:Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 2: Adding the Components Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 2: Adding the Components Part 1 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 2: Adding the Components Part 1 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 2: Adding the Components Part 1 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 2: Adding the Components Part 1 image 5" loading="lazy"></div><p>As the PCB is 2 sided, the order you add the components does matter. If you get it wrong it's not the end of the world but it might make it a little harder to add some component.STEPS:As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.I've included a mini JST connector to power the board. Solder the connecter next into place.A quick note on powering the synth. As I only need positive and ground I have used a JST connector to connect it to power. However, I have included space to add a Eurorack 16 pin adapter in case you want to power it using traditional Eurorack power sourcesYou can now add the capacitors, start with the polyester caps and then add the electrolytic caps.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Arduino</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 3: Adding the Arduino image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 3: Adding the Arduino image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 3: Adding the Arduino image 3" loading="lazy"></div><p>STEPS:Now it's time to add the Arduino. I always include header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board. Plus, if the Arduino fails for whatever reason, you can easily remove and replace it.Add the header pins to the Arduino and then place them into the board and solder into place.You can then remove the Arduino Nano from the header pins to make it easier to add the rest of the components to the other side of the board</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Components Part 2</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 4: Adding the Components Part 2 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 4: Adding the Components Part 2 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 4: Adding the Components Part 2 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 4: Adding the Components Part 2 image 4" loading="lazy"></div><p>Now it's time time to add the components to the front of the PCB.STEPS:First, place the RGB LED into place, making sure that it's sitting up a little bit from the board. This way it will poke through the front panelNow you can add the 5 momentary switches.  I usually put them all into place and then solder the legs into place.   Flip the PCB over and make sure that they are all sitting fat.  If not, then just re-heat the solder and push down on the switchNext add the audio jacks and then the larger momentary switchesLastly, solder the pots into place</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Front Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 5: Adding the Front Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 5: Adding the Front Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 5: Adding the Front Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 5: Adding the Front Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 5: Adding the Front Panel image 5" loading="lazy"></div><p>STEPS:The front panel has been designed so it fits perfectly onto the PCB. Carefully place the front panel so it aligns with the components and push it into place. I usually start with the on/off switch and then align the pots and LED with the holes in the front panel.You may need to trim the little tabs on the pots if they have them.As there is nothing to secure the bottom of the front panel to the PCB, I have added a couple holes so you can add some spaces (M2) and ensure that the bottom section is connected.You can add the nuts to the pots, audio jacks and on/off switch to secure the front panel to the PCB.Now that the front panel is in place, you can either make an individual case to house it in or add it to your Eurorack.</p><h2><span class="step-num">STEP 6</span>Step 6: Uploading the Sketch to the Arduino</h2><div class="step-images single"><img src="images/step08_01.png" alt="Step 6: Uploading the Sketch to the Arduino image 1" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.STEPS:Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my GitHub pageConnect your Arduino and upload the sketchOnce the sketch is loaded to Arduino you can connect it to the PCB for testing.Connect the PCB to a 9V to 12V power source and check that the Drum synth works. Plug a speaker in to the out jack and hit the start button. Check out the 'How to Play' in the last step and start to create some beats. if you hear sounds then you have successfully loaded the sketch and solder the PCB correctly.If you're not hearing anything, then you might need to do some troubleshooting.</p><h2><span class="step-num">STEP 7</span>Step 7: How to Play</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 7: How to Play image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 7: How to Play image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 7: How to Play image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 7: How to Play image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 7: How to Play image 5" loading="lazy"></div><p>Play – Stop and start playback of selected sequence. Light will blink white on the beat.Record – Start and stop additive recording. Any pad played will be added to the sequence.Light blinks red.Beat – Tap to increase/decrease tempoClick track - Hold shift for 4 seconds to turn on and off click while the device is playingShift + pad - Change to that color sequence. Light will change to that color.Shift + tap + right knob = Change tempo with knob.Shift + Play = Reverses samplesPlay + Record = Erase current sequence.NOISE MODE Hold shift while turning on the device. The light will turn green. Hitting shift again will turn it pink and blinkyGreen – Pots control the pitch just like normalPink – Pots control noise.All other controls are the same.</p>
+</body>
+</html>

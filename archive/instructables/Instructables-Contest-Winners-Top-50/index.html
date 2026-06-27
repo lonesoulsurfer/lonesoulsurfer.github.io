@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instructables Contest Winners - Top 50</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Instructables Contest Winners - Top 50</span>
+</nav>
+<h1>Instructables Contest Winners - Top 50</h1><div class="source"><a href="https://www.instructables.com/Instructables-Contest-Winners-Top-50/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Instructables Contest Winners - Top 50" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.png" alt="Intro 2" loading="lazy"><img src="images/intro_03.png" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step02_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step02_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step02_03.png" alt="Supplies image 3" loading="lazy"></div><p>RUN THE PYTHON SCRIPT YOURSELFIt's super easy to run the python script yourself if you want to. Just follow the instructions below and run it on your computer.<strong><em>Go to the next step to see the results</strong></em>Install PythonIf you don't already have Python installed, download and install it from the official website. Make sure to tick "Add Python to PATH" during installation.https://www.python.org/downloads/Download the scriptDownload from my GitHub page file which includes 'instructables_top_winners.py' and save it somewhere easy to find, such as your Desktop or a folder called C:\Instructables.Open Command PromptPress Windows key + R, type cmd and press Enter. A black window will open — this is the Command Prompt.Install required packages (one time only)Copy and paste these two commands into the Command Prompt, pressing Enter after each one. Wait for each to finish before running the next.pip install playwright openpyxlplaywright install chromiumRun the scriptDouble-click the instructables_top_winners.py file to run it. A window will open showing live progress as it works through every contest. This may take some time — there are over 1,300 contests to process so be patient and let the script run in the background.Find your output filesWhen it finishes, three files will be saved in the same folder as the script:XLSXFormatted Excel workbook with the full winners tableCSVRaw data file you can open in any spreadsheet appHTMLReady-to-paste table for publishing on Instructables</p><h2><span class="step-num">STEP 1</span>Step 1: Results</h2><div class="step-images single"><img src="images/step03_01.png" alt="Step 1: Results image 1" loading="lazy"></div><p>Check out the link to see the winnershttps://lonesoulsurfer.github.io/Instructables_Contest_Winners/The results can also be found on GitHub.  You can download 3 different file formats of the list from my GitHub page. There is an Excel, HMTL and CSV files available. These are the outputs you get after the Python script has ran.The results don't just supply a list of the highest competition winners. It also provides the following:Link to the Instructable member so you can go check them outHow many competitions they have wonwhere they rank overallJoin dateTotal Instructables publishedTotal viewsNumber of followersIf you want a longer list of competition winners, then check out the next step.</p><h2><span class="step-num">STEP 2</span>Step 2: Changing the Amount of Winners for a Longer List</h2><div class="step-images"><img src="images/step04_01.png" alt="Step 2: Changing the Amount of Winners for a Longer List image 1" loading="lazy"><img src="images/step04_02.png" alt="Step 2: Changing the Amount of Winners for a Longer List image 2" loading="lazy"></div><p>You can change the number of winners that the script outputs.  It is very simple and can provide a list of a 1000 winners (or more) if you want that many.STEPS:Go to where you saved the 'Instructable_top_winners' python scriptClick on the script and then - right click / open with / notepadgo down to about line 60 (see images for exact spot) where you will see the line starting with 'Top_N = 50'Just change the number to the amount of winners you want to seeYou can also change the amount of contests the script looks at by change the 'MAX_CONTESTS = 0' number to say 50 just to test the system.</p>
+</body>
+</html>

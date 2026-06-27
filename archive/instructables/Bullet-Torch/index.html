@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bullet Torch</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Bullet Torch</span>
+</nav>
+<h1>Bullet Torch</h1><div class="source"><a href="https://www.instructables.com/Bullet-Torch/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Bullet Torch" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Things to Gather image 6" loading="lazy"></div><p>Parts:</p>
+<ul>
+<li>44. Magnum bullet casing. These can be purchased from Etsy</li>
+<li>Super bright LED – eBay</li>
+<li>Micro switch – eBay</li>
+<li>Button batteries CR927– eBay</li>
+<li>Lock Nut – it needs to be just larger than the opening of the bullet. I used a lock nut.</li>
+<li>Small springs. These were scavenged from a small LED candle I had. Most small toys have springs in them in the battery compartment</li>
+<li>Thin piece of copper</li>
+<li>Thin wire</li>
+<li>Heat-shrink</li>
+</ul>
+<p>Tools:</p>
+<ul>
+<li>Drill</li>
+<li>Grinder</li>
+<li>Pliers</li>
+<li>Sandpaper. 240 grit and 800 to 1200 grit paper</li>
+<li>Super glue</li>
+<li>Soldering iron</li>
+<li>Vice</li>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Making the Bullet Head</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Making the Bullet Head image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Making the Bullet Head image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Making the Bullet Head image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Making the Bullet Head image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Making the Bullet Head image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Making the Bullet Head image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Making the Bullet Head image 7" loading="lazy"></div><p>The first step is to make the bullet head. You need to find a lock nut that is slightlybigger than the bullet.</p>
+<p>Steps:</p>
+<ul>
+<li>Grind all of the corners off on the nut using a grinder. Go slowly and hold the nut with some needle nose pliers so you don’t lose the shin on your fingers.</li>
+<li>Once the corners have been removed, continue to round out the nut on the grinder. Make sure though that you don’t grind too much as the nut will be too loose for the bullet.</li>
+<li>Once you have the nut rounded and is slightly larger than the bullet, you can then start to sand down the nut.</li>
+<li>Use heavier sandpaper first like 240 grit or 400, and then move onto a 800 or 1200 grit for the final smoothing. On the lock nut there is a lip at the top, I tried not to sand this as it gives the nut a more “bullet” look. It takes a little longer to sand but the effect is worth it.</li>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Ring</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Ring image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Ring image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Ring image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Ring image 4" loading="lazy"></div><p>Steps:</p>
+<ul>
+<li>Twist a piece of copper around some needle nose pliers and make a ring out of it.</li>
+<li>Cut the copper and bend into shape so it makes a circle</li>
+<li>Next add some flux and solder to the end of the bullet, heat-up with a small blow torch and carefully attach the ring so the solder melts into it and the bullet.</li>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Battery Spring and Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Battery Spring and Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Battery Spring and Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Battery Spring and Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Battery Spring and Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Battery Spring and Switch image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Battery Spring and Switch image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Adding the Battery Spring and Switch image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 4: Adding the Battery Spring and Switch image 8" loading="lazy"></div><p>This is probably the fiddliest part. You need to add the switch to the bullet caseand solder one of the legs to the inside!</p>
+<p>Steps:</p>
+<p>Spring</p>
+<ul>
+<li>Find a spring to use. The best ones are ones used in battery cases like AAA battery case or something even smaller.</li>
+<li>The springs are usually mounted onto a piece of metal. Cut this down so it fits into the bullet case</li>
+<li>Stretch the spring so it comes just past half way up the bullet case. If you don’t do this then the batteries will be too loose in the case</li>
+</ul>
+<p>Switch</p>
+<ul>
+<li>Drill 2 small holes into the bullet case as shown below. One needs to be slightly larger so the wire on the switch can fit through.</li>
+<li>Solder a piece of thin wire to one of the legs of the switch and add a piece of heat shrink to it. Thread the wire through the larger hole in the bullet and push the legs of the switch through both holes.</li>
+<li>Bend the leg of the switch without wire so it is touching the inside of the bullet case.</li>
+<li>Solder the leg onto the bullet case.</li>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the LED and Head of the Bullet</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the LED and Head of the Bullet image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the LED and Head of the Bullet image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the LED and Head of the Bullet image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the LED and Head of the Bullet image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the LED and Head of the Bullet image 5" loading="lazy"></div><p>Steps:</p>
+<ul>
+<li>Add the Led to the inside of the nut and super glue into place</li>
+<li>Next trim one of the LED legs and solder on the wire from the switch. Make sure you add a small piece of heat-shrink to cover up the exposed wire. Bend the leg down and across to make way for the spring.</li>
+<li>Trim and solder a small spring to the other led leg.</li>
+</ul>
+<p>Note – when doing this section, make sure you are aware of the polarities of the LED. On my one I had the positive end of the battery facing-up which did work but wasn’t ideal. You really want the positive facing down. The reason being the solder on the switch will probably touch the side of the battery and on button batteries, the side is positive as well as the bottom of the battery.</p>
+<ul>
+<li>Add the batteries to the bullet case. The batteries I used are actually 3v but very low amperage so the total is 6v. Usually this would just blow the LED straight away, but the low amperage ensures this doesn’t happen (I think anyhow!)</li>
+<li>Carefully push down the top of the bullet into the case. If you find that the bullet head is a little loose, you can always slightly bend the top of the bullet case in a couple of spots. Just be careful not to bend too much!</li>
+<li>Test! You should now have a super small, super bright bullet torch.</li>
+</ul><h2><span class="step-num">STEP 6</span>Step 6:</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: image 3" loading="lazy"></div><p>This was a really fun and challenging project. When I discovered that I had some button batteriesthat would actually fit into the bullet case, I knew I had to try and make a mini torch.</p>
+<p>I was especially happy on how the head of the bullet turned out. For some time I was hunting around in my shed, trying to find the best bit to add for the head. As soon as I saw the bolts I knew what to use. Smoothing them out worked really well, although it took a few goes before I perfected it. The hardest thing about making the bullet head was ensuring that it wasn’t too small to fit correctly into the bullet. The trick is to make sure that it just doesn’t fit before you start to sand.</p>
+<p>One of the trickiest parts was the switch! I should have wired-up the batteries so the negative pole was at the top and the positive at the bottom. Since I didn’t, the soldering point on the switch to the bullet kept touching the side of the battery and wouldn’t work. I fixed it in the end but it is very frustrating trying to work out what was wrong. If you could incorporate the micro switch inside the bullet and only have the top of the switch sticking out of a hole, then this would have kept the bullet shape more true. It would be finicky but I think you could do it…Maybe next time.</p>
+</body>
+</html>

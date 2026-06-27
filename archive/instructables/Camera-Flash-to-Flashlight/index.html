@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camera Flash to Flashlight</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Camera Flash to Flashlight</span>
+</nav>
+<h1>Camera Flash to Flashlight</h1><div class="source"><a href="https://www.instructables.com/Camera-Flash-to-Flashlight/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Camera Flash to Flashlight" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Please note that this build was a rummage one and I just used parts that I had on hand.  I had to use a few parts that were probably not ideal but did the job.  I’ve highlighted these below and have also included alternatives to the parts that I used.Parts1.       Vintage Camera Flash – eBay2.       3 X LED’s (1w) – eBay3.       Dimmer (actually a 3v motor speed control!) – eBay4.       2 X Solar Panels 4.5V – eBay. 5.       3 X AAA battery holder – eBay.6.       3 X AAA Rechargeable batteries – eBay7.        Potentiometer Knob – eBay8. Diode - eBay9. Socket for DC charging - eBay10. 4.5V charger - eBayTools1.       Soldering Iron2.       Pliers3.       Itty bitty screwdrivers and phillips heads4.       Hot glue5.       Superglue</p><h2><span class="step-num">STEP 2</span>Step 2: Pull Apart the Flash</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Pull Apart the Flash image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Pull Apart the Flash image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Pull Apart the Flash image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Pull Apart the Flash image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Pull Apart the Flash image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Pull Apart the Flash image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Pull Apart the Flash image 7" loading="lazy"></div><p>The first thing to do is to pull apart the flash.  Remember to keep all of the screws and other parts for later useSteps:1.       Carefully remove all of the screws holding the case together and keep these in a safe place.  Look for any “hidden” screws as well2.       Open the case up and if any bits fall out, place these with the screws.  3.       Inside will be a very large capacitor.  DON’T TOUCH THIS!  It’s more than likely that it is still charged and will give you a nasty shock.  To discharge, just a screwdriver with a plastic handle and touch the two connecting points.  If you hear a pop then you have discharged it and if you don’t hear anything, then tap it a few more times just to make sure4.       Remove the cap and another other of the circuitry.  Keep it though as there’s probably some interesting parts you might be able to use in other projects5.       Lastly, remove the flash reflector section and take out the glass flash section.  I just used a pair of pliers and broke this</p><h2><span class="step-num">STEP 3</span>Step 3: Add the LED's</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Add the LED's image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Add the LED's image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Add the LED's image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Add the LED's image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Add the LED's image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Add the LED's image 6" loading="lazy"></div><p>Now that you have the flash apart, it’s time to add the LED’s to the reflector section.  I went with 3 LED’s but you could use more or less – up to youSteps:1.       First find which pins on the LED’s are positive and which are ground by testing each one2.       Line up the LED’s with positive facing up and ground facing down.  You now need to connect each of the ground and positives together3.       Add some solder to each of the solder pads on the LED’s and with  a thin piece of wire (resistor leg works well) connect each the positive and ground points4.       Solder a wire to each end of the LED’s as shown5.       Attach the LED’s inside the reflective flash section with some hot glue.  I did try superglue initially but this didn't work.6.       The wires can go through the holes on each side of the flash</p><h2><span class="step-num">STEP 4</span>Step 4: Add the Dimmer</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Add the Dimmer image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Add the Dimmer image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Add the Dimmer image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Add the Dimmer image 4" loading="lazy"></div><p>As I mentioned in the parts section, the dimmer is actually a motor controller.  I find though that these work really well as LED dimmersSteps:1.       First, locate a good spot on the flash to have the pot coming out of.the flash2.       Drill a hole and attach the pot3.       You will need to connect the battery and LED wires a little later on so make sure that the dimmer circuit is secured inside the flash and accessible 4.       You can also add the pot knob as well</p><h2><span class="step-num">STEP 5</span>Step 5: Batteries</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Batteries image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Batteries image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Batteries image 3" loading="lazy"></div><p>These little LED’s run fine on 3V’s.  The 3 rechargeable batteries have a total of 3.6V which is also fine for the LED’s.  However, test them to make sure that they aren’t overheating and if they do start to get hot, add a resistor to reduce the current.Steps:1.       Most old flashes use 4 X AA batteries.  If your battery compartment isn’t all corroded (mine was), then you could just re-use the terminals and connect one of them together so you only need 3 X Aa batteries.  You could also just replace the terminals (I did an ‘ible on how to do this) and add a spare battery inside as a spacer.  I used a 4 X AA battery holder for mine2.       I had to change it into a 3 X AA battery holder so added a jumper wire from positive to ground in one of the battery compartments3.       Next, place the batteries into the holder and fit it into the battery compartment.4.       The wires will be connected to the dimmer in a later step</p><h2><span class="step-num">STEP 6</span>Step 6: Solar Panels and External Socket</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Solar Panels and External Socket image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Solar Panels and External Socket image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Solar Panels and External Socket image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Solar Panels and External Socket image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Solar Panels and External Socket image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Solar Panels and External Socket image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Solar Panels and External Socket image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Solar Panels and External Socket image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 6: Solar Panels and External Socket image 9" loading="lazy"></div><p>To make this torch very portable, I decided to add some solar panels as well.  You can charge the batteries either by the sun or via a socket.Steps:1.       Solder some wires to the positive and ground on the panel2.       Drill a couple of holes into the side of the flash for the wires to go through.  The best way to work out where to drill the holes is to make a template out of masking tape and mark where the solder points are.3.       Place some double sided tape onto the back of the panels and stick to the side of the flash4.       As the solar panels are connected in parallel, you need to connect positive to positive and ground to ground on the panels5.       To make sure that power flows only one way you need to add a diode to the positive wires.6.       If you don’t already have a hole in the side of the flash (there might be a button or could remove) then drill one and attach the female socket for the DC power.7.       Add a couple of wires to the solder points8.       The wires from the socket and solar panels will be connected to the dimmer in the same spot as the battery wires</p><h2><span class="step-num">STEP 7</span>Step 7: Connecting All the Wires</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Connecting All the Wires image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Connecting All the Wires image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Connecting All the Wires image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Connecting All the Wires image 4" loading="lazy"></div><p>Now that you have everything in place, it’s time to connect all those wires together.Steps:1.       First, connect the wires from the LED’s to the “motor” section on the dimmer.  It will say motor as it’s actually a speed controller.  Make sure the polarities are correct.2.       Now you need to connect the wires from the battery, solar panels and socket together.  Just strip the plastic off each wire and twist them together.  3.       Next, you need to connect each of the positive and ground wires you just twisted to the power section on the dimmer.  Again, making sure the polarities are correct4.       Test to make sure everything is working as it should.  If it is you are ready to close up the case</p><h2><span class="step-num">STEP 8</span>Step 8: Final Step - Close the Case and Adding a Mounting Screw</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Final Step - Close the Case and Adding a Mounting Screw image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Final Step - Close the Case and Adding a Mounting Screw image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Final Step - Close the Case and Adding a Mounting Screw image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Final Step - Close the Case and Adding a Mounting Screw image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Final Step - Close the Case and Adding a Mounting Screw image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Final Step - Close the Case and Adding a Mounting Screw image 6" loading="lazy"></div><p>Steps:1. If everything works as it should you can now close-up the case 2. Make sure that everything is put back into place and carefully screw back into the those itty bitty screws 3. Next I wanted to be able to mount it onto a tripod.  I added the mounting bracket and realised that I would need to modify it so it could screw into a tripod mount.  I just removed the original mount and added a screw.  It's a little weird how it mounts to the tripod but it works.That's it!  You now have your very own flash flashlight!</p>
+</body>
+</html>

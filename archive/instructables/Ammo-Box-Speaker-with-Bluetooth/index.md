@@ -1,4 +1,4 @@
-# Ammo Box Speaker (with Bluetooth) : 13 Steps (with Pictures) - Instructables
+# Ammo Box Speaker (with Bluetooth)
 
 Source: https://www.instructables.com/Ammo-Box-Speaker-with-Bluetooth/
 
@@ -7,4 +7,225 @@ Source: https://www.instructables.com/Ammo-Box-Speaker-with-Bluetooth/
 ![Cover](images/cover.jpg)
 
 
-## Step 1
+## Introduction
+
+![Intro 1](images/intro_01.jpg)
+
+![Intro 2](images/intro_02.jpg)
+
+![Intro 3](images/intro_03.jpg)
+
+![Intro 4](images/intro_04.jpg)
+
+![Intro 5](images/intro_05.jpg)
+
+
+## Step 1: Parts and Tools
+
+![Step 1: Parts and Tools image 1](images/step02_01.jpg)
+
+![Step 1: Parts and Tools image 2](images/step02_02.jpg)
+
+![Step 1: Parts and Tools image 3](images/step02_03.jpg)
+
+Parts:1.  Amp - eBay2.  2 x speakers.  You can buy them on eBay or just salvage from a car or surround sound system.3.  2 x computer fan covers.  eBay4.  Knobs -  eBay5.  12 battery - I used this one Century PS1280.  You just need a 12v battery that will fit into the ammo box so use anything cheap that you can find6.  Ammo box.  You can get these on eBay or just visit your local army surplus store7.  Bluetooth module - eBay8.  12v to 5v converter - eBay9.  A bunch of speaker wire and other wires as necessary10. 40mm vent cover - eBay11.  20mm PVC coupling12.  Copper tubing (8mm)13.  Self tapping screws14.  Various nuts and bolts15.  on/off switch - eBayTools:1.  Jigsaw2.  Hot glue3.  Soldering iron4.  Drill and various bits5.  Various screwdrivers etc6.  Files
+
+
+## Step 2: Scavenging the Speakers
+
+![Step 2: Scavenging the Speakers image 1](images/step03_01.jpg)
+
+![Step 2: Scavenging the Speakers image 2](images/step03_02.jpg)
+
+![Step 2: Scavenging the Speakers image 3](images/step03_03.jpg)
+
+![Step 2: Scavenging the Speakers image 4](images/step03_04.jpg)
+
+As mentioned earlier in the 'ible, I decided to use some scavenged speakers from a surround sound system.  Initially though I went with some speakers I had lying around but decided against it.  You will see some of the images are from the original speakers I used throughout the 'ible.Steps:1.  Scavenge the speakers and remove from the cowling.2.  De-solder any wires that may be attached top the speakers.
+
+
+## Step 3: Cutting the Speaker Holes
+
+![Step 3: Cutting the Speaker Holes image 1](images/step04_01.jpg)
+
+![Step 3: Cutting the Speaker Holes image 2](images/step04_02.jpg)
+
+![Step 3: Cutting the Speaker Holes image 3](images/step04_03.jpg)
+
+![Step 3: Cutting the Speaker Holes image 4](images/step04_04.jpg)
+
+![Step 3: Cutting the Speaker Holes image 5](images/step04_05.jpg)
+
+![Step 3: Cutting the Speaker Holes image 6](images/step04_06.jpg)
+
+![Step 3: Cutting the Speaker Holes image 7](images/step04_07.jpg)
+
+Steps:1.  Mark out on the ammo box the diameter of the speakers2.  Drill a hole inside the circle to enable the jigsaw blade to fit through3.  Using the jigsaw, carefully cut out the speaker inserts.  Take your time with this as you will need to slowly turn the box as you cut the holes out.4.  Lastly file the edges and remove any burrs.
+
+
+## Step 4: Pull Apart the Amp
+
+![Step 4: Pull Apart the Amp image 1](images/step05_01.jpg)
+
+![Step 4: Pull Apart the Amp image 2](images/step05_02.jpg)
+
+![Step 4: Pull Apart the Amp image 3](images/step05_03.jpg)
+
+![Step 4: Pull Apart the Amp image 4](images/step05_04.jpg)
+
+![Step 4: Pull Apart the Amp image 5](images/step05_05.jpg)
+
+The amp that I chose to use can be picked-up for very cheap on eBay.  I've used them before and they work great.  Plus they are easy to pull apart.Steps:1.  Take off the knobs2.  Remove the small bolts that are around the pots3.  remove the cowling by un-screwing the screws on the bottom and on the back4.  Carefully pull out the circuit board.  You might need to give it a wiggle to get it out
+
+
+## Step 5: Attaching a Toggle Switch
+
+![Step 5: Attaching a Toggle Switch image 1](images/step06_01.jpg)
+
+![Step 5: Attaching a Toggle Switch image 2](images/step06_02.jpg)
+
+![Step 5: Attaching a Toggle Switch image 3](images/step06_03.jpg)
+
+![Step 5: Attaching a Toggle Switch image 4](images/step06_04.jpg)
+
+![Step 5: Attaching a Toggle Switch image 5](images/step06_05.jpg)
+
+If you wanted to keep it as simple as possible, then you could just use the push switch that come with the amp.  I wanted to have something a little hardier (and chunkier) so went with a large toggle switch.Steps:1.  Solder a couple of wires to the terminals on the toggle switch2.  Next solder the ends of the wires to the switch terminals on the circuit board.  You could remove the switch on the board if you wanted to - I didn't see any need though.3.  You will also need to add the bluetooth module as well to the switch but I will go through that a little later.  I have also included a schematic on this page which will hopefully help
+
+
+## Step 6: Attaching the Amp to the Ammo Box
+
+![Step 6: Attaching the Amp to the Ammo Box image 1](images/step07_01.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 2](images/step07_02.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 3](images/step07_03.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 4](images/step07_04.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 5](images/step07_05.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 6](images/step07_06.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 7](images/step07_07.jpg)
+
+![Step 6: Attaching the Amp to the Ammo Box image 8](images/step07_08.jpg)
+
+Making sure that you drill the holes in the right places obviously is important.  A little off and the amp won't line-up correctly.  There is however an easy way to do this.  Just lay a piece of masking tape across the 3 pots on the amp, mark where the ends touch the masking tape, and stick to the ammo lid.  Now when you drill you can be certain that the pots will line up correctly.Steps:1.  I decided to attach the amp to the lid of the ammo box.  It made it easy to get to and also easy to attach.  You could try and put the amp on the bottom of the ammo box but it makes it hard to attach the power plug, speaker wires etc.  Drill the holes for the pots (volume controls) and switch3.  You can easily remove the lid on the ammo box by opening fully and pushing it to the left.  The lid will then come out of it's hinges.4.  Push the pots through the holes and attach the amp by replacing the bolts onto the pots.  This is enough to hold the amp in place.5.  Attach the on/off toggle switch
+
+
+## Step 7: Adding a Heat-Sink
+
+![Step 7: Adding a Heat-Sink image 1](images/step08_01.jpg)
+
+![Step 7: Adding a Heat-Sink image 2](images/step08_02.jpg)
+
+![Step 7: Adding a Heat-Sink image 3](images/step08_03.jpg)
+
+![Step 7: Adding a Heat-Sink image 4](images/step08_04.jpg)
+
+After attaching the amp I realized that the cowling acts as a heat-sink.  I decided to add one that I had lying around.  You could probably get away without attaching one, depending on what type of battery you hook the amp up to.  I thought it was better safe than sorry though.Steps:1.  There were 2 screw holes already on the board so |I just used these to attach the heat-sink.  Measure and drill a couple holes on the heat-sink so you can attach it to the circuit board2.  I had to make the holes on the board a little bigger so just used the drill again on these3.  Attach the heat-sink with a small bolt and nut.
+
+
+## Step 8: Attaching the Knobs
+
+![Step 8: Attaching the Knobs image 1](images/step09_01.jpg)
+
+![Step 8: Attaching the Knobs image 2](images/step09_02.jpg)
+
+![Step 8: Attaching the Knobs image 3](images/step09_03.jpg)
+
+Steps:1.  The knobs that I used were too small to fit onto the pot ends.  You will need to make these a little larger by drilling them out.  Make sure that they are still a tight fit though.2.  Add a little super glue to the hole in the knob and push onto the pots.  Leave this to dry for 20 minutes.
+
+
+## Step 9: Adding the Battery
+
+![Step 9: Adding the Battery image 1](images/step10_01.jpg)
+
+![Step 9: Adding the Battery image 2](images/step10_02.jpg)
+
+![Step 9: Adding the Battery image 3](images/step10_03.jpg)
+
+![Step 9: Adding the Battery image 4](images/step10_04.jpg)
+
+Steps:1.  To enable the battery to be charged, you will need to add a female socket.  Drill a hole in the side of the ammo box large enough for the socket to fit into.2.  Place the socket in the hole and screw into place3.  Solder 2 wires to the terminals on the socket and then attach to the wires on the battery.  4.  To power the amp, you will need to also attach a male jack to the battery.  Solder some wires to the male jack and attach them to the same terminals that you added the battery to.  Make sure that you make the wires long enough to be able to plug into the amp when the lid of the ammo box is open
+
+
+## Step 10: Attaching the Speakers to the Ammo Box
+
+![Step 10: Attaching the Speakers to the Ammo Box image 1](images/step11_01.jpg)
+
+![Step 10: Attaching the Speakers to the Ammo Box image 2](images/step11_02.jpg)
+
+![Step 10: Attaching the Speakers to the Ammo Box image 3](images/step11_03.jpg)
+
+![Step 10: Attaching the Speakers to the Ammo Box image 4](images/step11_04.jpg)
+
+![Step 10: Attaching the Speakers to the Ammo Box image 5](images/step11_05.jpg)
+
+![Step 10: Attaching the Speakers to the Ammo Box image 6](images/step11_06.jpg)
+
+![Step 10: Attaching the Speakers to the Ammo Box image 7](images/step11_07.jpg)
+
+Steps:1.  To ensure the speaker don't vibrate against the ammo box, it's best to add some padding on the inside of the sections that will touch the ammo box.  I used sticky sided foam and cut to fit.2.  Place the speakers into the holes in the ammo box3.  To secure the speaker to the ammo box I used some self tapping screws.  Drill the holes and screw into place.
+
+
+## Step 11: Adding the Speaker Protectors
+
+![Step 11: Adding the Speaker Protectors image 1](images/step12_01.jpg)
+
+![Step 11: Adding the Speaker Protectors image 2](images/step12_02.jpg)
+
+![Step 11: Adding the Speaker Protectors image 3](images/step12_03.jpg)
+
+![Step 11: Adding the Speaker Protectors image 4](images/step12_04.jpg)
+
+![Step 11: Adding the Speaker Protectors image 5](images/step12_05.jpg)
+
+![Step 11: Adding the Speaker Protectors image 6](images/step12_06.jpg)
+
+![Step 11: Adding the Speaker Protectors image 7](images/step12_07.jpg)
+
+To make sure that the speaker protectors are a distance away from the speakers (you don't want them touching the actual speakers) you will need to make some bushes.  I used copper tubing to make these but you could just use washers or nuts or whatever else you have around.Steps:1.  With a tube cutter, cut 8 equal pieces of copper tubing2.  Place the protectors on the speaker and mark where you will need to drill the holes.  once you are happy with the position, start drilling3.  Attach the protectors to the ammo box using screws and the bushes.
+
+
+## Step 12: Bring the Bass
+
+![Step 12: Bring the Bass image 1](images/step13_01.jpg)
+
+![Step 12: Bring the Bass image 2](images/step13_02.jpg)
+
+![Step 12: Bring the Bass image 3](images/step13_03.jpg)
+
+![Step 12: Bring the Bass image 4](images/step13_04.jpg)
+
+![Step 12: Bring the Bass image 5](images/step13_05.jpg)
+
+![Step 12: Bring the Bass image 6](images/step13_06.jpg)
+
+![Step 12: Bring the Bass image 7](images/step13_07.jpg)
+
+![Step 12: Bring the Bass image 8](images/step13_08.jpg)
+
+I decided to add a port to allow equalization of the pressure between the inside and outside of the ammo box.  The box is very well sealed and I didn't want to add undue pressure to the speakers diaphragm.  Plus I wanted to get as much bass out of it as possible and adding a port helps with this.Steps:1.  make a hole in between the 2 speakers.  I just drilled around the hole and cut away the piece of metal.  I then filed the edges smooth.2.  I also decided to add a 20mm PVC coupling to the hole.  This will allow the air to be pulled from the middle of the ammo box (have no idea if this will be a benefit of not).  If you do add the PVC coupling, then make sure the hole you make is the same size as the coupling.3.  Next screw into place a small fan shield.  Not totally necessary but is good for ascetics. 3.  Add some hot glue to the bottom of the coupling and glue it to the bottom of the ammo box with the end in the hole.
+
+
+## Step 13: Attaching the Bluetooth Module and Voltage Regulator
+
+![Step 13: Attaching the Bluetooth Module and Voltage Regulator image 1](images/step14_01.jpg)
+
+![Step 13: Attaching the Bluetooth Module and Voltage Regulator image 2](images/step14_02.jpg)
+
+![Step 13: Attaching the Bluetooth Module and Voltage Regulator image 3](images/step14_03.jpg)
+
+![Step 13: Attaching the Bluetooth Module and Voltage Regulator image 4](images/step14_04.jpg)
+
+![Step 13: Attaching the Bluetooth Module and Voltage Regulator image 5](images/step14_05.jpg)
+
+![Step 13: Attaching the Bluetooth Module and Voltage Regulator image 6](images/step14_06.jpg)
+
+Attaching the module is quite simple really.  All you need to do is to make sure that when you flick the main switch and turn the amp on, the m, the module also turns on.Steps:1.  Attach the black wire to one of the switch terminal2.  Attach the red wire from the regulator to the positive end of the battery.  You can just solder this to the terminal on the female charging socket.3.  Next, attach another wire to the other switch terminal and attach this to the negative end of the battery.  Again, you can just solder to the terminal on the female charging socket.4.  Lastly, it's time to attach the speaker wires, power jack and audio jack into the amp.  Plug everything in and make sure it all works.
+
+
+---
+*76 images archived*

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use Old Mobile Batteries to Power Anything (Almost!)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #0f0f0f;
+    color: #d4cfc8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 24px 80px;
+}
+h1 {
+    font-size: 2em;
+    color: #f0ece6;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 1.15em;
+    color: #e8a020;
+    margin: 40px 0 16px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border-left: 3px solid #e8a020;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-num {
+    background: #e8a020;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+p { margin-bottom: 14px; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+}
+.cover-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 20px 0 32px;
+}
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+.step-images img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.step-images.single img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    grid-column: 1 / -1;
+}
+.source a { color: #e8a020; font-size: 11px; font-family: monospace; }
+hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 4px; }
+code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: #fff; }
+.nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../README.html">&larr; All Projects</a>
+  <span class="nav-title">Use Old Mobile Batteries to Power Anything (Almost!)</span>
+</nav>
+<h1>Use Old Mobile Batteries to Power Anything (Almost!)</h1><div class="source"><a href="https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Use Old Mobile Batteries to Power Anything (Almost!)" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Supplies image 9" loading="lazy"></div><p>Parts:</p>
+<p>Mobile battery. Actually, you can use any li-ion battery such as ones that are used in digital camera's, MP3 players or whatever else uses them. Go to your local e-waste recycling plant or raid a phone recycling bin to get them for free. If you don't have any near you then you can always buy them on eBay.</p>
+<p>Modules for Charging and Power Conversion</p>
+<p>External Power Pack</p>
+<p>Charging and step-up module - Ali Express. This is one of my favourite modules</p>
+<p>100K Potentiometer - Ali Express</p>
+<p>SPDT Toggle switch - Ali Express</p>
+<p>Project Box - Ali Express The one used was 100mm X 60mm X 30mm</p>
+<p>Male Plug Connector - Ali Express</p>
+<p>Wire. I used ribbon wire I pulled out of old PC's.</p>
+<p>Insulated wire. This is used to connect the jack to the power box. I used an old audio cable (see image)</p>
+<p>Banana plugs - Male & Female - Ali Express</p>
+<p>Micro USB Adapter – Ali Express. This is needed as the one on the charging and step up module isn't accessible once it is in place in the case</p>
+<p>Voltage meter - eBay</p>
+<p>Mobile Battery - see step 1</p>
+<p>Tools</p>
+<p>Pliers</p>
+<p>Wire Cutters</p>
+<p>Soldering Iron</p>
+<p>Small Files</p>
+<p>Dremel (always comes in handy!)</p>
+<p>Wire cutters</p>
+<p>Superglue</p>
+<p>Drill</p><h2><span class="step-num">STEP 1</span>Step 1: Where to Find Old Mobile Batteries</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 5" loading="lazy"></div><p>This project relies on recycling old mobile batteries. Yes you could just go and buy one from eBay or Amazon but there is really no need to spend your hard earned cash when they are so readily available.</p>
+<p>So where do you find old mobile batteries? well here are a few ideas on where to find them:</p>
+<p>Family & Friends</p>
+<p>I bet someone you know has an old mobile phone sitting in the top draw somewhere that they are no longer using. It's a bit harder pulling out a battery from an iPhone but any Samsung or similar phone you can easily remove the back and extract the battery</p>
+<p>E-waste</p>
+<p>Most places these days have an e-waste or recycling centre close by. The one near me removes the batteries from any electronics and puts them in a big box! I can just rummage through it and grab what I want for free. They also have a lot of old mobile phones which I raid and take the batteries out of</p>
+<p>Phone Disposal Boxes</p>
+<p>You may have seen these around supermarkets, shopping centres etc. It's a way for people to recycle their old mobile phone and also a great source of batteries!. Make sure you get permission first before you raid the box.</p><h2><span class="step-num">STEP 2</span>Step 2: About the Voltage Module Used in This Instructable</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 3" loading="lazy"></div><p>About the Module Used in This Build</p>
+<p>The Charging & Step Up Module used in this build is an all-in-one module which allows you to charge the battery and is also a voltage regulator. It's a great little module which I've used in a number of projects. The only problem with it is the micro USB is recessed and it makes it hard to access. You can use a micro USB adapter to help extend it out which is what I have done. Plus, the way that the module is orientated in the box doesn't allow you to access the micro USB on the module.</p>
+<p>It has a tiny potentiometer on the board which you can set the voltage you want. However, the company that designed the module also included the ability to add a larger potentiometer which is what we'll be doing. I have used a 100K pot and this gives you a range for 3V to 13V. If you need higher voltages, then use a 250K pot. This will give you voltages of up to 27V!</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Micro USB Adapter to the Box</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 7" loading="lazy"></div><p>You will need a way to charge the battery. The micro USB adapter will be connected later to the charging & step up module.</p>
+<p>STEPS:</p>
+<p>First, you'll need to make a small hole in the case in order for the USB to be able to be accessed.</p>
+<p>Mark on the box where you need to make the slit and with a small drill bit, drill 3 holes as closely as possible</p>
+<p>Use a small, flat file to clean-up the slit. Measure the micro USB against the slit until it is large enough for a micro USB cable to access it</p>
+<p>Add a little superglue to the bottom of the micro USB module and glue into place</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Potentiometer to the Charging & Step-up Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 4: Adding the Potentiometer to the Charging & Step-up Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 4: Adding the Potentiometer to the Charging & Step-up Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 4: Adding the Potentiometer to the Charging & Step-up Module image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 4: Adding the Potentiometer to the Charging & Step-up Module image 4" loading="lazy"></div><p>STEPS:</p>
+<p>Place the potentiometer into the through holes in the module</p>
+<p>Carefully solder one leg into place. Make sure that the pot is sitting flush on the module</p>
+<p>Solder the rest of the legs to the module. Note that the voltage out solder points are very close to the potentiometer solder points. Be careful that you don't add a solder bridge across both these.</p><h2><span class="step-num">STEP 5</span>Step 5: Making Some Holes in the Lid of the Box</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 5: Making Some Holes in the Lid of the Box image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 5: Making Some Holes in the Lid of the Box image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 5: Making Some Holes in the Lid of the Box image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 5: Making Some Holes in the Lid of the Box image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 5: Making Some Holes in the Lid of the Box image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 5: Making Some Holes in the Lid of the Box image 6" loading="lazy"></div><p>So you'll need to drill a couple of holes for the pot, switch and also a rectangle one for the voltage regulator.</p>
+<p>STEPS:</p>
+<p>I like to use a step drill piece when drilling plastic but a normal drill bit will also be fine. Drill 2 holes in the lid and make sure you consider the battery inside the case, You should be fine adding the pot and switch anywhere you like but it's good practice to consider other components inside the case. You don't want to add a part and then realise something now won't fit.</p>
+<p>Next, you'll need to cut out a section for the voltage display. I used a Dremal with a cutting wheel to do this but you could do it with a Stanley (exacto) knife as well. My cutout was a little crooked so I used an O ring to cover up my mistakes!</p>
+<p>Lastly, you'll need to drill a couple of holes for the female banana plug connectors. These will allow you to easily change the voltage output connectors so you can use the box for multiple applications.</p>
+<p>Once the cutouts have been make, connect the switch and voltage display into the case. Don't connect the pot to the case yet. This is connected to the module and you'll need to first add a bunch of wires to the solder points.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Banana Plug Connectors</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 6: Adding the Banana Plug Connectors image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 6: Adding the Banana Plug Connectors image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 6: Adding the Banana Plug Connectors image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 6: Adding the Banana Plug Connectors image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 6: Adding the Banana Plug Connectors image 5" loading="lazy"></div><p>I decided to add a separate step for the banana plugs as you need to pull them apart first!</p>
+<p>STEPS:</p>
+<p>The first thing to do is to pull apart the banana plug. Un-screw the nut and the rest of the parts will slide off the female connector.</p>
+<p>Leave the first black ring on the connector and place it into the hole you drilled into the case. Do the same for the red one as well.</p>
+<p>Next place the other black/red ring onto the female connector on the inside of the case</p>
+<p>Place the washer, solder ring and lastly the nut into place and tighten up the nut.</p><h2><span class="step-num">STEP 7</span>Step 7: Soldering Those Wires to the Module</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 7: Soldering Those Wires to the Module image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 7: Soldering Those Wires to the Module image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 7: Soldering Those Wires to the Module image 3" loading="lazy"></div><p>Ok - now it's time to heat up the soldering iron and connect the pot and wires to the voltage module.</p>
+<p>STEPS:</p>
+<p>Before you start to add the wires, add some solder to each of the solder points in the module</p>
+<p>Also, when soldering the wires you'll need to orientate them in a way that ensures the pot will sit flat against the top of the case and not be in the way. Take a look at the pictures if this explanation makes no sense</p>
+<p>First, push the pot into the holes in the module and solder them into place.</p>
+<p>As I mentioned earlier, I used some ribbon wire recycles from old PC's. It's strong and works excellently in these types of projects.</p>
+<p>Cut some lengths of wire and connect them to each of the solder points on the module</p><h2><span class="step-num">STEP 8</span>Step 8: Connecting All Those Wires to the Components</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 8: Connecting All Those Wires to the Components image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 8: Connecting All Those Wires to the Components image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 8: Connecting All Those Wires to the Components image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 8: Connecting All Those Wires to the Components image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 8: Connecting All Those Wires to the Components image 5" loading="lazy"></div><p>I've provided a wiring schematic which will make it clear where those wires need to be soldered</p>
+<p>STEPS:</p>
+<p>Start with soldering the wires to the battery and switch (or don't - up to you!). Carefully add a little solder to each of the copper positive and negative points on the battery. Try not to keep the heat on the battery for too long as they don't really like it too much.</p>
+<p>Next, solder the wires from the USB on the module to the Micro USB adapter</p>
+<p>The wires connect to out on the module need to be connected to the female banan plugs. While you are there you can connect the wires from the voltage display also to the female banana plugs.</p>
+<p>At this stage you can probably test it and see if everything is working correctly. Turn it on and see if the voltage display is working. If so, turn the pot and see if the voltage changes. If nothing happens you might need to turn the tiny pot on the module fully to the right. Give it another go. You should find that the voltage changes as you turn the pot.</p><h2><span class="step-num">STEP 9</span>Step 9: Making the Power Connector</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 9: Making the Power Connector image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 9: Making the Power Connector image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 9: Making the Power Connector image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 9: Making the Power Connector image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 9: Making the Power Connector image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 9: Making the Power Connector image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 9: Making the Power Connector image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 9: Making the Power Connector image 8" loading="lazy"><img src="images/step11_09.jpg" alt="Step 9: Making the Power Connector image 9" loading="lazy"></div><p>The last thing to is to make a power connector so you can power whatever you need to.</p>
+<p>STEPS:</p>
+<p>I used an old audio/visual cable I picked up from e-waste for the cable. The first thing to do is to cut off the male plugs off one end and trim the wire to what length you want to make it</p>
+<p>Next, as this cable has 3 connections, snip away one of them so you are left with just 2</p>
+<p>To add the male plug connector, strip both ends of the wire and solder both wires to the solder points on the connector. Make sure though that you push over the wires the connector cover so you can screw it into place once the wires are soldered on.</p>
+<p>Next, strip the plastic coating off the wire on the other ends and secure these into the male banana plug connectors. I connected the ground (black) plug to the tip of the male connector and the positive to the sleeve. The great thing about using banana plugs is, you can always reverse them when plugging them into the power box if the thing you are trying to power is reversed.</p>
+<p>I also brought some plug adapters of different sizes which means I can use the power box on multiple plug sizes.</p>
+<p>The last thing to do is to is to set the voltage, plug it into your device and you are away!</p>
+</body>
+</html>
