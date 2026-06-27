@@ -110,6 +110,228 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Negative Voltage Supply</span>
 </nav>
-<h1>Negative Voltage Supply</h1><div class="source"><a href="https://www.instructables.com/Negative-Voltage-Supply/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Negative Voltage Supply" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Negative Voltage Circuit Parts1.       555 Timer – eBay  100 under $5!2.       5.6K Resistor.  Buy these as assorted on eBay3.       47K resistor4.       100nf Cap – Buy these as assorted on eBay5.       10nf Cap 6.       Diode 1N194 – eBay7.       10uf Cap – Buy these as assorted on eBay8.       100uf Cap9.       Prototype board - eBay10.   Assorted wiresTo make it portable1.       Case – This one would work fine from eBay.  Mines an old garage door opener I found somewhere.2. Male and Female banana plugs – eBay3.       Various wires4.       Switch - ebay5.       9V battery6.       9V battery holder - eBay7.       Voltage regulator – eBay8.       Knob for a potentiometer – eBay9. 10K Pot - eBay10. Voltage Meter - eBayTools:1.       Soldering Iron2.       Pliers3.       Wire cutters4.       Hot Glue5.       Drill6.       Cone stepper drill piece (always comes in handy for drilling holes into things)</p><h2><span class="step-num">STEP 2</span>Step 2: Breadboard It First</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Breadboard It First image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Breadboard It First image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Breadboard It First image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Breadboard It First image 4" loading="lazy"></div><p>I know this this might be self-evident but I highly recommend that you breadboard this circuit (or any that you build) first.  It will ensure that the circuit has been tested and works and is like a first run through which helps you get a better understanding of the circuit and how it is put together.Once you have built it, test with a multi meter and ensure that the voltage being supplied from the circuit is negative.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Making the Circuit - Part 1 image 4" loading="lazy"></div><p>The circuit is a really interesting one and uses a clever array of diodes and capacitors to achieve negative voltage on a capacitor plate.  Check out this link if you want further details.  If you haven’t made any circuits before then check out this Instructable which will show you the ropes.I have included the original circuit schematic along with the modified one which includes the voltage module and a momentary switch connected to the capacitor.  This switch can short the cap and discharge the voltage inside.  I had to add this as the cap held the voltage supplied from the voltage regulator and if it was high, say 12v's and I reduced the voltage to 6v's, then the negative voltage will stay at 12V and slowly come down.  The reset button discharges the cap and brings it in line with the positive voltage.Steps:1.       First thing to do is to work out how big (or small) you need to make the circuit board.  As I was putting mine inside the old garage door opener, I needed to make it as small as possible.2.       Trim the prototype board to size3.       Add a socket IC holder to the board.  This will allow you to change out the IC if faulty for any reason.4.       Connect pin 1 to the ground bus strip on the prototype board, pin 4 and 8 to the positive bus strip.5.       Add a 10nf cap to pin 2 and ground6.       Add a 100nf cap to pin 5 and ground</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Part 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Circuit - Part 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Circuit - Part 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Circuit - Part 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Circuit - Part 2 image 4" loading="lazy"></div><p>To make the circuit as small as possible, I utilized the bottom of the circuit as well.Steps:1.      Connect pins 2 and 6 together.  I use a resistor leg to do this2.       Connect pins 2 and 7 together with a 47K resistor3.       Add the positive leg of a 10uf cap to pin 3 and the negative leg to a blank spot on the prototype board.4.       Add a diode (making sure it is connected the right way) to the negative leg of the cap and ground5.       Add another diode (checking again that it is correctly connected) to the negative leg of the 10uf cap and the other leg to a blank spot on the prototype board.</p><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Part 3</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making the Circuit - Part 3 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making the Circuit - Part 3 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making the Circuit - Part 3 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making the Circuit - Part 3 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Making the Circuit - Part 3 image 5" loading="lazy"></div><p>Steps:1.       Add the negative leg from a 100uf capacitor to the end of the diode2.       Add the positive leg to ground.3.       If you used similar prototype board as me you will need to connect the ground and positive bus strips together.  Solder a couple of small wires to connect these4.       At this stage I always like to check and make sure that the circuit will fit inside my case.  There wasn’t much room inside the garage door remote I used and the circuit fitted just.  I did remove a small amount of the prototype board to make it fit a little better.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding Wires to the Circuit</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding Wires to the Circuit image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding Wires to the Circuit image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding Wires to the Circuit image 3" loading="lazy"></div><p>Next thing to do is to add a bunch of wires to the circuit.  Once you have added these you can test it to see if it is workingSteps:1.       First add 2 wires (make all wires longer then needed) to the positive bus strip.  One will be joined to the positive output on the voltage regulator and the other to a female banana plug2.       Add another 2 wires to the negative bus strip.  One will be connected to ground on the voltage regulator and the other to a female banana plug3.       Lastly, add a wire to the negative leg of the 100uf cap.  This will be connected to negative voltage banana plug</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Banana Plugs and Switches</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Banana Plugs and Switches image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Banana Plugs and Switches image 2" loading="lazy"></div><p>There wasn’t much room in my case so I had to think carefully where each of the parts were going to go, especially the banana plugs and switch. Not shown here as it was something I did later was another momentary switch which you will also need to add.  This switch will be later connected to each leg on the 100uf cap to discharge any voltage it may be holding.Steps:1.       First, drill a hole each for the 3 female banana plugs2.       Secure the banana plugs to the case. I went with from left to right, red – negative, black – ground, and red – positive.  Seemed like the most logical way to set them up3.       Drill another hole for the SPDT switch and attached this as well.4.       Drill another hole and ad the momentary switch.5.       Lastly, drill a hole in the top of the case for the wire on the voltage meter.  Push the wires through and secure the voltage meter to the case with some hot glue.  As I didn't have much room I had to stick the meter on the top of the case.  The better way is to cut out a section of the case that the meter will fit into.  It's a cleaner finish.</p><h2><span class="step-num">STEP 8</span>Step 8: Modding the Voltage Regulator</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Modding the Voltage Regulator image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Modding the Voltage Regulator image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Modding the Voltage Regulator image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Modding the Voltage Regulator image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Modding the Voltage Regulator image 5" loading="lazy"></div><p>I’m not going to go through this in a lot of detail as I have already provided details on how to do it in this ‘ible.  I have also included a diagram which will help you visualise the wiringSteps:1.       Remove the pot that is on the regulator by carefully de-soldering it2.       Grab your 10k pot and place the legs on the solder points.  Re-heat them and push the legs into place.  3.       Add a little solder if necessary to the solder points on the circuit board.</p><h2><span class="step-num">STEP 9</span>Step 9: Adding the Parts to the Case and Wiring-up</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 8" loading="lazy"></div><p>You can see in the images below, I really didn’t have much room to play around with!Steps:1.       First, secure the voltage regulator in place.  Make sure that you can get at the solder points easily.  If not, then don’t secure into place until you have done all of the soldering2.       Next add the negative voltage circuit to the case3.       Connect ground and positive from the circuit board to the outputs on the voltage regulator4.       Solder the wires from the voltage meter also to the output of the voltage regulator.  5.       Solder the positive wire from the battery holder to the switch and another wire from the switch to the input positive solder point on the voltage regulator6.       Solder the ground wire form the battery holder to the ground input solder point on the regulator7.       Now connect the negative wire from the circuit to the negative banana plug.  Do the same for ground and positive8.       Now you should be able to add a battery and test whether it is working</p><h2><span class="step-num">STEP 10</span>Step 10: Testing and Using</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Testing and Using image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Testing and Using image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Testing and Using image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 10: Testing and Using image 4" loading="lazy"></div><p>The first thing that you want to know is whether your voltage regulator is working ok. Steps:1.       Turn it on and check that the voltage meter is working by adjusting the potentiometer.  The voltage should move up or down.2.       Next, test to see if the negative voltage is working by using a multi meter.  Please the positive wire from the multi meter into the negative banana plug and the ground into the ground banana plug.3.       Check to see if the multi meter shows a negative voltage.  If it doesn’t, check over your circuit and make sure everything is correctly soldered and there are no shorts.4.       Lastly, you should check the capacitor discharge button.  Turn up the voltage meter (don’t go too high or you could fry the 555 timer) and then bring the voltage down.  Check the negative voltage with the multi-meter.  It will show higher then what is being displayed on the voltage meter.  This is because the cap is charged to the last voltage that the regulator was at.  To discharge, push the momentary button.5.       Check the multi-meter again.  It should show close to the voltage meter</p>
+<h1>Negative Voltage Supply</h1><div class="source"><a href="https://www.instructables.com/Negative-Voltage-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Most who play around with electronics would have come across an audio circuit that uses a duel rail power supply.</p>
+<p>The first time I came across this it totally baffled me – how do I get a negative charge out of a power supply?</p>
+<p>Isn’t one positive and the other ground?</p>
+<p>For some reason I had never thought that a power source such as a battery has equal negative and positive charge!</p>
+<p>Most of the time the negative charge is grounded and not used but in some builds such as audio projects like amps and synths, you need to use the negative charge along with the positive.</p>
+<p>Robin Mitchellover at “All About Circuits” has published a very elegant and easy way to create negative charge using only a handful of common parts that most people who play around with circuits will have in their parts bins.</p>
+<p>I won’t go into how this works as Robin has explained it excellently in his article which can be found here.</p>
+<p>The circuit itself is made up of a 555 timer (is there anything it can’t do!), a few caps and diodes.</p>
+<p>I wanted to make mine variable voltage controlled and portable to use and test on future projects so I included a buck booster in the design.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Negative Voltage Circuit Parts</p>
+<ol>
+<li>555 Timer – eBay 100 under $5!</li>
+</ol>
+<ol>
+<li>5.6K Resistor. Buy these as assorted on eBay</li>
+</ol>
+<ol>
+<li>47K resistor</li>
+</ol>
+<ol>
+<li>100nf Cap – Buy these as assorted on eBay</li>
+</ol>
+<ol>
+<li>10nf Cap</li>
+</ol>
+<ol>
+<li>Diode 1N194 – eBay</li>
+</ol>
+<ol>
+<li>10uf Cap – Buy these as assorted on eBay</li>
+</ol>
+<ol>
+<li>100uf Cap</li>
+</ol>
+<ol>
+<li>Prototype board - eBay</li>
+</ol>
+<ol>
+<li>Assorted wires</li>
+</ol>
+<p>To make it portable</p>
+<ol>
+<li>Case – This one would work fine from eBay. Mines an old garage door opener I found somewhere.</li>
+</ol>
+<ol>
+<li>Male and Female banana plugs – eBay</li>
+</ol>
+<ol>
+<li>Various wires</li>
+</ol>
+<ol>
+<li>Switch - ebay</li>
+</ol>
+<ol>
+<li>9V battery</li>
+</ol>
+<ol>
+<li>9V battery holder - eBay</li>
+</ol>
+<ol>
+<li>Voltage regulator – eBay</li>
+</ol>
+<ol>
+<li>Knob for a potentiometer – eBay</li>
+</ol>
+<ol>
+<li>10K Pot - eBay</li>
+</ol>
+<ol>
+<li>Voltage Meter - eBay</li>
+</ol>
+<p>Tools:</p>
+<ol>
+<li>Soldering Iron</li>
+</ol>
+<ol>
+<li>Pliers</li>
+</ol>
+<ol>
+<li>Wire cutters</li>
+</ol>
+<ol>
+<li>Hot Glue</li>
+</ol>
+<ol>
+<li>Drill</li>
+</ol>
+<ol>
+<li>Cone stepper drill piece (always comes in handy for drilling holes into things)</li>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Breadboard It First</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Breadboard It First image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Breadboard It First image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Breadboard It First image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Breadboard It First image 4" loading="lazy"></div><p>I know this this might be self-evident but I highly recommend that you breadboard this circuit (or any that you build) first.</p>
+<p>It will ensure that the circuit has been tested and works and is like a first run through which helps you get a better understanding of the circuit and how it is put together.</p>
+<p>Once you have built it, test with a multi meter and ensure that the voltage being supplied from the circuit is negative.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Part 1 image 4" loading="lazy"></div><p>The circuit is a really interesting one and uses a clever array of diodes and capacitors to achieve negative voltage on a capacitor plate.</p>
+<p>Check out this link if you want further details.</p>
+<p>If you haven’t made any circuits before then check out this Instructable which will show you the ropes.</p>
+<p>I have included the original circuit schematic along with the modified one which includes the voltage module and a momentary switch connected to the capacitor.</p>
+<p>This switch can short the cap and discharge the voltage inside.</p>
+<p>I had to add this as the cap held the voltage supplied from the voltage regulator and if it was high, say 12v's and I reduced the voltage to 6v's, then the negative voltage will stay at 12V and slowly come down.</p>
+<p>The reset button discharges the cap and brings it in line with the positive voltage.</p>
+<p>Steps:</p>
+<ol>
+<li>First thing to do is to work out how big (or small) you need to make the circuit board. As I was putting mine inside the old garage door opener, I needed to make it as small as possible.</li>
+</ol>
+<ol>
+<li>Trim the prototype board to size</li>
+</ol>
+<ol>
+<li>Add a socket IC holder to the board. This will allow you to change out the IC if faulty for any reason.</li>
+</ol>
+<ol>
+<li>Connect pin 1 to the ground bus strip on the prototype board, pin 4 and 8 to the positive bus strip.</li>
+</ol>
+<ol>
+<li>Add a 10nf cap to pin 2 and ground</li>
+</ol>
+<ol>
+<li>Add a 100nf cap to pin 5 and ground</li>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Part 2 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Part 2 image 4" loading="lazy"></div><p>To make the circuit as small as possible, I utilized the bottom of the circuit as well.</p>
+<p>Steps:</p>
+<ol>
+<li>Connect pins 2 and 6 together. I use a resistor leg to do this</li>
+</ol>
+<ol>
+<li>Connect pins 2 and 7 together with a 47K resistor</li>
+</ol>
+<ol>
+<li>Add the positive leg of a 10uf cap to pin 3 and the negative leg to a blank spot on the prototype board.</li>
+</ol>
+<ol>
+<li>Add a diode (making sure it is connected the right way) to the negative leg of the cap and ground</li>
+</ol>
+<ol>
+<li>Add another diode (checking again that it is correctly connected) to the negative leg of the 10uf cap and the other leg to a blank spot on the prototype board.</li>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Part 3</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Part 3 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - Part 3 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - Part 3 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - Part 3 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - Part 3 image 5" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Add the negative leg from a 100uf capacitor to the end of the diode</li>
+</ol>
+<ol>
+<li>Add the positive leg to ground.</li>
+</ol>
+<ol>
+<li>If you used similar prototype board as me you will need to connect the ground and positive bus strips together. Solder a couple of small wires to connect these</li>
+</ol>
+<ol>
+<li>At this stage I always like to check and make sure that the circuit will fit inside my case. There wasn’t much room inside the garage door remote I used and the circuit fitted just. I did remove a small amount of the prototype board to make it fit a little better.</li>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding Wires to the Circuit</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding Wires to the Circuit image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding Wires to the Circuit image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding Wires to the Circuit image 3" loading="lazy"></div><p>Next thing to do is to add a bunch of wires to the circuit. Once you have added these you can test it to see if it is working</p>
+<p>Steps:</p>
+<ol>
+<li>First add 2 wires (make all wires longer then needed) to the positive bus strip. One will be joined to the positive output on the voltage regulator and the other to a female banana plug</li>
+</ol>
+<ol>
+<li>Add another 2 wires to the negative bus strip. One will be connected to ground on the voltage regulator and the other to a female banana plug</li>
+</ol>
+<ol>
+<li>Lastly, add a wire to the negative leg of the 100uf cap. This will be connected to negative voltage banana plug</li>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Banana Plugs and Switches</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Banana Plugs and Switches image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Banana Plugs and Switches image 2" loading="lazy"></div><p>There wasn’t much room in my case so I had to think carefully where each of the parts were going to go, especially the banana plugs and switch.</p>
+<p>Not shown here as it was something I did later was another momentary switch which you will also need to add.</p>
+<p>This switch will be later connected to each leg on the 100uf cap to discharge any voltage it may be holding.</p>
+<p>Steps:</p>
+<ol>
+<li>First, drill a hole each for the 3 female banana plugs</li>
+</ol>
+<ol>
+<li>Secure the banana plugs to the case. I went with from left to right, red – negative, black – ground, and red – positive. Seemed like the most logical way to set them up</li>
+</ol>
+<ol>
+<li>Drill another hole for the SPDT switch and attached this as well.</li>
+</ol>
+<ol>
+<li>Drill another hole and ad the momentary switch.</li>
+</ol>
+<ol>
+<li>Lastly, drill a hole in the top of the case for the wire on the voltage meter. Push the wires through and secure the voltage meter to the case with some hot glue. As I didn't have much room I had to stick the meter on the top of the case. The better way is to cut out a section of the case that the meter will fit into. It's a cleaner finish.</li>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Modding the Voltage Regulator</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Modding the Voltage Regulator image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Modding the Voltage Regulator image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Modding the Voltage Regulator image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Modding the Voltage Regulator image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Modding the Voltage Regulator image 5" loading="lazy"></div><p>I’m not going to go through this in a lot of detail as I have already provided details on how to do it in this ‘ible. I have also included a diagram which will help you visualise the wiring</p>
+<p>Steps:</p>
+<ol>
+<li>Remove the pot that is on the regulator by carefully de-soldering it</li>
+</ol>
+<ol>
+<li>Grab your 10k pot and place the legs on the solder points. Re-heat them and push the legs into place.</li>
+</ol>
+<ol>
+<li>Add a little solder if necessary to the solder points on the circuit board.</li>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Parts to the Case and Wiring-up</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Parts to the Case and Wiring-up image 8" loading="lazy"></div><p>You can see in the images below, I really didn’t have much room to play around with!</p>
+<p>Steps:</p>
+<ol>
+<li>First, secure the voltage regulator in place. Make sure that you can get at the solder points easily. If not, then don’t secure into place until you have done all of the soldering</li>
+</ol>
+<ol>
+<li>Next add the negative voltage circuit to the case</li>
+</ol>
+<ol>
+<li>Connect ground and positive from the circuit board to the outputs on the voltage regulator</li>
+</ol>
+<ol>
+<li>Solder the wires from the voltage meter also to the output of the voltage regulator.</li>
+</ol>
+<ol>
+<li>Solder the positive wire from the battery holder to the switch and another wire from the switch to the input positive solder point on the voltage regulator</li>
+</ol>
+<ol>
+<li>Solder the ground wire form the battery holder to the ground input solder point on the regulator</li>
+</ol>
+<ol>
+<li>Now connect the negative wire from the circuit to the negative banana plug. Do the same for ground and positive</li>
+</ol>
+<ol>
+<li>Now you should be able to add a battery and test whether it is working</li>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Testing and Using</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Testing and Using image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Testing and Using image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Testing and Using image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Testing and Using image 4" loading="lazy"></div><p>The first thing that you want to know is whether your voltage regulator is working ok.</p>
+<p>Steps:</p>
+<ol>
+<li>Turn it on and check that the voltage meter is working by adjusting the potentiometer. The voltage should move up or down.</li>
+</ol>
+<ol>
+<li>Next, test to see if the negative voltage is working by using a multi meter. Please the positive wire from the multi meter into the negative banana plug and the ground into the ground banana plug.</li>
+</ol>
+<ol>
+<li>Check to see if the multi meter shows a negative voltage. If it doesn’t, check over your circuit and make sure everything is correctly soldered and there are no shorts.</li>
+</ol>
+<ol>
+<li>Lastly, you should check the capacitor discharge button. Turn up the voltage meter (don’t go too high or you could fry the 555 timer) and then bring the voltage down. Check the negative voltage with the multi-meter. It will show higher then what is being displayed on the voltage meter. This is because the cap is charged to the last voltage that the regulator was at. To discharge, push the momentary button.</li>
+</ol>
+<ol>
+<li>Check the multi-meter again. It should show close to the voltage meter</li>
+</ol>
 </body>
 </html>

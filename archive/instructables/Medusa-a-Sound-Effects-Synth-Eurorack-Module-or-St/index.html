@@ -110,6 +110,278 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth</span>
 </nav>
-<h1>Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth</h1><div class="source"><a href="https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step02_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step02_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>As usual, I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.In regards to the Raspberry Pi that I used, Make sure that you get the one with 4 analog inputs. The details are in the part list provided.The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.Parts List Medusa.pdfDownload</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step03_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step03_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)The files that you need to build Medusa can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computerSTEPS:Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB - Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 2: Adding Components to the PCB - Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 2: Adding Components to the PCB - Part 1 image 2" loading="lazy"></div><p>There are actually only 3 passive components that need to be added to the board!  I probably should have added some voltage protection for the sync in but I haven't had any issues with it so far...Anyhow lets start adding some components:STEPS:First - add the resistor into the PCB and solder into place.Now do the same for the capacitorsYou can also add the JST connector as well.  This is where we'll be powering the board.  If you are adding this module to a Eurorack, then you can power it via a Eurorack style header pins.That's it for the passive components - now you can flip the board over and start adding the momentary switches which there are 16 of!  The trick with these is to add 4 at a time.  once they are soldered into place, make sure that they are sitting flat.  If not, just hit the legs again with the soldering iron and push down on the button on the switch.  This will ensure that they are properly seated.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding Components to the PCB - Part 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 3: Adding Components to the PCB - Part 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 3: Adding Components to the PCB - Part 2 image 2" loading="lazy"></div><p>Now lets get the Raspberry Pi into placeSTEPS:Firstly, if you haven't already, solder some male header pins to the Raspberry pi.Now, connect the female header pins to the male header ones on the Pi.Place the female header pins into the PCB and solder into place.  This is the best way to do as it ensures that the header pins are straight and that the Raspberry Pi will fit right.</p><h2><span class="step-num">STEP 4</span>Step 4: Adding Components to the PCB - Part 3</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 5" loading="lazy"></div><p>Right - now lets add the rest of the components and leave the screen to lastSTEPS:Add the on/off toggle switchSolder into place the 2 jack inputsNow add the 4 potentiometersThat was easy!  now onto the more tricker part - adding the screen.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screen</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 5: Adding the Screen image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 5: Adding the Screen image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 5: Adding the Screen image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 5: Adding the Screen image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 5: Adding the Screen image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 5: Adding the Screen image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 5: Adding the Screen image 7" loading="lazy"></div><p>When adding the screen, you want to firstly make sure that it is secure to the front panel and you also want to be able to take the front panel off for any future changes.  I have found that the best way to do this is using female and male header pins.  However, it gets tricker as you need to make sure that the header pins are not too big or the screen will make the front panel sit too high.  I used normal header pins to add the front panel and had to modify the female header pins in order to make the short enough so the front panel fitted correctly.  I did this by trimming the tops of the female head pins and also the male ones to get them to fit right.  I have provided alternative header pins in the parts list which I believe will do the job a lot easier.  Note though that I haven't tried this myself yetSTEPS:First, solder the male header pins to the TFT screen.  IMPORTANT - you need to make sure that the header pins are sitting flush with the top of the TFT screen PCB. If you don't, then they will hit the front panel and the screen won't sit flatNow secure the screen to the front panel.  I used an M2 screen and placed this through the hole of the front panel and screen.  I then added a nut to each to secure the screen onto the front panelNow - you need to add a small M2 spacer to each of the screws.  Use the smallest one in the assorted pack that I have recommended to get in the parts listThis is a good time to test fit the front panel to the PCB.  Carefully place the front panel on top of the PCB.  If you find that the end of the screw isn't lining up with the hole in the PCB, then give it a little push towards the hole with a screwdriver, keeping pressure on the front panel.  Once in place you will see that the pins on the TFT screen just about touch the pin holes on the PCB.  You will probably need to trim the male header pin legs to ensure that they fit correctly.  leave though for the moment.Remove the front panel and add the female header pins to the male ones on the TFT screen.  Now test fit again.  How does it look?  are the pins making it so the front panel isn't sitting as low as it can go?  if so, you will need to trim the male header pins and try again.  You want it so the front panel is touching the bottom of the screw section on the toggle switch.If everything looks like it is lining up - then you can go ahead and solder the header pin into the PCB.I hope that this wasn't too confusing!</p><h2><span class="step-num">STEP 6</span>Step 6: Adding a Couple More Spacers to the Front Panel</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 6: Adding a Couple More Spacers to the Front Panel image 1" loading="lazy"></div><p>To ensure the front is secured to the PCB, you need to add a couple more spacer to the bottom section.STEPS:Find the right sized spacer that fits between the front panel and PCBPush this into place and secure it into place with an M2 screw.  You'll need to hold the spacer with a pair of pliers whilst adding the screw into paceDo this for the other side as well.Ok - now you are ready to upload the code</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Code to the Raspberry Pi</h2><div class="step-images single"><img src="images/step09_01.png" alt="Step 7: Adding the Code to the Raspberry Pi image 1" loading="lazy"></div><p>I've added steps to ensure that anyone can load up the code. If you have used Arduino IDE before then you can skip the first coupl steps.STEPS:Install Arduino IDE - https://docs.arduino.cc/software/ide-v1/tutorials/Windows/Install RP2040 Board SupportIn Arduino IDE: Go to File → PreferencesFind "Additional Board Manager URLs"Add this URL: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.jsonClick OKGo to Tools → Board → Boards ManagerSearch for "pico"Install "Raspberry Pi Pico/RP2040" by Earle F. Philhower, IIIWait for installation to completeInstall Required LibrariesGo to Sketch → Include Library → Manage LibrariesInstall these libraries:Adafruit GFX Library (by Adafruit)Adafruit ST7735 and ST7789 Library (by Adafruit)Adafruit BusIO (dependency, will auto-install)Hardware ConnectionConnect Raspberry Pi Pico to ComputerHold the BOOTSEL button on the Pico (white button on the board)While holding BOOTSEL, plug USB cable into computerRelease BOOTSEL buttonA drive named "RPI-RP2" should appear on your computerYou're now in bootloader modeTool menu settings.go to Tools and ensure that the below are set in the menu settingsBoard: "Raspberry Pi Pico" Flash Size: "2MB (Sketch: 1MB, FS: 1MB)" or "2MB (no FS)" CPU Speed: "133 MHz" Optimize: "Optimize Even More (-O3)" USB Stack: "Pico SDK" Boot Stage 2: "W25Q080 QSPI/4"Now add the code if you haven't aleady and click 'upload'Note that the code is currently quite long so it will take some time to upload.  I still need to clean it up.  However, it should work fine (it's just messy!)</p><h2><span class="step-num">STEP 8</span>Step 8: How to Play</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 8: How to Play image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 8: How to Play image 2" loading="lazy"></div><p>Now you can connect it up to a 9V power supply along with a speak and start playing!I've provided below instructions on how to use the synth. However, you can just start playing and work it out yourself if you want. The main point to note is, if you want to play any of the additional functions, then hold down the function key and press any of the 1-8 keys to jump into one of the functions.Have fun!4 Main Knobs:Pot 1 (Pitch) - Controls the base frequency/notePot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)Pot 4 (Echo Feedback) - Controls how much echo/delay repeatsMain Buttons:TRIGGER - Hold to play soundMENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)MODE - Changes the sound variation within each instrumentDELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)GATE - Changes gate length (how long notes are)OCTAVE - Shifts pitch up/down by octavesMUTATE - Cycles mutation modes (makes sound evolve randomly on each trigger)8 Keyboard Keys:Press keys 1-8 to play different notes in a musical scaleWorks like a mini keyboard - each key plays a specific pitchAlso activates the special features1. DUB SIREN (Classic reggae/dub swoops)What each pot does:Pot 1 (PITCH) - Base frequency (50-2000Hz) - turn to change the notePot 2 (SPEED) - LFO speed (0.1-20Hz) - how fast the sound wobblesPot 3 (MOD) - Modulation depth (0-100%) - how much the pitch sweepsPot 4 (Echo Feedback) - Echo repeats (0-95%) - for dub delays6 Modes (press MODE button):CLASSIC DUB - Smooth sawtooth wobbleDEEP SUB - Adds sub-bass octave (Pot 3 controls sub mix)SQUARE WAVE - Hollow, aggressive toneLO-FI CRUSH - Bit crusher effect (Pot 3 controls bit depth 1-8)RING MOD - Metallic ring modulation (Pot 3 controls ring mod frequency)PORTAMENTO - Smooth pitch glide (Pot 2 controls glide time)2. RAY GUN (Sci-fi laser sounds)What each pot does:Pot 1 (FREQ) - Laser frequency (200-4000Hz) - pitch of the laserPot 2 (SWEEP) - Sweep speed (0.1-20Hz) - how fast it swoopsPot 3 (RES) - Resonance (30-95%) - filter sharpness/brightnessPot 4 (Echo Feedback) - Echo repeats (0-95%)4 Modes (press MODE button):ZAP - Quick upward sweep (classic ray gun)LASER - Downward sweep with noise burstBLASTER - Rapid fire short burstsPHASER - Modulated pulse (sci-fi phaser)3. LEAD SYNTH (Generative melodies)What each pot does:Pot 1 (ROOT) - Root note (200-800Hz) - base pitch of the melodyPot 2 (TEMPO) - Step speed (100-1000ms) - how fast notes playPot 3 (VIB) - Vibrato depth (0-10%) - pitch wobble on notesPot 4 (Gate) - Gate length (20-100%) - how long each note plays4 Modes (press MODE button):SEQUENCE - Plays pre-programmed melodyARPEGGIO - Arpeggiator with octave jumpsEUCLIDEAN - Euclidean rhythm patternsGENERATIVE - Auto-generates new melodies4. DISCO (Classic disco effects)What each pot does:Pot 1 (PITCH) - Base frequency (100-2000Hz) - effect pitchPot 2 (SPEED) - Effect duration/speed - how long the effect lastsPot 3 (BRIGHT) - Brightness (0-100%) - filter cutoff/tonePot 4 (Echo Feedback) - Echo repeats (0-95%)6 Modes (press MODE button):ORCH HIT - Punchy orchestral stabSTRINGS - Rising string machine sweepFUNK BLAST - Synth brass stab with pitch bendWHOOSH - Noise sweep (spaceship flyby)BUBBLE - Percussive bubble pop soundLASER - Musical laser sweep with vibratoSequencer Mode (Function + Key 1):Creates an 8-step programmable sequencePress keyboard keys to toggle steps on/offHold a key to adjust that step's pitch with Pot 1TRIGGER starts/stops playbackRecord Mode (Function + Key 3):Press Key 3 once to start recording (up to 5 seconds)Press Key 3 again to stopPress Key 3 again to play backPress Key 4 to toggle loop on/offReverse Mode (Function + Key 4):Press Key 4 to toggle reverse effect on/offPot 1 controls pitch shiftPot 3 controls wet/dry mixInfinite Hold (Function + Key 5):Press Key 5 to toggle infinite sustain on/offPot 1: Feedback amount (95-100%) when hold is ONPot 3: Filter cutoffLFO 2 (Function + Key 6) Secondary LFO that modulates frequency for vibrato/tremolo effects Pot 1: LFO 2 Rate (0.1-20 Hz)  Pot 3: LFO 2 Depth (0-100%) Press Key 6 to toggle LFO 2 ON/OFFDrone (Function + Key 7)5-oscillator additive drone synthesizer with drift and detuningPress TRIGGER to cycle modes: OFF → KEYS → ONPot 1: Root PitchPot 2: Detune Amount (0-100%) - spread between oscillatorsPot 3: Brightness (0-100%) - timbre from dark to brightPot 4: Drift Speed - slow LFO modulationPress MODE button to cycle chord voicings:UNISON: All oscillators at same pitch OCTAVE: Root + octavesFIFTH: Root + perfect fifthMAJOR: Major chord (root, major 3rd, 5th)MINOR: Minor chord (root, minor 3rd, 5th)Sidechain (Function + Key 8)Classic "pumping" sidechain compression effectPress Key 8 to toggle SIDECHAIN ON/OFFPot 1: Ducking Depth (0-100%) - how much volume reductionPot 2: Attack Time  - how fast it ducksPot 3: Release Time - how fast it returnsSyncs with LOOP patterns or SYNC input for rhythmic pumping Auto-retriggering creates continuous pumping effect</p>
+<h1>Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth</h1><div class="source"><a href="https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This synth started as a humble Dub Siren and grew from there.</p>
+<p>I wanted a way to add sound effects when playing my modular synth and add some layered soundscapes.</p>
+<p>I ended up including a total of 4 synths or instruments that have a multitude of features to be able to manipluate and expand the beadth of sound!</p>
+<p>It runs off a Raspberry Pi Pico and I used Arduino IDE and C++ to code everything up. I also used Claude AI to help finesse the code and get me out of binds!</p>
+<p>Ok - so what does it do? Here is a rundown of what the synth is capable of. Note that I still have some additional features to add.</p>
+<p>Instruments:</p>
+<p>DUB SIREN - Classic reggae/dub sounds with 6 modes</p>
+<p>RAY GUN - Sci-fi laser effects with 4 sound modes</p>
+<p>LEAD SYNTH - Generative sequencer with 4 pattern modes</p>
+<p>DISCO - 6 classic disco sound effects (orchestra hits, string sweeps, etc.)</p>
+<p>These can all be played via the hardware interface:</p>
+<p>4 Potentiometers - pitch, speed, modulation, and echo. However, they will change depending on what instrument or function you are using!</p>
+<p>8-Key Keyboard</p>
+<p>Multiple Buttons - Mode switching, gate control, delay cycling, mutation</p>
+<p>mutation allows you to play around with the generative sequencer and musical scales when a sync in is active. - very fun!</p>
+<p>Sync Input - trigger input</p>
+<p>Real-time waveform visualization</p>
+<p>Functions - I have currently 5 functions included with 3 more to come</p>
+<p>SEQUENCER MODE (Function + Key 1) - 8-step programmable sequencer with per-step pitch control and enable/disable</p>
+<p>LOOP PATTERNS (Function + Key 2) - 7 rhythmic gate patterns (swing, staccato, ratchet, etc.)</p>
+<p>RECORD MODE (Function + Key 3) - Record up to 5 seconds of audio with loop playback</p>
+<p>REVERSE MODE (Function + Key 4) - Reverse delay with pitch shifting (-2 to +2 octaves)</p>
+<p>INFINITE DELAY (Function + Key 5) - Infinite sustain via 100% feedback (this is delay on forever!)</p>
+<p>LFO 2 ( Function + Key 6) - Secondary LFO that modulated frequency for vibrato/tremelo effects</p>
+<p>Drone ( Function + Key 7) - 5-oscillator additive drone synthesizer with drift and detuning</p>
+<p>Sidechain ( Function + Key 8) - Classic "pumping" sidechain compression effect</p>
+<p>And there is even more! I'll provide a complete overview and how to at the end of this 'ible.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>As usual, I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step.</p>
+<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<p>In regards to the Raspberry Pi that I used, Make sure that you get the one with 4 analog inputs. The details are in the part list provided.</p>
+<p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
+<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
+<p>I use JLCPCB (not affiliated) to get this done.</p>
+<p>The front panel is actually just a PCB without any components included!</p>
+<p>The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
+<p>The files that you need to build Medusa can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer</p>
+<p>STEPS:</p>
+<ul>
+<li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
+<li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
+<li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</li>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB - Part 1 image 2" loading="lazy"></div><p>There are actually only 3 passive components that need to be added to the board! I probably should have added some voltage protection for the sync in but I haven't had any issues with it so far...</p>
+<p>Anyhow lets start adding some components:</p>
+<p>STEPS:</p>
+<ul>
+<li>First - add the resistor into the PCB and solder into place.</li>
+<li>Now do the same for the capacitors</li>
+<li>You can also add the JST connector as well. This is where we'll be powering the board. If you are adding this module to a Eurorack, then you can power it via a Eurorack style header pins.</li>
+<li>That's it for the passive components - now you can flip the board over and start adding the momentary switches which there are 16 of! The trick with these is to add 4 at a time. once they are soldered into place, make sure that they are sitting flat. If not, just hit the legs again with the soldering iron and push down on the button on the switch. This will ensure that they are properly seated.</li>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding Components to the PCB - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding Components to the PCB - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding Components to the PCB - Part 2 image 2" loading="lazy"></div><p>Now lets get the Raspberry Pi into place</p>
+<p>STEPS:</p>
+<ul>
+<li>Firstly, if you haven't already, solder some male header pins to the Raspberry pi.</li>
+<li>Now, connect the female header pins to the male header ones on the Pi.</li>
+<li>Place the female header pins into the PCB and solder into place. This is the best way to do as it ensures that the header pins are straight and that the Raspberry Pi will fit right.</li>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding Components to the PCB - Part 3</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding Components to the PCB - Part 3 image 5" loading="lazy"></div><p>Right - now lets add the rest of the components and leave the screen to last</p>
+<p>STEPS:</p>
+<ul>
+<li>Add the on/off toggle switch</li>
+<li>Solder into place the 2 jack inputs</li>
+<li>Now add the 4 potentiometers</li>
+</ul>
+<p>That was easy! now onto the more tricker part - adding the screen.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screen</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Screen image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Screen image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Screen image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Screen image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Screen image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Adding the Screen image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Adding the Screen image 7" loading="lazy"></div><p>When adding the screen, you want to firstly make sure that it is secure to the front panel and you also want to be able to take the front panel off for any future changes.</p>
+<p>I have found that the best way to do this is using female and male header pins.</p>
+<p>However, it gets tricker as you need to make sure that the header pins are not too big or the screen will make the front panel sit too high.</p>
+<p>I used normal header pins to add the front panel and had to modify the female header pins in order to make the short enough so the front panel fitted correctly.</p>
+<p>I did this by trimming the tops of the female head pins and also the male ones to get them to fit right.</p>
+<p>I have provided alternative header pins in the parts list which I believe will do the job a lot easier.</p>
+<p>Note though that I haven't tried this myself yet</p>
+<p>STEPS:</p>
+<ul>
+<li>First, solder the male header pins to the TFT screen. IMPORTANT - you need to make sure that the header pins are sitting flush with the top of the TFT screen PCB. If you don't, then they will hit the front panel and the screen won't sit flat</li>
+<li>Now secure the screen to the front panel. I used an M2 screen and placed this through the hole of the front panel and screen. I then added a nut to each to secure the screen onto the front panel</li>
+<li>Now - you need to add a small M2 spacer to each of the screws. Use the smallest one in the assorted pack that I have recommended to get in the parts list</li>
+<li>This is a good time to test fit the front panel to the PCB. Carefully place the front panel on top of the PCB. If you find that the end of the screw isn't lining up with the hole in the PCB, then give it a little push towards the hole with a screwdriver, keeping pressure on the front panel.</li>
+<li>Once in place you will see that the pins on the TFT screen just about touch the pin holes on the PCB. You will probably need to trim the male header pin legs to ensure that they fit correctly. leave though for the moment.</li>
+<li>Remove the front panel and add the female header pins to the male ones on the TFT screen. Now test fit again. How does it look? are the pins making it so the front panel isn't sitting as low as it can go? if so, you will need to trim the male header pins and try again. You want it so the front panel is touching the bottom of the screw section on the toggle switch.</li>
+<li>If everything looks like it is lining up - then you can go ahead and solder the header pin into the PCB.</li>
+</ul>
+<p>I hope that this wasn't too confusing!</p><h2><span class="step-num">STEP 6</span>Step 6: Adding a Couple More Spacers to the Front Panel</h2><div class="step-images single"><img src="images/step07_01.jpg" alt="Step 6: Adding a Couple More Spacers to the Front Panel image 1" loading="lazy"></div><p>To ensure the front is secured to the PCB, you need to add a couple more spacer to the bottom section.</p>
+<p>STEPS:</p>
+<ul>
+<li>Find the right sized spacer that fits between the front panel and PCB</li>
+<li>Push this into place and secure it into place with an M2 screw. You'll need to hold the spacer with a pair of pliers whilst adding the screw into pace</li>
+<li>Do this for the other side as well.</li>
+</ul>
+<p>Ok - now you are ready to upload the code</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Code to the Raspberry Pi</h2><div class="step-images single"><img src="images/step08_01.png" alt="Step 7: Adding the Code to the Raspberry Pi image 1" loading="lazy"></div><p>I've added steps to ensure that anyone can load up the code. If you have used Arduino IDE before then you can skip the first coupl steps.</p>
+<p>STEPS:</p>
+<ul>
+<li>Install Arduino IDE - https://docs.arduino.cc/software/ide-v1/tutorials/Windows/</li>
+<li>Install RP2040 Board Support</li>
+<li>In Arduino IDE: Go to File → Preferences</li>
+<li>Find "Additional Board Manager URLs"</li>
+<li>Add this URL: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json</li>
+<li>Click OK</li>
+<li>Go to Tools → Board → Boards Manager</li>
+<li>Search for "pico"</li>
+<li>Install "Raspberry Pi Pico/RP2040" by Earle F. Philhower, III</li>
+<li>Wait for installation to complete</li>
+<li>Install Required Libraries</li>
+<li>Go to Sketch → Include Library → Manage Libraries</li>
+<li>Install these libraries:</li>
+<li>Adafruit GFX Library (by Adafruit)</li>
+<li>Adafruit ST7735 and ST7789 Library (by Adafruit)</li>
+<li>Adafruit BusIO (dependency, will auto-install)</li>
+<li>Hardware Connection</li>
+<li>Connect Raspberry Pi Pico to Computer</li>
+<li>Hold the BOOTSEL button on the Pico (white button on the board)</li>
+<li>While holding BOOTSEL, plug USB cable into computer</li>
+<li>Release BOOTSEL button</li>
+<li>A drive named "RPI-RP2" should appear on your computer</li>
+<li>You're now in bootloader mode</li>
+<li>Tool menu settings.</li>
+<li>go to Tools and ensure that the below are set in the menu settings</li>
+<li>Board: "Raspberry Pi Pico"</li>
+<li>Flash Size: "2MB (Sketch: 1MB, FS: 1MB)" or "2MB (no FS)"</li>
+<li>CPU Speed: "133 MHz" Optimize: "</li>
+<li>Optimize Even More (-O3)"</li>
+<li>USB Stack: "Pico SDK"</li>
+<li>Boot Stage 2: "W25Q080 QSPI/4"</li>
+<li>Now add the code if you haven't aleady and click 'upload'</li>
+</ul>
+<p>Note that the code is currently quite long so it will take some time to upload. I still need to clean it up. However, it should work fine (it's just messy!)</p><h2><span class="step-num">STEP 8</span>Step 8: How to Play</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: How to Play image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: How to Play image 2" loading="lazy"></div><p>Now you can connect it up to a 9V power supply along with a speak and start playing!</p>
+<p>I've provided below instructions on how to use the synth.</p>
+<p>However, you can just start playing and work it out yourself if you want.</p>
+<p>The main point to note is, if you want to play any of the additional functions, then hold down the function key and press any of the 1-8 keys to jump into one of the functions.</p>
+<p>Have fun!</p>
+<p>4 Main Knobs:</p>
+<ul>
+<li>Pot 1 (Pitch) - Controls the base frequency/note</li>
+<li>Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)</li>
+<li>Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)</li>
+<li>Pot 4 (Echo Feedback) - Controls how much echo/delay repeats</li>
+</ul>
+<p>Main Buttons:</p>
+<ul>
+<li>TRIGGER - Hold to play sound</li>
+<li>MENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)</li>
+<li>MODE - Changes the sound variation within each instrument</li>
+<li>DELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)</li>
+<li>GATE - Changes gate length (how long notes are)</li>
+<li>OCTAVE - Shifts pitch up/down by octaves</li>
+<li>MUTATE - Cycles mutation modes (makes sound evolve randomly on each trigger)</li>
+</ul>
+<p>8 Keyboard Keys:</p>
+<ul>
+<li>Press keys 1-8 to play different notes in a musical scale</li>
+<li>Works like a mini keyboard - each key plays a specific pitch</li>
+<li>Also activates the special features</li>
+</ul>
+<p><strong>1. DUB SIREN (Classic reggae/dub swoops)</strong></p>
+<p>What each pot does:</p>
+<ul>
+<li>Pot 1 (PITCH) - Base frequency (50-2000Hz) - turn to change the note</li>
+<li>Pot 2 (SPEED) - LFO speed (0.1-20Hz) - how fast the sound wobbles</li>
+<li>Pot 3 (MOD) - Modulation depth (0-100%) - how much the pitch sweeps</li>
+<li>Pot 4 (Echo Feedback) - Echo repeats (0-95%) - for dub delays</li>
+</ul>
+<p>6 Modes (press MODE button):</p>
+<ul>
+<li>CLASSIC DUB - Smooth sawtooth wobble</li>
+<li>DEEP SUB - Adds sub-bass octave (Pot 3 controls sub mix)</li>
+<li>SQUARE WAVE - Hollow, aggressive tone</li>
+<li>LO-FI CRUSH - Bit crusher effect (Pot 3 controls bit depth 1-8)</li>
+<li>RING MOD - Metallic ring modulation (Pot 3 controls ring mod frequency)</li>
+<li>PORTAMENTO - Smooth pitch glide (Pot 2 controls glide time)</li>
+</ul>
+<p><strong>2. RAY GUN (Sci-fi laser sounds)</strong></p>
+<p>What each pot does:</p>
+<ul>
+<li>Pot 1 (FREQ) - Laser frequency (200-4000Hz) - pitch of the laser</li>
+<li>Pot 2 (SWEEP) - Sweep speed (0.1-20Hz) - how fast it swoops</li>
+<li>Pot 3 (RES) - Resonance (30-95%) - filter sharpness/brightness</li>
+<li>Pot 4 (Echo Feedback) - Echo repeats (0-95%)</li>
+</ul>
+<p>4 Modes (press MODE button):</p>
+<ul>
+<li>ZAP - Quick upward sweep (classic ray gun)</li>
+<li>LASER - Downward sweep with noise burst</li>
+<li>BLASTER - Rapid fire short bursts</li>
+<li>PHASER - Modulated pulse (sci-fi phaser)</li>
+</ul>
+<p><strong>3. LEAD SYNTH (Generative melodies)</strong></p>
+<p>What each pot does:</p>
+<ul>
+<li>Pot 1 (ROOT) - Root note (200-800Hz) - base pitch of the melody</li>
+<li>Pot 2 (TEMPO) - Step speed (100-1000ms) - how fast notes play</li>
+<li>Pot 3 (VIB) - Vibrato depth (0-10%) - pitch wobble on notes</li>
+<li>Pot 4 (Gate) - Gate length (20-100%) - how long each note plays</li>
+</ul>
+<p>4 Modes (press MODE button):</p>
+<ul>
+<li>SEQUENCE - Plays pre-programmed melody</li>
+<li>ARPEGGIO - Arpeggiator with octave jumps</li>
+<li>EUCLIDEAN - Euclidean rhythm patterns</li>
+<li>GENERATIVE - Auto-generates new melodies</li>
+</ul>
+<p><strong>4. DISCO (Classic disco effects)</strong></p>
+<p>What each pot does:</p>
+<ul>
+<li>Pot 1 (PITCH) - Base frequency (100-2000Hz) - effect pitch</li>
+<li>Pot 2 (SPEED) - Effect duration/speed - how long the effect lasts</li>
+<li>Pot 3 (BRIGHT) - Brightness (0-100%) - filter cutoff/tone</li>
+<li>Pot 4 (Echo Feedback) - Echo repeats (0-95%)</li>
+</ul>
+<p>6 Modes (press MODE button):</p>
+<ul>
+<li>ORCH HIT - Punchy orchestral stab</li>
+<li>STRINGS - Rising string machine sweep</li>
+<li>FUNK BLAST - Synth brass stab with pitch bend</li>
+<li>WHOOSH - Noise sweep (spaceship flyby)</li>
+<li>BUBBLE - Percussive bubble pop sound</li>
+<li>LASER - Musical laser sweep with vibrato</li>
+</ul>
+<p>Sequencer Mode (Function + Key 1):</p>
+<ul>
+<li>Creates an 8-step programmable sequence</li>
+<li>Press keyboard keys to toggle steps on/off</li>
+<li>Hold a key to adjust that step's pitch with Pot 1</li>
+<li>TRIGGER starts/stops playback</li>
+</ul>
+<p>Record Mode (Function + Key 3):</p>
+<ul>
+<li>Press Key 3 once to start recording (up to 5 seconds)</li>
+<li>Press Key 3 again to stop</li>
+<li>Press Key 3 again to play back</li>
+<li>Press Key 4 to toggle loop on/off</li>
+</ul>
+<p>Reverse Mode (Function + Key 4):</p>
+<ul>
+<li>Press Key 4 to toggle reverse effect on/off</li>
+<li>Pot 1 controls pitch shift</li>
+<li>Pot 3 controls wet/dry mix</li>
+</ul>
+<p>Infinite Hold (Function + Key 5):</p>
+<ul>
+<li>Press Key 5 to toggle infinite sustain on/off</li>
+<li>Pot 1: Feedback amount (95-100%) when hold is ON</li>
+<li>Pot 3: Filter cutoff</li>
+</ul>
+<p>LFO 2 (Function + Key 6)</p>
+<ul>
+<li>Secondary LFO that modulates frequency for vibrato/tremolo effects</li>
+<li>Pot 1: LFO 2 Rate (0.1-20 Hz)</li>
+<li>Pot 3: LFO 2 Depth (0-100%)</li>
+<li>Press Key 6 to toggle LFO 2 ON/OFF</li>
+</ul>
+<p>Drone (Function + Key 7)</p>
+<ul>
+<li>5-oscillator additive drone synthesizer with drift and detuning</li>
+<li>Press TRIGGER to cycle modes: OFF → KEYS → ON</li>
+<li>Pot 1: Root Pitch</li>
+<li>Pot 2: Detune Amount (0-100%) - spread between oscillators</li>
+<li>Pot 3: Brightness (0-100%) - timbre from dark to bright</li>
+<li>Pot 4: Drift Speed - slow LFO modulation</li>
+<li>Press MODE button to cycle chord voicings:</li>
+<li>UNISON: All oscillators at same pitch</li>
+<li>OCTAVE: Root + octaves</li>
+<li>FIFTH: Root + perfect fifth</li>
+<li>MAJOR: Major chord (root, major 3rd, 5th)</li>
+<li>MINOR: Minor chord (root, minor 3rd, 5th)</li>
+</ul>
+<p>Sidechain (Function + Key 8)</p>
+<ul>
+<li>Classic "pumping" sidechain compression effect</li>
+<li>Press Key 8 to toggle SIDECHAIN ON/OFF</li>
+<li>Pot 1: Ducking Depth (0-100%) - how much volume reduction</li>
+<li>Pot 2: Attack Time - how fast it ducks</li>
+<li>Pot 3: Release Time - how fast it returns</li>
+<li>Syncs with LOOP patterns or SYNC input for rhythmic pumping</li>
+<li>Auto-retriggering creates continuous pumping effect</li>
+</ul>
 </body>
 </html>

@@ -110,69 +110,153 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Head Phone Amp With Custom PCB</span>
 </nav>
-<h1>Head Phone Amp With Custom PCB</h1><div class="source"><a href="https://www.instructables.com/Head-Phone-Amp-With-Custom-PCB/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Head Phone Amp With Custom PCB" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Parts image 2" loading="lazy"></div><p>Circuit</p>
-<ul>
+<h1>Head Phone Amp With Custom PCB</h1><div class="source"><a href="https://www.instructables.com/Head-Phone-Amp-With-Custom-PCB/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I've been building (and trying to perfect) the headphone amp for some time now. Some of you would have seen my previous 'ible builds. For those that haven't I have linked these below.</p>
+<p>On my older builds I have always used prototype board to build the circuit.</p>
+<p>Nothing wrong with doing it this way mind you but there is more potential to make mistakes and it can be tricky trying to add all of the parts in the smallest space possible using prototype board.</p>
+<p>I thought it was time to throw myself in the deep end and start to design my own PCB's!</p>
+<p>The Instructable crew have put together some training on how to do this which can be found here.</p>
+<p>I found the Sparkfun tutorial very helpful and primarily used this one to learn how to create my own PCB's.</p>
+<p>It's a great resource and easy to follow the step by step instructions.</p>
+<p>The software to design the PCB's is eagle and is free to download. Just follow each of the tutorials below from Sparkfun and in no time you'll be designing your own as well.</p>
+<p>However, If you just want to use my gerber files (the files you upload to the PCB printing company to make the board), then I've supplied them in this 'ible.</p>
+<p>All you need to do is to load the zip file up to a manufacturer such as JLCPCB and they'll print it up for you.</p>
+<p>Sparkfun Tutorials</p>
+<p>1st one to do : Using EAGLE: Schematic</p>
+<p>2nd one to do: Using EAGLE: Board Layout</p>
+<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one!</p>
+<p>Your phone doesn’t really have the power to drive a pair of headphones.</p>
+<p>You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range.</p>
+<p>When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
+<p>So let's get cracking.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"></div><p>Circuit</p>
+<ol>
 <li>PCB. You can find the gerber files here. Instructables don't allow you to add zip files so I had to link it to my Google drive</li>
+</ol>
+<ol>
 <li>220 uF capacitors X 3 - eBay</li>
+</ol>
+<ol>
 <li>4.7uF Capacitors X 3 - eBay</li>
+</ol>
+<ol>
 <li>22pf Capacitor X 2 - eBay</li>
+</ol>
+<ol>
 <li>3.5mm Headphone Jack Connector X 2 - eBay</li>
+</ol>
+<ol>
 <li>5532 IC - eBay</li>
+</ol>
+<ol>
 <li>IC Dip 8 pin dip socket - eBay</li>
+</ol>
+<ol>
 <li>18K Resistor X 2 - eBay</li>
+</ol>
+<ol>
 <li>68K Resistor X 4 - eBay</li>
+</ol>
+<ol>
 <li>470K Resistor - eBay</li>
+</ol>
+<ol>
 <li>20K Duel Potentiometer - eBay</li>
+</ol>
+<ol>
 <li>Knob - eBay</li>
+</ol>
+<ol>
 <li>5mm LED - eBay</li>
+</ol>
+<ol>
 <li>SPDT Switch - eBay</li>
-</ul>
+</ol>
 <p>Power</p>
 <p>You can use a 9V battery if you want to. I wanted to be able to re-charge the amp so I used the following</p>
-<ul>
+<ol>
 <li>Voltage regulator - eBay</li>
+</ol>
+<ol>
 <li>Mobile Battery - I get most of mine from phone recycle bins but you can also buy them on eBay</li>
-</ul>
+</ol>
 <p>Check out this Instructable on how to use these</p>
 <p>Other Parts</p>
-<ul>
+<ol>
 <li>Case - I used an old Tobacco tin</li>
+</ol>
+<ol>
 <li>Wires</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Schematic, Board and Gerber Files</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Schematic, Board and Gerber Files image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Schematic, Board and Gerber Files image 2" loading="lazy"></div><p>In the link below you can find the schematic, board and gerber files. If you already use eagle then you can save the schematic and the board and add them to eagle to play around with.</p>
-<p>If you want to just get the board made then save the Headphone Amp Zip file and you can then just send it to someone like JLCPCB (not affiliated) who will print it for you. Hit the "quote now" button on the website and then just upload the gerber files. easy.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Schematic, Board and Gerber Files</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Schematic, Board and Gerber Files image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematic, Board and Gerber Files image 2" loading="lazy"></div><p>In the link below you can find the schematic, board and gerber files. If you already use eagle then you can save the schematic and the board and add them to eagle to play around with.</p>
+<p>If you want to just get the board made then save the Headphone Amp Zip file and you can then just send it to someone like JLCPCB (not affiliated) who will print it for you.</p>
+<p>Hit the "quote now" button on the website and then just upload the gerber files. easy.</p>
 <p>FYI - I'm not affiliated with JLCPCB in any way - just find them easy to use.</p>
 <p>Link to Gerber files, eagle schematic and PCB - Version 1</p>
 <p>Link to Gerber files, eagle schematic and PCB - Version 2</p>
-<p>NOTE: I revisited this PCB and made a smaller. The files can be found in version 2 linkHeadphone Amp 1.pdfDownload</p><h2><span class="step-num">STEP 3</span>Step 3:</h2><h2><span class="step-num">STEP 4</span>Step 4: Soldering the PCB Together</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Soldering the PCB Together image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Soldering the PCB Together image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Soldering the PCB Together image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Soldering the PCB Together image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Soldering the PCB Together image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Soldering the PCB Together image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Soldering the PCB Together image 7" loading="lazy"></div><p>I'm not going to do a step by step on how to do this as it's pretty straight forward. All of the values of the components are on the board and you just need to follow this. However, below are a few tips on the best way to do it.</p>
+<p>NOTE: I revisited this PCB and made a smaller. The files can be found in version 2 link</p><h2><span class="step-num">STEP 3</span>Step 3:</h2><h2><span class="step-num">STEP 4</span>Step 4: Soldering the PCB Together</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the PCB Together image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the PCB Together image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Soldering the PCB Together image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Soldering the PCB Together image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Soldering the PCB Together image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Soldering the PCB Together image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Soldering the PCB Together image 7" loading="lazy"></div><p>I'm not going to do a step by step on how to do this as it's pretty straight forward.</p>
+<p>All of the values of the components are on the board and you just need to follow this.</p>
+<p>However, below are a few tips on the best way to do it.</p>
 <p>Steps:</p>
-<ul>
+<ol>
 <li>The best components to start with in my opinion are the resistors. These are all the same size and you can lay the board on it's back and they will sit flush with the board making them easy to solder into place</li>
+</ol>
+<ol>
 <li>When adding the audio jacks you might find that one of the 5 legs is slightly off. Just take your time and use a small screwdriver to slightly bend it out so it fits into the hole.</li>
+</ol>
+<ol>
 <li>Use good quality capacitors. These will help get great sound out of the amp</li>
+</ol>
+<ol>
 <li>If you know what case you are going to add the amp to, ensure that the capacitors aren't too high for the case. If they are you can always lay them down like I did in order for them to fit. Actually didn't need to do it in the end because I used a difference case.</li>
+</ol>
+<ol>
 <li>The circuit board will be attached via the audio jacks and volume potentiometer. make sure you take that into consideration when thinking about a case.</li>
+</ol>
+<ol>
 <li>It's always good to test the board once it has been built and before it's added into a case.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: What Case to Use</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: What Case to Use image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: What Case to Use image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: What Case to Use image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: What Case to Use image 4" loading="lazy"></div><p>You can use whatever case that takes your fancy. I like to add them into old tobacco tins as they come all ready to use. I've used NES controllers before as well which are fun to do but there is a lot less room in one of those.</p>
-<p>If you can't find any tobacco tins then you could an Altoids tin, projects box, literally any small container that will fit the parts inside will do.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Parts to the Case - Circuit Board</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 5" loading="lazy"></div><p>Steps:</p>
-<ul>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: What Case to Use</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: What Case to Use image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: What Case to Use image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: What Case to Use image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: What Case to Use image 4" loading="lazy"></div><p>You can use whatever case that takes your fancy.</p>
+<p>I like to add them into old tobacco tins as they come all ready to use.</p>
+<p>I've used NES controllers before as well which are fun to do but there is a lot less room in one of those.</p>
+<p>If you can't find any tobacco tins then you could an Altoids tin, projects box, literally any small container that will fit the parts inside will do.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Parts to the Case - Circuit Board</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Parts to the Case - Circuit Board image 5" loading="lazy"></div><p>Steps:</p>
+<ol>
 <li>First, place all of the parts inside the case and work out how you want everything laid out inside. You need to fit the circuit board, battery and charging module (if you aren't using a 9v battery). Once you know where everything is going, the next thing to is to secure the circuit board</li>
+</ol>
+<ol>
 <li>Make a small template of the front of the board using a piece of masking tape. Make there the potentiometer and 2 audio jacks are on the tape and then stick this to the case</li>
+</ol>
+<ol>
 <li>Carefully drill the holes for each of the components. Tobacco tins are quite thin so be careful when drilling.</li>
+</ol>
+<ol>
 <li>Secure the pot and audio jacks in place with the nuts that come with them</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Parts to the Case - Battery, Switch & LED</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 4" loading="lazy"></div><p>I went with a rechargeable battery and charging module to power the circuit. If you don't want to do this then just use a 9v battery. I did an Instructable on how to use the module and adding it to a Li-ion battery which you can find here</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Parts to the Case - Battery, Switch & LED</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Parts to the Case - Battery, Switch & LED image 4" loading="lazy"></div><p>I went with a rechargeable battery and charging module to power the circuit.</p>
+<p>If you don't want to do this then just use a 9v battery.</p>
+<p>I did an Instructable on how to use the module and adding it to a Li-ion battery which you can find here</p>
 <p>Steps:</p>
-<ul>
+<ol>
 <li>First, secure the charging module to the battery with some good, double sided tape</li>
+</ol>
+<ol>
 <li>Place the battery inside the case and mark where the micro USB on the module needs to accessed.</li>
+</ol>
+<ol>
 <li>Make a couple small holes in the case for the micro USB and use some small files to make the hole rectangular.</li>
+</ol>
+<ol>
 <li>Secure the battery into the case with some more double sided tape and make sure that the USB aligns with the hole in the case</li>
+</ol>
+<ol>
 <li>For the switch, I initially was going to add this to the side of the case and made a hole for it but decided to add it inside the case. The main reason being, the other ones I have made the amp sometimes turns on in my pocket because of the switch. having it inside the case means this can't happen.</li>
+</ol>
+<ol>
 <li>I used the hole I made for the switch for the LED. As the hole was rectangle I decided to add a small piece of opal acrylic which is a great diffuser and place the LED behind this.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Using Your Amp</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Using Your Amp image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Using Your Amp image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Using Your Amp image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Using Your Amp image 4" loading="lazy"></div><p>Now that the build is done it's time to try out your amp</p>
-<ul>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Using Your Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Using Your Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Using Your Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Using Your Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Using Your Amp image 4" loading="lazy"></div><p>Now that the build is done it's time to try out your amp</p>
+<ol>
 <li>You have an audio input and output jack. The one on the left is output and that's where you plug your headphones into. The other is where you plug your phone or MP3 player into.</li>
+</ol>
+<ol>
 <li>make sure that the volume is turned down at at least mid-way. you don't want to blow your eardrums if it is too loud!</li>
+</ol>
+<ol>
 <li>Turn on the amp and start to play music. The sound should be clear, have more bass, and overall have a richer sound then just listening through your headphone.</li>
-</ul>
+</ol>
 </body>
 </html>
