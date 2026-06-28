@@ -19,7 +19,7 @@ Source: https://www.instructables.com/Flint-and-Spark-Wheel-Fire-Starter/
 
 Don't throw away those used lighters, instead turn them into a fire starter.
 
-I hate to see anything go to waste, so whenever a disposable lighter runs out of fuel I either turn the flint into a firework (see here), or make one of these. The fire starter is made from the spark wheel, spring and flint from the lighter. The body of the fire starter is made from copper.
+I hate to see anything go to waste, so whenever a disposable lighter runs out of fuel I either turn the flint into a firework [(see here](https://www.youtube.com/watch?v=itMj9kShqvc)), or make one of these. The fire starter is made from the spark wheel, spring and flint from the lighter. The body of the fire starter is made from copper.
 
 There's nothing too difficult making one of these, the hardest thing probably is adding the spark wheel to the copper bracket. It took me a couple of times to work out the best way to make this section.
 

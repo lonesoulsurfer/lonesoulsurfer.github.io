@@ -46,13 +46,13 @@ So here’s how it’s done…
 
 Parts:
 
-1. 44. Magnum bullet casing. These can be purchased from Etsy
+1. 44. Magnum bullet casing. These can be purchased from [Etsy](https://www.etsy.com/au/search?q=44%20magnum%20shells&ship_to=AU)
 
-2. Super bright LED – eBay
+2. Super bright LED – [eBay](http://www.ebay.com.au/sch/i.html?_odkw=super+bright+white+led&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xsuper+bright+white+led+5mm&_nkw=super+bright+white+led+5mm&_sacat=0)
 
 3. Micro switch – eBay
 
-4. Button batteries CR927– eBay
+4. Button batteries CR927– [eBay](http://www.ebay.com.au/sch/i.html?_trksid=p4712.m570.l1313.TR11.TRC1.A0.H0.Xcr927&_nkw=cr927&_sacat=0&_from=R40)
 
 5. Lock Nut – it needs to be just larger than the opening of the bullet. I used a lock nut.
 

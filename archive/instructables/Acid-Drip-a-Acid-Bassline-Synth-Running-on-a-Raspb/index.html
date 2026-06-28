@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,48 +164,68 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Acid Drip - a Acid Bassline Synth Running on a Raspberry Pi</h1><div class="source"><a href="https://www.instructables.com/Acid-Drip-a-Acid-Bassline-Synth-Running-on-a-Raspb/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Have you ever heard a Roland TB-303 Bassline synth being played? Well if you're listened or danced to house, trance or techno music, then there is a good chance you have heard one before.</p>
 <p>I decided I wanted to make my own (you can actually by a Behringer TD3-303 clone for relatively cheap - but why buy when you can make!) using a Raspberry Pi and a handful of components.</p>
-<p>The original 303 uses a lot of passive and components like Op amps and matched pairs of transistors to build the classic filters and sound effects you hear. However, I'm a little too lazy these days to have to work with all those components and built the synth on a Raspberry Pi.</p>
-<p>Unlike the original, Acid Drip is very easy to play - you can turn it on and start busting out grooves straight away. It has a heap of functions that are intuitive and easy to use (this took ages to get right and I'm still finessing parts of the code!!!), and it also has a sync in so you can connect it to other synths like a drum machine and play along.</p>
-<p>I have used every GPIO on the Raspberry pi with the majority going to the 16 switches which are used to interact with the sequencer. As I couldn't add any other connections, I had to be a little canny with how the functions are activated and how the synth is started/stopped etc.</p>
-<p>As I had a tonne of room still left on the Raspberry Pi, I decided to add a drum machine as well so you can add beats on top of the acid bassline. I won't go to much into this yet - I'll save the intro to the drum machine until the end of this 'Ible.</p>
+<p>The original 303 uses a lot of passive and components like Op amps and matched pairs of transistors to build the classic filters and sound effects you hear.</p>
+<p>However, I'm a little too lazy these days to have to work with all those components and built the synth on a Raspberry Pi.</p>
+<p>Unlike the original, Acid Drip is very easy to play - you can turn it on and start busting out grooves straight away.</p>
+<p>It has a heap of functions that are intuitive and easy to use (this took ages to get right and I'm still finessing parts of the code!!!), and it also has a sync in so you can connect it to other synths like a drum machine and play along.</p>
+<p>I have used every GPIO on the Raspberry pi with the majority going to the 16 switches which are used to interact with the sequencer.</p>
+<p>As I couldn't add any other connections, I had to be a little canny with how the functions are activated and how the synth is started/stopped etc.</p>
+<p>As I had a tonne of room still left on the Raspberry Pi, I decided to add a drum machine as well so you can add beats on top of the acid bassline.</p>
+<p>I won't go to much into this yet - I'll save the intro to the drum machine until the end of this 'Ible.</p>
 <p>Well there is really no use talking about a musical thing - you need to hear it. Check out the vid so see it in action!</p>
 <p>Here are a few online features on the Acid Drip</p>
-<p>Noxalmusic</p>
-<p>Hackster.io</p>
-<p>Synthanatomy</p>
-<p>Matrixsynth</p>
-<p>Rackears</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>Parts</p>
-<p>As usual, I have provided the parts list as a PDF which can be found as an attachment on this step. You can then easily print this off if needed or go to the links provided in the PDF and order the parts as required. You can also find the list in excel on my GitHub page</p>
+<p><a href="https://noxalmusic.autonomaailab.com/lonesoulsurfer-acid-drip-open-source-groovebox/">Noxalmusic</a></p>
+<p><a href="https://www.hackster.io/news/a-modern-twist-on-the-synth-that-defined-techno-653653c14b15.amp">Hackster.io</a></p>
+<p><a href="https://synthanatomy.com/2026/06/lonesoulsurfer-acid-drip-open-source-groovebox-with-synth-and-drum-machine.html">Synthanatomy</a></p>
+<p><a href="https://www.matrixsynth.com/2026/06/meet-acid-drip-diy-bassline-synth-drum.html">Matrixsynth</a></p>
+<p><a href="https://www.rackears.io/products/acid-drip-acid-drip">Rackears</a></p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>Parts</p>
+<p>As usual, I have provided the parts list as a PDF which can be found as an attachment on this step.</p>
+<p>You can then easily print this off if needed or go to the links provided in the PDF and order the parts as required.</p>
+<p>You can also find the list in excel on my <a href="https://github.com/lonesoulsurfer/Acid_Drip_Bassline_and_Drum_Synth">GitHub</a> page</p>
 <p>Getting the PCB & Front & Back Panel Printed</p>
-<p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to send to JLCPCB can be found in my GitHub page. Download the repo to your computer.</p>
+<p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
+<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
+<p>I use <a href="https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE">JLCPCB</a> (not affiliated) to get this done.</p>
+<p>The front panel is actually just a PCB without any components included!</p>
+<p>The front panel design is done in a program called <a href="https://inkscape.org/">Inkscape</a> (available free) and the panel including the drilled holes is done in <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a> (also free!)</p>
+<p>The files that you need to send to <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> can be found in my <a href="https://github.com/lonesoulsurfer/Acid_Drip_Bassline_and_Drum_Synth">GitHub</a> page.</p>
+<p>Download the repo to your computer.</p>
 <p>STEPS:</p>
-<p>Send the Gerber files (keep them zipped) to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you.</p>
+<p>Send the Gerber files (keep them zipped) to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyq</p>
+<p>BhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivg</p>
+<p>Eq7Mzfo</p>
+<p>GlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you.</p>
 <ul>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
 <li>JLCPCB used to print an order number onto the PCB which was super annoying, especially if you didn't specify where to add it. Now you don't have to worry about it as they no longer do it</li>
 <li>when choosing the surface finish for the front panel, pick Lead Free HASL as this will ensure that there is no lead in the front panel</li>
 <li>You can pick whatever colour you want to choose for your front panel and PCB.</li>
 </ul>
 <ul>
 <li><a href="pdfs/Acid Drip - Parts List.pdf">Acid Drip - Parts List</a></li>
-</ul><a class="pdf-download" href="pdfs/Acid Drip - Parts List.pdf" target="_blank">&#8675; Acid Drip - Parts List</a><h2><span class="step-num">STEP 1</span>Step 1: Adding the Components to the PCB - Front Side</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 6" loading="lazy"></div><p>I started with adding the Cherry MX switches. The reason being, I wanted to make sure that the board didn't have any other components whist soldering them into place so I could get them as straight as possible. Other components can get in the way etc. I found this worked well.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Adding the Components to the PCB - Front Side</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Adding the Components to the PCB - Front Side image 6" loading="lazy"></div><p>I started with adding the Cherry MX switches.</p>
+<p>The reason being, I wanted to make sure that the board didn't have any other components whist soldering them into place so I could get them as straight as possible.</p>
+<p>Other components can get in the way etc.</p>
+<p>I found this worked well.</p>
 <p>A NOTE ON THE PCB & FRONT PANEL</p>
-<p>You may have noticed that your front panel and PCB and the ones int he images are different. That's because I made improvements to version 1 and you guys get the better option. The main change as, the drum machine added was an afterthought and I had to make some running changes to get a mix pot for the acid synth and drums along with a way to be able to add a sync in if required. Since I have used every single GPIO pin on the Raspberry Pi - it needed some clever code workarounds to get it to work.</p>
+<p>You may have noticed that your front panel and PCB and the ones int he images are different.</p>
+<p>That's because I made improvements to version 1 and you guys get the better option.</p>
+<p>The main change as, the drum machine added was an afterthought and I had to make some running changes to get a mix pot for the acid synth and drums along with a way to be able to add a sync in if required.</p>
+<p>Since I have used every single GPIO pin on the Raspberry Pi - it needed some clever code workarounds to get it to work.</p>
 <p>STEPS:</p>
 <ul>
-<li>Add key caps to each of the switches. This will ensure that they sit straight whist you solder them into place</li>
-<li>Add a couple into the PCB (one at each end) and solder one leg of each of the switches first. turn over and make sure that they are straight (they should be as there are plastic legs that help help them straight).</li>
-<li>Solder the other leg into place. Do this for the rest of the switches</li>
-<li>Now you can continue to solder the rest of the components to the front side of the panel. start with the audio jacks as these are the lowest profile and work your way up, I did the toggle switches next and then the pots</li>
+<li>Add key caps to each of the switches.  This will ensure that they sit straight whist you solder them into place</li>
+<li>Add a couple into the PCB (one at each end) and solder one leg of each of the switches first.  turn over and make sure that they are straight (they should be as there are plastic legs that help help them straight).</li>
+<li>Solder the other leg into place.  Do this for the rest of the switches</li>
+<li>Now you can continue to solder the rest of the components to the front side of the panel.  start with the audio jacks as these are the lowest profile and work your way up, I did the toggle switches next and then the pots</li>
 </ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - Back Side</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: Adding the Components to the PCB - Back Side image 8" loading="lazy"></div><p>Usually, I would be telling you to add the lowest profile components first which in this case would be the resistors. However, due to the cherry caps, we have left this until the 2nd step!</p>
 <p>STEPS:</p>
 <ul>
 <li>Place each of the resistors into place into the PDC and solder</li>
-<li>Now do the same for the JST connector. This connector is where you will be providing the 5V's to run everything - more on that later</li>
+<li>Now do the same for the JST connector.  This connector is where you will be providing the 5V's to run everything - more on that later</li>
 <li>Add the caps to the board and also solder these into place</li>
-<li>Now you can add the Raspberry Pi. To do this, first add some pin connectors to the Raspberry Pi. this will allow you to easily remove it if required</li>
+<li>Now you can add the Raspberry Pi.  To do this, first add some pin connectors to the Raspberry Pi.  this will allow you to easily remove it if required</li>
 <li>Now push it into place on the PCB and solder each of the pin legs to the solder points</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Screen</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Screen image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Screen image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Screen image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Screen image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Screen image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Screen image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding the Screen image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 3: Adding the Screen image 8" loading="lazy"></div><p>The screen is actually attached to the front panel and is connected to the PCB via some male header pins. this way, you can have a great fit to the front panel of the screen and easily remove the front panel if required.</p>
 <p>STEPS:</p>
@@ -185,16 +240,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>STEPS:</p>
 <ul>
 <li>The first thing to do is to adda M2 screw to each of the holes in the front panel and then spacers to secure them into place.</li>
-<li>The spacer size you might need to experiment with to get them right. What I did was to add a couple spacers which I thought would be the right size to 2 of the M2 screws at the top and placed the front panel and PCB together. I then checked to see if the spacers on the screen were touching the PCB with the panel spacers in place. If they weren't touching, then I reduced the spacer size until they were.</li>
-<li>Continue to add the rest of the spacers and then place the front panel onto the PCB. secure into place with M2 nuts</li>
-<li>Now you can add the potentiometer and toggle switch nuts into place and also the audio socket rings. These all help with keeping the front panel secured</li>
+<li>The spacer size you might need to experiment with to get them right.  What I did was to add a couple spacers which I thought would be the right size to 2 of the M2 screws at the top and placed the front panel and PCB together.  I then checked to see if the spacers on the screen were touching the PCB with the panel spacers in place.  If they weren't touching, then I reduced the spacer size until they were.</li>
+<li>Continue to add the rest of the spacers and then place the front panel onto the PCB.  secure into place with M2 nuts</li>
+<li>Now you can add the potentiometer and toggle switch nuts into place and also the audio socket rings.  These all help with keeping the front panel secured</li>
 <li>Lastly, you can add some pot knobs to each of the pots</li>
 </ul>
 <ul>
 <li><a href="pdfs/Acid Drip - Parts List _1_.pdf">Acid Drip - Parts List (1)</a></li>
-</ul><a class="pdf-download" href="pdfs/Acid Drip - Parts List _1_.pdf" target="_blank">&#8675; Acid Drip - Parts List (1)</a><h2><span class="step-num">STEP 5</span>Step 5: Loading the Code</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 5: Loading the Code image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Loading the Code image 2" loading="lazy"></div><p>Follow the below to load the code up to the Raspberry Pi. I have provided a full step by step guide so anyone can do this.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Loading the Code</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 5: Loading the Code image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Loading the Code image 2" loading="lazy"></div><p>Follow the below to load the code up to the Raspberry Pi. I have provided a full step by step guide so anyone can do this.</p>
 <p>Step 1: Install Arduino IDE</p>
-<p>Download and install Arduino IDE 2.x from arduino.cc/en/software.</p>
+<p>Download and install Arduino IDE 2.x from <a href="https://www.arduino.cc/en/software">arduino.cc/en/software</a>.</p>
 <p>If you already have it installed, make sure it's version 2.0 or later - the older 1.x IDE can cause issues with the RP2040 core.</p>
 <p>Step 2: Install the RP2040 Board Core</p>
 <p>The Arduino IDE doesn't support RP2040 boards out of the box. You need to add the Earle Philhower RP2040 core.</p>
@@ -260,21 +315,26 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>Troubleshooting</p>
 <p>"No port available" / board not detected Try a different USB cable - many USB-C cables are charge-only and won't work for data transfer.</p>
-<p>Compile error about Mozzi Make sure you have Mozzi 2.0 or later. Version 1.x has a different API and will not compile with this sketch. Check via Sketch → Include Library → Manage Libraries and update if needed.</p>
+<p>Compile error about Mozzi Make sure you have Mozzi 2.0 or later.</p>
+<p>Version 1.x has a different API and will not compile with this sketch.</p>
+<p>Check via Sketch → Include Library → Manage Libraries and update if needed.</p>
 <p>"Multiple libraries found for..." This is a warning, not an error - it's safe to ignore. If you have old copies of Adafruit libraries, you can remove duplicates from your Arduino libraries folder.</p>
 <p>Board doesn't appear after entering bootloader mode Try a different USB port on your computer. Some front-panel USB ports on desktop PCs don't provide enough power.</p>
 <p>Upload fails with "No device found on..." Re-enter bootloader mode (hold BOOT, reconnect USB) and try again.</p>
-<p>Sketch compiles but display shows garbage or nothing Re-check SPI wiring. The ILI9341 display is sensitive to pin assignment - GP6/GP7/GP8/GP10/GP13 must match exactly.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding Power</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding Power image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding Power image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding Power image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding Power image 4" loading="lazy"></div><p>We need to drive the Raspberry Pi with 5V's. A normal mobile phone of 18650 Li-Ion battery are 3.7V so we need a way to boost the voltage up to 5V. You can use a cheap module to do this quite easily. If you are going to use a mobile battery - then you can buy these from Ali Express or find them for free</p>
+<p>Sketch compiles but display shows garbage or nothing Re-check SPI wiring. The ILI9341 display is sensitive to pin assignment - GP6/GP7/GP8/GP10/GP13 must match exactly.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding Power</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding Power image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding Power image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding Power image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding Power image 4" loading="lazy"></div><p>We need to drive the Raspberry Pi with 5V's.</p>
+<p>A normal mobile phone of 18650 Li-Ion battery are 3.7V so we need a way to boost the voltage up to 5V.</p>
+<p>You can use a cheap module to do this quite easily.</p>
+<p>If you are going to use a mobile battery - then you can buy these from Ali Express or <a href="https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/">find them for free</a></p>
 <p>STEPS:</p>
 <ul>
-<li>The first thing to do is to add the charging module to the battery. I usually just superglue the module directly to the top of the battery – keeps everything nice and neat</li>
+<li>The first thing to do is to add the charging module to the battery.  I usually just superglue the module directly to the top of the battery – keeps everything nice and neat</li>
 <li>Align the + and – of the module to the same on the battery and glue down</li>
 <li>To connect the battery to the module, I just use resistor legs and connect them together.The module I used has a couple solder points for the battery terminals and also a couple for output</li>
-<li>Next is to add the step up converter. These little converters are great – they have the ability to output 12v, 9v and 5v. to get them to convert to 5v – you need to remove 2 SMD resistors which are circled on the module. Just use a hot soldering iron or an exacto knife</li>
+<li>Next is to add the step up converter.  These little converters are great – they have the ability to output 12v, 9v and 5v.  to get them to convert to 5v – you need to remove 2 SMD resistors which are circled on the module.  Just use a hot soldering iron or an exacto knife</li>
 <li>It also has a charging and running LED which isn’t needed – this also has a SMD resister indicated on the board – also remove this</li>
 <li>Now you can connect the output of the charging module to the input of the step up converter with a couple wires.</li>
 <li>Add a JST connector to the output of the converter – this connects directly to the 5V input on the PCB</li>
-<li>Lastly, you can add a couple wires to the 2 solder points near the USB C connector on the charging module and add a USB C socket. This will ensure that you can charge the battery when it is inside the case</li>
+<li>Lastly, you can add a couple wires to the 2 solder points near the USB C connector on the charging module and add a USB C socket.  This will ensure that you can charge the battery when it is inside the case</li>
 </ul><h2><span class="step-num">STEP 7</span>Step 7: Making a Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making a Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making a Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making a Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making a Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Making a Case image 5" loading="lazy"></div><p>I made a simple wooden case for my synth but if you are feeling frisky you could easily design and print a 3D one</p>
 <p>STEPS:</p>
 <ul>
@@ -289,7 +349,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul><h2><span class="step-num">STEP 8</span>Step 8: How to Play the Acid Drip Bassline Synth</h2><p>Acid Drip has two modes — the Acid Synthesizer and the Beat Machine — which can run simultaneously and lock in sync. Switch between them at any time by pressing pads 9+10 together.</p>
 <p>Getting Started</p>
 <p>Press pads 1+2 together to start and stop the sequencer and drum machine. Holding down pads 1+2 together for 2 seconds will reset everything and you get back to the starting pattern.</p>
-<p>The three pots shape the acid sound in real time — CUT controls the filter cutoff, RES controls resonance, and DCY controls how long each note rings out. These are your main performance controls and respond instantly while the sequencer is running.</p>
+<p>The three pots shape the acid sound in real time — CUT controls the filter cutoff, RES controls resonance, and DCY controls how long each note rings out.</p>
+<p>These are your main performance controls and respond instantly while the sequencer is running.</p>
 <p>Building a Bassline</p>
 <p>The 16 pads represent the 16 steps of the sequencer. A short press toggles a step on or off.</p>
 <p>A long press cycles through accent and glide — accent hits the step harder with more filter drive, glide slides the pitch into the next note.</p>
@@ -315,12 +376,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>DCY — sets how long the accent's filter sweep takes to decay back to normal</li>
 </ul>
 <p>Your normal CUT/RES/DCY settings are frozen while you're in this mode, so the bassline's base tone won't change while you tune — only accented steps will sound different as you turn the pots.</p>
-<p>Play a pattern with some accented steps active so you can hear the changes as you make them. Hold pads 15+16 again for 1 second to exit — your settings are automatically saved and will still be there next time you power on, until you go back in and change them again.</p>
+<p>Play a pattern with some accented steps active so you can hear the changes as you make them.</p>
+<p>Hold pads 15+16 again for 1 second to exit — your settings are automatically saved and will still be there next time you power on, until you go back in and change them again.</p>
 <p>Saving and Loading</p>
-<p>Saving — hold pads 7+8, and hold down either pads 3, 4, 5 or 6 for 1 second to save. Loading — hold pads 7+8, and tap either pads 3, 4, 5 or 6 to load one of the four patch slots. The four dots in the top of the screen show which slots have something saved (yellow = saved, grey = empty).</p>
+<p>Saving — hold pads 7+8, and hold down either pads 3, 4, 5 or 6 for 1 second to save.</p>
+<p>Loading — hold pads 7+8, and tap either pads 3, 4, 5 or 6 to load one of the four patch slots.</p>
+<p>The four dots in the top of the screen show which slots have something saved (yellow = saved, grey = empty).</p>
 <p>The Beat Machine</p>
-<p>I made this as easy as possible to use! Choose from 16 built-in patterns using the pad grid — everything from straight 4/4 and four-on-the-floor house to breakbeats, latin, drum and bass and more. Each pattern is a complete arrangement across all 8 drum tracks and gives you a solid foundation to work from straight away. There are 8 drum instruments — kick, hi-hat, snare, rim, tom, bass, clap and open hat — playing across a 32-step grid (2 bars of 16th notes). Short-tap any pad to load that pattern instantly.</p>
-<p>For individual drum sounds, hold any of the first five drum pads (kick through tom) while turning the pots to adjust that drum's pitch, decay length and volume independently. The pitch knob is exponential — centre is natural speed, and every quarter turn is roughly one octave. These settings save with your patch slots.</p>
+<p>I made this as easy as possible to use!</p>
+<p>Choose from 16 built-in patterns using the pad grid — everything from straight 4/4 and four-on-the-floor house to breakbeats, latin, drum and bass and more.</p>
+<p>Each pattern is a complete arrangement across all 8 drum tracks and gives you a solid foundation to work from straight away.</p>
+<p>There are 8 drum instruments — kick, hi-hat, snare, rim, tom, bass, clap and open hat — playing across a 32-step grid (2 bars of 16th notes).</p>
+<p>Short-tap any pad to load that pattern instantly.</p>
+<p>For individual drum sounds, hold any of the first five drum pads (kick through tom) while turning the pots to adjust that drum's pitch, decay length and volume independently.</p>
+<p>The pitch knob is exponential — centre is natural speed, and every quarter turn is roughly one octave.</p>
+<p>These settings save with your patch slots.</p>
 <p>Beat Machine FUNC Mode</p>
 <p>Hold pads 7+8 to enter FUNC mode on the Beat Machine. The bottom row maps to 8 functions and the top row selects the value.</p>
 <ul>
@@ -342,11 +412,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>While the FILL slot is selected in FUNC mode, the three pots let you dial in the fill voice's own pitch, decay and volume independently of the main drum sounds — useful for making the fill snare or hat sound slightly different from the pattern version.</p>
 <p>If the acid synth is playing when you switch to drum mode, you will hear both playing together — this is intentional so you never lose the groove when switching views.</p>
 <p>Sync In</p>
-<p>If you want to slave Acid Drip to an external clock, flip the SPDT switch to the SYNC position and hold pad 14 while powering on. The device will boot into Sync In mode — a quick "SYNC IN ACTIVE" message confirms it — and the sequencer will follow pulses arriving on GP2 rather than its internal clock.</p>
+<p>If you want to slave Acid Drip to an external clock, flip the SPDT switch to the SYNC position and hold pad 14 while powering on.</p>
+<p>The device will boot into Sync In mode — a quick "SYNC IN ACTIVE" message confirms it — and the sequencer will follow pulses arriving on GP2 rather than its internal clock.</p>
 <p>Easter Egg</p>
-<p>Hold down pads 11, 12, 13 and 14 for 1 second to enter a secret pattern mode with classic acid house and synth patterns pre-loaded. You can still use all the FUNC controls and add drums on top. Hold the same four pads again for 1 second to exit. You may also want to reset using pads 1+2 after exiting to clear the pattern.</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<p>Hold down pads 11, 12, 13 and 14 for 1 second to enter a secret pattern mode with classic acid house and synth patterns pre-loaded.</p>
+<p>You can still use all the FUNC controls and add drums on top.</p>
+<p>Hold the same four pads again for 1 second to exit.</p>
+<p>You may also want to reset using pads 1+2 after exiting to clear the pattern.</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
 <li><a href="pdfs/Acid Drip - Parts List.pdf">Acid Drip - Parts List</a></li>
 <li><a href="pdfs/Acid Drip - Parts List _1_.pdf">Acid Drip - Parts List (1)</a></li>
-</ul><a class="pdf-download" href="pdfs/Acid Drip - Parts List.pdf" target="_blank">&#8675; Acid Drip - Parts List</a><a class="pdf-download" href="pdfs/Acid Drip - Parts List _1_.pdf" target="_blank">&#8675; Acid Drip - Parts List (1)</a>
+</ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

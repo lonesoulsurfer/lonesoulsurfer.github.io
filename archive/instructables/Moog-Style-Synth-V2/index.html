@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,69 +162,78 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Moog Light Synth V2</span>
 </nav>
-<h1>Moog Light Synth V2</h1><div class="source"><a href="https://www.instructables.com/Moog-Style-Synth-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. The "growling" oscillator tonality is supplied via a PWM and an awesome high-resonance low pass filter. The oscillator is controlled via 2 Light dependent resistors (LDR) and gives you the ability to create amazing musical expression. The 10 “keys” give you different tones and allow you to play it like a keyboard</p>
-<p>Also included is 2 Hex inverter drones, supplied via a 40106 IC. The 2 two adjustable drone oscillators give this synth three oscillators in total. You also have the ability to turn off the 2 hex inverter drones and just play around with the other oscillator.</p>
+<h1>Moog Light Synth V2</h1><div class="source"><a href="https://www.instructables.com/Moog-Style-Synth-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter.</p>
+<p>The "growling" oscillator tonality is supplied via a PWM and an awesome high-resonance low pass filter.</p>
+<p>The oscillator is controlled via 2 Light dependent resistors (LDR) and gives you the ability to create amazing musical expression.</p>
+<p>The 10 “keys” give you different tones and allow you to play it like a keyboard</p>
+<p>Also included is 2 Hex inverter drones, supplied via a 40106 IC.</p>
+<p>The 2 two adjustable drone oscillators give this synth three oscillators in total.</p>
+<p>You also have the ability to turn off the 2 hex inverter drones and just play around with the other oscillator.</p>
 <p>I also added the ability to play the synth just with one potentiometer and the LDR’s. When combined with the echo/reverb feature you can really get some fantastic sounds from the synth.</p>
 <p>Just watch the YouTube clip and you’ll see what I mean</p>
-<p>Lastly, I have to give a shout out to Pete McBennett who designed this awesome circuit. Check out his YouTube channel here</p>
-<p>You can check out the first one I built here</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"></div><p>The Moog Synth</p>
-<p>I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the board for you. The circuit and board were put together using Eagle and all of the files including the schematic, board and gerber files can be found in a Google Drive link in the next step</p>
+<p>Lastly, I have to give a shout out to <a href="https://www.youtube.com/channel/UCk4mtz-tZbXdk1Xb0DSd2QQ">Pete McBennett</a> who designed this awesome circuit. Check out his YouTube channel here</p>
+<p>You can check out the first one I built <a href="https://www.instructables.com/Moog-Style-Synth/">here</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"></div><p>The Moog Synth</p>
+<p>I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/e?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GVdFKX-Hevhd6kw8GeZu3nYS_I10AJjhGupCabeBPJ_yEL6WvauxcaAtqKEALw_wcB">JLCPCB</a> (Not affiliated) who will print the board for you.</p>
+<p>The circuit and board were put together using Eagle and all of the files including the schematic, board and gerber files can be found in a Google Drive link in the next step</p>
 <p>The parts list is also available in my Google drive as an excel file and I have included as a PDF in this Instructable.</p>
 <p>The Rest of the Parts:</p>
 <ol>
-<li>Potentiometer Knobs - eBay</li>
-</ul>
+<li>Potentiometer Knobs - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=potentiometer+knob&_sacat=0&_sop=15">eBay</a></li>
+</ol>
 <ol>
-<li>Echo/Reverb module - eBay</li>
-</ul>
+<li>Echo/Reverb module - <a href="https://www.ebay.com.au/itm/1pcs-PT2399-Microphone-Reverberation-Board-No-Preamplifier-Function-Module/183657875765?hash=item2ac2dcc935:g:cSQAAOSw~D5cTqoX&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 50K Potentiomeners (for the echo/reverb module) - eBay</li>
-</ul>
+<li>2 X 50K Potentiomeners (for the echo/reverb module) - <a href="https://www.ebay.com.au/itm/RK097N-Linear-Mono-Potentiometer-B5K-to-100K-Ohm-3-Pin-15mm-Audio-Amplifier/223247173556?hash=item33fa9187b4:g:pH8AAOSwOJVehtiU">eBay</a></li>
+</ol>
 <ol>
-<li>10 X momentary switches - Ali Express</li>
-</ul>
+<li>10 X momentary switches - <a href="https://www.aliexpress.com/item/32965284265.html?spm=a2g0s.9042311.0.0.27424c4dbqbNJq">Ali Express</a></li>
+</ol>
 <ol>
-<li>2 X SPDT switches - eBay</li>
-</ul>
+<li>2 X SPDT switches - <a href="https://www.ebay.com.au/itm/2-Pcs-AC-SPDT-On-Off-3-Position-Momentary-Toggle-Switch-AC250V-2A-120V-5A-ATH1/402436346500?hash=item5db3135284:g:oQ8AAOSwQFJauzRQ">eBay</a></li>
+</ol>
 <ol>
-<li>Wire. I like to use computer ribbon cable. you can buy it on Ali Express or just visit a place where e-waste is dumped to get it for free</li>
-</ul>
+<li>Wire. I like to use computer ribbon cable. you can buy it on <a href="https://www.aliexpress.com/item/1005001355622002.html?spm=a2g0o.productlist.0.0.154a3acctmNVW2&algo_pvid=e1b4a0c7-1a6b-4c37-9911-6232f45e130c&algo_expid=e1b4a0c7-1a6b-4c37-9911-6232f45e130c-1&btsid=0b0a556416060938341953375e1bd2&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_">Ali Express</a> or just visit a place where e-waste is dumped to get it for free</li>
+</ol>
 <ol>
-<li>Li-po Battery - eBay. I used an old mobile battery to power the synth. They work great for projects like this and you can get them for free. check out this 'ible on how to find them and use them</li>
-</ul>
+<li>Li-po Battery - eBay. I used an old mobile battery to power the synth. They work great for projects like this and you can get them for free. check out <a href="https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/">this 'ible</a> on how to find them and use them</li>
+</ol>
 <ol>
-<li>Charging and voltage regulator module - eBay</li>
-</ul>
+<li>Charging and voltage regulator module - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=3.7V+9V+5V+2A+Adjustable+Step+Up+18650+Lithium+Battery&_sacat=0&_sop=15">eBay</a></li>
+</ol>
 <ol>
-<li>Micro USB module - eBay</li>
-</ul>
+<li>Micro USB module - <a href="https://www.ebay.com.au/itm/KQ-5Pcs-CJMCU-5V-Micro-USB-Board-Interface-Power-Switch-Adapter-Breakout-Module/333623439304?hash=item4dad81afc8:g:dH0AAOSwK~tdoXXg">eBay</a></li>
+</ol>
 <ol>
-<li>Water Decal - eBay</li>
-</ul>
+<li>Water Decal - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=water+decal+a4&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=water+decal">eBay</a></li>
+</ol>
 <ol>
 <li>40mm X 80mm X 10mm length of hard wood (for making the case) - Hardware store</li>
-</ul>
+</ol>
 <ul>
 <li><a href="pdfs/Moog light Synth - BoM _PDF_.pdf">Moog light Synth - BoM (PDF)</a></li>
-</ul><a class="pdf-download" href="pdfs/Moog light Synth - BoM _PDF_.pdf" target="_blank">&#8675; Moog light Synth - BoM (PDF)</a><h2><span class="step-num">STEP 2</span>Step 2: The Moog Style Synth - Circuit and Board</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Moog Style Synth - Circuit and Board image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Moog Style Synth - Circuit and Board image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Moog Style Synth - Circuit and Board image 3" loading="lazy"></div><p>As mentioned in the previous step, you can find the schematic and board (designed in Eagle) in my Google drive. If you want to you can play around with these yourself in Eagle. I have also saved the gerber files which is what you need to send to a PCB manufacturer to print the board</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: The Moog Style Synth - Circuit and Board</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Moog Style Synth - Circuit and Board image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Moog Style Synth - Circuit and Board image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Moog Style Synth - Circuit and Board image 3" loading="lazy"></div><p>As mentioned in the previous step, you can find the schematic and board (designed in Eagle) in my <a href="https://drive.google.com/drive/folders/16y0xxNxTzLwEAw7MAU7qzn4VgWmvvEWi?usp=sharing">Google drive</a>.</p>
+<p>If you want to you can play around with these yourself in Eagle.</p>
+<p>I have also saved the gerber files which is what you need to send to a PCB manufacturer to print the board</p>
 <ul>
 <li><a href="pdfs/Moog Sytle Synth - Schematic.pdf">Moog Sytle Synth - Schematic</a></li>
-</ul><a class="pdf-download" href="pdfs/Moog Sytle Synth - Schematic.pdf" target="_blank">&#8675; Moog Sytle Synth - Schematic</a><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Components to the Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Components to the Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Components to the Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Components to the Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Components to the Board image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Soldering the Components to the Board image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Soldering the Components to the Board image 6" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Components to the Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Components to the Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Components to the Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Components to the Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Components to the Board image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Soldering the Components to the Board image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Soldering the Components to the Board image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>I always start with adding the resistors first to the board. They are usually the lowest part on the board and it makes it easy to do these first. Plus there are a heap of them so it's good to get them out of the way</li>
-</ul>
+</ol>
 <ol>
 <li>Once I have all the resistors soldered I then work on other low profile parts such as the diodes.</li>
-</ul>
+</ol>
 <ol>
 <li>Next I add the IC holders pin headers</li>
-</ul>
+</ol>
 <ol>
 <li>After that I start to add on the taller components like the capacitors and transistors.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly I add in the IC's and give it a test. Adding pin headers makes it pretty easy to test, you just need some female jumper leads and add the components onto the ends of these. It's always good practice to test any circuit you have made before you go the whole way and add it to the build. Nothing worse trying to troubleshoot when there are wires everywhere.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: About the PCB</h2><div class="step-images single"><img src="images/step04_01.jpg" alt="Step 4: About the PCB image 1" loading="lazy"></div><p>The attached image shows the different connections to the PCB and how they are connected to the components. I've also included a glossary below which will help you understand what each of the connections to the PCB are for and what they do.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: About the PCB</h2><div class="step-images single"><img src="images/step04_01.jpg" alt="Step 4: About the PCB image 1" loading="lazy"></div><p>The attached image shows the different connections to the PCB and how they are connected to the components.</p>
+<p>I've also included a glossary below which will help you understand what each of the connections to the PCB are for and what they do.</p>
 <p>Out = Audio Out. To be able to hear the synth you will need to connected it to an amplifier or portable speaker. This connection will later be connected to the "in" on the echo Reverb Board</p>
 <p>Base = Drone oscillator, 100K potentiometer</p>
 <p>Tenor = Drone oscillator, 100K</p>
@@ -199,180 +243,206 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>PWM = 100K trimmer potentiometer. This "tunes" the pulse width modulated oscillator. You'll need to adjust this until you find the sweet spot</p>
 <p>LDR 1 & 2 = This is where the Light Dependent Resistors are connected.</p>
 <p>PWR = 9v power source to run the synth</p>
-<p>Single/Multi Control = I added this so you can control the synth from just one potentiometer. You can also use the Tone pot to play around with the sound as well when using the single pot control. This is a lot of fun when you have echo on.</p>
+<p>Single/Multi Control = I added this so you can control the synth from just one potentiometer.</p>
+<p>You can also use the Tone pot to play around with the sound as well when using the single pot control.</p>
+<p>This is a lot of fun when you have echo on.</p>
 <p>Switch = This turns on & off the single multi control</p>
 <p>100K = This is the potentiometer that controls the synth when one single play</p>
 <p>Switch 1 = One leg on each of the 10 momentary switches used to play the synth need to be connected together. They are then connected to the "Switch 1" connection on the PCB</p>
-<p>Switch 2 = Consists of 10 connections, each on needs to be connected to one of the legs on the 10 momentary switches</p><h2><span class="step-num">STEP 5</span>Step 5: Moding the Echo/Reverb Module</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Moding the Echo/Reverb Module image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Moding the Echo/Reverb Module image 2" loading="lazy"></div><p>I did an Instructable on how to mod the echo and reverb module which can be found here. It's not really a mod per se, more just now to had the echo pot and what resistor to remove. I won't go through this in much detail here so if you need further instructions, check out the 'ible above.</p>
+<p>Switch 2 = Consists of 10 connections, each on needs to be connected to one of the legs on the 10 momentary switches</p><h2><span class="step-num">STEP 5</span>Step 5: Moding the Echo/Reverb Module</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Moding the Echo/Reverb Module image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Moding the Echo/Reverb Module image 2" loading="lazy"></div><p>I did an Instructable on how to mod the echo and reverb module which can be found <a href="https://www.instructables.com/Echo-Reverb-Box/">here</a>.</p>
+<p>It's not really a mod per se, more just now to had the echo pot and what resistor to remove.</p>
+<p>I won't go through this in much detail here so if you need further instructions, check out the 'ible above.</p>
 <p>Steps:</p>
 <ol>
 <li>First you'll need to remove one of the SMD resistors (R27). I do this with an exacto knife and it seems to work well each time. Just get the tip of the knife on the side of the resistor and gently pry it up</li>
-</ul>
+</ol>
 <ol>
 <li>Next, you will probably need to remove the reverb port which is soldered onto the board. If however you are able to connect the pot to the panel without having to remove it then just leave it on. If you have a de-soldering device then use this as the traces have a tendency to lift if you just add a soldering iron to it. If you don't then use a pair of wire cutters and just cut it away.</li>
-</ul>
+</ol>
 <ol>
 <li>If you look on the board you will see that along with the 3 solder points for the pot that you just removed, there are 3 others near it. These ones are for controlling echo. You'll need to solder wires onto each of the solder points for reverb and echo control.</li>
-</ul>
+</ol>
 <ol>
 <li>That's all you need to do for the moment. later on you will need to connect the wires to the each and reverb pots.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Creating the Front Panel</h2><div class="step-images single"><img src="images/step06_01.jpg" alt="Step 6: Creating the Front Panel image 1" loading="lazy"></div><p>To design the panels I used Inkscape, a vector graphics editor which you can download for free! There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it before</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Creating the Front Panel</h2><div class="step-images single"><img src="images/step06_01.jpg" alt="Step 6: Creating the Front Panel image 1" loading="lazy"></div><p>To design the panels I used <a href="https://inkscape.org/">Inkscape</a>, a vector graphics editor which you can download for free!</p>
+<p>There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it before</p>
 <p>I did a couple video's on how to design knob scales and also make a front panel which I have included above.</p>
-<p>There is even an extension that you can download so you can design knob scales easily and simply which you can download here</p>
-<p>However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also includes the Inkscape file so you can play around with that as well if you want to.</p>
+<p>T<a href="https://inkscape.org/~sincoon/%E2%98%85knob-scale-generator">here</a> is even an extension that you can download so you can design knob scales easily and simply which you can download here</p>
+<p>However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF.</p>
+<p>I have also includes the Inkscape file so you can play around with that as well if you want to.</p>
 <ul>
 <li><a href="pdfs/MOOG SYNTH Pg 1.pdf">MOOG SYNTH Pg 1</a></li>
-</ul><a class="pdf-download" href="pdfs/MOOG SYNTH Pg 1.pdf" target="_blank">&#8675; MOOG SYNTH Pg 1</a><h2><span class="step-num">STEP 7</span>Step 7: Adding the Water Acrylic to the Front Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 7" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Water Acrylic to the Front Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Water Acrylic to the Front Panel image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Once you have your design you should print a few copies of it on normal A4 paper. This will allow you to use it as a template to decide how big to cut the opal acrylic. The acrylic will in the end be the front panel. I used opal coloured acrylic but you can use any colour you want.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut the acrylic panel to the right size. I used a band saw tio do this but you could do it by hand as well. Last time I did this I pre-drilled the holes. However, it makes it very hard to line up the decal so don't worry about pre-drilling.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, print the panel design directly onto decal paper and leave to dry for 30 minutes. You can also spray with clear acrylic as well to protect the ink but I didn't bother.</li>
-</ul>
+</ol>
 <ol>
 <li>Add the water decal to the acrylic by Placing the decal into some warm water and once it start to lift off, carefully slide it onto the acrylic. Ensure everything is lined up right and remove any excess water.</li>
-</ul>
+</ol>
 <ol>
 <li>Once fully dried, sprayb some clear acrylic paint on the panel and repeat 2 to 3 times.</li>
-</ul>
+</ol>
 <ol>
 <li>Mark all of the sections with a punch that need to be drilled.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill out the holes to the right size using a stepped drill piece.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Making the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Case image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Case image 7" loading="lazy"></div><p>used some strips of hardwood to make the case. It's used for edging and can be brought at any hardware store. The dimensions are 40mm X 10mm X 1000mm</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Case image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Case image 7" loading="lazy"></div><p>used some strips of hardwood to make the case. It's used for edging and can be brought at any hardware store. The dimensions are 40mm X 10mm X 1000mm</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing you need to do is to cut a groove along the wood in order to secure the panel into. I use a dremel with a router attachment to do this.</li>
-</ul>
+</ol>
 <ol>
 <li>Secure the wood with some clamps and run the bit near the top of the wood. Take your time and make sure you keep the dremel nice and straight.</li>
-</ul>
+</ol>
 <ol>
 <li>Measure and cut the wood to size. The best way to do this is to just slip in the front panel into the groove of the wood and measure where to make the cuts</li>
-</ul>
+</ol>
 <ol>
 <li>Before you secure the front panel into the case, paint the top section and inside. When the panels in place it will make it hard to do and you might get paint on the panel. I used some clear stain to highlight the grain in the wood. The reason why you don't paint it all is you need to sand the wood once the case is complete.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the front panel into the grooves of the wood and use some PVC to glue it together. If you find the panel is a little big and the wood doesn't right then just remove a little of the acrylic along the edge with a sander.</li>
-</ul>
+</ol>
 <ol>
 <li>Clamp and leave to dry for 12 hours.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Sanding the Case and Making a Base</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Sanding the Case and Making a Base image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Sanding the Case and Making a Base image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Sanding the Case and Making a Base image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Sanding the Case and Making a Base image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Sanding the Case and Making a Base image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Sanding the Case and Making a Base image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Sanding the Case and Making a Base image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Sanding the Case and Making a Base image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Sanding the Case and Making a Base image 9" loading="lazy"></div><p>Once the glue is dry you can then use a sander to make the edges nice and clean. I also rounded off the top sections which gives it a bit of a softer look.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Sanding the Case and Making a Base</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Sanding the Case and Making a Base image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Sanding the Case and Making a Base image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Sanding the Case and Making a Base image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Sanding the Case and Making a Base image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Sanding the Case and Making a Base image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Sanding the Case and Making a Base image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Sanding the Case and Making a Base image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Sanding the Case and Making a Base image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Sanding the Case and Making a Base image 9" loading="lazy"></div><p>Once the glue is dry you can then use a sander to make the edges nice and clean. I also rounded off the top sections which gives it a bit of a softer look.</p>
 <p>Steps:</p>
 <ol>
 <li>If you have a belt sander then this will be an easy job. If not, a hand sander will suffice</li>
-</ul>
+</ol>
 <ol>
 <li>Sand each of the sides of the case until the wood is smooth and level.</li>
-</ul>
+</ol>
 <ol>
 <li>To round off the top sides of the case I agauin used to sander. Just rotate the section to be rounded on the sander until you get the desired effect.</li>
-</ul>
+</ol>
 <p>BE CAREFUL - Check out the last image to see what I mean. I managed to touch the sander onto the front panel and scratched the name of the synth!</p>
 <ol>
 <li>To finish, use some 400 grit sandpaper to smooth everything out.</li>
-</ul>
+</ol>
 <ol>
 <li>The base is just a piece of ply wood. First, measure and cut to size</li>
-</ul>
+</ol>
 <ol>
 <li>Place onto the bottom of the case and add some screws to hold it in place.</li>
-</ul>
+</ol>
 <ol>
 <li>Use the sander again to smooth the edges and make them level with the case.</li>
-</ul>
+</ol>
 <ol>
 <li>Un-screw the base and make a little mark on both the base and case so you know which ends go together</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Componets to the Front Panel</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Componets to the Front Panel image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Componets to the Front Panel image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Componets to the Front Panel image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Componets to the Front Panel image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Componets to the Front Panel image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Componets to the Front Panel image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Componets to the Front Panel image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding the Componets to the Front Panel image 8" loading="lazy"></div><p>This is pretty straight forward, just be careful not to scratch the front panel when you are scecuring the components.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Componets to the Front Panel</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Componets to the Front Panel image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Componets to the Front Panel image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Componets to the Front Panel image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Componets to the Front Panel image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Componets to the Front Panel image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Componets to the Front Panel image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Componets to the Front Panel image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding the Componets to the Front Panel image 8" loading="lazy"></div><p>This is pretty straight forward, just be careful not to scratch the front panel when you are scecuring the components.</p>
 <p>Steps:</p>
 <ol>
 <li>There are 10 momentary switches to add so you may as well start with these to get them out of the way</li>
-</ul>
+</ol>
 <ol>
 <li>Next add the pots and the 3 SPDT switches</li>
-</ul>
+</ol>
 <ol>
 <li>Then comes the audio socket</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you can add the potentiometer knobs as well.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding the Circuits and Battery to the Case</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 4" loading="lazy"></div><p>Now that you have the case, panel and PCB's done, it's time to start thinking about connecting everything together. Just before that happens though, you'll need to secure the battery and PCB's to the base of the synth.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Circuits and Battery to the Case</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Circuits and Battery to the Case image 4" loading="lazy"></div><p>Now that you have the case, panel and PCB's done, it's time to start thinking about connecting everything together.</p>
+<p>Just before that happens though, you'll need to secure the battery and PCB's to the base of the synth.</p>
 <p>Steps:</p>
 <ol>
 <li>Lay all of the parts onto the back panel and work out the best place to locate them. For example, if you add the micro USB charging module at the top, then make sure that you locate the battery at the top as well.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you are happy with the layout, use some good, double sided tape and stick everything down. The great thing about using tape is it's easy to pull off the parts from the back of the wood if you need to. You could also screw down the boards later if you wanted to once everything has been tested</li>
-</ul>
+</ol>
 <ol>
 <li>To be able to charge the battery, you will need to add a micro USB module somewhere on the case. The easiest way to do this is to make a small cut-out with a flat file at the bottom of the case. You can then add a little superglue and stick it in place. Later this will be connected to the charging module.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Connecting Everything Together</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Connecting Everything Together image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Connecting Everything Together image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Connecting Everything Together image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Connecting Everything Together image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Connecting Everything Together image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Connecting Everything Together image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Connecting Everything Together image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Connecting Everything Together</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Connecting Everything Together image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Connecting Everything Together image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Connecting Everything Together image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Connecting Everything Together image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Connecting Everything Together image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Connecting Everything Together image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Connecting Everything Together image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Lay the top and bottom sections of the case next to each to each other.</li>
-</ul>
+</ol>
 <ol>
 <li>First thing you should do is complete any soldering that needs to be done. Solder the wires from the echo/reverb module to the relevant pots on the front panel</li>
-</ul>
+</ol>
 <ol>
-<li>Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found here. Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module via the micro pot on the module. You'll need a multimeter to do this</li>
-</ul>
-<p>NOTE: The module will always draw a little bit of power so I always connect the on/off switch from the battery to the module. That way you stop the module from drawing power from the battery and draining it over time. it's only a very small amount but it will drain it over a few weeks</p>
+<li>Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found <a href="https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/">here</a>. Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module via the micro pot on the module. You'll need a multimeter to do this</li>
+</ol>
+<p>NOTE: The module will always draw a little bit of power so I always connect the on/off switch from the battery to the module.</p>
+<p>That way you stop the module from drawing power from the battery and draining it over time. it's only a very small amount but it will drain it over a few weeks</p>
 <ol>
 <li>You'll also need to add a couple wires from the echo/reverb module to the output on the charging module to power it. Also connect the positive and ground from the moog light PCB to the out on the charging module</li>
-</ul>
+</ol>
 <ol>
 <li>Solder any wires needed to the switches as well. If you are confused at all then reference the image on step 3.</li>
-</ul>
+</ol>
 <ol>
 <li>Once all of the soldering is done, you can start to connect the pots up to the PCB. Again, reference the image on step 3 for how to orientate the pots.</li>
-</ul>
+</ol>
 <ol>
 <li>Test to make sure everything is working as it should before closing it up.</li>
-</ul>
-<p>NOTE: Remember that you need to set the PWM trimmer pot. To do this, turn on the synth and slowly turn the trimmer pot. Once you hear some sound, push down on one of the buttons until you get a clean, modulated sound.</p>
+</ol>
+<p>NOTE: Remember that you need to set the PWM trimmer pot.</p>
+<p>To do this, turn on the synth and slowly turn the trimmer pot.</p>
+<p>Once you hear some sound, push down on one of the buttons until you get a clean, modulated sound.</p>
 <p>TIP - if you find that the echo/reverb isn't working, disconnect it from the battery and connect it again. Sometimes they need resetting before they will work.</p><h2><span class="step-num">STEP 13</span>Step 13: So How Do You Work the Thing!</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: So How Do You Work the Thing! image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: So How Do You Work the Thing! image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: So How Do You Work the Thing! image 3" loading="lazy"></div><p>That's a good question! Turns out luckily that its very easy to play. I'll go through what each of the controls do and some of the quirks that I found that you can play around with as well</p>
 <p>Steps:</p>
 <ol>
 <li>First lets play around with the 10 keys. make sure that the single/multi pot is turned off</li>
-</ul>
+</ol>
 <ol>
 <li>Place you fingers over the 2 LDR's and start to play one of the keys. You should get a nice deep growl of a sound. Move your fingers away from the LDR's and the PWM will give you different tones</li>
-</ul>
+</ol>
 <ol>
 <li>Turn on the drone synth and you'll get a low drone. play around with the base and tenor until you get the oscillators in sync or close to.</li>
-</ul>
+</ol>
 <ol>
 <li>Now you can play the PMW synth with the drone synth in the background</li>
-</ul>
+</ol>
 <ol>
 <li>Now turn up to 7 both he reverb and echo and start playing the synth. You will notice the sounds are fatter and have more dimension due to the echo. change the echo length and speed by turning the echo pot</li>
-</ul>
+</ol>
 <ol>
 <li>Turn the Tune pot to change the pitch of the PMW synth. You can have it play higher or a real deep base low</li>
-</ul>
+</ol>
 <ol>
 <li>Ok - so now it's time to play around with the single/multi pot. First turn it on. You'll hear the PMW synth constantly running.</li>
-</ul>
+</ol>
 <ol>
 <li>Place your finger's over the LDR's and slowly turn the single/multi pot. Give it some echo as well and you'll get some awesome droney sounds coming out of the synth. Now slowly turn the tune pot to change the pitch. Give it a quick turn and the echo will kick in.</li>
-</ul>
+</ol>
 <ol>
 <li>You can even play the keys at the same time and get some funky sounds coming out of the synth</li>
-</ul>
+</ol>
 <ol>
 <li>There is a small glitch that I found in the tune pot. If you tune the pot to about 3 you'll notice that the synth pulses. Play around with this as it's almost like a basic arpeggiator which you can play to.</li>
-</ul>
+</ol>
 <ol>
 <li>This is just some basic's to get you started. There is plenty more that this little synth can do - I'll leave it up tp you to experiment and find them</li>
-</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+</ol><h2><span class="step-num">FILES</span>Downloads</h2><ul>
 <li><a href="pdfs/Moog light Synth - BoM _PDF_.pdf">Moog light Synth - BoM (PDF)</a></li>
 <li><a href="pdfs/Moog Sytle Synth - Schematic.pdf">Moog Sytle Synth - Schematic</a></li>
 <li><a href="pdfs/MOOG SYNTH Pg 1.pdf">MOOG SYNTH Pg 1</a></li>
-</ul><a class="pdf-download" href="pdfs/Moog light Synth - BoM _PDF_.pdf" target="_blank">&#8675; Moog light Synth - BoM (PDF)</a><a class="pdf-download" href="pdfs/Moog Sytle Synth - Schematic.pdf" target="_blank">&#8675; Moog Sytle Synth - Schematic</a><a class="pdf-download" href="pdfs/MOOG SYNTH Pg 1.pdf" target="_blank">&#8675; MOOG SYNTH Pg 1</a>
+</ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

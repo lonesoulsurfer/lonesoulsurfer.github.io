@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,268 +162,294 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Light Theremin in a NES Controller - 555 Timer</span>
 </nav>
-<h1>Light Theremin in a NES Controller - 555 Timer</h1><div class="source"><a href="https://www.instructables.com/Slider-Synth-Light-Theremin-555-IC/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I've been playing around with the 555 IC and never have I managed to get it to do anything until now. When I heard it come to life and start oscillating at me I was pretty damn happy with myself. If I can get it to make a sound, then anyone should be able to!</p>
-<p>I won't go into any details about the 555 IC - but if you want to know more you can check it out for yourself here.</p>
-<p>Basically this project uses a photo cell, also known as a CDS photoresister to change the pitch of the oscillating 555 IC. You use an LED to control the pitch, putting it closer to the photo cell shortens the pitch and moving it away lengthens the pitch.</p>
-<p>I wish I could claim the circuit but all credit for it goes to Dean Segovis over at Hack-a-week who came up with the idea.</p>
-<p>It's all my idea though to stick it into a NES controller. Don't really know if it is the smartest one I've ever had but you can be the judge of that. Don't worry, I didn't use an original NES controller, just a cheap knock-off.</p>
-<p>Hackaday were also nice enough to do a review on this project which can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Electrical Components</p>
+<h1>Light Theremin in a NES Controller - 555 Timer</h1><div class="source"><a href="https://www.instructables.com/Slider-Synth-Light-Theremin-555-IC/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I've been playing around with the 555 IC and never have I managed to get it to do anything until now.</p>
+<p>When I heard it come to life and start oscillating at me I was pretty damn happy with myself.</p>
+<p>If I can get it to make a sound, then anyone should be able to!</p>
+<p>I won't go into any details about the 555 IC - but if you want to know more you can check it out for yourself <a href="https://en.wikipedia.org/wiki/555_timer_IC">here</a>.</p>
+<p>Basically this project uses a photo cell, also known as a CDS photoresister to change the pitch of the oscillating 555 IC.</p>
+<p>You use an LED to control the pitch, putting it closer to the photo cell shortens the pitch and moving it away lengthens the pitch.</p>
+<p>I wish I could claim the circuit but all credit for it goes to <a href="http://hackaweek.com/hacks/?attachment_id=1515">Dean Segovis over at Hack-a-week</a> who came up with the idea.</p>
+<p>It's all my idea though to stick it into a NES controller.</p>
+<p>Don't really know if it is the smartest one I've ever had but you can be the judge of that.</p>
+<p>Don't worry, I didn't use an original NES controller, just a cheap knock-off.</p>
+<p>[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbi</p>
+<p>KsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) were also nice enough to do a review on this project which can be found <a href="https://hackaday.com/tag/cds/">here</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Electrical Components</p>
 <p>You will be able to get all of these components at your local electrical hobby store. However I have linked them to eBay as well.</p>
 <ol>
-<li>100 Ohm Resistor – eBay</li>
-</ul>
+<li>100 Ohm Resistor – <a href="https://www.ebay.com.au/itm/200Pcs-1-4W-Metal-Film-Resistors-1ohm-47ohm-100ohm-220ohm-470ohm-1K-10K-100K-1M/252706634640?hash=item3ad67d3b90:m:mFG-vc-9lvzKmIrjteHMqzw">eBay</a></li>
+</ol>
 <ol>
-<li>Potentiometer 10K - eBay</li>
-</ul>
+<li>Potentiometer 10K - <a href="https://www.ebay.com.au/itm/6mm-3pin-Knurled-Shaft-Single-Linear-B10K-Ohm-Rotary-Potentiometer-15mm/162933413158?hash=item25ef969526:m:mNP34lIqPW_xXIyb7OMIT4A">eBay</a></li>
+</ol>
 <ol>
-<li>2.2 uf Capacitor – eBay</li>
-</ul>
+<li>2.2 uf Capacitor – <a href="https://www.ebay.com.au/itm/2-2-uf-50-V-Electrolytic-capacitor-20-pcs/292465991779?hash=item441854e063:g:JNAAAOSwCY9ZtLEZ">eBay</a></li>
+</ol>
 <ol>
-<li>100 uf Capacitor – eBay</li>
-</ul>
+<li>100 uf Capacitor – <a href="https://www.ebay.com.au/itm/100-F-35V-High-Temp-Electrolytic-Capacitors-10-20-or-50-pack-100uF-Capacitor/201961792518?hash=item2f05dc6406:m:mBeyhv3yjNTxLr9W8MQ6SMg">eBay</a></li>
+</ol>
 <ol>
-<li>Speaker - 8 Ohm 0.5W – eBay</li>
-</ul>
+<li>Speaker - 8 Ohm 0.5W – <a href="https://www.ebay.com.au/itm/2-Pcs-8ohm-Loud-Speaker-8-0-5W-Small-Trumpet-36mm-Diameter-AU-NEW/302106509576?epid=22004488711&hash=item4656f38108:g:i84AAOSwZJBYAJFX">eBay</a></li>
+</ol>
 <ol>
-<li>3mm white LED – eBay</li>
-</ul>
+<li>3mm white LED – <a href="https://www.ebay.com.au/itm/20PCS-LED-3MM-Round-White-LED-Emitting-Red-Llight-Lamp-Super-Bright-SF/191931298476?hash=item2cafff32ac:g:oOAAAOSwIgNXlr8d">eBay</a></li>
+</ol>
 <ol>
-<li>Photo Cell – eBay</li>
-</ul>
+<li>Photo Cell – <a href="https://www.ebay.com.au/itm/20PCS-Photoresistor-LDR-CDS-5mm-Light-Dependent-Resistor-Sensor-GL5516-Arduino/222746709589?epid=22011020945&hash=item33dcbd0e55:g:03YAAOSwKytZL-uQ">eBay</a></li>
+</ol>
 <ol>
-<li>LM555 IC – eBay</li>
-</ul>
+<li>LM555 IC – <a href="https://www.ebay.com.au/itm/10x-555-TIMER-NE555-IC-8-PIN-DIP-Single-Bi-Polar-LM-LM555-NE-NE555P-AUS-STOCK/172142220155?hash=item281479d37b:g:p24AAOSwwpdW8HDA">eBay</a></li>
+</ol>
 <ol>
-<li>2 X CR2032 3v Batteries – eBay</li>
-</ul>
+<li>2 X CR2032 3v Batteries – <a href="https://www.ebay.com.au/itm/5Pcs-Lots-3V-Cell-Batteries-CR2032-3-Volt-Coin-Button-Cell-Battery-Bulk/182105983004?epid=1067613200&hash=item2a665cc81c:g:YwMAAOSwtPZXHcYu">eBay</a></li>
+</ol>
 <ol>
-<li>CR2032 X 2 Battery Holder – eBay</li>
-</ul>
+<li>CR2032 X 2 Battery Holder – <a href="https://www.ebay.com.au/itm/Black-CR2032-Button-Coin-Cell-Battery-Holder-Case-Box-W-On-Off-Switch-Lead-GA/182195809053?hash=item2a6bb76b1d:g:GOAAAOSwgY9Xe7nl">eBay</a></li>
+</ol>
 <ol>
-<li>Perf Board – eBay</li>
-</ul>
+<li>Perf Board – <a href="https://www.ebay.com.au/itm/10pcs-5cm-x-7cm-PCB-Prototyping-Perf-Boards-Breadboard-DIY/183113399570?hash=item2aa268bd12:g:iuwAAOSwqfZab4uO">eBay</a></li>
+</ol>
 <ol>
-<li>1 X tactile switch – eBay</li>
-</ul>
+<li>1 X tactile switch – <a href="https://www.ebay.com.au/itm/6-Pin-DPDT-Latching-Tact-Tactile-Push-Button-Pushbutton-Switch-20-Pcs-M9Q6-T0H7/253253294285?epid=24009135255&hash=item3af71298cd:g:tEEAAOSw9hdaBn-z">eBay</a></li>
+</ol>
 <ol>
 <li>Thin wire. You can use the wire from the NES controller.</li>
-</ul>
+</ol>
 <p>Other Parts</p>
 <ol>
-<li>NES Controller – eBay</li>
-</ul>
+<li>NES Controller – <a href="https://www.ebay.com.au/itm/HOT-USB-Controller-Gaming-Gamer-JoyStick-Joypad-For-NES-Windows-PC-for-MAC-Q4S7/282695225215?epid=560358643&hash=item41d1f2cf7f:g:o74AAOSwjZJZ77Zb">eBay</a></li>
+</ol>
 <ol>
-<li>Plastic tubing 1/4" – eBay</li>
-</ul>
+<li>Plastic tubing 1/4" – <a href="https://www.ebay.com.au/sch/i.html?_odkw=strip+styrene+1%2F4%22&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xtube+styrene+1%2F4%22.TRS0&_nkw=tube+styrene+1%2F4%22&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>Plastic tubing 3/16" - eBay</li>
-</ul>
+<li>Plastic tubing 3/16" - <a href="https://www.ebay.com.au/sch/i.html?_odkw=tube+styrene+1%2F4%22&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xtube+styrene+3%2F16%22.TRS0&_nkw=tube+styrene+3%2F16%22&_sacat=0">eBay</a></li>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Wire cutters</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
-<li>Bread board and jumper wires - eBay</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Schematics</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Schematics image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematics image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Schematics image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Schematics image 4" loading="lazy"><img src="images/step02_05.gif" alt="Step 2: Schematics image 5" loading="lazy"></div><p>I have included a schematic of the circuit which was created by Dean Segovis. I have also done a schematic which shows the components and how they are attached to one another.</p>
-<p>The schematic is really quite simple – just make sure you test it out first on a bread board. Nothing worse than soldering everything up and then realise you have done something wrong. Better to practice on the bread board first.</p>
+<li><a href="https://www.ebay.com.au/itm/Breadboard-830-Point-Solderless-PCB-Bread-Board-MB-102-MB102-Test-Breadboard-TG/263532522395?_trkparms=aid%3D555019%26algo%3DPL.BANDIT%26ao%3D1%26asc%3D20151005190540%26meid%3D014c26d1eb15435e93d09cc9ae84deeb%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D263532522395&_trksid=p2045573.c100505.m3226">Bread board</a> and j<a href="https://www.ebay.com.au/itm/65-Lots-Bread-Board-Solderless-Cord-Jumper-Line-Wire-For-PCB-Breadboard-Connect/162309145554?hash=item25ca6103d2:g:jQIAAOSwo4pYRRAv">umper wires</a> - eBay</li>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Schematics</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Schematics image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematics image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Schematics image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Schematics image 4" loading="lazy"><img src="images/step02_05.gif" alt="Step 2: Schematics image 5" loading="lazy"></div><p>I have included a schematic of the circuit which was created by Dean Segovis. I have also done a schematic which shows the components and how they are attached to one another.</p>
+<p>The schematic is really quite simple – just make sure you test it out first on a bread board.</p>
+<p>Nothing worse than soldering everything up and then realise you have done something wrong.</p>
+<p>Better to practice on the bread board first.</p>
 <p>I have added a link in the parts list if you don’t have one of these along with some jumper wires. They are essential for any electronic projects.</p>
 <p>I’ll go through each step in wiring the project up to a perf board and add images to try and make it as fool proof as possible.</p>
-<p>Also included an image of a 555 IC and what’s inside of it. For more info on this visit Wikipedia</p><h2><span class="step-num">STEP 3</span>Step 3: Getting Started - Solder on the 555 IC</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Getting Started - Solder on the 555 IC image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Getting Started - Solder on the 555 IC image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Getting Started - Solder on the 555 IC image 3" loading="lazy"></div><p>I’m going to assume that you have tested this circuit on a breadboard and got it working. Now you know how to wire it up, you next have to solder all of the parts to a perf board (and make it as small as you can!) You will need to stuff this along with batteries, speaker switch and plastic tubing inside a NES controller and believe me there isn’t much room inside of one.</p>
+<p>Also included an image of a 555 IC and what’s inside of it. For more info on this <a href="https://en.wikipedia.org/wiki/555_timer_IC">visit Wikipedia</a></p><h2><span class="step-num">STEP 3</span>Step 3: Getting Started - Solder on the 555 IC</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Getting Started - Solder on the 555 IC image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Getting Started - Solder on the 555 IC image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Getting Started - Solder on the 555 IC image 3" loading="lazy"></div><p>I’m going to assume that you have tested this circuit on a breadboard and got it working.</p>
+<p>Now you know how to wire it up, you next have to solder all of the parts to a perf board (and make it as small as you can!) You will need to stuff this along with batteries, speaker switch and plastic tubing inside a NES controller and believe me there isn’t much room inside of one.</p>
 <p>It’s surprising how much room wires take up in a project. That’s why I have used copper wire wherever I can to reduce the space the wires take up.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the 555 IC into the perf board as shown. There is a little dot at the top of the the 555 IC and this helps you orientate it. To follow along on how I soldered it together, make sure the dot is on the left hand side.</li>
-</ul>
+</ol>
 <ol>
 <li>Slightly bend the legs inwards so it doesn’t fall out</li>
-</ul>
+</ol>
 <ol>
 <li>Solder each leg into place</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Soldering the Speaker Wires and Capacitor</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 4" loading="lazy"></div><p>The speak wires are attached to pins 1 (ground) and 3 of the 555 IC</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Soldering the Speaker Wires and Capacitor</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Soldering the Speaker Wires and Capacitor image 4" loading="lazy"></div><p>The speak wires are attached to pins 1 (ground) and 3 of the 555 IC</p>
 <p>Steps:</p>
 <ol>
 <li>solder a wire to leg 8 on the 555 timer. This will attach to the negative terminal on the speaker</li>
-</ul>
+</ol>
 <ol>
 <li>Next solder the 100 uf capacitor to leg 3 on the 555 timer making sure that it is correctly orientated.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly,. solder a wire to the negative leg of the capacitor. This will attach to the positive terminal on the speaker.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Wires for the Photo Cell</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Wires for the Photo Cell image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Wires for the Photo Cell image 2" loading="lazy"></div><p>The photo cell is attached to pins 7 and 8 on the 555 IC.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Wires for the Photo Cell</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Wires for the Photo Cell image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Wires for the Photo Cell image 2" loading="lazy"></div><p>The photo cell is attached to pins 7 and 8 on the 555 IC.</p>
 <p>Tip: If you want really thin wire, you can always use the wire that comes inside the cord on the NES controller. It's very thin and the black plastic covering comes off easily.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a wire to leg 7 of the 555</li>
-</ul>
+</ol>
 <ol>
 <li>Solder another wire to leg 8 of the 555. Don't attach the photo cell yet - you will probably need to trim the wires to remove any excess.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the 2nd Capacitor</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the 2nd Capacitor image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the 2nd Capacitor image 2" loading="lazy"></div><p>The 2nd capacitor is attached to pin 6 and 1 (ground)</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the 2nd Capacitor</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the 2nd Capacitor image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the 2nd Capacitor image 2" loading="lazy"></div><p>The 2nd capacitor is attached to pin 6 and 1 (ground)</p>
 <p>Steps:</p>
 <ol>
 <li>It's up to you how you want to attach the legs of the capacitor to the IC. As legs 6 and 1 aren't close to one another, you will need to add a jumper wire to be able to attach them. You also want to lay down the capacitors so they will fit into the NES controller (of you are using one as a case)</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the negative leg of the capacitor to leg 1 (ground)</li>
-</ul>
+</ol>
 <ol>
 <li>Add a jumper wire to the other capacitor leg and solder this to leg 6</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding a Jumper Wire From Leg 2 to 6 on the 555 IC</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Jumper Wire From Leg 2 to 6 on the 555 IC image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Jumper Wire From Leg 2 to 6 on the 555 IC image 2" loading="lazy"></div><p>To connect the 2 legs on the 555 IC together, I used a small piece of wire cut from one of the capacitors. You could also just a jumper wire like in the last step as well.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding a Jumper Wire From Leg 2 to 6 on the 555 IC</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Jumper Wire From Leg 2 to 6 on the 555 IC image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Jumper Wire From Leg 2 to 6 on the 555 IC image 2" loading="lazy"></div><p>To connect the 2 legs on the 555 IC together, I used a small piece of wire cut from one of the capacitors. You could also just a jumper wire like in the last step as well.</p>
 <p>Steps:</p>
 <ol>
 <li>Add a little solder to one end of the wire</li>
-</ul>
+</ol>
 <ol>
 <li>Solder to pin 2.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the wire down and orientate it so it is resting on pin 6.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some solder to the tip of the soldering iron and attach.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Wires for the Potentiometer</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Wires for the Potentiometer image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Wires for the Potentiometer image 2" loading="lazy"></div><p>The wires for the pot need to be attached to legs 6 and 7</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Wires for the Potentiometer</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Wires for the Potentiometer image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Wires for the Potentiometer image 2" loading="lazy"></div><p>The wires for the pot need to be attached to legs 6 and 7</p>
 <p>Steps:</p>
 <ol>
 <li>Solder wires onto legs 6 and 7 of the 555.</li>
-</ul>
+</ol>
 <p>Note: Always make the wires longer than you need - you can always trim later. Don't attach the wires yet to the pot, you need to add all of the components to the NES controller first.</p>
 <ol>
 <li>This is pretty much it. I didn't show the last little bit of wiring which is attaching the wires for the LED so follow the steps below</li>
-</ul>
+</ol>
 <ol>
 <li>Solder one leg of the 100 ohm resister to pin 8 of the 55 IC</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the other leg to the perf board and attach a wire to it. This will go to the switch and then to the positive terminal of the battery</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, attach another wire to pin 1. This will go to the negative side of the battery</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: NES Controller - Pull It Apart</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: NES Controller - Pull It Apart image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: NES Controller - Pull It Apart image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: NES Controller - Pull It Apart image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: NES Controller - Pull It Apart</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: NES Controller - Pull It Apart image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: NES Controller - Pull It Apart image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: NES Controller - Pull It Apart image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Un-screw the 6 screws in the back of the case</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the screw that is holding the circuit board to the case</li>
-</ul>
+</ol>
 <ol>
 <li>Take-out off of the buttons etc and keep to one side.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Making Some Space</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making Some Space image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making Some Space image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making Some Space image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Making Some Space image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Making Some Space image 5" loading="lazy"></div><p>You need to remove some of the gussets etc inside the case to make room for the electronics.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Making Some Space</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making Some Space image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making Some Space image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making Some Space image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Making Some Space image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Making Some Space image 5" loading="lazy"></div><p>You need to remove some of the gussets etc inside the case to make room for the electronics.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the 2 circle gussets on the back of the ase. I used a pair of pliers to snip away. You can use a dremel with a sanding drum to smooth them out if necessary.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the side gussets on the top case. These are so you can add the 1/42 tube later.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the bit of plastic that protrudes where the cord come out of.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, remove the plastic leg as shown in the image below.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding the Speaker</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Speaker image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Speaker image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Speaker image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Speaker image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Speaker image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Speaker image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Speaker image 7" loading="lazy"></div><p>I had a small speaker cover that I pulled from a small speaker. If you don't have one of these then don't worry, it isn't necessary, just make sure that you make the hole for the speaker a little smaller then then speaker and glue it into place</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Speaker</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Speaker image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Speaker image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Speaker image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Speaker image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Speaker image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Speaker image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Speaker image 7" loading="lazy"></div><p>I had a small speaker cover that I pulled from a small speaker.</p>
+<p>If you don't have one of these then don't worry, it isn't necessary, just make sure that you make the hole for the speaker a little smaller then then speaker and glue it into place</p>
 <p>Steps:</p>
 <ol>
 <li>Mark where you need to cut.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a hole to start the cut-out</li>
-</ul>
+</ol>
 <ol>
 <li>With a dremel or something similar, enlarge the hole with a sanding drum. Keep on measuring until the speaker grill fits nice and tightly inside</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, put the speaker into the cover and hold it in place with the tabs from the cover or with some super glue</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Adding the On/Off Switch</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the On/Off Switch image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the On/Off Switch image 2" loading="lazy"></div><p>Initially I was going to use an tactile on/off switch to activate the synth but decided against it. It was going to be activated by pushing one of the red buttons on the controller.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the On/Off Switch</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the On/Off Switch image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the On/Off Switch image 2" loading="lazy"></div><p>Initially I was going to use an tactile on/off switch to activate the synth but decided against it. It was going to be activated by pushing one of the red buttons on the controller.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a hole into the side of the top cover as shown below</li>
-</ul>
+</ol>
 <ol>
 <li>Secure the switch into place</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Add the Potentiometer</h2><div class="step-images single"><img src="images/step13_01.jpg" alt="Step 13: Add the Potentiometer image 1" loading="lazy"></div><p>You could put the pot on the side of the controller but I found that it was easier to use with it on the bottom of the controller near the speaker.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Add the Potentiometer</h2><div class="step-images single"><img src="images/step13_01.jpg" alt="Step 13: Add the Potentiometer image 1" loading="lazy"></div><p>You could put the pot on the side of the controller but I found that it was easier to use with it on the bottom of the controller near the speaker.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a hole into the cover</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the pot. Remember to think about what's underneath the pot when you do to add it to the cover. You need to make sure that there is some empty space as it will take up most of the room in that section of the controller.</li>
-</ul><h2><span class="step-num">STEP 14</span>Step 14: Glue Down the Buttons</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Glue Down the Buttons image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Glue Down the Buttons image 2" loading="lazy"></div><p>As you don't need to used the buttons, you will need to hot glue them into place. If you want to add a audio out, then leave one of the red buttons.</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Glue Down the Buttons</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Glue Down the Buttons image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Glue Down the Buttons image 2" loading="lazy"></div><p>As you don't need to used the buttons, you will need to hot glue them into place. If you want to add a audio out, then leave one of the red buttons.</p>
 <p>Steps:</p>
 <ol>
 <li>Put all of the buttons into place</li>
-</ul>
+</ol>
 <ol>
 <li>add some hot glue to each one and leave to dry. make sure that they are glued strongly as people will try and push them and you don't want them coming loose.</li>
-</ul><h2><span class="step-num">STEP 15</span>Step 15: Adding the Photo Cell and 1/4" Tube</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 15</span>Step 15: Adding the Photo Cell and 1/4" Tube</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Adding the Photo Cell and 1/4" Tube image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Drill a hole just large enough for the tube to fit into. The hole should be opposite the switch.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder on the photo cell to the wires on pins 7 and 8. Add some heat-shrink so the wires don't touch (or hot glue)</li>
-</ul>
+</ol>
 <ol>
 <li>Push the tube into place. You shouldn't have to glue into place as it's a tight fit. Test that the tube isn't getting squashed by pushing the smaller tube into it. If it moves freely then you are ok. If not, then remove some more of the plastic in the case.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the photo cell into the end of the tube and add a little hot glue to hold it in place.</li>
-</ul><h2><span class="step-num">STEP 16</span>Step 16: Attaching the Speaker and Potentiometer Wires</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Attaching the Speaker and Potentiometer Wires image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Attaching the Speaker and Potentiometer Wires image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Attaching the Speaker and Potentiometer Wires image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 16</span>Step 16: Attaching the Speaker and Potentiometer Wires</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Attaching the Speaker and Potentiometer Wires image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Attaching the Speaker and Potentiometer Wires image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Attaching the Speaker and Potentiometer Wires image 3" loading="lazy"></div><p>Steps:</p>
 <p>Speaker</p>
 <ol>
 <li>Attach the wire on pin 1 to the negative terminal on the speaker</li>
-</ul>
+</ol>
 <ol>
 <li>Next, attach the wire that is connected to the capacitor on pin 3 to the positive terminal on the speaker</li>
-</ul>
+</ol>
 <p>Potentiometer</p>
 <ol>
 <li>Attach the wire from pin 6 to one of the pins on either side of the pot. It doesn't matter which one</li>
-</ul>
+</ol>
 <ol>
 <li>Next, attach the wire from pin 7 to the other 2 pins on the pot.</li>
-</ul>
+</ol>
 <p>.</p><h2><span class="step-num">STEP 17</span>Step 17: Adding the LED</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Adding the LED image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Adding the LED image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Adding the LED image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Adding the LED image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The wire for the LED (slider section) needs to be long enough for the smaller tube fits into the larger one. The wire that I used was the controller wire which worked excellently. Just trim the</li>
-</ul>
+</ol>
 <ol>
 <li>Push the smaller tube over the wire and push the wire through the end of the tube.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the LED to the ends of the wire, making sure the polarity's are correct and that you use some heat shrink on the exposed wires.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, pull the other end of the wire so the LED is against the end of the tube.</li>
-</ul><h2><span class="step-num">STEP 18</span>Step 18: Adding the Battery Holder</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding the Battery Holder image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding the Battery Holder image 2" loading="lazy"><img src="images/step18_03.jpg" alt="Step 18: Adding the Battery Holder image 3" loading="lazy"><img src="images/step18_04.jpg" alt="Step 18: Adding the Battery Holder image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 18</span>Step 18: Adding the Battery Holder</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding the Battery Holder image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding the Battery Holder image 2" loading="lazy"><img src="images/step18_03.jpg" alt="Step 18: Adding the Battery Holder image 3" loading="lazy"><img src="images/step18_04.jpg" alt="Step 18: Adding the Battery Holder image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder the red wire to one of the terminals to the switch.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder another wire to the middle terminal of the switch and then solder the other end to pin 8 on the 555 IC</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the negative wire from the battery terminal to pin 1 (ground) on the 555 IC.</li>
-</ul><h2><span class="step-num">STEP 19</span>Step 19: Add a Audio Out Jack</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Add a Audio Out Jack image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Add a Audio Out Jack image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Add a Audio Out Jack image 3" loading="lazy"><img src="images/step19_04.jpg" alt="Step 19: Add a Audio Out Jack image 4" loading="lazy"><img src="images/step19_05.jpg" alt="Step 19: Add a Audio Out Jack image 5" loading="lazy"><img src="images/step19_06.jpg" alt="Step 19: Add a Audio Out Jack image 6" loading="lazy"><img src="images/step19_07.jpg" alt="Step 19: Add a Audio Out Jack image 7" loading="lazy"><img src="images/step19_08.jpg" alt="Step 19: Add a Audio Out Jack image 8" loading="lazy"><img src="images/step19_09.jpg" alt="Step 19: Add a Audio Out Jack image 9" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 19</span>Step 19: Add a Audio Out Jack</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Add a Audio Out Jack image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Add a Audio Out Jack image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Add a Audio Out Jack image 3" loading="lazy"><img src="images/step19_04.jpg" alt="Step 19: Add a Audio Out Jack image 4" loading="lazy"><img src="images/step19_05.jpg" alt="Step 19: Add a Audio Out Jack image 5" loading="lazy"><img src="images/step19_06.jpg" alt="Step 19: Add a Audio Out Jack image 6" loading="lazy"><img src="images/step19_07.jpg" alt="Step 19: Add a Audio Out Jack image 7" loading="lazy"><img src="images/step19_08.jpg" alt="Step 19: Add a Audio Out Jack image 8" loading="lazy"><img src="images/step19_09.jpg" alt="Step 19: Add a Audio Out Jack image 9" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To be able to place the jack flat on the inside of the controller, you need to remove a little bit of plastic that held the red button in place. Just use some wire clippers and a exact knife to remove the area.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, place the jack through the hole, add a small washer (one you get from a potentiometer works fine) and screw into place with the little, round nut that comes with the jack.</li>
-</ul>
+</ol>
 <p>Nearly done. Test and make sure that everything is working as it should before you close up the NES case. If you find that something isn't working, check the solder points and wires.</p>
 <p>If everything is working as it should be, close up the case and make some beautiful music.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

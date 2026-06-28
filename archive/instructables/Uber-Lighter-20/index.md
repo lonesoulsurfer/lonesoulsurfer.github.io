@@ -19,11 +19,11 @@ Burn everything in your path with the updated, ups-scaled and most awesome of li
 
 This build is easier to build, you can change the wick simply and without any fuss and ascetically, it’s a much better looking and hardier lighter (in my humble opinion). Also it's around 40% larger as well! The size of the lighter will depend on how long you make the body section. I decided to make this version even bugger than the first.
 
-Instead of fabricating a sparker section as I did in this 'ible, I went down the easy road and brought one on eBay. I’ve also added a screw cap to the end so filling-up the lighter and changing the rope (which you probably won’t do for years) is a tonne more easier to do. Also, the lighter is all made from off the shelf parts that you can buy from most hardware stores.
+Instead of fabricating a sparker section as I did [in this 'ible](https://www.instructables.com/id/Uber-Lighter/), I went down the easy road and brought one on eBay. I’ve also added a screw cap to the end so filling-up the lighter and changing the rope (which you probably won’t do for years) is a tonne more easier to do. Also, the lighter is all made from off the shelf parts that you can buy from most hardware stores.
 
 Also, I have changed the fuel type. Instead of using Methylated spirits which does burn well and clean, I changed it to Zippo fuel (Naphtha in the US). I find that it lights easier as well. Only problem with Zippo fuel I find is it does smoke more. Methylated Spirits burn very clean.
 
-Methylated Spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out this link to find out more.
+Methylated Spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out [this link](https://en.wikipedia.org/wiki/Denatured_alcohol) to find out more.
 
 
 ## Step 1: Parts and Tools
@@ -52,27 +52,27 @@ Parts
 
 Brass and Copper Fittings
 
-1. 15mm Brass Threaded Socket - Bunnings
+1. 15mm Brass Threaded Socket - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-brass-threaded-hexagon-socket_p4700166)
 
-2. 15mm Brass Threaded Nut (2) - Bunnings
+2. 15mm Brass Threaded Nut (2) - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-brass-threaded-back-nut_p4700212)
 
-3. 15mm Brass Threaded Hex Plug - Bunnings
+3. 15mm Brass Threaded Hex Plug - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-brass-threaded-hex-plug_p4700224)
 
-4. 3/4" x 1.5m Copper Straight - Bunnings. Copper has a nasty habit of turning green quickly. If you want to stop this happening, I would suggest you use brass tube which can be purchased on eBay
+4. 3/4" x 1.5m Copper Straight - [Bunnings](https://www.bunnings.com.au/kembla-3-4-x-1-5m-copper-straight-length_p4910029). Copper has a nasty habit of turning green quickly. If you want to stop this happening, I would suggest you use brass tube which can be purchased on [eBay](http://www.ebay.com.au/itm/Brass-Round-Tube-3-4-OD-19-05mm-x-16G-1-63mm-TUBE-x-300mm-Hard-Drawn-/262840836747?hash=item3d3288e28b:g:28QAAOSw44BYmSev)
 
-5. 1/2" x 1.5m Copper Straight - Bunnings
+5. 1/2" x 1.5m Copper Straight - [Bunnings](https://www.bunnings.com.au/kembla-1-2-x-1-5m-copper-straight-length_p4910028)
 
-6. 20 X 15mm Reducing Copper Coupling - Bunnings
+6. 20 X 15mm Reducing Copper Coupling - [Bunnings](https://www.bunnings.com.au/kinetic-20-x-15mm-reducing-copper-capillary-coupling_p4880015)
 
-7. 15mm Copper End Cap - Bunnings
+7. 15mm Copper End Cap - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-copper-capillary-end-cap_p4880053)
 
-8. Sparkwheel - eBay
+8. Sparkwheel - [eBay](http://www.ebay.com.au/itm/Outdoor-Survival-Tool-EDC-Brass-Spark-Wheel-Fire-Starter-Lighter-Keyring-Kit-/131846576636?hash=item1eb2ab19fc:g:Jo0AAOSw9eVXXl3d)
 
-9. Chain - eBay, Bunnings
+9. Chain - [eBay](http://www.ebay.com.au/itm/18K-Gold-Plated-SILVER-BLACK-BRONZE-38CM-1-2FT-Alloy-Pocket-Watch-Chain-Fob-/390963219390?var=&hash=item5b07394bbe:m:mO70TGwfCYDb-hUqZvCkJeg), [Bunnings](https://www.bunnings.com.au/zenith-1mm-x-2m-nickel-plated-mini-watch-chain_p4210243)
 
-10. Brass wire (to make the loops for the chain) - eBay
+10. Brass wire (to make the loops for the chain) - [eBay](http://www.ebay.com.au/itm/K-S-Round-Brass-Rod-1mm-Diameter-5-9861-/122353517399?epid=681108320&hash=item1c7cd68357:g:dowAAOSwr~lYoGPm)
 
-11. Cotton Rope - eBay, Bunnings
+11. Cotton Rope - e[Bay](https://www.ebay.com.au/sch/i.html?_odkw=sash+rope&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xsash+rope+8mm.TRS0&_nkw=sash+rope+8mm&_sacat=0), [Bunnings](https://www.bunnings.com.au/search/products?q=sash%20rope&redirectFrom=Any)
 
 12. Zippo Fuel (or Methylated Spirits - see the intro for more information)
 
@@ -146,7 +146,7 @@ Steps:
 
 2. Add some flux and heat-up the section with a blow torch. Add a lot of solder to ensure an air tight seal.
 
-3. Once you have soldered on the coupling, it's time shape it. To do this I secured a drill into a vice and pushed the lighter onto a rod that was inserted into the drill. it's kinda like a poor mans lathe but it does the job. Check out this 'ible on how I did this in more detail
+3. Once you have soldered on the coupling, it's time shape it. To do this I secured a drill into a vice and pushed the lighter onto a rod that was inserted into the drill. it's kinda like a poor mans lathe but it does the job. Check out [this 'ible](https://www.instructables.com/id/Simple-Metal-Lathe/) on how I did this in more detail
 
 4. Use files to round the end of the coupling. Take your time and check your work regularly. Also smooth out any scratches and solder that may be showing through the join as best as possible
 

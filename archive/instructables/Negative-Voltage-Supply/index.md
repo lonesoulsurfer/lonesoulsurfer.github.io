@@ -19,9 +19,9 @@ Most who play around with electronics would have come across an audio circuit th
 
 Most of the time the negative charge is grounded and not used but in some builds such as audio projects like amps and synths, you need to use the negative charge along with the positive.
 
-Robin Mitchellover at “All About Circuits” has published a very elegant and easy way to create negative charge using only a handful of common parts that most people who play around with circuits will have in their parts bins.
+[Robin Mitchell](https://www.allaboutcircuits.com/author/robin-mitchell)over at “All About Circuits” has published a very elegant and easy way to create negative charge using only a handful of common parts that most people who play around with circuits will have in their parts bins.
 
-I won’t go into how this works as Robin has explained it excellently in his article which can be found here.
+I won’t go into how this works as Robin has explained it excellently in his article which can be [found here](https://www.allaboutcircuits.com/projects/build-your-own-negative-voltage-generator/).
 
 The circuit itself is made up of a 555 timer (is there anything it can’t do!), a few caps and diodes. I wanted to make mine variable voltage controlled and portable to use and test on future projects so I included a buck booster in the design.
 
@@ -38,23 +38,23 @@ The circuit itself is made up of a 555 timer (is there anything it can’t do!),
 
 Negative Voltage Circuit Parts
 
-1. 555 Timer – eBay 100 under $5!
+1. 555 Timer – [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/263770865456?hash=item3d69f7ff30:m:mN1oS6xfsjGS9CLz149posg) 100 under $5!
 
-2. 5.6K Resistor. Buy these as assorted on eBay
+2. 5.6K Resistor. Buy these as assorted on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xresistors+assorted.TRS0&_nkw=resistors+assorted&_sacat=0)
 
 3. 47K resistor
 
-4. 100nf Cap – Buy these as assorted on eBay
+4. 100nf Cap – Buy these as assorted on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xcapacitor+assorted.TRS0&_nkw=capacitor+assorted&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=resistors+assorted)
 
 5. 10nf Cap
 
-6. Diode 1N194 – eBay
+6. Diode 1N194 – [eBay](https://www.ebay.com.au/itm/50PCS-1N914-Small-Signal-Diode-200mA-100V/302107416191?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 
-7. 10uf Cap – Buy these as assorted on eBay
+7. 10uf Cap – Buy these as assorted on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=assorted+capacitors&_sacat=0)
 
 8. 100uf Cap
 
-9. Prototype board - eBay
+9. Prototype board - e[Bay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
 10. Assorted wires
 
@@ -62,23 +62,23 @@ To make it portable
 
 1. Case – This one would work fine from eBay. Mines an old garage door opener I found somewhere.
 
-2. Male and Female banana plugs – eBay
+2. [Male](https://www.ebay.com.au/itm/Stackable-Banana-Plug-4mm-Male-Solderless-Speaker-Audio-Video-Jack-Connector-DIY/123801999587?hash=item1cd32c98e3:m:mvtxOgLcmuOLChA8qnotBWw) and [Female](https://www.ebay.com.au/itm/10-Pcs-Female-Banana-Plug-4mm-Socket-Connector-Amplifier-Binding-Post-Terminal/222753964134?hash=item33dd2bc066:g:nfAAAOSwO7haL4em) banana plugs – eBay
 
 3. Various wires
 
-4. Switch - ebay
+4. Switch - [ebay](https://www.ebay.com.au/itm/10-x-On-Off-On-Momentary-Mini-Toggle-Switch-Car-Motor-Dash-Dash-SPDT-3Pin-Sales/201939647988?_trkparms=ispr%3D1&hash=item2f048a7df4:g:ztcAAOSwIFtaCleh&enc=AQAEAAAB4BPxNw%2BVj6nta7CKEs3N0qVG%2FJgWHkbh%2BeQt113BttN3GlwTNS1gv8LBj4QwyDfBsIzARIlfh%2FdG1%2FSyN%2B5%2FiMB4Lp0mWFZue8e%2FYmqnaBWt1Alt%2BeW3siDk%2F9Zq%2BkSOBnlhiiB%2F3DzbOrdQyCxl2PhUs%2BfOoKCWTikNkbf%2FyQA7v5ZvmcMJo5IopmLfs0aaDvQjUwEyelSgXteXEZpWQWQjzEREHkKcGii8hkj6wIesAM1LUQDbN1%2FUeBzbE9akocxrAEq9WyJ5DZ76ybCgbgrQmF0xHEUk6wXxDvUe3UJN5sUoHVQCqIzwS8wxgUwwU7vcrmA%2FnGSaFRqlSe5dCbIq7Q%2B44BICI7cFKNyb1fhgkGFBnedwkr1vQQR8AE2HKQHrlM%2B9UHIwzP%2BhyAYGNCYDpwoEhCOWeX2ai5ftxDy6OSPC%2BY4gYs8rRgLLJ5yjbvWtThf7ft%2FvuVxGv63Iv8hB9tBQ6P0P%2B%2F9XczabFQIfIU4uqwpIAHer1s75%2F4%2FOrh6QVcBWUHCnlUpGqjS9UM10YB4X0ka6tgO3%2FW34cfoD%2FKUQ2r9m0mlYPqbtanDVMIVQWWWQjiZFquKPE0bxSaSLqCQPc%2FoMdHLFvb4C0NNWYD6mcBnuoxb%2FefZgE9upIQ%3D%3D&checksum=201939647988e16b805ef3ff481b9ca8c18c0a88bae5&frcectupt=true)
 
 5. 9V battery
 
-6. 9V battery holder - eBay
+6. 9V battery holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0)
 
-7. Voltage regulator – eBay
+7. Voltage regulator – [eBay](https://www.ebay.com.au/itm/Hot-Auto-DC-DC-Booster-Buck-Module-Converter-Solar-Voltage-Regulator-25W-OM/173947307032?hash=item2880114418:g:o2EAAOSw3hFdFeYU&frcectupt=true)
 
-8. Knob for a potentiometer – eBay
+8. Knob for a potentiometer – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR11.TRC1.A0.H0.Xpotentiometer+knob.TRS0&_nkw=potentiometer+knob&_sacat=0)
 
-9. 10K Pot - eBay
+9. 10K Pot - [eBay](https://www.ebay.com.au/itm/3Pcs-6mm-Knurled-Shaft-Single-Linear-B-Type10K-ohm-Rotary-Potentiometer-New/232484215262?epid=1684420726&hash=item36212399de:g:5FAAAOSwZ~lZtesc)
 
-10. Voltage Meter - eBay
+10. Voltage Meter - [eBay](https://www.ebay.com.au/itm/DC-3-30V-0-36-Wire-LED-Digital-Panel-Volt-Meter-Voltage-Voltmeter-Car-Motor-sH/333271931902?hash=item4d988e1bfe:m:m0NjocAYqCpkThN9z_0lfBA&frcectupt=true)
 
 Tools:
 
@@ -241,7 +241,7 @@ Steps:
 
 ![Step 8: Modding the Voltage Regulator image 5](images/step08_05.jpg)
 
-I’m not going to go through this in a lot of detail as I have already provided details on how to do it in this ‘ible. I have also included a diagram which will help you visualise the wiring
+I’m not going to go through this in a lot of detail as I have already provided details on how to do it in [this ‘ible](https://www.instructables.com/id/Portable-Variable-Power-Supply-1/). I have also included a diagram which will help you visualise the wiring
 
 Steps:
 

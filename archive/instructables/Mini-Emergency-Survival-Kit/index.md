@@ -17,7 +17,7 @@ Fire! Our ancestors have been keeping themselves warm with it for over 400,000 y
 
 What happens though if your out in the wilderness and all you have is a wallet and a dead phone? If your a survivalist, then you just grab a couple of sticks and rub them together. Me? I follow the scouts motto instead... "be prepared'
 
-I've made a survival kits in the past (see this 'ible) and a wax tinder (see this 'Ible), but this time I wanted to make an even smaller one. I don't think you can get any smaller then a fuse! To use the mini emergency kit, you need to break the fuse glass. I have also included some strike paper and a wick from one of those novelty candles that you can't blow out. Take that homo erectus!
+I've made a survival kits in the past ([see this 'ible](https://www.instructables.com/id/The-Only-Survival-Kit-Youll-EVER-Need/)) and a wax tinder ([see this 'Ible](https://www.instructables.com/id/Wax-and-Lint-Tinder/)), but this time I wanted to make an even smaller one. I don't think you can get any smaller then a fuse! To use the mini emergency kit, you need to break the fuse glass. I have also included some strike paper and a wick from one of those novelty candles that you can't blow out. Take that homo erectus!
 
 You can hang the emergency survival kit around your neck so you won't lose it, and it is water resistant so getting it wet won't damage the matches inside.
 
@@ -34,13 +34,13 @@ Things to Gather
 
 1. Box of matches
 
-2. 60 amp fuse (or a 100 amp one - as long as it is big!) – eBay
+2. 60 amp fuse (or a 100 amp one - as long as it is big!) – [eBay](http://www.ebay.com.au/itm/60-AMP-Fuses-x-5-AGU-Glass-Tube-12V-DC-Car-Audio-Circuit-Breaker-60AMP-60A-/111636280567?pt=LH_DefaultDomain_15&hash=item19fe0a74f7)
 
-3. Novelty candle – eBay
+3. Novelty candle – [eBay](http://www.ebay.com.au/itm/10x-Quality-Magic-Trick-Relighting-Candle-Birthday-Cake-Party-Joke-Xmas-Gift-Fun-/351203710278?pt=LH_DefaultDomain_15&hash=item51c55f5546)
 
 4. Piece of brass rod (about 2 mm thick)
 
-5. 2mm thick Suede thonging - eBay
+5. 2mm thick Suede thonging - [eBay](http://www.ebay.com.au/itm/18m-Brown-Faux-Suede-Artificial-Leather-Beading-Trim-Thread-Lace-Cord-2mm-/310547625161?pt=LH_DefaultDomain_0&hash=item484e14b4c9)
 
 Tools
 

@@ -42,21 +42,21 @@ This is a pretty easy build with all the parts easily available. You do need a l
 
 Parts:
 
-1. LED Circuit – You can buy the toy on eBay. Make sure you buy a couple in case you mess one up.
+1. LED Circuit – You can buy the [toy on eBay](https://www.ebay.com.au/itm/LED-Multi-Colour-Changing-Fibre-Optic-Fountain-Night-Light-Lamp-Home-Decoration/122290255840?epid=573462555&hash=item1c791137e0:g:z2sAAOSwgY9Xddmf). Make sure you buy a couple in case you mess one up.
 
-2. Resin – I used this one on eBay
+2. Resin – I used this one on [eBay](https://www.ebay.com.au/itm/3-Ltr-Ultra-Clear-Casting-EPOXY-RESIN-2-1-kit-UV-Platinum/142820381056?hash=item2140c21180:g:6iUAAOSw5cNYFEwU)
 
-3. Mercury Tilt Switch – eBay
+3. Mercury Tilt Switch – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC0.A0.H0.Xmercury+tilt+switch.TRS0&_nkw=mercury+tilt+switch&_sacat=0)
 
 4. Wood – Hardware store or any old wood that is suitable. I used a 90mm by 90mm piece of pine
 
-5. 3 X AAA Battery Holder – eBay
+5. 3 X AAA Battery Holder – [eBay](https://www.ebay.com.au/itm/5-PCS-3-x-1-5V-AAA-Battery-Batteries-Holder-Case-w-Wire-Leads-M9X6/263417826191?epid=2104200765&hash=item3d54ed0b8f:g:m04AAOSwgslbD3bo)
 
 6. 3 X AAA Batteries
 
 7. For the mold I suggest you make this out of wood planks
 
-8. If you do use wood, make sure you get some mold release - eBay
+8. If you do use wood, make sure you get some mold release - [eBay](https://www.ebay.com.au/itm/MG-Chemicals-Epoxy-Mold-Release-350g/162407527617?hash=item25d03e34c1:g:VGYAAOSwu6taceHC)
 
 Tools:
 
@@ -224,7 +224,7 @@ The next steps involve making the mold for the resin and pouring it. The first m
 
 Next I used wood thinking that this would be easier to pull away from the resin - I was wrong. I made the mold so it had rubber along the sides which acted as a seal. This worked fine but I didn't notice that there was a small leak which caused a large air bubble to form inside the resin! Also, resin seems to stick to wood extremely well and when it came time to pull the wood mold away I had even more trouble then core flute.
 
-If I had used some Mold Release such as this one, then I could have avoided the sticking issue. I'll go through the steps for the wood mold as I think that this had the most potential - the core flute I wouldn't bother trying.
+If I had used some Mold Release [such as this one,](https://www.ebay.com.au/itm/MG-Chemicals-Epoxy-Mold-Release-350g/162407527617?hash=item25d03e34c1:g:VGYAAOSwu6taceHC) then I could have avoided the sticking issue. I'll go through the steps for the wood mold as I think that this had the most potential - the core flute I wouldn't bother trying.
 
 Steps:
 

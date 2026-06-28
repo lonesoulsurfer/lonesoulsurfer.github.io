@@ -21,7 +21,7 @@ The skateboard deck that I used was a well-used one that I picked-up at the dump
 
 The gas pipe is available from any hardware store. I like the industrial look of the pipe but it does cost a fair bit of money. You may be able to come up with a better solution like repurposing some old legs from a chair...
 
-If you want some other ideas, check out this Pinterest page
+If you want some other ideas, check out this [Pinterest page](https://au.pinterest.com/marcusdunn/skateboard-chairs/)
 
 
 ## Step 1: Things to Gather
@@ -50,15 +50,15 @@ Galvanised Pipe Fittings.
 
 You can find these in any Hardware store. I have put links to Bunnings in Australia but still clip on them if you want to get an idea of what the part looks like
 
-1. 2 x 15mm Flange - Bunnings
+1. 2 x 15mm Flange - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-galvanised-flange_p4700442)
 
-2. 2 X Female Tee - Bunnings
+2. 2 X Female Tee - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-female-galvanised-tee_p4700117)
 
-3. 4 X 15mm End Caps - Bunnings
+3. 4 X 15mm End Caps - [Bunnings](https://www.bunnings.com.au/kinetic-15mm-galvanised-round-end-cap_p4700104)
 
-4. 2 X 15 x 450mm Pipe - Bunnings
+4. 2 X 15 x 450mm Pipe - [Bunnings](https://www.bunnings.com.au/kinetic-15-x-450mm-galvanised-pipe_p4700253)
 
-5. 4 X 5 x 100mm Pipe - Bunnings
+5. 4 X 5 x 100mm Pipe - [Bunnings](https://www.bunnings.com.au/kinetic-15-x-100mm-galvanised-pipe_p4700245)
 
 Tools:
 

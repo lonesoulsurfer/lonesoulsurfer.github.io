@@ -29,15 +29,15 @@ Well there is really no use talking about a musical thing - you need to hear it.
 
 Here are a few online features on the Acid Drip
 
-Noxalmusic
+[Noxalmusic](https://noxalmusic.autonomaailab.com/lonesoulsurfer-acid-drip-open-source-groovebox/)
 
-Hackster.io
+[Hackster.io](https://www.hackster.io/news/a-modern-twist-on-the-synth-that-defined-techno-653653c14b15.amp)
 
-Synthanatomy
+[Synthanatomy](https://synthanatomy.com/2026/06/lonesoulsurfer-acid-drip-open-source-groovebox-with-synth-and-drum-machine.html)
 
-Matrixsynth
+[Matrixsynth](https://www.matrixsynth.com/2026/06/meet-acid-drip-diy-bassline-synth-drum.html)
 
-Rackears
+[Rackears](https://www.rackears.io/products/acid-drip-acid-drip)
 
 
 ## Supplies
@@ -56,21 +56,21 @@ Rackears
 
 Parts
 
-As usual, I have provided the parts list as a PDF which can be found as an attachment on this step. You can then easily print this off if needed or go to the links provided in the PDF and order the parts as required. You can also find the list in excel on my GitHub page
+As usual, I have provided the parts list as a PDF which can be found as an attachment on this step. You can then easily print this off if needed or go to the links provided in the PDF and order the parts as required. You can also find the list in excel on my [GitHub](https://github.com/lonesoulsurfer/Acid_Drip_Bassline_and_Drum_Synth) page
 
 Getting the PCB & Front & Back Panel Printed
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
 
-The files that you need to send to JLCPCB can be found in my GitHub page. Download the repo to your computer.
+The files that you need to send to [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) can be found in my [GitHub](https://github.com/lonesoulsurfer/Acid_Drip_Bassline_and_Drum_Synth) page. Download the repo to your computer.
 
 STEPS:
 
-Send the Gerber files (keep them zipped) to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you.
+Send the Gerber files (keep them zipped) to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you.
 
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
 - JLCPCB used to print an order number onto the PCB which was super annoying, especially if you didn't specify where to add it. Now you don't have to worry about it as they no longer do it
 - when choosing the surface finish for the front panel, pick Lead Free HASL as this will ensure that there is no lead in the front panel
 - You can pick whatever colour you want to choose for your front panel and PCB.
@@ -100,10 +100,10 @@ You may have noticed that your front panel and PCB and the ones int he images ar
 
 STEPS:
 
-- Add key caps to each of the switches. This will ensure that they sit straight whist you solder them into place
-- Add a couple into the PCB (one at each end) and solder one leg of each of the switches first. turn over and make sure that they are straight (they should be as there are plastic legs that help help them straight).
-- Solder the other leg into place. Do this for the rest of the switches
-- Now you can continue to solder the rest of the components to the front side of the panel. start with the audio jacks as these are the lowest profile and work your way up, I did the toggle switches next and then the pots
+- Add key caps to each of the switches.  This will ensure that they sit straight whist you solder them into place
+- Add a couple into the PCB (one at each end) and solder one leg of each of the switches first.  turn over and make sure that they are straight (they should be as there are plastic legs that help help them straight).
+- Solder the other leg into place.  Do this for the rest of the switches
+- Now you can continue to solder the rest of the components to the front side of the panel.  start with the audio jacks as these are the lowest profile and work your way up, I did the toggle switches next and then the pots
 
 
 ## Step 2: Adding the Components to the PCB - Back Side
@@ -129,9 +129,9 @@ Usually, I would be telling you to add the lowest profile components first which
 STEPS:
 
 - Place each of the resistors into place into the PDC and solder
-- Now do the same for the JST connector. This connector is where you will be providing the 5V's to run everything - more on that later
+- Now do the same for the JST connector.  This connector is where you will be providing the 5V's to run everything - more on that later
 - Add the caps to the board and also solder these into place
-- Now you can add the Raspberry Pi. To do this, first add some pin connectors to the Raspberry Pi. this will allow you to easily remove it if required
+- Now you can add the Raspberry Pi.  To do this, first add some pin connectors to the Raspberry Pi.  this will allow you to easily remove it if required
 - Now push it into place on the PCB and solder each of the pin legs to the solder points
 
 
@@ -182,9 +182,9 @@ There are a number of holes around the outside of the PCB that align to the fron
 STEPS:
 
 - The first thing to do is to adda M2 screw to each of the holes in the front panel and then spacers to secure them into place.
-- The spacer size you might need to experiment with to get them right. What I did was to add a couple spacers which I thought would be the right size to 2 of the M2 screws at the top and placed the front panel and PCB together. I then checked to see if the spacers on the screen were touching the PCB with the panel spacers in place. If they weren't touching, then I reduced the spacer size until they were.
-- Continue to add the rest of the spacers and then place the front panel onto the PCB. secure into place with M2 nuts
-- Now you can add the potentiometer and toggle switch nuts into place and also the audio socket rings. These all help with keeping the front panel secured
+- The spacer size you might need to experiment with to get them right.  What I did was to add a couple spacers which I thought would be the right size to 2 of the M2 screws at the top and placed the front panel and PCB together.  I then checked to see if the spacers on the screen were touching the PCB with the panel spacers in place.  If they weren't touching, then I reduced the spacer size until they were.
+- Continue to add the rest of the spacers and then place the front panel onto the PCB.  secure into place with M2 nuts
+- Now you can add the potentiometer and toggle switch nuts into place and also the audio socket rings.  These all help with keeping the front panel secured
 - Lastly, you can add some pot knobs to each of the pots
 
 
@@ -200,7 +200,7 @@ Follow the below to load the code up to the Raspberry Pi. I have provided a full
 
 Step 1: Install Arduino IDE
 
-Download and install Arduino IDE 2.x from arduino.cc/en/software.
+Download and install Arduino IDE 2.x from [arduino.cc/en/software](https://www.arduino.cc/en/software).
 
 If you already have it installed, make sure it's version 2.0 or later - the older 1.x IDE can cause issues with the RP2040 core.
 
@@ -308,18 +308,18 @@ Sketch compiles but display shows garbage or nothing Re-check SPI wiring. The IL
 
 ![Step 6: Adding Power image 4](images/step07_04.jpg)
 
-We need to drive the Raspberry Pi with 5V's. A normal mobile phone of 18650 Li-Ion battery are 3.7V so we need a way to boost the voltage up to 5V. You can use a cheap module to do this quite easily. If you are going to use a mobile battery - then you can buy these from Ali Express or find them for free
+We need to drive the Raspberry Pi with 5V's. A normal mobile phone of 18650 Li-Ion battery are 3.7V so we need a way to boost the voltage up to 5V. You can use a cheap module to do this quite easily. If you are going to use a mobile battery - then you can buy these from Ali Express or [find them for free](https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/)
 
 STEPS:
 
-- The first thing to do is to add the charging module to the battery. I usually just superglue the module directly to the top of the battery – keeps everything nice and neat
+- The first thing to do is to add the charging module to the battery.  I usually just superglue the module directly to the top of the battery – keeps everything nice and neat
 - Align the + and – of the module to the same on the battery and glue down
 - To connect the battery to the module, I just use resistor legs and connect them together.The module I used has a couple solder points for the battery terminals and also a couple for output
-- Next is to add the step up converter. These little converters are great – they have the ability to output 12v, 9v and 5v. to get them to convert to 5v – you need to remove 2 SMD resistors which are circled on the module. Just use a hot soldering iron or an exacto knife
+- Next is to add the step up converter.  These little converters are great – they have the ability to output 12v, 9v and 5v.  to get them to convert to 5v – you need to remove 2 SMD resistors which are circled on the module.  Just use a hot soldering iron or an exacto knife
 - It also has a charging and running LED which isn’t needed – this also has a SMD resister indicated on the board – also remove this
 - Now you can connect the output of the charging module to the input of the step up converter with a couple wires.
 - Add a JST connector to the output of the converter – this connects directly to the 5V input on the PCB
-- Lastly, you can add a couple wires to the 2 solder points near the USB C connector on the charging module and add a USB C socket. This will ensure that you can charge the battery when it is inside the case
+- Lastly, you can add a couple wires to the 2 solder points near the USB C connector on the charging module and add a USB C socket.  This will ensure that you can charge the battery when it is inside the case
 
 
 ## Step 7: Making a Case

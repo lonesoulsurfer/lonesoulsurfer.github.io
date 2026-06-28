@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,48 +163,68 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">CMOS Counter Clock</span>
 </nav>
 <h1>CMOS Counter Clock</h1><div class="source"><a href="https://www.instructables.com/CMOS-Counter-Clock/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>"Time is what stops everything happening all at once!" - anonymous</p>
-<p>It's a strange little quote but the more you think about it - the more it rings true. The one thing we can't deny is we are all affected by time. Sometimes it goes by fast, other times (pun intended!) it flies by. I wanted to create a little reminder for myself that the seconds are always ticking by and there are only 86,400 in each day - so get busy!</p>
+<p>It's a strange little quote but the more you think about it - the more it rings true.</p>
+<p>The one thing we can't deny is we are all affected by time.</p>
+<p>Sometimes it goes by fast, other times (pun intended!) it flies by.</p>
+<p>I wanted to create a little reminder for myself that the seconds are always ticking by and there are only 86,400 in each day - so get busy!</p>
 <p>This little clock counts the seconds up to 99,999 (1.15 Days) and then starts over again. I wanted it to be a visual reminder of the seconds ticking by and to try and not waste to many of them.</p>
-<p>I started to do some research into how best to represent this and all of the designs were quite complicated. I then stumbled onto the 4060 Binary counter CMOS chip and discovered that it could keep accurate time using a crystal oscillator! The crystal oscillator I used is the same one that is found in a lot of digital watches and uses a vibrating crystal of piezoelectric material to accurately keep time! mind blown.</p>
-<p>Anyhow the basic circuit is ridiculously simple and only needs a handful of parts to make an LED flash each second for as long as it has power. The circuit can be used to generate a pulse at 1 second intervals which in turn can be used as a clock input to drive some 4033 Decade Counter CMOS chips to control some 7 segment displays.</p>
-<p>The great thing about the 4033 IC is you can string them together in as many rows as you wanted to, meaning you could build a googol clock (1 followed by 100 zeros!) if you felt like it! Most of it would be blank until the end of the universe but it would still be pretty cool thing to build.</p>
+<p>I started to do some research into how best to represent this and all of the designs were quite complicated.</p>
+<p>I then stumbled onto the 4060 Binary counter CMOS chip and discovered that it could keep accurate time using a crystal oscillator!</p>
+<p>The crystal oscillator I used is the same one that is found in a lot of digital watches and uses a vibrating crystal of piezoelectric material to accurately keep time! mind blown.</p>
+<p>Anyhow the basic circuit is ridiculously simple and only needs a handful of parts to make an LED flash each second for as long as it has power.</p>
+<p>The circuit can be used to generate a pulse at 1 second intervals which in turn can be used as a clock input to drive some 4033 Decade Counter CMOS chips to control some 7 segment displays.</p>
+<p>The great thing about the 4033 IC is you can string them together in as many rows as you wanted to, meaning you could build a googol clock (1 followed by 100 zeros!) if you felt like it!</p>
+<p>Most of it would be blank until the end of the universe but it would still be pretty cool thing to build.</p>
 <p>I designed a PCB to keep everything neat and tidy and also added some red transparent acrylic across the front to help diffuse the light from the 7 segment displays.</p>
-<p>Initially I built this so it could power off a 9V battery along with 5V from an adapter. I decided to re-degn the PCB and just have it powered with 5V's via a USB-C adapter. You can still find the Gerber files for the battery version and also parts list in the next step</p>
+<p>Initially I built this so it could power off a 9V battery along with 5V from an adapter.</p>
+<p>I decided to re-degn the PCB and just have it powered with 5V's via a USB-C adapter.</p>
+<p>You can still find the Gerber files for the battery version and also parts list in the next step</p>
 <p>No time to waste - let's get building!!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.png" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>PCB info can be found on the next step</p>
 <p>The parts below are for the 5V all adapter version. The battery version parts list and Gerber files can be found in my Google drive</p>
 <p>PARTS:</p>
 <ul>
 <li>Resistors (metal Film)</li>
-<li>1M X 1</li>
-<li>1K X 1</li>
-<li>22K X 1</li>
-<li>LED Display 7 Segment 5101AS X 5</li>
+<li><a href="https://www.aliexpress.com/w/wholesale-1m-Resistor.html?spm=a2g0o.productlist.search.0">1M X 1</a></li>
+<li><a href="https://www.aliexpress.com/w/wholesale-1k-Resistor.html?spm=a2g0o.productlist.search.0">1K X 1</a></li>
+<li><a href="https://www.aliexpress.com/w/wholesale-22k-resistor.html?spm=a2g0o.productlist.auto_suggest.1.4bbb41a6O8fMLp">22K X 1</a></li>
+<li>LED Display 7 Segment <a href="https://www.aliexpress.com/w/wholesale-5101AS.html?spm=a2g0o.productlist.search.0">5101AS X 5</a></li>
 <li>IC's</li>
-<li>Decade Counter 4033 X 5</li>
-<li>Binary Counter 4060 X 2</li>
+<li><a href="https://www.aliexpress.com/w/wholesale-4033-ic.html?spm=a2g0o.productlist.search.0">Decade Counter 4033 X 5</a></li>
+<li><a href="https://www.aliexpress.com/w/wholesale-4060-ic.html?spm=a2g0o.productlist.search.0">Binary Counter 4060 X 2</a></li>
 <li>Switches</li>
-<li>momentary switch SKRCADD010 X 1</li>
-<li>micro slide switch MSK-12D19 X 2</li>
-<li>USB C X 1</li>
-<li>Crystal Oscillator 32.768kHz X 1</li>
-<li>Red Translucent acrylic X 1</li>
+<li>momentary switch <a href="https://www.aliexpress.com/w/wholesale-SKRCADD010.html?spm=a2g0o.productlist.search.0">SKRCADD010 X 1</a></li>
+<li>micro slide switch <a href="https://www.aliexpress.com/item/1005005877515591.html?spm=a2g0o.order_list.order_list_main.386.503d1802HJPTn8">MSK-12D19 X 2</a></li>
+<li><a href="https://www.aliexpress.com/item/1005006140199994.html?spm=a2g0o.order_list.order_list_main.65.65691802z57dr5">USB C X 1</a></li>
+<li>Crystal Oscillator <a href="https://www.aliexpress.com/w/wholesale-32.768kHz.html?spm=a2g0o.detail.search.0">32.768kHz X 1</a></li>
+<li>Red Translucent <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=red+transparent+acrylic&_sacat=0">acrylic X 1</a></li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: Designing the Circuit & Getting Your Own PCB Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Designing the Circuit & Getting Your Own PCB Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Designing the Circuit & Getting Your Own PCB Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Designing the Circuit & Getting Your Own PCB Printed image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Designing the Circuit & Getting Your Own PCB Printed image 4" loading="lazy"></div><p>When designing this PCB I wanted to make sure that it was a complete unit with no need for added wires or external components to make it work. It can be powered directly via USB C.</p>
-<p>All of the information including the Gerber file, Eagle files and schematic can be found on my GitHub Page</p>
+<p>All of the information including the Gerber file, Eagle files and schematic can be found on my <a href="https://github.com/lonesoulsurfer/CMOS_Clock_Counter">GitHub Page</a></p>
 <p>There are 2 versions available - one that is powered by 5V USB C and the other by a 9V battery and USB C - you choose which one you want to build</p>
 <p>Getting the PCB Printed – Steps</p>
 <ul>
-<li>Download the ‘Gerber file’ folder from my GitHub Page and save it somewhere on your computer</li>
+<li>Download the ‘Gerber file’ folder from my <a href="https://github.com/lonesoulsurfer/CMOS_Clock_Counter">GitHub Page</a> and save it somewhere on your computer</li>
 <li>You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Just follow the steps and download the Gerber files to the website.</li>
 <li>You will see the PCB once it has been loaded. Now you can choose your colour by ticking which one in the list below</li>
 <li>Every PCB printed has an order number automatically added. However, you can opt to have it added to a ‘specific’ spot.  Make sure you click the specific tick box and it will be located on the back of the PCB.</li>
 <li>Now sit back and wait for your 5 boards to arrive.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: About the Integrated Circuits Used in This Build</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: About the Integrated Circuits Used in This Build image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: About the Integrated Circuits Used in This Build image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: About the Integrated Circuits Used in This Build image 3" loading="lazy"></div><p>The circuit used in this build can be broken up into 2 sections. The first is the 4060 binary IC’s which generate the 1 second pulse output and the other is the 7-segment display section with the 4033 Decade counters.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: About the Integrated Circuits Used in This Build</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: About the Integrated Circuits Used in This Build image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: About the Integrated Circuits Used in This Build image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: About the Integrated Circuits Used in This Build image 3" loading="lazy"></div><p>The circuit used in this build can be broken up into 2 sections.</p>
+<p>The first is the 4060 binary IC’s which generate the 1 second pulse output and the other is the 7-segment display section with the 4033 Decade counters.</p>
 <p>So let’s start with the 4060’s.</p>
-<p>To be able to generate a 1Hz clock frequency I’ve used a 32.768 Khz quartz crystal oscillator. These are the same ones you find in digital watches etc.  The crystal oscillator needs to oscillate at 32768 Hz so to be able to do this we use a couple 4060 binary counters. The reason why we need to use 2 is 1 won’t be able to divide the input frequency of the crystal oscillator enough to reach 32768 Hz whist using 2 gets us there</p>
-<p>The pulse output (1 second) and pin 5 of the 2nd 4060 IC, can be connected to an LED which will flash at 1 sec intervals. Nice but boring. So what if we use this pulse to drive a 7 segment display? Well this takes us to the second part of the circuit</p>
+<p>To be able to generate a 1Hz clock frequency I’ve used a 32.768 Khz quartz crystal oscillator.</p>
+<p>These are the same ones you find in digital watches etc.</p>
+<p>The crystal oscillator needs to oscillate at 32768 Hz so to be able to do this we use a couple 4060 binary counters.</p>
+<p>The reason why we need to use 2 is 1 won’t be able to divide the input frequency of the crystal oscillator enough to reach 32768 Hz whist using 2 gets us there</p>
+<p>The pulse output (1 second) and pin 5 of the 2nd 4060 IC, can be connected to an LED which will flash at 1 sec intervals.</p>
+<p>Nice but boring.</p>
+<p>So what if we use this pulse to drive a 7 segment display?</p>
+<p>Well this takes us to the second part of the circuit</p>
 <p>If you connect the output pulse to the clock input of a 4033 decade counter and then wire up a 7 segment LED display to the 4033 IC you’ll be able to get it to count to 10 over and over at 1 second intervals.</p>
-<p>The next logical step is to start to string a few 4033 and 7 segment displays together so they trigger each other in a way that makes them count. This is pretty straight forward as all you need to do is to is connect pin 5 from the first 4033 IC to pin 1 (clock) of the next 4033 and so on. In theory you could connect 100 or more this way and build a gargantuan counter.</p>
-<p>So that’s a really quick rundown on how this works. Note - I’m far from an expert so if I don’t get it quite right don’t worry – you get the gist.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding Components to the Board</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding Components to the Board image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding Components to the Board image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding Components to the Board image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding Components to the Board image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding Components to the Board image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding Components to the Board image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding Components to the Board image 7" loading="lazy"></div><p>Whenever you start to add components to a PCB it is best practice to add them from lowest profile to the highest. This way when you flip it over to solder the legs into place you don’t have parts falling out because they aren’t sitting against the table. So with that, lets start with the resistors</p>
+<p>The next logical step is to start to string a few 4033 and 7 segment displays together so they trigger each other in a way that makes them count.</p>
+<p>This is pretty straight forward as all you need to do is to is connect pin 5 from the first 4033 IC to pin 1 (clock) of the next 4033 and so on.</p>
+<p>In theory you could connect 100 or more this way and build a gargantuan counter.</p>
+<p>So that’s a really quick rundown on how this works. Note - I’m far from an expert so if I don’t get it quite right don’t worry – you get the gist.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding Components to the Board</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding Components to the Board image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding Components to the Board image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding Components to the Board image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding Components to the Board image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding Components to the Board image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding Components to the Board image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding Components to the Board image 7" loading="lazy"></div><p>Whenever you start to add components to a PCB it is best practice to add them from lowest profile to the highest.</p>
+<p>This way when you flip it over to solder the legs into place you don’t have parts falling out because they aren’t sitting against the table.</p>
+<p>So with that, lets start with the resistors</p>
 <p>STEPS</p>
 <ul>
 <li>I don’t think I have ever built an electronic project with such few resistors!  Anyhow, add the 3 of them into the PCB and solder the legs into place</li>
@@ -182,17 +237,33 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>STEPS:</p>
 <ul>
 <li>Place a blank circuit board onto the red acrylic and measure out the size on the backing of the acrylic</li>
-<li>If you have a band saw then use this to cut the acrylic. If not you can use a fine tooth saw to cut it out</li>
+<li>If you have a band saw then use this to cut the acrylic.  If not you can use a fine tooth saw to cut it out</li>
 <li>Sand and then file the sides to make them smooth.</li>
-<li>Place the board back onot the acrylic and mark out the 4 drill holes in each corner. Use a 2.5mm drill piece to drill out the holes</li>
-<li>To secure the acrylic into place you'll need to use some spacers. Check the parts list on where to get these</li>
+<li>Place the board back onot the acrylic and mark out the 4 drill holes in each corner.  Use a 2.5mm drill piece to drill out the holes</li>
+<li>To secure the acrylic into place you'll need to use some spacers.  Check the parts list on where to get these</li>
 <li>Secure the spacers to the board and acrylic using the screws that come with the spacers</li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Mounting the CMOS Counter</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Mounting the CMOS Counter image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Mounting the CMOS Counter image 2" loading="lazy"></div><p>I decided to mount mine to the wall. You could also make a witre stand and have it sit on a desk table.</p>
 <p>STEPS:</p>
 <ul>
-<li>Decide where you want to have your clock counter. Prob best to have it close to a power source so it's easy to power.</li>
-<li>Use a couple snall screws and add them to the 2 small holes about half way up the PCB. You might need to remove the acrilic cover first if you ahve already added it</li>
+<li>Decide where you want to have your clock counter.  Prob best to have it close to a power source so it's easy to power.</li>
+<li>Use a couple snall screws and add them to the 2 small holes about half way up the PCB.  You might need to remove the acrilic cover first if you ahve already added it</li>
 <li>Connect a USB C cord to the adapter on the PCB and power it up</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

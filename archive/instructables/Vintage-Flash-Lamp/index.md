@@ -57,11 +57,11 @@ The modification is pretty much the same as the original one. The main differenc
 
 Parts:
 
-1. Vintage flash. I used a waltz flash - eBay
+1. Vintage flash. I used a waltz flash - [[[[[eBay](http://www.ebay.com.au/itm/10m-COILED-3-5mm-Stereo-Jack-Extension-Lead-Male-to-Female-Audio-Cable-006218-/380474428312?pt=UK_Computing_Sound_Vision_Audio_Cables_Adapters&hash=item58960b0b98&_uhb=1)](http://www.ebay.com.au/itm/MINI-TOGGLE-SWITCH-SPDT-12V-24V-125V-6A-ON-OFF-2-POSITION-/281060784155?pt=AU_B_I_Electrical_Test_Equipment&hash=item417087381b&_uhb=1)](http://www.ebay.com/itm/5pcs-Pack-Bi-Pin-Socket-Ceramic-Body-for-bulbs-with-base-GU5-3-G4-MR11-MR16-/130940633632)](http://www.ebay.com.au/itm/NEW-MIC-STAND-BOOM-MICROPHONE-STAGE-STAND-1-to-2M-/160632755338?pt=AU_Pro_Audio&hash=item256675548a&_uhb=1)](http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR1.TRC0.A0.Xvintage+flash+camera&_nkw=vintage+flash+camera&_sacat=0&_from=R40)
 
 2. Microphone stand - eBay (this one is exactly the same as the one I used)
 
-3. Bi pin light bulb (12v 20W). Type - G4. Ebay
+3. Bi pin light bulb (12v 20W). Type - G4. [Ebay](http://www.ebay.com.au/itm/10-X-G4-20W-Watt-12V-Halogen-Light-Bulb-Base-JC-Type-/330885468861?pt=AU_Lighting_Fans&hash=item4d0a4f92bd&_uhb=1)
 
 4. Bi pin socket - eBay
 

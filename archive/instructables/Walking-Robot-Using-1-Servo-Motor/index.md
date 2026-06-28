@@ -27,7 +27,7 @@ If you have never built a walking robot before and want to jump in the deep end,
 
 Hackaday did a review of my walker - check it out below:
 
-Hackaday
+[Hackaday](https://hackaday.com/2020/09/16/a-walking-robot-with-a-single-servo/)
 
 And with that, let's get started
 
@@ -44,29 +44,29 @@ And with that, let's get started
 
 Parts:
 
-1. Mirco Servo - eBay
+1. Mirco Servo - [eBay](https://www.ebay.com.au/itm/1pcs-90S-micro-metal-gear-9g-servo-for-RC-plane-helicopter-boat-car-4-8V-fw/363092424197?hash=item5489feb605:g:dXMAAOSwz05cHJS9&frcectupt=true)
 
-2. 16340 lithium battery - eBay
+2. 16340 lithium battery - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=16340+lithium+battery&_sacat=0&_sop=15)
 
-3. Aluminium Channel 10mm X 10mm - eBay you can also get it at most hardware stores
+3. Aluminium Channel 10mm X 10mm - [eBay](https://www.ebay.com.au/itm/Aluminium-Channel-10mm-x-10mm-x-1-6mm-at-1000mm-long/112027271224?hash=item1a15588038:g:7AEAAMXQsmFRb4sa&frcectupt=true) you can also get it at most hardware stores
 
 4. 2 X large paperclips - Newsagent or stationary store will have them. Get them as big as you can
 
-5. Wire Terminal - eBay hardware store will also have them
+5. Wire Terminal - [eBay](https://www.ebay.com.au/itm/3Pcs-12-Way-3A-Barrier-Screw-Terminal-Block-Wire-Connection-Connector-Strip-AU/333540024628?hash=item4da888e134:g:cRIAAOSwipleZdGi) hardware store will also have them
 
-6. SPDT Switch - eBay
+6. SPDT Switch - [eBay](https://www.ebay.com.au/itm/2-Pcs-AC-SPDT-On-Off-3-Position-Momentary-Toggle-Switch-AC250V-2A-120V-5A-B-AU/254693639157?hash=item3b4cec83f5:g:oQ8AAOSwQFJauzRQ)
 
-7. Battery charging module - eBay
+7. Battery charging module - [eBay](https://www.ebay.com.au/itm/10pcs-TP4056-5V-1A-Lipo-Battery-Charging-Board-Charger-Module-lithium-USB-18650/253066138178?hash=item3aebead242:g:yBwAAOSwFypZeCZq&frcectupt=true)
 
 8. Wire coat hanger - Cupboard
 
-9. 3 X M4 screws - eBay. Will be able to get them at a hardware store as well. I used philips head ones as that was what I had on hand.
+9. 3 X M4 screws - [eBay.](https://www.ebay.com.au/itm/M4-4mm-A2-Stainless-Steel-Hex-Socket-Button-Head-Allen-Bolts-Screws/322714607245?hash=item4b234a1e8d:g:kXIAAOSw9L1ZqLkc) Will be able to get them at a hardware store as well. I used philips head ones as that was what I had on hand.
 
-10. 6 X M4 Locknuts - eBay Will be able to get them at a hardware store as well
+10. 6 X M4 Locknuts - [eBay](https://www.ebay.com.au/itm/M3-M20-Hex-Locknut-304-Stainless-Steel-Self-Locking-Hexagon-Screw-Nuts-DIN985/124226975391?hash=item1cec81369f:g:ILUAAOSwdqFdkFv1&frcectupt=true) Will be able to get them at a hardware store as well
 
 11. 2 X Smaller washers. Hardware store
 
-12. 2 X Female banana plugs - eBay. I used a section inside these to make the pivots for the legs. They fit perfectly over the M4 screws.
+12. 2 X Female banana plugs - [eBay](https://www.ebay.com.au/itm/2-10pcs-Banana-Plug-Jackvideo-Female-Connector-Amplifier-Terminal-audio-4mm/173701891712?hash=item2871708680:g:IcIAAOSwseFcHF22). I used a section inside these to make the pivots for the legs. They fit perfectly over the M4 screws.
 
 Tools:
 

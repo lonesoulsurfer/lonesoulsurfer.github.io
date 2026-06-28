@@ -17,7 +17,7 @@ Source: https://www.instructables.com/Shotgun-Shell-Locket-V2/
 
 ![Intro 5](images/intro_05.jpg)
 
-As the title suggests, this is my second version of a shotgun shell locket. The first one was a little more complicated as I included a hinge with the first version. This time, the lid fits into the main body of the locket and is pushed into place. It's a lot simpler to make than the first version and I think just as effective. It's also a deeper locket as it uses the whole cap (what I call "shell" in the title. I know that the title is a little misleading, but shell is more explanatory than Cap. I will however use cap in the rest of the ible').
+As the title suggests, this is my second version of a shotgun shell locket. [The first one](https://www.instructables.com/id/Shotgun-Shell-Keepsake/) was a little more complicated as I included a hinge with the first version. This time, the lid fits into the main body of the locket and is pushed into place. It's a lot simpler to make than the first version and I think just as effective. It's also a deeper locket as it uses the whole cap (what I call "shell" in the title. I know that the title is a little misleading, but shell is more explanatory than Cap. I will however use cap in the rest of the ible').
 
 The only tricky part is to find something slightly larger than the shell to expand the opening to allow the lid to fit into place. I used a socket but I’m sure that there are other (and better) ways out there.
 
@@ -38,7 +38,7 @@ Enjoy
 
 Parts:
 
-1. Shotgun shells. I’d suggest you get a few different types. I have found that trying to fit the lid into the same brand shell can be tricky. Using a different brand and cap should make the job easier. You can get shells from Etsy, or your local gun range for free.
+1. Shotgun shells. I’d suggest you get a few different types. I have found that trying to fit the lid into the same brand shell can be tricky. Using a different brand and cap should make the job easier. You can get [shells from Etsy](https://www.etsy.com/au/search?q=shotgun%20shells), or your local gun range for free.
 
 2. Some thin, copper wire for the loop
 

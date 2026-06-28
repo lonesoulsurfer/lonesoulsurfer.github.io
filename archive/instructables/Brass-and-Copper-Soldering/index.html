@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,71 +163,91 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Brass and Copper Soldering</span>
 </nav>
 <h1>Brass and Copper Soldering</h1><div class="source"><a href="https://www.instructables.com/Brass-and-Copper-Soldering/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Brass or copper soldering like most things is easy once you know the basics. It’s a great skill to have as it allows you to be able to fabricate and make things out of relatively cheap materials.</p>
-<p>I had to learn the hard way how to solder brass and copper – by trial and error. I’ve made plenty of mistakes though and I would have benefitted from a simple guide ao I thought I would put this one together for all those just starting out.</p>
-<p>I have made a whole bunch of different projects with brass and copper (see the long list below) but I always assume that everyone knows how to solder. By putting this ‘ible together, my hope is that even if you are a novice, you will be able to make any of the projects listed below.</p>
-<p>The project that I made in this 'ible can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: ​Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: ​Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: ​Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: ​Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: ​Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: ​Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: ​Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: ​Tools image 7" loading="lazy"></div><p>The good news is you don’t need many expensive parts or tools to start soldering copper and brass together. In fact, all you really need is some flux, blow torch and some solder. However, there are a few other tools which can help you along the way.</p>
+<p>I had to learn the hard way how to solder brass and copper – by trial and error.</p>
+<p>I’ve made plenty of mistakes though and I would have benefitted from a simple guide ao I thought I would put this one together for all those just starting out.</p>
+<p>I have made a whole bunch of different projects with brass and copper (see the long list below) but I always assume that everyone knows how to solder.</p>
+<p>By putting this ‘ible together, my hope is that even if you are a novice, you will be able to make any of the projects listed below.</p>
+<p>The project that I made in this 'ible can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: ​Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: ​Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: ​Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: ​Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: ​Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: ​Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: ​Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: ​Tools image 7" loading="lazy"></div><p>The good news is you don’t need many expensive parts or tools to start soldering copper and brass together.</p>
+<p>In fact, all you really need is some flux, blow torch and some solder.</p>
+<p>However, there are a few other tools which can help you along the way.</p>
 <p>I’ll go into more details on the tools but for the meantime, the list below is what you will need to become an expert in soldering</p>
 <p>Parts and Tool List</p>
 <ol>
 <li>Silver Solder – eBay, Hardware store</li>
-</ul>
+</ol>
 <ol>
 <li>Blow Torch – eBay, Hardware store</li>
-</ul>
+</ol>
 <ol>
 <li>Flux – eBay, Hardware store. Can be either paste or liquid flux.</li>
-</ul>
+</ol>
 <ol>
 <li>Isopropyl alcohol to clean up any flux residue</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Vice</li>
-</ul>
+</ol>
 <ol>
 <li>Small files</li>
-</ul>
+</ol>
 <ol>
 <li>Wet/dry Sandpaper – from 300 to 1200 grit.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Types of Blow Torches</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Types of Blow Torches image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Types of Blow Torches image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Types of Blow Torches image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Types of Blow Torches image 4" loading="lazy"></div><p>Go to any hardware store and you will come across a whole array of different types of blow torches. I have a few different types that I use for different types of soldering. However, in my opinion, you only need a couple types, a mini one for delicate work, and a larger one.</p>
-<p>The blow torch you can see in the images with the red gas cylinder was my go to for a long time. However, I recently got my hands on the brazing torch which is the one with the blue canister and I really like using this one. The flame is hotter and I can control what area's I want to heat up. These are on the more expensive side though so I would start with one like with the red gas can. these take butane and are great for most jobs that you will need to do.</p><h2><span class="step-num">STEP 3</span>Step 3: Why Silver Solder?</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Why Silver Solder? image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Why Silver Solder? image 2" loading="lazy"></div><p>There are a few different types of solder on the market. If you have done any electronic soldering you probably used a lead based solder. This is fine for soldering electronic components together but isn’t really strong enough, nor does it give a great bond, to copper and brass. Your best option is to use a silver solder. There's only about 3.5% silver in the solder (you can get higher amounts but it gets more expensive) but that small amount helps with strength.</p>
-<p>Silver soldering, also known as 'hard' soldering or silver brazing, also has a higher melting point then lead so it is important to heat-up the copper/brass sufficiently to get the solder to melt into the joint. More on this later</p>
-<p>So to summarize - Silver solder in general has a stronger bond, is less susceptible to mechanical fatigue and creates a more reliable joint.</p><h2><span class="step-num">STEP 4</span>Step 4: Why Do You Need to Add Flux?</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Why Do You Need to Add Flux? image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Why Do You Need to Add Flux? image 2" loading="lazy"></div><p>Basically, flux prevents oxidization of the metals being soldered as well as moves it. If your metals are oxidized, then you may have trouble soldering the parts together. Without it, you probably won’t get the solder to flow and join the metal parts together.</p>
-<p>There are different types of fluxes that you can use for the job. Some are specific to electronic soldering whilst others are made for brass and coppers soldering. You can get it in liquid or paste form. I prefer the paste but both work fine.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Types of Blow Torches</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Types of Blow Torches image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Types of Blow Torches image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Types of Blow Torches image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Types of Blow Torches image 4" loading="lazy"></div><p>Go to any hardware store and you will come across a whole array of different types of blow torches.</p>
+<p>I have a few different types that I use for different types of soldering.</p>
+<p>However, in my opinion, you only need a couple types, a mini one for delicate work, and a larger one.</p>
+<p>The blow torch you can see in the images with the red gas cylinder was my go to for a long time.</p>
+<p>However, I recently got my hands on the brazing torch which is the one with the blue canister and I really like using this one.</p>
+<p>The flame is hotter and I can control what area's I want to heat up.</p>
+<p>These are on the more expensive side though so I would start with one like with the red gas can. these take butane and are great for most jobs that you will need to do.</p><h2><span class="step-num">STEP 3</span>Step 3: Why Silver Solder?</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Why Silver Solder? image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Why Silver Solder? image 2" loading="lazy"></div><p>There are a few different types of solder on the market.</p>
+<p>If you have done any electronic soldering you probably used a lead based solder.</p>
+<p>This is fine for soldering electronic components together but isn’t really strong enough, nor does it give a great bond, to copper and brass.</p>
+<p>Your best option is to use a silver solder.</p>
+<p>There's only about 3.5% silver in the solder (you can get higher amounts but it gets more expensive) but that small amount helps with strength.</p>
+<p>Silver soldering, also known as 'hard' soldering or silver brazing, also has a higher melting point then lead so it is important to heat-up the copper/brass sufficiently to get the solder to melt into the joint.</p>
+<p>More on this later</p>
+<p>So to summarize - Silver solder in general has a stronger bond, is less susceptible to mechanical fatigue and creates a more reliable joint.</p><h2><span class="step-num">STEP 4</span>Step 4: Why Do You Need to Add Flux?</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Why Do You Need to Add Flux? image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Why Do You Need to Add Flux? image 2" loading="lazy"></div><p>Basically, flux prevents oxidization of the metals being soldered as well as moves it.</p>
+<p>If your metals are oxidized, then you may have trouble soldering the parts together.</p>
+<p>Without it, you probably won’t get the solder to flow and join the metal parts together.</p>
+<p>There are different types of fluxes that you can use for the job.</p>
+<p>Some are specific to electronic soldering whilst others are made for brass and coppers soldering.</p>
+<p>You can get it in liquid or paste form.</p>
+<p>I prefer the paste but both work fine.</p>
 <p>If you go to the plumbing section of your local hardware store, you will be able to find suitable flux to use when soldering brass and copper.</p>
-<p>Soldered joints using flux can become corrosive and it’s important to clean off the excess flux to prevent any corrosion from happening. Most of my projects I use sandpaper or a polishing agent to remove the excess flux but you can also use baking soda to neutralize the flux.</p>
+<p>Soldered joints using flux can become corrosive and it’s important to clean off the excess flux to prevent any corrosion from happening.</p>
+<p>Most of my projects I use sandpaper or a polishing agent to remove the excess flux but you can also use baking soda to neutralize the flux.</p>
 <p>Steps:</p>
 <ol>
 <li>Make a paste from baking soda and warm water.</li>
-</ul>
+</ol>
 <ol>
 <li>Apply the paste with a toothbrush to the flux and leave for a couple of minutes</li>
-</ul>
+</ol>
 <ol>
 <li>Wipe away the baking soda and flux residue with a damp cloth</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Getting Started – Preparing the Brass/Copper</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 4" loading="lazy"><img src="images/step05_05.gif" alt="Step 5: Getting Started – Preparing the Brass/Copper image 5" loading="lazy"></div><p>Soldering works by capillary action – the solder is drawn into the joint by the heat and flux.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Getting Started – Preparing the Brass/Copper</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Getting Started – Preparing the Brass/Copper image 4" loading="lazy"><img src="images/step05_05.gif" alt="Step 5: Getting Started – Preparing the Brass/Copper image 5" loading="lazy"></div><p>Soldering works by capillary action – the solder is drawn into the joint by the heat and flux.</p>
 <ol>
 <li>Place the 2 pieces of copper/brass you want to solder on a hard surface. In this case I’m soldering a copper reducer to a piece of copper pipe.</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure that you add some flux to the area to be soldered. I use a paste flux which is self-cleaning (although you should still wipe it with some Isopropyl alcohol afterwards.</li>
-</ul>
+</ol>
 <ol>
 <li>Some people here will say that it is imperative to clean the parts that are to be soldered together. I honestly only do this when the metal is old or dirty, otherwise I don’t bother. If however you want to clean them, then some Isopropyl alcohol will do the job.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the flux right around the pipe and place the reducer onto the end. Wipe off any excess flux.</li>
-</ul>
+</ol>
 <ol>
 <li>The solder will want to be pulled downwards (capillary action and gravity) so make sure whatever you are soldering is sitting so the solder can flow into it.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Getting Started – Heating the Brass/Copper</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 4" loading="lazy"><img src="images/step06_05.gif" alt="Step 6: Getting Started – Heating the Brass/Copper image 5" loading="lazy"><img src="images/step06_06.gif" alt="Step 6: Getting Started – Heating the Brass/Copper image 6" loading="lazy"></div><ol>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Getting Started – Heating the Brass/Copper</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Getting Started – Heating the Brass/Copper image 4" loading="lazy"><img src="images/step06_05.gif" alt="Step 6: Getting Started – Heating the Brass/Copper image 5" loading="lazy"><img src="images/step06_06.gif" alt="Step 6: Getting Started – Heating the Brass/Copper image 6" loading="lazy"></div><ol>
 <li>As the area that you want to add the solder to is relatively large, you can turn the blow torch up to full.</li>
-</ul>
+</ol>
 <ol>
 <li>Ignite the torch and start to heat the metal up.</li>
-</ul>
+</ol>
 <p>IMPORTANT</p>
 <ul>
 <li>When doing this make sure you don’t just keep the flame on one area. It’s important to move the flame around the area that you want to add solder to and also heat up both the pipe and the copper cap.</li>
@@ -202,91 +257,124 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <ol>
 <li>Continue to heat-up the metal until the flux starts to melt, bubble (if you are using a paste) and smoke.</li>
-</ul>
+</ol>
 <ol>
 <li>Usually, once you see the flux start to smoke and bubble, then the metal is usually hot enough to melt the solder.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Getting Started – Adding the Solder</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Getting Started – Adding the Solder image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Getting Started – Adding the Solder image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Getting Started – Adding the Solder image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Getting Started – Adding the Solder image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Getting Started – Adding the Solder image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Getting Started – Adding the Solder image 6" loading="lazy"><img src="images/step07_07.gif" alt="Step 7: Getting Started – Adding the Solder image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 7: Getting Started – Adding the Solder image 8" loading="lazy"></div><ol>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Getting Started – Adding the Solder</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Getting Started – Adding the Solder image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Getting Started – Adding the Solder image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Getting Started – Adding the Solder image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Getting Started – Adding the Solder image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Getting Started – Adding the Solder image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Getting Started – Adding the Solder image 6" loading="lazy"><img src="images/step07_07.gif" alt="Step 7: Getting Started – Adding the Solder image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 7: Getting Started – Adding the Solder image 8" loading="lazy"></div><ol>
 <li>Continue to add heat to the metal. However, the heat shouldn’t need to be added directly to the area that you need to solder. If you do add heat to the area whist trying to add solder to the joint, then the solder will most likely melt before it touches the joint.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the solder on the joint. If it starts to melt then the metal is hot enough, if it doesn’t add some more heat to the area.</li>
-</ul>
+</ol>
 <ol>
 <li>Move the solder around the joint and make sure you get an even spread of solder. Heat up the area if the solder stops flowing.</li>
-</ul>
+</ol>
 <ol>
 <li>In a joint like this one which needs to be air tight, it’s better to add too much then not enough. Excess solder can be cleaned-up and filed away.</li>
-</ul>
-<p>This is probably one of the easiest joints to solder. The part can easily sit straight, the joint is made to take solder, and any excess solder is hidden mostly inside the parts. However, this is great practice to understand how hot the metal needs to be and also how to get the solder flowing into the joint correctly.</p>
-<p>What would happen if you had to clamp 2 parts together sideways and solder these</p><h2><span class="step-num">STEP 8</span>Step 8: Getting Started – Cleaning and Finishing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 4" loading="lazy"></div><p>As mentioned, the flux that I use is self-cleaning; however, it’s good practice to remove any flux left over. You can use a mixture of baking soda and water to neutralize any of the flux that might be left as it can be acidic. Make it into a paste and with a toothbrush add it to the soldered areas. leave for a minute and wipe away with a damp cloth.</p>
+</ol>
+<p>This is probably one of the easiest joints to solder.</p>
+<p>The part can easily sit straight, the joint is made to take solder, and any excess solder is hidden mostly inside the parts.</p>
+<p>However, this is great practice to understand how hot the metal needs to be and also how to get the solder flowing into the joint correctly.</p>
+<p>What would happen if you had to clamp 2 parts together sideways and solder these</p><h2><span class="step-num">STEP 8</span>Step 8: Getting Started – Cleaning and Finishing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Getting Started – Cleaning and Finishing image 4" loading="lazy"></div><p>As mentioned, the flux that I use is self-cleaning; however, it’s good practice to remove any flux left over.</p>
+<p>You can use a mixture of baking soda and water to neutralize any of the flux that might be left as it can be acidic.</p>
+<p>Make it into a paste and with a toothbrush add it to the soldered areas. leave for a minute and wipe away with a damp cloth.</p>
 <p>As I usually file and sand the parts, I don't usually worry about removing any left over flux as it usually gets removed this way.</p>
-<p>There have been a few comments on this saying it is a waste of time to worry about removing any flux and you should just wipe it away. I've been scouring the internet on this and it all depends on what type of flux you use. I would err on the side of caution and neutralize the flux just to be sure. Again, it really depends on what flux you use and also what you are making.</p><h2><span class="step-num">STEP 9</span>Step 9: Using a Vice - Part 1</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Using a Vice - Part 1 image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Using a Vice - Part 1 image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Using a Vice - Part 1 image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Using a Vice - Part 1 image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Using a Vice - Part 1 image 5" loading="lazy"></div><p>The vice is your best friend when soldering. You can use it as a hard surface, and also hold parts together. The following will show how to solder a part that needs to be clamped together.</p>
+<p>There have been a few comments on this saying it is a waste of time to worry about removing any flux and you should just wipe it away.</p>
+<p>I've been scouring the internet on this and it all depends on what type of flux you use.</p>
+<p>I would err on the side of caution and neutralize the flux just to be sure.</p>
+<p>Again, it really depends on what flux you use and also what you are making.</p><h2><span class="step-num">STEP 9</span>Step 9: Using a Vice - Part 1</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Using a Vice - Part 1 image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Using a Vice - Part 1 image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Using a Vice - Part 1 image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Using a Vice - Part 1 image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Using a Vice - Part 1 image 5" loading="lazy"></div><p>The vice is your best friend when soldering. You can use it as a hard surface, and also hold parts together. The following will show how to solder a part that needs to be clamped together.</p>
 <ol>
 <li>The parts that I’m clamping together are a piece of copper pipe and a small brass nut. It’s possible that I could solder these parts standing up, but I need the nut to be soldered precisely to the bottom of the tube.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some flux to the areas that need to take solder</li>
-</ul>
+</ol>
 <ol>
 <li>Place the 2 parts in a vice. You don’t need to squeeze these parts together tight, just make sure that they are secure.</li>
-</ul>
+</ol>
 <ol>
 <li>Heat up the metal until the flux starts to smoke and bubble. Make sure you don’t add heat directly to the flux when you initially start to heat the metal up. You can however once the flux has melted.</li>
-</ul>
+</ol>
 <ol>
 <li>Add solder to the joint. You will see that the solder will start to pool at the bottom of the joint (damn you gravity!). Don’t stress, you can fix this up later.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have added enough solder to cover the joint, remove the metal out of the vice (I do this whilst it is still hot by using some pliers – be careful though), and place it on top of the vice. You are now going to re-flow the solder so it evens out on the joint.</li>
-</ul>
+</ol>
 <ol>
 <li>Heat-up the soldered area until the solder starts to flow. If you don’t bump the metal whilst soldering, then it will stay in place.</li>
-</ul>
+</ol>
 <ol>
 <li>Clean away any excess flux</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Using a Vice - Part 2</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Using a Vice - Part 2 image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Using a Vice - Part 2 image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Using a Vice - Part 2 image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Using a Vice - Part 2 image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Using a Vice - Part 2 image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Using a Vice - Part 2 image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Using a Vice - Part 2 image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Using a Vice - Part 2 image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Using a Vice - Part 2 image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Using a Vice - Part 2 image 10" loading="lazy"></div><p>So what about soldering a part that has a small or difficult joint to solder to? This can be tricky as you need to find a way to clamp these two parts together. A vice can work in most cases but you might have to think creatively. Jigs are also another way to help hold the parts together whilst you add the solder.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Using a Vice - Part 2</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Using a Vice - Part 2 image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Using a Vice - Part 2 image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Using a Vice - Part 2 image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Using a Vice - Part 2 image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Using a Vice - Part 2 image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Using a Vice - Part 2 image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Using a Vice - Part 2 image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Using a Vice - Part 2 image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Using a Vice - Part 2 image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Using a Vice - Part 2 image 10" loading="lazy"></div><p>So what about soldering a part that has a small or difficult joint to solder to?</p>
+<p>This can be tricky as you need to find a way to clamp these two parts together.</p>
+<p>A vice can work in most cases but you might have to think creatively.</p>
+<p>Jigs are also another way to help hold the parts together whilst you add the solder.</p>
 <ol>
 <li>Place the parts in a vice. If necessary, you may have to use something to help hold everything in place. In this sample, I used a few bearings to sit the pipe onto</li>
-</ul>
+</ol>
 <ol>
 <li>Add flux to the area that you want to solder.</li>
-</ul>
+</ol>
 <ol>
 <li>Heat up the section that you want to add solder to. As I have already soldered a few other parts to the copper pipe, I don’t want to add direct heat to those sections if I can help it as it might start the solder flowing again.</li>
-</ul>
+</ol>
 <ol>
 <li>To get a smaller, concentrated area of heat, turn the blow torch down.</li>
-</ul>
+</ol>
 <ol>
 <li>Add the solder to the joint. If it is only a small point that you need to solder to, then make sure you add enough solder to enable a secure fix. Be careful though as the solder will have a tendency to flow down and this could cause leakages of the solder.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Soldering Small Pieces</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Soldering Small Pieces image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Soldering Small Pieces image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Soldering Small Pieces image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Soldering Small Pieces image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Soldering Small Pieces image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Soldering Small Pieces image 6" loading="lazy"></div><p>Using a large blow torch isn’t feasible when you are trying to solder smaller, delicate pieces together. You need to use a mini blow torch to control the heat and enable you to add solder to the joint.</p>
-<p>One of the trickiest parts of soldering small pieces is how to hold them in place whist you heat-up the metal? You need to be able to heat it up with one hand and add the solder with the other. I find that a helping hand like the one in the image below will work in most situations. Sometimes you need to improvise though with what you have around you.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Soldering Small Pieces</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Soldering Small Pieces image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Soldering Small Pieces image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Soldering Small Pieces image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Soldering Small Pieces image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Soldering Small Pieces image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Soldering Small Pieces image 6" loading="lazy"></div><p>Using a large blow torch isn’t feasible when you are trying to solder smaller, delicate pieces together.</p>
+<p>You need to use a mini blow torch to control the heat and enable you to add solder to the joint.</p>
+<p>One of the trickiest parts of soldering small pieces is how to hold them in place whist you heat-up the metal?</p>
+<p>You need to be able to heat it up with one hand and add the solder with the other.</p>
+<p>I find that a helping hand like the one in the image below will work in most situations.</p>
+<p>Sometimes you need to improvise though with what you have around you.</p>
 <ol>
 <li>Add a small amount of flux to the area you want to solder</li>
-</ul>
+</ol>
 <ol>
 <li>Heat-up the area with a mini blow torch. Remember not to put the heat directly onto the flux initially or you might burn it.</li>
-</ul>
+</ol>
 <ol>
 <li>Once the flux starts to smoke you are usually ready to add the solder. Touch the end of the solder to the joint and keep the heat near the area (not on it though)</li>
-</ul>
+</ol>
 <ol>
 <li>Once the solder has been added, I usually add more heat to the joint to flow the solder and make sure that the joint is secure.</li>
-</ul>
+</ol>
 <ol>
 <li>Add more solder if necessary</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Solder Leakage</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Solder Leakage image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Solder Leakage image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Solder Leakage image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Solder Leakage image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Solder Leakage image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Solder Leakage image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Solder Leakage image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Solder Leakage image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Solder Leakage image 9" loading="lazy"><img src="images/step12_10.jpg" alt="Step 12: Solder Leakage image 10" loading="lazy"></div><p>These usually occur when you are adding more than 1 part to the piece you are soldering. The metal heats up and the solder starts to flow again. If you have added a lot of solder, then there is a good chance that it will leak. You can try to avoid this by not adding direct heat to the part soldered, although this doesn’t always work.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Solder Leakage</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Solder Leakage image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Solder Leakage image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Solder Leakage image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Solder Leakage image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Solder Leakage image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Solder Leakage image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Solder Leakage image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Solder Leakage image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Solder Leakage image 9" loading="lazy"><img src="images/step12_10.jpg" alt="Step 12: Solder Leakage image 10" loading="lazy"></div><p>These usually occur when you are adding more than 1 part to the piece you are soldering.</p>
+<p>The metal heats up and the solder starts to flow again.</p>
+<p>If you have added a lot of solder, then there is a good chance that it will leak.</p>
+<p>You can try to avoid this by not adding direct heat to the part soldered, although this doesn’t always work.</p>
 <ol>
 <li>If a drip of solder is running down an area that it shouldn’t be, you can wipe it away with a rag whilst still hot. Obviously be careful as it is molten metal. Wiping it away will most likely leave a silver mark but at least there won’t be a blob of solder to deal with</li>
-</ul>
+</ol>
 <ol>
 <li>You will need to get rid of the solder mark by using some small, fine files. Remove all traces of the solder with the files and then smooth out with some wet and dry sandpaper. I usually use 600 to get the metal smooth again and remove any scratches from the files.</li>
-</ul>
+</ol>
 <ol>
 <li>If you have a leakage, and the part needs to be airtight, then you need to check and make sure that it still is. If not, then heat-up the area and reflow the solder again. Obviously this could cause problems with other parts soldered to the piece so reduce the heat on the blow torch and take your time.</li>
-</ul>
+</ol>
 <ol>
 <li>If it is air tight, then you can do a couple of things a. Remove the excess solder with some small, fine files. This will take some time but you will be able to remove the excess solder. Clean-up with some wet/dry sandpaper b. Use a homemade lathe like this one I made and use a file to remove the excess solder. It’s definitely a faster way to do it but you need to be careful that you don’t scratch the metal too much.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

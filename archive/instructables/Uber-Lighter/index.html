@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,221 +162,258 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Uber Lighter</span>
 </nav>
-<h1>Uber Lighter</h1><div class="source"><a href="https://www.instructables.com/Uber-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Show Vulcan and Prometheus a thing or two about lighting fires with this formidable bad boy of fire starters. Forget about ever using one of those wimpy bic lighters again – this super awesome uber lighter will turn you from a zero to a hero. Men will fear you and women will love you.</p>
+<h1>Uber Lighter</h1><div class="source"><a href="https://www.instructables.com/Uber-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Show Vulcan and Prometheus a thing or two about lighting fires with this formidable bad boy of fire starters.</p>
+<p>Forget about ever using one of those wimpy bic lighters again – this super awesome uber lighter will turn you from a zero to a hero.</p>
+<p>Men will fear you and women will love you.</p>
 <p>Considering you only need some copper pipe parts, an old lighter and rope to build this most intimidating and refulgent of lighters; it amazes me still that it contains so much power.</p>
-<p>Word of warning though! Anyone of weak or nervous temperament SHOULD NOT attempt to build this behemoth. The power of wielding such an awesome device might have an adverse effect, rendering the user unconscious or even dead. YOU HAVE BEEN WARNED</p><h2><span class="step-num">STEP 1</span>Step 1: ​Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: ​Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: ​Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: ​Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: ​Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
-<p>You can get all of the copper pipe parts from your local hardware store. These are very common so you won’t have any issues finding them. I have also made you a cheat sheet so just print that off and take it with you.</p>
+<p>Word of warning though!</p>
+<p>Anyone of weak or nervous temperament SHOULD NOT attempt to build this behemoth.</p>
+<p>The power of wielding such an awesome device might have an adverse effect, rendering the user unconscious or even dead.</p>
+<p>YOU HAVE BEEN WARNED</p><h2><span class="step-num">STEP 1</span>Step 1: ​Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: ​Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: ​Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: ​Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: ​Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
+<p>You can get all of the copper pipe parts from your local hardware store.</p>
+<p>These are very common so you won’t have any issues finding them.</p>
+<p>I have also made you a cheat sheet so just print that off and take it with you.</p>
 <p>Main body of Lighter</p>
 <ol>
 <li>1 X 3/4" x 1.5m Copper Tube</li>
-</ul>
+</ol>
 <ol>
 <li>1 X 1/2" x 1.5m Copper Tube</li>
-</ul>
+</ol>
 <ol>
 <li>1 X 20 x 15mm Reducing Copper Coupling</li>
-</ul>
+</ol>
 <ol>
 <li>1 X 20mm Copper End Cap</li>
-</ul>
+</ol>
 <ol>
 <li>1 X 15mm Copper End Cap</li>
-</ul>
+</ol>
 <ol>
 <li>Small piece of chain (I used fob watch chain which I brought at a hardware store – you can also get it on eBay</li>
-</ul>
+</ol>
 <p>Sparkwheel</p>
 <ol>
 <li>4mm brass or copper tube. Hobby or RC shop. If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube</li>
-</ul>
+</ol>
 <ol>
 <li>Brass strip. Hobby or RC shop. Don't get it too thick or you will never be able to bend it. Same goes with too thin! This is used as a bracket for the sparkwheel</li>
-</ul>
+</ol>
 <ol>
 <li>1 x small screw. The screw needs to be slightly smaller than the small brass tube (4mm). These are used to hold the spring into place</li>
-</ul>
+</ol>
 <ol>
 <li>Old Lighter (preferably the larger sized BIC Lighter</li>
-</ul>
+</ol>
 <p>The Rest of the Parts</p>
 <ol>
-<li>Cotton Rope – I used 8mm sash rope which again you can find in a hardware store or eBay</li>
-</ul>
+<li>Cotton Rope – I used 8mm sash rope which again you can find in a hardware store or <a href="https://www.ebay.com.au/sch/i.html?_odkw=sash+rope&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xsash+rope+8mm.TRS0&_nkw=sash+rope+8mm&_sacat=0">eBay</a></li>
+</ol>
 <ol>
 <li>Cotton wool</li>
-</ul>
+</ol>
 <ol>
-<li>10mm Insert – eBay</li>
-</ul>
+<li>10mm Insert – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1313.TR0.TRC0.H0.X10%2F50X+Large+Flange+Nutsert+Zinc+Plated+Steel+Rivet+Nut+Rivnut+Nutsert+M4%2F6%2F8%2F1.TRS0&_nkw=10%2F50X+Large+Flange+Nutsert+Zinc+Plated+Steel+Rivet+Nut+Rivnut+Nutsert+M4%2F6%2F8%2F10&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>10mm Eye bolt – eBay</li>
-</ul>
+<li>10mm Eye bolt – <a href="http://www.ebay.com.au/itm/M6-M8-M10-M12-Metric-Thread-316-Marine-Stainless-Steel-Lifting-Eye-Bolt-lia-/182346058457?var=&hash=item2a74ac0ad9:m:mAvceX2C38AkkURcY17cZ_g">eBay</a></li>
+</ol>
 <ol>
-<li>Methylated spirits (or lighter fluid) - Hardware store. So it seems that methylated spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out this link to find out more. You can also use lighter fluid (Naphtha in the US) if you have it as well.</li>
-</ul>
+<li>Methylated spirits (or lighter fluid) - Hardware store. So it seems that methylated spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out <a href="https://en.wikipedia.org/wiki/Denatured_alcohol">this link</a> to find out more. You can also use lighter fluid (Naphtha in the US) if you have it as well.</li>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Blow torch</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers (different types)</li>
-</ul>
+</ol>
 <ol>
 <li>Small files</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Polishing cream</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Lighter - Main Body</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Lighter - Main Body image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Lighter - Main Body image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Lighter - Main Body image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Lighter - Main Body image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Lighter - Main Body image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Lighter - Main Body image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Lighter - Main Body image 7" loading="lazy"></div><p>First thing you need to do is to decide on how big you want to make your lighter. My ¾ inch copper tube was aprox 130mm long. You can make it shorter but be aware that it's awesome power will be diminished the smaller you make it. Once you have cut the tube, the next step is to make the top section of the lighter</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Lighter - Main Body</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Lighter - Main Body image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Lighter - Main Body image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Lighter - Main Body image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Lighter - Main Body image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Lighter - Main Body image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Lighter - Main Body image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Lighter - Main Body image 7" loading="lazy"></div><p>First thing you need to do is to decide on how big you want to make your lighter.</p>
+<p>My ¾ inch copper tube was aprox 130mm long.</p>
+<p>You can make it shorter but be aware that it's awesome power will be diminished the smaller you make it.</p>
+<p>Once you have cut the tube, the next step is to make the top section of the lighter</p>
 <p>Steps:</p>
 <ol>
 <li>First cut a small piece of the ½’ tube off (aprox 20mm). This will be soldered into the end of the reducer and the 15mm cap will sit on top and act as the lid.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the ½” tube into the top of the reducer and solder into place</li>
-</ul>
+</ol>
 <ol>
 <li>Place the 15mm cap onto the ½” tube and see how it sits. You want the cap to sit flush against the reducer. If it doesn’t, use a file to reduce the tube in size.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, solder the reducer onto the ¾” tube which is the main body of the lighter</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Sparkwheel - Pulling Apart Your Lighter</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Sparkwheel - Pulling Apart Your Lighter</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Sparkwheel - Pulling Apart Your Lighter image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First remove the metal guard.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, carefully remove the sparkwheel making sure that the spring doesn't fly off.</li>
-</ul>
+</ol>
 <ol>
 <li>Put aside the sparkwheel, flint and spring. I decided to add a couple of flints so I had to pull apart 2 lighters. This adds more pressure against the flint and sprakwheel which results in more spark.</li>
-</ul>
+</ol>
 <ol>
 <li>Discard the empty lighter.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Tube and Screw for Sparkwheel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Tube and Screw for Sparkwheel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Tube and Screw for Sparkwheel image 6" loading="lazy"></div><p>Steps:</p>
 <p>Adding the screw</p>
 <p>It's best adding the screw first before you cut the copper tube. Reason being, you need to lock the tube in a vice to be able to force the screw into the end of the tube</p>
 <ol>
 <li>Secure the copper tube in a vice. You will probably squash the tube but don't worry, you won't need this bit</li>
-</ul>
+</ol>
 <ol>
 <li>With a small, round file, de-burr the inside.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the screw into the top and then with a phillips head, start to turn the screw into the copper. You you have a tap then you can just use this to make the thread. As I didn't, I just screwed the screw in with force to make the thread.</li>
-</ul>
+</ol>
 <p>Tube for Spring</p>
 <ol>
 <li>Put the spring next to the tube. You will want to cut the tube the same length as the spring.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut the tube. I used a dremel with a cutting wheel</li>
-</ul>
+</ol>
 <ol>
 <li>File the end and make it smooth. Also, de-burr the inside. You can see in the last image that once the flint is in the tube there is about 10-15mm of the spring sticking out. The more pressure you have the spring under, the more spark you'll get. However, it will mean that putting the screw in place to hold the spring will mean it is under pressure and could make the job hard.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Bracket</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Bracket image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Bracket image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Bracket image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Bracket image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Bracket</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Bracket image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Bracket image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Bracket image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Bracket image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Make a 90 degree bend in the copper strip.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, grab the spark wheel and use this to work out where to make the next bend. You want to have it so when bent into a "U" shape, the 2 pins on the spark wheel rest on the copper strip.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut and trim the bracket and lastly, round off the edges. I used a sanding drum on my dremel but you could also use a file.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Sparkwheel to the Bracket</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 4" loading="lazy"></div><p>This can be a little tricky. You want to make the bracket so the spark wheel fits correctly. I've made quite a few now so I don't mess them up any longer. However, the first couple I did so just be patient and if you mess one up, try again.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Sparkwheel to the Bracket</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Sparkwheel to the Bracket image 4" loading="lazy"></div><p>This can be a little tricky.</p>
+<p>You want to make the bracket so the spark wheel fits correctly.</p>
+<p>I've made quite a few now so I don't mess them up any longer.</p>
+<p>However, the first couple I did so just be patient and if you mess one up, try again.</p>
 <p>Steps:</p>
 <ol>
 <li>Use the spark wheel to determine where you need to add the first hole. Once the first hole is drilled you can use this to determine where the second needs to go. If the holes aren't lined-up correctly, you can adjust the arms on the bracket with a pair of pliers to get the holes even</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully drill the first hole. The drill piece you use should be the same size as the pins on the spark wheel. The hole can be off-centre so if it isn't in the middle don't fret.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill the other hole and remove any burrs.</li>
-</ul>
+</ol>
 <ol>
 <li>Here's what you need to do to get the wheel into the bracket: - Put the wheel on top of the arms of the bracket. - Push down on the wheel and try and push it into the bracket. If you can't, bend one of the bracket arms slightly and push the sparkwheel into place. - Once in the bracket, line-up the pins on the wheel to the holes in the bracket. If you had to bend one of the bracket arms, then use some pliers or a vice to straighten and secure the wheel into place. - Test to make sure that it spins freely.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the wheel (I know it might have been a struggle getting it in but the 2nd time is much easier - trust me! Find the centre on the bottom of the bracket and drill a hole just big enough for the tube to fit into.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Soldering the Bracket to the Tube</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Soldering the Bracket to the Tube image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Soldering the Bracket to the Tube image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Soldering the Bracket to the Tube image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Soldering the Bracket to the Tube image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Soldering the Bracket to the Tube</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Soldering the Bracket to the Tube image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Soldering the Bracket to the Tube image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Soldering the Bracket to the Tube image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Soldering the Bracket to the Tube image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Drill a hole into the bottom of the bracket. Mark the centre and make a hole. The hole should be the same size as the tube for the spring. You want this fit to be as tight as possible so start with a drill bit slightly smaller than the tube and work your way up.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the bracket onto the tube for the spring. Only have a small section of the tube sticking through the bracket</li>
-</ul>
+</ol>
 <ol>
 <li>Next, secure in a vice and add some flux to where the two parts meet</li>
-</ul>
+</ol>
 <ol>
 <li>With a mini blow torch, heat up the section and add some solder to the joint.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the sparkwheel back into place.</li>
-</ul>
+</ol>
 <ol>
 <li>Put the flint, spring and screw in place and test. Take note of the spark orientation - the wheel only works one way! Don't don't want to attach it to the lighter the wrong way. However, if you do you'll just need to remove the sparkwheel and put it in the other way.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Sparkwheel to the Lighter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 4" loading="lazy"></div><p>So now that you have made the sparkwheel – you need to attach to the body of the lighter. In other projects I used a small brass gusset to join the sparkwheel section to the lighter. This time I decided to just use some slightly larger brass tubing which I threaded the body of the sparkwheel through and then soldered on. When you spin the sparkwheel, you need to have the sparks from the flint to go across the opening of the lighter. So when you go to attach the sparkwheel section to the lighter, you need to make sure that the gap is right. Too close and it will get hot from the flame, too far and it won’t light the wick.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Sparkwheel to the Lighter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Sparkwheel to the Lighter image 4" loading="lazy"></div><p>So now that you have made the sparkwheel – you need to attach to the body of the lighter.</p>
+<p>In other projects I used a small brass gusset to join the sparkwheel section to the lighter.</p>
+<p>This time I decided to just use some slightly larger brass tubing which I threaded the body of the sparkwheel through and then soldered on.</p>
+<p>When you spin the sparkwheel, you need to have the sparks from the flint to go across the opening of the lighter.</p>
+<p>So when you go to attach the sparkwheel section to the lighter, you need to make sure that the gap is right.</p>
+<p>Too close and it will get hot from the flame, too far and it won’t light the wick.</p>
 <p>Steps:</p>
 <ol>
 <li>Once you have decided on the best way to attach the sparkwheel to the lighter, add some flux and solder into place. I usually jam the sparkwheel and lighter body into a vice and then solder. It can be quite tricky making sure everything is nice and straight. I’m sure there are easier ways (using metal clamps for example) which would make the job easier but I have a clunky vice to do the job.</li>
-</ul>
+</ol>
 <ol>
 <li>Test the sparkwheel and make sure that the sparks are going across the opening of the lighter. If you think that they are too far away, then you may have to re-position.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Chain and Lid</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Chain and Lid image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Chain and Lid image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Chain and Lid image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Chain and Lid image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Chain and Lid image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Chain and Lid image 6" loading="lazy"></div><p>The chain helps by ensuring you don’t lose the lid.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Chain and Lid</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Chain and Lid image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Chain and Lid image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Chain and Lid image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Chain and Lid image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Chain and Lid image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Chain and Lid image 6" loading="lazy"></div><p>The chain helps by ensuring you don’t lose the lid.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut a piece of small chain to length.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder one end to the top of the 15mm cap</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the other end to the body of the lighter. I added a small brass lring to the body of the lighter and then attached the chain to this. Drill a small hole into the lighter (don’t go right through though).</li>
-</ul>
+</ol>
 <ol>
 <li>Make a ring like in the image below with a little leg on it and solder it into the hole. This will securely attach the ring to the lighter and will allow you to attach the chain easily.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, I squashed the lid slightly. This will secure it better onto the top of the lighter and make it a tighter fit. I just push the lid on now and turn it to lock it into place.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, I added a “O” ring to make the lighter air tight.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Wick and Cotton</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Wick and Cotton image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Wick and Cotton image 2" loading="lazy"></div><p>As you need to add the cotton and wick first before you solder the bottom on, I thought check to make sure it didn’t just go up in flames would be a good idea first. I experimented to determine if the cotton would burn if I soldered a cap to the copper tube. Although there was a very small amount of charring, it really wasn’t anything to worry about.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Wick and Cotton</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Wick and Cotton image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Wick and Cotton image 2" loading="lazy"></div><p>As you need to add the cotton and wick first before you solder the bottom on, I thought check to make sure it didn’t just go up in flames would be a good idea first.</p>
+<p>I experimented to determine if the cotton would burn if I soldered a cap to the copper tube.</p>
+<p>Although there was a very small amount of charring, it really wasn’t anything to worry about.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut a piece of the cotton rope to size. Make sure it is a little longer than needed as you can always trim later. This will be your wick</li>
-</ul>
+</ol>
 <ol>
 <li>Wrap some thin wire around the rope. This will help keep it rigid inside the lighter</li>
-</ul>
+</ol>
 <ol>
 <li>Thread the rope through the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, start to stuff small amounts of cotton into the bottom of the lighter. I used a screwdriver to push it all they way through the lighter. Keep adding cotton in different spots inside the lighter and pushing it up until the lighter is full. The reason why you do this is so the fuel isn’t in liquid form inside the lighter. If the lid isn’t air tight it would just leak out. Zippo’s are done exactly the same way.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Bottom Cap</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Bottom Cap image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Bottom Cap image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Bottom Cap image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Bottom Cap image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Bottom Cap image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Bottom Cap image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Bottom Cap image 7" loading="lazy"></div><p>To be able to fill the lighter with fuel, you need to be able to access the inside of the lighter.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Bottom Cap</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Bottom Cap image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Bottom Cap image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Bottom Cap image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Bottom Cap image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Bottom Cap image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Bottom Cap image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Bottom Cap image 7" loading="lazy"></div><p>To be able to fill the lighter with fuel, you need to be able to access the inside of the lighter.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a hole into the 20mm cap and solder in place the insert.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder into place the 20mm cap onto the lighter body. Try to use minimal heat, you don’t want to burn the cotton too much inside.</li>
-</ul>
+</ol>
 <ol>
 <li>Fill with fuel. I use methylated spirits* (or lighter fluid)</li>
-</ul>
+</ol>
 <ol>
 <li>Screw the eye bolt into place</li>
-</ul>
+</ol>
 <ol>
 <li>Test</li>
-</ul>
-<p>· *See parts and tools for more info on methylated spirits</p><h2><span class="step-num">STEP 12</span>Step 12: Done!</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Done! image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Done! image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Done! image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Done! image 4" loading="lazy"></div><p>Now that you have completed this most awesome of lighters – a great burden now rests heavily on your shoulders. You are the giver of light, the maker of fire and bringer of warmth so go out into the world and light up the way.</p>
+</ol>
+<p>· *See parts and tools for more info on methylated spirits</p><h2><span class="step-num">STEP 12</span>Step 12: Done!</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Done! image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Done! image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Done! image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Done! image 4" loading="lazy"></div><p>Now that you have completed this most awesome of lighters – a great burden now rests heavily on your shoulders.</p>
+<p>You are the giver of light, the maker of fire and bringer of warmth so go out into the world and light up the way.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -19,9 +19,9 @@ Source: https://www.instructables.com/Little-Portable-Desk-Lamp/
 
 ![Intro 6](images/intro_06.jpg)
 
-The little desk lamp was born after I discovered these bamboo sunglass cases on eBay. I wanted to create a lamp that you could put away after use and I knew that the bamboo case would be perfect for the job.
+The little desk lamp was born after I discovered [these bamboo sunglass cases](http://www.ebay.com.au/itm/Round-Handmade-Eyeglassess-Spectacles-Case-100-Natural-Bamboo-Wood-Glasses-Box-/131785528656?var=&hash=item1eaf079550:m:mpl-ZWaf2I2Qfsl6WJ2XaNQ) on eBay. I wanted to create a lamp that you could put away after use and I knew that the bamboo case would be perfect for the job.
 
-The ible’ isn’t difficult and only needs a minimal of tools and parts. I wanted to keep it as simple as possible but at the same time fun and practical. Initially I was going to use just some white LED’s for the light source, and then I remembered that I had these LED’s left over from another project. This made it even simpler to make! The LED's come with a remote and have a heap of features and different colours.
+The ible’ isn’t difficult and only needs a minimal of tools and parts. I wanted to keep it as simple as possible but at the same time fun and practical. Initially I was going to use just some white LED’s for the light source, and then I remembered that I [had these LED’s](http://www.ebay.com.au/itm/10-LED-Multi-Color-RGB-Submersible-Underwater-Party-Vase-Base-Light-Lamp-Remote-/261610188797?hash=item3ce92eaffd:g:iFYAAOSwPe1UKUoH) left over from another project. This made it even simpler to make! The LED's come with a remote and have a heap of features and different colours.
 
 I also added a lens that I made from a container to help diffuse the light. The remote fits into the bamboo case so it is out of the way and the LED’s can be positioned anyway you like them.
 
@@ -40,17 +40,17 @@ Hope you enjoy and if you have any questions, please let me know.
 
 Parts:
 
-1. Bamboo case – eBay or eBay. You can also just type "bamboo sunglass case" into eBay.
+1. Bamboo case – [[eBay](http://www.ebay.com.au/itm/Handmade-Men-Women-Natural-Bamboo-Wooden-Wood-Sunglasses-Box-Frame-Glasses-Case-/272282177002?hash=item3f65484dea:g:DXIAAOSwGIRXaeno)](http://www.ebay.com.au/itm/Handmade-Men-Women-Natural-Bamboo-Wooden-Wood-Sunglasses-Box-Frame-Glasses-Case-/272282177002?hash=item3f65484dea:g:DXIAAOSwGIRXaeno) or eBay. You can also just type "bamboo sunglass case" into eBay.
 
-2. M3 Nut inserts – eBay or eBay. You can also type "Flat Head Threaded M3 nut Insert" into eBay.
+2. M3 Nut inserts – [[eBay](http://www.ebay.com/itm/Rivet-Nut-Flat-Head-Threaded-Multi-M3-M4-M5-M6-Blind-Rivnut-Insert-Nutsert-Steel-/401035813377?var=670561867887&hash=item5d5f98e201:m:mu0FpyQZ6IyM9pw9xhex3yA)](http://www.ebay.com.au/itm/100pcsc-Furniture-M3-Rivet-Nut-Flat-Head-Insert-Nutsert-/191238774697?hash=item2c86b81fa9:g:PQIAAOSwyQtVmVFh) or eBay. You can also type "Flat Head Threaded M3 nut Insert" into eBay.
 
-3. Knurled, hand turn screw (M3, 12mm long) – eBay or eBay, or eBay. You can also type "knurled head screw M3" into eBay.
+3. Knurled, hand turn screw (M3, 12mm long) – [[[eBay](http://www.ebay.com/itm/M3-M4-M5-Knurled-Big-Flat-head-Screws-Hand-Tighten-Bolts-Adjusting-screw-/272110396325?var=&hash=item3f5b0b23a5:m:m3VGR1YXNl_gJxilDylPS3A)](http://www.ebay.com/itm/Computer-PC-Case-Metal-Knurled-Head-Phillips-Thumb-Screws-M3x12mm-10pcs-/351646053933?hash=item51dfbcf62d:g:268AAOSwFMZWsw5B)](http://www.ebay.com.au/itm/Computer-PC-Case-Metal-Knurled-Head-Phillips-Thumb-Screws-M3x12mm-10pcs-/361483173874?hash=item542a137ff2:g:Q8wAAOSw5dNWsth5) or eBay, or eBay. You can also type "knurled head screw M3" into eBay.
 
-4. Brass rod (thickness that I used was 1/16") – Local hobby shop or eBay. You can also type "brass rod 1/16" into eBay
+4. Brass rod (thickness that I used was 1/16") – Local hobby shop or [eBay](http://www.ebay.com/itm/NEW-K-S-1-16-Solid-Brass-Rod-3-8162-NIB-/291607309468?hash=item43e5266c9c:g:mmEAAOSw5VFWOQ8e). You can also type "brass rod 1/16" into eBay
 
-5. Diffuser. I used a lid from a small snack box. You can buy them on eBay . You can also type in "nude food container" and you should be able to bring them up
+5. Diffuser. I used a lid from a small snack box. You can buy them on [eBay](http://www.ebay.com.au/itm/Smash-Nude-Food-Movers-Lunch-Kit-4-pk-Rubbish-Free-Lunchbox-BPA-FREE-Dark-Blue-/141906896646?hash=item210a4f6706:g:dhsAAOSwx-9WxV9T) . You can also type in "nude food container" and you should be able to bring them up
 
-6. LED's - eBay or ebay. You can also type "10 LED Multi Color Submersible Underwater" into eBay
+6. LED's - [eBay](http://www.[ebay](http://www.ebay.com/itm/10-LED-Multi-Color-Submersible-Underwater-Durable-Party-Vase-Light-Remote-/181607102947?hash=item2a48a079e3:g:WWcAAOSwj0NUhnPg).com.au/itm/10-LED-Multi-Color-RGB-Submersible-Underwater-Party-Vase-Base-Light-Lamp-Remote-/261610188797?hash=item3ce92eaffd:g:iFYAAOSwPe1UKUoH) or ebay. You can also type "10 LED Multi Color Submersible Underwater" into eBay
 
 Tools:
 

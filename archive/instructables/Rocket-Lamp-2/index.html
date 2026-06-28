@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,153 +163,181 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Rocket Lamp</span>
 </nav>
 <h1>Rocket Lamp</h1><div class="source"><a href="https://www.instructables.com/Rocket-Lamp-2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I’ve had this rocket lamp idea for some time now. I think I saw an image of something similar on the net and it stuck with me.</p>
-<p>The thing that was holding me back was the actual rocket. I initially wanted to make one out of wood and use a lathe to design it. Not having a lathe handy kinda put that idea on ice. I then thought about just buying a toy rocket and adding that but couldn’t find one that suited the lamp.</p>
-<p>In the end I made my own from parts I had. I like to keep interesting parts that I find or from things I pull apart for this very purpose. I have a couple small, plastic storage containers that I keep these parts in – I find you don’t really need many parts to get some inspiration.</p>
+<p>The thing that was holding me back was the actual rocket.</p>
+<p>I initially wanted to make one out of wood and use a lathe to design it.</p>
+<p>Not having a lathe handy kinda put that idea on ice.</p>
+<p>I then thought about just buying a toy rocket and adding that but couldn’t find one that suited the lamp.</p>
+<p>In the end I made my own from parts I had.</p>
+<p>I like to keep interesting parts that I find or from things I pull apart for this very purpose.</p>
+<p>I have a couple small, plastic storage containers that I keep these parts in – I find you don’t really need many parts to get some inspiration.</p>
 <p>The “fire trail” part of the rocket is made from LED’s and some translucent tubing. I can control the LED brightness and effects with a remote which my son loves.</p>
 <p>This project only needs some basic tools and soldering skills. I have also added some photos of rockets I got some inspiration from which will hopefully help you if you decide to build this project.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"></div><p>Parts</p>
 <ol>
-<li>Milk White Acrylic Tube 40mm OD - Aliexpress</li>
-</ul>
+<li>Milk White Acrylic Tube 40mm OD - <a href="https://www.aliexpress.com/item/50cm-lot-OD-20-25-30-40-50-60-70-80-100mm-2mm-Thick-Milk/32788363314.html?spm=a2g0s.9042311.0.0.15504c4dWPnP22">Aliexpress</a></li>
+</ol>
 <ol>
-<li>LED Strip and remote. I used white for mine which you can buy here - eBay. You could also use coloured LED's as well - eBay</li>
-</ul>
+<li>LED Strip and remote. I used white for mine which you can buy here - <a href="https://www.ebay.com.au/itm/0-5-1-2-3-4-5M-USB-LED-Strip-Light-RGB-5050-TV-Back-Lamp-Colour-Changing-Remote/162718301323?hash=item25e2c43c8b:rk:1:pf:0&var">[eBay</a>](https://www.ebay.com.au/itm/5M-Cool-White-3528-300SMD-12V-Flexible-Led-Strip-Lights-RF-Remote-Controller/132870356447?hash=item1eefb0bddf:g:X-sAAOSwlx9b~jDT:rk:31:pf:0). You could also use coloured LED's as well - eBay</li>
+</ol>
 <ol>
-<li>12v, 1A Wall adapter - eBay</li>
-</ul>
+<li>12v, 1A Wall adapter - <a href="https://www.ebay.com.au/itm/AC-DC-5V-12V-24V-Power-Supply-Adapter-Transformer-Charger-AU-EU-UK-US-Wall-Plug/183304121040?hash=item2aadc6ead0:rk:4:pf:0&var">eBay</a></li>
+</ol>
 <ol>
 <li>Nice piece of wood for the base. Make sure it is a larger piece so the lamp is stable.</li>
-</ul>
+</ol>
 <ol>
 <li>Piece of 10mm x 10mm square piece of wood. I used some ply wood and just cut to size. This is for the centre part that the LED's are stuck to</li>
-</ul>
+</ol>
 <ol>
 <li>Rocket - If you are making your own rocket, then the parts you use are up to you. I have included some links in the next step though to some toy rockets which would work well.</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Epoxy glue</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Saw. I used a band saw and a circular saw</li>
-</ul>
+</ol>
 <ol>
 <li>Belt sander (or whatever you may have)</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2:</h2><h2><span class="step-num">STEP 3</span>Step 3: Rockets</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Rockets image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Rockets image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Rockets image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Rockets image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Rockets image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Rockets image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Rockets image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Rockets image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Rockets image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Rockets image 10" loading="lazy"></div><p>The rocket is probably the trickiest part to the build (it was for me anyhow). I made my own and will go through what I did but the parts I used probably won't be available to you as they were just bits and pieces I collected.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2:</h2><h2><span class="step-num">STEP 3</span>Step 3: Rockets</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Rockets image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Rockets image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Rockets image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Rockets image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Rockets image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Rockets image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Rockets image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Rockets image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Rockets image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Rockets image 10" loading="lazy"></div><p>The rocket is probably the trickiest part to the build (it was for me anyhow).</p>
+<p>I made my own and will go through what I did but the parts I used probably won't be available to you as they were just bits and pieces I collected.</p>
 <p>If you are good with wood and have a lathe, then you could easily turn one.</p>
-<p>Here's a link to my Pinterest rocket collection for some ideas. Below is a few that I found on eBay which would work as well. You could use a model rocket like the ones you can launch or ones that you build.</p>
-<p>eBay rocket 1</p>
-<p>eBay rocket 2</p>
-<p>eBay rocket 3</p>
-<p>eBay rocket 4</p>
-<p>eBay rocket 5</p>
+<p>Here's a link to my Pinterest <a href="https://www.pinterest.com.au/marcusdunn/rockets/">rocket collection</a> for some ideas.</p>
+<p>Below is a few that I found on eBay which would work as well.</p>
+<p>You could use a model rocket like the ones you can launch or ones that you build.</p>
+<p><a href="https://www.ebay.com.au/itm/Alexander-Taron-Tin-Toy-Rocket-Ship-Space-Toy-Spring-Activated-Door-Action-SALE/302975342676?hash=item468abcd854:g:iUQAAOSwMVdYFjGT:rk:19:pf:0">eBay rocket 1</a></p>
+<p><a href="https://www.ebay.com.au/itm/Friction-Powered-Tinplate-Rocket-Spaceship-Model-Tin-Toy-Children-Adult-Toys/123123335234?hash=item1caab90042">eBay rocket 2</a></p>
+<p><a href="https://www.ebay.com.au/itm/Dragon-1-400-CZ-2F-Rocket-DS-56253-Brand-New/223147528387?hash=item33f4a110c3:g:2LwAAOSwrqBbncb7:rk:37:pf:0">eBay rocket 3</a></p>
+<p><a href="https://www.ebay.com.au/p/Pegasus-1-72-Apollo-27-Rocket-9101/1641187313?iid=132305093408&_trkparms=aid%3D222007%26algo%3DSIM.MBE%26ao%3D1%26asc%3D20140122130056%26meid%3Dedbc699a4354478b82daa5253071a7e6%26pid%3D100010%26rk%3D1%26rkt%3D2%26sd%3D223155616537%26itm%3D132305093408&_trksid=p2047675.c100010.m2109">eBay rocket 4</a></p>
+<p><a href="https://www.ebay.com.au/itm/Bandai-Space-Battleship-YAMATO-2199-Deusula-the-2nd-Core-Ship-model-kit-196720/132655626786?hash=item1ee2e43a22:g:gBUAAOSw1m5bGsp-:rk:37:pf:0">eBay rocket 5</a></p>
 <p>What about a ship from Star Wars</p>
-<p>eBay Star Wars ship</p><h2><span class="step-num">STEP 4</span>Step 4: Making Your Own Rocket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making Your Own Rocket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making Your Own Rocket image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making Your Own Rocket image 3" loading="lazy"></div><p>I'll go through how I put my rocket together using a few parts I had lying around. Hopefully it gives you a little inspiration to make your own.</p>
+<p><a href="https://www.ebay.com.au/itm/Star-Wars-Y-Wing-Ship-Action-Fleet-Galoob-1990-s-Toy-Model/163398652512?hash=item260b519260:g:l1QAAOSwfbRbX2dr:rk:14:pf:0">eBay Star Wars ship</a></p><h2><span class="step-num">STEP 4</span>Step 4: Making Your Own Rocket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making Your Own Rocket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making Your Own Rocket image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making Your Own Rocket image 3" loading="lazy"></div><p>I'll go through how I put my rocket together using a few parts I had lying around. Hopefully it gives you a little inspiration to make your own.</p>
 <p>Steps:</p>
 <ol>
 <li>Go rummage through your parts bin if you have one and pull out bits that might work on a rocket. The main sections of my rocket are made from the bottle, plastic section of a mic stand, grease gun, some air gun parts and a few, cheap book lights.</li>
-</ul>
+</ol>
 <ol>
 <li>Next I played around with the parts until I had a design I was happy with. It also needed to be able to sit on top of the acrylic tube and be able to be attached to the piece of wood inside the tube that has the LED's stuck to it.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Keep on Designing</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Keep on Designing image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Keep on Designing image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Keep on Designing image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Keep on Designing image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Keep on Designing image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Keep on Designing</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Keep on Designing image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Keep on Designing image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Keep on Designing image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Keep on Designing image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Keep on Designing image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First I decided to remove some excess plastic from the mic stand part. I cut it off with a grinder and then sanded it to smooth it out.</li>
-</ul>
+</ol>
 <ol>
 <li>To attach the main body of the rocket to the bottom section, I added a piece of round wood through the middle of the mic holder. The wood would also allow me to attach it to the LED's later easily (I'll go through that step later)</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding Some Retro Rockets</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding Some Retro Rockets image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding Some Retro Rockets image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding Some Retro Rockets image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding Some Retro Rockets image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding Some Retro Rockets image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding Some Retro Rockets image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding Some Retro Rockets image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding Some Retro Rockets</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding Some Retro Rockets image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding Some Retro Rockets image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding Some Retro Rockets image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding Some Retro Rockets image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding Some Retro Rockets image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding Some Retro Rockets image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding Some Retro Rockets image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>I decided to add 3 little retro rockets which are just cheap booklights. I drilled 3 holes and glued these with some epoxy glue</li>
-</ul>
+</ol>
 <ol>
 <li>Next I attached the antenna to the top of the rocket with some more epoxy.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, I sat it on top of the tube to see what it would like like and to make sure the rocket was to size. If I needed to I would have added a few more parts to it to make it bigger.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Middle Section for the LED's</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Middle Section for the LED's image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Middle Section for the LED's image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Middle Section for the LED's image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Middle Section for the LED's image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making the Middle Section for the LED's image 5" loading="lazy"></div><p>In the middle of the tube there is a square piece of dowel which the LED's are stuck to. You need to stick the LED strips on each side of the dowel so make sure it's wide enough to accommodate them. Around 10mm sound do it. I cut mine from a sheet of ply wood as I had it lying around.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Making the Middle Section for the LED's</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Middle Section for the LED's image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Middle Section for the LED's image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Middle Section for the LED's image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Middle Section for the LED's image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making the Middle Section for the LED's image 5" loading="lazy"></div><p>In the middle of the tube there is a square piece of dowel which the LED's are stuck to.</p>
+<p>You need to stick the LED strips on each side of the dowel so make sure it's wide enough to accommodate them.</p>
+<p>Around 10mm sound do it.</p>
+<p>I cut mine from a sheet of ply wood as I had it lying around.</p>
 <p>Steps:</p>
 <ol>
 <li>The piece of dowel need to be longer than the actual acrylic tube. This is so you can place one end into the wood base and the other into the rocket bottom. It will ensure that it is in the middle of the tube and also kept secure and straight. Leave about 20mm extra length on both ends.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, I rounded the ends of the wood so I could drill holes in the base and rocket to secure it. The wood inside the rocket made it easy to drill. If you buy a rocket, then you might have to add some wood inside to be able to do this.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the LED's</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the LED's image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the LED's image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the LED's image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the LED's image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the LED's image 5" loading="lazy"></div><p>LED strips are super cheap - you can pick-up 15 meters including a remote for about $8 on eBay.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the LED's</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the LED's image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the LED's image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the LED's image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the LED's image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the LED's image 5" loading="lazy"></div><p>LED strips are super cheap - you can pick-up 15 meters including a remote for about $8 on eBay.</p>
 <p>Steps:</p>
 <ol>
 <li>First place the LED strip against the piece of dowel and cut across the solder points on the strip</li>
-</ul>
+</ol>
 <ol>
 <li>Next, remove the clear rubber from the solder points so you can add some solder them them</li>
-</ul>
+</ol>
 <ol>
 <li>Reveal the adhesive on the back of the LED strip and stick down on the wood</li>
-</ul>
+</ol>
 <ol>
 <li>Do this 3 more times so you have LED's on each side of the dowel</li>
-</ul>
+</ol>
 <ol>
 <li>You will now need to re-connect each of the LED strips. Add some solder to each of the solder points and connect with some small pieces of wire in series. Think of it as snakes and ladders, just connect each end to the end next to it making sure the polarities are connected correctly.</li>
-</ul>
+</ol>
 <ol>
 <li>Once everything is wired, test by connecting the end to a 12v power source. All of the LED's should light up.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Making the Base and Adding the LED's</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Base and Adding the LED's image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Base and Adding the LED's image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Base and Adding the LED's image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Base and Adding the LED's image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Base and Adding the LED's image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Base and Adding the LED's</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Base and Adding the LED's image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Base and Adding the LED's image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Base and Adding the LED's image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Base and Adding the LED's image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Base and Adding the LED's image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The base should be a solid and thick piece of wood. I had an old piece which I sanded back and rounded off the top edges. I did this on a belt sander which seemed to work well.</li>
-</ul>
+</ol>
 <ol>
 <li>Find the centre of the wood and using a spade drill piece, drill a hole just large enough for the tube to fit into. I only had a 38mm spade (the tube is 40mm) so had to use a dremel with a sanding bit to enlarge it</li>
-</ul>
+</ol>
 <ol>
 <li>Use another drill bit to make the hole in the middle a little larger so the rounded dowel end fits into it.</li>
-</ul>
+</ol>
 <ol>
 <li>If everything lines-up, glue the end of the dowel into the base. It should sit close to the middle of the tube. Don't stress if it is a little crocked, the rocket will make sure it ends up straight and in the middle.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Connecting the Adapter and Remote Receiver</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 6" loading="lazy"></div><p>The remote receiver comes with male and female plugs so you can just plug it into the adapter and your done if you want to. I didn't want all of the extra wire so I connected the adapter directly to the receiver and the wires from the LED</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Connecting the Adapter and Remote Receiver</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Connecting the Adapter and Remote Receiver image 6" loading="lazy"></div><p>The remote receiver comes with male and female plugs so you can just plug it into the adapter and your done if you want to.</p>
+<p>I didn't want all of the extra wire so I connected the adapter directly to the receiver and the wires from the LED</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the heat shrink from the remote receiver.</li>
-</ul>
+</ol>
 <ol>
 <li>Take note of how the wires are soldered to it (take a photo if necessary) and de-solder the connectors</li>
-</ul>
+</ol>
 <ol>
 <li>Cut the end off the power adapter and tin the wires</li>
-</ul>
+</ol>
 <ol>
 <li>Solder to the remote module</li>
-</ul>
+</ol>
 <ol>
 <li>Add some heat shrink to the wires in preparation. You won't able to add it later once you solder the receiver to the LED's</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the wires from the LED's to the receiver</li>
-</ul>
+</ol>
 <ol>
 <li>Melt the heat-shrink around the receiver and super glue it to the side of the wood. I was going to hide the receiver inside the tube but was worried that the remote might have troubles connecting to it.</li>
-</ul>
+</ol>
 <ol>
 <li>Plug it in and test to make sure the remote works.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Attaching the Rocket</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Attaching the Rocket image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Attaching the Rocket image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Attaching the Rocket image 3" loading="lazy"></div><p>I would have liked to have been able to remove the rocket so I could get to the LED's if necessary. Unfortunately it couldn't be done in this build so I had to just glue the rocket into place</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Attaching the Rocket</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Attaching the Rocket image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Attaching the Rocket image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Attaching the Rocket image 3" loading="lazy"></div><p>I would have liked to have been able to remove the rocket so I could get to the LED's if necessary. Unfortunately it couldn't be done in this build so I had to just glue the rocket into place</p>
 <p>Steps:</p>
 <ol>
 <li>Add some epoxy glue to the drilled hole inside the bottom of the rocket.</li>
-</ul>
+</ol>
 <ol>
 <li>If you can, add a little glue around the rocket base where it is going to touch the top of the tube</li>
-</ul>
+</ol>
 <ol>
 <li>Place the rocket on top and leave to dry</li>
-</ul>
+</ol>
 <ol>
 <li>Plug it in and enjoy!</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

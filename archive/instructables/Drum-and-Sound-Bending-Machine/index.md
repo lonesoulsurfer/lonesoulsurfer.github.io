@@ -13,7 +13,7 @@ Source: https://www.instructables.com/Drum-and-Sound-Bending-Machine/
 
 ![Intro 3](images/intro_03.jpg)
 
-This Instructable mashes together 2 separate Instructables (The Sound Bending Machine and Pocket Drum Machine) that I’ve made in the past. I got inspired after finding a retro fire alarm enclosure in a 2nd hand store.
+This Instructable mashes together 2 separate Instructables ([The Sound Bending Machine](https://www.instructables.com/id/Lo-Fi-Voice-Sampler-Circuit-Bending-/) and [Pocket Drum Machine](https://www.instructables.com/id/Pocket-Drum-Machine/)) that I’ve made in the past. I got inspired after finding a retro fire alarm enclosure in a 2nd hand store.
 
 The Drum Bending Machine is made from a birthday card that has a small electric drum kit inside (pretty amazing actually) and a small voice recorder module. By circuit bending the voice module you can record the drums (and other sounds if you like) and then speed –up the sound or slow it down. You can also put the recording in a loop so it plays over and over again.
 
@@ -46,21 +46,21 @@ Parts:
 
 1. Enclosure. Up to you really. Could be anything from an old walkie talkie to a tin box. Just make sure that there is enough room inside to add the electronics, batteries and wires.
 
-2. Drum Kit Sound Card – If you live in Australia Kmart and Big W both stock the card. You can also buy it from here. I suggest that you buy 2 just in case you mess one up.
+2. Drum Kit Sound Card – If you live in Australia Kmart and Big W both stock the card. You can also buy it [from here](https://www.dayspring.com/wowbirthdayadifferentdrummer2interactivesongcards). I suggest that you buy 2 just in case you mess one up.
 
-3. Sound Module – eBay (buy 2 as well)
+3. Sound Module – [eBay](http://www.ebay.com.au/itm/ISD1820-Voice-Recording-Playback-Module-Sound-Recorder-Board-With-Loudspeaker-/201524365876?epid=566136379&hash=item2eebc9ca34:g:7B8AAOSwzgRWwo08) (buy 2 as well)
 
 4. Wire
 
 5. Double sided foam tape
 
-6. 2 x 1M Pots – eBay
+6. 2 x 1M Pots – [eBay](http://www.ebay.com.au/itm/10pcs-Potentiometer-Pot-B1M-1M-Linear-shaft-15mm-/262388040927?hash=item3d178bc4df:g:SlIAAOSwKfVXEJdv)
 
-7. 2 x knobs - eBay
+7. 2 x knobs - [eBay](http://www.ebay.com.au/itm/10PCS-Aluminium-Potentiometer-Knobs-Volume-Control-Amplifier-Shaft-6MM-Gift-OZ/132021422263?_trksid=p2045573.c100506.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190705%26meid%3Da88eecb26db5465b871be2e2f4a8c1f8%26pid%3D100506%26rk%3D1%26rkt%3D1%26)
 
-8.1 x Toggle switch – eBay. Actually you use 2 on/off switches so if your enclosure doesn’t have one then get 2 toggle switches.
+8.1 x Toggle switch – [eBay.](http://www.ebay.com.au/itm/10pcs-AC-250V-2A-125V-6A-SPDT-Toggle-Rocker-Switch-ON-OFF-ON-3-Position-BI579-/201828924444?hash=item2efdf0fc1c:g:kPEAAOSw4A5YrYnN) Actually you use 2 on/off switches so if your enclosure doesn’t have one then get 2 toggle switches.
 
-9. 2 X Momentary switches – I used this one and this one from eBay
+9. 2 X Momentary switches – I used [[this one](http://www.ebay.com.au/itm/10pcs-2-Pin-SPST-OFF-ON-Car-Boat-Momentary-Push-Button-Switch-0-5A-DC-50V-Red/291559068959?_trksid=p2045573.c100505.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190540%26meid%3D34dbcda2872947af9583a929d85f6864%26pid%3D100505%26rk%3D1%26rkt%3D1%26)](http://www.ebay.com.au/itm/5-x-Momentary-Push-Button-Horn-Switch-for-Doorbell-Boat-Car-Waterproof-Red/331856419223?_trksid=p2045573.c100506.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190705%26meid%3D95d12ab6b4cc4b459a93e4f6efe713d0%26pid%3D100506%26rk%3D1%26rkt%3D1%26) and this one from eBay
 
 Tools
 

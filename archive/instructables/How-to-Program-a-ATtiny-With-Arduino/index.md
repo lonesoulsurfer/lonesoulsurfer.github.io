@@ -44,18 +44,18 @@ PARTS:
 
 Hardware
 
-- ATtiny - There are many types but in this Ible' I'll be using a ATtiny 85 which is a pretty popular one - Ali Express
-- Arduino Uno. Prob could use other Arduino's but this is what I used - Ali Express
-- Arduino USB 2.0 CABLE TYPE A/MICRO. This is what you use to connect the Arduino to the PC - Ali Express
+- ATtiny - There are many types but in this Ible' I'll be using a ATtiny 85 which is a pretty popular one - [Ali Express](https://www.aliexpress.com/w/wholesale-attiny-85.html?spm=a2g0o.productlist.search.0)
+- Arduino Uno. Prob could use other Arduino's but this is what I used - [Ali Express](https://www.aliexpress.com/w/wholesale-arduino-uno.html?spm=a2g0o.productlist.search.0)
+- Arduino USB 2.0 CABLE TYPE A/MICRO. This is what you use to connect the Arduino to the PC - [Ali Express](https://www.aliexpress.com/w/wholesale-arduino-usb-cord.html?spm=a2g0o.productlist.search.0)
 Additional Parts
 
-- 16 Pin ZIF Test DIP IC - Ali Express
-- Prototype board - Ali Express
-- Male to male jumper wires - Ali Express
-- Female 8 Pin sockets - Ali Express
-- 220R Resistor - Ali Express
-- LED - Red 3mm - Ali Express
-- 10uf Capacitor - Ali Express
+- 16 Pin ZIF Test DIP IC - [Ali Express](https://www.aliexpress.com/w/wholesale-14-Pin-ZIF-Test-DIP-IC-.html?spm=a2g0o.productlist.search.0)
+- Prototype board - [Ali Express](https://www.aliexpress.com/item/1005002879273095.html?spm=a2g0o.productlist.main.5.53edOiBiOiBiCo&algo_pvid=dff6f61e-e599-4763-bedc-3136d3c9c139&algo_exp_id=dff6f61e-e599-4763-bedc-3136d3c9c139-2&pdp_npi=4%40dis%21AUD%213.75%213.30%21%21%212.43%212.14%21%402101c5a417151460306541120ecd07%2112000036451082897%21sea%21AU%21135072183%21&curPageLogUid=HMQwAzmnmkzm&utparam-url=scene%3Asearch%7Cquery_from%3A)
+- Male to male jumper wires - [Ali Express](https://www.aliexpress.com/w/wholesale-male-to-male-jumper-wires.html?spm=a2g0o.detail.search.0)
+- Female 8 Pin sockets - [Ali Express](https://www.aliexpress.com/w/wholesale-female-8-pin-header.html?spm=a2g0o.productlist.search.0)
+- 220R Resistor - [Ali Express](https://www.aliexpress.com/w/wholesale-220R-resistor.html?spm=a2g0o.productlist.search.0)
+- LED - Red 3mm - [Ali Express](https://www.aliexpress.com/w/wholesale-3mm-led-red.html?spm=a2g0o.productlist.search.0)
+- 10uf Capacitor - [Ali Express](https://www.aliexpress.com/w/wholesale-10uf-capacitor.html?spm=a2g0o.productlist.search.0)
 - Small piece of ply wood (forms the base to attached the Arduino and prototype board to)
 
 
@@ -83,7 +83,7 @@ STEPS:
 
 - Solder the 16 Pin ZIF Test IC to to the prototype board
 - Next, add the 8 pin female header to the board and align them to the pins on the ZIF test IC
-- To be able to run the 'blink test' I decided to also connect he LED and resistor straight to the prototype board. Check out the wire diagram in the image to see how to connect these parts together
+- To be able to run the 'blink test' I decided to also connect he LED and resistor straight to the prototype board.  Check out the wire diagram in the image to see how to connect these parts together
 - Cathode (Ground Leg) - Pin 4
 - Anode (positive) connect one side to a 220R resistor and the other leg of the resistor to pin 3
 
@@ -105,8 +105,8 @@ STEPS:
 - Cut a small piece of plywood so it fits the Arduino and development board on it
 - Place the Arduino onto the ply wood, mark and drill some holes where the mounting holes are on the Arduino
 - Use some small screw and nuts to secure the Arduino to the ply wood
-- Do the same with the development board. You'll need to drill your own mounting holes into the prototype board
-- Lastly, use the jumper wires to connect the Arduino to the development board. I've included a wiring diagram to show you how to connect these together
+- Do the same with the development board.  You'll need to drill your own mounting holes into the prototype board
+- Lastly, use the jumper wires to connect the Arduino to the development board.  I've included a wiring diagram to show you how to connect these together
 That's it - you are now ready to start programming your ATtiny
 
 
@@ -119,7 +119,7 @@ If you are new to all of this then you'll need to download the Arduino software.
 STEPS:
 
 - First download a copy of Arduino IDE from the following link and install on your computer
-- https://www.arduino.cc/en/software
+- [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 - Open it up and connect your Arduino (I'm using a Arduino Uno) to your computer via a USB cable
 - Once connected, go to 'select board' and click on the Arduino Uno connection
 
@@ -152,7 +152,7 @@ STEPS:
 The ATtiny core files allow your Arduino to find the ATtiny and program it.
 
 - To install these files, open: files / preferences. (image 1)
-- Copy and past the following URL where it says 'Additional Boards Manager URL's “https://raw.githubusercontent.com/sleemanj/optiboot/master/dists/package_gogo_diy_attiny_index.json” (image 2)
+- Copy and past the following URL where it says 'Additional Boards Manager URL's “[https://raw.githubusercontent.com/sleemanj/optiboot/master/dists/package_gogo_diy_attiny_index.json](https://github.com/sleemanj)” (image 2)
 - Hit 'OK' This will install the core files.
 - To install the core files do the following - open: Tools / Board / Boards Manager
 - Next, type in 'ATtiny' into the search bar at the top left. The core files you just added named 'DIY ATtiny' will come up. (image 3)
@@ -172,7 +172,7 @@ the bootloader is a piece of firmware in your microcontroller that allows you to
 
 STEPS:
 
-- First, you need to make sure that the Arduino is set up as a programmer. Go to Tools / Programmer / Arduino as ISP
+- First, you need to make sure that the Arduino is set up as a programmer.  Go to Tools / Programmer / Arduino as ISP
 - Now you have to set-up the ATtiny in preparation for the Bootloader.
 - Go to the dropdown, select other board and port and select ATiny85
 - Now go to Tools / Programmer / DIY ATtiny: Arduino as ISP and hit 'DIY ATiny: Arduino as ISP' (image 2)

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -134,151 +169,171 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>I've also done a video of the build so check that out as well.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"></div><p>PARTS:</p>
 <p>The parts list is nice and short</p>
 <ol>
-<li>1" Copper Pipe - hardware store. I've added a link to a hardware store in Australia so you have a reference</li>
-</ul>
+<li>1" Copper Pipe - <a href="https://www.bunnings.com.au/kembla-1-x-1-5m-copper-straight-lengths_p0081146?store=6435&gclid=CjwKCAjw64eJBhAGEiwABr9o2DeRKrr5IAdioCCkObyU1NIkyI9jIdW2ufv93RcCHREWpXCgursDnxoC_GIQAvD_BwE&gclsrc=aw.ds">hardware store</a>. I've added a link to a hardware store in Australia so you have a reference</li>
+</ol>
 <ol>
-<li>Shotgun shell cartridges - I get mine from a local gun range for free. You can also buy them on etsy</li>
-</ul>
+<li>Shotgun shell cartridges - I get mine from a local gun range for free. You can also buy them on <a href="https://www.etsy.com/au/search?q=shotgun%20shell">etsy</a></li>
+</ol>
 <p>TOOLS:</p>
 <ol>
 <li>Pipe cutter</li>
-</ul>
+</ol>
 <ol>
 <li>Blow torch</li>
-</ul>
+</ol>
 <ol>
 <li>solder and flux</li>
-</ul>
+</ol>
 <ol>
 <li>Files</li>
-</ul>
+</ol>
 <ol>
 <li>Sandpaper</li>
-</ul>
+</ol>
 <ol>
 <li>Polishing wheel. I use one on my grinder. You could also just use a polishing compound</li>
-</ul>
+</ol>
 <ol>
 <li>Superglue</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Cutting the Copper Tube</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cutting the Copper Tube image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cutting the Copper Tube image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cutting the Copper Tube image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cutting the Copper Tube image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Cutting the Copper Tube image 5" loading="lazy"></div><p>You could use a hacksaw or grinding wheel to cut the copper but the best way is to use a copper tube cutting tool. you can pick these up cheaply at hardware stores. You'll need 3 pieces of the tube, one for the body, top and inner sleeve.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Cutting the Copper Tube</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cutting the Copper Tube image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cutting the Copper Tube image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cutting the Copper Tube image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cutting the Copper Tube image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Cutting the Copper Tube image 5" loading="lazy"></div><p>You could use a hacksaw or grinding wheel to cut the copper but the best way is to use a copper tube cutting tool. you can pick these up cheaply at hardware stores.</p>
+<p>You'll need 3 pieces of the tube, one for the body, top and inner sleeve.</p>
 <p>STEPS:</p>
 <ol>
 <li>The size that you want to make your canister is up to you. I have made 3 of them and they are all different sizes. First, cut the body section using the copper tube cutter</li>
-</ul>
+</ol>
 <ol>
 <li>Next, cut a piece of tube for the top. My tops are 10mm wide</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, cut a piece of the sleeve which will go inside the body and will allow you to add the top. This should be 20mm wide</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Cutting the Shotgun Shell Caps</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 8" loading="lazy"></div><p>The shotgun shell cap can also be trimmed with the copper tube cutter</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Cutting the Shotgun Shell Caps</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Cutting the Shotgun Shell Caps image 8" loading="lazy"></div><p>The shotgun shell cap can also be trimmed with the copper tube cutter</p>
 <p>STEPS:</p>
 <ol>
 <li>Place the cap section into the tube cutter and carefully score around the side of the cap. the metal isn't very thick so you'll only need to do a few turns to cut through it</li>
-</ul>
+</ol>
 <ol>
 <li>Place the shotgun shell into a vice and with a blow torch, heat up the end of the cap. You only need to leave the heat on the end of the cap for a few seconds</li>
-</ul>
+</ol>
 <ol>
 <li>with a pair of pliers, ply off the end of the cap</li>
-</ul>
+</ol>
 <ol>
 <li>You'll also need to remove the primer cap in the end of the cap. You can do this easily with a nail punch or something similar, and a hammer. Don't throw it away though as you'll use it later</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you will need to file or grind down the pieces of metal sticking up inside the cap. I used a dremel with a sanding drum on it to quickly remove them. You could also use a file or small grinding wheel that attaches to a dremel</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 6" loading="lazy"></div><p>When you score and cut the copper tube, it forms a small lip inside the copper tube. This is a good thing as it allows the shotgun shell cap to fit perfectly inside the shell. You'll need to remove the lip from the top of the body later so the sleeve will fir into place</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Soldering the Shotgun Shell Cap Into the Top Section of the Canister image 6" loading="lazy"></div><p>When you score and cut the copper tube, it forms a small lip inside the copper tube.</p>
+<p>This is a good thing as it allows the shotgun shell cap to fit perfectly inside the shell.</p>
+<p>You'll need to remove the lip from the top of the body later so the sleeve will fir into place</p>
 <p>STEPS:</p>
 <ol>
 <li>First, add some flux to the inside of the copper tube</li>
-</ul>
+</ol>
 <ol>
 <li>Next, wrap some thin soldering wire tightly around the shotgun shell cap. Add a couple of turns of the soldering wire</li>
-</ul>
+</ol>
 <ol>
 <li>Place the cap inside the top section of the copper tube and place it on a flat surface. Make sure that the solder is still wrapped around the top of the shotgun shell cap</li>
-</ul>
+</ol>
 <ol>
 <li>Heat the outside of the copper with a blow torch until all of the solder has melted. If you see any sections that need more solder then just touch it with some of the soldering wire and it should be still hot enough to melt</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Sleeve to the Canister Body</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 4" loading="lazy"></div><p>In order to be able to attached the lid to the canister, you need to add a sleeve inside the body. As the copper is all the same size, you need to remove a small section of the copper in order for it to be able to fit.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Sleeve to the Canister Body</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Sleeve to the Canister Body image 4" loading="lazy"></div><p>In order to be able to attached the lid to the canister, you need to add a sleeve inside the body.</p>
+<p>As the copper is all the same size, you need to remove a small section of the copper in order for it to be able to fit.</p>
 <p>STEPS:</p>
 <ol>
 <li>Place the 20mm piece of copper into a vice, mark a straight line and with a grinder or dremel, cut the side of the tube</li>
-</ul>
+</ol>
 <ol>
 <li>Mark and make another cut about 10mm from the first one. This will remove a small section of the tube</li>
-</ul>
+</ol>
 <ol>
 <li>Place the tube into a vice and compress the tube to the 2 cut sections come close to each other. Keep on moving the tube around and compressing it in the vice until the 2 cut sections are close to touching</li>
-</ul>
+</ol>
 <ol>
 <li>If you haven't already, remove the lip made by the pipe cutter on one end of the body section of the canister. I use my dremel with a sanding drum to do this but you could always use a file</li>
-</ul>
+</ol>
 <ol>
 <li>Place the sleeve inside the body. If it doesn't fit, run it the vice again and give it another shot</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Soldering the Sleeve to the Body of the Canister</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Soldering the Sleeve to the Body of the Canister image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Soldering the Sleeve to the Body of the Canister image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Soldering the Sleeve to the Body of the Canister image 3" loading="lazy"></div><p>STEPS:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Soldering the Sleeve to the Body of the Canister</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Soldering the Sleeve to the Body of the Canister image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Soldering the Sleeve to the Body of the Canister image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Soldering the Sleeve to the Body of the Canister image 3" loading="lazy"></div><p>STEPS:</p>
 <ol>
 <li>If the sleeve is still in place, pull it out and add some flux to the inside of the body section</li>
-</ul>
+</ol>
 <ol>
 <li>Push the sleeve back into place and leave about 7-8mm sticking out the top</li>
-</ul>
+</ol>
 <ol>
 <li>Check and make sure the top fits onto the sleeve. If it is a tight fit or doesn't go on try filing the inside edge of the cap. If it still doesn't go on, put the sleeve back into the vice and try and make it as round as possible</li>
-</ul>
+</ol>
 <ol>
 <li>Wrap some soldering wire around the sleeve a couple of times, take it off and then push it inside the body section so it is sitting on top of the sleeve inside the body</li>
-</ul>
+</ol>
 <ol>
 <li>Heat up the copper with a blow torch until the solder has melted</li>
-</ul>
+</ol>
 <ol>
 <li>Put the top back onto the sleeve. If it is too loose then slightly bend out the 2 edges of the sleeve and try again. You want the lid to go on firmly and needs a little effort when taking it off. I find that slightly twisting it when taking it off works best</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 4" loading="lazy"></div><p>This is pretty much the same thing as when you add the shell cap to the top section of the canister.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Shotgun Shell Cap to the Bottom of the Canister image 4" loading="lazy"></div><p>This is pretty much the same thing as when you add the shell cap to the top section of the canister.</p>
 <p>STEPS:</p>
 <ol>
 <li>Add some flux to the bottom of the body section of the canister</li>
-</ul>
+</ol>
 <ol>
 <li>Wrap some thin solder twice around the shotgun shell cap and push it inside the copper tube</li>
-</ul>
+</ol>
 <ol>
 <li>Place on a flat surface and check to make sure that the solder is between the shotgun shell cap and the copper tube</li>
-</ul>
+</ol>
 <ol>
 <li>Heat the bottom section of the copper tube until the solder melts</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Polishing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Polishing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Polishing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Polishing image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Polishing image 4" loading="lazy"></div><p>I have a polishing wheel on my grinder so used that to give the canisters a mirror finish. You could also just hand polish it with a rag and a polishing compound as well.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Polishing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Polishing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Polishing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Polishing image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Polishing image 4" loading="lazy"></div><p>I have a polishing wheel on my grinder so used that to give the canisters a mirror finish. You could also just hand polish it with a rag and a polishing compound as well.</p>
 <p>STEPS:</p>
 <ol>
 <li>First add some polishing compound to the polishing wheel</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure that the top is on the canister and start to polish it</li>
-</ul>
+</ol>
 <ol>
 <li>Once it is nice and shiny, take the top off and polish the sleeve</li>
-</ul>
+</ol>
 <ol>
 <li>Give the canister a wipe over and remove any residual polish and oil</li>
-</ul>
+</ol>
 <ol>
 <li>Sit back and admire your work!</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Primer Caps</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Primer Caps image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Primer Caps image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Primer Caps image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Primer Caps image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Primer Caps image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Primer Caps image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Primer Caps image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Primer Caps image 8" loading="lazy"></div><p>The last step is to add back the primer cap to the top and bottom of the canister. However, you'll need to slightly modify them first so they flush inside the canister</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Primer Caps</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Primer Caps image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Primer Caps image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Primer Caps image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Primer Caps image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Primer Caps image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Primer Caps image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Primer Caps image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Primer Caps image 8" loading="lazy"></div><p>The last step is to add back the primer cap to the top and bottom of the canister. However, you'll need to slightly modify them first so they flush inside the canister</p>
 <p>STEPS:</p>
 <ol>
 <li>First, place end of the the primer cap into a vice (sounds like the start of something dangerous!)</li>
-</ul>
+</ol>
 <ol>
 <li>Use a small metal saw or dremel with a cutting wheel and cut off the top section. You want to leave a little bit of the body of the primer cap still on the top. this will help you secure it better into the top of the shotgun shell cap</li>
-</ul>
+</ol>
 <ol>
 <li>File any burrs and rough edges on the top section of the primer cap</li>
-</ul>
+</ol>
 <ol>
 <li>Push the top of the primer cap into place and add some superglue around the edges to ensure it's secured into place</li>
-</ul>
+</ol>
 <ol>
 <li>Once dry, put the lid back onto the top of the canister and give it a final polish.</li>
-</ul>
+</ol>
 <p>Done! now you have a very unique canister to store whatever you want in it.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

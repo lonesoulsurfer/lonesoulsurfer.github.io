@@ -13,17 +13,17 @@ Source: https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-File
 
 I have been doing a lot of Instructables using PCB's and wanted to do a quick guide on how you can get a PCB printed.
 
-These days there a quite a few companies that you can get your PCB's printed from. In this Instructable I'll go through step by step guide on how to send a gerber file (more on what they are in the next step) in order to get your PCB printed. I'll be using a company called JLCPCB (not affiliated) as my example.
+These days there a quite a few companies that you can get your PCB's printed from. In this Instructable I'll go through step by step guide on how to send a gerber file (more on what they are in the next step) in order to get your PCB printed. I'll be using a company called [JLCPCB](http://jlcpcb.com) (not affiliated) as my example.
 
 You'll still need to add the components to the board once printed but that's the fun bit!
 
 If you want to learn how to design your own schematics and boards, then i highly recommend sparkfun's tutorials below:
 
-Installing Eagle
+[Installing Eagle](https://learn.sparkfun.com/tutorials/how-to-install-and-setup-eagle/using-the-sparkfun-libraries)
 
-Creating Schematics
+[Creating Schematics](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all)
 
-Creating PCB's
+[Creating PCB's](https://learn.sparkfun.com/tutorials/using-eagle-board-layout)
 
 
 ## Step 1: Gerber Files
@@ -42,7 +42,7 @@ Don't worry, you don't have to design the PCB as it has already been done. All y
 
 For this Instructable, I have included a link to my Google Drive where I have stored a Schematic, Board and Gerber file. I'll be using this gerber file as an example.
 
-Link to Google Drive File
+[Link to Google Drive File](https://drive.google.com/drive/folders/1L0cG3s8eofmWnCaaOoxGSxFMp1p22EOy?usp=sharing)
 
 STEPS:
 
@@ -57,11 +57,11 @@ STEPS:
 
 ![Step 2: Creating an Account With a PCB Manufacturer image 2](images/step02_02.jpg)
 
-If you type in PBC manufacturer in Google, you'll come up with a whole bunch of different companies that can do it for you. for this example, I will be using JLCPCB (not affiliated) but there are plenty of others like PCB Way, OSH Park, Next PCB etc
+If you type in PBC manufacturer in Google, you'll come up with a whole bunch of different companies that can do it for you. for this example, I will be using JLCPCB (not affiliated) but there are plenty of others like [PCB Way](https://www.pcbway.com/), [OSH Park](https://oshpark.com/), [Next PCB](https://www.nextpcb.com/?utm_campaign=pcb-au&adgroupid=87593250155&utm_source=google&utm_medium=cpc&utm_term=e&keyword=pcb%20manufacturer&gclid=Cj0KCQjw6NmHBhD2ARIsAI3hrM0D1ifqH1Mir42gMWBU232j1Z_dLVSe2wNnnxp15H6TH3GSYTn5-LkaAr5MEALw_wcB) etc
 
 STEPS:
 
-1. Go to JLCPCB website
+1. Go to [JLCPCB](http://jlcpcb.com) website
 
 2. Create an account. You can just use a Google account as a sign in which I find is the easiest way
 

@@ -46,25 +46,25 @@ The build isn’t very difficult; it does however require a little knowledge of 
 
 Parts:
 
-1. 12v, 7ah SLA battery – eBay
+1. 12v, 7ah SLA battery – [eBay](http://www.ebay.com.au/itm/Brand-New-12V-7-2Ah-SLA-Battery-12-Volt-7ah-Sealed-Lead-Acid-Rechargeable-AGM-/140984294937?hash=item20d3519e19:g:svIAAOSw2GlXKpJs)
 
-2. Project or power box. The size I used was 85mm x 230mm x 150mm. You can buy these from electronic shops (Jcar in Australia) or eBay
+2. Project or power box. The size I used was 85mm x 230mm x 150mm. You can buy these from electronic shops (Jcar in Australia) or [eBay](http://www.ebay.com.au/itm/Waterproof-Plastic-Electronic-Project-Box-Enclosure-Case-w-Screw-230x150x85mm-/322193149553?hash=item4b04354e71:g:f6QAAOSwIgNXiLqR)
 
-3. 18v Solar Panel – eBay
+3. 18v Solar Panel – [eBay](http://www.ebay.com.au/itm/142065094455?_trksid=p2060353.m1438.l2649&var=441162300405&ssPageName=STRK%3AMEBIDX%3AIT)
 
-4. 12v Solar panel regulator – eBay
+4. 12v Solar panel regulator – [eBay](http://www.ebay.com.au/itm/Auto-6V-12V-10A-Solar-Panel-Battery-Regulator-Charge-Controller-Power-Switch-/401126782670?hash=item5d6504f6ce:g:aTYAAOSwepZXRqQk)
 
-5. On/off switch – eBay
+5. On/off switch – [eBay](http://www.ebay.com.au/itm/Toggle-Switch-with-White-LED-Carbon-Missile-Cover-DC-12V-20A-ON-OFF-3-Pin-SPST-/111585202864?hash=item19faff12b0:g:yX4AAOSw2s1UyMV9)
 
-6. Momentary switch – eBay
+6. Momentary switch – [eBay](http://www.ebay.com.au/itm/5x-Momentary-Push-Button-Horn-Switch-for-Doorbell-Boat-Car-Waterproof-Black-/131504020488?hash=item1e9e401c08:g:tPYAAOSwPhdVSICs)
 
 7. Red and black wire
 
-8. LED strip – eBay
+8. LED strip – [eBay](http://www.ebay.com.au/itm/2x-12V-15-LED-Car-Interior-Light-Bar-Tube-Strip-Lamp-Van-Boat-Caravan-Motorhome-/351570582878?hash=item51db3d5d5e:g:rPcAAOSwI-BWOxwO)
 
-9. 12v Dual USB / Cigarette Charger – Ebay
+9. 12v Dual USB / Cigarette Charger – [Ebay](http://www.ebay.com.au/itm/12V-Dual-USB-Charger-Car-Cigarette-Lighter-Socket-Power-Digital-Voltmeter-GL-/252042788869?hash=item3aaeebc005:g:dRYAAOSwKIpWC3oq)
 
-10. Dimmer – eBay
+10. Dimmer – [eBay](http://www.ebay.com.au/itm/DC-12V-8A-LED-Light-Strip-Dimmer-Adjustable-Brightness-Controller-BI-/262082646054?hash=item3d0557d026:g:OK0AAOSwNNxWFU0d)
 
 11. Aluminium bar (for handle)
 

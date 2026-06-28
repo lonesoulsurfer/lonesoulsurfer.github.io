@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -131,152 +166,188 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>This is probably one of my favourite hacks that I have ever stumbled across! It’s so simple that anyone with a soldering iron and screwdriver can do it.</p>
 <p>All radios have an amplifier built into them – it’s how you're able to increase the volume. What this hack allows you to do is to tap into the radio’s amplifier so you can play guitar through it.</p>
 <p>You may be thinking why in hell would I want to do that!</p>
-<p>Hacking a radio can give you the most amazing vintage tone. The distinct “Lo-fidelity” sounds that come out of these vintage radio’s will really surprise you. It’s a real raw and dirty sound which is perfect for playing some bluesy riffs. There is also the added bonus of creating your very own sound as no 2 radios are ever alike.</p>
-<p>When you get your hands on a radio that you want to hack, there is a good chanec that its seen some miles. The speaker might hiss or rattle, the volume could jump around or it has some other left-of-centre feature which is what makes these amps so cool. You never know what sound you are going to get.</p>
+<p>Hacking a radio can give you the most amazing vintage tone.</p>
+<p>The distinct “Lo-fidelity” sounds that come out of these vintage radio’s will really surprise you.</p>
+<p>It’s a real raw and dirty sound which is perfect for playing some bluesy riffs.</p>
+<p>There is also the added bonus of creating your very own sound as no 2 radios are ever alike.</p>
+<p>When you get your hands on a radio that you want to hack, there is a good chanec that its seen some miles.</p>
+<p>The speaker might hiss or rattle, the volume could jump around or it has some other left-of-centre feature which is what makes these amps so cool.</p>
+<p>You never know what sound you are going to get.</p>
 <p>I've made a few of these now and this version has added filters in the way of capacitors so the sound is even better. You can swap from a clean sound to a low down dirty sound at a flick of a switch.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"></div><p>Parts</p>
 <ol>
-<li>Vintage radio. If you don't have one lying around, then try a thrift store, 2nd hand shop or eBay</li>
-</ul>
+<li>Vintage radio. If you don't have one lying around, then try a thrift store, 2nd hand shop or <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=vintage+radio&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>220uf Cap - eBay This is a good quality audio cap. You can use a cheaper one if you want to but it might affect the sound quality.</li>
-</ul>
+<li>220uf Cap - <a href="https://www.ebay.com.au/itm/3PC-Original-Nichicon-FW-220uf-50V-Audio-Capacitor-for-audio-cap-hifi-diy-B57/131498512823?hash=item1e9dec11b7:g:JbgAAOxykVNRrUs7&frcectupt=true">eBay</a> This is a good quality audio cap. You can use a cheaper one if you want to but it might affect the sound quality.</li>
+</ol>
 <ol>
-<li>100nf Cap - eBay</li>
-</ul>
+<li>100nf Cap - <a href="https://www.ebay.com.au/itm/50-x-Radial-Polyester-Film-Cap-Capacitance-Capacitors-Green-2A104J-100V-100nF-5/301438025717?epid=1842430828&hash=item462f1b3ff5&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVA3MZu1BIZQLf6JPyhdIfLGN4GnmdONH3nkbTinTrXhjGBsBpht%2BPPX1VEs79A0fxIrq5vnRWKf25TsLRj4eVdXI7F8dUOHdsb0eQ0cGFMi0cc868bSdc6lkHJzU%2FAC69xTP42WQzfaFnipXzEEVxe1Duh9mXOWkKOWA5DRCp%2FtfX8u0GN%2FBu5G%2BS6z1l99tQtTpt58vP2hClrwtn66z1tq9uAE7YHfjaB%2BTS7Bw3qf%2FOyjufto3OCicfDXUOP7aLRXXF5ttJnMkh5Y85Av3In1J8JoB3CyUUXEu65VX12B3F25%2Fo%2BuNAWAUs8MjkyPwqih%2FL%2BX5TXAqvZ3GsaNk0vrITftdBRmAFyCoWp9c48fRmubiUgk8ghtEHdiVw%2FXWCOqbNg8fR1DQ48WtOd9Ze1j5Vo3CKfN%2FJptjanhJvdM9Ux%2BGoA93J94MS%2FM9TE0Sr3V%2BXiBBqZfTKcHQXd%2F4l4ZcPydf2C6WBCBjHN2s%2FEmIPDBAiwF65GuLWrehRCC6%2B5R0NmwnxWFWdJ%2Bh5Qf2XeeLI8ObrcFEjf9jNlIRzeOEJaR56weEV5FJCuFVcVubZpzFusG%2BMCpa2nOAIDvZYGKKWiNlOi0CgHQ5jYSFy%2FzZHtn6WKAkNde7SVxCZJID7XTGYCGfTbjxbu7pgMiE07SiC5He5sIqaX7sr5WIUKTHb94XcMkgcaSjobgW6DNjKj6uNbnOIFM9r6DdG7Afqt%2F4Ezg5HaiLecUSm%2Bk5Tepo1J8K7fCWFRA%2Fz3xymtBho8tninZkCkgtfmJzvdPLO15uXh2PRibhLVyvjpFvbA56w8SuXhmooLYjHE2wNwn%2BcIflAHEarV2ybGK5SCyoJ0O%2FTd6zJVIJK%2BE8edtxN4wiEhYnm0Bc2V%2BTHajo2YjrZcWTgVTzUn1FCLMRGMXHu1PlYA0iaxr6XxXk8MkjpYpvMhYrjYBZiFNLCyWC5oTSUutHZNHtkRaZJzi3ZFOnzkg%3D%3D&checksum=30143802571708cdb5179ffa4b1189de0ab1d8bcb98c&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>SPDT Switch - eBay</li>
-</ul>
+<li>SPDT Switch - <a href="https://www.ebay.com.au/itm/2-Pcs-125V-6A-On-On-2-Way-SPDT-3-Terminals-Toggle-Switch-Car-Dash-Metal-12V/382005502474?hash=item58f14d620a:g:RjMAAOSw~bFWMkoM">eBay</a></li>
+</ol>
 <ol>
-<li>10K Potentiometer - eBay</li>
-</ul>
+<li>10K Potentiometer - <a href="https://www.ebay.com.au/itm/3Pcs-6mm-Knurled-Shaft-Single-Linear-B-Type10K-ohm-Rotary-Potentiometer-New/262852339228?epid=1684420726&hash=item3d3338661c:g:Np8AAOSwax5Yos7P">eBay</a></li>
+</ol>
 <ol>
-<li>1/4 mono, input jack - eBay</li>
-</ul>
+<li>1/4 mono, input jack - <a href="https://www.ebay.com.au/itm/10x-1-4-Inch-Mono-Audio-Socket-Jack-6-35mm-Female-Connector-Panel-Mount-Solder/292645282938?epid=15021549367&hash=item442304a47a&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVvKVce1pLQTQ7mz1lhN6lf3yGzFNcRp6n2S2QHwBsRlCyU4v9dG4ZbVVnO0MSmzHPYsRqueTD6eBh1ALqmz8Hqs42LfdOwyq1bcAze059Ek8nSvXhbRG3RKyOMqIoPKzdPcQtjXW3Y3CnUhMVZ8XyZZmwNpR8Khq9HfuIMf4TMgo3rI4yPt4lwBQ124RETIlLQNF5eGL9fQIlGMzeINME%2BkG49ZmCYBTiBOZ50H8lfBnlL4kcQ%2B2FW1ANWxHSQjQhWWGFwzLR0rb7emN%2FHRQXynEO5BSg5%2BVgg649lj26YVvPlAo2onVZxjJ0Pk8zkpe8Y5PxtgEH59aDroHFUyYt7xTSeV37AVtuXOlG9O4l3L6mu8SyMU64lF5hqcdRWW1KTn9oqQZmAXywWzDGIwthgL9HHGd66j%2B7Obglfjdwmcro7cTgF5pM%2FhJYGhxaQiXmhrpc7FAlgddf%2FKwSY0MxQVPzFsgSffjvOYGw2VVg3mcN56SnDYGtYp7o%2B4dgbUEFAXJAmi%2FI%2Fuxq1nOcHFJbcE3vs%2Ft8FKFt%2FIS9amqN8Ac2D4s%2F2mOehXx99i58yDv1tlsIlpPFitHkLoCnJYruTb%2B43VL1Zd5P7jp9%2F1isJ9N%2Fu%2FjbAQUAWLusMrYFsn%2BHSJrLpPDCSF5738tvcpGH622FMir2RGGx0KqiLkamfwL1BTJWJvW4Jxm2Et7zqoV72xOlaww3Ko839Kfzcyb1JYCeliWimgy0uzuM5Ah7N0CazBUPoPPTt53cmiNFNbeqsWQaQT%2BnD18bLL4ituhRIRt5JdaYsHdbGcivdjdjIxgEwj%2FbOGsP9I%2F0MheMbNMdcIqkLvBgWvGhNIlNsWGO%2BpS3Ja09vzr%2FvRjpI6h6VhxhYPwMJUx6ntNnaAhvi5SZ8hgmeSJN9XE2u7z3Hy0gpS3eWm3MEmVUgdiGbm%2Fg5QZ1ZYqgJBoF5g14%2FFY2WvkeozkmiB4sXQe5jjF5cPUo6A%3D%3D&checksum=29264528293842a417ec9170482e8beba29d3baebb8a">eBay</a></li>
+</ol>
 <ol>
-<li>Prototype board - eBay</li>
-</ul>
+<li>Prototype board - <a href="https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3">eBay</a></li>
+</ol>
 <ol>
 <li>Wires</li>
-</ul>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Guitar</li>
-</ul>
+</ol>
 <ol>
 <li>Guitar cord</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdriver / Phillips head</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Finding the Right Radio</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Finding the Right Radio image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Finding the Right Radio image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Finding the Right Radio image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Finding the Right Radio image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Finding the Right Radio image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Finding the Right Radio image 6" loading="lazy"></div><p>I'm no expert on this hack, but after some research and a little experimentation, I worked out that there are some radio's that will work better than others. I have included some notes below on what to look for when your out searching for a vintage radio to convert.</p>
-<p>The trick is to find one that has some style and is large enough to pump out some decent sound. You can modify small transistor radios but you'll probably find that they aren't very loud or have any distortion. If the radio has no handle and a wrist strap or is in a little leather case it will be a bit too small to waste you time with. This is due to the small, crappy speaker that they come with.</p>
-<p>Look for a radio that's at least a 3 inch speaker. It will ensure the speaker is big enough to have an effect on the tone. The size and quantity of the batteries that the radio takes will also effect the tone! The bigger the size of battery the fuller the tone and the more volume the radio will have. Try and find a radio which takes "C" or "D" batteries as these will give you the best result. The radio I used takes 6 X "D" cell batteries so has plenty of power to drice the 5 amp speaker.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Finding the Right Radio</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Finding the Right Radio image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Finding the Right Radio image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Finding the Right Radio image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Finding the Right Radio image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Finding the Right Radio image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Finding the Right Radio image 6" loading="lazy"></div><p>I'm no expert on this hack, but after some research and a little experimentation, I worked out that there are some radio's that will work better than others.</p>
+<p>I have included some notes below on what to look for when your out searching for a vintage radio to convert.</p>
+<p>The trick is to find one that has some style and is large enough to pump out some decent sound.</p>
+<p>You can modify small transistor radios but you'll probably find that they aren't very loud or have any distortion.</p>
+<p>If the radio has no handle and a wrist strap or is in a little leather case it will be a bit too small to waste you time with.</p>
+<p>This is due to the small, crappy speaker that they come with.</p>
+<p>Look for a radio that's at least a 3 inch speaker.</p>
+<p>It will ensure the speaker is big enough to have an effect on the tone.</p>
+<p>The size and quantity of the batteries that the radio takes will also effect the tone!</p>
+<p>The bigger the size of battery the fuller the tone and the more volume the radio will have.</p>
+<p>Try and find a radio which takes "C" or "D" batteries as these will give you the best result.</p>
+<p>The radio I used takes 6 X "D" cell batteries so has plenty of power to drice the 5 amp speaker.</p>
 <p>If your radio has extra controls like bass, tone or trebble, then you are in radio amp heaven. These will give you extra ways to change the sound and tone of the amp.</p>
-<p>Radios which take a 9v or AA batteries won't give you the best sound. It is definitely worth experimenting though and seeing what type of sound you can get out of the small "transistor" type radio's. You never know...</p><h2><span class="step-num">STEP 3</span>Step 3: Open Up You Radio</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Open Up You Radio image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Open Up You Radio image 2" loading="lazy"></div><p>The first thing you'll need to do is to open the back of the radio. You need to be able to get to the volume potentiometer do be able to do this mod. This hack won't affect the radio's ability to play music either so you'll still be able to listen to music through it.</p>
+<p>Radios which take a 9v or AA batteries won't give you the best sound.</p>
+<p>It is definitely worth experimenting though and seeing what type of sound you can get out of the small "transistor" type radio's.</p>
+<p>You never know...</p><h2><span class="step-num">STEP 3</span>Step 3: Open Up You Radio</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Open Up You Radio image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Open Up You Radio image 2" loading="lazy"></div><p>The first thing you'll need to do is to open the back of the radio.</p>
+<p>You need to be able to get to the volume potentiometer do be able to do this mod.</p>
+<p>This hack won't affect the radio's ability to play music either so you'll still be able to listen to music through it.</p>
 <p>Steps:</p>
 <ol>
 <li>Flip the radio over and remove the screws holding the back into place</li>
-</ul>
+</ol>
 <ol>
 <li>With a screwdriver, lever off the knobs and switches. They should pop off with some jiggling.</li>
-</ul>
+</ol>
 <ol>
 <li>Gently remove the cover making sure that no wires are pulled out.</li>
-</ul>
+</ol>
 <ol>
 <li>You should be able to see the volume pot and also the solder points.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Breadboarding</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Breadboarding image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Breadboarding image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Breadboarding image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Breadboarding image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Circuit - Breadboarding image 5" loading="lazy"></div><p>The circuit is pretty simple to make. I'd prototype it first though on a breadboard and then test it first, you may have to change the value of the capacitors for your radio.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Breadboarding</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Breadboarding image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Breadboarding image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Breadboarding image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Breadboarding image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Circuit - Breadboarding image 5" loading="lazy"></div><p>The circuit is pretty simple to make. I'd prototype it first though on a breadboard and then test it first, you may have to change the value of the capacitors for your radio.</p>
 <p>Steps:</p>
 <ol>
 <li>Breadboard the circuit first then test it on the radio.</li>
-</ul>
+</ol>
 <ol>
 <li>To test you'll need to solder a jumper cable to a ground point on the radio - I used the ground solder point on the speaker</li>
-</ul>
+</ol>
 <ol>
 <li>The other jumper cable which will be the positive one will be used to probe the volume pot to determine which is gthe right solder point. Once you have found it (you will be able to hear the guitar through the speaker when strummed), then you can solder the jumper wire to it and experiment further.</li>
-</ul>
+</ol>
 <ol>
 <li>Put the radio onto AM and tune it so it's not on a radio station. You may hear some static or noise, if you, turn down the radio until you don't hear it any longer.</li>
-</ul>
-<p>The next step will go through ghow to find the right solder point.</p><h2><span class="step-num">STEP 5</span>Step 5: Finding the Right Solder Point on the Volume Pot</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 4" loading="lazy"></div><p>When deciding on where to add the positive wire on the voltage pot, you need to do a little bit of testing. There are usually about 5 solder points that the voltage pot has, and the wire from the jack will need to be soldered to the right one for the amp to work.</p>
+</ol>
+<p>The next step will go through ghow to find the right solder point.</p><h2><span class="step-num">STEP 5</span>Step 5: Finding the Right Solder Point on the Volume Pot</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Finding the Right Solder Point on the Volume Pot image 4" loading="lazy"></div><p>When deciding on where to add the positive wire on the voltage pot, you need to do a little bit of testing.</p>
+<p>There are usually about 5 solder points that the voltage pot has, and the wire from the jack will need to be soldered to the right one for the amp to work.</p>
 <p>Steps:</p>
 <ol>
 <li>With the breadboarded circuit connected to ground on the radio and the lead plugged into the 1/4" jack and the guitar, you can start to probe and work out where to attach the positive to the volume pot</li>
-</ul>
+</ol>
 <ol>
 <li>Place the jumper lead against the first solder point on the volume pot and strum the guitar. If you near nothing, move onto the next one.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you find the right one (you'll here the guitar through the speaker) solder the jumper lead to it</li>
-</ul>
+</ol>
 <ol>
 <li>Experiment with different cap values if necessary until you are happy with the sound</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit image 2" loading="lazy"></div><p>I've included a schematic for the circuit along with the fritzing file in case you want to make any changes. You can download fritzing here to make your own circuit shematics.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit image 2" loading="lazy"></div><p>I've included a schematic for the circuit along with the fritzing file in case you want to make any changes.</p>
+<p>You can download fritzing <a href="http://fritzing.org/home/">here</a> to make your own circuit shematics.</p>
 <p>Steps:</p>
 <ol>
 <li>Use the schematic and start to build the circuit</li>
-</ul>
+</ol>
 <ol>
 <li>You'll need to add some wires so you can connect these to the pot, switch and 1/4' socket. Make sure that they are longer then necessary - it's easier to trim then to add.</li>
-</ul>
+</ol>
 <ol>
 <li>Once the curcuit is built, you then need to add the components into the radio</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Components to the Radio</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Components to the Radio image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Components to the Radio image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Components to the Radio image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Components to the Radio image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Components to the Radio image 5" loading="lazy"></div><p>To be able to plug the guitar inot the radio, you'll need to find a good spot to add the jack (and other components). The good thing is, most radio's have empty space inside to add extra components.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Components to the Radio</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Components to the Radio image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Components to the Radio image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Components to the Radio image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Components to the Radio image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Components to the Radio image 5" loading="lazy"></div><p>To be able to plug the guitar inot the radio, you'll need to find a good spot to add the jack (and other components). The good thing is, most radio's have empty space inside to add extra components.</p>
 <p>Steps:</p>
 <ol>
 <li>First identfy where to add the 3 components to the case of the radio. You'll also need to be able to stick the circuit down as well so make sure there's enough room inside for that as well.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill 3 holes into the radio and secure the pot, switch and jack into the case</li>
-</ul>
+</ol>
 <ol>
 <li>Place the circuit inside and make sure you can secure it in place later on</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Connecting the Circuit</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Connecting the Circuit image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Connecting the Circuit image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Connecting the Circuit image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Connecting the Circuit image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Connecting the Circuit image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Connecting the Circuit image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Connecting the Circuit</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Connecting the Circuit image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Connecting the Circuit image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Connecting the Circuit image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Connecting the Circuit image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Connecting the Circuit image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Connecting the Circuit image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>It's now time to wire-up the circuit to the components.</li>
-</ul>
+</ol>
 <ol>
 <li>Start with wiring-up the switch to the 100nf cap and ground on the speaker. You can attach the ground wire to any ground point on the radio</li>
-</ul>
+</ol>
 <ol>
 <li>Next wire-up the 10k pot. This is used for volume control and helps filter the sound</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, wire-up the 1/4" jack and attach the wire to the solder point on the radio volume pot</li>
-</ul>
+</ol>
 <ol>
 <li>Plug in your guitar and test to make sure the curcuit is working. If everything is working you should start to hear some sweet sounds coming from the speaker.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: How to Use the Amp</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: How to Use the Amp image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: How to Use the Amp image 2" loading="lazy"></div><p>As I mentioned earlier, the hack won't damage the radio at all and you can still use it just as a radio. Using the amp is very simple but I thought I would add a couple of tips</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: How to Use the Amp</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: How to Use the Amp image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: How to Use the Amp image 2" loading="lazy"></div><p>As I mentioned earlier, the hack won't damage the radio at all and you can still use it just as a radio. Using the amp is very simple but I thought I would add a couple of tips</p>
 <p>Steps:</p>
 <ol>
 <li>Don't have the volume up too loud. As a matter of fact, turn it right down and just have it on</li>
-</ul>
+</ol>
 <ol>
 <li>You can use either AM or FM, I don't find there is any real difference</li>
-</ul>
+</ol>
 <ol>
 <li>Tune in the radio so it's not on a station</li>
-</ul>
+</ol>
 <ol>
 <li>Plug the cord into the jack on the radio and then plug it into your guitar</li>
-</ul>
+</ol>
 <ol>
 <li>Try adjusting the 10K pot you added and strumming the guitar. Find the sweet spot for the volume. You can also turn it up on the radio volume pot as well. Just note that you might hear some background static if it is too loud. The radio I used can be turned right up without any noise. The amp does become too sensitive though and the sound starts to decay a little.</li>
-</ul>
+</ol>
 <ol>
 <li>If your radio has bass and trebble control then play around with these as well. You can get some awesome sounds by adjusting them.</li>
-</ul>
+</ol>
 <ol>
 <li>Try flicking the switch. You'll find that you either have a very clean sound or a grungy, lo-fi sound.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, have fun playing your amp and experiment to see what other sounds you can get out of it.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

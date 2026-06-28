@@ -53,13 +53,13 @@ It does add some complexity to the overall build but the functionality and overa
 PARTS:
 
 - 3/4 Inch copper tube - most hardware stores
-- Used shotgun shells X 3 - you can get these from a gun range if you have one near you. I pick them up for free. If not, try etsy
-- Sparkwheel fire lighter - eBay
-- Schrader valve - Ali Express. You need to get this type as it has a seal on it
-- 5. Schrader Cap - note that the cap needs to have a lip around the bottom and should have the screw section starting further up inside the cap- eBay
-- Barrel Hinge 4mm dia X 20mm Length - Ali Express
-- Brass tube #8129 (3/16") - Check your local hobby store or the internet for a stockist
-- Brass rod #8165 (5/32") - Check your local hobby store or the internet for a stockist
+- Used shotgun shells X 3 - you can get these from a gun range if you have one near you. I pick them up for free. If not, try [etsy](https://www.etsy.com/au/search?q=shotgun%20Shells)
+- Sparkwheel fire lighter - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=sparkwheel+fire+lighter&_sacat=0&LH_TitleDesc=0&_odkw=sparjkwheel+fire+lighter&_osacat=0)
+- Schrader valve - [Ali Express](https://www.aliexpress.com/item/4000127899102.html?spm=a2g0s.9042311.0.0.27424c4dcgYmlr). You need to get this type as it has a seal on it
+- 5. Schrader Cap - note that the cap needs to have a lip around the bottom and should have the screw section starting further up inside the cap- [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=Schrader+Cap&_sacat=0)
+- Barrel Hinge 4mm dia X 20mm Length - [Ali Express](https://www.aliexpress.com/item/33053155178.html?spm=a2g0o.productlist.main.41.46943cc1ZyF1d5&algo_pvid=79010e36-305c-4511-b4b4-5422bab9da16&algo_exp_id=79010e36-305c-4511-b4b4-5422bab9da16-20&pdp_ext_f=%7B%22sku_id%22%3A%2267497940865%22%7D&pdp_npi=3%40dis%21AUD%214.11%213.36%21%21%21%21%21%4021224e9b16793583003202840d074d%2167497940865%21sea%21AU%21129764711&curPageLogUid=mhsMjJySOC2O)
+- Brass tube #8129 (3/16") - Check your local hobby store or the [internet](https://www.google.com/search?q=Brass+tube+%238129&rlz=1C1GCEA_enAU1031AU1032&oq=Brass+tube+%238129&aqs=chrome..69i57.1032j0j4&sourceid=chrome&ie=UTF-8) for a stockist
+- Brass rod #8165 (5/32") - Check your local hobby store or the [internet](https://www.google.com/search?q=Brass+rod+%238165&rlz=1C1GCEA_enAU1031AU1032&oq=Brass+rod+%238165&aqs=chrome..69i57j0i546l3.399j0j4&sourceid=chrome&ie=UTF-8) for a stockist
 - Thin wire - I got mine from a hardware store
 - Cotton Balls
 - Cotton Sash (rope) 5mm - eBay, hardware store
@@ -114,7 +114,7 @@ STEPS:
 
 - Use a small, round file and start to file a section of the cap lip away
 - Keep on going until the sparkwheel body sits flat against the cap.
-- You will also need to file away a small section of the square part of the sparkwheel. This is so it sits flat against the shell. Use a small, flat file to do this. This section will also be used later to be able to 'lock' the Schrader cap into place on the wick so it should just sit on the shotgun shell as in the last image
+- You will also need to file away a small section of the square part of the sparkwheel.  This is so it sits flat against the shell.  Use a small, flat file to do this.  This section will also be used later to be able to 'lock' the Schrader cap into place on the wick so it should just sit on the shotgun shell as in the last image
 
 
 ## Step 3: Removing the Modified Cap From the Shell
@@ -132,7 +132,7 @@ Now that all of the mods have been performed to the cap, it's time to remove it 
 STEPS:
 
 - Place the shell into a vice so the cap is facing out
-- Heat the top of the cap with a small blow torch (you could probably do this will a lighter as well!). Heat for about 10 seconds.
+- Heat the top of the cap with a small blow torch (you could probably do this will a lighter as well!).  Heat for about 10 seconds.
 - Use a pair of plyers to carefully remove the cap. make sure you don't grip the plyers too hard or you'll squash the cap!
 
 
@@ -160,7 +160,7 @@ Time to do the first bit of soldering.
 
 STEPS:
 
-- First thing to do is to remove all of the parts that make up the sparkwheel so you are only left with the body section. Take note of the orientation of the actual sparkwheel as it needs to be put back in the same way or it won't spark
+- First thing to do is to remove all of the parts that make up the sparkwheel so you are only left with the body section.  Take note of the orientation of the actual sparkwheel as it needs to be put back in the same way or it won't spark
 - Add some flux to the side of the cap where the sparkwheel is to be soldered.
 - Place the sparkwheel against the side of the cap and carefully secure it in a vice. Make sure that the sparkwheel is straight against the cap and everything is lined up nicely. if it isn't you'll end up with a crooked sparkwheel.
 - Add a little piece of solder to the section to be soldered and heat with a blow torch. remember to not apply heat directly at first to the solder and heat up the cap and sparkwheel first
@@ -196,7 +196,7 @@ STEPS:
 
 - Remove the nuts and seals from the Schrader valve. Keep them though as you will need to use some of the parts later
 - Remove the valve section inside with some pliers or scissors
-- As the valve is too long, you will to trim off some of the threaded section. place it in a vice (careful as the metal on the valves is quite soft. I used some scrap wood to ensure it wasn't damaged) and remove about 18mm off. I used a small cutting wheel on my dremel to do this but you could also use a small metal saw.
+- As the valve is too long, you will to trim off some of the threaded section. place it in a vice (careful as the metal on the valves is quite soft.  I used some scrap wood to ensure it wasn't damaged) and remove about 18mm off. I used a small cutting wheel on my dremel to do this but you could also use a small metal saw.
 - Next, in order to be able to fit the rope (wick) inside the value, you need to enlarge the hole slightly. Place the valve into a vice and with a drill bit slightly larger then the inside diameter, drill through the valve.
 - Lastly, file any burrs on the end of the valve and add the cap to ensure it fits right.
 
@@ -219,7 +219,7 @@ STEPS:
 
 - Place the Schrader valve into the bottom of the cap so the top is sticking out
 - Use one of the nuts to secure it into place.
-- Note, there isn't any need to do it up tight yet. The great thing about this design is when the nut is done up, the rubber grommet spreads out and forms a seal inside the copper pipe.
+- Note, there isn't any need to do it up tight yet.  The great thing about this design is when the nut is done up, the rubber grommet spreads out and forms a seal inside the copper pipe.
 
 
 ## Step 7: Adding a Shotgun Shell 'sleeve' to the Copper Pipe
@@ -246,11 +246,11 @@ The copper pipe adds strength to the lighter and ensures good seals are created.
 
 STEPS:
 
-- You first need to remove the cap off the end of the shell. Instead of squashing the shell in a vice which could damage it, I just held it in my hand whist I heated up the cap. You don't want to add a lot of heat as the aim here is to have a shotgun shell sleeve that is pretty much intact and not melted.
+- You first need to remove the cap off the end of the shell.  Instead of squashing the shell in a vice which could damage it, I just held it in my hand whist I heated up the cap.  You don't want to add a lot of heat as the aim here is to have a shotgun shell sleeve that is pretty much intact and not melted.
 - Use a pair of plyers to carefully take off the cap
-- Place the copper pipe inside the shell sleeve. You may need to place it into a vice and push the pipe into the sleeve
-- once the pipe is inside the sleeve, you'll need to trim the ends up of the shotgun shell. I used a exacto knife to do this. You should also file around the cut section with a small file as well. This will help with adding the caps to the ends of the sleeve
-- You can now put the top section of the lighter onto the body. To do this place the cap onto the sleeve/pipe section and push it into place. It's a tight fit so to make sure it is secure you can use a vice to do this. Don't though just stick it into a vice and start squeezing it as you'll bend the cap from the middle. Instead, use a small piece of pipe that fits over the Schrader valve and place this along with the copper section into a vice and slowly close the vice up.
+- Place the copper pipe inside the shell sleeve.  You may need to place it into a vice and push the pipe into the sleeve
+- once the pipe is inside the sleeve, you'll need to trim the ends up of the shotgun shell.  I used a exacto knife to do this.  You should also file around the cut section with a small file as well.  This will help with adding the caps to the ends of the sleeve
+- You can now put the top section of the lighter onto the body.  To do this place the cap onto the sleeve/pipe section and push it into place.  It's a tight fit so to make sure it is secure you can use a vice to do this.  Don't though just stick it into a vice and start squeezing it as you'll bend the cap from the middle.  Instead, use a small piece of pipe that fits over the Schrader valve and place this along with the copper section into a vice and slowly close the vice up.
 - Once the cap is in place, you van then tighten-up the nut on the Schrader valve.
 - Lastly, keep the cap that you took off the shell as you can use this for the bottom section of the lighter later on.
 
@@ -277,9 +277,9 @@ STEPS:
 
 - The first thing is to measure and cut a piece of the brass tube. It should be the same size the the larger section of the barrel hinge.
 - Now you can use the piece of cut tube to measure how big you need to cut the copper pipe to make the ring
-- I used a pipe cutter to cut the copper. you could use a grinder with a cutting wheel to do it as well. I find though you get a good straight cut using a pipe cutter
-- Next, remove any burrs from the inside of the ring and sand the inside and cut sections smooth. Any burrs inside the ring will mark the shotgun shell sleeve.
-- Cut the ring down the middle and again remove any burrs. You will need to spread open the ring in order for it to fit over the sleeve. The problem is once you open it up it won't be round. I have a small metal bender which I used to make it the right size but you could use a rubber mallet and another piece of pipe to get it to the shape you need. It needs to fit over the sleeve and be able to move up and down it smoothly.
+- I used a pipe cutter to cut the copper.  you could use a grinder with a cutting wheel to do it as well.  I find though you get a good straight cut using a pipe cutter
+- Next, remove any burrs from the inside of the ring and sand the inside and cut sections smooth.  Any burrs inside the ring will mark the shotgun shell sleeve.
+- Cut the ring down the middle and again remove any burrs.  You will need to spread open the ring in order for it to fit over the sleeve.  The problem is once you open it up it won't be round.  I have a small metal bender which I used to make it the right size but you could use a rubber mallet and another piece of pipe to get it to the shape you need.  It needs to fit over the sleeve and be able to move up and down it smoothly.
 
 
 ## Step 9: Soldering the Brass Tube to the Ring
@@ -296,7 +296,7 @@ You now need to solder the copper tube to the ring section. It's pretty straight
 
 STEPS:
 
-- Place the ring and tube into a vice. Make sure that you have the tube as straight as possible. It's hard to see when it is in the vice so you can add a couple lines with a marker to the ring to help you align the tube
+- Place the ring and tube into a vice.  Make sure that you have the tube as straight as possible.  It's hard to see when it is in the vice so you can add a couple lines with a marker to the ring to help you align the tube
 - Add some flux and solder and use a small blow torch to heat up the ring and tube.
 - Once cool, place it onto the shotgun shell sleeve and make sure it moves well still.
 - Lastly, give it a polish.
@@ -322,11 +322,11 @@ The rod section is made using a barrel hinge, more brass tubing and some brass r
 
 STEPS:
 
-- Place the barrel hinge into the brass tube on the ring. making sure that the hinge section is sticking out the top. Ben the top hinge section down and then add some superglue to the bottom tube section to glue it into place
-- Cut another piece of tube ...mm long. Remove any burrs, add a few drops of superglue inside the tube and push it onto the top of the barrel hinge. Again make sure that the hinge is bent as you don't want to push the tube too far on the hinge or it won't open.
-- Ok - so now grab the brass tube, place the end into a vice and bend it 90 degrees. You will be able to do this with your hand.
+- Place the barrel hinge into the brass tube on the ring.  making sure that the hinge section is sticking out the top.  Ben the top hinge section down and then add some superglue to the bottom tube section to glue it into place
+- Cut another piece of tube ...mm long.  Remove any burrs, add a few drops of superglue inside the tube and push it onto the top of the barrel hinge.  Again make sure that the hinge is bent as you don't want to push the tube too far on the hinge or it won't open.
+- Ok - so now grab the brass tube, place the end into a vice and bend it 90 degrees.  You will be able to do this with your hand.
 - Cut the bent section off, remove any burrs and place it into the top of the brass tube.
-- Place the ring onto the shotgun shell sleeve and make sure that the Schrader valve cap is on the top. Now you need to work out how much of the bent rod section you need to cut in order for it to sit flush against the cap. This is an important step so take you time and make sure that the rod just touches the cap.
+- Place the ring onto the shotgun shell sleeve and make sure that the Schrader valve cap is on the top.  Now you need to work out how much of the bent rod section you need to cut in order for it to sit flush against the cap.  This is an important step so take you time and make sure that the rod just touches the cap.
 - When the bend rod is sitting right, you can then superglue the bend rod into the brass tube
 
 
@@ -369,9 +369,9 @@ STEPS:
 - Cut a length of rope about 200mm long.
 - Next cut a length of wire about 300mm long
 - Start to wind the wire around the rope tightly about half way up the rope.
-- Once you get near the end of the rope, wrap the wire tightly a couple of times around the rope and then trim the wire. You can then trim the rope threads as well which will help be able to thread it no the valve
-- Now push the end of the rope (the end with the wire around it) into the top of the valve and then start to twist it. The wire around the rope acts a bit like a screw and you'll be able to screw the wire into the valve.
-- Use a pair of pliers to pull the rope through from the bottom. The wired rope section should stay inside the shotgun shell and the non-wired section of the rope should sit out the top
+- Once you get near the end of the rope, wrap the wire tightly a couple of times around the rope and then trim the wire.  You can then trim the rope threads as well which will help be able to thread it no the valve
+- Now push the end of the rope (the end with the wire around it) into the top of the valve and then start to twist it.  The wire around the rope acts a bit like a screw and you'll be able to screw the wire into the valve.
+- Use a pair of pliers to pull the rope through from the bottom.  The wired rope section should stay inside the shotgun shell and the non-wired section of the rope should sit out the top
 - Trim the wire at the bottom of the rope and fray the rope a little at the end.
 
 
@@ -406,7 +406,7 @@ STEPS:
 - Fill the bottom shotgun shell cap with a little bit of cotton as well.
 - Start to fill the inside of the tube with zippo fluid. Make sue that the top is off the lighter as it will help pull through the fluid through the lighter.
 - Once the wick starts to look wet, push on the bottom cap and put the lid back onto the wick.
-- Now the big moment!! Time to strike the sparkwheel and light the lighter for the first time! Lift up the ring so the cap wick is removed and hit the spark wheel.
+- Now the big moment!! Time to strike the sparkwheel and light the lighter for the first time!  Lift up the ring so the cap wick is removed and hit the spark wheel.
 
 
 ---

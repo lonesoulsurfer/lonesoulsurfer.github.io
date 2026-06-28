@@ -19,9 +19,9 @@ Source: https://www.instructables.com/Bleep-Drum-Synth-Powered-by-Arduino/
 
 ![Intro 6](images/intro_06.jpg)
 
-In this build I recreate the fantastic Bleep Labs 'Bleep Drum' into a Eurorack format module. I'm working on building my own 'simple' 9v Eurorack which this synth will be a part of.
+In this build I recreate the fantastic Bleep Labs '[Bleep Drum](https://bleeplabs.com/product/bleep-drum-midi/)' into a Eurorack format module. I'm working on building my own 'simple' 9v Eurorack which this synth will be a part of.
 
-Check out my other recent builds to see the other modules already designed.
+Check out my other [recent builds](https://www.instructables.com/member/lonesoulsurfer/instructables/) to see the other modules already designed.
 
 So what is the Bleep Drum Synth? Well it's an Arduino based drum machine that allows you to play drum tracks using 4 different samples and record them so you can layer them them up and create some great drum beats.
 
@@ -69,7 +69,7 @@ Let's get building!
 
 ![Supplies image 5](images/step01_05.jpg)
 
-I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+I've created a parts list which can be found in my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
@@ -86,14 +86,14 @@ The parts list attached doesn't included the PCB or front panel. You'll need to 
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
 
-The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
+The files that you need to build your own Bleep Drum Synth can be found in my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
 
 STEPS:
 
-- Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
+- Send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
 - NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 - Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
@@ -150,7 +150,7 @@ Now it's time time to add the components to the front of the PCB.
 STEPS:
 
 - First, place the RGB LED into place, making sure that it's sitting up a little bit from the board. This way it will poke through the front panel
-- Now you can add the 5 momentary switches. I usually put them all into place and then solder the legs into place. Flip the PCB over and make sure that they are all sitting fat. If not, then just re-heat the solder and push down on the switch
+- Now you can add the 5 momentary switches.  I usually put them all into place and then solder the legs into place.   Flip the PCB over and make sure that they are all sitting fat.  If not, then just re-heat the solder and push down on the switch
 - Next add the audio jacks and then the larger momentary switches
 - Lastly, solder the pots into place
 
@@ -180,11 +180,11 @@ STEPS:
 
 ![Step 6: Uploading the Sketch to the Arduino image 1](images/step07_01.png)
 
-If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
+If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out [this link](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE). It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
 
 STEPS:
 
-- Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my GitHub page
+- Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page
 - Connect your Arduino and upload the sketch
 - Once the sketch is loaded to Arduino you can connect it to the PCB for testing.
 - Connect the PCB to a 9V to 12V power source and check that the Drum synth works. Plug a speaker in to the out jack and hit the start button. Check out the 'How to Play' in the last step and start to create some beats. if you hear sounds then you have successfully loaded the sketch and solder the PCB correctly.

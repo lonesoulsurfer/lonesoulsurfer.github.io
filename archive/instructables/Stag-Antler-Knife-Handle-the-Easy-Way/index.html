@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,77 +162,123 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Stag Antler Knife Handle (the Easy Way)</span>
 </nav>
-<h1>Stag Antler Knife Handle (the Easy Way)</h1><div class="source"><a href="https://www.instructables.com/Stag-Antler-Knife-Handle-the-Easy-Way/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>My local tip has a shop and it’s great. Most things are only a couple of bucks and you never know what you will find. It always amazes me what people are willing to throw away instead of just giving it to someone, or even just sticking on their front nature strip for passer-by’s to collect.</p>
-<p>Whilst rummaging around a couple of weeks ago I came across a great filleting knife. It has a great shape and length but the handle was very plastic looking so I decided to upgrade it. In the end I went with deer antler after seeing some great samples on the net. My local pet store actually sells pieces of antler for dogs to chew on so it was relativity easy to get my hands on some.</p>
-<p>Next I did some research on the best method on how to attach the knife to the handle. A lot of people drill the antler, add some epoxy and push the tang into the hole. It’s not a bad way to go and I’m sure it works well but I decided to give another technique a shot. The method I used is very simple and involves no glue or drilling. It takes into the consideration the properties of the marrow like material (or pithy core) inside the antler to bind the tang into place.</p>
+<h1>Stag Antler Knife Handle (the Easy Way)</h1><div class="source"><a href="https://www.instructables.com/Stag-Antler-Knife-Handle-the-Easy-Way/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>My local tip has a shop and it’s great.</p>
+<p>Most things are only a couple of bucks and you never know what you will find.</p>
+<p>It always amazes me what people are willing to throw away instead of just giving it to someone, or even just sticking on their front nature strip for passer-by’s to collect.</p>
+<p>Whilst rummaging around a couple of weeks ago I came across a great filleting knife.</p>
+<p>It has a great shape and length but the handle was very plastic looking so I decided to upgrade it.</p>
+<p>In the end I went with deer antler after seeing some great samples on the net.</p>
+<p>My local pet store actually sells pieces of antler for dogs to chew on so it was relativity easy to get my hands on some.</p>
+<p>Next I did some research on the best method on how to attach the knife to the handle.</p>
+<p>A lot of people drill the antler, add some epoxy and push the tang into the hole.</p>
+<p>It’s not a bad way to go and I’m sure it works well but I decided to give another technique a shot.</p>
+<p>The method I used is very simple and involves no glue or drilling.</p>
+<p>It takes into the consideration the properties of the marrow like material (or pithy core) inside the antler to bind the tang into place.</p>
 <p>I’ll go through the technique further throughout the ible’.</p><h2><span class="step-num">STEP 1</span>Step 1: ​Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: ​Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: ​Things to Gather image 2" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>A knife. This could be any type of knife from a short pocket knife to a long filleting knife like I used</li>
-</ul>
+</ol>
 <ol>
 <li>Deer antler. There are lots of shapes and sizes that you can choose from. Give your local pet shop a try. If they don’t have any, the you can always give eBay a go</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Vice</li>
-</ul>
+</ol>
 <ol>
 <li>Pot of boiling water</li>
-</ul>
+</ol>
 <ol>
 <li>Hack saw or angle grinder</li>
-</ul>
+</ol>
 <ol>
 <li>Protective gloves</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Prepping the Antler</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Prepping the Antler image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Prepping the Antler image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Prepping the Antler image 3" loading="lazy"></div><p>Picking the shape of the antler piece is very important and will determine how you mount the knife into it. I went with a pointed piece from the top part of the antler; some people like to use the thicker section as a handle. As my knife if quite delicate, I went with a piece that would complement the blade as well as feel good in the hand.</p>
-<p>Depending on the size and shape of the antler you might have to make some adjustments to the antler. The piece that I purchased wasn’t cut flush and also had a hole drilled in the top which I wanted to remove</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Prepping the Antler</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Prepping the Antler image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Prepping the Antler image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Prepping the Antler image 3" loading="lazy"></div><p>Picking the shape of the antler piece is very important and will determine how you mount the knife into it.</p>
+<p>I went with a pointed piece from the top part of the antler; some people like to use the thicker section as a handle.</p>
+<p>As my knife if quite delicate, I went with a piece that would complement the blade as well as feel good in the hand.</p>
+<p>Depending on the size and shape of the antler you might have to make some adjustments to the antler.</p>
+<p>The piece that I purchased wasn’t cut flush and also had a hole drilled in the top which I wanted to remove</p>
 <p>Steps:</p>
 <ol>
 <li>First decide where to cut the horn to make it flush. I know this sounds obvious but you want to ensure that the cut is made so the knife fits in correctly and it feels right in your hand.</li>
-</ul>
+</ol>
 <ol>
 <li>Make the cut with either a hack saw or angle grinder</li>
-</ul>
+</ol>
 <ol>
 <li>Smooth off any sharp edges with a file if necessary</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Preparing the Knife</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Preparing the Knife image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Preparing the Knife image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Preparing the Knife image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Preparing the Knife image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Preparing the Knife image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Preparing the Knife image 6" loading="lazy"></div><p>Every knife has a tang. This is the section that is joined to the handle and secures the blade to it. The handle of a knife could be anything from wood to plastic to metal. The one I used was a strong resin like material.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Preparing the Knife</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Preparing the Knife image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Preparing the Knife image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Preparing the Knife image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Preparing the Knife image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Preparing the Knife image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Preparing the Knife image 6" loading="lazy"></div><p>Every knife has a tang.</p>
+<p>This is the section that is joined to the handle and secures the blade to it.</p>
+<p>The handle of a knife could be anything from wood to plastic to metal.</p>
+<p>The one I used was a strong resin like material.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the handle of the knife in a vice and work out the best way to remove. I decided to use a small dremel grinding wheel to cut away the plastic.</li>
-</ul>
+</ol>
 <ol>
 <li>Make a couple of cuts along the handle on both sides. Hopefully you should be able to remove with a little force. If not, keep on cutting until you are able to pull the handle away.</li>
-</ul>
+</ol>
 <ol>
 <li>You should now be left with the blade and tang</li>
-</ul>
+</ol>
 <ol>
 <li>Measure the tang against the antler. If it seems too long for the antler, cut some off and sharpen the end. This will help you push it into the antler later on.</li>
-</ul>
-<p>NOTE: Be aware that the end of the antler tine is solid and does not contain any pith. You must compensate for that portion of your tang The pithy section will start to narrow as it gets close to the solid portion of the tine. Do you have enough width and length of the pithy area to accommodate your tang?</p><h2><span class="step-num">STEP 4</span>Step 4: Softening the Antler</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Softening the Antler image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Softening the Antler image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Softening the Antler image 3" loading="lazy"></div><p>You can do this the long way or short way. The long away involves soaking the antler piece in water for over a month until it is soft enough to push the tang into. The short way (and definitely the quicker way) is to do the following:</p>
+</ol>
+<p>NOTE: Be aware that the end of the antler tine is solid and does not contain any pith.</p>
+<p>You must compensate for that portion of your tang The pithy section will start to narrow as it gets close to the solid portion of the tine.</p>
+<p>Do you have enough width and length of the pithy area to accommodate your tang?</p><h2><span class="step-num">STEP 4</span>Step 4: Softening the Antler</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Softening the Antler image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Softening the Antler image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Softening the Antler image 3" loading="lazy"></div><p>You can do this the long way or short way.</p>
+<p>The long away involves soaking the antler piece in water for over a month until it is soft enough to push the tang into.</p>
+<p>The short way (and definitely the quicker way) is to do the following:</p>
 <p>Steps:</p>
 <ol>
 <li>Put a large pot of water on the stove and start it boiling</li>
-</ul>
+</ol>
 <ol>
 <li>Next place the antler into the pot and leave it there for at least an hour. I had to replace my antler back into the water for another 20 minutes to enable the tang to go through.</li>
-</ul>
-<p>As you boil you start to soften up the antler. It absorbs the water and the pithy inside becomes pliable and soft. It doesn’t become very soft mind you, and you will still need to put some elbow grease behind pushing the tang into it. The amazing thing about the inside is as it starts to dry out it will shrink back to its original size and harden, gripping the tang tightly.</p>
+</ol>
+<p>As you boil you start to soften up the antler.</p>
+<p>It absorbs the water and the pithy inside becomes pliable and soft.</p>
+<p>It doesn’t become very soft mind you, and you will still need to put some elbow grease behind pushing the tang into it.</p>
+<p>The amazing thing about the inside is as it starts to dry out it will shrink back to its original size and harden, gripping the tang tightly.</p>
 <ol>
 <li>Once it has been in the boiling water for long enough pull out with some tongs and wrap in a t-towel or a piece of cloth.</li>
-</ul>
+</ol>
 <ol>
 <li>It will stay soft for some time so there is no need to rush the next part.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: ​Pushing the Tang Through the Antler</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: ​Pushing the Tang Through the Antler image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: ​Pushing the Tang Through the Antler image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: ​Pushing the Tang Through the Antler image 3" loading="lazy"></div><ol>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: ​Pushing the Tang Through the Antler</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: ​Pushing the Tang Through the Antler image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: ​Pushing the Tang Through the Antler image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: ​Pushing the Tang Through the Antler image 3" loading="lazy"></div><ol>
 <li>Place the blade of the knife into a vice. Use some cloth or tape to make sure it isn’t marked by the vice teeth. It’s also a good idea to wrap the blade in some tape so no accidents happen.</li>
-</ul>
+</ol>
 <ol>
 <li>Line-up the end of the antler with the tang and start to push the antler onto the tang. The knife I used had a round tang and I was able to twist slightly to force the antler onto the tang. If you tang is straight edged, then you will need to ensure you don’t twist or wiggle side to side as the pithy inside will be ruined.</li>
-</ul>
-<p>NOTE: Do not restart the procedure after you have started by pulling the tang out of the antler for whatever reason (example: the blade is going in crooked). The pithy core is not like rubber. The hole will not close up after you pull out the tang. Starting over will only widen the hole and will give you a loose bond. Think about what you are going to do ahead of time so you won't make a mistake during the procedure. Even though I did re-heat my antler, the tang was only pushed in about a centimetre so no damage was done to the core.</p>
+</ol>
+<p>NOTE: Do not restart the procedure after you have started by pulling the tang out of the antler for whatever reason (example: the blade is going in crooked).</p>
+<p>The pithy core is not like rubber.</p>
+<p>The hole will not close up after you pull out the tang.</p>
+<p>Starting over will only widen the hole and will give you a loose bond.</p>
+<p>Think about what you are going to do ahead of time so you won't make a mistake during the procedure.</p>
+<p>Even though I did re-heat my antler, the tang was only pushed in about a centimetre so no damage was done to the core.</p>
 <ol>
 <li>Leave to dry for 24 hours.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Done</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Done image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Done image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Done image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Done image 4" loading="lazy"></div><p>Once you have let it dry for 24 hours you should find that the pithy core has become hard again and has gripped the tang. Try and turn or move the blade? Hopefully you find that it is stuck fast. If however you find that it is loose and moves around (if you did it correctly it should be stuck fast), then take it out of the antler and glue into place.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Done</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Done image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Done image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Done image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Done image 4" loading="lazy"></div><p>Once you have let it dry for 24 hours you should find that the pithy core has become hard again and has gripped the tang.</p>
+<p>Try and turn or move the blade?</p>
+<p>Hopefully you find that it is stuck fast.</p>
+<p>If however you find that it is loose and moves around (if you did it correctly it should be stuck fast), then take it out of the antler and glue into place.</p>
 <p>Next thing to do is to make a sheath…</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -25,7 +25,7 @@ To attach it to the wall, I used gas fittings as brackets which worked really we
 
 The LED's were an afterthought but I'm glad I did add them as they really turn the shelving into something special. To diffuse the LED's, I added some translucent silicone which finished off the board and gave it a really nice finish.
 
-If you would like to check out what other things I've done with old decks, then check out this ible'
+If you would like to check out what other things I've done with old decks, then check out [this ible](https://www.instructables.com/id/From-Skateboard-to-Handplane/)'
 
 
 ## Step 1: Things to Gather
@@ -54,7 +54,7 @@ Parts:
 
 3. Scandinavian oil
 
-4. LED's - eBay
+4. LED's - [eBay](http://www.ebay.com.au/itm/Waterproof-5M-RGB-LED-Strip-Light-300LEDs-3528-24-44Keys-IR-Remote-12V2A-Adapter-/252391557560?var=&hash=item3ac3b589b8:m:m0TvIKOSxio4gRV2pkpz7HA)
 
 5. Matt black paint
 

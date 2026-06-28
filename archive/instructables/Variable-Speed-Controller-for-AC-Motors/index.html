@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,52 +162,75 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Variable Speed Controller for AC Motors</span>
 </nav>
-<h1>Variable Speed Controller for AC Motors</h1><div class="source"><a href="https://www.instructables.com/Variable-Speed-Controller-for-AC-Motors/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I wanted some way to control the speed of a Jigsaw and decided to use a light dimmer. It’s probably not the right way to do this but it does the job and I haven’t done any damage to the jigsaw so I’m going to assume it’s perfectly fine to do!</p>
-<p>You could also use this to control the speed of a drill or any electric tool that has a motor. It actually works really well so if you do need some way to control speed, then this is a simple and dirty way to go about it.</p>
+<h1>Variable Speed Controller for AC Motors</h1><div class="source"><a href="https://www.instructables.com/Variable-Speed-Controller-for-AC-Motors/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I wanted some way to control the speed of a Jigsaw and decided to use a light dimmer.</p>
+<p>It’s probably not the right way to do this but it does the job and I haven’t done any damage to the jigsaw so I’m going to assume it’s perfectly fine to do!</p>
+<p>You could also use this to control the speed of a drill or any electric tool that has a motor.</p>
+<p>It actually works really well so if you do need some way to control speed, then this is a simple and dirty way to go about it.</p>
 <p>There is a clip of it in action but you will need to skip to the 1 minute mark to see it in action.</p>
-<p>Lastly, this uses AC mains so if you are unsure of how to correctly wire AC or are worried about the polarities, then I would probably get someone in to help you. You really don’t want to go playing around with AC unless you know what you are doing.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"></div><p>You can easily get all of these parts from any hardware or electrical store. I’ve also put links to eBay as well.</p>
+<p>Lastly, this uses AC mains so if you are unsure of how to correctly wire AC or are worried about the polarities, then I would probably get someone in to help you.</p>
+<p>You really don’t want to go playing around with AC unless you know what you are doing.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"></div><p>You can easily get all of these parts from any hardware or electrical store. I’ve also put links to eBay as well.</p>
 <p>Parts</p>
 <ol>
-<li>Light Dimmer Controller – eBay</li>
-</ul>
+<li>Light Dimmer Controller – <a href="https://www.ebay.com.au/sch/i.html?_odkw=light+dimmer+ac&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR10.TRC0.A0.H0.X400va+dimmer.TRS0&_nkw=400va+dimmer&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>Extension Cord – eBay</li>
-</ul>
+<li>Extension Cord – <a href="https://www.ebay.com.au/itm/ARLEC-240V-Power-Extension-Cord-Cable-Lead-AU-3-Pin-Plug-White-2m-3m-5m-10m-15m/171228383331?hash=item27de01c863:m:myUkCdS4puQu6fx1UU9tFyg">eBay</a></li>
+</ol>
 <ol>
-<li>Junction box / Electrical box- eBay</li>
-</ul>
+<li>Junction box / Electrical box- <a href="https://www.ebay.com.au/sch/i.html?_odkw=electrical+box&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xelectrical+box+light+switch.TRS0&_nkw=electrical+box+light+switch&_sacat=0">eBay</a></li>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdriver</li>
-</ul>
+</ol>
 <ol>
 <li>Wire cutters</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Cut the Extension Cord</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cut the Extension Cord image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cut the Extension Cord image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cut the Extension Cord image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cut the Extension Cord image 4" loading="lazy"></div><p>The premise of this speed controller is to add the male and female ends of an extension cord to a variable controller (light dimmer). All you are really doing is splicing in the controller between the extension cord. If you really wanted to, you could just add the dimmer to the live wire on the extension cord and that would be that. However, I wanted to be able to turn it off as well so got a dimmer with a switch</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Cut the Extension Cord</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cut the Extension Cord image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cut the Extension Cord image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cut the Extension Cord image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cut the Extension Cord image 4" loading="lazy"></div><p>The premise of this speed controller is to add the male and female ends of an extension cord to a variable controller (light dimmer).</p>
+<p>All you are really doing is splicing in the controller between the extension cord.</p>
+<p>If you really wanted to, you could just add the dimmer to the live wire on the extension cord and that would be that.</p>
+<p>However, I wanted to be able to turn it off as well so got a dimmer with a switch</p>
 <p>Steps:</p>
 <ol>
 <li>Find the mid-way point on the extension cord and cut with some wire cutters</li>
-</ul>
+</ol>
 <ol>
 <li>Remove some of the outer plastic and strip the wire ends</li>
-</ul>
+</ol>
 <ol>
 <li>Push the ends through the holes in the junction box on the sides (if you don’t have any just drill some.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Wires to the Dimmer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Wires to the Dimmer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Wires to the Dimmer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Wires to the Dimmer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Wires to the Dimmer image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Wires to the Dimmer image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Adding the Wires to the Dimmer image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Adding the Wires to the Dimmer image 7" loading="lazy"></div><p>The dimmer that you buy should come with instructions on how to wire up the power. There are all different types of dimmers out there so make sure that you ready the instructions and understand which wires go where.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the Wires to the Dimmer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Wires to the Dimmer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Wires to the Dimmer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Wires to the Dimmer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Wires to the Dimmer image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Wires to the Dimmer image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Adding the Wires to the Dimmer image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Adding the Wires to the Dimmer image 7" loading="lazy"></div><p>The dimmer that you buy should come with instructions on how to wire up the power.</p>
+<p>There are all different types of dimmers out there so make sure that you ready the instructions and understand which wires go where.</p>
 <p>Steps:</p>
 <ol>
 <li>First connect the neutral wires together from the extension cord and add these to the dimmer where indicated</li>
-</ul>
+</ol>
 <ol>
 <li>Next you will need to add the hot wires to the dimmer. In my one, a wire from the dimmer and the extension cord was connected and then secured together in the dimmer. The other hot wire was secured by itself and so was the wire from the dimmer. So there was a total of 4 connectors in the dimmer for the wiring.</li>
-</ul>
+</ol>
 <ol>
 <li>I have also included a basic, generic schematic so you can understand better how this needs to be wired up.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have wired everything up, screw on the dimmer to the junction box, grab a drill and test to make sure it works.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

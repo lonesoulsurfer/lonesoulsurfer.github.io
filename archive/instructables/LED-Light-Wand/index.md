@@ -42,18 +42,18 @@ Onto the build.
 
 PARTS:
 
-- 300mm LED filaments - Ali Express. You can get these in multiple colours so choose a few different ones.
-- 3mm LED (your choice of colour) - Ali Express
-- Battery Charging Module - Ali Express
-- Li-po battery - Ali Express
-- Momentary micro switches (2) - Ali Express
-- Thin copper wire. I used the thin copper wire inside a small motor. You can also just buy it on Ali Express. go with the '0.2mm' thickness - that should be good to use.
+- 300mm LED filaments - [Ali Express.](https://www.aliexpress.com/w/wholesale-300mm-led-filament-3v.html?catId=0&initiative_id=SB_20230302230633&SearchText=300mm+led+filament+3v&spm=a2g0o.productlist.1000002.0) You can get these in multiple colours so choose a few different ones.
+- 3mm LED (your choice of colour) - [Ali Express](https://www.aliexpress.com/w/wholesale-3mm-led.html?catId=0&initiative_id=SB_20230302230656&SearchText=3mm+led&spm=a2g0o.productlist.1000002.0)
+- Battery Charging Module - [Ali Express](https://www.aliexpress.com/premium/battery-charger-micro-usb.html?spm=a2g0o.best.1000002.0&initiative_id=SB_20230226210307&dida=y)
+- Li-po battery - [Ali Express](https://www.aliexpress.com/item/1005004836407126.html?spm=a2g0o.detail.1000014.1.4e1339c3tqnEbi&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40000.326746.0&scm_id=1007.40000.326746.0&scm-url=1007.40000.326746.0&pvid=3e8a62b1-6f7c-4a53-b453-7ce17c173bff&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40000.326746.0,pvid:3e8a62b1-6f7c-4a53-b453-7ce17c173bff,tpp_buckets:668%232846%238113%23685&pdp_ext_f=%7B%22sku_id%22%3A%2212000030677278113%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=3%40dis%21AUD%216.16%215.24%21%21%21%21%21%402101d1b916774743517154951e9164%2112000030677278113%21rec%21AU%21129764711)
+- Momentary micro switches (2) - [Ali Express](https://www.aliexpress.com/w/wholesale-momentary-micro-push-switch.html?catId=0&initiative_id=SB_20230302230722&SearchText=momentary+micro+push+switch&spm=a2g0o.productlist.1000002.0)
+- Thin copper wire. I used the thin copper wire inside a small motor. You can also just buy it on [Ali Express](https://www.aliexpress.com/w/wholesale-thin-copper-wire.html?catId=0&initiative_id=SB_20230302230746&SearchText=thin+copper+wire&spm=a2g0o.productlist.1000002.0). go with the '0.2mm' thickness - that should be good to use.
 - Normal wire - the thinner the better. I used computer ribbon wire for most projects like this. You can usually pick it up for free at e-waste centres.
 - White Polystyrene Tube - 4.8mm (3/16") - Available at most hobby shops. Just put into google - Evergreen 226 tube and you'll find it.
 - White Polystyrene Tube - 6.3mm (1/4") - Available at most hobby shops. Just put into google - Evergreen 228 tube and you'll find it.
 - 15mm PVC pipe - Most hardware stores will stock it. You could use 3/4" pipe if in the US
 - 15mm PVC Caps - Most hardware stores will stock them
-- Heat Shrink- Ali Express
+- Heat Shrink- [Ali Express](https://www.aliexpress.com/w/wholesale-heat-shrink.html?catId=0&initiative_id=SB_20230302231119&SearchText=heat+shrink&spm=a2g0o.productlist.1000002.0)
 TOOLS
 
 - Soldering Iron
@@ -160,7 +160,7 @@ So now you have everything wires to the LED's it's time to thread the LED's thro
 
 STEPS:
 
-- The 3mm LED has a small lip on the bottom. Use a file to remove this so the LED will fit into the tube. Do a test fir to make sure the LED fits into the tube.
+- The 3mm LED has a small lip on the bottom. Use a file to remove this so the LED will fit into the tube.  Do a test fir to make sure the LED fits into the tube.
 - Carefully gather up the ends of the wiring and start to thread them through the top of the tube.
 - Keep threading them through the tube and then start to thread the LED filament through the end
 - Once the wires come out of the cap, you can carefully pull on the wires which will pull the filament through the tube.
@@ -221,7 +221,7 @@ STEPS:
 
 - Solder the wires from the battery to the battery solder points on the module.
 - Add a little super glue to the bottom of the module and glue this to the battery. It should be glued to the end of the battery as shown in the images below.
-- You also need to add a resistor to the negative solder point on the module. I used 2 X 10 Ohm resistors in parallel which gave me 5 Ohm resistance. There is also a chance that the resistors will get warm over long periods of usage. To help protect the battery, I added a small heat shrink made from a piece of aluminum strip.
+- You also need to add a resistor to the negative solder point on the module.  I used 2 X 10 Ohm resistors in parallel which gave me 5 Ohm resistance.   There is also a chance that the resistors will get warm over long periods of usage.  To help protect the battery, I added a small heat shrink made from a piece of aluminum strip.
 
 
 ## Step 7: Connecting the Wires All Together
@@ -238,7 +238,7 @@ STEPS:
 
 STEPS:
 
-- Check out the diagram at the start of the step. This should give you a good visual on how everything is wired up.
+- Check out the diagram at the start of the step.  This should give you a good visual on how everything is wired up.
 - The positive wire from the LED's needs to be connected to the positive solder point on the charging module.
 - Trim if necessary, remove some of the enamel at the end and solder to the positive solder point on the module.
 - Connect both the ground wires to the resister leg connected to ground on the charging module
@@ -273,9 +273,9 @@ STEPS:
 - Place the battery and charger inside the PVC tube (handle) and have it so it is sticking out
 - Place the cap next to it and eyeball where you will need to make the cut in the cap for the USB.
 - Drill out the section in the cap with a drill piece around the same width as the micro USB
-- Use some small files to clean up the drilled section. You are looking to make the cut large enough so a micro USB cord can access the charger through the hole
+- Use some small files to clean up the drilled section.  You are looking to make the cut large enough so a micro USB cord can access the charger through the hole
 - Place the cap onto the handle and push it on and check that it aligns with the micro USB
-- If everything is good, add some superglue to the battery and the sides of the micro USB charger. This will hold it in place. NOTE - there is no going back after this point (you will not be able to remove the battery without damaging it) so make sure everything is good before gluing.
+- If everything is good, add some superglue to the battery and the sides of the micro USB charger.  This will hold it in place.  NOTE - there is no going back after this point (you will not be able to remove the battery without damaging it) so make sure everything is good before gluing.
 - Place the cap back onto the end
 That is it! You're LED Light Wand is now complete.
 
@@ -304,10 +304,10 @@ There's no need to make a stand but ot's a great way to display the wand!
 
 STEPS:
 
-- First you'll need another 15mm cap. You need to remove the round bottom section. You could cut it off but I just used a belt sander to remove it.
-- Next you need to cut it in half. Well just about in half. Again I used a belt sander to do this. Clean up the edges with an exacto knife
-- Drill a hole into the bottom of the cut piece of cap which will be large enough to fit a piece of 1/4" tube into. Add a little superglue to keep it into place
-- For the stand I used a piece of hard wood. Drill a hole into that and push the 1/4" tube into it. Add some superglue to the bottom to hold it in place
+- First you'll need another 15mm cap.  You need to remove the round bottom section.  You could cut it off but I just used a belt sander to remove it.
+- Next you need to cut it in half.  Well just about in half.  Again I used a belt sander to do this.  Clean up the edges with an exacto knife
+- Drill a hole into the bottom of the cut piece of cap which will be large enough to fit a piece of 1/4" tube into.  Add a little superglue to keep it into place
+- For the stand I used a piece of hard wood.  Drill a hole into that and push the 1/4" tube into it.  Add some superglue to the bottom to hold it in place
 - Now you can just push the wand into the cut setion of cap and it will hold it in place.
 
 

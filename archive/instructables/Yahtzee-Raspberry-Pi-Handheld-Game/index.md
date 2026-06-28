@@ -205,15 +205,15 @@ God Mode is the closest the AI gets to theoretically optimal Yahtzee play. It us
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
 
-The files that you need to build the Yahzee game can be found in my GitHub page. This also includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer
+The files that you need to build the Yahzee game can be found in my [GitHub](https://github.com/lonesoulsurfer/Yahtzee_Handheld_Game) page. This also includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer
 
 STEPS:
 
-Send the Gerber files (zipped) to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+Send the Gerber files (zipped) to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Yahtzee_Handheld_Game) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
 
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
 - JLCPCB used to print an order number onto the PCB which was super annoying, especially if you didn't specify where to add it. Now you don't have to worry about it as they no longer do it
 - when choosing the surface finish pick Lead Free HASL as this will ensure that there is no lead in the panel or PCB.
 - You can pick whatever colour you want to choose for your front panel and PCB. I used black.
@@ -268,9 +268,9 @@ This is a good time to get a couple of the other components ready to solder into
 
 STEPS:
 
-- Let’s start with the 7-segment display. It’s important that you solder into place the male header pins first. Also make sure that you have the PCB up the right way – not like me on the first crack at this!!
-- Now you can add the 7 segment displays into place and also solder these. Again, making sure that they are in the right way. (the decimal point on the bottom)
-- Let’s move onto the Raspberry Pi. Place each of the header pins into the holes on the Pi and just solder 1 leg of each of the 3 header pin sections.
+- Let’s start with the 7-segment display.  It’s important that you solder into place the male header pins first.  Also make sure that you have the PCB up the right way – not like me on the first crack at this!!
+- Now you can add the 7 segment displays into place and also solder these.  Again, making sure that they are in the right way. (the decimal point on the bottom)
+- Let’s move onto the Raspberry Pi.  Place each of the header pins into the holes on the Pi and just solder 1 leg of each of the 3 header pin sections.
 Ok - now move onto the next step
 
 
@@ -290,7 +290,7 @@ Ok - now move onto the next step
 
 STEPS:
 
-- Place the Pi into the PCB and solder the rest of the legs to the solder points on the Pi.This ensures that the Pi fits perfectly into the PCB. You can now solder the header pins to the PCB to secure the Pi into place
+- Place the Pi into the PCB and solder the rest of the legs to the solder points on the Pi.This ensures that the Pi fits perfectly into the PCB.  You can now solder the header pins to the PCB to secure the Pi into place
 - The charging and voltage booster module is a great little board. It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.
 - First, let’s set the output voltage to 5V from the Charging & voltage booster module. Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
 - Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.
@@ -318,12 +318,12 @@ I’ve used a red and black momentary buttons to help differentiate the button c
 
 STEPS:
 
-- This is pretty straight forward, you are just soldering the button switches into place. However, it is important to make sure that they are straight on the PCB or the front panel won’t fit correctly so here’s what you do to ensure that they are all align correctly.
-- Place the front panel onto the PCB. This will act as a template in order to ensure that the button switch is aligned correctly
-- Place the button switch into place and solder the legs to the PCB. Press down on top of the button and use the soldering iron to remelt each of the solder points for the switch. This will correctly seat the switch if it isn’t already.
+- This is pretty straight forward, you are just soldering the button switches into place.  However, it is important to make sure that they are straight on the PCB or the front panel won’t fit correctly so here’s what you do to ensure that they are all align correctly.
+- Place the front panel onto the PCB.  This will act as a template in order to ensure that the button switch is aligned correctly
+- Place the button switch into place and solder the legs to the PCB.  Press down on top of the button and use the soldering iron to remelt each of the solder points for the switch.  This will correctly seat the switch if it isn’t already.
 - Do the same for the rest of the button switches,
-- Now you can solder into place the 2 slide switches. One is for on/off and the other is used when charging the battery. I had to add one for the battery charging because if you don’t have it there, you need to have the game on whist charging. The other option would have been to add the main switch after the battery charging module. However, these little modules can draw a very slight charge which will flatten the battery over time.
-- Note that I used a push button on/off switch in my prototype. I didn’t like it so I moved it to the slide switch!
+- Now you can solder into place the 2 slide switches.  One is for on/off and the other is used when charging the battery.  I had to add one for the battery charging because if you don’t have it there, you need to have the game on whist charging.  The other option would have been to add the main switch after the battery charging module.  However, these little modules can draw a very slight charge which will flatten the battery over time.
+- Note that I used a push button on/off switch in my prototype.  I didn’t like it so I moved it to the slide switch!
 - You can now remove the front panel
 
 
@@ -479,7 +479,7 @@ Just make your changes and click Upload — it will handle the reset for you. If
 
 The goal of Yahtzee is to roll 5 dice in 13 rounds and try and get a higher score than your opponent. Sounds pretty simple and a game based on luck right! Well, just like any good game, there is some luck involved but also a good chunk of skill and a little bit of je ne sais quoi!
 
-You can find the rules in the actual game itself under tools. Also check out the official rules here.
+You can find the rules in the actual game itself under tools. Also check out the official rules [here](http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://instructions.hasbro.com/api/download/00950_en-ca_yahtzee-classic.pdf).
 
 **Hardware Overview**
 

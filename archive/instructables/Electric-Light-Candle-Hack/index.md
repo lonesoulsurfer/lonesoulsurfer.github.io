@@ -223,7 +223,7 @@ On the circuit board that came with my led candle, there was a un-soldered secti
 
 ![Step 10: Step -10 Making a Solar Charger image 11](images/step10_11.jpg)
 
-$4 Solar Battery Charger
+[$4 Solar Battery Charger](https://www.instructables.com/id/4-Solar-Battery-Charger/)
 
 
 ## Step 11: Step 11 - Phew!- Your Finished

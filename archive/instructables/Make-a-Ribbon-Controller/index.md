@@ -19,7 +19,7 @@ The basic design of a ribbon controller is fairly simple. It acts as a linear po
 
 Making your own is pretty simple and you'll only need a few parts to do it. I've also included a schematic for a small synth that I have made that will allow you to test and play the ribbon controller. I haven't explored fully yet what it is capable of but I will definitely be including an output for all the synths i make going forward so I can plug this into them.
 
-Hackaday did a review of the ribbon controller which you can find here
+Hackaday did a review of the ribbon controller which you can find [here](https://hackaday.com/2020/05/03/diy-ribbon-controller-for-a-diy-synth/)
 
 
 ## Step 1: PARTS & TOOLS
@@ -38,21 +38,21 @@ Hackaday did a review of the ribbon controller which you can find here
 
 Parts:
 
-1. Copper Strip 19mm wide X 215mm long - eBay. Most hobby shops will have it too in 300mm lengths
+1. Copper Strip 19mm wide X 215mm long - [eBay](https://www.ebay.com.au/itm/Copper-strip-15-mm-x-1-mm-x-30-cm-plastic-peelaway-mirror-side-99-99-pure/324088728270?hash=item4b75318ace:g:wjAAAOSwxD1eWzs9). Most hobby shops will have it too in 300mm lengths
 
 2. 3 X Copper Strips 6.3mm wide X 300mm long - eBay. Again, most hobby shops will have it in 300mm lengths
 
-3. Velostat Sheet - eBay or Core electronics if you are in Australia
+3. Velostat Sheet - [eBay](https://www.ebay.com.au/itm/Adafruit-Pressure-Sensitive-Conductive-Sheet-Velostat-Linqstat/264658530396?hash=item3d9ee0b05c:g:~ZsAAOSwoi1X88Wi) or [Core electronics](https://core-electronics.com.au/pressure-sensitive-conductive-sheet-velostat-linqstat.html?utm_source=google_shopping&gclid=CjwKCAjw-YT1BRAFEiwAd2WRtk34pbblRbpS9HhcgwNTImOTXBmEy_a5jk2HlAjmEGS1KsrPQPUHthoCIAwQAvD_BwE) if you are in Australia
 
-4. Masking Tape - eBay
+4. Masking Tape - [eBay](https://www.ebay.com.au/itm/6mm-10mm-12mm-18mm-50mm-Masking-Tape-Model-Paint-Spray-Modeling-Refill-50MM164ft/182498758173?hash=item2a7dc60e1d:m:mHZhQ9jrVQmw-jXnEktOdEg)
 
-5. Aluminium or copper tape - eBay or eBay
+5. Aluminium or copper tape - [[eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1311.R5.TR6.TRC2.A0.H0.Xcopper+tape.TRS0&_nkw=copper+shielding+tape&_sacat=0)](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xaluminium+tape.TRS0&_nkw=aluminium+tape&_sacat=0) or eBay
 
-6. Polystyrene Tube 3.2mm - eBay or hobby shops
+6. Polystyrene Tube 3.2mm - [eBay](https://www.ebay.com.au/itm/Evergreen-White-Polystyrene-Rectangular-Tube-0-125-x-0-250-x-14-3-2mm-x-6-4mm/202602656370?hash=item2f2c0f3272:g:O2sAAOSweuldeTNy) or hobby shops
 
-7. Clear plastic A4 Binding Cover - eBay or any office supply place
+7. Clear plastic A4 Binding Cover - [eBay](https://www.ebay.com.au/itm/200micron-A4-PVC-Binding-Cover-Pack-of-100-Clear/110891049695?hash=item19d19f22df:g:5NUAAOxyaTxRQWDY) or any office supply place
 
-8. Jack input - eBay
+8. Jack input - [eBay](https://www.ebay.com.au/itm/10Pcs-DIP-PCB-Mount-3-Pins-Female-3-5mm-Stereo-Audio-Jack-Socket-s649-3/281725301507?hash=item419822f303:g:hr8AAOSwT6pVgQni)
 
 9. Length of wood to mount the ribbon controller on. Not necessary but gives a nice finish.
 
@@ -317,7 +317,7 @@ Steps:
 
 ![Step 11: So Now What? image 5](images/step11_05.jpg)
 
-If you are looking to use the ribbon controller but don't know where to start, then you could build this synth made from a 4049 CMOS chip. I've included the schematic in case you want to get s PCB made. All of the files can be found in my Google drive and includes gerber files, schematic, and Eagle files. If you want to get the PCB printed, just send the zipper gerber files to a PCB manufacturer like JLCPCB (not affiliated) and they will print them up for you.
+If you are looking to use the ribbon controller but don't know where to start, then you could build this synth made from a 4049 CMOS chip. I've included the schematic in case you want to get s PCB made. All of the files can be found in my [Google drive](https://drive.google.com/drive/folders/1WaNJPsrYGfioNEDXc7KHLyFmacyS3coK?usp=sharing) and includes gerber files, schematic, and Eagle files. If you want to get the PCB printed, just send the zipper gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?gclid=Cj0KCQiA2af-BRDzARIsAIVQUOc5lDybfwXcCif6zTfM1BEXEQ8qkZD-hXFMAUGSv0o-h35Z_iy8m_kaAtcBEALw_wcB) (not affiliated) and they will print them up for you.
 
 It's a pretty simple circuit and allows you to play the ribbon controller like a keyboard. You can check out the video at the start of this 'ible on how it sounds.
 
@@ -352,7 +352,7 @@ Resistors
 
 Speaker 8 Ohm
 
-One of the reasons why I made a ribbon controller is because of a comment left on another 'ible I made which was a moog style synth. I've created a PCB for this circuit and and look to hook-up the ribbon controller
+One of the reasons why I made a ribbon controller is because of a comment left on another 'ible I made which was a [moog style synth](https://www.instructables.com/id/Moog-Style-Synth/). I've created a PCB for this circuit and and look to hook-up the ribbon controller
 
 
 - [Ribbon Controller Synth](pdfs/Ribbon Controller Synth.pdf)

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,145 +162,183 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make Your Own Headphone Amp V1</span>
 </nav>
-<h1>Make Your Own Headphone Amp V1</h1><div class="source"><a href="https://www.instructables.com/Make-Your-Own-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I never really thought much about headphone amps until I tried one. I used to think it was all a bit of a gimmick. Why would you need a separate amp to drive the speakers in your headphones! It’s only when you try a headphone amp that you realise the benefits and sound quality improvement possible from a separate amp. The only problem is, you’ll never be able to listen to music again without one!</p>
-<p>You can buy an off-the-shelf one if you want to but I’m going to assume you’re reading this because you’d rather build your own. The build itself isn’t too difficult, although you will need some soldering and circuit experience to make this. If you have never done any circuit building, then you should start with this ‘ible which I did some time ago to help beginners.</p>
-<p>The heart of the amp is 2 X LM386 IC’s. Unlike some headphone amps, you can run this one on a 9v battery but because of this, you need to be careful how you hook-up the ground connections. I’ll take you through this in the following steps.</p>
+<h1>Make Your Own Headphone Amp V1</h1><div class="source"><a href="https://www.instructables.com/Make-Your-Own-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I never really thought much about headphone amps until I tried one.</p>
+<p>I used to think it was all a bit of a gimmick.</p>
+<p>Why would you need a separate amp to drive the speakers in your headphones!</p>
+<p>It’s only when you try a headphone amp that you realise the benefits and sound quality improvement possible from a separate amp.</p>
+<p>The only problem is, you’ll never be able to listen to music again without one!</p>
+<p>You can buy an off-the-shelf one if you want to but I’m going to assume you’re reading this because you’d rather build your own.</p>
+<p>The build itself isn’t too difficult, although you will need some soldering and circuit experience to make this.</p>
+<p>If you have never done any circuit building, then you should <a href="https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/">start with this ‘ible</a> which I did some time ago to help beginners.</p>
+<p>The heart of the amp is 2 X LM386 IC’s.</p>
+<p>Unlike some headphone amps, you can run this one on a 9v battery but because of this, you need to be careful how you hook-up the ground connections.</p>
+<p>I’ll take you through this in the following steps.</p>
 <p>Lastly, I’ll be building a few more of these and comparing different models in future ‘ibles.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>2 X LM386 IC – eBay</li>
-</ul>
+<li>2 X LM386 IC – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=lm386+ic&_sacat=0&_sop=15">eBay</a></li>
+</ol>
 <p>Resistors. Use the metal film type, which are superior to the carbon ones, at least for this project</p>
 <ol>
-<li>10 Ohm – eBay</li>
-</ul>
+<li>10 Ohm – <a href="https://www.ebay.com.au/itm/25-100PCS-10R-0-25W-1-Metal-Film-Resistor-10-OHM-1-4W-MF/164178713602?hash=item2639d05c02:g:g~wAAOSwxe5eqTOS&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>18K – eBay</li>
-</ul>
-<p>Capacitors. Make sure you use good, audio ones for the best possible sound. The electrolytic ones should be low leakage; low impedance type and the ceramic should be metal film, polypropylene. I have added links to eBay for these types of caps</p>
+<li>18K – <a href="https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-1K-910K-Ohm-1K-10K-100K-47K-22K-33K/192901341321?hash=item2ce9d0e089:g:6pcAAOSwjDZYd168&frcectupt=true">eBay</a></li>
+</ol>
+<p>Capacitors.</p>
+<p>Make sure you use good, audio ones for the best possible sound.</p>
+<p>The electrolytic ones should be low leakage; low impedance type and the ceramic should be metal film, polypropylene.</p>
+<p>I have added links to eBay for these types of caps</p>
 <ol>
-<li>4 X 10uf – eBay</li>
-</ul>
+<li>4 X 10uf – <a href="https://www.ebay.com.au/itm/250V-Low-ESR-high-frequency-aluminum-capacitor-2-2-10-22-15-100-220-330-UF/192997516955?var=493199886066&hash=item2cef8c669b:g:deMAAOSweWldLvRl&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>3 X 470 uf eBay</li>
-</ul>
+<li>3 X 470 uf <a href="https://www.ebay.com.au/itm/10pcs-470uF-16V-8x12mm-Panasonic-FR-Low-ESR-16V470uF-Audio-grade-Capacitor/252622023449?hash=item3ad1722b19:g:0goAAOSwMVdYEXv~">eBay</a></li>
+</ol>
 <ol>
-<li>3 X 0.1uf - eBay</li>
-</ul>
+<li>3 X 0.1uf - <a href="https://www.ebay.com.au/itm/10pcs-CBB-104J-100V-0-1UF-100NF-P5mm-Metallized-Film-Capacitor-104-100v-SEbc/333708219469?hash=item4db28f544d:g:MHAAAOSwsaZa2bkk">eBay</a></li>
+</ol>
 <ol>
-<li>100k duel gang potentiometer – eBay</li>
-</ul>
+<li>100k duel gang potentiometer – <a href="https://www.ebay.com.au/itm/5-pcs-10K-ohm-Linear-Taper-Rotary-Potentiometer-Panel-pot-B10-Tw/133458900705?hash=item1f12c536e1:g:hPIAAOSw3xJXn382">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 3.5mm stereo jack sockets – eBay</li>
-</ul>
+<li>2 X 3.5mm stereo jack sockets – <a href="https://www.ebay.com.au/itm/2pcs-3-5MM-audio-jack-socket-3-pole-black-stereo-solder-panel-mount-with-nuH1/402436346123?hash=item5db313510b:g:9TYAAOSws7Fci2gL">eBay</a></li>
+</ol>
 <ol>
 <li>9v Battery</li>
-</ul>
+</ol>
 <ol>
-<li>9V Battery holder – eBay</li>
-</ul>
+<li>9V Battery holder – <a href="https://www.ebay.com.au/itm/Replacement-9V-Battery-Box-Case-Holder-Connector-R4B9/392821604951?hash=item5b75fe0257:g:FugAAOSwcLNe1K2R">eBay</a></li>
+</ol>
 <ol>
-<li>DPST toggle switch – eBay</li>
-</ul>
+<li>DPST toggle switch – <a href="https://www.ebay.com.au/itm/2-Pcs-AC-SPDT-On-Off-3-Position-Momentary-Toggle-Switch-AC250V-2A-120V-5A-B-AU/254693639157?hash=item3b4cec83f5:g:oQ8AAOSwQFJauzRQ">eBay</a></li>
+</ol>
 <ol>
-<li>Knob – eBay</li>
-</ul>
+<li>Knob – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=potentiometer+knob&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>Male to male audio cable 3.5mm - eBay</li>
-</ul>
+<li>Male to male audio cable 3.5mm - <a href="https://www.ebay.com.au/itm/FT-CO-Portable-3-5mm-Male-to-Male-Stereo-Audio-Cable-AUX-Auxiliary-Cord-for-PC/333533101608?hash=item4da81f3e28:g:HqEAAOSwWnRdzdyC">eBay</a></li>
+</ol>
 <p>You can also add a charging socket which will require a 330 Ohm resistor as well as a socket. I’ll probably add this later so left it in the circuit diagram.</p>
 <ol>
 <li>Case. I found a great case at Jaycar (electronics shop in Aust) which has its own battery compartment. It’s a little on the larger size but makes the job of fitting everything inside a pretty easy one. You can get them on eBay too</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Separating Input and Output Grounds</h2><div class="step-images single"><img src="images/step02_01.jpg" alt="Step 2: Separating Input and Output Grounds image 1" loading="lazy"></div><p>Before you start to build this amp, you should read the below which goes through how to hook-up the ground connections. The important thing to remember is to separate the input and output grounds. If you don’t then you will get oscillations which will be auditable through the headphones.</p>
-<p>So what does it mean to keep the input and output grounds separated? Basically it means to connect all of the input grounds in the circuit together and all of the output grounds together. They are then connected together by a single connection.</p>
-<p>The following at all input grounds so will need to be connected together on the prototype board. Ground input from the socket, volume control ground pin, pins 2 and 4 of both IC's. All others are output grounds.</p>
-<p>All I did to separate the grounds was to add the input connections along one of the vertical bus strips and the output next to them on the other vertical bus strip. This way you can connect the bus strips together at one point.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit Pins 1, 2 & 4</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 6" loading="lazy"></div><p>I’ll go through how you make one channel of the circuit. The other is built exactly the same.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Separating Input and Output Grounds</h2><div class="step-images single"><img src="images/step02_01.jpg" alt="Step 2: Separating Input and Output Grounds image 1" loading="lazy"></div><p>Before you start to build this amp, you should read the below which goes through how to hook-up the ground connections.</p>
+<p>The important thing to remember is to separate the input and output grounds.</p>
+<p>If you don’t then you will get oscillations which will be auditable through the headphones.</p>
+<p>So what does it mean to keep the input and output grounds separated?</p>
+<p>Basically it means to connect all of the input grounds in the circuit together and all of the output grounds together.</p>
+<p>They are then connected together by a single connection.</p>
+<p>The following at all input grounds so will need to be connected together on the prototype board.</p>
+<p>Ground input from the socket, volume control ground pin, pins 2 and 4 of both IC's.</p>
+<p>All others are output grounds.</p>
+<p>All I did to separate the grounds was to add the input connections along one of the vertical bus strips and the output next to them on the other vertical bus strip.</p>
+<p>This way you can connect the bus strips together at one point.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit Pins 1, 2 & 4</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 6" loading="lazy"></div><p>I’ll go through how you make one channel of the circuit. The other is built exactly the same.</p>
 <p>Steps:</p>
 <ol>
 <li>First, solder an IC socket header for the LM386 IC to the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Connect pins 2 and 4 to the input ground</li>
-</ul>
+</ol>
 <ol>
 <li>Add a 18K resistor to pin 1 and connect the other leg to a spare spot on the prototype board close to pin 5.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Pins 5</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Pins 5 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Pins 5 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Pins 5 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Pins 5 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Circuit - Pins 5 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Circuit - Pins 5 image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Circuit - Pins 5 image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Pins 5</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Pins 5 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Pins 5 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Pins 5 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Pins 5 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Circuit - Pins 5 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Circuit - Pins 5 image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Circuit - Pins 5 image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Add the positive leg on the 470uf capacitor to pin 5 on the IC</li>
-</ul>
+</ol>
 <ol>
 <li>Next, you need to add a 10uf capacitor to the leg of the 18K resistor and the other leg of the 470uf cap. Actually, there are a few parts that need to be added to the ground leg of this cap so make sure you plan this out first before you start to solder everything to the prototype board.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the .01 cap to the same ground leg on the 470uf cap and the other leg to an empty spot.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, add a 10 ohm resistor to the .01 cap and solder the other leg to the output strip bus ground</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Circuit - Pins 6 & 7 and the Next Channel image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Pin 6 needs to be connect to positive bus strip</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the positive end of the 10uf cap to pin 7</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the ground leg on the 10uf cap to the output ground</li>
-</ul>
+</ol>
 <ol>
 <li>That’s the main components in the first channel. You now need to build a duplicate exactly the same. One channel is for the left hand side speaker and the other for the right hand side. The 2 circuits will be connected via headphone sockets, wires and potentiometer</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - Battery Caps and Wires</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 6" loading="lazy"></div><p>Next thing to do is to add all of the wires that are needed to attach the circuit to the other components.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - Battery Caps and Wires</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Circuit - Battery Caps and Wires image 6" loading="lazy"></div><p>Next thing to do is to add all of the wires that are needed to attach the circuit to the other components.</p>
 <p>Steps:</p>
 <ol>
 <li>You need to connect a couple of capacitors from positive to ground on the circuit board. This helps reduce noise. Solder a 470uf cap and a .01 cap from positive to ground</li>
-</ul>
+</ol>
 <p>Wiring</p>
 <p>Volume potentiometer and input socket</p>
 <ol>
 <li>Solder a wire to input ground which will be attached to the right solder point on the pot,</li>
-</ul>
+</ol>
 <ol>
 <li>A wire on each of pin 3 on the IC which will be connected to the middle solder point on the pot</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a couple of wires onto the input socket which should be connected to the tip and ring solder points on the socket</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a wire to the ground solder point on the input socket and then connected to the input ground bus on the circuit board</li>
-</ul>
+</ol>
 <p>Output Socket</p>
 <ol>
 <li>Solder a couple of wires to the negative leg on the 470uf cap. These will be connected to the tip and ring solder points on the output socket</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a wire to the ground solder point on the input socket and then connected to the output ground bus on the circuit board</li>
-</ul>
+</ol>
 <p>Battery</p>
 <ol>
 <li>Solder a wire to ground and another to positive for the battery holder. One of these will be connected to the switch later on</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Wiring the Connections</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Wiring the Connections image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Wiring the Connections image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Wiring the Connections image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Wiring the Connections image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Wiring the Connections image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Wiring the Connections image 6" loading="lazy"></div><p>Once you have added all of the wires to the circuit it's now time to connect them to the rest of the other bits.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Wiring the Connections</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Wiring the Connections image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Wiring the Connections image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Wiring the Connections image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Wiring the Connections image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Wiring the Connections image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Wiring the Connections image 6" loading="lazy"></div><p>Once you have added all of the wires to the circuit it's now time to connect them to the rest of the other bits.</p>
 <p>Steps:</p>
 <ol>
 <li>First add the pot, switch and the 2 sockets to the case. I added all of these parts to the front section of my case</li>
-</ul>
+</ol>
 <ol>
 <li>Place the circuit into the case and start to solder the connections together. You want to be able to place the top of the case flat and then attach all of the wires. This will let you be able to open the case easily if necessary.</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully solder the wires to all of the correct connections. Take your time and refer to the schematic to make sure you do them correctly.</li>
-</ul>
+</ol>
 <ol>
 <li>Once everything is connected, add a battery and check to make sure the amp works as it should. If it doesn't, check your connections and also the solder points on the circuit board so there's no short circuits.</li>
-</ul>
+</ol>
 <ol>
 <li>If the amp works as it should, close up the case and get ready to be rocked by awesome sound.</li>
-</ul>
-<p>NOTE: You may have noticed that here is an extra circuit inside the case. This was a voltage regulator that I was going to add until I noticed that it was causing some interference so I took it out. There isn't really any need for it, I just thought it might help add a filter to the power.</p><h2><span class="step-num">STEP 8</span>Step 8: Using You Headphone Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Using You Headphone Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Using You Headphone Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Using You Headphone Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Using You Headphone Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Using You Headphone Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Using You Headphone Amp image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Using You Headphone Amp image 7" loading="lazy"></div><p>Steps:</p>
+</ol>
+<p>NOTE: You may have noticed that here is an extra circuit inside the case.</p>
+<p>This was a voltage regulator that I was going to add until I noticed that it was causing some interference so I took it out.</p>
+<p>There isn't really any need for it, I just thought it might help add a filter to the power.</p><h2><span class="step-num">STEP 8</span>Step 8: Using You Headphone Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Using You Headphone Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Using You Headphone Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Using You Headphone Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Using You Headphone Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Using You Headphone Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Using You Headphone Amp image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Using You Headphone Amp image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Now you have everything inside the case, it’s time to finally add the battery, turn it on and listen to the best sounding music your ears have heard!</li>
-</ul>
+</ol>
 <ol>
 <li>Also, remember to make sure you don’t have the volume turned up fully on the amp and also your phone when you turn it on – you could damage your ears as it really pumps out the noise.</li>
-</ul>
+</ol>
 <p>NOTE:</p>
-<p>You may experience some “ticking” sounds sometimes when you have the volume down. This is caused by interference from usually a phone. The best thing to do if you experience this is to turn your phone onto aeroplane mode, which should stop any interference.</p>
+<p>You may experience some “ticking” sounds sometimes when you have the volume down.</p>
+<p>This is caused by interference from usually a phone.</p>
+<p>The best thing to do if you experience this is to turn your phone onto aeroplane mode, which should stop any interference.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -59,16 +59,16 @@ Modules for Charging and Power Conversion
 
 External Power Pack
 
-- Charging and step-up module - Ali Express. This is one of my favourite modules
-- 100K Potentiometer - Ali Express
-- SPDT Toggle switch - Ali Express
-- Project Box - Ali Express The one used was 100mm X 60mm X 30mm
-- Male Plug Connector - Ali Express
+- Charging and step-up module - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221101211849&origin=y&SearchText=Lithium+Li-ion+18650+3.7V+4.2V+Battery+Charger+%5C&spm=a2g0o.detail.1000002.0). This is one of my favourite modules
+- 100K Potentiometer - [Ali Express](https://www.aliexpress.com/premium/100K-potentiometer.html?d=y&origin=y&catId=0&initiative_id=SB_20220817185108&SearchText=100K%20potentiometer&spm=a2g0o.home.1000002.0)
+- SPDT Toggle switch - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220817185143&isPremium=y&SearchText=spdt+toggle+switch+mini&spm=a2g0o.productlist.1000002.0)
+- Project Box - [Ali Express](https://www.aliexpress.com/item/1005002781859414.html?spm=a2g0o.order_list.0.0.396c1802gV7Gdg) The one used was 100mm X 60mm X 30mm
+- Male Plug Connector - [Ali Express](https://www.aliexpress.com/item/33024078552.html?spm=a2g0o.order_list.0.0.396c1802gV7Gdg)
 - Wire. I used ribbon wire I pulled out of old PC's.
 - Insulated wire. This is used to connect the jack to the power box. I used an old audio cable (see image)
-- Banana plugs - Male & Female - Ali Express
-- Micro USB Adapter – Ali Express. This is needed as the one on the charging and step up module isn't accessible once it is in place in the case
-- Voltage meter - eBay
+- Banana plugs - Male & Female - [Ali Express](https://www.aliexpress.com/item/1005002363841128.html?spm=a2g0o.order_list.0.0.396c1802gV7Gdg)
+- Micro USB Adapter – [Ali Express](https://www.aliexpress.com/item/4000484202812.html?spm=a2g0o.productlist.0.0.6e07742dJ2JHfq&algo_pvid=b4075332-3ae6-407b-9fff-ca50f53f906e&aem_p4p_detail=202208171957412977229191788360013117570&algo_exp_id=b4075332-3ae6-407b-9fff-ca50f53f906e-4&pdp_ext_f=%7B%22sku_id%22%3A%2210000002007513401%22%7D&pdp_npi=2%40dis%21USD%211.78%210.89%21%21%211.58%21%21%402103255b16607914613786410e14f2%2110000002007513401%21sea&curPageLogUid=9uofR7xjxqZV&ad_pvid=202208171957412977229191788360013117570_5). This is needed as the one on the charging and step up module isn't accessible once it is in place in the case
+- Voltage meter - [eBay](https://www.ebay.com.au/itm/0-36-DC-4-40V-LED-Digital-Mini-Voltmeter-Gauge-Voltage-Meter-Gauge-Panel-Tester/153584158553?hash=item23c2544759:m:mbaXYKe2LzBwhZzQYgKvViQ)
 - Mobile Battery - see step 1
 Tools
 

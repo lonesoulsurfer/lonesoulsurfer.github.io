@@ -19,13 +19,13 @@ Source: https://www.instructables.com/Ray-Gun-With-Laser-Sound-Effects/
 
 ![Intro 6](images/intro_06.jpg)
 
-I really love to build projects from old parts that I have scavenged . This is the 2nd ray gun build that I had documented (this is my first one). Along with ray guns I've built junkbots - (check them out here) and a whole lot of other projects from found objects.
+I really love to build projects from old parts that I have scavenged . This is the 2nd ray gun build that I had documented ([this is my first one](https://www.instructables.com/id/Make-a-Ray-Gun-1/)). Along with ray guns I've built junkbots - ([check them out here](https://www.instructables.com/id/The-Art-of-Making-Junkbots/)) and a whole lot of other projects from found objects.
 
 It doesn't take a lot of skill to build your own ray gun, just some patience and a little imagination. This build also includes an extremely cool sound effect circuit that gives the ray gun a whole other dimension.
 
 I wish I could supply an exact parts list for the ray gun (no problem with the parts for the circuit) but unfortunately I can't. These types of builds are unique due to the fact that the parts used are things that most people throw away! You will need to start to collect parts from anywhere you can with a mindset of possibly using them in a ray gun build.
 
-Hackaday have reviewed this build as well. You can check out the article here
+[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) have reviewed this build as well. You can check out the article [here](https://hackaday.com/2019/12/12/a-stunning-ray-gun-built-from-junk/)
 
 Let's get building
 
@@ -42,13 +42,13 @@ Let's get building
 
 My ray gun is made from interesting junk parts and scrap pieces that I’ve collected. The first thing you will need to do then is to start collecting parts. There isn’t any real science to this, it’s up to you to decide what parts could be used and what looks interesting.
 
-Junk parts can be anything from vintage electronics to broken mike stands and vacuum tubes. I did an ible’ some time ago on Junkboks which can be found here and making a ray gun from scrap uses the same principals.
+Junk parts can be anything from vintage electronics to broken mike stands and vacuum tubes. I did an ible’ some time ago on Junkboks which can be [found here](https://www.instructables.com/id/The-Art-of-Making-Junkbots/) and making a ray gun from scrap uses the same principals.
 
 Once you start to actually look with a mindset of making a ray gun, you’ll find all types of great bits and bobs. I store anything I find until I think I have enough parts to start building. Then it's just a case of working out how the parts could go together to make a ray gun. I find the process of designing, problem solving and building the ray gun the most rewarding part of doing a build like this. It can get tricky at times trying to work out how to join all those parts together (esp if you want to be able to pull it apart and not just glue everything together!)
 
-So what should you keep your eye out for when making a ray gun? The first thing I always try to find is the handle and body section/s. These parts are the core parts to the build where everything will be connected. I’ve seen ray guns build from old film movie cameras, drills, air guns (like this one I did). The thing they have in common is a good body and handle to start with.
+So what should you keep your eye out for when making a ray gun? The first thing I always try to find is the handle and body section/s. These parts are the core parts to the build where everything will be connected. I’ve seen ray guns build from old film movie cameras, drills, air guns ([like this one I did](https://www.instructables.com/id/Make-a-Ray-Gun-1/)). The thing they have in common is a good body and handle to start with.
 
-You should also start collecting some images from google. I have a Pinterest page where I collect ray gun images for inspiration. You can check out mine here.
+You should also start collecting some images from google. I have a Pinterest page where I collect ray gun images for inspiration. You can check out [mine here](https://www.pinterest.com.au/marcusdunn/ray-guns/).
 
 
 ## Step 2: Parts for the Circuit
@@ -67,41 +67,41 @@ You should also start collecting some images from google. I have a Pinterest pag
 
 Parts List
 
-1. 40106 IC – eBay
+1. 40106 IC – [eBay](https://www.ebay.com.au/itm/10PCS-CD40106-CD40106BE-40106-DIP-14-HEX-SCHMITT-TRIGGER-IC/381374858810?hash=item58cbb6863a:g:E6IAAOSwF1dUPnly&frcectupt=true)
 
-2. 1M Pot – eBay
+2. 1M Pot – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=1m+potentiometer&_sacat=0&_sop=15)
 
-3. 2 X 100K Pot – eBay. Note that I swapped out the 1M Osc 2 pitch pot which is in the schematic to a 100k one. Up to you whether you do this or not.
+3. 2 X 100K Pot – [eBay](https://www.ebay.com.au/itm/2PCS-3Pin-6MM-B-Type-B100K-Ohm-Rotary-Potentiometer-Shaft-Adjustable-Resistance/392303688905?hash=item5b571f3cc9:g:a9kAAOSwApVc67qV&frcectupt=true). Note that I swapped out the 1M Osc 2 pitch pot which is in the schematic to a 100k one. Up to you whether you do this or not.
 
-4. 4.7uf cap – eBay
+4. 4.7uf cap – [eBay](https://www.ebay.com.au/itm/2-2uF-4700uF-Horn-Inline-50V-400V-10uF-4-7uF-Aluminum-Electrolytic-Capacitor/392355035093?hash=item5b5a2eb7d5:m:mzuEZEe-4xsm64zfVAAT7kQ&frcectupt=true)
 
-5. 220uf cap - eBay
+5. 220uf cap - [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-35V-220uF-High-Frequency-Radial-Electrolytic-Capacitor-8x12mm/392319599509?hash=item5b58120395:m:mi8aRRmxz63MuAu1X6hBnQw&frcectupt=true)
 
-6. 47nf cap – Buy them in assorted lots on eBay
+6. 47nf cap – [Buy them in assorted lots on eBay](https://www.ebay.com.au/itm/1pf-100nf-1000pcs-50value-50V-Ceramic-Capacitor-Assorted-Kit-Assortment-Set/120982871681?hash=item1c2b241e81:g:RGsAAOSw1vlUrOau)
 
 7. 100nf cap - will come with the assorted lot
 
-8. 100uf cap – eBay
+8. 100uf cap – [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-50V-100uF-High-Frequency-8x12mm-Radial-Electrolytic-Capacitor/392274276783?hash=item5b555e71af:m:m_RZ_5EslovVsMtY_MyrEPg)
 
-9. 2 X 2N3904 Transistor – eBay
+9. 2 X 2N3904 Transistor – [eBay](https://www.ebay.com.au/itm/50pcs-2N3904-TO-92-NPN-General-Purpose-Transistor/283016224380?hash=item41e514de7c:g:DjoAAOSwBCtbKfhx&frcectupt=true)
 
-10. 1K resistor – Buy them in assorted lots on eBay
+10. 1K resistor – [Buy them in assorted lots on eBay](https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/223222191255?epid=24025613485&hash=item33f9145497:g:-EAAAOSw1KRb46cC)
 
 11. 2 X 470K resistor - Will be in the assorted lot
 
-12. Optocoupler - you can buy these (eBay), or make one. Check out this ‘ible on how to easily make one from an LED and a LDR
+12. Optocoupler - you can buy these ([eBay](https://www.ebay.com.au/itm/1Pcs-VTL5C3-xvive-audio-opto-coupler-high-quality-BDAU/362743753623?hash=item5475366b97:g:e~MAAOSwJrdcic1o)), or make one. [Check out this ‘ible](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/) on how to easily make one from an LED and a LDR
 
-13. 9v battery holder – eBay
+13. 9v battery holder – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=9v+battery+holder&_sacat=0&_sop=15)
 
 14. 9v Battery
 
-15. Switch – this would work well - eBay, or maybe a momentary switch like this My old soldering iron came with a trigger switch, which I used.
+15. Switch – this would work well - [eBay](https://www.ebay.com.au/itm/FA2-6-2W5-AC-250V-6A-DPST-No-Lock-on-Electric-Tool-Trigger-Switch-EB/263527826919?hash=item3d5b7b85e7:g:SgsAAOSwmOJZ8ch4), or maybe a momentary switch [like this](https://www.ebay.com.au/itm/SPST-Red-Round-Momentary-Push-Button-Switch-3A-125V-1-5A-250VAC-x-1pcs/273969965141?epid=1938273804&hash=item3fc9e1e855:g:lxkAAOSw8NxdWGcy&frcectupt=true) My old soldering iron came with a trigger switch, which I used.
 
-16. Prototype board – eBay
+16. Prototype board – [eBay](https://www.ebay.com.au/itm/SPST-Red-Round-Momentary-Push-Button-Switch-3A-125V-1-5A-250VAC-x-1pcs/273969965141?epid=1938273804&hash=item3fc9e1e855:g:lxkAAOSw8NxdWGcy&frcectupt=true)
 
 17. Wires
 
-18. 4 Ohm speaker – eBay. I think I used an 8 ohm, which worked fine as well.
+18. 4 Ohm speaker – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=4+ohm+speaker&_sacat=0&_sop=15). I think I used an 8 ohm, which worked fine as well.
 
 
 ## Step 3: Making the Circuit
@@ -124,9 +124,9 @@ Parts List
 
 I didn’t do a step by step build of the circuit like I usually do, the main reason was I kinda forgot to take photos! However, I don’t really think a step by step helps too much, especially in a circuit build like this. Happy to be proved wrong though.
 
-The circuit is by Symetricolour over at Make and it’s really awesome. The only changes I did (and they aren’t necessary) was to change the Osc 2 Pitch pot from 1M to 100K. It’s a really great circuit and the sounds produced are perfect for a ray gun build.
+The circuit is by [Symetricolour](https://makezine.com/author/symetricolour/) over at [Make](https://makezine.com/projects/make-35/raygun-vector-weapon/) and it’s really awesome. The only changes I did (and they aren’t necessary) was to change the Osc 2 Pitch pot from 1M to 100K. It’s a really great circuit and the sounds produced are perfect for a ray gun build.
 
-The other thing to note is the circuit uses an optocoupler, also known as a vactrol. It sounds fancy but all it really is is an LED and a LDR which interact together. You can make one easily – see this Instructable where I show how to make one, or just buy one. If you want more information on how they work, then check out this link.
+The other thing to note is the circuit uses an optocoupler, also known as a vactrol. It sounds fancy but all it really is is an LED and a LDR which interact together. You can make one easily – [see this Instructable](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/) where I show how to make one, or just buy one. If you want more information on how they work, then check out [this link](https://en.wikipedia.org/wiki/Opto-isolator).
 
 You can also see on the circuit that I have tried to keep the parts such as the caps as low as possible. This helps give a little more room inside the ray gun if needed.
 
@@ -466,7 +466,7 @@ I added a 3.3K resistor to the end of the positive leg on the LED and connected 
 
 ![Step 17: Powering-up the Circuit Board image 6](images/step17_06.jpg)
 
-Now that the circuit board was all wired-up, I had to come up with a way to power and charge the battery. I recently found these awesome little modules that are a voltage regulator and charger all in one. It means that you can attach a li-po 3.7v battery to it, hike up the voltage to 9v and charge the battery through one module! I recently did an 'ible on how to wire the module up and how to reuse old mobile batteries which can be found here.
+Now that the circuit board was all wired-up, I had to come up with a way to power and charge the battery. I recently found these awesome little modules that are a voltage regulator and charger all in one. It means that you can attach a li-po 3.7v battery to it, hike up the voltage to 9v and charge the battery through one module! I recently did an 'ible on how to wire the module up and how to reuse old mobile batteries which can be f[ound here.](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/)
 
 Using rechargeable batteries is great when you don’t have much room in a build or you don’t want to have to open it up to change the battery. I also added a separate micro USB connector so I could charge the battery from the grip bottom of the ray gun.
 

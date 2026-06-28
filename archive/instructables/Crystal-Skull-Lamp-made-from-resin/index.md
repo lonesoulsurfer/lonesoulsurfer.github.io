@@ -23,7 +23,7 @@ Make a crystal skull lamp with resin, an LED light bulb and a few hacking skills
 
 Resin is a really fun medium to caste with. It can be a bit finicky at times but if you take your time, and use the correct measurements, you won’t have any issues.
 
-I have used resin in the past – see my Resin LED cube’s here, here and here.
+I have used resin in the past – see my Resin LED cube’s [[[here](https://www.instructables.com/id/LED-Resin-Cubes)](https://www.instructables.com/id/LED-Resin-Cube-V2/)](https://www.instructables.com/id/LED-Resin-Cube-V3/), here and here.
 
 I’ve always been fascinated by skulls, especially the Aztec ones found in the early 20th Century. If you don’t know much about these skulls, check out the next step.
 
@@ -55,11 +55,11 @@ Whatever its true history, Its still an amazing artefact. There's even a documen
 
 If you would like to find out more about the crystal skulls, check out the below links:
 
-Crystal Skull - Wikipedia
+Crystal Skull - [Wikipedia](http://en.wikipedia.org/wiki/Crystal_skull)
 
-Crystal Skull - Nat Geo
+Crystal Skull - [Nat Geo](http://science.nationalgeographic.com.au/science/archaeology/crystal-skulls/)
 
-Crystal Skull - Archive Archaeology
+Crystal Skull - [Archive Archaeology](http://archive.archaeology.org/0805/etc/indy.html)
 
 
 ## Step 3: Parts and Tools
@@ -82,21 +82,21 @@ Parts:
 
 1. Resin - I used Diggers casting resin
 
-2. LED globe - eBay
+2. LED globe - [eBay](http://www.ebay.com.au/itm/9W-B22-Remote-Control-Color-Changing-LED-Light-Bulb-RGB-Color-Lamp-100-240V-/290678300821?pt=AU_Lighting_Fans&hash=item43adc6e095&_uhb=1)
 
-3. Switch - eBay
+3. Switch - [eBay](http://www.ebay.com.au/itm/10pcs-MTS-102-3-Pin-SPDT-ON-ON-6A-125VAC-Mini-Toggle-Switches-NEW-E-/261449092326?pt=AU_B_I_Electrical_Test_Equipment&hash=item3cdf948ce6&_uhb=1)
 
-4. Skull mold - eBay
+4. Skull mold - [eBay](http://www.ebay.com.au/itm/NEW-Ref-0615a-SUPERCAST-RUBBER-LATEX-SMALL-SKULL-MOULD-MOLD-NEW-/360633620469)
 
 5. Wood - Thin pine plywood and a piece of 20mm x 140mm pine wood (or whatever wood you want to use)
 
-6. Video card Heat-sink - eBay
+6. Video card Heat-sink - [eBay](http://www.ebay.com.au/itm/PC-VGA-Video-Graphics-Card-Cooling-Fan-Cooler-Heatsinks-/400731083549?pt=AU_Components&hash=item5d4d6f131d&_uhb=1)
 
 7. Flat heat screws and nuts.
 
 8. 9v battery
 
-9. 9v battery holder - eBay
+9. 9v battery holder - [eBay](http://www.ebay.com.au/itm/20-Pcs-9-Volt-Battery-Snap-on-Connector-Clip-With-Wire-Holder-Cable-Leads-Cord-/150841422930?pt=LH_DefaultDomain_15&hash=item231ed97452&_uhb=1)
 
 10. Paint (stain and varnish)
 

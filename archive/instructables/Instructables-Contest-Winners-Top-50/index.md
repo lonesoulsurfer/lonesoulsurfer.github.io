@@ -17,7 +17,7 @@ Even wondered who the top 50 prizes winners are on Instructables?
 
 To be honest, I was curious as to where I sit amongst the competition winners and it turns out that I'm in the top 5 (1 off equal top 3!!).
 
-I joined Instructables way back in 2011 and published my first 'Ible in Jan 2012. The project got some views and likes and after that I was hooked.
+I joined Instructables way back in 2011 and published my first 'Ible in Jan 2012. [The project](https://www.instructables.com/How-to-Make-an-Easy-Electric-Lantern/) got some views and likes and after that I was hooked.
 
 I've pubished 254 255 'Ibles since then and it's been a great journey. I've learnt a tonne of skills and have published a broad range of builds over the years.
 
@@ -55,7 +55,7 @@ https://www.python.org/downloads/
 
 Download the script
 
-- Download from my GitHub page file which includes 'instructables_top_winners.py' and save it somewhere easy to find, such as your Desktop or a folder called C:\Instructables.
+- Download from my [GitHub](https://github.com/lonesoulsurfer/Instructables_Contest_Winners) page file which includes 'instructables_top_winners.py' and save it somewhere easy to find, such as your Desktop or a folder called C:\Instructables.
 Open Command Prompt
 
 - Press Windows key + R, type cmd and press Enter. A black window will open — this is the Command Prompt.
@@ -81,9 +81,9 @@ Find your output files
 
 Check out the link to see the winners
 
-https://lonesoulsurfer.github.io/Instructables_Contest_Winners/
+[https://lonesoulsurfer.github.io/Instructables_Contest_Winners/](https://lonesoulsurfer.github.io/Instructables_Contest_Winners/)
 
-The results can also be found on GitHub. You can download 3 different file formats of the list from my GitHub page. There is an Excel, HMTL and CSV files available. These are the outputs you get after the Python script has ran.
+The results can also be found on [GitHub](https://github.com/lonesoulsurfer/Instructables_Contest_Winners). You can download 3 different file formats of the list from my GitHub page. There is an Excel, HMTL and CSV files available. These are the outputs you get after the Python script has ran.
 
 The results don't just supply a list of the highest competition winners. It also provides the following:
 

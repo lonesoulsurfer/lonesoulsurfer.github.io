@@ -44,7 +44,7 @@ It has also been mentioned that alcohol actually can make you colder by drawing 
 
 Things to gather:
 
-1. Shotgun Shells – Etsy or your local gun range.
+1. Shotgun Shells – [Etsy](https://www.etsy.com/au/search?q=shotgun%20shells%20empty&order=most_relevant&ship_to=AU) or your local gun range.
 
 2. Small glass phial - eBay
 
@@ -238,13 +238,13 @@ That’s it! Attach it to your hiking bag, keys or where you think you’ll need
 
 ![Step 7: Notes. image 4](images/step07_04.jpg)
 
-One of the best books on survival is still the SAS Survival Handbook. I recently purchased one of the original versions of this, but there have been many updated editions since my 1986 one was published. I suggest that if you are serious in learning about survival, then you get your hands on a copy of this book.
+One of the best books on survival is still the [SAS Survival Handbook](http://en.wikipedia.org/wiki/The_SAS_Survival_Handbook). I recently purchased one of the original versions of this, but there have been many updated editions since my 1986 one was published. I suggest that if you are serious in learning about survival, then you get your hands on a copy of this book.
 
 My survival kit is simple, but if I was lost out in the bush the things that I would want are; shelter, fire, and something warm in my belly. My survival kit covers 2 of the basics (shelter is a bit hard to put in a survival kit!). I know that it is only a small amount of whisky, but man I reckon I would need it if I was lost, cold and concerned (not scared though).
 
 I have also made a survival kit with a flint, striker and a couple of those candles that you can’t blow out. You can see from the below, it’s pretty handy little fire kit. I have also included some lint from the dryer so I have something dry to strike against and a compass. This kit uses the same shotgun case so if you want to make one of these instead, just follow the ible’ until you get to the part about the cork and add all the fire bits instead. I’ll also add a small knife to this kit at some stage too.
 
-NOTE LINT AND WAX TINDER: In one of the comments below ...suggested that I add wax to the lint. This worked brilliantly and have I updated an ible' on how you can make your own
+NOTE LINT AND WAX TINDER: In one of the comments below ...suggested that I add wax to the lint. This worked brilliantly and have I updated an [ible' on how you can make your own](https://www.instructables.com/editInstructable/edit/EL9BZNOI14TPBBH/step/3)
 
 If you have a local gun range near you (check Google), give them a ring and see if they will give you some empty shells. Initially I purchased my shells from Etsy at $10 for 12. Big mistake! Once I contacted the gun range they were more than happy to give me as many as I liked for free! I ended up with a box full of shells.
 

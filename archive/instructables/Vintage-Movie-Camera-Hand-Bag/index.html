@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,197 +163,233 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Vintage Movie Camera Hand Bag</span>
 </nav>
 <h1>Vintage Movie Camera Hand Bag</h1><div class="source"><a href="https://www.instructables.com/Vintage-Movie-Camera-Hand-Bag/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Modify a vintage Brownie movie camera into a cool hand bag.</p>
-<p>I really struggled to work out what to call this. My wife suggested clutch, but the actual meaning of a clutch is a small strapless bag which you hold and this mod doesn't really fit that description. In the end I just stuck with hand bag, which I think describes it well enough. Plus making a clutch seems very un-manly, I would have had to take a lot of flak from my brothers if they thought I had made a clutch! What am I saying - I made a hand bag...</p>
-<p>The hand bag is made from an old Brownie movie camera. I first used one of these camera's in my mini media centre hack. For anyone who thinks I've destroyed a priceless heirloom, please note that there are literally millions of these brownie cameras hidden in cupboards and draws where no-one can admire them. Yes you will need to destroy the camera, but you'll end up with something unique and functional.</p>
-<p>So why use a Brownie movie camera for this mod. Firstly the camera has a side door that comes right off. This makes it really easy to add a couple of hinges to create the opening to the bag. Also, there is a fair bit of room inside once you remove the spring mechanism. Lastly, they are very easy to hack! Everything comes apart simply, and can be just as easily be put back together.</p>
+<p>I really struggled to work out what to call this.</p>
+<p>My wife suggested clutch, but the actual meaning of a clutch is a small strapless bag which you hold and this mod doesn't really fit that description.</p>
+<p>In the end I just stuck with hand bag, which I think describes it well enough.</p>
+<p>Plus making a clutch seems very un-manly, I would have had to take a lot of flak from my brothers if they thought I had made a clutch!</p>
+<p>What am I saying - I made a hand bag...</p>
+<p>The hand bag is made from an old Brownie movie camera.</p>
+<p>I first used one of these camera's in my mini media centre hack.</p>
+<p>For anyone who thinks I've destroyed a priceless heirloom, please note that there are literally millions of these brownie cameras hidden in cupboards and draws where no-one can admire them.</p>
+<p>Yes you will need to destroy the camera, but you'll end up with something unique and functional.</p>
+<p>So why use a Brownie movie camera for this mod.</p>
+<p>Firstly the camera has a side door that comes right off.</p>
+<p>This makes it really easy to add a couple of hinges to create the opening to the bag.</p>
+<p>Also, there is a fair bit of room inside once you remove the spring mechanism.</p>
+<p>Lastly, they are very easy to hack!</p>
+<p>Everything comes apart simply, and can be just as easily be put back together.</p>
 <p>I also decided to utilize the lens and add a cree LED! The LED is activated by hitting the switch which use to make the film in the camera roll. I just couldn't see that switch and lens go to waste.</p>
 <p>A little history on the Brownie movie camera:</p>
-<p>Manufactured beginning in 1951, the Brownie 8 represents post-war consumerism and an increasingly mobile middle-class. Kodak called it “Everybody’s Movie Camera,” and for the low price of about $25, it was.</p>
-<p>Instead of a battery, the camera used a hand-crank motor that was activated upon pressing the only button at the front of the camera beneath the lens. The camera took Kodak’s standard 8mm film, which was sold in spools of 25 feet. As the film advanced through the camera, it re-spooled on a second spool, resulting in 50 feet of exposed movie film.</p>
+<p>Manufactured beginning in 1951, the Brownie 8 represents post-war consumerism and an increasingly mobile middle-class.</p>
+<p>Kodak called it “Everybody’s Movie Camera,” and for the low price of about $25, it was.</p>
+<p>Instead of a battery, the camera used a hand-crank motor that was activated upon pressing the only button at the front of the camera beneath the lens.</p>
+<p>The camera took Kodak’s standard 8mm film, which was sold in spools of 25 feet.</p>
+<p>As the film advanced through the camera, it re-spooled on a second spool, resulting in 50 feet of exposed movie film.</p>
 <p>Processing the film required a film technician to cut the film down the middle and edit the two 25-foot strips together, resulting in a spool of 50 feet of film that could be projected using the Brownie 8 Movie Projector.</p>
 <p>And now onto the hack...</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things to Gather image 6" loading="lazy"></div><p>Parts</p>
 <ol>
-<li>Brownie Movie Camera - eBay</li>
-</ul>
+<li>Brownie Movie Camera - <a href="http://www.ebay.com/sch/i.html?_trksid=m570.l3201&_nkw=brownie+movie+camera&_sacat=0">eBay</a></li>
+</ol>
 <ol>
 <li>Bag strap. I used an old leather belt I found at a charity shop.</li>
-</ul>
+</ol>
 <ol>
 <li>Hinges (Small). I got mine from the local hardware store. The only ones I could find that would work were brass, some stainless steel ones would be ideal</li>
-</ul>
+</ol>
 <ol>
-<li>Metal strap loops x 2 - eBay I scavenged mine from an old back pack</li>
-</ul>
+<li>Metal strap loops x 2 - <a href="http://www.ebay.com.au/itm/10-20-50-Loop-Oval-Ring-Leather-Purse-Bag-Handbag-Strap-1-2-5-8-1-1-25-1-5-/191213123777?pt=LH_DefaultDomain_0&var&hash=item2c8530b8c1&_uhb=1">eBay</a> I scavenged mine from an old back pack</li>
+</ol>
 <ol>
-<li>Small rare earth magnets (2) - eBay</li>
-</ul>
+<li>Small rare earth magnets (2) - <a href="http://www.ebay.com/itm/20pcs-N35-Super-Strong-Block-Square-Rare-Earth-Neodymium-Magnets-10-x-5-x-3mm-/231267359206?pt=LH_DefaultDomain_0&hash=item35d89bd9e6">eBay</a></li>
+</ol>
 <ol>
 <li>Scrap fabric - I used some thick fabric that I had left over from another project. Curtain fabric would also work well.</li>
-</ul>
+</ol>
 <p>If you want to add the light you will need the following as well:</p>
 <ol>
-<li>Cree LED - eBay</li>
-</ul>
+<li>Cree LED - <a href="http://www.ebay.com.au/itm/CREE-XREQ5-LED-White-Flashlight-Lamp-Bead-Light-Torch-Bulb-500Lm-3-3-7V-/230989428367?pt=AU_Car_Parts_Accessories&hash=item35c80af68f&_uhb=1">eBay</a></li>
+</ol>
 <ol>
-<li>1 X CR2032 battery holder - eBay</li>
-</ul>
+<li>1 X CR2032 battery holder - <a href="http://www.ebay.com.au/itm/10pcs-Portable-CR2032-CR2025-General-Button-Battery-Clip-Holder-Box-Case-v-h9-/221298022151?pt=AU_Electronics_Batteries_Chargers&hash=item338663d707&_uhb=1">eBay</a></li>
+</ol>
 <ol>
-<li>1 X CR2032 battery - eBay</li>
-</ul>
+<li>1 X CR2032 battery - <a href="http://www.ebay.com.au/itm/2-brand-new-PANASONIC-CR2032-3v-Lithium-Battery-in-original-package-free-postage-/130736096373?pt=AU_Electronics_Batteries_Chargers&hash=item1e707a8475&_uhb=1">eBay</a></li>
+</ol>
 <ol>
 <li>A couple lengths of wire</li>
-</ul>
+</ol>
 <p>Tools and Material</p>
 <ol>
 <li>Super glue</li>
-</ul>
+</ol>
 <ol>
 <li>Hot Glue</li>
-</ul>
+</ol>
 <ol>
 <li>Spray glue</li>
-</ul>
+</ol>
 <ol>
 <li>Solder and soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Rotary tool</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdrivers and Phillips head</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Pulling Apart the Camera</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pulling Apart the Camera image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pulling Apart the Camera image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pulling Apart the Camera image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Pulling Apart the Camera image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Pulling Apart the Camera image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Pulling Apart the Camera image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Pulling Apart the Camera image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Pulling Apart the Camera image 8" loading="lazy"></div><p>First thing to do is to pull the camera apart. There is nothing too tricky in doing this, just make sure you keep all of the screws and bits and pieces.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Pulling Apart the Camera</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pulling Apart the Camera image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pulling Apart the Camera image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pulling Apart the Camera image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Pulling Apart the Camera image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Pulling Apart the Camera image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Pulling Apart the Camera image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Pulling Apart the Camera image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Pulling Apart the Camera image 8" loading="lazy"></div><p>First thing to do is to pull the camera apart. There is nothing too tricky in doing this, just make sure you keep all of the screws and bits and pieces.</p>
 <p>Steps:</p>
 <ol>
 <li>Undo all of the screws that you can see on the outside and inside of the camera.</li>
-</ul>
+</ol>
 <ol>
 <li>Use a pair of needle nose pliers to un-screw the key which is used to tighten-up the spring.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the front of the camera.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the spring mechanism from the inside. You won't need this so put it to one side.</li>
-</ul>
+</ol>
 <ol>
 <li>What you should have in the end is the 2 sides, the actual lens (front of the camera) and the cowling.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Removing the Protective Inside Cover</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing the Protective Inside Cover image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing the Protective Inside Cover image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing the Protective Inside Cover image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing the Protective Inside Cover image 4" loading="lazy"></div><p>On the door which comes off, there is a metal plate which ensures light doesn't enter where the film is. you will need to remove this.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Removing the Protective Inside Cover</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing the Protective Inside Cover image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing the Protective Inside Cover image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing the Protective Inside Cover image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing the Protective Inside Cover image 4" loading="lazy"></div><p>On the door which comes off, there is a metal plate which ensures light doesn't enter where the film is. you will need to remove this.</p>
 <p>Steps:</p>
 <ol>
 <li>There are 4, small rivets that hold a small plate to the front of the door. With a rotary tool, grind these down with a sanding bit.</li>
-</ul>
+</ol>
 <ol>
 <li>Once ground down, use a punch to push out the rivets. You don't want to totally remove the rivets, just hit them until you hear a pop. This will mean that they have gone though the metal plate but not the door.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the metal plate by giving it a wiggle.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Hinges</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Hinges image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Hinges image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Hinges image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Hinges image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Hinges image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Hinges image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Hinges image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Hinges image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Adding the Hinges image 9" loading="lazy"></div><p>This part is a little tricky as you need to mod the cowling or metal body of the camera.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Hinges</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Hinges image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Hinges image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Hinges image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Hinges image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Hinges image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Hinges image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Hinges image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Hinges image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Adding the Hinges image 9" loading="lazy"></div><p>This part is a little tricky as you need to mod the cowling or metal body of the camera.</p>
 <p>Steps:</p>
 <ol>
 <li>Mark out on the cowling where you want the hinges to go.</li>
-</ul>
+</ol>
 <ol>
 <li>with some small tin snips, make 2 cuts. Each cut should be about 10mm long. Use a pair of pliers and carefully bend the metal back and forth until they snap off. The metal is aluminium so it breaks easily once you give it a couple of bends. The cowling has a lip so the lip and a part of the actual body of the camera has to be remove in order for the hinge to fit correctly. Check out the images as these will hopefully explain it better.</li>
-</ul>
+</ol>
 <ol>
 <li>The part of the hinge which has the pin through it will be on the outside of the camera so when making the cuts you need to make sure that there is enough room for this part of the hinge.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill out the holes in the door and cowling for the hinges and add some screws. If you have small enough screws and bolts I would make sure that the head of the screw is on the outside of the camera. Unfortunately I only had some small screws so I did the reverse of this and screwed them from the inside. This meant that I had to screw into the camera and make sure there was a thread for the screws in the actual camera. As it is made from aluminium all I had to do was put a bit of pressure on the screw and it made its own thread.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Door - Continued</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Door - Continued image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Door - Continued image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Door - Continued image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Door - Continued image 4" loading="lazy"></div><p>Once the hinges are added, you might find that the door is a little tight or it doesn't close easily. You can fix this by doing the following:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Door - Continued</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Door - Continued image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Door - Continued image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Door - Continued image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Door - Continued image 4" loading="lazy"></div><p>Once the hinges are added, you might find that the door is a little tight or it doesn't close easily. You can fix this by doing the following:</p>
 <ol>
 <li>Find there the door is sticking. On mine it was the lip between the hinges.</li>
-</ul>
+</ol>
 <ol>
 <li>As before, use a pair of pliers and bend until it snaps off.</li>
-</ul>
+</ol>
 <ol>
 <li>If the door is still a little hard to shut, you'll probably find that when you add the front of the camera, this will sort itself out.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the LED</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the LED image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the LED image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the LED image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the LED image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the LED image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the LED image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the LED image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the LED image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the LED image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Adding the LED image 10" loading="lazy"><img src="images/step06_11.jpg" alt="Step 6: Adding the LED image 11" loading="lazy"><img src="images/step06_12.jpg" alt="Step 6: Adding the LED image 12" loading="lazy"><img src="images/step06_13.jpg" alt="Step 6: Adding the LED image 13" loading="lazy"><img src="images/step06_14.jpg" alt="Step 6: Adding the LED image 14" loading="lazy"></div><p>If you have decided to also add the LED to the lens then you will need to do the following. Initially I used 2 x AAA batteries to power the LED but it took up too much room in the case. In the end I went with a large button battery, it isn't as bright but it hardly takes up any room.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the LED</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the LED image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the LED image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the LED image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the LED image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the LED image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the LED image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the LED image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the LED image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the LED image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Adding the LED image 10" loading="lazy"><img src="images/step06_11.jpg" alt="Step 6: Adding the LED image 11" loading="lazy"><img src="images/step06_12.jpg" alt="Step 6: Adding the LED image 12" loading="lazy"><img src="images/step06_13.jpg" alt="Step 6: Adding the LED image 13" loading="lazy"><img src="images/step06_14.jpg" alt="Step 6: Adding the LED image 14" loading="lazy"></div><p>If you have decided to also add the LED to the lens then you will need to do the following.</p>
+<p>Initially I used 2 x AAA batteries to power the LED but it took up too much room in the case.</p>
+<p>In the end I went with a large button battery, it isn't as bright but it hardly takes up any room.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a small hole into the back of the of the camera and add a screw (see images below) this is where one of the wires will be attached.</li>
-</ul>
+</ol>
 <ol>
 <li>Next you will need to attach the LED to the back of the lens. I used a small metal ring and pushed the LED into this. make sure its a tight fit and super glue together. By adding the ring you'll make sure that the LED sits correctly to the back of the lens.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder on one of the battery wires to the led.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach one of the battery wires to the screw in the body you added.</li>
-</ul>
+</ol>
 <p>If you hit the switch at the front of the camera you'll see that a small metal arm moves on the inside. This will be how you turn on the LED.</p>
 <ol>
 <li>With a stanley knife, carefully remove a small section of the plastic from the other battery wire not used yet. You want to expose about 3-5mm of the wire. Add some solder as this will make the exposed wire stronger.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly you will need to super glue down the wire so the exposed part touches the metal arm inside the camera. Once you have everything lined-up glue down the wire.</li>
-</ul>
+</ol>
 <ol>
 <li>If the light turns on when the switch is moved-up, you have everything working right. Glue down the battery holder to the back of the lens section.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Finishing the Sides</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finishing the Sides image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finishing the Sides image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finishing the Sides image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finishing the Sides image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Finishing the Sides image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Finishing the Sides image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Finishing the Sides image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Finishing the Sides image 8" loading="lazy"></div><p>You'll have noticed that the sides have a couple holes in them! You need to replace the bits that you removed earlier.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Finishing the Sides</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finishing the Sides image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finishing the Sides image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finishing the Sides image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finishing the Sides image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Finishing the Sides image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Finishing the Sides image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Finishing the Sides image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Finishing the Sides image 8" loading="lazy"></div><p>You'll have noticed that the sides have a couple holes in them! You need to replace the bits that you removed earlier.</p>
 <p>Steps:</p>
 <ol>
 <li>For the actual door, all you need to do is remove the small, black slider and glue this onto the inside oof the door.</li>
-</ul>
+</ol>
 <p>For the other side you'll need to do the following:</p>
 <ol>
 <li>With a grinder, cut off most of the end of the key.</li>
-</ul>
+</ol>
 <ol>
 <li>Glue into place with some super glue. Once dry, add some hot glue.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding Fabric to the Inside of the Camera</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 4" loading="lazy"></div><p>I decided to add some fabric to the insides to there wasn't so much metal exposed. You don't have to do this step but it does help to make it look cleaner,</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding Fabric to the Inside of the Camera</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding Fabric to the Inside of the Camera image 4" loading="lazy"></div><p>I decided to add some fabric to the insides to there wasn't so much metal exposed. You don't have to do this step but it does help to make it look cleaner,</p>
 <p>Steps:</p>
 <ol>
 <li>Use one of the sides as a template and cut out 2 pieces of cloth.</li>
-</ul>
+</ol>
 <ol>
 <li>You'll need to make a few extra cuts to make sure the cloth fits snugly. Once it does, glue down with some spray glue.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some pressure right round the cloth and make sure it is stuck down on all sections.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Final Side and Magnets</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Final Side and Magnets image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Final Side and Magnets image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Final Side and Magnets image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Final Side and Magnets image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Final Side and Magnets image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Final Side and Magnets image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Final Side and Magnets image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Final Side and Magnets</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Final Side and Magnets image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Final Side and Magnets image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Final Side and Magnets image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Final Side and Magnets image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Final Side and Magnets image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Final Side and Magnets image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Final Side and Magnets image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Add the side to the body of the camera and mark out 4 spots to add some screws.</li>
-</ul>
+</ol>
 <ol>
 <li>Punch the spots and carefully drill out some holes.</li>
-</ul>
+</ol>
 <ol>
 <li>The screws should be metal ones. These will create their own thread once you start screwing into place.</li>
-</ul>
+</ol>
 <ol>
 <li>Next add the magnets with some super glue. One needs to go onto the door and the other inside the camera. I added 2 together of the magnets to the door which worked well. The door is tight and won't open by itself, but you can open it with a slight pull.</li>
-</ul>
+</ol>
 <ol>
 <li>I also roughed up one side of the magnets to ensure that they stuck fast.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Handle</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Handle image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Handle image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Handle image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Handle image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Handle image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Handle image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Handle image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding the Handle image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Adding the Handle image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Adding the Handle image 10" loading="lazy"><img src="images/step10_11.jpg" alt="Step 10: Adding the Handle image 11" loading="lazy"></div><p>It took me awhile to work out what to use as a handle. I thought about using a guitar strap but it was too thick and would have turned it it into a shoulder bag. In the end I went with an old leather belt that I purchased from a charity shop. The strap loops were re-purposed from a back pack that I also got from the charity shop.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Handle</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Handle image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Handle image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Handle image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Handle image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Handle image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Handle image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Handle image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding the Handle image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Adding the Handle image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Adding the Handle image 10" loading="lazy"><img src="images/step10_11.jpg" alt="Step 10: Adding the Handle image 11" loading="lazy"></div><p>It took me awhile to work out what to use as a handle.</p>
+<p>I thought about using a guitar strap but it was too thick and would have turned it it into a shoulder bag.</p>
+<p>In the end I went with an old leather belt that I purchased from a charity shop.</p>
+<p>The strap loops were re-purposed from a back pack that I also got from the charity shop.</p>
 <p>Steps:</p>
 <ol>
 <li>Add the 2 strap loops to the camera. The easiest and best way is to use the metal plates that held in the 2 focus sections. I added a couple larger screws as the loops were thicker than focus sections and I wanted to make sure that the loops were securely in place.</li>
-</ul>
+</ol>
 <ol>
 <li>Next cut a section of the belt to use as the handle. Remember that you need to fold the ends up on the belt so make sure you take this into consideration when working out how long you want the handle.</li>
-</ul>
+</ol>
 <ol>
 <li>Fold the belt as shown in the image below and drill a hole through the belt on both ends.</li>
-</ul>
+</ol>
 <ol>
 <li>Use a small nut and screw and secure the belt to the loops. I also used couple of small washers which I used so the screw head and nut wouldn't go right through the belt.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Final Touches</h2><p>So now you should hopefully have a finished bag, looks pretty good doesn't it!</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Final Touches</h2><p>So now you should hopefully have a finished bag, looks pretty good doesn't it!</p>
 <p>There are a few things that you can do to make it even more special. Below are a couple of extra bits that I added (at the advice of my wife) which helps it make it more user friendly.</p>
 <ol>
 <li>Add a card holder. The one that I used (found on eBay) has a mirror finish and can double up as a mirror. As there isn't much room inside the bag, you want to be able to utilize all the space possible.</li>
-</ul>
+</ol>
 <ol>
 <li>Lipstick holder/case.</li>
-</ul>
+</ol>
 <ol>
 <li>A compartment that is made from fabric and has elastic across the top. This would sit flush against the back wall, half way up.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

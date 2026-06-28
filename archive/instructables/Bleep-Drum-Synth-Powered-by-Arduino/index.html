@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Bleep Drum Synth - Powered by Arduino</span>
 </nav>
-<h1>Bleep Drum Synth - Powered by Arduino</h1><div class="source"><a href="https://www.instructables.com/Bleep-Drum-Synth-Powered-by-Arduino/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>In this build I recreate the fantastic Bleep Labs 'Bleep Drum' into a Eurorack format module. I'm working on building my own 'simple' 9v Eurorack which this synth will be a part of.</p>
-<p>Check out my other recent builds to see the other modules already designed.</p>
-<p>So what is the Bleep Drum Synth? Well it's an Arduino based drum machine that allows you to play drum tracks using 4 different samples and record them so you can layer them them up and create some great drum beats.</p>
+<h1>Bleep Drum Synth - Powered by Arduino</h1><div class="source"><a href="https://www.instructables.com/Bleep-Drum-Synth-Powered-by-Arduino/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>In this build I recreate the fantastic Bleep Labs '<a href="https://bleeplabs.com/product/bleep-drum-midi/">Bleep Drum</a>' into a Eurorack format module.</p>
+<p>I'm working on building my own 'simple' 9v Eurorack which this synth will be a part of.</p>
+<p>Check out my other <a href="https://www.instructables.com/member/lonesoulsurfer/instructables/">recent builds</a> to see the other modules already designed.</p>
+<p>So what is the Bleep Drum Synth?</p>
+<p>Well it's an Arduino based drum machine that allows you to play drum tracks using 4 different samples and record them so you can layer them them up and create some great drum beats.</p>
 <p>I have also added a Sync in which allows you to connect to other modules and play along with them.</p>
 <p>Here's a rundown of the features:</p>
 <p>– Four sounds, two with pitch control</p>
@@ -149,17 +186,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Can fit into any modular synth Eurorack (include the ability to power the module via normal module power sources)</li>
 <li>Has to sound great!</li>
 </ul>
-<p>Let's get building!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<p>Let's get building!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>I've created a parts list which can be found in my <a href="https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth">GitHub</a> page and in the PDF file attached to this step.</p>
+<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p>
 <ul>
 <li><a href="pdfs/Parts List.pdf">Parts List</a></li>
-</ul><a class="pdf-download" href="pdfs/Parts List.pdf" target="_blank">&#8675; Parts List</a><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
+<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
+<p>I use <a href="https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE">JLCPCB</a> (not affiliated) to get this done.</p>
+<p>The front panel is actually just a PCB without any components included!</p>
+<p>The front design is done in a program called <a href="https://inkscape.org/">Inkscape</a> (available free) and the panel including the drilled holes is done in <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a> (also free!)</p>
+<p>The files that you need to build your own Bleep Drum Synth can be found in my <a href="https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth">GitHub</a> page.</p>
+<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
 <p>STEPS:</p>
 <ul>
-<li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
+<li>Send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the PCB and front panel for you. Download all of the files from my <a href="https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth">GitHub</a> page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</li>
 </ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components Part 1 image 5" loading="lazy"></div><p>As the PCB is 2 sided, the order you add the components does matter. If you get it wrong it's not the end of the world but it might make it a little harder to add some component.</p>
@@ -178,7 +221,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>STEPS:</p>
 <ul>
 <li>First, place the RGB LED into place, making sure that it's sitting up a little bit from the board. This way it will poke through the front panel</li>
-<li>Now you can add the 5 momentary switches. I usually put them all into place and then solder the legs into place. Flip the PCB over and make sure that they are all sitting fat. If not, then just re-heat the solder and push down on the switch</li>
+<li>Now you can add the 5 momentary switches.  I usually put them all into place and then solder the legs into place.   Flip the PCB over and make sure that they are all sitting fat.  If not, then just re-heat the solder and push down on the switch</li>
 <li>Next add the audio jacks and then the larger momentary switches</li>
 <li>Lastly, solder the pots into place</li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Front Panel image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Front Panel image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Front Panel image 5" loading="lazy"></div><p>STEPS:</p>
@@ -188,10 +231,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>As there is nothing to secure the bottom of the front panel to the PCB, I have added a couple holes so you can add some spaces (M2) and ensure that the bottom section is connected.</li>
 <li>You can add the nuts to the pots, audio jacks and on/off switch to secure the front panel to the PCB.</li>
 <li>Now that the front panel is in place, you can either make an individual case to house it in or add it to your Eurorack.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Uploading the Sketch to the Arduino</h2><div class="step-images single"><img src="images/step07_01.png" alt="Step 6: Uploading the Sketch to the Arduino image 1" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Uploading the Sketch to the Arduino</h2><div class="step-images single"><img src="images/step07_01.png" alt="Step 6: Uploading the Sketch to the Arduino image 1" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out <a href="https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE">this link</a>.</p>
+<p>It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
 <p>STEPS:</p>
 <ul>
-<li>Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my GitHub page</li>
+<li>Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my <a href="https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth">GitHub</a> page</li>
 <li>Connect your Arduino and upload the sketch</li>
 <li>Once the sketch is loaded to Arduino you can connect it to the PCB for testing.</li>
 <li>Connect the PCB to a 9V to 12V power source and check that the Drum synth works. Plug a speaker in to the out jack and hit the start button. Check out the 'How to Play' in the last step and start to create some beats. if you hear sounds then you have successfully loaded the sketch and solder the PCB correctly.</li>
@@ -211,6 +255,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Pink – Pots control noise.</p>
 <p>All other controls are the same.</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
 <li><a href="pdfs/Parts List.pdf">Parts List</a></li>
-</ul><a class="pdf-download" href="pdfs/Parts List.pdf" target="_blank">&#8675; Parts List</a>
+</ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

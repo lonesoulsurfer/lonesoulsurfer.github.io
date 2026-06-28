@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,345 +163,392 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Headphone Amp in an NES Controller!</span>
 </nav>
 <h1>Headphone Amp in an NES Controller!</h1><div class="source"><a href="https://www.instructables.com/Headphone-Amp-in-an-NES-Controller/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I’ve done a few builds now with NES controllers (check them out below). This time round I managed to add a headphone amp inside one – no mean feat when you consider how much space is inside</p>
-<p>The trick was to use a li-op battery (from an old phone) with a charging module and voltage regulator in one. This reduced the room needed for these parts and ensured there was enough room for the circuit, pot, LED and switch.</p>
+<p>The trick was to use a li-op battery (from an old phone) with a charging module and voltage regulator in one.</p>
+<p>This reduced the room needed for these parts and ensured there was enough room for the circuit, pot, LED and switch.</p>
 <p>Wire can also take up a lot of space inside a build like this so I used very thin computer cable wire to reduce the amount of space it can take up.</p>
-<p>The NES controller I found in a bin with the cord cut. Someone must of thought that the copper inside was worth more than the actual controller! It would have been great to have been able to utilize the buttons on the controller but this just wasn’t possible so I compromised where I had to. The Pot is attached to the side where the cord originally was as there was already a hole for me to use and it seemed like the right spot to add it. I could have used one of the red button holes but the knob would have stuck up and would have been uncomfortable in a pocket.</p>
-<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one! Your phone doesn’t really have the power to drive a pair of headphones. You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range. When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
+<p>The NES controller I found in a bin with the cord cut.</p>
+<p>Someone must of thought that the copper inside was worth more than the actual controller!</p>
+<p>It would have been great to have been able to utilize the buttons on the controller but this just wasn’t possible so I compromised where I had to.</p>
+<p>The Pot is attached to the side where the cord originally was as there was already a hole for me to use and it seemed like the right spot to add it.</p>
+<p>I could have used one of the red button holes but the knob would have stuck up and would have been uncomfortable in a pocket.</p>
+<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one!</p>
+<p>Your phone doesn’t really have the power to drive a pair of headphones.</p>
+<p>You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range.</p>
+<p>When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
 <p>So without further ado – let’s get cracking</p>
 <p>Other headphone Amps I’ve Made</p>
-<p>Make Your Own Headphone Amp V1</p>
-<p>Make a Headphone Amp V2</p>
-<p>Mini Headphone Amp</p>
+<p><a href="https://www.instructables.com/id/Make-Your-Own-Headphone-Amp/">Make Your Own Headphone Amp V1</a></p>
+<p><a href="https://www.instructables.com/id/Make-a-Headphone-Amp/">Make a Headphone Amp V2</a></p>
+<p><a href="https://www.instructables.com/id/Mini-Headphone-Amp/">Mini Headphone Amp</a></p>
 <p>Projects with NES Controllers</p>
-<p>Variable Power Supply V2</p>
-<p>Light Theremin in a NES Controller - 555 Timer</p>
-<p>NES Controller Night Light V2</p>
-<p>NES Controller Night Light in Resin</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"></div><p>Parts:</p>
+<p><a href="https://www.instructables.com/id/Variable-Power-Supply-Nintendo-Style/">Variable Power Supply V2</a></p>
+<p><a href="https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/">Light Theremin in a NES Controller - 555 Timer</a></p>
+<p><a href="https://www.instructables.com/id/NES-Controller-Night-Light-V2/">NES Controller Night Light V2</a></p>
+<p><a href="https://www.instructables.com/id/NES-Controller-Night-Light-in-Resin/">NES Controller Night Light in Resin</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>NES Controller – You can buy copies for cheap on eBay</li>
-</ul>
+</ol>
 <ol>
-<li>10K duel gang Potentiometer – eBay</li>
-</ul>
+<li>10K duel gang Potentiometer – <a href="https://www.ebay.com.au/itm/10K-Ohm-Rotary-Potentiometer-Shaft-6Pin-6MM-Adjustable-Resistance-For-Speaker/392300039085?hash=item5b56e78bad:g:Z1kAAOSwje9c402w&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Potentiometer knob - eBay</li>
-</ul>
+<li>Potentiometer knob - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=potentiomener+knob&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=10k+duel+potentiometer">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 18K Resistor – eBay</li>
-</ul>
+<li>2 X 18K Resistor – <a href="https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>4 X 68K resistor – eBay</li>
-</ul>
+<li>4 X 68K resistor – <a href="https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>47K resistor - eBay</li>
-</ul>
+<li>47K resistor - <a href="https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>3mm LED – eBay</li>
-</ul>
+<li>3mm LED – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR12.TRC2.A0.H0.X3mm+LED.TRS0&_nkw=3mm+LED&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>NE5532 IC – eBay (10 IC's for just over a dollar!)</li>
-</ul>
+<li>NE5532 IC – <a href="https://www.ebay.com.au/itm/10PCS-NE5532P-NE5532-DIP-8-Dual-Low-Noise-Op-Amp-TI-IC-NEW/232812686621?hash=item3634b7ad1d:g:9YoAAOSwa69bKgik&frcectupt=true">eBay</a> (10 IC's for just over a dollar!)</li>
+</ol>
 <ol>
-<li>8 pin socket holder - eBay</li>
-</ul>
+<li>8 pin socket holder - <a href="https://www.ebay.com.au/itm/10-20-50-100PCS-8pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe/191981147298?_trkparms=ispr%3D1&hash=item2cb2f7d4a2:m:mTF1xdyk-_4Z3Jjf7SDk92g&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qXFPYrXeKDMVroSgY4vKZ9OiB9JNbZL16SEj4kaiGgCVtYs0e01fDkK7zxQ2TO3YAQq5zwcnwdjui6rmCUmuPhVDmFcQWEO%2FZeCjN90bXJttD8OOWOns3AraqtZm%2B5lL0HQPGms%2BNa3kfpc%2Fe5xum4gvF8I0I4lqlBlAKKzAXvYaa95PRKFJoRXMX%2FPUZ7ZxNfyMaJOF31RkaUBivS8mXHJzPXRhHwG3b7KMSw%2FI2GfBruRyyWX0PGwfs5rOOWB09kerc6mGn%2F%2BNtcNHjYXnP%2FP31AmSSjMAHw7S%2FsuBagcL9XvKLi6Hh88%2F%2BvUyqigcq6hnLIWOnp3bXy8tQtj07xoq2orksL62WvLxVQndpUIk%2B3QMnzNoUY7boa%2BSYcInluH%2BqM29ugMUvmY60mI5IQAD6R9jDk3HgCLPTwMWGCf2qinYCzeGBsSHoOX99zliYZGav81kGZzrf5vAUEoEXp2hNPpyBe0Mpc0byERdW4y%2BhJtTL44geZLdHKqupsHsZgQL3MNsSwAFejCIiXGXIadilIWSdGYg%2BEgQPosVKNWDHTUvAosruiOLQYDp33ebobG7pkUAUoTvn5%2BwZvL1q%2B6k7ZH9NTp8GzucgkxXguj0UfhmNWo2ibc4%2BqAhWUJCq00RObvlxOClEaWkAOjP9yEbGo5T4aT%2FZfzdFDJS5vifJwYqbX%2BdWWJNrQ%2BCikJ3Gje5w%2B05gDgk4osQ4af0h1x1q5YKLDRz5%2BGoQMrD5%2Fhog%3D%3D&checksum=19198114729840f6fb23abb341a780c6bf821bef7321&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qXFPYrXeKDMVroSgY4vKZ9OiB9JNbZL16SEj4kaiGgCVtYs0e01fDkK7zxQ2TO3YAQq5zwcnwdjui6rmCUmuPhVDmFcQWEO%2FZeCjN90bXJttD8OOWOns3AraqtZm%2B5lL0HQPGms%2BNa3kfpc%2Fe5xum4gvF8I0I4lqlBlAKKzAXvYaa95PRKFJoRXMX%2FPUZ7ZxNfyMaJOF31RkaUBivS8mXHJzPXRhHwG3b7KMSw%2FI2GfBruRyyWX0PGwfs5rOOWB09kerc6mGn%2F%2BNtcNHjYXnP%2FP31AmSSjMAHw7S%2FsuBagcL9XvKLi6Hh88%2F%2BvUyqigcq6hnLIWOnp3bXy8tQtj07xoq2orksL62WvLxVQndpUIk%2B3QMnzNoUY7boa%2BSYcInluH%2BqM29ugMUvmY60mI5IQAD6R9jDk3HgCLPTwMWGCf2qinYCzeGBsSHoOX99zliYZGav81kGZzrf5vAUEoEXp2hNPpyBe0Mpc0byERdW4y%2BhJtTL44geZLdHKqupsHsZgQL3MNsSwAFejCIiXGXIadilIWSdGYg%2BEgQPosVKNWDHTUvAosruiOLQYDp33ebobG7pkUAUoTvn5%2BwZvL1q%2B6k7ZH9NTp8GzucgkxXguj0UfhmNWo2ibc4%2BqAhWUJCq00RObvlxOClEaWkAOjP9yEbGo5T4aT%2FZfzdFDJS5vifJwYqbX%2BdWWJNrQ%2BCikJ3Gje5w%2B05gDgk4osQ4af0h1x1q5YKLDRz5%2BGoQMrD5%2Fhog%3D%3D&checksum=19198114729840f6fb23abb341a780c6bf821bef7321">eBay</a></li>
+</ol>
 <ol>
-<li>SPDT switch - eBay</li>
-</ul>
+<li>SPDT switch - e<a href="https://www.ebay.com.au/itm/10x-SPDT-SLIDE-SWITCH-ON-OFF-Mini-PCB-Mount-Metal-Miniature-AUS-STOCK/171687864334?hash=item27f964e80e:g:noQAAOSwqu9U5TB~&frcectupt=true">Bay</a></li>
+</ol>
 <ol>
-<li>3 X 4.7uf capacitor – eBay</li>
-</ul>
+<li>3 X 4.7uf capacitor – <a href="https://www.ebay.com.au/itm/50PCS-50V-4-7uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitors-105-C/223758464007?hash=item34190b3407:g:CTMAAOSwCH9d0PrD&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 22pf ceramic capacitor – eBay</li>
-</ul>
+<li>2 X 22pf ceramic capacitor – <a href="https://www.ebay.com.au/itm/20pcs-pack-50v-10pf-10uf-monolithic-ceramic-capacitors-pitch-5-08mm-32-values/173519085833?hash=item28668b2109:m:m4kJ0kUJqRX--2AOXy7sxOw">eBay</a></li>
+</ol>
 <ol>
-<li>3 X 220uf capacitor – eBay</li>
-</ul>
+<li>3 X 220uf capacitor – <a href="https://www.ebay.com.au/itm/10-20-50PCS-16V-220uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-105C/392274265663?_trkparms=ispr%3D1&hash=item5b555e463f:m:mad9zAUmoKH9vcMO2PlSWXw&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qWmoOIRDZuX23GLxRgfy72txxoc%2BpirrRwr8ltGOJAyuMRKHDN8nsUZ48p9ZcebAzZw%2FUAAW2%2FM0AHosQ9%2BDv7Mezp%2F65q7uji%2B54rBJgYqX27NbGufAxc1e1TbzhIaNGpp21z5bOvX2ar9f%2BgHD3DaC0PEvLINxkJndf5YXFtxSFEWKbXmqlBaKzvtSmpOKX3gwm6iCJ7ckcMAsGmI4OGd5iwCTiQSeckxqw9IJ7eEour9qdcjI3VpKl%2BTS6mN79HQ1TaQNGPcZWTrjzG1xlT0NgV3emUUNbWiQSDa%2FvS2tT4mZVFEetHzlOcD6fyZJRPTxitWCCS9TXulEvPf%2B5grdxp2ff51HM04epBQhXWqLoenjB8SlYgQtIucU%2F%2FDE49Vs%2BpFxoicBsZT8crPQ2uhTjugJw%2FcmFZk5sw%2BxXChS4uQkyk6wwidH802I1P6vtrdMkbfF9gOpIwW%2Bt%2BMpmTpq407XKjO%2FT4kRXlfbZmhQ81WAZEjxZOfFpUFj233ajuPZNT%2F%2Fw6gnLws%2BeEbwYrOaioqpHHmjpMmemQBEXa0gVG5R%2BuvF7PSn831mIOZcPO4oQ0%2BXa1TXNETtw9jr7HJYe8FU64jz1LTzyAm%2B2nIr47MRO2us5gpl05fF%2F9ekpdXExBrxHNZQdE84B3ulM3jsnDU79W1r%2BUSHmNjWbKu887zNLipClOcfSI%2FGdZBx5AkXzYgxpL8JJOVvn6WG2EeOcRL6HYvZuHuEnrHE3Va81quVR35JY4eWMpyBTe6JD8%3D&checksum=3922742656632f79e352b08240e394721c56a67e47b1&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qWmoOIRDZuX23GLxRgfy72txxoc%2BpirrRwr8ltGOJAyuMRKHDN8nsUZ48p9ZcebAzZw%2FUAAW2%2FM0AHosQ9%2BDv7Mezp%2F65q7uji%2B54rBJgYqX27NbGufAxc1e1TbzhIaNGpp21z5bOvX2ar9f%2BgHD3DaC0PEvLINxkJndf5YXFtxSFEWKbXmqlBaKzvtSmpOKX3gwm6iCJ7ckcMAsGmI4OGd5iwCTiQSeckxqw9IJ7eEour9qdcjI3VpKl%2BTS6mN79HQ1TaQNGPcZWTrjzG1xlT0NgV3emUUNbWiQSDa%2FvS2tT4mZVFEetHzlOcD6fyZJRPTxitWCCS9TXulEvPf%2B5grdxp2ff51HM04epBQhXWqLoenjB8SlYgQtIucU%2F%2FDE49Vs%2BpFxoicBsZT8crPQ2uhTjugJw%2FcmFZk5sw%2BxXChS4uQkyk6wwidH802I1P6vtrdMkbfF9gOpIwW%2Bt%2BMpmTpq407XKjO%2FT4kRXlfbZmhQ81WAZEjxZOfFpUFj233ajuPZNT%2F%2Fw6gnLws%2BeEbwYrOaioqpHHmjpMmemQBEXa0gVG5R%2BuvF7PSn831mIOZcPO4oQ0%2BXa1TXNETtw9jr7HJYe8FU64jz1LTzyAm%2B2nIr47MRO2us5gpl05fF%2F9ekpdXExBrxHNZQdE84B3ulM3jsnDU79W1r%2BUSHmNjWbKu887zNLipClOcfSI%2FGdZBx5AkXzYgxpL8JJOVvn6WG2EeOcRL6HYvZuHuEnrHE3Va81quVR35JY4eWMpyBTe6JD8%3D&checksum=3922742656632f79e352b08240e394721c56a67e47b1&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 3.5mm stereo jack socket – eBay</li>
-</ul>
+<li>2 X 3.5mm stereo jack socket – <a href="https://www.ebay.com.au/itm/10Pcs-PJ-392-3-Pin-3-5mm-Stereo-Headphone-Audio-Video-Jack-Socket-Plug-Wv/293023325026?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649">eBay</a></li>
+</ol>
 <ol>
-<li>Prototype board – eBay</li>
-</ul>
+<li>Prototype board – <a href="https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3">eBay</a></li>
+</ol>
 <ol>
-<li>3.7 li-po battery – eBay or get one from an old phone</li>
-</ul>
+<li>3.7 li-po battery – <a href="https://www.ebay.com.au/itm/New-OEM-Battery-Replacement-for-Genuine-Original-Samsung-Galaxy-S2-S3-S4-S5-AU/163190414123?hash=item25fee81b2b:m:mxtq1eCD0Lnt63lj51SyFlA">eBay</a> or get one from an old phone</li>
+</ol>
 <ol>
-<li>3.7v charger and voltage regulator module - eBay</li>
-</ul>
+<li>3.7v charger and voltage regulator module - <a href="https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns">eBay</a></li>
+</ol>
 <ol>
-<li>Micro USB adapter - eBay</li>
-</ul>
+<li>Micro USB adapter - <a href="https://www.ebay.com.au/itm/5PCS-CJMCU-5V-Micro-USB-Interface-Power-Adapter-Board-Breakout-Module/264009126118?hash=item3d782b90e6:g:T~8AAOSw7Vtb1DPT&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Wires. I used thin computer ribbon cable which you can pick-up for free at your local e-waste or buy it on eBay</li>
-</ul>
+<li>Wires. I used thin computer ribbon cable which you can pick-up for free at your local e-waste or buy it on <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR2.TRC0.A0.H0.Xribbon+cable.TRS0&_nkw=ribbon+cable&_sacat=0">eBay</a></li>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Drill. It’s also good to have a stepped drill piece to make the holes (only just got myself a set recently and I love them)</li>
-</ul>
+</ol>
 <ol>
 <li>Wire cutters</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel (not necessary but always handy</li>
-</ul>
+</ol>
 <ol>
 <li>Exacto knife</li>
-</ul>
+</ol>
 <ol>
 <li>Usual screwdrivers, phillips heads etc</li>
-</ul>
+</ol>
 <ol>
 <li>Epoxy Glue</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: About the Amp Circuit I Choose to Build</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: About the Amp Circuit I Choose to Build image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: About the Amp Circuit I Choose to Build image 2" loading="lazy"></div><p>The amp is built using op amp 5532. The op amp is a low-distortion, low-noise device, which can drive low-impedance loads to a full voltage swing while maintaining low distortion. Furthermore, it is fully output short-circuit proof. I’ve included the datasheet on the op amp in case anyone is interested.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: About the Amp Circuit I Choose to Build</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: About the Amp Circuit I Choose to Build image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: About the Amp Circuit I Choose to Build image 2" loading="lazy"></div><p>The amp is built using op amp 5532.</p>
+<p>The op amp is a low-distortion, low-noise device, which can drive low-impedance loads to a full voltage swing while maintaining low distortion.</p>
+<p>Furthermore, it is fully output short-circuit proof.</p>
+<p>I’ve included the datasheet on the op amp in case anyone is interested.</p>
 <p>The other positives about this op amp is it’s cheap, you only need 1 for the circuit and you don’t have to worry about virtual grounds or trying to separate the input and output grounds.</p>
-<p>Also, when you first look at the schematic it might seem that there are 2 op amp IC’s. There is actually only one and is done this way so it is easier to design. The end result is a high quality, high performance portable device that is relatively easy to build and will change the way you listen to music from your phone.</p>
+<p>Also, when you first look at the schematic it might seem that there are 2 op amp IC’s.</p>
+<p>There is actually only one and is done this way so it is easier to design.</p>
+<p>The end result is a high quality, high performance portable device that is relatively easy to build and will change the way you listen to music from your phone.</p>
 <p>Make sure you also breadboard the circuit first. Nothing worse than thinking “you got this”, soldering everything into place then realising you have messed it up!</p>
 <ul>
 <li><a href="pdfs/ne5532.pdf">ne5532</a></li>
-</ul><a class="pdf-download" href="pdfs/ne5532.pdf" target="_blank">&#8675; ne5532</a><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the NES Controller</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the NES Controller image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the NES Controller image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the NES Controller image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the NES Controller image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Pulling Apart the NES Controller image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Pulling Apart the NES Controller image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Pulling Apart the NES Controller image 7" loading="lazy"></div><p>The first step is to pull apart the NES controller.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the NES Controller</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the NES Controller image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the NES Controller image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the NES Controller image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the NES Controller image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Pulling Apart the NES Controller image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Pulling Apart the NES Controller image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Pulling Apart the NES Controller image 7" loading="lazy"></div><p>The first step is to pull apart the NES controller.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the 6 screws on the back of the controller and keep in a safe place</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the circuit board and cord. The cord is wound around a couple of pieces of plastic inside the controller so you need to un-wind this</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the circuit board and all of the buttons. Keep the buttons with the screws – somewhere safe</li>
-</ul>
+</ol>
 <ol>
 <li>My controller was pretty dirty so I gave it a good wash in soapy water</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Removing the Excess Plastic Inside the Controller</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 5" loading="lazy"></div><p>Inside the controller, there are plastic gussets, brackets and other little pieces that you will need to remove. You have to make as much room as possible inside the controller to enable to fit the electronics inside. Make sure though that you don’t remove any of the screw mounts or you want be able to close the case!</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Removing the Excess Plastic Inside the Controller</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Removing the Excess Plastic Inside the Controller image 5" loading="lazy"></div><p>Inside the controller, there are plastic gussets, brackets and other little pieces that you will need to remove.</p>
+<p>You have to make as much room as possible inside the controller to enable to fit the electronics inside.</p>
+<p>Make sure though that you don’t remove any of the screw mounts or you want be able to close the case!</p>
 <p>Steps:</p>
 <ol>
 <li>First, use a pair of flat wire cutters and trim away all of the raised plastic that you see inside the case.</li>
-</ul>
+</ol>
 <ol>
 <li>You will need to remove the plastic that surrounds the buttons as well.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove any gussets around the insides of the case</li>
-</ul>
+</ol>
 <ol>
 <li>You will also need to remove the little bit of excess plastic that supported the cable hole. I just ran an exacto knife across it and carefully removed the excess plastic</li>
-</ul>
+</ol>
 <ol>
 <li>The only things that should be standing inside the controller are the screw mounts.</li>
-</ul>
+</ol>
 <ol>
 <li>Clean-up the plastic sections removed so there isn’t any little bits sticking up – you want the inside of the case as flat as possible</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Enlarging the Cord Hole to Fit the Pot Inside</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Enlarging the Cord Hole to Fit the Pot Inside</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Enlarging the Cord Hole to Fit the Pot Inside image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The hole that the cord came out of needs to be enlarged. The best way to do this is to put the controller case back together first.</li>
-</ul>
+</ol>
 <ol>
 <li>Enlarge the hole with a drill bit</li>
-</ul>
+</ol>
 <ol>
 <li>Un-do the controller again and place the pot in the section to make sure it fits ok.</li>
-</ul>
+</ol>
 <ol>
 <li>At this stage I also placed the main components inside the case so I could get a feel on how everything will be laid out inside the case.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Audio Jack Inputs to the NES Controller</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 5" loading="lazy"></div><p>I did think about adding the jack inputs to where the 2 red buttons on the NES controller are. I realised pretty quickly though that this would be awkward place to locate them as the jacks would be sticking out sideways which would be pretty uncomfortable le in your pocket.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Audio Jack Inputs to the NES Controller</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Audio Jack Inputs to the NES Controller image 5" loading="lazy"></div><p>I did think about adding the jack inputs to where the 2 red buttons on the NES controller are.</p>
+<p>I realised pretty quickly though that this would be awkward place to locate them as the jacks would be sticking out sideways which would be pretty uncomfortable le in your pocket.</p>
 <p>Steps:</p>
 <ol>
 <li>First, bend the legs on the jack inputs as shown in the images. This will give you a little more room inside the case</li>
-</ul>
+</ol>
 <ol>
 <li>Next, you need to drill a couple of holes to fit the input jacks. When drilling the holes into the side of the case make sure of the following:</li>
-</ul>
+</ol>
 <p>a. The holes will need to be drilled so the jack inputs can sit flat on the bottom of the case. To do this the drilled holes will need to be located as high as possible in the bottom case.</p>
 <p>b. Make sure that you take into consideration the screw mounts inside the case. If you drill the holes in the wrong place the mounts will get in the way</p>
 <ol>
 <li>Secure each of the jack inputs into place.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding a Switch to the NES Controller</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Switch to the NES Controller image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Switch to the NES Controller image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Switch to the NES Controller image 3" loading="lazy"></div><p>The switch I used was one that I had lying around. I would have pulled it out of some dead electronic gizmo. I decided to locate the switch in the “start” section on the NES controller, which seemed a fitting place</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding a Switch to the NES Controller</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Switch to the NES Controller image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Switch to the NES Controller image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Switch to the NES Controller image 3" loading="lazy"></div><p>The switch I used was one that I had lying around.</p>
+<p>I would have pulled it out of some dead electronic gizmo.</p>
+<p>I decided to locate the switch in the “start” section on the NES controller, which seemed a fitting place</p>
 <p>Steps:</p>
 <ol>
 <li>To secure the switch in place I used a little bit of epoxy glue. Switches and glue don’t really mix so don’t use much.</li>
-</ul>
+</ol>
 <ol>
 <li>Once dry, test the switch to make sure no glue got into the switch</li>
-</ul>
+</ol>
 <ol>
 <li>The “select” hole will have the original black button replaced a little later on</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Micro USB Adapter to the NES Controller</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 9" loading="lazy"></div><p>The charging module is awesome but the only small downfall is the USB outlet is recessed which makes it hard to use in a project like this. The solution is to add a mini USB adapter. There are clear solder points on both the module and the adapter so connecting them is a breeze</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Micro USB Adapter to the NES Controller</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Adding the Micro USB Adapter to the NES Controller image 9" loading="lazy"></div><p>The charging module is awesome but the only small downfall is the USB outlet is recessed which makes it hard to use in a project like this.</p>
+<p>The solution is to add a mini USB adapter.</p>
+<p>There are clear solder points on both the module and the adapter so connecting them is a breeze</p>
 <p>Steps:</p>
 <ol>
 <li>As I wanted to keep the battery, module and adapter close together (only short lengths of wire needed), I decided to add the adapter close to the potentiometer.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the adapter inside the case and mark out where the USB input will exit the case</li>
-</ul>
+</ol>
 <ol>
 <li>To make the small slot for the USB outlet, first drill a couple small holes as shown in the image. The drill bit should be aprox ¾ the width of the USB outlet</li>
-</ul>
+</ol>
 <ol>
 <li>Next, cut away the small piece of plastic between the holes</li>
-</ul>
+</ol>
 <ol>
 <li>Use a small, flat file to start to shape the slot. Take your time and slowly enlarge it until the USB outlet just fits</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, use a small amount of epoxy on the bottom of the outlet and glue into place. Make sure you don’t get any glue inside the USB outlet</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Attaching the Charging Module to the Battery</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 5" loading="lazy"></div><p>I forgot to take photos but before you add the battery, you’ll need to glue all of the buttons in place. I added a little epoxy glue to each and glued them into place</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Attaching the Charging Module to the Battery</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Attaching the Charging Module to the Battery image 5" loading="lazy"></div><p>I forgot to take photos but before you add the battery, you’ll need to glue all of the buttons in place. I added a little epoxy glue to each and glued them into place</p>
 <p>Steps:</p>
-<p>I recently did an Instructable on how to reuse old mobile batteries which can be found here. This Instructable will take you through how to wire the module up to the battery</p>
+<p>I recently did an Instructable on how to reuse old mobile batteries which can be <a href="https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/">found here</a>.</p>
+<p>This Instructable will take you through how to wire the module up to the battery</p>
 <ol>
 <li>Add some superglue to the bottom of the module and stick it onto the battery. Make sure that the “battery” solder points are facing the battery terminals</li>
-</ul>
+</ol>
 <ol>
 <li>To connect the module to the battery I used some resistor legs. Add some solder to each of the battery terminals. Make sure that you add the solder quickly as you don’t want the battery to overheat.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a resistor leg to the positive solder point on the module, bend the leg and then solder it to the battery</li>
-</ul>
+</ol>
 <ol>
 <li>Do the same for the ground.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Wiring the Switch and the USB Adapter</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 6" loading="lazy"></div><p>As mentioned in an earlier step, the wire I used is thin ribbon wire. In a project like this I need to reduce the amount of space where I can and using ribbon wire works a treat.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring the Switch and the USB Adapter</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Wiring the Switch and the USB Adapter image 6" loading="lazy"></div><p>As mentioned in an earlier step, the wire I used is thin ribbon wire. In a project like this I need to reduce the amount of space where I can and using ribbon wire works a treat.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder 2 lengths of wire to the ground and positive solder points on the USB outlet</li>
-</ul>
+</ol>
 <ol>
 <li>Work out how long each needs to be, trim and solder to the input solder points on the charging module</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder a wire to the positive output solder point on the module. Measure, trim and solder the other end to one of the end solder points on the switch. The other wire that will be soldered to the switch will come from the circuit</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 4" loading="lazy"></div><p>Adding an LED is a great way to indicate when the amp is on. It’s a simple addition which is definitely worth including.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding an LED to Indicate When the Headphone Amp Is On/Off image 4" loading="lazy"></div><p>Adding an LED is a great way to indicate when the amp is on. It’s a simple addition which is definitely worth including.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a 3mm hole into the NES controller where you want to have the LED. I placed this on top off the controller near the pot and USB outlet</li>
-</ul>
+</ol>
 <ol>
 <li>Push the LED into the hole and if necessary, add a little superglue to keep it in place</li>
-</ul>
+</ol>
 <ol>
 <li>Trim the positive LED leg and solder on a 3.3K resistor.</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the other leg of the resistor to the middle solder point on the switch</li>
-</ul>
+</ol>
 <ol>
 <li>The other leg on the LED will be attached to ground on the circuit board</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Working Out the Right Size for the Prototype Board</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 4" loading="lazy"></div><p>It might seem a little backward to first add all of the parts to the case and then work out the size of the prototype board but it’s a good way to work out exactly what room you have to work with. I obviously was adding the parts to the NES controller with the circuit board in mind, trying to leave as much space as possible.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Working Out the Right Size for the Prototype Board</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Working Out the Right Size for the Prototype Board image 4" loading="lazy"></div><p>It might seem a little backward to first add all of the parts to the case and then work out the size of the prototype board but it’s a good way to work out exactly what room you have to work with.</p>
+<p>I obviously was adding the parts to the NES controller with the circuit board in mind, trying to leave as much space as possible.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the prototype board inside the controller. The board fits very well length ways but will need to be trimmed and cut in half in order for it to fit.</li>
-</ul>
+</ol>
 <ol>
 <li>You can see why I bent the legs up on the jack inputs. This gives me a little more room for the circuit board</li>
-</ul>
+</ol>
 <ol>
 <li>The switch and screw mount was in the way so I just cut out these sections on the prototype board and fitted it around them</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Making the Circuit - Part 1 image 4" loading="lazy"></div><p>So, I decided to solder the IC directly to the circuit board. I’d suggest you don’t do this and use a IC socket so you can change the IC if something goes wrong.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Making the Circuit - Part 1 image 4" loading="lazy"></div><p>So, I decided to solder the IC directly to the circuit board. I’d suggest you don’t do this and use a IC socket so you can change the IC if something goes wrong.</p>
 <p>I’ll go through the circuit build step by step so if you are new to this type of build you should be able to follow along easily.</p>
 <p>Steps:</p>
 <ol>
 <li>First, solder the IC into place. You can see in the images that I placed it 4 holes away from the edge. This gives you some room when adding the capacitors</li>
-</ul>
+</ol>
 <ol>
 <li>Next, connect pin 4 to the ground bus and pin 8 to the positive bus on the prototype board. I use resistor legs to do this</li>
-</ul>
+</ol>
 <ol>
 <li>Grab both the 220 uf caps. The first one solder the positive leg to pin 7 and the other leg to a spare solder point. Lay it flat like I did in the images. If you don’t you won’t be able to fit it into the NES controller</li>
-</ul>
+</ol>
 <ol>
 <li>The other solder the positive leg to pin 1 and the other leg to a spare solder point</li>
-</ul><h2><span class="step-num">STEP 14</span>Step 14: Making the Circuit - Part 2</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Making the Circuit - Part 2 image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Making the Circuit - Part 2 image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Making the Circuit - Part 2 image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Making the Circuit - Part 2 image 4" loading="lazy"></div><p>You might have noticed that pin 3 on the IC has a few components soldered to it. I had to come up with a way to attach all of the parts which I think worked well. In this step, I will start to expand pin 3 to enable to be able to attach all of the parts needed</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Making the Circuit - Part 2</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Making the Circuit - Part 2 image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Making the Circuit - Part 2 image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Making the Circuit - Part 2 image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Making the Circuit - Part 2 image 4" loading="lazy"></div><p>You might have noticed that pin 3 on the IC has a few components soldered to it.</p>
+<p>I had to come up with a way to attach all of the parts which I think worked well.</p>
+<p>In this step, I will start to expand pin 3 to enable to be able to attach all of the parts needed</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a 68K resistor to pins 1 and 2 and also top pins 6 and 7</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a 22pf cap to the same pins</li>
-</ul>
+</ol>
 <ol>
 <li>Add a jumper wire (just a resister leg) from pin 3 to the spare solder point next to the IC</li>
-</ul><h2><span class="step-num">STEP 15</span>Step 15: Making the Circuit - Part 3</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Making the Circuit - Part 3 image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Making the Circuit - Part 3 image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Making the Circuit - Part 3 image 3" loading="lazy"></div><p>You next need to solder the 18K resistors. You can see in the images that these are going out to the right of the prototype board. That’s because you will need to add a couple of caps later and will need the space</p>
+</ol><h2><span class="step-num">STEP 15</span>Step 15: Making the Circuit - Part 3</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Making the Circuit - Part 3 image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Making the Circuit - Part 3 image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Making the Circuit - Part 3 image 3" loading="lazy"></div><p>You next need to solder the 18K resistors.</p>
+<p>You can see in the images that these are going out to the right of the prototype board.</p>
+<p>That’s because you will need to add a couple of caps later and will need the space</p>
 <p>Steps:</p>
 <ol>
 <li>Add an 18K resistor to pin 6 and solder the other leg to a spare spot on the prototype board.</li>
-</ul>
+</ol>
 <ol>
 <li>Do the same for pin 2</li>
-</ul>
+</ol>
 <ol>
 <li>Time to add one of the first resistors to pin 3. Place a 68K resistor in the last hole closest to the ground bus strip and solder into place. Solder the other leg to ground</li>
-</ul><h2><span class="step-num">STEP 16</span>Step 16: Making the Circuit - Part 4</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Making the Circuit - Part 4 image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Making the Circuit - Part 4 image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Making the Circuit - Part 4 image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Making the Circuit - Part 4 image 4" loading="lazy"></div><p>Now it’s time to add another resistor to pin 3 along with a 4.7 Cap. You also need to connect pins 3 and 5 together.</p>
+</ol><h2><span class="step-num">STEP 16</span>Step 16: Making the Circuit - Part 4</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Making the Circuit - Part 4 image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Making the Circuit - Part 4 image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Making the Circuit - Part 4 image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Making the Circuit - Part 4 image 4" loading="lazy"></div><p>Now it’s time to add another resistor to pin 3 along with a 4.7 Cap. You also need to connect pins 3 and 5 together.</p>
 <p>Steps:</p>
 <ol>
 <li>Grab a 68K resistor. This will be connected to the positive bus. Solder one leg to the jumper wire coming from pin 3.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the other leg on the other side of the IC as shown in the image</li>
-</ul>
+</ol>
 <ol>
 <li>Add another jumper wire and connect it to the positive bus and the resister leg</li>
-</ul>
+</ol>
 <ol>
 <li>On the other side of the jumper solder a 4.7uf cap (positive leg)</li>
-</ul>
+</ol>
 <ol>
 <li>The negative leg is to be soldered to the ground bus. Make sure you lay the cap down as shown in the images</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you need to solder a 200uf cap from positive bus strip to the ground bus. Lay this one down as well.</li>
-</ul>
-<p>That’s it for the components, it’s now time to solder some wires to the circuit board</p><h2><span class="step-num">STEP 17</span>Step 17: Soldering the Wires in Place</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Soldering the Wires in Place image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Soldering the Wires in Place image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Soldering the Wires in Place image 3" loading="lazy"></div><p>Now it’s time to add wires so you can connect the pot, jacks, battery and LED up to the circuit board. The wire I used was thin computer ribbon wire. You can usually pick this up for free at your local e-waste depo.</p>
+</ol>
+<p>That’s it for the components, it’s now time to solder some wires to the circuit board</p><h2><span class="step-num">STEP 17</span>Step 17: Soldering the Wires in Place</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Soldering the Wires in Place image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Soldering the Wires in Place image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Soldering the Wires in Place image 3" loading="lazy"></div><p>Now it’s time to add wires so you can connect the pot, jacks, battery and LED up to the circuit board.</p>
+<p>The wire I used was thin computer ribbon wire.</p>
+<p>You can usually pick this up for free at your local e-waste depo.</p>
 <p>Steps:</p>
 <ol>
 <li>Pull strands of wire from the ribbon cable</li>
-</ul>
+</ol>
 <ol>
 <li>Start to solder these into place on the prototype board. It helps to use the schematic to make sure you have all the wires connected properly.</li>
-</ul>
+</ol>
 <ol>
 <li>Don’t forget to add a couple wires for the battery and one extra wire to the negative bus strip for the LED. The LED isn’t shown on the schematic but it helps to add one so you know when the amp is on.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder 2 wires onto the potentiometer as well. These will be connected to the jack input later on.</li>
-</ul><h2><span class="step-num">STEP 18</span>Step 18: Connecting All Those Wires</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Connecting All Those Wires image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Connecting All Those Wires image 2" loading="lazy"><img src="images/step18_03.jpg" alt="Step 18: Connecting All Those Wires image 3" loading="lazy"><img src="images/step18_04.jpg" alt="Step 18: Connecting All Those Wires image 4" loading="lazy"><img src="images/step18_05.jpg" alt="Step 18: Connecting All Those Wires image 5" loading="lazy"></div><p>Once all of the wires have been added to the prototype board, you’ll next have to connect them to the auxiliary parts. Wires can take up quite a lot of space so take your time when adding the wires and keep them as short as possible.</p>
+</ol><h2><span class="step-num">STEP 18</span>Step 18: Connecting All Those Wires</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Connecting All Those Wires image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Connecting All Those Wires image 2" loading="lazy"><img src="images/step18_03.jpg" alt="Step 18: Connecting All Those Wires image 3" loading="lazy"><img src="images/step18_04.jpg" alt="Step 18: Connecting All Those Wires image 4" loading="lazy"><img src="images/step18_05.jpg" alt="Step 18: Connecting All Those Wires image 5" loading="lazy"></div><p>Once all of the wires have been added to the prototype board, you’ll next have to connect them to the auxiliary parts.</p>
+<p>Wires can take up quite a lot of space so take your time when adding the wires and keep them as short as possible.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the circuit board into the NES controller. It is good practice to be able to get to the bottom of the circuit board in case you need to make any changes, although in this build I kept the wires pretty short</li>
-</ul>
+</ol>
 <ol>
 <li>Next, start to measure each wire against the component it needs to be connected to and trim to length.</li>
-</ul>
+</ol>
 <ol>
 <li>Tin the end of the wire and solder into place.</li>
-</ul>
+</ol>
 <ol>
 <li>Continue to do this until all of the connections have been made</li>
-</ul>
+</ol>
 <ol>
 <li>For the LED, add a 3.3K resistor to the positive leg and connect this to the switch</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a wire from the ground bus to the negative leg of the LED</li>
-</ul>
+</ol>
 <ol>
 <li>The positive wire from the battery needs to be connected to the other solder point on the switch</li>
-</ul><h2><span class="step-num">STEP 19</span>Step 19: Finishing Touches</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Finishing Touches image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Finishing Touches image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Finishing Touches image 3" loading="lazy"></div><p>Close now.</p>
-<p>Before you close-up the case, give it a test to make sure everything is working as it should. If not, then check your connections and re-test until you start to hear some sweet tunes coming out of your headphones. You will hear a slight popping as you turn the amp on through your headphones – don’t worry – this is just the caps charging.</p>
+</ol><h2><span class="step-num">STEP 19</span>Step 19: Finishing Touches</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Finishing Touches image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Finishing Touches image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Finishing Touches image 3" loading="lazy"></div><p>Close now.</p>
+<p>Before you close-up the case, give it a test to make sure everything is working as it should.</p>
+<p>If not, then check your connections and re-test until you start to hear some sweet tunes coming out of your headphones.</p>
+<p>You will hear a slight popping as you turn the amp on through your headphones – don’t worry – this is just the caps charging.</p>
 <p>Steps:</p>
 <ol>
 <li>If everything is working as it should be, place the back cover on and make sure that the potentiometer is in the right spot.</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully screw everything back into place</li>
-</ul>
+</ol>
 <ol>
 <li>Add the small nut for the potentiometer and secure</li>
-</ul>
+</ol>
 <ol>
 <li>Add a knob to the top of the potentiometer</li>
-</ul>
+</ol>
 <p>That’s it. You have finished building your own headphone amp</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
 <li><a href="pdfs/ne5532.pdf">ne5532</a></li>
-</ul><a class="pdf-download" href="pdfs/ne5532.pdf" target="_blank">&#8675; ne5532</a>
+</ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

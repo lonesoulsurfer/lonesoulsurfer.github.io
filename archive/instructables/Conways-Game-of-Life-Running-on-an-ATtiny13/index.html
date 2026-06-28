@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,46 +162,61 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Conways Game of Life - Running on an ATtiny13!</span>
 </nav>
-<h1>Conways Game of Life - Running on an ATtiny13!</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-Running-on-an-ATtiny13/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>The Game of Life is a cellular automation created by mathematician John Conway. It's what is known as a zero player game, meaning that its evolution and game play is determined by its initial state and requires no further input. You interact with the Game of Life by creating an initial configuration and observing how it evolves.</p>
-<p>The game itself is based on a few, simple, mathematical rules consisting of a grid of cells that can either live, die or multiply. When the game is run, the cells can give the illusion that they are alive which is what makes this game so interesting.</p>
-<p>There's plenty of information on the Internet about the Game of Life. If you are interested in learning more then definitely check out the Wikipedia page which has some great resources and info.</p>
-<p>This build is based on another Instructable by Sanuki Udon who created the code and project.</p>
-<p>My contribution is, I created a PCB and front panel for the project and have tweaked some of the parameters in the sketch to make the game run faster and longer.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<h1>Conways Game of Life - Running on an ATtiny13!</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-Running-on-an-ATtiny13/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>The Game of Life is a cellular automation created by mathematician John Conway.</p>
+<p>It's what is known as a zero player game, meaning that its evolution and game play is determined by its initial state and requires no further input.</p>
+<p>You interact with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+<p>The game itself is based on a few, simple, mathematical rules consisting of a grid of cells that can either live, die or multiply.</p>
+<p>When the game is run, the cells can give the illusion that they are alive which is what makes this game so interesting.</p>
+<p>There's plenty of information on the Internet about the Game of Life.</p>
+<p>If you are interested in learning more then definitely check out the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia page</a> which has some great resources and info.</p>
+<p>This build is based on another Instructable by <a href="https://www.instructables.com/Conways-Life-of-Life-of-1616-Cells-Made-With-ATtin/">Sanuki Udon</a> who created the code and project.</p>
+<p>My contribution is, I created a PCB and front panel for the project and have tweaked some of the parameters in the sketch to make the game run faster and longer.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step.</p>
+<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p>
 <p>PARTS:</p>
 <ul>
-<li>Charging Module X 1 - Ali Express</li>
-<li>USB C connector X 1 - Ali Express</li>
-<li>18560 Battery X 1 - Ali Express (or you can scavenge them from old computers)</li>
-<li>18650 battery holders X 1(PCB through hole) - Ali Express</li>
-<li>JST 2.0 Micro connectors - Ali Express Qty will depend on whether you are planning to locate the switches on the case.</li>
-<li>On/off switch X 1 - Ali Express</li>
-<li>Momentary Switch X 1 - Ali Express</li>
-<li>8 pin IC socket X 1 (for the ATiiny) - Ali Express</li>
-<li>ATtiny 13A X 1 - Ali Express</li>
-<li>8 X * LED Matrix X 4 - Ali Express. I went with red but you can also get them in green or blue.</li>
-<li>Male header pins (single row) - Ali Express</li>
+<li>Charging Module X 1 - <a href="https://vi.aliexpress.com/item/1005006274938832.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000036569397251%22%7D&sourceType=1&spm=undefined.0.0&gatewayAdapt=glo2vnm">Ali Express</a></li>
+<li>USB C connector X 1 - <a href="https://vi.aliexpress.com/item/1005006485428578.html?spm=a2g0o.order_list.order_list_main.176.77ee1802ZMMnWT&gatewayAdapt=glo2vnm">Ali Express</a></li>
+<li>18560 Battery X 1 - <a href="https://vi.aliexpress.com/w/wholesale-18650.html?spm=a2g0o.detail.search.0">Ali Express</a> (or you can scavenge them from <a href="https://www.instructables.com/How-to-Get-Free-18650-Batteries/">old computers</a>)</li>
+<li>18650 battery holders X 1(PCB through hole) - <a href="https://www.aliexpress.com/item/1005006949570816.html?spm=a2g0o.productlist.main.19.62ebfuv5fuv5pX&algo_pvid=778e89a6-5d8b-4664-b906-7eabf3ab9804&algo_exp_id=778e89a6-5d8b-4664-b906-7eabf3ab9804-18&pdp_ext_f=%7B%22order%22%3A%2230%22%2C%22eval%22%3A%221%22%7D&pdp_npi=6%40dis%21AUD%214.91%214.91%21%21%2122.32%2122.32%21%402103247917557555304737422ead8d%2112000038826800073%21sea%21AU%21135072183%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&curPageLogUid=NFbCAQQCouBf&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006949570816%7C_p_origin_prod%3A">Ali Express</a></li>
+<li>JST 2.0 Micro connectors - <a href="https://vi.aliexpress.com/item/32665588344.html?spm=a2g0o.productlist.main.5.460ea32c2xc6hZ&algo_pvid=9d118418-a9e2-4e46-a506-91f6127c4fe3&algo_exp_id=9d118418-a9e2-4e46-a506-91f6127c4fe3-4&pdp_ext_f=%7B%22order%22%3A%22942%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21AUD%213.62%213.62%21%21%212.34%212.34%21%402101ec1f17510942000531090ed40e%2159941899462%21sea%21AU%21129764711%21X&curPageLogUid=5mWqd02Rx1hI&utparam-url=scene%3Asearch%7Cquery_from%3A">Ali Express</a> Qty will depend on whether you are planning to locate the switches on the case.</li>
+<li>On/off switch X 1 - <a href="https://vi.aliexpress.com/w/wholesale-on%2525252doff-mini-1-Way-2-Band-Slide-Switch-PCB-Mount-.html?spm=a2g0o.detail.search.0">Ali Express</a></li>
+<li>Momentary Switch X 1 - <a href="https://www.aliexpress.com/w/wholesale-SKRCADD010.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
+<li>8 pin IC socket X 1 (for the ATiiny) - <a href="https://vi.aliexpress.com/w/wholesale-8-pin-ic-socket.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
+<li>ATtiny 13A X 1 - <a href="https://vi.aliexpress.com/w/wholesale-attiny-13A.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
+<li>8 X * LED Matrix X 4 - <a href="https://vi.aliexpress.com/item/1005006534411895.html?gatewayAdapt=glo2vnm">Ali Express</a>. I went with red but you can also get them in green or blue.</li>
+<li>Male header pins (single row) - <a href="https://vi.aliexpress.com/w/wholesale-male-header-pins.html?spm=a2g0o.detail.search.0">Ali Express</a></li>
 </ul>
 <p>Parts for the Case and Front Panel</p>
 <ul>
-<li>2mm Opal acrylic (A4 size) - eBay or craft stores. This is used as a diffuser for the LED's. It isn't essential but I really like the effect it adds.</li>
-<li>Timber molding to make the case - I get mine from the local hardware store</li>
-<li>M2 hex bolts and nuts. Buy an assorted pack - Ali Express</li>
-<li>M2 Screws - Ali Express</li>
-<li>M2 Spacers (assorted) - Ali Express</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer</p>
+<li>2mm Opal acrylic (A4 size) - <a href="https://www.ebay.com.au/itm/143888953637?_skw=acrylic+opal+2mm+A4&itmmeta=01JZ29BS0QTK51ZMG9SCYKMSEH&hash=item2180733125%3Ag%3AbkcAAOSwGD5knEQy&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dR150moow1fbDj0wlaXSB02RXMDHs6NDv7O4mTHNXnSDAAgQF%2FMgSGquv1HBWH1NUY8sw4YdfvSw4gECcMNlFdl6jUMb5vn7NRo%2FtMcQl5Uh9msjX3gzNAtQk20EjiC%2FtIG71ik2wV3X%2FOu6L9pJOcf%2F2h05nM04H1SDTV6UU3gvzBtYoHzmZ%2F1m9keXeMuHBGPvgTEWylnZvJHiVfJMaTiYu0tBK1MGHfxJAe3cn6f5Jq9kbln80MYKgBaFCdiiDn%2BafY8bln4Rq57TtjOzrCIDkd8NW6QBDllSVdKd%2F4sw%3D%3D%7Ctkp%3ABk9SR8yQr8n4ZQ&var=444813646124">eBay</a> or craft stores. This is used as a diffuser for the LED's. It isn't essential but I really like the effect it adds.</li>
+<li>Timber molding to make the case - I get mine from the local <a href="https://www.bunnings.com.au/30-x-8mm-1-2m-square-edged-board-tasmanian-oak_p0080189">hardware store</a></li>
+<li>M2 hex bolts and nuts. Buy an assorted pack - <a href="https://vi.aliexpress.com/item/1005007274586605.html?spm=a2g0o.productlist.main.6.62caKgFXKgFXON&algo_pvid=cf894991-9641-44cf-88a3-39e54a2e027f&algo_exp_id=cf894991-9641-44cf-88a3-39e54a2e027f-5&pdp_ext_f=%7B%22order%22%3A%22904%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21AUD%218.59%218.59%21%21%215.55%215.55%21%402103244b17513503915882027e0622%2112000040030168809%21sea%21AU%21135072183%21X&curPageLogUid=8h4svwhwcrnK&utparam-url=scene%3Asearch%7Cquery_from%3A">Ali Express</a></li>
+<li>M2 Screws - <a href="https://vi.aliexpress.com/item/1005006525663953.html?spm=a2g0o.detail.pcDetailBottomMoreOtherSeller.1.42baakGqakGqX5&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=fe86e2ab-63bf-41e0-b870-bebde45cec34&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:fe86e2ab-63bf-41e0-b870-bebde45cec34,tpp_buckets:668%232846%238114%231999&isseo=y&pdp_ext_f=%7B%22order%22%3A%2291%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=4%40dis%21AUD%212.04%212.04%21%21%211.32%211.32%21%402103245417513506294892232eaea7%2112000037530884675%21rec%21AU%21135072183%21XZ&utparam-url=scene%3ApcDetailBottomMoreOtherSeller%7Cquery_from%3A">Ali Express</a></li>
+<li>M2 Spacers (assorted) - <a href="https://vi.aliexpress.com/item/32862529967.html?spm=a2g0o.productlist.main.7.d83ckz6Ikz6Ibg&algo_pvid=c17838ad-a880-4995-9cfa-4638f553b327&algo_exp_id=c17838ad-a880-4995-9cfa-4638f553b327-6&pdp_ext_f=%7B%22order%22%3A%222924%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21AUD%216.27%216.27%21%21%214.05%214.05%21%402101c5b217513501989981567eca4b%2110000000197494051%21sea%21AU%21135072183%21X&curPageLogUid=MHqM4fsjpVqz&utparam-url=scene%3Asearch%7Cquery_from%3A">Ali Express</a></li>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Getting the PCB & Front Panel Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
+<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
+<p>I use <a href="https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE">JLCPCB</a> (not affiliated) to get this done.</p>
+<p>The front panel is actually just a PCB without any components included!</p>
+<p>The front design is done in a program called <a href="https://inkscape.org/">Inkscape</a> (available free) and the panel including the drilled holes is done in <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a> (also free!)</p>
+<p>The files that you need to build your own Bleep Drum Synth can be found in my <a href="https://github.com/lonesoulsurfer/Game_of_Life_Attiny13">GitHub</a> page.</p>
+<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+<p>Download the files to your computer</p>
 <p>STEPS:</p>
 <ul>
-<li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
+<li>Send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the PCB and front panel for you. Download all of the files from my <a href="https://github.com/lonesoulsurfer/Game_of_Life_Attiny13">GitHub</a> page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 8" loading="lazy"></div><p>The PCB is double sided so it's important that you add the components in the right order or you might find that you can't add some components. In version 1 of this PCB I had it powered by a 9V battery that was directly soldered to the PCB. It was only when I started to add components that I realized there was no way to solder the battery holder into place and also solder the 8X8 LED matrix's as well! Lucky for you I fixed the issue! Now it run's off a 18650 li-lo battery and there is less components to solder!</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 8" loading="lazy"></div><p>The PCB is double sided so it's important that you add the components in the right order or you might find that you can't add some components.</p>
+<p>In version 1 of this PCB I had it powered by a 9V battery that was directly soldered to the PCB.</p>
+<p>It was only when I started to add components that I realized there was no way to solder the battery holder into place and also solder the 8X8 LED matrix's as well!</p>
+<p>Lucky for you I fixed the issue!</p>
+<p>Now it run's off a 18650 li-lo battery and there is less components to solder!</p>
 <p>STEPS:</p>
 <ul>
-<li>You need to start adding components to the reverse side of the PCB so let's start there. First, add a header pin to each of the holes in the PCB. You could also just use resistor legs if you wanted to. Now place the charging module into place (making sure that the micro USB is facing outwards, and solder into place</li>
+<li>You need to start adding components to the reverse side of the PCB so let's start there. First, add a header pin to each of the holes in the PCB.  You could also just use resistor legs if you wanted to.  Now place the charging module into place (making sure that the micro USB is facing outwards, and solder into place</li>
 <li>Now solder the IC socket into place</li>
 <li>Next add the JST connectors. I've included extra connectors for the switches in case you want to mount them into the top of the case. If you are adding the switches to the PCB, then just connect a JST connector to power and the charging connector.</li>
 <li>Now you can add the switches.</li>
@@ -180,7 +230,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the rest of the matrix's onto place.</li>
 <li>Now you can test the board by adding the battery and turning it on. If everything has been soldered right, a little glider will make it's way across the screen and then explode!</li>
 <li>If this doesn't happen, check all of the solder joints, especially on the matrix's it doesn't take much to connect a couple of the legs together which will cause you issues.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Front Panel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Front Panel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Front Panel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Front Panel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Front Panel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Front Panel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Front Panel image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Adding the Front Panel image 7" loading="lazy"></div><p>After much toing & throwing I decided to add an acrylic diffuser to the front of the LED Matrix's. The LED's are a little raw without the diffusion. However, the movement of the LED's with the diffusion enhances the illusion that they are alive, moving across the screen with purpose.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Front Panel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Front Panel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Front Panel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Front Panel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Front Panel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Front Panel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Front Panel image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Adding the Front Panel image 7" loading="lazy"></div><p>After much toing & throwing I decided to add an acrylic diffuser to the front of the LED Matrix's.</p>
+<p>The LED's are a little raw without the diffusion.</p>
+<p>However, the movement of the LED's with the diffusion enhances the illusion that they are alive, moving across the screen with purpose.</p>
 <p>STEPS:</p>
 <ul>
 <li>Place the front panel on top of the acrylic.</li>
@@ -188,22 +240,42 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To secure the acrylic to the PCB, I used some M2 screws, nuts and spacers (see parts list)</li>
 <li>I can't recall the length of the screw I used to connect everything together. So, place one into the front panel, then into the acrylic and then the PCB.</li>
 <li>Place the acrylic against the front panel. Place a screw though the PCB and then the acrylic and add a nut. Do this each of the 4 holes. This will secure the acrylic to the front panel.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Make a Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Make a Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Make a Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Make a Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Make a Case image 4" loading="lazy"></div><p>The case is made from pieces of wood trim that you can buy from any hardware store. The wood is 8mm wide by 30mm high. The PCB has been designed to the wood fits perfectly. You could also use a less width wood as well but no more than 8 mm wide.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Make a Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Make a Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Make a Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Make a Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Make a Case image 4" loading="lazy"></div><p>The case is made from pieces of wood trim that you can buy from any hardware store.</p>
+<p>The wood is 8mm wide by 30mm high.</p>
+<p>The PCB has been designed to the wood fits perfectly.</p>
+<p>You could also use a less width wood as well but no more than 8 mm wide.</p>
 <p>STEPS:</p>
 <ul>
-<li>Measure and cut the wood for the sides, top and bottom. I just used the front panel as a template to make my measurements.</li>
-<li>Use a nail gun to secure the wood together. If you don't have one, you can always just glue them together</li>
+<li>Measure and cut the wood for the sides, top and bottom.  I just used the front panel as a template to make my measurements.</li>
+<li>Use a nail gun to secure the wood together.  If you don't have one, you can always just glue them together</li>
 <li>Place the game of life into the wood frame and mark out where to drill the holes to secure the front panel</li>
-<li>Secure the front panel into place using M2 screws. You can always use a sander to clean up the sides and edges if it isn't a perfect fit.</li>
+<li>Secure the front panel into place using M2 screws.  You can always use a sander to clean up the sides and edges if it isn't a perfect fit.</li>
 <li>Add some wax or stain or whatever you have to the wood to give it a nice finish</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the USB C Charger Port</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the USB C Charger Port image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the USB C Charger Port image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the USB C Charger Port image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the USB C Charger Port image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the USB C Charger Port image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the USB C Charger Port image 6" loading="lazy"></div><p>You could always just charge the battery up with a 18560 battery charger if you wanted to. However, It's easy to add the little USC charging port and connect that up to the charging module via a JST connector.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the USB C Charger Port</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the USB C Charger Port image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the USB C Charger Port image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the USB C Charger Port image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the USB C Charger Port image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the USB C Charger Port image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the USB C Charger Port image 6" loading="lazy"></div><p>You could always just charge the battery up with a 18560 battery charger if you wanted to.</p>
+<p>However, It's easy to add the little USC charging port and connect that up to the charging module via a JST connector.</p>
 <p>STEPS:</p>
 <ul>
 <li>Mark out where you want to add the USB C port.</li>
 <li>Drill a few holes and then use a file to clean up the edges etc.</li>
 <li>Connect a JST wire connector to the JST connector and push the wires out through the slot you made for the USC C port.</li>
 <li>Trim the wires and solder them to the solder point on the port</li>
-<li>Add a couple of M2 screws to secure it into place. Now you can charge the battery via the port!</li>
+<li>Add a couple of M2 screws to secure it into place.  Now you can charge the battery via the port!</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

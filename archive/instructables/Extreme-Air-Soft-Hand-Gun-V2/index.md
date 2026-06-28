@@ -13,7 +13,7 @@ Source: https://www.instructables.com/Extreme-Air-Soft-Hand-Gun-V2/
 
 Make your own compressed air hand gun with a few off the shelf parts.
 
-Over the years I've used compressed air to launch many projectiles, from paper and straw rocket launchers to acorn, airsoft, and blow dart guns. Using compressed air as a propellant works great and you can really get some distance if you can release the air quickly enough. Using a sprinkler valve is the best way to achieve this as it releases the air instantly. I first saw the idea of a sprinkler valve as an air release mechanism in Make Magazine and thought it was genius.
+Over the years I've used compressed air to launch many projectiles, from [paper](https://www.instructables.com/id/Hand-held-Compressed-Air-GunLauncher/) and [straw](https://www.instructables.com/id/Straw-Rocket-Launcher-V-11/) rocket launchers to [acorn](https://www.instructables.com/id/Compressed-Air-Acorn-Launcher/), [airsoft](https://www.instructables.com/id/Extreme-Airsoft-Hand-Pistol/), and [blow dart guns](https://www.instructables.com/id/Compressed-Air-Blow-Gun/). Using compressed air as a propellant works great and you can really get some distance if you can release the air quickly enough. Using a sprinkler valve is the best way to achieve this as it releases the air instantly. I first saw the idea of a sprinkler valve as an air release mechanism in [Make Magazine](http://makezine.com/projects/make-15/compressed-air-rocket/) and thought it was genius.
 
 The way the gun works is there is a air pump that is used to fill a air chamber inside the gun. To release the air and propel the airsoft bullet, you push a switch (which acts as the trigger) which releases the air valve and expels the air instantly.
 
@@ -56,25 +56,25 @@ Parts:
 
 PVC Pipe. 25mm = 1 inch so if you are in the US just use 1 inch equivalents. These PVC parts are very common and you will be able to buy from any hardware store anywhere. As I'm in Australia I have linked all of the PVC parts to Bunnings.
 
-1. 25mm tube - Bunnings
+1. 25mm tube - [Bunnings](https://www.bunnings.com.au/holman-25mm-x-1m-class-12-press-pvc-pipe_p4770100)
 
-2. 2 X 25mm Caps - Bunnings
+2. 2 X 25mm Caps - [Bunnings](https://www.bunnings.com.au/holman-25mm-press-pvc-cap-end_p3140471)
 
-3. 25mm to 20mm reducing coupling - Bunnings
+3. 25mm to 20mm reducing coupling - [Bunnings](https://www.bunnings.com.au/holman-25-x-20mm-pvc-reducing-coupling_p3140976)
 
-4. 20mm to 20mm coupling - Bunnings
+4. 20mm to 20mm coupling - [Bunnings](https://www.bunnings.com.au/holman-20mm-pvc-coupling_p3140675)
 
-5. 15mm x 1 / 2" PVC Faucet Socket - Bunnings
+5. 15mm x 1 / 2" PVC Faucet Socket - [Bunnings](https://www.bunnings.com.au/holman-15mm-x-1-2-pvc-faucet-socket_p3142041)
 
-6. 25mm tee - Bunnings
+6. 25mm tee - [Bunnings](https://www.bunnings.com.au/holman-25mm-press-pvc-plain-tee_p3142350)
 
 Barrel - Copper/brass fittings
 
 Copper or brass tubing and wire can usually be found at your local hobby shop. If not, then you will be able to order it on eBay
 
-1. 5/16 (8mm) Hose Barb x 1/2" inch Female Thread - Aliexpress. I couldn't find the exact size barb for the barrel so I hacked a way to use it and it worked fine. I would suggest taking the 7mm copper tubing (this is the barrel) down to your local hardware store and working out which hose barb fits best.
+1. 5/16 (8mm) Hose Barb x 1/2" inch Female Thread - [Aliexpress](https://www.aliexpress.com/item/3Pieces-8mm-Hose-Barb-Tail-To-1-2-PT-BSP-Female-Thread-Straight-Barbed-Brass-Connector/32722232269.html?spm=2114.01010208.3.227.6TJcbK&ws_ab_test=searchweb0_0,searchweb201602_2_10065_10130_10068_10136_10137_10138_10060_10131_10132_10062_10133_10141_10056_126_10055_10054_10059_10099_10103_10102_10096_10148_10052_10053_10050_10107_10142_10051_10143_10084_10083_10080_10082_10081_10110_10111_10112_10113_10114_10078_10079_10073_10070_10123_10124,searchweb201603_9,afswitch_1,ppcSwitch_5,single_sort_0_default&btsid=01a2e005-32e6-4500-88d8-e3f1d211b309&algo_expid=87242910-4f2c-4e01-bbbf-b56229e4b645-29&algo_pvid=87242910-4f2c-4e01-bbbf-b56229e4b645). I couldn't find the exact size barb for the barrel so I hacked a way to use it and it worked fine. I would suggest taking the 7mm copper tubing (this is the barrel) down to your local hardware store and working out which hose barb fits best.
 
-2. 1 x 7mm (OD) piece of tubing. Aprox 300mm length. - eBay. This is the barrel. Top ensure you have the right size ID for the barrel, it's best to take an airsoft bullet down to the hobby shop and find tubing that the bullet fits into snuggly. Although the one that I linked to will be fine.
+2. 1 x 7mm (OD) piece of tubing. Aprox 300mm length. - [eBay](http://www.ebay.com.au/itm/Brass-Tube-2mm-3mm-4mm-5mm-6mm-7mm-300mm-long-0-45mm-wall-K-S-/231834172329?var=&hash=item35fa64bba9:m:m6bfFkI6Rz1Ogr6zunLA1mA). This is the barrel. Top ensure you have the right size ID for the barrel, it's best to take an airsoft bullet down to the hobby shop and find tubing that the bullet fits into snuggly. Although the one that I linked to will be fine.
 
 3. 1 x 8mm piece of tubing. You'll need about 50mm
 
@@ -82,17 +82,17 @@ Copper or brass tubing and wire can usually be found at your local hobby shop. I
 
 Other Parts
 
-1. Sprinkler valve - I used this one
+1. Sprinkler valve - I used [this one](http://www.ebay.com.au/itm/Brass-Air-N-C-1-2-Normally-Closed-12V-Electric-Solenoid-Valve-Water-/262079295580?hash=item3d0524b05c:g:fiEAAOSw37tWEhYp)
 
-2. Hand pump - eBay or this one from eBay
+2. Hand pump - [[eBay](http://www.ebay.com.au/itm/Mikasa-Dual-Double-Action-Ball-Air-Hand-Pump-Flexible-Hose-Needle-Included-DAP-/231827655920?hash=item35fa014cf0:g:Ov4AAOSwt7pXNgxc)](http://www.ebay.com.au/itm/Compact-Double-Action-Hand-Pump-Fast-Inflating-Balls-Football-Soccer-Bike-Tire-/110943635242?hash=item19d4c1872a:m:mv9E-ClS1Zz2m8J5E58nHMQ) or this one from eBay
 
-3. Laser sight - eBay
+3. Laser sight - [eBay](http://www.ebay.com.au/sch/sis.html?_nkw=1x+Tactical+Red+Laser+Beam+Dot+Sight+Scope+for+Gun+Rifle+Weaver+Mount+Rail+LS5G&_itemId=151998943779&_trksid=p2047675.m4099)
 
 4. 9v battery
 
-5. 9v battery holder - eBay
+5. 9v battery holder - [eBay](http://www.ebay.com.au/itm/New-10PCS-PP3-MN1604-9V-9volt-Battery-Holder-Clip-Snap-On-Connector-Cable-Lead-/262807289674?hash=item3d3088ff4a:g:2koAAOSwa~BYeetZ)
 
-6. Push button switch - I used this one but This one on eBay will work fine
+6. Push button switch - [I used this one](https://www.jaycar.com.au/dpdt-quality-pushbutton/p/SP0714) but [This one on eBay](http://www.ebay.com.au/itm/1PCS-Black-12mm-Waterproof-momentary-Push-button-Switch-Mini-Round-Switch-/301924765960?hash=item464c1e5108:g:28YAAOSw7hRWPAx6) will work fine
 
 Tools
 
@@ -380,7 +380,7 @@ Steps:
 
 3. Start to pump some air into the air chamber. If you hear any air leaks, try and identify where they are coming from. If it is coming from an area that has been glued, then I’m afraid you will need to probably do the air chamber section again. If you don’t hear anything, then you have sealed up the chamber correctly. Keep on pumping until there is a lot of pressure being pushed back onto the pump handle.
 
-4. Next, load an airsoft pallet into the end of the barrel. On my last build I made a section in the barrel where you could load the airsoft pallet into the barrel. If you want to make this then go to step 7 in this ible' to see how I did it. As I had shortened the barrel, I didn’t think it was necessary to do this step.
+4. Next, load an airsoft pallet into the end of the barrel. On my last build I made a section in the barrel where you could load the airsoft pallet into the barrel. If you want to make this [then go to step 7 in this ible'](https://www.instructables.com/id/Extreme-Airsoft-Hand-Pistol/) to see how I did it. As I had shortened the barrel, I didn’t think it was necessary to do this step.
 
 5. Aim and fire. If everything goes well the pallet should shoot out the end with some serious speed. Do a whole bunch of tests - You won’t be able to help yourself.
 

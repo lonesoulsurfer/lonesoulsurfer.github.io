@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,213 +162,250 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Fizzle Loop Synth - 555 Timer</span>
 </nav>
-<h1>Fizzle Loop Synth - 555 Timer</h1><div class="source"><a href="https://www.instructables.com/Fizzle-Loop-Synth-555-Timer/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>The fizzle loop synth came into being after mashing a couple of simple 555 projects together to make one. At the heart of the fizzle loop is a Vactrol – a simple little part that is made from an LED and a photo resister such as a CdS.</p>
+<h1>Fizzle Loop Synth - 555 Timer</h1><div class="source"><a href="https://www.instructables.com/Fizzle-Loop-Synth-555-Timer/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>The fizzle loop synth came into being after mashing a couple of simple 555 projects together to make one.</p>
+<p>At the heart of the fizzle loop is a <a href="https://en.wikipedia.org/wiki/Resistive_opto-isolator">Vactrol</a> – a simple little part that is made from an LED and a photo resister such as a CdS.</p>
 <p>Calling this a synth might be pushing it a little - it's more a sophisticated noise maker but it's still a lot of fun to use and play with.</p>
-<p>The first 555 project controls a flashing LED and the second utilizes a photo resistor to change the pitch. There are multiple ways to control the sound from the synth and I’m sure that you could easily add a whole bunch more if you wanted to.</p>
-<p>So what does it sound like? Well controlling the speed of the flashing LED changes the speed of the sound while changing the pot on the photo resistor changes the pitch. The other controllers also work on changing the brightness and speed of the LED giving you some really cool sounds. There is also an output jack so you can hook-up a amplifier and really get the synth pumping.</p>
-<p>Although this utilizes two 555 timers, they are really separate projects married together. Once you build one, you just build the other and connect them together via the vactrol. I also gave each 555 their own poer source as I was getting some noise from using a common ground for both 555 timers.</p>
-<p>If you have never done any projects with a 555 timer, then I would suggest you make a couple of these first to get yourself familiar. This isn’t a hard project but you will need some experience in how circuits are put together and to be able to read a schematic.</p>
-<p>Lastly, I won’t be going through a step by step guide on how to solder all this together. I’m going to assume that you can understand the schematics and can figure it out for yourself. I’ve taken some images of the important parts and added some explanations where warranted.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts</p>
+<p>The first 555 project controls a flashing LED and the second utilizes a photo resistor to change the pitch.</p>
+<p>There are multiple ways to control the sound from the synth and I’m sure that you could easily add a whole bunch more if you wanted to.</p>
+<p>So what does it sound like?</p>
+<p>Well controlling the speed of the flashing LED changes the speed of the sound while changing the pot on the photo resistor changes the pitch.</p>
+<p>The other controllers also work on changing the brightness and speed of the LED giving you some really cool sounds.</p>
+<p>There is also an output jack so you can hook-up a amplifier and really get the synth pumping.</p>
+<p>Although this utilizes two 555 timers, they are really separate projects married together.</p>
+<p>Once you build one, you just build the other and connect them together via the vactrol.</p>
+<p>I also gave each 555 their own poer source as I was getting some noise from using a common ground for both 555 timers.</p>
+<p>If you have never done any projects with a 555 timer, then I would suggest you make a couple of these first to get yourself familiar.</p>
+<p>This isn’t a hard project but you will need some experience in how circuits are put together and to be able to read a schematic.</p>
+<p>Lastly, I won’t be going through a step by step guide on how to solder all this together.</p>
+<p>I’m going to assume that you can understand the schematics and can figure it out for yourself.</p>
+<p>I’ve taken some images of the important parts and added some explanations where warranted.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts</p>
 <p>The Light Theremin Circuit</p>
 <ol>
-<li>Photo Cell – eBay</li>
-</ul>
+<li>Photo Cell – <a href="https://www.ebay.com.au/itm/20PCS-Photoresistor-LDR-CDS-5mm-Light-Dependent-Resistor-Sensor-GL5516-Arduino/222746709589?epid=22011020945&hash=item33dcbd0e55:g:03YAAOSwKytZL-uQ">eBay</a></li>
+</ol>
 <ol>
-<li>555 IC -- eBay</li>
-</ul>
+<li>555 IC -- <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X555+ic.TRS0&_nkw=555+ic&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>Red LED – eBay</li>
-</ul>
+<li>Red LED – <a href="https://www.ebay.com.au/sch/i.html?_odkw=555+ic&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR6.TRC0.A0.H0.Xred+5mm+led.TRS0&_nkw=red+5mm+led&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>100 ohm resistor – eBay</li>
-</ul>
+<li>100 ohm resistor – <a href="https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q">eBay</a></li>
+</ol>
 <ol>
-<li>3.3 uf capacitor – eBay</li>
-</ul>
+<li>3.3 uf capacitor – <a href="https://www.ebay.com.au/itm/50V-0-1-0-22-1-2-2-3-3-4-7-6-8-10-22-33-47-82-100-150-uF-Electrolytic-Capacitor/253243249769?hash=item3af6795469:m:mTDA8ibHzNWgXevoOM4m55A">eBay</a></li>
+</ol>
 <ol>
-<li>100 uf Capacitor – eBay</li>
-</ul>
+<li>100 uf Capacitor – <a href="https://www.ebay.com.au/itm/50V-0-1-0-22-1-2-2-3-3-4-7-6-8-10-22-33-47-82-100-150-uF-Electrolytic-Capacitor/253243249769?hash=item3af6795469:m:mTDA8ibHzNWgXevoOM4m55A">eBay</a></li>
+</ol>
 <ol>
-<li>Speaker – 8 ohm 5w (or whatever else you have lying around - try a few different sizes) - eBay</li>
-</ul>
+<li>Speaker – 8 ohm 5w (or whatever else you have lying around - try a few different sizes) - <a href="https://www.ebay.com.au/sch/i.html?_odkw=speaker+8ohm+3w&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xspeaker+8ohm+5w.TRS0&_nkw=speaker+8ohm+5w&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>5K potentiometer – eBay</li>
-</ul>
+<li>5K potentiometer – <a href="https://www.ebay.com.au/itm/2PCS-5K-Ohm-B5K-Knurled-Shaft-Linear-Rotary-Taper-Potentiometer/262875602892?hash=item3d349b5fcc:g:kjUAAOSw32lYto0x">eBay</a></li>
+</ol>
 <ol>
-<li>6V Battery holder – eBay</li>
-</ul>
+<li>6V Battery holder – <a href="https://www.ebay.com.au/itm/4-x-AA-Battery-Holder-Box-6V-DC-Case-For-Receiver-Car-Plane-Boat-DIY-Plug/252452556886?hash=item3ac7585056:g:xBEAAOSwZZ5asfU9">eBay</a></li>
+</ol>
 <ol>
 <li>4 X AA Batterys</li>
-</ul>
+</ol>
 <ol>
-<li>2 X on-off switch – eBay</li>
-</ul>
+<li>2 X on-off switch – <a href="https://www.ebay.com.au/itm/10-x-On-Off-On-3Pin-Mini-Momentary-Toggle-Switch-Car-Dashboard-SPDT-Pole-Sales/322288826331?epid=940115809&hash=item4b09e937db:g:0ScAAOSwPCVX-wtc">eBay</a></li>
+</ol>
 <ol>
-<li>Momentary switch - eBay</li>
-</ul>
+<li>Momentary switch - <a href="https://www.ebay.com.au/itm/Modern-6Pcs-7mm-Momentary-Push-Button-Press-Switch-On-Off-Push-Switch/122373408432?hash=item1c7e0606b0:m:moGc4OmEnaeSCWzcP_rbFKg">eBay</a></li>
+</ol>
 <ol>
-<li>1uf Capacitor - eBay</li>
-</ul>
+<li>1uf Capacitor - <a href="https://www.ebay.com.au/itm/1uF-50V-Electrolytic-Capacitor-20-pcs/302685444075?hash=item46797557eb:g:luUAAOSw0UdXqx4j">eBay</a></li>
+</ol>
 <p>Flashing Light Circuit</p>
 <ol>
-<li>1k Resistor – eBay</li>
-</ul>
+<li>1k Resistor – <a href="https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q">eBay</a></li>
+</ol>
 <ol>
-<li>555 IC - eBay</li>
-</ul>
+<li>555 IC - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X555+ic.TRS0&_nkw=555+ic&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>10uf Capacitor – eBay</li>
-</ul>
+<li>10uf Capacitor – <a href="https://www.ebay.com.au/itm/100-Pcs-4-x-5mm-10uF-25V-Aluminum-Electrolytic-Capacitors-CT/302142817648?epid=1369130363&hash=item46591d8570:g:~woAAOSwux5YMCF0">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 100K Potentiometer – eBay</li>
-</ul>
+<li>2 X 100K Potentiometer – <a href="https://www.ebay.com.au/itm/2PCS-100K-ohm-Linear-Taper-Rotary-Potentiometer-Panel-pot-B100K-15mm-WH148-3-Pin/282614198699?hash=item41cd1e71ab:g:BcYAAOSweC1ZlV-p">eBay</a></li>
+</ol>
 <ol>
-<li>5mm white LED – eBay</li>
-</ul>
+<li>5mm white LED – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X5mm+white+led.TRS0&_nkw=5mm+white+led&_sacat=0">eBay</a></li>
+</ol>
 <ol>
 <li>9v Battery</li>
-</ul>
+</ol>
 <ol>
-<li>9V battery holder – eBay</li>
-</ul>
+<li>9V battery holder – <a href="https://www.ebay.com.au/sch/i.html?_odkw=5mm+white+led&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR11.TRC1.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0">eBay</a></li>
+</ol>
 <p>Other Parts</p>
 <ol>
 <li>Enclosure – your choice</li>
-</ul>
+</ol>
 <ol>
 <li>Perf board</li>
-</ul>
+</ol>
 <ol>
 <li>Heat Shrink</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Bread board and wires</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdrivers</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue/super glue</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Flashing LED Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Flashing LED Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Flashing LED Circuit image 2" loading="lazy"></div><p>The flashing light circuit is quite simple and works by changing the values on the pots. On the original schematic, there is only the 100K pot which is used to speed up or slow down the flashing LED.</p>
-<p>Another 100K pot (so there are 2 pots in total) has been added to give more options in changing the speed and brightness of the LED. It isn’t necessary but if you want more sound options, then it’s worth adding it.</p><h2><span class="step-num">STEP 3</span>Step 3: Light Theremin Circuit</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Light Theremin Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Light Theremin Circuit image 2" loading="lazy"></div><p>The second part to the synth is a light Theremin circuit. I made a project recently using this circuit which can be found here.</p>
-<p>This uses a photo cell which acts like a resistor, to change the frequency of the sound with light. We will be attaching the 2 circuits together through the LED on the first circuit and the photo cell on the other using a Vactrol.</p><h2><span class="step-num">STEP 4</span>Step 4: What Is a Vactrol?</h2><div class="step-images"><img src="images/step04_01.png" alt="Step 4: What Is a Vactrol? image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: What Is a Vactrol? image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: What Is a Vactrol? image 3" loading="lazy"></div><p>A Vactrol acts like a potentiometer - applying a voltage to the Vactrol's LED has the same effect as turning up the knob on the potentiometer.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Flashing LED Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Flashing LED Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Flashing LED Circuit image 2" loading="lazy"></div><p>The flashing light circuit is quite simple and works by changing the values on the pots. On the original schematic, there is only the 100K pot which is used to speed up or slow down the flashing LED.</p>
+<p>Another 100K pot (so there are 2 pots in total) has been added to give more options in changing the speed and brightness of the LED.</p>
+<p>It isn’t necessary but if you want more sound options, then it’s worth adding it.</p><h2><span class="step-num">STEP 3</span>Step 3: Light Theremin Circuit</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Light Theremin Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Light Theremin Circuit image 2" loading="lazy"></div><p>The second part to the synth is a light Theremin circuit. I made a project recently using this circuit which can be found <a href="https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/">here.</a></p>
+<p>This uses a photo cell which acts like a resistor, to change the frequency of the sound with light.</p>
+<p>We will be attaching the 2 circuits together through the LED on the first circuit and the photo cell on the other using a Vactrol.</p><h2><span class="step-num">STEP 4</span>Step 4: What Is a Vactrol?</h2><div class="step-images"><img src="images/step04_01.png" alt="Step 4: What Is a Vactrol? image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: What Is a Vactrol? image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: What Is a Vactrol? image 3" loading="lazy"></div><p>A Vactrol acts like a potentiometer - applying a voltage to the Vactrol's LED has the same effect as turning up the knob on the potentiometer.</p>
 <p>It consists of two components incorporated into one package: a light-emitting diode (LED), and a photoresistor (a resistor whose resistance drops when it is exposed to light)</p>
-<p>It’s important that the only light that the photo cell can detect is from the LED. If outside light is able to reach the photo cell, then it will interfere with the performance and sound, that’s why you need to add something like heat shrink to protect them.</p><h2><span class="step-num">STEP 5</span>Step 5: Making a Vactrol</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making a Vactrol image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making a Vactrol image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making a Vactrol image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making a Vactrol image 4" loading="lazy"></div><p>Steps:</p>
+<p>It’s important that the only light that the photo cell can detect is from the LED.</p>
+<p>If outside light is able to reach the photo cell, then it will interfere with the performance and sound, that’s why you need to add something like heat shrink to protect them.</p><h2><span class="step-num">STEP 5</span>Step 5: Making a Vactrol</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making a Vactrol image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making a Vactrol image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making a Vactrol image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making a Vactrol image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Cut a small length of heat shrink tube. The LED and photo cell need to be able to fit inside.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the LED into the heat shrink with the legs facing out and also the same for the photo cell. Make sure that they are touching inside the heat shrink.</li>
-</ul>
+</ol>
 <ol>
 <li>Heat the heat shrink and start to shrink it. Start with one end first and when it has shrink enough, grab some pliers and flatten the end of the heat shrink so it is sealed shut.</li>
-</ul>
+</ol>
 <ol>
 <li>Do the same for the other end</li>
-</ul>
+</ol>
 <ol>
 <li>That’s it! You have made an important component to the fizzle loop synth</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Building the Flashing LED Circuit</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 6: Building the Flashing LED Circuit image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Building the Flashing LED Circuit image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Building the Flashing LED Circuit image 3" loading="lazy"></div><p>I’ve added a few tips below when building the first half of the circuit – the flashing LED.</p>
-<p>I added 2 100K pots as I found that this gives me more control over the frequency. You should mix and match yourself to try and get the best sound from your synth. Do this on the bread board and try and few different values to see if one works better than another.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Building the Flashing LED Circuit</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 6: Building the Flashing LED Circuit image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Building the Flashing LED Circuit image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Building the Flashing LED Circuit image 3" loading="lazy"></div><p>I’ve added a few tips below when building the first half of the circuit – the flashing LED.</p>
+<p>I added 2 100K pots as I found that this gives me more control over the frequency.</p>
+<p>You should mix and match yourself to try and get the best sound from your synth.</p>
+<p>Do this on the bread board and try and few different values to see if one works better than another.</p>
 <p>Also, the original resistor for the LED was 3.3K. I brought this down to 1k to make the LED brighter.</p>
 <p>I know that this is self-evident but make sure that the LED in the vactrol is correctly orientated when connecting to the circuit. It would be easy to incorrectly connect the polarities.</p>
-<p>Make sure that once you have built the circuit, you test and make sure that it’s working. You can do this by touching an LED’s legs to the resistor and one of the LED legs from the Vactrol. If it doesn’t work check over the circuit and see what you missed. I forgot to attach pin 8 to positive!</p>
+<p>Make sure that once you have built the circuit, you test and make sure that it’s working.</p>
+<p>You can do this by touching an LED’s legs to the resistor and one of the LED legs from the Vactrol.</p>
+<p>If it doesn’t work check over the circuit and see what you missed.</p>
+<p>I forgot to attach pin 8 to positive!</p>
 <p>Steps:</p>
 <ol>
 <li>Make sure that you add some good lengths of wire to the potentiometers.</li>
-</ul>
+</ol>
 <ol>
 <li>The LED section is there you solder the LED inside the Vectrol. Make sure that when you solder it into the perf board that the legs from the photo cell are near to where you are going to make the other circuit.</li>
-</ul>
+</ol>
 <ol>
 <li>I decided to add a separate power supply for both circuits. I found that there was some noise coming from the common ground and this helps isolate it. However you can use the same battery for both circuits if you wish. The Flashing LED takes 9v's</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Building the Light Theremin Circuit</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 7: Building the Light Theremin Circuit image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Building the Light Theremin Circuit image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Building the Light Theremin Circuit image 3" loading="lazy"></div><p>Once you have the first section done, you then need to make the light Theremin circuit. I did modify the circuit diagram slightly and it is up to you whether you want to include the capacitor and switch on the photo cell.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Building the Light Theremin Circuit</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 7: Building the Light Theremin Circuit image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Building the Light Theremin Circuit image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Building the Light Theremin Circuit image 3" loading="lazy"></div><p>Once you have the first section done, you then need to make the light Theremin circuit.</p>
+<p>I did modify the circuit diagram slightly and it is up to you whether you want to include the capacitor and switch on the photo cell.</p>
 <p>I’m sure that there are many more hacks that you could do to get some different sounds out of your synth so experiment by adding different values to the capacitors and photo cell.</p>
 <p>If you would like a step by step walk through on this circuit, you can check out this ‘ible which I did a little while back.</p>
 <p>Steps:</p>
 <ol>
 <li>The LED on this schematic is actually the light for the Theremin but I decided to keep it as an “on” indicator. Make sure that you add some longer wires to this so it can be positioned to where you need it.</li>
-</ul>
+</ol>
 <ol>
 <li>Also add some longer wires for the potentiometers. I usually add all of the pots to the case first and then attach the wires later.</li>
-</ul>
+</ol>
 <ol>
 <li>Before you add the vactrol, test that the circuit is working first by adding a photo cell to pins 7 and 8. If you get some sounds coming out the speaker when you add a light source to the photo cell then your circuit is good to go.</li>
-</ul>
+</ol>
 <ol>
 <li>The power source is 4 Aa batteries (6V). I found that 9V's is too much and heats-up the 555 timer</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Deciding on a Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Deciding on a Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Deciding on a Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Deciding on a Case image 3" loading="lazy"></div><p>The case could be anything from a cigar box to what I usedwhich is an old electrical meter I found in a junk shop.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Deciding on a Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Deciding on a Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Deciding on a Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Deciding on a Case image 3" loading="lazy"></div><p>The case could be anything from a cigar box to what I usedwhich is an old electrical meter I found in a junk shop.</p>
 <p>I will go through how I put mine together and how I modified the case</p>
 <p>Steps:</p>
 <ol>
 <li>First pull apart your case.</li>
-</ul>
+</ol>
 <ol>
 <li>Next pull any electronics and parts that you don’t need for your project and empty the box completely.</li>
-</ul>
+</ol>
 <ol>
 <li>My box had some wires and old potentiometers attached to the front plate so I also removed all of these as well.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Speaker</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Speaker image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Speaker image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Speaker image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Speaker image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Speaker image 5" loading="lazy"></div><p>You will need somewhere to add the speaker. If you find that there just isn’t enough room you could always just plug the synth into an external amplifier you use that instead. I went for both options.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Speaker</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Speaker image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Speaker image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Speaker image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Speaker image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Speaker image 5" loading="lazy"></div><p>You will need somewhere to add the speaker. If you find that there just isn’t enough room you could always just plug the synth into an external amplifier you use that instead. I went for both options.</p>
 <p>Steps:</p>
 <ol>
 <li>Mark where you want to add the speaker and cut the hole. I used a hole cutter on a drill which worked fine although it did slightly melt the top of the lid of the case</li>
-</ul>
+</ol>
 <ol>
 <li>Measure and drill the holes to attach the speaker.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly use some small nuts and screws to attach it to the case</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Potentiometers</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Potentiometers image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Potentiometers image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Potentiometers image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Potentiometers image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Potentiometers image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Potentiometers image 6" loading="lazy"></div><p>You will need to add 3 potentiometers to the front of the case. Decide where the best place for each one. I decided to add the 2 pots from the flashing LED to the bottom of the lid of the case and the pitch changing pot from the Theremin in the middle as my case already had a great knob for it.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Potentiometers</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Potentiometers image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Potentiometers image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Potentiometers image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Potentiometers image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Potentiometers image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Potentiometers image 6" loading="lazy"></div><p>You will need to add 3 potentiometers to the front of the case.</p>
+<p>Decide where the best place for each one.</p>
+<p>I decided to add the 2 pots from the flashing LED to the bottom of the lid of the case and the pitch changing pot from the Theremin in the middle as my case already had a great knob for it.</p>
 <p>Steps:</p>
 <ol>
 <li>If necessary, drill holes where you want to add the pots. My case already had holes, I just needed to enlarge them slightly.</li>
-</ul>
+</ol>
 <ol>
 <li>Secure the pots in place.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some knobs to the tops of the pots</li>
-</ul>
+</ol>
 <ol>
 <li>Later, when you attach the wires from the circuit to the pots, you will need to join one wire to 2 pins and the other wire to the other pin. The orientation of how you do this will determine the way the knob changes the pitch and speed. For example, if you attach a wire to the pin on the left and the one in the middle and the other wire to the last pin, you will need to turn the pot clockwise to make the pitch and speed increase. I find that this is the best way to attach them together.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Attaching the Wires</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Attaching the Wires image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Attaching the Wires image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Attaching the Wires image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Attaching the Wires image 4" loading="lazy"></div><p>Now that you have made the circuit and hopefully all is working correctly, you now need to attach all of the wires.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Attaching the Wires</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Attaching the Wires image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Attaching the Wires image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Attaching the Wires image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Attaching the Wires image 4" loading="lazy"></div><p>Now that you have made the circuit and hopefully all is working correctly, you now need to attach all of the wires.</p>
 <p>Steps:</p>
 <ol>
 <li>Take your time and solder all of the corresponding wires to the pots and switches. I find that the best way to ensure that you are soldering the correct wires to the right pots and switches is to make the wire the same colour. This way you can make sure that you don't get them mixed-up.</li>
-</ul>
+</ol>
 <ol>
 <li>Use thin wire to make the connections. Wire takes up a surprisingly large amount of space and using thin wire will ensure you reduce the space taken up by it.</li>
-</ul>
+</ol>
 <ol>
 <li>For the pot that controls the pitch (middle on from the Theremin side) I wired this up so the lowest pitch would be when the dial is facing up and the highest pitch would be on either side. To do this you need to connect the 1st and 3rd pins together on the pot.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Adding the Batteries</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Batteries image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Batteries image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Batteries image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Batteries</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Batteries image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Batteries image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Batteries image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder the wires from the battery terminals to the switch and the circuity board.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the positive wires from the circuit board to the switch and the corresponding positive wires to the circuit board.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, solder the ground wires to the board, making sure that the correct wire is soldered to the right part of the circuit board. So 6v to the Theremin side and 9v to the flashing LED.</li>
-</ul>
+</ol>
 <ol>
 <li>Before you close up the case, check and make sure that all of the pots are working right.</li>
-</ul>
+</ol>
 <ol>
 <li>Close up the case and your done.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

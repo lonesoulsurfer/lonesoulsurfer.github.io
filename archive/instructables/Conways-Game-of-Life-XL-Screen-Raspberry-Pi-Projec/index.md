@@ -19,7 +19,7 @@ Source: https://www.instructables.com/Conways-Game-of-Life-XL-Screen-Raspberry-P
 
 ![Intro 6](images/intro_06.jpg)
 
-I'm back again with a new and improved version of my Conway's Game of Life Coloured Version. This biggest and most obvious improvement is the size of the TFT screen. The Game of Life is meant to be played on a large field and this screen measures 3.5" compared to 2" which is what I used in the last coloured screen build.
+I'm back again with a new and improved version of my [Conway's Game of Life Coloured Version](https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Version/). This biggest and most obvious improvement is the size of the TFT screen. The Game of Life is meant to be played on a large field and this screen measures 3.5" compared to 2" which is what I used in the last coloured screen build.
 
 For those wondering what the hell is Conway's Game of Life - here's a description I used in my last build
 
@@ -64,29 +64,29 @@ The PCB and front panel information can be found on the next step
 
 PARTS:
 
-Raspberry Pi Pico Zero X 1 - Ali Express
+Raspberry Pi Pico Zero X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-Raspberry-Pi-Pico-Zero.html?spm=a2g0o.home.search.0)
 
-Charging & voltage step-up module X 1 - Ali Express
+Charging & voltage step-up module X 1 - [Ali Express](https://www.aliexpress.com/item/1005005656423941.html?invitationCode=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21926311787&bizType=ProductDetail&spreadCode=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&tt=MG&aff_fsk=_mtlLJJx&aff_platform=default&sk=_mtlLJJx&aff_trace_key=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&shareId=21926311787&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
 
-TFT Display 3.5inch ST7796S/ST7796U LCD Display 1 - Ali Express
+TFT Display 3.5inch ST7796S/ST7796U LCD Display 1 - [Ali Express](https://www.aliexpress.com/item/1005007090411446.html?spm=a2g0o.order_list.order_list_main.11.6e0a1802Vh7xOd)
 
-Battery - I like to recycle old mobile batteries on these builds. You can also buy them and this one would work fine - Ali Express
+Battery - I like to recycle [old mobile batteries](https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/) on these builds. You can also buy them and this one would work fine - [Ali Express](https://www.aliexpress.com/item/1005007768846321.html?spm=a2g0o.productlist.main.27.37e80CxJ0CxJos&algo_pvid=04ff8e46-fd07-48df-87fe-3ba663b46c33&algo_exp_id=04ff8e46-fd07-48df-87fe-3ba663b46c33-26&pdp_ext_f=%7B%22order%22%3A%22191%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%2112.46%2111.59%21%21%2160.02%2155.83%21%4021030a6217725876016324977e8463%2112000042141150414%21sea%21AU%21129764711%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&curPageLogUid=MjolbnGyNA4R&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007768846321%7C_p_origin_prod%3A)
 
-Momentary switches X 6 - Ali Express
+Momentary switches X 6 - [Ali Express](https://www.aliexpress.com/item/4000550502648.html?spm=a2g0o.order_list.order_list_main.23.9d7a1802AofMHf)
 
-On/Off Switch X 2 - Ali Express
+On/Off Switch X 2 - [Ali Express](https://www.aliexpress.com/item/32828124825.html?invitationCode=U0ZjejE5SDZUR3Rvd3A4dlNzTHhPMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21930568662&bizType=ProductDetail&spreadCode=U0ZjejE5SDZUR3Rvd3A4dlNzTHhPMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=78cd7743d6d84c87a62a111f31d5ed0d-1756352449635-03501-_mMmygFX&tt=MG&aff_fsk=_mMmygFX&aff_platform=default&sk=_mMmygFX&aff_trace_key=78cd7743d6d84c87a62a111f31d5ed0d-1756352449635-03501-_mMmygFX&shareId=21930568662&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
 
-Buzzer - Ali Express
+Buzzer - [Ali Express](https://www.aliexpress.com/w/wholesale-9042-buzzer.html?spm=a2g0o.detail.search.0)
 
-Micro Momentary Switch - Ali Express
+Micro Momentary Switch - [Ali Express](https://www.aliexpress.com/item/1005006956741903.html?spm=a2g0o.productlist.main.6.3714VtyYVtyYWA&aem_p4p_detail=202512012013053186468671941280003530927&algo_pvid=77e41f87-a64a-474c-910f-b4c95e360006&algo_exp_id=77e41f87-a64a-474c-910f-b4c95e360006-5&pdp_ext_f=%7B%22order%22%3A%228%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%213.23%212.75%21%21%2114.75%2112.54%21%402103129017646487854512530eb65b%2112000038853341475%21sea%21AU%21129764711%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&curPageLogUid=meKpY4AXI4Zs&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006956741903%7C_p_origin_prod%3A&search_p4p_id=202512012013053186468671941280003530927_2)
 
-Male Pin Headers - Ali Express
+Male Pin Headers - [Ali Express](https://www.aliexpress.com/w/wholesale-pin-headers-single-row.html?spm=a2g0o.productlist.search.0)
 
-Low profile female pin headers - Ali Express
+Low profile female pin headers - [Ali Express](https://www.aliexpress.com/item/1005004122312694.html?spm=a2g0o.order_list.order_list_main.17.e1b71802izp4AU)
 
-M2 Screws - Ali Express
+M2 Screws - [Ali Express](https://www.aliexpress.com/item/1005007159750547.html?spm=a2g0o.order_list.order_list_main.23.30491802K9cNyZ)
 
-M2 Spacers - Ali Express
+M2 Spacers - [Ali Express](https://www.aliexpress.com/w/wholesale-spacer-M2-kit.html?spm=a2g0o.productlist.search.0)
 
 
 - [Parts List](pdfs/Parts List.pdf)
@@ -105,14 +105,14 @@ M2 Spacers - Ali Express
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!).
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front and back panel are actually just PCB's without any components included! The design on the panels is done in a program called Inkscape (available free) and the actual panel itself (the outline, drilled holes etc) is done in Fusion 360 (also free for now...)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front and back panel are actually just PCB's without any components included! The design on the panels is done in a program called [Inkscape](https://inkscape.org/) (available free) and the actual panel itself (the outline, drilled holes etc) is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free for now...)
 
-The files that you need to build your own Game of Life can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code etc. Download all the files to your computer
+The files that you need to build your own Game of Life can be found in my [GitHub](https://github.com/lonesoulsurfer/Conways_Game_of_Life__Large_Screen) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code etc. Download all the files to your computer
 
 STEPS:
 
-- Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice such as JLCPCB who will print the PCB and front panel for you.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
+- Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Conways_Game_of_Life__Large_Screen) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice such as [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
 
 
 ## Step 2: A Note on Changes to Design
@@ -159,12 +159,12 @@ The following step ensures that you can remove the front panel easily and withou
 
 STEPS:
 
-- First, trim the tops of the header pins where they are soldered. You just want to remove a small bit of the top of the header pin so they won’t interfere with the front panel.
-- In the front panel, there are 4 holes where the TFT screen will be attached. Add a 20mm M2 screw (I like to use hex socket head screws) to each and then add a M2 nut to secure the screws into place
-- Now, place the screen on top of the screws and align it to the front panel. The screen should sit flat to the front panel as the nuts you added earlier act like spacers.
+- First, trim the tops of the header pins where they are soldered.  You just want to remove a small bit of the top of the header pin so they won’t interfere with the front panel.
+- In the front panel, there are 4 holes where the TFT screen will be attached.  Add a 20mm M2 screw (I like to use hex socket head screws) to each and then add a M2 nut to secure the screws into place
+- Now, place the screen on top of the screws and align it to the front panel.  The screen should sit flat to the front panel as the nuts you added earlier act like spacers.
 - Now - you need to add a small M2 spacer (5mm) to each of the screws. Use the smallest one in the assorted pack that I have recommended to get in the parts list
-- Remove the plastic section off the male header pin. This will ensure that they fir right in the female header pin
-- You can now add the low profile female header pins to the male ones on the TFT screen and do a test fit. You will need to trim the male header pins a little in order for them to sit right in the female header. What I usually do here is, lay a female header pins on top of the male ones and mark out how much to cut of the male header pins. It probably about 3mm that you need to remove.
+- Remove the plastic section off the male header pin.  This will ensure that they fir right in the female header pin
+- You can now add the low profile female header pins to the male ones on the TFT screen and do a test fit.  You will need to trim the male header pins a little in order for them to sit right in the female header.  What I usually do here is, lay a female header pins on top of the male ones and mark out how much to cut of the male header pins.  It probably about 3mm that you need to remove.
 - Don’t solder the female header pins yet to the PCB, we’ll do that near the end
 
 
@@ -176,8 +176,8 @@ STEPS:
 
 STEPS:
 
-- This is straight forward. Add male header pins to the Pi. I like to solder 1 leg into place for each side before I commit to soldering the rest.
-- You can then add it to the PCB and solder the rest of the pins to the Pi. This will ensure all of the pins are straight
+- This is straight forward.  Add male header pins to the Pi.  I like to solder 1 leg into place for each side before I commit to soldering the rest.
+- You can then add it to the PCB and solder the rest of the pins to the Pi.  This will ensure all of the pins are straight
 - Now you can solder the Pi to the PCB
 
 
@@ -257,7 +257,7 @@ Ok - nearing the end now of the build. The last thing to do is to solder the fem
 STEPS:
 
 - Carefully place the front panel into place. Make sure that the screws align to the holes in the PCB and once pushed into place, ensure the pins on the female header pins (which should be on the male header pins connected to the TFT screen) align to the holes into the PCB. You might need to push them slightly with a small screwdriver to align them.
-- add 6 X nuts to each of the screws to secure the front panel to the PCB. You will be adding the back panel in the next step
+- add 6 X nuts to each of the screws to secure the front panel to the PCB.  You will be adding the back panel in the next step
 - Once the screen is in place, do a final check of everything before soldering the female header to the PCB.
 - Now you can solder the legs into place.
 - Before you start to think about adding the bottom panel and adding nuts to the screws, lets go and add the code to the Pi
@@ -276,7 +276,7 @@ In this build, I added a back panel. So in total there is a front panel, PCB and
 STEPS:
 
 - The screws used should just have enough thread left after you add the back panel to attached a nut
-- Carefully screw a nut to each of the ends of the screws. I found that 2 of the screws were just too short so I didn't bother adding a nut to these. The back cover is securely on so it won't matter.
+- Carefully screw a nut to each of the ends of the screws.  I found that 2 of the screws were just too short so I didn't bother adding a nut to these.  The back cover is securely on so it won't matter.
 - The other option is to add longer screws and then cut them to size.
 
 
@@ -284,7 +284,7 @@ STEPS:
 
 ![Step 10: How to Upload to Raspberry Pi Zero image 1](images/step11_01.png)
 
-Download the GitHub Files.
+Download the [GitHub](https://github.com/lonesoulsurfer/Conways_Game_of_Life__Large_Screen) Files.
 
 If you haven't installed Arduino on your computer, then this is the first thing you should do. Just follow the below instructions which are straight forward and you wont have any issues with loading the code to the Raspberry Pi Zero. If you find that you are having issues, then ask Claude (AI) for help. This is what I do when I get stuck and it always manages to sort it out for me!
 
@@ -472,7 +472,7 @@ Controls:
 - Up/Down/Left/Right — move crosshair / pilot ship
 - SET — fire
 - A + B — exit to main menu
-- Up + Down - in start up screen will take you into a games menu where you can play any of the games or watch the cinematic shorts
+- Up + Down -  in start up screen will take you into a games menu where you can play any of the games or watch the cinematic shorts
 **Breakout Beyond**
 
 A feature-rich Breakout variant with a neon aesthetic. The paddle sits at the bottom, bricks at the top. Features include combo multipliers, spin physics, multiball, shield power-ups, bomb bricks, and hard bricks across 20 levels.

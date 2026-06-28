@@ -31,21 +31,21 @@ So without further ado – let’s get cracking
 
 Other headphone Amps I’ve Made
 
-Make Your Own Headphone Amp V1
+[Make Your Own Headphone Amp V1](https://www.instructables.com/id/Make-Your-Own-Headphone-Amp/)
 
-Make a Headphone Amp V2
+[Make a Headphone Amp V2](https://www.instructables.com/id/Make-a-Headphone-Amp/)
 
-Mini Headphone Amp
+[Mini Headphone Amp](https://www.instructables.com/id/Mini-Headphone-Amp/)
 
 Projects with NES Controllers
 
-Variable Power Supply V2
+[Variable Power Supply V2](https://www.instructables.com/id/Variable-Power-Supply-Nintendo-Style/)
 
-Light Theremin in a NES Controller - 555 Timer
+[Light Theremin in a NES Controller - 555 Timer](https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/)
 
-NES Controller Night Light V2
+[NES Controller Night Light V2](https://www.instructables.com/id/NES-Controller-Night-Light-V2/)
 
-NES Controller Night Light in Resin
+[NES Controller Night Light in Resin](https://www.instructables.com/id/NES-Controller-Night-Light-in-Resin/)
 
 
 ## Step 1: Parts & Tools
@@ -62,41 +62,41 @@ Parts:
 
 1. NES Controller – You can buy copies for cheap on eBay
 
-2. 10K duel gang Potentiometer – eBay
+2. 10K duel gang Potentiometer – [eBay](https://www.ebay.com.au/itm/10K-Ohm-Rotary-Potentiometer-Shaft-6Pin-6MM-Adjustable-Resistance-For-Speaker/392300039085?hash=item5b56e78bad:g:Z1kAAOSwje9c402w&frcectupt=true)
 
-3. Potentiometer knob - eBay
+3. Potentiometer knob - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=potentiomener+knob&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=10k+duel+potentiometer)
 
-4. 2 X 18K Resistor – eBay
+4. 2 X 18K Resistor – [eBay](https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ&frcectupt=true)
 
-5. 4 X 68K resistor – eBay
+5. 4 X 68K resistor – [eBay](https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ&frcectupt=true)
 
-6. 47K resistor - eBay
+6. 47K resistor - [eBay](https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ&frcectupt=true)
 
-7. 3mm LED – eBay
+7. 3mm LED – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR12.TRC2.A0.H0.X3mm+LED.TRS0&_nkw=3mm+LED&_sacat=0)
 
-8. NE5532 IC – eBay (10 IC's for just over a dollar!)
+8. NE5532 IC – [eBay](https://www.ebay.com.au/itm/10PCS-NE5532P-NE5532-DIP-8-Dual-Low-Noise-Op-Amp-TI-IC-NEW/232812686621?hash=item3634b7ad1d:g:9YoAAOSwa69bKgik&frcectupt=true) (10 IC's for just over a dollar!)
 
-9. 8 pin socket holder - eBay
+9. 8 pin socket holder - [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-8pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe/191981147298?_trkparms=ispr%3D1&hash=item2cb2f7d4a2:m:mTF1xdyk-_4Z3Jjf7SDk92g&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qXFPYrXeKDMVroSgY4vKZ9OiB9JNbZL16SEj4kaiGgCVtYs0e01fDkK7zxQ2TO3YAQq5zwcnwdjui6rmCUmuPhVDmFcQWEO%2FZeCjN90bXJttD8OOWOns3AraqtZm%2B5lL0HQPGms%2BNa3kfpc%2Fe5xum4gvF8I0I4lqlBlAKKzAXvYaa95PRKFJoRXMX%2FPUZ7ZxNfyMaJOF31RkaUBivS8mXHJzPXRhHwG3b7KMSw%2FI2GfBruRyyWX0PGwfs5rOOWB09kerc6mGn%2F%2BNtcNHjYXnP%2FP31AmSSjMAHw7S%2FsuBagcL9XvKLi6Hh88%2F%2BvUyqigcq6hnLIWOnp3bXy8tQtj07xoq2orksL62WvLxVQndpUIk%2B3QMnzNoUY7boa%2BSYcInluH%2BqM29ugMUvmY60mI5IQAD6R9jDk3HgCLPTwMWGCf2qinYCzeGBsSHoOX99zliYZGav81kGZzrf5vAUEoEXp2hNPpyBe0Mpc0byERdW4y%2BhJtTL44geZLdHKqupsHsZgQL3MNsSwAFejCIiXGXIadilIWSdGYg%2BEgQPosVKNWDHTUvAosruiOLQYDp33ebobG7pkUAUoTvn5%2BwZvL1q%2B6k7ZH9NTp8GzucgkxXguj0UfhmNWo2ibc4%2BqAhWUJCq00RObvlxOClEaWkAOjP9yEbGo5T4aT%2FZfzdFDJS5vifJwYqbX%2BdWWJNrQ%2BCikJ3Gje5w%2B05gDgk4osQ4af0h1x1q5YKLDRz5%2BGoQMrD5%2Fhog%3D%3D&checksum=19198114729840f6fb23abb341a780c6bf821bef7321&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qXFPYrXeKDMVroSgY4vKZ9OiB9JNbZL16SEj4kaiGgCVtYs0e01fDkK7zxQ2TO3YAQq5zwcnwdjui6rmCUmuPhVDmFcQWEO%2FZeCjN90bXJttD8OOWOns3AraqtZm%2B5lL0HQPGms%2BNa3kfpc%2Fe5xum4gvF8I0I4lqlBlAKKzAXvYaa95PRKFJoRXMX%2FPUZ7ZxNfyMaJOF31RkaUBivS8mXHJzPXRhHwG3b7KMSw%2FI2GfBruRyyWX0PGwfs5rOOWB09kerc6mGn%2F%2BNtcNHjYXnP%2FP31AmSSjMAHw7S%2FsuBagcL9XvKLi6Hh88%2F%2BvUyqigcq6hnLIWOnp3bXy8tQtj07xoq2orksL62WvLxVQndpUIk%2B3QMnzNoUY7boa%2BSYcInluH%2BqM29ugMUvmY60mI5IQAD6R9jDk3HgCLPTwMWGCf2qinYCzeGBsSHoOX99zliYZGav81kGZzrf5vAUEoEXp2hNPpyBe0Mpc0byERdW4y%2BhJtTL44geZLdHKqupsHsZgQL3MNsSwAFejCIiXGXIadilIWSdGYg%2BEgQPosVKNWDHTUvAosruiOLQYDp33ebobG7pkUAUoTvn5%2BwZvL1q%2B6k7ZH9NTp8GzucgkxXguj0UfhmNWo2ibc4%2BqAhWUJCq00RObvlxOClEaWkAOjP9yEbGo5T4aT%2FZfzdFDJS5vifJwYqbX%2BdWWJNrQ%2BCikJ3Gje5w%2B05gDgk4osQ4af0h1x1q5YKLDRz5%2BGoQMrD5%2Fhog%3D%3D&checksum=19198114729840f6fb23abb341a780c6bf821bef7321)
 
-10. SPDT switch - eBay
+10. SPDT switch - e[Bay](https://www.ebay.com.au/itm/10x-SPDT-SLIDE-SWITCH-ON-OFF-Mini-PCB-Mount-Metal-Miniature-AUS-STOCK/171687864334?hash=item27f964e80e:g:noQAAOSwqu9U5TB~&frcectupt=true)
 
-11. 3 X 4.7uf capacitor – eBay
+11. 3 X 4.7uf capacitor – [eBay](https://www.ebay.com.au/itm/50PCS-50V-4-7uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitors-105-C/223758464007?hash=item34190b3407:g:CTMAAOSwCH9d0PrD&frcectupt=true)
 
-12. 2 X 22pf ceramic capacitor – eBay
+12. 2 X 22pf ceramic capacitor – [eBay](https://www.ebay.com.au/itm/20pcs-pack-50v-10pf-10uf-monolithic-ceramic-capacitors-pitch-5-08mm-32-values/173519085833?hash=item28668b2109:m:m4kJ0kUJqRX--2AOXy7sxOw)
 
-13. 3 X 220uf capacitor – eBay
+13. 3 X 220uf capacitor – [eBay](https://www.ebay.com.au/itm/10-20-50PCS-16V-220uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-105C/392274265663?_trkparms=ispr%3D1&hash=item5b555e463f:m:mad9zAUmoKH9vcMO2PlSWXw&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qWmoOIRDZuX23GLxRgfy72txxoc%2BpirrRwr8ltGOJAyuMRKHDN8nsUZ48p9ZcebAzZw%2FUAAW2%2FM0AHosQ9%2BDv7Mezp%2F65q7uji%2B54rBJgYqX27NbGufAxc1e1TbzhIaNGpp21z5bOvX2ar9f%2BgHD3DaC0PEvLINxkJndf5YXFtxSFEWKbXmqlBaKzvtSmpOKX3gwm6iCJ7ckcMAsGmI4OGd5iwCTiQSeckxqw9IJ7eEour9qdcjI3VpKl%2BTS6mN79HQ1TaQNGPcZWTrjzG1xlT0NgV3emUUNbWiQSDa%2FvS2tT4mZVFEetHzlOcD6fyZJRPTxitWCCS9TXulEvPf%2B5grdxp2ff51HM04epBQhXWqLoenjB8SlYgQtIucU%2F%2FDE49Vs%2BpFxoicBsZT8crPQ2uhTjugJw%2FcmFZk5sw%2BxXChS4uQkyk6wwidH802I1P6vtrdMkbfF9gOpIwW%2Bt%2BMpmTpq407XKjO%2FT4kRXlfbZmhQ81WAZEjxZOfFpUFj233ajuPZNT%2F%2Fw6gnLws%2BeEbwYrOaioqpHHmjpMmemQBEXa0gVG5R%2BuvF7PSn831mIOZcPO4oQ0%2BXa1TXNETtw9jr7HJYe8FU64jz1LTzyAm%2B2nIr47MRO2us5gpl05fF%2F9ekpdXExBrxHNZQdE84B3ulM3jsnDU79W1r%2BUSHmNjWbKu887zNLipClOcfSI%2FGdZBx5AkXzYgxpL8JJOVvn6WG2EeOcRL6HYvZuHuEnrHE3Va81quVR35JY4eWMpyBTe6JD8%3D&checksum=3922742656632f79e352b08240e394721c56a67e47b1&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qWmoOIRDZuX23GLxRgfy72txxoc%2BpirrRwr8ltGOJAyuMRKHDN8nsUZ48p9ZcebAzZw%2FUAAW2%2FM0AHosQ9%2BDv7Mezp%2F65q7uji%2B54rBJgYqX27NbGufAxc1e1TbzhIaNGpp21z5bOvX2ar9f%2BgHD3DaC0PEvLINxkJndf5YXFtxSFEWKbXmqlBaKzvtSmpOKX3gwm6iCJ7ckcMAsGmI4OGd5iwCTiQSeckxqw9IJ7eEour9qdcjI3VpKl%2BTS6mN79HQ1TaQNGPcZWTrjzG1xlT0NgV3emUUNbWiQSDa%2FvS2tT4mZVFEetHzlOcD6fyZJRPTxitWCCS9TXulEvPf%2B5grdxp2ff51HM04epBQhXWqLoenjB8SlYgQtIucU%2F%2FDE49Vs%2BpFxoicBsZT8crPQ2uhTjugJw%2FcmFZk5sw%2BxXChS4uQkyk6wwidH802I1P6vtrdMkbfF9gOpIwW%2Bt%2BMpmTpq407XKjO%2FT4kRXlfbZmhQ81WAZEjxZOfFpUFj233ajuPZNT%2F%2Fw6gnLws%2BeEbwYrOaioqpHHmjpMmemQBEXa0gVG5R%2BuvF7PSn831mIOZcPO4oQ0%2BXa1TXNETtw9jr7HJYe8FU64jz1LTzyAm%2B2nIr47MRO2us5gpl05fF%2F9ekpdXExBrxHNZQdE84B3ulM3jsnDU79W1r%2BUSHmNjWbKu887zNLipClOcfSI%2FGdZBx5AkXzYgxpL8JJOVvn6WG2EeOcRL6HYvZuHuEnrHE3Va81quVR35JY4eWMpyBTe6JD8%3D&checksum=3922742656632f79e352b08240e394721c56a67e47b1&frcectupt=true)
 
-14. 2 X 3.5mm stereo jack socket – eBay
+14. 2 X 3.5mm stereo jack socket – [eBay](https://www.ebay.com.au/itm/10Pcs-PJ-392-3-Pin-3-5mm-Stereo-Headphone-Audio-Video-Jack-Socket-Plug-Wv/293023325026?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 
-15. Prototype board – eBay
+15. Prototype board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
-16. 3.7 li-po battery – eBay or get one from an old phone
+16. 3.7 li-po battery – [eBay](https://www.ebay.com.au/itm/New-OEM-Battery-Replacement-for-Genuine-Original-Samsung-Galaxy-S2-S3-S4-S5-AU/163190414123?hash=item25fee81b2b:m:mxtq1eCD0Lnt63lj51SyFlA) or get one from an old phone
 
-17. 3.7v charger and voltage regulator module - eBay
+17. 3.7v charger and voltage regulator module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
 
-18. Micro USB adapter - eBay
+18. Micro USB adapter - [eBay](https://www.ebay.com.au/itm/5PCS-CJMCU-5V-Micro-USB-Interface-Power-Adapter-Board-Breakout-Module/264009126118?hash=item3d782b90e6:g:T~8AAOSw7Vtb1DPT&frcectupt=true)
 
-19. Wires. I used thin computer ribbon cable which you can pick-up for free at your local e-waste or buy it on eBay
+19. Wires. I used thin computer ribbon cable which you can pick-up for free at your local e-waste or buy it on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR2.TRC0.A0.H0.Xribbon+cable.TRS0&_nkw=ribbon+cable&_sacat=0)
 
 Tools
 
@@ -310,7 +310,7 @@ I forgot to take photos but before you add the battery, you’ll need to glue al
 
 Steps:
 
-I recently did an Instructable on how to reuse old mobile batteries which can be found here. This Instructable will take you through how to wire the module up to the battery
+I recently did an Instructable on how to reuse old mobile batteries which can be [found here](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/). This Instructable will take you through how to wire the module up to the battery
 
 1. Add some superglue to the bottom of the module and stick it onto the battery. Make sure that the “battery” solder points are facing the battery terminals
 

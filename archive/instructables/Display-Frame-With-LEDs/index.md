@@ -40,11 +40,11 @@ Parts:
 
 2. White MDF Panel – 3mm thick. I used this to mount the cap-gun n onto and also hide the electronics. Local hardware store
 
-3. 3 strip LED. I pulled mine from an old drone. You could however use the following from eBay. This, This or even This
+3. 3 strip LED. I pulled mine from an old drone. You could however use the following from eBay. [[[This](https://www.ebay.com.au/itm/Submersible-RGB-LED-Light-Multi-color-Wireless-IR-Remote-Control-CR2032-Battery/112509393413?epid=2159846907&hash=item1a32151a05:g:tNAAAOSw3IdZhEWt)](https://www.ebay.com.au/sch/i.html?_odkw=USB+Night+light+3leds%2F8leds+5730+SMD+Book+lights+5V&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X3+leds+SMD++5V.TRS0&_nkw=3+leds+SMD++5V&_sacat=0)](https://www.ebay.com.au/itm/USB-Night-light-3leds-8leds-5730-SMD-Book-lights-5V-For-PC-Laptops-Computer/202154509210?hash=item2f1159039a:m:mqP80EnN1B1UaBk_9Nh51hQ), This or even This
 
-4. LED Dimmer – I used a DC motor controller which I find works well – eBay
+4. LED Dimmer – I used a DC motor controller which I find works well – [eBay](https://www.ebay.com.au/itm/DC-Motor-Speed-Controller-1-8V-5V-6V-12V-2A-Speed-Regulator-Switch-Variable/401183694671?hash=item5d68695f4f:g:MRMAAOSwLVZV1ECi)
 
-5. 3 X AA Battery Holder – eBay
+5. 3 X AA Battery Holder – [eBay](https://www.ebay.com.au/itm/3Pcs-Plastic-3-x-AA-Batteries-Battery-Holder-Case-Box-w-On-Off-Switch-D3D1-F7Q5/292296464994?hash=item440e3a1a62:g:2SAAAOSw1cNZ5Yio)
 
 6. 3 X AA Batteries
 
@@ -52,7 +52,7 @@ Parts:
 
 8. Corner Brackets to secure the frame – eBay or your local hardware store
 
-9. Picture Hanging Strips - eBay
+9. Picture Hanging Strips - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1311.R2.TR10.TRC0.A0.H0.Xpicture+hanging+.TRS0&_nkw=picture+hanging+strips&_sacat=0)
 
 Tools:
 

@@ -28,11 +28,11 @@ I haven’t lost my solder since :)
 
 Parts
 
-1. Small “Quick Grip” type clamp like this one I picked up at Bunnings (Hardware store)
+1. Small “Quick Grip” type clamp [like this one](https://www.bunnings.com.au/irwin-38mm-handi-quick-grip-clamp_p5863081) I picked up at Bunnings (Hardware store)
 
-2. Flatpiece of aluminium. I used a 20mm x 3mm piece – same as this one from Bunnings
+2. Flatpiece of aluminium. I used a 20mm x 3mm piece – [same as this one](https://www.bunnings.com.au/metal-mate-20-x-3mm-1m-aluminium-flat-bar_p1064265) from Bunnings
 
-3.Small screws and nuts. I think I used M3 like these ones from Bunnings
+3.Small screws and nuts. I think I used M3 [like these ones](https://www.bunnings.com.au/zenith-m3-x-25mm-316-stainless-steel-round-head-bolt-and-nut-6-pack_p2310753) from Bunnings
 
 
 ## Step 2: Making the Bracket

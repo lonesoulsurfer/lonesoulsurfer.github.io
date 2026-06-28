@@ -34,11 +34,11 @@ This is an easy project but definitely one that has come in handy a couple of ti
 
 Parts:
 
-1. 0000 fine steel wool - eBay or try your local hardware store
+1. 0000 fine steel wool - [eBay](http://www.ebay.com.au/itm/Grade-0000-Steel-Wire-Wool-3-3m-For-Polishing-Cleaning-Remover-Non-Crumble-/131870143159?hash=item1eb412b2b7:g:ksYAAOSweWVXfhm9) or try your local hardware store
 
-2. 12v 3LR50 or MN21 battery - eBay
+2. 12v 3LR50 or MN21 battery - [eBay](http://www.ebay.com.au/itm/Duracell-2x-A23-12v-MN21-GP23A-V23GA-3LR50-Alkaline-batteries-2-off-battery-/111802499283?hash=item1a07f2c0d3:g:qkIAAOSwgZ1Xr3l~)
 
-3. Waterproof Container - eBay
+3. Waterproof Container - [eBay](http://www.ebay.com.au/itm/Pill-Medicine-Box-Case-Holder-Container-Capsule-Key-Ring-Chain-Waterproof-7Color-/121862221911?var=&hash=item1c5f8df057:m:mNj0qXpBF3Z078IZCu6VdWg)
 
 4. Electrical tape
 

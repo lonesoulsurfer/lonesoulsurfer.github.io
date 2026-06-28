@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,324 +162,364 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Trench Lighter V2</span>
 </nav>
-<h1>Trench Lighter V2</h1><div class="source"><a href="https://www.instructables.com/Trench-Lighter-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>The following ‘ible is my second attempt to make a lighter in the style of a trench lighter. Trench lighters has been made by soldiers since WWI. Soldiers would make their own out of used ammunition shells and whatever else that they had around them. I have no idea how a soldier managed to make one of these sitting in a muddy trench with virtually no tools.</p>
-<p>Version 2 is a definite improvement on the first one and is easier to make. You will only need some basic tools and be able to solder using a blow torch. For those who are new to brass and copper soldering, I recently did an Instructable on the basics which can be found here</p>
-<p>The parts needed are also pretty basic and most if not all can be purchased from a hardware store. As I’m in Australia I will link the parts that I could purchase from my local hardware store and also eBay. I've also created a printout that you can take with you when sourcing the products - see the Parts and Tools Step 1.</p>
-<p>I’ve made a lot of different types of lighters recently but this would have to me one of my favourites. It’s nice and compact and the flame burns at a good size. If you would like to see others lighter that I have made, check out the links below:</p>
-<p>Make a Trench Lighter</p>
-<p>Rope Lighter</p>
-<p>Uber Lighter</p>
-<p>Uber Lighter 2</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"></div><p>Parts:</p>
+<h1>Trench Lighter V2</h1><div class="source"><a href="https://www.instructables.com/Trench-Lighter-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>The following ‘ible is my second attempt to make a lighter in the style of a trench lighter.</p>
+<p>Trench lighters has been made by soldiers since WWI.</p>
+<p>Soldiers would make their own out of used ammunition shells and whatever else that they had around them.</p>
+<p>I have no idea how a soldier managed to make one of these sitting in a muddy trench with virtually no tools.</p>
+<p>Version 2 is a definite improvement on the first one and is easier to make.</p>
+<p>You will only need some basic tools and be able to solder using a blow torch.</p>
+<p>For those who are new to brass and copper soldering, I recently did an Instructable on the basics which can be <a href="https://www.instructables.com/id/Brass-and-Copper-Soldering/">found here</a></p>
+<p>The parts needed are also pretty basic and most if not all can be purchased from a hardware store.</p>
+<p>As I’m in Australia I will link the parts that I could purchase from my local hardware store and also eBay.</p>
+<p>I've also created a printout that you can take with you when sourcing the products - see the Parts and Tools Step 1.</p>
+<p>I’ve made a lot of different types of lighters recently but this would have to me one of my favourites.</p>
+<p>It’s nice and compact and the flame burns at a good size.</p>
+<p>If you would like to see others lighter that I have made, check out the links below:</p>
+<p><a href="https://www.instructables.com/id/Make-a-Trench-Lighter/">Make a Trench Lighter</a></p>
+<p><a href="https://www.instructables.com/id/Rope-Lighter/">Rope Lighter</a></p>
+<p><a href="https://www.instructables.com/id/Uber-Lighter/">Uber Lighter</a></p>
+<p><a href="https://www.instructables.com/id/Uber-Lighter-20/">Uber Lighter 2</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"></div><p>Parts:</p>
 <p>Lighter Body</p>
 <ol>
-<li>½” copper tube – Bunnings</li>
-</ul>
+<li>½” copper tube – <a href="https://www.bunnings.com.au/kinetic-1-2in-3m-copper-straight-length_p4910032">Bunnings</a></li>
+</ol>
 <ol>
-<li>3/4” copper tube – Bunnings</li>
-</ul>
+<li>3/4” copper tube – <a href="https://www.bunnings.com.au/kinetic-3-4in-3m-copper-straight-length_p4910033">Bunnings</a></li>
+</ol>
 <ol>
-<li>10mm brass locking nut. They don’t sell these at Bunnings any longer but you can get them from plumbing stores or eBay</li>
-</ul>
+<li>10mm brass locking nut. They don’t sell these at Bunnings any longer but you can get them from plumbing stores or <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F351611130650">eBay</a></li>
+</ol>
 <ol>
-<li>10mm threaded plug – *Bunnings. You will be able to get this plug from any hardware store, eBay have them but they are ridiculously expensive</li>
-</ul>
+<li>10mm threaded plug – *Bunnings. You will be able to get this plug from any hardware store, <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F262663903398">eBay</a> have them but they are ridiculously expensive</li>
+</ol>
 <ol>
-<li>¾” to ½” reducer – *Bunnings , eBay</li>
-</ul>
+<li>¾” to ½” reducer – *Bunnings , <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F252977134389">eBay</a></li>
+</ol>
 <ol>
-<li>1/2:” Cap – *Bunnings, eBay</li>
-</ul>
+<li>1/2:” Cap – *Bunnings, <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F272558435797">eBay</a></li>
+</ol>
 <ol>
-<li>O Rings – eBay (you can get these from hardware stores but it’s better to buy in bulk and in different sizes</li>
-</ul>
+<li>O Rings – <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F152174111698">eBay</a> (you can get these from hardware stores but it’s better to buy in bulk and in different sizes</li>
+</ol>
 <ol>
-<li>1/8” barb with ½ male screw. eBay. This part needs to be modified and is added into the top of the lighter to hold the wick in place. See Step …for more information</li>
-</ul>
+<li>1/8” barb with ½ male screw. <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F262650002487">eBay</a>. This part needs to be modified and is added into the top of the lighter to hold the wick in place. See Step …for more information</li>
+</ol>
 <ol>
 <li>Sash cord. *Bunnings. eBay This is used as the wick and is 100% cotton</li>
-</ul>
+</ol>
 <ol>
 <li>Thin wire (to wrap around the sash cord)</li>
-</ul>
+</ol>
 <ol>
 <li>Zippo Fluid</li>
-</ul>
+</ol>
 <p>*Bunnings have these available but they aren't on their website any longer</p>
 <p>Also - I would try and get most of these parts from your local hardware store - eBay seems to have become expensive of late.</p>
 <p>Sparkwheel</p>
 <ol>
-<li>Brass or copper tube. 3.18mm ID Hobby shop, RC shop, eBay. If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube</li>
-</ul>
+<li>Brass or copper tube. 3.18mm ID Hobby shop, RC shop, <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F232116456523">eBay</a>. If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube</li>
+</ol>
 <ol>
-<li>Brass strip. 6.35mm Wide , 0.64mm Thick Hobby shop, RC shop, eBay. Don't get it too thick or you will never be able to bend it. Same goes with too thin! This is used as a bracket for the sparkwheel</li>
-</ul>
+<li>Brass strip. 6.35mm Wide , 0.64mm Thick Hobby shop, RC shop, <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F272865627300">eBay</a>. Don't get it too thick or you will never be able to bend it. Same goes with too thin! This is used as a bracket for the sparkwheel</li>
+</ol>
 <ol>
-<li>1 x small screw M3.5 - eBay. These are used to hold the spring into place. I found that the screw from a large wire terminal is the perfect size as well.</li>
-</ul>
+<li>1 x small screw M3.5 - <a href="https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F252997823390">eBay</a>. These are used to hold the spring into place. I found that the screw from a large wire terminal is the perfect size as well.</li>
+</ol>
 <ol>
 <li>Old Lighter (preferably the larger sized BIC Lighter)</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Angle grinder</li>
-</ul>
+</ol>
 <ol>
 <li>Small blow torch</li>
-</ul>
+</ol>
 <ol>
 <li>Solder</li>
-</ul>
+</ol>
 <ol>
 <li>Solder flux</li>
-</ul>
+</ol>
 <ol>
 <li>Files - different sizes and shapes</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Metal polish</li>
-</ul>
+</ol>
 <ol>
 <li>Wet and dry sandpaper – 400, 600 and 1200 grits</li>
-</ul>
+</ol>
 <ol>
 <li>Belt sander (not necessary but it does help)</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Body and Bottom Section</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Body and Bottom Section image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Body and Bottom Section image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Body and Bottom Section image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Body and Bottom Section image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Body and Bottom Section image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Body and Bottom Section image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Body and Bottom Section image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Body and Bottom Section image 8" loading="lazy"></div><p>First thing to do is to decide how big you want you’re lighter to be. I find that making the body length around 55mm will give you a perfectly sized lighter.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Body and Bottom Section</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Body and Bottom Section image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Body and Bottom Section image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Body and Bottom Section image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Body and Bottom Section image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Body and Bottom Section image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Body and Bottom Section image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Body and Bottom Section image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Body and Bottom Section image 8" loading="lazy"></div><p>First thing to do is to decide how big you want you’re lighter to be. I find that making the body length around 55mm will give you a perfectly sized lighter.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the ¾ tube into a vice and cut a 55mm length off.</li>
-</ul>
+</ol>
 <ol>
 <li>You will need to either file or sand the ends to make them straight and even. I usually use a belt sander for this as it is quick and easy</li>
-</ul>
+</ol>
 <ol>
 <li>Use a curved file for the inside of the tube and remove the burrs</li>
-</ul>
+</ol>
 <p>Next thing to do is to solder the 10mm nut to one of the ends of the tube. This will be the bottom section of the lighter.</p>
 <ol>
 <li>Add some flux to the tube and place the nut and tube in a vice. This will keep all of the parts lined-up.</li>
-</ul>
+</ol>
 <ol>
 <li>Next heat-up the sections until they are hot enough and add some solder. The solder might pool at the bottom but this is easily fixed.</li>
-</ul>
+</ol>
 <ol>
 <li>Leave to cool and then remove from the vice and stand the lighter up on it.</li>
-</ul>
+</ol>
 <ol>
 <li>Heat-up the lighter again and the solder if it pooled will flow around the base. Be careful not to knock it if you want to add some extra solder. Actually, it’s beast to have too much solder on this section so go ahead and add some.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Rounding Out the Edges on the Hex Nut</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 10" loading="lazy"></div><p>First you need to remove some of the excess solder around the hex nut. The best way I found (and the cheapest) is to make your own lathe out of a drill. Check out this 'ible on how to make one.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Rounding Out the Edges on the Hex Nut</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Rounding Out the Edges on the Hex Nut image 10" loading="lazy"></div><p>First you need to remove some of the excess solder around the hex nut. The best way I found (and the cheapest) is to make your own lathe out of a drill. Check out this 'ible on how to make one.</p>
 <p>Steps:</p>
 <ol>
 <li>Attach the body of the lighter to the lathe and with a file remove the excess solder</li>
-</ul>
+</ol>
 <ol>
 <li>Next it's time to remove the edges of the hex nut with a grinder, carefully remove all of the edges on the hex nut by grinding them off.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have the hex nut as round as you get it, use a belt sander to smooth and round further. You can also use a file for this as well but it just takes longer</li>
-</ul>
+</ol>
 <ol>
-<li>Next I used my homemade lathe made from a drill (check here to leave how I did it) to smooth out further the hex nut. A file does pretty quick work of this when the lighter is spinning around on the lathe.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Top Section</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Top Section image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Top Section image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Top Section image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Top Section image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Top Section image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Top Section image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Top Section image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Top Section image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making the Top Section image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making the Top Section image 10" loading="lazy"><img src="images/step04_11.jpg" alt="Step 4: Making the Top Section image 11" loading="lazy"><img src="images/step04_12.jpg" alt="Step 4: Making the Top Section image 12" loading="lazy"><img src="images/step04_13.jpg" alt="Step 4: Making the Top Section image 13" loading="lazy"></div><p>Steps:</p>
+<li>Next I used my homemade lathe made from a drill (<a href="https://www.instructables.com/id/Simple-Metal-Lathe/">check here to leave how I did it</a>) to smooth out further the hex nut. A file does pretty quick work of this when the lighter is spinning around on the lathe.</li>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Top Section</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Top Section image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Top Section image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Top Section image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Top Section image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Top Section image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Top Section image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Top Section image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Top Section image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making the Top Section image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making the Top Section image 10" loading="lazy"><img src="images/step04_11.jpg" alt="Step 4: Making the Top Section image 11" loading="lazy"><img src="images/step04_12.jpg" alt="Step 4: Making the Top Section image 12" loading="lazy"><img src="images/step04_13.jpg" alt="Step 4: Making the Top Section image 13" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Grab the ¾” to ½” reducer and place it into a vice.</li>
-</ul>
+</ol>
 <ol>
 <li>With an angle grinder, remove about 5-7mm from the bottom. (There really isn’t real need to do this but I think it finishes off the lighter better. If you wanted to you could just solder the reducer onto the end of the lighter.)</li>
-</ul>
+</ol>
 <ol>
 <li>Smooth out the cut section on a sander and remove any burrs. Make sure you get this as straight as possible</li>
-</ul>
+</ol>
 <ol>
 <li>Next you need to slightly modify the 15mm hex nut to be able to attach it to the lighter. Use a file or a dremel to grind away a small amount of the thread inside. If you don’t it won’t fit over the body of the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the 15mm nut over the lighter and next place the reducer on top. Make sure you add some flux to the inside of the reducer as well.</li>
-</ul>
+</ol>
 <ol>
 <li>Put the top of the reducer into a vice to secure and push the nut up to the top of the lighter. You need it to stay up there until you have soldered the reducer in place so either jam it up against the bottom (I was able to do this) or hold it in place with a pair of pliers or aluminium tape.</li>
-</ul>
+</ol>
 <ol>
 <li>Heat-up the reducer and body of the lighter and solder the joint well.</li>
-</ul>
+</ol>
 <ol>
 <li>Leave to cool and add some flux between the reducer and where it joins to the body of the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>Slip the nut down so it sits onto the reducer, heat-up and solder into place.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Top Section - Part 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Top Section - Part 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Top Section - Part 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Top Section - Part 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Top Section - Part 2 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Top Section - Part 2 image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Top Section - Part 2 image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Top Section - Part 2 image 7" loading="lazy"></div><p>To be able to add a lid to the top of the lighter, you need to add a small piece of ½” tube. I decided to make a small wind breaker out of it as well. As the wick (sash rope which is just cotton rope) is thin, you also need to solder in a bush into the 1/2” tube so the wick is held in place. I modified a small ½ male connector to be able to do this but you can use one with a barb and male end like I have suggested in the parts list as well or whatever else you come up with.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Top Section - Part 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Top Section - Part 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Top Section - Part 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Top Section - Part 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Top Section - Part 2 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Top Section - Part 2 image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Top Section - Part 2 image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Top Section - Part 2 image 7" loading="lazy"></div><p>To be able to add a lid to the top of the lighter, you need to add a small piece of ½” tube.</p>
+<p>I decided to make a small wind breaker out of it as well.</p>
+<p>As the wick (sash rope which is just cotton rope) is thin, you also need to solder in a bush into the 1/2” tube so the wick is held in place.</p>
+<p>I modified a small ½ male connector to be able to do this but you can use one with a barb and male end like I have suggested in the parts list as well or whatever else you come up with.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut a piece of the ½ tube. The length needs to be about 25mm long. File or sand the ends to remove any burrs</li>
-</ul>
+</ol>
 <ol>
 <li>Next, place it into the top of the lighter and put the 1/2” cap on top of the tube. The cap should sit flat against the top of the reducer. If not, file and reduce the size of the ½ tube until everything fits right.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove a small section at the top of the 1/2” tube as shown in the images. Measure where the tube meets the reducer and mark so you don’t cut too far.</li>
-</ul>
+</ol>
 <ol>
 <li>File the edges smooth and round off any sharp sections.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill 3 small holes around the top section to allow for air flow.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Top Section - Part 3</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Top Section - Part 3 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Top Section - Part 3 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Top Section - Part 3 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Top Section - Part 3 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Top Section - Part 3 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Top Section - Part 3 image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Top Section - Part 3 image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making the Top Section - Part 3 image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Making the Top Section - Part 3 image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Making the Top Section - Part 3 image 10" loading="lazy"></div><p>The rope that I used for the wick is quite thin so I had to make a bush that would fit inside the top section of the lighter. It is soldered into place and ensures that the wick is held into place. You could just use a bolt and grind off the edges and fit it into the lighter neck which would probably do the job just as good. I used a small adapter which had a ½ diameter male screw and this worked fine as well.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Top Section - Part 3</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Top Section - Part 3 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Top Section - Part 3 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Top Section - Part 3 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Top Section - Part 3 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Top Section - Part 3 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Top Section - Part 3 image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Top Section - Part 3 image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making the Top Section - Part 3 image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Making the Top Section - Part 3 image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Making the Top Section - Part 3 image 10" loading="lazy"></div><p>The rope that I used for the wick is quite thin so I had to make a bush that would fit inside the top section of the lighter.</p>
+<p>It is soldered into place and ensures that the wick is held into place.</p>
+<p>You could just use a bolt and grind off the edges and fit it into the lighter neck which would probably do the job just as good.</p>
+<p>I used a small adapter which had a ½ diameter male screw and this worked fine as well.</p>
 <p>You can also use a barb adapter which I have added to the parts list. it’s up to you want you want to use in this section so use whatever you have on hand.</p>
 <p>Steps:</p>
 <ol>
 <li>First work out whether you need to make the hole larger in your bush by trying to push the rope through the hole. If it is too tight you will need to drill it to make it bigger (like I did!)</li>
-</ul>
+</ol>
 <ol>
 <li>Place the adapter in a vice and drill out the hole</li>
-</ul>
+</ol>
 <ol>
 <li>You will probably find that the thread on the adapter is stopping it from going into the top of the lighter. To fix this you have to grind off the thread with a grinder.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep on trying to push it into the lighter and grind if necessary until it fits</li>
-</ul>
+</ol>
 <ol>
 <li>Now put the neck section into the top of the lighter and make sure that bush is also inside the neck.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some flux and solder everything into place</li>
-</ul>
+</ol>
 <ol>
 <li>Leave to cool and then give it a clean.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Polishing</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Polishing image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Polishing image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Polishing image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Polishing image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Polishing image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Polishing image 6" loading="lazy"></div><p>Now it’s time for some polishing and finessing. I had to rig-up something a little differentthis time around for my home made lathe as the bush now prevented the end of the lathe to through. It would have probably have been better to have left out the bush until this part was done but I still managed to get the finish I wanted.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Polishing</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Polishing image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Polishing image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Polishing image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Polishing image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Polishing image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Polishing image 6" loading="lazy"></div><p>Now it’s time for some polishing and finessing.</p>
+<p>I had to rig-up something a little differentthis time around for my home made lathe as the bush now prevented the end of the lathe to through.</p>
+<p>It would have probably have been better to have left out the bush until this part was done but I still managed to get the finish I wanted.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the lighter back onto the lathe. I had to use a thinner shaft on the lathe as the lighter wouldn't fit any longer. To do this I just cut the top off a long, thin bolt and used this instead as the shaft for the lathe. You can also just do this section by hand if you want to.</li>
-</ul>
+</ol>
 <ol>
 <li>With a small file, clean up any of the rough edges etc.</li>
-</ul>
+</ol>
 <ol>
 <li>Next grab some wet and dry sandpaper 400 to 600 grit and start to remove any small scratches by pushing the sandpaper against the lighter. As mentioned above, you can do this by hand if you want to as well – it just takes a little longer.</li>
-</ul>
+</ol>
 <ol>
 <li>Next it’s time to polish the lighter. I use the lathe to make quick work out of this. Be careful though as you don’t want to get the rag caught around the spinning lathe!</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Bottom Plug and Cap for the Top of the Lighter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Bottom Plug and Cap for the Top of the Lighter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Bottom Plug and Cap for the Top of the Lighter image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The threaded plugs usually have a protective paint on the tops of them which you will need to remove. To do this you can use a file or a belt sander.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have the paint removed you then need to polish the plug. Grab some wet/dry sandpaper and start to polish the bottom and the sides. I like to wrap some sandpaper around a drill bit and use this to polish as it whips through the job. Just add some tape to both ends of the paper to hold it onto the drill bit.</li>
-</ul>
+</ol>
 <ol>
 <li>You will also need to add an O ring to the bottom of the plug. I only had to add one O ring in the end but you may have to add two depending on how big the gap is between the plug and the bottom of the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>The last thing to do is to put the 1/2" cap onto the top of the lighter. If it is loose, slightly bend out the sides of the 1/2" tube and add the cap again. It should be tight enough not to fall off and loose enough to be able to pull it off. You might have to make a couple adjustments top get it right.</li>
-</ul>
+</ol>
 <p>That’s the main section of the lighter done. You now have to make the sparkwheel…</p><h2><span class="step-num">STEP 9</span>Step 9: Making the Sparkwheel - Spring Holder</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Making the Sparkwheel - Spring Holder image 7" loading="lazy"></div><p>Steps</p>
 <ol>
 <li>First you need to pull apart your bic lighter. Remove the metal guard and pull out the flint, spring and sparkwheel. The rest you can throw away.</li>
-</ul>
+</ol>
 <ol>
 <li>I found that it is easier to make the thread in the brass time first. Place one end of the brass into the vice and with a tap carefully make a thread the same size as the screw. If you don't have a tap then I found that you can screw the screw directly into the brass tube if you take your time.</li>
-</ul>
+</ol>
 <ol>
 <li>Test the screw and make sure it screws into the place.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, place the spring alongside the brass tube and use the length of the screw to work out where to cut it. I usually cut the tube about the same size as the spring.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Make the Bracket</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Make the Bracket image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Make the Bracket image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Make the Bracket image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Make the Bracket image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Make the Bracket image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Make the Bracket image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Make the Bracket image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Make the Bracket</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Make the Bracket image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Make the Bracket image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Make the Bracket image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Make the Bracket image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Make the Bracket image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Make the Bracket image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Make the Bracket image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Grab the sparkwheel and the flat piece of brass.</li>
-</ul>
+</ol>
 <ol>
 <li>Next make a 90 degree bend in the brass strip as shown in the image below.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the sparkwheel against the brass strip and mark where you need to make the next bend</li>
-</ul>
+</ol>
 <ol>
 <li>Place the sparkwheel against the bracket to make sure that it is the correct size. The sparkwheels mounting points should rest on the barcket as shown in the image.</li>
-</ul>
+</ol>
 <ol>
 <li>Trim the bracket and round off the edges.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Drilling Holes in the Bracket</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Drilling Holes in the Bracket image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Drilling Holes in the Bracket image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Drilling Holes in the Bracket image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Drilling Holes in the Bracket image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Drilling Holes in the Bracket image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Drilling Holes in the Bracket image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Drilling Holes in the Bracket</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Drilling Holes in the Bracket image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Drilling Holes in the Bracket image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Drilling Holes in the Bracket image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Drilling Holes in the Bracket image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Drilling Holes in the Bracket image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Drilling Holes in the Bracket image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First you need to drill the holes to mount the sparkwheel in the bracket. Place the sparkwheel against the bracket and mark where to drill the holes.</li>
-</ul>
+</ol>
 <ol>
 <li>I found that if you put a piece of wood in the bracket, drilling the holes is a lot easier. The holes should be only slightly larger than the mounting points.</li>
-</ul>
+</ol>
 <ol>
 <li>Next you need to drill a hole in the bottom of the bracket for the brass tube. This should be a tight fit so make sure you use the right sized bit.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the bracket onto the brass tube. If you find that later the sparkwheel touches the tube inside the bracket, you can always file it down to there is clearance.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some flux to the underside of the bracket and tube and solder into place</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Soldering the Sparkwheel to the Lighter</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 9" loading="lazy"></div><p>This step can be a little tricky. You need to solder the sparkwheel to the body of the lighter. To be able to do this you need to clamp the 2 parts together and make sure that the sparkwheel is straight and at the right height to the wick on the lighter. I found that a vice does the trick and works well but you have to be careful when heating the lighter as there are other soldered parts and you don't want to loosen them up or re-flow the solder if you can help it</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Soldering the Sparkwheel to the Lighter</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Soldering the Sparkwheel to the Lighter image 9" loading="lazy"></div><p>This step can be a little tricky.</p>
+<p>You need to solder the sparkwheel to the body of the lighter.</p>
+<p>To be able to do this you need to clamp the 2 parts together and make sure that the sparkwheel is straight and at the right height to the wick on the lighter.</p>
+<p>I found that a vice does the trick and works well but you have to be careful when heating the lighter as there are other soldered parts and you don't want to loosen them up or re-flow the solder if you can help it</p>
 <p>Steps:</p>
 <ol>
 <li>There isn't an image of this but you need to made a groove into the flat section of the nut that the sparkwheel gets soldered to. This will give the sparkwheel more area to the soldered to. I used a small round file to make the groove.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the lighter and sparkwheel into a vice and make sure that the sparkwheel is straight and that the top of the sparkwheel is level with the hole for the wick in the lighter</li>
-</ul>
+</ol>
 <ol>
 <li>Add some flux to the areas to be soldered and carefully heat the area up the blow torch. Add solder to the section on both sides.</li>
-</ul>
+</ol>
 <ol>
 <li>You will probably find that some solder has spattered onto the lighter so you will need to file this away and sand smooth those sections.</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Adding the Sparkwheel to the Bracket</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the Sparkwheel to the Bracket</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the Sparkwheel to the Bracket image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To fit the sparkwheel to the bracket first slightly bend the sides of the bracket outwards.</li>
-</ul>
+</ol>
 <ol>
 <li>Next push the sparkwheel into the bracket so the mounting points are aligned to the holes in the bracket</li>
-</ul>
+</ol>
 <ol>
 <li>Use a pair of pliers to close up the bracket sides. The sparkwheel should spin freely but not have too much side to side play.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, put the flint into the bottom of the sparkwheel tube and the spring.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, replace the small screw into the bottom of the sparkwheel tube. This can be a little tricky as the spring will want to push the screw out. Just align the bottom of the screw with the spring, push the screw down and once it has made contact with the tube, use a screwdriver to secure into place.</li>
-</ul>
+</ol>
 <p>NOTE - If you find that your sparkwheel isn't making enough sparks, then you might need to stretch the spring a little. Just un-do the screw, pull on the spring a little and replace.</p><h2><span class="step-num">STEP 14</span>Step 14: Adding the Wick</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Wick image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Wick image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Adding the Wick image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Adding the Wick image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Adding the Wick image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Adding the Wick image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Adding the Wick image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: Adding the Wick image 8" loading="lazy"><img src="images/step14_09.jpg" alt="Step 14: Adding the Wick image 9" loading="lazy"><img src="images/step14_10.jpg" alt="Step 14: Adding the Wick image 10" loading="lazy"></div><p>I added wire to the cotton as it adds some rigidity to the wick and helps when threading it through the lighter.</p>
 <p>Steps:</p>
 <ol>
 <li>Wrap some thin wire around the wick. Also make sure that the wick has some extra length as it will help when adding cotton to the inside of the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>Thread the wick through the top of the lighter and through the bottom.</li>
-</ul>
+</ol>
 <ol>
 <li>Next grab some cotton balls and tear small chunks off. start to push these into the base of the lighter. Use a thin screwdriver or something similar to push the cotton into the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep on doing this making sure that the wick stays in the middle of the lighter with cotton on the outside.</li>
-</ul>
+</ol>
 <ol>
 <li>Once full of cotton, pull the wick until only a small amount is showing.</li>
-</ul>
+</ol>
 <ol>
 <li>Trim the wick coming out of the base and push it up into the lighter.</li>
-</ul><h2><span class="step-num">STEP 15</span>Step 15: Filling With Fuel</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Filling With Fuel image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Filling With Fuel image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Filling With Fuel image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Filling With Fuel image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Filling With Fuel image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 15</span>Step 15: Filling With Fuel</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Filling With Fuel image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Filling With Fuel image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Filling With Fuel image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Filling With Fuel image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Filling With Fuel image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Make sure that the lid of the lighter is removed and start to add zippo fuel.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep on adding the fuel until it starts to drip out the top of the lighter.</li>
-</ul>
+</ol>
 <ol>
 <li>Screw the bottom on and replace the lid.</li>
-</ul>
+</ol>
 <ol>
 <li>Wipe any excess fuel from the lighter.</li>
-</ul>
+</ol>
 <p>This is the best bit - strike the sparkwheel and light your lighter for the first time. The flame initially will be large but will die down once the excess fuel burns away from the wick.</p><h2><span class="step-num">STEP 16</span>Step 16: Done</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Done image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Done image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Done image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Done image 4" loading="lazy"></div><p>That's it!</p>
-<p>Congrats if you took the time to make one of these lighter. I really enjoy using mine and find people are always coming up to me and asking where I got it from. It's pretty cool to be able to say I made it out of a few plumbing parts and some rope.</p>
-<p>The only thing I would do differently is use brass instead of copper for the body of the lighter. It keeps its lustre longer than copper which starts to tarnish in a few days. I haven't been able to find any bras tubing lacally so I'll probably have to get some on-line.</p>
+<p>Congrats if you took the time to make one of these lighter.</p>
+<p>I really enjoy using mine and find people are always coming up to me and asking where I got it from.</p>
+<p>It's pretty cool to be able to say I made it out of a few plumbing parts and some rope.</p>
+<p>The only thing I would do differently is use brass instead of copper for the body of the lighter.</p>
+<p>It keeps its lustre longer than copper which starts to tarnish in a few days.</p>
+<p>I haven't been able to find any bras tubing lacally so I'll probably have to get some on-line.</p>
 <p>If you have any questions or need help, please leave a comment and I'll help wherever I can. Also, if you do make one i'd love to see some photos of how yours turned out.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

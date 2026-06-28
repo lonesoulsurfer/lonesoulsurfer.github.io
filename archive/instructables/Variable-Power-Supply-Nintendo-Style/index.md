@@ -38,29 +38,29 @@ So without further ado - lets get cracking
 
 Parts
 
-1. Super Nintendo Controller - eBay
+1. Super Nintendo Controller - [eBay](https://www.ebay.com.au/itm/Retro-Wired-Game-Controller-GamePad-Joystick-For-Nintendo-SNES-Super-NES/292433946563?hash=item44166be7c3:g:YZYAAOSwR2FcdjiA&frcectupt=true)
 
-2. Voltage display - eBay
+2. Voltage display - [eBay](https://www.ebay.com.au/itm/0-36-Digital-DC-Voltmeter-4-5-30V-2-Wires-Red-LED-Display-Panel-Voltage-Meter/264170799389?hash=item3d81ce811d:g:94oAAOSwwZxcFw40&frcectupt=true)
 
-3. Voltage regulator - eBay
+3. Voltage regulator - [eBay](https://www.ebay.com.au/itm/New-Boost-Buck-Voltage-Module-Step-Up-Down-Converter-Regulator-3-35V-to-2-2-30V/381195478171?hash=item58c105649b:g:spAAAOSwEeFU8WTp&frcectupt=true)
 
-4. 10K pot - eBay
+4. 10K pot - [eBay](https://www.ebay.com.au/itm/3Pcs-6mm-Knurled-Shaft-Single-Linear-B-Type10K-ohm-Rotary-Potentiometer-New/262852339228?epid=1684420726&hash=item3d3338661c:g:Np8AAOSwax5Yos7P)
 
-5. 3.7v phone battery - just grab out out of an old phone or you can buy them from eBay
+5. 3.7v phone battery - just grab out out of an old phone or you can buy them from [eBay](https://www.ebay.com.au/itm/MOBILE-PHONE-BATTERY-HTC-DESIRE-S-REPLACEMENT-BG32100-S-G11-INCREDIBLE-DESIRE/171246147270?hash=item27df10d6c6:g:QhEAAOxyni9TBfI7)
 
 6. Banana plugs: Buy more if you need to make different connections to power your projects
 
-a. Sockets - eBay
+a. Sockets - [eBay](https://www.ebay.com.au/itm/4mm-Red-Black-Universal-Banana-Socket-Nickel-Plated-Plug-Binding-Post-Nut/163479840999?hash=item26102868e7:m:mw56gFSIGffDFVJHC4yo0PQ&frcectupt=true)
 
-b. Inputs - eBay
+b. Inputs - [eBay](https://www.ebay.com.au/itm/5-10Pcs-set-4mm-Audio-Speaker-Screw-Banana-Plate-Plugs-Connectors-Universal-Hot/264141715771?hash=item3d8012b93b:m:myHTS4f5p_ZjhahjOBhPN8w&frcectupt=true)
 
 7. You can also buy these banana plug connectors which will allow you to attach the power supply different ways
 
-alligator clips - eBay, hook clip - eBay, probe - eBay
+alligator clips - [[[eBay](https://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-HY/191951524989?epid=1487109558&hash=item2cb133d47d:g:Fz8AAOSwV0RXupx-)](https://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-HY/191951524989?epid=1487109558&hash=item2cb133d47d:g:Fz8AAOSwV0RXupx-)](https://www.ebay.com.au/itm/1-Pair-Alligator-Test-Power-Cord-Lead-Clip-to-Banana-Plug-for-Multimeter-Tester/112250758883?epid=3024193919&hash=item1a22aaa6e3&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVnr9%2Fqe8feyXnvSy%2BFT0HBmW73DdFPrIZ61se3euvy136a6eDX2T%2BZ8DQeVu9kbFnEY0LjtO2ScvU22rrfupX%2FXonigByNKySMVKzJIIoKFhPBOLoYJW8RUtquYh2YFAvQGDJYiQCIj4DwLq1tbvqVPQz3ojWEeIKbnarFI98BmNaE%2FPFyYCGH8J%2BvIwZimp2pUN4t5i3gyAfcEKKS0ED%2FG1rGaJpji%2BDoMJ%2B0tSz3F4CTOXuRsMOFum%2FTaA6ui0VMb%2F4Qhh2weqYcHNeHvttadJit4i%2BfalXWAWzFAoAAJWEtQUC907e0eLY9j2BP9NEnwb2exL9igoX4IC7%2FVCssfZ60xzgUupecmIuEhJcRdb8opYYKpv3DeRcq7C7PRbwiBCS3uik67D6TGmhJLhEd7%2BVskMxdbyasXPS6quq3aDpS7uzEye%2FF8cti8x5gPUXyxrUjpNt5%2B1UbYuccPvGKcjp7fW4dMUFNU05B4k6hhM%2B9exaZgnVvivzJsSmn8iCH9rYio5kFEaa8vw4knnYXwDsrv0Ej4J3t5UwoR6KlAkmp63cvHJy5JrUqKS3gxjagi%2ByyY1S3CWF8Uo03BpPvUwiEWz0sgE4IhFukEbNBqyV2I6LNVmFYRQOHEBYeWRZGTXQcMEZLr8IUnV%2BFGxQZdx7cNwJGg9u%2BvLWkSgfxnf%2Fm%2BXxycyhzw%2FRhmbYV%2FTVa9yoHzbMWhOji2sgp79FyEVmXGeJ%2FVfyVxaqcXxUnRWycZNALbMfn%2FnM6JMH6a6K5BgihTyEJboUcd70RD%2BFMuGWkgNNfhIBkdKwc2ztGwFFrFXVVT0fNPrw77uG2TID%2BbWkHN6aaVeJQRzlvXnWZnREbbNVqtn2fHElU%2BcmXEkIpxhuhBXmwJ5Fz%2BKgHifSxYJMxT%2BnT9XhDf%2BNaJsmKESwSrL2gVLrMgttx%2Bi1oPvodmU71PjqU8zycDJAQ5PpizlFwVkXyMfhogy9xKde1w%3D%3D&checksum=1122507588838cefb2b8c2a045119a0317afca5ddcf6&frcectupt=true), hook clip - eBay, probe - eBay
 
-8. SPDT switch - eBay
+8. SPDT switch - [eBay](https://www.ebay.com.au/itm/1-10pcs-5A-125VAC-2A-250VAC-ON-ON-SPDT-3-Pin-3-Terminals-Miniature-Toggle-Switch/381560991809?hash=item58d6ceb041:m:mv_nQHoaAb8ApFC1WlzQGJg&frcectupt=true)
 
-9. Charging module - eBay
+9. Charging module - [eBay](https://www.ebay.com.au/itm/10pcs-DC-to-DC-5V-1A-Li-ion-18650-Lithium-Lipo-3-7v-Battery-Charger-Module-Board/112524739309?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m1438.l2649)
 
 10. Wire
 

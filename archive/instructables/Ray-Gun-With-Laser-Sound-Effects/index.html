@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,85 +162,112 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Ray Gun With Laser Sound Effects</span>
 </nav>
-<h1>Ray Gun With Laser Sound Effects</h1><div class="source"><a href="https://www.instructables.com/Ray-Gun-With-Laser-Sound-Effects/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I really love to build projects from old parts that I have scavenged . This is the 2nd ray gun build that I had documented (this is my first one). Along with ray guns I've built junkbots - (check them out here) and a whole lot of other projects from found objects.</p>
-<p>It doesn't take a lot of skill to build your own ray gun, just some patience and a little imagination. This build also includes an extremely cool sound effect circuit that gives the ray gun a whole other dimension.</p>
-<p>I wish I could supply an exact parts list for the ray gun (no problem with the parts for the circuit) but unfortunately I can't. These types of builds are unique due to the fact that the parts used are things that most people throw away! You will need to start to collect parts from anywhere you can with a mindset of possibly using them in a ray gun build.</p>
-<p>Hackaday have reviewed this build as well. You can check out the article here</p>
-<p>Let's get building</p><h2><span class="step-num">STEP 1</span>Step 1: Where to Start</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Where to Start image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Where to Start image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Where to Start image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Where to Start image 4" loading="lazy"></div><p>My ray gun is made from interesting junk parts and scrap pieces that I’ve collected. The first thing you will need to do then is to start collecting parts. There isn’t any real science to this, it’s up to you to decide what parts could be used and what looks interesting.</p>
-<p>Junk parts can be anything from vintage electronics to broken mike stands and vacuum tubes. I did an ible’ some time ago on Junkboks which can be found here and making a ray gun from scrap uses the same principals.</p>
-<p>Once you start to actually look with a mindset of making a ray gun, you’ll find all types of great bits and bobs. I store anything I find until I think I have enough parts to start building. Then it's just a case of working out how the parts could go together to make a ray gun. I find the process of designing, problem solving and building the ray gun the most rewarding part of doing a build like this. It can get tricky at times trying to work out how to join all those parts together (esp if you want to be able to pull it apart and not just glue everything together!)</p>
-<p>So what should you keep your eye out for when making a ray gun? The first thing I always try to find is the handle and body section/s. These parts are the core parts to the build where everything will be connected. I’ve seen ray guns build from old film movie cameras, drills, air guns (like this one I did). The thing they have in common is a good body and handle to start with.</p>
-<p>You should also start collecting some images from google. I have a Pinterest page where I collect ray gun images for inspiration. You can check out mine here.</p><h2><span class="step-num">STEP 2</span>Step 2: Parts for the Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Parts for the Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Parts for the Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Parts for the Circuit image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Parts for the Circuit image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Parts for the Circuit image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Parts for the Circuit image 6" loading="lazy"></div><p>Parts List</p>
+<h1>Ray Gun With Laser Sound Effects</h1><div class="source"><a href="https://www.instructables.com/Ray-Gun-With-Laser-Sound-Effects/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I really love to build projects from old parts that I have scavenged .</p>
+<p>This is the 2nd ray gun build that I had documented (<a href="https://www.instructables.com/id/Make-a-Ray-Gun-1/">this is my first one</a>).</p>
+<p>Along with ray guns I've built junkbots - (<a href="https://www.instructables.com/id/The-Art-of-Making-Junkbots/">check them out here</a>) and a whole lot of other projects from found objects.</p>
+<p>It doesn't take a lot of skill to build your own ray gun, just some patience and a little imagination.</p>
+<p>This build also includes an extremely cool sound effect circuit that gives the ray gun a whole other dimension.</p>
+<p>I wish I could supply an exact parts list for the ray gun (no problem with the parts for the circuit) but unfortunately I can't.</p>
+<p>These types of builds are unique due to the fact that the parts used are things that most people throw away!</p>
+<p>You will need to start to collect parts from anywhere you can with a mindset of possibly using them in a ray gun build.</p>
+<p><a href="https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE">Hackaday</a> have reviewed this build as well.</p>
+<p>You can check out the article <a href="https://hackaday.com/2019/12/12/a-stunning-ray-gun-built-from-junk/">here</a></p>
+<p>Let's get building</p><h2><span class="step-num">STEP 1</span>Step 1: Where to Start</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Where to Start image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Where to Start image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Where to Start image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Where to Start image 4" loading="lazy"></div><p>My ray gun is made from interesting junk parts and scrap pieces that I’ve collected.</p>
+<p>The first thing you will need to do then is to start collecting parts.</p>
+<p>There isn’t any real science to this, it’s up to you to decide what parts could be used and what looks interesting.</p>
+<p>Junk parts can be anything from vintage electronics to broken mike stands and vacuum tubes.</p>
+<p>I did an ible’ some time ago on Junkboks which can be <a href="https://www.instructables.com/id/The-Art-of-Making-Junkbots/">found here</a> and making a ray gun from scrap uses the same principals.</p>
+<p>Once you start to actually look with a mindset of making a ray gun, you’ll find all types of great bits and bobs.</p>
+<p>I store anything I find until I think I have enough parts to start building.</p>
+<p>Then it's just a case of working out how the parts could go together to make a ray gun.</p>
+<p>I find the process of designing, problem solving and building the ray gun the most rewarding part of doing a build like this.</p>
+<p>It can get tricky at times trying to work out how to join all those parts together (esp if you want to be able to pull it apart and not just glue everything together!)</p>
+<p>So what should you keep your eye out for when making a ray gun?</p>
+<p>The first thing I always try to find is the handle and body section/s.</p>
+<p>These parts are the core parts to the build where everything will be connected.</p>
+<p>I’ve seen ray guns build from old film movie cameras, drills, air guns (<a href="https://www.instructables.com/id/Make-a-Ray-Gun-1/">like this one I did</a>).</p>
+<p>The thing they have in common is a good body and handle to start with.</p>
+<p>You should also start collecting some images from google.</p>
+<p>I have a Pinterest page where I collect ray gun images for inspiration.</p>
+<p>You can check out <a href="https://www.pinterest.com.au/marcusdunn/ray-guns/">mine here</a>.</p><h2><span class="step-num">STEP 2</span>Step 2: Parts for the Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Parts for the Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Parts for the Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Parts for the Circuit image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Parts for the Circuit image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Parts for the Circuit image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Parts for the Circuit image 6" loading="lazy"></div><p>Parts List</p>
 <ol>
-<li>40106 IC – eBay</li>
-</ul>
+<li>40106 IC – <a href="https://www.ebay.com.au/itm/10PCS-CD40106-CD40106BE-40106-DIP-14-HEX-SCHMITT-TRIGGER-IC/381374858810?hash=item58cbb6863a:g:E6IAAOSwF1dUPnly&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>1M Pot – eBay</li>
-</ul>
+<li>1M Pot – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=1m+potentiometer&_sacat=0&_sop=15">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 100K Pot – eBay. Note that I swapped out the 1M Osc 2 pitch pot which is in the schematic to a 100k one. Up to you whether you do this or not.</li>
-</ul>
+<li>2 X 100K Pot – <a href="https://www.ebay.com.au/itm/2PCS-3Pin-6MM-B-Type-B100K-Ohm-Rotary-Potentiometer-Shaft-Adjustable-Resistance/392303688905?hash=item5b571f3cc9:g:a9kAAOSwApVc67qV&frcectupt=true">eBay</a>. Note that I swapped out the 1M Osc 2 pitch pot which is in the schematic to a 100k one. Up to you whether you do this or not.</li>
+</ol>
 <ol>
-<li>4.7uf cap – eBay</li>
-</ul>
+<li>4.7uf cap – <a href="https://www.ebay.com.au/itm/2-2uF-4700uF-Horn-Inline-50V-400V-10uF-4-7uF-Aluminum-Electrolytic-Capacitor/392355035093?hash=item5b5a2eb7d5:m:mzuEZEe-4xsm64zfVAAT7kQ&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>220uf cap - eBay</li>
-</ul>
+<li>220uf cap - <a href="https://www.ebay.com.au/itm/10-20-50-100PCS-35V-220uF-High-Frequency-Radial-Electrolytic-Capacitor-8x12mm/392319599509?hash=item5b58120395:m:mi8aRRmxz63MuAu1X6hBnQw&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>47nf cap – Buy them in assorted lots on eBay</li>
-</ul>
+<li>47nf cap – <a href="https://www.ebay.com.au/itm/1pf-100nf-1000pcs-50value-50V-Ceramic-Capacitor-Assorted-Kit-Assortment-Set/120982871681?hash=item1c2b241e81:g:RGsAAOSw1vlUrOau">Buy them in assorted lots on eBay</a></li>
+</ol>
 <ol>
 <li>100nf cap - will come with the assorted lot</li>
-</ul>
+</ol>
 <ol>
-<li>100uf cap – eBay</li>
-</ul>
+<li>100uf cap – <a href="https://www.ebay.com.au/itm/10-20-50-100PCS-50V-100uF-High-Frequency-8x12mm-Radial-Electrolytic-Capacitor/392274276783?hash=item5b555e71af:m:m_RZ_5EslovVsMtY_MyrEPg">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 2N3904 Transistor – eBay</li>
-</ul>
+<li>2 X 2N3904 Transistor – <a href="https://www.ebay.com.au/itm/50pcs-2N3904-TO-92-NPN-General-Purpose-Transistor/283016224380?hash=item41e514de7c:g:DjoAAOSwBCtbKfhx&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>1K resistor – Buy them in assorted lots on eBay</li>
-</ul>
+<li>1K resistor – <a href="https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/223222191255?epid=24025613485&hash=item33f9145497:g:-EAAAOSw1KRb46cC">Buy them in assorted lots on eBay</a></li>
+</ol>
 <ol>
 <li>2 X 470K resistor - Will be in the assorted lot</li>
-</ul>
+</ol>
 <ol>
-<li>Optocoupler - you can buy these (eBay), or make one. Check out this ‘ible on how to easily make one from an LED and a LDR</li>
-</ul>
+<li>Optocoupler - you can buy these (<a href="https://www.ebay.com.au/itm/1Pcs-VTL5C3-xvive-audio-opto-coupler-high-quality-BDAU/362743753623?hash=item5475366b97:g:e~MAAOSwJrdcic1o">eBay</a>), or make one. <a href="https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/">Check out this ‘ible</a> on how to easily make one from an LED and a LDR</li>
+</ol>
 <ol>
-<li>9v battery holder – eBay</li>
-</ul>
+<li>9v battery holder – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=9v+battery+holder&_sacat=0&_sop=15">eBay</a></li>
+</ol>
 <ol>
 <li>9v Battery</li>
-</ul>
+</ol>
 <ol>
-<li>Switch – this would work well - eBay, or maybe a momentary switch like this My old soldering iron came with a trigger switch, which I used.</li>
-</ul>
+<li>Switch – this would work well - <a href="https://www.ebay.com.au/itm/FA2-6-2W5-AC-250V-6A-DPST-No-Lock-on-Electric-Tool-Trigger-Switch-EB/263527826919?hash=item3d5b7b85e7:g:SgsAAOSwmOJZ8ch4">eBay</a>, or maybe a momentary switch <a href="https://www.ebay.com.au/itm/SPST-Red-Round-Momentary-Push-Button-Switch-3A-125V-1-5A-250VAC-x-1pcs/273969965141?epid=1938273804&hash=item3fc9e1e855:g:lxkAAOSw8NxdWGcy&frcectupt=true">like this</a> My old soldering iron came with a trigger switch, which I used.</li>
+</ol>
 <ol>
-<li>Prototype board – eBay</li>
-</ul>
+<li>Prototype board – <a href="https://www.ebay.com.au/itm/SPST-Red-Round-Momentary-Push-Button-Switch-3A-125V-1-5A-250VAC-x-1pcs/273969965141?epid=1938273804&hash=item3fc9e1e855:g:lxkAAOSw8NxdWGcy&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
 <li>Wires</li>
-</ul>
+</ol>
 <ol>
-<li>4 Ohm speaker – eBay. I think I used an 8 ohm, which worked fine as well.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Making the Circuit image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Making the Circuit image 8" loading="lazy"></div><p>I didn’t do a step by step build of the circuit like I usually do, the main reason was I kinda forgot to take photos! However, I don’t really think a step by step helps too much, especially in a circuit build like this. Happy to be proved wrong though.</p>
-<p>The circuit is by Symetricolour over at Make and it’s really awesome. The only changes I did (and they aren’t necessary) was to change the Osc 2 Pitch pot from 1M to 100K. It’s a really great circuit and the sounds produced are perfect for a ray gun build.</p>
-<p>The other thing to note is the circuit uses an optocoupler, also known as a vactrol. It sounds fancy but all it really is is an LED and a LDR which interact together. You can make one easily – see this Instructable where I show how to make one, or just buy one. If you want more information on how they work, then check out this link.</p>
-<p>You can also see on the circuit that I have tried to keep the parts such as the caps as low as possible. This helps give a little more room inside the ray gun if needed.</p><h2><span class="step-num">STEP 4</span>Step 4: Designing the Ray Gun</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Designing the Ray Gun image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Designing the Ray Gun image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Designing the Ray Gun image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Designing the Ray Gun image 4" loading="lazy"></div><p>My Ray gun is based around an old soldering iron I picked up at a junk store. It has just the right look and when I was buying it, I got talking to the guy behind the counter who asked if I was making a ray gun from it.</p>
+<li>4 Ohm speaker – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=4+ohm+speaker&_sacat=0&_sop=15">eBay</a>. I think I used an 8 ohm, which worked fine as well.</li>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Making the Circuit image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Making the Circuit image 8" loading="lazy"></div><p>I didn’t do a step by step build of the circuit like I usually do, the main reason was I kinda forgot to take photos!</p>
+<p>However, I don’t really think a step by step helps too much, especially in a circuit build like this.</p>
+<p>Happy to be proved wrong though.</p>
+<p>The circuit is by <a href="https://makezine.com/author/symetricolour/">Symetricolour</a> over at <a href="https://makezine.com/projects/make-35/raygun-vector-weapon/">Make</a> and it’s really awesome.</p>
+<p>The only changes I did (and they aren’t necessary) was to change the Osc 2 Pitch pot from 1M to 100K.</p>
+<p>It’s a really great circuit and the sounds produced are perfect for a ray gun build.</p>
+<p>The other thing to note is the circuit uses an optocoupler, also known as a vactrol.</p>
+<p>It sounds fancy but all it really is is an LED and a LDR which interact together.</p>
+<p>You can make one easily – <a href="https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/">see this Instructable</a> where I show how to make one, or just buy one.</p>
+<p>If you want more information on how they work, then check out <a href="https://en.wikipedia.org/wiki/Opto-isolator">this link</a>.</p>
+<p>You can also see on the circuit that I have tried to keep the parts such as the caps as low as possible. This helps give a little more room inside the ray gun if needed.</p><h2><span class="step-num">STEP 4</span>Step 4: Designing the Ray Gun</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Designing the Ray Gun image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Designing the Ray Gun image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Designing the Ray Gun image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Designing the Ray Gun image 4" loading="lazy"></div><p>My Ray gun is based around an old soldering iron I picked up at a junk store.</p>
+<p>It has just the right look and when I was buying it, I got talking to the guy behind the counter who asked if I was making a ray gun from it.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I went through my parts bin and pulled out all of the interesting parts that I thought would look good against the soldering iron.</li>
-</ul>
+</ol>
 <ol>
 <li>Next thing I did was to start to place different parts against the soldering iron to see what suits. For the “barrel” section of the gun, I went with a trusty vacuum tube. It’s a risk using one though (as you will see a little later) due to them being fragile. If you are using a vacuum tube, then it’s best as a display item and not for kids to play with.</li>
-</ul>
+</ol>
 <ol>
 <li>I kept on adding parts and taking them away until I was happy with the way the gun looked. I knew that it won’t be the final design and you’ll work that out too. The parts all might look good together but you still need to connect them together somehow!</li>
-</ul>
+</ol>
 <ol>
 <li>Here’s a lit of the parts that I used in my build.</li>
-</ul>
+</ol>
 <p>Gun Body and barrel</p>
 <p>· Soldering Iron – vintage</p>
 <p>· Large vacuum tube</p>
@@ -216,188 +278,228 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>· Part of a Mike stand</p>
 <p>· The female plug from an old mike</p>
 <p>· Light bulb socket</p>
-<p>· Some pieces of brass tube</p><h2><span class="step-num">STEP 5</span>Step 5: Making a Bracket to Attach the Vacuum Tube</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 5" loading="lazy"></div><p>Now comes the part where you need to work out how to attach all of the parts together. As I mentioned earlier, this can be frustrating at times trying to join 2 parts together that seem so different. However, I think it’s also one of the most rewarding parts of a build like this. Overcoming these problems with your own solutions is very satisfying.</p>
-<p>I also like to try as much as possible to be able to pull everything apart again. This means that you can’t just use epoxy glue on everything (although it’s inevitable that you will need to use some at some point). It’s good practice to make your builds to be able to be pulled apart in case you need to get to a section after the build has been done or if you want to modify it in some way.</p>
+<p>· Some pieces of brass tube</p><h2><span class="step-num">STEP 5</span>Step 5: Making a Bracket to Attach the Vacuum Tube</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making a Bracket to Attach the Vacuum Tube image 5" loading="lazy"></div><p>Now comes the part where you need to work out how to attach all of the parts together.</p>
+<p>As I mentioned earlier, this can be frustrating at times trying to join 2 parts together that seem so different.</p>
+<p>However, I think it’s also one of the most rewarding parts of a build like this.</p>
+<p>Overcoming these problems with your own solutions is very satisfying.</p>
+<p>I also like to try as much as possible to be able to pull everything apart again.</p>
+<p>This means that you can’t just use epoxy glue on everything (although it’s inevitable that you will need to use some at some point).</p>
+<p>It’s good practice to make your builds to be able to be pulled apart in case you need to get to a section after the build has been done or if you want to modify it in some way.</p>
 <p>Steps:</p>
 <ol>
 <li>To attach the vacuum tube to the front of the soldering iron I decided to make a bracket out of some aluminium strips. You can get tubes strips and channels of aluminium from your local hardware store for reasonable prices.</li>
-</ul>
+</ol>
 <ol>
 <li>First I bent one end of the aluminium strip and rounded the edges</li>
-</ul>
+</ol>
 <ol>
 <li>Next, I placed the legs from the vacuum tube against the aluminium and marked where they touched</li>
-</ul>
+</ol>
 <ol>
 <li>I thin drilled some small holes just larger than the legs on the vacuum tube. Once done I aligned the legs up and pushed them through the holes. If you do this correctly then the vacuum tube should hold in place pretty well. You will need to still probably have to glue it into place at some stage.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Still Making a Bracket to Attach the Vacuum Tube</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Still Making a Bracket to Attach the Vacuum Tube</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Still Making a Bracket to Attach the Vacuum Tube image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Once I had the holes drilled and the vacuum tube fitted nice and snuggly, I trimmed the end of the bracket</li>
-</ul>
+</ol>
 <ol>
 <li>I also rounded off the other end better file some filing</li>
-</ul>
+</ol>
 <ol>
 <li>I then decided to modify the front of the soldering iron so the bracket would fit flush. As the soldering iron is made from Bakelite I had to be very careful when sanding and filing to ensure I was protected as the dust can be dangerous for you. If you’re also using something made from Bakelite then make sure you wear protection.</li>
-</ul>
+</ol>
 <ol>
 <li>Once I was happy with the fit I decided to start work on the sight section of the ray gun</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Sight</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Sight image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Sight image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Sight image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Sight image 4" loading="lazy"></div><p>The sight was probably the part that took me the longest to put together. I made a few changes along the way, which will happen in any build like this. Initially I was going to connect the sight to the top of the gun with only one leg but decided against this. Lucky for me I made this part so I could pull it apart and it wasn’t too much of a chore.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Making the Sight</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Sight image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Sight image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Sight image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Sight image 4" loading="lazy"></div><p>The sight was probably the part that took me the longest to put together.</p>
+<p>I made a few changes along the way, which will happen in any build like this.</p>
+<p>Initially I was going to connect the sight to the top of the gun with only one leg but decided against this.</p>
+<p>Lucky for me I made this part so I could pull it apart and it wasn’t too much of a chore.</p>
 <p>Steps:</p>
 <ol>
 <li>So first, I had to work out how I was going to connect it to the top of the soldering iron. The top of the iron has a large groove in it, which the aluminium bracket is visible. I decided to connect the sight to this via a bolt and nut.</li>
-</ul>
+</ol>
 <ol>
 <li>I secured the bolt to the body of the sight and added a small piece of brass tube to cover the bolt. I would have like to have used brass all throughout this build but went with some aluminium strips for some parts as it’s what I had lying around.</li>
-</ul>
+</ol>
 <ol>
 <li>I thin drilled a hole into the aluminium bracket and secured the sight.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Still Making the Sight</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Still Making the Sight image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Still Making the Sight image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Still Making the Sight image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Still Making the Sight image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Still Making the Sight image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Still Making the Sight image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Still Making the Sight image 7" loading="lazy"></div><p>Now that I had the main body of the sight attached to the bracket, I had to work out a way to attach the other parts to finish it.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Still Making the Sight</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Still Making the Sight image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Still Making the Sight image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Still Making the Sight image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Still Making the Sight image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Still Making the Sight image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Still Making the Sight image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Still Making the Sight image 7" loading="lazy"></div><p>Now that I had the main body of the sight attached to the bracket, I had to work out a way to attach the other parts to finish it.</p>
 <p>Steps:</p>
 <ol>
 <li>The first part I added was the light bulb fixture. This actually fitted inside the main section of the sight quite well and I could have glued it into place if I wanted to. However, If I ever wanted to remove the bolts again I would need to be able to remove this section. I decided instead to add a couple of small brass screws to hold it into place</li>
-</ul>
+</ol>
 <ol>
 <li>I used a tab to create some threads in the plastic and metal sections and then just screwed them together.</li>
-</ul>
+</ol>
 <ol>
 <li>For the end section of the sight, I just glued the mic plug into place, as I knew I wouldn’t have to remove it again. I also added a piece of brass tube I had because I thought it looked good.</li>
-</ul>
+</ol>
 <ol>
 <li>You can see in the images that I’ve still only got one leg connecting the sight to the bracket. I didn’t change this to a little later on</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Pulling Apart the Soldering Iron</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Pulling Apart the Soldering Iron image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Pulling Apart the Soldering Iron image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Pulling Apart the Soldering Iron image 3" loading="lazy"></div><p>This soldering iron would have had a large transformer inside back in its hay day.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Pulling Apart the Soldering Iron</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Pulling Apart the Soldering Iron image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Pulling Apart the Soldering Iron image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Pulling Apart the Soldering Iron image 3" loading="lazy"></div><p>This soldering iron would have had a large transformer inside back in its hay day.</p>
 <p>Steps:</p>
 <ol>
 <li>I removed all of the bolts and nuts holding the case together and carefully pried it apart. I thought that it might be a little fragile due to its age but the Bakelite was still very strong and not brittle at all.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, I removed the trigger switch and any excess wires. I also tested the switch to see if it worked which it did (yay)</li>
-</ul>
+</ol>
 <ol>
 <li>I gave the gun a once over with a dry cloth but that’s it. I wanted to keep the dirt and whatever else in place as it’s supposed to look old and used.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the 3 Potentiometers to the Soldering Iron</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 5" loading="lazy"></div><p>So it seems that Bakelite doesn’t really like to be drilled! It can chip away easily through the exit hole which I discovered. If I had put a piece of wood behind the exit hole then that would have probably protected it better.. I also misjudged one of the holes and ran into an internal wall, which meant I had to enlarge it more then I wanted to.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the 3 Potentiometers to the Soldering Iron</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the 3 Potentiometers to the Soldering Iron image 5" loading="lazy"></div><p>So it seems that Bakelite doesn’t really like to be drilled!</p>
+<p>It can chip away easily through the exit hole which I discovered.</p>
+<p>If I had put a piece of wood behind the exit hole then that would have probably protected it better..</p>
+<p>I also misjudged one of the holes and ran into an internal wall, which meant I had to enlarge it more then I wanted to.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I worked out where I wanted to have each of the potentiometers. I decided on 2 on the side and the speed pot on the back of the soldering iron.</li>
-</ul>
+</ol>
 <ol>
 <li>I then drilled the holes (and ran into the problems I mentioned in the intro). These mistakes can luckily be hidden pretty well by the knobs for the pots so I wasn’t too worried. Still though, I should have been more careful when I drilled the holes.</li>
-</ul>
+</ol>
 <ol>
 <li>I then attached the pots to the soldering iron and the knobs. The knobs I pulled off some old electronic thing ages ago. I always collect any knobs I can find, especially vintage looking ones</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Disaster!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Disaster! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Disaster! image 2" loading="lazy"></div><p>Maybe not the end of the world disaster but nevertheless it was still a little heart breaking. I have mentioned somewhere else in this ‘ible that vacuum tubes are fragile and if you want to actually play with this ray gun then you might be better using something more robust. Well I found that out the hard way when the vacuum tube I was going to use cracked!</p>
-<p>Things like this will happen when doing a build like this and the best thing to do is just to find some alternative. I have a whole bunch of vacuum tubes (I love them) and had one that was smaller but would do the job.</p><h2><span class="step-num">STEP 12</span>Step 12: Connecting the Bracket to the Soldering Iron Body</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 5" loading="lazy"></div><p>Now that I had the bracket done, I had to next work out the best way to attach it to the soldering iron.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Disaster!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Disaster! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Disaster! image 2" loading="lazy"></div><p>Maybe not the end of the world disaster but nevertheless it was still a little heart breaking.</p>
+<p>I have mentioned somewhere else in this ‘ible that vacuum tubes are fragile and if you want to actually play with this ray gun then you might be better using something more robust.</p>
+<p>Well I found that out the hard way when the vacuum tube I was going to use cracked!</p>
+<p>Things like this will happen when doing a build like this and the best thing to do is just to find some alternative.</p>
+<p>I have a whole bunch of vacuum tubes (I love them) and had one that was smaller but would do the job.</p><h2><span class="step-num">STEP 12</span>Step 12: Connecting the Bracket to the Soldering Iron Body</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Connecting the Bracket to the Soldering Iron Body image 5" loading="lazy"></div><p>Now that I had the bracket done, I had to next work out the best way to attach it to the soldering iron.</p>
 <p>Steps:</p>
 <ol>
 <li>You can see that the top of the soldering iron has a long slit along it. I figured that I could place the bracket on either side of this and secure it with some screws</li>
-</ul>
+</ol>
 <ol>
 <li>I first drilled a couple of small holes into the top of the soldering iron and then place the bracket inside the soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>I then drilled holes into the top of the bracket once it was lined-up inside the soldering iron.</li>
-</ul>
+</ol>
 <ol>
 <li>To secure into place I added some self-tapping screws to each of the holes. I made first though that there was a thread by using a tap to make one.</li>
-</ul>
+</ol>
 <ol>
 <li>Once I was happy with it I removed one side of the soldering iron and kept the other side secured in place.</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Adding the Sight Back Onto the Bracket</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 6" loading="lazy"></div><p>Now that I had a way to hold the bracket in place on the soldering iron, I could next add the sight back onto it. I took it off so I could easier drill and attached the bracket</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the Sight Back Onto the Bracket</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the Sight Back Onto the Bracket image 6" loading="lazy"></div><p>Now that I had a way to hold the bracket in place on the soldering iron, I could next add the sight back onto it. I took it off so I could easier drill and attached the bracket</p>
 <p>Steps:</p>
 <ol>
 <li>First thing you might notice is there are now 2 brass supports for the sight. It made more sense to add 2 and make the sight a lot more secure.</li>
-</ul>
+</ol>
 <ol>
 <li>I used a couple long bolts and nuts to secure the sight onto the bracket.</li>
-</ul>
+</ol>
 <ol>
 <li>Now you can start to get a feel of what the ray gun is going to look like. In the images there’s a aluminium ring around the sight which I later removed as it didn’t look quite right.</li>
-</ul><h2><span class="step-num">STEP 14</span>Step 14: Wiring-up the Circuit Board</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Wiring-up the Circuit Board image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Wiring-up the Circuit Board image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Wiring-up the Circuit Board image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Wiring-up the Circuit Board image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Wiring-up the Circuit Board image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Wiring-up the Circuit Board image 6" loading="lazy"></div><p>It’s always good practice to be able to get to the bottom of your circuit board in case you need to make any changes. I always ensure that the wires connecting to the pots and speakers are long enough for me to flip the board over if necessary. It’s also good practice to secure your board so you can easily remove it again if necessary. Sometimes this isn’t always possible but it was in this case</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Wiring-up the Circuit Board</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Wiring-up the Circuit Board image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Wiring-up the Circuit Board image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Wiring-up the Circuit Board image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Wiring-up the Circuit Board image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Wiring-up the Circuit Board image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Wiring-up the Circuit Board image 6" loading="lazy"></div><p>It’s always good practice to be able to get to the bottom of your circuit board in case you need to make any changes.</p>
+<p>I always ensure that the wires connecting to the pots and speakers are long enough for me to flip the board over if necessary.</p>
+<p>It’s also good practice to secure your board so you can easily remove it again if necessary.</p>
+<p>Sometimes this isn’t always possible but it was in this case</p>
 <p>Steps:</p>
 <ol>
 <li>Decide where the best place is to place your circuit board. You should think about having it close to the pots and other parts so the wiring isn’t everywhere.</li>
-</ul>
+</ol>
 <ol>
 <li>Next I had to work out where to add the speaker. The best spot on this build was in the side section of the soldering iron. I drilled a few holes and hot glued the speaker into place. Hot glue doesn’t stick too great on Bakelite but it does the job.</li>
-</ul>
+</ol>
 <ol>
 <li>Start to trim the wires and connecting them to the auxiliary parts.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have everything connected, you can give it a test run and see if it is working. Add some power to the circuit and hit the switch. Do you hear anything? If not you may have to go over the circuit board and problem shoot it. Mine didn’t work first go as I had a connection in the wrong place.</li>
-</ul><h2><span class="step-num">STEP 15</span>Step 15: Securing the Circuit</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Securing the Circuit image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Securing the Circuit image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Securing the Circuit image 3" loading="lazy"></div><p>As mentioned in the previous step, it’s always good if you can easily get under the circuit and troubleshoot if necessary. Sometimes though it’s just not possible and you have to hot glue it down or use double sided tape (my preference)</p>
+</ol><h2><span class="step-num">STEP 15</span>Step 15: Securing the Circuit</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Securing the Circuit image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Securing the Circuit image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Securing the Circuit image 3" loading="lazy"></div><p>As mentioned in the previous step, it’s always good if you can easily get under the circuit and troubleshoot if necessary.</p>
+<p>Sometimes though it’s just not possible and you have to hot glue it down or use double sided tape (my preference)</p>
 <p>Steps:</p>
 <ol>
 <li>I identified that I could add a couple of screws to hold the circuit board in place</li>
-</ul>
+</ol>
 <ol>
 <li>I drilled a couple small holes and used a tap to create a thread.</li>
-</ul>
+</ol>
 <ol>
 <li>After that it was a simple matter to line-up the circuit board and secure into place</li>
-</ul><h2><span class="step-num">STEP 16</span>Step 16: Adding an LED Into the Vacuum Tube</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Adding an LED Into the Vacuum Tube image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Adding an LED Into the Vacuum Tube image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Adding an LED Into the Vacuum Tube image 3" loading="lazy"></div><p>I decided to add a green LED inside the vacuum tube, which wasn’t really part of the plan. However, it was easy enough to solder a couple of wires to the circuit board and connect the LED up to power.</p>
+</ol><h2><span class="step-num">STEP 16</span>Step 16: Adding an LED Into the Vacuum Tube</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Adding an LED Into the Vacuum Tube image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Adding an LED Into the Vacuum Tube image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Adding an LED Into the Vacuum Tube image 3" loading="lazy"></div><p>I decided to add a green LED inside the vacuum tube, which wasn’t really part of the plan. However, it was easy enough to solder a couple of wires to the circuit board and connect the LED up to power.</p>
 <p>Steps:</p>
 <ol>
 <li>The vacuum tube that I used has a central plastic section which I had to remove. I used a pair of pliers and cut it away.</li>
-</ul>
+</ol>
 <ol>
 <li>Behind the plastic is some glass, which you will need to break. This forms part of the vacuum tube so be careful you don’t add any cracks.</li>
-</ul>
+</ol>
 <ol>
 <li>Once I removed the section, I could fit An LED inside. It doesn’t give a whole lot of illumination but just enough for a nice effect. To secure it inside the LED I added a little super glue to the LED</li>
-</ul>
-<p>I added a 3.3K resistor to the end of the positive leg on the LED and connected it to the circuit board and switch so when the trigger switch was pulled it would turn on the sound effects and LED</p><h2><span class="step-num">STEP 17</span>Step 17: Powering-up the Circuit Board</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Powering-up the Circuit Board image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Powering-up the Circuit Board image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Powering-up the Circuit Board image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Powering-up the Circuit Board image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: Powering-up the Circuit Board image 5" loading="lazy"><img src="images/step17_06.jpg" alt="Step 17: Powering-up the Circuit Board image 6" loading="lazy"></div><p>Now that the circuit board was all wired-up, I had to come up with a way to power and charge the battery. I recently found these awesome little modules that are a voltage regulator and charger all in one. It means that you can attach a li-po 3.7v battery to it, hike up the voltage to 9v and charge the battery through one module! I recently did an 'ible on how to wire the module up and how to reuse old mobile batteries which can be found here.</p>
-<p>Using rechargeable batteries is great when you don’t have much room in a build or you don’t want to have to open it up to change the battery. I also added a separate micro USB connector so I could charge the battery from the grip bottom of the ray gun.</p>
+</ol>
+<p>I added a 3.3K resistor to the end of the positive leg on the LED and connected it to the circuit board and switch so when the trigger switch was pulled it would turn on the sound effects and LED</p><h2><span class="step-num">STEP 17</span>Step 17: Powering-up the Circuit Board</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Powering-up the Circuit Board image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Powering-up the Circuit Board image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Powering-up the Circuit Board image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Powering-up the Circuit Board image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: Powering-up the Circuit Board image 5" loading="lazy"><img src="images/step17_06.jpg" alt="Step 17: Powering-up the Circuit Board image 6" loading="lazy"></div><p>Now that the circuit board was all wired-up, I had to come up with a way to power and charge the battery.</p>
+<p>I recently found these awesome little modules that are a voltage regulator and charger all in one.</p>
+<p>It means that you can attach a li-po 3.7v battery to it, hike up the voltage to 9v and charge the battery through one module!</p>
+<p>I recently did an 'ible on how to wire the module up and how to reuse old mobile batteries which can be f<a href="https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/">ound here.</a></p>
+<p>Using rechargeable batteries is great when you don’t have much room in a build or you don’t want to have to open it up to change the battery.</p>
+<p>I also added a separate micro USB connector so I could charge the battery from the grip bottom of the ray gun.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I had to work out where to add the module and battery. I decided to add the module behind the circuit board and the battery on top of the speaker.</li>
-</ul>
+</ol>
 <ol>
 <li>I used an old mobile 3.7 li po battery as I have a bunch lying round. I soldered a couple wires to the terminals (do this quickly as you don’t want the battery to overheat) and connect these to the battery section on the module</li>
-</ul>
+</ol>
 <ol>
 <li>Next I soldered a couple wires to the mirco USB connector and then to the “in” sections on the module. The module comes with its own micro USB input but it’s recessed and not easy to use. Only real fault I can find with them</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, I soldered the positive and negative wires from the circuit board and switch to the “out” section on the module and tested to make sure everything worked.</li>
-</ul>
-<p>SUCCESS!</p><h2><span class="step-num">STEP 18</span>Step 18: Adding a Bracket to Cover Some Slits in the Soldering Iron</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding a Bracket to Cover Some Slits in the Soldering Iron image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding a Bracket to Cover Some Slits in the Soldering Iron image 2" loading="lazy"></div><p>The soldering iron body has a couple of slits in it, which meant you could see inside the gun itself. The top one was covered by the bracket used to hold the vacuum tube in place but there was nothing on the front slit. I was just going to leave it but figured I may as well cover that as well.</p>
+</ol>
+<p>SUCCESS!</p><h2><span class="step-num">STEP 18</span>Step 18: Adding a Bracket to Cover Some Slits in the Soldering Iron</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding a Bracket to Cover Some Slits in the Soldering Iron image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding a Bracket to Cover Some Slits in the Soldering Iron image 2" loading="lazy"></div><p>The soldering iron body has a couple of slits in it, which meant you could see inside the gun itself.</p>
+<p>The top one was covered by the bracket used to hold the vacuum tube in place but there was nothing on the front slit.</p>
+<p>I was just going to leave it but figured I may as well cover that as well.</p>
 <p>Steps:</p>
 <ol>
 <li>To cover the slit I used some flat aluminium which I had left over from the bracket I made from the vacuum tube</li>
-</ul>
+</ol>
 <ol>
 <li>I cut a length of the aluminium, bent it and placed it into the soldering iron. I had to play around with the bend angle until it was flush with both sides of the slit.</li>
-</ul>
+</ol>
 <ol>
 <li>Inside the soldering iron where the aluminium sits, there is a small rise. I had to remove a section on each side of the aluminium so it would fit right. You can see this in the images</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, once I was happy with the fit, I used some epoxy resin to glue into place</li>
-</ul><h2><span class="step-num">STEP 19</span>Step 19: Closing-up the Case & Making a Stand</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 3" loading="lazy"><img src="images/step19_04.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 4" loading="lazy"><img src="images/step19_05.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 5" loading="lazy"><img src="images/step19_06.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 19</span>Step 19: Closing-up the Case & Making a Stand</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 3" loading="lazy"><img src="images/step19_04.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 4" loading="lazy"><img src="images/step19_05.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 5" loading="lazy"><img src="images/step19_06.jpg" alt="Step 19: Closing-up the Case & Making a Stand image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Before you close up the soldering iron, test everything and make sure it’s working.</li>
-</ul>
+</ol>
 <ol>
 <li>Add power to the charging module and make sure that it is working ok.</li>
-</ul>
+</ol>
 <ol>
 <li>As everything was working as it should be I carefully closed up the 2 sides of the soldering iron and bolted everything together.</li>
-</ul>
+</ol>
 <ol>
 <li>Once everything is closed, test again to ensure the ray gun is working as it should and you haven’t nicked any wires etc.</li>
-</ul>
+</ol>
 <p>To make the stand I just used a piece of pine wood that I had lying around.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I cut the piece of wood to side and routed the sides</li>
-</ul>
+</ol>
 <ol>
 <li>I then gave it a coat of varnish - I think it was antique teak, and left it to dry</li>
-</ul>
+</ol>
 <ol>
 <li>To hold the gun on the stand I used a tube of clear acrylic that I had which I cut to size and made a groove on the top for the gun to sit into.</li>
-</ul>
+</ol>
 <p>That’s it! You now have your very own, unique ray gun that has sound effects. The last thing to do is to make some type of stand to display your awesome ray gun</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

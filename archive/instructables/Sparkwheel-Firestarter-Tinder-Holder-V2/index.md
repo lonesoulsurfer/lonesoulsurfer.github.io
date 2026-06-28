@@ -17,7 +17,7 @@ Source: https://www.instructables.com/Sparkwheel-Firestarter-Tinder-Holder-V2/
 
 ![Intro 5](images/intro_05.jpg)
 
-Some of you might recall the flint and sparkwheel firelighter that I made awhile ago. It's very handy for getting char cloth lit or even gas stoves or blowtorches but there was no-where to store tinder. After a couple of good ideas supplied by the community I decided to revisit and include a container to store tinder.
+Some of you might recall the [flint and sparkwheel firelighter](https://www.instructables.com/id/Flint-and-Spark-Wheel-Fire-Starter/) that I made awhile ago. It's very handy for getting char cloth lit or even gas stoves or blowtorches but there was no-where to store tinder. After a couple of good ideas supplied by the community I decided to revisit and include a container to store tinder.
 
 As you can see from the images, the main body is quite large. This is where the tinder is kept! The container is held into place with a screw that also serves as a stopper for the spring and flint.
 
@@ -357,7 +357,7 @@ This is what I put into my one. The great thing about them is they catch on fire
 
 Link and Wax
 
-This burns very well and is easy to ignite Check out this ible' to see how to make it
+This burns very well and is easy to ignite Check out [this ible](https://www.instructables.com/id/Steel-Wool-Emergency-Fire-Starter/)' to see how to make it
 
 Check out the Youtube clip in the intro to see these tinder's ignite
 

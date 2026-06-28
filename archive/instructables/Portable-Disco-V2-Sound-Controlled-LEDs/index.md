@@ -15,7 +15,7 @@ Source: https://www.instructables.com/Portable-Disco-V2-Sound-Controlled-LEDs/
 
 ![Intro 4](images/intro_04.jpg)
 
-I've come a long way with my electronics journey since I made my first portable disco. In the original build I hacked together a circuit on prototype board and managed to build a neat, little pocket disco. This time around I designed my own PCB and worked out a way to have the LED's dance with either a mic or directly from a music source. Having the LED's dance to a direct music source was an afterthought so the board for that I had to use prototype board. However, I did design one in eagle which I have made it available in the Instructable. Version 3 will be even bigger and I'm hoping to incorporate bluetooth as well.
+I've come a long way with my electronics journey since I made my first [portable disco](https://www.instructables.com/id/Sound-Controlled-LEDs-Pocket-Disco/). In the original build I hacked together a circuit on prototype board and managed to build a neat, little pocket disco. This time around I designed my own PCB and worked out a way to have the LED's dance with either a mic or directly from a music source. Having the LED's dance to a direct music source was an afterthought so the board for that I had to use prototype board. However, I did design one in eagle which I have made it available in the Instructable. Version 3 will be even bigger and I'm hoping to incorporate bluetooth as well.
 
 I'm really happy with how this portable disco turned out. It looks and works great and the opal acrylic diffuser really gives the LED's some depth.
 
@@ -46,31 +46,31 @@ Dancing LED Boards & Components
 
 1. Dancing LED circuit boards. You can find the link to these in the next step. There are 2 boards that you will need to get, one is the main board and the other is an extension.
 
-2. 4017 IC X 2 - eBay. Buy these in lots of 10
+2. 4017 IC X 2 - [eBay](https://www.ebay.com.au/itm/10PCS-CD4017BE-4017-CD4017-Decade-Counter-Divider-IC-SL-Y1/402349497270?hash=item5dade61bb6:g:zrYAAOSw8UZaKlTh). Buy these in lots of 10
 
-3. IC dip Socket X 2 - eBay. Buy these in lots of 10
+3. IC dip Socket X 2 - [eBay](https://www.ebay.com.au/itm/Splendid-30PCS-16-Pins-DIP-IC-Sockets-Adaptor-Solder-Type-Socket-DD/353100441854?hash=item52366d28fe:g:mR8AAOSwT6pVqMjC). Buy these in lots of 10
 
-3. 20k Resistor X 2 - eBay
+3. 20k Resistor X 2 - [eBay](https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-1K-910K-Ohm-1K-10K-100K-47K-22K-33K/192901341321?hash=item2ce9d0e089:g:6pcAAOSwjDZYd168&frcectupt=true)
 
-4. 100R Resistor - eBay
+4. 100R Resistor - [eBay](https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-1K-910K-Ohm-1K-10K-100K-47K-22K-33K/192901341321?hash=item2ce9d0e089:g:6pcAAOSwjDZYd168&frcectupt=true)
 
-5. 2M Resistor - eBay
+5. 2M Resistor - [eBay](https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-1K-910K-Ohm-1K-10K-100K-47K-22K-33K/192901341321?hash=item2ce9d0e089:g:6pcAAOSwjDZYd168&frcectupt=true)
 
-6. BC547 Transistor - eBay
+6. BC547 Transistor - [eBay](https://www.ebay.com.au/itm/50pcs-set-Transistor-NPN-black-BC547-BC547B-0-1A-45V-OZ-P1/203076711638?hash=item2f4850b4d6:g:GoYAAOSw0wRaBma-&frcectupt=true)
 
-7. 100nf Capacitor - eBay
+7. 100nf Capacitor - [eBay](https://www.ebay.com.au/itm/10pcs-CBB-104J-100V-0-1UF-100NF-P5mm-Metallized-Film-Capacitor-104-1-P1RP/383667533758?hash=item59545df7be:g:MHAAAOSwsaZa2bkk)
 
-8. Condenser mic - eBay
+8. Condenser mic - [eBay](https://www.ebay.com.au/itm/20x-New-Electret-Microphone-Inserts-6050-with-PCB-Pins-Condenser-High-Qual-Nd/133304495365?hash=item1f09912d05:g:ev8AAOSwy0JZ5cpQ&frcectupt=true)
 
-9. Right angle pin header - eBay
+9. Right angle pin header - [eBay](https://www.ebay.com.au/itm/SODIAL-R-5-Pcs-40-Position-Single-Row-Right-Angle-Pin-Header-U7P3/193454083926?epid=1749453249&hash=item2d0ac30f56:g:vukAAOSwP79es2R2)
 
-10. Right angle female pin header - eBay
+10. Right angle female pin header - [eBay](https://www.ebay.com.au/itm/20Pcs-Right-Angle-Single-Row-Pin-Header-1X6-Pin-2-54MM-Female-Connector-ec/352797501872?hash=item52245ea9b0:g:kNkAAOSwUMpdheUx)
 
 9. LED's. I used 2 different types of LED's. Some were diffused and some weren't. The reason being, I wanted different sized light patterns to appear. You should experiment yourself to find which works best for you.
 
-Normal LED's (assorted) - eBay
+Normal LED's (assorted) - [eBay](https://www.ebay.com.au/itm/LED-Diode-Kit-3mm-5mm-LED-Lights-Emitting-Diodes-Assorted-Clear-Bulbs-with-H5Z1/392898669110?epid=2282666457&hash=item5b7a95ea36:g:vPIAAOSwz7BfKq7u)
 
-Diffused LED's (assorted) - eBay
+Diffused LED's (assorted) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=5mm+diffused+white+lens&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=5mm+diffused+green)
 
 Sound Module
 
@@ -78,33 +78,33 @@ If you also want to be able to plug in a speaker and iPhone and have the LED's d
 
 1. Board - You can find the link in the next step. I ordered one but couldn't wait so just made one on a prototype board.
 
-2. 386 IC - eBay
+2. 386 IC - [eBay](https://www.ebay.com.au/itm/20x-LM386N-1-DIP-8-LM386-Low-Voltage-Audio-Power-Amplifier-IC/183344242398?hash=item2ab02b1ede:g:9t8AAOSwNDdbWULR)
 
-3. 10 uf Caps X 2 - eBay
+3. 10 uf Caps X 2 - [eBay](https://www.ebay.com.au/itm/electrolytic-capacitor-25v-22-47-100-220-330-470-680-1000-1200-1500-2200-6800-uf/332511557843?var=542131420572&hash=item4d6b3bb8d3:g:~cEAAOSwwdxavLZ0)
 
-4. 220 uf Cap - eBay
+4. 220 uf Cap - [eBay](https://www.ebay.com.au/itm/electrolytic-capacitor-25v-22-47-100-220-330-470-680-1000-1200-1500-2200-6800-uf/332511557843?var=542131420572&hash=item4d6b3bb8d3:g:~cEAAOSwwdxavLZ0)
 
-5. 5K (or 10K) Potentiometer - eBay
+5. 5K (or 10K) Potentiometer - [eBay](https://www.ebay.com.au/itm/B5K-10K-20K-100K-RK097N-Seal-Potentiometer-Single-3Pin-Audio-Pot-Carbon-Film/352689267569?hash=item521deb2371:g:v6kAAOSw-M5c~Jpo)
 
-6. audio Socket X 2 - eBay
+6. audio Socket X 2 - [eBay](https://www.ebay.com.au/itm/2pcs-3-5MM-audio-jack-socket-3-pole-black-stereo-solder-panel-mount-with-nutATA/274165349755?hash=item3fd5873d7b:g:9TYAAOSws7Fci2gL)
 
 Other Parts:
 
-1. SPDT switches X 2- eBay
+1. SPDT switches X 2- [eBay](https://www.ebay.com.au/itm/5-x-On-Off-Mini-Small-Toggle-Switch-Round-Handle-3P-Red/124186295769?hash=item1cea147dd9:g:334AAOSwNI5evHZ4)
 
 2. Wire
 
 3. Pot knob - eBay
 
-4. Opal acrylic diffuser - eBay
+4. Opal acrylic diffuser - [eBay](https://www.ebay.com.au/itm/COLOURED-ACRYLIC-SHEET-A4-SIZE-297x210x3mm-FREE-SHIPPING/323430396857?_trkparms=ispr%3D1&hash=item4b4df433b9:g:cHsAAOSwKqlbj1dK&enc=AQAFAAACcBaobrjLl8XobRIiIML1V4Imu%2Fn%2BzU5L90Z278x5ickk5v8gVt3hEWLVg%2F253w6XCdTzsRbmSAUHwp6tlSpIYcO4Ukc8vLmg7qQHjUm6PlaGrl4tk9pwZYTXTOfmkIAr4pEI%2F6JEjYO3kXPcAYWj0%2B%2BmqeoxmINsfcti%2BXBlAIG3ukDAyJWqtTOCyv1gCxQ0on%2BwXdveXR87WPrIXknOLG%2FXoOn49SahC1s6Y10hHJEpaBjySv%2FUdIyY%2F9N7ZNiStv9guEksTgMDJUxNatkOYLndoskaQUywJAY9wIq2VoSqSPILKf7oBKAfqCV5N4ePeD1LyvOdj20VdruWpXefQ0UFsGp3lkU4K9luSPh9ZuTLC3plbRgcIdHBCqLxe5ig93PSy20M5i1ahPgOHL7ih%2F5PG4aqEasbO7Mx1lmtGwN8Qa%2Bdond%2Baw1%2FYjk72CItKmNmwFQ4iuAF6JJ9K11sb4UL37FMXLUyjeYsdXoADU0tWVY7Vz6R3hgwU2f6o2I05pio0tJIthjueEEU%2F0azP4Q%2B9G9TzHo8xnnhzLyRnORFrtr4bEosffXTe56CqAmJanclbk2d%2F%2FJI4nttsKOSMwegaQPphFbaQIHopGFrPnCUSeZIUxaZFNzruJ3foAjgEzDLkvHknQSeT1i554xEtSD94GQU0xvqayiT4mM1jiUMDD9IIzHuZYVTsn0ULLJtSM2Hurj4tEIs%2F4k9cULQjEq6Pk6d5uzRnh3n3Q%2FJjQ2Dp8S%2BIIFiAur78DB9PqXQIfPMhvZCJeMHeNxekIeHWd2J4oM%2BQZ8iSW%2FRBNDzI55eChwlIlxv8bMsD0qHzexLIw%3D%3D&checksum=3234303968579900470850c342b787fd41704129db08)
 
 5. Hardwood edging 40mm x 8mm - your local hardware store will have this. You'll need about a meter length.
 
 6. 3mm ply wood - your local hardware store will also have this
 
-7. Mobile or li-po battery - eBay. You can prob just pull one out of an old mobile you have lying around
+7. Mobile or li-po battery - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=mobile+phone+battery&_sacat=0). You can prob just pull one out of an old mobile you have lying around
 
-8. Charging and voltage regulator module - eBay
+8. Charging and voltage regulator module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
 
 
 ## Step 2: Schematics and PCB Files
@@ -115,13 +115,13 @@ Other Parts:
 
 ![Step 2: Schematics and PCB Files image 3](images/step02_03.jpg)
 
-I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design. They are easy to understand and you'll be making your own boards before you know it.
+I have started to [design](https://learn.sparkfun.com/tutorials/using-eagle-board-layout) my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on [schematic](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all) and board design. They are easy to understand and you'll be making your own boards before you know it.
 
-You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive. The zip file has all of the gerber files which you need to get the PCB printed. Just download and save the gerber file and sent it to your favourite PCB manufacture. I use JLCPCB but there are plenty of others you can use.
+You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive. The zip file has all of the gerber files which you need to get the PCB printed. Just download and save the gerber file and sent it to your favourite PCB manufacture. I use [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQjwuJz3BRDTARIsAMg-HxXQlC6JQ_bVu3kRlQAl3ErrFHUAW0t2TbWZCCef_iWWsQPk8QTpZg0aAqOpEALw_wcB) but there are plenty of others you can use.
 
 PCB Boards
 
-Google Drive Link
+[Google Drive Link](https://drive.google.com/drive/folders/1OjkicWiNN8FKaj8wo_pF_7RQnUXAYL1S?usp=sharing)
 
 As you can only design boards at a certain size in Eagle (unless you pay), so I made the boards module. There is a main board and then additional boards which can plug into the main board. I don't know how many you can plug into the main one but I reckon you could easily add 3 or 4 to the main one, maybe more!
 
@@ -353,7 +353,7 @@ Steps:
 
 5. Solder a wire from the mic solder point on the LED board to the middle pin on the switch and then solder a wire from the actual mic to the last pin on the switch. This will then allow you to switch between audio and mic
 
-6. For the battery and charger, you can check out this 'ible I did which will show you how to connected these together.
+6. For the battery and charger, you can check out [this 'ible](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/) I did which will show you how to connected these together.
 
 7. Add the battery and charging module to the base of the box. You'll need access to the micro USB so you'll need to make a hole in the back panel and align the micro USB to it.
 

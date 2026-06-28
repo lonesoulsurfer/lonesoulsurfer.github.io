@@ -25,7 +25,7 @@ In the original circuit, the LED’s speed is controlled by a Potentiometer. In 
 
 Let’s get started
 
-Knight Rider
+[Knight Rider](https://www.youtube.com/watch?v=Mo8Qls0HnWo)
 
 
 ## Step 1: Parts and Tools
@@ -40,31 +40,31 @@ Parts:
 
 Junkbot
 
-1. Old Shaver – eBay
+1. Old Shaver – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xvintage+shaver.TRS0&_nkw=vintage+shaver&_sacat=0)
 
 2. Umbrella. You want to use a small, portable type of umbrella as the rib and stretcher assembly is small and makes for better legs.
 
 Electronics
 
-1. 4017 IC – eBay
+1. 4017 IC – [eBay](https://www.ebay.com.au/itm/10PCS-CD4017-CD4017BE-4017-DECADE-COUNTER-DIVIDER-IC-S/191736127618?hash=item2ca45d2082:g:nDQAAOSwpRRWnZQp)
 
-2. 555 IC – eBay
+2. 555 IC – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR10.TRC0.A0.H0.X555+ic.TRS0&_nkw=555+ic&_sacat=0)
 
-3. 1uf Capacitor – eBay
+3. 1uf Capacitor – [eBay](https://www.ebay.com.au/itm/120pcs-1uF-470uF-12-Types-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/351774763287?epid=2113501882&hash=item51e768e917:g:knwAAOSwSwpbaUUR)
 
-4. cds photoresistor (Photo Cell) – eBay
+4. cds photoresistor (Photo Cell) – [eBay](https://www.ebay.com.au/itm/30PCS-Photoresistor-GL5516-LDR-CDS-5mm-Light-Dependent-Resistor-Sensor-Arduino/123284262861?hash=item1cb4508fcd:g:0MAAAOSwBgVbEOWL)
 
-5. 68k Resistor – eBay
+5. 68k Resistor – [eBay](https://www.ebay.com.au/itm/500pcs-Resistor-Network-25-Commoned-Resistor-10-680K-Ohm-Various-Values-NEW/222642441421?hash=item33d6860ccd:g:vuMAAOSwvTBZp31M)
 
-6. 120R Resistor – eBay
+6. 120R Resistor – [eBay](https://www.ebay.com.au/itm/500pcs-Resistor-Network-25-Commoned-Resistor-10-680K-Ohm-Various-Values-NEW/222642441421?hash=item33d6860ccd:g:vuMAAOSwvTBZp31M)
 
-7. Prototype Board – eBay
+7. Prototype Board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
-8. 10 X 1N4148 Diodes – eBay
+8. 10 X 1N4148 Diodes – [eBay](https://www.ebay.com.au/itm/50-PCS-1N4148-DO-35-switching-signal-Doide-NEW/302269820830?hash=item4660af6f9e:g:OvoAAOSwuTxV~SR~)
 
-9. 6 X LED’s – eBay
+9. 6 X LED’s – [eBay](https://www.ebay.com.au/itm/100pcs-Lot-3mm-White-Green-Red-Blue-Yellow-LED-Light-Bulb-Emitting-Diode-LampsQ/372129068208?epid=19015763205&hash=item56a49ef4b0:g:Z7UAAOSwE-laAWhm)
 
-11. 9V Battery Holder – eBay
+11. 9V Battery Holder – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0)
 
 12. Thin wire
 
@@ -95,7 +95,7 @@ Tools:
 
 The first thing to do is to breadboard the circuit. It’s not too difficult but it can get a little tricky when adding all of the diodes in place. If you find that after prototyping the circuit that an LED doesn’t flash, then you probably have a diode round the wrong way.
 
-The original circuit schematic can be found here. You will notice that I have modified it slightly to simplify and ensure that it works with a photo cell instead of a potentiometer.
+The original circuit schematic can be [found here.](https://gateway.zscloud.net/auW?origurl=http%3A%2F%2Fschematicboard%2eblogspot%2ecom%2f2015%2f10%2fled-knight-rider-using-4017-and-555-ics%2ehtml&_ordtok=HS43WV3Z6sbVs50jHM0TZ4QD3q) You will notice that I have modified it slightly to simplify and ensure that it works with a photo cell instead of a potentiometer.
 
 Once you have the circuit all worked out and running, it’s then time to build it
 

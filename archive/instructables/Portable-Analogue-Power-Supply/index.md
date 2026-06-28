@@ -40,27 +40,27 @@ I also included a voltage and amp meter as well because why not
 
 Parts
 
-1. Project Box – I used a Sealed ABS Enclosure - 171 x 121 x 55mm – eBay. You can use any box really, as long as all of the battery holders etc fiit inside.
+1. Project Box – I used a Sealed ABS Enclosure - 171 x 121 x 55mm – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2060353.m570.l1313.TR0.TRC0.H0.X171+x+121+x+55mm.TRS0&_nkw=171+x+121+x+55mm&_sacat=0). You can use any box really, as long as all of the battery holders etc fiit inside.
 
-2. Rotary switch – eBay
+2. Rotary switch – [eBay](http://www.ebay.com.au/itm/Shaft-Panel-Mount-2P6T-Rotary-Switch-Selector-Band-2-Pole-Position-6-RS25-/262722576264?hash=item3d2b7c5f88:g:QsMAAOSw4GVYLCA1)
 
-3. Knob – eBay
+3. Knob – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.Xpoteniometer+knob.TRS0&_nkw=poteniometer+knob&_sacat=0)
 
-4. Red LED Panel Volt Voltage Meter – eBay
+4. Red LED Panel Volt Voltage Meter – [eBay](http://www.ebay.com.au/itm/100V-DC-Digital-Voltmeter-Ammeter-10A-Blue-Red-LED-Amp-Volt-Meter-Current-Shunt-/262273516036?hash=item3d10b84204:g:dOYAAOSwhQhYxgNE)
 
-5. Toggle Switch - eBay
+5. Toggle Switch - [eBay](http://www.ebay.com.au/itm/10pcs-AC-250V-2A-125V-6A-SPDT-Toggle-Rocker-Switch-ON-OFF-ON-3-Position-BI579-/201828924444?hash=item2efdf0fc1c:g:kPEAAOSw4A5YrYnN)
 
-6. Alligator Test Lead Clips – eBay
+6. Alligator Test Lead Clips – [eBay](http://www.ebay.com.au/itm/2-Pair-Alligator-Test-Lead-Clip-to-Male-Banana-Plug-Cord-Cable-1M-Red-Black-CT-/291969847283?hash=item43fac24ff3:g:R94AAOSw-0xYN69e)
 
-7. Hook Clip Test Probe – eBay
+7. Hook Clip Test Probe – [eBay](http://www.ebay.com.au/itm/1-pair-2-Colors-Single-Hook-Clip-Mini-Grabber-Test-Probe-for-SMD-IC-Multimeter-/162354186452?hash=item25cd1048d4:g:FB4AAOSwa~BYdIH7)
 
-8. Banana Plug Multimeters Probe – eBay
+8. Banana Plug Multimeters Probe – [eBay](http://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-F6/282209034819?_trksid=p2045573.c100507.m3226&_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3D32cbaaaf5eb245feaca55b36b0bba86c%26pid%3D100507%26rk%3D1%26rkt%3D1%26)
 
 9. A bunch of wire
 
-10. Banana Plug Socket Jack Connectors – eBay
+10. Banana Plug Socket Jack Connectors – [eBay](http://www.ebay.com.au/itm/272580293813?_trksid=p2060353.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 
-11. Battery holders – 2 X AA, 3 X AA, 4 X AA, 8 X AA and a 9v Battery holder - eBay
+11. Battery holders – 2 X AA, 3 X AA, 4 X AA, 8 X AA and a 9v Battery holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR10.TRC2.A0.H0.Xbattery+holder+AA.TRS0&_nkw=battery+holder+AA&_sacat=0)
 
 Tools
 

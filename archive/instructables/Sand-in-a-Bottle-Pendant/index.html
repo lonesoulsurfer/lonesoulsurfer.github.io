@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,123 +163,144 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Sand in a Bottle - Fuse Pendant</span>
 </nav>
 <h1>Sand in a Bottle - Fuse Pendant</h1><div class="source"><a href="https://www.instructables.com/Sand-in-a-Bottle-Pendant/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I'm currently enjoying an awesome Summer holiday with the fam, swimming, fishing and snorkling at my favourite beach.</p>
-<p>I wanted to have a way of keeping a little part of the beach with me (esp when I'm at work!) to remind me of the sunshine and good times we had. So I decided the best way to do this would be to keep a little bit of sand from one of my favourite beaches always near me in a pendant.</p>
-<p>The pendant itself is made from a glass fuse where the inside section is removed and a small jump ring is soldered to one of the end caps. The jump ring allows you to hang the pendant from a chain or a piece of leather. You can also add a jump ring to both end caps to dispaly the pendant on its side.</p>
+<p>I wanted to have a way of keeping a little part of the beach with me (esp when I'm at work!) to remind me of the sunshine and good times we had.</p>
+<p>So I decided the best way to do this would be to keep a little bit of sand from one of my favourite beaches always near me in a pendant.</p>
+<p>The pendant itself is made from a glass fuse where the inside section is removed and a small jump ring is soldered to one of the end caps.</p>
+<p>The jump ring allows you to hang the pendant from a chain or a piece of leather.</p>
+<p>You can also add a jump ring to both end caps to dispaly the pendant on its side.</p>
 <p>It isn't a hard build but you will need a mini blow torch and have basic soldering skills to make your own.</p><h2><span class="step-num">STEP 1</span>Step 1: Things You'll Need</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things You'll Need image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things You'll Need image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things You'll Need image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things You'll Need image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things You'll Need image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things You'll Need image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Fuse - eBay</li>
-</ul>
+<li>Fuse - <a href="https://www.ebay.com.au/itm/NOW-SELLING-25-Amp-20-x-3AG-GLASS-FUSES-6x-30mm/402579362562?hash=item5dbb999302:g:cZMAAMXQXZZRfJrN&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Jump Ring - eBay</li>
-</ul>
+<li>Jump Ring - <a href="https://www.ebay.com.au/itm/100x-Silver-Plated-Alloy-Open-Jump-Rings-Split-Rings-Single-Double-Loop-3-22mm/283493871888?_trkparms=ispr%3D1&hash=item42018d3110:g:4RgAAOSw3RdblLIX&amdata=enc%3AAQAFAAACcBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickk7PdDazAlGltMLJlUhrWsD2P%252FLyZplJkaHPhF55fAJ%252FUJ0kF3m7jRTsamebco02IOb4enp2QRRbLdjDpPO0jhB66JG6igBJeKBj9aS6rmK3kJFrfEEPa%252F58%252FuKj43E6qkqB%252FFWkqtIn3UmVzDz82ljqNMH59HQQCu2Jb5Q0HgaJFvls6iJkD6bV37NPDZ7j08BN47UQJ3LhL%252FMvPFGOGsph4rAjGk2dR8vfOjGQ9CpmjgqcGgY8GrsJnUfSYLeDvQ6%252FrAdz7AFzVEwljNTg3WET%252BTFHFKiJ%252FIk1gJ7IwShw%252F1m4Db1juU%252BBwtwwzNJiRFo4W910rZ6hPehFZD1iZHCld28z5RKp5ljezYMvy7zznDloBxOa6jb46q3%252B4qNgB7e%252BbZ%252F9mPkxWBCiXTqUi6mGUjzMkjXIJb9u1cjCr3VXfYLUkBDnSLKu2Bl3rhbWLLmj7S8QOJPf6xsDN%252BfF9D9emPPxGembOPeZHI%252F9VD7QvhKiC0ZYQ%252F902CCj1CnpoRBqXOK0XbZjjTdyEPHCpr%252BwdvheoVJTRuf1StyXOKNPCVZUxVR2qpjkGeIDTzE09WMKr4Velf9jMHi19UDo9reUtC1A4e1vDJnfa7SzI7qj99OTk1g4kzW3M2SWlD6IVZoSYoPzDNpL74rwq6EfffZIkTf2RlKzTaxE9pODBdWgGgJYVtKRwTxzS7MbnEZBhdtTRU5bfDak8AKJ%252Ff3ExUHFn50Hw94I%252B772BqRAV3N8SEbH%252BXNJQwmDQ%252FRgaGH2raaOdbUr4NhWv0MJhuBbY3pg%253D%253D%7Ccksum%3A283493871888763499c9a2ab4ebf85196aef8a2c54fb%7Campid%3APL_CLK%7Cclp%3A2334524&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
 <li>Sand from your favourite beach</li>
-</ul>
+</ol>
 <ol>
-<li>Something to hang the pendant from - you can use a chain - eBay or some leather - eBay</li>
-</ul>
+<li>Something to hang the pendant from - you can use a chain - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=necklace+leather&_sacat=0">[eBay</a>](https://www.ebay.com.au/itm/10-x-ball-chain-chains-304-stainless-steel-necklace-60cm-ready-to-wear-jewelry/272226364684?epid=903187100&_trkparms=ispr%3D1&hash=item3f61f4ad0c:g:thIAAOSwYmZXIXaz&amdata=enc%3AAQAFAAACgBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkY3FSd4Ad8xn3oRtkVexxrNi3kTnbTewQsUNa0gJi6b2uVwefOgs5hplJhHCBsKjWu5XauKOi4GtkM4hM%252BMMPM2YzFIUWcb%252Bch07WhyIT%252BlFh8Y6KnofgRQyjtHrfKQFvEr%252BSrWC9QSAEsgYmpBJdAW3F9d5F83GSOyJ8Fx7GlgOvb8uyB5VBOTaBVa4Qq%252BUV8kw0xkAC5%252F1iMubwLpJAoJ8YYIYV6orSoOHbcLwFYsK5fiw90b6M%252FBIp0OnXx1oIxaXw3Ir3UoaU34vbIQApRvddxpk3eSmkZcEM0iipq6nW5pHYY%252FU%252BH6zMZbmMj8%252BxvYB7RWl%252FET4FGiqDplHjVoantFPWpRdvBVPcNLJxuOBfcwopWTlEoLbJv0OhF3y6G6edc7ToTZam7qwfAg43Ria4cbnrIPPMjTKTHrfAEKmlijY4vrRc1Hl24wf2CcTqLT%252B7bRDlTGluHwYEH2t9xRpI2bTFu0MfpgFQ8JLMkNXKXM7rLzryZ%252FLdh4c2TqVOIHok8jLr%252FMCTvYbhnjojclH66Fbn3%252FL5KsY0uGdbhUY%252BiXGgQVoRlp9GIY%252B%252B7EdRI4duK3IrrC22td8lya0lqrHKR8DMkPoM3GjHvd%252BoOoavrIg1ho9Y%252F%252BrGr7zrT%252BNgVN2O%252BxnycjeghePcgF%252FSp7LzZUR%252Bi8bM2965NhkPMdOL26i7s9akW7AcmakddT3DKtbRRFaS%252F9jgr5xWWuXuXAKFHHActoJTfd4GW%252Blvzn3jrnljTTHbB8oG5cjUa0YJtVMJQKfJhgF29K9UAvMQFxp7Y8sOdVxl%252BlDJvY%252Fa6r4%253D%7Ccksum%3A272226364684c2f00ac93c154e3699c6df76f29b0a4a%7Campid%3APL_CLK%7Cclp%3A2334524) or some leather - eBay</li>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Mini blow torch</li>
-</ul>
+</ol>
 <ol>
 <li>Needle nose pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Superglue</li>
-</ul>
+</ol>
 <ol>
 <li>Isopropyl for cleaning</li>
-</ul>
+</ol>
 <ol>
 <li>Helping hand</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Removing the End Caps From the Fuse</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing the End Caps From the Fuse image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing the End Caps From the Fuse image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing the End Caps From the Fuse image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing the End Caps From the Fuse image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Removing the End Caps From the Fuse image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Removing the End Caps From the Fuse image 6" loading="lazy"></div><p>It's pretty easy to remove the end cps from a fuse. All you really need is some heat</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Removing the End Caps From the Fuse</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing the End Caps From the Fuse image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing the End Caps From the Fuse image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing the End Caps From the Fuse image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing the End Caps From the Fuse image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Removing the End Caps From the Fuse image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Removing the End Caps From the Fuse image 6" loading="lazy"></div><p>It's pretty easy to remove the end cps from a fuse. All you really need is some heat</p>
 <p>Steps:</p>
 <ol>
 <li>Use the mini blow torch and heat up one of the end caps on the fuse. I usually hold the fuse by the other end and slowly turn it until the cap slips off</li>
-</ul>
+</ol>
 <ol>
 <li>Before you remove the other end cap you can remove the glue from the end of the glass tube (see step 3)</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the other end cap the same way and give the glass tube another clean</li>
-</ul>
+</ol>
 <ol>
 <li>Pull out the actual fuse from the glass tube if it has't already come out</li>
-</ul>
+</ol>
 <ol>
 <li>You will also notice that there is some solder inside the cap. To remove this, hold the cap top up with a pair of pliers and heat the top up with the blow torth.</li>
-</ul>
+</ol>
 <ol>
 <li>Tap the pliers on the edge of something and the solder will drip out.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Cleaning</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cleaning image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cleaning image 2" loading="lazy"></div><p>To clean the tube and caps, I used Isopropyl. You could proabbly just use glass claener to remove the glue as well.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Cleaning</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cleaning image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cleaning image 2" loading="lazy"></div><p>To clean the tube and caps, I used Isopropyl. You could proabbly just use glass claener to remove the glue as well.</p>
 <p>Steps:</p>
 <ol>
 <li>Spray some of the isopropyl onto some paper towel</li>
-</ul>
+</ol>
 <ol>
 <li>Place the glass tube into the paper towel and give each ends a good wipe</li>
-</ul>
+</ol>
 <ol>
 <li>I also twist the end up of the paper towel, sqirt some of the isopropyl into the tube and onto the twisted end of the paper towel and clean the inside of the glass tube</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Gluing an End Cap Back Onto the Glass Tube</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Gluing an End Cap Back Onto the Glass Tube image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Gluing an End Cap Back Onto the Glass Tube image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Gluing an End Cap Back Onto the Glass Tube image 3" loading="lazy"></div><p>Now that you have removed the end caps you have to now stick one back onto the glass tube.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Gluing an End Cap Back Onto the Glass Tube</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Gluing an End Cap Back Onto the Glass Tube image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Gluing an End Cap Back Onto the Glass Tube image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Gluing an End Cap Back Onto the Glass Tube image 3" loading="lazy"></div><p>Now that you have removed the end caps you have to now stick one back onto the glass tube.</p>
 <p>Steps:</p>
 <ol>
 <li>Before you glue the end cap into place, just make sure first that the cap fits onto the glass tue. Removing the solder from the cap might had added some to the side of the cap which will stop the tube from going in.</li>
-</ul>
+</ol>
 <ol>
 <li>Add a couple drops of superglue into the end cap</li>
-</ul>
+</ol>
 <ol>
 <li>I give the end cap a quick flick to remove any excess glue. This will stop the glue from running up the glass tube when you push the cap into place</li>
-</ul>
+</ol>
 <ol>
 <li>Place the end of the glass tube into the end cap and leave to dry for 5 minutes</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Soldering the Jump Ring Onto the End Cap</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Soldering the Jump Ring Onto the End Cap</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Soldering the Jump Ring Onto the End Cap image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Place the end cap onto some scrap metal. This will ensure you don't set anything on fire!</li>
-</ul>
+</ol>
 <ol>
 <li>Next, add the jump ring to a helping hand and position it on top of the end cap.</li>
-</ul>
+</ol>
 <ol>
 <li>Add a little flux to the cap and jump ring</li>
-</ul>
+</ol>
 <ol>
 <li>Add a piece of solder to the ring and end cap</li>
-</ul>
+</ol>
 <ol>
 <li>Slowly heat-up the bottom of the end cap, ensuring the blow torch is continously moving.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the heat once the solder has melted and leave to cool</li>
-</ul>
+</ol>
 <ol>
 <li>Laslty, give it a clean with some Isopropyl.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Check to Make Sure the End Cap Fits</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Check to Make Sure the End Cap Fits image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Check to Make Sure the End Cap Fits image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Check to Make Sure the End Cap Fits image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Check to Make Sure the End Cap Fits</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Check to Make Sure the End Cap Fits image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Check to Make Sure the End Cap Fits image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Check to Make Sure the End Cap Fits image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Ok - so once you have added the jump ring, make sure that the cap fits onto the glass tube.</li>
-</ul>
+</ol>
 <ol>
 <li>You may as well make some more as once everyone sees yours they are all ging to want one!</li>
-</ul>
+</ol>
 <ol>
 <li>You can also add a ring to both end caps if you want to (check out step 8 which has some images). That way you can wear the pendant horizontal.</li>
-</ul>
+</ol>
 <ol>
 <li>If it fits fine then you are ready to add some sand.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding Sand to the Pendant</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Sand to the Pendant image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Sand to the Pendant image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Sand to the Pendant image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Sand to the Pendant image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Sand to the Pendant</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Sand to the Pendant image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Sand to the Pendant image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Sand to the Pendant image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Sand to the Pendant image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Place the sand that you gathered onto a plate</li>
-</ul>
+</ol>
 <ol>
 <li>Pinch a mall amount and carefully add it into the glass tube</li>
-</ul>
+</ol>
 <ol>
 <li>Fill up the glass tube close to the top. In the image I have it right to the top but it's better to not fill it right up. I like the sand to be able to move around in the tube</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, add some superglue to the other cap and glue it into place</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Finished</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finished image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finished image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finished image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finished image 4" loading="lazy"></div><p>That's pretty much it! As I mentioned in an earlier step, you can also add a jump ring to both ends of the caps to display the pendant horizontally. Ypou can hang it from a chain or piece of leather and wear it around your neck, wrist or even from your keys.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Finished</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finished image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finished image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finished image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finished image 4" loading="lazy"></div><p>That's pretty much it!</p>
+<p>As I mentioned in an earlier step, you can also add a jump ring to both ends of the caps to display the pendant horizontally.</p>
+<p>Ypou can hang it from a chain or piece of leather and wear it around your neck, wrist or even from your keys.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

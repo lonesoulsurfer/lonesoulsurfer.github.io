@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,141 +162,149 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Auto Water Pistol Nerf Gun Hack - V1</span>
 </nav>
-<h1>Auto Water Pistol Nerf Gun Hack - V1</h1><div class="source"><a href="https://www.instructables.com/Auto-Water-Pistol-Nerf-Gun-Hack-v1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>After coming across some images of a windscreen washer pump I instantly thought "electric water pistol" The hack itself isn't very hard and can be hacked into most toy guns. I went with a nerf gun as my kids have a shed load of them collecting dust.</p>
+<h1>Auto Water Pistol Nerf Gun Hack - V1</h1><div class="source"><a href="https://www.instructables.com/Auto-Water-Pistol-Nerf-Gun-Hack-v1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>After coming across some images of a windscreen washer pump I instantly thought "electric water pistol" The hack itself isn't very hard and can be hacked into most toy guns.</p>
+<p>I went with a nerf gun as my kids have a shed load of them collecting dust.</p>
 <p>The gun that I used is called a Nerf Zombie Strike but really you could use any toy gun you have lying around.</p>
-<p>How it works is the washer pump draws water from a container (in this case a water bottle) and pumps it through to the nozzle at the end of the gun. The water needs to be higher than the pump or it won't be able to draw the water. I found this out the hard way after attaching the water bottle bellow the pump.and having no water being pulled through.</p>
+<p>How it works is the washer pump draws water from a container (in this case a water bottle) and pumps it through to the nozzle at the end of the gun.</p>
+<p>The water needs to be higher than the pump or it won't be able to draw the water.</p>
+<p>I found this out the hard way after attaching the water bottle bellow the pump.and having no water being pulled through.</p>
 <p>I've also entered the Epilog Contest so vote away kiddies. Who doesn't need a laser in their lives, especially one that cuts!</p>
 <p>Check out the video below to see it in action.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Windscreen washer pump - eBay. You can also just get one from your local wreckers for dirt cheap..</li>
-</ul>
+</ol>
 <ol>
 <li>Nef gun. really you can use any toy gun</li>
-</ul>
+</ol>
 <ol>
 <li>9v battery holder - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>9v battery</li>
-</ul>
+</ol>
 <ol>
 <li>momentary switch - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>Tubing. You can get this from your local pet shop</li>
-</ul>
+</ol>
 <ol>
 <li>Small lid for nozzle. You can also use a cheap water pistol and just pull out the nozzle and use this. Probably a better way to go but I didn't have a one laying around.</li>
-</ul>
+</ol>
 <ol>
 <li>Bits of wire</li>
-</ul>
+</ol>
 <ol>
 <li>9V Battery Case Box Compartment Cover For Guitar - eBay. you don't have to use one of these and I'll show you some ways to use the hollows in he gun to store the battery.</li>
-</ul>
+</ol>
 <ol>
 <li>Water bottle. Actually I used an iced tea bottle.</li>
-</ul>
+</ol>
 <ol>
 <li>Various small screws</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Getting Started - Pulling the Gun Apart</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 5" loading="lazy"></div><p>First ting first. Get your phillips head out and start to unscrew the million screws (if you have a nerf).</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Getting Started - Pulling the Gun Apart</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Getting Started - Pulling the Gun Apart image 5" loading="lazy"></div><p>First ting first. Get your phillips head out and start to unscrew the million screws (if you have a nerf).</p>
 <p>Steps</p>
 <ol>
 <li>Place all of the screws into a container or somewhere safe ad carefully pull the cowling apart. There is usually a screw somewhere hidden so make sure you find it!</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have the gun apart start to think about what you will need and what you can discard. Also start to think about the design, specially where the momentary switch will go. I found that this was probably the trickiest part, how the trigger was going to activate the switch</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Switch.</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Switch. image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Switch. image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Switch. image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Switch. image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Switch. image 5" loading="lazy"></div><p>The switch I used I pulled from an old VCR player. any micro momentary switch will work, it;s just a matter of finding the best position for it to be attached.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the Switch.</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Switch. image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Switch. image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Switch. image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Switch. image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Switch. image 5" loading="lazy"></div><p>The switch I used I pulled from an old VCR player. any micro momentary switch will work, it;s just a matter of finding the best position for it to be attached.</p>
 <p>Steps:</p>
 <ol>
 <li>Once you have found the best spot for the switch to go work out what type of modification you will need to do</li>
-</ul>
+</ol>
 <ol>
 <li>All I needed to do was to shave a little plastic off with a stanley knife and then super glue the switch into place. make sure that you have attached some wire too the terminals before gluing into place. It just make things easier.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Where to Add the Battery...</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Where to Add the Battery... image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Where to Add the Battery... image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Where to Add the Battery... image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Where to Add the Battery... image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Where to Add the Battery... image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Where to Add the Battery... image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Where to Add the Battery... image 7" loading="lazy"></div><p>There was 3 really great places to add a 9v battery to the nerf gun I used. I'll go through each of them and which one I went for in the end.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Where to Add the Battery...</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Where to Add the Battery... image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Where to Add the Battery... image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Where to Add the Battery... image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Where to Add the Battery... image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Where to Add the Battery... image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Where to Add the Battery... image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Where to Add the Battery... image 7" loading="lazy"></div><p>There was 3 really great places to add a 9v battery to the nerf gun I used. I'll go through each of them and which one I went for in the end.</p>
 <p>First idea - The Handle</p>
 <p>Initially I was going to keep the battery in the handle. I went pretty far down the road of doing this until i changed my mind</p>
 <ol>
 <li>Remove the gussets in the inside of the handle. I managed to remove most with a stanly knife and smoothed out the edges with a dremel.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep on adding the battery into the cavity until it fits comfortably in the section.</li>
-</ul>
+</ol>
 <ol>
 <li>To hold the battery in place, I used the plastic rnod that came with the gun and slightly modified it so I could slip in in and out of the groove in the handle</li>
-</ul>
+</ol>
 <p>Second idea - Cocking Section</p>
 <ol>
 <li>Most Nerf guns have a cocking section which you pull back to cock the gun. This can be a great place too store the battery.</li>
-</ul>
+</ol>
 <ol>
 <li>Unscrew the section and see iif t battery will fit. You might have to mod the inside a little in order for the battery to fit. in the gun I chose the battery fitted in perfectly.</li>
-</ul>
+</ol>
 <p>I kind of thought though that it would be a pain to have to undo the 4 screws each time I wanted to change the battery so I decided to use the 3rd option.</p>
 <p>Third idea - 9V Battery Case For Guitar</p>
-<p>I had one of these sitting around from another project and decided to use it. It meant that I could access the battery easily and I could also attach it simply too. I'll go through how to wire and add to the gun in the next step.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Battery Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Battery Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Battery Case image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Battery Case image 3" loading="lazy"></div><p>So if you also decided to use a guitar 9v battery case, then this will is how you attach and add the wiring.</p>
+<p>I had one of these sitting around from another project and decided to use it.</p>
+<p>It meant that I could access the battery easily and I could also attach it simply too.</p>
+<p>I'll go through how to wire and add to the gun in the next step.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Battery Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Battery Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Battery Case image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Battery Case image 3" loading="lazy"></div><p>So if you also decided to use a guitar 9v battery case, then this will is how you attach and add the wiring.</p>
 <p>Steps:</p>
 <ol>
 <li>wire up the battery holder and add this into the battery case. One of the wires from the battery holder should be soldered to the switch wire.</li>
-</ul>
+</ol>
 <ol>
 <li>The other wire from the battery will be connected to the pump later</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue the battery case too one side of the gun. Remember you need to be able to still mod the inside of the gun so gluing the battery case to both sides of the gun wont work</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Pump</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Pump image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Pump image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Pump image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Pump image 4" loading="lazy"></div><p>Depending on what gun you use will determine where you add the pump. Toy want to make sure that the in and out sections of the pump are lined up the right way.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Pump</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Pump image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Pump image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Pump image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Pump image 4" loading="lazy"></div><p>Depending on what gun you use will determine where you add the pump. Toy want to make sure that the in and out sections of the pump are lined up the right way.</p>
 <p>Steps:</p>
 <ol>
 <li>Find a good, flat spot on the gun and mark out where to drill holes for the screw.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill the holes and attach the pump and some self tapping screws</li>
-</ul>
+</ol>
 <ol>
 <li>Next think about where the tubing will go and drill the holes into the side of the gun where the tubing will enter.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Tubing</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Tubing image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Tubing image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Tubing image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Tubing image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Tubing image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Tubing image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Tubing image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Adding the Tubing image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Adding the Tubing image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Adding the Tubing image 10" loading="lazy"><img src="images/step07_11.jpg" alt="Step 7: Adding the Tubing image 11" loading="lazy"></div><p>Steps.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Tubing</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Tubing image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Tubing image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Tubing image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Tubing image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Tubing image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Tubing image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Tubing image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Adding the Tubing image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Adding the Tubing image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Adding the Tubing image 10" loading="lazy"><img src="images/step07_11.jpg" alt="Step 7: Adding the Tubing image 11" loading="lazy"></div><p>Steps.</p>
 <ol>
 <li>Attach 2 pieces of tubing the the intake and outlet sections of the pump.</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure that when you are bending the tubing, that you don't have too sharp a bend. This will cause a kink in the tubing and the water will have trouble flowing. If however you can't help having a sharp bend, you can use a spring to ensure the tubing doesn't kink.</li>
-</ul>
+</ol>
 <ol>
 <li>The intake tube needs to be attached to the water container. This will need to be higher than the actual pump as it needs to be gravity fed into the pump.</li>
-</ul>
+</ol>
 <ol>
 <li>When adding the outlet section you'll need to have something attached to the end of the tube which forces the water to go through a small hole. This will give the water some distance the same as a normal water pistol. I used a small lid and pushed a nail through the top which when attached to the outlet, ensured the water came out in a thin stream. You could also also just pull apart a water pistol and attach the end to the outlet tubing.</li>
-</ul>
+</ol>
 <ol>
 <li>Glue into place the end of the outlet to the gun.</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully close the gun and make sure that the intake tube end is sticking out the top.</li>
-</ul>
-<p>Note: I initially went with having the water container bellow the pump (see images) but as the pump is gravity fed this didn't work. You have too make sure that the water is higher than the pump in order for it to work.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Water Container</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Water Container image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Water Container image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Water Container image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Water Container image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Water Container image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Water Container image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Water Container image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Water Container image 8" loading="lazy"></div><p>When deciding on a water container, it best if you have one with a large lid. This will make it easy to attach to the gun and will also make the bottle more secure. Remember the bottle will need to be up-side-down on the gun and above the pump.</p>
+</ol>
+<p>Note: I initially went with having the water container bellow the pump (see images) but as the pump is gravity fed this didn't work.</p>
+<p>You have too make sure that the water is higher than the pump in order for it to work.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Water Container</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Water Container image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Water Container image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Water Container image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Water Container image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Water Container image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Water Container image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Water Container image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Water Container image 8" loading="lazy"></div><p>When deciding on a water container, it best if you have one with a large lid.</p>
+<p>This will make it easy to attach to the gun and will also make the bottle more secure.</p>
+<p>Remember the bottle will need to be up-side-down on the gun and above the pump.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a small hole in the middle of the lid. The hole should be big enough to thread the inlet tube from the pump into.</li>
-</ul>
+</ol>
 <ol>
 <li>To secure the lid to the gun I drilled a couple of small holes and screwed in some self tapping screws.</li>
-</ul>
+</ol>
 <ol>
 <li>Next add some hot glue around the tube and on he screws to make it waterproof.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Go Out and Shoot Something!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Go Out and Shoot Something! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Go Out and Shoot Something! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Go Out and Shoot Something! image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Go Out and Shoot Something! image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Go Out and Shoot Something! image 5" loading="lazy"></div><p>Hopefully you now have an automatic water pistol that you can will be the envy of all your mates.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Go Out and Shoot Something!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Go Out and Shoot Something! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Go Out and Shoot Something! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Go Out and Shoot Something! image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Go Out and Shoot Something! image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Go Out and Shoot Something! image 5" loading="lazy"></div><p>Hopefully you now have an automatic water pistol that you can will be the envy of all your mates.</p>
 <p>I'm currently putting another together which will have li-ion batteries and will be rechargeable. Still waiting for a few parts to arrive. I'll post some images once completed.</p>
 <p>Things I'd do differently next time:</p>
 <ul>
@@ -277,8 +320,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use a water pistol and mod this? Might be easier to use something that already has most of the parts already!</li>
 </ul>
 <ul>
-<li>Battery. Although the 9v battery works well, it doesn't have as much life as I would have hoped. You could add a step up voltage converter like this one. I'm going to try this next time. If that doesn't work, then I'll use 7.2v battery pack with a bunch of amps and see how that goes.</li>
+<li>Battery. Although the 9v battery works well, it doesn't have as much life as I would have hoped. You could add a step up voltage converter <a href="http://www.ebay.com.au/itm/3-35V-to-2-2-30V-Boost-Buck-Voltage-New-Module-Step-Up-Down-Converter-Regulator-/201297179502?hash=item2ede3f336e">like this</a> one. I'm going to try this next time. If that doesn't work, then I'll use 7.2v battery pack with a bunch of amps and see how that goes.</li>
 </ul>
 <p>If anyone has an other ideas, please let me know in the comments section</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

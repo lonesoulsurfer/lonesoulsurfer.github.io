@@ -292,7 +292,7 @@ Things I'd do differently next time:
 
 - Use a water pistol and mod this? Might be easier to use something that already has most of the parts already!
 
-- Battery. Although the 9v battery works well, it doesn't have as much life as I would have hoped. You could add a step up voltage converter like this one. I'm going to try this next time. If that doesn't work, then I'll use 7.2v battery pack with a bunch of amps and see how that goes.
+- Battery. Although the 9v battery works well, it doesn't have as much life as I would have hoped. You could add a step up voltage converter [like this](http://www.ebay.com.au/itm/3-35V-to-2-2-30V-Boost-Buck-Voltage-New-Module-Step-Up-Down-Converter-Regulator-/201297179502?hash=item2ede3f336e) one. I'm going to try this next time. If that doesn't work, then I'll use 7.2v battery pack with a bunch of amps and see how that goes.
 
 If anyone has an other ideas, please let me know in the comments section
 

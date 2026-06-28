@@ -27,13 +27,13 @@ This little straw rocket launcher specifically launches McDonalds straws. I went
 
 A straw rocket can be as simple as adding blue-tack and a couple of paper fins, to going all out with foam fins and weighted heads.
 
-The rockets are launched with a remote but you could also just use a switch on a long length of wire to set them off. The remote however isn't hard to do and I have documented how to use one in this ‘ible.
+The rockets are launched with a remote but you could also just use a switch on a long length of wire to set them off. The remote however isn't hard to do and I have documented how to use one in [this ‘ible](https://www.instructables.com/id/Add-a-Remote-Control-to-Just-About-Anything/).
 
 This is really just a proof on concept. It's too big still and I don't really like how you can see the box with the electronics. I'm already working on the next one which will be more compact and look a lot sleeker.
 
 I also had to change a couple of things as I went along so you might see a few inconsistencies in the images. Overall though I'm really happy how this works, the little straw rockets really get some height!
 
-Check out the video below to see it in action. If the below doesn't work for you, try this link
+Check out the video below to see it in action. If the below doesn't work for you, try [this link](https://www.youtube.com/watch?v=DhUcWR7a8Tg)
 
 
 ## Step 1: Parts and Tools
@@ -60,7 +60,7 @@ Air Chamber
 
 4. 2 x 20mm female threaded couplings
 
-5. 1 x tyre valve - eBay
+5. 1 x tyre valve - [eBay](http://www.ebay.com.au/itm/Autoplus-TR-413-Snap-In-Tyre-Valve-Rubber-Tubeless-Short-Valve-/171762320452?pt=LH_DefaultDomain_15&hash=item27fdd50444)
 
 Air valve and launcher section.
 
@@ -72,11 +72,11 @@ Note: I made a change about half way through the build when I realized the desig
 
 8. 1 x 20mm female to 20mm coupling
 
-9. 1 x sprinkler valve - eBay
+9. 1 x sprinkler valve - [eBay](http://www.ebay.com.au/itm/231062116550?ssPageName=STRK:MEWAX:IT&_trksid=p3984.m1423.l2649)
 
 10. 1 x length of copper or aluminium tube. Should be able to fit inside a straw.
 
-11. Fuel Air Hose 8.2mm Barb 3/4" Female Threaded Brass Adapter. eBay
+11. Fuel Air Hose 8.2mm Barb 3/4" Female Threaded Brass Adapter. [eBay](http://www.ebay.com.au/itm/5pcs-1-2-PT-Female-Thread-to-5-16-Pneumatic-Air-Hose-Barb-Straight-Fitting-/331592226950?pt=LH_DefaultDomain_15&hash=item4d346fd886)
 
 Stand and remote
 
@@ -252,13 +252,13 @@ Steps:
 
 ![Step 7: Adding the Electronics image 8](images/step07_08.jpg)
 
-This is probably the most difficult section. If however you want to go down a simpler route, then I have included instructions for this as well. If you want to add a remote triggering system, then I’d suggest you visit my “add a remote to just about anything” Instructable and read through that. It has step by step instructions and schematics on how to do it. Actually it isn’t that difficult
+This is probably the most difficult section. If however you want to go down a simpler route, then I have included instructions for this as well. If you want to add a remote triggering system, then I’d suggest you visit my “[add a remote to just about anything”](https://www.instructables.com/id/Add-a-Remote-Control-to-Just-About-Anything/) Instructable and read through that. It has step by step instructions and schematics on how to do it. Actually it isn’t that difficult
 
 Adding a remote
 
 Steps:
 
-1. Once you have done all of the wiring (see this ‘ible on how to do this) and added all of the bits into a project box, test and make sure you can hear the relay opening. Easiest way to do this is to just hit the button on the controller and listening out for the “click”.
+1. Once you have done all of the wiring (see this [‘ible](https://www.instructables.com/id/Add-a-Remote-Control-to-Just-About-Anything/) on how to do this) and added all of the bits into a project box, test and make sure you can hear the relay opening. Easiest way to do this is to just hit the button on the controller and listening out for the “click”.
 
 2. Decide where to locate the project box and add some Velcro to stick it down.
 

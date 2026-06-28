@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,279 +162,317 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Vacuum Tube Lamp - Sound Reactive</span>
 </nav>
-<h1>Vacuum Tube Lamp - Sound Reactive</h1><div class="source"><a href="https://www.instructables.com/Vacuum-Tube-Lamp-Sound-Reactive/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve said it before and I’ll say it again – Vacuum tubes are an amazing thing to behold! I actually think I might have a slight vacuum tube obsession. Every time I come across some vacuum tubes on my journeys I’m compelled to buy them.</p>
-<p>The problem I have though is what to do with them all! Most just sit in a draw and I periodically pull them out and to admire them. I've made a display in the past (check out the ‘ible here) but unfortunately I had to damage the bottom of the tube to enable it to be illuminated with an LED.</p>
-<p>Initially I thought about using the heater coils inside the tube as they will softly glow at low voltages. The problem though is they get very hot and could be dangerous to touch. Instead, I decided to light them up with LED’s but this time I didn't want to have to damage the tube. I also included a circuit where the LED’s react to sound, making them flash and dance to music. I also included a way to turn this function off so the LED’s are just on.</p>
+<h1>Vacuum Tube Lamp - Sound Reactive</h1><div class="source"><a href="https://www.instructables.com/Vacuum-Tube-Lamp-Sound-Reactive/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve said it before and I’ll say it again – Vacuum tubes are an amazing thing to behold!</p>
+<p>I actually think I might have a slight vacuum tube obsession.</p>
+<p>Every time I come across some vacuum tubes on my journeys I’m compelled to buy them.</p>
+<p>The problem I have though is what to do with them all!</p>
+<p>Most just sit in a draw and I periodically pull them out and to admire them.</p>
+<p>I've made a display in the past (<a href="https://www.instructables.com/id/Vacuum-Tube-LED-Candle/">check out the ‘ible here</a>) but unfortunately I had to damage the bottom of the tube to enable it to be illuminated with an LED.</p>
+<p>Initially I thought about using the heater coils inside the tube as they will softly glow at low voltages.</p>
+<p>The problem though is they get very hot and could be dangerous to touch.</p>
+<p>Instead, I decided to light them up with LED’s but this time I didn't want to have to damage the tube.</p>
+<p>I also included a circuit where the LED’s react to sound, making them flash and dance to music.</p>
+<p>I also included a way to turn this function off so the LED’s are just on.</p>
 <p>I used green LED’s and I’m really happy with the colour. The green LED's really suit the look of the vacuum tubes and the ambient light released is very soft and pleasing.</p>
 <p>Enough said. Now it’s time to build it.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Sound Controlled Circuit – Parts</p>
 <ol>
-<li>3 X LED’s – Green – eBay</li>
-</ul>
+<li>3 X LED’s – Green – <a href="https://www.ebay.com.au/itm/50PCS-5mm-LED-White-Red-Green-Blue-UV-Bright-Pink-Light-Emitting-Diode/362233885966?hash=item5456d2750e:m:mFwwOxME1TGa8eTfUYNCQoQ:rk:2:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 9014 Transistors – eBay</li>
-</ul>
+<li>2 X 9014 Transistors – <a href="https://www.ebay.com.au/itm/50X-S9014-Transistor-Npn-General-TO92-Package-SS9014-New-Ic-xn/282907910927?hash=item41dea0230f:rk:1:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>10K, 1M and 4.7K Resistors - eBay (buy them in assorted lots)</li>
-</ul>
+<li>10K, 1M and 4.7K Resistors - <a href="https://www.ebay.com.au/itm/600x-30-Values-1-4W-Metal-Film-Resistors-Resistance-Assortment-Kit-V3/142999398803?_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D1%26asc%3D20140106155344%26meid%3D1e39faf4e7704714b46eeb1daa797398%26pid%3D100005%26rk%3D3%26rkt%3D12%26sd%3D222708655898%26itm%3D142999398803&_trksid=p2047675.c100005.m1851">eBay</a> (buy them in assorted lots)</li>
+</ol>
 <ol>
-<li>47uf and 1uf capacitors – eBay (buy them in assorted lots)</li>
-</ul>
+<li>47uf and 1uf capacitors – <a href="https://www.ebay.com.au/itm/500Pcs-lot-0-1UF-1000UF-24Values-Electrolytic-Capacitors-16-50V-mix-Electro-M3N7-/253795493405">eBay</a> (buy them in assorted lots)</li>
+</ol>
 <ol>
-<li>Electret Condenser Microphone – eBay</li>
-</ul>
+<li>Electret Condenser Microphone – <a href="https://www.ebay.com.au/itm/Small-Electret-Condenser-Microphone-MIC-Capsule-20-Pcs/271950965252?epid=1738720227&hash=item3f518a6a04:g:-4EAAOSwAaJaSeWT:rk:7:pf:0">eBay</a></li>
+</ol>
 <p>Other Parts</p>
 <ol>
-<li>Toggle Switch - 6 Pin 3 Position SPDT – eBay</li>
-</ul>
+<li>Toggle Switch - 6 Pin 3 Position SPDT – <a href="https://www.ebay.com.au/itm/5pcs-AC-125V-6A-3-Position-3Pin-SPDT-ON-OFF-ON-Micro-Mini-Toggle-Switch-TE460/232164669648?hash=item360e17b8d0:rk:1:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>3.6v 18650 battery – eBay. Or you can pull them from old laptops which is what I did</li>
-</ul>
+<li>3.6v 18650 battery – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR7.TRC1.A0.H0.X18650+samsung.TRS0&_nkw=18650+samsung&_sacat=0">eBay</a>. Or you can pull them from old laptops which is what I did</li>
+</ol>
 <ol>
-<li>18650 battery holder – eBay</li>
-</ul>
+<li>18650 battery holder – <a href="https://www.ebay.com.au/itm/High-Quality-Plastic-Battery-Holder-Storage-Box-Case-for-18650-With-Wire-Lead/282064215114?hash=item41ac565c4a:m:mAXemnLhdvAtePIM07Hw4hQ:rk:9:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>18650 battery charger module (10 for $2.95!) – eBay</li>
-</ul>
+<li>18650 battery charger module (10 for $2.95!) – <a href="https://www.ebay.com.au/itm/10pcs-TP4056-Micro-USB-Charger-Module-5V-1A-18650-Lithium-Battery-Charg-Board-GB/182665993197?hash=item2a87bddbed:g:JrYAAOSwvc1ZZvYT:rk:2:pf:0">eBay</a></li>
+</ol>
 <ol>
 <li>Wires. I like to use computer ribbon cable. You can usually pick it up for free at an e-waste recycling plant.</li>
-</ul>
+</ol>
 <ol>
 <li>Nice piece of wood for the base</li>
-</ul>
+</ol>
 <ol>
-<li>A small piece of brass strip. I get mine from the local hobby store. You can also get it on eBay</li>
-</ul>
+<li>A small piece of brass strip. I get mine from the local hobby store. You can also get it on <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR10.TRC0.A0.H0.Xbrass+strip.TRS0&_nkw=brass+strip&_sacat=0">eBay</a></li>
+</ol>
 <ol>
 <li>Small hardware like washers, screws etc</li>
-</ul>
+</ol>
 <ol>
-<li>Last but not least: Vacuum tubes – eBay. Try and get them in lots if you can - you will have more choices to use. You can also find them in older electronics or junk stores</li>
-</ul>
+<li>Last but not least: Vacuum tubes – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xvacuum+tube.TRS0&_nkw=vacuum+tube&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=brass+strip">eBay</a>. Try and get them in lots if you can - you will have more choices to use. You can also find them in older electronics or junk stores</li>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Sander</li>
-</ul>
+</ol>
 <ol>
 <li>Saw</li>
-</ul>
+</ol>
 <ol>
 <li>Drill. You will need some spade bits and other drill bits.</li>
-</ul>
+</ol>
 <ol>
 <li>Chisels</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Oscillating tool like the one in the image below. This is used to help carve the hole in the base of the wood.</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue</li>
-</ul>
+</ol>
 <ol>
 <li>Files</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Preparing to Make the Carved Section in the Wood</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 5" loading="lazy"></div><p>The first thing to do is you need to find a nice, chunky piece of wood. My neighbour gave me a nice piece of wood which was an old sign. It’s a type of pine which makes it quite soft. The benefit is it’s easy to carve, the disadvantage is it’s easy to mark. The following step goes through how to mark out the area you need to carve and using an oscillating tool to do it.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Preparing to Make the Carved Section in the Wood</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 5" loading="lazy"></div><p>The first thing to do is you need to find a nice, chunky piece of wood.</p>
+<p>My neighbour gave me a nice piece of wood which was an old sign.</p>
+<p>It’s a type of pine which makes it quite soft.</p>
+<p>The benefit is it’s easy to carve, the disadvantage is it’s easy to mark.</p>
+<p>The following step goes through how to mark out the area you need to carve and using an oscillating tool to do it.</p>
 <p>Steps:</p>
 <ol>
 <li>First, decide on how many tubes you want to display. I went with 3 in the end. The good thing about the circuit I used is you could use 10 LED’s if you wanted to display 10 tubes</li>
-</ul>
+</ol>
 <ol>
 <li>Mark out the area on the bottom of the wood that you need to remove. I gave myself about 20mm on each side</li>
-</ul>
+</ol>
 <ol>
 <li>Next grab your oscillating tool and start to go around the marked edge. Push the cutting blade into the wood and once it won’t go any further, move it along the marked line.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep on going over the area marked until you have gone about as far as the blade will go into the wood. This will now allow you to use a chisel to remove the excess wood in the middle easily and cleanly.</li>
-</ul>
+</ol>
 <p>If you don’t have an oscillating tool you can pick them up pretty cheaply at your local hardware store. You could also use a router to make the hole as well.</p><h2><span class="step-num">STEP 3</span>Step 3: Chisel Away</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Chisel Away image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Chisel Away image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Chisel Away image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Chisel Away image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Chisel Away image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Chisel Away image 6" loading="lazy"></div><p>How that you have made the cuts along the outline of the area to remove, you will find it pretty easy going</p>
 <p>Steps:</p>
 <ol>
 <li>Grab a chisel and hammer and start to remove the excess wood. Make sure you secure the wood in a vice or something similar when chiselling it.</li>
-</ul>
+</ol>
 <ol>
 <li>I’m no expert when it comes to chiselling. The only tips I can give you is – take your time and don’t try to remove too much wood at once, make sure the chisel is sharp and make sure that the flat side of the chisel is facing up.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep checking your work to see if the battery and the battery holder will fit inside.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you hole is large enough to accommodate the battery, you are then ready to sand</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Sanding</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Sanding image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Sanding image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Sanding image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Sanding image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Sanding image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Sanding image 6" loading="lazy"></div><p>You could keep the woody rustic if you wished. I wanted a clean look to my build so I decided to sand the block of wood.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Sanding</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Sanding image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Sanding image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Sanding image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Sanding image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Sanding image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Sanding image 6" loading="lazy"></div><p>You could keep the woody rustic if you wished. I wanted a clean look to my build so I decided to sand the block of wood.</p>
 <p>Steps:</p>
 <ol>
 <li>If you have a belt sander then you will find this part pretty easy. If you don’t then you can still use a hand sander – it will just take a little longer. Place the wood on the sander and sand every side until you have the bare wood.</li>
-</ul>
+</ol>
 <ol>
 <li>If you are using a soft wood like me you need to be careful which way you sand the grain of the wood. The sandpaper can easily scratch the wood.</li>
-</ul>
+</ol>
 <ol>
 <li>I also decided to round off the sides of the top of the wood. I used the belt sander to do this as well. You just carefully roll the side of the wood on the sandpaper until you have the desired radius.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Holes for the Tubes, Microphone and Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 7" loading="lazy"></div><p>Next thing to do is to measure and drill holes for the tubes, microphone and switch. How you lay these out are up to you.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Holes for the Tubes, Microphone and Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Holes for the Tubes, Microphone and Switch image 7" loading="lazy"></div><p>Next thing to do is to measure and drill holes for the tubes, microphone and switch. How you lay these out are up to you.</p>
 <p>Steps:</p>
 <ol>
 <li>Measure and mark each of the holes for the tubes</li>
-</ul>
+</ol>
 <ol>
 <li>Use a 13mm spade drill bit and drill the holes for the tubes. 13mm is exactly the right size to hold the small tubes into place</li>
-</ul>
+</ol>
 <ol>
 <li>Use a small drill bit to drill holes right through the tube holes. This will allow you to connect the LED wires to the circuit</li>
-</ul>
+</ol>
 <ol>
 <li>Next drill hole for the microphone. I added mine to the front but you could easily add it to the top of the wood.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, drill a hole for the switch. This is a little more trickier as you will probably have to place the whole switch inside the wood. To do this, drill a hole that is the same diameter as the switch. The switch should fit inside the hole. Don't worry if the hole looks a little messy, you will hide it later with a washer.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Charging Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Charging Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Charging Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Charging Module image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Charging Module image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Charging Module image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Charging Module image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Charging Module image 7" loading="lazy"></div><p>I decided to add the charging module to the back of the case.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Charging Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Charging Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Charging Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Charging Module image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Charging Module image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Charging Module image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Charging Module image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Charging Module image 7" loading="lazy"></div><p>I decided to add the charging module to the back of the case.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to make a slit in the back of the wood for the module to fit into. I use the oscillating tool again to do this. You can see that the hole ended up coming out pretty messy. Don't worry though as you can always cover up messy cuts and holes.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, place the module inside the slit with the USB end slightly sticking out</li>
-</ul>
+</ol>
 <ol>
 <li>To cover the slit and neaten it up, I added a small strip of brass. I had this lying around so that's why I used it but you could use any strip of metal that you have</li>
-</ul>
+</ol>
 <ol>
 <li>Use some small files and make a small cut in the brass so the USB head can fit into</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a couple of holes in the ends of the brass</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue the module indie the slit in the wood</li>
-</ul>
+</ol>
 <ol>
 <li>Secure the brass strip with a couple of screws. Now all your crimes are hidden behind a little strip of brass with the added benefit of giving the module some support as well.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Add Some Wax to the Wood</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Add Some Wax to the Wood image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Add Some Wax to the Wood image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Add Some Wax to the Wood image 3" loading="lazy"></div><p>You could add a stain but I had some wax so used this instead.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Add Some Wax to the Wood</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Add Some Wax to the Wood image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Add Some Wax to the Wood image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Add Some Wax to the Wood image 3" loading="lazy"></div><p>You could add a stain but I had some wax so used this instead.</p>
 <p>Steps:</p>
 <ol>
 <li>Rub wax into the wood making sure that you really rub it into the grain.</li>
-</ul>
+</ol>
 <ol>
 <li>wipe away any excess wax with a clean cloth</li>
-</ul>
+</ol>
 <ol>
 <li>Repeat if necessary</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Making the Sound Activated Circuit</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Sound Activated Circuit image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Sound Activated Circuit image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Sound Activated Circuit image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Sound Activated Circuit image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Sound Activated Circuit image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Sound Activated Circuit image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Sound Activated Circuit image 7" loading="lazy"></div><p>The circuit used is quite simple and allows you to have the LED's controlled by sound. I have made another 'ible which can be found here, which used a more complicated circuit. You only need a couple of transistors and a few other parts to make this one.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Sound Activated Circuit</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Sound Activated Circuit image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Sound Activated Circuit image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Sound Activated Circuit image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Sound Activated Circuit image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Sound Activated Circuit image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Sound Activated Circuit image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Sound Activated Circuit image 7" loading="lazy"></div><p>The circuit used is quite simple and allows you to have the LED's controlled by sound.</p>
+<p>I have made another 'ible which can be <a href="https://www.instructables.com/id/Sound-Controlled-LEDs-Pocket-Disco/">found here</a>, which used a more complicated circuit.</p>
+<p>You only need a couple of transistors and a few other parts to make this one.</p>
 <p>I will also be calling the different legs on the transistors by their correct names. The diagram below of the transistor will help you follow</p>
 <p>Steps:</p>
 <ol>
 <li>First check out the schematic and breadboard it to make sure the circuit works for you.</li>
-</ul>
+</ol>
 <ol>
 <li>To make the circuit first solder the Q2 transistor into the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the emitter leg to ground</li>
-</ul>
+</ol>
 <ol>
 <li>Add a 10K resister to the base pin on transistor Q2 and solder the other end to positive</li>
-</ul>
+</ol>
 <ol>
 <li>Next add the other transistor (Q1) and solder the collector pin on Q1 to the base pin on Q2</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Making the Sound Activated Circuit - Continued</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Sound Activated Circuit - Continued</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Sound Activated Circuit - Continued image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Next you need to add a 1M resistor to transistor Q1 (base leg) and the other end of the resistor to positive</li>
-</ul>
+</ol>
 <ol>
 <li>Add a 1uf cap to the base pin on Q1 (make sure the negative pin from the cap is attached to the base pin) and the other leg from the cap soldered to a spare solder point on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a 4.7K resister to the positive leg of the cap and the other end to positive on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Attach a 47uf cap between positive and negative on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>I forgot to connect the collector pin on transistor Q1 to ground so make sure you do this as well. In the last image you can see I added a wire under the cap to connect the transistor pin to ground.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Making the Sound Activated Circuit - Continued</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 3" loading="lazy"></div><p>That's it for the components, now you have to add the wires to the circuit board so you can connect it to power, switch and LED's. The wiring might be a little confusing in the images as I had to change this a little. Just use the schematic to work out where to attach wires</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Making the Sound Activated Circuit - Continued</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 3" loading="lazy"></div><p>That's it for the components, now you have to add the wires to the circuit board so you can connect it to power, switch and LED's.</p>
+<p>The wiring might be a little confusing in the images as I had to change this a little.</p>
+<p>Just use the schematic to work out where to attach wires</p>
 <p>Steps:</p>
 <ol>
 <li>Connect a wire to the emitter leg on Q2. This will be connected to one of the solder points on the switch</li>
-</ul>
+</ol>
 <ol>
 <li>Connect a wire to positive. This will be connected to the charging module later on</li>
-</ul>
+</ol>
 <ol>
 <li>Connect a to the first and middle pin on the switch. The wire connected to the first pin will be soldered to the ground wires from the LED's and the middle wire to the ground solder point on the charging module</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, cut away any excess prototype board.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Connecting the Battery</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Connecting the Battery image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Connecting the Battery image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Connecting the Battery image 3" loading="lazy"></div><p>The battery needs to be connected directly to the charging module.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Connecting the Battery</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Connecting the Battery image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Connecting the Battery image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Connecting the Battery image 3" loading="lazy"></div><p>The battery needs to be connected directly to the charging module.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the circuit for the sound activation inside the base of the wood. Find the best place to locate it as this will be where it is stuck down later in the build.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder the positive wire from the battery holder to the positive solder point on the charging module. Do the same for the negative wire on the battery holder</li>
-</ul>
+</ol>
 <ol>
 <li>The battery is now connected to the charging module. The solder points on the charging module will also be used to connect the sound activation circuit and switch all together.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Adding and Connecting the Switch</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding and Connecting the Switch image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding and Connecting the Switch image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding and Connecting the Switch image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding and Connecting the Switch image 4" loading="lazy"></div><p>The switch is a 3 way one and allows you to do the following: turn off the LED's, turn on the LED's and also turn on the LED's with the sound activation circuit.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding and Connecting the Switch</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding and Connecting the Switch image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding and Connecting the Switch image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding and Connecting the Switch image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding and Connecting the Switch image 4" loading="lazy"></div><p>The switch is a 3 way one and allows you to do the following: turn off the LED's, turn on the LED's and also turn on the LED's with the sound activation circuit.</p>
 <p>Steps:</p>
 <ol>
 <li>First solder the middle wire on the switch to ground on the charging module. make sure that you thread each of the wires on the switch through the switch hole in the base.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder the wire connected to the emitter leg on Q2 to one of the side pins on the switch. This will allow you to directly turn on the LED's without the sound reactive circuit being activated.</li>
-</ul>
+</ol>
 <ol>
 <li>The last wire soldered on the switch is the ground wire.</li>
-</ul>
+</ol>
 <ol>
 <li>At this stage you could hot glue the switch into place but it's probably wiser to leave it for the time being until you have tested</li>
-</ul>
+</ol>
 <ol>
 <li>If all that sounds confusing, just use the schematic below to help you.</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Adding the LED's</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the LED's image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the LED's image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the LED's image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the LED's image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the LED's image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the LED's image 6" loading="lazy"></div><p>Next thing to do is to add the LED's. Initially I was going to use 3mm red LED's and double them up so the light would be brighter (see first pic). I decided against this for a couple of reasons. First, the red colour wasn't as good as I hoped and second, I somehow blew all the LED's (no idea how) so it was a good reason to swap them out to the green ones.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the LED's</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the LED's image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the LED's image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the LED's image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the LED's image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the LED's image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the LED's image 6" loading="lazy"></div><p>Next thing to do is to add the LED's.</p>
+<p>Initially I was going to use 3mm red LED's and double them up so the light would be brighter (see first pic).</p>
+<p>I decided against this for a couple of reasons.</p>
+<p>First, the red colour wasn't as good as I hoped and second, I somehow blew all the LED's (no idea how) so it was a good reason to swap them out to the green ones.</p>
 <p>Steps:</p>
 <ol>
 <li>You need to add a wire to each of the LED legs. Solder these on and add some heat shrink to protect from short circuiting. To make sure that you can identify positive and negative wires, I tie a small knot in the positive wire.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, before you place the LEDs into the holes in the wood, bend the legs out slightly. This will help keep them in place inside the holes in the wood.</li>
-</ul>
+</ol>
 <ol>
 <li>Thread the wires and LED's into the holes in the wood. The LED's should be level to the top of the wood. You can hot glue them in place if you want to but I found it wasn't necessary as they held in place well. Plus, not hot gluing will give you ability to adjust them if necessary.</li>
-</ul>
+</ol>
 <ol>
 <li>Connect all of the negative wires and positive wires from the LED's. Strip the ends of the wires and twist them together.</li>
-</ul>
+</ol>
 <ol>
 <li>You then need to connect the ground and positive LED wires to the circuit. The positive LED wires connect to the positive wire attached earlier to the circuit board. the Ground LED wires get connected to the last wire on the switch. Check out the circuit diagram again to see how I did this in step 12.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, add some solder to each of the ground and positive ends of the wires and some heat-shrink to each of the ends to protect them</li>
-</ul><h2><span class="step-num">STEP 14</span>Step 14: Gluing, Testing and Adding Tubes</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 7" loading="lazy"></div><p>Now that you have everything wired up, it's time to stick everything down and make secure. You will notice that I didn't add a cover to the bottom of the wood base. I was thinking of adding a ply wood base but decided against it in the end. I like that you can see the electronics inside and see how it works.</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Gluing, Testing and Adding Tubes</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 7" loading="lazy"></div><p>Now that you have everything wired up, it's time to stick everything down and make secure.</p>
+<p>You will notice that I didn't add a cover to the bottom of the wood base.</p>
+<p>I was thinking of adding a ply wood base but decided against it in the end.</p>
+<p>I like that you can see the electronics inside and see how it works.</p>
 <p>Make sure you test first before soldering everything down.</p>
 <p>Steps:</p>
 <ol>
 <li>Hot glue the battery holder and circuit down</li>
-</ul>
+</ol>
 <ol>
 <li>I also added some hot glue to the LED wires and stuck these down as well</li>
-</ul>
+</ol>
 <ol>
 <li>If you haven't already, push the switch into the hole and hot glue it into place. Adding the washer to the switch ensures that the hole is covered and the finish is clean</li>
-</ul>
+</ol>
 <ol>
 <li>I also added some small rubber feet to the bottom of the base.</li>
-</ul>
+</ol>
 <ol>
 <li>Next you will need to add some vacuum tubes. If you look at the bottom of a tube you may see a small metal plate. Some tubes have these and some don't. It's better to use a vacuum tube that doesn't have these metal plates as the light will shine better through the tube.</li>
-</ul>
+</ol>
 <ol>
 <li>Slightly bend out the pins on the tube so when you push it into the hole in the wood base, they will be firm and hold</li>
-</ul>
+</ol>
 <ol>
 <li>Turn on and enjoy!</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

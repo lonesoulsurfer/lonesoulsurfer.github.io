@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,73 +162,99 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">How to Clean Sticky Rubber</span>
 </nav>
-<h1>How to Clean Sticky Rubber</h1><div class="source"><a href="https://www.instructables.com/How-to-Clean-Sticky-Rubber/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>On many products such as electronics, rubber is added to help with grip. Sometimes, due to environmental conditions like temperature and UV exposure, the rubber can break down and become sticky. You’ve probably come across this yourself as it’s pretty common for rubber to act like this.</p>
+<h1>How to Clean Sticky Rubber</h1><div class="source"><a href="https://www.instructables.com/How-to-Clean-Sticky-Rubber/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>On many products such as electronics, rubber is added to help with grip.</p>
+<p>Sometimes, due to environmental conditions like temperature and UV exposure, the rubber can break down and become sticky.</p>
+<p>You’ve probably come across this yourself as it’s pretty common for rubber to act like this.</p>
 <p>This Instructable will go through a couple of methods on how to remove this sticky mess from your products.</p>
-<p>So why does rubber do this? Natural or synthetic rubber starts out as a very sticky substance. That’s because the molecules in the raw state are long chains of very weak links to each other. To turn that raw material into the rubber we all know and love, you have to put it through a process called vulcanisation. This involves heating the rubber with some other chemicals, which molecularly transforms the rubber from sticky to stretchy.</p>
-<p>The vulcanised rubber though can revert back to it’s original state under certain conditions. It happens when the stronger polymer crosslinks get snipped and the molecules revert back into their original small chains. Once that happens you’re stuck with rubber that has become sticky and tacky.</p>
+<p>So why does rubber do this?</p>
+<p>Natural or synthetic rubber starts out as a very sticky substance.</p>
+<p>That’s because the molecules in the raw state are long chains of very weak links to each other.</p>
+<p>To turn that raw material into the rubber we all know and love, you have to put it through a process called vulcanisation.</p>
+<p>This involves heating the rubber with some other chemicals, which molecularly transforms the rubber from sticky to stretchy.</p>
+<p>The vulcanised rubber though can revert back to it’s original state under certain conditions.</p>
+<p>It happens when the stronger polymer crosslinks get snipped and the molecules revert back into their original small chains.</p>
+<p>Once that happens you’re stuck with rubber that has become sticky and tacky.</p>
 <p>In the following Instructable I’ll go through a couple of methods to remove this mess and hopefully give you a few pointers on how to do it yourself.</p><h2><span class="step-num">STEP 1</span>Step 1: Tools & Preparation</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Tools & Preparation image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Tools & Preparation image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Tools & Preparation image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Tools & Preparation image 4" loading="lazy"></div><p>Tools</p>
 <ol>
 <li>90% isopropyl solution. You can get this from the chemist or hardware store.</li>
-</ul>
+</ol>
 <ol>
-<li>I have also used Methylated sprits which can be purchased from a hardware store or even your local supermarket. It seems that methylated spirits is called by a few different names. In the US there's something similar called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous). I've also heard that this can be damaging to plastic so be wary using it to remove rubber and do a test first. There is also methyl hydrate, or fondue fuel available in the US as well. Again I would do a test first to see how well these work before using it. In Europe, it may be called spirits. check out this link to find out more</li>
-</ul>
+<li>I have also used Methylated sprits which can be purchased from a hardware store or even your local supermarket. It seems that methylated spirits is called by a few different names. In the US there's something similar called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous). I've also heard that this can be damaging to plastic so be wary using it to remove rubber and do a test first. There is also methyl hydrate, or fondue fuel available in the US as well. Again I would do a test first to see how well these work before using it. In Europe, it may be called spirits. check out <a href="https://en.wikipedia.org/wiki/Denatured_alcohol">this link</a> to find out more</li>
+</ol>
 <p>Preparation</p>
 <ol>
 <li>Make sure that the area that you are working in is clean</li>
-</ul>
+</ol>
 <ol>
 <li>Place a cloth on the workspace where you will be working.</li>
-</ul>
+</ol>
 <ol>
 <li>Have some spare cloths handy to remove any excess chemicals</li>
-</ul>
+</ol>
 <ol>
 <li>It’s good practice to also wear rubber gloves and some safety glasses as well. The isopropyl can be absorbed into the skin, which can cause poisoning in large amounts. Small amounts though isn’t considered dangerous</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Method 1 - Using Isopropyl</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Method 1 - Using Isopropyl image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Method 1 - Using Isopropyl image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Method 1 - Using Isopropyl image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Method 1 - Using Isopropyl image 4" loading="lazy"></div><p>The first method I'm going to show is using Isopropyl. Isopropyl is what is known as a synthetic alcohol and can be found in things like shaving creme, antiseptic and industrial applications.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Method 1 - Using Isopropyl</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Method 1 - Using Isopropyl image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Method 1 - Using Isopropyl image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Method 1 - Using Isopropyl image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Method 1 - Using Isopropyl image 4" loading="lazy"></div><p>The first method I'm going to show is using Isopropyl. Isopropyl is what is known as a synthetic alcohol and can be found in things like shaving creme, antiseptic and industrial applications.</p>
 <p>Although it's flammable, Isopropyl is pretty benign. However, you should try and wear gloves when using it can readily absorbed into the skin if used in large amounts.</p>
 <p>I decided to use the Isopropyl on a Hi 8 camera that I recently purchased. Some rubber on the top section was very very sticky and gummy which I guess was the reason why it was selling for $5!</p>
 <p>Steps:</p>
 <ol>
 <li>Place the camera on a clean surface</li>
-</ul>
+</ol>
 <ol>
 <li>Next, apply some Isopropyl to the affected area, adding enough to cover the rubber.</li>
-</ul>
+</ol>
 <ol>
 <li>Be careful to not get too much of the isopropyl into any electronics areas such as switches or small openings. If you do however, don't stress too much, the Isopropyl evaporates quickly and shouldn't effect the electronics (fingers crossed!)</li>
-</ul>
+</ol>
 <ol>
 <li>Start to wipe the rubber with a clean cloth. How hard you need to wipe will depend on how stubborn the rubber is. On this camera, the rubber came away quite easily.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Method 1 - Re-applying</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Method 1 - Re-applying image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Method 1 - Re-applying image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Method 1 - Re-applying image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Method 1 - Re-applying image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Method 1 - Re-applying image 5" loading="lazy"></div><p>As the Isopropyl evaporates quickly, you’ll probably need to re-apply a few times</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Method 1 - Re-applying</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Method 1 - Re-applying image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Method 1 - Re-applying image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Method 1 - Re-applying image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Method 1 - Re-applying image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Method 1 - Re-applying image 5" loading="lazy"></div><p>As the Isopropyl evaporates quickly, you’ll probably need to re-apply a few times</p>
 <p>Steps:</p>
 <ol>
 <li>Once the Isopropyl starts to dry and you find that the cloth is sticking to the rubber, it’s time to add another layer of Isopropyl.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep re-applying on the rubber and rubbing with a cloth. Use a clean section of the cloth each time.</li>
-</ul>
+</ol>
 <ol>
 <li>Once all the rubber has been removed, you should end up with just the bare plastic that the rubber was adhered to.</li>
-</ul>
+</ol>
 <ol>
 <li>Give it a final wipe with a clean cloth and you’re done! You should then power-up the part and ensure it still works ok.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Method 2 - Using Methylated Spirits</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 9" loading="lazy"></div><p>My usual go to when removing rubber is Methylated Sprits or if you are in the US, Denatured Alcohol. I find that it works very well with rubber that isn’t so far degraded. This camera that I used it on was sticky but not as degraded as the hi-8 video camera</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Method 2 - Using Methylated Spirits</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Method 2 - Using Methylated Spirits image 9" loading="lazy"></div><p>My usual go to when removing rubber is Methylated Sprits or if you are in the US, Denatured Alcohol.</p>
+<p>I find that it works very well with rubber that isn’t so far degraded.</p>
+<p>This camera that I used it on was sticky but not as degraded as the hi-8 video camera</p>
 <p>Steps:</p>
 <ol>
 <li>Add some Methylated Sprits onto a clean cloth</li>
-</ul>
+</ol>
 <ol>
 <li>Start to wipe away the rubber. If you find that the rubber isn’t coming off (like I did with this camera) you will need to apply several times</li>
-</ul>
+</ol>
 <ol>
 <li>Keep rubbing at the plastic and eventually the rubber will start to be removed.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep applying and rubbing until all of the rubber surface is gone.</li>
-</ul>
+</ol>
 <ol>
 <li>Give the part a final wipe over and test to make sure it still works</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

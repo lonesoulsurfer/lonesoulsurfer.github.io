@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -130,9 +165,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <h1>The Ultimate Photo Editing Tool - Made for Instrucables</h1><div class="source"><a href="https://www.instructables.com/The-Ultimate-Photo-Editing-Tool-Made-for-Instrucab/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.png" alt="Intro 2" loading="lazy"><img src="images/intro_03.png" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Clear Cut Photo Editor</p>
 <p>This is my dream photo editor I wish I had when I first started publishing Instrcutables!</p>
 <p>Instead of waiting around for it to be built by someone else (maybe) - I made it myself!</p>
-<p>The photo editor, which I have named Clear Cut, was built to make batch changes on images simple and easy. Primarily — I made it so I could batch process images for Instructables builds. However, it's a great tool to use for individual images as well.</p>
+<p>The photo editor, which I have named Clear Cut, was built to make batch changes on images simple and easy.</p>
+<p>Primarily — I made it so I could batch process images for Instructables builds.</p>
+<p>However, it's a great tool to use for individual images as well.</p>
 <p>The 2 main highlights in this editor are the background removal and adding shadows to images. Once the background has been removed, you can pick the colour you want or have it transparent.</p>
-<p>There are multiple controls to help with adjusting the image so it looks just right. Again, these are simple to use and you can also add a preset to your favourite adjustments to use in other editing projects.</p>
+<p>There are multiple controls to help with adjusting the image so it looks just right.</p>
+<p>Again, these are simple to use and you can also add a preset to your favourite adjustments to use in other editing projects.</p>
 <p>I've kept the tools to a minimum and have made a concerted effort not to include any controls that just waste space or are hardly ever used.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"></div><p>Everything you need is free and runs entirely in your browser — no installs, no sign up, nothing to download.</p>
 <ul>
 <li>A modern web browser (Chrome recommended)</li>
@@ -143,8 +181,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ul>
 <li>That's it!</li>
 </ul>
-<p>Open the editor here: https://lonesoulsurfer.github.io/clear-cut-photo-editor/</p>
-<p>Full source code and documentation available on GitHub: https://github.com/lonesoulsurfer/clear-cut-photo-editor</p><h2><span class="step-num">STEP 1</span>Step 1: Starting a Session</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Starting a Session image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Starting a Session image 2" loading="lazy"></div><p>STEP 1</p>
+<p>Open the editor here: <a href="https://lonesoulsurfer.github.io/clear-cut-photo-editor/">https://lonesoulsurfer.github.io/clear-cut-photo-editor/</a></p>
+<p>Full source code and documentation available on GitHub: <a href="https://github.com/lonesoulsurfer/clear-cut-photo-editor">https://github.com/lonesoulsurfer/clear-cut-photo-editor</a></p><h2><span class="step-num">STEP 1</span>Step 1: Starting a Session</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Starting a Session image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Starting a Session image 2" loading="lazy"></div><p>STEP 1</p>
 <p>When you open the editor you'll be prompted to start a new session or resume a previous one.</p>
 <ul>
 <li>New session — starts fresh with a clean workspace. Give it a name or leave the default (auto-named by date)</li>
@@ -161,13 +199,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Tip: When you add new images, any slider adjustments you've already made are automatically inherited by the new images.</p><h2><span class="step-num">STEP 3</span>Step 3: Adjustment Controls</h2><div class="step-images"><img src="images/step04_01.png" alt="Step 3: Adjustment Controls image 1" loading="lazy"><img src="images/step04_02.png" alt="Step 3: Adjustment Controls image 2" loading="lazy"></div><p>STEPS:</p>
 <p>The right panel contains all tone and colour controls.</p>
 <ul>
-<li>Brightness — Overall exposure. Push up to lift the image, pull down to darken.</li>
-<li>Contrast — Separation between lights and darks.</li>
-<li>Sharpness — Edge crispness. Useful for product shots.</li>
-<li>Colour — Saturation. Pull left to desaturate, push right to boost.</li>
-<li>Warmth — Colour temperature. Orange/warm vs blue/cool.</li>
-<li>Highlights — Recover blown highlights or push them brighter.</li>
-<li>Shadows — Lift or crush the shadow areas independently.</li>
+<li>Brightness  — Overall exposure. Push up to lift the image, pull down to darken.</li>
+<li>Contrast    — Separation between lights and darks.</li>
+<li>Sharpness   — Edge crispness. Useful for product shots.</li>
+<li>Colour      — Saturation. Pull left to desaturate, push right to boost.</li>
+<li>Warmth      — Colour temperature. Orange/warm vs blue/cool.</li>
+<li>Highlights  — Recover blown highlights or push them brighter.</li>
+<li>Shadows     — Lift or crush the shadow areas independently.</li>
 <li>All sliders default to 0. The value badge turns accent-coloured when a slider is active.</li>
 </ul>
 <p>ROTATION & STRAIGHTEN</p>
@@ -222,7 +260,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>After background removal, the Shadow panel lets you add a realistic drop shadow to your subject.</p>
 <ul>
 <li>enable the shadow application</li>
-<li>You will see a shadow appear instantly under the image. This now can be adjusted to suit the image by using the controls</li>
+<li>You will see a shadow appear instantly under the image.  This now can be adjusted to suit the image by using the controls</li>
 </ul>
 <p>Controls</p>
 <ul>
@@ -245,7 +283,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Choosing a Layout</p>
 <ul>
 <li>The left panel shows a grid of layout options — click any icon to select it</li>
-<li>Use the Gap slider to set the spacing between images in pixels. The colour you pick will also create a frame around the saved images.</li>
+<li>Use the Gap slider to set the spacing between images in pixels.  The colour you pick will also create a frame around the saved images.</li>
 <li>Choose a gap colour using the White / Black / Grey buttons — this is the colour shown between and around your images</li>
 </ul>
 <p>Assigning Images to Slots</p>
@@ -258,7 +296,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>Adjusting Each Image</p>
 <ul>
-<li>The adjustments work exactly the same as when in editor mode. same with removing backgrounds, adding shadows etc.</li>
+<li>The adjustments work exactly the same as when in editor mode.  same with removing backgrounds, adding shadows etc.</li>
 </ul>
 <p>Saving</p>
 <ul>
@@ -293,6 +331,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Save this photo + Remove BG — exports the current image with all adjustments and background removal applied</li>
 <li>Save all photos — batch exports every image in the filmstrip. A progress bar tracks the queue so you can see how it's going.</li>
 </ul>
-<p>Exports are saved directly to your session folder. If background removal was applied, images export as PNG to preserve transparency — unless you chose a solid background colour, in which case they export as JPG.</p>
+<p>Exports are saved directly to your session folder.</p>
+<p>If background removal was applied, images export as PNG to preserve transparency — unless you chose a solid background colour, in which case they export as JPG.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

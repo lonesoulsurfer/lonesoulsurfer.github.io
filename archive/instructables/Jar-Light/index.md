@@ -36,15 +36,15 @@ So without further ado - let's get making
 
 PARTS:
 
-1. 2 x aaa Battery Holder – eBay
+1. 2 x aaa Battery Holder – [eBay](https://www.ebay.com.au/itm/2X-Black-Plastic-Battery-Case-Holder-Wire-2-x-1-5V-AAA-S7S7/202486158462?epid=1659371845&hash=item2f251d947e:g:Oa0AAOSwGoBb2BJH&frcectupt=true)
 
-2. SPDT toggle switch – eBay
+2. SPDT toggle switch – [eBay](https://www.ebay.com.au/itm/5-x-On-Off-Small-Toggle-Switch-Miniature-SPST-6mm-AC250V-3A-120V-5A-R8Z9/332585296720?epid=2264905731&hash=item4d6fa0e350:g:sw0AAOSw-0RbHz3x)
 
-3. 1mm ID copper tube – eBay
+3. 1mm ID copper tube – [eBay](https://www.ebay.com.au/itm/100Pcs-Copper-1mm-OD-400mm-Long-Single-Hole-Electrode-EDM-Tube-Pipe/391184932487?epid=1048859486&hash=item5b14705e87:g:BLgAAOSwu~FdIMS7)
 
-4. LED Filament – eBay
+4. LED Filament – [eBay](https://www.ebay.com.au/itm/10Pcs-LED-COB-Solar-Power-Filament-Super-Bright-Bulb-Light-Source-Lighting-T-ek/163997082843?hash=item262efce4db:g:BcsAAOSw1PFdahSx)
 
-5. Nice old Jar – I used an amber jar which you can find on eBay or just search around in your grandpa’s garage
+5. Nice old Jar – I used an amber jar which you can find on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR6.TRC2.A0.H0.Xamber+jar+vintage.TRS0&_nkw=amber+jar+vintage&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=amber+jar) or just search around in your grandpa’s garage
 
 6. DC motor – eBay or just pull one out of something. You need the thin copper wire from inside the motor. You could also probably just buy a reel from eBay
 

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -141,46 +176,48 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Tools</p>
 <ol>
 <li>Dropsaw</li>
-</ul>
+</ol>
 <ol>
 <li>PVC glue</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Cutting the Rod Holder</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cutting the Rod Holder image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cutting the Rod Holder image 2" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Cutting the Rod Holder</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cutting the Rod Holder image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cutting the Rod Holder image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>It’s best to make the end of the rod holder into a point as it will go into sand etc much easier. Place the PCV tube onto the drop saw on a slight angle.</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully make the cut.</li>
-</ul>
+</ol>
 <ol>
 <li>Next decide how long you want to make your rod holder. There are no specific or ideal lenghs, just work on the premise that 1/3 will be buried in the sand.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut the PVC tube to length</li>
-</ul>
+</ol>
 <p>NOTE: PVC pipe can shatter so make sure you are wearing safety gear like gloves and eye protection</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Tee and Elbow</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Tee and Elbow image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Tee and Elbow image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Tee and Elbow image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Tee and Elbow image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Tee and Elbow image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Adding the Tee and Elbow image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Adding the Tee and Elbow image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Adding the Tee and Elbow image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Adding the Tee and Elbow image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Adding the Tee and Elbow image 10" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Add some PVC pipe glue to the inside of the tee and push onto the PVC tube</li>
-</ul>
+</ol>
 <ol>
 <li>Next, you need to add a piece of PVC tube into the top of the tee. Grab the piece that you cut off, trim if necessary and glue into the top of the tee</li>
-</ul>
+</ol>
 <ol>
 <li>Glue the 90 degree elbow to the other end of the piece of PVC pipe you just added. Remember though that you will be sticking the rod holder in at an angle so you want to make sure that when you do, your beer will sit straight. Work out what type of angle you want the rod holder and attach the elbow so it is vertical.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, glue another small piece of PVC to the other end of the tee. This will form the top of the fishing rod holder.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Add the Beer Holder</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Add the Beer Holder image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Add the Beer Holder image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Add the Beer Holder image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Add the Beer Holder image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Add the Beer Holder image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Add the Beer Holder image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Add the Beer Holder image 7" loading="lazy"></div><p>The level insert taper that you attach to the 32mm PVC tube is actually 40mm so the fit is a little loose. This won’t cause any issues if you add some extra glue to the joins.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Add the Beer Holder</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Add the Beer Holder image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Add the Beer Holder image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Add the Beer Holder image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Add the Beer Holder image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Add the Beer Holder image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Add the Beer Holder image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Add the Beer Holder image 7" loading="lazy"></div><p>The level insert taper that you attach to the 32mm PVC tube is actually 40mm so the fit is a little loose. This won’t cause any issues if you add some extra glue to the joins.</p>
 <p>Steps:</p>
 <ol>
 <li>Add glue (make sure you add some extra due to the loose fitting) to the inside of the level insert taper and push onto the PVC pipe.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, add some more glue to the inside of the coupling and push this onto the level insert taper</li>
-</ul>
+</ol>
 <ol>
 <li>Leave to dry for a few hours.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Enjoy</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Enjoy image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Enjoy image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Enjoy image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Enjoy image 4" loading="lazy"></div><p>That’s it!</p>
-<p>Go to your favourite fishing spot, grab a few beers and test out your new fishing rod holder. If you wanted to you could paint it as well. As it’s only going to be used for holding your rod, I didn’t bother.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Enjoy</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Enjoy image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Enjoy image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Enjoy image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Enjoy image 4" loading="lazy"></div><p>That’s it!</p>
+<p>Go to your favourite fishing spot, grab a few beers and test out your new fishing rod holder.</p>
+<p>If you wanted to you could paint it as well.</p>
+<p>As it’s only going to be used for holding your rod, I didn’t bother.</p>
 <p>How to make it even better!</p>
 <ul>
 <li>You could easily add another T PVC section and use this to make a bait holder. Actually, this could be a multi use section where you could add attachments like a small table, tackle box etc.</li>
@@ -191,5 +228,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ul>
 <li>Having the beer section be able top swivel would also be a good idea as well. this way you can always be sure that your beer is not on an angle. Not really necessary though as you can just ensure that the rod holder is correctly angled into the sand.</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

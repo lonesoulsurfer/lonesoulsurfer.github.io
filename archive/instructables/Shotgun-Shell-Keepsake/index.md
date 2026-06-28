@@ -21,7 +21,7 @@ Source: https://www.instructables.com/Shotgun-Shell-Keepsake/
 
 Make a locket out of a couple of shotgun brass heads.
 
-I had a bunch of empty shotgun shells from some previous projects and decided to see what else to could make with them. The other 'ibles (here, here and here) used the whole shell, but this project only uses the brass heads.
+I had a bunch of empty shotgun shells from some previous projects and decided to see what else to could make with them. The other 'ibles ([[[here](https://www.instructables.com/id/The-Only-Survival-Kit-Youll-EVER-Need/)](https://www.instructables.com/id/Shotgun-Shell-Torch/)](https://www.instructables.com/id/Shotgun-Shell-LED-Candles/), here and here) used the whole shell, but this project only uses the brass heads.
 
 Getting the brass heads off is pretty simple and I go through how to do this in the 'ible. Putting the locket together however has taken me a few goes to get things right. Luckily I've gone through the pain of messing a few up so you don't have to.
 
@@ -46,7 +46,7 @@ On the last step I have also added some photos of a different style locket. It's
 
 Parts:
 
-1. Shotgun shells. You get these on Etsy or if you live near a shooters club you can pick them up for free.
+1. Shotgun shells. You get these [on Etsy](https://www.etsy.com/au/listing/247212454/shotgun-shells-remington-green-12-gauge?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=shotgun%20shells&ref=sr_gallery_6) or if you live near a shooters club you can pick them up for free.
 
 2. 1mm brass rod - Try a hobby shop
 
@@ -54,7 +54,7 @@ Parts:
 
 4. Leather or chain to make the necklace
 
-5. rare earth magnet - I used these ones, but I think these would work better
+5. rare earth magnet - I used [[these](http://www.ebay.com.au/itm/216pcs-3mm-x-3mm-x-3mm-Blocks-Rare-Earth-Neodymium-strong-Magnets-N35-3x3x3mm/280911974233?_trksid=p2045573.c100505.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190540%26meid%3Dc00c6715dfc64db8b053d2465a1a6177%26pid%3D100505%26rk%3D1%26rkt%3D1%26) ones](http://www.ebay.com.au/itm/20x-strong-block-cuboid-magnets-10mm-x-5mm-x-3mm-rare-earth-neodymium-n35-grade/171076261942?hash=item27d4f09836), but I think these would work better
 
 Tools:
 
@@ -74,7 +74,7 @@ Tools:
 
 8. Small grinding wheel
 
-9. Tube cutter - eBay
+9. Tube cutter - [eBay](http://www.ebay.com.au/itm/MINI-BRAKE-PIPE-TUBE-TUBING-CUTTER-3-22mm-COPPER-/191557727021?hash=item2c99baf32d:g:H7kAAOSwbsdVKQYC)
 
 
 ## Step 2: Cutting the Shotgun Heads

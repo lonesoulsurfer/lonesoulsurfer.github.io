@@ -23,7 +23,7 @@ Building a small, portable headphone amp helps drive the speakers in your headph
 
 You can use this headphone amp as an everyday amplifier for your headphones if you want as well. I’ve also tested it recently on a plane trip and it worked a treat.
 
-I’ve made a couple of other versions of these amps which can be found here and here
+I’ve made a couple of other versions of these amps which can be found [[here](https://www.instructables.com/id/Make-Your-Own-Headphone-Amp/)](https://www.instructables.com/id/Make-a-Headphone-Amp/) and here
 
 The amp uses a few off-the-shelf modules that you can get from eBay. I also stuck it all into a 2 X AA battery holder which ended up being just the right sized case.
 
@@ -50,23 +50,23 @@ So without further ado – let’s get cracking
 
 Parts
 
-1. 2 X 3.5mm headphone jack sockets - eBay
+1. 2 X 3.5mm headphone jack sockets - [eBay](https://www.ebay.com.au/itm/3-5mm-1-8-Mini-Female-Headphone-Jack-Plug-Stereo-Audio-Panel-Mount-5Pcs-/142751947303?hash=item213cadda27)
 
-2. Headphone amp module – eBay You can also put into eBay - Headphone Power Amplifier Board to find other types
+2. Headphone amp module – [eBay](https://www.ebay.com.au/itm/LM4881-Headphone-Power-Amplifier-Board-Preamplifier-Module-Max-200mW-DC-2-7-5-5V/332497224679?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649) You can also put into eBay - Headphone Power Amplifier Board to find other types
 
-3. Lipo battery – eBay
+3. Lipo battery – [eBay](https://www.ebay.com.au/itm/503035-3-7V-500mAh-Lipo-Battery-Replacement-For-MP3-GPS-BT-Headset-Speaker-9E44/323339426651?hash=item4b48881b5b:g:JFcAAOSwBARbQvgl)
 
-4. Lipo battery charger – eBay
+4. Lipo battery charger – [eBay](https://www.ebay.com.au/itm/4Pcs-5V-Micro-USB-1A-Lithium-Li-ion-18650-Battery-Charging-Lipo-Charger-Module-I/254218910494?hash=item3b30a0bb1e:g:QmMAAOSwzCNcu~PV)
 
-5. 2 X AA battery holder – eBay. This is the case that you will be modifying. You could also use a 9v battery one which you can buy on eBay
+5. 2 X AA battery holder – [[eBay](https://www.ebay.com.au/itm/New-9V-Volt-PP3-Battery-Holder-Box-DC-Case-with-Wire-Lead-ON-OFF-Switch-Cover/172175323885?hash=item281672f2ed:g:xWcAAOSwkEVXGExo)](https://www.ebay.com.au/itm/1-2-3-4-6-8-10-x-AA-AAA-18650-Battery-Holder-Case-Enclosed-Box-Switch-With-Leads/253265256868?var=&hash=item3af7c921a4&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVr%2BsP1QJRdiihPN%2Bgyq9jRzSYPkXV1v3dAcBBythOLYbk11RzKZQn6s6O78pLgV85A%2FGrd0KPRApajmpgHjhHvwkOWWyUJpCZMG3b2lLj0ikDY%2BrqAKaOKiKxgb5sQV75aGDnyObu5malg8rDwYzjmZ8EW507WoYLPsXMjw02NDDiRzQFuHUdEgZsAAE%2FRD3CHf6Dpro8BDL9rIOrPUAVSsZtNc9slZejwIP8uuL43B2t095W2m07rp2sjR1G1ButBOGkY7Tntl50XKPAOi%2FPkYwXcEENfpuY36FGdBKLVVktP%2FP80vsF5vKbAppQhpqKSA0d3Z3hS2SX5HYL%2FYogAoZbkXcsj8axcqLqwY8%2BKeuyf3sIJoIEr3hatkDARfWvl8ZwJ9SU6adlTH1GeaOyLpU%2FIy9QKFdPRABtDQR33RYbSs8S601OpN3uQMxyCHZGW0HHE7KreMifZp1gv5KhQi0fwABbqFgRZU%2FwZNHB4lkkvyuaj1SnWxVlJAgH86mIitE4M3HNykCyDaREtpQ9iOiVbAVJ%2BFBBLd7cF1hk48DZefzXJ0BQdLtFJqi9o6T5PTOfOInjCZc6W0zERs03ScmvHV1yVKkvSOqHz3pEP6n1xzUUhztEjNYT962JZR5nx0HVDUxLkHSOXUqu1Je1AYIleWMy7OxHcwqt9U6DUyuO4CFsBE9Tznn7BH1Ki6uD53V2tbfR6lgkc7VyxnnHX1Xi89Lj0UBBd4pXGYTgbb7upafEhFy8PzpVBY27fRyv%2FciHwJzR0Nf960zZyVXtjIKbC2AqJ4qP6RPLoPO3VYJAqKzinoEE89Dd2nfgChpmLZb0xs%2BqXiV6gC76vW0KEZlZEiUYfvVcnBs2fFwo4%2B0JNZ31B7dNzOrma4TampF4bz%2BxRqsYYRAEVupwWiPyrG%2BEHnj338xuf3XXOmHHrf4OZsibp55jw%2FEgQ3XPttSPRy3agCgh2EW0HEoGgbB5Zw%3D%3D&checksum=2532652568680a35d82f01b04e75bee4699c0fc297a0&frcectupt=true). This is the case that you will be modifying. You could also use a 9v battery one which you can buy on eBay
 
 6. Thin wires
 
 If you are using this on a plane then you’ll also need the following:
 
-7. Plane headphone adapter – eBay
+7. Plane headphone adapter – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR1.TRC0.A0.H0.Xplane+headphone+adapter.TRS0&_nkw=plane+headphone+adapter&_sacat=0)
 
-8. Male to male headphone jack adapter – eBay
+8. Male to male headphone jack adapter – [eBay](https://www.ebay.com.au/itm/2x-3-5mm-Stereo-Headphone-Audio-Male-To-2-Male-Splitter-Cable-Adapter-Plug-Jack/322488760663?epid=784003035&hash=item4b15d3f957:g:nVAAAOSwVm5Y-ERg)
 
 To connect the amp to your phone you’ll need the following:
 
@@ -250,7 +250,7 @@ Steps:
 
 4. If everything is soldered correctly you will hear some sweet music. If you hear nothing, then try to swap the jacks in the amp. If there is still nothing then you will need to check your connections to see if anything is wrong.
 
-5. You can also grab yourself a Bluetooth connector like the one that can be found here and plug it into the amp. This way you’ll have less cords to worry about and when using it on a plane, you won’t have to worry about any cords at all!
+5. You can also grab yourself a Bluetooth connector like the one that can be [found here](https://www.ebay.com.au/sch/i.html?_osacat=0&_odkw=micro+potentiometer&_from=R40&_trksid=m570.l1313&_nkw=3.5mm+Wireless+Bluetooth+Car+Kit+Handsfree+Music+Audio+Receiver&_sacat=0) and plug it into the amp. This way you’ll have less cords to worry about and when using it on a plane, you won’t have to worry about any cords at all!
 
 6. Lastly, get on a plane and give it the ultimate test
 

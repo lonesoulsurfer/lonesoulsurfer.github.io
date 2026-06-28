@@ -25,7 +25,7 @@ I incorporated a dimmer module too which also acts as an on/off switch.
 
 The light given off by the LED's is diffused using some plastic 'opal' coloured tubing and creates a beautiful ambient light.
 
-Hackaday have also done a review on the build which can be found here
+Hackaday have also done a review on the build which can be found [here](https://hackaday.com/2023/02/18/led-filament-lamp-is-subtle-warm-and-elegant/)
 
 Let's get started...
 
@@ -48,13 +48,13 @@ You don't need many supplies for the build and most parts are available on-line.
 
 PARTS:
 
-- Bass tubing - 5.56mm (7/32") SKU - KS8130 - Amazon Aust, Amazon US
+- Bass tubing - 5.56mm (7/32") SKU - KS8130 - [Amazon Aust](https://www.amazon.com.au/PRECISION-METALS-32x12-BRS-Tube/dp/B002MUWQ7Q), [Amazon US](https://www.amazon.com/s?k=7%2F32+x+12+SQ+Brass+Tube&crid=237OWAPO2FA6&sprefix=7%2F32+x+12+sq+brass+tube%2Caps%2C555&ref=nb_sb_noss)
 - White Polystyrene Tube - 4.8mm (3/16") - Available at most hobby shops. Just put into google - Evergreen 226 tube and you'll find it.
-- LED Filaments (2). I used yellow but you could use any colour you want - Ali Express
-- Dimmer Module - Ali Express
-- 10R resistor - Ali Express
-- 1uF capacitor - Ali Express
-- Thin copper wire - Ali Express
+- LED Filaments (2). I used yellow but you could use any colour you want - [Ali Express](https://www.aliexpress.com/item/1005004500671003.html?spm=a2g0o.order_list.order_list_main.54.19ff1802lqshmE)
+- Dimmer Module - [Ali Express](https://www.aliexpress.com/item/32998136001.html?spm=a2g0o.order_list.order_list_main.74.19ff1802he76fr)
+- 10R resistor - [Ali Express](https://www.aliexpress.com/premium/10R-resistor.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20230211215749&origin=y&dida=y)
+- 1uF capacitor - [Ali Express](https://www.aliexpress.com/premium/1uf-capacitor.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20230211215816&origin=y&dida=y)
+- Thin copper wire - [Ali Express](https://www.aliexpress.com/premium/thin-copper-wire.html?catId=0&initiative_id=SB_20230211215904&SearchText=thin+copper+wire&spm=a2g0o.productlist.1000002.0)
 - 50 Copper Tube (for the base) - your local hardware or plumbing store should have some.
 - Small piece if wood. Whatever you have lying around really. I had some wood I found at the beach and used that.
 TOOLS:
@@ -109,7 +109,7 @@ STEPS:
 - First - cut off a length of tube about 200mm long. I like to use a tube cutter to do this as it give you a nice, straight cut
 - Tape up one of the ends well using some good quality tape. I used fabric tape to do this.
 - Place the brass tube in a vice to hold it vertical.
-- Create a small funnel out of paper so you can pore the sand into the tube. Tape it onto the tube so it doesn't move about.
+- Create a small funnel out of paper so you can pore the sand into the tube.  Tape it onto the tube so it doesn't move about.
 - Fill up the tube with fine sand and every now and then give it a good tap on something hard to make sure the sand fills all of the tube.
 - Tape up the other end once full.
 
@@ -188,9 +188,9 @@ STEPS:
 
 - You need to connect the ground on the LED's together. Solder some copper wire to one of the grounds on the LED and add some heat shrink to the end
 - Thread the copper wire through one of the U bends and solder to ground on the other LED. You also need to attach a longer length of wire to the same ground so do this and then add some heat shrink. This longer piece will be connected to ground on the dimmer module.
-- Before wiring up the positive end of the LED's, drill a hole into the bottom of the U bend. This is where the neck of the lamp will be soldered and also where the ground and positive wires from the LED's will come out of.
-- On one of the positive ends of the LED's, solder another piece of copper wire, thread through the copper tubing and connect to the positive end of the other LED. Also solder on another longer piece. This will be connected to positive on the dimmer.
-- Thread both the ground and positive wires through the hole in the bottom of the U bend. It's hard to make any adjustments once this is done so make sure that the LED's are aligned with the opal tubing.
+- Before wiring up the positive end of the LED's, drill a hole into the bottom of the U bend.  This is where the neck of the lamp will be soldered and also where the ground and positive wires from the LED's will come out of.
+- On one of the positive ends of the LED's, solder another piece of copper wire, thread through the copper tubing and connect to the  positive end of the other LED.  Also solder on another longer piece.  This will be connected to positive on the dimmer.
+- Thread both the ground and positive wires through the hole in the bottom of the U bend.  It's hard to make any adjustments once this is done so make sure that the LED's are aligned with the opal tubing.
 - Push the brass tube onto the opal tubing.
 
 

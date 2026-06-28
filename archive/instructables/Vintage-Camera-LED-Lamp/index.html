@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,146 +162,180 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Vintage Camera LED Lamp</span>
 </nav>
-<h1>Vintage Camera LED Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Camera-LED-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This Instructable came about after I found a couple of old Kodak vintage Instamatic cameras. They still look great but there really isn’t much use for them anymore so I decided to build a lamp out of one. To keep the theme going, I also used an old film reel as a base.</p>
+<h1>Vintage Camera LED Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Camera-LED-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This Instructable came about after I found a couple of old Kodak vintage Instamatic cameras.</p>
+<p>They still look great but there really isn’t much use for them anymore so I decided to build a lamp out of one.</p>
+<p>To keep the theme going, I also used an old film reel as a base.</p>
 <p>The important parts in this build (the camera, film reel, power cord and tripod head) are available easily on eBay.</p>
 <p>The rest can probably be scrounged from any op shop or junk store.</p>
-<p>The build itself isn’t too difficult but you will need some basic electrical knowhow. As each build is unique, you’ll also have to probably come up with your own ways to attach the parts together. I’ll take you through how I did mine which will hopefully give you some ideas</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
+<p>The build itself isn’t too difficult but you will need some basic electrical knowhow.</p>
+<p>As each build is unique, you’ll also have to probably come up with your own ways to attach the parts together.</p>
+<p>I’ll take you through how I did mine which will hopefully give you some ideas</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Instamatic Camera - eBay. Actually you can use any old camera as long at it looks cool.</li>
-</ul>
+<li>Instamatic Camera - <a href="http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR2.TRC0.A0.H0.Xinstamatic+vintage+camera.TRS0&_nkw=instamatic+vintage+camera&_sacat=0">eBay</a>. Actually you can use any old camera as long at it looks cool.</li>
+</ol>
 <ol>
-<li>Film reel – eBay</li>
-</ul>
+<li>Film reel – <a href="http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR12.TRC2.A0.H0.Xfilm+reel.TRS0&_nkw=film+reel&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>3.6v Power adapter – Ali Express Mine was 3.5 but 3.6 will be fine. Try not to get anything iover 200ma</li>
-</ul>
+<li>3.6v Power adapter – <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20161022172904&SearchText=3.6v+power+adapter">Ali Express</a> Mine was 3.5 but 3.6 will be fine. Try not to get anything iover 200ma</li>
+</ol>
 <ol>
-<li>LED’s – eBay These are 1W LED's and are very bright and work great for this type of project. You uaually find them in LED light bulbs.</li>
-</ul>
+<li>LED’s – <a href="http://www.ebay.com.au/itm/10PCS-3V-Brand-New-1W-Cool-White-High-Power-Led-Lamp-Beads-1-Watt-/272160628556?hash=item3f5e099f4c:g:ZX4AAOSwDk5T8V1c">eBay</a> These are 1W LED's and are very bright and work great for this type of project. You uaually find them in LED light bulbs.</li>
+</ol>
 <ol>
-<li>Power cord – eBay</li>
-</ul>
+<li>Power cord – <a href="http://www.ebay.com.au/itm/3-3-Cotton-Cloth-Covered-Twisted-Electrical-Wire-Vintage-Lamp-Cord-Antique-Fan-/231861944108?var=&hash=item35fc0c7f2c:m:mBUv-RNzGTSjIIk1FFh68Cw">eBay</a></li>
+</ol>
 <ol>
 <li>Lamp neck. Just get one from an op shop or thrift store</li>
-</ul>
+</ol>
 <ol>
 <li>Nuts, bolts and other screws you may need</li>
-</ul>
+</ol>
 <ol>
-<li>1/4 inch nut insert - eBay This is used to attach the camera to the Tripod mount</li>
-</ul>
+<li>1/4 inch nut insert - <a href="http://www.ebay.com.au/itm/1-4-Inch-Thread-Dia-Metal-Rivet-Nut-Insert-Nutsert-50pcs-/252335840647?hash=item3ac0635d87:g:EqgAAOSw-CpYA8fm">eBay</a> This is used to attach the camera to the Tripod mount</li>
+</ol>
 <ol>
 <li>Heat shrink</li>
-</ul>
+</ol>
 <ol>
-<li>Tripod Mount - Use this eBay link if you just want to get a modern one or this eBay link if you want a more vintage looking one</li>
-</ul>
+<li>Tripod Mount - Use <a href="http://www.ebay.com.au/sch/i.html?_odkw=tripod+mount&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H1.Xvintage+tripod+mount.TRS0&_nkw=vintage+tripod+mount&_sacat=0">[this eBay link</a>](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1311.R1.TR12.TRC2.A0.H0.Xtripod+mo.TRS0&_nkw=tripod+mount&_sacat=0) if you just want to get a modern one or this eBay link if you want a more vintage looking one</li>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Epoxy glue</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Small files</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Modding the Camera</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modding the Camera image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modding the Camera image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modding the Camera image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modding the Camera image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modding the Camera image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Modding the Camera image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Modding the Camera image 7" loading="lazy"></div><p>The first step to making your camera lamp is working out how to attach the LED’s indie the camera. Opening up the back will reveal that the lens is small and is blocked by the shutter. You will need to remove this along with some of the inside in order to have a large enough opening for the light to shine through.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Modding the Camera</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modding the Camera image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modding the Camera image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modding the Camera image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modding the Camera image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modding the Camera image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Modding the Camera image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Modding the Camera image 7" loading="lazy"></div><p>The first step to making your camera lamp is working out how to attach the LED’s indie the camera.</p>
+<p>Opening up the back will reveal that the lens is small and is blocked by the shutter.</p>
+<p>You will need to remove this along with some of the inside in order to have a large enough opening for the light to shine through.</p>
 <p>Steps:</p>
 <ol>
 <li>Unscrew the door. It’s easier if this is taken off</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the screws inside the camera. You should be able to now get to the shutter – pull this out however you can.</li>
-</ul>
+</ol>
 <ol>
 <li>Now you have all this removed you will find that the camera lens is very small. You will need to enlarge this area. Use a dremel and start to open up this section. Try not to damage the focus ring on the outside of the camera which I did!</li>
-</ul>
-<p>NOTE: after damaging the focus ring I realised that I would have to remove this. It meant that there was a gaping hole where it used to be and I had to come up with another solution. I had another lens pulled from a small projector and this actually fitted into the hole left from the focus ring. You will have to work out what is best for you if you do damage the ring. Maybe the camera you have chosen has a larger lens which in that case you won’t have to go through what I did to fix it.</p>
+</ol>
+<p>NOTE: after damaging the focus ring I realised that I would have to remove this.</p>
+<p>It meant that there was a gaping hole where it used to be and I had to come up with another solution.</p>
+<p>I had another lens pulled from a small projector and this actually fitted into the hole left from the focus ring.</p>
+<p>You will have to work out what is best for you if you do damage the ring.</p>
+<p>Maybe the camera you have chosen has a larger lens which in that case you won’t have to go through what I did to fix it.</p>
 <ol>
 <li>Once you have removed the shutter and there is a clear view through the camera and lens, you are then ready to move onto adding the LED’s</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Wiring the LED's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Wiring the LED's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Wiring the LED's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Wiring the LED's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Wiring the LED's image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Wiring the LED's image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Wiring the LED's image 6" loading="lazy"></div><p>I used a couple of 1W LED’s for the light source which worked really well. Normal LED’s just aren’t bright enough for this project but you could use them never-the-less.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Wiring the LED's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Wiring the LED's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Wiring the LED's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Wiring the LED's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Wiring the LED's image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Wiring the LED's image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Wiring the LED's image 6" loading="lazy"></div><p>I used a couple of 1W LED’s for the light source which worked really well. Normal LED’s just aren’t bright enough for this project but you could use them never-the-less.</p>
 <p>Steps:</p>
 <ol>
 <li>Find the negative and positive polarities on each LED. You are going to wire these in a series so it’s important ant that the negative terminal from one LED is soldered to the positive terminal on the other.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut a piece of mounting board to the desired size</li>
-</ul>
+</ol>
 <ol>
 <li>Next I soldered a couple of wires to the board, one of the positive and one for the negative terminals of the LED’s</li>
-</ul>
+</ol>
 <ol>
 <li>Next, hold the first LED on the board and solder onto one of the wires as shown below. Do the same for the other.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you need to connect the other 2 terminals of the LED’s together. Just add some solder and make a solder bridge.</li>
-</ul>
+</ol>
 <ol>
 <li>Test to make sure that both come on when power is added</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the LED's to the Camera</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the LED's to the Camera image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the LED's to the Camera image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the LED's to the Camera image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the LED's to the Camera image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the LED's to the Camera image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the LED's to the Camera image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the LED's to the Camera image 7" loading="lazy"></div><p>As each camera is different, you’ll need to come up with a way to add the LED’s to your camera. It might be just with some hot glue or mounted to the inside of the camera. The below is how I mounted them</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the LED's to the Camera</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the LED's to the Camera image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the LED's to the Camera image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the LED's to the Camera image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the LED's to the Camera image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the LED's to the Camera image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the LED's to the Camera image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the LED's to the Camera image 7" loading="lazy"></div><p>As each camera is different, you’ll need to come up with a way to add the LED’s to your camera.</p>
+<p>It might be just with some hot glue or mounted to the inside of the camera.</p>
+<p>The below is how I mounted them</p>
 <p>Steps:</p>
 <ol>
 <li>As my lens could come out of the camera, I decided to hot glue the LED’s to the back of the lens. First I trimmed the solder board so it fitted neatly onto the back of the lens.</li>
-</ul>
+</ol>
 <ol>
 <li>Next I added some hot glue to secure</li>
-</ul>
+</ol>
 <ol>
 <li>To ensure the wires didn't get in the way, I drilled a hole into the inside of the camera where I could feed the wires through.</li>
-</ul>
+</ol>
 <ol>
 <li>You will need to drill a couple holes into the bottom of the camera. One is so you can attach it to the tripod mount, the other is to have the power cord come out of.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Stand - Top Section</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Stand - Top Section image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Stand - Top Section image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Stand - Top Section image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Stand - Top Section image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Stand - Top Section image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Stand - Top Section image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Stand - Top Section image 7" loading="lazy"></div><p>It’s time now to put the camera aside and start work on the stand.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Stand - Top Section</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Stand - Top Section image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Stand - Top Section image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Stand - Top Section image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Stand - Top Section image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Stand - Top Section image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Stand - Top Section image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Stand - Top Section image 7" loading="lazy"></div><p>It’s time now to put the camera aside and start work on the stand.</p>
 <p>Steps:</p>
 <ol>
 <li>First we need to pull apart the old lamp to get at the neck. Un-screw the light section and remove the base</li>
-</ul>
+</ol>
 <ol>
 <li>You don’t need anything else, just the neck section plus the nut that held it to the base.</li>
-</ul>
+</ol>
 <ol>
 <li>To attach the tripod head to the stand I first modified a ¼ bolt by grinding down the head. I had to do this in order for it to fit into the top of the neck of the stand.</li>
-</ul>
+</ol>
 <ol>
 <li>Once the nut fitted inside, I decided to secure it by adding epoxy glue to the bolt and pushing it inside the neck, leaving a little thread out the hole. Leave to dry for a few hours.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Stand - Bottom Section</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Stand - Bottom Section image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Stand - Bottom Section image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Stand - Bottom Section image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Stand - Bottom Section image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Stand - Bottom Section image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Stand - Bottom Section image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Stand - Bottom Section image 7" loading="lazy"></div><p>To be able to attach the film reel to the neck of the stand, you will need to enlarge the holes in the film reel.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Stand - Bottom Section</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Stand - Bottom Section image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Stand - Bottom Section image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Stand - Bottom Section image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Stand - Bottom Section image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Stand - Bottom Section image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Stand - Bottom Section image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Stand - Bottom Section image 7" loading="lazy"></div><p>To be able to attach the film reel to the neck of the stand, you will need to enlarge the holes in the film reel.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill out the 2 holes and enlarge them in order to fit the screw section of the neck into it.</li>
-</ul>
+</ol>
 <ol>
 <li>In order to attach the nut, you will probably have to enlarge even more, the hole on the bottom. I used a drill and file to get this to the size I need</li>
-</ul>
+</ol>
 <ol>
 <li>Add the nut to the bottom of the neck and secure tightly.</li>
-</ul>
-<p>The stand is now pretty much complete</p><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Camera</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Camera image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Camera image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Camera image 3" loading="lazy"></div><p>This is the part where you’ll need to come up with a creative solution. If the camera you are using already has a ¼ inch mounting hole for tripod use, then you’re job will be a little easier. I used an old tripod head I had lying around to attach the camera to the stand. I’m sure though if you don’t have one or can’t get one, you’ll be able to come up with an alternative</p>
+</ol>
+<p>The stand is now pretty much complete</p><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Camera</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Camera image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Camera image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Camera image 3" loading="lazy"></div><p>This is the part where you’ll need to come up with a creative solution.</p>
+<p>If the camera you are using already has a ¼ inch mounting hole for tripod use, then you’re job will be a little easier.</p>
+<p>I used an old tripod head I had lying around to attach the camera to the stand.</p>
+<p>I’m sure though if you don’t have one or can’t get one, you’ll be able to come up with an alternative</p>
 <p>Steps:</p>
 <ol>
 <li>As my camera didn’t have a tripod mounting hole, I had to make my own. I drilled a hole in the bottom and added a ¼ nut insert and glued it into place.</li>
-</ul>
+</ol>
 <ol>
 <li>I also had to drill a hole into the neck in order for the power cord to come out of. make sure you file down any burrs so the wire doesn't get caught.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, screw the tripod head into place. the stand is now complete</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Power Adapter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Power Adapter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Power Adapter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Power Adapter image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Power Adapter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Power Adapter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Power Adapter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Power Adapter image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The first thing you will need to is to thread the power cord through the neck and film reel. Push the cord through the hole in the neck and carefully thread the wire through the hole.</li>
-</ul>
+</ol>
 <ol>
 <li>Once all the cord has been threaded, you will then need to work out a way to make it sit correctly in the film reel. The reel I used had a small hole in the side and I enlarged this with a drill and threaded the cord through it.</li>
-</ul>
+</ol>
 <ol>
 <li>Next it's time to attach the power adapter. Before you do this, test first and make sure that you connect with correct polarities. Once you have worked these out, solder the cord to the power adapter and secure the wires with heat shrink.</li>
-</ul>
-<p>Lastly, if you haven't already, screw the camera in place.</p><h2><span class="step-num">STEP 9</span>Step 9: Test</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Test image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Test image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Test image 3" loading="lazy"></div><p>You should now have the completed camera lamp. Turn it on and give it a test. Using the tripod mount allows you to change the position of the camera and LED's allowing you to illuminate whatever you want. It definitely makes it more versatile but if you don't want to add one, then you can just attach the camera to the neck which I was initially going to do.</p>
+</ol>
+<p>Lastly, if you haven't already, screw the camera in place.</p><h2><span class="step-num">STEP 9</span>Step 9: Test</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Test image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Test image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Test image 3" loading="lazy"></div><p>You should now have the completed camera lamp.</p>
+<p>Turn it on and give it a test.</p>
+<p>Using the tripod mount allows you to change the position of the camera and LED's allowing you to illuminate whatever you want.</p>
+<p>It definitely makes it more versatile but if you don't want to add one, then you can just attach the camera to the neck which I was initially going to do.</p>
 <p>I'm really happy with the finish of this build. As I've mentioned before in the ible' each one will be individual so hopefully I've given you a few ideas to make your own.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

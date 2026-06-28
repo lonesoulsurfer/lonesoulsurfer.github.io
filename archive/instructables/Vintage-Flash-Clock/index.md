@@ -13,7 +13,7 @@ Source: https://www.instructables.com/Vintage-Flash-Clock/
 
 In my searches for interesting things, I sometimes come across vintage camera flashes and find myself always buying them. I have a draw full of old flashes and I have no idea why!
 
-I have made lamps out of them (check these ‘ibles here and here) before which is a great way to display them. This time though I decided to make a clock out of one.
+I have made lamps out of them (check these ‘ibles [[here](https://www.instructables.com/id/Vintage-Flash-Lamp/)](https://www.instructables.com/id/Camera-Flash-to-Flashlight/) and here) before which is a great way to display them. This time though I decided to make a clock out of one.
 
 I found a nice clock module recently on Ali Express and they fit quite well inside an old flash. They even have a temperature reading which is a nice add. The clock can run on anything from 3 volts to 30. I decided to use an old mobile phone battery as the power source which can be charge using a micro USB. You can also just leave the micro USB attached if you don't want to keep charging. The battery lasts about a week.
 
@@ -32,13 +32,13 @@ Let’s get cracking
 
 Parts:
 
-1. Vintage Flash – check junk stores or if you have to, buy one from eBay
+1. Vintage Flash – check junk stores or if you have to, buy one from [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=vintage+flash+camera&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=vintage+flash)
 
-2. Clock Module – eBay
+2. Clock Module – [eBay](https://www.ebay.com.au/itm/3in1-Car-Auto-Digital-LED-Time-Voltmeter-Thermometer-Electronic-Clock-Module-New/332863455608?hash=item4d80354178:m:msCf6gGziAfieY4uYXf5sjg)
 
-3. Li-ion Battery Charger Module - eBay
+3. Li-ion Battery Charger Module - [eBay](https://www.ebay.com.au/itm/2PCs-5V-1A-1S-3-7V-Li-ion-18650-Lithium-Lipo-Battery-Charging-Board-Module-New/112537056005?hash=item1a33bb3305:m:mtCHvINeOEw_87gi4_J3fgQ&frcectupt=true)
 
-4. Mobile Battery - You probably have an old mobile sitting around to pull one from. If not, you can pick them up on eBay
+4. Mobile Battery - You probably have an old mobile sitting around to pull one from. If not, you can pick them up on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR11.TRC1.A0.H0.Xsamsung+mobile+battery.TRS0&_nkw=samsung+mobile+battery&_sacat=0)
 
 5. USB Cord. I’m sure you have a spare one lying around!
 

@@ -57,20 +57,20 @@ Let's get started!!
 PARTS
 
 - 18650 Batteries - The first thing obviously that you'll need is to get your hands on some 18650 batteries. I get all of mine from E waste facilities where you can pick them up for free out of old laptops. You could also try computer repairers who would probably give them to you for free as well!
-- 18650 Battery Tester - Ali Express
-- 18650 Battery Holder - Ali Express
+- 18650 Battery Tester - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221124163837&origin=y&SearchText=Module+18650+Battery+Tester&spm=a2g0o.detail.1000002.0&dida=y)
+- 18650 Battery Holder - [Ali Express](https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y)
 Parts needed if you want to build the portable, variable battery
 
-- 18650 Battery Charger Module - Ali Express
-- Step up Booster Module - Ali Express
-- Phone Charging Module - Ali Express
-- 18650 Battery Holder - Ali Express
-- Magnets 7mm X 3mm - Ali Express
-- Plastic Tube 8mm Dia - Ali Express
+- 18650 Battery Charger Module - [Ali Express](https://www.aliexpress.com/premium/18650-battery-charger-type-c.html?spm=a2g0o.productlist.1000002.0&initiative_id=AS_20221124164006&dida=y)
+- Step up Booster Module - [Ali Express](https://www.aliexpress.com/item/1005001578810552.html?spm=a2g0o.order_list.0.0.3eb61802fSYa9T)
+- Phone Charging Module - [Ali Express](https://www.aliexpress.com/premium/5v-type-c-usb-mobile-power-bank-18650.html?spm=a2g0o.productlist.1000002.0&initiative_id=SB_20221124164249&dida=y)
+- 18650 Battery Holder - [Ali Express](https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y)
+- Magnets 7mm X 3mm - [Ali Express](https://www.aliexpress.com/item/1005004024695474.html?spm=a2g0o.order_list.0.0.3e7a1802ENe6uF)
+- Plastic Tube 8mm Dia - [Ali Express](https://www.aliexpress.com/item/1005001780401160.html?spm=a2g0o.productlist.main.25.357b116btBS5Pv&algo_pvid=f4ba6277-c7dc-4aec-ad0c-107bdcaf237f&algo_exp_id=f4ba6277-c7dc-4aec-ad0c-107bdcaf237f-12&pdp_ext_f=%7B%22sku_id%22%3A%2212000017542563333%22%7D&pdp_npi=2%40dis%21AUD%214.51%213.38%21%21%21%21%21%40212248ba16693451290456439d076a%2112000017542563333%21sea&curPageLogUid=OhZufbons7ll)
 Parts you'll need if you want to build the phone charger
 
-- Power bank Module - Ali Express
-- 18650 Battery Holder - Ali Express
+- Power bank Module - [Ali Express](https://www.aliexpress.com/item/1005002100956877.html?spm=a2g0o.productlist.main.87.619b529faZYRgR&algo_pvid=70d7e89c-03c7-4cdd-9590-787618ec74ae&aem_p4p_detail=20221124185337500948896192670013795726&algo_exp_id=70d7e89c-03c7-4cdd-9590-787618ec74ae-43&pdp_ext_f=%7B%22sku_id%22%3A%2212000018743671359%22%7D&pdp_npi=2%40dis%21AUD%217.74%215.34%21%21%21%21%21%402122457116693448171833182d0732%2112000018743671359%21sea&curPageLogUid=J7aaNTlYDMSg&ad_pvid=20221124185337500948896192670013795726_44&ad_pvid=20221124185337500948896192670013795726_44)
+- 18650 Battery Holder - [Ali Express](https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y)
 TOOLS
 
 - Multimeter
@@ -123,7 +123,7 @@ Now it's time to liberate the batteries from the case. This can be a little tric
 STEPS:
 
 - The battery cases all have a seam line. You can see this in the first 2 images. Identify the seam line as this is where you'll need to pry the case open from
-- Next, you need to use a spudger to help pry open the case. You can easily make your own and I've done an Instructable on how to which you can find here
+- Next, you need to use a spudger to help pry open the case. You can easily make your own and I've done an Instructable on how to which you can find [here](https://www.instructables.com/How-to-Make-Spudgers-prying-Tools-Out-of-Cutlery/)
 - Carefully push the spudger into the seam and start to pry up the case. If you are not getting any movement, try a different section of the case
 - Eventually the case will start to open. Keep on moving the spudger along the seam line, prying the case up. Be careful though to not damage the batteries inside
 - Once you are able to, remove the batteries and circuit protection board from the case

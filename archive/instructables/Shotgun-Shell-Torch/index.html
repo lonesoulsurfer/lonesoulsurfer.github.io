@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,127 +163,155 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Shotgun Shell Torch</span>
 </nav>
 <h1>Shotgun Shell Torch</h1><div class="source"><a href="https://www.instructables.com/Shotgun-Shell-Torch/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Make a mini torch out of a shotgun shell.</p>
-<p>This is a pretty simple project which will only require a few tools and materials. The most obvious thing you will need are shotgun shells. I recently acquired a box full of used shells from my local gun range (for another project) and have been thinking what else I could use them for. I have a bunch of projects on the go at the moment which use the shells and this happens to be the first one done.</p>
-<p>The LED I used is super bright and comes from an LED globe that no longer worked. You could use an everyday LED but you wouldn't get the same brightness. When testing the LED I was really amazed at how bright it is. It will light up a whole room when darkened.</p>
+<p>This is a pretty simple project which will only require a few tools and materials.</p>
+<p>The most obvious thing you will need are shotgun shells.</p>
+<p>I recently acquired a box full of used shells from my local gun range (for another project) and have been thinking what else I could use them for.</p>
+<p>I have a bunch of projects on the go at the moment which use the shells and this happens to be the first one done.</p>
+<p>The LED I used is super bright and comes from an LED globe that no longer worked.</p>
+<p>You could use an everyday LED but you wouldn't get the same brightness.</p>
+<p>When testing the LED I was really amazed at how bright it is.</p>
+<p>It will light up a whole room when darkened.</p>
 <p>The LED globe had 3 LED's on it and I decided to go with green. As they take 6v's to work, the green and red are the best to use. The blue is still a little dull and probably could go 7.5v.</p>
 <p>So go shoot a few rounds, collect the shells and keep reading to find hoe to make your own.</p><h2><span class="step-num">STEP 1</span>Step 1: Bits to Harvest</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Bits to Harvest image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Bits to Harvest image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Bits to Harvest image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Bits to Harvest image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Bits to Harvest image 5" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Shotgun shells. They can be purchased on Etsy or scavenged from a gun range. If you do have a local one, give them a ring and see if you can grab a few. They won't mind as they just throw them away anyhow.</li>
-</ul>
+</ol>
 <ol>
-<li>LED Globe. - Ebay</li>
-</ul>
+<li>LED Globe. - <a href="http://www.ebay.com.au/itm/290678300821?ssPageName=STRK:MEWAX:IT&_trksid=p3984.m1423.l2649">Ebay</a></li>
+</ol>
 <ol>
-<li>Micro switch. - I used one from an old circuit board but you can buy them on eBay</li>
-</ul>
+<li>Micro switch. - I used one from an old circuit board but you can buy them on <a href="http://www.ebay.com.au/itm/100-Pcs-Mini-Micro-Momentary-Tactile-Tact-Switch-Push-Button-DIP-P4-6-6-5mm-New-/310831356352?pt=AU_B_I_Electrical_Test_Equipment&hash=item485efe19c0&_uhb=1">eBay</a></li>
+</ol>
 <ol>
-<li>12v battery holder - eBay</li>
-</ul>
+<li>12v battery holder - <a href="http://www.ebay.com.au/itm/5-x-23A-A23-Cells-Battery-Size-12V-Clip-Holder-Box-Case-/180649964983?pt=AU_Electronics_Batteries_Chargers&hash=item2a0f93b5b7&_uhb=1">eBay</a></li>
+</ol>
 <ol>
-<li>Batteries. You can either use 4 LR44 button batteries or a 6v PX28A battery (which is just 4 LR44's in one battery)</li>
-</ul>
+<li>Batteries. You can either use 4 <a href="http://www.ebay.com.au/itm/AG13-Alkaline-Battery-A76-357-303-LR44-Free-Postage-10-Pack-/151049571808?pt=AU_Electronics_Batteries_Chargers&hash=item232b418de0&_uhb=1">LR44</a> button batteries or a 6v <a href="http://www.ebay.com.au/itm/10X-4LR44-6V-BATTERY-CITRONELLA-BARK-DOG-COLLAR-L1325-PX28A-A544-V34PX-476A-/310672944349?pt=AU_Electronics_Batteries_Chargers&hash=item48558cecdd&_uhb=1">PX28A</a> battery (which is just 4 LR44's in one battery)</li>
+</ol>
 <ol>
 <li>Thin wire</li>
-</ul>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Small blow torch</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue</li>
-</ul>
+</ol>
 <ol>
 <li>Hammer</li>
-</ul>
+</ol>
 <ol>
 <li>Hole punch</li>
-</ul>
+</ol>
 <ol>
 <li>Stanley knife</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Pulling Apart the LED Globe</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pulling Apart the LED Globe image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pulling Apart the LED Globe image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pulling Apart the LED Globe image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Pulling Apart the LED Globe image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Pulling Apart the LED Globe image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Pulling Apart the LED Globe image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Pulling Apart the LED Globe</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pulling Apart the LED Globe image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pulling Apart the LED Globe image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pulling Apart the LED Globe image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Pulling Apart the LED Globe image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Pulling Apart the LED Globe image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Pulling Apart the LED Globe image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Un-screw the bottom of the light bulb. The red and black wires sticking out are from the circuit board and should have broken off from the bottom of the globe once you un-screwed it. if not, just cut the wires</li>
-</ul>
+</ol>
 <ol>
 <li>Use a screwdriver to pop open the top of the globe.</li>
-</ul>
+</ol>
 <ol>
 <li>Un-screw the circuit board from the globe.</li>
-</ul>
+</ol>
 <ol>
 <li>De-solder the 3 LED's on the circuit board.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Removing a Cap From the Shell</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing a Cap From the Shell image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing a Cap From the Shell image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing a Cap From the Shell image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing a Cap From the Shell image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Removing a Cap From the Shell image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Removing a Cap From the Shell image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Removing a Cap From the Shell image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Removing a Cap From the Shell image 8" loading="lazy"></div><p>So the first thing you’ll need to do is to remove the end from one of the shotgun shells. I’m sure that there are plenty of different ways to do this (check the net), but my way works just fine. The cap (the brass section) is held in place very tightly by some plastic. It is virtually impossible to remove all of the plastic without melting it out.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Removing a Cap From the Shell</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing a Cap From the Shell image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing a Cap From the Shell image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing a Cap From the Shell image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing a Cap From the Shell image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Removing a Cap From the Shell image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Removing a Cap From the Shell image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Removing a Cap From the Shell image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Removing a Cap From the Shell image 8" loading="lazy"></div><p>So the first thing you’ll need to do is to remove the end from one of the shotgun shells.</p>
+<p>I’m sure that there are plenty of different ways to do this (check the net), but my way works just fine.</p>
+<p>The cap (the brass section) is held in place very tightly by some plastic.</p>
+<p>It is virtually impossible to remove all of the plastic without melting it out.</p>
 <p>Steps:</p>
 <ol>
 <li>Use a Stanley knife (exacto knife) to cut away the plastic case.</li>
-</ul>
+</ol>
 <ol>
 <li>Next put the brass cap into a vice. Don’t tighten too hard or you’ll distort the cap.</li>
-</ul>
+</ol>
 <ol>
 <li>With a small blow torch, heat-up the inside of the cap until the plastic starts to melt.</li>
-</ul>
+</ol>
 <ol>
 <li>Grab a pair of needle noes plyers and pinch out the melted plastic. You’ll probably have to melt the plastic again to remove the rest of it from the cap. Obviously be careful – the plastic will melt to your skin if it touches you.</li>
-</ul>
-<p>Note: There is a simpler way to remove the cap from the body of the shell. All you need to do is put the body of the shell into a vice and heat up the cap. Once hot enough use a pair of pliers and pull on the cap. It should come off easily!</p><h2><span class="step-num">STEP 4</span>Step 4: Preparing the Shell and Caps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Preparing the Shell and Caps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Preparing the Shell and Caps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Preparing the Shell and Caps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Preparing the Shell and Caps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Preparing the Shell and Caps image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Preparing the Shell and Caps image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Preparing the Shell and Caps image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Preparing the Shell and Caps image 8" loading="lazy"></div><p>Next steps are to add the loop to the shell and remove the primer in the cap with no plastic.</p>
+</ol>
+<p>Note: There is a simpler way to remove the cap from the body of the shell.</p>
+<p>All you need to do is put the body of the shell into a vice and heat up the cap.</p>
+<p>Once hot enough use a pair of pliers and pull on the cap.</p>
+<p>It should come off easily!</p><h2><span class="step-num">STEP 4</span>Step 4: Preparing the Shell and Caps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Preparing the Shell and Caps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Preparing the Shell and Caps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Preparing the Shell and Caps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Preparing the Shell and Caps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Preparing the Shell and Caps image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Preparing the Shell and Caps image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Preparing the Shell and Caps image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Preparing the Shell and Caps image 8" loading="lazy"></div><p>Next steps are to add the loop to the shell and remove the primer in the cap with no plastic.</p>
 <p>Steps:</p>
 <p>Cutting the shell to size</p>
 <ol>
 <li>You need to work out how big you want your torch. I decided to cut down the shell to the battery holder just fitted. You could make it longer - it's up to you.</li>
-</ul>
+</ol>
 <ol>
 <li>Use a stanley knife to cut the shell to the size you want.</li>
-</ul>
+</ol>
 <p>Making the Loop</p>
 <ol>
 <li>with a pair of round tipped pliers, bend a circle in some copper. It's up to you how big you want to have the loop.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut the excess copper off so you only have the loop left.</li>
-</ul>
+</ol>
 <ol>
 <li>Next add some flux and solder to the top of the cap as shown below.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder on the loop using a small blow torch.</li>
-</ul>
+</ol>
 <p>Removing the Primer</p>
 <ol>
 <li>Using a nail punch or something round with a flat end, carefully hammer out the primer. Make sure that the primer is hammered out from the inside of the cap. It won’t work the other way.</li>
-</ul>
+</ol>
 <ol>
 <li>Turn the cap over and bend any copper down sticking up inside the hole.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Switch image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Switch image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Make 2 small holes in the body of the shell. Make sure that they are below the empty cap.</li>
-</ul>
+</ol>
 <ol>
 <li>Thread 2 wires through the hole as shown below</li>
-</ul>
+</ol>
 <ol>
 <li>Solder on the switch to the 2 wires</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, glue the switch into place. The micro switch I used only had 2 pins and I made sure that these were pushed into the holes and then I bent the legs out when inside the shell.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Battery Case and LED</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Battery Case and LED image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Battery Case and LED image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Battery Case and LED image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Battery Case and LED image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Battery Case and LED image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Battery Case and LED image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Battery Case and LED image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Battery Case and LED</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Battery Case and LED image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Battery Case and LED image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Battery Case and LED image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Battery Case and LED image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Battery Case and LED image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Battery Case and LED image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Battery Case and LED image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Remove the LED's from the globe by de-soldering them. You could probably just buy these LED's but I have no idea what they are called. I used these ones ass they are very bright.</li>
-</ul>
+</ol>
 <ol>
 <li>Next trim one of the battery wires and solder it onto a switch wire. Add some heat-shrink to the bare wire.</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue the LED to the inside of the cap and solder-on the other wire from the battery and switch. The wires don't have to be long, just long enough to pull out the battery case.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Finished</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finished image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Finished image 5" loading="lazy"></div><p>That's it!</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Finished</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finished image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Finished image 5" loading="lazy"></div><p>That's it!</p>
 <p>You should now have a pretty damn cool torch. I was really surprised at how bright the light is! It can even turn you green like the hulk as my son pointed out!</p>
 <p>I recently made another with the blue LED. Second time making one only took about 20 minutes to make.</p>
 <p>Thanks for looking. If you make one and need a hand with any part, please let me know.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

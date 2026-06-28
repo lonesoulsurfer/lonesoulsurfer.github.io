@@ -24,7 +24,7 @@ The following is my attempt at building a "rocket mounted video camera"
 First check out my Youtube clup below of the rocket with video camera attached.
 
 The below is a link to make Magazine which ddescribes how to build a compressed air rocket launcher
-http://makeprojects.com/Project/Compressed-Air-Rocket/585/1
+[http://makeprojects.com/Project/Compressed-Air-Rocket/585/1](http://makeprojects.com/Project/Compressed-Air-Rocket/585/1)
 
 There are also some good instrucables - just type in compressed air rockets
 The Parts to build the Compressed air rocket are pretty easy to find - if you are Australian then I suggest going to Reece Plumming as they have virtually all of the parts needed. Bunnings also sell the sprinkler valves.
@@ -41,7 +41,7 @@ Also, the rockets are only made of paper and masking tape. Check out the web or 
 ![Step 1: Step 1 - Parts image 3](images/step01_03.jpg)
 
 - Mini Spy Camera.  These can be purchased on Ebay.  The link below is the one that I purchased.
-http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-DV-/180605547227?pt=AU_Security_Equipment&hash=item2a0cedf2db
+[http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-DV-/180605547227?pt=AU_Security_Equipment&hash=item2a0cedf2db](http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-DV-/180605547227?pt=AU_Security_Equipment&hash=item2a0cedf2db)
 
 - Foam mattress - I used a thin cheap one brought at a camping store - This is used for protection of the camera
 - Cable ties

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -130,7 +165,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <h1>Buffered Multiple for Modular Synths - Powered by Arduino</h1><div class="source"><a href="https://www.instructables.com/Buffered-Multiple-for-Modular-Synths-Powered-by-Ar/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>For those who have been following; you'll know that I have been putting together my own modular synth - primarily based around the Arduino Nano.</p>
 <p>If not, then check out my projects for a quick update.</p>
 <p>A buffered Multiple is a module that allows you to add a sync in from say a drum machine, and use that signal to sync up other modules via the 6 Sync in's.</p>
-<p>Initially, I got a little stuck on this project as I couldn't find a good schematic without having to use negative voltages which my build doesn't use. I put out a call to Reddit and came up with a version using the 4050 chip which worked fine. However, I wanted to add a couple more features which an Arduino was perfect for.</p>
+<p>Initially, I got a little stuck on this project as I couldn't find a good schematic without having to use negative voltages which my build doesn't use.</p>
+<p>I put out a call to <a href="https://www.reddit.com/r/synthdiy/comments/1m7yj92/buffered_multiple_without_negative_voltage/">Reddit</a> and came up with a version using the 4050 chip which worked fine.</p>
+<p>However, I wanted to add a couple more features which an Arduino was perfect for.</p>
 <p>So what does it do?</p>
 <p>This project creates a 1-to-6 sync signal splitter for synthesizers with the following features:</p>
 <ul>
@@ -144,44 +181,69 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>GF: Shuffle (creates triplet-based rhythm)</li>
 <li>GH: Humanize (adds random timing variations)</li>
 </ul>
-<p>Groove patterns can be adjusted from 50 to 75%% intensity, providing subtle to a more extreme timing effects. The device maintains accurate timing with non-blocking code and offers visual feedback through the display and indicator LED.</p>
-<p>Perfect for synchronizing multiple synthesizers, drum machines, or sequencers while adding rhythmic variety to your setup. More details on the last step.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"></div><p>All of the parts needed to build your own can be found below. I have also included a PDF of all of the parts as well which is attached to this step. The PCB and front panel can be found on the next step.</p>
+<p>Groove patterns can be adjusted from 50 to 75%% intensity, providing subtle to a more extreme timing effects.</p>
+<p>The device maintains accurate timing with non-blocking code and offers visual feedback through the display and indicator LED.</p>
+<p>Perfect for synchronizing multiple synthesizers, drum machines, or sequencers while adding rhythmic variety to your setup. More details on the last step.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"></div><p>All of the parts needed to build your own can be found below.</p>
+<p>I have also included a PDF of all of the parts as well which is attached to this step.</p>
+<p>The PCB and front panel can be found on the next step.</p>
 <p>PARTS:</p>
-<p>Capacitor Polypropylene X 1 - Ali Express</p>
-<p>Capacitor Polarized X 1 - Ali Express</p>
-<p>Switch - Momentary X 3 - Ali Express</p>
-<p>Switch - Toggle X 1 - Ali Express</p>
-<p>Female Header Pin Socket X 2 - Ali Express</p>
-<p>Arduino Nano X 1 - Ali Express</p>
-<p>Audio Socket X 7 - Ali Express</p>
-<p>Mini JST Connector and wire X 1 - Ali Express</p>
-<p>LED X 1 - Ali Express</p>
-<p>OLED Display 128X64 X 1 - Ali Express</p>
-<p>Resistors - Ali Express</p>
+<p>Capacitor Polypropylene X 1 - <a href="https://vi.aliexpress.com/w/wholesale-capacitor-100nf.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
+<p>Capacitor Polarized X 1 - <a href="https://vi.aliexpress.com/w/wholesale-capacitor-100uf-.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
+<p>Switch - Momentary X 3 - <a href="https://www.aliexpress.com/w/wholesale-SKRCADD010.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
+<p>Switch - Toggle X 1 - <a href="https://www.aliexpress.com/item/1005001510219617.html?spm=a2g0o.order_list.order_list_main.126.21ef1802tppsV9&gatewayAdapt=vnm2glo">Ali Express</a></p>
+<p>Female Header Pin Socket X 2 - <a href="https://vi.aliexpress.com/w/wholesale-Single-Row-Female-2.54MM-Spacing-Pin.html?spm=a2g0o.detail.search.0">Ali Express</a></p>
+<p>Arduino Nano X 1 - <a href="https://vi.aliexpress.com/w/wholesale-arduino-nano.html?spm=a2g0o.detail.search.0">Ali Express</a></p>
+<p>Audio Socket X 7 - [Ali Express](https://www.aliexpress.com/item/1005005352992401.html?spm=a2g0o.detail.pcDetail</p>
+<p>TopMore</p>
+<p>Other</p>
+<p>Seller.3.79e8oSDKoSDKlL&gps-id=pcDetail</p>
+<p>TopMore</p>
+<p>Other</p>
+<p>Seller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=fbbe9b5c-27f0-4bb1-845b-4fd955b2e5f3&_t=gps-id%3ApcDetail</p>
+<p>TopMore</p>
+<p>Other</p>
+<p>Seller%2Cscm-url%3A1007.40050.354490.0%2Cpvid%3Afbbe9b5c-27f0-4bb1-845b-4fd955b2e5f3%2Ctpp_buckets%3A668%232846%238112%231997&pdp_npi=4%40dis%21AUD%2111.21%2110.65%21%21%2153.35%2150.68%21%4021032dcb17247320167598620e5367%2112000032717531978%21rec%21AU%21129764711%21XZ&utparam-url=scene%3ApcDetail</p>
+<p>TopMore</p>
+<p>Other</p>
+<p>Seller%7Cquery_from%3A&gateway</p>
+<p>Adapt=vnm2glo)</p>
+<p>Mini JST Connector and wire X 1 - [Ali Express](https://www.aliexpress.com/item/1005005939956886.html?spm=a2g0o.productlist.main.7.7e264a70WvNDdM&algo_pvid=b63886e7-4a9b-476c-a3a7-6728c5570c76&aem_p4p_detail=202408262116298398603954887850001041877&algo_exp_id=b63886e7-4a9b-476c-a3a7-6728c5570c76-3&pdp_npi=4%40dis%21AUD%215.18%214.77%21%21%2124.65%2122.68%21%402140d2dc17247321890732393e7a9d%2112000035184099770%21sea%21AU%21129764711%21X&cur</p>
+<p>Page</p>
+<p>LogUid=ZBXPr2hTlgeC&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202408262116298398603954887850001041877_1&gateway</p>
+<p>Adapt=vnm2glo)</p>
+<p>LED X 1 - <a href="https://vi.aliexpress.com/w/wholesale-3mm-led-assorted.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
+<p>OLED Display 128X64 X 1 - <a href="https://www.aliexpress.com/w/wholesale-oled-128-x-64.html?spm=a2g0o.home.search.0">Ali Express</a></p>
+<p>Resistors - <a href="https://vi.aliexpress.com/w/wholesale-resistor-metal-film.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
 <p>220 X 6</p>
 <p>2.2K X 1</p>
 <ul>
 <li><a href="pdfs/Parts List.pdf">Parts List</a></li>
-</ul><a class="pdf-download" href="pdfs/Parts List.pdf" target="_blank">&#8675; Parts List</a><h2><span class="step-num">STEP 1</span>Step 1: PCB & Front Panel</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB & Front Panel image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB & Front Panel image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB & Front Panel image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB & Front Panel image 4" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: PCB & Front Panel</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB & Front Panel image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB & Front Panel image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB & Front Panel image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB & Front Panel image 4" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
+<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
+<p>I use <a href="https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE">JLCPCB</a> (not affiliated) to get this done.</p>
+<p>The front panel is actually just a PCB without any components included!</p>
+<p>The front design is done in a program called <a href="https://inkscape.org/">Inkscape</a> (available free) and the panel including the drilled holes is done in <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a> (also free!)</p>
+<p>The files that you need to build your own Bleep Drum Synth can be found in my <a href="https://github.com/lonesoulsurfer/Game_of_Life_Attiny13">GitHub</a> page.</p>
+<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+<p>Download the files to your computer</p>
 <p>STEPS:</p>
 <ul>
-<li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
+<li>Send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the PCB and front panel for you. Download all of the files from my <a href="https://github.com/lonesoulsurfer/Game_of_Life_Attiny13">GitHub</a> page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</li>
 </ul><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB - Part 1 image 2" loading="lazy"></div><p>The PCB is 2 sided with the Arduino and caps being soldered on the reverse side.</p>
 <p>STEPS:</p>
 <ul>
 <li>The first thing to do is to solder the resistors to the PCB.</li>
-<li>Now you can solder into place the JST connector. This is how I power muy modules. I have also included a 16 Pin Eurorack connector which you can use to power the synth via 12V</li>
-<li>At this stage it’s best to flip the board over and add the Arduino. If you don’t and add the rest of the components, you’ll find it tricky to add the Arduino later.</li>
+<li>Now you can solder into place the JST connector.  This is how I power muy modules.  I have also included a 16 Pin Eurorack connector which you can use to power the synth via 12V</li>
+<li>At this stage it’s best to flip the board over and add the Arduino.  If you don’t and add the rest of the components, you’ll find it tricky to add the Arduino later.</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Arduino to the PCB</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Arduino to the PCB image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Arduino to the PCB image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Arduino to the PCB image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Arduino to the PCB image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Arduino to the PCB image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Arduino to the PCB image 6" loading="lazy"></div><p>Next step is to add the Arduino to the PCB. There is a way to do this that ensures it fits perfectly each time.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, add the header pins to the pins on the Arduino.</li>
-<li>Now, put the header pins into the PCB and add some solder to the corner legs to hold it into place. Make sure that the rest of the header pins are sitting correctly in the PCB.</li>
+<li>Now, put the header pins into the PCB and add some solder to the corner legs to hold it into place.  Make sure that the rest of the header pins are sitting correctly in the PCB.</li>
 <li>Now you can solder the rest of the pins to the PCB.</li>
 <li>Remove the Arduino once done so you can get at the legs of the components that need to be soldered on next</li>
 <li>Oh, and you may as well solder into place the 2 capacitors on the reverse side</li>
@@ -190,14 +252,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ul>
 <li>Solder the audio 3.5 connectors into place – all 7 of them</li>
 <li>Now do the momentary switches and the toggle switch</li>
-<li>The last thing to solder is the OLED screen. Add a female header pin to the PCB and the solder into place 4 X male header pin to the OLED.</li>
+<li>The last thing to solder is the OLED screen.  Add a female header pin to the PCB and the solder into place 4 X male header pin to the OLED.</li>
 <li>Remove the little plastic spacer on the 4 X male header pin and trim each leg about the same height as the spacer.</li>
-<li>Now push the OLED into place. It should now be the exact right height to go flush onto the front panel.</li>
+<li>Now push the OLED into place.  It should now be the exact right height to go flush onto the front panel.</li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Sketch to the Arduino & Testing</h2><div class="step-images single"><img src="images/step06_01.png" alt="Step 5: Adding the Sketch to the Arduino & Testing image 1" loading="lazy"></div><p>It’s always good practice to test the PCB first before adding the front panel. Before we can test, we need to load the sketch into the Arduino.</p>
-<p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
+<p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out <a href="https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE">this link</a>.</p>
+<p>It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
 <p>STEPS:</p>
 <ul>
-<li>Open the sketch in the Arduino folder which will take you to Arduino IDE. This can be found in the folder that you downloaded from my GitHub page</li>
+<li>Open the sketch in the Arduino folder which will take you to Arduino IDE. This can be found in the folder that you downloaded from my <a href="https://github.com/lonesoulsurfer/Sync_Out_Buffered_Multi">GitHub</a> page</li>
 <li>Connect your Arduino and upload the sketch</li>
 <li>Once the sketch is loaded to Arduino you can connect it to the PCB for testing.</li>
 <li>Connect the PCB to a 9V to 12V power source and check that the buffered multi works. The screen should come on with 'Sync' and if you push select, the screen should change to the BPM and menu for changing the speed of each Sync in</li>
@@ -205,7 +268,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>STEPS:</p>
 <ul>
 <li>Place the front panel on top of the PCB and push into place. It’s a nice, snug fit so just give it a wiggle to make sure that the components push through the holes</li>
-<li>Add the nuts to the audio 3.5mm jacks and secure them into place. You can actually make your own tool to easily secure these if you want to – check out this build</li>
+<li>Add the nuts to the audio 3.5mm jacks and secure them into place. You can actually make your own tool to easily secure these if you want to – <a href="https://syntherjack.net/jack-nut-tool/">check out this build</a></li>
 <li>Now add the nut to the on/off switch.</li>
 <li>Once the front panel is in place, you can do a final test before sticking it into your Eurorack case</li>
 </ul><h2><span class="step-num">STEP 7</span>Step 7: So What Does It Do?</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: So What Does It Do? image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: So What Does It Do? image 2" loading="lazy"></div><ul>
@@ -237,6 +300,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Each mode serves a distinct musical purpose, and the intensity levels (50%/75%) allow meaningful adjustment.</p>
 <p>The two intensity levels (50% and 75%) offer enough adjustability without overcomplicating the interface. This gives users six distinct groove feels to choose from (three types × two intensities)</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
 <li><a href="pdfs/Parts List.pdf">Parts List</a></li>
-</ul><a class="pdf-download" href="pdfs/Parts List.pdf" target="_blank">&#8675; Parts List</a>
+</ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

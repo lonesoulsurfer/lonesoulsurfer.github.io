@@ -27,7 +27,7 @@ What really amazed me was how damn good the sound was. All of these computer spe
 
 You may be thinking why in hell would I want to do any of this!
 
-Hacking a amplifier this way can give you the most amazing tone. The distinct “Lo-fidelity” sound that's produced will really surprise you. I've made 2 of these now from old computer speakers and I'm totally impressed with the quality of sound produced. The first one I made (which is the one in this ible') worked a lot better as an amp than the second one (which is the one in the first YouTube clip). Def better sound than hacking a radio or cassette player which I have done in this ible' and this ible'.
+Hacking a amplifier this way can give you the most amazing tone. The distinct “Lo-fidelity” sound that's produced will really surprise you. I've made 2 of these now from old computer speakers and I'm totally impressed with the quality of sound produced. The first one I made (which is the one [in [this ible](https://www.instructables.com/id/Convert-Any-Tape-Player-to-a-Guitar-Amp/)'](https://www.instructables.com/id/Convert-Any-Radio-Into-a-Guitar-Amp/)) worked a lot better as an amp than the second one (which is the one in the first YouTube clip). Def better sound than hacking a radio or cassette player which I have done in this ible' and this ible'.
 
 This is a really simple hack and anyone can do this even with the most basic soldering skills.
 
@@ -53,13 +53,13 @@ The second video is a step by step guide on how to make one.
 
 Parts:
 
-1. Computer Speakers - eBay or the local junk store. Don't pay a lot for them - these should be easy to find cheaply.
+1. Computer Speakers - [eBay](http://www.ebay.com.au/sch/i.html?_odkw=computer+speaker&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xcomputer+speaker+vintage.TRS0&_nkw=computer+speaker+vintage&_sacat=0) or the local junk store. Don't pay a lot for them - these should be easy to find cheaply.
 
-2. 6.35mm 1/4" Mono Jack Connector (for the guitar cord) - eBay
+2. 6.35mm 1/4" Mono Jack Connector (for the guitar cord) - [eBay](http://www.ebay.com.au/itm/10-Pcs-6-35mm-1-4-Mono-Chassis-Socket-Jack-Connector-S02-/322231181899?hash=item4b0679a24b:g:QmwAAOSwdzVXtHCu)
 
-3. 3.5mm Stereo Jack Female Socket Connector - eBay.
+3. 3.5mm Stereo Jack Female Socket Connector - [eBay](http://www.ebay.com.au/itm/5Pcs-Black-3-5mm-Earphone-PCB-Panel-Mount-Stereo-Jack-Female-Socket-Connector-/141904278891?hash=item210a27756b:g:GZcAAOSwe7BWwXfr).
 
-4. 3.5mm male to male audio cable - eBay
+4. 3.5mm male to male audio cable - [eBay](http://www.ebay.com.au/itm/M-F-5M-AUDIO-CABLE-For-IPHONE-IPOD-HEADPHONE-EXTENSION-PLUG-CONNECTOR-3-5MM-LEAD-/400511909579?hash=item5d405ebecb:g:F04AAOSwzhVWqtQY)
 
 5. Wire
 

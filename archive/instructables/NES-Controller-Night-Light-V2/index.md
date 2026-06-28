@@ -17,7 +17,7 @@ Source: https://www.instructables.com/NES-Controller-Night-Light-V2/
 
 ![Intro 5](images/intro_05.jpg)
 
-A couple of years ago a made a NES Controller Night Light in Resin. Although I was happy with the final build, it wasn't an easy one to do. I decided to revisit this build recently after a friend wanted me to make them one. I really didn't want to have to go through all of that resin polishing again so I decided to make a slightly different version of the night night.
+A couple of years ago a made a [NES Controller Night Light in Resin](https://www.instructables.com/id/NES-Controller-Night-Light-in-Resin/). Although I was happy with the final build, it wasn't an easy one to do. I decided to revisit this build recently after a friend wanted me to make them one. I really didn't want to have to go through all of that resin polishing again so I decided to make a slightly different version of the night night.
 
 This time I wanted to be able to still feel the controller and also make it more of a show piece. I decided to have it in a frame that I could hang on the wall. The NES controller is also removable from the frame which enables it to be portable!
 
@@ -39,15 +39,15 @@ Check out the video in the first step to see the light in action.
 
 Parts:
 
-1. Rear Bike Light - eBay
+1. Rear Bike Light - [eBay](http://www.ebay.com.au/itm/Waterproof-Bike-Bicycle-Flash-5-LED-Rear-Lamp-Tail-Torch-Back-Light-Safety-JU-/171598241512?hash=item27f40d5ee8:g:nesAAOSwkNZUk8rR)
 
-2. NES Controller. Don't use an original one, just get a clone from eBay
+2. NES Controller. Don't use an original one, just get a [clone from eBay](http://www.ebay.com.au/itm/Classic-Gaming-Controller-Joypad-Gamepad-For-Nintendo-NES-Windows-PC-MAC-BU-/261888272971?hash=item3cf9c1ea4b:g:hOAAAOSwzrxUtjlp)
 
-3. 3mm LED Lights - eBay
+3. 3mm LED Lights - [eBay](http://www.ebay.com.au/itm/3mm-Ultra-Bright-Water-Clear-WHITE-LED-50-pieces-/111280079712?hash=item19e8cf4360:m:mqmSMvt99Q0TyEspBpytTLw)
 
-4. Tactile switch - eBay
+4. Tactile switch - [eBay](http://www.ebay.com.au/itm/100x-Quality-Mini-Micro-Momentary-Tactile-Push-Button-Switch-6-6-5mm-4pin-Hot-/271410924779?hash=item3f315a0ceb:g:e-wAAOSwVL1WACxe)
 
-5. 3 x AAA battery holder - eBay or this one from eBay
+5. 3 x AAA battery holder - [eBay](http://www.ebay.com.au/itm/4-Pcs-Plastic-3-x-1-5V-AAA-Batteries-2-Wires-Battery-Holder-Case-Storage-/391264187828?hash=item5b1929b5b4:g:nAMAAOSwHjNV-mfx) [or this one from eBay](http://www.ebay.com.au/itm/2-Pcs-3-x-AAA-4-5V-Battery-Holder-Wired-ON-OFF-Switch-w-Cover-SY-AU-/252140777956?hash=item3ab4c2f1e4:g:SAcAAOSwI-BWLHpv)
 
 6. 3 x AAA batteries
 

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,11 +164,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Instructables Contest Winners - Top 50</h1><div class="source"><a href="https://www.instructables.com/Instructables-Contest-Winners-Top-50/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.png" alt="Intro 2" loading="lazy"><img src="images/intro_03.png" alt="Intro 3" loading="lazy"></div><p>Even wondered who the top 50 prizes winners are on Instructables?</p>
 <p>To be honest, I was curious as to where I sit amongst the competition winners and it turns out that I'm in the top 5 (1 off equal top 3!!).</p>
-<p>I joined Instructables way back in 2011 and published my first 'Ible in Jan 2012. The project got some views and likes and after that I was hooked.</p>
+<p>I joined Instructables way back in 2011 and published my first 'Ible in Jan 2012. <a href="https://www.instructables.com/How-to-Make-an-Easy-Electric-Lantern/">The project</a> got some views and likes and after that I was hooked.</p>
 <p>I've pubished 254 255 'Ibles since then and it's been a great journey. I've learnt a tonne of skills and have published a broad range of builds over the years.</p>
 <p>A huge thank you to anyone and everyone who has voted for one of my projects thought the years. You are all superstars xx</p>
 <p>Also thanks to the Great Instructables team!</p>
-<p>Back to the question I first asked. As the internet wasn't helping me and I couldn't find anything relevant, I decided to build a tool that would extract the information from all of the competitions run by Intructables!</p>
+<p>Back to the question I first asked.</p>
+<p>As the internet wasn't helping me and I couldn't find anything relevant, I decided to build a tool that would extract the information from all of the competitions run by Intructables!</p>
 <p>After a few hours coding, I ended up with a Python script that runs a program and outputs a list of the top 50 winners and some stats about each one.</p>
 <p>The results can be found in Step 1. - Visit the website that I created to check out the winners</p>
 <p>In the Supplies step I have provided everything you need to run the script yourself. I looked up the top 50 but you can also change the amount of competition winners to look up as many as you want!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.png" alt="Supplies image 3" loading="lazy"></div><p>RUN THE PYTHON SCRIPT YOURSELF</p>
@@ -146,7 +182,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>https://www.python.org/downloads/</p>
 <p>Download the script</p>
 <ul>
-<li>Download from my GitHub page file which includes 'instructables_top_winners.py' and save it somewhere easy to find, such as your Desktop or a folder called C:\Instructables.</li>
+<li>Download from my <a href="https://github.com/lonesoulsurfer/Instructables_Contest_Winners">GitHub</a> page file which includes 'instructables_top_winners.py' and save it somewhere easy to find, such as your Desktop or a folder called C:\Instructables.</li>
 </ul>
 <p>Open Command Prompt</p>
 <ul>
@@ -169,8 +205,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>CSVRaw data file you can open in any spreadsheet app</li>
 <li>HTMLReady-to-paste table for publishing on Instructables</li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: Results</h2><div class="step-images single"><img src="images/step02_01.png" alt="Step 1: Results image 1" loading="lazy"></div><p>Check out the link to see the winners</p>
-<p>https://lonesoulsurfer.github.io/Instructables_Contest_Winners/</p>
-<p>The results can also be found on GitHub. You can download 3 different file formats of the list from my GitHub page. There is an Excel, HMTL and CSV files available. These are the outputs you get after the Python script has ran.</p>
+<p><a href="https://lonesoulsurfer.github.io/Instructables_Contest_Winners/">https://lonesoulsurfer.github.io/Instructables_Contest_Winners/</a></p>
+<p>The results can also be found on <a href="https://github.com/lonesoulsurfer/Instructables_Contest_Winners">GitHub</a>.</p>
+<p>You can download 3 different file formats of the list from my GitHub page.</p>
+<p>There is an Excel, HMTL and CSV files available.</p>
+<p>These are the outputs you get after the Python script has ran.</p>
 <p>The results don't just supply a list of the highest competition winners. It also provides the following:</p>
 <ul>
 <li>Link to the Instructable member so you can go check them out</li>
@@ -190,5 +229,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Just change the number to the amount of winners you want to see</li>
 <li>You can also change the amount of contests the script looks at by change the 'MAX_CONTESTS = 0' number to say 50 just to test the system.</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

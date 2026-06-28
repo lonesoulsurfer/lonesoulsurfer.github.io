@@ -19,7 +19,7 @@ Source: https://www.instructables.com/Superman-in-a-Light-Bulb/
 
 ![Intro 6](images/intro_06.jpg)
 
-Whilst daydreaming during a particularly long and boring meeting, I hit upon this 'ible. I've put things inside light bulbs before (see this 'ible) and I really like the effect. This time I decided to add a miniature Superman! No particular reason, just thought it would look cool.
+Whilst daydreaming during a particularly long and boring meeting, I hit upon this 'ible. I've put things inside light bulbs before ([see this 'ible](https://www.instructables.com/id/Plane-in-a-Globe-Hacking-A-PIR-Sensor-To-Do-Your/)) and I really like the effect. This time I decided to add a miniature Superman! No particular reason, just thought it would look cool.
 
 The Superman is actually a miniature train figure that I painted and added a cape to. He flies around inside the bulb and his speed can be controlled using a PMW speed controller. I also added a couple of LED lights so it also functions as a light, which kinda makes sense considering its a light bulb (but that's all that makes sense in this 'ible!)
 
@@ -55,17 +55,17 @@ To see it in action, check out the video below.
 
 Bits:
 
-1. Empty light bulb - eBay
+1. Empty light bulb - [eBay](http://www.ebay.com.au/itm/Light-Bulb-Stand-Glass-Plant-Flower-Vase-Hydroponic-Container-Home-Wedding-Decor-/131344036704?hash=item1e94b6f360:g:JQ0AAOSwabhUYdjz)
 
-2. Motor speed controller - eBay
+2. Motor speed controller - [eBay](http://www.ebay.com.au/itm/PWM-Low-Voltage-DC-1-8V-to-12V-2A-30W-Motor-Speed-Controller-Switch-32x32mm-/131623723171?hash=item1ea562a0a3:g:jC4AAOSwgQ9VyYq8)
 
-3. 15 rpm motor - eBay
+3. 15 rpm motor - [eBay](http://www.ebay.com.au/itm/DC-3V-0-3A-15RPM-Electrical-Geared-Box-Motor-for-Robot-WS-/221762105392?hash=item33a20d3030:g:WYgAAOSwqu9VRgOz)
 
-4. Vintage light bulb socket - eBay
+4. Vintage light bulb socket - [eBay](http://www.ebay.com.au/itm/E27-Retro-110-220V-Aluminum-Vintage-Edison-Zipper-Ceiling-Light-Socket-Pendant-/301762967151?var=&hash=item464279766f:m:m3BhU30DnUpSrJFpYry9NEg)
 
-5. Miniature train figure - eBay
+5. Miniature train figure - [eBay](http://www.ebay.com.au/itm/100pcs-Z-Scale-1-200-Mix-Painted-Model-People-Train-Park-Passenger-Figures-/131167632756?hash=item1e8a333d74:g:ZmQAAOxylpNTTOa7)
 
-6. 3 x AA battery holder - eBay
+6. 3 x AA battery holder - [eBay](http://www.ebay.com.au/itm/Hard-Plastic-Storage-Holder-Case-Box-For-3-X-AA-Battery-With-Wire-Leads-/380930673781?hash=item58b13ccc75:g:zv8AAOSwcnpTnqQG)
 
 7. 3 x AA batteries
 
@@ -75,11 +75,11 @@ Bits:
 
 10. Thin musical wire. You can get this from hobby stores
 
-11. Very fine paint brushes - ebay
+11. Very fine paint brushes - [ebay](http://www.ebay.com.au/itm/Set-of-15-tiny-paint-brush-for-model-war-hammer-figurine-art-nail-fine-craft-/111816706539?hash=item1a08cb89eb:g:He4AAOSw0e9UsgDp)
 
 12. Hobby paint (red, yellow, blue and black)
 
-13. A couple of LED's. I went with pink and blue. - eBay
+13. A couple of LED's. I went with pink and blue. - [eBay](http://www.ebay.com.au/itm/70-5mm-Mixed-Red-Green-Blue-Yellow-Purple-Pink-White-LED-Light-90-Metal-Resistor-/110948827875?hash=item19d510c2e3:m:mRmwWQlkra06t3Syb5lHHsA)
 
 Tools:
 

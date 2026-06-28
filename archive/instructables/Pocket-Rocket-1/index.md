@@ -39,17 +39,17 @@ The thing I love best about this build is the re-fueling system. It makes launch
 
 Parts:
 
-1. Lighter light the one in the image below – eBay
+1. Lighter light the one in the image below – [eBay](http://www.ebay.com.au/itm/Hot-Kitchen-Gas-stove-Candle-BBQ-Refillable-Butane-Ignition-Rod-Gun-Lighter-/282110913078?hash=item41af1eea36:g:6EEAAOSwyDxXgN0~)
 
-2. Small, wooden box – eBay
+2. Small, wooden box – [eBay](http://www.ebay.com.au/itm/Retro-Eiffel-Tower-Wood-Wooden-Pen-Pencil-Case-Holder-Stationery-Box-Storage-GU-/351633402232?hash=item51defbe978:g:e0kAAOSwoydWndkz)
 
-3. Piezoelectric spark generator – battery operated – eBay I didn't use this one but it will definitely do the trick
+3. Piezoelectric spark generator – battery operated – [eBay](http://www.ebay.com.au/itm/Electric-Gas-Lighter-XXC-Fire-Starter-Battery-BBQ-Stove-Cooker-Pulse-Igniter-VBS-/152104115033) I didn't use this one but it will definitely do the trick
 
-4. Remote module – eBay
+4. Remote module – [eBay](http://www.ebay.com.au/itm/1CH-Channel-Wireless-Remote-Control-Switch-Fixed-Code-Receiver-Module-315MHZ-/351743893580?hash=item51e591e04c:g:6PEAAOSwepZXSAIa)
 
-5. 2 X AA battery holder – eBay
+5. 2 X AA battery holder – [eBay](http://www.ebay.com.au/itm/gi-1pc-2-3-4x-AAA-Battery-Clip-Holder-Box-Case-w-Wire-Lead-Enclosed-Box-Switch-/191606075968?var=&hash=item2c9c9cb240:m:mwU75Nv7zuqPYOdH819D8-Q)
 
-6. 9v battery holder – eBay
+6. 9v battery holder – [eBay](http://www.ebay.com.au/itm/gib-2pcs-Single-Slots-1x-9V-Battery-Clip-Holder-Case-Box-with-Wire-Leads-DIY-/171803964879?hash=item28005075cf:g:8qIAAOSwl8NVZVcf)
 
 7. 2 X AA batteries
 
@@ -61,7 +61,7 @@ Parts:
 
 11. Solid core wire. You could also just use normal strand wire as well.
 
-12. On/off toggle switch - eBay
+12. On/off toggle switch - [eBay](http://www.ebay.com.au/itm/5PCS-Mini-Toggle-Switch-DPDT-Blue-6-Pin-3A-250V-125V-ON-OFF-ON-Useful-/191827182681?hash=item2ca9ca8459:g:h2oAAOSw-vlVl8j7)
 
 Tools:
 

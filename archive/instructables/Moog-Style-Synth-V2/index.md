@@ -27,9 +27,9 @@ I also added the ability to play the synth just with one potentiometer and the L
 
 Just watch the YouTube clip and you’ll see what I mean
 
-Lastly, I have to give a shout out to Pete McBennett who designed this awesome circuit. Check out his YouTube channel here
+Lastly, I have to give a shout out to [Pete McBennett](https://www.youtube.com/channel/UCk4mtz-tZbXdk1Xb0DSd2QQ) who designed this awesome circuit. Check out his YouTube channel here
 
-You can check out the first one I built here
+You can check out the first one I built [here](https://www.instructables.com/Moog-Style-Synth/)
 
 
 ## Step 1: Parts
@@ -52,31 +52,31 @@ You can check out the first one I built here
 
 The Moog Synth
 
-I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the board for you. The circuit and board were put together using Eagle and all of the files including the schematic, board and gerber files can be found in a Google Drive link in the next step
+I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GVdFKX-Hevhd6kw8GeZu3nYS_I10AJjhGupCabeBPJ_yEL6WvauxcaAtqKEALw_wcB) (Not affiliated) who will print the board for you. The circuit and board were put together using Eagle and all of the files including the schematic, board and gerber files can be found in a Google Drive link in the next step
 
 The parts list is also available in my Google drive as an excel file and I have included as a PDF in this Instructable.
 
 The Rest of the Parts:
 
-1. Potentiometer Knobs - eBay
+1. Potentiometer Knobs - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=potentiometer+knob&_sacat=0&_sop=15)
 
-2. Echo/Reverb module - eBay
+2. Echo/Reverb module - [eBay](https://www.ebay.com.au/itm/1pcs-PT2399-Microphone-Reverberation-Board-No-Preamplifier-Function-Module/183657875765?hash=item2ac2dcc935:g:cSQAAOSw~D5cTqoX&frcectupt=true)
 
-3. 2 X 50K Potentiomeners (for the echo/reverb module) - eBay
+3. 2 X 50K Potentiomeners (for the echo/reverb module) - [eBay](https://www.ebay.com.au/itm/RK097N-Linear-Mono-Potentiometer-B5K-to-100K-Ohm-3-Pin-15mm-Audio-Amplifier/223247173556?hash=item33fa9187b4:g:pH8AAOSwOJVehtiU)
 
-4. 10 X momentary switches - Ali Express
+4. 10 X momentary switches - [Ali Express](https://www.aliexpress.com/item/32965284265.html?spm=a2g0s.9042311.0.0.27424c4dbqbNJq)
 
-5. 2 X SPDT switches - eBay
+5. 2 X SPDT switches - [eBay](https://www.ebay.com.au/itm/2-Pcs-AC-SPDT-On-Off-3-Position-Momentary-Toggle-Switch-AC250V-2A-120V-5A-ATH1/402436346500?hash=item5db3135284:g:oQ8AAOSwQFJauzRQ)
 
-6. Wire. I like to use computer ribbon cable. you can buy it on Ali Express or just visit a place where e-waste is dumped to get it for free
+6. Wire. I like to use computer ribbon cable. you can buy it on [Ali Express](https://www.aliexpress.com/item/1005001355622002.html?spm=a2g0o.productlist.0.0.154a3acctmNVW2&algo_pvid=e1b4a0c7-1a6b-4c37-9911-6232f45e130c&algo_expid=e1b4a0c7-1a6b-4c37-9911-6232f45e130c-1&btsid=0b0a556416060938341953375e1bd2&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_) or just visit a place where e-waste is dumped to get it for free
 
-7. Li-po Battery - eBay. I used an old mobile battery to power the synth. They work great for projects like this and you can get them for free. check out this 'ible on how to find them and use them
+7. Li-po Battery - eBay. I used an old mobile battery to power the synth. They work great for projects like this and you can get them for free. check out [this 'ible](https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/) on how to find them and use them
 
-8. Charging and voltage regulator module - eBay
+8. Charging and voltage regulator module - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=3.7V+9V+5V+2A+Adjustable+Step+Up+18650+Lithium+Battery&_sacat=0&_sop=15)
 
-9. Micro USB module - eBay
+9. Micro USB module - [eBay](https://www.ebay.com.au/itm/KQ-5Pcs-CJMCU-5V-Micro-USB-Board-Interface-Power-Switch-Adapter-Breakout-Module/333623439304?hash=item4dad81afc8:g:dH0AAOSwK~tdoXXg)
 
-10. Water Decal - eBay
+10. Water Decal - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=water+decal+a4&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=water+decal)
 
 11. 40mm X 80mm X 10mm length of hard wood (for making the case) - Hardware store
 
@@ -91,7 +91,7 @@ The Rest of the Parts:
 
 ![Step 2: The Moog Style Synth - Circuit and Board image 3](images/step02_03.jpg)
 
-As mentioned in the previous step, you can find the schematic and board (designed in Eagle) in my Google drive. If you want to you can play around with these yourself in Eagle. I have also saved the gerber files which is what you need to send to a PCB manufacturer to print the board
+As mentioned in the previous step, you can find the schematic and board (designed in Eagle) in my [Google drive](https://drive.google.com/drive/folders/16y0xxNxTzLwEAw7MAU7qzn4VgWmvvEWi?usp=sharing). If you want to you can play around with these yourself in Eagle. I have also saved the gerber files which is what you need to send to a PCB manufacturer to print the board
 
 
 - [Moog Sytle Synth - Schematic](pdfs/Moog Sytle Synth - Schematic.pdf)
@@ -164,7 +164,7 @@ Switch 2 = Consists of 10 connections, each on needs to be connected to one of t
 
 ![Step 5: Moding the Echo/Reverb Module image 2](images/step05_02.jpg)
 
-I did an Instructable on how to mod the echo and reverb module which can be found here. It's not really a mod per se, more just now to had the echo pot and what resistor to remove. I won't go through this in much detail here so if you need further instructions, check out the 'ible above.
+I did an Instructable on how to mod the echo and reverb module which can be found [here](https://www.instructables.com/Echo-Reverb-Box/). It's not really a mod per se, more just now to had the echo pot and what resistor to remove. I won't go through this in much detail here so if you need further instructions, check out the 'ible above.
 
 Steps:
 
@@ -181,11 +181,11 @@ Steps:
 
 ![Step 6: Creating the Front Panel image 1](images/step06_01.jpg)
 
-To design the panels I used Inkscape, a vector graphics editor which you can download for free! There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it before
+To design the panels I used [Inkscape](https://inkscape.org/), a vector graphics editor which you can download for free! There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it before
 
 I did a couple video's on how to design knob scales and also make a front panel which I have included above.
 
-There is even an extension that you can download so you can design knob scales easily and simply which you can download here
+T[here](https://inkscape.org/~sincoon/%E2%98%85knob-scale-generator) is even an extension that you can download so you can design knob scales easily and simply which you can download here
 
 However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also includes the Inkscape file so you can play around with that as well if you want to.
 
@@ -375,7 +375,7 @@ Steps:
 
 2. First thing you should do is complete any soldering that needs to be done. Solder the wires from the echo/reverb module to the relevant pots on the front panel
 
-3. Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found here. Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module via the micro pot on the module. You'll need a multimeter to do this
+3. Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found [here](https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/). Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module via the micro pot on the module. You'll need a multimeter to do this
 
 NOTE: The module will always draw a little bit of power so I always connect the on/off switch from the battery to the module. That way you stop the module from drawing power from the battery and draining it over time. it's only a very small amount but it will drain it over a few weeks
 

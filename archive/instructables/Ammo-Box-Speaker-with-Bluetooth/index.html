@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,201 +162,233 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Ammo Box Speaker (with Bluetooth)</span>
 </nav>
-<h1>Ammo Box Speaker (with Bluetooth)</h1><div class="source"><a href="https://www.instructables.com/Ammo-Box-Speaker-with-Bluetooth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>There are plenty of ammo box speakers out there, this is my version I came up with. The build is relativity simple and only needs some basic skills and tools. You can actually make an even simpler version of this and I will go through how to do that as well.</p>
-<p>The speaker uses a cheap amplifier purchased in eBay for $12 as well as a blue tooth module and a couple of speakers salvaged from a surround sound system. I tried to keep the cost down on this build as much as possible and used recycled parts where I could.</p>
+<h1>Ammo Box Speaker (with Bluetooth)</h1><div class="source"><a href="https://www.instructables.com/Ammo-Box-Speaker-with-Bluetooth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>There are plenty of ammo box speakers out there, this is my version I came up with.</p>
+<p>The build is relativity simple and only needs some basic skills and tools.</p>
+<p>You can actually make an even simpler version of this and I will go through how to do that as well.</p>
+<p>The speaker uses a cheap amplifier purchased in eBay for $12 as well as a blue tooth module and a couple of speakers salvaged from a surround sound system.</p>
+<p>I tried to keep the cost down on this build as much as possible and used recycled parts where I could.</p>
 <p>To give it some personality and turn it into a mean looking mofo, I added skull knobs and skull speaker covers</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Amp - eBay</li>
-</ul>
+<li>Amp - <a href="http://www.ebay.com.au/itm/12V-Mini-Hi-Fi-Amplifier-for-Cars-Motorcycle-Boat-Stereo-256-/181751903264?hash=item2a5141f420:g:rCQAAOSwrklVXZ9W">eBay</a></li>
+</ol>
 <ol>
-<li>2 x speakers. You can buy them on eBay or just salvage from a car or surround sound system.</li>
-</ul>
+<li>2 x speakers. You can buy them on <a href="http://www.ebay.com.au/itm/331693000571?_trksid=p2060353.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT">eBay</a> or just salvage from a car or surround sound system.</li>
+</ol>
 <ol>
-<li>2 x computer fan covers. eBay</li>
-</ul>
+<li>2 x computer fan covers. <a href="http://www.ebay.ie/itm/SILVER-PIRATE-DESIGN-SKULL-AND-CROSSBONES-COMPUTER-COOLING-CASE-FAN-GRILL-80MM-/121856308793?hash=item1c5f33b639:g:cp4AAOSwT~9Wigkk">eBay</a></li>
+</ol>
 <ol>
-<li>Knobs - eBay</li>
-</ul>
+<li>Knobs - <a href="http://www.ebay.com.au/itm/New-3pcs-Electric-Guitar-Metal-Skull-Volume-Tone-Knobs-Chrome-/271455710105?hash=item3f34056b99:g:GicAAOSwjVVVyxr2">eBay</a></li>
+</ol>
 <ol>
 <li>12 battery - I used this one Century PS1280. You just need a 12v battery that will fit into the ammo box so use anything cheap that you can find</li>
-</ul>
+</ol>
 <ol>
 <li>Ammo box. You can get these on eBay or just visit your local army surplus store</li>
-</ul>
+</ol>
 <ol>
-<li>Bluetooth module - eBay</li>
-</ul>
+<li>Bluetooth module - <a href="http://www.ebay.com.au/itm/USB-Bluetooth-Audio-Receiver-Adaptor-Wireless-Music-3-5mm-AUX-Dongle-A2DP-iPod-5-/121573140909?hash=item1c4e52e9ad:g:lHAAAOSwNSxVJsIS">eBay</a></li>
+</ol>
 <ol>
-<li>12v to 5v converter - eBay</li>
-</ul>
+<li>12v to 5v converter - <a href="http://www.ebay.com.au/itm/Black-12V-To-5V-3A-15W-Step-Down-Car-Charger-Converter-Module-With-USB-Cable-T60-/261967141790?hash=item3cfe755b9e:g:jvkAAOSwMmBVpOzs">eBay</a></li>
+</ol>
 <ol>
 <li>A bunch of speaker wire and other wires as necessary</li>
-</ul>
+</ol>
 <ol>
-<li>40mm vent cover - eBay</li>
-</ul>
+<li>40mm vent cover - <a href="http://www.ebay.com.au/itm/3pcs-40mm-4cm-Metal-Wire-Grill-Finger-Axial-Fan-Guard-Protector-for-PC-Computer-/111767674974?hash=item1a05df605e:g:BzMAAOSwKtlWriYB">eBay</a></li>
+</ol>
 <ol>
 <li>20mm PVC coupling</li>
-</ul>
+</ol>
 <ol>
 <li>Copper tubing (8mm)</li>
-</ul>
+</ol>
 <ol>
 <li>Self tapping screws</li>
-</ul>
+</ol>
 <ol>
 <li>Various nuts and bolts</li>
-</ul>
+</ol>
 <ol>
-<li>on/off switch - eBay</li>
-</ul>
+<li>on/off switch - <a href="http://www.ebay.com.au/itm/5pcs-12V-Heavy-Duty-Toggle-Flick-Switch-ON-OFF-Car-Dash-Light-Metal-SPST-12-Volt-/151191723314?hash=item2333ba9d32:g:Ot0AAOSwKtlWnI3T">eBay</a></li>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Jigsaw</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Drill and various bits</li>
-</ul>
+</ol>
 <ol>
 <li>Various screwdrivers etc</li>
-</ul>
+</ol>
 <ol>
 <li>Files</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Scavenging the Speakers</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Scavenging the Speakers image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Scavenging the Speakers image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Scavenging the Speakers image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Scavenging the Speakers image 4" loading="lazy"></div><p>As mentioned earlier in the 'ible, I decided to use some scavenged speakers from a surround sound system. Initially though I went with some speakers I had lying around but decided against it. You will see some of the images are from the original speakers I used throughout the 'ible.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Scavenging the Speakers</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Scavenging the Speakers image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Scavenging the Speakers image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Scavenging the Speakers image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Scavenging the Speakers image 4" loading="lazy"></div><p>As mentioned earlier in the 'ible, I decided to use some scavenged speakers from a surround sound system.</p>
+<p>Initially though I went with some speakers I had lying around but decided against it.</p>
+<p>You will see some of the images are from the original speakers I used throughout the 'ible.</p>
 <p>Steps:</p>
 <ol>
 <li>Scavenge the speakers and remove from the cowling.</li>
-</ul>
+</ol>
 <ol>
 <li>De-solder any wires that may be attached top the speakers.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Cutting the Speaker Holes</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cutting the Speaker Holes image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cutting the Speaker Holes image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Cutting the Speaker Holes image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Cutting the Speaker Holes image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Cutting the Speaker Holes image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Cutting the Speaker Holes image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Cutting the Speaker Holes image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Cutting the Speaker Holes</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cutting the Speaker Holes image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cutting the Speaker Holes image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Cutting the Speaker Holes image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Cutting the Speaker Holes image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Cutting the Speaker Holes image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Cutting the Speaker Holes image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Cutting the Speaker Holes image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Mark out on the ammo box the diameter of the speakers</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a hole inside the circle to enable the jigsaw blade to fit through</li>
-</ul>
+</ol>
 <ol>
 <li>Using the jigsaw, carefully cut out the speaker inserts. Take your time with this as you will need to slowly turn the box as you cut the holes out.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly file the edges and remove any burrs.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Pull Apart the Amp</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pull Apart the Amp image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pull Apart the Amp image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pull Apart the Amp image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pull Apart the Amp image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pull Apart the Amp image 5" loading="lazy"></div><p>The amp that I chose to use can be picked-up for very cheap on eBay. I've used them before and they work great. Plus they are easy to pull apart.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Pull Apart the Amp</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pull Apart the Amp image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pull Apart the Amp image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pull Apart the Amp image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pull Apart the Amp image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pull Apart the Amp image 5" loading="lazy"></div><p>The amp that I chose to use can be picked-up for very cheap on eBay. I've used them before and they work great. Plus they are easy to pull apart.</p>
 <p>Steps:</p>
 <ol>
 <li>Take off the knobs</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the small bolts that are around the pots</li>
-</ul>
+</ol>
 <ol>
 <li>remove the cowling by un-screwing the screws on the bottom and on the back</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully pull out the circuit board. You might need to give it a wiggle to get it out</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Attaching a Toggle Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Attaching a Toggle Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Attaching a Toggle Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Attaching a Toggle Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Attaching a Toggle Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Attaching a Toggle Switch image 5" loading="lazy"></div><p>If you wanted to keep it as simple as possible, then you could just use the push switch that come with the amp. I wanted to have something a little hardier (and chunkier) so went with a large toggle switch.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Attaching a Toggle Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Attaching a Toggle Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Attaching a Toggle Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Attaching a Toggle Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Attaching a Toggle Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Attaching a Toggle Switch image 5" loading="lazy"></div><p>If you wanted to keep it as simple as possible, then you could just use the push switch that come with the amp.</p>
+<p>I wanted to have something a little hardier (and chunkier) so went with a large toggle switch.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a couple of wires to the terminals on the toggle switch</li>
-</ul>
+</ol>
 <ol>
 <li>Next solder the ends of the wires to the switch terminals on the circuit board. You could remove the switch on the board if you wanted to - I didn't see any need though.</li>
-</ul>
+</ol>
 <ol>
 <li>You will also need to add the bluetooth module as well to the switch but I will go through that a little later. I have also included a schematic on this page which will hopefully help</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Attaching the Amp to the Ammo Box</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 8" loading="lazy"></div><p>Making sure that you drill the holes in the right places obviously is important. A little off and the amp won't line-up correctly. There is however an easy way to do this. Just lay a piece of masking tape across the 3 pots on the amp, mark where the ends touch the masking tape, and stick to the ammo lid. Now when you drill you can be certain that the pots will line up correctly.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Attaching the Amp to the Ammo Box</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Attaching the Amp to the Ammo Box image 8" loading="lazy"></div><p>Making sure that you drill the holes in the right places obviously is important.</p>
+<p>A little off and the amp won't line-up correctly.</p>
+<p>There is however an easy way to do this.</p>
+<p>Just lay a piece of masking tape across the 3 pots on the amp, mark where the ends touch the masking tape, and stick to the ammo lid.</p>
+<p>Now when you drill you can be certain that the pots will line up correctly.</p>
 <p>Steps:</p>
 <ol>
 <li>I decided to attach the amp to the lid of the ammo box. It made it easy to get to and also easy to attach. You could try and put the amp on the bottom of the ammo box but it makes it hard to attach the power plug, speaker wires etc. Drill the holes for the pots (volume controls) and switch</li>
-</ul>
+</ol>
 <ol>
 <li>You can easily remove the lid on the ammo box by opening fully and pushing it to the left. The lid will then come out of it's hinges.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the pots through the holes and attach the amp by replacing the bolts onto the pots. This is enough to hold the amp in place.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the on/off toggle switch</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding a Heat-Sink</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Heat-Sink image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Heat-Sink image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Heat-Sink image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Heat-Sink image 4" loading="lazy"></div><p>After attaching the amp I realized that the cowling acts as a heat-sink. I decided to add one that I had lying around. You could probably get away without attaching one, depending on what type of battery you hook the amp up to. I thought it was better safe than sorry though.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding a Heat-Sink</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Heat-Sink image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Heat-Sink image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Heat-Sink image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Heat-Sink image 4" loading="lazy"></div><p>After attaching the amp I realized that the cowling acts as a heat-sink.</p>
+<p>I decided to add one that I had lying around.</p>
+<p>You could probably get away without attaching one, depending on what type of battery you hook the amp up to.</p>
+<p>I thought it was better safe than sorry though.</p>
 <p>Steps:</p>
 <ol>
 <li>There were 2 screw holes already on the board so |I just used these to attach the heat-sink. Measure and drill a couple holes on the heat-sink so you can attach it to the circuit board</li>
-</ul>
+</ol>
 <ol>
 <li>I had to make the holes on the board a little bigger so just used the drill again on these</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the heat-sink with a small bolt and nut.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Attaching the Knobs</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Attaching the Knobs image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Attaching the Knobs image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Attaching the Knobs image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Attaching the Knobs</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Attaching the Knobs image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Attaching the Knobs image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Attaching the Knobs image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The knobs that I used were too small to fit onto the pot ends. You will need to make these a little larger by drilling them out. Make sure that they are still a tight fit though.</li>
-</ul>
+</ol>
 <ol>
 <li>Add a little super glue to the hole in the knob and push onto the pots. Leave this to dry for 20 minutes.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Battery</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Battery image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Battery image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Battery image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Battery image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Battery</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Battery image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Battery image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Battery image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Battery image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To enable the battery to be charged, you will need to add a female socket. Drill a hole in the side of the ammo box large enough for the socket to fit into.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the socket in the hole and screw into place</li>
-</ul>
+</ol>
 <ol>
 <li>Solder 2 wires to the terminals on the socket and then attach to the wires on the battery.</li>
-</ul>
+</ol>
 <ol>
 <li>To power the amp, you will need to also attach a male jack to the battery. Solder some wires to the male jack and attach them to the same terminals that you added the battery to. Make sure that you make the wires long enough to be able to plug into the amp when the lid of the ammo box is open</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Attaching the Speakers to the Ammo Box</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Attaching the Speakers to the Ammo Box</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Attaching the Speakers to the Ammo Box image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To ensure the speaker don't vibrate against the ammo box, it's best to add some padding on the inside of the sections that will touch the ammo box. I used sticky sided foam and cut to fit.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the speakers into the holes in the ammo box</li>
-</ul>
+</ol>
 <ol>
 <li>To secure the speaker to the ammo box I used some self tapping screws. Drill the holes and screw into place.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding the Speaker Protectors</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Speaker Protectors image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Speaker Protectors image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Speaker Protectors image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Speaker Protectors image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Speaker Protectors image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Speaker Protectors image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Speaker Protectors image 7" loading="lazy"></div><p>To make sure that the speaker protectors are a distance away from the speakers (you don't want them touching the actual speakers) you will need to make some bushes. I used copper tubing to make these but you could just use washers or nuts or whatever else you have around.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Speaker Protectors</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Speaker Protectors image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Speaker Protectors image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Speaker Protectors image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Speaker Protectors image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Speaker Protectors image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Speaker Protectors image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Speaker Protectors image 7" loading="lazy"></div><p>To make sure that the speaker protectors are a distance away from the speakers (you don't want them touching the actual speakers) you will need to make some bushes.</p>
+<p>I used copper tubing to make these but you could just use washers or nuts or whatever else you have around.</p>
 <p>Steps:</p>
 <ol>
 <li>With a tube cutter, cut 8 equal pieces of copper tubing</li>
-</ul>
+</ol>
 <ol>
 <li>Place the protectors on the speaker and mark where you will need to drill the holes. once you are happy with the position, start drilling</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the protectors to the ammo box using screws and the bushes.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Bring the Bass</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Bring the Bass image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Bring the Bass image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Bring the Bass image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Bring the Bass image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Bring the Bass image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Bring the Bass image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Bring the Bass image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Bring the Bass image 8" loading="lazy"></div><p>I decided to add a port to allow equalization of the pressure between the inside and outside of the ammo box. The box is very well sealed and I didn't want to add undue pressure to the speakers diaphragm. Plus I wanted to get as much bass out of it as possible and adding a port helps with this.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Bring the Bass</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Bring the Bass image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Bring the Bass image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Bring the Bass image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Bring the Bass image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Bring the Bass image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Bring the Bass image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Bring the Bass image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Bring the Bass image 8" loading="lazy"></div><p>I decided to add a port to allow equalization of the pressure between the inside and outside of the ammo box.</p>
+<p>The box is very well sealed and I didn't want to add undue pressure to the speakers diaphragm.</p>
+<p>Plus I wanted to get as much bass out of it as possible and adding a port helps with this.</p>
 <p>Steps:</p>
 <ol>
 <li>make a hole in between the 2 speakers. I just drilled around the hole and cut away the piece of metal. I then filed the edges smooth.</li>
-</ul>
+</ol>
 <ol>
 <li>I also decided to add a 20mm PVC coupling to the hole. This will allow the air to be pulled from the middle of the ammo box (have no idea if this will be a benefit of not). If you do add the PVC coupling, then make sure the hole you make is the same size as the coupling.</li>
-</ul>
+</ol>
 <ol>
 <li>Next screw into place a small fan shield. Not totally necessary but is good for ascetics.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some hot glue to the bottom of the coupling and glue it to the bottom of the ammo box with the end in the hole.</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Attaching the Bluetooth Module and Voltage Regulator</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 6" loading="lazy"></div><p>Attaching the module is quite simple really. All you need to do is to make sure that when you flick the main switch and turn the amp on, the m, the module also turns on.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Attaching the Bluetooth Module and Voltage Regulator</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Attaching the Bluetooth Module and Voltage Regulator image 6" loading="lazy"></div><p>Attaching the module is quite simple really. All you need to do is to make sure that when you flick the main switch and turn the amp on, the m, the module also turns on.</p>
 <p>Steps:</p>
 <ol>
 <li>Attach the black wire to one of the switch terminal</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the red wire from the regulator to the positive end of the battery. You can just solder this to the terminal on the female charging socket.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, attach another wire to the other switch terminal and attach this to the negative end of the battery. Again, you can just solder to the terminal on the female charging socket.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, it's time to attach the speaker wires, power jack and audio jack into the amp. Plug everything in and make sure it all works.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

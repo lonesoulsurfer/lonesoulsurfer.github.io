@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,169 +163,209 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Nerf Hack - Battery Powered Water Pistol V2</span>
 </nav>
 <h1>Nerf Hack - Battery Powered Water Pistol V2</h1><div class="source"><a href="https://www.instructables.com/Nerf-Hack-Battery-Powered-Water-Pistol-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Greetings.</p>
-<p>As the description indicates, this is my second try at making an automatic water pistol from a Nerf gun. Although I was happy with my first try, I was starting to get seriously frustrated with how many 9v batteries it was going through. The pump I used (same in in this ‘ible) is for a windscreen washer and runs on 12v’s. Running it on 9v’s worked ok but as soon as the voltage reduced, it would slow down and start to sputter.</p>
-<p>This time I went with 2 Li-ion batteries. Each battery is 3.7v, making 7.4v for 2 of them together. Even though the voltage doesn’t come to 12v, the amperage more than makes up for it. The biggest benefit I have found though is the pump is tonnes more powerful and the batteries last a hell lot longer.</p>
-<p>Initially I installed a step-up voltage regulator to bring the power up to 12v. Throughout the ‘ible you’ll see images of the regulator. The reason why I wanted to add one was 2 fold; first, I thought bringing the voltage to 12v would mean more power for the pump. Second, the charging module that I brought would only charge 1 battery at a time or 2 in series. I wired-up the batteries so that they were in series and would charge as 3.7v. I ran into problems though with the voltage output to the pump. When I measured the voltage from the regulator it read 12v but when I pulled the trigger and measured the voltage to the motor it only read 3.5v. For some reason the pump was only drawing power from 1 battery. It was probably the way that I re-wired the battery holder to turn it into a series one. This idea I believe would work but I’ll think I’ll leave it for version 3…</p>
-<p>The way that I got around charging 2 batteries was I added 2 female sockets, one for each battery. It means that you have to charge twice (not ideal) but as charging is infrequent, it doesn’t really matter.</p>
+<p>As the description indicates, this is my second try at making an automatic water pistol from a Nerf gun.</p>
+<p>Although I was happy with my first try, I was starting to get seriously frustrated with how many 9v batteries it was going through.</p>
+<p>The pump I used (same in in this ‘ible) is for a windscreen washer and runs on 12v’s.</p>
+<p>Running it on 9v’s worked ok but as soon as the voltage reduced, it would slow down and start to sputter.</p>
+<p>This time I went with 2 Li-ion batteries.</p>
+<p>Each battery is 3.7v, making 7.4v for 2 of them together.</p>
+<p>Even though the voltage doesn’t come to 12v, the amperage more than makes up for it.</p>
+<p>The biggest benefit I have found though is the pump is tonnes more powerful and the batteries last a hell lot longer.</p>
+<p>Initially I installed a step-up voltage regulator to bring the power up to 12v.</p>
+<p>Throughout the ‘ible you’ll see images of the regulator.</p>
+<p>The reason why I wanted to add one was 2 fold; first, I thought bringing the voltage to 12v would mean more power for the pump.</p>
+<p>Second, the charging module that I brought would only charge 1 battery at a time or 2 in series.</p>
+<p>I wired-up the batteries so that they were in series and would charge as 3.7v.</p>
+<p>I ran into problems though with the voltage output to the pump.</p>
+<p>When I measured the voltage from the regulator it read 12v but when I pulled the trigger and measured the voltage to the motor it only read 3.5v.</p>
+<p>For some reason the pump was only drawing power from 1 battery.</p>
+<p>It was probably the way that I re-wired the battery holder to turn it into a series one.</p>
+<p>This idea I believe would work but I’ll think I’ll leave it for version 3…</p>
+<p>The way that I got around charging 2 batteries was I added 2 female sockets, one for each battery.</p>
+<p>It means that you have to charge twice (not ideal) but as charging is infrequent, it doesn’t really matter.</p>
 <p>Enough of me rambling – let’s get on with the Instructable.</p><h2><span class="step-num">STEP 1</span>Step 1: Watch the Video...</h2><h2><span class="step-num">STEP 2</span>Step 2: ​Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: ​Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: ​Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: ​Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: ​Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: ​Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: ​Things to Gather image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: ​Things to Gather image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: ​Things to Gather image 8" loading="lazy"></div><p>Bits</p>
 <ol>
 <li>Nerf Gun. I used a “strong arm’ Nerf gun but just use whatever you have lying around or buy a cheap one.</li>
-</ul>
+</ol>
 <ol>
-<li>Water pump – eBay</li>
-</ul>
+<li>Water pump – <a href="http://www.ebay.com.au/itm/Windscreen-Washer-Pump-Water-Bottle-Single-Outlet-12V-For-Car-Truck-Bus-Van-/321587054935?hash=item4ae0150957:g:GIAAAOSwuTxV9PkJ">eBay</a></li>
+</ol>
 <ol>
 <li>Cheap water pistol. This is a good source of parts which you can savage</li>
-</ul>
+</ol>
 <ol>
 <li>Thin tubing. You can get this from pet shops</li>
-</ul>
+</ol>
 <ol>
-<li>2 x Li Ion battery holder – eBay</li>
-</ul>
+<li>2 x Li Ion battery holder – <a href="http://www.ebay.com.au/itm/High-Quality-Plastic-Battery-Holder-Storage-Box-Case-for-18650-With-Wire-Lead-/331640738187?var=&hash=item4d3754118b:m:mNxYaBhzpKBiojoy34PLbRA">eBay</a></li>
+</ol>
 <ol>
-<li>2 x Li Ion Batteries – eBay</li>
-</ul>
+<li>2 x Li Ion Batteries – <a href="http://www.ebay.com.au/itm/2x-For-UltraFire-3-7V-Protected-Li-ion-Rechargeable-18650-Battery-4000mAh-/191619105230?hash=item2c9d6381ce:g:ezcAAOSwu4BVlP4L">eBay</a></li>
+</ol>
 <ol>
-<li>Lever switch – eBay</li>
-</ul>
+<li>Lever switch – <a href="http://www.ebay.com.au/itm/5Pcs-AC-125V-250V-5A-SPDT-3Pin-Long-Hinge-Lever-Momentary-Micro-Switch-/331569772277?hash=item4d331936f5:g:4qIAAOSwPcVViv86">eBay</a></li>
+</ol>
 <ol>
 <li>Drink bottle. I used an iced tea one but you could use whatever you have on hand. I would suggest though using one with a larger than usual lid as this will make it easier to attach to the nerf gun.</li>
-</ul>
+</ol>
 <ol>
-<li>T joints – eBay</li>
-</ul>
+<li>T joints – e<a href="http://www.ebay.com.au/itm/181572341460?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">Bay</a></li>
+</ol>
 <ol>
 <li>Various screws</li>
-</ul>
+</ol>
 <ol>
-<li>Charging Module – eBay</li>
-</ul>
+<li>Charging Module – <a href="http://www.ebay.com.au/itm/2x-Micro-USB-1A-5V-18650-Lithium-Battery-Charging-Board-Charger-Module-SOZ-/161837789664?hash=item25ae48b1e0">eBay</a></li>
+</ol>
 <ol>
-<li>Male and female jacks – eBay and eBay</li>
-</ul>
+<li>Male and female jacks – <a href="http://www.ebay.com.au/itm/261475595942?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT">[eBay</a>](http://www.ebay.com.au/itm/321742627473?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT) and eBay</li>
+</ol>
 <ol>
 <li>Spare lengths of wire</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>The usual screwdrivers, phillips heads etc</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Gun</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Gun image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Gun image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Gun image 3" loading="lazy"></div><p>Steps</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Gun</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Gun image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Gun image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Gun image 3" loading="lazy"></div><p>Steps</p>
 <ol>
 <li>Un-screw all of the screws holding the gun together. Nerf guns are notorious for lots of screws and usually 1 hidden one somewhere</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have your gun apart, start to assess how the extra parts will fit into your gun. You will probably discard most of the inner parts as you will need room for the batteries etc. Remember though to keep the trigger complete as you can use this for activate the water pistol.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have worked ot where everything is to go, you can start to add the lever switch</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Switch image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Switch image 4" loading="lazy"></div><p>The nerf gun that I used pretty much had a spot for me to add the level switch and I didn’t have to do much moding. The important thing when adding the switch is to make sure that the trigger moves freely and activates the switch when pulled back. Where you locate the lever switch will depend on what gun you are using</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Switch image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Switch image 4" loading="lazy"></div><p>The nerf gun that I used pretty much had a spot for me to add the level switch and I didn’t have to do much moding.</p>
+<p>The important thing when adding the switch is to make sure that the trigger moves freely and activates the switch when pulled back.</p>
+<p>Where you locate the lever switch will depend on what gun you are using</p>
 <p>Steps:</p>
 <ol>
 <li>Find a good spot to attach the switch. Make sure that when the trigger is pulled back, the lever on the witch is also pushed.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder some wires to the terminals on the switch</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue into place</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Jack Sockets</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Jack Sockets image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Jack Sockets image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Jack Sockets image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Jack Sockets image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Jack Sockets image 5" loading="lazy"></div><p>So the only way I could work out to charge the batteries was to add 2 sockets. This way you can charge each battery separately.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Jack Sockets</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Jack Sockets image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Jack Sockets image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Jack Sockets image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Jack Sockets image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Jack Sockets image 5" loading="lazy"></div><p>So the only way I could work out to charge the batteries was to add 2 sockets. This way you can charge each battery separately.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill 2 holes in the handle big enough to fit the jack sockets into. Screw into place</li>
-</ul>
+</ol>
 <ol>
 <li>Add some wires to the terminals. I made the centre pin positive and the outer section negative</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Wiring Everything Up</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Everything Up image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Everything Up image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Everything Up image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Everything Up image 4" loading="lazy"></div><p>Next thing to do is to wire the battery to the switch and sockets. I have included a schematic as easier to show you then to explain.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring Everything Up</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Everything Up image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Everything Up image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Everything Up image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Everything Up image 4" loading="lazy"></div><p>Next thing to do is to wire the battery to the switch and sockets. I have included a schematic as easier to show you then to explain.</p>
 <p>Steps:</p>
 <ol>
 <li>Check out the schematic and wire everything up as shown.</li>
-</ul>
+</ol>
 <ol>
 <li>You need to wire each battery up to one of the jack sockets. I had to solder a couple of wires directly to the battery holder so I could charge each one separately.</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue the battery holder to the inside of the gun</li>
-</ul>
+</ol>
 <p>(ignore the little circuit board in one of the images, it was a step-up regulator that I decided not to use.)</p><h2><span class="step-num">STEP 7</span>Step 7: Hacking a Water Pistol</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Hacking a Water Pistol image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Hacking a Water Pistol image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Hacking a Water Pistol image 3" loading="lazy"></div><p>This isn't a necessary step but it does make things a lot easier.</p>
 <p>Steps:</p>
 <ol>
 <li>Pull apart the water pistol</li>
-</ul>
+</ol>
 <ol>
 <li>Put aside the sprayer part as well as any tubing</li>
-</ul>
+</ol>
 <ol>
 <li>There might be other bits that you can use so just pull everything off it and keep.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Sprayer</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Sprayer image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Sprayer image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Sprayer image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Sprayer image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Sprayer image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Sprayer image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Sprayer image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Sprayer image 8" loading="lazy"></div><p>This is really just a hack that I did in order to attach the sprayer to the gun. It will be different for everyone but I'll still go through what I did</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Sprayer</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Sprayer image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Sprayer image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Sprayer image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Sprayer image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Sprayer image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Sprayer image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Sprayer image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Sprayer image 8" loading="lazy"></div><p>This is really just a hack that I did in order to attach the sprayer to the gun. It will be different for everyone but I'll still go through what I did</p>
 <p>Steps:</p>
 <ol>
 <li>Work out a way to attach the sprayer to the end of the gun. I salvaged a few odds and ends from the water pistol and used these.</li>
-</ul>
+</ol>
 <ol>
 <li>First I glued the sprayer to the cowling from the water pistol</li>
-</ul>
+</ol>
 <ol>
 <li>next I got a piece of 15mm PVC pipe and added some masking tape to it. I then pushed it into the end of the nerf gun.</li>
-</ul>
+</ol>
 <ol>
 <li>Next I glued the cowling to the PVC pipe inside the water pistol.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Pump</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Pump image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Pump image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Pump image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Pump image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Pump image 5" loading="lazy"></div><p>This pump was actually my second choice. I tried another but it didn't work as well as I had hoped.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Pump</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Pump image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Pump image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Pump image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Pump image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Pump image 5" loading="lazy"></div><p>This pump was actually my second choice. I tried another but it didn't work as well as I had hoped.</p>
 <p>Steps:</p>
 <ol>
 <li>Decide where to attach the pump. This is obvious but it's important that the pumps inlet and outlet are facing the correct way.</li>
-</ul>
+</ol>
 <ol>
 <li>Screw the pump to the frame of the nerf gun</li>
-</ul>
+</ol>
 <ol>
 <li>Add a piece of tubing to the inlet section of the pump. The end of the tube has to come out the top of the gun as this is where the water bottle will be attached to. I used a 90 degree elbow so the tube wouldn't be bent.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a hole into the top of the gun and hot glue the elbow into place</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Putting the Gun Together</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Putting the Gun Together image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Putting the Gun Together image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Putting the Gun Together image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Putting the Gun Together image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Putting the Gun Together image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Putting the Gun Together image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Putting the Gun Together</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Putting the Gun Together image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Putting the Gun Together image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Putting the Gun Together image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Putting the Gun Together image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Putting the Gun Together image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Putting the Gun Together image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Connect the tubing from the nozzle to the outlet section of the pump</li>
-</ul>
+</ol>
 <ol>
 <li>Add the batteries and make sure the pump is wired up correctly. you should feel a little air coming out of the end</li>
-</ul>
+</ol>
 <ol>
 <li>Screw together the gun</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding the Lid and Water Bottle</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Lid and Water Bottle image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Lid and Water Bottle image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Lid and Water Bottle image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Lid and Water Bottle image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Lid and Water Bottle image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Lid and Water Bottle</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Lid and Water Bottle image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Lid and Water Bottle image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Lid and Water Bottle image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Lid and Water Bottle image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Lid and Water Bottle image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Drill 3 holes into the bottle lid. One in the middle for the elbow outlet and 2 for the screws that will be used to attach the lid to the gun.</li>
-</ul>
+</ol>
 <ol>
 <li>Screw the lid into place with some self-tapping screws and add some hot glue to the elbow and screws.</li>
-</ul>
+</ol>
 <ol>
 <li>Add some water to the bottle and test.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Making the Charger</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Making the Charger image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Making the Charger image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Making the Charger image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Making the Charger image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Making the Charger image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Making the Charger image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Making the Charger image 7" loading="lazy"></div><p>The charger is quite easy to make. All you have to make sure of is the polarities to the male jack</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Making the Charger</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Making the Charger image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Making the Charger image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Making the Charger image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Making the Charger image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Making the Charger image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Making the Charger image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Making the Charger image 7" loading="lazy"></div><p>The charger is quite easy to make. All you have to make sure of is the polarities to the male jack</p>
 <p>Steps:</p>
 <ol>
 <li>Solder 2 wires to the solder points to the charging module.</li>
-</ul>
+</ol>
 <ol>
 <li>Next solder the positive to the centre point on the jack and the negative to the outside of the jack.</li>
-</ul>
+</ol>
 <ol>
 <li>Pull the plastic cover over the jack - done</li>
-</ul>
-<p>Test but plugging the charger module into a 5v adapter and into one of the female sockets. The light should come on the charging module. After awhile it will start to flash. As it chargers the battery the light will flash slower until it is completely off. This means the battery is fully charged.</p><h2><span class="step-num">STEP 13</span>Step 13: Testing</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Testing image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Testing image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Testing image 3" loading="lazy"></div><p>So now you have built your water pistol, it''s time to give it a test run. I found that the pump didn't work the first time that I used it and I had to loosen the screws holding the gears in place a little. Once I did this the pump worked fine.</p>
+</ol>
+<p>Test but plugging the charger module into a 5v adapter and into one of the female sockets.</p>
+<p>The light should come on the charging module.</p>
+<p>After awhile it will start to flash.</p>
+<p>As it chargers the battery the light will flash slower until it is completely off.</p>
+<p>This means the battery is fully charged.</p><h2><span class="step-num">STEP 13</span>Step 13: Testing</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Testing image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Testing image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Testing image 3" loading="lazy"></div><p>So now you have built your water pistol, it''s time to give it a test run.</p>
+<p>I found that the pump didn't work the first time that I used it and I had to loosen the screws holding the gears in place a little.</p>
+<p>Once I did this the pump worked fine.</p>
 <p>The Iced tea bottles that I used come in 2 sizes which is handy if you have a toddler who wants to have a shot.</p>
 <p>I would still like to try and use the step-up regulator and I'll try work out what went wrong last time aand fix it. It would make charging the batteries a lot quicker.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

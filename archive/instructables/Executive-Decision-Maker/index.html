@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -133,170 +168,194 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Pocket sized, portable and fun – just follow this ‘ible to make your own.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>2 X 150R resistors - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>2 X 10K resistor - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X 2.2uf capacitor - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X red LED - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X green LED - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X 555 IC – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X mercury switch – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X momentary switch – ebay</li>
-</ul>
+</ol>
 <ol>
 <li>Perf Board – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>Small container (I used a dental floss container)</li>
-</ul>
+</ol>
 <ol>
 <li>2 X CR2032 Batteries – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>1 X CR2032 battery holder (Holds 2 of the batteries) – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>wire</li>
-</ul>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Solder and soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Wire snips</li>
-</ul>
+</ol>
 <ol>
 <li>Bread board</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: The Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: The Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Circuit image 2" loading="lazy"><img src="images/step02_03.gif" alt="Step 2: The Circuit image 3" loading="lazy"></div><p>The circuit is quite simple but like any electronic project, it’s best to breadboard the circuit first. I changed a couple of the values on the original schematic which I found on-line. I increased the value of the capacitor as I wanted the LED’s to blink quickly.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: The Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: The Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Circuit image 2" loading="lazy"><img src="images/step02_03.gif" alt="Step 2: The Circuit image 3" loading="lazy"></div><p>The circuit is quite simple but like any electronic project, it’s best to breadboard the circuit first.</p>
+<p>I changed a couple of the values on the original schematic which I found on-line.</p>
+<p>I increased the value of the capacitor as I wanted the LED’s to blink quickly.</p>
 <p>Also missing from the schematic is momentary switch which just goes onto the positive wire of the battery</p>
 <p>You can play around with the values if you want to on the capacitor. A lower one like 1uf will make the LED’s seem like they don’t flash as they are flashing so fast.</p>
 <p>In the following steps I’lll go through step by step how to solder the components together on the perf board</p><h2><span class="step-num">STEP 3</span>Step 3:</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: image 4" loading="lazy"></div><h2><span class="step-num">STEP 4</span>Step 4: Soldering the 555 IC</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the 555 IC image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the 555 IC image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Place the 555 timer into the perf board</li>
-</ul>
+</ol>
 <ol>
 <li>Orientate it so the small half circle on the 555 is on the left hand side. This will make sure that you have the timer orientated the same as the images.</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully solder each leg to the perf board.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Pins 2, 6 and 4, 8 on the 555</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 5" loading="lazy"></div><p>There are a couple of pins that you need to connect. These are 2 and 6 as well as 4 and 8. To reduce the amount of wire on the board, i found that it's best to connect these pins together on the solder side of the perf board.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Pins 2, 6 and 4, 8 on the 555</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Pins 2, 6 and 4, 8 on the 555 image 5" loading="lazy"></div><p>There are a couple of pins that you need to connect.</p>
+<p>These are 2 and 6 as well as 4 and 8.</p>
+<p>To reduce the amount of wire on the board, i found that it's best to connect these pins together on the solder side of the perf board.</p>
 <p>Steps</p>
 <p>Pins 2 and 6</p>
 <ol>
 <li>Cut a leg off a resistor and add a little bit of solder to one end</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the wire to pin 2.</li>
-</ul>
+</ol>
 <ol>
 <li>Bend the wire so it is touching pin 6 and add some solder to it.</li>
-</ul>
+</ol>
 <ol>
 <li>Cut off the excess wire.</li>
-</ul>
+</ol>
 <p>Pins 4 and 8</p>
 <ol>
 <li>You need to do the same thing for pins 4 and 8 but will need to insulate the wire so it doesn't touch the other one.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have soldered one end down, add a small piece of shrink tube to the wire and solder the other end down</li>
-</ul>
+</ol>
 <ol>
 <li>Heat the shrink tube so it contracts around the wire</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Pins 1 and 2 on the 555</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Pins 1 and 2 on the 555 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Pins 1 and 2 on the 555 image 2" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Pins 1 and 2 on the 555</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Pins 1 and 2 on the 555 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Pins 1 and 2 on the 555 image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a wire from pin 1 on the 555 to where you want to make the ground (negative) point on the perf board</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the negative leg of the 2.2 uf capacitor to pin 1 (ground) on the 555</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the positive end of the capacitor to pin 2</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you need to connect pins 2 and 6 together on the 555. Just use a small leg from a resistor and solder this directly to the pins as shown in the images.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Pin 2, 7 and 8, Mercury Switch and Resistors image 6" loading="lazy"></div><p>Steps:</p>
 <p>Time to solder the mercury switch and 2 x 10K resistors to the board.</p>
 <ol>
 <li>Solder one of the wires from the mercury switch pin 2 of the 555.</li>
-</ul>
+</ol>
 <ol>
 <li>Next solder the 2 resistors in series</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the other leg of the mercury switch to one of the legs of the resistors</li>
-</ul>
+</ol>
 <ol>
 <li>The other leg of the resistors needs to be soldered to positive so you need to add a wire to connect this to pin 8</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, add a wire from pin 7 to where the 2 resistors are connected together.</li>
-</ul>
-<p>Note: just in case you are new to creating circuits. Usually there are a few connections to positive and negative. You can just make an area for these which all positive and negative connections connect</p><h2><span class="step-num">STEP 8</span>Step 8: Pin 3 - Adding the LEDs</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 5" loading="lazy"></div><p>Pin 3 is connected to both the LED’s. As the LED’s are at either end of the perf board, you will need to add a couple of wires to connect them</p>
+</ol>
+<p>Note: just in case you are new to creating circuits.</p>
+<p>Usually there are a few connections to positive and negative.</p>
+<p>You can just make an area for these which all positive and negative connections connect</p><h2><span class="step-num">STEP 8</span>Step 8: Pin 3 - Adding the LEDs</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Pin 3 - Adding the LEDs image 5" loading="lazy"></div><p>Pin 3 is connected to both the LED’s. As the LED’s are at either end of the perf board, you will need to add a couple of wires to connect them</p>
 <p>Steps:</p>
 <ol>
 <li>Solder the 150R resistors in series like you did with the 10K ones.</li>
-</ul>
+</ol>
 <ol>
 <li>Add a wire from pin 7 to the section where the resistors join</li>
-</ul>
+</ol>
 <ol>
 <li>You will be adding one leg from each of the LED’s to the other ends of the resistors.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the negative leg of the LED to the first resistor. (You may need to add wires for all of these connections in order to be able to attach them.)</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the positive end of the LED to pin 8 on the 555</li>
-</ul>
+</ol>
 <ol>
 <li>For the other LED, connect the positive end to the other resistor and the negative to pin 1 on the 555</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Batteries and Mercury Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Batteries and Mercury Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Batteries and Mercury Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Batteries and Mercury Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Batteries and Mercury Switch image 4" loading="lazy"></div><p>The battery holder comes with its own little on/off switch which is great as it means you don’t have to add one.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Batteries and Mercury Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Batteries and Mercury Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Batteries and Mercury Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Batteries and Mercury Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Batteries and Mercury Switch image 4" loading="lazy"></div><p>The battery holder comes with its own little on/off switch which is great as it means you don’t have to add one.</p>
 <p>Steps:</p>
 <ol>
 <li>First decide how long the battery wires will need to be. You will need to stick the perf board onto the bottom of the battery holder so this will help you decide on where to cut them</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the positive wire to the positive section on the perf board</li>
-</ul>
+</ol>
 <ol>
 <li>Do the same for the negative wire and negative section on the perf board</li>
-</ul>
+</ol>
 <ol>
 <li>Add a couple of batteries to the battery holder</li>
-</ul>
+</ol>
 <ol>
 <li>Test and make sure that it works.</li>
-</ul>
+</ol>
 <ol>
 <li>To secure the circuit onto the battery holder, just add some hot glue and stick down.</li>
-</ul>
+</ol>
 <ol>
 <li>You may have to adjust the mercury switch to ensure that it turns off when the battery and perf board are tilted. Just angle it slightly and test until it is at the right angle. Once it works, add some hot glue to keep in place</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Done</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Done image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Done image 2" loading="lazy"></div><p>That’s it!</p>
-<p>This version I didn’t add an enclosure as I wanted to show how it looked without one. You can add one easily however if you want to. I used a dental floss container (great for adding electronics to as they usually open right up!) and added the parts inside of it.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Done</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Done image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Done image 2" loading="lazy"></div><p>That’s it!</p>
+<p>This version I didn’t add an enclosure as I wanted to show how it looked without one.</p>
+<p>You can add one easily however if you want to.</p>
+<p>I used a dental floss container (great for adding electronics to as they usually open right up!) and added the parts inside of it.</p>
 <p>Instead of the flat batteries, I used a 6 v battery (4LR44) which fits inside nicely. You will also have to add an on/off switch as well.</p>
 <p>I’ve got a couple other projects that I’m working on with the 555 timer so keep a look out for them as well.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

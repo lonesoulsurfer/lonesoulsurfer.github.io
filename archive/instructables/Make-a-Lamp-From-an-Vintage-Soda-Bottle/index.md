@@ -58,22 +58,22 @@ Let's get building...
 
 PARTS:
 
-- Vintage Soft Drink Bottle - There are literally 1000's of different bottle designs to choose from! If you type in 'vintage soft drink bottle' into eBay then you'll be able to find something you like. The one I used can be found on eBay Try to choose a bottle that either has graphics on the front or the glass itself has some type of wave in it (Look up - vintage Fanta bottle to see what I mean). Oh and somehow I managed not to take one image of the bottle so the ones shown are ripped from the net.
-- LED's - I used filament LED's which are super bright and look great. I used a red and yellow one - Ali Express
-- 10R resistor - Ali Express
+- Vintage Soft Drink Bottle - There are literally 1000's of different bottle designs to choose from! If you type in 'vintage soft drink bottle' into [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=soft+drink+bottle+tarax&_sacat=0&LH_TitleDesc=0&_odkw=vintage+soft+drink+bottle&_osacat=0) then you'll be able to find something you like. The one I used can be found on eBay Try to choose a bottle that either has graphics on the front or the glass itself has some type of wave in it (Look up - vintage Fanta bottle to see what I mean). Oh and somehow I managed not to take one image of the bottle so the ones shown are ripped from the net.
+- LED's - I used filament LED's which are super bright and look great. I used a red and yellow one - [Ali Express](https://www.aliexpress.com/item/1005002948635633.html?spm=a2g0o.detail.1000014.1.4c0a1178ELsgZ2&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40000.267768.0&scm_id=1007.40000.267768.0&scm-url=1007.40000.267768.0&pvid=bef0d9e7-efe3-4962-b0e1-840d31f35607&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40000.267768.0,pvid:bef0d9e7-efe3-4962-b0e1-840d31f35607,tpp_buckets:668%232846%238107%2368&pdp_ext_f=%7B%22sku_id%22%3A%2212000028047454207%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=2%40dis%21AUD%211.79%211.77%21%21%21%21%21%402101f6b216695126040385948e1ae6%2112000028047454207%21rec)
+- 10R resistor - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221126172831&isPremium=y&SearchText=10R+resistor&spm=a2g0o.productlist.1000002.0)
 - Thin cooper wire - Ali Express
 - Acrylic tube - Ali Express
-- Copper Tube 1/2" - You can get this from any hardware store such as Bunnings (in Australia)
+- Copper Tube 1/2" - You can get this from any hardware store such as [Bunnings](https://www.bunnings.com.au/kembla-1-2-x-1-5m-copper-straight-length_p4910028) (in Australia)
 - Copper Tube 3/4" - Hardware Store - Bunnings
 - 1/2" to 3/4" Coupling - hardware store - Bunnings
-- Brass Tube - 4.5mm ID) - Ali Express or hobby store
-- To make the copper 'rings' that hold the bottle in place I used some 1" and 50mm tubing I had. You could also make the rings yourself from brass strips - Ali Express. or hobby store
-- The section that suits on top of the bottle I made from some brass fittings. However, you can use a brass light bulb socket which I would have used as well but I couldn't wait for one to be sent!
+- Brass Tube - 4.5mm ID) - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221126174146&isPremium=y&SearchText=4.5mm+brass+tube&spm=a2g0o.productlist.1000002.0) or hobby store
+- To make the copper 'rings' that hold the bottle in place I used some 1" and 50mm tubing I had. You could also make the rings yourself from brass strips - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221126175053&isPremium=y&SearchText=2mm+brass+strip&spm=a2g0o.productlist.1000002.0). or hobby store
+- The section that suits on top of the bottle I made from some brass fittings. However, you can use a [brass light bulb socket](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221126170424&isPremium=y&SearchText=brass+Lamp+holder+socket&spm=a2g0o.productlist.1000002.0) which I would have used as well but I couldn't wait for one to be sent!
 - Wood for the Base - I used some old, thick ply wood that I had. You can use any wood really for the base - it just needs to be relatively thick (20mm or over). To keep the vintage ascetics I went with a weathered piece of wood
-- Long USB Cord - eBay
-- Braided Sleeve - 6mm - Ali Express
-- Potentiometer with on/off switch - Ali Express
-- Knob for Potentiometer - I used a shotgun shell custom knob which you can make here. You can also use a brass knob - Ali Express
+- Long USB Cord - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=micro+usb+cable+2m&_sacat=0&LH_TitleDesc=0&_odkw=soft+drink+bottle+tarax&_osacat=0)
+- Braided Sleeve - 6mm - [Ali Express](https://www.aliexpress.com/premium/braided-sleeve.html?d=y&origin=y&catId=0&initiative_id=SB_20221126172021&SearchText=braided%20sleeve&spm=a2g0o.detail.1000002.0)
+- Potentiometer with on/off switch - [Ali Express](https://www.aliexpress.com/item/1005001846005456.html?spm=a2g0o.productlist.0.0.707b4ddaW1Lcoz&algo_pvid=8cc905be-1a26-4b99-abf0-de05d8948ddc&aem_p4p_detail=20221126172441860495029031300003327589&algo_exp_id=8cc905be-1a26-4b99-abf0-de05d8948ddc-7&pdp_ext_f=%7B%22sku_id%22%3A%2212000017832053009%22%7D&pdp_npi=2%40dis%21AUD%215.82%213.96%21%21%212.66%21%21%40210318cb16695122811712054e6542%2112000017832053009%21sea&curPageLogUid=9Jsludpzt6aX&ad_pvid=20221126172441860495029031300003327589_8&ad_pvid=20221126172441860495029031300003327589_8)
+- Knob for Potentiometer - I used a shotgun shell custom knob which you can make [here](https://www.instructables.com/Shotgun-Shell-Knobs/). You can also use a brass knob - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221126172638&isPremium=y&SearchText=brass+potentiometer+knob&spm=a2g0o.productlist.1000002.0)
 TOOLS:
 
 - Soldering Iron

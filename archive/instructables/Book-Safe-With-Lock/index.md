@@ -40,7 +40,7 @@ Parts:
 
 1. A book. This will need to be a hard back book in relatively good condition. I also try to find a book with thick pages as it means less cutting and gluing.
 
-2. Lock - eBay
+2. Lock - [eBay](http://www.ebay.com.au/itm/Classical-Vintage-Drawer-Cabinet-Wardrobe-Cupboard-Door-Zinc-Alloy-Lock-Key-/282248232210?hash=item41b74e3d12:g:tkAAAOSwnbZYIDmg)
 
 3. Strip of wood. The size will depend on how deep your secret compartment is. The wood is used to line the inside of the compartment.
 

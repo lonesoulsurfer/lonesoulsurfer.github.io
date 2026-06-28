@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,101 +162,126 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Secret Stash Bullet Shell</span>
 </nav>
-<h1>Secret Stash Bullet Shell</h1><div class="source"><a href="https://www.instructables.com/Secret-Stash-Bullet-Shell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This project only was made with only 3 parts. The end result in my humble opinion, turned out pretty damn good! I have been thinking about how to turn a bullet into a secret container and had a few ideas which I tried but didn't get the look I was after. After some frustration I went back to basics and looked around in my electronic bins to see what I could use. I found a push on/off switch and had one of those eureka moments.</p>
+<h1>Secret Stash Bullet Shell</h1><div class="source"><a href="https://www.instructables.com/Secret-Stash-Bullet-Shell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This project only was made with only 3 parts.</p>
+<p>The end result in my humble opinion, turned out pretty damn good!</p>
+<p>I have been thinking about how to turn a bullet into a secret container and had a few ideas which I tried but didn't get the look I was after.</p>
+<p>After some frustration I went back to basics and looked around in my electronic bins to see what I could use.</p>
+<p>I found a push on/off switch and had one of those eureka moments.</p>
 <p>The main tool you will need in this project is a mini blow torch as there is some soldering that will need to be done. Other then that, all other tools can be improvised.</p>
-<p>So what do you keep in a bullet secret stash! Anything that fits... Actually there isn't a lot of room inside a 444 magnum shell so whatever you decide to add,, it will have to be small. I keep a rolled-up $5 note in mine, but you could easily keep a small memento, matches, small survival kit (not a bad idea actually) or whatever takes your fancy.</p>
+<p>So what do you keep in a bullet secret stash!</p>
+<p>Anything that fits...</p>
+<p>Actually there isn't a lot of room inside a 444 magnum shell so whatever you decide to add,, it will have to be small.</p>
+<p>I keep a rolled-up $5 note in mine, but you could easily keep a small memento, matches, small survival kit (not a bad idea actually) or whatever takes your fancy.</p>
 <p>So without further ado - Here is my Secret Stash Bullet Shell</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>44 magnum bullet casing - Etsy</li>
-</ul>
+<li>44 magnum bullet casing - <a href="https://www.etsy.com/au/listing/128246557/44-magnum-brass-bullet-shell-casings-10?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=44%20magnum%20bullet%20shell&ref=sr_gallery_6">Etsy</a></li>
+</ol>
 <ol>
-<li>Switch - eBay</li>
-</ul>
+<li>Switch - <a href="http://www.ebay.com.au/itm/5-Pcs-NO-Momentary-Micro-Push-Button-Switch-Torch-ON-Button-Green-SY-AU-/252199497725?hash=item3ab842effd:g:OjEAAOSwAKxWYl3Y">eBay</a></li>
+</ol>
 <ol>
 <li>Small piece of copper wire (for the loop)</li>
-</ul>
+</ol>
 <ol>
-<li>Dome nut (size M6 or 1/4 inch) - eBay</li>
-</ul>
+<li>Dome nut (size M6 or 1/4 inch) - <a href="http://www.ebay.com.au/itm/Qty-10-Dome-Nut-M6-6mm-Stainless-Steel-2-Piece-Welded-Acorn-304-A2-70-SS-/301278744689?hash=item46259cd071:g:NaMAAOSwEK9T7Xws">eBay</a></li>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Small blow torch</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Flux</li>
-</ul>
+</ol>
 <ol>
 <li>Various pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Safety glasses</li>
-</ul>
+</ol>
 <ol>
 <li>Small files</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Female Flange Section</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Female Flange Section image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Female Flange Section image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Female Flange Section image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Female Flange Section image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Female Flange Section image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Female Flange Section image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Female Flange Section image 7" loading="lazy"></div><p>Yes I know that the title is a little provocative but that's what this is called (I think...)</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Female Flange Section</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Female Flange Section image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Female Flange Section image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Female Flange Section image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Female Flange Section image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Female Flange Section image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Female Flange Section image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Female Flange Section image 7" loading="lazy"></div><p>Yes I know that the title is a little provocative but that's what this is called (I think...)</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the washer and fastener from the switch</li>
-</ul>
+</ol>
 <ol>
 <li>What you will be doing is soldering the washer to the fastener. Add a small amount of flux to the fastener and place on top of the washer</li>
-</ul>
+</ol>
 <ol>
 <li>Heat up the washer/fastener with the mini blowtorch and add some solder</li>
-</ul>
+</ol>
 <ol>
 <li>Done</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Flange to the Bullet Case</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 4" loading="lazy"></div><p>Steps.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Flange to the Bullet Case</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Flange to the Bullet Case image 4" loading="lazy"></div><p>Steps.</p>
 <ol>
 <li>Place the flange so the washer sits on top of the bullet as shown below. Make sure you add a little flux to the top of the bullet</li>
-</ul>
+</ol>
 <ol>
 <li>Next place on a hard metal surface with the washer on the bottom. Heat up and add some solder.</li>
-</ul>
+</ol>
 <ol>
 <li>Done. Now you have added the female screw section to the bullet.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Bullet Section - Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Bullet Section - Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Bullet Section - Part 1 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Bullet Section - Part 1 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Bullet Section - Part 1 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Bullet Section - Part 1 image 5" loading="lazy"></div><p>Next you will need to modify the switch for it too be used as the male section for the bullet head.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Bullet Section - Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Bullet Section - Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Bullet Section - Part 1 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Bullet Section - Part 1 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Bullet Section - Part 1 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Bullet Section - Part 1 image 5" loading="lazy"></div><p>Next you will need to modify the switch for it too be used as the male section for the bullet head.</p>
 <p>Steps:</p>
 <ol>
 <li>With a pair of wire cutters, cut the top section of the switch. This will help make sure that the drill bit sits correctly when you start to drill the section out.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the switch in a vice and drill out the centre section. This comes out pretty easily.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Bullet Section - Part 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Bullet Section - Part 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Bullet Section - Part 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Bullet Section - Part 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Bullet Section - Part 2 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Bullet Section - Part 2 image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Bullet Section - Part 2 image 6" loading="lazy"></div><p>In order for the dome nut to sit flush on the bullet, you need too remove the flange on the screw section.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Bullet Section - Part 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Bullet Section - Part 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Bullet Section - Part 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Bullet Section - Part 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Bullet Section - Part 2 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Bullet Section - Part 2 image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Bullet Section - Part 2 image 6" loading="lazy"></div><p>In order for the dome nut to sit flush on the bullet, you need too remove the flange on the screw section.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the flange with a small cutting wheel or hack saw</li>
-</ul>
+</ol>
 <ol>
 <li>File the section so it is flat and smooth</li>
-</ul>
+</ol>
 <ol>
 <li>Add some flux to the filed section and add it to the dome nut.</li>
-</ul>
+</ol>
 <ol>
 <li>Clamp it together, heat-up and add some solder.</li>
-</ul>
+</ol>
 <ol>
 <li>Done</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Test</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Test image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Test image 2" loading="lazy"></div><p>So you should now be able to screw the dome nut into the bullet case. If you wanted to stop here you could just leave it as is. I decided to give it a polish and add a loop so I could add it to a key ring or necklace.</p><h2><span class="step-num">STEP 7</span>Step 7: Adding a Loop</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Loop image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Loop image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Loop image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Loop image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding a Loop image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Test</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Test image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Test image 2" loading="lazy"></div><p>So you should now be able to screw the dome nut into the bullet case.</p>
+<p>If you wanted to stop here you could just leave it as is.</p>
+<p>I decided to give it a polish and add a loop so I could add it to a key ring or necklace.</p><h2><span class="step-num">STEP 7</span>Step 7: Adding a Loop</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Loop image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Loop image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Loop image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Loop image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding a Loop image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Twist a piece of copper wire to make a loop and arm section.</li>
-</ul>
+</ol>
 <ol>
 <li>Next add some flux and solder to the bottom of the bullet.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Give It a Polish</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Give It a Polish image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Give It a Polish image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Give It a Polish image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Give It a Polish image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Give It a Polish</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Give It a Polish image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Give It a Polish image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Give It a Polish image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Give It a Polish image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Use some metal polish and give the bullet a good going over.</li>
-</ul>
+</ol>
 <ol>
 <li>I used a general metal polish and it worked a treat.</li>
-</ul>
+</ol>
 <p>Fiinished</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

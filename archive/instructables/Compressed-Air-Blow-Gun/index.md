@@ -13,11 +13,11 @@ Source: https://www.instructables.com/Compressed-Air-Blow-Gun/
 
 I know I might sound a little fussy, but I was never that keen putting my mouth on the end of a blow gun (If you knew my brother you would understand) so I decided to build a compressed air blow gun. Also the title is somewhat of an oxymoron but It works for me.
 
-I’ve been playing around with compressed air for a while and past projects include: this, this, this and this (phew!) . After coming across a small, flat pump in an op-shop I decided to do something similar to the guns that I had made but in blow gun style.
+I’ve been playing around with compressed air for a while and past projects include: [[[[this](https://www.instructables.com/id/Hand-held-Compressed-Air-GunLauncher/)](https://www.instructables.com/id/Compressed-Air-Acorn-Launcher/)](https://www.instructables.com/id/Extreme-Airsoft-Hand-Pistol/)](https://www.instructables.com/id/Straw-Rocket-Launcher-V-11/), this, this and this (phew!) . After coming across a small, flat pump in an op-shop I decided to do something similar to the guns that I had made but in blow gun style.
 
 This is a pretty easy build; the part which might set you back though is the pump. The pump is curved and sits very nicely on the PVC so it doesn’t get in the way and keeps the blow gun streamline. You could use another pump but I think you would need to come up with a different design.
 
-The darts are easy to make (and cheap) so there is no issues with ammo. I stole the idea of the darts from The King of Random. I have also attached a laser pointer to the barrel which helps with targeting. To add the air into the air chamber, all you need to do is to push a few times on the pump, aim and pull the trigger. The more you pump, the further the dart goes!
+The darts are easy to make (and cheap) so there is no issues with ammo. I stole the idea of the darts from [The King of Random](https://www.youtube.com/watch?v=YgT8I2uxJ6o). I have also attached a laser pointer to the barrel which helps with targeting. To add the air into the air chamber, all you need to do is to push a few times on the pump, aim and pull the trigger. The more you pump, the further the dart goes!
 
 Disclaimer - This is seriously dangerous. The darts really pack a punch so if you decide to build, please don't shoot each other. I've stuck darts into wood and haven't been able to pull them out. Now just imagine that in flesh!
 
@@ -63,21 +63,21 @@ Barrel Section
 
 5. Electrical tape (used to help seal the barrel to the coupling)
 
-6. Solenoid valve – eBay
+6. Solenoid valve – [eBay](http://www.ebay.com.au/itm/Brass-Air-N-C-1-2-Normally-Closed-12V-Electric-Solenoid-Valve-Water-/262079295580?hash=item3d0524b05c:g:fiEAAOSw37tWEhYp)
 
 Electrical Parts and Other Bits
 
-1. Switch - eBay
+1. Switch - [eBay](http://www.ebay.com.au/itm/12-Pieces-Red-Button-Metal-Long-Lever-Arm-Micro-Limit-Switch-LOT-WS-/321745368244?hash=item4ae984b4b4:g:XHAAAOSwv0tVRwOi)
 
-2. Pump – The brand of pump that I used is called a "BBB Oval Integrate Pump". Basically it's concave so it fits to the bike frame better. I have added a couple of links as you might have to hunt around to get the exact one. Most bike shops though will sell a version of it. eBay Google You could also just use a round pump but it wouldn't be as slick!
+2. Pump – The brand of pump that I used is called a "BBB Oval Integrate Pump". Basically it's concave so it fits to the bike frame better. I have added a couple of links as you might have to hunt around to get the exact one. Most bike shops though will sell a version of it. [eBay](http://www.ebay.com.au/itm/BBB-Ovalintegrate-Cycle-MTB-Mountain-Road-Bike-Pump-Schrader-Presta-3-Lengths-/122050401857?var=&hash=item1c6ac55641:m:mu58H0oIiuwzceWYL_LAp-A) [Google](https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=oval+integrate+bike+pump) You could also just use a round pump but it wouldn't be as slick!
 
-3. 9v battery holder – eBay
+3. 9v battery holder – [eBay](http://www.ebay.com.au/itm/5PCS-9V-Battery-Holder-Box-Case-with-Wire-Lead-ON-OFF-Switch-Cover-New-/131226497662?hash=item1e8db5727e:g:Tj0AAMXQHPhSJa5d)
 
-4. Laser sight – eBay
+4. Laser sight – [eBay](http://www.ebay.com.au/itm/1x-Tactical-Red-Laser-Beam-Dot-Sight-Scope-for-Gun-Rifle-Weaver-Mount-Rail-LS5G-/151998943779?hash=item2363d7d223:g:RVgAAOSwFNZWzKIg)
 
 5. Cable ties
 
-6. Tyre valve - eBay
+6. Tyre valve - [eBay](http://www.ebay.com.au/itm/5-Pcs-Auto-Car-TR-414-Brass-Snap-In-Tire-Tyre-Valve-Stem-Short-Rubber-/281841245763?hash=item419f0c1e43:g:nwMAAOSwFMZWqgrM)
 
 7. Heat Shrink
 

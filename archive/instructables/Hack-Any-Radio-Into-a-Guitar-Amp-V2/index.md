@@ -36,19 +36,19 @@ I've made a few of these now and this version has added filters in the way of ca
 
 Parts
 
-1. Vintage radio. If you don't have one lying around, then try a thrift store, 2nd hand shop or eBay
+1. Vintage radio. If you don't have one lying around, then try a thrift store, 2nd hand shop or [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=vintage+radio&_sacat=0)
 
-2. 220uf Cap - eBay This is a good quality audio cap. You can use a cheaper one if you want to but it might affect the sound quality.
+2. 220uf Cap - [eBay](https://www.ebay.com.au/itm/3PC-Original-Nichicon-FW-220uf-50V-Audio-Capacitor-for-audio-cap-hifi-diy-B57/131498512823?hash=item1e9dec11b7:g:JbgAAOxykVNRrUs7&frcectupt=true) This is a good quality audio cap. You can use a cheaper one if you want to but it might affect the sound quality.
 
-3. 100nf Cap - eBay
+3. 100nf Cap - [eBay](https://www.ebay.com.au/itm/50-x-Radial-Polyester-Film-Cap-Capacitance-Capacitors-Green-2A104J-100V-100nF-5/301438025717?epid=1842430828&hash=item462f1b3ff5&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVA3MZu1BIZQLf6JPyhdIfLGN4GnmdONH3nkbTinTrXhjGBsBpht%2BPPX1VEs79A0fxIrq5vnRWKf25TsLRj4eVdXI7F8dUOHdsb0eQ0cGFMi0cc868bSdc6lkHJzU%2FAC69xTP42WQzfaFnipXzEEVxe1Duh9mXOWkKOWA5DRCp%2FtfX8u0GN%2FBu5G%2BS6z1l99tQtTpt58vP2hClrwtn66z1tq9uAE7YHfjaB%2BTS7Bw3qf%2FOyjufto3OCicfDXUOP7aLRXXF5ttJnMkh5Y85Av3In1J8JoB3CyUUXEu65VX12B3F25%2Fo%2BuNAWAUs8MjkyPwqih%2FL%2BX5TXAqvZ3GsaNk0vrITftdBRmAFyCoWp9c48fRmubiUgk8ghtEHdiVw%2FXWCOqbNg8fR1DQ48WtOd9Ze1j5Vo3CKfN%2FJptjanhJvdM9Ux%2BGoA93J94MS%2FM9TE0Sr3V%2BXiBBqZfTKcHQXd%2F4l4ZcPydf2C6WBCBjHN2s%2FEmIPDBAiwF65GuLWrehRCC6%2B5R0NmwnxWFWdJ%2Bh5Qf2XeeLI8ObrcFEjf9jNlIRzeOEJaR56weEV5FJCuFVcVubZpzFusG%2BMCpa2nOAIDvZYGKKWiNlOi0CgHQ5jYSFy%2FzZHtn6WKAkNde7SVxCZJID7XTGYCGfTbjxbu7pgMiE07SiC5He5sIqaX7sr5WIUKTHb94XcMkgcaSjobgW6DNjKj6uNbnOIFM9r6DdG7Afqt%2F4Ezg5HaiLecUSm%2Bk5Tepo1J8K7fCWFRA%2Fz3xymtBho8tninZkCkgtfmJzvdPLO15uXh2PRibhLVyvjpFvbA56w8SuXhmooLYjHE2wNwn%2BcIflAHEarV2ybGK5SCyoJ0O%2FTd6zJVIJK%2BE8edtxN4wiEhYnm0Bc2V%2BTHajo2YjrZcWTgVTzUn1FCLMRGMXHu1PlYA0iaxr6XxXk8MkjpYpvMhYrjYBZiFNLCyWC5oTSUutHZNHtkRaZJzi3ZFOnzkg%3D%3D&checksum=30143802571708cdb5179ffa4b1189de0ab1d8bcb98c&frcectupt=true)
 
-4. SPDT Switch - eBay
+4. SPDT Switch - [eBay](https://www.ebay.com.au/itm/2-Pcs-125V-6A-On-On-2-Way-SPDT-3-Terminals-Toggle-Switch-Car-Dash-Metal-12V/382005502474?hash=item58f14d620a:g:RjMAAOSw~bFWMkoM)
 
-5. 10K Potentiometer - eBay
+5. 10K Potentiometer - [eBay](https://www.ebay.com.au/itm/3Pcs-6mm-Knurled-Shaft-Single-Linear-B-Type10K-ohm-Rotary-Potentiometer-New/262852339228?epid=1684420726&hash=item3d3338661c:g:Np8AAOSwax5Yos7P)
 
-6. 1/4 mono, input jack - eBay
+6. 1/4 mono, input jack - [eBay](https://www.ebay.com.au/itm/10x-1-4-Inch-Mono-Audio-Socket-Jack-6-35mm-Female-Connector-Panel-Mount-Solder/292645282938?epid=15021549367&hash=item442304a47a&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVvKVce1pLQTQ7mz1lhN6lf3yGzFNcRp6n2S2QHwBsRlCyU4v9dG4ZbVVnO0MSmzHPYsRqueTD6eBh1ALqmz8Hqs42LfdOwyq1bcAze059Ek8nSvXhbRG3RKyOMqIoPKzdPcQtjXW3Y3CnUhMVZ8XyZZmwNpR8Khq9HfuIMf4TMgo3rI4yPt4lwBQ124RETIlLQNF5eGL9fQIlGMzeINME%2BkG49ZmCYBTiBOZ50H8lfBnlL4kcQ%2B2FW1ANWxHSQjQhWWGFwzLR0rb7emN%2FHRQXynEO5BSg5%2BVgg649lj26YVvPlAo2onVZxjJ0Pk8zkpe8Y5PxtgEH59aDroHFUyYt7xTSeV37AVtuXOlG9O4l3L6mu8SyMU64lF5hqcdRWW1KTn9oqQZmAXywWzDGIwthgL9HHGd66j%2B7Obglfjdwmcro7cTgF5pM%2FhJYGhxaQiXmhrpc7FAlgddf%2FKwSY0MxQVPzFsgSffjvOYGw2VVg3mcN56SnDYGtYp7o%2B4dgbUEFAXJAmi%2FI%2Fuxq1nOcHFJbcE3vs%2Ft8FKFt%2FIS9amqN8Ac2D4s%2F2mOehXx99i58yDv1tlsIlpPFitHkLoCnJYruTb%2B43VL1Zd5P7jp9%2F1isJ9N%2Fu%2FjbAQUAWLusMrYFsn%2BHSJrLpPDCSF5738tvcpGH622FMir2RGGx0KqiLkamfwL1BTJWJvW4Jxm2Et7zqoV72xOlaww3Ko839Kfzcyb1JYCeliWimgy0uzuM5Ah7N0CazBUPoPPTt53cmiNFNbeqsWQaQT%2BnD18bLL4ituhRIRt5JdaYsHdbGcivdjdjIxgEwj%2FbOGsP9I%2F0MheMbNMdcIqkLvBgWvGhNIlNsWGO%2BpS3Ja09vzr%2FvRjpI6h6VhxhYPwMJUx6ntNnaAhvi5SZ8hgmeSJN9XE2u7z3Hy0gpS3eWm3MEmVUgdiGbm%2Fg5QZ1ZYqgJBoF5g14%2FFY2WvkeozkmiB4sXQe5jjF5cPUo6A%3D%3D&checksum=29264528293842a417ec9170482e8beba29d3baebb8a)
 
-7. Prototype board - eBay
+7. Prototype board - [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
 8. Wires
 
@@ -164,7 +164,7 @@ Steps:
 
 ![Step 6: Making the Circuit image 2](images/step06_02.jpg)
 
-I've included a schematic for the circuit along with the fritzing file in case you want to make any changes. You can download fritzing here to make your own circuit shematics.
+I've included a schematic for the circuit along with the fritzing file in case you want to make any changes. You can download fritzing [here](http://fritzing.org/home/) to make your own circuit shematics.
 
 Steps:
 

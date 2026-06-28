@@ -31,7 +31,7 @@ The following Instructable will take you through how to wire-up the timer and an
 
 Your chickens ill thank you!
 
-I've also included a short video of the door in action.(if you are using a mobile, try this link)
+I've also included a short video of the door in action.(if you are using a mobile, try [this](https://www.youtube.com/watch?v=b85HCT4id6I&list=UU3KVtVSsFk13MCDUBh34Drw) link)
 
 Enjoy
 
@@ -54,15 +54,15 @@ Enjoy
 
 Parts:
 
-1. Electric car antenna - you can get these from your local wreckers if you have one. Alternatively you can get them on eBay
+1. Electric car antenna - you can get these from your local wreckers if you have one. Alternatively you can [get them on eBay](http://www.ebay.com.au/itm/Pro-Universal-Fits-for-Car-Auto-ELECTRIC-AERIAL-ANTENNA-WING-POWER-/271137139036?pt=AU_Car_Parts_Accessories&hash=item3f2108695c&_uhb=1)
 
-2. Timer - I used this one from eBay
+2. Timer - I used [this one](http://www.ebay.com.au/itm/New-DIN-Rail-Digital-LCD-Power-Programmable-Timer-DC-12V-16A-Time-Relay-Switch-/321129865447?pt=AU_B_I_Electrical_Test_Equipment&hash=item4ac4d4e0e7&_uhb=1) from eBay
 
 3. Power supply. You can use either a 12v battery or a 12v power source. I went with a 12v battery so if there were any power outages then it would still keep on going. The battery I scavenged was also from the wreckers and only cost me $10
 
 4. Various wires
 
-5. Terminal Strip - eBay
+5. Terminal Strip - [eBay](http://www.ebay.com.au/itm/1x-Dual-Rows-Connector-12-Position-Wire-Barrier-Terminal-Strip-Block-10A-New-/131109573367?pt=AU_B_I_Electrical_Test_Equipment&hash=item1e86bd52f7&_uhb=1)
 
 6. Screws.
 - Small ones (they need to fit into the C channel
@@ -70,13 +70,13 @@ Parts:
 
 7. Aluminium C channel - Hardware store
 
-8. Voltage Meter - eBay (optional)
+8. Voltage Meter - [eBay](http://www.ebay.com.au/itm/A-S0-Mini-DC-2-5-30V-Red-LED-Panel-Voltage-Meter-3-Digital-Display-Voltmeter-/281268289958?pt=AU_B_I_Electrical_Test_Equipment&hash=item417ce581a6&_uhb=1) (optional)
 
-9. Small switch (optional) - eBay
+9. Small switch (optional) - [eBay](https://www.ebay.com.au/itm/2-5Pcs-12mm-Mini-Round-Switch-Waterproof-Momentary-ON-OFF-Push-Button-6-Colors/263138802643?var=&hash=item3d444b7bd3&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVEH2Ke0KbaL1nd06aceKPoXc7PlKEpooSh%2B9K9p%2FaJbttVSw0OdmlTsT8KPbPO9gaGCVVTbrWpB5QBemgG4YF6afI63Rj5EDptGF19NyW%2B1%2F7io9QZweIUEa2CC6SooYw2NmYHVCX9GZMJRP6x0fBx5CRvZxT6Lt61eq8jhskGQ29oTA9BT114FXjUQc7wP%2FUVaUltO7bfOizWPkdu4joPez9Lrew32BJx7ANSKHpF%2FUNAouo5wjIDp3rVwdvLT%2BHqjqsn3TwVA6ypyHJZC74G5F6thL6M%2BTObzmuwYvhfdjIqBpCKSGAx9zDZcesUCFjOreUi4uz8tg2rBVzr9R5%2FCkG50lKw7h%2BCzoCO9Nn0EZhOL8tfNLP5nRasqXUlwbBZB6%2BVFUn4Ct2dZc1um4PhOqNzyomXBcs1uCMqCk893%2FCJBlBq0GvWnJLWRyCd9BnCRWs98nQm6IbJk8xCCLmOURaPKOojh%2BuP64az1bOVTKVLQvGWo2v9zNyDWmoEPZ7ajCF8W1RF9TSl6QklKbBlfcqR0HSKd55BT3vVqdgU3FCXRb6CB5kUq9U2KT6THZEfuLa7Y0P6%2B1%2BEfeTsnNmsrlI1Q8WmDPO55bWkQeje2VCOjFPrunYkdzryUpa8rbPnfKBo%2BuymjWN3%2BSXdyq5G9bg2WY%2BhvbnGJaausBlEtI%2B9rs%2Fo11HF%2FNk6laOMZLoO5EgMYB%2FYHRh3fu2msM3pfLj76gd2rKnnOlcG%2BUzH2862eavHIRzpQSpV7sug40VPjQeWeiW1oKhtWZlxhff1MxsdzAVtioePA4t5KrtSzfRiMMhLEDXGwMHF4r2FvMB5ygChor4sglrT9ogHzMJhk3zf1VKRrxJnlxVRNodXL5e1Us%2Fhii85MQU24Pb1XHSf%2F%2BugFTZyASHsLmPocpQ2DO1NLcUpI%2F3%2FtAcwqQYbtAKMMYJyvp12xiDis2LLR1zs09kSwS9s9OZTEGuIAh9CQ%3D%3D&checksum=263138802643a9566d46559e4e9496d43712b71880e8&frcectupt=true)
 
-10. Solar Panel - eBay
+10. Solar Panel - [eBay](http://www.ebay.com.au/itm/20W-12V-Solar-Panel-for-Camping-Boating-Caravan-Portable-Off-Grid-Applications-/111238998156?pt=AU_Solar&hash=item19e65c688c&_uhb=1)
 
-11. Solar regulator - eBay
+11. Solar regulator - [eBay](http://www.ebay.com.au/itm/130733614943?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649)
 
 Tools:
 

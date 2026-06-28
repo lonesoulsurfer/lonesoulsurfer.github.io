@@ -15,7 +15,7 @@ Source: https://www.instructables.com/Fire-Piston-V2/
 
 ![Intro 4](images/intro_04.jpg)
 
-You may have recently seen my Instructable: Simple Fire Piston that I posted recently. After building it I wanted to try and refine the process further. This Ible’ is a little more difficult but doesn’t need any fancy tools to make. If you have a saw that can cut metal and wood and some files and a drill, you can make one of these.
+You may have recently seen my Instructable: [Simple Fire Piston](https://www.instructables.com/id/Simple-Fire-Piston/) that I posted recently. After building it I wanted to try and refine the process further. This Ible’ is a little more difficult but doesn’t need any fancy tools to make. If you have a saw that can cut metal and wood and some files and a drill, you can make one of these.
 
 This Ible’ also includes a small wooden case so I can keep all of the parts together. Plus it would make a pretty neat gift to give to someone.
 
@@ -23,7 +23,7 @@ For those who may be new to a fire piston, what it does is allow you to ignite c
 
 In step 7 I go through how to make Char cloth.
 
-Check out this link if you would like to learn more about the fire piston.
+[Check out this link](https://en.wikipedia.org/wiki/Fire_piston) if you would like to learn more about the fire piston.
 
 
 ## Step 1: Parts and Tools
@@ -50,15 +50,15 @@ Parts:
 
 4. Small door knob. hardware store
 
-5. O ring – Hardware store, eBay. Best to buy a bunch of assorted ones as this will give you more options. I found the O rings I purchased from eBay worked very well.
+5. O ring – Hardware store, [eBay.](http://www.ebay.com.au/itm/225-x-18-Size-Rubber-O-Ring-O-Ring-Washer-Seals-Assorted-Black-Car-Air-Gas-Kit/152174111698?_trksid=p2045573.c100506.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190705%26meid%3De1c92e0c2a2a4e43aae1186c6cc0d850%26pid%3D100506%26rk%3D1%26rkt%3D1%26) Best to buy a bunch of assorted ones as this will give you more options. I found the O rings I purchased from eBay worked very well.
 
-6. Wooden box. eBay
+6. Wooden box. [eBay](http://www.ebay.com.au/itm/Pen-Case-Handmade-Wooden-Pencil-Box-Storage-Organizer-Cute-Hollow-White-/262314323388?hash=item3d1326edbc:g:SokAAOSwuAVW1U7m)
 
 7. Foam – hardware store. I used some foam from an old cushion
 
 8. Small tin – eBay. I just used a small mint tin.
 
-9. Small bottle – eBay
+9. Small bottle – [eBay](http://www.ebay.com.au/itm/20pcs-Small-Bottle-2ml-Clear-Glass-Bottles-Vials-with-Plastic-Lid-16-31mm-/331908517992?hash=item4d474a1068:g:cywAAOSwYSlXh2xl)
 
 10. Silicone plumbers grease (this is to lubricate the O ring). You can add motor oil but I've been told that this can break down the O ring. You can buy this at any hardware store (plumbing section)
 
@@ -252,7 +252,7 @@ Steps:
 
 Making char cloth is super easy and there are plenty of good instructions on the net on how to make it.
 
-Check out this wikipedia link to see how it all works
+Check out [this wikipedia link](https://en.wikipedia.org/wiki/Char_cloth) to see how it all works
 
 Steps:
 
@@ -306,7 +306,7 @@ Steps:
 
 ![Step 9: Making the Box image 7](images/step09_07.jpg)
 
-Actually, you don’t need to make the box as you can just buy on one eBay. You will however need to cut the foam to fit the fire piston, tin, oil, char cloth and picking tool. I designed 2 different types of boxes. One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - Typesets of the Future. In it he reviews the typography of different movies, one of them being Alien. A artist called Ron Cobb came up with some iconography he called the Semiotic standard. They are a way of communicating with images. Anyhow I decided to create my own for this project which can be seen in the below image.
+Actually, you don’t need to make the box as you can just buy on one eBay. You will however need to cut the foam to fit the fire piston, tin, oil, char cloth and picking tool. I designed 2 different types of boxes. One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - [Typesets of the Future](https://typesetinthefuture.com/). In it he reviews the typography of different movies, one of them being Alien. A artist called [Ron Cobb](https://wharferj.wordpress.com/2012/05/25/ron-cobbs-alien-semiotic-standards/) came up with some iconography he called the [Semiotic standard](https://www.google.com.au/search?q=semiotic+standard&oq=semiotic+standard&aqs=chrome..69i57j69i59j69i60l3j69i61.3260j0j7&sourceid=chrome&ie=UTF-8). They are a way of communicating with images. Anyhow I decided to create my own for this project which can be seen in the below image.
 
 Steps:
 
@@ -333,7 +333,7 @@ Done
 
 ![Step 10: Other Box Designs image 4](images/step10_04.jpg)
 
-I designed 2 different types of boxes. One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - Typesets of the Future. In it he reviews the typography of different movies, one of them being Alien. A artist called Ron Cobb came up with some iconography he called the Semiotic standard. They are a way of communicating with images. Anyhow I decided to create my own for this project. They're no where near as cool as Rob Cobb's designs but it was fun to come up with some of my own designs.
+I designed 2 different types of boxes. One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - [Typesets of the Future](https://typesetinthefuture.com/). In it he reviews the typography of different movies, one of them being Alien. A artist called [Ron Cobb](http://roncobb.net/) came up with some iconography he called the [Semiotic standard](https://www.google.com.au/search?q=Semiotic+standard&oq=Semiotic+standard&aqs=chrome..69i57j0l2.564j0j4&sourceid=chrome&ie=UTF-8). They are a way of communicating with images. Anyhow I decided to create my own for this project. They're no where near as cool as Rob Cobb's designs but it was fun to come up with some of my own designs.
 
 
 ## Step 11: Using Your Fire Piston

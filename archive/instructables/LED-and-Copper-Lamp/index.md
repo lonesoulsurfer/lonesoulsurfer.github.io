@@ -54,17 +54,17 @@ Other Parts:
 
 2. Thin wire
 
-3. Brass tube (1mm) - eBay You could use stiff brass wire here too. It just needs to be straight, not too thick and able to be soldered onto
+3. Brass tube (1mm) - [eBay](http://www.ebay.com.au/itm/K-S-Thin-Wall-Brass-Tube-1mm-OD-x-225mm-Wall-4-9830-/122353517308?hash=item1c7cd682fc:g:xvgAAOSw4CFYoGPj) You could use stiff brass wire here too. It just needs to be straight, not too thick and able to be soldered onto
 
-4. 2 X Glass fuses - eBay
+4. 2 X Glass fuses - [eBay](http://www.ebay.com.au/itm/72Pcs-set-6X30mm-Quick-Fast-Blow-Glass-Tube-Fuse-With-Fuses-Holder-Assorted-Kit-/291976238539?hash=item43fb23d5cb:g:FV4AAOSwnHZYV3yt)
 
-5. 4 X Fuse Holders - eBay
+5. 4 X Fuse Holders - [eBay](http://www.ebay.com.au/itm/72Pcs-set-6X30mm-Quick-Fast-Blow-Glass-Tube-Fuse-With-Fuses-Holder-Assorted-Kit-/291976238539?hash=item43fb23d5cb:g:FV4AAOSwnHZYV3yt)
 
-5. 4 X Flickering LED's (3mm) - eBay
+5. 4 X Flickering LED's (3mm) - [eBay](http://www.ebay.com.au/itm/181829054907?_trksid=p2060353.m2749.l2649&var=480777164662&ssPageName=STRK%3AMEBIDX%3AIT)
 
-6. 3 X AAA Battery Holders - eBay
+6. 3 X AAA Battery Holders - [eBay](http://www.ebay.com.au/itm/2Pcs-Single-Side-1-x-1-5V-AAA-Battery-Case-Holder-Case-Black-WS-/322117019877?hash=item4affaba8e5:g:vfMAAOSwxj5XQPf0)
 
-7. Toggle switch - eBay
+7. Toggle switch - [eBay](http://www.ebay.com.au/itm/5-x-On-On-Sub-Miniature-Small-Mini-Toggle-Switch-Round-Handle-3P-Red-/131877860502?hash=item1eb4887496:g:Dw4AAOSwUxNXh4ZT)
 
 
 ## Step 2: Making the Switch Section

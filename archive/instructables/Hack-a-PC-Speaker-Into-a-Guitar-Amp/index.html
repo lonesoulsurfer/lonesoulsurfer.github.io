@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,63 +162,87 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Hack a PC Speaker Into a Guitar Amp</span>
 </nav>
-<h1>Hack a PC Speaker Into a Guitar Amp</h1><div class="source"><a href="https://www.instructables.com/Hack-a-PC-Speaker-Into-a-Guitar-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Remember computer speakers? You can still buy them but it seems most people no longer worry about attaching external speakers via wires to their PC's anymore. Why bother really when everything is wireless these days.</p>
-<p>I came across some old computer speakers on a recent trip to the tip shop (yes my local tip has a shop and it's amazing). Initially I wanted to pull the speakers out for another project I'm working on, but then I started to wonder whether I could turn one of the speakers into an amp and portable speaker . The answer is a definite YES!</p>
-<p>You can find old computer speakers at most op shops or junk stores for a couple of bucks or check out eBay, there's plenty on there. Make sure you don't pay too much for them. The whole project cost me about $8 and that's including the battery!</p>
-<p>What really amazed me was how damn good the sound was. All of these computer speakers have an amplifier built into them – it’s how your able to increase the volume. What this hack allows you to do is to tap into the speakers amplifier so you can play guitar through it. I've also modded the audio input so you can play your iPhone or or MP3 player through it as well.</p>
+<h1>Hack a PC Speaker Into a Guitar Amp</h1><div class="source"><a href="https://www.instructables.com/Hack-a-PC-Speaker-Into-a-Guitar-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Remember computer speakers?</p>
+<p>You can still buy them but it seems most people no longer worry about attaching external speakers via wires to their PC's anymore.</p>
+<p>Why bother really when everything is wireless these days.</p>
+<p>I came across some old computer speakers on a recent trip to the tip shop (yes my local tip has a shop and it's amazing).</p>
+<p>Initially I wanted to pull the speakers out for another project I'm working on, but then I started to wonder whether I could turn one of the speakers into an amp and portable speaker .</p>
+<p>The answer is a definite YES!</p>
+<p>You can find old computer speakers at most op shops or junk stores for a couple of bucks or check out eBay, there's plenty on there.</p>
+<p>Make sure you don't pay too much for them.</p>
+<p>The whole project cost me about $8 and that's including the battery!</p>
+<p>What really amazed me was how damn good the sound was.</p>
+<p>All of these computer speakers have an amplifier built into them – it’s how your able to increase the volume.</p>
+<p>What this hack allows you to do is to tap into the speakers amplifier so you can play guitar through it.</p>
+<p>I've also modded the audio input so you can play your iPhone or or MP3 player through it as well.</p>
 <p>You may be thinking why in hell would I want to do any of this!</p>
-<p>Hacking a amplifier this way can give you the most amazing tone. The distinct “Lo-fidelity” sound that's produced will really surprise you. I've made 2 of these now from old computer speakers and I'm totally impressed with the quality of sound produced. The first one I made (which is the one in this ible') worked a lot better as an amp than the second one (which is the one in the first YouTube clip). Def better sound than hacking a radio or cassette player which I have done in this ible' and this ible'.</p>
+<p>Hacking a amplifier this way can give you the most amazing tone.</p>
+<p>The distinct “Lo-fidelity” sound that's produced will really surprise you.</p>
+<p>I've made 2 of these now from old computer speakers and I'm totally impressed with the quality of sound produced.</p>
+<p>The first one I made (which is the one <a href="https://www.instructables.com/id/Convert-Any-Tape-Player-to-a-Guitar-Amp/">in [this ible</a>'](https://www.instructables.com/id/Convert-Any-Radio-Into-a-Guitar-Amp/)) worked a lot better as an amp than the second one (which is the one in the first YouTube clip).</p>
+<p>Def better sound than hacking a radio or cassette player which I have done in this ible' and this ible'.</p>
 <p>This is a really simple hack and anyone can do this even with the most basic soldering skills.</p><h2><span class="step-num">STEP 1</span>Step 1: Watch the Videos</h2><p>The first video shows how the amp sounds. Hope my guitar playing doesn't make your ears burn</p>
 <p>The second video is a step by step guide on how to make one.</p><h2><span class="step-num">STEP 2</span>Step 2: Parts and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Parts and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Parts and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Parts and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Parts and Tools image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Parts and Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Computer Speakers - eBay or the local junk store. Don't pay a lot for them - these should be easy to find cheaply.</li>
-</ul>
+<li>Computer Speakers - <a href="http://www.ebay.com.au/sch/i.html?_odkw=computer+speaker&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xcomputer+speaker+vintage.TRS0&_nkw=computer+speaker+vintage&_sacat=0">eBay</a> or the local junk store. Don't pay a lot for them - these should be easy to find cheaply.</li>
+</ol>
 <ol>
-<li>6.35mm 1/4" Mono Jack Connector (for the guitar cord) - eBay</li>
-</ul>
+<li>6.35mm 1/4" Mono Jack Connector (for the guitar cord) - <a href="http://www.ebay.com.au/itm/10-Pcs-6-35mm-1-4-Mono-Chassis-Socket-Jack-Connector-S02-/322231181899?hash=item4b0679a24b:g:QmwAAOSwdzVXtHCu">eBay</a></li>
+</ol>
 <ol>
-<li>3.5mm Stereo Jack Female Socket Connector - eBay.</li>
-</ul>
+<li>3.5mm Stereo Jack Female Socket Connector - <a href="http://www.ebay.com.au/itm/5Pcs-Black-3-5mm-Earphone-PCB-Panel-Mount-Stereo-Jack-Female-Socket-Connector-/141904278891?hash=item210a27756b:g:GZcAAOSwe7BWwXfr">eBay</a>.</li>
+</ol>
 <ol>
-<li>3.5mm male to male audio cable - eBay</li>
-</ul>
+<li>3.5mm male to male audio cable - <a href="http://www.ebay.com.au/itm/M-F-5M-AUDIO-CABLE-For-IPHONE-IPOD-HEADPHONE-EXTENSION-PLUG-CONNECTOR-3-5MM-LEAD-/400511909579?hash=item5d405ebecb:g:F04AAOSwzhVWqtQY">eBay</a></li>
+</ol>
 <ol>
 <li>Wire</li>
-</ul>
+</ol>
 <ol>
 <li>Heat Shrink</li>
-</ul>
+</ol>
 <p>That's it!</p>
 <p>Tools:</p>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdriver / Phillips Head</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Hot glue</li>
-</ul>
+</ol>
 <ol>
 <li>Superglue</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Check Out Your Speaker</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Check Out Your Speaker image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Check Out Your Speaker image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Check Out Your Speaker image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Check Out Your Speaker image 4" loading="lazy"></div><p>There are a tonne of these computer speakers made. Chances are you probably don't have the same one as me. No big deal, it's not about the type you have , it's about what's inside that counts. The speakers in most cases come in pairs, one will usually just be a speaker in a outer case and the other will contain the amp. The one your interested in is the one with the amp which will have the volume and probably the on/off switch. Maybe your also been blessed with bass and treble switches too. The more the merrier as this will give you the ability to get some interesting sounds out of your amp</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Check Out Your Speaker</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Check Out Your Speaker image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Check Out Your Speaker image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Check Out Your Speaker image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Check Out Your Speaker image 4" loading="lazy"></div><p>There are a tonne of these computer speakers made.</p>
+<p>Chances are you probably don't have the same one as me.</p>
+<p>No big deal, it's not about the type you have , it's about what's inside that counts.</p>
+<p>The speakers in most cases come in pairs, one will usually just be a speaker in a outer case and the other will contain the amp.</p>
+<p>The one your interested in is the one with the amp which will have the volume and probably the on/off switch.</p>
+<p>Maybe your also been blessed with bass and treble switches too.</p>
+<p>The more the merrier as this will give you the ability to get some interesting sounds out of your amp</p>
 <p>There are a tonne of different ones around, most I'd have to admit are pretty damn ugly but as a practice amp, they work a treat.</p>
-<p>Word of advice though, The speaker I hacked in the YouTube clip (it's the image with 2 speakers) had an amp in each speaker along with it's own power source. Although this speaker worked amazingly as a speaker for my iPhone, as an amp it was too quiet and didn't have enough grunt. I would suggest that you find some speakers which only have 1 amp in them which really should be the majority of them I would think.</p><h2><span class="step-num">STEP 4</span>Step 4: Pull Apart the Speaker</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pull Apart the Speaker image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pull Apart the Speaker image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pull Apart the Speaker image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pull Apart the Speaker image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pull Apart the Speaker image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Pull Apart the Speaker image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Pull Apart the Speaker image 7" loading="lazy"></div><p>Steps:</p>
+<p>Word of advice though, The speaker I hacked in the YouTube clip (it's the image with 2 speakers) had an amp in each speaker along with it's own power source.</p>
+<p>Although this speaker worked amazingly as a speaker for my iPhone, as an amp it was too quiet and didn't have enough grunt.</p>
+<p>I would suggest that you find some speakers which only have 1 amp in them which really should be the majority of them I would think.</p><h2><span class="step-num">STEP 4</span>Step 4: Pull Apart the Speaker</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pull Apart the Speaker image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pull Apart the Speaker image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pull Apart the Speaker image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pull Apart the Speaker image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pull Apart the Speaker image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Pull Apart the Speaker image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Pull Apart the Speaker image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Un-screw the speaker case and remove the cover. Be careful not to break anything inside. On this particular speaker, the front was held on with screws, the rest was glued together. I had to get my hands inside the hole and pry apart. Luckily it came apart pretty easily.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep the screws and any parts - you'll probably need them later.</li>
-</ul>
+</ol>
 <ol>
 <li>Un-screw the speaker and circuit board and remove everything from the body of the speaker.</li>
-</ul>
+</ol>
 <p>These things are pretty simple so you shouldn't have any issue pulling one apart</p><h2><span class="step-num">STEP 5</span>Step 5: Check the Circuit Board Out</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Check the Circuit Board Out image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Check the Circuit Board Out image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Check the Circuit Board Out image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Check the Circuit Board Out image 4" loading="lazy"></div><p>There are 3 things that you need to find on the circuit board to enable you to hack it. Even though no 2 boards are alike, you shouldn't have any real issues locating the parts below.</p>
 <p>Power</p>
-<p>First thing to do is to locate where the power is connected to the circuit board. This is pretty easy as you can either just follow the wires from the power adapter to the circuit board or if it is battery powered, you can just use the battery terminals. Usually positive has a red wire, while the negative has a black. Mine even said "power" on the board.</p>
+<p>First thing to do is to locate where the power is connected to the circuit board.</p>
+<p>This is pretty easy as you can either just follow the wires from the power adapter to the circuit board or if it is battery powered, you can just use the battery terminals.</p>
+<p>Usually positive has a red wire, while the negative has a black.</p>
+<p>Mine even said "power" on the board.</p>
 <p>Jack (audio input) - for playing music through the speaker</p>
 <p>All of these speakers should have a male jack that is used to plug into the computer. Every set of headphones you own has one of these at the end of the wire.</p>
 <p>Volume Potentiometer- for playing guitar through the speaker</p>
@@ -192,59 +251,84 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Steps:</p>
 <ol>
 <li>Check out the back of the speaker case - you should be able to locate how many volts the speaker needs to power up. The one I've got uses 12 v but I figured 9 v would do as I was only running 1 speaker.</li>
-</ul>
+</ol>
 <ol>
 <li>Find the wires for the power. These should be easy to find as the wires are usually red and black. Also, my circuit board had "power" on it which was a bit of a give away.. Once you have located the power wires, cut the wire but leave the ends soldered to the board. This way you won't have to re-solder onto the actual circuit board</li>
-</ul>
+</ol>
 <ol>
 <li>Next solder on the 9v battery holder to the positive and negative wires from the amp.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, don't forget to add some heat-shrink to the solder points</li>
-</ul>
-<p>Done. If your amp has anon/off LED indicator, you can check and see if the amp is powering-up by turning it on and seeing if the LED lights up. If not, you might need to check your wiring.</p><h2><span class="step-num">STEP 7</span>Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music)</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 8" loading="lazy"></div><p>Most if not all of these computer speakers also have an male audio input jack. This is usually a wire that comes out of the speaker. Now if you wanted to, you could just keep this as is and use it to plug into your iPhone etc. I decided to remove this as I didn't want to have a cord constantly hanging from the speaker, especially if I am using the speaker as an amp. It's easy to change over so I would suggest you just go ahead and do the mod.</p>
+</ol>
+<p>Done. If your amp has anon/off LED indicator, you can check and see if the amp is powering-up by turning it on and seeing if the LED lights up. If not, you might need to check your wiring.</p><h2><span class="step-num">STEP 7</span>Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music)</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Jack Me - Adding a Female Socket Connector (to Allow You to Play Music) image 8" loading="lazy"></div><p>Most if not all of these computer speakers also have an male audio input jack.</p>
+<p>This is usually a wire that comes out of the speaker.</p>
+<p>Now if you wanted to, you could just keep this as is and use it to plug into your iPhone etc.</p>
+<p>I decided to remove this as I didn't want to have a cord constantly hanging from the speaker, especially if I am using the speaker as an amp.</p>
+<p>It's easy to change over so I would suggest you just go ahead and do the mod.</p>
 <p>Steps:</p>
 <ol>
 <li>Turn on the amp (make sure that you have a battery in place).</li>
-</ul>
+</ol>
 <ol>
 <li>Plug one end of the 3.5mm audio cable (everyone should have one of these lying around) into your iPhone or whatever you use for music. Start to play music from your iPhone.</li>
-</ul>
+</ol>
 <ol>
 <li>Next grab the Stereo Jack Female Socket Connector and plug the other end of the audio cable into it.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, touch the wires that used to be attached to the input jack to the solder points on the Stereo Jack Female Socket Connector. If your don't hear any music, try a different combination until you hear music some out of the speaker.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder on the wires to the solder points on the Stereo Jack Female Socket Connector.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Get Your Rock on - Adding the Female Jack to the Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 6" loading="lazy"></div><p>As you have already located the sections that you need to find (negative terminal and potentiometer), we can jump straight into this section. This isn’t hard trust me.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Get Your Rock on - Adding the Female Jack to the Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Get Your Rock on - Adding the Female Jack to the Amp image 6" loading="lazy"></div><p>As you have already located the sections that you need to find (negative terminal and potentiometer), we can jump straight into this section. This isn’t hard trust me.</p>
 <p>Steps:</p>
 <ol>
 <li>First solder a red and black wire onto the ¼” jack connector. The red wire (positive) needs to be soldered to the top solder point (this is connected to the arm on the jack that touches the end of the male cable. The black wire (negative) connects to the other solder point (this is connected to the side of the jack and touches the side of the male cable. See first image which shows which is positive and which is negative.</li>
-</ul>
+</ol>
 <ol>
 <li>Next solder the black wire (negative) to the negative solder point on the circuit board. Remember, this is where the negative wire from the power is connected. There are usually a heap of different negative points on the board however so if you are having trouble soldering onto this pint, just follow the traces on the circuit board from the negative point and use a different negative solder point.</li>
-</ul>
+</ol>
 <ol>
 <li>Ok – so now it’s time to plug your guitar cord into the jack and guitar.</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure that the speaker is on and give your guitar a strum. At the same time, touch the end of the red wire to one of the solder points on the potentiometer and listen for any sound out of the speaker. If nothing happens, try another solder point. Eventually (there can from 3 to 6 solder points on the potentiometer) you will find one where you’ll hear your guitar through the amp. It’s important though to try all of the solder points to make sure you find the best one. Just because you get some sound, doesn’t mean it’s the ideal place to solder the wire.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you gave found the right solder point – solder the red wire onto it.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Attach the Jacks to the Speaker</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Attach the Jacks to the Speaker image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Attach the Jacks to the Speaker image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Attach the Jacks to the Speaker image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Attach the Jacks to the Speaker image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Attach the Jacks to the Speaker image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Attach the Jacks to the Speaker image 6" loading="lazy"></div><p>Once you have all of the female jack connections soldered into place and you have tested everything, it’s then time to drill a couple holes into the side of the speaker and attach them.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Attach the Jacks to the Speaker</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Attach the Jacks to the Speaker image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Attach the Jacks to the Speaker image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Attach the Jacks to the Speaker image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Attach the Jacks to the Speaker image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Attach the Jacks to the Speaker image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Attach the Jacks to the Speaker image 6" loading="lazy"></div><p>Once you have all of the female jack connections soldered into place and you have tested everything, it’s then time to drill a couple holes into the side of the speaker and attach them.</p>
 <p>Steps:</p>
 <ol>
 <li>First decide where you want to attach your jack connectors. Remember though, you need to put the speaker back in so make sure you find a spot where there is enough room.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a couple holes, one for the audio jack and one for the guitar jack connector.</li>
-</ul>
+</ol>
 <ol>
 <li>Secure them into place</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Close Up Everyting</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Close Up Everyting image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Close Up Everyting image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Close Up Everyting image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Close Up Everyting image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Close Up Everyting image 5" loading="lazy"></div><p>Last step is to close up the speaker case and make sure that everything is in place. As my speaker originally ran off wall power, there wasn’t any dedicated battery space in the speaker. I had to just stand the battery up inside the speaker (which there was plenty of room to do so), and close everything up. To change the battery, all I have to do is to remove the front of the case and un-screw the speaker. I’ll then be able to pull the battery out and replace. It’s not ideal but it’ll do the job.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Close Up Everyting</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Close Up Everyting image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Close Up Everyting image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Close Up Everyting image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Close Up Everyting image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Close Up Everyting image 5" loading="lazy"></div><p>Last step is to close up the speaker case and make sure that everything is in place.</p>
+<p>As my speaker originally ran off wall power, there wasn’t any dedicated battery space in the speaker.</p>
+<p>I had to just stand the battery up inside the speaker (which there was plenty of room to do so), and close everything up.</p>
+<p>To change the battery, all I have to do is to remove the front of the case and un-screw the speaker.</p>
+<p>I’ll then be able to pull the battery out and replace.</p>
+<p>It’s not ideal but it’ll do the job.</p>
 <p>So now that you have completed your amp / speaker, it’s time to give it a proper test on the guitar and see what type of sound you get out of it.</p><h2><span class="step-num">STEP 11</span>Step 11:</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: image 3" loading="lazy"></div>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

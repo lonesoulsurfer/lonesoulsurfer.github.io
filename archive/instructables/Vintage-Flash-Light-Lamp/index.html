@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,117 +162,143 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Vintage Flash Light Lamp</span>
 </nav>
-<h1>Vintage Flash Light Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Flash-Light-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I love hacking old, vintage flashlights, the more unusual the better. Recently I came across a couple of old flashlights in a op-shop and picked them up for a couple of bucks. As cool as they are, their not very practical, especially considering the insides are void of all necessary bits to make it work! Plus old school globes don't throw out much illumination.</p>
-<p>So instead of just having them as interesting pieces on a shelf, I decided to make them into lamps. The hack is pretty easy and only takes a minimal of skill. The great thing is yo can either have these as lamps that sit on a desk, or as floor lamps depending on how you want too use them.</p>
-<p>The flashlights run off 12v mains but I did consider using batteries. In the end though it was just easier to add a power cord and run the LED's off it. Plus, you'd have to change the batteries constantly if you were using the lamp everyday.</p>
+<h1>Vintage Flash Light Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Flash-Light-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I love hacking old, vintage flashlights, the more unusual the better.</p>
+<p>Recently I came across a couple of old flashlights in a op-shop and picked them up for a couple of bucks.</p>
+<p>As cool as they are, their not very practical, especially considering the insides are void of all necessary bits to make it work!</p>
+<p>Plus old school globes don't throw out much illumination.</p>
+<p>So instead of just having them as interesting pieces on a shelf, I decided to make them into lamps.</p>
+<p>The hack is pretty easy and only takes a minimal of skill.</p>
+<p>The great thing is yo can either have these as lamps that sit on a desk, or as floor lamps depending on how you want too use them.</p>
+<p>The flashlights run off 12v mains but I did consider using batteries.</p>
+<p>In the end though it was just easier to add a power cord and run the LED's off it.</p>
+<p>Plus, you'd have to change the batteries constantly if you were using the lamp everyday.</p>
 <p>You could however rig them up so they do use batteries which would make them extremely portable.</p>
 <p>There a short video bellow with the lamp in action.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Parts</p>
 <ol>
-<li>Vintage Torch (flashlight) - check out eBay</li>
-</ul>
+<li>Vintage Torch (flashlight) - <a href="http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR3.TRC1.A0.H0.Xvintage+flashlight.TRS0&_nkw=vintage+flashlight&ghostText=&_sacat=0">check out eBay</a></li>
+</ol>
 <ol>
-<li>Camera Tripod - Best to get something a little vintage to match the torch. Again check out eBay.</li>
-</ul>
+<li>Camera Tripod - Best to get something a little vintage to match the torch. Again <a href="http://www.ebay.com.au/sch/i.html?_odkw=vintage+flashlight&_from=R40&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR3.TRC1.A0.H0.Xvintage+tripod.TRS0&_nkw=vintage+tripod&ghostText=&_sacat=0">check out eBay</a>.</li>
+</ol>
 <ol>
-<li>12v G4 LED Globe - eBay</li>
-</ul>
+<li>12v G4 LED Globe - <a href="http://www.ebay.com.au/itm/48-SMD-3014-LED-G4-Car-Light-Bulb-Warm-Pure-White-12V-6W-240LM-DIY-Decoration-/191191597935?pt=LH_DefaultDomain_15&var=&hash=item2c83e8436f">eBay</a></li>
+</ol>
 <ol>
-<li>12v Adapter. Choose the correct one for your country - eBay</li>
-</ul>
+<li>12v Adapter. Choose the correct one for your country - <a href="http://www.ebay.com.au/itm/AU-100-240V-AC-to-DC-12V-1000mA-1A-Power-Adapter-Plug-/180640156396?pt=AU_Laptop_Accessories&hash=item2a0efe0aec">eBay</a></li>
+</ol>
 <ol>
-<li>Bi Pin Socket - eBay</li>
-</ul>
+<li>Bi Pin Socket - <a href="http://www.ebay.com.au/itm/40pcs-GU5-3-G4-MR16-MR11-LED-halogen-CFL-bulb-Holder-base-Socket-Wire-Connetor-/321468381831?pt=LH_DefaultDomain_15&var=&hash=item4ad9023a87">eBay</a></li>
+</ol>
 <ol>
 <li>15mm PVC pipe - this is used to hold the bi pin socket in place</li>
-</ul>
+</ol>
 <ol>
 <li>A couple of cable ties</li>
-</ul>
+</ol>
 <ol>
 <li>A nut (1/4 inch) that fits onto the the camera mount screw on the tripod</li>
-</ul>
+</ol>
 <ol>
-<li>Metal ruler - eBay</li>
-</ul>
+<li>Metal ruler - <a href="http://www.ebay.com.au/itm/Steel-Stainless-Metal-Ruler-Marker-Measurement-Tool-Conversion-Table-/390962330005?pt=LH_DefaultDomain_15&hash=item5b072bb995">eBay</a></li>
+</ol>
 <ol>
-<li>Momentary switch - eBay</li>
-</ul>
+<li>Momentary switch - <a href="http://www.ebay.com.au/itm/5pcs-Black-Mini-Round-Switch-12mm-Waterproof-Momentary-Push-button-Switch-Sales-/321590978045?pt=LH_DefaultDomain_15&hash=item4ae050e5fd">eBay</a></li>
+</ol>
 <p>Tools and Material:</p>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Window cleaner (to give the inside of the torch a good clean)</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Driill</li>
-</ul>
+</ol>
 <ol>
 <li>Hot Glue</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Get Yourself a Vintage Torch</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Get Yourself a Vintage Torch image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Get Yourself a Vintage Torch image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Get Yourself a Vintage Torch image 3" loading="lazy"></div><p>This is a pretty obvious step but I wanted to add it in as the torch (flashlight) IS the most important part of this project. A quick search on eBay will bring up a gamut of cool torches. It's up to you on what you want to use, but my suggestion is to find something with some character and patina. There are also plenty of colourful and funky torches that would also work a treat - just make sure it stands out from the crowd.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Get Yourself a Vintage Torch</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Get Yourself a Vintage Torch image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Get Yourself a Vintage Torch image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Get Yourself a Vintage Torch image 3" loading="lazy"></div><p>This is a pretty obvious step but I wanted to add it in as the torch (flashlight) IS the most important part of this project.</p>
+<p>A quick search on eBay will bring up a gamut of cool torches.</p>
+<p>It's up to you on what you want to use, but my suggestion is to find something with some character and patina.</p>
+<p>There are also plenty of colourful and funky torches that would also work a treat - just make sure it stands out from the crowd.</p>
 <p>Check out the ones bellow I found on eBay - now all I need is more money!</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Torch to the TrIpod</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Torch to the TrIpod image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Torch to the TrIpod image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Torch to the TrIpod image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Torch to the TrIpod image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Torch to the TrIpod image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First things first, find the middle on the bottom of the torch, mark and drill a hole. The hole needs to be just big enough to go onto the tripod camera mount bolt.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the torch to the tripod with a bolt and do it up tight.</li>
-</ul>
+</ol>
 <ol>
 <li>Next drill a small hole in one of the bottom corners. This will be for the power cord to go through.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Bi Pin Socket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Bi Pin Socket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Bi Pin Socket image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Bi Pin Socket image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Bi Pin Socket image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Bi Pin Socket image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Bi Pin Socket image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Bi Pin Socket image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Bi Pin Socket image 8" loading="lazy"></div><p>A bi pin socket is just the thing that the LED globe sticks into. The tricky thing is to work out a way to mmount it into the back of the torch. Lucky for you I've figured this out.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Bi Pin Socket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Bi Pin Socket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Bi Pin Socket image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Bi Pin Socket image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Bi Pin Socket image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Bi Pin Socket image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Bi Pin Socket image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Bi Pin Socket image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Bi Pin Socket image 8" loading="lazy"></div><p>A bi pin socket is just the thing that the LED globe sticks into. The tricky thing is to work out a way to mmount it into the back of the torch. Lucky for you I've figured this out.</p>
 <p>Steps:</p>
 <ol>
 <li>First thing to do is to cut a small amount of the 15mm PVC pipe. You'll need about 15, to 20mm</li>
-</ul>
+</ol>
 <ol>
 <li>Next cut a couple of small grooves into the sides as shown below. These are for the wires on the bi pin socket to sit into.</li>
-</ul>
+</ol>
 <ol>
 <li>Once done, add the bi pin socket (which will be now known as "socket" which is a lot easier) into the 15mm pipe, bend the wires down and secure with a cable tie.</li>
-</ul>
+</ol>
 <ol>
 <li>Now the next thing you want to do is to see if you need to enlarge the hole in the torch where the LED globe goes. If so, use a dremel and dremel away.</li>
-</ul>
+</ol>
 <ol>
 <li>Once the hole is large enough, super glue the PVC pipe to the pack of the torch as shown. When you do this it's best to also have the globe in place as well. It will help to align everything correctly.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Creating the Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Creating the Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Creating the Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Creating the Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Creating the Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Creating the Switch image 5" loading="lazy"></div><p>This step will depend on what type of flashlight you have brought. The ones that I used a screw at the top of the flashlight to to turn them on. I wanted to utilize these as well for my lamps.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Creating the Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Creating the Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Creating the Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Creating the Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Creating the Switch image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Creating the Switch image 5" loading="lazy"></div><p>This step will depend on what type of flashlight you have brought. The ones that I used a screw at the top of the flashlight to to turn them on. I wanted to utilize these as well for my lamps.</p>
 <p>Steps:</p>
 <ol>
 <li>You need some way to hold the momentary switch under the screw inside the flashlight. After a little hunting around my work area I decided to use a metal ruler. These are easy to bend but strong and stable.</li>
-</ul>
+</ol>
 <ol>
 <li>Bend the ruler so it forms a U shape and fits inside the flashlight like shown below.</li>
-</ul>
+</ol>
 <ol>
 <li>Mark where the top of the screw touches the ruler and drill a hole for the switch.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the momentary switch and place the ruler inside the flashlight. make any adjustments needed to ensure that the top of the screw pushes the momentary switch down.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the wires to the switch.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Wiring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Wiring image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Wiring image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Wiring image 8" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Wiring image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Wiring image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Wiring image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Tie a knot into the power cord so it can't be't pulled out.</li>
-</ul>
+</ol>
 <ol>
 <li>The wires from the cord should be connected to a terminal.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach one of the wires from the light socket to the terminal and the other to the switch.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach another wire from the switch to the terminal.</li>
-</ul>
+</ol>
 <ol>
 <li>Test the switch and make sure it works ok</li>
-</ul>
+</ol>
 <p>Done!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -32,13 +32,13 @@ The project is an easy one and will definitely become a welcome addition to your
 
 Parts:
 
-1. PVC Cap 100mm - Hardware store. If you are in Australia then you can get these from Bunnings
+1. PVC Cap 100mm - Hardware store. If you are in Australia then you can get these from [Bunnings](https://www.bunnings.com.au/holman-100mm-pvc-dwv-push-on-cap_p4770360)
 
-2. 3 X Square washers - Hardware store, Bunnings
+2. 3 X Square washers - Hardware store, [Bunnings](https://www.bunnings.com.au/macsim-65-x-65-x-5mm-m16-galvanised-square-washer_p1101098)
 
-3. Plastic Flexible Water Oil Coolant Pipe Hose - eBay
+3. Plastic Flexible Water Oil Coolant Pipe Hose - [eBay](https://www.ebay.com.au/itm/Plastic-Coolant-Pipe-Hose-Flexible-Water-Oil-Adjustable-Nozzle-30cm-Kits-1pcs/312509397439?_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D2%26asc%3D20160908110712%26meid%3Ddee27b384d19441490cc516913bf4b02%26pid%3D100677%26rk%3D3%26rkt%3D30%26sd%3D392063166620%26itm%3D312509397439&_trksid=p2385738.c100677.m4598)
 
-4. Rare Earth Magnets - eBay
+4. Rare Earth Magnets - [eBay](https://www.ebay.com.au/itm/N52-Super-Strong-Block-Cuboid-Magnet-Rare-Earth-Rectangle-Neodymium-50x25x10mm/401276102728?epid=852896547&hash=item5d6deb6848:g:C5IAAOSwZVpcdy7T)
 
 Tools:
 

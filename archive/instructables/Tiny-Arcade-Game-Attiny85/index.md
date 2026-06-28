@@ -59,17 +59,17 @@ You will get 5 PCB's when you have them printed so you may as well ensure that y
 Parts:
 
 - PCB - See next step on how to get them printed
-- ATtiny85 X 1 - Ali Express. Tip - Buy them in lots of 5 - it's cheaper and you can always use them in more games. Make sure you buy 'through hole' IC's
-- OLED Display Module (SSD1306) - Ali Express Buy the single colour ones. Mine are white OLED but you can get them in blue as well.
-- Buzzer (speaker) - Ali Express. I used the low profile ones like this Ali Express
-- Resistors - metal film 1% - Ali Express
+- ATtiny85 X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-attiny-85.html?spm=a2g0o.home.search.0). Tip - Buy them in lots of 5 - it's cheaper and you can always use them in more games. Make sure you buy 'through hole' IC's
+- OLED Display Module (SSD1306) - [Ali Express](https://www.aliexpress.com/w/wholesale-ssd1306.html?spm=a2g0o.productlist.auto_suggest.1.485dIfbVIfbV3y) Buy the single colour ones. Mine are white OLED but you can get them in blue as well.
+- Buzzer (speaker) - [[Ali Express](https://vi.aliexpress.com/item/1005001482792890.html?spm=a2g0o.productlist.main.75.5adcbd8bCCTMlz&algo_pvid=0e8d47a8-60d0-4b2d-87c9-71356b422f0a&algo_exp_id=0e8d47a8-60d0-4b2d-87c9-71356b422f0a-37&pdp_npi=4%40dis%21AUD%210.56%210.42%21%21%210.37%210.28%21%402103011217200734707541728efb30%2112000034752671980%21sea%21AU%21135072183%21&curPageLogUid=43CnMJA5BeLo&utparam-url=scene%3Asearch%7Cquery_from%3A)](https://vi.aliexpress.com/w/wholesale-buzzer.html?spm=a2g0o.productlist.search.0). I used the low profile ones like this Ali Express
+- Resistors - metal film 1% - [Ali Express](https://vi.aliexpress.com/w/wholesale-metal-film-1%25-resistor.html?spm=a2g0o.productlist.search.0)
 - 10K X 2
 - 1K X 1
 - 6.8K X 1
-- Momentary Tactile Push Button X 3 - Ali Express.
-- Micro on/off switch vertical - Ali Express you can also use these types as well - Ali Express
-- CR2032 battery holder X 1 - Ali Express
-- CR2032 Battery - Ali Express
+- Momentary Tactile Push Button X 3 - [Ali Express](https://vi.aliexpress.com/w/wholesale-momentary-tactile-switch.html?spm=a2g0o.productlist.search.0).
+- Micro on/off switch vertical - [[Ali Express](https://vi.aliexpress.com/w/wholesale-On%252FOff-SPDT-Pin-PCB-Vertical.html?spm=a2g0o.detail.search.0)](https://vi.aliexpress.com/item/33009763749.html?spm=a2g0o.productlist.main.117.7d584bf4qy5kxl&algo_pvid=2856a2f1-9154-44d6-9079-86c2dd5eb6c0&algo_exp_id=2856a2f1-9154-44d6-9079-86c2dd5eb6c0-58&pdp_npi=4%40dis%21AUD%211.99%211.07%21%21%211.32%210.71%21%402103011217200738046484689efb30%2167133660852%21sea%21AU%21135072183%21&curPageLogUid=7Thx4wRXnAoy&utparam-url=scene%3Asearch%7Cquery_from%3A) you can also use these types as well - Ali Express
+- CR2032 battery holder X 1 - [Ali Express](https://vi.aliexpress.com/item/4001240194584.html?spm=a2g0o.productlist.main.1.48322325Rouix5&algo_pvid=a1d8fd77-c144-48f6-be76-218ff5d9b9a5&algo_exp_id=a1d8fd77-c144-48f6-be76-218ff5d9b9a5-0&pdp_npi=4%40dis%21AUD%213.61%213.61%21%21%212.39%212.39%21%402103011217200739359075738efb30%2110000015424733532%21sea%21AU%21135072183%21&curPageLogUid=flleZ6i7IOKX&utparam-url=scene%3Asearch%7Cquery_from%3A)
+- CR2032 Battery - [Ali Express](https://vi.aliexpress.com/w/wholesale-cr2032-battery.html?spm=a2g0o.productlist.search.0)
 
 
 ## Step 1: The PCB & Schematic
@@ -80,11 +80,11 @@ Parts:
 
 ![Step 1: The PCB & Schematic image 3](images/step02_03.png)
 
-Firstly, all the files that you need to get the circuit board printed can be found in my GitHub Page. I've also included the Eagle files for the schematic and the board in my Google Drive so you can play around with these if you want to.
+Firstly, all the files that you need to get the circuit board printed can be found in my [GitHub Page](https://github.com/lonesoulsurfer/Tiny_Arcade_Games). I've also included the Eagle files for the schematic and the board in my Google Drive so you can play around with these if you want to.
 
-You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice. Make sure you keep it zipped.
+You’ll need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice. Make sure you keep it zipped.
 
-I've put together an Instructable on how to get your broads printed which you can find here.
+I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
 
 NOTE: The manufacture will include an order number on the PCB. However, you can 'specify a location' once the Gerber files have been loaded. Click 'specify a location' when the board has been loaded and the manufacturer will add it to the back where I have indicated.
 
@@ -132,7 +132,7 @@ When I first started to investigate and learn how to program the ATtiny I was to
 
 You will however need to get yourself an Arduino Uno which you'll need to program the ATtiny. Again, I want to reiterate that this really isn't hard to do and if you follow the Instructable below you will be able to program your ATtiny with any of the games included in this Instructable
 
-How to Program ATtiny with an Arduino
+[How to Program ATtiny with an Arduino](https://www.instructables.com/How-to-Program-a-ATtiny-With-Arduino/)
 
 Once you know how to program an ATtiny, you are ready to install one of the games onto it.
 
@@ -143,7 +143,7 @@ Once you know how to program an ATtiny, you are ready to install one of the game
 
 ![Step 4: Programming a Game on the ATtiny85 - Step 1 image 2](images/step05_02.png)
 
-Now that you know how to program the ATtiny, it's time to try and add one of the games I have included. All of the games can be found in my GitHub Page in the 'Tiny Arcade - Games' folder and have been fully tested and work perfectly.
+Now that you know how to program the ATtiny, it's time to try and add one of the games I have included. All of the games can be found in my [GitHub Page](https://github.com/lonesoulsurfer/Tiny_Arcade_Games) in the 'Tiny Arcade - Games' folder and have been fully tested and work perfectly.
 
 You will need to add a library to the Arduino. This couldn't be easier. As a matter of fact, Arduino have included a number of libraries that you just need to install directly from Arduino IDE. The library is needed so the ATtiny can drive the OLED screen
 
@@ -170,7 +170,7 @@ STEPS:
 
 - In the game sketch that you have opened go to: Tools / Override Clock Source and click on 'Internal Oscillator 8Mhz
 - Next go to: Tools / Processor speed and click on 8Mhz Internal Ocsillator
-- Lastly, go to: Tools / Brown Out Detection Level and click 1.8V. Actually not 100% sure you need to do this but it won't hurt
+- Lastly, go to: Tools / Brown Out Detection Level and click 1.8V.  Actually not 100% sure you need to do this but it won't hurt
 - Now you can upload the sketch into the ATtiny85.
 
 
@@ -218,7 +218,7 @@ Frogger
 - From standby, press and hold left button with the right button held to reset high score
 Run Dude run
 
-- LEFT and RIGHT buttons move the little dude. Just don't let any missiles hit you!
+- LEFT and RIGHT buttons move the little dude.  Just don't let any missiles hit you!
 Snake
 
 - Classic snake game which only uses the left button to control the snake

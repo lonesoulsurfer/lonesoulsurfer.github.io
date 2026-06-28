@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,181 +162,226 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Guitar With Built in Amp and Speaker</span>
 </nav>
-<h1>Guitar With Built in Amp and Speaker</h1><div class="source"><a href="https://www.instructables.com/Guitar-With-Built-in-Amp-and-Speaker/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>When I used to live in London, I used to go down Charing Cross rd a lot to visit all the music stores along the street. In one of the stores I spied a guitar which I thought was super cool. It had a built in amp and speaker so you could just turn it on and you’re ready to go. The guy I was hangin’ out with told me not to waste my money as they sounded terrible. Ever since then I wanted to get my hands on one but haven’t crossed paths with another – till now…</p>
+<h1>Guitar With Built in Amp and Speaker</h1><div class="source"><a href="https://www.instructables.com/Guitar-With-Built-in-Amp-and-Speaker/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>When I used to live in London, I used to go down Charing Cross rd a lot to visit all the music stores along the street.</p>
+<p>In one of the stores I spied a guitar which I thought was super cool.</p>
+<p>It had a built in amp and speaker so you could just turn it on and you’re ready to go.</p>
+<p>The guy I was hangin’ out with told me not to waste my money as they sounded terrible.</p>
+<p>Ever since then I wanted to get my hands on one but haven’t crossed paths with another – till now…</p>
 <p>It’s not as sweet as the one in Charing Cross but it’d definitely a guitar with a built in amp and speaker.</p>
-<p>As I like to build on the cheap whenever I can, I decided to hack a PC speaker and turn this into my amp. Some of you might have noticed that this is the same speaker that I used in my last ible’, “Hack a PC Speaker into a Guitar Amp” and that’s because it is! I decided to re-use the speaker again and modified it so I could attach a Piezo pick-up to it. The other benefit to using the PC speaker is I can also play music through it and play along at the same time. Good way to learn a song.</p>
-<p>You could always just buy a mini amp kit and use this which is something I might try in another guitar I have. The guitar I used in this mod is a nylon string travel guitar (3/4 length). I guess I didn’t want to use my other guitar as it as some sentimental value attached to it and I didn’t want to take the chance of destroying it.</p>
+<p>As I like to build on the cheap whenever I can, I decided to hack a PC speaker and turn this into my amp.</p>
+<p>Some of you might have noticed that this is the same speaker that I used in my last ible’, “Hack a PC Speaker into a Guitar Amp” and that’s because it is!</p>
+<p>I decided to re-use the speaker again and modified it so I could attach a Piezo pick-up to it.</p>
+<p>The other benefit to using the PC speaker is I can also play music through it and play along at the same time.</p>
+<p>Good way to learn a song.</p>
+<p>You could always just buy a mini amp kit and use this which is something I might try in another guitar I have.</p>
+<p>The guitar I used in this mod is a nylon string travel guitar (3/4 length).</p>
+<p>I guess I didn’t want to use my other guitar as it as some sentimental value attached to it and I didn’t want to take the chance of destroying it.</p>
 <p>Overall I’m really happy with how this ible’ turned out. I didn’t destroy the guitar, it sounds great (more like a steel sting now then a nylon), and it also looks pretty damn cool as well.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Guitar – Don’t use something expensive, I’d hate to be the cause of a major guitar failure.</li>
-</ul>
+</ol>
 <ol>
 <li>PC Speaker – eBay. You could also just use a mini amp kit which you can also get from eBay. I just went with the PC speaker as I wanted to re-use something that was going to be thrown away anyhow (got it down the tip)</li>
-</ul>
+</ol>
 <ol>
 <li>Piezo pick-up – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>Wires</li>
-</ul>
+</ol>
 <ol>
 <li>9v batter holder – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>9v battery</li>
-</ul>
+</ol>
 <ol>
 <li>9v Battery connector – eBay</li>
-</ul>
+</ol>
 <ol>
 <li>3.5mm Female jack - eBay. So you can also play music through the speaker</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Hole saw bit (for the speaker so the size will depend on the size of the speaker you are using)</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel</li>
-</ul>
+</ol>
 <ol>
 <li>Superglue</li>
-</ul>
+</ol>
 <ol>
 <li>The usual screwdrivers, spanners etc</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Plyers</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Check Out Your Speaker</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Check Out Your Speaker image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Check Out Your Speaker image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Check Out Your Speaker image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Check Out Your Speaker image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Check Out Your Speaker image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Check Out Your Speaker image 6" loading="lazy"></div><p>There are a tonne of these computer speakers made. Chances are you probably don't have the same one as me. No big deal, it's not about the type you have , it's about what's inside that counts. The speakers in most cases come in pairs, one will usually just be a speaker in a outer case and the other will contain the amp. The one your interested in is the one with the amp which will have the volume and probably the on/off switch. Maybe your also been blessed with bass and treble switches too. The more the merrier as this will give you the ability to get some interesting sounds out of your amp</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Check Out Your Speaker</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Check Out Your Speaker image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Check Out Your Speaker image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Check Out Your Speaker image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Check Out Your Speaker image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Check Out Your Speaker image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Check Out Your Speaker image 6" loading="lazy"></div><p>There are a tonne of these computer speakers made.</p>
+<p>Chances are you probably don't have the same one as me.</p>
+<p>No big deal, it's not about the type you have , it's about what's inside that counts.</p>
+<p>The speakers in most cases come in pairs, one will usually just be a speaker in a outer case and the other will contain the amp.</p>
+<p>The one your interested in is the one with the amp which will have the volume and probably the on/off switch.</p>
+<p>Maybe your also been blessed with bass and treble switches too.</p>
+<p>The more the merrier as this will give you the ability to get some interesting sounds out of your amp</p>
 <p>Most of these PC speakers I'd have to admit are pretty damn ugly, but as a practice amp, they work a treat.</p><h2><span class="step-num">STEP 3</span>Step 3: Break Open the PC Speaker</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Break Open the PC Speaker image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Break Open the PC Speaker image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Break Open the PC Speaker image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Break Open the PC Speaker image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Break Open the PC Speaker image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Break Open the PC Speaker image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Un-screw the speaker case and remove the cover. Be careful not to break anything inside. On this particular speaker, the front was held on with screws, the rest was glued together. I had to get my hands inside the hole and pry apart. Luckily it came apart pretty easily.</li>
-</ul>
+</ol>
 <ol>
 <li>Keep the screws and any parts - you'll probably need them later.</li>
-</ul>
+</ol>
 <ol>
 <li>Un-screw the speaker and circuit board and remove everything from the body of the speaker. These things are pretty simple so you shouldn't have any issue pulling one apart</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Check the Circuit Board Out</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Check the Circuit Board Out image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Check the Circuit Board Out image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Check the Circuit Board Out image 3" loading="lazy"></div><p>There are 3 things that you need to find on the circuit board to enable you to hack it. Even though no 2 boards are alike, you shouldn't have any real issues locating the parts below.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Check the Circuit Board Out</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Check the Circuit Board Out image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Check the Circuit Board Out image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Check the Circuit Board Out image 3" loading="lazy"></div><p>There are 3 things that you need to find on the circuit board to enable you to hack it. Even though no 2 boards are alike, you shouldn't have any real issues locating the parts below.</p>
 <p>Power</p>
-<p>First thing to do is to locate where the power is connected to the circuit board. This is pretty easy as you can either just follow the wires from the power adapter to the circuit board or if it is battery powered, you can just use the battery terminals. Usually positive has a red wire, while the negative has a black. Mine even said "power" on the board.</p>
+<p>First thing to do is to locate where the power is connected to the circuit board.</p>
+<p>This is pretty easy as you can either just follow the wires from the power adapter to the circuit board or if it is battery powered, you can just use the battery terminals.</p>
+<p>Usually positive has a red wire, while the negative has a black.</p>
+<p>Mine even said "power" on the board.</p>
 <p>Jack (audio input) - for playing music through the speaker</p>
 <p>All of these speakers should have a male jack that is used to plug into the computer. Every set of headphones you own has one of these at the end of the wire.</p>
 <p>Volume Potentiometer- for playing guitar through the speaker</p>
-<p>This is easy to locate as it's just the volume knob. What you need to find however is the solder points on the potentionmeter. This is all you really need to find on the circuit board - now lets get started on wiring-up the power</p><h2><span class="step-num">STEP 5</span>Step 5: The First Cut Is the Deepest.</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: The First Cut Is the Deepest. image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: The First Cut Is the Deepest. image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: The First Cut Is the Deepest. image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: The First Cut Is the Deepest. image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: The First Cut Is the Deepest. image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: The First Cut Is the Deepest. image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: The First Cut Is the Deepest. image 7" loading="lazy"></div><p>Place the circuit board and speaker aside for the moment – it’s time to make some cuts into the guitar.</p>
+<p>This is easy to locate as it's just the volume knob.</p>
+<p>What you need to find however is the solder points on the potentionmeter.</p>
+<p>This is all you really need to find on the circuit board - now lets get started on wiring-up the power</p><h2><span class="step-num">STEP 5</span>Step 5: The First Cut Is the Deepest.</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: The First Cut Is the Deepest. image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: The First Cut Is the Deepest. image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: The First Cut Is the Deepest. image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: The First Cut Is the Deepest. image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: The First Cut Is the Deepest. image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: The First Cut Is the Deepest. image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: The First Cut Is the Deepest. image 7" loading="lazy"></div><p>Place the circuit board and speaker aside for the moment – it’s time to make some cuts into the guitar.</p>
 <p>Steps:</p>
 <ol>
 <li>Work out where you want to add the speaker, volume and 9v battery holder. Remember, you need to be able to stick your hand into the guitar through the sound hole and place the parts inside the guitar.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have decided on where to place everything, it’s time to start cutting. For the speaker I used a hole saw bit and made the hole so the speaker could fit.</li>
-</ul>
+</ol>
 <ol>
 <li>Next decide where the volume knob is to be located and drill a small hole for the pot (volume knob) to come through. My PC speaker amp also had an LED indicator so I also drilled a small hole for this as well</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly you will need to make a rectangle hole for the 9V battery holder. I used my dremel and cut out the hole with a small grinding wheel. Worked really well</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 7" loading="lazy"></div><p>Most if not all of these computer speakers also have an male audio input jack. This is usually a wire that comes out of the speaker. You will need to cut off the male jack end and attach a female one.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Jumping Jack Flash - Attach the Female Jack to the Amp image 7" loading="lazy"></div><p>Most if not all of these computer speakers also have an male audio input jack. This is usually a wire that comes out of the speaker. You will need to cut off the male jack end and attach a female one.</p>
 <p>Steps:</p>
 <ol>
 <li>Turn on the amp (make sure that you have a battery in place).</li>
-</ul>
+</ol>
 <ol>
 <li>Plug one end of the 3.5mm audio cable (everyone should have one of these lying around) into your iPhone or whatever you use for music. Start to play music from your iPhone.</li>
-</ul>
+</ol>
 <ol>
 <li>Next grab the Female socket connector and plug the other end of the audio cable into it.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, touch the wire ends that used to be attached to the input jack to the solder points on the Female Socket Connector. If your don't hear any music, try a different combination until you hear music some out of the speaker.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder on the wires to the solder points on the Female Socket Connector.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Piezo Pick-up</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Piezo Pick-up image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Piezo Pick-up image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Piezo Pick-up image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Piezo Pick-up image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Piezo Pick-up image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Piezo Pick-up image 6" loading="lazy"></div><p>The Piezo needs to be attached to the circuit board. First though you will need to attach it to the guitar.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Piezo Pick-up</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Piezo Pick-up image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Piezo Pick-up image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Piezo Pick-up image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Piezo Pick-up image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Piezo Pick-up image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Piezo Pick-up image 6" loading="lazy"></div><p>The Piezo needs to be attached to the circuit board. First though you will need to attach it to the guitar.</p>
 <p>Steps:</p>
 <ol>
 <li>I found that if the piezo pick-up is too close to the circuit board, you’ll get feedback. So try and place the pick-up away from the circuit board as much as possible. Drill a small hole for the wire from the Piezo to go through the guitar</li>
-</ul>
+</ol>
 <ol>
 <li>Next you need to solder the wires to the circuit board. Remember how we found the solder points on the Potentiometer, well you will need to utilize one of these along with a negative solder pad.</li>
-</ul>
+</ol>
 <ol>
 <li>First, solder on one of the wires from the piezo pick-up to a negative solder pad. You can always just solder it onto the battery negative terminal if you want to.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, add some power to the amp, turn it on and strum the guitar. Make sure that the pick-up is sitting on the guitar.</li>
-</ul>
+</ol>
 <ol>
 <li>Touch the other wire from the pick-up to one f the solder points on the volume knob. Did you hear anything from the speaker? If not, try another until you do hear the guitar in the speaker. Once you have located the correct solder point, solder the wire from the pick-up to it.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Power to the People - Powering Up You Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 7" loading="lazy"></div><p>Most of these types of amps will work off different voltage amounts. For example, the amp that I am using used to run off 12v mains. I now run it off 9v and it works fine. 9v’s is the easiest ti use as you can buy 9v battery holders that are made for guitars.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Power to the People - Powering Up You Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Power to the People - Powering Up You Amp image 7" loading="lazy"></div><p>Most of these types of amps will work off different voltage amounts.</p>
+<p>For example, the amp that I am using used to run off 12v mains.</p>
+<p>I now run it off 9v and it works fine. 9v’s is the easiest ti use as you can buy 9v battery holders that are made for guitars.</p>
 <p>Steps:</p>
 <ol>
 <li>Secure the 9v battery holder onto the guitar with the screws provided</li>
-</ul>
+</ol>
 <ol>
 <li>Next, if necessary, solder on a couple of longer wires from the positive/ negative solder points on the circuit board.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, push the wires from the circuit board through the battery holder and solder on a 9v battery terminal. Make sure you use some heat-shrink tubing to cover up any naked wires.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, plug a battery in and test that the amp works.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Blinded by the Light - Extend the LED Wires</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Blinded by the Light - Extend the LED Wires image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Blinded by the Light - Extend the LED Wires image 2" loading="lazy"></div><p>If your amp has an LED indicator, you will need to expend the wires to you can have the LED showing.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Blinded by the Light - Extend the LED Wires</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Blinded by the Light - Extend the LED Wires image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Blinded by the Light - Extend the LED Wires image 2" loading="lazy"></div><p>If your amp has an LED indicator, you will need to expend the wires to you can have the LED showing.</p>
 <p>Steps:</p>
 <ol>
 <li>De-solder or cut the LED away from the circuit board. Make sure you take note of the polarity of the LED.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a couple of wires to the LED legs and solder the other ends to the solder pads on the circuit board</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Sounds of Silence (hopefully Not!) - the Speaker</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 10" loading="lazy"></div><p>The speaker wires will need to be extended and I also added a cover to the speaker using the original mesh and a computer fan cover</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Sounds of Silence (hopefully Not!) - the Speaker</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Sounds of Silence (hopefully Not!) - the Speaker image 10" loading="lazy"></div><p>The speaker wires will need to be extended and I also added a cover to the speaker using the original mesh and a computer fan cover</p>
 <p>Steps:</p>
 <p>Extending the wires</p>
 <ol>
 <li>De solder the wires from the speaker</li>
-</ul>
+</ol>
 <ol>
 <li>Attach some longer wires to the original ones and add heat shrink if necessary</li>
-</ul>
+</ol>
 <ol>
 <li>Now push the wires through the speaker hole in the guitar and re-solder onto the speaker</li>
-</ul>
+</ol>
 <p>Making a Cover</p>
 <ol>
 <li>If you just wanted to use the computer grill, then that would work fine as well. Just bend the mounts until they match-up to the holes in the speaker.</li>
-</ul>
+</ol>
 <ol>
 <li>To add the mesh as well, first bend the little tabs on the mesh so they are straight.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, place the mesh over the computer grill and secure in place with the mesh tabs.</li>
-</ul>
+</ol>
 <ol>
 <li>Once it is secure, make sure that the mounts on the grill align with the holes on the speaker. Bend where necessary.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Attach the Amp to the Guitar</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Attach the Amp to the Guitar image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Attach the Amp to the Guitar image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Attach the Amp to the Guitar image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Attach the Amp to the Guitar image 4" loading="lazy"></div><p>This can be a little tricky as you need to get your hand into the sound hole and get the amp into place. Just take your time and you’ll eventually get it. You’ll also need to get the LED on indicator in place as well.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Attach the Amp to the Guitar</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Attach the Amp to the Guitar image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Attach the Amp to the Guitar image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Attach the Amp to the Guitar image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Attach the Amp to the Guitar image 4" loading="lazy"></div><p>This can be a little tricky as you need to get your hand into the sound hole and get the amp into place.</p>
+<p>Just take your time and you’ll eventually get it.</p>
+<p>You’ll also need to get the LED on indicator in place as well.</p>
 <p>Steps:</p>
 <ol>
 <li>Carefully push the amp inside the guitar with the volume knob pointing up</li>
-</ul>
+</ol>
 <ol>
 <li>Manoeuvre the amp through the guitar until you are at the hole you made for the volume potentiometer to go through. Push it through the hole and secure it in place with the original nut.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, find the LED indicator and push this through the hole you made for it. Add a little superglue to hold it in place</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Putting the Rest Together</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Putting the Rest Together image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Putting the Rest Together image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Putting the Rest Together image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Putting the Rest Together image 4" loading="lazy"></div><p>Now you have the amp in place, the next thing to do is to attach the rest of the parts.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Putting the Rest Together</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Putting the Rest Together image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Putting the Rest Together image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Putting the Rest Together image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Putting the Rest Together image 4" loading="lazy"></div><p>Now you have the amp in place, the next thing to do is to attach the rest of the parts.</p>
 <p>Steps:</p>
 <ol>
 <li>Secure the speaker into place by using some self-tapping screws. If you decided to add a cover to the speaker, then secure this too.</li>
-</ul>
+</ol>
 <ol>
 <li>If you haven’t already, drill a hole for the female input socket (for audio) and push the socket through the hole. Add some superglue to keep it in place</li>
-</ul>
+</ol>
 <p>Time to test.</p>
-<p>Add a battery, turn on the amp to full and tap on your guitar (your stings won’t be strung yet). Hopefully you are hearing the guitar through the speaker. If so, then you know that all your wiring etc is good and your good to start to attach the strings again. If you are getting feedback, try moving the pick-up slightly until you find a place where you don’t get feedback. Secure in place.</p>
+<p>Add a battery, turn on the amp to full and tap on your guitar (your stings won’t be strung yet).</p>
+<p>Hopefully you are hearing the guitar through the speaker.</p>
+<p>If so, then you know that all your wiring etc is good and your good to start to attach the strings again.</p>
+<p>If you are getting feedback, try moving the pick-up slightly until you find a place where you don’t get feedback.</p>
+<p>Secure in place.</p>
 <p>Done!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

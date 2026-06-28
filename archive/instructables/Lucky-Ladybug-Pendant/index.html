@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,106 +162,136 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Lucky Ladybug Pendant</span>
 </nav>
-<h1>Lucky Ladybug Pendant</h1><div class="source"><a href="https://www.instructables.com/Lucky-Ladybug-Pendant/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I like to go metal detecting in my spare time and love to watch guys on YouTube finding long lost treasure. One of the guys I like to watch is Klugscheisser Dan who finds some of the most amazing artifacts.</p>
-<p>On one of his trips (which can be found here) he found a coin which had a ladybug attached to it! The coin was worn as a pendent and the ladybird would have been hidden on the back. I thought that this was a really cool idea and decided to make my own version.</p>
-<p>So why did they attach a ladybird. It turns out that this was for good luck! Having a ladybug land on you can be a magical moment. While other insects may pose a threat to humans, animals and crops, ladybugs are harmless - and even better, they're beneficial! That's why so many cultures over the centuries have cherished ladybugs, believing them to bring good luck. Plus everyone know that you can make a wish if a ladybird lands on you.</p>
+<h1>Lucky Ladybug Pendant</h1><div class="source"><a href="https://www.instructables.com/Lucky-Ladybug-Pendant/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I like to go metal detecting in my spare time and love to watch guys on YouTube finding long lost treasure.</p>
+<p>One of the guys I like to watch is <a href="https://www.youtube.com/channel/UC9cKOiojT3oQEqVYjSXGzbA/videos">Klugscheisser Dan</a> who finds some of the most amazing artifacts.</p>
+<p>On one of his trips (<a href="https://www.youtube.com/watch?v=ls6wUUSOc6o">which can be found here</a>) he found a coin which had a ladybug attached to it!</p>
+<p>The coin was worn as a pendent and the ladybird would have been hidden on the back.</p>
+<p>I thought that this was a really cool idea and decided to make my own version.</p>
+<p>So why did they attach a ladybird.</p>
+<p>It turns out that this was for good luck!</p>
+<p>Having a ladybug land on you can be a magical moment.</p>
+<p>While other insects may pose a threat to humans, animals and crops, ladybugs are harmless - and even better, they're beneficial!</p>
+<p>That's why so many cultures over the centuries have cherished ladybugs, believing them to bring good luck.</p>
+<p>Plus everyone know that you can make a wish if a ladybird lands on you.</p>
 <p>This ible’ isn’t hard and you only need some basic tools and a few old coins. I also made one with an owl on the back and will show you how I did that as well.</p>
 <p>The video shows me making one so you could just watch this to get the idea if you’re feeling lazy.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Old coin. Any old coin really – just make sure that it’s interesting and larger than the ladybird</li>
-</ul>
+</ol>
 <ol>
-<li>Ladybirds – eBay</li>
-</ul>
+<li>Ladybirds – <a href="http://www.ebay.com.au/itm/50x-Vintage-Silver-Alloy-Ladybird-Pendants-Charms-Antiqued-Jewellery-Findings-BS-/361271655064?hash=item541d77fa98:g:RrkAAOSwymxVLiE2">eBay</a></li>
+</ol>
 <ol>
-<li>Junp Rings7mm – eBay</li>
-</ul>
+<li>Junp Rings7mm – <a href="http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xjump+ring+7mm.TRS0&_nkw=jump+ring+7mm&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>If you want to make an owl one, you can buy them on eBay</li>
-</ul>
+<li>If you want to make an owl one, you can buy them on <a href="http://www.ebay.com.au/itm/15pcs-Vintage-Tibetan-Silver-Tone-Hollow-Carved-Owl-Animal-Charms-Pendant-DIY-BS-/161706719778?hash=item25a678ba22:g:tdQAAOSw~OdVVvTg">eBay</a></li>
+</ol>
 <p>Tools:</p>
 <ol>
 <li>Mini blow torch.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder</li>
-</ul>
+</ol>
 <ol>
 <li>Flux</li>
-</ul>
+</ol>
 <ol>
 <li>Small files</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Preparing the Coin</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Preparing the Coin image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Preparing the Coin image 2" loading="lazy"></div><p>Picking what type of coin to use is up to you. I would suggest though not using any aluminium coins as the solder won’t stick. The coins I used were some old French Centimes coins. They have a great image of lady liberty ( I think) on the front and if you wanted to keep the ladybird secret then you could easily wear the coin with lady liberty facing outward. Also don’t pick a valuable coin!</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Preparing the Coin</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Preparing the Coin image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Preparing the Coin image 2" loading="lazy"></div><p>Picking what type of coin to use is up to you.</p>
+<p>I would suggest though not using any aluminium coins as the solder won’t stick.</p>
+<p>The coins I used were some old French Centimes coins.</p>
+<p>They have a great image of lady liberty ( I think) on the front and if you wanted to keep the ladybird secret then you could easily wear the coin with lady liberty facing outward.</p>
+<p>Also don’t pick a valuable coin!</p>
 <p>Steps:</p>
 <ol>
 <li>Once you have picked your coin, give it a good clean. I used some metal polish to remove the tarnish from the side that I wanted to attach the ladybird. This is done so the solder will stick cleanly to the coin. I didn’t bother cleaning the side with the lady as I liked the patina.</li>
-</ul>
+</ol>
 <ol>
 <li>Once clean you need to decide where to add the ladybird. In the image of the one on the front of the ible’ the ladybird looks like it has just landed on the coin and is off centre. I decided to make a couple, one with the ladybird in the middle and one off centre.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Preparing the Ladybird</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Preparing the Ladybird image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Preparing the Ladybird image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Preparing the Ladybird image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Preparing the Ladybird image 4" loading="lazy"></div><p>You will need to remove the ring at the front on the ladybird. You could also remove the legs if you wanted to and have it a little more compact. I did do this for one and it looks more like the one on the introduction.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Preparing the Ladybird</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Preparing the Ladybird image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Preparing the Ladybird image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Preparing the Ladybird image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Preparing the Ladybird image 4" loading="lazy"></div><p>You will need to remove the ring at the front on the ladybird.</p>
+<p>You could also remove the legs if you wanted to and have it a little more compact.</p>
+<p>I did do this for one and it looks more like the one on the introduction.</p>
 <ol>
 <li>To remove the ring on the front of the ladybird, I used some wire cutters. Just snip it off.</li>
-</ul>
+</ol>
 <ol>
 <li>Next I used a small file and removed the rough edges.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding Flux and Solder</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding Flux and Solder image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding Flux and Solder image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding Flux and Solder image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding Flux and Solder</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding Flux and Solder image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding Flux and Solder image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding Flux and Solder image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Flip your ladybird over and add a very small amount of flux to the section that will be touching the coin.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, coil a small piece of solder and place it inside the ladybird</li>
-</ul>
+</ol>
 <ol>
 <li>Place the coin onto a vice like in the image below so you can get heat to the bottom of the coin</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, position the ladybird onto the coin.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Soldering</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Soldering image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Soldering image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Soldering image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Soldering image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Soldering image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Soldering image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Soldering</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Soldering image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Soldering image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Soldering image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Soldering image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Soldering image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Soldering image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Get your mini blow torch working and start to apply heat to the bottom of the coin. Do this slowly.</li>
-</ul>
+</ol>
 <ol>
 <li>Once the flux starts to smoke and bubble you know that the solder is at melting point</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the heat and let it cool</li>
-</ul>
+</ol>
 <ol>
 <li>Once cooled, make sure that the solder flowed by testing if you can remove the ladybird. If you can’t then you know you have succeeded. If it does come away, try again and leave the heat on longer.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Drilling a Hole and Adding a Jump Ring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 6" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Drilling a Hole and Adding a Jump Ring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Drilling a Hole and Adding a Jump Ring image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Secure the coin so it won’t move</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully drill a hole into the top of the coin.</li>
-</ul>
+</ol>
 <ol>
 <li>File away any sharp bits</li>
-</ul>
+</ol>
 <ol>
 <li>Attach a jump ring to the hole. I was going to use some store brought ones but they were too soft so I decided to make my own. Just bend some thin copper wire around a pair of pliers to make a ring, thread through the coin and add a little solder to the break in the ring. That way it will never break off from the coin.</li>
-</ul>
+</ol>
 <ol>
 <li>Thread through a chain or a piece of leather so you can wear it.</li>
-</ul>
+</ol>
 <ol>
 <li>Done!</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Make an Owl Version</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Make an Owl Version image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Make an Owl Version image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Make an Owl Version image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Make an Owl Version image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Make an Owl Version image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Make an Owl Version image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Make an Owl Version image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Make an Owl Version image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Make an Owl Version image 9" loading="lazy"></div><p>You can pretty much attach any type of pendant that takes your fancy. I also found an owl pendant which works well as well.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Make an Owl Version</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Make an Owl Version image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Make an Owl Version image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Make an Owl Version image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Make an Owl Version image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Make an Owl Version image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Make an Owl Version image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Make an Owl Version image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Make an Owl Version image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Make an Owl Version image 9" loading="lazy"></div><p>You can pretty much attach any type of pendant that takes your fancy. I also found an owl pendant which works well as well.</p>
 <p>Steps:</p>
 <ol>
 <li>As the owl os rounded on both sides, you will need to flatten one side to solder to the coin. I used a dermal (you could just use a file) to flatten one side</li>
-</ul>
+</ol>
 <ol>
 <li>Next add some flux and solder as you did with the ladybird</li>
-</ul>
+</ol>
 <ol>
 <li>Place on the coin and melt the solder with the mini blow torch.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a hole, make a hole and attach a jump ring</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

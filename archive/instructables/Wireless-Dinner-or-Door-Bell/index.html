@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,205 +162,236 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Wireless Dinner (or Door) Bell</span>
 </nav>
-<h1>Wireless Dinner (or Door) Bell</h1><div class="source"><a href="https://www.instructables.com/Wireless-Dinner-or-Door-Bell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>My makerspace (which is a very small shed!) is some distance from the house and I wanted some way to know when I'm wanted back in the house. I got a little tired of hearing someone yell from the top of the stairs that dinner is ready, so I built a remote controlled bell.</p>
-<p>The build is made from readily available parts and you will need to build a simple 555 circuit as well. For those new to making circuits, I recently completed an 'ible on getting started in building circuits so check it out here if you need help. The circuit I built in the 'ible is the same as the one needed in this one!</p>
-<p>How it works is there is a small solenoid that is connected to the 555 circuit. The circuit is activated my the remote which in turn makes the solenoid move up and down, striking the bell. You can control the speed of the solenoid with a potentiometer to either have a nice, slow ring or a manic fast one.</p>
+<h1>Wireless Dinner (or Door) Bell</h1><div class="source"><a href="https://www.instructables.com/Wireless-Dinner-or-Door-Bell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>My makerspace (which is a very small shed!) is some distance from the house and I wanted some way to know when I'm wanted back in the house.</p>
+<p>I got a little tired of hearing someone yell from the top of the stairs that dinner is ready, so I built a remote controlled bell.</p>
+<p>The build is made from readily available parts and you will need to build a simple 555 circuit as well.</p>
+<p>For those new to making circuits, I recently completed an 'ible on getting started in building circuits so <a href="https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/">check it out here</a> if you need help.</p>
+<p>The circuit I built in the 'ible is the same as the one needed in this one!</p>
+<p>How it works is there is a small solenoid that is connected to the 555 circuit.</p>
+<p>The circuit is activated my the remote which in turn makes the solenoid move up and down, striking the bell.</p>
+<p>You can control the speed of the solenoid with a potentiometer to either have a nice, slow ring or a manic fast one.</p>
 <p>That's enough with the intro - lets get to building.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.png" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts</p>
 <p>Electronic Parts</p>
 <ol>
-<li>555 Timer - eBay</li>
-</ul>
+<li>555 Timer - <a href="https://www.ebay.com.au/itm/10-20-50-100PCS-IC-NE555-DIP-8-Timers-NEW-GOOD-QUALITY/172772366259?hash=item283a0917b3:m:meg_PgLYK2INxLXCXBh4zAQ:rk:4:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>10K Resistor - Buy them as an assorted lot on eBay</li>
-</ul>
+<li>10K Resistor - Buy them as an assorted lot on <a href="https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/271860510973?epid=24025613485&hash=item3f4c2630fd:g:LMwAAOSwrklVSIC7:rk:9:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>6.8uf Capacitor - Buy them in assorted lots on eBay (You could also a 4.6uf or another value - up to you)</li>
-</ul>
+<li>6.8uf Capacitor - Buy them in assorted lots on <a href="https://www.ebay.com.au/itm/1uF-470uF-120pcs-12-Value-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/311708836381?hash=item48934b621d:g:WLAAAOSwCGVX6fec:rk:8:pf:0">eBay</a> (You could also a 4.6uf or another value - up to you)</li>
+</ol>
 <ol>
-<li>50K potentiometer - eBay</li>
-</ul>
+<li>50K potentiometer - <a href="https://www.ebay.com.au/itm/5Pcs-50K-15mm-ohm-Linear-Taper-Rotary-Potentiometer-Panel-Pot/262558966745?epid=504299956&hash=item3d21bbe3d9:g:4BUAAOSwARZXnAum:rk:21:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>Prototype board - eBay</li>
-</ul>
+<li>Prototype board - <a href="https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3">eBay</a></li>
+</ol>
 <ol>
-<li>2 X LED's - eBay</li>
-</ul>
+<li>2 X LED's - <a href="https://www.ebay.com.au/itm/50PCS-5mm-LED-White-Red-Green-Blue-UV-Bright-Pink-Light-Emitting-Diode/362233885966?hash=item5456d2750e:m:mFwwOxME1TGa8eTfUYNCQoQ:rk:2:pf:0">eBay</a></li>
+</ol>
 <ol>
 <li>2.2K Resistor</li>
-</ul>
+</ol>
 <ol>
-<li>Solenoid - eBay</li>
-</ul>
+<li>Solenoid - <a href="https://www.ebay.com.au/itm/DC-9V-120g-2mm-Open-Frame-Actuator-Linear-Pull-Solenoid-Electromagnet/332344158553?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D54815%26meid%3D6a11eb72adc947ecb105e094a4dfcaa9%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D332344158553&_trksid=p2045573.c100505.m3226">eBay</a></li>
+</ol>
 <ol>
 <li>Wires</li>
-</ul>
+</ol>
 <ol>
-<li>Remote control module - eBay</li>
-</ul>
+<li>Remote control module - <a href="https://www.ebay.com.au/itm/DC-12v-10A-relay-1CH-wireless-RF-Remote-Control-Switch-Transmitter-Receiver-GH/132490522289?epid=922415752&hash=item1ed90ceeb1:g:ShQAAOSwIspacy2J:rk:8:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>9v (300ma) Wall adapter - eBay</li>
-</ul>
+<li>9v (300ma) Wall adapter - e<a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=9v+300ma+wall&_sacat=0">Bay</a></li>
+</ol>
 <p>Fire Alarm</p>
 <p>If you don't have a vintage fire alarm sitting around, then you can easily just make your own Here are the parts that you would need to build one</p>
 <ol>
-<li>Bike Bell - eBay</li>
-</ul>
+<li>Bike Bell - <a href="https://www.ebay.com.au/itm/Traditional-Vintage-Bike-Bicycle-Cycling-Handlebar-Loud-Retro-Ding-Dond-Bell-New/152308907620?epid=940187294&hash=item2376517e64:g:pcsAAOSwcLxYICm3:rk:3:pf:0">eBay</a></li>
+</ol>
 <ol>
 <li>Aluminium Flat Bar - eBay</li>
-</ul>
+</ol>
 <ol>
 <li>Various nuts and bolts</li>
-</ul>
+</ol>
 <ol>
-<li>Project box - eBay</li>
-</ul>
-<p>If you want to find an old fire alarm - try eBay. I picked mine up at a junk shop for $5!</p><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 5" loading="lazy"></div><p>The 555 circuit is quite simple to build. As mentioned in the intro, I recently did a intro to making your first circuit which you can use to help you build this circuit</p>
+<li>Project box - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC2.A0.H0.Xaluminium+project+box.TRS0&_nkw=aluminium+project+box&_sacat=0">eBay</a></li>
+</ol>
+<p>If you want to find an old fire alarm - try <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xvintage+fire+alarm.TRS0&_nkw=vintage+fire+alarm&_sacat=0">eBay</a>.</p>
+<p>I picked mine up at a junk shop for $5!</p><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 5" loading="lazy"></div><p>The 555 circuit is quite simple to build.</p>
+<p>As mentioned in the intro, I recently did a intro to <a href="https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/">making your first circuit</a> which you can use to help you build this circuit</p>
 <p>Steps</p>
 <ol>
 <li>First solder the 555 timer into place. I used a socket adapter to allow me to change the 555 timer if necessary. These make changing a faulty 555 IC very easy</li>
-</ul>
+</ol>
 <ol>
 <li>Connect pin 1 to ground on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Connect pins 2 and 6 together as shown in the image below.</li>
-</ul>
+</ol>
 <ol>
 <li>Connect pins 4 and 8 to positive on the prototype board</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Adding the Capacitor and 2.2K Resistor</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Adding the Capacitor and 2.2K Resistor image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Adding the Capacitor and 2.2K Resistor image 2" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Adding the Capacitor and 2.2K Resistor</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Adding the Capacitor and 2.2K Resistor image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Adding the Capacitor and 2.2K Resistor image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder the positive leg on the capacitor to pin 2 on the 555 timer</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the other leg to ground on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder the 2.2K resistor to pin 3 and then to an open solder pad on the prototype board. You will need to connect 2 LED’s and a wire to the end of the resistor so make sure you leave yourself enough space to do this</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Adding Wires and 10K Resistor</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Adding Wires and 10K Resistor</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Circuit - Adding Wires and 10K Resistor image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The 10K resistor needs to be connected between pins 6 and 7 on the 555 timer</li>
-</ul>
+</ol>
 <ol>
 <li>Add a wire to pin 7. This will be attached to one of the legs on the potentiometer</li>
-</ul>
+</ol>
 <ol>
 <li>Add another wire to positive. This will be connected to another leg on the potentiometer</li>
-</ul>
+</ol>
 <ol>
 <li>I decided in the end to add 2 LED’s so you will need to double the wires for them. They run off the same resistor so just add 2 wires to the 2.2K resistor and solder the other 2 wires for the LED's to a solder point on the prototype board. You will be adding a couple of the wires to this section as well a little later on.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you will need to connect the 2 positive strips on the prototype board. I just soldered a wire between both strips to connect them</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Solenoid and the Rest of the Wires</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Solenoid and the Rest of the Wires image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Solenoid and the Rest of the Wires image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Solenoid and the Rest of the Wires image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Solenoid and the Rest of the Wires</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Solenoid and the Rest of the Wires image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Solenoid and the Rest of the Wires image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Solenoid and the Rest of the Wires image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Connect one of the wires from the solenoid to pin 3 on the 555 timer</li>
-</ul>
+</ol>
 <ol>
 <li>Connect the other wire from the solenoid to the solder point where you connect the other 2 wires for the LED’s.</li>
-</ul>
+</ol>
 <ol>
 <li>You need to add a single wire to the protoboard that is connected to the solenoid wire and the 2 LED ones. This will be added to the remote receiver later on</li>
-</ul>
+</ol>
 <ol>
 <li>Place a little hot glue to the solenoid wires so they don’t break.</li>
-</ul>
+</ol>
 <ol>
 <li>Add 2 wires to positive and ground. These will be connected to the remote receiver. You will also need to solder on the power supply but this will come later</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, make sure you test the circuit to make sure it works correctly</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Rebuilding the Fire Alarm</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 6: Rebuilding the Fire Alarm image 1" loading="lazy"><img src="images/step06_02.png" alt="Step 6: Rebuilding the Fire Alarm image 2" loading="lazy"><img src="images/step06_03.png" alt="Step 6: Rebuilding the Fire Alarm image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Rebuilding the Fire Alarm image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Rebuilding the Fire Alarm image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Rebuilding the Fire Alarm image 6" loading="lazy"><img src="images/step06_07.gif" alt="Step 6: Rebuilding the Fire Alarm image 7" loading="lazy"></div><p>The first steps of rebuilding the fire alarm is to pull it all apart. The vintage fire alarm that I got my hands on no longer worked (I did try and get it going but to no avail) so I didn’t feel too bad pulling it apart and reusing what I could.</p>
-<p>I have suggested off-the-shelf parts in the part section if you can’t get your hands on a vintage one. You can pretty much make this out of an old bicycle bell and a small project box. I’ll go through how I refurbished and re-purposed the alarm bell in the following steps</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Rebuilding the Fire Alarm</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 6: Rebuilding the Fire Alarm image 1" loading="lazy"><img src="images/step06_02.png" alt="Step 6: Rebuilding the Fire Alarm image 2" loading="lazy"><img src="images/step06_03.png" alt="Step 6: Rebuilding the Fire Alarm image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Rebuilding the Fire Alarm image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Rebuilding the Fire Alarm image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Rebuilding the Fire Alarm image 6" loading="lazy"><img src="images/step06_07.gif" alt="Step 6: Rebuilding the Fire Alarm image 7" loading="lazy"></div><p>The first steps of rebuilding the fire alarm is to pull it all apart.</p>
+<p>The vintage fire alarm that I got my hands on no longer worked (I did try and get it going but to no avail) so I didn’t feel too bad pulling it apart and reusing what I could.</p>
+<p>I have suggested off-the-shelf parts in the part section if you can’t get your hands on a vintage one.</p>
+<p>You can pretty much make this out of an old bicycle bell and a small project box.</p>
+<p>I’ll go through how I refurbished and re-purposed the alarm bell in the following steps</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the top case section (this is just clipped into place)</li>
-</ul>
+</ol>
 <ol>
 <li>Un-screw any of the parts inside and remove – you won’t need any of them.</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the bell from the body of the alarm.</li>
-</ul>
+</ol>
 <p>Now you have everything apart, it’s time to bring it back to life</p><h2><span class="step-num">STEP 7</span>Step 7: Polishing and Cleaning</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 7: Polishing and Cleaning image 1" loading="lazy"><img src="images/step07_02.png" alt="Step 7: Polishing and Cleaning image 2" loading="lazy"><img src="images/step07_03.png" alt="Step 7: Polishing and Cleaning image 3" loading="lazy"><img src="images/step07_04.png" alt="Step 7: Polishing and Cleaning image 4" loading="lazy"><img src="images/step07_05.png" alt="Step 7: Polishing and Cleaning image 5" loading="lazy"><img src="images/step07_06.png" alt="Step 7: Polishing and Cleaning image 6" loading="lazy"><img src="images/step07_07.gif" alt="Step 7: Polishing and Cleaning image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 7: Polishing and Cleaning image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To bring the brass bell back to life I first remove all of the old paint and dirt with a wire wheel on my grinder. You want to be careful though when doing this as you don’t want to damage it.</li>
-</ul>
+</ol>
 <ol>
 <li>Once all of the grime has been removed, it’s time to polish it up. I did this by placing the end of the bell into a drill and used a metal polisher to polish it up. I’m pretty sure that this isn’t the smartest thing to do but it gets the job done and if you are careful you will be ok. Otherwise you need to polish it by hand and I’m too impatient for that!</li>
-</ul>
+</ol>
 <ol>
 <li>Next you will need to clean-up the body of the alarm and remove any rust, paint etc to get it ready for painting. I used a couple of wire wheels on my dremel to remove most of the rust etc. I should have given it a good wash as well but forgot to before painting.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, I made all of the modifications I need to do to the case of the alarm. This included drilling a hole for the potentiometer and 2 for the LED’s. I also had to cut a little piece out of the top in order to fit the solenoid into place</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Solenoid</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Solenoid image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Solenoid image 2" loading="lazy"></div><p>The solenoid have 2 very small screw holes that you can use to attach it to something flat. I managed to find a couple of screws that were the correct size for the thread in my parts bin which was lucky. You could also just glue it into place as well.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Solenoid</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Solenoid image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Solenoid image 2" loading="lazy"></div><p>The solenoid have 2 very small screw holes that you can use to attach it to something flat.</p>
+<p>I managed to find a couple of screws that were the correct size for the thread in my parts bin which was lucky.</p>
+<p>You could also just glue it into place as well.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to work out whether the pin in the solenoid will hit the bell when attached. Secure the bell into place and place the solenoid in the position it will be attached in. Pull down the pin on the solenoid and see whether it hits the bell and goes “ding”. If it works, then mark it.</li>
-</ul>
+</ol>
 <ol>
 <li>I had to add a small piece of metal to lift it up a little from the back of the case.</li>
-</ul>
+</ol>
 <ol>
 <li>I used a small piece of masking tape as a template and marked where the holes were on the solenoid.</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the masking tape to the back of the case and drill the holes</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, add the screws and make sure that the solenoid can be secured into place. I needed to paint the body of the bell so removed it after fitment</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Painting</h2><div class="step-images"><img src="images/step09_01.png" alt="Step 9: Painting image 1" loading="lazy"><img src="images/step09_02.png" alt="Step 9: Painting image 2" loading="lazy"><img src="images/step09_03.png" alt="Step 9: Painting image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Painting image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Painting image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Painting</h2><div class="step-images"><img src="images/step09_01.png" alt="Step 9: Painting image 1" loading="lazy"><img src="images/step09_02.png" alt="Step 9: Painting image 2" loading="lazy"><img src="images/step09_03.png" alt="Step 9: Painting image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Painting image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Painting image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Before painting, make sure you give everything a good clean and remove any paint rust etc.</li>
-</ul>
+</ol>
 <ol>
 <li>First I sprayed the body of the bell with primer and let this dry for 12 hours</li>
-</ul>
+</ol>
 <ol>
 <li>I decided to go with a red paint as this seemed like the right type of colour to use. I sprayed quite a few coats and left it to dry for 24 hours. In hindsight I should have probably left it to dry for a few days as the paint was still soft and when I added the electronics I left a few finger prints which I had to buff out.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Wiring the Remote Module to the 555 Circuit</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 5" loading="lazy"></div><p>The remote receiver allows you to activate the bell from quite far distance. I haven’t tested the range but my sheds about 60 meters away from the house and it works fine at that distance. The wiring is also pretty straight forward. The power supply to the receiver module is the same that is used for the 555 circuit and the only other 2 wires are connected to the com and NO terminals.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring the Remote Module to the 555 Circuit</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 5" loading="lazy"></div><p>The remote receiver allows you to activate the bell from quite far distance.</p>
+<p>I haven’t tested the range but my sheds about 60 meters away from the house and it works fine at that distance.</p>
+<p>The wiring is also pretty straight forward.</p>
+<p>The power supply to the receiver module is the same that is used for the 555 circuit and the only other 2 wires are connected to the com and NO terminals.</p>
 <p>Steps:</p>
 <ol>
 <li>First, secure the 555 circuit to the inside of the case with some good quality, double sided tape. The type that is used in automotive repairs is good and it will also insulate the circuit.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, add the wires connected to positive and ground on the circuit to the positive and ground terminal on the module</li>
-</ul>
+</ol>
 <ol>
 <li>The module is really just a relay switch so the last 2 wires to connect would usually be just one wire (if you weren’t using the remote module) connecting the LED’s etc to positive. Add one of the wires to the Com terminal and the other to NO terminal</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: LED's and Potentiometer</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: LED's and Potentiometer image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: LED's and Potentiometer image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: LED's and Potentiometer image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: LED's and Potentiometer</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: LED's and Potentiometer image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: LED's and Potentiometer image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: LED's and Potentiometer image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Secure the Potentiometer into the case.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, superglue the LED’s into place making sure that the polarities are noted. Trim the legs on the LED’s</li>
-</ul>
+</ol>
 <ol>
 <li>Trim the wires for the potentiometer on the 555 circuit and attach these to the first 2 solder points</li>
-</ul>
+</ol>
 <ol>
 <li>There will be 4 wires for the LED’s on the circuit board. Solder to the legs of the LED’s (double check the polarities before soldering ) and make sure you add a little heat shrink to secure into place</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the wall adapter wires to the 555 circuit board. Solder the positive to the positive strip and the ground to the ground section on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully place the top of the case onto the base making sure no wires get caught</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Final Touches</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Final Touches image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Final Touches image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Final Touches image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Final Touches</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Final Touches image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Final Touches image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Final Touches image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Make sure that everything is well stuck down and place the top section back onto the case</li>
-</ul>
+</ol>
 <ol>
 <li>Place the spring and pin into the solenoid and secure the bell into place</li>
-</ul>
+</ol>
 <ol>
 <li>Add a knob to the potentiometer</li>
-</ul>
+</ol>
 <ol>
 <li>Plug the adapter into a wall socket and test out your bell. You should see LED’s flashing and hear the bell ringing. Turning the knob will allow you to control the speed of the solenoid and either have a chilled sounding one or a frenzy, panic sounding one.</li>
-</ul>
+</ol>
 <ol>
 <li>If you don’t get anything, go back and check your wiring and make sure everything is properly connected and there is no short circuits. I did something pretty dumb on mine and connected the wrong polarities to the relay module – doesn’t take much to mess something up.</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

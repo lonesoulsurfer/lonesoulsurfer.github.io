@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,122 +162,145 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Industrial Bottle Lamp</span>
 </nav>
-<h1>Industrial Bottle Lamp</h1><div class="source"><a href="https://www.instructables.com/Industrial-Bottle-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This lamp was born out of a bunch of parts that I had lying around the workshop. However, you should be able to find most of these parts on eBay or your local junk store. If not, then you’ll probably need to improvise a little.</p>
-<p>The LED’s used are copper string fairy lights and can be purchased very cheaply on eBay. They run on 3 x AA batteries (4.5V) which I converted over to a wall plug. When added into the inside of the bottle, the LED’s give off an ambient, soft light which is quite beautiful. There are plenty of projects about adding these LED’s to the inside of bottles so if you need more inspiration – check out this link on Google</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
+<h1>Industrial Bottle Lamp</h1><div class="source"><a href="https://www.instructables.com/Industrial-Bottle-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This lamp was born out of a bunch of parts that I had lying around the workshop.</p>
+<p>However, you should be able to find most of these parts on eBay or your local junk store.</p>
+<p>If not, then you’ll probably need to improvise a little.</p>
+<p>The LED’s used are copper string fairy lights and can be purchased very cheaply on eBay.</p>
+<p>They run on 3 x AA batteries (4.5V) which I converted over to a wall plug.</p>
+<p>When added into the inside of the bottle, the LED’s give off an ambient, soft light which is quite beautiful.</p>
+<p>There are plenty of projects about adding these LED’s to the inside of bottles so if you need more inspiration – <a href="https://www.google.com.au/search?q=fairly+LED%27s+inside+bottles&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZ0aaC6trUAhVNz2MKHTz6AwsQ_AUIBigB&biw=1733&bih=990">check out this link on Google</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Fairy LED’s – eBay</li>
-</ul>
+<li>Fairy LED’s – <a href="http://www.ebay.com.au/itm/20-50-100-LED-String-Copper-Wire-Fairy-Lights-Lamp-Powered-Waterproof-XU/371882425581?ssPageName=STRK%3AMEBIDX%3AIT&var=640846828835&_trksid=p2060353.m1438.l2649">eBay</a></li>
+</ol>
 <ol>
-<li>Vintage Bottle – eBay</li>
-</ul>
+<li>Vintage Bottle – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xvintage+bottle.TRS0&_nkw=vintage+bottle&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>Vintage Light Socket – eBay</li>
-</ul>
+<li>Vintage Light Socket – <a href="http://www.ebay.com.au/itm/E27-E26-Copper-Vintage-Edison-Screw-Bulb-Socket-Hang-Lamp-Pendant-Light-Holder/371952233598?ssPageName=STRK%3AMEBIDX%3AIT&var=640900450512&_trksid=p2060353.m1438.l2649">eBay</a></li>
+</ol>
 <ol>
-<li>Lamp Base – eBay. I'd also check the local thrift and op shops as well. You should definitely find something there</li>
-</ul>
+<li>Lamp Base – <a href="https://www.ebay.com.au/sch/i.html?_odkw=vintage+lamp&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xvintage++lamp+base.TRS0&_nkw=vintage++lamp+base&_sacat=0">eBay</a>. I'd also check the local thrift and op shops as well. You should definitely find something there</li>
+</ol>
 <ol>
-<li>Beaker Holder – eBay.</li>
-</ul>
+<li>Beaker Holder – <a href="https://www.ebay.com.au/sch/i.html?_odkw=beaker+holder&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xbeaker+stand.TRS0&_nkw=beaker+stand&_sacat=0">eBay</a>.</li>
+</ol>
 <ol>
-<li>Wire (Cord) – eBay</li>
-</ul>
+<li>Wire (Cord) – <a href="http://www.ebay.com.au/itm/3-3-Cotton-Cloth-Covered-Twisted-Electrical-Wire-Vintage-Lamp-Cord-Antique-Fan-/231861944108?var=&hash=item35fc0c7f2c:m:mBUv-RNzGTSjIIk1FFh68Cw">eBay</a></li>
+</ol>
 <ol>
-<li>4.5v Power supply – eBay</li>
-</ul>
+<li>4.5v Power supply – <a href="https://www.ebay.com.au/sch/i.html?_odkw=4.5v+power+adapter+0.3&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X4.5v+power+adapter+300.TRS0&_nkw=4.5v+power+adapter+300&_sacat=0">eBay</a></li>
+</ol>
 <ol>
-<li>Various O rings – eBay</li>
-</ul>
+<li>Various O rings – <a href="http://www.ebay.com.au/itm/225-x-18-Size-Rubber-O-Ring-O-Ring-Washer-Seals-Assorted-Black-Car-Air-Gas-Kit/152174111698?_trksid=p2045573.c100506.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190705%26meid%3De1c92e0c2a2a4e43aae1186c6cc0d850%26pid%3D100506%26rk%3D1%26rkt%3D1%26">eBay</a></li>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Wire cutters</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdrivers</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Make the Stand</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Make the Stand image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Make the Stand image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Make the Stand image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Make the Stand image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Make the Stand image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Make the Stand image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Make the Stand image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Make the Stand image 8" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Make the Stand</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Make the Stand image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Make the Stand image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Make the Stand image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Make the Stand image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Make the Stand image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Make the Stand image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Make the Stand image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Make the Stand image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First thing you need to do is to work out a way to attach the beaker holder to the base of the lamp. The bottom of the beaker holder had a female bolt hole which I was able use to screw the holder into the base.</li>
-</ul>
+</ol>
 <ol>
 <li>I also added a couple of washers to the top and bottom of the base as the hole was too big in the top and the holder would have just slipped through</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly I screwed everything together tightly</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Work Out What Bottle to Use</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Work Out What Bottle to Use image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Work Out What Bottle to Use image 2" loading="lazy"></div><p>It took me awhile to work out exactly what bottle I was going to use. I tried a cobalt blue bottle, an old dark green beer bottle and a few other types and sizes. Most of the bottle was either found at op shops or antique stores for pretty cheap.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Work Out What Bottle to Use</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Work Out What Bottle to Use image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Work Out What Bottle to Use image 2" loading="lazy"></div><p>It took me awhile to work out exactly what bottle I was going to use.</p>
+<p>I tried a cobalt blue bottle, an old dark green beer bottle and a few other types and sizes.</p>
+<p>Most of the bottle was either found at op shops or antique stores for pretty cheap.</p>
 <p>In the end I settled on a smaller bottle with a green blue hue. I think the smaller bottle works better ascetically and I like how the LED’s light up the bottle.</p>
 <p>Steps:</p>
 <ol>
 <li>Once I decided on the bottle, I gave it a good clean inside and out. The bottle must have been sitting for a long time on its side with liquid inside as it had a water stain inside. I filled the bottle up with some soapy hot water and let it sit for 12 hours and this seemed to get rid of most of it. Probably would have been better if I used a bottle brush or something similar</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Mod the Light Socket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Mod the Light Socket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Mod the Light Socket image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Mod the Light Socket image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Mod the Light Socket image 4" loading="lazy"></div><p>In order to fit the top of the bottle into the light socket you need to slightly mod it. The light socket has a built in switch which will make it easy to turn the LED’s off and on</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Mod the Light Socket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Mod the Light Socket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Mod the Light Socket image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Mod the Light Socket image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Mod the Light Socket image 4" loading="lazy"></div><p>In order to fit the top of the bottle into the light socket you need to slightly mod it. The light socket has a built in switch which will make it easy to turn the LED’s off and on</p>
 <p>Steps:</p>
 <ol>
 <li>First, you need to remove the section that the light bulb screws into. This is only made from tin and is easily removed with some tin snips</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure that there aren’t any sharp edges etc left over from the tin.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Wiring the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the LED's image 4" loading="lazy"></div><p>Wiring-up the LED’s to the light socket is really pretty easy – you’ll first need to pull out the wires from the battery holder though.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the LED's image 4" loading="lazy"></div><p>Wiring-up the LED’s to the light socket is really pretty easy – you’ll first need to pull out the wires from the battery holder though.</p>
 <p>Steps:</p>
 <ol>
 <li>First open the battery holder and de-solder the wire from the battery terminals. If you can’t do this, then you can just cut the wires. However, you’ll need to remove the coating at the end of the wire in order to be able to solder it later. Just use some sandpaper for small files to do this.</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure you also get the resistor as well.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the resister to the positive wire on the LED’s.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder the resister leg to the middle tab on the light socket</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, solder the other wire to the silver huck. There are 2 of these so make sure you solder to the one that is connected to the bottom screw.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Wiring the Plug</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring the Plug image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring the Plug image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring the Plug image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring the Plug image 4" loading="lazy"></div><p>Next thing to do is to wire the cord to the socket and also the 4.5v wall socket. It’s very important that you get the polarities right so make sure you check before you solder anything together.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring the Plug</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring the Plug image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring the Plug image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring the Plug image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring the Plug image 4" loading="lazy"></div><p>Next thing to do is to wire the cord to the socket and also the 4.5v wall socket. It’s very important that you get the polarities right so make sure you check before you solder anything together.</p>
 <p>Steps:</p>
 <ol>
 <li>Un-screw the bottom section of the light socket and place these parts through the cord</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the brown wire from the cord to the middle screw on underside of the light socket</li>
-</ul>
+</ol>
 <ol>
 <li>Attach the blue wire to the other screw connector.</li>
-</ul>
+</ol>
 <ol>
 <li>Screw the bottom section back into place</li>
-</ul>
+</ol>
 <ol>
 <li>To make sure that the wires don’t get pulled out, there is a small screw on the side of the socket that can be tightened so the cord can’t move. I had to use a slightly longer one in order for it to make contact with the cord. You could also tie a knot in the end of the cord and screw the bottom on which will also prevent it from being pulled out.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you need to attach the power connector to the end of the cord. Make sure you have the polarities right by testing first and then solder the wires from the cord to the connector. Don’t forget to add heat shrink to the exposed wire sections.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Light Socket to the Bottle</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 7" loading="lazy"></div><p>This was easier than I thought it would be. Initially I was just going to add hot glue but using O rings is a lot better idea.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Light Socket to the Bottle</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Light Socket to the Bottle image 7" loading="lazy"></div><p>This was easier than I thought it would be. Initially I was just going to add hot glue but using O rings is a lot better idea.</p>
 <p>Steps:</p>
 <ol>
 <li>First place 3 O rings over the head of the bottle. I found that 3 did the trick but your bottle might be a different shape than mine so experiment to work out what is best.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, carefully thread the LED’s into the bottle. I stopped every couple of meters and pushed the LED’s down into the bottle. This made sure that they just didn’t get caught near the top of the bottle.</li>
-</ul>
+</ol>
 <ol>
 <li>Once all of the LED’s are in the bottle, push the light socket onto the top of the bottle. Use something non-sharp and flat to push the O ring into the gap between the bottle and light socket.</li>
-</ul>
+</ol>
 <ol>
 <li>Once the O ring has been pushed in all the way round the socket it will form a good seal and will hold the socket onto the neck of the bottle well. It also means that you can pull off the socket if necessary to get at the LED’s if something goes wrong.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, push the bottle onto the clamps on the stand and turn it on</li>
-</ul>
+</ol>
 <ol>
 <li>Done!</li>
-</ul>
+</ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

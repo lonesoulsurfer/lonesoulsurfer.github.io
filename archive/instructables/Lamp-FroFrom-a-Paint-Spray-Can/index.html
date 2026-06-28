@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -133,13 +168,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>The build is straight forward and you only need a few parts to be able to build your own.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>PARTS:</p>
 <ul>
 <li>Paint Spray Can. I got mine from a place called Office Works but you can get one from any hardware store.</li>
-<li>Metal clamp, I used a 2" one - Ali Express</li>
-<li>LED Board 5V - Ali Express</li>
-<li>Dimmer Module - Ali Express</li>
-<li>Braided Cord - Ali Express</li>
+<li>Metal clamp, I used a 2" one - <a href="https://www.aliexpress.com/item/1005004687333816.html?spm=a2g0o.detail.1000014.9.6905507bxuWgWe&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40000.326746.0&scm_id=1007.40000.326746.0&scm-url=1007.40000.326746.0&pvid=9428383c-2ff1-40cf-bf56-7bd033eadac8&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40000.326746.0,pvid:9428383c-2ff1-40cf-bf56-7bd033eadac8,tpp_buckets:668%232846%238113%23685&pdp_npi=3%40dis%21AUD%218.88%216.66%21%21%21%21%21%402101f04d16856796420512305e4887%2112000030101599317%21rec%21AU%21129764711">Ali Express</a></li>
+<li>LED Board 5V - <a href="https://www.aliexpress.com/item/1005005122843105.html?spm=a2g0o.order_list.order_list_main.41.39611802twqCq8">Ali Express</a></li>
+<li>Dimmer Module - <a href="https://www.aliexpress.com/item/1005003768954449.html?spm=a2g0o.order_list.order_list_main.47.d8da1802W3WnFl">Ali Express</a></li>
+<li>Braided Cord - <a href="https://www.aliexpress.com/item/1005003644909366.html?spm=a2g0o.order_list.order_list_main.35.d8da1802W3WnFl">Ali Express</a></li>
 <li>Aluminium Strip - Hardware store</li>
 <li>Small screws and nuts</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Removing the Bottom of the Spray Can</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 4" loading="lazy"><img src="images/step02_05.gif" alt="Step 1: Removing the Bottom of the Spray Can image 5" loading="lazy"><img src="images/step02_06.gif" alt="Step 1: Removing the Bottom of the Spray Can image 6" loading="lazy"></div><p>First you need to make sure that the can is totally empty and there is no pressure left in the can. Mine had a little paint left so I just clamped the top and waited to all the paint and air was gone before I started to cut into the can.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Removing the Bottom of the Spray Can</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Removing the Bottom of the Spray Can image 4" loading="lazy"><img src="images/step02_05.gif" alt="Step 1: Removing the Bottom of the Spray Can image 5" loading="lazy"><img src="images/step02_06.gif" alt="Step 1: Removing the Bottom of the Spray Can image 6" loading="lazy"></div><p>First you need to make sure that the can is totally empty and there is no pressure left in the can.</p>
+<p>Mine had a little paint left so I just clamped the top and waited to all the paint and air was gone before I started to cut into the can.</p>
 <p>STEPS:</p>
 <ul>
 <li>You could just cut off the bottom of the can with a grinder but this might leave sharp edges so I decided to cut out the bottom of the can with an adjustable circle cutting drill piece. This way the edges wouldn't be sharp and there is less chance that you could cut yourself on it</li>
@@ -154,7 +190,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Remove the nozzle and put aside. You'll be modding this later to act as a knob for the on/off/dimmer pot later on.</li>
 <li>Drill out the top of the nozzle with a drill piece.</li>
 <li>If you find that there is still some metal around the hole, then use a dremel with a engraving bit to remove this and clean up the edges</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding a Bracket to the Spray Can</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 7" loading="lazy"><img src="images/step04_08.gif" alt="Step 3: Adding a Bracket to the Spray Can image 8" loading="lazy"><img src="images/step04_09.gif" alt="Step 3: Adding a Bracket to the Spray Can image 9" loading="lazy"></div><p>I didn't do this step until I had added the braided cord but it will be easier to add the bracket first to the top of can so lets start with doing that first. The bracket allows you to move the spray can around so you can point the light where needed.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding a Bracket to the Spray Can</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding a Bracket to the Spray Can image 7" loading="lazy"><img src="images/step04_08.gif" alt="Step 3: Adding a Bracket to the Spray Can image 8" loading="lazy"><img src="images/step04_09.gif" alt="Step 3: Adding a Bracket to the Spray Can image 9" loading="lazy"></div><p>I didn't do this step until I had added the braided cord but it will be easier to add the bracket first to the top of can so lets start with doing that first.</p>
+<p>The bracket allows you to move the spray can around so you can point the light where needed.</p>
 <p>STEPS:</p>
 <ul>
 <li>The bracket is made from 10mm strip of aluminium. You need to bend the aluminium around something that has a similar diameter as the spray can.</li>
@@ -167,11 +204,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Oh and I also added a couple small O rings to each of the screws so the aluminium brackets wasn't touching directly the spray can.</li>
 </ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Braided Wire</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Braided Wire image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Braided Wire image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Braided Wire image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Braided Wire image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Braided Wire image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Braided Wire image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Adding the Braided Wire image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 4: Adding the Braided Wire image 8" loading="lazy"><img src="images/step05_09.gif" alt="Step 4: Adding the Braided Wire image 9" loading="lazy"></div><p>STEPS:</p>
 <ul>
-<li>Drill a hole into the spray can a third of the way up from the top of the can. This should be at the back of the can</li>
-<li>Thread the braided wire though the hole and tie a knot into the wire. This will make sure that it can't be pulled through</li>
+<li>Drill a hole into the spray can a third of the way up from the top of the can.  This should be at the back of the can</li>
+<li>Thread the braided wire though the hole and tie a knot into the wire.  This will make sure that it can't be pulled through</li>
 <li>I made my wire quite long to enable it to be plugged in from a height.</li>
-<li>To be able to connect it to a 5V power adapter, you'll need to add a USB connector to the end of the wire. I just trimmed one from a USB cord I had lying around</li>
-<li>Remove the plastic around the wires and keep the red and black wires. The red is positive and black negative. Tin the ends with some solder</li>
+<li>To be able to connect it to a 5V power adapter, you'll need to add a USB connector to the end of the wire.  I just trimmed one from a USB cord I had lying around</li>
+<li>Remove the plastic around the wires and keep the red and black wires.  The red is positive and black negative.  Tin the ends with some solder</li>
 <li>Connect the USB to the braided wire and use some heat shrink to protect the connections</li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Connecting the Dimmer Circuit and LED's</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Connecting the Dimmer Circuit and LED's image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Connecting the Dimmer Circuit and LED's image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Connecting the Dimmer Circuit and LED's image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Connecting the Dimmer Circuit and LED's image 4" loading="lazy"><img src="images/step06_05.gif" alt="Step 5: Connecting the Dimmer Circuit and LED's image 5" loading="lazy"></div><p>The dimmer circuit also works as an on/off switch.</p>
 <p>STEPS:</p>
@@ -206,5 +243,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Push onto the top of the pot and test out to make sure everything works as it should.</li>
 </ul>
 <p>Thanks it!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

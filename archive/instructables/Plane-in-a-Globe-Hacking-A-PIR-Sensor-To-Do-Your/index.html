@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -132,5 +167,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Un-screw the circuit board</li>
 <li>carefully remove the circuit board from the cover</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Hacking the Sensor - Preperation</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Hacking the Sensor - Preperation image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Hacking the Sensor - Preperation image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Hacking the Sensor - Preperation image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Hacking the Sensor - Preperation image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Hacking the Sensor - Preperation image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Hacking the Sensor - Preperation image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Hacking the Sensor - Preperation image 7" loading="lazy"></div><h2><span class="step-num">STEP 4</span>Step 4: Hacking the Sensor - Modding the Case</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 5" loading="lazy"></div><h2><span class="step-num">STEP 5</span>Step 5: Modding the Globe</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Modding the Globe image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Modding the Globe image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Modding the Globe image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Modding the Globe image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Modding the Globe image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Modding the Globe image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Modding the Globe image 7" loading="lazy"></div><h2><span class="step-num">STEP 6</span>Step 6: Adding the Insides</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Insides image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Insides image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Insides image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Insides image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Insides image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Insides image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Insides image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Insides image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the Insides image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Adding the Insides image 10" loading="lazy"><img src="images/step06_11.jpg" alt="Step 6: Adding the Insides image 11" loading="lazy"></div><h2><span class="step-num">STEP 7</span>Step 7: Sticking Everything Together</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Sticking Everything Together image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Sticking Everything Together image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Sticking Everything Together image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Sticking Everything Together image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Sticking Everything Together image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Sticking Everything Together image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Sticking Everything Together image 7" loading="lazy"></div><h2><span class="step-num">STEP 8</span>Step 8: Creating the Stand</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Creating the Stand image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Creating the Stand image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Creating the Stand image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Creating the Stand image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Creating the Stand image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Creating the Stand image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Creating the Stand image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Creating the Stand image 8" loading="lazy"></div><h2><span class="step-num">STEP 9</span>Step 9: Wiring Everything Up</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring Everything Up image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring Everything Up image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring Everything Up image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring Everything Up image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring Everything Up image 5" loading="lazy"></div><h2><span class="step-num">STEP 10</span>Step 10: Done</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Done image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Done image 2" loading="lazy"></div>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

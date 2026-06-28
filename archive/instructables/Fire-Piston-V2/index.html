@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,213 +162,240 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Fire Piston (Made From Aluminium)</span>
 </nav>
-<h1>Fire Piston (Made From Aluminium)</h1><div class="source"><a href="https://www.instructables.com/Fire-Piston-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>You may have recently seen my Instructable: Simple Fire Piston that I posted recently. After building it I wanted to try and refine the process further. This Ible’ is a little more difficult but doesn’t need any fancy tools to make. If you have a saw that can cut metal and wood and some files and a drill, you can make one of these.</p>
+<h1>Fire Piston (Made From Aluminium)</h1><div class="source"><a href="https://www.instructables.com/Fire-Piston-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>You may have recently seen my Instructable: <a href="https://www.instructables.com/id/Simple-Fire-Piston/">Simple Fire Piston</a> that I posted recently.</p>
+<p>After building it I wanted to try and refine the process further.</p>
+<p>This Ible’ is a little more difficult but doesn’t need any fancy tools to make.</p>
+<p>If you have a saw that can cut metal and wood and some files and a drill, you can make one of these.</p>
 <p>This Ible’ also includes a small wooden case so I can keep all of the parts together. Plus it would make a pretty neat gift to give to someone.</p>
-<p>For those who may be new to a fire piston, what it does is allow you to ignite char cloth without any form of fire. Once the char cloth is lit, then you can use this to light your fire. It works by compressing and heating air until it reaches temperatures of 260°C (500°F). This is hot enough to ignite the char cloth and create an ember which can be used to light your fire.</p>
+<p>For those who may be new to a fire piston, what it does is allow you to ignite char cloth without any form of fire.</p>
+<p>Once the char cloth is lit, then you can use this to light your fire.</p>
+<p>It works by compressing and heating air until it reaches temperatures of 260°C (500°F).</p>
+<p>This is hot enough to ignite the char cloth and create an ember which can be used to light your fire.</p>
 <p>In step 7 I go through how to make Char cloth.</p>
-<p>Check out this link if you would like to learn more about the fire piston.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
+<p><a href="https://en.wikipedia.org/wiki/Fire_piston">Check out this link</a> if you would like to learn more about the fire piston.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Aluminium Tube – dimensions 10mm: hardware store</li>
-</ul>
+</ol>
 <ol>
 <li>Aluminium Rod – dimensions - 6.3mm (1/4 inch). hardware store. The dimensions don't have to be exactly the same as what I used. Just get something as close as possible.</li>
-</ul>
+</ol>
 <ol>
 <li>Wooden Dowel – dimensions 8mm hardware store</li>
-</ul>
+</ol>
 <ol>
 <li>Small door knob. hardware store</li>
-</ul>
+</ol>
 <ol>
-<li>O ring – Hardware store, eBay. Best to buy a bunch of assorted ones as this will give you more options. I found the O rings I purchased from eBay worked very well.</li>
-</ul>
+<li>O ring – Hardware store, <a href="http://www.ebay.com.au/itm/225-x-18-Size-Rubber-O-Ring-O-Ring-Washer-Seals-Assorted-Black-Car-Air-Gas-Kit/152174111698?_trksid=p2045573.c100506.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190705%26meid%3De1c92e0c2a2a4e43aae1186c6cc0d850%26pid%3D100506%26rk%3D1%26rkt%3D1%26">eBay.</a> Best to buy a bunch of assorted ones as this will give you more options. I found the O rings I purchased from eBay worked very well.</li>
+</ol>
 <ol>
-<li>Wooden box. eBay</li>
-</ul>
+<li>Wooden box. <a href="http://www.ebay.com.au/itm/Pen-Case-Handmade-Wooden-Pencil-Box-Storage-Organizer-Cute-Hollow-White-/262314323388?hash=item3d1326edbc:g:SokAAOSwuAVW1U7m">eBay</a></li>
+</ol>
 <ol>
 <li>Foam – hardware store. I used some foam from an old cushion</li>
-</ul>
+</ol>
 <ol>
 <li>Small tin – eBay. I just used a small mint tin.</li>
-</ul>
+</ol>
 <ol>
-<li>Small bottle – eBay</li>
-</ul>
+<li>Small bottle – <a href="http://www.ebay.com.au/itm/20pcs-Small-Bottle-2ml-Clear-Glass-Bottles-Vials-with-Plastic-Lid-16-31mm-/331908517992?hash=item4d474a1068:g:cywAAOSwYSlXh2xl">eBay</a></li>
+</ol>
 <ol>
 <li>Silicone plumbers grease (this is to lubricate the O ring). You can add motor oil but I've been told that this can break down the O ring. You can buy this at any hardware store (plumbing section)</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Grinder</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Epoxy glue</li>
-</ul>
+</ol>
 <ol>
 <li>Hand saw</li>
-</ul>
+</ol>
 <ol>
 <li>Files (small ones)</li>
-</ul>
+</ol>
 <ol>
 <li>Sandpaper – 240 grit</li>
-</ul>
+</ol>
 <ol>
 <li>Vice</li>
-</ul>
+</ol>
 <ol>
 <li>Stanley knife or exacto knife</li>
-</ul>
+</ol>
 <ol>
 <li>Hammer</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Making the Cylinder - Filing</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Cylinder - Filing image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Cylinder - Filing image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Cylinder - Filing image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Cylinder - Filing image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Cylinder - Filing image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Cylinder - Filing image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Cylinder - Filing image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Making the Cylinder - Filing image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Making the Cylinder - Filing image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Making the Cylinder - Filing image 10" loading="lazy"></div><p>The cylinder is the aluminium tube that the piston is pushed into.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Cylinder - Filing</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Cylinder - Filing image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Cylinder - Filing image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Cylinder - Filing image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Cylinder - Filing image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Cylinder - Filing image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Cylinder - Filing image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Cylinder - Filing image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Making the Cylinder - Filing image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Making the Cylinder - Filing image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Making the Cylinder - Filing image 10" loading="lazy"></div><p>The cylinder is the aluminium tube that the piston is pushed into.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut a piece of the tube with the grinder and make it approximately 160mm. This will be the main body of the cylinder. Just as a side note, I have made shorter ones 130mm and it worked fine. It was however a little trickier to get it to work so I suggest start will a longer one. Reason being, the air gets compressed more in a longer tube.</li>
-</ul>
+</ol>
 <ol>
 <li>The next step is to file the ends of the tube. You want to remove any burrs and make the ends smooth and flat. I found that the best way to do this was to put the tube into a vice and with a small flat file carefully grind away.</li>
-</ul>
+</ol>
 <p>Tapering the Cylinder End</p>
 <ol>
 <li>To allow easy access for the piston rod and O ring, you will need to taper the inside of the tube. I just used a small, rounded file and tapered the inside. I then just some sandpaper to smooth the edges. You want to have the tapered edge as smooth as possible so the O ring doesn’t catch and rip.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Cylinder - Handle</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Cylinder - Handle image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Cylinder - Handle image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Cylinder - Handle image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Cylinder - Handle image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Cylinder - Handle image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Cylinder - Handle image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Making the Cylinder - Handle image 7" loading="lazy"></div><p>The first one that I made like this I didn’t add the knob to the end of the cylinder. Bad mistake as the inside of my palm was killing me after several attempts. I decided to add a small door knob to the end of this one. If you look at other fire pistons on the net, you can see that I do this differently than most as they usually attach the knob to the rod. I find it works well the way I do it but if you wanted to, you could just add the knob to the end of the rod as well.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Cylinder - Handle</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Cylinder - Handle image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Cylinder - Handle image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Cylinder - Handle image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Cylinder - Handle image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Cylinder - Handle image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Cylinder - Handle image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Making the Cylinder - Handle image 7" loading="lazy"></div><p>The first one that I made like this I didn’t add the knob to the end of the cylinder.</p>
+<p>Bad mistake as the inside of my palm was killing me after several attempts.</p>
+<p>I decided to add a small door knob to the end of this one.</p>
+<p>If you look at other fire pistons on the net, you can see that I do this differently than most as they usually attach the knob to the rod.</p>
+<p>I find it works well the way I do it but if you wanted to, you could just add the knob to the end of the rod as well.</p>
 <p>This step goes though how to block off one end of the tube</p>
 <p>Steps:</p>
 <ol>
 <li>You will need to modify the knob so it fits better on the dowel. First cut off the tapered part of the knob. Once you remove this, you should see a hole in the bottom of the top of the knob.</li>
-</ul>
+</ol>
 <ol>
 <li>Use an 8mm drill piece and enlarge the hole and make it big enough so the dowel can fit tightly inside it.</li>
-</ul>
+</ol>
 <ol>
 <li>Epoxy the dowel into place and leave to dry</li>
-</ul>
+</ol>
 <ol>
 <li>Once dry, shorted the dowel if necessary (you only need about 15mm sticking out of the knob, taper the end of the dowel so it will be easier to get inside the tube and add some epoxy to the dowel.</li>
-</ul>
+</ol>
 <ol>
 <li>Push the tube onto the dowel and with a hammer; lightly tap the top of the rod into the dowel. It's also a good idea to slightly round the edges of the dowel so the glue have something to grab and it also helps with installing into the rod. Once the rod is to the bottom of the dowel, leave to dry for a couple hours</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you can either add some bees wax or lacquer to the end to protect it.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Piston - O Ring</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Piston - O Ring image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Piston - O Ring image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Piston - O Ring image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Piston - O Ring image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Piston - O Ring image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Piston - O Ring image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Piston - O Ring image 7" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Piston - O Ring</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Piston - O Ring image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Piston - O Ring image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Piston - O Ring image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Piston - O Ring image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Piston - O Ring image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Piston - O Ring image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Piston - O Ring image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The piston should be the same length as the cylinder. This will ensure that the piston is long enough. Mark and cut off any excess.</li>
-</ul>
+</ol>
 <ol>
 <li>Next file both ends of the rod so they are smooth and free of burrs.</li>
-</ul>
+</ol>
 <ol>
 <li>The best way to make the groove I found was to use the side of a small, thin file. Put the end into a drill and secure the drill in a vice. Push the side of the file against the aluminium rod and move it up and down slowly. Take your time and don’t go too deep or wide. The groove should only be as wide as the O ring.</li>
-</ul>
+</ol>
 <ol>
 <li>Stop and check regularly. Once you have an even groove, remove the rod from the drill and add the O ring to the groove. If the O ring sits even in the groove, then you are ready to see if it fits into the tube. HERE’S THE IMPORTANT BIT. Make sure you add a little bit of oil to the O ring. This will ensure that it moves easily and smoothly inside the tube. I didn’t do this initially and my O ring kept on getting stuck inside.</li>
-</ul>
+</ol>
 <ol>
 <li>To test you need to push the rod into the tube. You should feel a “cushion” of compressed air as you push the rod down. This will force the rod to bounce back up again. If you find that the rod isn’t bouncing back, or that it’s too hard to push into the tube, then you will either need to make the groove larger or start again. Don’t despair if your first couple don’t work, getting the seal right will probably take a couple turns. You will know though when it is right as soon as you feel the “cushion” of air forcing the piston back up again.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Piston - Hole for Char Cloth</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 7" loading="lazy"></div><p>To ensure the char cloth has a place to sit, you need to drill a hole into the end of the aluminium piston.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Piston - Hole for Char Cloth</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 7" loading="lazy"></div><p>To ensure the char cloth has a place to sit, you need to drill a hole into the end of the aluminium piston.</p>
 <p>Steps:</p>
 <ol>
 <li>Secure the piston in a vice</li>
-</ul>
+</ol>
 <ol>
 <li>Find the centre of the piston and mark it with a centre punch</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully drill a hole into the end. It needs to be about 10mm deep. Remember, it needs to be big enough to hold the char cloth in place. I used a 4.5mm drill piece to make the hole</li>
-</ul>
+</ol>
 <ol>
 <li>I also discovered through error that if you put a small groove on the top of the hole as shown in the images, it can make the char cloth easier to make. I'd suggest though to just make the hole as usual and if you do find it hard to light the char cloth, you could try adding a groove to help lighting the cloth</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Piston - Adding a Knob</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Piston - Adding a Knob image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Piston - Adding a Knob image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Piston - Adding a Knob image 3" loading="lazy"></div><p>So now you should have a fire piston that works. To find out how you can test it out – go to step 10</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Piston - Adding a Knob</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Piston - Adding a Knob image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Piston - Adding a Knob image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Piston - Adding a Knob image 3" loading="lazy"></div><p>So now you should have a fire piston that works. To find out how you can test it out – go to step 10</p>
 <p>After a little testing you will probably discover that it would be handy to have another knob on the end of the piston as well.</p>
 <p>Steps:</p>
 <ol>
 <li>As per step 3, cut off the tapered part of the knob. Once you remove this, you should see a hole in the bottom of the top of the knob.</li>
-</ul>
+</ol>
 <ol>
 <li>If necessary, file the cut section</li>
-</ul>
+</ol>
 <ol>
 <li>Add some epoxy to the inside of the hole and push the end of the piston into the hole.</li>
-</ul>
+</ol>
 <ol>
 <li>Leave to dry for a few hours.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, you can either add some bees wax or lacquer to the end to protect it.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Making Char Cloth</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making Char Cloth image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making Char Cloth image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making Char Cloth image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making Char Cloth image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making Char Cloth image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making Char Cloth image 6" loading="lazy"></div><p>Making char cloth is super easy and there are plenty of good instructions on the net on how to make it.</p>
-<p>Check out this wikipedia link to see how it all works</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Making Char Cloth</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making Char Cloth image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making Char Cloth image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making Char Cloth image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making Char Cloth image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making Char Cloth image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making Char Cloth image 6" loading="lazy"></div><p>Making char cloth is super easy and there are plenty of good instructions on the net on how to make it.</p>
+<p>Check out <a href="https://en.wikipedia.org/wiki/Char_cloth">this wikipedia link</a> to see how it all works</p>
 <p>Steps:</p>
 <ol>
 <li>First cut up some cloth. 100% cotton is the way to go. Cut up the cloth into small pieces.</li>
-</ul>
+</ol>
 <ol>
 <li>Next grab a small tin like a tobacco tin and make a small hole in the top. Place the cut up cloth into the tin and place the lid on top.</li>
-</ul>
+</ol>
 <ol>
 <li>Place the tin onto a fire source. You'll start to first see some smoke and then a flames come out the hole. Once the flame has died down and gone out you then should block the hole with a stick. The reason being the char cloth can start to smolder and ignite once it has been removed from the fire.</li>
-</ul>
+</ol>
 <ol>
 <li>That's it! Your char cloth is ready to use in your fire piston.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, I placed the char cloth into a small tin which keeps it dry and secure.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Char Cloth "Picking" Tool</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Char Cloth "Picking" Tool image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Char Cloth "Picking" Tool image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Char Cloth "Picking" Tool image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Char Cloth "Picking" Tool image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Char Cloth "Picking" Tool image 5" loading="lazy"></div><p>In order to get the Char cloth out of the rod, it’s best if you have a little picking tool to pull it out.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Char Cloth "Picking" Tool</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Char Cloth "Picking" Tool image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Char Cloth "Picking" Tool image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Char Cloth "Picking" Tool image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Char Cloth "Picking" Tool image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Char Cloth "Picking" Tool image 5" loading="lazy"></div><p>In order to get the Char cloth out of the rod, it’s best if you have a little picking tool to pull it out.</p>
 <p>Steps:</p>
 <ol>
 <li>Grab a piece of brass rod and squash the end in a vice</li>
-</ul>
+</ol>
 <ol>
 <li>File the flat section to remove any lumps or burrs and also round the end of the picker</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, slightly bend the flat section as shown in the pictures below.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Making the Box</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Box image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Box image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Box image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Box image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Box image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Making the Box image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Making the Box image 7" loading="lazy"></div><p>Actually, you don’t need to make the box as you can just buy on one eBay. You will however need to cut the foam to fit the fire piston, tin, oil, char cloth and picking tool. I designed 2 different types of boxes. One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - Typesets of the Future. In it he reviews the typography of different movies, one of them being Alien. A artist called Ron Cobb came up with some iconography he called the Semiotic standard. They are a way of communicating with images. Anyhow I decided to create my own for this project which can be seen in the below image.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Box</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Box image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Box image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Box image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Box image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Box image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Making the Box image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Making the Box image 7" loading="lazy"></div><p>Actually, you don’t need to make the box as you can just buy on one eBay.</p>
+<p>You will however need to cut the foam to fit the fire piston, tin, oil, char cloth and picking tool.</p>
+<p>I designed 2 different types of boxes.</p>
+<p>One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - <a href="https://typesetinthefuture.com/">Typesets of the Future</a>.</p>
+<p>In it he reviews the typography of different movies, one of them being Alien.</p>
+<p>A artist called <a href="https://wharferj.wordpress.com/2012/05/25/ron-cobbs-alien-semiotic-standards/">Ron Cobb</a> came up with some iconography he called the <a href="https://www.google.com.au/search?q=semiotic+standard&oq=semiotic+standard&aqs=chrome..69i57j69i59j69i60l3j69i61.3260j0j7&sourceid=chrome&ie=UTF-8">Semiotic standard</a>.</p>
+<p>They are a way of communicating with images.</p>
+<p>Anyhow I decided to create my own for this project which can be seen in the below image.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut the foam so it fits into the box</li>
-</ul>
+</ol>
 <ol>
 <li>Mark-out the area’s you will need to cut out. You’ll need to have a spot for the piston, tin, oil and picker</li>
-</ul>
+</ol>
 <ol>
 <li>Cut out the area’s with an exacto knife</li>
-</ul>
+</ol>
 <ol>
 <li>Glue the foam into the box</li>
-</ul>
+</ol>
 <ol>
 <li>Place all of the parts into the box.</li>
-</ul>
-<p>Done</p><h2><span class="step-num">STEP 10</span>Step 10: Other Box Designs</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Other Box Designs image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Other Box Designs image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Other Box Designs image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Other Box Designs image 4" loading="lazy"></div><p>I designed 2 different types of boxes. One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - Typesets of the Future. In it he reviews the typography of different movies, one of them being Alien. A artist called Ron Cobb came up with some iconography he called the Semiotic standard. They are a way of communicating with images. Anyhow I decided to create my own for this project. They're no where near as cool as Rob Cobb's designs but it was fun to come up with some of my own designs.</p><h2><span class="step-num">STEP 11</span>Step 11: Using Your Fire Piston</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Using Your Fire Piston image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Using Your Fire Piston image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Using Your Fire Piston image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Using Your Fire Piston image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Using Your Fire Piston image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Using Your Fire Piston image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Using Your Fire Piston image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 11: Using Your Fire Piston image 8" loading="lazy"><img src="images/step11_09.jpg" alt="Step 11: Using Your Fire Piston image 9" loading="lazy"></div><p>So now you’ve finished your piston, it’s time to get it to work. It does take a little practice but once you get it, it should work for you each time. Don’t be put off if it doesn’t work straight away though.</p>
+</ol>
+<p>Done</p><h2><span class="step-num">STEP 10</span>Step 10: Other Box Designs</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Other Box Designs image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Other Box Designs image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Other Box Designs image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Other Box Designs image 4" loading="lazy"></div><p>I designed 2 different types of boxes.</p>
+<p>One I just added some Danish oil to bring out the grain, the other I painted red and added some "Semiotics" I only recently discovered what these were after reading Dave Addey's magnificent blog titled - <a href="https://typesetinthefuture.com/">Typesets of the Future</a>.</p>
+<p>In it he reviews the typography of different movies, one of them being Alien.</p>
+<p>A artist called <a href="http://roncobb.net/">Ron Cobb</a> came up with some iconography he called the <a href="https://www.google.com.au/search?q=Semiotic+standard&oq=Semiotic+standard&aqs=chrome..69i57j0l2.564j0j4&sourceid=chrome&ie=UTF-8">Semiotic standard</a>.</p>
+<p>They are a way of communicating with images.</p>
+<p>Anyhow I decided to create my own for this project.</p>
+<p>They're no where near as cool as Rob Cobb's designs but it was fun to come up with some of my own designs.</p><h2><span class="step-num">STEP 11</span>Step 11: Using Your Fire Piston</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Using Your Fire Piston image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Using Your Fire Piston image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Using Your Fire Piston image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Using Your Fire Piston image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Using Your Fire Piston image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Using Your Fire Piston image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Using Your Fire Piston image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 11: Using Your Fire Piston image 8" loading="lazy"><img src="images/step11_09.jpg" alt="Step 11: Using Your Fire Piston image 9" loading="lazy"></div><p>So now you’ve finished your piston, it’s time to get it to work.</p>
+<p>It does take a little practice but once you get it, it should work for you each time.</p>
+<p>Don’t be put off if it doesn’t work straight away though.</p>
 <p>Here’s what you do:</p>
 <p>Steps:</p>
 <ol>
 <li>Place a small piece of char cloth into the drilled hole in the piston. What I do is tear a small strip off the chat cloth and roll it up. IMPORTANT: after a lot of trial and error, I discovered that the char cloth lights best when below the rim of the hole in the piston. Make should it is pushed into the hole and that there is no char cloth hanging over the edge.</li>
-</ul>
+</ol>
 <ol>
 <li>Add a little oil to the O ring. You don’t have to do this each time, just the first time or until the O ring is dry.</li>
-</ul>
-<p>UPDATE - As DaBoSSs has mentioned in the comments below, it's better to use silicone grease instead. It won't break down the rubber like motor oil will. However, just use motor oil if that's all you have around - I have been and it seems to do the job well.</p>
+</ol>
+<p>UPDATE - As DaBoSSs has mentioned in the comments below, it's better to use silicone grease instead.</p>
+<p>It won't break down the rubber like motor oil will.</p>
+<p>However, just use motor oil if that's all you have around - I have been and it seems to do the job well.</p>
 <ol>
 <li>Push the end of the piston into the tube just to the O ring is inside</li>
-</ul>
+</ol>
 <ol>
 <li>Grab hold of the tube in on hand and put the knob of the piston into you palm</li>
-</ul>
+</ol>
 <ol>
 <li>Give the piston a quick push down</li>
-</ul>
+</ol>
 <ol>
 <li>Immediately remove the piston and check the char cloth to see if it is lit</li>
-</ul>
+</ol>
 <ol>
 <li>If it is isn't try it again</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Troubleshooting</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Troubleshooting image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Troubleshooting image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Troubleshooting image 3" loading="lazy"></div><p>If you are having issues getting the Char cloth to light, then check out the below hints</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Troubleshooting</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Troubleshooting image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Troubleshooting image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Troubleshooting image 3" loading="lazy"></div><p>If you are having issues getting the Char cloth to light, then check out the below hints</p>
 <p>There is no push back (compression) on the piston</p>
 <p>You should always feel the piston pushing back when you go to push it in. If not, you may need to try the following:</p>
 <ul>
@@ -374,5 +436,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ul>
 <li>Try a different sized O ring, or replace the one you are using.</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

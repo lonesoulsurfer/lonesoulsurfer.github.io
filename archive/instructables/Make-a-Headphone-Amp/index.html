@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,226 +162,262 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make a Headphone Amp V2</span>
 </nav>
-<h1>Make a Headphone Amp V2</h1><div class="source"><a href="https://www.instructables.com/Make-a-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>After discovering Cew27's Cmoy Headphone Amp a few months ago on Instructables, I've been inspired to build my own.</p>
-<p>I was also inspired by Koogars amazing Crystal CMoy Free Form Headphone Amplifier which I have been admiring for a few years now. I even did a bunch of projects using resin because of this project!</p>
-<p>This is my second headphone amp build – my first can be found here. What I really like about this one compared to the first build is a couple of things. Firstly, it’s a simpler build and only needs one IC to run it, and second, you don’t have to worry about separating the input and output grounds as I did with the first build.</p>
-<p>Also, in my opinion it has better sound quality then the first build and seems more stable. There is still a small amount of interference sometimes if your mobile isn’t switched to air plane mode, but I don’t think this is really avoidable. Once your phone is on air plane mode, there is no detectable interference and the amp works perfectly.</p>
-<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one! Your phone doesn’t really have the power to drive a pair of headphones. You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range. When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
-<p>So without further ado – let’s get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: About the Amp Circuit I Choose to Build</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: About the Amp Circuit I Choose to Build image 1" loading="lazy"></div><p>The amp is built using op amp 5532. The op amp is a low-distortion, low-noise device, which can drive low-impedance loads to a full voltage swing while maintaining low distortion. Furthermore, it is fully output short-circuit proof. I’ve included the datasheet on the op amp in case anyone is interested.</p>
+<h1>Make a Headphone Amp V2</h1><div class="source"><a href="https://www.instructables.com/Make-a-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>After discovering <a href="https://www.instructables.com/member/Cew27/">Cew27's</a> <a href="https://www.instructables.com/id/Headphone-Amp-Chu-Moy/">Cmoy Headphone Amp</a> a few months ago on Instructables, I've been inspired to build my own.</p>
+<p>I was also inspired by <a href="https://www.instructables.com/member/koogar/">Koogars</a> amazing <a href="http://CMoy Free Form Headphone Amplifier">Crystal CMoy Free Form Headphone Amplifier</a> which I have been admiring for a few years now.</p>
+<p>I even did a bunch of projects using resin because of this project!</p>
+<p>This is my second headphone amp build – my first <a href="https://www.instructables.com/id/Make-Your-Own-Headphone-Amp/">can be found here</a>.</p>
+<p>What I really like about this one compared to the first build is a couple of things.</p>
+<p>Firstly, it’s a simpler build and only needs one IC to run it, and second, you don’t have to worry about separating the input and output grounds as I did with the first build.</p>
+<p>Also, in my opinion it has better sound quality then the first build and seems more stable.</p>
+<p>There is still a small amount of interference sometimes if your mobile isn’t switched to air plane mode, but I don’t think this is really avoidable.</p>
+<p>Once your phone is on air plane mode, there is no detectable interference and the amp works perfectly.</p>
+<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one!</p>
+<p>Your phone doesn’t really have the power to drive a pair of headphones.</p>
+<p>You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range.</p>
+<p>When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
+<p>So without further ado – let’s get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: About the Amp Circuit I Choose to Build</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: About the Amp Circuit I Choose to Build image 1" loading="lazy"></div><p>The amp is built using op amp 5532.</p>
+<p>The op amp is a low-distortion, low-noise device, which can drive low-impedance loads to a full voltage swing while maintaining low distortion.</p>
+<p>Furthermore, it is fully output short-circuit proof.</p>
+<p>I’ve included the datasheet on the op amp in case anyone is interested.</p>
 <p>The other positives about this op amp is it’s cheap, you only need 1 for the circuit and you don’t have to worry about virtual grounds or trying to separate the input and output grounds.</p>
 <p>Also, when you first look at the schematic it might seem that there are 2 op amp IC’s. There is actually only one and is done this way so it is easier to design.</p>
 <p>The end result is a high quality, high performance portable device that is relatively easy to build and will change the way you listen to music from your phone.</p>
 <ul>
 <li><a href="pdfs/ne5532.pdf">ne5532</a></li>
-</ul><a class="pdf-download" href="pdfs/ne5532.pdf" target="_blank">&#8675; ne5532</a><h2><span class="step-num">STEP 2</span>Step 2: Tools and Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Tools and Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Tools and Parts image 2" loading="lazy"></div><p>Parts:</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Tools and Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Tools and Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Tools and Parts image 2" loading="lazy"></div><p>Parts:</p>
 <p>It might seem like you need a lot of parts buts most can be purchased in bulk and if you already mess about with electronics then you will probably have most of the components already.</p>
 <ol>
-<li>10K duel gang Potentiometer – eBay</li>
-</ul>
+<li>10K duel gang Potentiometer – <a href="https://www.ebay.com.au/itm/2-Pcs-10K-B10K-Dual-Linear-RK097G-Sealed-Potentiometer-Pot-15mm-Shaft-6pins/162989023343?hash=item25f2e7206f:g:CFAAAOSwroZayvhV:rk:20:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>Potentiometer knob - eBay</li>
-</ul>
+<li>Potentiometer knob - <a href="https://www.ebay.com.au/itm/5Pcs-Aluminum-Potentiometer-Knob-6mm-Cap-Inner-Volume-Control-Rotary-Switch/142387618833?hash=item2126f6a411:m:mk-CmZeKA1QScajKjWmkeAQ:rk:1:pf:1&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 18K Resistor – metal film – eBay</li>
-</ul>
+<li>2 X 18K Resistor – metal film – <a href="https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>4 X 68K resistor – metal film – eBay</li>
-</ul>
+<li>4 X 68K resistor – metal film – <a href="https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>47K resistor - eBay</li>
-</ul>
+<li>47K resistor - <a href="https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>5mm LED – eBay</li>
-</ul>
+<li>5mm LED – <a href="https://www.ebay.com.au/itm/300pcs-3mm-5mm-LED-Diodes-Emitting-White-Yellow-Red-Green-Blue-Assorted-Kit-DIY/153108410105?hash=item23a5f8eef9:g:GOoAAOSwPSxbUvec:rk:17:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>NE5532 IC – eBay (10 IC's for just over a dollar!)</li>
-</ul>
+<li>NE5532 IC – <a href="https://www.ebay.com.au/itm/10PCS-NE5532P-NE5532-DIP-8-Dual-Low-Noise-Op-Amp-TI-IC-NEW/232812686621?hash=item3634b7ad1d:g:9YoAAOSwa69bKgik:rk:1:pf:1&frcectupt=true">eBay</a> (10 IC's for just over a dollar!)</li>
+</ol>
 <ol>
-<li>8 pin socket holder - eBay</li>
-</ul>
+<li>8 pin socket holder - <a href="https://www.ebay.com.au/itm/20-50-100PCS-8pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe-NEW/302772458949?hash=item467ea515c5:m:mU03b60t-BPlVH-Taq7boXA:rk:8:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>SPDT switch - eBay</li>
-</ul>
+<li>SPDT switch - <a href="https://www.ebay.com.au/itm/AC-250V-2A-120V-5A-ON-ON-2-Position-SPDT-Mini-Micro-Toggle-Switch-Red-B2A0/253146892393?epid=1394258673&hash=item3af0bb0869:g:NZIAAOSws1ZZthvk:rk:6:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>3 X 4.7uf capacitor – eBay</li>
-</ul>
+<li>3 X 4.7uf capacitor – <a href="https://www.ebay.com.au/itm/Various-Radial-Aluminium-Electrolytic-Capacitors-10V-450V-105-C-0-1uF-10000uF/223329394557?hash=item33ff781f7d:m:mcORIoO_iVM6d-_E4l3QyLw:rk:2:pf:1&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 22pf ceramic capacitor – eBay</li>
-</ul>
+<li>2 X 22pf ceramic capacitor – <a href="https://www.ebay.com.au/itm/10-20-50Pcs-22pF-50V-NPO-5mm-Ceramic-Capacitor/153319633028?hash=item23b28ff084:m:m_Y_A-nI3eCcBpKxx06JM0g:rk:12:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>3 X 220uf capacitor – eBay</li>
-</ul>
+<li>3 X 220uf capacitor – <a href="https://www.ebay.com.au/itm/10pcs-220uF-10V-6-3x11mm-Nichicon-FW-10V220uF-High-Grade-HiFi-Audio-Capacitor/252477956012?hash=item3ac8dbdfac:g:qf4AAOSwaB5XlZxY:rk:10:pf:0">eBay</a></li>
+</ol>
 <ol>
-<li>2 X 3.5mm stereo jack socket – eBay</li>
-</ul>
+<li>2 X 3.5mm stereo jack socket – <a href="https://www.ebay.com.au/itm/10Pcs-PJ-392-3-Pin-3-5mm-Stereo-Headphone-Audio-Video-Jack-Socket-Plug3C/222746392853?hash=item33dcb83915:rk:5:pf:1&checksum=2227463928535c332b5e5bbe48cfb41a20f2e5641a22&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVQf2tGvodfr8DtagHHXVG98%2FYcZs2e%2FD1gzetEgeRuIznR%2FVotn8Ze8F6ZqZO2tIWRxRK6%2BCiCUxQpLVLYSSkraZKnEKinDmMXlJz3atFZct1CJL%2FNn5w1KzyQt0VJ7WGWKqXOtklSNceRw7C9xu3r9sPNmjuN9GEqbn%2B7OgM43DejirfUyz2ZwyLwEral1SILtSFOaI%2F5qs%2FR9aiyhoI2OOSP1vr2fvc2kjzDZ7TPMfI%2B2ViG0XhgKNQW%2Br8bIVzV2TYK15Lp3fq4JgOOuNE9znVu42r2xW5RccFqOKePNZ8RHah7ye4gnTypwuUlcFDcxvX3KUQgMRqxK2Sj91NUpVMnfFsoLWmWe1d3jasuExco9zsn1g8SAqKoHS%2BilAEnG7mbuATPeaIXHonLphkRY9DX4XiVxJ3L95rTc%2BjdFAlZ2MSds4vENsUeBnJJwVCKWS20ZXThMowvMJrFSm2QLRsLIsGDXdolAtgOXOy7f4%2BkmcEs1S%2FSbasiK3OxZtIgzaylHJLeLbEKz1%2BfX2Ax7Onb936aGWAN4TZIZIVul%2BCyUqSUTCuGVh5FvTGu5UlCODhFMmuDWNU6EYhL3H4VJ%2BH1P2cJ3DjLpIvd6dVGOYBFlmNAlf7d10dq7MK9GN1Nf56LHg54Kxp%2FuBAyFPxbMR0InZN%2FCEx3cjhrTt7rdWAw9xWfX6FvUXUCCoVNg5nFXKoQkjwDIj%2FSnAon8fkIWWD%2FKkkjDNO0L1%2FVXrIXSpIyy9CwWNAwnSLa%2B9fi2aPEo0KlnXlj5sQS6ac7ogJzD76RJQY3ZGwvjIU%2BGwP5vFVVchGLAo04t1Tn%2F5a9rlDtIcX1NjXQk5x1eLnkGYAP%2BUQv4rJEORrF%2FfcKxaQGtYkdGspcsEBSC7TkwUb6uQvasvDWgamRSRZqaj0Uwvd7s1nBmEiEEYbBLnkrEaZSDKcNYAu8Hx2MpiY5hgzVnzrxbxwScy4thR%2B1BRsPJT%2Bbw%3D%3D&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Prototype board - eBay</li>
-</ul>
+<li>Prototype board - <a href="https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3">eBay</a></li>
+</ol>
 <ol>
-<li>9v battery holder - eBay</li>
-</ul>
+<li>9v battery holder - <a href="https://www.ebay.com.au/itm/10PCS-MN1604-9V-PP3-9volt-Battery-Holder-Clip-Snap-On-Connector-Cable-Lead/282606951665?hash=item41ccafdcf1:g:EYoAAOSwr~dZjXn2:rk:20:pf:0">eBay</a></li>
+</ol>
 <ol>
 <li>9v battery</li>
-</ul>
+</ol>
 <ol>
 <li>Wires</li>
-</ul>
+</ol>
 <ol>
-<li>Case. I used a small tin case - check out eBay if you want to use one similar. You could use a tobacco tin or an altoids tin or something similar - eBay</li>
-</ul>
+<li>Case. I used a small tin case - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xaltoids+tin.TRS0&_nkw=altoids+tin&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=altoids+style+tin&LH_TitleDesc=0">check out [eBay</a>](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=tobacco+tin&_sacat=0) if you want to use one similar. You could use a tobacco tin or an altoids tin or something similar - eBay</li>
+</ol>
 <ol>
-<li>You’ll also need a male to male 3.5mm cord - eBay</li>
-</ul>
+<li>You’ll also need a male to male 3.5mm cord - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR4.TRC1.A0.H0.X3.5mm+male+to+male+cord.TRS0&_nkw=3.5mm+male+to+male+cord&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=22pf+capacitor&LH_TitleDesc=0">eBay</a></li>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Drill</li>
-</ul>
+</ol>
 <ol>
 <li>Soldering iron</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Wire cutters</li>
-</ul>
+</ol>
 <ol>
 <li>The usual, basic tools that you have in your tool box</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Part 1 image 4" loading="lazy"></div><p>First thing to do is to take a good look at the circuit design and breadboard it to make sure it works for you.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Part 1 image 4" loading="lazy"></div><p>First thing to do is to take a good look at the circuit design and breadboard it to make sure it works for you.</p>
 <p>NOTE – Although it might look like there are 2 IC's in the schematic, it's actually only one which has been split. This allows for a clearer schematic</p>
 <p>Steps:</p>
 <ol>
 <li>Solder the 8 pin socket into the prototype board. Make sure you give yourself enough room on either side if the socket, you can always trim the prototype board later once you have finished the circuit</li>
-</ul>
+</ol>
 <ol>
 <li>Solder one of the 68K resistors to pins 1 and 2 and also another to pins 6 and 7</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a 22pf cap to exactly the same pins</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Part 2 image 3" loading="lazy"></div><p>As you are building the circuit, you’ll start to run out of</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Part 2 image 3" loading="lazy"></div><p>As you are building the circuit, you’ll start to run out of</p>
 <p>room quickly on pins 2 and 3 on the IC. Just make sure that you try and make room for all of the components.</p>
 <p>Steps:</p>
 <ol>
 <li>Next, you need to add the 220uf capacitors for the output socket.</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the positive leg on the cap to pin 1 on the IC. Solder the ground leg to a solder point on the prototype board that is open</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the positive leg on another 220uf cap to pin 7 on the IC. Again, solder the ground leg to a solder point that is open</li>
-</ul>
+</ol>
 <ol>
 <li>Pin 3 needs to have 3 components attached to it. 2 68K resistors need to be connected to pin 3. One then needs to be connected to ground and the other positive.</li>
-</ul>
+</ol>
 <ol>
 <li>Next, you need to add a 4.7uf cap. Solder the positive leg to pin 3 and the ground leg to ground on the prototype board</li>
-</ul>
+</ol>
 <p>See I told you it starts to get a little squashy on the board</p><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Part 3</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Part 3 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - Part 3 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - Part 3 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - Part 3 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - Part 3 image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder an 18k resistor to pin 2 on the IC. The other leg solder to an open solder point on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Next, solder the positive leg of a 4.7uf cap to the other leg of the 18k resistor. The other leg solder to a spare solder point on the board. This will later be connected to the potentiometer and output section of the amp.</li>
-</ul>
+</ol>
 <ol>
 <li>Now you need to do the same thing for the other channel on your headphones. This time, add a 18K resistor to pin 6 on the IC. The ground leg on the cap solder to an open solder point on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Solder the positive leg from a 4.7uf cap to the other leg of the 18K resistor – same as pin 2. Solder the ground leg to an open solder point on the prototype board</li>
-</ul>
+</ol>
 <ol>
 <li>Connect pin 4 to ground</li>
-</ul>
+</ol>
 <ol>
 <li>Connect pin 8 to positive</li>
-</ul>
+</ol>
 <ol>
 <li>You also need to connect pins 3 and 5 together. I do this underneath the circuit with a</li>
-</ul>
+</ol>
 <p>resistor leg.</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - Part 4</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - Part 4 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - Part 4 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Circuit - Part 4 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Circuit - Part 4 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Circuit - Part 4 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Circuit - Part 4 image 6" loading="lazy"></div><p>That’s all of the components connected. I later decided to add an LED as well so just follow the below if you want to do this as well.</p>
 <p>Steps:</p>
 <ol>
 <li>First connect both the ground and positive bus strips on the prototype board with some wire</li>
-</ul>
+</ol>
 <ol>
 <li>Next, add 4 lengths of wire to ground bus strip</li>
-</ul>
+</ol>
 <ol>
 <li>Add a couple of wires to the ground legs on the 4.7uf caps</li>
-</ul>
+</ol>
 <ol>
 <li>Do the same to the ground legs on the 220uf caps</li>
-</ul>
+</ol>
 <ol>
 <li>You also need to add a wire to each of the positive and ground bus strips for power</li>
-</ul>
+</ol>
 <ol>
 <li>If you want to add an LED “on” indicator, solder a 20k resistor to ground and then to a spare solder point. Solder a wire to the other end of the resistor.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, trim the circuit board to size.</li>
-</ul>
-<p>That’s it for the board, now it’s time to build the case</p><h2><span class="step-num">STEP 7</span>Step 7: Pick a Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Pick a Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Pick a Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Pick a Case image 3" loading="lazy"></div><p>Picking the right case in my opinion, is just as important as getting the electronics working. It took me awhile to find just the right tin for this project, which a friend actually gave to me. Initially I made a couple of different ones out of wood but I didn’t go with a wood case in the end as it just wasn’t working for me.</p>
-<p>If you are looking for an old tin case, then you can always try eBay. Just type in Tobacco tin and you’ll come across heaps of them. You can also use an Altoids tine which you can now buy in many different designs</p>
+</ol>
+<p>That’s it for the board, now it’s time to build the case</p><h2><span class="step-num">STEP 7</span>Step 7: Pick a Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Pick a Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Pick a Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Pick a Case image 3" loading="lazy"></div><p>Picking the right case in my opinion, is just as important as getting the electronics working.</p>
+<p>It took me awhile to find just the right tin for this project, which a friend actually gave to me.</p>
+<p>Initially I made a couple of different ones out of wood but I didn’t go with a wood case in the end as it just wasn’t working for me.</p>
+<p>If you are looking for an old tin case, then you can always try eBay.</p>
+<p>Just type in Tobacco tin and you’ll come across heaps of them.</p>
+<p>You can also use an Altoids tine which you can now buy in many different designs</p>
 <p>Steps:</p>
 <ol>
 <li>The most important thing about finding the right case is to ensure that you will be able to fit the battery and circuit inside. You’ll also need to add a couple of 3.5mm sockets, a switch and a volume pot to it so make sure you have a little wiggle room for all of the components</li>
-</ul>
+</ol>
 <ol>
 <li>Place the circuit inside the case and if necessary, trim the edges so you can push it right up against the side of the case</li>
-</ul>
+</ol>
 <ol>
 <li>If everything fits ok then you can start to drill all of the holes needed to add the components</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Auxiliary Parts to the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 6" loading="lazy"></div><p>As there isn’t much room in the case, you will need to really think about where you add all of the axillary components. Don’t just start drilling holes into the case, place the circuit and battery inside it and think about the best spots to add the sockets etc. Remember, the amp will probably sit in your pockets so you need to think about having the sockets facing up etc.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Auxiliary Parts to the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 6" loading="lazy"></div><p>As there isn’t much room in the case, you will need to really think about where you add all of the axillary components.</p>
+<p>Don’t just start drilling holes into the case, place the circuit and battery inside it and think about the best spots to add the sockets etc.</p>
+<p>Remember, the amp will probably sit in your pockets so you need to think about having the sockets facing up etc.</p>
 <p>Steps</p>
 <ol>
 <li>Drill 2 holes for the 3.5mm sockets. Try to put these close together and have them so if the case is in your pocket, they will be facing upwards.</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a hole for the SPDT switch</li>
-</ul>
+</ol>
 <ol>
 <li>Drill a hole for the potentiometer</li>
-</ul>
+</ol>
 <ol>
 <li>You can’t see it in the images, but you also need to drill a small hole for the LED. Try to get this as close to the switch as possible.</li>
-</ul>
+</ol>
 <ol>
 <li>Once all of the holes are drilled, you can then add all of the auxiliary parts to the case.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Wiring-up the Circuit and Toubleshooting</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 8" loading="lazy"></div><p>It’s now time to solder the wires from the circuit board to the auxiliary parts on the case. This can be a little fiddly, especially if you gave a small case. Wires take up a surprising amount of room so make sure you trim them as much as you can before attaching them. You want to make sure though that you can lift the circuit board up and check underneath and problem solve if necessary.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring-up the Circuit and Toubleshooting</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 8" loading="lazy"></div><p>It’s now time to solder the wires from the circuit board to the auxiliary parts on the case.</p>
+<p>This can be a little fiddly, especially if you gave a small case.</p>
+<p>Wires take up a surprising amount of room so make sure you trim them as much as you can before attaching them.</p>
+<p>You want to make sure though that you can lift the circuit board up and check underneath and problem solve if necessary.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the circuit board into the case</li>
-</ul>
+</ol>
 <ol>
 <li>Using the schematic as a reference, solder each wire to the corresponding component.</li>
-</ul>
+</ol>
 <ol>
 <li>Trim the wires beforehand though and make sure that they are as short as possible. This helps to reduce the space wires take-up and can help with better sound quality (the less the distance between components, the shorter the signal has to travel.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have everything connected, you are ready to test. Plug in a battery and turn on the switch. If the LED come on then that’s the first good sign. Now add a lead to the input and plug it into your phone (or MP3 player)</li>
-</ul>
+</ol>
 <ol>
 <li>Plug your headphones into the output socket and play some music. Make sure, though you don’t have the volume turned right up on the amp.</li>
-</ul>
+</ol>
 <ol>
 <li>If you can hear music, congrats you managed to make the circuit without any mistakes. If you hear nothing, then you’ll need to troubleshoot.</li>
-</ul>
+</ol>
 <p>Troubleshooting</p>
 <ol>
 <li>Check the solder joins on the prototype board and make sure none are cross soldered</li>
-</ul>
+</ol>
 <ol>
 <li>Double check the wiring to the components and make sure that these are wired-up correctly.</li>
-</ul>
+</ol>
 <ol>
 <li>If you only hear out of one speaker, check that you have connected the sockets correctly. Usually, the larger solder lug on the socket is ground. The other 2 are either the inputs or outputs. It doesn’t matter though in what order you wire these up to the prototype board. Also, make sure you have connected pins 3 and 5 together or only 1 speaker will work.</li>
-</ul>
+</ol>
 <ol>
 <li>Make sure that you have connected the IC correctly. I managed to connect pin 8 to ground instead of positive.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10:</h2><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+</ol><h2><span class="step-num">STEP 10</span>Step 10:</h2><h2><span class="step-num">FILES</span>Downloads</h2><ul>
 <li><a href="pdfs/ne5532.pdf">ne5532</a></li>
-</ul><a class="pdf-download" href="pdfs/ne5532.pdf" target="_blank">&#8675; ne5532</a>
+</ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

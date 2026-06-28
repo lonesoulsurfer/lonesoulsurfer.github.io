@@ -34,19 +34,19 @@ The final result is a minimalist light box that looks great and gives off a beau
 
 Parts:
 
-1. Battery. You prob have an old mobile around that you can grab the battery out of. If not, you can buy them on eBay
+1. Battery. You prob have an old mobile around that you can grab the battery out of. If not, you can buy them on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=mobile+phone+battery&_sacat=0&LH_TitleDesc=0&_sop=15)
 
-2. LED Filament - eBay
+2. LED Filament - [eBay](https://www.ebay.com.au/itm/10Pcs-3V-Super-Bright-LED-COB-Solar-Filament-Bulb-Candle-Light-Home-Lamp-Source/324128016760?hash=item4b77890978:g:VAMAAOSwdaxejDQy&frcectupt=true)
 
-3. Battery charging module - eBay
+3. Battery charging module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
 
-4. Mercury switch - eBay
+4. Mercury switch - [eBay](https://www.ebay.com.au/itm/5mm-Mercury-Tilt-Switch-Mercury-Switch-Unidirectional-Angle-Sensor-AUS/352835865281?hash=item5226a80ac1:g:vIsAAOSw4ttc5Ppw&frcectupt=true)
 
-5. Copper wire - eBay
+5. Copper wire - [eBay](https://www.ebay.com.au/itm/H59-Copper-Brass-Round-Rod-Bar-Solid-Lathe-Bar-Cutting-Tool-Metal-Dia2mm-20-AU/114272860238?hash=item1a9b31784e:g:sl8AAOSwAQBZuiNU&frcectupt=true)
 
 6. Length of hard wood. Mine was 70mm wide by 10mm height.
 
-7. Opal Acrylic - eBay
+7. Opal Acrylic - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=opal+acrylic+sheet&_sacat=0)
 
 Tools:
 

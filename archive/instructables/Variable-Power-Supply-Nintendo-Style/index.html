@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,193 +162,235 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Variable Power Supply V2</span>
 </nav>
-<h1>Variable Power Supply V2</h1><div class="source"><a href="https://www.instructables.com/Variable-Power-Supply-Nintendo-Style/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>When your building and prototyping circuits , one of the most essential tools you'll need is a variable power adapter. And if you're going to make one you may as well use a Super Nintendo Controller to put it into!</p>
-<p>Don't worry, I didn't use a genuine one, it's a cheap knock off that you can buy on eBay for a few bucks. There were a few challengers with ensuring all of the components could fit inside the controller but with a little planning I managed to jam it all inside the controller.</p>
-<p>I used an old 3.7v phone battery to run the power supply. These are usually easy to find (just ask around and you're sure to find someone with a few old phones lying around) and small enough to fit inside the controller. You can also easily charge them with a cheap charging module from eBay.</p>
+<h1>Variable Power Supply V2</h1><div class="source"><a href="https://www.instructables.com/Variable-Power-Supply-Nintendo-Style/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>When your building and prototyping circuits , one of the most essential tools you'll need is a variable power adapter.</p>
+<p>And if you're going to make one you may as well use a Super Nintendo Controller to put it into!</p>
+<p>Don't worry, I didn't use a genuine one, it's a cheap knock off that you can buy on eBay for a few bucks.</p>
+<p>There were a few challengers with ensuring all of the components could fit inside the controller but with a little planning I managed to jam it all inside the controller.</p>
+<p>I used an old 3.7v phone battery to run the power supply.</p>
+<p>These are usually easy to find (just ask around and you're sure to find someone with a few old phones lying around) and small enough to fit inside the controller.</p>
+<p>You can also easily charge them with a cheap charging module from eBay.</p>
 <p>So without further ado - lets get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts</p>
 <ol>
-<li>Super Nintendo Controller - eBay</li>
-</ul>
+<li>Super Nintendo Controller - <a href="https://www.ebay.com.au/itm/Retro-Wired-Game-Controller-GamePad-Joystick-For-Nintendo-SNES-Super-NES/292433946563?hash=item44166be7c3:g:YZYAAOSwR2FcdjiA&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Voltage display - eBay</li>
-</ul>
+<li>Voltage display - <a href="https://www.ebay.com.au/itm/0-36-Digital-DC-Voltmeter-4-5-30V-2-Wires-Red-LED-Display-Panel-Voltage-Meter/264170799389?hash=item3d81ce811d:g:94oAAOSwwZxcFw40&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Voltage regulator - eBay</li>
-</ul>
+<li>Voltage regulator - <a href="https://www.ebay.com.au/itm/New-Boost-Buck-Voltage-Module-Step-Up-Down-Converter-Regulator-3-35V-to-2-2-30V/381195478171?hash=item58c105649b:g:spAAAOSwEeFU8WTp&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>10K pot - eBay</li>
-</ul>
+<li>10K pot - <a href="https://www.ebay.com.au/itm/3Pcs-6mm-Knurled-Shaft-Single-Linear-B-Type10K-ohm-Rotary-Potentiometer-New/262852339228?epid=1684420726&hash=item3d3338661c:g:Np8AAOSwax5Yos7P">eBay</a></li>
+</ol>
 <ol>
-<li>3.7v phone battery - just grab out out of an old phone or you can buy them from eBay</li>
-</ul>
+<li>3.7v phone battery - just grab out out of an old phone or you can buy them from <a href="https://www.ebay.com.au/itm/MOBILE-PHONE-BATTERY-HTC-DESIRE-S-REPLACEMENT-BG32100-S-G11-INCREDIBLE-DESIRE/171246147270?hash=item27df10d6c6:g:QhEAAOxyni9TBfI7">eBay</a></li>
+</ol>
 <ol>
 <li>Banana plugs: Buy more if you need to make different connections to power your projects</li>
-</ul>
-<p>a. Sockets - eBay</p>
-<p>b. Inputs - eBay</p>
+</ol>
+<p>a. Sockets - <a href="https://www.ebay.com.au/itm/4mm-Red-Black-Universal-Banana-Socket-Nickel-Plated-Plug-Binding-Post-Nut/163479840999?hash=item26102868e7:m:mw56gFSIGffDFVJHC4yo0PQ&frcectupt=true">eBay</a></p>
+<p>b.</p>
+<p>Inputs - <a href="https://www.ebay.com.au/itm/5-10Pcs-set-4mm-Audio-Speaker-Screw-Banana-Plate-Plugs-Connectors-Universal-Hot/264141715771?hash=item3d8012b93b:m:myHTS4f5p_ZjhahjOBhPN8w&frcectupt=true">eBay</a></p>
 <ol>
 <li>You can also buy these banana plug connectors which will allow you to attach the power supply different ways</li>
+</ol>
+<ul>
+<li>alligator clips - <a href="https://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-HY/191951524989?epid=1487109558&hash=item2cb133d47d:g:Fz8AAOSwV0RXupx-">[[eBay</a>](https://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-HY/191951524989?epid=1487109558&hash=item2cb133d47d:g:Fz8AAOSwV0RXupx-)](https://www.ebay.com.au/itm/1-Pair-Alligator-Test-Power-Cord-Lead-Clip-to-Banana-Plug-for-Multimeter-Tester/112250758883?epid=3024193919&hash=item1a22aaa6e3&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVnr9%2Fqe8fey</li>
+<li>XnvSy%2BFT0HBmW73DdFPrIZ61se3euvy136a6eDX2T%2BZ8DQeVu9kbFnEY0LjtO2ScvU22rrfupX%2FXonig</li>
+<li>ByNKySMVKzJIIoKFhPBOLoYJW8RUtqu</li>
+<li>Yh2YFAvQGDJYiQCIj4DwLq1tbvqVPQz3ojWEeIKbnarFI98BmNaE%2FPFyYCGH8J%2BvIwZimp2pUN4t5i3gyAfcEKKS0ED%2FG1rGaJpji%2BDoMJ%2B0tSz3F4CTOXuRsMOFum%2FTaA6ui0VMb%2F4Qhh2weq</li>
+<li>YcHNeHvttad</li>
+<li>Jit4i%2BfalXWAWzFAoAAJWEtQUC907e0eLY9j2BP9NEnwb2exL9igoX4IC7%2FVCssfZ60xzg</li>
+<li>Uupecm</li>
+<li>IuEhJcRdb8opYYKpv3DeRcq7C7PRbwiBCS3uik67D6TGmhJLhEd7%2BVskMxdbyasXPS6quq3aDpS7uzEye%2FF8cti8x5gPUXyxr</li>
+<li>UjpNt5%2B1UbYucc</li>
+<li>PvGKcjp7fW4dMUFNU05B4k6hhM%2B9exa</li>
+<li>ZgnVvivz</li>
+<li>JsSmn8iCH9rYio5kFEaa8vw4knnYXwDsrv0Ej4J3t5UwoR6KlAkmp63cvHJy5JrUqKS3gxjagi%2ByyY1S3CWF8Uo03BpPvUwiEWz0sgE4IhFukEbNBqyV2I6LNVmFYRQOHEBYeWRZGTXQcMEZLr8IUnV%2BFGxQZdx7cNwJGg9u%2BvLWkSgfxnf%2Fm%2BXxycyhzw%2FRhmbYV%2FTVa9yoHzbMWhOji2sgp79FyEVmXGeJ%2FVfyVxaqc</li>
+<li>XxUnRWycZNALbMfn%2FnM6JMH6a6K5Bgih</li>
+<li>TyEJboUcd70RD%2BFMuGWkgNNfhIBkdKwc2ztGwFFrFXVVT0fNPrw77uG2TID%2BbWkHN6aaVeJQRzlv</li>
+<li>XnWZnREbbNVqtn2fHElU%2BcmXEkIpxhuhBXmwJ5Fz%2BKgHifSxYJMxT%2BnT9XhDf%2BNaJsmKESwSrL2gVLrMgttx%2Bi1oPvodmU71PjqU8zycDJAQ5Ppizl</li>
+<li>FwVkXyMfhogy9xKde1w%3D%3D&checksum=1122507588838cefb2b8c2a045119a0317afca5ddcf6&frcectupt=true), hook clip - eBay, probe - eBay</li>
 </ul>
-<p>alligator clips - eBay, hook clip - eBay, probe - eBay</p>
 <ol>
-<li>SPDT switch - eBay</li>
-</ul>
+<li>SPDT switch - <a href="https://www.ebay.com.au/itm/1-10pcs-5A-125VAC-2A-250VAC-ON-ON-SPDT-3-Pin-3-Terminals-Miniature-Toggle-Switch/381560991809?hash=item58d6ceb041:m:mv_nQHoaAb8ApFC1WlzQGJg&frcectupt=true">eBay</a></li>
+</ol>
 <ol>
-<li>Charging module - eBay</li>
-</ul>
+<li>Charging module - <a href="https://www.ebay.com.au/itm/10pcs-DC-to-DC-5V-1A-Li-ion-18650-Lithium-Lipo-3-7v-Battery-Charger-Module-Board/112524739309?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m1438.l2649">eBay</a></li>
+</ol>
 <ol>
 <li>Wire</li>
-</ul>
+</ol>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron</li>
-</ul>
+</ol>
 <ol>
 <li>Pliers</li>
-</ul>
+</ol>
 <ol>
 <li>Screwdriver</li>
-</ul>
+</ol>
 <ol>
 <li>wire cutters</li>
-</ul>
+</ol>
 <ol>
 <li>Dremel (not really necessary but it always comes in handy)</li>
-</ul>
+</ol>
 <ol>
 <li>Super glue</li>
-</ul>
+</ol>
 <ol>
 <li>Drill</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Modding the Case</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modding the Case image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modding the Case image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modding the Case image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modding the Case image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modding the Case image 5" loading="lazy"></div><p>First step is to open up the case and remove the guts</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Modding the Case</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modding the Case image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modding the Case image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modding the Case image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modding the Case image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modding the Case image 5" loading="lazy"></div><p>First step is to open up the case and remove the guts</p>
 <p>Steps:</p>
 <ol>
 <li>Un-screw and remove the back of the controller</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the circuit board and cord. You don't need this so you can just keep the wire for another project and throw away the circuit board</li>
-</ul>
+</ol>
 <ol>
 <li>Remove the D pad and all the other buttons and place somewhere where you won't lose them.</li>
-</ul>
+</ol>
 <ol>
 <li>Inside the controller are a lot of small plastic pins, gussets, and other plastic parts that you need to remove. You want to make as much room as possible inside the case so trim these off. Make sure though you don't cut the plastic screw holders though</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Working Out How to Fit Everything Inside</h2><div class="step-images single"><img src="images/step03_01.jpg" alt="Step 3: Working Out How to Fit Everything Inside image 1" loading="lazy"></div><p>Now that you have a empty controller, you now need to work out how your going to stick everything inside. Make sure you also consider all of the wires that will be needed as well, these can take up a surprisingly lot of room.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Working Out How to Fit Everything Inside</h2><div class="step-images single"><img src="images/step03_01.jpg" alt="Step 3: Working Out How to Fit Everything Inside image 1" loading="lazy"></div><p>Now that you have a empty controller, you now need to work out how your going to stick everything inside.</p>
+<p>Make sure you also consider all of the wires that will be needed as well, these can take up a surprisingly lot of room.</p>
 <p>Steps:</p>
 <ol>
 <li>Place all of the components inside the case</li>
-</ul>
+</ol>
 <ol>
 <li>Move them around and try and figure out what is the best place for each of them.</li>
-</ul>
+</ol>
 <ol>
 <li>I decided to put the banana plugs, switch and pot into the 4 button holes which worked really well.</li>
-</ul>
+</ol>
 <ol>
 <li>Once you have worked out how everything is going to fit, you now need to start to add the components inside the controller</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Banana Plugs</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Banana Plugs image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Banana Plugs image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Banana Plugs image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Banana Plugs image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Banana Plugs image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Banana Plugs image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Banana Plugs image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Banana Plugs image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Adding the Banana Plugs image 9" loading="lazy"></div><p>The banana plugs allow you to change over connections. For example, you might need power for a bread board so would need jumper leads attached to the male banana plug. Other times you might just want to attach the power supply to the ends of wires soyou'd swap out the banan plugs and use ones with aligator clips attached.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Banana Plugs</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Banana Plugs image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Banana Plugs image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Banana Plugs image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Banana Plugs image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Banana Plugs image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Banana Plugs image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Banana Plugs image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Banana Plugs image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Adding the Banana Plugs image 9" loading="lazy"></div><p>The banana plugs allow you to change over connections.</p>
+<p>For example, you might need power for a bread board so would need jumper leads attached to the male banana plug.</p>
+<p>Other times you might just want to attach the power supply to the ends of wires soyou'd swap out the banan plugs and use ones with aligator clips attached.</p>
 <p>Steps:</p>
 <ol>
 <li>As the banana plugs are too long to fit inside the controller, you'll need to slightly modify them. The first thing to do it to remove one of the small, plastic spaces on the banana plug</li>
-</ul>
+</ol>
 <ol>
 <li>Next, add some super glue to the inside of the button hole on the controller and push the banana plug in. It should fit nice and snug.</li>
-</ul>
+</ol>
 <ol>
 <li>Add the small washer and solder ring to the small bolt and attach the nut. You'll now notice that the bolt is too long. Use a pair of pliers to trim it flush with the nut</li>
-</ul>
+</ol>
 <ol>
 <li>Do the exact same for the other one</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Switch and Pot</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Switch and Pot image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Switch and Pot image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Switch and Pot image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Switch and Pot image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Switch and Pot image 5" loading="lazy"></div><p>The switch is an on/off switch and the pot is how you change the voltage on the power supply.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Switch and Pot</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Switch and Pot image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Switch and Pot image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Switch and Pot image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Switch and Pot image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Switch and Pot image 5" loading="lazy"></div><p>The switch is an on/off switch and the pot is how you change the voltage on the power supply.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the switch into one of the button holes, add the washer that comes with the switch and fasten with the nut.</li>
-</ul>
+</ol>
 <ol>
 <li>For the pot, you will need to slightly mod the back of the button hole. With an exacto knife, remove the small, plastic button support completly</li>
-</ul>
+</ol>
 <ol>
 <li>Place the pot into the hole, add the small washer and fasten with the nut provided.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Power Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Power Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Power Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Power Module image 3" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Power Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Power Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Power Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Power Module image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First place the module into the contoller and mark where the micro usb will exit the controller</li>
-</ul>
+</ol>
 <ol>
 <li>With a small drill bit, drill out the area for the female usb head on the module</li>
-</ul>
+</ol>
 <ol>
 <li>File the hole so it's smooth and remove any excess plastic</li>
-</ul>
+</ol>
 <ol>
 <li>If the usb fits, add a little superglue to the back of the module and put it into place.</li>
-</ul>
+</ol>
 <ol>
 <li>Leave to dry for 10 minutes</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Battery</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Battery image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Battery image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Battery image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Battery image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Battery image 5" loading="lazy"></div><p>I found a good source of phone batteries was to raid the recycle box for phones at work. I managed to pick-up 4 batteries last time I checked and they all worked fine.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Battery</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Battery image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Battery image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Battery image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Battery image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Battery image 5" loading="lazy"></div><p>I found a good source of phone batteries was to raid the recycle box for phones at work. I managed to pick-up 4 batteries last time I checked and they all worked fine.</p>
 <p>Steps</p>
 <ol>
 <li>To be able to connect the battery up to the charging module, you’ll need to solder a couple of wires to the battery terminals. First, add a little solder to each of the small terminals on the battery. You should be able to tell positive and negative as they will be indicated on the battery</li>
-</ul>
+</ol>
 <ol>
 <li>Next, tin a couple of small wires and solder them to the battery</li>
-</ul>
+</ol>
 <ol>
 <li>You will now be able to connect the battery to the charging module in the next step. Might also be a good idea to check the battery if it a 2nd hand one to make sure it works ok as well.</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Voltage Display and Gluing the Buttons Into Place</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 6" loading="lazy"></div><p>It took me a little while to work out how I was going to incorporate the voltage display on thecontroller. Initially I thought I would just stick it on top of the controller but decided in the end to cut a hole into the controller and have the meter coming out of it.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Voltage Display and Gluing the Buttons Into Place</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Voltage Display and Gluing the Buttons Into Place image 6" loading="lazy"></div><p>It took me a little while to work out how I was going to incorporate the voltage display on thecontroller.</p>
+<p>Initially I thought I would just stick it on top of the controller but decided in the end to cut a hole into the controller and have the meter coming out of it.</p>
 <p>Steps:</p>
 <ol>
 <li>With an exacto knife, carefully mark out the area to remove. I just placed the voltage meter onto the top of the controller and went around with the exacto knife and scored the plastic</li>
-</ul>
+</ol>
 <ol>
 <li>Next, go over the scoring again a few times to make the cuts deeper. The plastic is thin so you should be able to make the cuts easily.</li>
-</ul>
+</ol>
 <ol>
 <li>To finish off the cuts I used a Stanley knife and pushed against each of the cuts. The heavier blade went through the plastic and I was able to remove the piece by just going around with the Stanley knife.</li>
-</ul>
+</ol>
 <ol>
 <li>Use the exacto knife to clean-up the edges of the cut and push into place the voltage meter.</li>
-</ul>
+</ol>
 <ol>
 <li>Lastly, add a little superglue and glue into place</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Wiring</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring image 8" loading="lazy"></div><p>Now you have everything in place, it's time do start wiring. I have included a wire diagram as well which should help you understand how the components are connected</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring image 8" loading="lazy"></div><p>Now you have everything in place, it's time do start wiring. I have included a wire diagram as well which should help you understand how the components are connected</p>
 <p>Steps:</p>
 <ol>
 <li>Solder 3 wires to the pot and then to the power supply module</li>
-</ul>
+</ol>
 <ol>
 <li>On the out put solder points on the power supply board, solder a wire to each and then solder these to the solder points on the banana plugs</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a couple of wires to the input solder points on the power supply board and connect these to the battery solder points on the charging module. Make sure the polarities are correct</li>
-</ul>
+</ol>
 <ol>
 <li>Solder a couple of wires to the battery and solder one to the switch and one to the charging module, making sure the polarity is correct.</li>
-</ul>
+</ol>
 <ol>
 <li>Add another wire to the switch and connect this to the charging module.</li>
-</ul>
+</ol>
 <ol>
 <li>Before you totally close the case, test to make sure the power supply works.</li>
-</ul>
+</ol>
 <ol>
 <li>Carefully close the controller and add all of the screws back into place.</li>
-</ul><h2><span class="step-num">STEP 10</span>Step 10: Making a Banana Plug Connector</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making a Banana Plug Connector image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making a Banana Plug Connector image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making a Banana Plug Connector image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Making a Banana Plug Connector image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Making a Banana Plug Connector image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Making a Banana Plug Connector image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Making a Banana Plug Connector image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Making a Banana Plug Connector image 8" loading="lazy"></div><p>If you want to connect power to a breadboard, then this is how you make a banana plug connector. You can also buy different types of connectors on eBay and I have added a couple of links to these</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Making a Banana Plug Connector</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making a Banana Plug Connector image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making a Banana Plug Connector image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making a Banana Plug Connector image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Making a Banana Plug Connector image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Making a Banana Plug Connector image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Making a Banana Plug Connector image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Making a Banana Plug Connector image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Making a Banana Plug Connector image 8" loading="lazy"></div><p>If you want to connect power to a breadboard, then this is how you make a banana plug connector. You can also buy different types of connectors on eBay and I have added a couple of links to these</p>
 <p>Steps:</p>
 <ol>
 <li>First trim and tin the ends of a piece of red wire and a piece of black wire</li>
-</ul>
+</ol>
 <ol>
 <li>Place a male banana plug end onto one of the tinned ends and secure into place.</li>
-</ul>
+</ol>
 <ol>
 <li>Grab a couple of jumper wires for your breadboard and cut one end off</li>
-</ul>
+</ol>
 <ol>
 <li>Tin the ends and add some heat shrink to each</li>
-</ul>
+</ol>
 <ol>
 <li>Solder together the jumper wire and the piece of wire and cover the solder point with the heat shrink</li>
-</ul>
+</ol>
 <p>That’s it! You are now ready to use your power supply to give your projects some POWER!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

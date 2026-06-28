@@ -17,25 +17,25 @@ Source: https://www.instructables.com/Cigar-Box-Synth/
 
 Here’s my latest synth made from a 555 and 556 timer along with a 4017 ic. A few months ago a build like this would have been way out of my skill level. Over the last few months however I’ve been putting together some simple synths to get a better understanding of schematics and parts.
 
-The circuit design is by a guy called Forrest Mims. I’d never heard of him before this build but some in the US might remember the Engineer's Mini-Notebook which he the author was of. The book was available in Radio Shack once upon a time.
+The circuit design is by a guy called [Forrest Mims](https://en.wikipedia.org/wiki/Forrest_Mims). I’d never heard of him before this build but some in the US might remember the Engineer's Mini-Notebook which he the author was of. The book was available in Radio Shack once upon a time.
 
 The synth itself is what is known as a 4 stepped sequencer and is based on the baby 10 sequencer. You have a lot of control over the sound produced from the synth. The 4 potentiometers connected to the 4017 Ic allows you to control the tone of each as well as turn them on or off. The other pots allow you to control speed, pitch and tone, allowing you to make some really interesting (and surprisingly nice sounding as well!) sounds.
 
 This project should be tackled by someone who has some skill in soldering and understanding schematics and electronics. If you are a beginner, then I would suggest to start with my first synth ‘Ibles that I made using a 555 timer. These can be found below. I would also suggest you jump on-line and type in 4=555 circuits and make a few of the projects that come up. This will give you a good grounding to start to tackle a larger project like this one.
 
-Link to the YouTube clip
+[Link to the YouTube clip](https://www.youtube.com/watch?v=aiWB9nLW_IU&t=2s)
 
 Lastly, a note on the ‘ible itself. I find it quite hard to document builds like this as it isn’t easy to take photos once the build gets to a certain complexity. I’ve tried to create a step by step walk-through of most of the build and if you do get stuck on any section, then please let me know in the comments and I will try and help where I can.
 
 Here are my other 555 builds
 
-LIGHT THEREMIN IN A NES CONTROLLER
+[LIGHT THEREMIN IN A NES CONTROLLER](https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/)
 
-FIZZLE LOOP SYNTH - 555 TIMER
+[FIZZLE LOOP SYNTH - 555 TIMER](https://www.instructables.com/id/Fizzle-Loop-Synth-555-Timer/)
 
-EXECUTIVE DECISION MAKER
+[EXECUTIVE DECISION MAKER](https://www.instructables.com/id/Executive-Decision-Maker/)
 
-Hackaday were nice enough to do a review of this project which can be found here
+[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) were nice enough to do a review of this project which can be found [here](https://hackaday.com/2018/06/13/cigar-box-synth-is-a-fun-time/)
 
 
 ## Step 1: Parts - Circuit
@@ -62,63 +62,63 @@ Parts:
 
 Potentiometers
 
-1. 4 X 100K - eBay
+1. 4 X 100K - [eBay](https://www.ebay.com.au/itm/100K-Linear-RK097N-Sealed-Potentiometer-Pot-15mm-Shaft-3pins-Knobs-Pack-of-5/162661517482?hash=item25df61c8aa:g:8TUAAOSwDQJZr4j4)
 
-2. 3 X 500K - eBay
+2. 3 X 500K - [eBay](https://www.ebay.com.au/itm/2-5-10PCS-B500K-50K-1K-Ohm-3-Pins-Shaft-Linear-Rotary-Taper-Potentiometer-WH148/282866349374?hash=item41dc25f53e:m:mqHjUoQTMHfxzxCLE7sE84Q)
 
-3. 10K – eBay
+3. 10K – [eBay](https://www.ebay.com.au/itm/2-Pcs-B10K-10K-ohm-Single-Linear-Taper-Rotary-Potentiometers-WS-U4O3/322787496035?hash=item4b27a25063:g:ScUAAOSwiBJZ8LAc)
 
-4. Knobs for the Pots - eBay I brought these ones and these ones
+4. Knobs for the Pots - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC1.A0.H0.Xpotentiometer+knob.TRS0&_nkw=potentiometer+knob&_sacat=0) I brought [[these ones](https://www.ebay.com.au/itm/5X-Useful-Volume-Control-Rotary-Knobs-For-6mm-Dia-Knurled-Shaft-Potentiometer/111831954006?epid=24009482719&hash=item1a09b43256:g:tAEAAOSwv-NWU8zx)](https://www.ebay.com.au/itm/5-set-Rotary-Potentiometer-Knobs-Caps-with-5Pcs-Counting-Dial-0-100-Scale-MZ/202125337635?hash=item2f0f9be423:g:lzkAAOSwdrhZnrN6) and these ones
 
 Capacitors
 
-1. 1uf – eBay
+1. 1uf – [eBay](https://www.ebay.com.au/itm/10-x-1uF-50V-105C-Radial-Electrolytic-Capacitor-5x11mm-F6/282628129055?epid=2068672917&hash=item41cdf3011f:g:jmwAAOSw9mpZ8Y2z)
 
-2. 10uf - eBay
+2. 10uf - [eBay](https://www.ebay.com.au/itm/10-x-10uF-50V-105C-Radial-Electrolytic-Capacitor-5x11mm-T2Q3/253285981607?epid=1569185960&hash=item3af9055da7:g:M1kAAOSwiBJaH5fz)
 
-3. 2 X 10nf – eBay
+3. 2 X 10nf – [eBay](https://www.ebay.com.au/itm/Ceramic-Disc-Capacitors-3-3-4-7-6-8-10-15-22-33-47-68-220-330-470-680-pF-uF-50V/222413591372?hash=item33c8e2134c:m:mt5BQ9Y_PWSWBBp7DE2N3oQ)
 
 Resistors
 
-1. 470R – eBay
+1. 470R – e[Bay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
-2. 1K – eBay
+2. 1K – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
-3. 100K – eBay
+3. 100K – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
 IC’s
 
-1. 555 – eBay
+1. 555 – [eBay](https://www.ebay.com.au/itm/NE555-NE555P-Timer-IC-Texas-Instruments-8-DIP-Pack-of-10/162293413409?epid=22006040298&hash=item25c970f621:g:ctkAAOSwsGdasYLX)
 
-2. 556 – eBay
+2. 556 – [eBay](https://www.ebay.com.au/itm/5Pcs-NE556N-NE556-556-Dual-Bipolar-Timer-New-Ic/282908714004?hash=item41deac6414:g:ecYAAOSwdPtawboK)
 
-3. 4107 - eBay
+3. 4107 - [eBay](https://www.ebay.com.au/itm/5PCS-CD4017-CD4017BE-4017-DECADE-COUNTER-DIVIDER-IC/232450332078?hash=item361f1e95ae:g:diwAAOSw9bBZlAS0)
 
 Other Parts
 
-1. 4 X Red LED’s and 1 X white - eBay
+1. 4 X Red LED’s and 1 X white - [eBay](https://www.ebay.com.au/itm/300pcs-3mm-5mm-LED-Diodes-Emitting-White-Yellow-Red-Green-Blue-Assorted-Kit-DIY/262490930312?epid=604529100&hash=item3d1dadbc88:g:msgAAOSwPK1ZP0~2)
 
-2. 4 X 1N4148 Diode – eBay
+2. 4 X 1N4148 Diode – [eBay](https://www.ebay.com.au/itm/100PCS-1N4148-IN4148-Switching-Diode-Switching-Signal-Doide-DO-35/173189225751?hash=item2852e1dd17:g:4DsAAOSw~7BamM~r)
 
-3. Speaker Jack – eBay
+3. Speaker Jack – [eBay](https://www.ebay.com.au/itm/10-Pcs-Panel-PCB-Female-3-5mm-Headphone-Jack-Audio-Connectors-JR/132565480819?hash=item1edd84b573:g:a8UAAOSw~P9avdwj)
 
 4. Speaker – eBay
 
-5. Toggle Switches – eBay
+5. Toggle Switches – e[Bay](https://www.ebay.com.au/itm/5-x-On-Off-Small-Toggle-Switch-Miniature-SPST-6mm-AC250V-3A-120V-5A-W2U5/192331787403?hash=item2cc7de2c8b:g:mywAAOSws8NZ3xkF)
 
 6. On/off switch - eBay
 
-6. AA Battery Holder (4 X AA) – eBay
+6. AA Battery Holder (4 X AA) – [eBay](https://www.ebay.com.au/itm/Battery-Cover-Box-Plastic-Holder-with-ON-OFF-Switch-for-4-x-AA-Batteries-ZJ/282887009716?hash=item41dd6135b4:g:GbIAAOSwCkFasfP3)
 
 7. Batteries
 
 8. Thin wire
 
-9. Case to store the synth in. I used a cigar box - eBay
+9. Case to store the synth in. I used a cigar box - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xcigar+box.TRS0&_nkw=cigar+box&_sacat=0)
 
-10. Prototyping Board - eBay
+10. Prototyping Board - [eBay](https://www.ebay.com.au/itm/Large-Breadboard-Layout-Prototyping-Board/253602466361?epid=16005141145&hash=item3b0be28a39:g:wJAAAOSwHhRa7ILz:sc:AU_StandardDelivery!3796!AU!-1)
 
-11. Computer fan cover - I don't think you can get the exact one that I used any longer but you can get similar
+11. Computer fan cover - I don't think you can get the exact one that I used any longer but you can [get similar](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=skull+fan+grill&_sacat=0)
 
 
 ## Step 2: The Circuit
