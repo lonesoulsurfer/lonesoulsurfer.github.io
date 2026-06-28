@@ -89,6 +89,8 @@ M2 Screws - Ali Express
 M2 Spacers - Ali Express
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: Getting the PCB & Front + Back Panels Printed
 
 ![Step 1: Getting the PCB & Front + Back Panels Printed image 1](images/step02_01.jpg)
@@ -492,6 +494,10 @@ Controls:
 - Up (hold) — smart bomb
 - A + B (hold) — exit to main menu
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *56 images archived*

@@ -113,6 +113,8 @@ M2 Screws - Ali Express
 M2 Spacers - Ali Express
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: PCB & Front Panel
 
 ![Step 1: PCB & Front Panel image 1](images/step02_01.jpg)
@@ -509,6 +511,10 @@ Controls Tips
 - Evasive Maneuvers: Keep moving to avoid enemy fire
 - Power-up Collection: Fly through power-ups to collect them
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *59 images archived*

@@ -66,6 +66,8 @@ That's it! You don't have to worry bout building a case because it doesn't have 
 The rest of the parts can be found in the PDF attached below or on my GitHub Page
 
 
+- [Proton - Part List - PDF](pdfs/Proton - Part List - PDF.pdf)
+
 ## Step 1: Front Panel, Schematic & Eagle Files
 
 ![Step 1: Front Panel, Schematic & Eagle Files image 1](images/step02_01.png)
@@ -92,6 +94,9 @@ In my GitHub Page you will also find the Eagle schematic and board (PCB) files
 
 Parts list for the circuit board can be found in the supplies step above and I've also provided the list in excel which can also be found (surprise) in my Google Drive.
 
+
+- [Creating Front Panels](pdfs/Creating Front Panels.pdf)
+- [Proton - Schematic](pdfs/Proton - Schematic.pdf)
 
 ## Step 2: Adding Components to the PCB - Reverse Sise
 
@@ -231,6 +236,12 @@ I think I'm going to leave it there. You can mess about with different combinati
 
 If you do decide to make this then good luck with the build and let me know if you have any questions.
 
+
+## Downloads
+
+- [Proton - Part List - PDF](pdfs/Proton - Part List - PDF.pdf)
+- [Creating Front Panels](pdfs/Creating Front Panels.pdf)
+- [Proton - Schematic](pdfs/Proton - Schematic.pdf)
 
 ---
 *48 images archived*

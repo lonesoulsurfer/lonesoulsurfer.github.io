@@ -177,6 +177,8 @@ Make sure you breadboard it first so you can test and understand how it all goes
 I did add another circuit so I could control the LDR's with flashing LED's through a couple of vacrols. This circuit is in the next step and is optional to add.
 
 
+- [LDRsynth With Drones](pdfs/LDRsynth With Drones.pdf)
+
 ## Step 4: Vactrol Circuit for Arpeggiator Sound Effect
 
 ![Step 4: Vactrol Circuit for Arpeggiator Sound Effect image 1](images/step04_01.jpg)
@@ -646,6 +648,10 @@ I also used my Echo and Reverb box (make your own here) and played the synth thr
 
 Experiment and see what sounds you can get out of your synth.
 
+
+## Downloads
+
+- [LDRsynth With Drones](pdfs/LDRsynth With Drones.pdf)
 
 ---
 *110 images archived*

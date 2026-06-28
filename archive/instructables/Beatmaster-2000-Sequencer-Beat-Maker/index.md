@@ -141,6 +141,10 @@ I've added an attached parts list which you can print off and use. I've also add
 - JST Connectors Mini X 4 - Ali Express
 
 
+- [Beatmaster 2000 - Board](pdfs/Beatmaster 2000 - Board.pdf)
+- [Beatmaster 2000 - Parts List](pdfs/Beatmaster 2000 - Parts List.pdf)
+- [Beatmaster 2000 - Schematic](pdfs/Beatmaster 2000 - Schematic.pdf)
+
 ## Step 2: Adding Components to the PCB
 
 ![Step 2: Adding Components to the PCB image 1](images/step03_01.jpg)
@@ -197,6 +201,8 @@ STEPS:
 - Cut the acrylic to size
 - To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design. You might see some images where the front panel looks glossy - that's because I did use gloss on the first build but scrapped this and decided to use a satin finish which looks a lot better
 
+
+- [Beatmaster 2000 Version 1](pdfs/Beatmaster 2000 Version 1.pdf)
 
 ## Step 4: Drilling Holes in the Front Panel
 
@@ -418,6 +424,13 @@ Volume
 
 - You would expect this one to be self explanatory but you'd be wrong! Yes it does control the volume but it also acts like a filter! This wasn't planned but def adds some great effects. The first 1/4 turn of the vol knob controls the volume, after that the envelope generator kicks in and you get a more beefy sound.
 
+
+## Downloads
+
+- [Beatmaster 2000 - Board](pdfs/Beatmaster 2000 - Board.pdf)
+- [Beatmaster 2000 - Parts List](pdfs/Beatmaster 2000 - Parts List.pdf)
+- [Beatmaster 2000 - Schematic](pdfs/Beatmaster 2000 - Schematic.pdf)
+- [Beatmaster 2000 Version 1](pdfs/Beatmaster 2000 Version 1.pdf)
 
 ---
 *89 images archived*

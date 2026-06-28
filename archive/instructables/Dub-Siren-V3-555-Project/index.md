@@ -103,6 +103,8 @@ Dub Siren
 - Potentiometer 50K X 2 - Ali Express
 
 
+- [dub Siren - V2 - Parts List](pdfs/dub Siren - V2 - Parts List.pdf)
+
 ## Step 2: The Dub Siren PCB
 
 ![Step 2: The Dub Siren PCB image 1](images/step02_01.jpg)
@@ -125,6 +127,8 @@ Creating PCB's
 
 Note that the amp (386IC) isn't connrcted to the main schematic. The reson being, the amp needs to drive the echo/reverb board so this is routed through the 'echo-in' 'echo-out' connections on the schematic.
 
+
+- [Dub Siren V3.1](pdfs/Dub Siren V3.1.pdf)
 
 ## Step 3: The Other Parts You'll Need
 
@@ -245,6 +249,9 @@ STEPS:
 
 5. To make the speaker cut-out, I first drilled a couple holes at the top and bottom and then used a dremel with a cutting wheel to cut the straight sections. I used some sandpaper to finish off the edges
 
+
+- [Dub Siren v3 - No Speaker](pdfs/Dub Siren v3 - No Speaker.pdf)
+- [Dub Siren v3](pdfs/Dub Siren v3.pdf)
 
 ## Step 7: Making a Groove in the Wood to Fit the Panel
 
@@ -416,6 +423,13 @@ STEPS:
 
 4. Get some dub reggae on and start playing!
 
+
+## Downloads
+
+- [dub Siren - V2 - Parts List](pdfs/dub Siren - V2 - Parts List.pdf)
+- [Dub Siren V3.1](pdfs/Dub Siren V3.1.pdf)
+- [Dub Siren v3 - No Speaker](pdfs/Dub Siren v3 - No Speaker.pdf)
+- [Dub Siren v3](pdfs/Dub Siren v3.pdf)
 
 ---
 *67 images archived*

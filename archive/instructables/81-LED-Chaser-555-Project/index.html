@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -112,9 +129,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 </nav>
 <h1>81 LED Chaser - 555 Project</h1><div class="source"><a href="https://www.instructables.com/81-LED-Chaser-555-Project/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>If you have ever checked out 555 projects on the net, you may have come across an LED chaser. For those old enough, it's the same thing that Kitt used in Knight Rider!</p>
 <p>However, where most LED chasers use around 10 LED's, this build uses a matrix of 9 X 9 LEDS, making a total of 81!</p>
-<p>The other difference in this build to your normal LED chaser is it includes two pulse width generators, curtesy of 2 555 timers.</p>
-<p>This allows you to make some really interesting patterns and shapes via 2 potentiometers that control the X and Y axis.</p>
-<p>I also included the ability to change the speed from slow to fast for each axis which gives you even more ability to change the patterns produced.</p>
+<p>The other difference in this build to your normal LED chaser is it includes two pulse width generators, curtesy of 2 555 timers. This allows you to make some really interesting patterns and shapes via 2 potentiometers that control the X and Y axis. I also included the ability to change the speed from slow to fast for each axis which gives you even more ability to change the patterns produced.</p>
 <p>I have also designed a PCB for this build so you can easily build your own. There is quite a bit of soldering (81 LED's plus heaps of transistors) so be prepared for an hour of soldering!</p>
 <p>The end project however is definitely worth all that soldering. It's a really fun and interesting build and I've been playing with every day.</p>
 <p>The build was inspired by a project created by Eddy Bergman. He has built some great circuits and if you are interested in building a modular synth then this is the place to go!</p>
@@ -123,10 +138,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>Hackster have also done a review of this project which can be found here</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>Below are the components need to build this project.</p>
 <p>Step 1 has the information around the PCB.</p>
 <p>Step 2 has the parts list for the case and front panel</p>
-<p>The best way to buy electronics is in bulk and I have added a link to each.</p>
-<p>I also used 5mm square LED's and they look awesome!</p>
-<p>You can also use round ones as well but I highly recommend that you just buy the square ones.</p>
-<p>I got 1000 for $14!</p>
+<p>The best way to buy electronics is in bulk and I have added a link to each. I also used 5mm square LED's and they look awesome! You can also use round ones as well but I highly recommend that you just buy the square ones. I got 1000 for $14!</p>
 <p>Lastly, I have attached a PDF of the parts list and it can also be found on my Google Drive</p>
 <p>Components for the Circuit</p>
 <ul>
@@ -165,14 +177,16 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Mobile battery - If you want to find them just visit your local e-waste or check in the top drawer for an old phone! You can always just buy a new one on eBay as well...</li>
 <li>Power module (this will increase the voltage from 3.7v to 9v - Ali Express</li>
 <li>USB charging module (so you can charge the battery up) - Ali Express</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Printing the PCB</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Printing the PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Printing the PCB image 2" loading="lazy"></div><p>The board is actually 2 sided. On one side are all of the components like capacitor, resistors, IC's etc. On the other side is the potentiometers and switches.</p>
-<p>To have the board printed, save the gerber zip file in the Google Drive files to your computer and email it to your favourite PCB manufacturer.</p>
-<p>I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well.</p>
-<p>If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.</p>
+</ul>
+<ul>
+<li><a href="pdfs/Parts List - 81 LED Chaser.pdf">Parts List - 81 LED Chaser</a></li>
+</ul><a class="pdf-download" href="pdfs/Parts List - 81 LED Chaser.pdf" target="_blank">&#8675; Parts List - 81 LED Chaser</a><h2><span class="step-num">STEP 1</span>Step 1: Printing the PCB</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Printing the PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Printing the PCB image 2" loading="lazy"></div><p>The board is actually 2 sided. On one side are all of the components like capacitor, resistors, IC's etc. On the other side is the potentiometers and switches.</p>
+<p>To have the board printed, save the gerber zip file in the Google Drive files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.</p>
 <p>If you would like to play around with the schematic and board in Eagle, well I have also provided these in my Google Drive. You can also find a PDF of the schematic in this step</p>
-<p>You might have noticed that the board looks a little different to mine. Well that's because I made a couple improvements - you're welcome!</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - LED's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 5" loading="lazy"><img src="images/step03_06.gif" alt="Step 2: Adding the Components to the PCB - LED's image 6" loading="lazy"><img src="images/step03_07.gif" alt="Step 2: Adding the Components to the PCB - LED's image 7" loading="lazy"></div><p>As the board is 2 sided, the component sequence is important to get right.</p>
-<p>The first thing to start with is the LED's.</p>
-<p>I was going to build a jig to ensure that they were all straight but didn't have to in the end as the LED's are flat on top!</p>
+<p>You might have noticed that the board looks a little different to mine. Well that's because I made a couple improvements - you're welcome!</p>
+<ul>
+<li><a href="pdfs/81 LED Chaser - Schematic.pdf">81 LED Chaser - Schematic</a></li>
+</ul><a class="pdf-download" href="pdfs/81 LED Chaser - Schematic.pdf" target="_blank">&#8675; 81 LED Chaser - Schematic</a><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - LED's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 5" loading="lazy"><img src="images/step03_06.gif" alt="Step 2: Adding the Components to the PCB - LED's image 6" loading="lazy"><img src="images/step03_07.gif" alt="Step 2: Adding the Components to the PCB - LED's image 7" loading="lazy"></div><p>As the board is 2 sided, the component sequence is important to get right. The first thing to start with is the LED's. I was going to build a jig to ensure that they were all straight but didn't have to in the end as the LED's are flat on top!</p>
 <p>STEPS:</p>
 <ul>
 <li>Place 9 LED's in the first top row and add 1 in each of the bottom corners.</li>
@@ -200,7 +214,10 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Cut out one of the images and carefully place onto the opal acrylic and remove any air bubbles.</li>
 <li>Cut the acrylic to size if you haven't already</li>
 <li>To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Drilling and Making the Cutouts in the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 6" loading="lazy"></div><p>Time to drill out the holes for the pots and switches and also cut out the section for the LED's.</p>
+</ul>
+<ul>
+<li><a href="pdfs/81 LED Chaser.pdf">81 LED Chaser</a></li>
+</ul><a class="pdf-download" href="pdfs/81 LED Chaser.pdf" target="_blank">&#8675; 81 LED Chaser</a><h2><span class="step-num">STEP 5</span>Step 5: Drilling and Making the Cutouts in the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Drilling and Making the Cutouts in the Front Panel image 6" loading="lazy"></div><p>Time to drill out the holes for the pots and switches and also cut out the section for the LED's.</p>
 <p>STEPS:</p>
 <ul>
 <li>I like to use a stepped drill bit to make the holes in the front panel. Carefully drill out each of the holes for the pots and switches</li>
@@ -245,6 +262,10 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Screw into place the back panel</li>
 <li>Add a couple of potentiometer knobs to the pots</li>
 <li>Turn on and enjoy!</li>
-</ul>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Parts List - 81 LED Chaser.pdf">Parts List - 81 LED Chaser</a></li>
+<li><a href="pdfs/81 LED Chaser - Schematic.pdf">81 LED Chaser - Schematic</a></li>
+<li><a href="pdfs/81 LED Chaser.pdf">81 LED Chaser</a></li>
+</ul><a class="pdf-download" href="pdfs/Parts List - 81 LED Chaser.pdf" target="_blank">&#8675; Parts List - 81 LED Chaser</a><a class="pdf-download" href="pdfs/81 LED Chaser - Schematic.pdf" target="_blank">&#8675; 81 LED Chaser - Schematic</a><a class="pdf-download" href="pdfs/81 LED Chaser.pdf" target="_blank">&#8675; 81 LED Chaser</a>
 </body>
 </html>

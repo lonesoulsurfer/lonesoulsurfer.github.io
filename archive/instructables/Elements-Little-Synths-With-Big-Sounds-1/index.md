@@ -64,6 +64,8 @@ That's it! You don't have to worry bout building a case because it doesn't have 
 The rest of the parts can be found in the PDF attached below or on my Google Drive
 
 
+- [Elements - Parts List - Excel](pdfs/Elements - Parts List - Excel.pdf)
+
 ## Step 1: PCB, Front Panel & Eagle Files
 
 ![Step 1: PCB, Front Panel & Eagle Files image 1](images/step02_01.png)
@@ -84,6 +86,8 @@ In my GitHub Page you will also find the Eagle schematic and board (PCB) files. 
 
 Parts list for the circuit board can be found below and I've also provided the list in excel which can also be found (surprise) in my Google Drive.
 
+
+- [Elements Schematic - PDF](pdfs/Elements Schematic - PDF.pdf)
 
 ## Step 2: Adding the Components to the PCB
 
@@ -274,6 +278,11 @@ Thoughts on changes for the next build
 - This synth would sound incredible played through a echo/reverb module. I will be designing a fun one soon which will be part of the 'little synths with big sounds' series
 - There are probably some more mods you could do - no I'm sure there is.
 
+
+## Downloads
+
+- [Elements - Parts List - Excel](pdfs/Elements - Parts List - Excel.pdf)
+- [Elements Schematic - PDF](pdfs/Elements Schematic - PDF.pdf)
 
 ---
 *53 images archived*

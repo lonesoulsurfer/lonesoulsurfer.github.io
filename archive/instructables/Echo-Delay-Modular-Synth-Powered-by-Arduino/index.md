@@ -64,6 +64,8 @@ Arduino Nano X 1 - Ali Express
 Socket and wire JST PH 2.00mm X 1 - Ali Express
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: PCB and Front Panel
 
 ![Step 1: PCB and Front Panel image 1](images/step02_01.jpg)
@@ -87,6 +89,8 @@ STEPS:
 - NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 - Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ## Step 2: Adding the Components to the PCB - Part 1
 
@@ -196,6 +200,11 @@ STEPS:
 - I have also added a 'FX' switch. This just reduces the delay sound effect and makes it more subtler.
 That's it! Check out the vid on the front page to see it in action.
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *29 images archived*

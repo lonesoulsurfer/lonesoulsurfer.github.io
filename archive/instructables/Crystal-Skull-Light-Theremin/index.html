@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,300 +127,286 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Crystal Skull Light Theremin</span>
 </nav>
-<h1>Crystal Skull Light Theremin</h1><div class="source"><a href="https://www.instructables.com/Crystal-Skull-Light-Theremin/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve been playing around with 555 timers a lot recently and decided to make myself a light Theremin.</p>
-<p>After some searching I found one which uses 2 photo cells and is kinda similar to an Atari punk console but without the pots.</p>
-<p>I came up with the idea of adding the Theremin inside a resin skull!</p>
-<p>I had the mould of the skull lying around from another project and have been wanting to use it again for some time.</p>
-<p>The photo cells sit inside the skull and to play the Theremin you wave your hands around the skull to change the light hitting the photo cells which in turn changes the pitch of the Theremin.</p>
+<h1>Crystal Skull Light Theremin</h1><div class="source"><a href="https://www.instructables.com/Crystal-Skull-Light-Theremin/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve been playing around with 555 timers a lot recently and decided to make myself a light Theremin. After some searching I found one which uses 2 photo cells and is kinda similar to an Atari punk console but without the pots.</p>
+<p>I came up with the idea of adding the Theremin inside a resin skull! I had the mould of the skull lying around from another project and have been wanting to use it again for some time. The photo cells sit inside the skull and to play the Theremin you wave your hands around the skull to change the light hitting the photo cells which in turn changes the pitch of the Theremin.</p>
 <p>I have included a step by step walkthrough of building the circuit for anyone new to electronics. It’s pretty straight forward though for anyone who has played around with circuits before.</p>
 <p>Check out the video to see it in action.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
 <p>Circuit</p>
 <ol>
 <li>2 X Photo Cells – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>1 X 5K Pot – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>2 X 555 Timers – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>.01 Capacitor has “104” on it – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>1k Resistor – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>8 Ohm Speaker – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>9v Battery Holder – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>9v battery</li>
-</ol>
+</ul>
 <ol>
 <li>Switch – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Perf board – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>wire</li>
-</ol>
+</ul>
 <ol>
 <li>Flickering LED – eBay (Optional. I decided to add an LED so it could be used as a lamp as well)</li>
-</ol>
+</ul>
 <p>Resin Skull</p>
 <ol>
 <li>Resin – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Skull Mould – Etsy</li>
-</ol>
+</ul>
 <ol>
 <li>Copper wire – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Box for the skull to be mounted on and electronics to be stored in – up to you want you use.</li>
-</ol>
+</ul>
 <p>Tools</p>
 <ol>
 <li>Mixing cups for the resin</li>
-</ol>
+</ul>
 <ol>
 <li>Soldering iron and solder</li>
-</ol>
+</ul>
 <ol>
 <li>Pliers</li>
-</ol>
+</ul>
 <ol>
 <li>Wire cutters</li>
-</ol>
+</ul>
 <ol>
 <li>Drill</li>
-</ol>
+</ul>
 <ol>
 <li>Ply wood (used to hold the mould in place)</li>
-</ol>
+</ul>
 <ol>
 <li>Jigsaw</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit - Adding the 555 Timers</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Making the Circuit - Adding the 555 Timers image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Circuit - Adding the 555 Timers image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Circuit - Adding the 555 Timers image 3" loading="lazy"></div><p>The first thing to do is to add the 555 timers to the perf board</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit - Adding the 555 Timers</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Making the Circuit - Adding the 555 Timers image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Circuit - Adding the 555 Timers image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Circuit - Adding the 555 Timers image 3" loading="lazy"></div><p>The first thing to do is to add the 555 timers to the perf board</p>
 <p>Steps:</p>
 <ol>
 <li>Place the timers into the perf board making sure that they are close together as shown below. Also make sure that the little notch on the side is on the left hand side. This will orientate the 555 time correctly.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder all of the legs to the perf board</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 6" loading="lazy"></div><p>The little legs on the 555 timers I will be calling pins and I will start with the 555 timer furthest of the left of the perf board.</p>
-<p>The perf board that I used has a section for all of the negative and positive connections to be soldered to.</p>
-<p>I find that this type of board is best to use in these projects</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 6" loading="lazy"></div><p>The little legs on the 555 timers I will be calling pins and I will start with the 555 timer furthest of the left of the perf board. The perf board that I used has a section for all of the negative and positive connections to be soldered to. I find that this type of board is best to use in these projects</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a wire to pin 1 and ground</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the 1k resistor to pins 2 and 7</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the 0.1 capacitor to pin 2 and ground</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, solder a wire from pin 2 to 6. I usually do this underneath as shown in the below images with a leg from a resistor.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer image 3" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Circuit - Pins 3 and 4 on the First 555 Timer image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a wire to pin 3 on the first 555 timer to pin 2 on the 2nd 555 timer</li>
-</ol>
+</ul>
 <ol>
 <li>Solder a wire from pin 4 to positive</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Pins 6 and 8 on the First 555 Timer</h2><div class="step-images single"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Pins 6 and 8 on the First 555 Timer image 1" loading="lazy"></div><p>To be able to connect the photo cells inside the resin skull, you will need to add 2 wires to the first 555 timer and 2 to the other one. I will do this a bit later</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Pins 6 and 8 on the First 555 Timer</h2><div class="step-images single"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Pins 6 and 8 on the First 555 Timer image 1" loading="lazy"></div><p>To be able to connect the photo cells inside the resin skull, you will need to add 2 wires to the first 555 timer and 2 to the other one. I will do this a bit later</p>
 <p>Steps:</p>
 <ol>
 <li>Solder pin 8 to positive section on the circuit board</li>
-</ol>
+</ul>
 <p>That’s all of the wiring for the first 555 timer. It’s now time to move onto the next one</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - Pins 1 and 3 on the Second 555 Timer</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - Pins 1 and 3 on the Second 555 Timer image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - Pins 1 and 3 on the Second 555 Timer image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a wire to pin 1 and ground</li>
-</ol>
+</ul>
 <ol>
 <li>Solder a long wire to pin 3. This will be attached to the 5K potentiometer. To connect a pot, you need to solder the end of the wire to the first 2 solder points on the pot.</li>
-</ol>
+</ul>
 <ol>
 <li>We will solder the end of the wire from pin 3 to the potentiometer a little later on</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 4" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Circuit - Pins 4, 6 and 7 on the Second 555 Timer image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a wire to pin 4 to positive</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the other 0.1 capacitor to pin 6 and ground. You will have to add a wire in order for the legs of the capacitor to reach both points as shown below.</li>
-</ol>
+</ul>
 <ol>
 <li>Turn the board over and add some solder to legs 6 and 7 so they connect</li>
-</ol>
+</ul>
 <ol>
 <li>Add a long wire to pin 7 on BOTH the 555 timers. these will connect to the Photo cells. You will also need to add a couple of wires to the positive section which is in the next step</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing image 3" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Circuit - Pin 8, 6 and Speaker Connection Second 555 Timer and Testing image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a wire to pin 8 to the positive section</li>
-</ol>
+</ul>
 <ol>
 <li>Solder 3 long wires to the positive section. 2 will be used for the photo cells and the other to the positive end of the speaker.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly solder 2 long wires to both the ground and positive sections on the perf board. These will be used to power the circuit</li>
-</ol>
+</ul>
 <ol>
 <li>That’s all of the wiring done. Now it’s time to test. Connect a 9v battery to the circuit via the wires added for power.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, either solder the photo cells to the ends of the wires or used a bread board to make the connections.</li>
-</ol>
+</ul>
 <ol>
 <li>Add power and test to make sure that when you cover either photo cell you get different tones from the circuit. If one doesn’t do anything, check your connections and test again.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Resin Skull - Preparing the Mould</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Resin Skull - Preparing the Mould image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Resin Skull - Preparing the Mould image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Resin Skull - Preparing the Mould image 3" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Resin Skull - Preparing the Mould</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Resin Skull - Preparing the Mould image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Resin Skull - Preparing the Mould image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Resin Skull - Preparing the Mould image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>On a piece of ply board, trace around the base of the mould</li>
-</ol>
+</ul>
 <ol>
 <li>Next, make the trace outline you just did smaller by about 15mm. This is so the mould will sit inside the ply wood</li>
-</ol>
+</ul>
 <ol>
 <li>Drill a hole in the inside of the circle so you can use a jigsaw to cut out the section marked</li>
-</ol>
+</ul>
 <ol>
 <li>Cut out the area and place the skull mould inside to make sure it fits correctly.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, secure the ply wood so it is raised and also even.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Resin Skull - Adding the Photo Cells</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 5" loading="lazy"></div><p>In order to be able to add the photo cells to the inside of the skull, you will need to first solder them to some copper wire</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Resin Skull - Adding the Photo Cells</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Resin Skull - Adding the Photo Cells image 5" loading="lazy"></div><p>In order to be able to add the photo cells to the inside of the skull, you will need to first solder them to some copper wire</p>
 <p>Steps:</p>
 <ol>
 <li>Cut 4 lengths of copper wire. They will need to be about 150mm each in length</li>
-</ol>
+</ul>
 <ol>
 <li>Slight bend the ends of each of the wire so when you attach the photo cells, they will face outwards inside the skull</li>
-</ol>
+</ul>
 <ol>
 <li>Trim the legs on the photo cells and solder onto the ends of the copper wire. Do this for both</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Resin Skull - Adding the Photo Cells</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 4" loading="lazy"></div><p>Next thing to do is to work out a way to hold the photo cells into place whist the resin sets hard</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: Resin Skull - Adding the Photo Cells</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Resin Skull - Adding the Photo Cells image 4" loading="lazy"></div><p>Next thing to do is to work out a way to hold the photo cells into place whist the resin sets hard</p>
 <p>Steps:</p>
 <ol>
 <li>Find a small piece of wood that is about 15mm wide and long enough to sit on top of the skull mould</li>
-</ol>
+</ul>
 <ol>
 <li>Place one of the photo cells against the wood and tape into place</li>
-</ol>
+</ul>
 <ol>
 <li>Go and check that the photo cell sits where you want it to in the skull and is not touching the sides of the mould.</li>
-</ol>
+</ul>
 <ol>
 <li>Do the same for the other photo cell</li>
-</ol>
+</ul>
 <ol>
 <li>Place onto the mould in preparation for the resin to be poured</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Mixing and Pouring the Resin</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Mixing and Pouring the Resin image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Mixing and Pouring the Resin image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Mixing and Pouring the Resin image 3" loading="lazy"></div><p>Your skull mould is ready to pour the resin</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: Mixing and Pouring the Resin</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Mixing and Pouring the Resin image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Mixing and Pouring the Resin image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Mixing and Pouring the Resin image 3" loading="lazy"></div><p>Your skull mould is ready to pour the resin</p>
 <p>Steps:</p>
 <ol>
 <li>Carefully mix the resin as per the instructions. Make sure you take your time when stirring so you don’t introduce any large bubbles.</li>
-</ol>
+</ul>
 <ol>
 <li>Once thoroughly mixed, carefully pour the resin into the skull mould.</li>
-</ol>
+</ul>
 <ol>
 <li>As resin does shrink once it is cured, it’s best to slightly overfill the mould</li>
-</ol>
+</ul>
 <ol>
 <li>Leave to dry for 24 hours. If you are like me you will be tempted to start poking around earlier but it really is best to let the resin totally cure before trying to remove it from the mould</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Polishing the Skull</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Polishing the Skull image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Polishing the Skull image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Polishing the Skull image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Polishing the Skull image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Polishing the Skull image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Polishing the Skull image 6" loading="lazy"><img src="images/step13_07.gif" alt="Step 13: Polishing the Skull image 7" loading="lazy"></div><p>When you pull the skull out of the resin it will probablycome out dull looking. Now it’s time to start polishing</p><h2><span class="step-num">STEP 14</span>Step 14: Speaker, Switch and Volume Knob</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 5" loading="lazy"></div><p>You could make a box for the skull and electronics if you wanted to. I went down the path of least resistance and used a wooden box I had lying around.</p>
+</ul><h2><span class="step-num">STEP 13</span>Step 13: Polishing the Skull</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Polishing the Skull image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Polishing the Skull image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Polishing the Skull image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Polishing the Skull image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Polishing the Skull image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Polishing the Skull image 6" loading="lazy"><img src="images/step13_07.gif" alt="Step 13: Polishing the Skull image 7" loading="lazy"></div><p>When you pull the skull out of the resin it will probablycome out dull looking. Now it’s time to start polishing</p><h2><span class="step-num">STEP 14</span>Step 14: Speaker, Switch and Volume Knob</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Speaker, Switch and Volume Knob image 5" loading="lazy"></div><p>You could make a box for the skull and electronics if you wanted to. I went down the path of least resistance and used a wooden box I had lying around.</p>
 <p>Steps:</p>
 <ol>
 <li>Decide where you want to add the speaker onto the box. Mark and cut out the hole using a hole saw drill bit.</li>
-</ol>
+</ul>
 <ol>
 <li>Next secure the speaker into the hole of the box with some screws</li>
-</ol>
+</ul>
 <ol>
 <li>Drill a couple of small holes, one for the 5K pot and the other for the on/off switch. Attach these parts to the box.</li>
-</ol><h2><span class="step-num">STEP 15</span>Step 15: Add the Crystal Skull</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Add the Crystal Skull image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Add the Crystal Skull image 2" loading="lazy"></div><p>You don’t actually secure the skull to the box in this part, you just make the holes in the box for the copper wires inside the skull to go through.</p>
+</ul><h2><span class="step-num">STEP 15</span>Step 15: Add the Crystal Skull</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Add the Crystal Skull image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Add the Crystal Skull image 2" loading="lazy"></div><p>You don’t actually secure the skull to the box in this part, you just make the holes in the box for the copper wires inside the skull to go through.</p>
 <p>Steps:</p>
 <ol>
 <li>Mark on the box where you need to drill for the copper rod to go into. You will need to drill 4 holes for each of the wires</li>
-</ol>
+</ul>
 <ol>
 <li>Drill the holes and make sure that the copper rods in the skull fit into the holes correctly and that the skull sits nice and flat.</li>
-</ol><h2><span class="step-num">STEP 16</span>Step 16: Wiring the Switch and Battery</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Wiring the Switch and Battery image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Wiring the Switch and Battery image 2" loading="lazy"></div><p>The switch is a 3 way switch.</p>
-<p>This means that whist in the middle everything is off.</p>
-<p>If you move it up or down then you either turn on the Theremin or LED.</p>
-<p>First I will wire-up the Circuit board for the Theremin.</p>
+</ul><h2><span class="step-num">STEP 16</span>Step 16: Wiring the Switch and Battery</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Wiring the Switch and Battery image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Wiring the Switch and Battery image 2" loading="lazy"></div><p>The switch is a 3 way switch. This means that whist in the middle everything is off. If you move it up or down then you either turn on the Theremin or LED. First I will wire-up the Circuit board for the Theremin.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a positive wire from the circuit board to one of the solder points on the switch. It would be on one of the ends</li>
-</ol>
+</ul>
 <ol>
 <li>Next, solder the positive wire from the battery holder to the middle solder point on the switch.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the negative wire from the battery to the negative section on the circuit board</li>
-</ol><h2><span class="step-num">STEP 17</span>Step 17: Wiring the Photo Cells</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Wiring the Photo Cells image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Wiring the Photo Cells image 2" loading="lazy"></div><p>Now it’s time to wire the photo cells to the circuit board.</p>
+</ul><h2><span class="step-num">STEP 17</span>Step 17: Wiring the Photo Cells</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Wiring the Photo Cells image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Wiring the Photo Cells image 2" loading="lazy"></div><p>Now it’s time to wire the photo cells to the circuit board.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the skull back onto the top of the case and push the copper wires through</li>
-</ol>
+</ul>
 <ol>
 <li>Wire one of the positive wires from the circuit board to the first copper wire in the skull</li>
-</ol>
+</ul>
 <ol>
 <li>Next, solder the wire from pin 7 on the first 555 timer to the other copper wire</li>
-</ol>
+</ul>
 <ol>
 <li>Do the same thing for the other photo cell.</li>
-</ol>
+</ul>
 <ol>
 <li>To keep the skull in place, bend the copper wires over as shown below.</li>
-</ol><h2><span class="step-num">STEP 18</span>Step 18: Adding the Volume Knob and Speaker</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding the Volume Knob and Speaker image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding the Volume Knob and Speaker image 2" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 18</span>Step 18: Adding the Volume Knob and Speaker</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding the Volume Knob and Speaker image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding the Volume Knob and Speaker image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder the wire from pin 3 on the 2nd 555 timer to the potentiometer. When you solder this wire, you need to solder it to the first 2 solder points on the pot.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, solder a wire from the last solder point on the pot to the negative solder point on the speaker</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, solder one of the wires that you soldered to the positive section on the circuit board to the positive solder point on the speaker</li>
-</ol>
-<p>At this stage you can test the Theremin and make sure that everything is working.</p>
-<p>You should be able to change the pitch and tone of the 555 by waving your hands in front of the photo cells.</p>
-<p>If nothing happens try turning the volume switch to full.</p>
-<p>If nothing happens still, you may have to go over the circuit board to make sure you have wired everything up correctly.</p><h2><span class="step-num">STEP 19</span>Step 19: Adding the LED</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Adding the LED image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Adding the LED image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Adding the LED image 3" loading="lazy"></div><p>Nearly there!</p>
+</ul>
+<p>At this stage you can test the Theremin and make sure that everything is working. You should be able to change the pitch and tone of the 555 by waving your hands in front of the photo cells. If nothing happens try turning the volume switch to full. If nothing happens still, you may have to go over the circuit board to make sure you have wired everything up correctly.</p><h2><span class="step-num">STEP 19</span>Step 19: Adding the LED</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Adding the LED image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Adding the LED image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Adding the LED image 3" loading="lazy"></div><p>Nearly there!</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a small hole into the lid of the case under the skull. Needs to be big enough to fit a 3mm LED</li>
-</ol>
+</ul>
 <ol>
 <li>Solder a 40K resistor (or whatever you have that is close) to the negative leg of the LED.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder a wire to the end of the resistor and to the positive leg on the LED.</li>
-</ol>
+</ul>
 <ol>
 <li>Add some heat shrink to each of the legs.</li>
-</ol>
+</ul>
 <ol>
 <li>Super glue into place</li>
-</ol>
+</ul>
 <ol>
 <li>Attach the positive wire to the other solder point on the switch (the opposite to the one that the Theremin circuit is attached to)</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the negative wire to the negative solder point on the circuit board</li>
-</ol>
+</ul>
 <ol>
 <li>Test to make sure the LED come on</li>
-</ol>
-<p>DONE!</p><h2><span class="step-num">STEP 20</span>Step 20: Done</h2><div class="step-images"><img src="images/step20_01.jpg" alt="Step 20: Done image 1" loading="lazy"><img src="images/step20_02.jpg" alt="Step 20: Done image 2" loading="lazy"></div><p>Now that you have finished, it’s time to play with your Theremin.</p>
-<p>I find that it works best not in direct sunlight or really bright lights, this could be different however for your build.</p>
-<p>Playing your light Theremin is pretty simple, you just wave your hands in front of the photo cells to change the pitch and tones.</p>
+</ul>
+<p>DONE!</p><h2><span class="step-num">STEP 20</span>Step 20: Done</h2><div class="step-images"><img src="images/step20_01.jpg" alt="Step 20: Done image 1" loading="lazy"><img src="images/step20_02.jpg" alt="Step 20: Done image 2" loading="lazy"></div><p>Now that you have finished, it’s time to play with your Theremin. I find that it works best not in direct sunlight or really bright lights, this could be different however for your build. Playing your light Theremin is pretty simple, you just wave your hands in front of the photo cells to change the pitch and tones.</p>
 <p>After a while you start to work out how to make different sound effects by moving your hands slightly to change pitch.</p>
-<p>I have managed to get some interesting sounds out of the light Theremin but you definitely wouldn’t use it to entertain your friends unless you want to un-friend them!</p>
-<p>Some of the tones generated are pretty harsh to anyone within earshot.</p>
+<p>I have managed to get some interesting sounds out of the light Theremin but you definitely wouldn’t use it to entertain your friends unless you want to un-friend them! Some of the tones generated are pretty harsh to anyone within earshot.</p>
 </body>
 </html>

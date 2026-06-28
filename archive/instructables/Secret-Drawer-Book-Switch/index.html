@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -112,252 +129,235 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 </nav>
 <h1>Secret Drawer & Book Switch</h1><div class="source"><a href="https://www.instructables.com/Secret-Drawer-Book-Switch/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>A few builds ago I built a secret book switch which turned on a light. You pulled the top of the book which would activate a switch and voila.</p>
 <p>I've had an idea running around in my head for awhile about building a secret drawer which opens with the pull of a book and decided to build it!</p>
-<p>How it all works is, there is a small solenoid inside the drawer which is activated by either a small key lock switch or pulling the book down.</p>
-<p>Once you turn on the solenoid, you push the drawer and it pops open.</p>
-<p>You can't open the drawer without turning on the solenoid.</p>
-<p>Doing a build like this means a lot of on-the-fly problem solving.</p>
-<p>It also means that there are running changes that I had to made, the biggest was moving the battery to the outside of the drawer.</p>
-<p>I kinda forgot that I would need to be able to access it when it goes flat!</p>
+<p>How it all works is, there is a small solenoid inside the drawer which is activated by either a small key lock switch or pulling the book down. Once you turn on the solenoid, you push the drawer and it pops open. You can't open the drawer without turning on the solenoid.</p>
+<p>Doing a build like this means a lot of on-the-fly problem solving. It also means that there are running changes that I had to made, the biggest was moving the battery to the outside of the drawer. I kinda forgot that I would need to be able to access it when it goes flat!</p>
 <p>Anyhow, I'm really happy with they way it works and really like how the spring loaded drawer 'pops' out when you push it.</p>
 <p>So without further ado - lets get cracking with the build!</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"></div><p>PARTS:</p>
 <ol>
 <li>Hard Wood Edging to make the drawer - I used 40mm X 6mm X 1.2M for the drawer frame and actual drawer</li>
-</ol>
+</ul>
 <ol>
 <li>Ply wood - 4mm sheet</li>
-</ol>
+</ul>
 <ol>
 <li>Solenoid lock - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>9V battery holder - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Key lock switch (optional) I wanted a couple ways to open the drawer so included a key lock switch as well. - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Fan Switch - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Aluminium Strip - 20mm - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Spring 40mm long X 20mm wide - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Various small screws</li>
-</ol>
+</ul>
 <ol>
 <li>Wire</li>
-</ol>
+</ul>
 <ol>
 <li>A hardcover book!</li>
-</ol>
+</ul>
 <p>TOOLS:</p>
 <ol>
 <li>Band Saw (or small hand saw)</li>
-</ol>
+</ul>
 <ol>
 <li>Brad or framer nail gun (or small nails and a hammer!)</li>
-</ol>
+</ul>
 <ol>
 <li>Superglue</li>
-</ol>
+</ul>
 <ol>
 <li>Sander</li>
-</ol>
+</ul>
 <ol>
 <li>Drill</li>
-</ol>
+</ul>
 <ol>
 <li>Grinder with cutting wheel</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Drawer Surround</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Drawer Surround image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Drawer Surround image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Drawer Surround image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Drawer Surround image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Drawer Surround image 5" loading="lazy"><img src="images/step02_06.gif" alt="Step 2: Making the Drawer Surround image 6" loading="lazy"></div><p>Deciding on how big to make your drawer will be determined on where you are going to put it.</p>
-<p>However, you probably don't want to make it too big as it is supposed to be a 'secret' drawer so you want to be able to keep it hidden.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Making the Drawer Surround</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Drawer Surround image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Drawer Surround image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Drawer Surround image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Drawer Surround image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Drawer Surround image 5" loading="lazy"><img src="images/step02_06.gif" alt="Step 2: Making the Drawer Surround image 6" loading="lazy"></div><p>Deciding on how big to make your drawer will be determined on where you are going to put it. However, you probably don't want to make it too big as it is supposed to be a 'secret' drawer so you want to be able to keep it hidden.</p>
 <p>STEPS:</p>
 <ol>
 <li>First you need to mark and cut 2 lengths for the sides and 1 for the back. The sizing will depend on how wide your shelves are. I wouldn't make the drawer too big through.</li>
-</ol>
+</ul>
 <ol>
 <li>You could glue these pieces of wood together but it's quicker just to use a small nail gun and nail them together</li>
-</ol>
+</ul>
 <ol>
 <li>Next, cut a piece of ply wood to fit on the bottom of the drawer surround and nail this in place. The images are a little misleading as the ply wood bottom is sitting inside the drawer surround and not on top. It's easier to add the ply wood to the outside of the wood rather than the inside</li>
-</ol>
-<p>NOTE: before you nail the plywood to the surround, make sure everything is square first.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Solenoid Lock</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Solenoid Lock image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Solenoid Lock image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Solenoid Lock image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Solenoid Lock image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Solenoid Lock image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Adding the Solenoid Lock image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Adding the Solenoid Lock image 7" loading="lazy"></div><p>The next thing to do is to add the solenoid lock to the drawer surround.</p>
-<p>It took me awhile to work out how to best add the solenoid to the surround and how that would engage to 'lock' the drawer into place.</p>
+</ul>
+<p>NOTE: before you nail the plywood to the surround, make sure everything is square first.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Solenoid Lock</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Solenoid Lock image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Solenoid Lock image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Solenoid Lock image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Solenoid Lock image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Solenoid Lock image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Adding the Solenoid Lock image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Adding the Solenoid Lock image 7" loading="lazy"></div><p>The next thing to do is to add the solenoid lock to the drawer surround. It took me awhile to work out how to best add the solenoid to the surround and how that would engage to 'lock' the drawer into place.</p>
 <p>STEPS:</p>
 <ol>
 <li>The solenoid has 2 mounting sections which will need to be cut off. I used a grinder to do this and then cleaned up the edges with a file.</li>
-</ol>
+</ul>
 <ol>
 <li>The lock on the solenoid sits very close to the back of the drawer surround. I wanted to bring the lock out further so I added a small piece of ply wood to the back. This will ensure that the 'lock hole' in the drawer the the solenoid engages into wouldn't be too thin</li>
-</ol>
+</ul>
 <ol>
 <li>Add some superglue to the back of the solenoid and glue on the piece of ply wood. Remember that you need to have the rounded section of the lock facing outwards so it will engage correctly.</li>
-</ol>
+</ul>
 <ol>
 <li>You want to glue the solenoid into place so that the lock is about 2mm from the bottom. I made up a small template out of plywood with a hole in it and placed it under the lock. Once the plywood was locked in place I activated the solenoid with a 9v battery and if I could remove the ply wood template then I knew it was at the right height.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Lock Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Lock Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Lock Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Lock Switch image 3" loading="lazy"></div><p>I decided to also add a lock switch as well to the secret drawer.</p>
-<p>Initially, this was going to be the only way to open it but then I thought it would be cooler to do with a book!</p>
-<p>You could substitute the lock switch for a momentary switch which would work as well.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Lock Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Lock Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Lock Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Lock Switch image 3" loading="lazy"></div><p>I decided to also add a lock switch as well to the secret drawer. Initially, this was going to be the only way to open it but then I thought it would be cooler to do with a book! You could substitute the lock switch for a momentary switch which would work as well.</p>
 <p>STEPS:</p>
 <ol>
 <li>Drill a hole into the side of the drawer surround. You will need to have to add this at the back as I have done or you'll have issues pushing the drawer into place. You could also have the lock switch separate to the drawer as well and have it hidden somewhere</li>
-</ol>
+</ul>
 <ol>
 <li>Add some superglue to the lock and glue it into place.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Battery Holder & Wiring</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 5" loading="lazy"><img src="images/step05_06.gif" alt="Step 5: Adding the Battery Holder & Wiring image 6" loading="lazy"></div><p>I decided to not put the battery holder behind the drawer in the end and moved it to the side of the drawer surround.</p>
-<p>The main reason was, I didn't want to have to un0screw the thing every time I needed to change the battery!</p>
-<p>You could also just have the battery holder next to the fan switch (the switch that the book is attached to) as well.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Battery Holder & Wiring</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Battery Holder & Wiring image 5" loading="lazy"><img src="images/step05_06.gif" alt="Step 5: Adding the Battery Holder & Wiring image 6" loading="lazy"></div><p>I decided to not put the battery holder behind the drawer in the end and moved it to the side of the drawer surround. The main reason was, I didn't want to have to un0screw the thing every time I needed to change the battery! You could also just have the battery holder next to the fan switch (the switch that the book is attached to) as well.</p>
 <p>I've also included a wiring diagram to help you understand how everything is wired together</p>
 <p>STEPS:</p>
 <ol>
 <li>First, solder on some wires to the battery terminals</li>
-</ol>
+</ul>
 <ol>
 <li>Connect the battery holder via the screw holes with a couple small screws</li>
-</ol>
+</ul>
 <ol>
 <li>When wiring, make sure that it's kept neat and tidy. You will be adding a spring later on to the back so make sure that any wiring is kept out of the way from the spring.</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have everything wired-up, check to make sure that the solenoid is activated by adding a battery and testing it out. You'll hear a 'click' if it is working and will see the solenoid pin in the top of it.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Drawer</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Drawer image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Drawer image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Drawer image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Drawer image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Drawer image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Drawer image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Drawer image 7" loading="lazy"></div><p>Making the drawer is very similar to making the surround. The sides of the drawer are the same size as the wood in the surround, you just need to make them a little shorter.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Drawer</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Drawer image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Drawer image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Drawer image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Drawer image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Drawer image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Drawer image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Drawer image 7" loading="lazy"></div><p>Making the drawer is very similar to making the surround. The sides of the drawer are the same size as the wood in the surround, you just need to make them a little shorter.</p>
 <p>STEPS:</p>
 <ol>
 <li>Measure the inside of the drawer surround and cut the 3 pieces needed to make up the drawer. You'll need 2 sides and a piece for the back. NOTE: You'll need to take into consideration the area that the solenoid and switch take up in the surround. The drawer will need to slide in without hitting these parts so make sure the sides are cut to the right length.</li>
-</ol>
+</ul>
 <ol>
 <li>The way that the drawer locks into place is by latching into the ply wood base of the drawer. As you can see in the images, there is a piece of the ply wood at the back of the drawer that sticks out. A little later on, you'll put a hole into this which will allow the latch on the solenoid to lock the drawer into place.</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have the ply wood cut to size (it should be the same length as the bottom piece that makes up the drawer surround), nail it into place onto the drawer. Make sure everything is square as well or you'll have issues with and ill fitting drawer.</li>
-</ol>
+</ul>
 <ol>
 <li>Slide the drawer into the surround and make sure that it is a nice fit and that it slides easily in and out.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Making the Latch Hole</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Latch Hole image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Latch Hole image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Latch Hole image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Latch Hole image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making the Latch Hole image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making the Latch Hole image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Making the Latch Hole image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 7: Making the Latch Hole image 8" loading="lazy"><img src="images/step07_09.gif" alt="Step 7: Making the Latch Hole image 9" loading="lazy"></div><p>So now it's time to make the latch hole that the lock will go into.</p>
-<p>You can see why I needed to extend the lock out from the back.</p>
-<p>There would have only been a very thin piece of ply for it to lock into.</p>
-<p>I also added a small piece of metal to make it stronger.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Latch Hole</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Latch Hole image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Latch Hole image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Latch Hole image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Latch Hole image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making the Latch Hole image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making the Latch Hole image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Making the Latch Hole image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 7: Making the Latch Hole image 8" loading="lazy"><img src="images/step07_09.gif" alt="Step 7: Making the Latch Hole image 9" loading="lazy"></div><p>So now it's time to make the latch hole that the lock will go into. You can see why I needed to extend the lock out from the back. There would have only been a very thin piece of ply for it to lock into. I also added a small piece of metal to make it stronger.</p>
 <p>STEPS:</p>
 <ol>
 <li>Before you go and make a hole in the drawer, I suggest that you make a test piece and use that as a template. grab a small piece of ply wood and slip it into the drawer surround and engage the solenoid. Mark where the solenoid hit the wood.</li>
-</ol>
+</ul>
 <ol>
 <li>Drill out the marked area and then use a file to square off the hole.</li>
-</ol>
+</ul>
 <ol>
 <li>Place the test piece back into the drawer surround and test whether the solenoid engages into the hole. If it doesn't, keep making the hole larger until it engages. Once the lock is in the latch ole you shouldn't be able to remove the piece of ply wood. Activate the solenoid and the latch will lift up allowing you to remove the test piece of ply. Do it a few time to make sure it wasn't a fluke the first time.</li>
-</ol>
+</ul>
 <ol>
 <li>If it is all working as it should be then use the template to make the same hole in the drawer and test to make sure it works</li>
-</ol>
+</ul>
 <ol>
 <li>To make the latch hole stronger, you can add the thin piece of metal to the ply wood as I have done</li>
-</ol>
-<p>NOTE: there should be a little bit of play in the drawer. This will allow you open it up once the spring has been added (next step)</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Spring</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Spring image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Spring image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Spring image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Spring image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Spring image 5" loading="lazy"><img src="images/step08_06.gif" alt="Step 8: Adding the Spring image 6" loading="lazy"></div><p>I had this spring lying around and it seems to do the trick well.</p>
-<p>I have added a link to a similar one in the parts section.</p>
-<p>You don't want a too stiff a spring as it will be too hard to push the drawer in to open it!</p>
+</ul>
+<p>NOTE: there should be a little bit of play in the drawer. This will allow you open it up once the spring has been added (next step)</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Spring</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Spring image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Spring image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Spring image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Spring image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Spring image 5" loading="lazy"><img src="images/step08_06.gif" alt="Step 8: Adding the Spring image 6" loading="lazy"></div><p>I had this spring lying around and it seems to do the trick well. I have added a link to a similar one in the parts section. You don't want a too stiff a spring as it will be too hard to push the drawer in to open it!</p>
 <p>STEPS:</p>
 <ol>
 <li>First thing to do is to just try out the spring and make sure that you can open up the drawer when it is in place. If you find that there isn't enough 'play' in the drawer and the solenoid isn't un-locking, then you may have to remove some more material inside the latch hole.</li>
-</ol>
+</ul>
 <ol>
 <li>If however, the drawer 'pops' out, then you are ready to secure the spring.</li>
-</ol>
+</ul>
 <ol>
 <li>To hold the spring in place, I used a couple of small screws with large heads. Just mark out on the back of the surround the diameter of the spring, drill a couple holes and use the screws to hold it into place</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Book Switch - Bracket for the Fan Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 4" loading="lazy"></div><p>Next thing to do is to make a small bracket for the fan switch. This bracket is later screwed into the book shelf</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Making the Book Switch - Bracket for the Fan Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Book Switch - Bracket for the Fan Switch image 4" loading="lazy"></div><p>Next thing to do is to make a small bracket for the fan switch. This bracket is later screwed into the book shelf</p>
 <p>STEPS:</p>
 <ol>
 <li>Bend a piece of aluminium strip 90 degrees and cut it as shown in the image</li>
-</ol>
+</ul>
 <ol>
 <li>Drill a hole in the longer section near the top. This is where the fan switch will be located</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, drill a couple smaller holes in the bottom of the bracket. These will be used to secure it to the book shelf</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Fan Switch to the Bracket</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 6" loading="lazy"><img src="images/step10_07.gif" alt="Step 10: Adding the Fan Switch to the Bracket image 7" loading="lazy"></div><p>STEPS:</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Fan Switch to the Bracket</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Fan Switch to the Bracket image 6" loading="lazy"><img src="images/step10_07.gif" alt="Step 10: Adding the Fan Switch to the Bracket image 7" loading="lazy"></div><p>STEPS:</p>
 <ol>
 <li>Un-screw the small, gold cap on the end of the fan switch</li>
-</ol>
+</ul>
 <ol>
 <li>Push the end of the fan switch into the hole in the bracket and secure with the gold cap</li>
-</ol>
+</ul>
 <ol>
 <li>To clean-up the wiring and make it easier to connect the solenoid, I also added a small wire terminal to the top of the fan switch. Just superglue it into place</li>
-</ol>
+</ul>
 <ol>
 <li>Trim the wires on the fan switch and secure into the wire terminal</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding a Metal Bracket to the Book</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 6" loading="lazy"><img src="images/step11_07.gif" alt="Step 11: Adding a Metal Bracket to the Book image 7" loading="lazy"></div><p>Adding a metal brace to the book that you are using for the book switch will help give the book some rigidity. Plus, it allows you to connect some fishing line or strong nylon thread to the book</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding a Metal Bracket to the Book</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding a Metal Bracket to the Book image 6" loading="lazy"><img src="images/step11_07.gif" alt="Step 11: Adding a Metal Bracket to the Book image 7" loading="lazy"></div><p>Adding a metal brace to the book that you are using for the book switch will help give the book some rigidity. Plus, it allows you to connect some fishing line or strong nylon thread to the book</p>
 <p>STEPS:</p>
 <ol>
 <li>First, you'll need a hard cover book that has an open section in the spine like in the images. This is so you can slip the bracket inside the spine of the book. A lot of older hardbacks have this type of spacing so you should be able to easily get one from the op shop if you don't have a suitable one</li>
-</ol>
+</ul>
 <ol>
 <li>Place a piece of alumnium strip inside the spine and mark where you need to bend</li>
-</ol>
+</ul>
 <ol>
 <li>Place the alumnium in a vice and make the bend. Place it back into the book to make sure sits flat.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, drill a couple small holes at the top of the bracket. This is where the fishing line will be attached. make sure you use a file and remove any burrs</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Painting</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Painting image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Painting image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Painting image 3" loading="lazy"></div><p>I decided to go with an aged teak stain for the finish on the wood.</p>
-<p>Mostly because that's what I had lying around!</p>
-<p>It's probably a better idea to paint the wood first before making the secret box but I didn't have too many issues painting around the lock etc.</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: Painting</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Painting image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Painting image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Painting image 3" loading="lazy"></div><p>I decided to go with an aged teak stain for the finish on the wood. Mostly because that's what I had lying around! It's probably a better idea to paint the wood first before making the secret box but I didn't have too many issues painting around the lock etc.</p>
 <p>STEPS:</p>
 <ol>
 <li>Grab a rag and use this to add the stain to the wood</li>
-</ol>
+</ul>
 <ol>
 <li>Be careful not to get any of the stain in the lock and other parts attached to the wood.</li>
-</ol>
+</ul>
 <ol>
 <li>leave to dry for 12 hours</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding Some Mounting Brackets</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding Some Mounting Brackets image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding Some Mounting Brackets image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding Some Mounting Brackets image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding Some Mounting Brackets image 4" loading="lazy"></div><p>To be able to mount the secret drawer underneath a bookshelf, you need to add a couple of brackets to the sides.</p>
+</ul><h2><span class="step-num">STEP 13</span>Step 13: Adding Some Mounting Brackets</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding Some Mounting Brackets image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding Some Mounting Brackets image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding Some Mounting Brackets image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding Some Mounting Brackets image 4" loading="lazy"></div><p>To be able to mount the secret drawer underneath a bookshelf, you need to add a couple of brackets to the sides.</p>
 <p>STEPS:</p>
 <ol>
 <li>Find the middle section on each side of the drawer surround and mark it</li>
-</ol>
+</ul>
 <ol>
 <li>Place the bracket against the side and mark the 2 holes that need to be drilled to secure the brackets</li>
-</ol>
+</ul>
 <ol>
 <li>Drill the holes and secure with a couple small screws. You don't want the screws to poke though the surround so if you need tyo add a couple small washers (I needed to) to ensure they don't.</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Adding the Fan Switch to a Bookshelf</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Fan Switch to a Bookshelf image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Fan Switch to a Bookshelf image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Adding the Fan Switch to a Bookshelf image 3" loading="lazy"></div><p>STEPS:</p>
+</ul><h2><span class="step-num">STEP 14</span>Step 14: Adding the Fan Switch to a Bookshelf</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Fan Switch to a Bookshelf image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Fan Switch to a Bookshelf image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Adding the Fan Switch to a Bookshelf image 3" loading="lazy"></div><p>STEPS:</p>
 <ol>
 <li>If you have already put the fan switch and bracket together then first, remove the fan switch so you can attach the bracket to the book shelf.</li>
-</ol>
+</ul>
 <ol>
 <li>make sure that there is some room behind the switch when you attach it to the bookshelf. You will need to bend the bracket down on a 45 degree angle once it has been attached</li>
-</ol>
+</ul>
 <ol>
 <li>Mark out and drill a couple small holes for the screws that attach the bracket to the bookshelf and secure into place.</li>
-</ol>
+</ul>
 <ol>
 <li>Replace the fan switch and push back the bracket so the end section of the fan switch is pointing at a 45% angle. This will ensure that the little chain won't get caught when pulling the book back to activate the switch.</li>
-</ol>
+</ul>
 <ol>
 <li>You now need to attach the switch to the top of the book bracket you made earlier. To do this use some fishing line (or any strong, thin string) to the top section of the book bracket and then to the chain. Make it as short as possible so the book doesn't have much forwards play.</li>
-</ol>
+</ul>
 <ol>
 <li>Pull the book and see if you van hear the 'click' of the switch. If so you are ready to move onto the next step</li>
-</ol><h2><span class="step-num">STEP 15</span>Step 15: Securing the Secret Drawer to the Bookshelf</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 5" loading="lazy"><img src="images/step15_06.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 6" loading="lazy"><img src="images/step15_07.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 7" loading="lazy"></div><p>So close now!</p>
+</ul><h2><span class="step-num">STEP 15</span>Step 15: Securing the Secret Drawer to the Bookshelf</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 5" loading="lazy"><img src="images/step15_06.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 6" loading="lazy"><img src="images/step15_07.jpg" alt="Step 15: Securing the Secret Drawer to the Bookshelf image 7" loading="lazy"></div><p>So close now!</p>
 <p>STEPS:</p>
 <ol>
 <li>Work out where you want to mount the secret drawer. I haven't really hidden mine as it would have been too hard to take photo's for the 'ible. The best place for me to hide the drawer would have been on the bottom shelf.</li>
-</ol>
+</ul>
 <ol>
 <li>Mark where the bracket holes are on the bottom of the bookshelf and drill the holes.</li>
-</ol>
+</ul>
 <ol>
 <li>Add some screws and secure to the shelf</li>
-</ol>
+</ul>
 <ol>
 <li>The last thing to do is to connect the longer wire from the secret drawer to the fan switch. This is easily done via the wire terminal you attached to the top of the fan switch.</li>
-</ol>
+</ul>
 <ol>
 <li>Once everything is wired, pull the top of the book down, push on the front of the drawer and watch it open! Make sure that you pull the book again to turn off the solenoid. You can now push the drawer back in and it will lock into place.</li>
-</ol>
+</ul>
 </body>
 </html>

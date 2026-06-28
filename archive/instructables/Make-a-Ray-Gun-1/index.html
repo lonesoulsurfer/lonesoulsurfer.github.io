@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,197 +127,164 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make a Ray Gun</span>
 </nav>
-<h1>Make a Ray Gun</h1><div class="source"><a href="https://www.instructables.com/Make-a-Ray-Gun-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I’ve wanted to make myself a ray gun for ages and recently took the plunge.</p>
-<p>These super cool death rays are the epitome of all that I love about sci-fi.</p>
-<p>My ray gun is made from interesting junk parts and scrap pieces that I collect on my visits to the local tip.</p>
-<p>Junk parts can be anything from vintage electronics to broken mike stands and vacuum tubes.</p>
-<p>I did an ible’ some time ago on Junkboks which can be found here and making a ray gun from scrap uses the same principals.</p>
-<p>The important thing to remember when collecting parts to make your own is to keep a lookout for any interesting parts.</p>
-<p>Once you start actually looking, you’ll find all types of great bits and bobs that you can make something from.</p>
-<p>Once you have the parts, it’s just a case of working out how they are all going to join together!</p>
-<p>That’s probably the hardest but most rewarding part of making something like this – working out how the hell you are going to join one part to another!</p>
-<p>The main section of my ray gun is made from a compressed air blow gun.</p>
-<p>As soon as I found it I knew that I had a great start to a ray gun.</p>
-<p>That’s what usually happens though as you are looking around for parts, you stumble across something that sparks your imagination and you’re away.</p>
-<p>In this ible’ I’ll go through what parts I used to make mine and show you how I built it.</p>
-<p>Each ray gun will be unique as the parts you find will define what your ray gun looks like.</p>
-<p>Hopefully though my build will give you a few ideas and inspire you to make your own.</p>
-<p>Also, if you want some more inspiration - check out this Pinterest page</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts and Tools image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Step 1: Parts and Tools image 11" loading="lazy"><img src="images/step01_12.jpg" alt="Step 1: Parts and Tools image 12" loading="lazy"><img src="images/step01_13.jpg" alt="Step 1: Parts and Tools image 13" loading="lazy"></div><p>The parts list below is what I used for my build.</p>
-<p>Some of the parts I have no idea what the actual names are so I’ll describe it the best I can.</p>
-<p>Each build will be different so just use my list as a potential guide to what to keep an eye out for.</p>
+<h1>Make a Ray Gun</h1><div class="source"><a href="https://www.instructables.com/Make-a-Ray-Gun-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I’ve wanted to make myself a ray gun for ages and recently took the plunge. These super cool death rays are the epitome of all that I love about sci-fi. My ray gun is made from interesting junk parts and scrap pieces that I collect on my visits to the local tip.</p>
+<p>Junk parts can be anything from vintage electronics to broken mike stands and vacuum tubes. I did an ible’ some time ago on Junkboks which can be found here and making a ray gun from scrap uses the same principals. The important thing to remember when collecting parts to make your own is to keep a lookout for any interesting parts. Once you start actually looking, you’ll find all types of great bits and bobs that you can make something from. Once you have the parts, it’s just a case of working out how they are all going to join together! That’s probably the hardest but most rewarding part of making something like this – working out how the hell you are going to join one part to another!</p>
+<p>The main section of my ray gun is made from a compressed air blow gun. As soon as I found it I knew that I had a great start to a ray gun. That’s what usually happens though as you are looking around for parts, you stumble across something that sparks your imagination and you’re away.</p>
+<p>In this ible’ I’ll go through what parts I used to make mine and show you how I built it. Each ray gun will be unique as the parts you find will define what your ray gun looks like. Hopefully though my build will give you a few ideas and inspire you to make your own.</p>
+<p>Also, if you want some more inspiration - check out this Pinterest page</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts and Tools image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Step 1: Parts and Tools image 11" loading="lazy"><img src="images/step01_12.jpg" alt="Step 1: Parts and Tools image 12" loading="lazy"><img src="images/step01_13.jpg" alt="Step 1: Parts and Tools image 13" loading="lazy"></div><p>The parts list below is what I used for my build. Some of the parts I have no idea what the actual names are so I’ll describe it the best I can. Each build will be different so just use my list as a potential guide to what to keep an eye out for.</p>
 <p>Parts:</p>
 <ol>
 <li>Compressed air blow gun. You can find these on eBay. Try and find a vintage one though as it will have more patina and style. I used this section as the handle and barrel of the ray gun.</li>
-</ol>
+</ul>
 <ol>
 <li>Washers. Every good ray gun needs to have a heat sink. Washers are great for this section and can be found at any hardware store</li>
-</ol>
+</ul>
 <ol>
 <li>Plumbing parts. I used a couple of metal tap surrounds for the heat sink as well. I don’t know the correct name for these but you can see them in the image below.</li>
-</ol>
+</ul>
 <ol>
 <li>Computer speak grill. – I found mine on an old computer but you can find them on eBay as well.</li>
-</ol>
+</ul>
 <ol>
 <li>Light fitting? I think that’s what it was! I used this in the front section of the ray gun.</li>
-</ol>
+</ul>
 <ol>
 <li>Aluminium tubing – hardware store</li>
-</ol>
+</ul>
 <ol>
 <li>Vacuum tubes – the quintessential part of any ray gun – old radios, eBay etc</li>
-</ol>
+</ul>
 <ol>
 <li>That’s really all I used to make mine</li>
-</ol>
+</ul>
 <p>Tools:</p>
 <ol>
 <li>Drill,</li>
-</ol>
+</ul>
 <ol>
 <li>Dremel</li>
-</ol>
+</ul>
 <ol>
 <li>Angle grinder</li>
-</ol>
+</ul>
 <ol>
 <li>Screwdrivers etc</li>
-</ol>
+</ul>
 <ol>
 <li>Epoxy glue</li>
-</ol>
+</ul>
 <ol>
 <li>Vice</li>
-</ol>
+</ul>
 <ol>
 <li>Any other tool that you need to make your ray gun.</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: The Handle Grip</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Handle Grip image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Handle Grip image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Handle Grip image 3" loading="lazy"></div><p>Personally, I think the most important part to find is the handle grip for your ray gun. I was very lucky as my handle already had the making of a barrel attached.</p>
-<p>I have found a few different handle grips over the course of a few months and every time I start to try and put a ray gun together I couldn’t decide how to attach the barrel section.</p>
-<p>Once I found the compressed blower with the long barrel section it made things a lot easier.</p>
-<p>Some other ideas are to use the handle from a vintage video camera like in the images below.</p>
-<p>You can also use old vintage tools such as drills to find a decent handle.</p>
-<p>I think the key thing to take away here is to find a handle that you can build on.</p>
-<p>Plus the look is obviously very important as well.</p><h2><span class="step-num">STEP 3</span>Step 3: Making a Heat Sink</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making a Heat Sink image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making a Heat Sink image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making a Heat Sink image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making a Heat Sink image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making a Heat Sink image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making a Heat Sink image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Making a Heat Sink image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Making a Heat Sink image 8" loading="lazy"></div><p>Virtually all ray guns have some type of heat sink.</p>
-<p>To make mine I used some plumbing parts and washers.</p>
-<p>When designing your ray gun, you’re going to get to a point where you say to yourself “how am I going to stick all this together!” That’s probably the trickiest part (that and finding the right parts) of making one of these.</p>
-<p>You can go one of 2 ways – either glue everything down or work out a way to secure everything together so you can take it apart again.</p>
-<p>The latter is the harder way but the most beneficial.</p>
-<p>If you glue everything together, then changing anything down the track becomes a nightmare.</p>
-<p>Making it so it can come apart definitely is a bonus but sometimes it’s just not possible.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: The Handle Grip</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Handle Grip image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Handle Grip image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Handle Grip image 3" loading="lazy"></div><p>Personally, I think the most important part to find is the handle grip for your ray gun. I was very lucky as my handle already had the making of a barrel attached.</p>
+<p>I have found a few different handle grips over the course of a few months and every time I start to try and put a ray gun together I couldn’t decide how to attach the barrel section. Once I found the compressed blower with the long barrel section it made things a lot easier.</p>
+<p>Some other ideas are to use the handle from a vintage video camera like in the images below. You can also use old vintage tools such as drills to find a decent handle. I think the key thing to take away here is to find a handle that you can build on. Plus the look is obviously very important as well.</p><h2><span class="step-num">STEP 3</span>Step 3: Making a Heat Sink</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making a Heat Sink image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making a Heat Sink image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making a Heat Sink image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making a Heat Sink image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making a Heat Sink image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making a Heat Sink image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Making a Heat Sink image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Making a Heat Sink image 8" loading="lazy"></div><p>Virtually all ray guns have some type of heat sink. To make mine I used some plumbing parts and washers. When designing your ray gun, you’re going to get to a point where you say to yourself “how am I going to stick all this together!” That’s probably the trickiest part (that and finding the right parts) of making one of these. You can go one of 2 ways – either glue everything down or work out a way to secure everything together so you can take it apart again. The latter is the harder way but the most beneficial. If you glue everything together, then changing anything down the track becomes a nightmare. Making it so it can come apart definitely is a bonus but sometimes it’s just not possible.</p>
 <p>Steps:</p>
 <ol>
 <li>First thing to do is decide where you want to put the heat-sink</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have a good spot, you need to work out how big you want it and what types of washers to get. To create the ripple effect you will need to get a small and large washer and alternate.</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have the washers, you now need to fit them on the gun. Hopefully you have better luck than me with this as I had to drill out the holes in the washers to make them fit over the barrel.</li>
-</ol>
+</ul>
 <ol>
 <li>Keep on alternating the washers until the heat-sink is the size you want it to be.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, you need a way to secure it all into place. I left mine loose for the moment until could think of a way to secure.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Cutting the Barrel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Cutting the Barrel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Cutting the Barrel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Cutting the Barrel image 3" loading="lazy"></div><p>After virtually finishing the ray gun, I came to the conclusion that I wasn’t happy with the length of the barrel.</p>
-<p>This left me with a bit of a problem.</p>
-<p>Do I cut the barrel which would make it hard to secure the tubing etc on the barrel, or do I just go for it and work it out later.</p>
-<p>I went with it in the end and took the chance which I’m glad I did as it turned out much better.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Cutting the Barrel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Cutting the Barrel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Cutting the Barrel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Cutting the Barrel image 3" loading="lazy"></div><p>After virtually finishing the ray gun, I came to the conclusion that I wasn’t happy with the length of the barrel. This left me with a bit of a problem. Do I cut the barrel which would make it hard to secure the tubing etc on the barrel, or do I just go for it and work it out later. I went with it in the end and took the chance which I’m glad I did as it turned out much better.</p>
 <p>Steps:</p>
 <ol>
 <li>Decide how long you want the barrel.</li>
-</ol>
+</ul>
 <ol>
 <li>Use an angle grinder to cut it.</li>
-</ol>
+</ul>
 <ol>
 <li>I kept the part that I cut off the end as I used the nozzle screw section later.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: More Barrel Work</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: More Barrel Work image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: More Barrel Work image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: More Barrel Work image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: More Barrel Work image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: More Barrel Work image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: More Barrel Work image 6" loading="lazy"></div><p>My ray gun already had a barrel so I was pretty lucky not to have to add one.</p>
-<p>However, I still needed a way to hold into place the washers for the heat sink.</p>
-<p>I did think of just gluing them on but it would have meant that I wouldn’t be able to take apart the gun again.</p>
-<p>I hit upon the idea of adding a piece of aluminium tube onto the barrel which would act as a bush to hold everything in place.</p>
-<p>The end of the barrel has a male screw section which allowed me to secure the bush into place.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: More Barrel Work</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: More Barrel Work image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: More Barrel Work image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: More Barrel Work image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: More Barrel Work image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: More Barrel Work image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: More Barrel Work image 6" loading="lazy"></div><p>My ray gun already had a barrel so I was pretty lucky not to have to add one. However, I still needed a way to hold into place the washers for the heat sink. I did think of just gluing them on but it would have meant that I wouldn’t be able to take apart the gun again. I hit upon the idea of adding a piece of aluminium tube onto the barrel which would act as a bush to hold everything in place. The end of the barrel has a male screw section which allowed me to secure the bush into place.</p>
 <p>Steps:</p>
 <ol>
 <li>Find a piece of aluminium tube that will fit over the barrel end. You can get aluminium tubing from most hardware stores</li>
-</ol>
+</ul>
 <ol>
 <li>If it doesn’t fit (mine didn’t) you will need to drill out the hole to make it bigger. To do this I used a drill press and drilled out the hole larger. Adding some lubrication like WD40 helps to make the job faster.</li>
-</ol>
+</ul>
 <ol>
 <li>Once it fits over the barrel I pushed it into place and secured it with part of the nozzle that came with the air gun.</li>
-</ol>
-<p>Actually I had to change this as I decided to cut the barrel to make it shorter. To secure into place, drilled a hole into the barrel, tapped it and then added a screw to secure.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding a Nose Cone</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding a Nose Cone image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding a Nose Cone image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding a Nose Cone image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding a Nose Cone image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding a Nose Cone image 5" loading="lazy"></div><p>Initially I used a different nose cone which was a lot larger.</p>
-<p>I left that step in if you want to check it out and can be found at the end of the Instructable.</p>
-<p>I also was going to include vacuum tubes but after breaking a couple, decided not to as they are too fragile.</p>
+</ul>
+<p>Actually I had to change this as I decided to cut the barrel to make it shorter. To secure into place, drilled a hole into the barrel, tapped it and then added a screw to secure.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding a Nose Cone</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding a Nose Cone image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding a Nose Cone image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding a Nose Cone image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding a Nose Cone image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding a Nose Cone image 5" loading="lazy"></div><p>Initially I used a different nose cone which was a lot larger. I left that step in if you want to check it out and can be found at the end of the Instructable. I also was going to include vacuum tubes but after breaking a couple, decided not to as they are too fragile.</p>
 <p>Steps:</p>
 <ol>
 <li>Find something cylindrical that can be used as a nose cone. I used an aluminium lid from a flare.</li>
-</ol>
+</ul>
 <ol>
 <li>To enable it to fit over the barrel, yu will need to drill a hole into the middle. Make this slightly smaller than the barrel itself</li>
-</ol>
+</ul>
 <ol>
 <li>As the barrel is a little larger than the hole, I filed the hole until the nose cone just fitted on. I then carefully hammered it into place with a rubber mallet. As it was a tight fit I didn’t need to add any glue etc. However, you may have to if the fit isn’t so snug.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: More Nose Cone and Barrel Work</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: More Nose Cone and Barrel Work image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: More Nose Cone and Barrel Work image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: More Nose Cone and Barrel Work image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: More Nose Cone and Barrel Work image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: More Nose Cone and Barrel Work image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: More Nose Cone and Barrel Work image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: More Nose Cone and Barrel Work image 7" loading="lazy"></div><p>I decided to layer up the end of the barrel a little more as I wasn’t happy with it. I did try to add a vacuum tube to the end but it looked a little silly.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: More Nose Cone and Barrel Work</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: More Nose Cone and Barrel Work image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: More Nose Cone and Barrel Work image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: More Nose Cone and Barrel Work image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: More Nose Cone and Barrel Work image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: More Nose Cone and Barrel Work image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: More Nose Cone and Barrel Work image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: More Nose Cone and Barrel Work image 7" loading="lazy"></div><p>I decided to layer up the end of the barrel a little more as I wasn’t happy with it. I did try to add a vacuum tube to the end but it looked a little silly.</p>
 <p>Steps:</p>
 <ol>
 <li>I added part of a computer fan cover onto the barrel and inside the nose cone. I liked the idea of adding a few details that you wouldn’t see unless you looked for them. I secured this in place with the nut from the small nose cone that came with the barrel.</li>
-</ol>
+</ul>
 <ol>
 <li>As I cut the barrel in half, I needed a way to attach the end again. I found that the easiest way to do this was to just use some epoxy to secure it. I meant that pulling the ray gun apart again would be hard but I figure it was the easiest and best way to do it.</li>
-</ol>
+</ul>
 <ol>
 <li>OIt took me awhile to decide what to add to the end of the barrel. After a little messing about I decided on a small, red bead. You buy these in half already so it fitted well into the end of the barrel. I used some super glue to hold into place</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding a Hand Guard</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a Hand Guard image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a Hand Guard image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a Hand Guard image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a Hand Guard image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding a Hand Guard image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding a Hand Guard image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding a Hand Guard image 7" loading="lazy"></div><p>I saw this in another ray gun and thought it would add a good touch to mine.</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding a Hand Guard</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a Hand Guard image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a Hand Guard image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a Hand Guard image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a Hand Guard image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding a Hand Guard image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding a Hand Guard image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding a Hand Guard image 7" loading="lazy"></div><p>I saw this in another ray gun and thought it would add a good touch to mine.</p>
 <p>Steps:</p>
 <ol>
 <li>With a flat piece of aluminium, make a bend so it fits to the bottom of the gun and also to a place that you can attach it to the body. There was a hole already in my gun for an attachment and I just used this. I had to slightly modify the aluminum to allow it to fit into the hole</li>
-</ol>
+</ul>
 <ol>
 <li>Drill a small hole through the aluminum and handle and tap the hole. Secure the end with a screw. It actually ended up being very secure and works really well as a hand guard</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Make a Stand</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Make a Stand image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Make a Stand image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Make a Stand image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Make a Stand image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Make a Stand image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Make a Stand image 6" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Make a Stand</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Make a Stand image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Make a Stand image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Make a Stand image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Make a Stand image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Make a Stand image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Make a Stand image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Find a nice piece of wood and cut to about the same length of the ray gun.</li>
-</ol>
+</ul>
 <ol>
 <li>Add some stain to it</li>
-</ol>
+</ul>
 <ol>
 <li>Next, to display the gun I decided to use a hole in the handle to be able to mount it to the wood. I wanted the gun had to come off easily as well. To do this I drilled a hole through the wood and added a bolt through it. I then glued it into place.</li>
-</ol>
+</ul>
 <ol>
 <li>I also added some rubber feet to the bottom of the stand so it would be stable.</li>
-</ol>
+</ul>
 <ol>
 <li>Slide the gun over the bolt end and it should sit nicely on the wood</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Done!</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Done! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Done! image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Done! image 3" loading="lazy"></div><p>I’m really happy with the look and finish of my ray gun.</p>
-<p>There are a few things that I would probably do differently next time and the process of trial and error meant that it took longer to make that I thought it would.</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Done!</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Done! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Done! image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Done! image 3" loading="lazy"></div><p>I’m really happy with the look and finish of my ray gun. There are a few things that I would probably do differently next time and the process of trial and error meant that it took longer to make that I thought it would.</p>
 <p>I would have liked to have actually done something like have a light or laser at the end of the barrel. Unfortunately it just didn’t happen this time.</p>
 <p>I think the stand turned ut great too and it’s a really easy way to display the ray run.</p><h2><span class="step-num">STEP 11</span>Step 11: Adding Vacuum Tubes - Didn't Do This in the End</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 11: Adding Vacuum Tubes - Didn't Do This in the End image 8" loading="lazy"></div><p>I didn't bother in the end with the vacuum tubes as they kept on breaking and I didn't think the ray gun needed them in the end.</p>
 <p>A vacuum tube gives the Ray gun a look of authenticity and is an easy way to give your blaster that vintage look and feel.</p>
 <p>Steps:</p>
 <ol>
 <li>Find a good place to attach a vacuum tube or 2 to the body of the gun.</li>
-</ol>
+</ul>
 <ol>
 <li>You might have glue the vacuum tube into place. If so, use some good epoxy glue to secure it into place.</li>
-</ol>
+</ul>
 <ol>
 <li>I decided to add a couple of tubes to my gun because – why not.</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Nose Cone - Didn't Use This One in the End</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 7" loading="lazy"></div><p>Next I decided to add a nose cone to the front of the barrel. The trickiest thing I had to work out here was how I was going to mount it. Luckily an old computer fan cover came to the rescue.</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: Nose Cone - Didn't Use This One in the End</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Nose Cone - Didn't Use This One in the End image 7" loading="lazy"></div><p>Next I decided to add a nose cone to the front of the barrel. The trickiest thing I had to work out here was how I was going to mount it. Luckily an old computer fan cover came to the rescue.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut the small fins in the middle of the fan cover.</li>
-</ol>
+</ul>
 <ol>
 <li>Measure and work out how much you need to cut off on the outside of the fan cover to fit into the nose cone. The nose cone is, I think, a light fitting.</li>
-</ol>
+</ul>
 <ol>
 <li>Cut to size and secure inside the nose cone. I was lucky as the fan cover fitted nice and tightly inside the nose cone</li>
-</ol>
+</ul>
 <ol>
 <li>To attach it to the barrel, all I did was to undo the nozzle from the front of the barrel on the ray gun and pushed the nose cone into place. To secure it there I just screwed the nozzle back into place. This way I could remove easily.</li>
-</ol>
+</ul>
 </body>
 </html>

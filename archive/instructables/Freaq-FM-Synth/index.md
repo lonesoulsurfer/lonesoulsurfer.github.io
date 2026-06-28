@@ -59,6 +59,8 @@ PARTS:
 - Mini JST Connector and wire 2 Pin X 11
 
 
+- [Freaq - List of Parts](pdfs/Freaq - List of Parts.pdf)
+
 ## Step 1: PCB, Front Panel & Schematic
 
 ![Step 1: PCB, Front Panel & Schematic image 1](images/step02_01.png)
@@ -284,6 +286,10 @@ Next in line to build is my Groove Box synth which you can see in the vids. Afte
 
 I'll continue to to publish each part on Instructables so keep a look out for those upcoming projects.
 
+
+## Downloads
+
+- [Freaq - List of Parts](pdfs/Freaq - List of Parts.pdf)
 
 ---
 *34 images archived*

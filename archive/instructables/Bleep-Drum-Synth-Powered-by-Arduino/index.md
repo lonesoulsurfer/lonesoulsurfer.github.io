@@ -74,6 +74,8 @@ I've created a parts list which can be found in my GitHub page and in the PDF fi
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: Getting the PCB & Front Panel Printed
 
 ![Step 1: Getting the PCB & Front Panel Printed image 1](images/step02_01.jpg)
@@ -229,6 +231,10 @@ Pink – Pots control noise.
 
 All other controls are the same.
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *37 images archived*

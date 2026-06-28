@@ -67,6 +67,8 @@ PARTS:
 5. The rest of the components like resistors, capacitors, LED's can be found on the attached list of parts
 
 
+- [Book2](pdfs/Book2.pdf)
+
 ## Step 2: How It All Works
 
 ![Step 2: How It All Works image 1](images/step02_01.png)
@@ -144,6 +146,10 @@ Add an op amp into each of the IC sockets and test to see if: A - the curcuit wo
 
 The good news is, you can use the tester to test other op amps! For example, if you want to test a 5532 op amp, then just plug it into the LM358 testing circuit. You shouldbe able to test quite a few different op amps with this tester so go ahead and test out what you have and see if you get a blinking LED.
 
+
+## Downloads
+
+- [Book2](pdfs/Book2.pdf)
 
 ---
 *26 images archived*

@@ -76,6 +76,8 @@ Send the Gerber files (keep them zipped) to a PCB manufacturer like JLCPCB who w
 - You can pick whatever colour you want to choose for your front panel and PCB.
 
 
+- [Acid Drip - Parts List](pdfs/Acid Drip - Parts List.pdf)
+
 ## Step 1: Adding the Components to the PCB - Front Side
 
 ![Step 1: Adding the Components to the PCB - Front Side image 1](images/step02_01.jpg)
@@ -185,6 +187,8 @@ STEPS:
 - Now you can add the potentiometer and toggle switch nuts into place and also the audio socket rings. These all help with keeping the front panel secured
 - Lastly, you can add some pot knobs to each of the pots
 
+
+- [Acid Drip - Parts List (1)](pdfs/Acid Drip - Parts List _1_.pdf)
 
 ## Step 5: Loading the Code
 
@@ -433,6 +437,11 @@ Easter Egg
 
 Hold down pads 11, 12, 13 and 14 for 1 second to enter a secret pattern mode with classic acid house and synth patterns pre-loaded. You can still use all the FUNC controls and add drums on top. Hold the same four pads again for 1 second to exit. You may also want to reset using pads 1+2 after exiting to clear the pattern.
 
+
+## Downloads
+
+- [Acid Drip - Parts List](pdfs/Acid Drip - Parts List.pdf)
+- [Acid Drip - Parts List (1)](pdfs/Acid Drip - Parts List _1_.pdf)
 
 ---
 *47 images archived*

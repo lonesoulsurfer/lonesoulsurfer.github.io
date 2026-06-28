@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -116,8 +133,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>I've pubished 254 255 'Ibles since then and it's been a great journey. I've learnt a tonne of skills and have published a broad range of builds over the years.</p>
 <p>A huge thank you to anyone and everyone who has voted for one of my projects thought the years. You are all superstars xx</p>
 <p>Also thanks to the Great Instructables team!</p>
-<p>Back to the question I first asked.</p>
-<p>As the internet wasn't helping me and I couldn't find anything relevant, I decided to build a tool that would extract the information from all of the competitions run by Intructables!</p>
+<p>Back to the question I first asked. As the internet wasn't helping me and I couldn't find anything relevant, I decided to build a tool that would extract the information from all of the competitions run by Intructables!</p>
 <p>After a few hours coding, I ended up with a Python script that runs a program and outputs a list of the top 50 winners and some stats about each one.</p>
 <p>The results can be found in Step 1. - Visit the website that I created to check out the winners</p>
 <p>In the Supplies step I have provided everything you need to run the script yourself. I looked up the top 50 but you can also change the amount of competition winners to look up as many as you want!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.png" alt="Supplies image 3" loading="lazy"></div><p>RUN THE PYTHON SCRIPT YOURSELF</p>
@@ -154,10 +170,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>HTMLReady-to-paste table for publishing on Instructables</li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: Results</h2><div class="step-images single"><img src="images/step02_01.png" alt="Step 1: Results image 1" loading="lazy"></div><p>Check out the link to see the winners</p>
 <p>https://lonesoulsurfer.github.io/Instructables_Contest_Winners/</p>
-<p>The results can also be found on GitHub.</p>
-<p>You can download 3 different file formats of the list from my GitHub page.</p>
-<p>There is an Excel, HMTL and CSV files available.</p>
-<p>These are the outputs you get after the Python script has ran.</p>
+<p>The results can also be found on GitHub. You can download 3 different file formats of the list from my GitHub page. There is an Excel, HMTL and CSV files available. These are the outputs you get after the Python script has ran.</p>
 <p>The results don't just supply a list of the highest competition winners. It also provides the following:</p>
 <ul>
 <li>Link to the Instructable member so you can go check them out</li>

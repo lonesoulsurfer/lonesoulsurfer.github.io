@@ -55,6 +55,8 @@ As usual, I've created a parts list which can be found in my GitHub page and in 
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: About the AI
 
 ![Step 1: About the AI image 1](images/step02_01.jpg)
@@ -589,6 +591,10 @@ Navigate with UP / DOWN, back with ENTER.
 - Category efficiency — how well each category is being used
 - Win rate trends
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *51 images archived*

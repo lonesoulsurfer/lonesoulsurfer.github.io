@@ -92,6 +92,8 @@ All you need to do is to send the zipped Gerber files to a PCB manufacturer like
 I've also provided some info on how the components are conencted to the board.
 
 
+- [Sound Bender - Schematic](pdfs/Sound Bender - Schematic.pdf)
+
 ## Step 3: Pulling Apart the Game
 
 ![Step 3: Pulling Apart the Game image 1](images/step03_01.jpg)
@@ -150,6 +152,8 @@ Inscape is a vector graphics editor which you can download for free! I found it 
 
 As my case was pretty unique you might have to play around with my design to suit your needs. I have provided the files in my Google Drive. I've also provided the front panel in PDF so you can just print this out if you want to and uase it.
 
+
+- [Sound Bender](pdfs/Sound Bender.pdf)
 
 ## Step 6: Adding the Water Decal to the Front Cover
 
@@ -324,6 +328,11 @@ What next?
 
 3. There would also be plenty of circuit bends that you could do to the circuits, especially the echo/reverb module
 
+
+## Downloads
+
+- [Sound Bender - Schematic](pdfs/Sound Bender - Schematic.pdf)
+- [Sound Bender](pdfs/Sound Bender.pdf)
 
 ---
 *58 images archived*

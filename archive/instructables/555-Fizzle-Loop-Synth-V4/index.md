@@ -63,6 +63,10 @@ It's actually easier then it seems and a lot of fun as well
 I've included a PDF of the schematic along with a parts list. You can also find this information in the Google drive link above.
 
 
+- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
+- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
+- [Parts List - 555 Fizzle Loop Synth Circuit](pdfs/Parts List - 555 Fizzle Loop Synth Circuit.pdf)
+
 ## Step 2: The Rest of the Parts
 
 ![Step 2: The Rest of the Parts image 1](images/step02_01.png)
@@ -147,6 +151,8 @@ There is even an extension that you can download so you can design knob scales e
 
 However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also included the Inkscape file which can be found in my Google drive so you can play around with that as well if you want to.
 
+
+- [555 fizzle loop synth 2](pdfs/555 fizzle loop synth 2.pdf)
 
 ## Step 5: Adding the Water Acrylic to the Front Panel
 
@@ -361,6 +367,13 @@ I think for version 5 I will look at adding an extra vactrol like I did in V2 an
 
 There are so many different mods you could do this this synth and I guess that's why I keep on coming back to it and tryig different things out.
 
+
+## Downloads
+
+- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
+- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
+- [Parts List - 555 Fizzle Loop Synth Circuit](pdfs/Parts List - 555 Fizzle Loop Synth Circuit.pdf)
+- [555 fizzle loop synth 2](pdfs/555 fizzle loop synth 2.pdf)
 
 ---
 *69 images archived*

@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,171 +127,164 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Display Frame With LED's</span>
 </nav>
-<h1>Display Frame With LED's</h1><div class="source"><a href="https://www.instructables.com/Display-Frame-With-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I find a lot of great and interesting objects whilst I’m out and about and I wanted a way to display them.</p>
-<p>You can buy nice wall boxes or even use those boxed photo frames but I wanted to add some LED lighting to my box so needed to customise it.</p>
+<h1>Display Frame With LED's</h1><div class="source"><a href="https://www.instructables.com/Display-Frame-With-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I find a lot of great and interesting objects whilst I’m out and about and I wanted a way to display them. You can buy nice wall boxes or even use those boxed photo frames but I wanted to add some LED lighting to my box so needed to customise it.</p>
 <p>The box itself is made from pine which is cheap and easy to work with. Plus adding some Danish varnish or something similar really brings out the grain of the wood which I love.</p>
-<p>The object that I wanted to display was an old cap gun.</p>
-<p>I found this at a junk store and remember having one very similar as a kid.</p>
-<p>It’s got a very cool, vintage look and I wanted some way to display it.</p>
-<p>The cap-gun also uses the rolled type cap which you can’t get any longer (at least in Australia) so displaying it gives it a new purpose.</p>
+<p>The object that I wanted to display was an old cap gun. I found this at a junk store and remember having one very similar as a kid. It’s got a very cool, vintage look and I wanted some way to display it. The cap-gun also uses the rolled type cap which you can’t get any longer (at least in Australia) so displaying it gives it a new purpose.</p>
 <p>I also like to be able to remove the object from the display frame if I want to, especially if it’s a toy so I made it so it could be easily removed from the frame.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Wood for the frame. I used pine wood about 90mm wide. The size though of your frame will depend on what object you are displaying. Local hardware store</li>
-</ol>
+</ul>
 <ol>
 <li>White MDF Panel – 3mm thick. I used this to mount the cap-gun n onto and also hide the electronics. Local hardware store</li>
-</ol>
+</ul>
 <ol>
 <li>3 strip LED. I pulled mine from an old drone. You could however use the following from eBay. This, This or even This</li>
-</ol>
+</ul>
 <ol>
 <li>LED Dimmer – I used a DC motor controller which I find works well – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>3 X AA Battery Holder – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>3 X AA Batteries</li>
-</ol>
+</ul>
 <ol>
 <li>Wires</li>
-</ol>
+</ul>
 <ol>
 <li>Corner Brackets to secure the frame – eBay or your local hardware store</li>
-</ol>
+</ul>
 <ol>
 <li>Picture Hanging Strips - eBay</li>
-</ol>
+</ul>
 <p>Tools:</p>
 <ol>
 <li>Hot Glue</li>
-</ol>
+</ul>
 <ol>
 <li>Super glue</li>
-</ol>
+</ul>
 <ol>
 <li>Wood Glue</li>
-</ol>
+</ul>
 <ol>
 <li>Drill</li>
-</ol>
+</ul>
 <ol>
 <li>Router</li>
-</ol>
+</ul>
 <ol>
 <li>Saw</li>
-</ol>
+</ul>
 <ol>
 <li>Sander</li>
-</ol>
+</ul>
 <ol>
 <li>Clamps</li>
-</ol>
+</ul>
 <ol>
 <li>Soldering Iron</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Frame - Routing and Cutting</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 7" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Making the Frame - Routing and Cutting</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Frame - Routing and Cutting image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First decide how much room you will need behind the MDF board to hide the electronics. Make sure that the object also sits nicely in the frame once you have worked out the depth.</li>
-</ol>
+</ul>
 <ol>
 <li>With a router, make a groove in the wood which is large enough to fit the MDF backing into.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, cut the wood to size. Use your object to decide on how big to make the frame</li>
-</ol>
+</ul>
 <ol>
 <li>Cut the wood and measure how big you need the MDF backing</li>
-</ol>
+</ul>
 <ol>
 <li>Cut the MDF backing and fir it into the frame to ensure it fits correctly. If not, just sand it down a little</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Gluing and Securing the Frame</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Gluing and Securing the Frame image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Gluing and Securing the Frame image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Gluing and Securing the Frame image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Gluing and Securing the Frame image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Gluing and Securing the Frame image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Gluing and Securing the Frame image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Gluing and Securing the Frame image 7" loading="lazy"></div><p>At this point it’s probably a good time to paint the wood before you start to assemble. I didn’t and although it wasn’t too much of an issue, I did have to tape up the MDF.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Gluing and Securing the Frame</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Gluing and Securing the Frame image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Gluing and Securing the Frame image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Gluing and Securing the Frame image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Gluing and Securing the Frame image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Gluing and Securing the Frame image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Gluing and Securing the Frame image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Gluing and Securing the Frame image 7" loading="lazy"></div><p>At this point it’s probably a good time to paint the wood before you start to assemble. I didn’t and although it wasn’t too much of an issue, I did have to tape up the MDF.</p>
 <p>Steps:</p>
 <ol>
 <li>Add some wood glue to the sides of the frame and secure it together with some clamps</li>
-</ol>
+</ul>
 <ol>
 <li>Leave to dry for a few hours.</li>
-</ol>
+</ul>
 <ol>
 <li>Next screw the corner brackets to the frame. This will give it strength.</li>
-</ol>
+</ul>
 <ol>
 <li>To ensure that the MDF is sitting flush in the groove, you can add some small pieces of timber to the back of the frame and MDF. Just add some wood glue and clamp into place for a few hours.</li>
-</ol>
+</ul>
 <ol>
 <li>If you haven’t painted the frame yet, now is a good time to use some masking tape to protect the MDF.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Painting</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Painting image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Painting image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Painting image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Painting image 4" loading="lazy"></div><p>It’s up to you how you want to paint the frame.</p>
-<p>I was going to use some wax but decided to use some clear Danish polish instead.</p>
-<p>It brought out the grain in the wood really nicely but hasn’t darkened it too much.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Painting</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Painting image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Painting image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Painting image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Painting image 4" loading="lazy"></div><p>It’s up to you how you want to paint the frame. I was going to use some wax but decided to use some clear Danish polish instead. It brought out the grain in the wood really nicely but hasn’t darkened it too much.</p>
 <p>Steps:</p>
 <ol>
 <li>Use a cloth and add a light layer of varnish to the wood. Be careful of the MDF as you don’t ant to get any on it if you can help it</li>
-</ol>
+</ul>
 <ol>
 <li>After the layer is dry continue to add layers until you are happy with the finish.</li>
-</ol>
+</ul>
 <ol>
 <li>Remove any masking tape</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Object to Display</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Object to Display image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Object to Display image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Object to Display image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Object to Display image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Object to Display image 5" loading="lazy"></div><p>As I mentioned at the start of the ible’, I wanted to be able to remove the gun from the frame so anyone can come along and remove it to have a better look (or play).</p>
-<p>Using picture hanging strips allows the cap-gun to be secured well to the frame but easily removed as well.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Object to Display</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Object to Display image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Object to Display image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Object to Display image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Object to Display image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Object to Display image 5" loading="lazy"></div><p>As I mentioned at the start of the ible’, I wanted to be able to remove the gun from the frame so anyone can come along and remove it to have a better look (or play). Using picture hanging strips allows the cap-gun to be secured well to the frame but easily removed as well.</p>
 <p>Steps:</p>
 <ol>
 <li>Work out where you want to place the object.</li>
-</ol>
+</ul>
 <ol>
 <li>Add a mounting strip to the underneath side of the object (I added it to the handle of the cap-gun)</li>
-</ol>
+</ul>
 <ol>
 <li>Push the other mounting strip to the one on the object and pull the paper off the side to reveal the sticky section.</li>
-</ol>
+</ul>
 <ol>
 <li>Push the object against the MDF board and give the frame a bit of a shake. If the object stays in place then it’s secured. If it moves, then just add another mounting strip somewhere else to help secure it better.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Add the LED's</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Add the LED's image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Add the LED's image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Add the LED's image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Add the LED's image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Add the LED's image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Add the LED's image 6" loading="lazy"></div><p>Adding the LED’s really helps to light up the object, plus they act as a great little wall light. I decided to use 2 strips of LED’s on the display frame.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Add the LED's</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Add the LED's image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Add the LED's image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Add the LED's image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Add the LED's image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Add the LED's image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Add the LED's image 6" loading="lazy"></div><p>Adding the LED’s really helps to light up the object, plus they act as a great little wall light. I decided to use 2 strips of LED’s on the display frame.</p>
 <p>Steps:</p>
 <ol>
 <li>To connect the 2 LED's together, I cut the wires to one and soldered them to the solder pads of the other.</li>
-</ol>
+</ul>
 <ol>
 <li>Add a little super glue to the back of the strips and attach to the top inside of the frame. I found that to get the best effect of the LED's, they should be mounted near the front of the frame.</li>
-</ol>
+</ul>
 <p>3 You will need to drill a small hole for the wires from the LED. The hole will have to go through the top of the MDF so make sure that they are as small as possible.</p>
 <ol>
 <li>Thread the wires through the hole in the MDF.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Dimmer</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Dimmer image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Dimmer image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Dimmer image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Dimmer image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Dimmer image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Dimmer image 6" loading="lazy"></div><p>It’s not necessary to add the dimmer if you prefer just an on/off switch. I wanted a way to control the brightness and the dimmer switch also acts like an on/off switch so it’s a win all round.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Dimmer</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Dimmer image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Dimmer image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Dimmer image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Dimmer image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Dimmer image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Dimmer image 6" loading="lazy"></div><p>It’s not necessary to add the dimmer if you prefer just an on/off switch. I wanted a way to control the brightness and the dimmer switch also acts like an on/off switch so it’s a win all round.</p>
 <p>Steps:</p>
 <ol>
 <li>To add the dimmer switch to the side of the frame, you will need to drill a hole large enough for the body of the dimmer to fit into. I had to also file the hole in order for the body of the switch to fit into. Don't worry about how the hole looks as you can cover this later.</li>
-</ol>
+</ul>
 <ol>
 <li>Push the dimmer into the hole and secure it with hot glue or epoxy.</li>
-</ol>
+</ul>
 <ol>
 <li>Place a washer over the top of the dimmer switch. This should be big enough to cover the hole in the wood. Add the nut and tighten.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, attach the dimmer circuit to the back of the frame. Hot glue or epoxy will do the trick. It should be located near the LED's</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Add the LED's and Batteries</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Add the LED's and Batteries image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Add the LED's and Batteries image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Add the LED's and Batteries image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Add the LED's and Batteries image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Add the LED's and Batteries image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Add the LED's and Batteries image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Add the LED's and Batteries image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Add the LED's and Batteries image 8" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Add the LED's and Batteries</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Add the LED's and Batteries image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Add the LED's and Batteries image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Add the LED's and Batteries image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Add the LED's and Batteries image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Add the LED's and Batteries image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Add the LED's and Batteries image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Add the LED's and Batteries image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Add the LED's and Batteries image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Secure the wires from the LED's to the terminal on the dimmer circuit.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, attach the AA battery holder to the back of the frame, near the dimmer circuit.</li>
-</ol>
+</ul>
 <ol>
 <li>Secure the positive and negative wires from the battery holder into the dimmer circuit</li>
-</ol>
+</ul>
 <ol>
 <li>Test by turning on the dimmer switch.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Hanging Your Frame</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Hanging Your Frame image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Hanging Your Frame image 2" loading="lazy"></div><p>I find that the best way to hang the frame is to use the same mounting strips used to mount the object.</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Hanging Your Frame</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Hanging Your Frame image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Hanging Your Frame image 2" loading="lazy"></div><p>I find that the best way to hang the frame is to use the same mounting strips used to mount the object.</p>
 <p>Steps:</p>
 <ol>
 <li>Add 4 mounting strips to each corner of the frame</li>
-</ol>
+</ul>
 <ol>
 <li>Work out where you want the frame to be mounted on the wall and push into place</li>
-</ol>
+</ul>
 <ol>
 <li>Sit back and admire your handiwork</li>
-</ol>
+</ul>
 </body>
 </html>

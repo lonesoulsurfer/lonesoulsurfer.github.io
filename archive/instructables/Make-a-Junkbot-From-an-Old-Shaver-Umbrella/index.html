@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -113,11 +130,8 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <h1>Make a Junkbot From an Old Shaver & Umbrella</h1><div class="source"><a href="https://www.instructables.com/Make-a-Junkbot-From-an-Old-Shaver-Umbrella/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.png" alt="Intro 2" loading="lazy"><img src="images/intro_03.png" alt="Intro 3" loading="lazy"><img src="images/intro_04.png" alt="Intro 4" loading="lazy"><img src="images/intro_05.png" alt="Intro 5" loading="lazy"></div><p>I’ve made a few junkbots over the years – there is something about finding some random part and turning it into a little robot that makes my heart happy.</p>
 <p>The junkbot in this ‘ible started life as an electric shaver and a broken umbrella! A couple of non-conspicuous items that would have been probably thrown away and ended up in landfill.</p>
 <p>I actually found the vintage shaver at a shop that is located at a tip, so it had been thrown away at one stage in its life.</p>
-<p>I also wanted to add some way that the junkbot could interact with the world, so I built a custom circuit board.</p>
-<p>The PCB is an LED chaser circuit and includes a light dependent resistor (LDR) which is reactive light.</p>
-<p>The more light the faster the LED’s move!</p>
-<p>This isn’t a hard build, but it will take some planning.</p>
-<p>You might not be able to find the exact parts that I used but that’s what fun about making Junkbots – trying to find just the right part to use!</p>
+<p>I also wanted to add some way that the junkbot could interact with the world, so I built a custom circuit board. The PCB is an LED chaser circuit and includes a light dependent resistor (LDR) which is reactive light. The more light the faster the LED’s move!</p>
+<p>This isn’t a hard build, but it will take some planning. You might not be able to find the exact parts that I used but that’s what fun about making Junkbots – trying to find just the right part to use!</p>
 <p>I have also done an ‘Ible on how to build Junkbots which you can find here.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>PARTS:</p>
 <ul>
 <li>Body: Old electric Shaver– mine is a Ronson. Go onto eBay or check out your local junk shops to find one</li>
@@ -141,8 +155,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Drill</li>
 <li>Dremel</li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: PCB</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: PCB image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: PCB image 3" loading="lazy"></div><p>PARTS:</p>
-<p>PCB - you will need to get one printed from a company like JLCPCB (not affiliated) I have provided all of the files you will need to get yours printed which you can find in my GitHub page.</p>
-<p>If you are unsure how to go about getting a board printed, then you are in luck as I have made a 'Ible on how to get it done which you can find here</p>
+<p>PCB - you will need to get one printed from a company like JLCPCB (not affiliated) I have provided all of the files you will need to get yours printed which you can find in my GitHub page. If you are unsure how to go about getting a board printed, then you are in luck as I have made a 'Ible on how to get it done which you can find here</p>
 <p>I have also included a PDF of the parts list which you can find attached to this step</p>
 <ul>
 <li>4017 IC – Ali Express</li>
@@ -155,7 +168,10 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>5 X LED’s – Ali Express</li>
 <li>Voltage boost converter module - Ali Express</li>
 <li>Li-po or old mobile phone battery (see this Ible on how to reuse mobile phone batteries</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Removing the Ribs and Stretchers From the Umbrella</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 4" loading="lazy"></div><p>The legs are made up of arms which consist of the rib, rib end (tip) and stretcher parts of the umbrella. I have included a drawing which shows these parts so you know what I’m talking about.</p>
+</ul>
+<ul>
+<li><a href="pdfs/LED Chaser - Parts List.pdf">LED Chaser - Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/LED Chaser - Parts List.pdf" target="_blank">&#8675; LED Chaser - Parts List</a><h2><span class="step-num">STEP 2</span>Step 2: Removing the Ribs and Stretchers From the Umbrella</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Removing the Ribs and Stretchers From the Umbrella image 4" loading="lazy"></div><p>The legs are made up of arms which consist of the rib, rib end (tip) and stretcher parts of the umbrella. I have included a drawing which shows these parts so you know what I’m talking about.</p>
 <p>STEPS</p>
 <ul>
 <li>First cut away the thread that is holding the canopy to the tip, rib and stretcher. You want to remove all of the canopy material so you are only left with the umbrella skeleton</li>
@@ -181,9 +197,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Un-screw the 4 screws holding the shaver together</li>
 <li>Now start to remove the parts from the inside. You won’t need to keep any wires or the actual motor of the shaver so they can be kept for other projects.</li>
 <li>There is a metal chassis inside which has a button attached to the side so you can remove the head section of the shaver. You’ll need to keep this in place, but you can remove any bits that are sticking up with a dermal. You’ll need as much room as possible if you are going to fit the electronics and battery inside</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Leg Holders and USB C Module</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 9" loading="lazy"></div><p>You need a way to hold the legs in place.</p>
-<p>For this I used some audio jack connectors (see parts list).</p>
-<p>These worked well as they have a screw and nut section which can be used to connect them to the shaver.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Leg Holders and USB C Module</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 6: Adding the Leg Holders and USB C Module image 9" loading="lazy"></div><p>You need a way to hold the legs in place. For this I used some audio jack connectors (see parts list). These worked well as they have a screw and nut section which can be used to connect them to the shaver.</p>
 <p>STEPS:</p>
 <ul>
 <li>The first thing to do is to position the jack connector against the shaver to determine the best positions to drill the 4 holes for the legs. I added mine to the top section of the shaver as this ensured that the metal chassis that fits into the bottom would be in the way.</li>
@@ -239,8 +253,8 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Now you can carefully place the top back onto the shaver and secure to the bottom section with screws.</li>
 <li>Add the shaver head back into place</li>
 </ul>
-<p>I think that's everything! how turn on your Junkbot and watch him scan the room for potential enemies to neutralize!</p>
-<p>As it gets darker, the LED's will slow down but if it gets brighter, they'll speed up.</p>
-<p>Pretty cool!</p>
+<p>I think that's everything! how turn on your Junkbot and watch him scan the room for potential enemies to neutralize! As it gets darker, the LED's will slow down but if it gets brighter, they'll speed up. Pretty cool!</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/LED Chaser - Parts List.pdf">LED Chaser - Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/LED Chaser - Parts List.pdf" target="_blank">&#8675; LED Chaser - Parts List</a>
 </body>
 </html>

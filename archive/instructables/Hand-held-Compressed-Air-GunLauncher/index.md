@@ -200,6 +200,8 @@ THAT'S IT!  Now it's time to make the projectiles :)
 ![Step 10: Step 10 - Making Paper Rockets image 3](images/step10_03.jpg)
 
 
+- [large fin design](pdfs/large fin design.pdf)
+
 ## Step 11: Step 11 - Plastic Bullets
 
 ![Step 11: Step 11 - Plastic Bullets image 1](images/step11_01.jpg)
@@ -213,6 +215,13 @@ THAT'S IT!  Now it's time to make the projectiles :)
 
 ## Step 12: Setp 12 - V2 Bigger and Better
 
+
+- [Gun V2](pdfs/Gun V2.pdf)
+
+## Downloads
+
+- [large fin design](pdfs/large fin design.pdf)
+- [Gun V2](pdfs/Gun V2.pdf)
 
 ---
 *61 images archived*

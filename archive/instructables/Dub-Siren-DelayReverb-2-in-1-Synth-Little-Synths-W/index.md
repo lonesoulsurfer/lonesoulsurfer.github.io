@@ -63,6 +63,8 @@ That's it! You don't have to worry about building a case because it doesn't have
 As mentioned above - the rest of the parts can be found in the PDF attached below or on my GitHub Page
 
 
+- [Ekoplazm - Parts List PDF](pdfs/Ekoplazm - Parts List PDF.pdf)
+
 ## Step 1: Front Panel, Schematic & Eagle Files
 
 ![Step 1: Front Panel, Schematic & Eagle Files image 1](images/step02_01.png)
@@ -89,6 +91,8 @@ If you are interested in creating your own front panels then I highly recommend 
 
 In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
 
+
+- [Ekoplazm](pdfs/Ekoplazm.pdf)
 
 ## Step 2: Adding Components to the PCB - Reverse Side
 
@@ -243,6 +247,11 @@ Now – you can plug another synth into the ‘in’ section of the synth and th
 
 Have fun and I’ll see ya next build
 
+
+## Downloads
+
+- [Ekoplazm - Parts List PDF](pdfs/Ekoplazm - Parts List PDF.pdf)
+- [Ekoplazm](pdfs/Ekoplazm.pdf)
 
 ---
 *50 images archived*

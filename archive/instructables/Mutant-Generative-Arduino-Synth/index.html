@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,8 +127,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Mutant - Generative Arduino Synth</span>
 </nav>
-<h1>Mutant - Generative Arduino Synth</h1><div class="source"><a href="https://www.instructables.com/Mutant-Generative-Arduino-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth.</p>
-<p>All I'm doing is creating a PCB and front panel of my own and solving a few issues that I encountered - the software and design is all MeeBleeps.</p>
+<h1>Mutant - Generative Arduino Synth</h1><div class="source"><a href="https://www.instructables.com/Mutant-Generative-Arduino-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth. All I'm doing is creating a PCB and front panel of my own and solving a few issues that I encountered - the software and design is all MeeBleeps.</p>
 <p>So what is the Mutant Synth? Well it's a generative synth based around a Arduino Nano and a handful of other components and produces a rich soundscape of sounds.</p>
 <p>The synth voice is based around 2 saw oscillators that features:</p>
 <ul>
@@ -119,8 +135,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Low pass filter with variable cutoff and resonance</li>
 <li>Variable level ducking/sidechain effects</li>
 </ul>
-<p>The display is a 8X8 LED matrix which allows you to visually see where each control level is at.</p>
-<p>This also includes a 16 step generative sequencer that mutates/evolves at defined rate depending on control inputs.</p>
+<p>The display is a 8X8 LED matrix which allows you to visually see where each control level is at. This also includes a 16 step generative sequencer that mutates/evolves at defined rate depending on control inputs.</p>
 <ul>
 <li>Variable sequence mutation probability & note-density</li>
 <li>Sync input & output (Korg Volca compatible)</li>
@@ -130,12 +145,9 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Retrig (clone) button for different fills</li>
 <li>Tap-tempo control</li>
 </ul>
-<p>I've designed the PCB and front panel in a modular synth form factor so if you are into modular synths it will fit right into your Eurorack.</p>
-<p>You can also use it as a stand alone build which runs off a 9V battery.</p>
-<p>The Mozzi library used in the script is an older version which isn't a big deal but you do have do do some pre-work before you can load the script to the Arduino.</p>
-<p>Don't work - I've provided a step by step guide and it's easy to do.</p>
-<p>Let's get building!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub Page and in the PDF file attached to this step.</p>
-<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<p>I've designed the PCB and front panel in a modular synth form factor so if you are into modular synths it will fit right into your Eurorack. You can also use it as a stand alone build which runs off a 9V battery.</p>
+<p>The Mozzi library used in the script is an older version which isn't a big deal but you do have do do some pre-work before you can load the script to the Arduino. Don't work - I've provided a step by step guide and it's easy to do.</p>
+<p>Let's get building!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub Page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>PARTS:</p>
 <ul>
 <li>PCB - I've designed one for this build with the information on how to print your own in the next step</li>
@@ -155,24 +167,21 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Female Header Pin Socket 15 Pin X 2</li>
 <li>Audio Socket 3.5mm (PN - PJ-301M) X 3</li>
 <li>Mini JST Connector and wire 2 Pin X 11</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: PCB, Front Panel & Schematic</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB, Front Panel & Schematic image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB, Front Panel & Schematic image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB, Front Panel & Schematic image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB, Front Panel & Schematic image 4" loading="lazy"></div><p>Firstly, all the files that you need to build your own Mutant synth can be found in my GitHub Page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
-<p>The build consists of 2 PCB’s – one is for the components and the other the front panel.</p>
-<p>You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you.</p>
-<p>Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.</p>
+</ul>
+<ul>
+<li><a href="pdfs/Mutant - List of Parts.pdf">Mutant - List of Parts</a></li>
+</ul><a class="pdf-download" href="pdfs/Mutant - List of Parts.pdf" target="_blank">&#8675; Mutant - List of Parts</a><h2><span class="step-num">STEP 1</span>Step 1: PCB, Front Panel & Schematic</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB, Front Panel & Schematic image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB, Front Panel & Schematic image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB, Front Panel & Schematic image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB, Front Panel & Schematic image 4" loading="lazy"></div><p>Firstly, all the files that you need to build your own Mutant synth can be found in my GitHub Page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+<p>The build consists of 2 PCB’s – one is for the components and the other the front panel. You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.</p>
 <p>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.</p>
 <p>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</p>
-<p>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated..</p>
-<p>You can also just hit 'No' when asked if you want to remove the order number.</p>
-<p>However, this costs $2.</p>
+<p>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated.. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.</p>
 <p>Front Panel</p>
-<p>As mentioned, the front panel is actually just a PCB without the components!</p>
-<p>I use the silk screen on the PCB to print the design and then included drill holes for the components.</p>
-<p>All this information is in the Gerber files for the front panel which the manufacturer uses to print the board.</p>
-<p>If you are interested in creating your own front panels then I highly recommend watching this YouTube vid.</p>
-<p>I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.</p>
-<p>In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB image 4" loading="lazy"></div><p>The PCB is 2 sided.</p>
-<p>The front has all of the active components like the pots and switches and the reverse has the passive components like the Arduino, caps and resistors.</p>
-<p>As some of the components are underneath the Arduino and (9v battery holder (if you install it), you have to be aware of the order that you solder parts into place.</p>
+<p>As mentioned, the front panel is actually just a PCB without the components! I use the silk screen on the PCB to print the design and then included drill holes for the components. All this information is in the Gerber files for the front panel which the manufacturer uses to print the board.</p>
+<p>If you are interested in creating your own front panels then I highly recommend watching this YouTube vid. I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.</p>
+<p>In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.</p>
+<ul>
+<li><a href="pdfs/Creating Front Panels.pdf">Creating Front Panels</a></li>
+</ul><a class="pdf-download" href="pdfs/Creating Front Panels.pdf" target="_blank">&#8675; Creating Front Panels</a><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB image 4" loading="lazy"></div><p>The PCB is 2 sided. The front has all of the active components like the pots and switches and the reverse has the passive components like the Arduino, caps and resistors. As some of the components are underneath the Arduino and (9v battery holder (if you install it), you have to be aware of the order that you solder parts into place.</p>
 <p>Let's start with the reverse side and add the passive components:</p>
 <p>STEPS:</p>
 <ul>
@@ -192,24 +201,17 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Now you can solder all of the momentary switches into place along with the toggle switch</li>
 <li>Lastly, add the pots and solder them into place</li>
 </ul>
-<p>That’s it for the hardware. Before you go and add the front panel, let’s load up the sketch to the Arduino.</p><h2><span class="step-num">STEP 4</span>Step 4: Importing an Older Version of Mozzi Library to Arduino IDE</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Importing an Older Version of Mozzi Library to Arduino IDE image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Importing an Older Version of Mozzi Library to Arduino IDE image 2" loading="lazy"></div><p>I had a bit of trouble when trying to load the sketch initially which was partially my fault and partially due to an update in the Mozzi library.</p>
-<p>Luckily for you I’ve done the hard work so you shouldn’t have any issues!</p>
-<p>The Mozzi library is is an extension to Arduino that allows you to generate interesting growls, sweeps and chorusing atmospheric sounds.</p>
-<p>These sounds can be quickly and easily constructed from familiar synthesis units like oscillators, delays, filters and envelopes.</p>
+<p>That’s it for the hardware. Before you go and add the front panel, let’s load up the sketch to the Arduino.</p><h2><span class="step-num">STEP 4</span>Step 4: Importing an Older Version of Mozzi Library to Arduino IDE</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Importing an Older Version of Mozzi Library to Arduino IDE image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Importing an Older Version of Mozzi Library to Arduino IDE image 2" loading="lazy"></div><p>I had a bit of trouble when trying to load the sketch initially which was partially my fault and partially due to an update in the Mozzi library. Luckily for you I’ve done the hard work so you shouldn’t have any issues!</p>
+<p>The Mozzi library is is an extension to Arduino that allows you to generate interesting growls, sweeps and chorusing atmospheric sounds. These sounds can be quickly and easily constructed from familiar synthesis units like oscillators, delays, filters and envelopes.</p>
 <p>Issue with the current Mozzi 2.0.1 library</p>
-<p>When the sketch was created for the Mutant Synth, it used an older version of Mozzi.</p>
-<p>The most recent version isn’t compatible and when you try to upload it you get a bunch of error codes.</p>
-<p>To counter this, you need to install an older version of Mozzi to Arduino IDE.</p>
+<p>When the sketch was created for the Mutant Synth, it used an older version of Mozzi. The most recent version isn’t compatible and when you try to upload it you get a bunch of error codes. To counter this, you need to install an older version of Mozzi to Arduino IDE.</p>
 <p>STEPS:</p>
 <p>1 First, go ahead and uninstall Mozzi 2.0.1 if you have it installed in Arduino IDE and also uninstall FixMath if you have this as well. If you are unsure how to do this, then check out this link:</p>
 <p>https://support.arduino.cc/hc/en-us/articles/360016077340-Uninstall-libraries-from-Arduino-IDE\</p>
 <p>2 You now need to install Mozzi 1.1.2 to Arduino IDE. Look up 'Mozzi' in the library manager search bar and then go to the dropdown and hit version 1.1.2 (see image 1)</p>
-<p>3 You can also download the zipped file called 1.1.2 from my Google Drive and install via a zip folder in Library Manager if you want to.</p>
-<p>However, there isn't any need really as it's dead simple to just use the version dropdown in the library manager</p>
+<p>3 You can also download the zipped file called 1.1.2 from my Google Drive and install via a zip folder in Library Manager if you want to. However, there isn't any need really as it's dead simple to just use the version dropdown in the library manager</p>
 <p>4 Go ahead & install Mozzi 1.1.2 via either way above (see mage 2)</p>
-<p>4 If everything worked you should now have Mozzi 1.1.2 imported to your Arduino library.</p>
-<p>If not, then have another go at it following the steps above.</p>
-<p>The screenshots I have provided should help as well so take a look at them if you are confused or a little lost.</p><h2><span class="step-num">STEP 5</span>Step 5: Uploading the Sketch to Your Adruino</h2><div class="step-images single"><img src="images/step06_01.jpg" alt="Step 5: Uploading the Sketch to Your Adruino image 1" loading="lazy"></div><p>The hard part is now over and it's time to upload the sketch to your Arduino.</p>
+<p>4 If everything worked you should now have Mozzi 1.1.2 imported to your Arduino library. If not, then have another go at it following the steps above. The screenshots I have provided should help as well so take a look at them if you are confused or a little lost.</p><h2><span class="step-num">STEP 5</span>Step 5: Uploading the Sketch to Your Adruino</h2><div class="step-images single"><img src="images/step06_01.jpg" alt="Step 5: Uploading the Sketch to Your Adruino image 1" loading="lazy"></div><p>The hard part is now over and it's time to upload the sketch to your Arduino.</p>
 <p>STEPS:</p>
 <ul>
 <li>Go to my GitHub Page, open the Arduino Sketch folder and download the MutantMozziSynth folder onto your computer</li>
@@ -230,16 +232,12 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>You should see a bunch of lights on and hear sounds coming out the speaker.</li>
 <li>The instructions on how to play the synth can be found in the last step. However, you might need to slow down the sequencer which you can do by holding down ‘Func’ button and tapping the ‘start’ button a couple of times.This sets the sequencer speed so don’t tap it too fast.</li>
 <li>Now you can play around with the controls and discover a few of the sounds that this synth can make!</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Front Cover</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Front Cover image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Front Cover image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Front Cover image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Front Cover image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the Front Cover image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Adding the Front Cover image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 7: Adding the Front Cover image 7" loading="lazy"></div><p>If the synth is working as it should and you are hearing some funky tunes, then you are ready to add the front panel on.</p>
-<p>As mentioned before, I have used the Eurorack form factor on the front panels so they (should) fit into any Eurorack frame.</p>
-<p>However, You can also make a case for it from wood which I have done for many similar builds or you can make a bare bones case which I have done for this build</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Front Cover</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Front Cover image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Front Cover image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Front Cover image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Front Cover image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the Front Cover image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Adding the Front Cover image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 7: Adding the Front Cover image 7" loading="lazy"></div><p>If the synth is working as it should and you are hearing some funky tunes, then you are ready to add the front panel on. As mentioned before, I have used the Eurorack form factor on the front panels so they (should) fit into any Eurorack frame. However, You can also make a case for it from wood which I have done for many similar builds or you can make a bare bones case which I have done for this build</p>
 <p>STEPS:</p>
 <ul>
 <li>Carefully place the front panel over the components on the PCB. The section for the dot matrix is a tight fit but a little wiggle of the front panel will help get it into place.</li>
 <li>Now you can add the nuts to the potentiometers and also to the on/off switch and 3.5mm jack sockets. This will keep the panel in place!</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Powering the Synth</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Powering the Synth image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Powering the Synth image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Powering the Synth image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Powering the Synth image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Powering the Synth image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Powering the Synth image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Powering the Synth image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Powering the Synth image 8" loading="lazy"></div><p>Initially I added a 9V battery directly to the PCB but the LED matrix is notorious for creating a low hum and the 9V battery amplified this so I decided to remove it.</p>
-<p>There is a 1000uf cap connected directly to the power inputs on the LED matrix but the 9V battery seemed to cancel the decoupling cap out.</p>
-<p>I decided to remove this from the board and just power it via a li-po battery with the voltage stepped up to 9V.</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Powering the Synth</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Powering the Synth image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Powering the Synth image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Powering the Synth image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Powering the Synth image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Powering the Synth image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Powering the Synth image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Powering the Synth image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Powering the Synth image 8" loading="lazy"></div><p>Initially I added a 9V battery directly to the PCB but the LED matrix is notorious for creating a low hum and the 9V battery amplified this so I decided to remove it. There is a 1000uf cap connected directly to the power inputs on the LED matrix but the 9V battery seemed to cancel the decoupling cap out. I decided to remove this from the board and just power it via a li-po battery with the voltage stepped up to 9V.</p>
 <p>STEPS:</p>
 <ul>
 <li>you will need to boost the power from 3.7V to 9V. You can do this with a voltage booster such as the one I have included in the parts list. This can be stuck directly to the battery and then the positive and negative from the battery is soldered to the input on the voltage booster</li>
@@ -248,9 +246,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Now just connect a JST connector to the output of the voltage booster and connect this to the input on the PCB.</li>
 <li>Test everything to make sure it is all working as it should be. Yes? Good! you can now move onto making the case.</li>
 </ul>
-<p>In the future I'll be powering this module along with others to my own 'poor man's' Eurorack and powering everything via 9V's.</p><h2><span class="step-num">STEP 9</span>Step 9: Making the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Making the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Making the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Making the Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Making the Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Making the Case image 5" loading="lazy"></div><p>You have a whole bunch of options on what you can do for a case.</p>
-<p>I decided for this version to make a striped down one like I did in the 'Little Synths With Big Sounds' builds.</p>
-<p>This is justb temperary though as this synth will be part of a larger build in the future</p>
+<p>In the future I'll be powering this module along with others to my own 'poor man's' Eurorack and powering everything via 9V's.</p><h2><span class="step-num">STEP 9</span>Step 9: Making the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Making the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Making the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Making the Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Making the Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Making the Case image 5" loading="lazy"></div><p>You have a whole bunch of options on what you can do for a case. I decided for this version to make a striped down one like I did in the 'Little Synths With Big Sounds' builds. This is justb temperary though as this synth will be part of a larger build in the future</p>
 <p>STEPS:</p>
 <ul>
 <li>Place one of the front panels (you would have received 5 of them when ordered) on top of some clear, 3mm acrylic, mark out the size and the screw holes</li>
@@ -319,6 +315,9 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <ul>
 <li>Function - Number of steps in the sequence 1-16</li>
 <li>Alternative Function – N/A</li>
-</ul>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Mutant - List of Parts.pdf">Mutant - List of Parts</a></li>
+<li><a href="pdfs/Creating Front Panels.pdf">Creating Front Panels</a></li>
+</ul><a class="pdf-download" href="pdfs/Mutant - List of Parts.pdf" target="_blank">&#8675; Mutant - List of Parts</a><a class="pdf-download" href="pdfs/Creating Front Panels.pdf" target="_blank">&#8675; Creating Front Panels</a>
 </body>
 </html>

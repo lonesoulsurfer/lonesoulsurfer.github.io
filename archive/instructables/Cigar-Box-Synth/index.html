@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,25 +127,12 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Cigar Box Synth</span>
 </nav>
-<h1>Cigar Box Synth</h1><div class="source"><a href="https://www.instructables.com/Cigar-Box-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Here’s my latest synth made from a 555 and 556 timer along with a 4017 ic.</p>
-<p>A few months ago a build like this would have been way out of my skill level.</p>
-<p>Over the last few months however I’ve been putting together some simple synths to get a better understanding of schematics and parts.</p>
-<p>The circuit design is by a guy called Forrest Mims.</p>
-<p>I’d never heard of him before this build but some in the US might remember the Engineer's Mini-Notebook which he the author was of.</p>
-<p>The book was available in Radio Shack once upon a time.</p>
-<p>The synth itself is what is known as a 4 stepped sequencer and is based on the baby 10 sequencer.</p>
-<p>You have a lot of control over the sound produced from the synth.</p>
-<p>The 4 potentiometers connected to the 4017 Ic allows you to control the tone of each as well as turn them on or off.</p>
-<p>The other pots allow you to control speed, pitch and tone, allowing you to make some really interesting (and surprisingly nice sounding as well!) sounds.</p>
-<p>This project should be tackled by someone who has some skill in soldering and understanding schematics and electronics.</p>
-<p>If you are a beginner, then I would suggest to start with my first synth ‘Ibles that I made using a 555 timer.</p>
-<p>These can be found below.</p>
-<p>I would also suggest you jump on-line and type in 4=555 circuits and make a few of the projects that come up.</p>
-<p>This will give you a good grounding to start to tackle a larger project like this one.</p>
+<h1>Cigar Box Synth</h1><div class="source"><a href="https://www.instructables.com/Cigar-Box-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Here’s my latest synth made from a 555 and 556 timer along with a 4017 ic. A few months ago a build like this would have been way out of my skill level. Over the last few months however I’ve been putting together some simple synths to get a better understanding of schematics and parts.</p>
+<p>The circuit design is by a guy called Forrest Mims. I’d never heard of him before this build but some in the US might remember the Engineer's Mini-Notebook which he the author was of. The book was available in Radio Shack once upon a time.</p>
+<p>The synth itself is what is known as a 4 stepped sequencer and is based on the baby 10 sequencer. You have a lot of control over the sound produced from the synth. The 4 potentiometers connected to the 4017 Ic allows you to control the tone of each as well as turn them on or off. The other pots allow you to control speed, pitch and tone, allowing you to make some really interesting (and surprisingly nice sounding as well!) sounds.</p>
+<p>This project should be tackled by someone who has some skill in soldering and understanding schematics and electronics. If you are a beginner, then I would suggest to start with my first synth ‘Ibles that I made using a 555 timer. These can be found below. I would also suggest you jump on-line and type in 4=555 circuits and make a few of the projects that come up. This will give you a good grounding to start to tackle a larger project like this one.</p>
 <p>Link to the YouTube clip</p>
-<p>Lastly, a note on the ‘ible itself.</p>
-<p>I find it quite hard to document builds like this as it isn’t easy to take photos once the build gets to a certain complexity.</p>
-<p>I’ve tried to create a step by step walk-through of most of the build and if you do get stuck on any section, then please let me know in the comments and I will try and help where I can.</p>
+<p>Lastly, a note on the ‘ible itself. I find it quite hard to document builds like this as it isn’t easy to take photos once the build gets to a certain complexity. I’ve tried to create a step by step walk-through of most of the build and if you do get stuck on any section, then please let me know in the comments and I will try and help where I can.</p>
 <p>Here are my other 555 builds</p>
 <p>LIGHT THEREMIN IN A NES CONTROLLER</p>
 <p>FIZZLE LOOP SYNTH - 555 TIMER</p>
@@ -137,283 +141,266 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>Potentiometers</p>
 <ol>
 <li>4 X 100K - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>3 X 500K - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>10K – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Knobs for the Pots - eBay I brought these ones and these ones</li>
-</ol>
+</ul>
 <p>Capacitors</p>
 <ol>
 <li>1uf – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>10uf - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>2 X 10nf – eBay</li>
-</ol>
+</ul>
 <p>Resistors</p>
 <ol>
 <li>470R – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>1K – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>100K – eBay</li>
-</ol>
+</ul>
 <p>IC’s</p>
 <ol>
 <li>555 – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>556 – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>4107 - eBay</li>
-</ol>
+</ul>
 <p>Other Parts</p>
 <ol>
 <li>4 X Red LED’s and 1 X white - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>4 X 1N4148 Diode – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Speaker Jack – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Speaker – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Toggle Switches – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>On/off switch - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>AA Battery Holder (4 X AA) – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Batteries</li>
-</ol>
+</ul>
 <ol>
 <li>Thin wire</li>
-</ol>
+</ul>
 <ol>
 <li>Case to store the synth in. I used a cigar box - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Prototyping Board - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Computer fan cover - I don't think you can get the exact one that I used any longer but you can get similar</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: The Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: The Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Circuit image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: The Circuit image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: The Circuit image 5" loading="lazy"></div><p>Before you even start to think about making this, I strongly suggest that you breadboard the circuit first.</p>
-<p>I found the schematic a little confusing at first because I couldn’t work out how everything was attached to ground.</p>
-<p>It wasn’t until I started to put it together that I realised that the designer used black and blue for ground.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: The Circuit</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: The Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Circuit image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: The Circuit image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: The Circuit image 5" loading="lazy"></div><p>Before you even start to think about making this, I strongly suggest that you breadboard the circuit first. I found the schematic a little confusing at first because I couldn’t work out how everything was attached to ground. It wasn’t until I started to put it together that I realised that the designer used black and blue for ground.</p>
 <p>Once you breadboard everything up and it’s working, it’s time then to get cracking on the soldering.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the IC's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the IC's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the IC's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the IC's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the IC's image 4" loading="lazy"></div><p>First thing to do is to solder the IC’s into the Prototyping board. The board that I used was too large and I had to cut some off at the end. However, I’d rather have too much board then not enough…</p>
 <p>Steps:</p>
 <ol>
 <li>Solder on the 4017 IC first. I orientated all of the IC’s with the notch on the left so make sure you do the same or the steps will be back to front for you.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, solder on the 555 IC. Leave yourself a little room between each IC.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, solder on the 556 IC.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Connectors on the 4017 IC</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 5" loading="lazy"></div><p>The following steps will go through how to connect all of the IC’s together.</p>
-<p>A leg on an IC I will call pin and I will start with the 4017 IC.</p>
-<p>Adding wires to connect the potentiometers will come after all of the IC and components have been added to the board.</p>
-<p>The jumper wires that I used a solid core wire which I find a lot easier to use then normal wire.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Connectors on the 4017 IC</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Connectors on the 4017 IC image 5" loading="lazy"></div><p>The following steps will go through how to connect all of the IC’s together. A leg on an IC I will call pin and I will start with the 4017 IC. Adding wires to connect the potentiometers will come after all of the IC and components have been added to the board. The jumper wires that I used a solid core wire which I find a lot easier to use then normal wire.</p>
 <p>The images in the ‘ible are in sequential order so you can use these to help guide you if necessary. Make sure you have the schematic handy as well.</p>
 <p>Steps:</p>
 <ol>
 <li>First connect pin 8 on the 4017 to pin 1 on the 555.</li>
-</ol>
+</ul>
 <ol>
 <li>Next connect pins 15 and 10</li>
-</ol>
+</ul>
 <ol>
 <li>Pin 13 is to be connected to ground. The prototyping board I used has a ground and positive strip around the outside which really makes things easy when connecting all of the ground and positive wires.</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pin 14 on the 4017 to pin 3 on the 555</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, connect pin 18 to the positive section on the prototyping board</li>
-</ol>
+</ul>
 <ol>
 <li>You will need to add some wires to pins 2, 3, 4 and 7 later which will be connected to the pots. I find that it’s easier to add these wires later as they just get in the way.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Parts and Connectors on the 555 IC</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 6" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Parts and Connectors on the 555 IC</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Parts and Connectors on the 555 IC image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Connect the 1 uf capacitor to pin 2 to ground, making sure that the positive wire on the capacitor is connected to the IC.</li>
-</ol>
+</ul>
 <ol>
 <li>Next you need to add a 1k resistor and an LED to pin 3. As the LED will be connected to the board with wires, I left this off for the time being and connected just the 1k resistor. The resistor needs to be attached to pin 2 and ground. Make sure that you leave a couple of holes between the pin and resistor so you can add the LED wires later</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pins 2 and 6 together</li>
-</ol>
+</ul>
 <ol>
 <li>Add a 100k resistor between pins 6 and 7</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pins 4 and 8 together</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, connect pin 8 to positive</li>
-</ol>
+</ul>
 <ol>
 <li>Adding the Potentiometer will come later</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Parts and Connectors on the 556 IC</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 8" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Parts and Connectors on the 556 IC</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Parts and Connectors on the 556 IC image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Connect pins 1 and 2 together with a 1k resistor</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pins 2 and 6 together</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pin 6 to ground with a 10 nf capacitor</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pin 7 to ground</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pins 5 and 8 together</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pins 14 and 10 together</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pins 4 and 14 together</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pin 14 to positive</li>
-</ol>
+</ul>
 <ol>
 <li>Connect pin 12 to ground using another 10 nf capacitor.</li>
-</ol>
+</ul>
 <p>There is 1 more connection to make in the next step on the 556</p><h2><span class="step-num">STEP 7</span>Step 7: Adding More Parts and Connectors on the 556 IC</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding More Parts and Connectors on the 556 IC image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding More Parts and Connectors on the 556 IC image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding More Parts and Connectors on the 556 IC image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Connect the negative leg of a 10uf capacitor to pin 9. The positive leg should be soldered also to the board but make sure you solder this to a spot not connected to anything else. You will be soldering a wire to this leg to add a volume pot later on.</li>
-</ol>
+</ul>
 <ol>
 <li>That’s it for the IC connections and components. You next have to start adding wires for all of the connections that you need to make. These will be attached to the pots, switches etc that first you need to attach to the case.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Wires</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Wires image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Wires image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Wires image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Wires image 4" loading="lazy"></div><p>As this step is very hard to show in photographs, I will just go through which pins you need to add wires to for each IC.</p>
-<p>Make sure that you use long wires as you can always trim them later.</p>
-<p>Also, make sure you use thin wire.</p>
-<p>It takes up a surprisingly large amount of space and can cause issues when adding to your case.</p>
-<p>I pulled my wires from a NES controller copy that I had lying around.</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Wires</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Wires image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Wires image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Wires image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Wires image 4" loading="lazy"></div><p>As this step is very hard to show in photographs, I will just go through which pins you need to add wires to for each IC. Make sure that you use long wires as you can always trim them later. Also, make sure you use thin wire. It takes up a surprisingly large amount of space and can cause issues when adding to your case. I pulled my wires from a NES controller copy that I had lying around.</p>
 <p>Try and add the same coloured wire for each pot as it it easier to identify them later when you have to solder them to the solder points on the pots.</p>
 <p>Steps</p>
 <p>4017 IC</p>
 <ol>
 <li>Attach wires to pins 2, 3, 4 and 7</li>
-</ol>
+</ul>
 <p>555 IC</p>
 <ol>
 <li>Attach wires to pin 3 and to the resistor that is also in line with pin 3. Remember that this is for the LED which will be attached to the case. Actually, I made a slight change on this and decided to connect this LED up to a switch so I could turn it off. It was a little annoying and I used a white LED which was very bright. This LED indicates the speed of the synth.</li>
-</ol>
+</ul>
 <ol>
 <li>Add wires to pins 7 and 8</li>
-</ol>
+</ul>
 <p>556 IC</p>
 <ol>
 <li>Attach wires to the positive leg of the 10uf capacitor</li>
-</ol>
+</ul>
 <ol>
 <li>Attach wires to pins 13 and also add one to positive</li>
-</ol>
+</ul>
 <ol>
 <li>Attach a wire to pin 1 and also another to positive</li>
-</ol>
+</ul>
 <p>You will also need to add another wire to the positive which will be connected to the switch.</p>
-<p>It's time now to put the circuit board aside and start to work on the case.</p><h2><span class="step-num">STEP 9</span>Step 9: Adding the Speaker</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Speaker image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Speaker image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Speaker image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Speaker image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Speaker image 5" loading="lazy"></div><p>Now onto the Cigar box which will be the case to house all the electronics.</p>
-<p>You could use whatever you want as long as it has enough room to fit all the parts.</p>
-<p>I dig cigar boxes though.</p>
-<p>They are ready made, look cool and have plenty of room to add the parts.</p>
+<p>It's time now to put the circuit board aside and start to work on the case.</p><h2><span class="step-num">STEP 9</span>Step 9: Adding the Speaker</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Speaker image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Speaker image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Speaker image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Speaker image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Speaker image 5" loading="lazy"></div><p>Now onto the Cigar box which will be the case to house all the electronics. You could use whatever you want as long as it has enough room to fit all the parts. I dig cigar boxes though. They are ready made, look cool and have plenty of room to add the parts.</p>
 <p>Steps:</p>
 <ol>
 <li>First thing to do is to remove the lid. I find that it’s a lot easier to work with the lid removed.</li>
-</ol>
+</ul>
 <ol>
 <li>Next have a think about your design and where you want to put all of the components. Once you have a design in mind it’s time to add the speaker</li>
-</ol>
+</ul>
 <ol>
 <li>Measure and cut a hole out for the speaker. Secure it to the lid with some small screws.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Pots and On/Off Switch</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 7" loading="lazy"></div><p>Next thing to do is to add the potentiometers. As you can see from my design below, I added the 3 main pot to the bottom, the 4 tone sequencers around the speaker.</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Pots and On/Off Switch</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Pots and On/Off Switch image 7" loading="lazy"></div><p>Next thing to do is to add the potentiometers. As you can see from my design below, I added the 3 main pot to the bottom, the 4 tone sequencers around the speaker.</p>
 <p>Steps:</p>
 <ol>
 <li>Carefully measure and drill out the holes for the 3 main pots.</li>
-</ol>
+</ul>
 <ol>
 <li>Secure these in place. If you want to use the same ones as me – then you can find them here</li>
-</ol>
+</ul>
 <ol>
 <li>Next do the same for the sequencers.</li>
-</ol>
+</ul>
 <ol>
 <li>Add the on/off switch and volume pot.</li>
-</ol>
+</ul>
 <ol>
 <li>Add the red LED's above the sequencer pots. Drill small holes above each one and super glue into place. orientate the LED's so the short leg is on the left. This will help you to know the polarities and also attached to the pot leg.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, add the white LED above the pot that will be the speed knob.</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Wiring the 4 Sequencers</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Wiring the 4 Sequencers image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Wiring the 4 Sequencers image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Wiring the 4 Sequencers image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Wiring the 4 Sequencers image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Wiring the 4 Sequencers image 5" loading="lazy"></div><p>Ok – now it’s time to start to wire-up the sequencers.</p>
-<p>If you look at the schematic, you can see that there are diodes, LED’s and wires from the 4017 IC attached to the pots.</p>
-<p>They are also all connected as well.</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: Wiring the 4 Sequencers</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Wiring the 4 Sequencers image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Wiring the 4 Sequencers image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Wiring the 4 Sequencers image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Wiring the 4 Sequencers image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Wiring the 4 Sequencers image 5" loading="lazy"></div><p>Ok – now it’s time to start to wire-up the sequencers. If you look at the schematic, you can see that there are diodes, LED’s and wires from the 4017 IC attached to the pots. They are also all connected as well.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing to do is to connect all of the pots together. How you attach the legs of the pots will determine how to tone is controlled. I decided to connect all of the pot legs on the right together. Add a small piece of wire between each one and solder to the right hand side leg of the pot as shown in the images.</li>
-</ol>
+</ul>
 <ol>
 <li>Next you need to solder the positive leg of the LED (the longest one) to the left hand side leg of the pot. Do this for each of the sequencers. Make sure that you connect a 470R resistor to the last LED and also to the pot.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the negative leg of the LED to each other</li>
-</ol>
+</ul>
 <ol>
 <li>Next you need to add a diode to each of the middle legs of the pots. Connect the other ends of the diodes together</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Final Wiring</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Final Wiring image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Final Wiring image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Final Wiring image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Final Wiring image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Final Wiring image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Final Wiring image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Final Wiring image 7" loading="lazy"></div><p>Now it’s time to do the final wiring. You will need to solder all of the wires from the circuit board to the pots, switches, etc. Take your time when doing this and try not to get too tangled!</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: Final Wiring</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Final Wiring image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Final Wiring image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Final Wiring image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Final Wiring image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Final Wiring image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Final Wiring image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Final Wiring image 7" loading="lazy"></div><p>Now it’s time to do the final wiring. You will need to solder all of the wires from the circuit board to the pots, switches, etc. Take your time when doing this and try not to get too tangled!</p>
 <p>Steps:</p>
 <ol>
 <li>I started with the main pots first. Carefully solder each of the wires to the legs of the pots. If you look at the schematic, it tells you which legs to solder too. However, it’s easy to get the direction wrong and you might find that turning the speed up actually turns it down. If this happens, just de-solder the wire that is connected to the IC and solder onto the other leg of the pot.</li>
-</ol>
+</ul>
 <ol>
 <li>Next solder the wires to the sequencer pots.</li>
-</ol>
+</ul>
 <ol>
 <li>Attach the wires for the switch and add the battery holder</li>
-</ol>
-<p>Now it’s time for the big test!</p>
-<p>Add some batteries and see if you get any sound out of your synth.</p>
-<p>If you don’t, try and turn the volume to full and turn the sequencer pots to mid-way.</p>
-<p>Also make sure that the circuit board isn’t shorting – there are a lot of solder points and if they touch the back of a pot for example, they can connect and short.</p>
+</ul>
+<p>Now it’s time for the big test! Add some batteries and see if you get any sound out of your synth. If you don’t, try and turn the volume to full and turn the sequencer pots to mid-way. Also make sure that the circuit board isn’t shorting – there are a lot of solder points and if they touch the back of a pot for example, they can connect and short.</p>
 <p>Usually when I do a build like this I get nothing first time and have to go over everything. This time however I managed to get everything right first go! Amazing considering how impatient I am.</p>
 <p>If yours doesn’t work, then you will need to go over and check your work – sorry…</p><h2><span class="step-num">STEP 13</span>Step 13: Attaching the Circuity Board and Lid</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 6" loading="lazy"><img src="images/step13_07.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 7" loading="lazy"><img src="images/step13_08.jpg" alt="Step 13: Attaching the Circuity Board and Lid image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>In order for the board not to shirt, you will need to add plastic or something similar underneath the board.</li>
-</ol>
+</ul>
 <ol>
 <li>Add some hot glue to the bottoms of the pots and glue the plastic down. Don’t add too much in case you need to get to the wires later on.</li>
-</ol>
+</ul>
 <ol>
 <li>Next add a small amount of hot glue to the plastic and stick down the circuit board</li>
-</ol>
+</ul>
 <ol>
 <li>Re-attach the lid to the base of the cigar box.</li>
-</ol>
+</ul>
 <ol>
 <li>Add a little Velcro to the bottom of the battery holder and stick into place</li>
-</ol>
+</ul>
 <ol>
 <li>Test again to make sure everything is working as it should.</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Final Touches</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Final Touches image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Final Touches image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Final Touches image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Final Touches image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Final Touches image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Final Touches image 6" loading="lazy"></div>
+</ul><h2><span class="step-num">STEP 14</span>Step 14: Final Touches</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Final Touches image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Final Touches image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Final Touches image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Final Touches image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Final Touches image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Final Touches image 6" loading="lazy"></div>
 </body>
 </html>

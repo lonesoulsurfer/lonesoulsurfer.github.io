@@ -89,6 +89,8 @@ In regards to the Raspberry Pi that I used, Make sure that you get the one with 
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
 
+- [Parts List Medusa](pdfs/Parts List Medusa.pdf)
+
 ## Step 1: Getting the PCB & Front Panel Printed
 
 ![Step 1: Getting the PCB & Front Panel Printed image 1](images/step02_01.png)
@@ -399,6 +401,10 @@ Sidechain (Function + Key 8)
 - Syncs with LOOP patterns or SYNC input for rhythmic pumping
 - Auto-retriggering creates continuous pumping effect
 
+
+## Downloads
+
+- [Parts List Medusa](pdfs/Parts List Medusa.pdf)
 
 ---
 *34 images archived*

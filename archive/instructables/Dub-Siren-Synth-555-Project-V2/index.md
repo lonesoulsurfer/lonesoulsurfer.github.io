@@ -116,6 +116,8 @@ You can't attach zip files to Instructables pages so I have linked all of the fi
 I've also included a PCB which has all of the pots included on the circuit board. It means that you don't have to solder all of those wires to the circuit board. However, it will limit where you can add the pots to the case. Up to you which one you want to use.
 
 
+- [Dub Siren Pots Inc](pdfs/Dub Siren Pots Inc.pdf)
+
 ## Step 3: Dub Siren Circuit
 
 ![Step 3: Dub Siren Circuit image 1](images/step03_01.jpg)
@@ -332,6 +334,10 @@ As previously mentioned, I use the speed and pitch quite often on the dub siren 
 
 Download some dub reggae music as well and start to add some sound effects to it. And have fun!
 
+
+## Downloads
+
+- [Dub Siren Pots Inc](pdfs/Dub Siren Pots Inc.pdf)
 
 ---
 *50 images archived*

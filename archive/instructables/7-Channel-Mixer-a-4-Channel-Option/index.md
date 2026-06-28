@@ -43,6 +43,8 @@ All of the files can be found in my GitHub page
 I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc. The PCB and front panel information can be found on the next step
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: Getting the PCB & Front Panel Printed
 
 ![Step 1: Getting the PCB & Front Panel Printed image 1](images/step02_01.jpg)
@@ -140,6 +142,10 @@ STEPS:
 - This panel was designed to be used on my Eurorack. I wanted the ability to connect all audio to the top of the Eurorack. My Eurorack itself is made from wood and even though all of the modules are in Eurorack format, the mixer has been designed to fit my Eurorack.
 - However, I did design a Eurorack format, 4 channel mixer which will fit perfectly in a standard Eurorack case. The files for both mixers can be found in my GitHub page
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *32 images archived*

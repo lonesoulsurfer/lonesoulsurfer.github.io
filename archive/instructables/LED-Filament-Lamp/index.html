@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,11 +127,9 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED Filament Lamp</span>
 </nav>
-<h1>LED Filament Lamp</h1><div class="source"><a href="https://www.instructables.com/LED-Filament-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>LED's come in all shapes and sizes these days and one of my favourites are LED filaments.</p>
-<p>You might have seen them in those knock off Edison light globes which use a 30mm LED filament instead of actual wire filaments.</p>
+<h1>LED Filament Lamp</h1><div class="source"><a href="https://www.instructables.com/LED-Filament-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>LED's come in all shapes and sizes these days and one of my favourites are LED filaments. You might have seen them in those knock off Edison light globes which use a 30mm LED filament instead of actual wire filaments.</p>
 <p>Inside the filament is a row of tiny LED's covered with a flexible material. They run off 3V's and are super bright.</p>
-<p>The lamp I built in this 'ible utilizes 120mm yellow LED's (you can get them in 300mm lengths and they come in a variety of colours) and runs off a 5V wall adapter.</p>
-<p>The main body of the lamp is made from brass tubing and copper pipe</p>
+<p>The lamp I built in this 'ible utilizes 120mm yellow LED's (you can get them in 300mm lengths and they come in a variety of colours) and runs off a 5V wall adapter. The main body of the lamp is made from brass tubing and copper pipe</p>
 <p>I incorporated a dimmer module too which also acts as an on/off switch.</p>
 <p>The light given off by the LED's is diffused using some plastic 'opal' coloured tubing and creates a beautiful ambient light.</p>
 <p>Hackaday have also done a review on the build which can be found here</p>
@@ -169,9 +184,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>The LED's are 120mm in length. I decided to cut the opal tubing to 150mm in length which gave me 15mm on either side to secure it into the brass tubing</li>
 <li>If you use a tube cutter to cut the brass tube then you will need to de-burr the insides of the tube. You can use a file for this or a be-burring tool if you have one.</li>
 <li>Place the opal tubing inside the brass tube and ensure that the lamp goes together as it should</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Wiring Up the Lamp - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 9" loading="lazy"><img src="images/step06_10.gif" alt="Step 5: Wiring Up the Lamp - Part 1 image 10" loading="lazy"></div><p>I used thin copper wire to connect everything up which worked well.</p>
-<p>Copper wire is threaded through the plastic tubing as well for the ground connection.</p>
-<p>If the wire is too thick it might affect the light from the LED's.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Wiring Up the Lamp - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 9" loading="lazy"><img src="images/step06_10.gif" alt="Step 5: Wiring Up the Lamp - Part 1 image 10" loading="lazy"></div><p>I used thin copper wire to connect everything up which worked well. Copper wire is threaded through the plastic tubing as well for the ground connection. If the wire is too thick it might affect the light from the LED's.</p>
 <p>Refer to the wiring diagram as it explains how to wire up the lamp better than I can!</p>
 <p>STEPS:</p>
 <ul>
@@ -181,18 +194,14 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>On one of the positive ends of the LED's, solder another piece of copper wire, thread through the copper tubing and connect to the positive end of the other LED. Also solder on another longer piece. This will be connected to positive on the dimmer.</li>
 <li>Thread both the ground and positive wires through the hole in the bottom of the U bend. It's hard to make any adjustments once this is done so make sure that the LED's are aligned with the opal tubing.</li>
 <li>Push the brass tube onto the opal tubing.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Attaching the Lamp Neck</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Attaching the Lamp Neck image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Attaching the Lamp Neck image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Attaching the Lamp Neck image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Attaching the Lamp Neck image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Attaching the Lamp Neck image 5" loading="lazy"><img src="images/step07_06.gif" alt="Step 6: Attaching the Lamp Neck image 6" loading="lazy"></div><p>I was concerned about soldering the neck of the lamp to the main body.</p>
-<p>My biggest worry was stripping the coating off the copper wire and it was heated up inside the brass tube.</p>
-<p>However, by carefully applying heat I managed to pull it off!</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Attaching the Lamp Neck</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Attaching the Lamp Neck image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Attaching the Lamp Neck image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Attaching the Lamp Neck image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Attaching the Lamp Neck image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Attaching the Lamp Neck image 5" loading="lazy"><img src="images/step07_06.gif" alt="Step 6: Attaching the Lamp Neck image 6" loading="lazy"></div><p>I was concerned about soldering the neck of the lamp to the main body. My biggest worry was stripping the coating off the copper wire and it was heated up inside the brass tube. However, by carefully applying heat I managed to pull it off!</p>
 <p>STEPS:</p>
 <ul>
 <li>To ensure the the neck fits correctly to the main body of the lamp, you need to make a round groove in the top of the brass tube. I used a small, round file to do this</li>
 <li>Next, thread the copper wire through the brass tube (neck) and place the lamp on a level surface. I used a couple heat resistant bricks and left a gap where I needed to solder.</li>
 <li>Add a little flux to the joint.</li>
 <li>Slowly and carefully start to apply heat around the area that needs to be soldered. Once the area is heated enough, add the solder to the joint.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Base</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Base image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Base image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Base image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Base image 4" loading="lazy"><img src="images/step08_05.gif" alt="Step 7: Making the Base image 5" loading="lazy"><img src="images/step08_06.gif" alt="Step 7: Making the Base image 6" loading="lazy"><img src="images/step08_07.gif" alt="Step 7: Making the Base image 7" loading="lazy"><img src="images/step08_08.gif" alt="Step 7: Making the Base image 8" loading="lazy"><img src="images/step08_09.gif" alt="Step 7: Making the Base image 9" loading="lazy"></div><p>For the base I was going to use some wood but decided to use some 50mm copper tubing.</p>
-<p>It was a lot easier then having to hollow out the wood and it worked well with the overall ascetics.</p>
-<p>I did add a little bit of wood which is used as a surface to attach the neck of the lamp to.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Base</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Base image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Base image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Base image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Base image 4" loading="lazy"><img src="images/step08_05.gif" alt="Step 7: Making the Base image 5" loading="lazy"><img src="images/step08_06.gif" alt="Step 7: Making the Base image 6" loading="lazy"><img src="images/step08_07.gif" alt="Step 7: Making the Base image 7" loading="lazy"><img src="images/step08_08.gif" alt="Step 7: Making the Base image 8" loading="lazy"><img src="images/step08_09.gif" alt="Step 7: Making the Base image 9" loading="lazy"></div><p>For the base I was going to use some wood but decided to use some 50mm copper tubing. It was a lot easier then having to hollow out the wood and it worked well with the overall ascetics. I did add a little bit of wood which is used as a surface to attach the neck of the lamp to.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, cut a piece of 50mm copper tube to the desired height. Mine was about 150mm height.</li>

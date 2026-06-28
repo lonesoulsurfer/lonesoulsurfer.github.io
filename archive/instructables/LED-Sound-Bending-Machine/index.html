@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,203 +127,193 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED & Sound Bending Machine</span>
 </nav>
-<h1>LED & Sound Bending Machine</h1><div class="source"><a href="https://www.instructables.com/LED-Sound-Bending-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>On one of my regular trips to the junk store, I came across an old racing car game.</p>
-<p>The game itself was pretty lame but what caught my attention was the case.</p>
-<p>The design was pure retro awesomeness and I knew I had to build something with it.</p>
+<h1>LED & Sound Bending Machine</h1><div class="source"><a href="https://www.instructables.com/LED-Sound-Bending-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>On one of my regular trips to the junk store, I came across an old racing car game. The game itself was pretty lame but what caught my attention was the case. The design was pure retro awesomeness and I knew I had to build something with it.</p>
 <p>After a little thought, I decided to combine a few other builds I have done in the past to make a sound bender with dancing LED's.</p>
-<p>A sound bender is really just that.</p>
-<p>You can record sounds into a small IC via a mic and then twist a potentiometer to change the pitch.</p>
-<p>This can be done quite easily by circuit bending a cheap module from eBay.</p>
-<p>However, I decided to build a custom PCB which incorporated the voice recorder, dancing LED's and amp.</p>
+<p>A sound bender is really just that. You can record sounds into a small IC via a mic and then twist a potentiometer to change the pitch. This can be done quite easily by circuit bending a cheap module from eBay. However, I decided to build a custom PCB which incorporated the voice recorder, dancing LED's and amp.</p>
 <p>So what does it do?</p>
-<p>Well, you can record a sound and twist and change the pitch.</p>
-<p>It also has echo and reverb module as well which gives it a whole other sonic dimension.</p>
-<p>You can pause or restart the sounds as well which gives you the ability to play it (kind of).</p>
-<p>All the while LED's are dancing around to the sound.</p>
+<p>Well, you can record a sound and twist and change the pitch. It also has echo and reverb module as well which gives it a whole other sonic dimension. You can pause or restart the sounds as well which gives you the ability to play it (kind of). All the while LED's are dancing around to the sound.</p>
 <p>Check out the video of the build and the sound bender in action.</p>
 <p>Hackaday have done a review on my project which you can check out here</p>
 <p>Oh - and so Have Hackster which can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.png" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts & Tools image 8" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Case. Ok - so you might be able to find the exact case that I used. Any old case will work really. You could use a project box and cut out a section for the LED's and use some opal acrylic to diffuse them. I'm sure you can find some old game case that would do the job</li>
-</ol>
+</ul>
 <ol>
 <li>PCB and Components - Check the next step for the gerber files, parts list etc for the PCB</li>
-</ol>
+</ul>
 <ol>
 <li>Potentiometer knobs - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Momentary Switches X 2 - eBay</li>
-</ol>
+</ul>
 <p>5 On/Off Switches X 2 - eBay. I used this one for the actual on/off switch. It has an LED in it which comes on when you record a sound.</p>
 <ol>
 <li>Echo & Reverb module - Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>50K potentiometer X 2 - Ali Express. These will be used for the echo and reverb module</li>
-</ol>
+</ul>
 <ol>
 <li>Battery. I have been using old mobile phone batteries lately in all my builds. you can usually pick them up for free. check out this 'ible that i did on how to use the,</li>
-</ol>
+</ul>
 <ol>
 <li>Buck booster - Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>Charging module - Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>Speaker 8 ohm - Ali Express</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Schematic and PCB</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Schematic and PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematic and PCB image 2" loading="lazy"></div><p>I designed the schematic and PCB in Eagle and have provided all of the info, including the gerber files in my Google Drive.</p>
-<p>All you need to do is to send the zipped Gerber files to a PCB manufacturer like JLBPCB (not affiliated) and they'll print them up for you.</p>
-<p>If you know how to use Eagle then you can play around with the circuits and boards as much as you want.</p>
-<p>If not then check out these 2 tutorials by Sparkfun, schematics and board layout and you'll be on your way to schematic heaven.</p>
-<p>I've also provided some info on how the components are conencted to the board.</p><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Game</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Game image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Game image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Game image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the Game image 4" loading="lazy"></div><p>Ok - so in my excitement, I forgot to take some images of the game so I have had to use a dodgy image from the net.</p>
-<p>You can see that it's a pretty cheap looking racing game.</p>
-<p>What really caught my eye though was the case.</p>
-<p>It's such a cool looking design with it's retro angles and colour that as soon as I saw it, it was a forgone conclusion that i'd mod it in some way.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Schematic and PCB</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Schematic and PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematic and PCB image 2" loading="lazy"></div><p>I designed the schematic and PCB in Eagle and have provided all of the info, including the gerber files in my Google Drive.</p>
+<p>All you need to do is to send the zipped Gerber files to a PCB manufacturer like JLBPCB (not affiliated) and they'll print them up for you. If you know how to use Eagle then you can play around with the circuits and boards as much as you want. If not then check out these 2 tutorials by Sparkfun, schematics and board layout and you'll be on your way to schematic heaven.</p>
+<p>I've also provided some info on how the components are conencted to the board.</p>
+<ul>
+<li><a href="pdfs/Sound Bender - Schematic.pdf">Sound Bender - Schematic</a></li>
+</ul><a class="pdf-download" href="pdfs/Sound Bender - Schematic.pdf" target="_blank">&#8675; Sound Bender - Schematic</a><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Game</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Game image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Game image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Game image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the Game image 4" loading="lazy"></div><p>Ok - so in my excitement, I forgot to take some images of the game so I have had to use a dodgy image from the net. You can see that it's a pretty cheap looking racing game. What really caught my eye though was the case. It's such a cool looking design with it's retro angles and colour that as soon as I saw it, it was a forgone conclusion that i'd mod it in some way.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove any screws holding the case together</li>
-</ol>
+</ul>
 <ol>
 <li>Remove all of the parts inside</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have the case apart, I like to then give it a good wash. I managed to get most of the gunk off but some was too ingrained into the case. The previous owner has also written their name on the back which I managed to mostly remove with some Isopropyl</li>
-</ol>
+</ul>
 <ol>
 <li>Last thing to do is to remove any gussets and pieces of plastic inside the case. You want to make as much room as possible to just cut away all those bits and pieces. I use a pair of wire cutters to remove most of these and then an exacto knife to remove the rest.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Working Out Where All the Knobs & Buttons Will Go</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 5" loading="lazy"></div><p>Once you have your case nice and clean and empty of any superfluous bits inside, it's time to start working out where all those buttons and knobs will go</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Working Out Where All the Knobs & Buttons Will Go</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Working Out Where All the Knobs & Buttons Will Go image 5" loading="lazy"></div><p>Once you have your case nice and clean and empty of any superfluous bits inside, it's time to start working out where all those buttons and knobs will go</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing I wanted to do was to work out what I was going to add to the large hole on the right of the case. After some rummaging I decided to add a on/off switch there. The bonus of the switch I used is it has an LED light inside which I could utilize for the record LED on the sound IC</li>
-</ol>
+</ul>
 <ol>
 <li>I slightly enlarged the hole and added the switch which I was happy with</li>
-</ol>
+</ul>
 <ol>
 <li>Next I added the pots to the top of the case to see how much room I would have. It's a little tight but planning it out like this helped me visualize how to design the front panel.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Designing a Front Panel & Adding It to the Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 2" loading="lazy"></div><p>I wanted to make it as easy as possible to identify what each of the knobs and buttons do.</p>
-<p>I've made similar sound machines in the past and I always forget what each button and knob does!</p>
-<p>I decided to create a front panel in Inkscape and print it up on water decal.</p>
-<p>Inscape is a vector graphics editor which you can download for free!</p>
-<p>I found it easy to pick up once you learn the basics.</p>
-<p>There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.</p>
-<p>As my case was pretty unique you might have to play around with my design to suit your needs.</p>
-<p>I have provided the files in my Google Drive.</p>
-<p>I've also provided the front panel in PDF so you can just print this out if you want to and uase it.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Water Decal to the Front Cover</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 4" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Designing a Front Panel & Adding It to the Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 2" loading="lazy"></div><p>I wanted to make it as easy as possible to identify what each of the knobs and buttons do. I've made similar sound machines in the past and I always forget what each button and knob does! I decided to create a front panel in Inkscape and print it up on water decal.</p>
+<p>Inscape is a vector graphics editor which you can download for free! I found it easy to pick up once you learn the basics. There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.</p>
+<p>As my case was pretty unique you might have to play around with my design to suit your needs. I have provided the files in my Google Drive. I've also provided the front panel in PDF so you can just print this out if you want to and uase it.</p>
+<ul>
+<li><a href="pdfs/Sound Bender.pdf">Sound Bender</a></li>
+</ul><a class="pdf-download" href="pdfs/Sound Bender.pdf" target="_blank">&#8675; Sound Bender</a><h2><span class="step-num">STEP 6</span>Step 6: Adding the Water Decal to the Front Cover</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Once you have your design, you will need to print it up on special paper called water decal. Check out eBay or a stationary provider to get some</li>
-</ol>
+</ul>
 <ol>
 <li>Cut out the design and place it in some warm water for about 30 seconds</li>
-</ol>
+</ul>
 <ol>
 <li>Carefully pull it out of the water and slide the decal across the front of the case. Align it as necessary to any holes etc that might be on the front of the case</li>
-</ol>
+</ul>
 <ol>
 <li>Squeegee out any left over water from the front and leave to dry for an hour</li>
-</ol>
+</ul>
 <ol>
 <li>Once it it dry, add a few coats of clear coat to ensure it is protected</li>
-</ol>
+</ul>
 <ol>
 <li>Once the clear coat has fully dried, you can start to drill out the holes into the case. I always use a centre punch to make drilling easier. Once that's done it's just a case of carefully drilling the holes to size. I used a step drill bit to do this.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Switches and Knobs to the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 4" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Switches and Knobs to the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Switches and Knobs to the Case image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>I started with the bottom section of the case and added the switches and mic to this section</li>
-</ol>
+</ul>
 <ol>
 <li>Next I added the 3 pots (actually there is a 4th one which is volume but I decided to add this to the side of the case) and secured them in place.</li>
-</ol>
+</ul>
 <ol>
 <li>I then added the on/off switch and the knobs to the pots</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, I added the on/off and momentary switches to the left of the case. i had to add a little superglue to hold the on/off switch into place. Not ideal (switches and glue don't really mix0 but if you just add a little then you should be ok.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Soldering the PCB</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Soldering the PCB image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Soldering the PCB image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Soldering the PCB image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Soldering the PCB image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Soldering the PCB image 5" loading="lazy"></div><p>You can see in the first image that I designed the PCB to fit into the case. The LED's are at the top section and all of the components at the bottom.</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Soldering the PCB</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Soldering the PCB image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Soldering the PCB image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Soldering the PCB image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Soldering the PCB image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Soldering the PCB image 5" loading="lazy"></div><p>You can see in the first image that I designed the PCB to fit into the case. The LED's are at the top section and all of the components at the bottom.</p>
 <p>Steps:</p>
 <ol>
 <li>I always like to start soldering into place the lowest components which is usually the resistors.</li>
-</ol>
+</ul>
 <ol>
 <li>Once these are al done I usually move onto the IC sockets and other components like transistors etc.</li>
-</ol>
+</ul>
 <ol>
 <li>Next I did the capacitors but I probably should have done the LED's first - oh well.</li>
-</ol>
+</ul>
 <ol>
 <li>Once everything is in place I always like to test out the circuit to make sure I haven't messed up anything. The good news it worked first go so now I was ready to start preparing the case for the rest of the parts.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding Parts to the Case</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding Parts to the Case image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding Parts to the Case image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding Parts to the Case image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding Parts to the Case image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding Parts to the Case image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding Parts to the Case image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding Parts to the Case image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding Parts to the Case image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding Parts to the Case image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Adding Parts to the Case image 10" loading="lazy"><img src="images/step09_11.png" alt="Step 9: Adding Parts to the Case image 11" loading="lazy"></div><p>Now that I had my PCB all ready I next had to add off of the other parts to the case</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding Parts to the Case</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding Parts to the Case image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding Parts to the Case image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding Parts to the Case image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding Parts to the Case image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding Parts to the Case image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding Parts to the Case image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding Parts to the Case image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding Parts to the Case image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding Parts to the Case image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Adding Parts to the Case image 10" loading="lazy"><img src="images/step09_11.png" alt="Step 9: Adding Parts to the Case image 11" loading="lazy"></div><p>Now that I had my PCB all ready I next had to add off of the other parts to the case</p>
 <p>Steps:</p>
 <ol>
 <li>First I added the charging module. This is a small 3.7v micro USB charger which connects directly to the phone battery. To access the micro USB I made a small slit into the side of the case and glued it into place</li>
-</ol>
+</ul>
 <ol>
 <li>Next I decided to add the speaker. Initially I wanted to add the speaker to the top section of the case but I ran out of room. I decided to add it to the bottom of the case which really didn't effect the sound. I made a few holes into the bottom of the case for the sound and glued the speaker into place</li>
-</ol>
+</ul>
 <ol>
 <li>Next I added the reverb and echo module next to the speaker. You may notice some wires coming off the module, these are where the echo and reverb pots are connected to. You need to do a couple of mods to the module and I've done an Instructable on how to do this which you can find here</li>
-</ol>
+</ul>
 <ol>
 <li>Everything runs off 5v's so in order to increase the voltage on the mobile battery (which is rate to 3.7v's) I had to use a buck booster. i found these tiny ones on Ali Express which did the trick. they are set at 5V but you can increase to 9 or 12V as well.</li>
-</ol>
+</ul>
 <ol>
 <li>I then wired everything up to the battery - I've included a wiring diagram so you can see how I did this. Note that the buck boosters positive is connect to the on/off switch. I have found in the past that buck boosters can slowly drain power if not disconnected.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring Everything Up</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring Everything Up image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring Everything Up image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring Everything Up image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring Everything Up image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring Everything Up image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Wiring Everything Up image 6" loading="lazy"></div><p>There is a fair chunk of wiring to do to connect all the components up. I used some very thin ribbon cable from a computer to do this as wire seems to take up a lot more room than you think!</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Wiring Everything Up</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring Everything Up image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring Everything Up image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring Everything Up image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring Everything Up image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring Everything Up image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Wiring Everything Up image 6" loading="lazy"></div><p>There is a fair chunk of wiring to do to connect all the components up. I used some very thin ribbon cable from a computer to do this as wire seems to take up a lot more room than you think!</p>
 <p>Steps:</p>
 <ol>
 <li>Place the top and bottom pieces of the case next to each other.</li>
-</ol>
+</ul>
 <ol>
 <li>I like to add solder to all of the solder points first before I start to add wires - makes things a little easier</li>
-</ol>
+</ul>
 <ol>
 <li>Start to connect the wires up, making them as short as possible</li>
-</ol>
+</ul>
 <ol>
 <li>Check your work as you go along and carefully make the connections.</li>
-</ol>
+</ul>
 <ol>
 <li>once everything has been soldered, you are then ready to do a test. Initially I wasn't getting anything and when I rechecked my wiring I found that one of the wires to the switch had come off. I re-solder this and bam I got sound and lights. Record some sound and give it a test run. If everything is working it's time to close up the case and start to play around with the sounds</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: How Do You Use It?</h2><div class="step-images single"><img src="images/step11_01.jpg" alt="Step 11: How Do You Use It? image 1" loading="lazy"></div><p>It's pretty straight forward to use this little sound bender.</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: How Do You Use It?</h2><div class="step-images single"><img src="images/step11_01.jpg" alt="Step 11: How Do You Use It? image 1" loading="lazy"></div><p>It's pretty straight forward to use this little sound bender.</p>
 <p>Steps:</p>
 <ol>
 <li>First turn it on</li>
-</ol>
+</ul>
 <ol>
 <li>flick the 'loop' switch up so the loop is turned off</li>
-</ol>
+</ul>
 <ol>
 <li>I like to have the 'speed' knob about half way when I record. play around with it though and see what sounds you get with the 'speed knob turned up or down</li>
-</ol>
+</ul>
 <ol>
 <li>To record a sound, press down the rec button and speak into the mic</li>
-</ol>
+</ul>
 <ol>
 <li>Turn 'loop' back on.</li>
-</ol>
+</ul>
 <ol>
 <li>You should hear the sound you made looping.</li>
-</ol>
+</ul>
 <ol>
 <li>Try and turn the 'speed' knob the pitch can be changed to high or low</li>
-</ol>
+</ul>
 <ol>
 <li>Next play around with the 'echo and reverb' knobs. You'll hear the sound you made 'echo'. the higher you turn the longer the echo</li>
-</ol>
+</ul>
 <ol>
 <li>Next push the 'start/pause momentary switch'. This will either restart or pause the sound depending on what you have the 'start/pause' switch tuned to. This gives you the ability to play the sound bender and made some awesome sounds with the echo function.</li>
-</ol>
+</ul>
 <p>What next?</p>
 <ol>
 <li>We'll you could easily add a audio out so you can plug it into an amp and really get it pumping</li>
-</ol>
+</ul>
 <ol>
 <li>You could also add an audio in easily to the mic section so you can record music or whatever sounds you want and bend to your hearts content.</li>
-</ol>
+</ul>
 <ol>
 <li>There would also be plenty of circuit bends that you could do to the circuits, especially the echo/reverb module</li>
-</ol>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Sound Bender - Schematic.pdf">Sound Bender - Schematic</a></li>
+<li><a href="pdfs/Sound Bender.pdf">Sound Bender</a></li>
+</ul><a class="pdf-download" href="pdfs/Sound Bender - Schematic.pdf" target="_blank">&#8675; Sound Bender - Schematic</a><a class="pdf-download" href="pdfs/Sound Bender.pdf" target="_blank">&#8675; Sound Bender</a>
 </body>
 </html>

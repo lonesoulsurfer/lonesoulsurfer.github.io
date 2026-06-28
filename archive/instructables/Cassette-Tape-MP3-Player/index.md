@@ -100,6 +100,9 @@ Source: https://www.instructables.com/Cassette-Tape-MP3-Player/
 ![Step 8: Designing Your Cassette Tape image 7](images/step08_07.jpg)
 
 
+- [images 2](pdfs/images 2.pdf)
+- [images](pdfs/images.pdf)
+
 ## Step 9: Keep on Designing...
 
 ![Step 9: Keep on Designing... image 1](images/step09_01.jpg)
@@ -121,6 +124,11 @@ Source: https://www.instructables.com/Cassette-Tape-MP3-Player/
 
 ![Step 10: Finished image 2](images/step10_02.jpg)
 
+
+## Downloads
+
+- [images 2](pdfs/images 2.pdf)
+- [images](pdfs/images.pdf)
 
 ---
 *42 images archived*

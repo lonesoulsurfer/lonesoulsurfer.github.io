@@ -74,6 +74,8 @@ Resistors - Ali Express
 2.2K X 1
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: PCB & Front Panel
 
 ![Step 1: PCB & Front Panel image 1](images/step02_01.jpg)
@@ -244,6 +246,10 @@ Each mode serves a distinct musical purpose, and the intensity levels (50%/75%) 
 
 The two intensity levels (50% and 75%) offer enough adjustability without overcomplicating the interface. This gives users six distinct groove feels to choose from (three types × two intensities)
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *35 images archived*

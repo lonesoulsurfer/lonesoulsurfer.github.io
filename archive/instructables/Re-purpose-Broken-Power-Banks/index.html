@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -112,12 +129,9 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 </nav>
 <h1>Re-purpose Broken Power Banks</h1><div class="source"><a href="https://www.instructables.com/Re-purpose-Broken-Power-Banks/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I hate throwing anything away - especially if it can be fixed (and hopefully improved!).</p>
 <p>I have a few power banks that have kicked the bucket and instead of adding them to the great 'e-waste spirit in the sky', I decided to pull them apart and re-build them.</p>
-<p>I've found that in most cases, it's not the battery that has failed but the electronics inside.</p>
-<p>I'm not too sure why this happens (prob built with cheap components), however by pulling out the circuit board and replacing it, you can usually revamp a power bank and give it a new lease on life.</p>
+<p>I've found that in most cases, it's not the battery that has failed but the electronics inside. I'm not too sure why this happens (prob built with cheap components), however by pulling out the circuit board and replacing it, you can usually revamp a power bank and give it a new lease on life.</p>
 <p>To make it even more useful, I also added a voltage regulator module which allows me to power any of my circuit builds I am working on!</p>
-<p>The build isn't a difficult one, although I probably make it more complex then necessary with the case I built.</p>
-<p>You could easily just find a project box and stick all of the components and battery into.</p>
-<p>However, I'm really happy with the overall finish of the build so hopefully you take the time (if you decided to do this project) to make a nice case for your build.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>PARTS:</p>
+<p>The build isn't a difficult one, although I probably make it more complex then necessary with the case I built. You could easily just find a project box and stick all of the components and battery into. However, I'm really happy with the overall finish of the build so hopefully you take the time (if you decided to do this project) to make a nice case for your build.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>PARTS:</p>
 <p>Components</p>
 <ul>
 <li>Old power bank. If you just want to build this power bank yourself you could just buy a li-po battery here</li>
@@ -145,8 +159,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Wire cutters</li>
 <li>Sander</li>
 <li>Drill</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Pulling Your Power Bank Apart</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Pulling Your Power Bank Apart image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Pulling Your Power Bank Apart image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Pulling Your Power Bank Apart image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Pulling Your Power Bank Apart image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Pulling Your Power Bank Apart image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Pulling Your Power Bank Apart image 6" loading="lazy"></div><p>At first glance, it might not look like your power bank can come apart - where the hell are the screws!!</p>
-<p>It can be a little tricky sometimes to find out how it has been put together but with a little perseverance you'll work it out.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Pulling Your Power Bank Apart</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Pulling Your Power Bank Apart image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Pulling Your Power Bank Apart image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Pulling Your Power Bank Apart image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Pulling Your Power Bank Apart image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Pulling Your Power Bank Apart image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Pulling Your Power Bank Apart image 6" loading="lazy"></div><p>At first glance, it might not look like your power bank can come apart - where the hell are the screws!! It can be a little tricky sometimes to find out how it has been put together but with a little perseverance you'll work it out.</p>
 <p>STEPS:</p>
 <ul>
 <li>I had to remove the 2 front covers of the power bank to reveal a couple of small screws inside. To remove these I used a spudger tool</li>

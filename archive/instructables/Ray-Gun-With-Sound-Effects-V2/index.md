@@ -108,6 +108,8 @@ You can't attach zip files to Instructables pages so I have linked all of the fi
 The flashing LED circuit I used some prototype board as it was only a small circuit to build. You find the schematic attached and I've also designed a board for it as well which can be found on my Google drive
 
 
+- [Pew Pew Sound Effects 1](pdfs/Pew Pew Sound Effects 1.pdf)
+
 ## Step 3: Parts for the Flashing LED Circuit
 
 ![Step 3: Parts for the Flashing LED Circuit image 1](images/step03_01.jpg)
@@ -140,6 +142,8 @@ Gerber file and schematic can be found here
 
 7. Wires
 
+
+- [Flashing LED - 555](pdfs/Flashing LED - 555.pdf)
 
 ## Step 4: Getting an Idea of the Design for the Ray Gun
 
@@ -512,6 +516,11 @@ The last thing to do is to make a stand for the ray gun. I used some old wood i 
 
 phew - that's pretty much it! There seems to be a lot of parts and steps that went into making this ray gun! However, it's the journey that makes it all worth while in the end.
 
+
+## Downloads
+
+- [Pew Pew Sound Effects 1](pdfs/Pew Pew Sound Effects 1.pdf)
+- [Flashing LED - 555](pdfs/Flashing LED - 555.pdf)
 
 ---
 *97 images archived*

@@ -59,6 +59,8 @@ Board
 2. Next to each Pot section on the board there is a "F" or "B" next to it. That means the pot is either solder to the top of the board of the bottom. I did this to allow more space between the pots.
 
 
+- [DS-8 Parts List](pdfs/DS-8 Parts List.pdf)
+
 ## Step 2: All the Other Parts
 
 ![Step 2: All the Other Parts image 1](images/step02_01.jpg)
@@ -118,6 +120,8 @@ Other Parts
 
 Here's the link to my Google drive with all of the files. Included is the parts list, Eagle schematic and board along with the Gerber files. The gerber zip folder can be sent to a PCB manufacturer and they will print the board up for you
 
+
+- [DS8 - Pots Soldered on Board](pdfs/DS8 - Pots Soldered on Board.pdf)
 
 ## Step 4: DS-8 Board - Soldering on the Components
 
@@ -266,6 +270,8 @@ There is even an extension that you can download so you can design knob scales e
 
 However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also includes the Inkscape file so you can play around with that as well if you want to.
 
+
+- [DS1 Drum Synth - Single Drum V3](pdfs/DS1 Drum Synth - Single Drum V3.pdf)
 
 ## Step 10: Drilling and Adding the Water Decal
 
@@ -490,6 +496,12 @@ Next I want to use the other 3 drums to make a 3 drum pad DS-8 synth! This build
 
 If you have any questions, please add them to the comments and I'll help where I can
 
+
+## Downloads
+
+- [DS-8 Parts List](pdfs/DS-8 Parts List.pdf)
+- [DS8 - Pots Soldered on Board](pdfs/DS8 - Pots Soldered on Board.pdf)
+- [DS1 Drum Synth - Single Drum V3](pdfs/DS1 Drum Synth - Single Drum V3.pdf)
 
 ---
 *84 images archived*

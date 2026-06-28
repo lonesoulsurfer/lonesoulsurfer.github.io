@@ -130,6 +130,9 @@ Getting Your Board Printed
 To have the board printed, save the gerber zip file in the GitHub Page files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB manufactured.
 
 
+- [Box of Beezz - Drone Synth V1 - Schematic](pdfs/Box of Beezz - Drone Synth V1 - Schematic.pdf)
+- [Box of Beezz - Drone Synth V2 - Schematic](pdfs/Box of Beezz - Drone Synth V2 - Schematic.pdf)
+
 ## Step 2: Adding the Components to the PCB - Part 1
 
 ![Step 2: Adding the Components to the PCB - Part 1 image 1](images/step03_01.jpg)
@@ -200,6 +203,9 @@ STEPS:
 - Cut the acrylic to size if you haven't already.
 - To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
 
+
+- [Drone Synth 1](pdfs/Drone Synth 1.pdf)
+- [Drone Synth 2](pdfs/Drone Synth 2.pdf)
 
 ## Step 5: Drilling & Making Cut-outs on the Front Panel
 
@@ -350,6 +356,13 @@ STEPS:
 - Once you have wired everything together, add the knobs to the potentiometers.
 That's it! Now go and make some noise.
 
+
+## Downloads
+
+- [Box of Beezz - Drone Synth V1 - Schematic](pdfs/Box of Beezz - Drone Synth V1 - Schematic.pdf)
+- [Box of Beezz - Drone Synth V2 - Schematic](pdfs/Box of Beezz - Drone Synth V2 - Schematic.pdf)
+- [Drone Synth 1](pdfs/Drone Synth 1.pdf)
+- [Drone Synth 2](pdfs/Drone Synth 2.pdf)
 
 ---
 *69 images archived*

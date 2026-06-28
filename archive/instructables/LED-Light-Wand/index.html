@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -111,9 +128,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <span class="nav-title">LED Light Wand</span>
 </nav>
 <h1>LED Light Wand</h1><div class="source"><a href="https://www.instructables.com/LED-Light-Wand/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>I had some filament LED's left over from my last project so I thought I'd have another go at using some again in this build.</p>
-<p>For those that don't know, LED filaments contain rows of tiny LED's - all covered with a flexible material.</p>
-<p>In this project I use 300mm long filaments (about a foot) to make my very own LED wand!</p>
-<p>I also included a 3mm LED in the end of the wand so the wand can either be all lit up or you can just have the tip lit-up!</p>
+<p>For those that don't know, LED filaments contain rows of tiny LED's - all covered with a flexible material. In this project I use 300mm long filaments (about a foot) to make my very own LED wand! I also included a 3mm LED in the end of the wand so the wand can either be all lit up or you can just have the tip lit-up!</p>
 <p>The project isn't too hard, you'll need to do some delicate soldering though as I use thin copper wire to connect the LED's to the switches.</p>
 <p>It's a fun project and the end result look pretty amazing, especially at night.</p>
 <p>I've also included a YouTube vid so check that out as well.</p>
@@ -141,28 +156,20 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Pipe Cutter (you can also just use a saw or grinder or whatever else you may have. It's to cut the PVC</li>
 <li>Drill</li>
 <li>Small Files</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Cutting the PVC to Size</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Cutting the PVC to Size image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Cutting the PVC to Size image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Cutting the PVC to Size image 3" loading="lazy"></div><p>The 15mm PVC is used to make the handle.</p>
-<p>If you are in the US then you'll probably need to use 3/4" tubing as you need to fit the battery and charging module inside the tube and 1/2" won't have a big enough diameter.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Cutting the PVC to Size</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Cutting the PVC to Size image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Cutting the PVC to Size image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Cutting the PVC to Size image 3" loading="lazy"></div><p>The 15mm PVC is used to make the handle. If you are in the US then you'll probably need to use 3/4" tubing as you need to fit the battery and charging module inside the tube and 1/2" won't have a big enough diameter.</p>
 <p>STEPS:</p>
 <ul>
 <li>Use a pipe cutter and cut a piece of the tube to a length of aprox 200mm</li>
 <li>Place the 2 end caps on the tube to make sure they fit after the tube has been cut. There shouldn't be any issues but you might need to clean-up the ends a little.</li>
 <li>Find the centre on one of the caps (as close as possible to the centre will do) and drill a hole the same width (or even a little smaller) then the while polystyrene tube.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Tube Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Tube Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Tube Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Tube Section image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Tube Section image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Tube Section image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Tube Section image 6" loading="lazy"></div><p>The initial wand that I made snapped right at the PVC cap section.</p>
-<p>It was because I was waving it around a little too violently but it also showed that that section was a weak spot.</p>
-<p>To fix this, I decided to add a slightly larger piece of polystyrene tube into the cap and then put the smaller tube inside giving it more strength at the base.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Tube Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Tube Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Tube Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Tube Section image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Tube Section image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Tube Section image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Tube Section image 6" loading="lazy"></div><p>The initial wand that I made snapped right at the PVC cap section. It was because I was waving it around a little too violently but it also showed that that section was a weak spot. To fix this, I decided to add a slightly larger piece of polystyrene tube into the cap and then put the smaller tube inside giving it more strength at the base.</p>
 <ul>
 <li>Push the larger tube into the cap. It should be a very tight fit. You may need to file a little material away around the hole in order for the tube to fit. Push it in so it is even with the bottom of the cap.</li>
 <li>Use some hot glue to secure the tube inside the cap. Make sure you don't get any around the inside walls of the cap. If you do, remove it as it will effect how it goes into the 15mm PVC tube.</li>
 <li>Cut the tube so there is aprox 30mm sticking out of the top of the cap. The best way I found to cut the polystyrene tube is to run a stanley knife across the tube whilst rolling it on a table.</li>
 <li>You can now add the thinner tube inside the larger one. Use some superglue to attach it to the inside of the larger tube.</li>
 <li>The last thing to do is to trim the tube a little longer than the 300mm LED. I made it about 310mm. This leaves enough room for the 3mm LED as well</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Wiring the LED's</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Wiring the LED's image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Wiring the LED's image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Wiring the LED's image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Wiring the LED's image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Wiring the LED's image 5" loading="lazy"><img src="images/step04_06.gif" alt="Step 3: Wiring the LED's image 6" loading="lazy"><img src="images/step04_07.gif" alt="Step 3: Wiring the LED's image 7" loading="lazy"><img src="images/step04_08.gif" alt="Step 3: Wiring the LED's image 8" loading="lazy"><img src="images/step04_09.gif" alt="Step 3: Wiring the LED's image 9" loading="lazy"><img src="images/step04_10.gif" alt="Step 3: Wiring the LED's image 10" loading="lazy"><img src="images/step04_11.gif" alt="Step 3: Wiring the LED's image 11" loading="lazy"></div><p>The next thing to do is to wire up both the filament and 3mm LED's together and add the copper wires.</p>
-<p>As mentioned in the intro, the copper wires are very thin so it can be a little tricky to solder them onto the LED's.</p>
-<p>I have a couple tips below so hopefully that helps.</p>
-<p>The reason why they are so thin is they need to go through the tube along with the filament.</p>
-<p>If they are thicker then you'll see them when the LED lights up.</p>
-<p>So the thinner the better.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Wiring the LED's</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Wiring the LED's image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Wiring the LED's image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Wiring the LED's image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Wiring the LED's image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Wiring the LED's image 5" loading="lazy"><img src="images/step04_06.gif" alt="Step 3: Wiring the LED's image 6" loading="lazy"><img src="images/step04_07.gif" alt="Step 3: Wiring the LED's image 7" loading="lazy"><img src="images/step04_08.gif" alt="Step 3: Wiring the LED's image 8" loading="lazy"><img src="images/step04_09.gif" alt="Step 3: Wiring the LED's image 9" loading="lazy"><img src="images/step04_10.gif" alt="Step 3: Wiring the LED's image 10" loading="lazy"><img src="images/step04_11.gif" alt="Step 3: Wiring the LED's image 11" loading="lazy"></div><p>The next thing to do is to wire up both the filament and 3mm LED's together and add the copper wires. As mentioned in the intro, the copper wires are very thin so it can be a little tricky to solder them onto the LED's. I have a couple tips below so hopefully that helps. The reason why they are so thin is they need to go through the tube along with the filament. If they are thicker then you'll see them when the LED lights up. So the thinner the better.</p>
 <p>STEPS:</p>
 <ul>
 <li>Identify which is the positive and which is the negative end on the LED filament. The easiest way to do this is to connect 3V's to the ends. Some of the filaments also indicate positive with a small hole in the end of the solder point.</li>

@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,140 +127,131 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Breadboard - Variable Power Supply</span>
 </nav>
-<h1>Breadboard - Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Breadboard-Variable-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Getting power to your breadboard is one of the most fundamental things you need to do when prototyping and testing circuit.</p>
-<p>I've been using a 9V battery (my last power supply died a smoky death) and I figured it was time to upgrade.</p>
+<h1>Breadboard - Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Breadboard-Variable-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Getting power to your breadboard is one of the most fundamental things you need to do when prototyping and testing circuit. I've been using a 9V battery (my last power supply died a smoky death) and I figured it was time to upgrade.</p>
 <p>The voltage supply in this project connects directly to your breadboard so there is no wires getting in the way, it is variable so you can change the voltage from 3.5V to 13V with a potentiometer, and is also rechargeable so no issues with flat batteries.</p>
-<p>The build itself is relatively simple and you only need some basic soldering skills to make your own.</p>
-<p>The module that I have used in this project is one that I have used in many projects.</p>
-<p>It includes variable voltage and battery charger all in one.</p>
-<p>I even did an ‘ible on how to wire it up which can be found here.</p>
-<p>The power supply is powered by an old mobile battery but you could use an 18560 li-ion battery or something similar if you wanted to.</p>
+<p>The build itself is relatively simple and you only need some basic soldering skills to make your own. The module that I have used in this project is one that I have used in many projects. It includes variable voltage and battery charger all in one. I even did an ‘ible on how to wire it up which can be found here. The power supply is powered by an old mobile battery but you could use an 18560 li-ion battery or something similar if you wanted to.</p>
 <p>Let’s get building!</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>PARTS:</p>
 <ol>
 <li>Voltage regulator & charging module – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Voltage Meter – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Switch – I used this one from eBay but you could also use this one</li>
-</ol>
+</ul>
 <ol>
 <li>Header pins. You will need to get double header pins – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Prototype Board – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Battery – I used an old mobile battery but you can use any li-po battery such as 18650 or buy a mobile battery from eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Wires. I used computer ribbon wire. It’s thin and I get it for free at my local e-waste</li>
-</ol>
+</ul>
 <ol>
 <li>100K Potentiometer – eBay</li>
-</ol>
+</ul>
 <p>TOOLS:</p>
 <ol>
 <li>Soldering Iron</li>
-</ol>
+</ul>
 <ol>
 <li>Wire Cutters</li>
-</ol>
+</ul>
 <ol>
 <li>Files</li>
-</ol>
+</ul>
 <ol>
 <li>Belt Sander (comes in handy but not necessary)</li>
-</ol>
+</ul>
 <ol>
 <li>Double sided Tape</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Cutting the Prototype Board Down to Size</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 6" loading="lazy"></div><p>The first thing to do is to work out what size to make the prototype board. You’ll need to cut this down to fit.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Cutting the Prototype Board Down to Size</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Cutting the Prototype Board Down to Size image 6" loading="lazy"></div><p>The first thing to do is to work out what size to make the prototype board. You’ll need to cut this down to fit.</p>
 <p>Steps:</p>
 <ol>
 <li>First, cut 2 lots of header pins off with a pair of wire cutters or an exacto knife. You will need a header pin for positive and ground and I used double header pins so they would secure better into the breadboard</li>
-</ol>
+</ul>
 <ol>
 <li>Place the header pins into the power rails on each side of the breadboard. Place the prototype board into the header pins and work out the size that the prototype board can be</li>
-</ol>
+</ul>
 <ol>
 <li>You can cut away sections of the prototype board with a pair or wire cutters. Use a sander and/or files to clean up the edges</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Header Pins Into the Prototype Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 4" loading="lazy"></div><p>You need to make a very small mod on the header pins to be able to solder them into place.</p>
-<p>The first time I tried to solder the pins into place I did them the wrong way round so make sure you do the mod!</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Header Pins Into the Prototype Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 4" loading="lazy"></div><p>You need to make a very small mod on the header pins to be able to solder them into place. The first time I tried to solder the pins into place I did them the wrong way round so make sure you do the mod!</p>
 <p>Steps:</p>
 <ol>
 <li>Grab one set of the header pins and hold them so the short end of the pin is facing down</li>
-</ol>
+</ul>
 <ol>
 <li>Place the short end on a flat, hard surface and with the tips of your fingers, push the plastic around the pins down until it is at the bottom of the pins</li>
-</ol>
+</ul>
 <ol>
 <li>Do the same of the other set of pins</li>
-</ol>
+</ul>
 <ol>
 <li>Next, place a set of the pins into the prototype board so the plastic section is resting onto the back of the board and solder into place</li>
-</ol>
+</ul>
 <ol>
 <li>Do the same for the other pin. Test to ensure that the pins fit into the power rails on the breadboard</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 7" loading="lazy"></div><p>To be able to connect the power regulator to the prototype board, you need to solder some pins to the battery and voltage out solder points.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding Jumper Pins and Potentiometer to the Voltage Regulator image 7" loading="lazy"></div><p>To be able to connect the power regulator to the prototype board, you need to solder some pins to the battery and voltage out solder points.</p>
 <p>STEPS:</p>
 <ol>
 <li>Cut 4 single jumper pins</li>
-</ol>
+</ul>
 <ol>
 <li>Place 2 of the jumper pins into the 'voltage out' on the voltage regulator and solder them onto place</li>
-</ol>
+</ul>
 <ol>
 <li>Place another 2 jumper pins into the 'battery' solder points on the voltage regulator and solder them into place</li>
-</ol>
+</ul>
 <ol>
 <li>Next, place the 100K potentiometer into voltage regulator (there are 3 holes in the voltage regulator to do this) and solder into place</li>
-</ol>
+</ul>
 <ol>
 <li>The last thing to do is to solder the regulator onto the prototype board. The pins should fit into the holes in the board, however, you might need to slightly bend one of the legs to ensure a good fit. Make sure that the board is soldered to the back of the prototype board. This will help make turning the pot easier</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding an On/off Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding an On/off Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding an On/off Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding an On/off Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding an On/off Switch image 4" loading="lazy"></div><p>You'll need to add an on/off switch between the battery and the module.</p>
-<p>The voltage module draws power even when not in use and adding a switch between the battery and module will ensure the power isn't drained.</p>
-<p>When you charge the battery you need to make sure that the module is 'on' or it won't charge</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding an On/off Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding an On/off Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding an On/off Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding an On/off Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding an On/off Switch image 4" loading="lazy"></div><p>You'll need to add an on/off switch between the battery and the module. The voltage module draws power even when not in use and adding a switch between the battery and module will ensure the power isn't drained. When you charge the battery you need to make sure that the module is 'on' or it won't charge</p>
 <p>STEPS:</p>
 <ol>
 <li>First find a good spot to locate the switch, remembering you will need to add the voltage meter as well to the prototype board</li>
-</ol>
+</ul>
 <ol>
 <li>I had to remove one of the legs on the switch to be able to locate it in the spot I did.</li>
-</ol>
+</ul>
 <ol>
 <li>Once you find the right spot, solder it into place</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring image 5" loading="lazy"></div><p>It's always hard to show how everything is wired via images so I have included a wiring diagram.</p>
-<p>You could add the wires to the top section of the prototype board but I wanted to have a clean look on the top so decided to wire underneath.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Wiring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring image 5" loading="lazy"></div><p>It's always hard to show how everything is wired via images so I have included a wiring diagram. You could add the wires to the top section of the prototype board but I wanted to have a clean look on the top so decided to wire underneath.</p>
 <p>STEPS:</p>
 <ol>
 <li>The wires need to be kept as flat and neat as possible. You also need to remember that the battery will need to be attached to the bottom of the prototype board so try and make sure that the wires are out of the way and there is room at attach it</li>
-</ol>
+</ul>
 <ol>
 <li>The main thing to think about is how you want to power to be orientated in the breadboard. If you look at a breadboard buses (the section where power is added) the buses go in the following order; positive and then ground for both the top and bottom. I have always used the first row in the bottom as ground and the top as positive so I wired up the jumper pins is top - positive/ground bottom ground/positive.</li>
-</ol>
+</ul>
 <ol>
 <li>Don't attach the battery yet though, you need to first add the voltage meter</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Voltage Meter</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Voltage Meter image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Voltage Meter image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Voltage Meter image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Voltage Meter image 4" loading="lazy"></div><p>The easiest way that I could figure out to add the voltage meter was to add a couple of resister legs to the positive and ground solder points on the meter.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Voltage Meter</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Voltage Meter image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Voltage Meter image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Voltage Meter image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Voltage Meter image 4" loading="lazy"></div><p>The easiest way that I could figure out to add the voltage meter was to add a couple of resister legs to the positive and ground solder points on the meter.</p>
 <p>STEPS:</p>
 <ol>
 <li>De-solder the wires on the voltage meter</li>
-</ol>
+</ul>
 <ol>
 <li>Cut a couple of legs off a resister and solder these to the solder points on the voltage meter</li>
-</ol>
+</ul>
 <ol>
 <li>Place the resister legs on the voltage meter into the prototype board and solder into place</li>
-</ol>
+</ul>
 <ol>
 <li>Connect the voltage meter to the 'voltage out' on the voltage regulator</li>
-</ol>
+</ul>
 <ol>
 <li>You can add the battery once you have completed the wiring. Before you stick the battery down, give the whole thing a test and make sure there is power being provided to the pins and the voltage meter works</li>
-</ol>
+</ul>
 <ol>
 <li>Add some good quality, double sided tap tot he battery and stick it into place</li>
-</ol>
+</ul>
 <p>And that's it! Connect it to your prototype board and start building some circuits.</p>
 </body>
 </html>

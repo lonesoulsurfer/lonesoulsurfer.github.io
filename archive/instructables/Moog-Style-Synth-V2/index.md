@@ -81,6 +81,8 @@ The Rest of the Parts:
 11. 40mm X 80mm X 10mm length of hard wood (for making the case) - Hardware store
 
 
+- [Moog light Synth - BoM (PDF)](pdfs/Moog light Synth - BoM _PDF_.pdf)
+
 ## Step 2: The Moog Style Synth - Circuit and Board
 
 ![Step 2: The Moog Style Synth - Circuit and Board image 1](images/step02_01.jpg)
@@ -91,6 +93,8 @@ The Rest of the Parts:
 
 As mentioned in the previous step, you can find the schematic and board (designed in Eagle) in my Google drive. If you want to you can play around with these yourself in Eagle. I have also saved the gerber files which is what you need to send to a PCB manufacturer to print the board
 
+
+- [Moog Sytle Synth - Schematic](pdfs/Moog Sytle Synth - Schematic.pdf)
 
 ## Step 3: Soldering the Components to the Board
 
@@ -185,6 +189,8 @@ There is even an extension that you can download so you can design knob scales e
 
 However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also includes the Inkscape file so you can play around with that as well if you want to.
 
+
+- [MOOG SYNTH Pg 1](pdfs/MOOG SYNTH Pg 1.pdf)
 
 ## Step 7: Adding the Water Acrylic to the Front Panel
 
@@ -420,6 +426,12 @@ Steps:
 
 11. This is just some basic's to get you started. There is plenty more that this little synth can do - I'll leave it up tp you to experiment and find them
 
+
+## Downloads
+
+- [Moog light Synth - BoM (PDF)](pdfs/Moog light Synth - BoM _PDF_.pdf)
+- [Moog Sytle Synth - Schematic](pdfs/Moog Sytle Synth - Schematic.pdf)
+- [MOOG SYNTH Pg 1](pdfs/MOOG SYNTH Pg 1.pdf)
 
 ---
 *72 images archived*

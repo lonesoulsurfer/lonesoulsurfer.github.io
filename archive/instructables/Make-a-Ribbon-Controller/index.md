@@ -355,5 +355,13 @@ Speaker 8 Ohm
 One of the reasons why I made a ribbon controller is because of a comment left on another 'ible I made which was a moog style synth. I've created a PCB for this circuit and and look to hook-up the ribbon controller
 
 
+- [Ribbon Controller Synth](pdfs/Ribbon Controller Synth.pdf)
+- [Ribbon Controller Synth](pdfs/Ribbon Controller Synth.pdf)
+
+## Downloads
+
+- [Ribbon Controller Synth](pdfs/Ribbon Controller Synth.pdf)
+- [Ribbon Controller Synth](pdfs/Ribbon Controller Synth.pdf)
+
 ---
 *66 images archived*

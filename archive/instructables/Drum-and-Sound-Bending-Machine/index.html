@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,199 +127,178 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Drum and Sound Bending Machine</span>
 </nav>
-<h1>Drum and Sound Bending Machine</h1><div class="source"><a href="https://www.instructables.com/Drum-and-Sound-Bending-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>This Instructable mashes together 2 separate Instructables (The Sound Bending Machine and Pocket Drum Machine) that I’ve made in the past.</p>
-<p>I got inspired after finding a retro fire alarm enclosure in a 2nd hand store.</p>
-<p>The Drum Bending Machine is made from a birthday card that has a small electric drum kit inside (pretty amazing actually) and a small voice recorder module.</p>
-<p>By circuit bending the voice module you can record the drums (and other sounds if you like) and then speed –up the sound or slow it down.</p>
-<p>You can also put the recording in a loop so it plays over and over again.</p>
-<p>This project isn’t for the faint hearted.</p>
-<p>There is a lot of fiddly soldering and delicate work that needs to be done.</p>
-<p>The drum kit is a little fragile so you need to be careful not to have wires come away from the solder points.</p>
-<p>However, if you do have moderate skills with a soldering iron, most of the hard bits can be worked out easily enough.</p>
+<h1>Drum and Sound Bending Machine</h1><div class="source"><a href="https://www.instructables.com/Drum-and-Sound-Bending-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>This Instructable mashes together 2 separate Instructables (The Sound Bending Machine and Pocket Drum Machine) that I’ve made in the past. I got inspired after finding a retro fire alarm enclosure in a 2nd hand store.</p>
+<p>The Drum Bending Machine is made from a birthday card that has a small electric drum kit inside (pretty amazing actually) and a small voice recorder module. By circuit bending the voice module you can record the drums (and other sounds if you like) and then speed –up the sound or slow it down. You can also put the recording in a loop so it plays over and over again.</p>
+<p>This project isn’t for the faint hearted. There is a lot of fiddly soldering and delicate work that needs to be done. The drum kit is a little fragile so you need to be careful not to have wires come away from the solder points. However, if you do have moderate skills with a soldering iron, most of the hard bits can be worked out easily enough.</p>
 <p>I’ve also done a couple of schematics which will help you understand how to circuit bend the sound module and also how to wire-up the Drum Kit Module.</p>
 <p>Check out the YouTube clip to see it in action</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Enclosure. Up to you really. Could be anything from an old walkie talkie to a tin box. Just make sure that there is enough room inside to add the electronics, batteries and wires.</li>
-</ol>
+</ul>
 <ol>
 <li>Drum Kit Sound Card – If you live in Australia Kmart and Big W both stock the card. You can also buy it from here. I suggest that you buy 2 just in case you mess one up.</li>
-</ol>
+</ul>
 <ol>
 <li>Sound Module – eBay (buy 2 as well)</li>
-</ol>
+</ul>
 <ol>
 <li>Wire</li>
-</ol>
+</ul>
 <ol>
 <li>Double sided foam tape</li>
-</ol>
+</ul>
 <ol>
 <li>2 x 1M Pots – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>2 x knobs - eBay</li>
-</ol>
+</ul>
 <p>8.1 x Toggle switch – eBay. Actually you use 2 on/off switches so if your enclosure doesn’t have one then get 2 toggle switches.</p>
 <ol>
 <li>2 X Momentary switches – I used this one and this one from eBay</li>
-</ol>
+</ul>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron,</li>
-</ol>
+</ul>
 <ol>
 <li>Pliers</li>
-</ol>
+</ul>
 <ol>
 <li>Wire snips</li>
-</ol>
+</ul>
 <ol>
 <li>Dremel</li>
-</ol>
+</ul>
 <ol>
 <li>Hot glue</li>
-</ol>
+</ul>
 <ol>
 <li>Super glue</li>
-</ol>
+</ul>
 <ol>
 <li>Drill</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding the Pots and Switches</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding the Pots and Switches image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding the Pots and Switches image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding the Pots and Switches image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding the Pots and Switches image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Adding the Pots and Switches image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Adding the Pots and Switches image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Adding the Pots and Switches image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Adding the Pots and Switches image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Adding the Pots and Switches image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Adding the Pots and Switches image 10" loading="lazy"><img src="images/step02_11.jpg" alt="Step 2: Adding the Pots and Switches image 11" loading="lazy"></div><p>Once you have decided on an enclosure, the first thing you will need to do is to get it open and remove any unwanted electronics.</p>
-<p>You want to create as much space as possible inside your enclosure.</p>
-<p>Next you need to decide how you want to set-up your Drum Bending Machine.</p>
-<p>You will need to have 2 pots, 5 drum pads, and 5 switches.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Pots and Switches</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding the Pots and Switches image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding the Pots and Switches image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding the Pots and Switches image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding the Pots and Switches image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Adding the Pots and Switches image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Adding the Pots and Switches image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Adding the Pots and Switches image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Adding the Pots and Switches image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Adding the Pots and Switches image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Adding the Pots and Switches image 10" loading="lazy"><img src="images/step02_11.jpg" alt="Step 2: Adding the Pots and Switches image 11" loading="lazy"></div><p>Once you have decided on an enclosure, the first thing you will need to do is to get it open and remove any unwanted electronics. You want to create as much space as possible inside your enclosure. Next you need to decide how you want to set-up your Drum Bending Machine. You will need to have 2 pots, 5 drum pads, and 5 switches.</p>
 <p>I've also added the diagram of how the sound module gets wired-up. This will help you understand how many switches you will need etc.</p>
 <p>Steps:</p>
 <ol>
 <li>Work out where you want to attach the pots. Drill a couple of holes and put them into place</li>
-</ol>
+</ul>
 <ol>
 <li>Next, you will need to attach a switch to turn the drums on and off. My enclosure came with a on/off switch so I just used this.</li>
-</ol>
+</ul>
 <ol>
 <li>You will also need to add 2 momentary switches, one to use to record the sound and the other to play it. The one to play the sound only plays it once, you need to add a on/off switch for the loop</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, you will need to add 1 on/off switch (2 if your enclosure doesn't already have one) for the loop effect.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding Wires to the Switches</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding Wires to the Switches image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding Wires to the Switches image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding Wires to the Switches image 3" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding Wires to the Switches</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding Wires to the Switches image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding Wires to the Switches image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding Wires to the Switches image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a couple of wires to the solder points on the pots. You need to solder one to the middle point and the other to either of the other solder points. The one you solder it to will determine which way you have to turn the pot to speed or slow down the sound.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder wires to all of the other solder points on the switches etc</li>
-</ol>
+</ul>
 <ol>
 <li>Now you are ready to start circuit bending</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Circuit Bending the Sound Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Circuit Bending the Sound Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Circuit Bending the Sound Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Circuit Bending the Sound Module image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Circuit Bending the Sound Module image 4" loading="lazy"></div><p>Time to circuit bend!</p>
-<p>Initially I started to solder the wire directly to the legs of the IC.</p>
-<p>This didn't work so I decided to add the wires to the IC solder points.</p>
-<p>I didn't take step by step images of all of the wires as it was just too hard to do.</p>
-<p>If you follow the diagram though you won't have any issues.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Circuit Bending the Sound Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Circuit Bending the Sound Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Circuit Bending the Sound Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Circuit Bending the Sound Module image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Circuit Bending the Sound Module image 4" loading="lazy"></div><p>Time to circuit bend! Initially I started to solder the wire directly to the legs of the IC. This didn't work so I decided to add the wires to the IC solder points. I didn't take step by step images of all of the wires as it was just too hard to do. If you follow the diagram though you won't have any issues.</p>
 <p>Steps</p>
 <ol>
 <li>Have the diagram in front of you and start to solder the wires from the switches and pots to the correct spots.</li>
-</ol>
+</ul>
 <ol>
 <li>You will also need to remove the mic so de-solder this from the board</li>
-</ol>
+</ul>
 <ol>
 <li>Solder some wires to the battery solder points and also the mic solder points. Attach the ends of these wires to the appropriate switches</li>
-</ol>
+</ul>
 <ol>
 <li>Next, solder the wires from the switches to the record and play legs</li>
-</ol>
+</ul>
 <ol>
 <li>You also need to add a couple of wires to the pins indicated on the drawing so you can loop the sound. Do this and add attach them to one of the toggle switches</li>
-</ol>
+</ul>
 <ol>
 <li>Ensure that you don't bridge any of the solder points and take your time adding all of the wires.</li>
-</ol>
+</ul>
 <ol>
 <li>Make sure that you don’t make the wires too long, especially if your enclosure is small, they can take up quite a lot of room</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Testing</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Testing image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Testing image 2" loading="lazy"></div><p>Before you glue anything down, Make sure that you test everything first</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Testing</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Testing image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Testing image 2" loading="lazy"></div><p>Before you glue anything down, Make sure that you test everything first</p>
 <p>Steps:</p>
 <ol>
 <li>Power-up the board and test that the sound module is recording sound.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, play around with the pots to ensure that the sound speeds-up and slows down.</li>
-</ol>
+</ul>
 <ol>
 <li>Try the loop switch to see if this works too.</li>
-</ol>
+</ul>
 <ol>
 <li>If everything is working and you are happy with how it sounds, glue down the speaker and also the module with some hot glue</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Drum Kit - Getting the Electronics Out</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 4" loading="lazy"></div><p>Next step is to add the drum kit.</p>
-<p>I played around quote a bit with this, trying to work out the best way to connect the drums to the sound module.</p>
-<p>You can connect the drums so the module records directly through the mic on the sound module instead of passively through the mic, but I couldn’t get rid of the distortion.</p>
-<p>I tried different capacitors in different locations but nothing worked.</p>
-<p>I’m sure somebody out there will have some other ideas on how to reduce the distortion.</p>
-<p>In the end I decided to just record the drums passively through the mic.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Drum Kit - Getting the Electronics Out</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Drum Kit - Getting the Electronics Out image 4" loading="lazy"></div><p>Next step is to add the drum kit. I played around quote a bit with this, trying to work out the best way to connect the drums to the sound module. You can connect the drums so the module records directly through the mic on the sound module instead of passively through the mic, but I couldn’t get rid of the distortion. I tried different capacitors in different locations but nothing worked. I’m sure somebody out there will have some other ideas on how to reduce the distortion. In the end I decided to just record the drums passively through the mic.</p>
 <p>Steps:</p>
 <ol>
 <li>Rip the card open to reveal the goodies inside.</li>
-</ol>
+</ul>
 <ol>
 <li>Carefully remove the tape holding the wires onto the card</li>
-</ol>
+</ul>
 <ol>
 <li>Pull off the pads from the foam tape and remove the speaker and circuit board</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Drum Kit - Removing the Batteries</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Drum Kit - Removing the Batteries image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Drum Kit - Removing the Batteries image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Drum Kit - Removing the Batteries image 3" loading="lazy"></div><p>You don’t want to keep the batteries that the module comes with as they will run out and you won’t be able to replace them.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Drum Kit - Removing the Batteries</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Drum Kit - Removing the Batteries image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Drum Kit - Removing the Batteries image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Drum Kit - Removing the Batteries image 3" loading="lazy"></div><p>You don’t want to keep the batteries that the module comes with as they will run out and you won’t be able to replace them.</p>
 <p>Steps:</p>
 <ol>
 <li>The batteries are held onto the circuit board with small rivets, use a drill to remove the rivets</li>
-</ol>
+</ul>
 <ol>
 <li>The people who make this board were kind enough to add a couple of solder points to add external power to it. Solder a couple of wires to these solder points and test to make sure that the drums still work. You will find that the original switch doesn’t work anymore either. That doesn’t matter as you will add your own later.</li>
-</ol>
+</ul>
 <ol>
 <li>The batteries will be wired-up later.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Drum Kit - Adding the Pads</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Drum Kit - Adding the Pads image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Drum Kit - Adding the Pads image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Drum Kit - Adding the Pads image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Drum Kit - Adding the Pads image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Drum Kit - Adding the Pads image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Drum Kit - Adding the Pads image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Drum Kit - Adding the Pads image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Drum Kit - Adding the Pads image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Drum Kit - Adding the Pads image 9" loading="lazy"></div><p>Now comes the fiddly part. To add the pads you need to de-solder the wire from the pad and re-solder. The wires are very thin also.</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Drum Kit - Adding the Pads</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Drum Kit - Adding the Pads image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Drum Kit - Adding the Pads image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Drum Kit - Adding the Pads image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Drum Kit - Adding the Pads image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Drum Kit - Adding the Pads image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Drum Kit - Adding the Pads image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Drum Kit - Adding the Pads image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Drum Kit - Adding the Pads image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Drum Kit - Adding the Pads image 9" loading="lazy"></div><p>Now comes the fiddly part. To add the pads you need to de-solder the wire from the pad and re-solder. The wires are very thin also.</p>
 <p>Steps:</p>
 <ol>
 <li>Pick a pad to de-solder. Take a photo of the wires and how they are soldered to the pad so you don’t get it wrong when you go to re-solder</li>
-</ol>
+</ul>
 <ol>
 <li>De-solder the pad and add some double sided foam tape to the back</li>
-</ol>
+</ul>
 <ol>
 <li>Tape the pad into place on the enclosure.</li>
-</ol>
+</ul>
 <ol>
 <li>Drill some small holes (depending on how many wires were soldered to the pad) next to the solder points</li>
-</ol>
+</ul>
 <ol>
 <li>Thread the wires through the holes and re-solder the wires onto the solder pads</li>
-</ol>
+</ul>
 <ol>
 <li>Do the same for the other 4</li>
-</ol>
+</ul>
 <ol>
 <li>Continuously test</li>
-</ol>
-<p>NOTE: Be careful as the wires as fragile and can come away from the solder pads.</p>
-<p>If this happens, just re-solder the wire to the pad.</p>
-<p>Worst case scenario is multiple wires come off you have no idea where they should be soldered!</p>
-<p>If you check regularly then this won’t happen</p><h2><span class="step-num">STEP 9</span>Step 9: Drum Kit - Speaker and Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Drum Kit - Speaker and Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Drum Kit - Speaker and Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Drum Kit - Speaker and Switch image 3" loading="lazy"></div><p>Steps:</p>
+</ul>
+<p>NOTE: Be careful as the wires as fragile and can come away from the solder pads. If this happens, just re-solder the wire to the pad. Worst case scenario is multiple wires come off you have no idea where they should be soldered! If you check regularly then this won’t happen</p><h2><span class="step-num">STEP 9</span>Step 9: Drum Kit - Speaker and Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Drum Kit - Speaker and Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Drum Kit - Speaker and Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Drum Kit - Speaker and Switch image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First you need to de-solder the speaker from the drum kit and attach them to the same speaker that the module uses. Make sure that you have the polarities right.</li>
-</ol>
+</ul>
 <ol>
 <li>To enable you to record the drums directly into the module you will also need to connect the microphone to the speaker and a switch so you can turn this function off. See the diagram to see how to wire this up.</li>
-</ol>
+</ul>
 <ol>
 <li>To wire the on/off switch, and batteries you just solder one of the battery wires to the switch and then to the batteries. You can use the same batteries that the module uses.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Testing</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Testing image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Testing image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Testing image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Testing image 4" loading="lazy"></div><p>So now you’re up to the fun part – playing with the drum bending machine.</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Testing</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Testing image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Testing image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Testing image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Testing image 4" loading="lazy"></div><p>So now you’re up to the fun part – playing with the drum bending machine.</p>
 <p>Steps:</p>
 <ol>
 <li>Record some drum beats onto the recorder. You can also record sounds along with the drums if you want to.</li>
-</ol>
+</ul>
 <ol>
 <li>Hit the loop switch so the sound plays over and over and then start to play with the speed. You will get some really interesting sounds and beats coming from the little machine.</li>
-</ol>
+</ul>
 <ol>
 <li>Try recording directly into the module and play around with the sound that way too.</li>
-</ol>
+</ul>
 <p>I’m really happy with the way that the drum bending machine turned out. The enclosure definitely gives it some style and retro flair!</p>
 <p>There are probably a heap more sound effects that could be added so if you do make one and come up with some new ones, let me know in the comments.</p>
 </body>

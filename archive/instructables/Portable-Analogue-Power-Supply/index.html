@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -111,162 +128,148 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <span class="nav-title">Portable Analogue Power Supply</span>
 </nav>
 <h1>Portable Analogue Power Supply</h1><div class="source"><a href="https://www.instructables.com/Portable-Analogue-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I’m pretty simple when it comes to powering any of my projects. I usually just use the standard 1.5v battery in series or a 9v one depending on my power needs.</p>
-<p>Anyone who has made a powered project would have at some stage tested their project with a battery holder and a couple naked wires.</p>
-<p>Where it gets difficult is when you have multiple wires and not enough fingers to hold them.</p>
+<p>Anyone who has made a powered project would have at some stage tested their project with a battery holder and a couple naked wires. Where it gets difficult is when you have multiple wires and not enough fingers to hold them.</p>
 <p>So this got me thinking, why not just build a power supply that uses power increments of 3v, 4.5v 6v 9v and 12v. These are the values that I usually work to anyhow.</p>
 <p>To keep it simple, I decided to go old school and have an analogue rotary switch to change through the different voltage values.</p>
 <p>I also included a voltage and amp meter as well because why not</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Project Box – I used a Sealed ABS Enclosure - 171 x 121 x 55mm – eBay. You can use any box really, as long as all of the battery holders etc fiit inside.</li>
-</ol>
+</ul>
 <ol>
 <li>Rotary switch – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Knob – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Red LED Panel Volt Voltage Meter – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Toggle Switch - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Alligator Test Lead Clips – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Hook Clip Test Probe – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Banana Plug Multimeters Probe – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>A bunch of wire</li>
-</ol>
+</ul>
 <ol>
 <li>Banana Plug Socket Jack Connectors – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Battery holders – 2 X AA, 3 X AA, 4 X AA, 8 X AA and a 9v Battery holder - eBay</li>
-</ol>
+</ul>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron</li>
-</ol>
+</ul>
 <ol>
 <li>Pliers</li>
-</ol>
+</ul>
 <ol>
 <li>Screwdrivers and Philips head</li>
-</ol>
+</ul>
 <ol>
 <li>Dremel</li>
-</ol>
+</ul>
 <ol>
 <li>Drill</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding the Volt and Amp Meter</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding the Volt and Amp Meter image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding the Volt and Amp Meter image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding the Volt and Amp Meter image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding the Volt and Amp Meter image 4" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Volt and Amp Meter</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding the Volt and Amp Meter image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding the Volt and Amp Meter image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding the Volt and Amp Meter image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding the Volt and Amp Meter image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Work out where you want to locate the volt meter and mark the area to cut.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, remove the marked section with a dremel and file the edges smooth</li>
-</ol>
+</ul>
 <ol>
 <li>Last, pop into place the volt meter.</li>
-</ol>
-<p>NOTE: You may have noticed that I have 2 volt meters on the final power supply.</p>
-<p>Initially, the black volt and amp meter was only going to be used as a voltage multimeter but I worked out a way to use it for both measuring voltage and also as a display for the voltage output.</p>
-<p>Unfortunately I only worked this out after I added the 2nd one.</p>
-<p>Plus the smaller volt meter isn't strong enough to measure voltages of 3 and under so when I have the rotary knob turned to 3v, nothing comes up on the screen.</p>
-<p>As it's not necessary to add the smaller one, I'll just skip how to add this and show you how to wire everything up to 1 volt meter.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Banana Plug Sockets</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Banana Plug Sockets image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Banana Plug Sockets image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Banana Plug Sockets image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Banana Plug Sockets image 4" loading="lazy"></div><p>These Banana plugs are used to measure and check voltage on the volt and amp meter. This allows you to use it as a multimeter as well.</p>
+</ul>
+<p>NOTE: You may have noticed that I have 2 volt meters on the final power supply. Initially, the black volt and amp meter was only going to be used as a voltage multimeter but I worked out a way to use it for both measuring voltage and also as a display for the voltage output. Unfortunately I only worked this out after I added the 2nd one. Plus the smaller volt meter isn't strong enough to measure voltages of 3 and under so when I have the rotary knob turned to 3v, nothing comes up on the screen. As it's not necessary to add the smaller one, I'll just skip how to add this and show you how to wire everything up to 1 volt meter.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Banana Plug Sockets</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Banana Plug Sockets image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Banana Plug Sockets image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Banana Plug Sockets image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Banana Plug Sockets image 4" loading="lazy"></div><p>These Banana plugs are used to measure and check voltage on the volt and amp meter. This allows you to use it as a multimeter as well.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a couple of holes into the box</li>
-</ol>
+</ul>
 <ol>
 <li>Screw the female banana plugs into place</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Rotary Switch and Other Bits</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 5" loading="lazy"></div><p>As I mentioned in Step 3, there is no need for the 2nd volt meter so I will leave this step out.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Rotary Switch and Other Bits</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Rotary Switch and Other Bits image 5" loading="lazy"></div><p>As I mentioned in Step 3, there is no need for the 2nd volt meter so I will leave this step out.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a hole for the rotary switch and secure into the box</li>
-</ol>
+</ul>
 <ol>
 <li>Also add a couple more female banana plugs. these will be used as voltage outputs so you can supply voltage to your projects.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: How a Rotary Switch Works</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: How a Rotary Switch Works image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: How a Rotary Switch Works image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: How a Rotary Switch Works image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: How a Rotary Switch Works image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: How a Rotary Switch Works image 5" loading="lazy"></div><p>I thought it might be a good idea to show you how a rotary switch works.</p>
-<p>I had no idea myself until I got a couple and pulled them apart.</p>
-<p>This is literally just a switch but with 6 positions.</p>
-<p>The one I used is called a double pole switch which means the switch as 6 positions The great things about these switches is as you turn the knob you flick the switch to a different position.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: How a Rotary Switch Works</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: How a Rotary Switch Works image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: How a Rotary Switch Works image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: How a Rotary Switch Works image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: How a Rotary Switch Works image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: How a Rotary Switch Works image 5" loading="lazy"></div><p>I thought it might be a good idea to show you how a rotary switch works. I had no idea myself until I got a couple and pulled them apart. This is literally just a switch but with 6 positions. The one I used is called a double pole switch which means the switch as 6 positions The great things about these switches is as you turn the knob you flick the switch to a different position.</p>
 <p>This allows you to add different voltage values to each of the solder points. As I wanted one position to be off, I had 5 that I could use.</p>
-<p>It works by attaching the positive leg from one of the battery holders (lets say a 3v one) to the 2nd solder point on the switch.</p>
-<p>Next you solder the 4.5v battery holder positive wire to the next solder point and so on until you have attached each of the positive wires to the 5 solder points.</p>
-<p>Lastly, all you need to do is to attach a single wire to the solder point on the inside of the switch and then this gets attached to the banana plug.</p>
-<p>Simple.</p>
+<p>It works by attaching the positive leg from one of the battery holders (lets say a 3v one) to the 2nd solder point on the switch. Next you solder the 4.5v battery holder positive wire to the next solder point and so on until you have attached each of the positive wires to the 5 solder points. Lastly, all you need to do is to attach a single wire to the solder point on the inside of the switch and then this gets attached to the banana plug. Simple.</p>
 <p>I have done some schematics and have used actual images of the parts so it is super easy for you to do.</p><h2><span class="step-num">STEP 6</span>Step 6: Wiring Up</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Up image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Up image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Up image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Up image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring Up image 5" loading="lazy"></div><p>Steps:</p>
 <p>As it is very tricky to show you how to attach the wires by pictures, I created a schematic which will make it simple.</p>
 <p>Wiring the volt meter</p>
 <p>The volt meter will be used to display the voltage from the output and also as a voltage multimeter.</p>
 <ol>
 <li>First solder the black wire to the black banana plug that is next to the volt meter.</li>
-</ol>
+</ul>
 <ol>
 <li>The other 2 wires get attached to the switch. the image below has them soldered to the red banana plug but this isn't correct.</li>
-</ol>
+</ul>
 <p>Wiring the rotary switch</p>
 <ol>
 <li>The rotary switch as 6 positions. 5 of these positions are connected to the positive battery holder wires (the 6th is the off position). First, turn the switch fully to the left. Look at the side of the switch and yo will be able to see which solder point the switch is on. Turn the switch clockwise once. This is where you will solder on the positive wire from the 3v battery holder.</li>
-</ol>
+</ul>
 <ol>
 <li>Next solder the 4.5v positive wire to the next solder point on the rotary switch. Do this for all 5 positive wires on the battery holders.</li>
-</ol>
+</ul>
 <ol>
 <li>Next solder on a wire to the inside solder point on the switch and attach this to the red banana plug</li>
-</ol>
+</ul>
 <ol>
 <li>Gather up all of the negative wires from the battery holders and solder all of them together. Attach this to the black banana plug.</li>
-</ol>
+</ul>
 <p>Wiring the switch</p>
 <ol>
 <li>Solder the 2 wires from the volt meter to the middle solder point on the switch.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder a wire on each of the solder points on each end of the switch.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder these wires to each of the positive banana plugs.</li>
-</ol>
+</ul>
 <ol>
 <li>Secure the switch to the lid of the box.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: A Better Way?</h2><div class="step-images single"><img src="images/step07_01.jpg" alt="Step 7: A Better Way? image 1" loading="lazy"></div><p>After I made the Portable Power Supply I realized that there was a better way to wire everything up.</p>
-<p>In the actual build I used 4 female banana plugs, but you can make it with just 2 female banana plugs.</p>
-<p>It's simpler way to build the power supply and if I was going to build again I would do it this way.</p>
-<p>You use the switch to change between voltage output and using it as multimeter.</p><h2><span class="step-num">STEP 8</span>Step 8: Attaching the Batteries to the Box</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Attaching the Batteries to the Box image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Attaching the Batteries to the Box image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Attaching the Batteries to the Box image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Attaching the Batteries to the Box image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Attaching the Batteries to the Box image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Attaching the Batteries to the Box image 6" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: A Better Way?</h2><div class="step-images single"><img src="images/step07_01.jpg" alt="Step 7: A Better Way? image 1" loading="lazy"></div><p>After I made the Portable Power Supply I realized that there was a better way to wire everything up. In the actual build I used 4 female banana plugs, but you can make it with just 2 female banana plugs. It's simpler way to build the power supply and if I was going to build again I would do it this way. You use the switch to change between voltage output and using it as multimeter.</p><h2><span class="step-num">STEP 8</span>Step 8: Attaching the Batteries to the Box</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Attaching the Batteries to the Box image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Attaching the Batteries to the Box image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Attaching the Batteries to the Box image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Attaching the Batteries to the Box image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Attaching the Batteries to the Box image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Attaching the Batteries to the Box image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Add some Velcro to the bottom of the box</li>
-</ol>
+</ul>
 <ol>
 <li>Add the other side of the Velcro to each of the battery holders.</li>
-</ol>
+</ul>
 <ol>
 <li>Add batteries to each of the holders. You are going to need a lot of AA batteries - 17 in fact plus a 9v battery</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Close Up the Box</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Close Up the Box image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Close Up the Box image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Close Up the Box image 3" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Close Up the Box</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Close Up the Box image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Close Up the Box image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Close Up the Box image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Obviously test everything before you close up the box and make sure that the display and voltages are correct.</li>
-</ol>
+</ul>
 <ol>
 <li>Screw the lid into place.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Making Some Probes</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making Some Probes image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making Some Probes image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making Some Probes image 3" loading="lazy"></div><p>Now that you have completed the Portable Analogue Power Supply, you'll need some probes and connectors to attach to the banana plugs.</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Making Some Probes</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making Some Probes image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making Some Probes image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making Some Probes image 3" loading="lazy"></div><p>Now that you have completed the Portable Analogue Power Supply, you'll need some probes and connectors to attach to the banana plugs.</p>
 <p>Steps:</p>
 <ol>
 <li>I decided to use 3 different types of connectors, an alligator clip, probe and a probe with a hook on the end.</li>
-</ol>
+</ul>
 <ol>
 <li>If necessary, attach a male banana clip to the end of each of the connectors and probes.</li>
-</ol>
+</ul>
 <ol>
 <li>Test and make sure that they work.</li>
-</ol>
+</ul>
 <ol>
 <li>I also made some connectors for a breadboard as well.</li>
-</ol>
+</ul>
 </body>
 </html>

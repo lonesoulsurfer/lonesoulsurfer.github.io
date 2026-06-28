@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,25 +127,16 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Conway's Game of Life XL Screen - Raspberry Pi Project</span>
 </nav>
-<h1>Conway's Game of Life XL Screen - Raspberry Pi Project</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-XL-Screen-Raspberry-Pi-Projec/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I'm back again with a new and improved version of my Conway's Game of Life Coloured Version.</p>
-<p>This biggest and most obvious improvement is the size of the TFT screen.</p>
-<p>The Game of Life is meant to be played on a large field and this screen measures 3.5" compared to 2" which is what I used in the last coloured screen build.</p>
+<h1>Conway's Game of Life XL Screen - Raspberry Pi Project</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-XL-Screen-Raspberry-Pi-Projec/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I'm back again with a new and improved version of my Conway's Game of Life Coloured Version. This biggest and most obvious improvement is the size of the TFT screen. The Game of Life is meant to be played on a large field and this screen measures 3.5" compared to 2" which is what I used in the last coloured screen build.</p>
 <p>For those wondering what the hell is Conway's Game of Life - here's a description I used in my last build</p>
-<p>The Game of Life is a cellular automation created by mathematician John Conway.</p>
-<p>It's what is known as a zero player game, meaning that its evolution and game play is determined by its initial state and requires no further input.</p>
-<p>You interact with the Game of Life by creating an initial configuration and observing how it evolves.</p>
-<p>The game itself is based on a few, simple, mathematical rules consisting of a grid of cells that can either live, die or multiply.</p>
-<p>When the game is run, the cells can give the illusion that they are alive which is what makes this game so interesting.</p>
+<p>The Game of Life is a cellular automation created by mathematician John Conway. It's what is known as a zero player game, meaning that its evolution and game play is determined by its initial state and requires no further input. You interact with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+<p>The game itself is based on a few, simple, mathematical rules consisting of a grid of cells that can either live, die or multiply. When the game is run, the cells can give the illusion that they are alive which is what makes this game so interesting.</p>
 <p>So what do you get in this build?</p>
 <p>My Game of Life Colour Arcade is a feature-rich cellular automaton and arcade gaming console built on a Raspberry Pi Pico (RP2040) with a 3.5" 480×320 colour TFT display and six buttons.</p>
-<p>At its core is Conway's Game of Life (GOL), but the project goes far beyond the classic GOL— it includes over a dozen simulation modes and 13 preset patterns, from iconic spaceships like the Coe Ship and MWSS to methuselahs like Acorn and R-Pentomino, glider guns, and oscillators.</p>
-<p>A custom edit mode lets you draw your own starting patterns cell by cell.</p>
-<p>Beyond Conway's rules, the device runs six alternative cellular automata: Day & Night, Seeds, Brian's Brain, Cyclic CA, Wireworld, and Langton's Ant, as well as Wolfram's 1D elementary automata with all 255 rules.</p>
-<p>A GOL Rule Explorer lets you define custom birth and survival conditions and watch them evolve in real time.</p>
+<p>At its core is Conway's Game of Life (GOL), but the project goes far beyond the classic GOL— it includes over a dozen simulation modes and 13 preset patterns, from iconic spaceships like the Coe Ship and MWSS to methuselahs like Acorn and R-Pentomino, glider guns, and oscillators. A custom edit mode lets you draw your own starting patterns cell by cell.</p>
+<p>Beyond Conway's rules, the device runs six alternative cellular automata: Day & Night, Seeds, Brian's Brain, Cyclic CA, Wireworld, and Langton's Ant, as well as Wolfram's 1D elementary automata with all 255 rules. A GOL Rule Explorer lets you define custom birth and survival conditions and watch them evolve in real time.</p>
 <p>Visual features include age-based colour gradients, soft fade trails, grid overlay, a population counter, and three cell sizes. Settings like brightness, speed, and sound are all adjustable in-game.</p>
-<p>On top of all the simulations, the device doubles as a mini arcade cabinet with three games — a Star Wars game of my own design, Breakout Beyond, and Gyruss — all navigated from a clean scrolling menu system.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"></div><p>I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc.</p>
-<p>Unlike the last build, I have used more through hole components.</p>
-<p>Firstly, to make it easier to build, and second, I have included a back to this now which covers the solder joints.</p>
+<p>On top of all the simulations, the device doubles as a mini arcade cabinet with three games — a Star Wars game of my own design, Breakout Beyond, and Gyruss — all navigated from a clean scrolling menu system.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"></div><p>I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc. Unlike the last build, I have used more through hole components. Firstly, to make it easier to build, and second, I have included a back to this now which covers the solder joints.</p>
 <p>The PCB and front panel information can be found on the next step</p>
 <p>PARTS:</p>
 <p>Raspberry Pi Pico Zero X 1 - Ali Express</p>
@@ -142,15 +150,12 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>Male Pin Headers - Ali Express</p>
 <p>Low profile female pin headers - Ali Express</p>
 <p>M2 Screws - Ali Express</p>
-<p>M2 Spacers - Ali Express</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front + Back Panels Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 4" loading="lazy"><img src="images/step02_05.png" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with basic soldering skills can make it.</p>
-<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!).</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
-<p>I use JLCPCB (not affiliated) to get this done.</p>
-<p>The front and back panel are actually just PCB's without any components included!</p>
-<p>The design on the panels is done in a program called Inkscape (available free) and the actual panel itself (the outline, drilled holes etc) is done in Fusion 360 (also free for now...)</p>
-<p>The files that you need to build your own Game of Life can be found in my GitHub page.</p>
-<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Code etc.</p>
-<p>Download all the files to your computer</p>
+<p>M2 Spacers - Ali Express</p>
+<ul>
+<li><a href="pdfs/Parts List.pdf">Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/Parts List.pdf" target="_blank">&#8675; Parts List</a><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front + Back Panels Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 4" loading="lazy"><img src="images/step02_05.png" alt="Step 1: Getting the PCB & Front + Back Panels Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!).</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front and back panel are actually just PCB's without any components included! The design on the panels is done in a program called Inkscape (available free) and the actual panel itself (the outline, drilled holes etc) is done in Fusion 360 (also free for now...)</p>
+<p>The files that you need to build your own Game of Life can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code etc. Download all the files to your computer</p>
 <p>STEPS:</p>
 <ul>
 <li>Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice such as JLCPCB who will print the PCB and front panel for you.</li>
@@ -162,11 +167,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Moved components where possible, away from the edge of the PCB. I thought that this might help if someone wants to look at 3D print a case. Switches etc all remain easily accessable</li>
 <li>I changed the orientation of the charging module</li>
 <li>Moved the slide switch to isolate the charging module to the side of the panel</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Screen to the Front Panel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Screen to the Front Panel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Screen to the Front Panel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Screen to the Front Panel image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Screen to the Front Panel image 4" loading="lazy"><img src="images/step04_05.gif" alt="Step 3: Adding the Screen to the Front Panel image 5" loading="lazy"><img src="images/step04_06.gif" alt="Step 3: Adding the Screen to the Front Panel image 6" loading="lazy"><img src="images/step04_07.gif" alt="Step 3: Adding the Screen to the Front Panel image 7" loading="lazy"><img src="images/step04_08.gif" alt="Step 3: Adding the Screen to the Front Panel image 8" loading="lazy"><img src="images/step04_09.gif" alt="Step 3: Adding the Screen to the Front Panel image 9" loading="lazy"><img src="images/step04_10.gif" alt="Step 3: Adding the Screen to the Front Panel image 10" loading="lazy"><img src="images/step04_11.gif" alt="Step 3: Adding the Screen to the Front Panel image 11" loading="lazy"><img src="images/step04_12.gif" alt="Step 3: Adding the Screen to the Front Panel image 12" loading="lazy"></div><p>The following step ensures that you can remove the front panel easily and without having to de-solder anything.</p>
-<p>This is important, especially for maintenance, battery changes, troubleshooting etc.</p>
-<p>You may notice that in the images, the screws I used are quite long.</p>
-<p>I changed these out to shorter ones that just managed to fit.</p>
-<p>You can use long ones but you will need to trim them at some stage.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Screen to the Front Panel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Screen to the Front Panel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Screen to the Front Panel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Screen to the Front Panel image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Screen to the Front Panel image 4" loading="lazy"><img src="images/step04_05.gif" alt="Step 3: Adding the Screen to the Front Panel image 5" loading="lazy"><img src="images/step04_06.gif" alt="Step 3: Adding the Screen to the Front Panel image 6" loading="lazy"><img src="images/step04_07.gif" alt="Step 3: Adding the Screen to the Front Panel image 7" loading="lazy"><img src="images/step04_08.gif" alt="Step 3: Adding the Screen to the Front Panel image 8" loading="lazy"><img src="images/step04_09.gif" alt="Step 3: Adding the Screen to the Front Panel image 9" loading="lazy"><img src="images/step04_10.gif" alt="Step 3: Adding the Screen to the Front Panel image 10" loading="lazy"><img src="images/step04_11.gif" alt="Step 3: Adding the Screen to the Front Panel image 11" loading="lazy"><img src="images/step04_12.gif" alt="Step 3: Adding the Screen to the Front Panel image 12" loading="lazy"></div><p>The following step ensures that you can remove the front panel easily and without having to de-solder anything. This is important, especially for maintenance, battery changes, troubleshooting etc. You may notice that in the images, the screws I used are quite long. I changed these out to shorter ones that just managed to fit. You can use long ones but you will need to trim them at some stage.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, trim the tops of the header pins where they are soldered. You just want to remove a small bit of the top of the header pin so they won’t interfere with the front panel.</li>
@@ -188,8 +189,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>There is also a SMD momentary switch that is included to reset the Pi. you don't really have to include this if you don't want to - up to you.</li>
 <li>Place the buzzer into the holes in the PCB, making sure that it is orientated right ( there is a plus symbol on top of the buzzer which needs to be on the left when soldering it into place.</li>
 <li>Do a test fit here as well just to make sure everything is going right.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Charging/boost Module</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Charging/boost Module image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Charging/boost Module image 2" loading="lazy"><img src="images/step07_03.gif" alt="Step 6: Adding the Charging/boost Module image 3" loading="lazy"><img src="images/step07_04.gif" alt="Step 6: Adding the Charging/boost Module image 4" loading="lazy"></div><p>The charging and voltage booster module is a great little board.</p>
-<p>It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Charging/boost Module</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Charging/boost Module image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Charging/boost Module image 2" loading="lazy"><img src="images/step07_03.gif" alt="Step 6: Adding the Charging/boost Module image 3" loading="lazy"><img src="images/step07_04.gif" alt="Step 6: Adding the Charging/boost Module image 4" loading="lazy"></div><p>The charging and voltage booster module is a great little board. It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, lets set the output voltage to 5V from the Charging & voltage booster module. Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)</li>
@@ -213,21 +213,14 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Once the screen is in place, do a final check of everything before soldering the female header to the PCB.</li>
 <li>Now you can solder the legs into place.</li>
 <li>Before you start to think about adding the bottom panel and adding nuts to the screws, lets go and add the code to the Pi</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Back Panel</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding the Back Panel image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding the Back Panel image 2" loading="lazy"><img src="images/step10_03.gif" alt="Step 9: Adding the Back Panel image 3" loading="lazy"></div><p>In this build, I added a back panel.</p>
-<p>So in total there is a front panel, PCB and back panel.</p>
-<p>I did this for a couple reasons. first, it ensures that non of the solder points are being touched with your fingers which can cause shorts, it is more comfortable to hold and I wanted to make this easier to build then the version beforehand which had a lot of SMD parts.</p>
-<p>The only concern is the additional cost of getting the back panel printed.</p>
-<p>However - I think it is worth it.</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Back Panel</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding the Back Panel image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding the Back Panel image 2" loading="lazy"><img src="images/step10_03.gif" alt="Step 9: Adding the Back Panel image 3" loading="lazy"></div><p>In this build, I added a back panel. So in total there is a front panel, PCB and back panel. I did this for a couple reasons. first, it ensures that non of the solder points are being touched with your fingers which can cause shorts, it is more comfortable to hold and I wanted to make this easier to build then the version beforehand which had a lot of SMD parts. The only concern is the additional cost of getting the back panel printed. However - I think it is worth it.</p>
 <p>STEPS:</p>
 <ul>
 <li>The screws used should just have enough thread left after you add the back panel to attached a nut</li>
 <li>Carefully screw a nut to each of the ends of the screws. I found that 2 of the screws were just too short so I didn't bother adding a nut to these. The back cover is securely on so it won't matter.</li>
 <li>The other option is to add longer screws and then cut them to size.</li>
 </ul><h2><span class="step-num">STEP 10</span>Step 10: How to Upload to Raspberry Pi Zero</h2><div class="step-images single"><img src="images/step11_01.png" alt="Step 10: How to Upload to Raspberry Pi Zero image 1" loading="lazy"></div><p>Download the GitHub Files.</p>
-<p>If you haven't installed Arduino on your computer, then this is the first thing you should do.</p>
-<p>Just follow the below instructions which are straight forward and you wont have any issues with loading the code to the Raspberry Pi Zero.</p>
-<p>If you find that you are having issues, then ask Claude (AI) for help.</p>
-<p>This is what I do when I get stuck and it always manages to sort it out for me!</p>
+<p>If you haven't installed Arduino on your computer, then this is the first thing you should do. Just follow the below instructions which are straight forward and you wont have any issues with loading the code to the Raspberry Pi Zero. If you find that you are having issues, then ask Claude (AI) for help. This is what I do when I get stuck and it always manages to sort it out for me!</p>
 <p>STEPS:</p>
 <ul>
 <li>Install Arduino IDE. Download from https://www.arduino.cc/en/software</li>
@@ -285,10 +278,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Sound settings (enabled/disabled, three volume levels) are also accessible here and saved to EEPROM.</li>
 </ul>
 <p><strong>Hardware & Setup</strong></p>
-<p>The device runs on a Raspberry Pi Pico / RP2040 connected to a 3.5" ST7796S/ST7796U TFT display (480×320 pixels) via SPI.</p>
-<p>Six buttons handle all navigation and gameplay — Up, Down, Left, Right, SET (A), and B.</p>
-<p>A buzzer on GPIO 26 provides sound effects and music.</p>
-<p>Display brightness is PWM-controlled, and all settings (sound, volume, brightness) are saved to EEPROM so they persist between power cycles.</p>
+<p>The device runs on a Raspberry Pi Pico / RP2040 connected to a 3.5" ST7796S/ST7796U TFT display (480×320 pixels) via SPI. Six buttons handle all navigation and gameplay — Up, Down, Left, Right, SET (A), and B. A buzzer on GPIO 26 provides sound effects and music. Display brightness is PWM-controlled, and all settings (sound, volume, brightness) are saved to EEPROM so they persist between power cycles.</p>
 <p><strong>Main Menu</strong></p>
 <p>On startup the device boots directly into the main scrolling menu with eight sections:</p>
 <ul>
@@ -304,9 +294,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>Navigate with Up/Down, select with SET, go back with B.</p>
 <p><strong>Conway's Life Modes</strong></p>
 <p><strong>Presets (13 patterns)</strong></p>
-<p>Each preset loads a famous Life pattern centred on screen.</p>
-<p>Press SET once to open it, then A to start the simulation.</p>
-<p>While paused you can press Left to change cell size (the pattern rescales and redraws) or Right to reset it back to its starting state.</p>
+<p>Each preset loads a famous Life pattern centred on screen. Press SET once to open it, then A to start the simulation. While paused you can press Left to change cell size (the pattern rescales and redraws) or Right to reset it back to its starting state.</p>
 <p>1 - Coe Ship. Puffer-type spaceship that leaves debris trails</p>
 <p>2 - Gosper Gun. The first glider gun ever discovered — period 30</p>
 <p>3 - Diamond. Symmetric expanding diamond pattern</p>
@@ -325,16 +313,9 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p><strong>Symmetric</strong></p>
 <p>Generates a random pattern with one of three symmetry types — vertical, horizontal, or rotational — in small, medium, or large sizes. Good for producing interesting structured chaos.</p>
 <p><strong>Custom</strong></p>
-<p>Puts the board into edit mode with a blinking red crosshair cursor.</p>
-<p>Move the cursor with Up/Down/Left/Right.</p>
-<p>Press SET to toggle a cell on or off.</p>
-<p>When happy with your pattern, hold SET for about a second to start the simulation.</p>
-<p>Hold SET again to return to edit mode.</p>
-<p>Press B to go back to the menu.</p>
+<p>Puts the board into edit mode with a blinking red crosshair cursor. Move the cursor with Up/Down/Left/Right. Press SET to toggle a cell on or off. When happy with your pattern, hold SET for about a second to start the simulation. Hold SET again to return to edit mode. Press B to go back to the menu.</p>
 <p><strong>Rule Explorer</strong></p>
-<p>Lets you define your own cellular automaton by setting custom Birth (B) and Survival (S) rules — the same notation used by Life (B3/S23).</p>
-<p>Choose from 12 built-in rule presets or enter your own bit-by-bit.</p>
-<p>The simulation runs with your rules applied to a random starting board.</p>
+<p>Lets you define your own cellular automaton by setting custom Birth (B) and Survival (S) rules — the same notation used by Life (B3/S23). Choose from 12 built-in rule presets or enter your own bit-by-bit. The simulation runs with your rules applied to a random starting board.</p>
 <p>Included preset rules:</p>
 <ul>
 <li>High Life, 34 Life, Diamoeba, Replicator, Long Life, Maze, Coral, 2x2, Dry Life, Amoeba, Coagulate, Gnarl</li>
@@ -347,28 +328,17 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p><strong>Seeds (B2/S)</strong></p>
 <p>Every live cell dies every generation but any dead cell with exactly two live neighbours is born. Creates explosive, constantly moving patterns that never stabilise.</p>
 <p><strong>Cyclic CA</strong></p>
-<p>A multi-state automaton where cells cycle through states 0→1→2→…→N→0.</p>
-<p>Cells advance only when they have a neighbour in the next state.</p>
-<p>Produces stunning rotating spiral waves.</p>
-<p>Choose small, medium, or large seedings.</p>
+<p>A multi-state automaton where cells cycle through states 0→1→2→…→N→0. Cells advance only when they have a neighbour in the next state. Produces stunning rotating spiral waves. Choose small, medium, or large seedings.</p>
 <p><strong>Wireworld</strong></p>
-<p>A four-state automaton (Empty, Wire, Electron Head, Electron Tail) that models digital logic circuits.</p>
-<p>Electrons travel along wires, interact at junctions, and can form AND gates and clocks.</p>
-<p>The built-in demo includes a working circuit layout.</p>
+<p>A four-state automaton (Empty, Wire, Electron Head, Electron Tail) that models digital logic circuits. Electrons travel along wires, interact at junctions, and can form AND gates and clocks. The built-in demo includes a working circuit layout.</p>
 <p><strong>Langton's Ant</strong></p>
-<p>A single ant on a grid follows two rules: turn right on a white cell (flip it black), turn left on a black cell (flip it white).</p>
-<p>After ~10,000 chaotic steps it spontaneously builds a repeating diagonal "highway." Toggle age-colour mode with Up+Down to see a heat map of how often each cell has been visited.</p>
+<p>A single ant on a grid follows two rules: turn right on a white cell (flip it black), turn left on a black cell (flip it white). After ~10,000 chaotic steps it spontaneously builds a repeating diagonal "highway." Toggle age-colour mode with Up+Down to see a heat map of how often each cell has been visited.</p>
 <p><strong>Wolfram 1D Automata</strong></p>
-<p>One-dimensional elementary cellular automata — a single row of cells evolves downward according to one of 255 possible rules.</p>
-<p>Each rule produces a unique pattern, from pure chaos (Rule 30) to the Sierpinski triangle (Rule 90) to a Turing-complete system (Rule 110).</p>
-<p>Seven named presets are provided or you can enter any rule number direct</p>
+<p>One-dimensional elementary cellular automata — a single row of cells evolves downward according to one of 255 possible rules. Each rule produces a unique pattern, from pure chaos (Rule 30) to the Sierpinski triangle (Rule 90) to a Turing-complete system (Rule 110). Seven named presets are provided or you can enter any rule number direct</p>
 <p><strong>Arcade Games</strong></p>
 <p>Accessed from main menu item 8. Three games are available. In all three, press A + B together at any time to exit directly back to the main menu.</p>
 <p><strong>Star Wars</strong></p>
-<p>A first-person Star Wars game inspired by the 80's arcade game.</p>
-<p>Progress through multiple stages: Womp Rat Training, Space Battle, Death Star Approach, Surface Run, and the Exhaust Port shot.</p>
-<p>Features full Star Wars music (Main Theme, Binary Sunset, Imperial March, Victory Fanfare), sound effects, TIE fighters, laser cannons, proton torpedoes, and a dramatic finale sequence.</p>
-<p>Press B on the title screen to exit.</p>
+<p>A first-person Star Wars game inspired by the 80's arcade game. Progress through multiple stages: Womp Rat Training, Space Battle, Death Star Approach, Surface Run, and the Exhaust Port shot. Features full Star Wars music (Main Theme, Binary Sunset, Imperial March, Victory Fanfare), sound effects, TIE fighters, laser cannons, proton torpedoes, and a dramatic finale sequence. Press B on the title screen to exit.</p>
 <p>Controls:</p>
 <ul>
 <li>Up/Down/Left/Right — move crosshair / pilot ship</li>
@@ -377,9 +347,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Up + Down - in start up screen will take you into a games menu where you can play any of the games or watch the cinematic shorts</li>
 </ul>
 <p><strong>Breakout Beyond</strong></p>
-<p>A feature-rich Breakout variant with a neon aesthetic.</p>
-<p>The paddle sits at the bottom, bricks at the top.</p>
-<p>Features include combo multipliers, spin physics, multiball, shield power-ups, bomb bricks, and hard bricks across 20 levels.</p>
+<p>A feature-rich Breakout variant with a neon aesthetic. The paddle sits at the bottom, bricks at the top. Features include combo multipliers, spin physics, multiball, shield power-ups, bomb bricks, and hard bricks across 20 levels.</p>
 <p>Controls:</p>
 <ul>
 <li>Left/Right — move paddle</li>
@@ -395,6 +363,8 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>SET or B — fire</li>
 <li>Up (hold) — smart bomb</li>
 <li>A + B (hold) — exit to main menu</li>
-</ul>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Parts List.pdf">Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/Parts List.pdf" target="_blank">&#8675; Parts List</a>
 </body>
 </html>

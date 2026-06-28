@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -111,8 +128,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <span class="nav-title">Drum Synth (DS-8) With PS2 Drum Pad</span>
 </nav>
 <h1>Drum Synth (DS-8) With PS2 Drum Pad</h1><div class="source"><a href="https://www.instructables.com/Drum-Synth-DS-8-With-PS2-Drum-Pad/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I first come across the DS-8 Drum synth whist searching for a drum circuit I could build. There isn't a lot out there and this particular one caught my attention.</p>
-<p>It was originally designed by Coron in the 1980’s for drummers and percussionists to add synth capabilities to their sets.</p>
-<p>My circuit is based on the Synthrotek schematic which has a few added modifications to the original to expand on it's sound.</p>
+<p>It was originally designed by Coron in the 1980’s for drummers and percussionists to add synth capabilities to their sets. My circuit is based on the Synthrotek schematic which has a few added modifications to the original to expand on it's sound.</p>
 <p>You can also use it as a awesome dub siren with the momentary switch included on the board.</p>
 <p>The below is taken directly from the Synthrotek website and explains exactly why this is such a versatile and fun to play with synth:</p>
 <ul>
@@ -125,301 +141,287 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Multiple controls to tailor your sound! Sensitivity sets your input threshold to adjust how hard you need to hit or the minimum voltage level to trigger the circuit. The length of the trigger pulse can be varied from staccato to a lengthy drop-off with the Decay control. Sweep adjusts the variation of the output frequency. The analog LFO (low frequency oscillator) circuitry is controlled by the Mode and Rate. VCO (voltage controlled oscillator) sets a base level frequency to limit your frequency range. Dirty up your signal with the Pan control, which varies the amount of white noise you’ll need for snare hits or deep tom rumble. Level controls the volume of the final VCA (voltage controlled amplifier) portion of your circuit.</li>
 </ul>
 <p>As the board is no longer available to buy so I designed and printed my own and have provided the gerber files. All you need to do is to send them to a PCB manufacturer and get your own printed.</p>
-<p>I also decided to start to design my own front panels.</p>
-<p>To do this I downloaded Inkscape and taught myself how to use it.</p>
-<p>It's actually a lot easier then I thought it would be and I will share some tips on how you can also do your own.</p>
-<p>I've also provided the panel image as well so if you can't be bothered, then just use mine.</p><h2><span class="step-num">STEP 1</span>Step 1: DS-8 Drum Synth - Parts List</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: DS-8 Drum Synth - Parts List image 1" loading="lazy"></div><p>I've broken up the parts list so it's a little easier to read. First let's go through what you'll need for the DS-8</p>
-<p>You can find the gerber files for the board in my Google drive here.</p>
-<p>I have also provided the schematic in the same folder along with a complete parts list.</p>
-<p>The schematic, and board were designed in Eagle so knock yourself out and have a play with it.</p>
+<p>I also decided to start to design my own front panels. To do this I downloaded Inkscape and taught myself how to use it. It's actually a lot easier then I thought it would be and I will share some tips on how you can also do your own. I've also provided the panel image as well so if you can't be bothered, then just use mine.</p><h2><span class="step-num">STEP 1</span>Step 1: DS-8 Drum Synth - Parts List</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: DS-8 Drum Synth - Parts List image 1" loading="lazy"></div><p>I've broken up the parts list so it's a little easier to read. First let's go through what you'll need for the DS-8</p>
+<p>You can find the gerber files for the board in my Google drive here. I have also provided the schematic in the same folder along with a complete parts list. The schematic, and board were designed in Eagle so knock yourself out and have a play with it.</p>
 <p>Parts</p>
 <ol>
 <li>I have added the parts in the attached PDF. You can also find an excel spreadsheet in the Google drive link above.</li>
-</ol>
+</ul>
 <ol>
 <li>All resistors are 1%</li>
-</ol>
+</ul>
 <ol>
 <li>The non-polarized capacitors are either polypropylene film type or polyester type. There is a 22p which is a ceramic</li>
-</ol>
+</ul>
 <p>Board</p>
 <ol>
 <li>The board I initially designed so the pots could be soldered directly onto it. You can still do this if you want to but I decided to wire them all up. It's a bit of a pain but It allowed me to design the front panel the way I wanted it.</li>
-</ol>
+</ul>
 <ol>
 <li>Next to each Pot section on the board there is a "F" or "B" next to it. That means the pot is either solder to the top of the board of the bottom. I did this to allow more space between the pots.</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: All the Other Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: All the Other Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: All the Other Parts image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: All the Other Parts image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: All the Other Parts image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: All the Other Parts image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: All the Other Parts image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: All the Other Parts image 7" loading="lazy"></div><p>Parts - Electrical</p>
+</ul>
+<ul>
+<li><a href="pdfs/DS-8 Parts List.pdf">DS-8 Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/DS-8 Parts List.pdf" target="_blank">&#8675; DS-8 Parts List</a><h2><span class="step-num">STEP 2</span>Step 2: All the Other Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: All the Other Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: All the Other Parts image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: All the Other Parts image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: All the Other Parts image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: All the Other Parts image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: All the Other Parts image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: All the Other Parts image 7" loading="lazy"></div><p>Parts - Electrical</p>
 <ol>
 <li>Reverb/Echo Board - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Wire. I used jumper wires - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>2 X SPDT switches - Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>Momentary Switch - Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>Battery. I used a mobile phone battery -eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Charging and voltage regulator module - Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>Micro USB Module - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>4 X Audio sockets - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Male right angle header pins - eBay</li>
-</ol>
+</ul>
 <p>Other Parts</p>
 <ol>
 <li>PS2 Drum set. You don't have to use one of these, you could just make your own</li>
-</ol>
+</ul>
 <ol>
 <li>Hardwood edging 40mm x 8mm - your local hardware store will have this. You'll need about a meter length.</li>
-</ol>
+</ul>
 <ol>
 <li>Ply wood for base - Hardware store</li>
-</ol>
+</ul>
 <ol>
 <li>Water Decal - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Opal Acrylic - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Pot knobs - Ali Express</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Schematic, Board and Gerber Files</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Schematic, Board and Gerber Files image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Schematic, Board and Gerber Files image 2" loading="lazy"></div><p>Here's the link to my Google drive with all of the files.</p>
-<p>Included is the parts list, Eagle schematic and board along with the Gerber files.</p>
-<p>The gerber zip folder can be sent to a PCB manufacturer and they will print the board up for you</p><h2><span class="step-num">STEP 4</span>Step 4: DS-8 Board - Soldering on the Components</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 7" loading="lazy"></div><p>There's no two ways about it, you are going to have to do a lot of soldering. I actually find it quite relaxing so grab yourself a drink, get the soldering iron hot and prepare to solder.</p>
-<p>I've soldered a few of these together now and I can definitely confirm that the board works.</p>
-<p>If you build the board and have an issue, then you'll need to troubleshoot to try and find where the issues lies.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Schematic, Board and Gerber Files</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Schematic, Board and Gerber Files image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Schematic, Board and Gerber Files image 2" loading="lazy"></div><p>Here's the link to my Google drive with all of the files. Included is the parts list, Eagle schematic and board along with the Gerber files. The gerber zip folder can be sent to a PCB manufacturer and they will print the board up for you</p>
+<ul>
+<li><a href="pdfs/DS8 - Pots Soldered on Board.pdf">DS8 - Pots Soldered on Board</a></li>
+</ul><a class="pdf-download" href="pdfs/DS8 - Pots Soldered on Board.pdf" target="_blank">&#8675; DS8 - Pots Soldered on Board</a><h2><span class="step-num">STEP 4</span>Step 4: DS-8 Board - Soldering on the Components</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: DS-8 Board - Soldering on the Components image 7" loading="lazy"></div><p>There's no two ways about it, you are going to have to do a lot of soldering. I actually find it quite relaxing so grab yourself a drink, get the soldering iron hot and prepare to solder.</p>
+<p>I've soldered a few of these together now and I can definitely confirm that the board works. If you build the board and have an issue, then you'll need to troubleshoot to try and find where the issues lies.</p>
 <p>Steps:</p>
 <ol>
 <li>I always start with the resistors. You can put several in at a time and soldered them to the board. It also means that the board will sit flat whist you are soldering which makes things easy. Take your time, check your values and solder joints and make sure you don't miss any.</li>
-</ol>
+</ul>
 <ol>
 <li>Next I usually start with the IC sockets. They are pretty low as well</li>
-</ol>
+</ul>
 <ol>
 <li>Then it's just a matter of working through the rest of the parts. I know this is self evident but always double check the polarity of the caps and take your time to ensure you are putting the right parts in the right spot.</li>
-</ol>
+</ul>
 <ol>
 <li>You'll notice that I also soldering on the pots to the board. Well I had to de-solder these in the end as I wanted to have a different layout then I planned on. You could easily use the board though in a eurorack as a module if you wanted to with the pot design I did.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, I designed the board to fit 9mm pots. However, it seems that it's very hard to get 1M 9mm and impossible to get 2M ones. Just another reason why I also decided not to mount the pots onto the board.</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have done, give it a test to make sure everything works. It does, good!</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: PS2 Drum Set - Removing a Drum</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 5" loading="lazy"></div><p>The first thing you'll need to do is to remove one of the 4 drums from the PS2 drum set.</p>
-<p>I'm going to use the other 3 in a mega DS-8 project at some stage so I made sure i didn't damage it when I removed one of the pads</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: PS2 Drum Set - Removing a Drum</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: PS2 Drum Set - Removing a Drum image 5" loading="lazy"></div><p>The first thing you'll need to do is to remove one of the 4 drums from the PS2 drum set. I'm going to use the other 3 in a mega DS-8 project at some stage so I made sure i didn't damage it when I removed one of the pads</p>
 <p>Steps:</p>
 <ol>
 <li>The 2 end drums are connected by a plastic joiner You'll first need to cut through this with an angle grinder or something similar</li>
-</ol>
+</ul>
 <ol>
 <li>make sure that you leave more of the plastic joiner section on the drum that you are using for the DS-8. You can use this section later to attach the synth to</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have made the cut you'll then need to clean it up. I used a file and a exacto knife to do this. I also used a belt sander to straighten up the cuts and make it flush. This will allow me to put the case of the synth against it and connect via a couple of screws.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: PS2 Drum Set - Opening It Up</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 4" loading="lazy"></div><p>wouldn't usually add a whole step on how to pull apart something but the drum isn't easy to pull apart.</p>
-<p>Correction, it is easy to pull apart, I just couldn't work out how to do it.</p>
-<p>I did a couple of searches and worked it out but you won't have to because of this step.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: PS2 Drum Set - Opening It Up</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: PS2 Drum Set - Opening It Up image 4" loading="lazy"></div><p>wouldn't usually add a whole step on how to pull apart something but the drum isn't easy to pull apart. Correction, it is easy to pull apart, I just couldn't work out how to do it. I did a couple of searches and worked it out but you won't have to because of this step.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing you need to do is to pull off the drum head. To do this just put your hand under the drum head and lift up.</li>
-</ol>
+</ul>
 <ol>
 <li>The head is held into place by 4 rubber stoppers. If you add some pressure they will pop out of the brackets they are held in place with. Move your hand around the drum head after each one is released - there are 4 in total.</li>
-</ol>
+</ul>
 <ol>
 <li>Once they are off, you then need to remove the top plate which is the section with the foam attached. Initially I couldn't work out how until I saw a screw poking it's head out from behind one of the foam pads.</li>
-</ol>
+</ul>
 <ol>
 <li>Lift up the end of the foam and you'll see a screw. There are 4 in total which need to be removed. Once these are taken out you can remove the top plate. That's all you need to do to take the drums apart and get to the wiring.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: PS2 Drum Set - Wiring and Modding</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 6" loading="lazy"></div><p>I guess I should have told you why you need to do this!</p>
-<p>Well the aim is to use the piezo electric speakers inside as a trigger for each of the drum circuits.</p>
-<p>This will allow you to play the drums with the synth!</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: PS2 Drum Set - Wiring and Modding</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: PS2 Drum Set - Wiring and Modding image 6" loading="lazy"></div><p>I guess I should have told you why you need to do this! Well the aim is to use the piezo electric speakers inside as a trigger for each of the drum circuits. This will allow you to play the drums with the synth!</p>
 <p>Steps:</p>
 <ol>
 <li>Inside each of the drums is a piezo which is wired up to a small circuit board. Remove the black plastic part that is holding the piezo in place</li>
-</ol>
+</ul>
 <ol>
 <li>Un-screw the small circuit board which the wires from the piezo are connected to. The board is just a jumper board and you'll be able to connect wires to it easily</li>
-</ol>
+</ul>
 <ol>
 <li>You should now be able to remove the piezo and board away from the drum set.</li>
-</ol>
+</ul>
 <ol>
 <li>You now need to extend the wires on the jumper board. These will be connected a little later to an 3.5mm audio sockets. de-solder the old ones and add some new, longer wires to each of them.</li>
-</ol>
+</ul>
 <ol>
 <li>You can now put these aside and start to add the audio sockets to each of the drums. The sockets will allow you to connect the trigger output from the drum circuit directly to each drum</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: PS2 Drum Set - Adding an Audio Socket</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 4" loading="lazy"></div><p>The last thing you need to do before closing up the drum is to add 3.5mm mono jack sockets to the body of the drums. This will allow you to connect the piezo to the trigger on the drum synth .</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: PS2 Drum Set - Adding an Audio Socket</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: PS2 Drum Set - Adding an Audio Socket image 4" loading="lazy"></div><p>The last thing you need to do before closing up the drum is to add 3.5mm mono jack sockets to the body of the drums. This will allow you to connect the piezo to the trigger on the drum synth .</p>
 <p>Steps:</p>
 <ol>
 <li>Find a good location on the front of the drum to add the socket.</li>
-</ol>
+</ul>
 <ol>
 <li>You may have to remove a little of the plastic on the top plate in order to secure the socket into the side of the drum. I used a demel to do this.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, drill a hole into the side of the drum and secure the socket into place</li>
-</ol>
+</ul>
 <ol>
 <li>Solder the wires from the piezo to the socket solder points. There is no issues with polarity, just make sure you solder one wire to the tip and the other to the sleeve solder points on the socket</li>
-</ol>
+</ul>
 <ol>
 <li>Do the same for the other 3 drums and then close everything up 6. That is pretty much it for the drum mod. You will now be able to use the pads with the DS 8 drum synth</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Designing the Front Panel</h2><div class="step-images single"><img src="images/step09_01.jpg" alt="Step 9: Designing the Front Panel image 1" loading="lazy"></div><p>To design the panels I used Inkscape, a vector graphics editor which you can download for free!</p>
-<p>I've only been playing around with it for a few weeks and found it easy to pick up.</p>
-<p>There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Designing the Front Panel</h2><div class="step-images single"><img src="images/step09_01.jpg" alt="Step 9: Designing the Front Panel image 1" loading="lazy"></div><p>To design the panels I used Inkscape, a vector graphics editor which you can download for free! I've only been playing around with it for a few weeks and found it easy to pick up. There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.</p>
 <p>I did a couple video's on how to design knob scales and also make a front panel which I have included above.</p>
 <p>There is even an extension that you can download so you can design knob scales easily and simply which you can download here</p>
-<p>However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF.</p>
-<p>I have also includes the Inkscape file so you can play around with that as well if you want to.</p><h2><span class="step-num">STEP 10</span>Step 10: Drilling and Adding the Water Decal</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Drilling and Adding the Water Decal image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Drilling and Adding the Water Decal image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Drilling and Adding the Water Decal image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Drilling and Adding the Water Decal image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Drilling and Adding the Water Decal image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Drilling and Adding the Water Decal image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Drilling and Adding the Water Decal image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Drilling and Adding the Water Decal image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Drilling and Adding the Water Decal image 9" loading="lazy"></div><p>This was my first time using water decals and it's trickier than I thought it would be.</p>
-<p>The decals are very fragile and it took 3 goes before I ended up with one I could use.</p>
-<p>As they say - practice makes perfect so I'm sure it'll get easier (famous last words!).</p>
+<p>However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also includes the Inkscape file so you can play around with that as well if you want to.</p>
+<ul>
+<li><a href="pdfs/DS1 Drum Synth - Single Drum V3.pdf">DS1 Drum Synth - Single Drum V3</a></li>
+</ul><a class="pdf-download" href="pdfs/DS1 Drum Synth - Single Drum V3.pdf" target="_blank">&#8675; DS1 Drum Synth - Single Drum V3</a><h2><span class="step-num">STEP 10</span>Step 10: Drilling and Adding the Water Decal</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Drilling and Adding the Water Decal image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Drilling and Adding the Water Decal image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Drilling and Adding the Water Decal image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Drilling and Adding the Water Decal image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Drilling and Adding the Water Decal image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Drilling and Adding the Water Decal image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Drilling and Adding the Water Decal image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Drilling and Adding the Water Decal image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Drilling and Adding the Water Decal image 9" loading="lazy"></div><p>This was my first time using water decals and it's trickier than I thought it would be. The decals are very fragile and it took 3 goes before I ended up with one I could use. As they say - practice makes perfect so I'm sure it'll get easier (famous last words!).</p>
 <p>Also, next time I'm not going to pre drill as it's quite hard to line up the decal to the holes.</p>
 <p>Steps:</p>
 <ol>
 <li>Once you have your design you should print a few copies of it on normal A4 paper. This will allow you to use it as a template for drilling the holes</li>
-</ol>
+</ul>
 <ol>
 <li>Next, print the panel directly onto the decal paper and leave to dry for 30 minutes</li>
-</ol>
+</ul>
 <ol>
 <li>Spray some clear acrylic onto the decal, leave to dry and repeat</li>
-</ol>
+</ul>
 <ol>
 <li>Cut the acrylic panel to the right size and tape the design to it. Make sure that it is as straight as possible and give yourself extra acrylic - you can always trim it later</li>
-</ol>
+</ul>
 <ol>
 <li>Mark all of the sections with a punch that need to be drilled.</li>
-</ol>
+</ul>
 <ol>
 <li>Drill out the holes to the right size using a stepped drill piece.</li>
-</ol>
+</ul>
 <ol>
 <li>Remove the protective paper on the acrylic and cut out the decal</li>
-</ol>
+</ul>
 <ol>
 <li>Place the decal into some warm water and once it start to lift off, carefully slide it onto the acrylic, ensuring everything is lined up right. Sounds easier than it is. I had to do this a few times to get it right.</li>
-</ol>
+</ul>
 <ol>
 <li>Remove any excess water with a paper towel and leave to dry</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, spray it again a couple of times with the acrylic to ensure it is protected</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Components to the Front Panel</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Components to the Front Panel image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Components to the Front Panel image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Components to the Front Panel image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Components to the Front Panel image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Components to the Front Panel image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Components to the Front Panel image 6" loading="lazy"></div><p>Before you add any of the components, you'll need to cut away the decal around the drilled holes</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding the Components to the Front Panel</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Components to the Front Panel image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Components to the Front Panel image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Components to the Front Panel image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Components to the Front Panel image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Components to the Front Panel image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Components to the Front Panel image 6" loading="lazy"></div><p>Before you add any of the components, you'll need to cut away the decal around the drilled holes</p>
 <p>Steps:</p>
 <ol>
 <li>With an exacto knife, remove any excess decal around the drilled holes</li>
-</ol>
+</ul>
 <ol>
 <li>probably a good idea to give it another hit with the clear acrylic as well.</li>
-</ol>
+</ul>
 <ol>
 <li>Start to add the pot's switches, audio jacks etc, being careful not to over tighten and damage the decal</li>
-</ol>
+</ul>
 <ol>
 <li>I decided top use jumper wires so I could attach them easily to the board via a female jumper. I cut off the male section and soldered these to each of the components</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Making the Case</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Making the Case image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Making the Case image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Making the Case image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Making the Case image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Making the Case image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Making the Case image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Making the Case image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Making the Case image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Making the Case image 9" loading="lazy"></div><p>I used some strips of hardwood to make the case. It's used for edging and can be brought at any hardware store.</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: Making the Case</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Making the Case image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Making the Case image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Making the Case image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Making the Case image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Making the Case image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Making the Case image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Making the Case image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Making the Case image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Making the Case image 9" loading="lazy"></div><p>I used some strips of hardwood to make the case. It's used for edging and can be brought at any hardware store.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing you need to do is to cut a groove along the wood in order to secure the panel into. I use a dremel with a router attachment to do this.</li>
-</ol>
+</ul>
 <ol>
 <li>Secure the wood with some clamps and run the bit near the top of the wood. Take your time and make sure you keep the dremel straight.</li>
-</ol>
+</ul>
 <ol>
 <li>Measure and cut the wood to size.</li>
-</ol>
+</ul>
 <ol>
 <li>Before you secure the front panel into the case, paint the top section and inside. When the panels in place it will make it hard to do and you might get paint on the panel. I used Aged Teak stain to give the wood a nice vintage feel. You could also just use a clear varnish and bring up the nice grain in the wood. The reason why you don't paint it all is you need to sand the wood once the case is complete.</li>
-</ol>
+</ul>
 <ol>
 <li>Place the panle into the grooves of the wood and use some PVC to glue it together. Clamp and leave to dry for 12 hours</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Moding the Echo/Reverb Module</h2><div class="step-images single"><img src="images/step13_01.jpg" alt="Step 13: Moding the Echo/Reverb Module image 1" loading="lazy"></div><p>I did an Instructable on how to mod the echo and reverb module which can be found here.</p>
-<p>It's not really a mod per se, more just now to had the echo pot and what resistor to remove.</p>
-<p>I won't go through this in much detail here so if you need further instructions, check out the 'ible above.</p>
+</ul><h2><span class="step-num">STEP 13</span>Step 13: Moding the Echo/Reverb Module</h2><div class="step-images single"><img src="images/step13_01.jpg" alt="Step 13: Moding the Echo/Reverb Module image 1" loading="lazy"></div><p>I did an Instructable on how to mod the echo and reverb module which can be found here. It's not really a mod per se, more just now to had the echo pot and what resistor to remove. I won't go through this in much detail here so if you need further instructions, check out the 'ible above.</p>
 <p>Steps:</p>
 <ol>
 <li>First you'll need to remove one of the SMD resistors (R27). I do this with an exacto knife</li>
-</ol>
+</ul>
 <ol>
 <li>Next you'll need to remove the pot that is soldered to the board. If you have a de-soldering device then use this as the traces have a tendency to lift if you just add a soldering iron to it. If you don't then use a pair of wire cutters and just cut it away</li>
-</ol>
+</ul>
 <ol>
 <li>Solder wires to the pot solder points. There are also solder points for the echo pot as well so add wires to these too.</li>
-</ol>
+</ul>
 <ol>
 <li>That's all you need to do for the moment. later on you will need to connect the wires p to the each and reverb pots.</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Adding the Circuits and Battery to the Back Panel</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Circuits and Battery to the Back Panel image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Circuits and Battery to the Back Panel image 2" loading="lazy"></div><p>The next thing to do is to add the battery and circuit boards to the back of the panel.</p>
+</ul><h2><span class="step-num">STEP 14</span>Step 14: Adding the Circuits and Battery to the Back Panel</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Circuits and Battery to the Back Panel image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Circuits and Battery to the Back Panel image 2" loading="lazy"></div><p>The next thing to do is to add the battery and circuit boards to the back of the panel.</p>
 <p>Steps:</p>
 <ol>
 <li>lay all of the parts onto the back panel and work out the best place to locate them. For example, if you add the micro USB charging module at the top, then make sure that you locate the battery at the top as well.</li>
-</ol>
+</ul>
 <ol>
 <li>Once you are happy with the layout, use some good, double sided tape and stick everything down. The great thing about using tape is it's easy to pull off the parts from the back of the wood if you need to. You could also screw down the boards later if you wanted to once everything has been tested</li>
-</ol><h2><span class="step-num">STEP 15</span>Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 4" loading="lazy"></div><p>You don't have to this but I wanted to have a complete unit. As there is a trigger socket, you could just plug in the drum and be done with it.</p>
+</ul><h2><span class="step-num">STEP 15</span>Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Adding the Drum to the Side of the Wood Case and Adding the Micro USB image 4" loading="lazy"></div><p>You don't have to this but I wanted to have a complete unit. As there is a trigger socket, you could just plug in the drum and be done with it.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a couple holes into the side of the drum. There is a perfect spot where it was cut off from the rest of the drums to do this.</li>
-</ol>
+</ul>
 <ol>
 <li>Place the drum and DS 8 case next to each other on a flat surface. Make sure you also include the base to the bottom of the case so you include the height of it when aligning the drum and case.</li>
-</ol>
+</ul>
 <ol>
 <li>Mark on the case where the holes in the drum are and drill them.</li>
-</ol>
+</ul>
 <ol>
 <li>I used a couple on screws and nuts to secure the drum to the case.</li>
-</ol>
+</ul>
 <ol>
 <li>You'll need to also have a way to charge the battery. I used a micro USB module to do this and just filed a section away from the bottom of the case.</li>
-</ol>
+</ul>
 <ol>
 <li>To secure in place , add a little superglue. It will later be connect to the charging module</li>
-</ol><h2><span class="step-num">STEP 16</span>Step 16: Connecting the Wires Up to the Circuit Boards</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 4" loading="lazy"><img src="images/step16_05.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 5" loading="lazy"><img src="images/step16_06.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 6" loading="lazy"><img src="images/step16_07.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 7" loading="lazy"><img src="images/step16_08.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 8" loading="lazy"><img src="images/step16_09.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 9" loading="lazy"></div><p>Home stretch now.</p>
+</ul><h2><span class="step-num">STEP 16</span>Step 16: Connecting the Wires Up to the Circuit Boards</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 4" loading="lazy"><img src="images/step16_05.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 5" loading="lazy"><img src="images/step16_06.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 6" loading="lazy"><img src="images/step16_07.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 7" loading="lazy"><img src="images/step16_08.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 8" loading="lazy"><img src="images/step16_09.jpg" alt="Step 16: Connecting the Wires Up to the Circuit Boards image 9" loading="lazy"></div><p>Home stretch now.</p>
 <p>Steps:</p>
 <ol>
 <li>Lay the top and bottom sections of the case next to each to each other.</li>
-</ol>
+</ul>
 <ol>
 <li>First thing you should do is complete an soldering that needs to be done. Solder the wires from the echo/reverb module to the relevant pots on the front panel</li>
-</ol>
+</ul>
 <ol>
 <li>Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found here. Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module.</li>
-</ol>
+</ul>
 <ol>
 <li>You'll also need to add a couple wires from the echo/reverb module to the output on the charging module to power it.</li>
-</ol>
+</ul>
 <ol>
 <li>Solder any wires needed to the switches as well</li>
-</ol>
+</ul>
 <ol>
 <li>Once all of the soldering is done, you can start to connect the pots up to the DS 8 board. This should be quite simple if you used jumper cables, just plug them into the pin headers.</li>
-</ol>
+</ul>
 <ol>
 <li>Test to make sure everything is working as it should before closing it up.</li>
-</ol>
-<p>TIP - if you find that the echo/reverb isn't working, disconnect it from the battery and connect it again. Sometimes they need resetting before they will work</p><h2><span class="step-num">STEP 17</span>Step 17: Time to Play It</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Time to Play It image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Time to Play It image 2" loading="lazy"></div><p>Ok so hopfully you didnt have any issues and everything worked first go.</p>
-<p>That never happens to me and esp with a big project like this, something is bound to go wrong somewhere.</p>
-<p>I had a wrong value cap which was throwing off the rate which I had to replace.</p>
-<p>My board is version 2 (version 3 is the one that I have linked to) which didn't have the momentary switch so I had to bodge that in as well.</p>
-<p>Also in version 3 I have included a 5V out so you can connect this to LED's or other components such as the momentary switch I used which had an LED inside.</p>
-<p>There isn't any set rules on how to play the DS-8.</p>
-<p>However, I have grouped the parts on the panel which are related to each other.</p>
-<p>For example, the pan and noise switch are cose together and so is the mode and rate pots.</p>
-<p>Play around with different sounds, you should be able to get a sbare sound and bass drum as well as a whole lot inbetween.</p>
+</ul>
+<p>TIP - if you find that the echo/reverb isn't working, disconnect it from the battery and connect it again. Sometimes they need resetting before they will work</p><h2><span class="step-num">STEP 17</span>Step 17: Time to Play It</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Time to Play It image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Time to Play It image 2" loading="lazy"></div><p>Ok so hopfully you didnt have any issues and everything worked first go. That never happens to me and esp with a big project like this, something is bound to go wrong somewhere. I had a wrong value cap which was throwing off the rate which I had to replace. My board is version 2 (version 3 is the one that I have linked to) which didn't have the momentary switch so I had to bodge that in as well. Also in version 3 I have included a 5V out so you can connect this to LED's or other components such as the momentary switch I used which had an LED inside.</p>
+<p>There isn't any set rules on how to play the DS-8. However, I have grouped the parts on the panel which are related to each other. For example, the pan and noise switch are cose together and so is the mode and rate pots. Play around with different sounds, you should be able to get a sbare sound and bass drum as well as a whole lot inbetween.</p>
 <p>Next I want to use the other 3 drums to make a 3 drum pad DS-8 synth! This build was a perfect lead in to the larger build.</p>
-<p>If you have any questions, please add them to the comments and I'll help where I can</p>
+<p>If you have any questions, please add them to the comments and I'll help where I can</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/DS-8 Parts List.pdf">DS-8 Parts List</a></li>
+<li><a href="pdfs/DS8 - Pots Soldered on Board.pdf">DS8 - Pots Soldered on Board</a></li>
+<li><a href="pdfs/DS1 Drum Synth - Single Drum V3.pdf">DS1 Drum Synth - Single Drum V3</a></li>
+</ul><a class="pdf-download" href="pdfs/DS-8 Parts List.pdf" target="_blank">&#8675; DS-8 Parts List</a><a class="pdf-download" href="pdfs/DS8 - Pots Soldered on Board.pdf" target="_blank">&#8675; DS8 - Pots Soldered on Board</a><a class="pdf-download" href="pdfs/DS1 Drum Synth - Single Drum V3.pdf" target="_blank">&#8675; DS1 Drum Synth - Single Drum V3</a>
 </body>
 </html>

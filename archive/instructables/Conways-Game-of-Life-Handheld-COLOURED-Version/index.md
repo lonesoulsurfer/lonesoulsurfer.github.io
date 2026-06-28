@@ -147,6 +147,8 @@ M2 Spacers - Ali Express
 Ribbon Wire - Ali Express
 
 
+- [Parts List](pdfs/Parts List.pdf)
+
 ## Step 1: Getting the PCB & Front Panel Printed
 
 ![Step 1: Getting the PCB & Front Panel Printed image 1](images/step02_01.png)
@@ -492,6 +494,10 @@ Color Modes
 
 - All game modes support color! Press UP + DOWN together to toggle.
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *46 images archived*

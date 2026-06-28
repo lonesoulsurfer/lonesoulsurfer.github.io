@@ -150,5 +150,9 @@ Steps:
 That's it. You have now made your own optocoupler which will work just as good as any store brought one.
 
 
+## Downloads
+
+- [Link 3](pdfs/Link 3.pdf)
+
 ---
 *30 images archived*

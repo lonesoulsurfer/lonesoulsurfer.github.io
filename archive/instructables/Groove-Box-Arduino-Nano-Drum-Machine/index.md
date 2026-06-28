@@ -55,6 +55,8 @@ PARTS:
 - Mini JST Connector and wire 2 Pin X 11
 
 
+- [List of Parts](pdfs/List of Parts.pdf)
+
 ## Step 1: Getting Your Boards Printed
 
 ![Step 1: Getting Your Boards Printed image 1](images/step02_01.jpg)
@@ -320,6 +322,13 @@ Please note that the LED pattern for each beat is illustrated to help you find t
 
 24. Nihil ⚪⚪⚪⚫⚪
 
+
+- [manual - Groove Box](pdfs/manual - Groove Box.pdf)
+
+## Downloads
+
+- [List of Parts](pdfs/List of Parts.pdf)
+- [manual - Groove Box](pdfs/manual - Groove Box.pdf)
 
 ---
 *33 images archived*

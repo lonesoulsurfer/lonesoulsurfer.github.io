@@ -153,6 +153,9 @@ Version 2 (second schematic) has the fine horizontal directly connected to the P
 I have provided 2 PCB's (next step) so you can pick which one you want to get printed.
 
 
+- [LED Oscilloscope Schematic V1](pdfs/LED Oscilloscope Schematic V1.pdf)
+- [LED Oscilloscope Schematic V2](pdfs/LED Oscilloscope Schematic V2.pdf)
+
 ## Step 2: Printing the PCB
 
 ![Step 2: Printing the PCB image 1](images/step03_01.jpg)
@@ -283,6 +286,8 @@ STEPS:
 - Cut the acrylic to size if you haven't already
 - To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
 
+
+- [LED Oscilloscope V1](pdfs/LED Oscilloscope V1.pdf)
 
 ## Step 7: Drilling & Making Cut-outs on the Front Panel
 
@@ -464,6 +469,12 @@ Lastly - experiment and see what music works best and what types of waveforms ar
 
 I'll do an update on the probe once I have built one and tested.
 
+
+## Downloads
+
+- [LED Oscilloscope Schematic V1](pdfs/LED Oscilloscope Schematic V1.pdf)
+- [LED Oscilloscope Schematic V2](pdfs/LED Oscilloscope Schematic V2.pdf)
+- [LED Oscilloscope V1](pdfs/LED Oscilloscope V1.pdf)
 
 ---
 *97 images archived*

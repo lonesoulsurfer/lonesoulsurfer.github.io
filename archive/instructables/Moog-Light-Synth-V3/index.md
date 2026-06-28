@@ -156,6 +156,8 @@ PARTS LIST
 - 38.3K X 1
 
 
+- [Moog Light Synth V3 - Schematic](pdfs/Moog Light Synth V3 - Schematic.pdf)
+
 ## Step 2: About the PCB
 
 ![Step 2: About the PCB image 1](images/step03_01.jpg)
@@ -300,6 +302,8 @@ STEPS:
 - Once the front panel is on the acrylic, use something flat to remove any air pockets. You want to use something which has a soft edge so you don't scratch the ink on the panel. I used a piece of floating floor which has some foam on the back.
 - To protect the front panel, you need to spray it a few times with some clear acrylic paint. I use a matt one as it give a nice, clean finish. Let it dry between coats
 
+
+- [Moog Light Synth V3 - Front Panel](pdfs/Moog Light Synth V3 - Front Panel.pdf)
 
 ## Step 7: Drilling and Test Fitting the Front Panel
 
@@ -573,6 +577,11 @@ Drone section
 - It give more depth to the overall sound and when played with delay, really opens up the sound effects
 The rest you can work out. There are a bunch of different sound effects that you can get so have fun finding them and good luck with the build!
 
+
+## Downloads
+
+- [Moog Light Synth V3 - Schematic](pdfs/Moog Light Synth V3 - Schematic.pdf)
+- [Moog Light Synth V3 - Front Panel](pdfs/Moog Light Synth V3 - Front Panel.pdf)
 
 ---
 *119 images archived*

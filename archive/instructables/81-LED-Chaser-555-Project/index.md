@@ -96,6 +96,8 @@ You can use a 9v battery but I like to re-use old mobile batteries.
 - USB charging module (so you can charge the battery up) - Ali Express
 
 
+- [Parts List - 81 LED Chaser](pdfs/Parts List - 81 LED Chaser.pdf)
+
 ## Step 1: Printing the PCB
 
 ![Step 1: Printing the PCB image 1](images/step02_01.jpg)
@@ -110,6 +112,8 @@ If you would like to play around with the schematic and board in Eagle, well I h
 
 You might have noticed that the board looks a little different to mine. Well that's because I made a couple improvements - you're welcome!
 
+
+- [81 LED Chaser - Schematic](pdfs/81 LED Chaser - Schematic.pdf)
 
 ## Step 2: Adding the Components to the PCB - LED's
 
@@ -198,6 +202,8 @@ STEPS:
 - Cut the acrylic to size if you haven't already
 - To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
 
+
+- [81 LED Chaser](pdfs/81 LED Chaser.pdf)
 
 ## Step 5: Drilling and Making the Cutouts in the Front Panel
 
@@ -319,6 +325,12 @@ STEPS:
 - Add a couple of potentiometer knobs to the pots
 - Turn on and enjoy!
 
+
+## Downloads
+
+- [Parts List - 81 LED Chaser](pdfs/Parts List - 81 LED Chaser.pdf)
+- [81 LED Chaser - Schematic](pdfs/81 LED Chaser - Schematic.pdf)
+- [81 LED Chaser](pdfs/81 LED Chaser.pdf)
 
 ---
 *64 images archived*

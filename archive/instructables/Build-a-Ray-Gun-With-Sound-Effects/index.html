@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,63 +127,47 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Build a Ray Gun With Sound Effects</span>
 </nav>
-<h1>Build a Ray Gun With Sound Effects</h1><div class="source"><a href="https://www.instructables.com/Build-a-Ray-Gun-With-Sound-Effects/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>It's the 24th century and the Earth has been invaded by giant arachnoids from outer space!</p>
-<p>As the beasts lay waste to the mega cities of earth in search for their favourite meal – humans, one man stands in their way.</p>
-<p>In his hand he holds the ultimate weapon to destroy the invaders – a ray gun, capable of vaporizing hordes of the creatures with a single blast!</p>
+<h1>Build a Ray Gun With Sound Effects</h1><div class="source"><a href="https://www.instructables.com/Build-a-Ray-Gun-With-Sound-Effects/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>It's the 24th century and the Earth has been invaded by giant arachnoids from outer space! As the beasts lay waste to the mega cities of earth in search for their favourite meal – humans, one man stands in their way. In his hand he holds the ultimate weapon to destroy the invaders – a ray gun, capable of vaporizing hordes of the creatures with a single blast!</p>
 <p>Ray guns are the ultimate sci-fi prop and making your own is what this ‘ible is all about! To really give it an authentic feel, I also designed and included my own sound effects circuit.</p>
-<p>The actual ray gun itself is made from a vintage timing light.</p>
-<p>They can be picked up relatively cheaply on eBay and make a fantastic body for the ray gun.</p>
-<p>Doing a quick search on eBay will show you all of the different types that you can get.</p>
+<p>The actual ray gun itself is made from a vintage timing light. They can be picked up relatively cheaply on eBay and make a fantastic body for the ray gun. Doing a quick search on eBay will show you all of the different types that you can get.</p>
 <p>I've made 2 of these so far using timing lights and it makes the job pretty easy using them.</p>
-<p>I’ve built a few ray guns now and usually there is a lot of modification to fit everything together.</p>
-<p>In this build the only mod I had to do was to remove a couple screw supports in the handle and that’s it!</p>
-<p>Everything else just seemed to fit pretty much perfectly which is a first for me.</p>
-<p>There is also plenty of room inside the timing light so adding the electronics was a breeze.</p>
-<p>The other great thing was, the timing light already looked like it was from the future.</p>
-<p>All I had to do was to add a nose cone and barrel as well as a few greebles and it was pretty much done.</p>
-<p>If you wanted a slick, minimalist look you could just use the timing light as is.</p>
+<p>I’ve built a few ray guns now and usually there is a lot of modification to fit everything together. In this build the only mod I had to do was to remove a couple screw supports in the handle and that’s it! Everything else just seemed to fit pretty much perfectly which is a first for me. There is also plenty of room inside the timing light so adding the electronics was a breeze.</p>
+<p>The other great thing was, the timing light already looked like it was from the future. All I had to do was to add a nose cone and barrel as well as a few greebles and it was pretty much done. If you wanted a slick, minimalist look you could just use the timing light as is.</p>
 <p>The sound effects board that I made has a whole range of different ray gun sounds you can use and you can also add an LED to extra zappy effects.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Supplies image 9" loading="lazy"></div><p>The main parts you'll need is the timing light and the sound FX circuit, all the details of the circuit are on the next step. Below are what I used to build the ray gun</p>
 <p>PARTS:</p>
 <ol>
 <li>Vintage timing light - eBay You can probably also find</li>
-</ol>
+</ul>
 <ol>
 <li>LED's - I used LED filaments - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Nose Cone - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>There are a few other parts that I used which were pulled from other parts. For example, I used the tops of 2 electric razors for light diffusers. The barrel of the gun was some type of shaft that I pulled out of something. I'll go through all of this in step 5.</li>
-</ol>
+</ul>
 <ol>
 <li>Various small screws, nuts and bolts</li>
-</ol>
+</ul>
 <ol>
 <li>Potentiometer knobs - eBay</li>
-</ol>
+</ul>
 <p>Power Supply</p>
 <p>You could just use a 9v battery if you wanted to. However, I didn't want to have to open up the whole thing every time i wanted to change a battery so I added a way to recharge it.</p>
 <ol>
 <li>Li-Po battery. I like to use old mobile phone batteries. You can usually get them for free as well from e-waste centres or those mobile phone bins</li>
-</ol>
+</ul>
 <ol>
 <li>Buck booster - you need to increase the voltage from 4.3v to 9v - I used this one from Ali Express</li>
-</ol>
+</ul>
 <ol>
 <li>Micro USB charger module - eBay</li>
-</ol><h2><span class="step-num">STEP 1</span>Step 1: The PCB & Getting It Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: The PCB & Getting It Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: The PCB & Getting It Printed image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: The PCB & Getting It Printed image 3" loading="lazy"></div><p>The circuit itself is a low frequency oscillator (LFO) based around a couple of CMOS IC's.</p>
-<p>The waveform is changed via the added pots and frequency switch.</p>
-<p>I have also added an LED because all ray guns need LED's!</p>
-<p>It's a pretty simple circuit as you can see from the attached schematic but you get get some great 'ray gun' sound effects from it.</p>
-<p>I designed the PCB to be as small as possible and to also have the potentiometers directly attached to the board so less wiring.</p>
-<p>I have used pin headers to connect everything else like like power, switch etc.</p>
-<p>You can use JST connectors on the pin headers if you want (which is what I did) to as well which makes it easy to connect to the pin headers on the PCB</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: The PCB & Getting It Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: The PCB & Getting It Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: The PCB & Getting It Printed image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: The PCB & Getting It Printed image 3" loading="lazy"></div><p>The circuit itself is a low frequency oscillator (LFO) based around a couple of CMOS IC's. The waveform is changed via the added pots and frequency switch. I have also added an LED because all ray guns need LED's! It's a pretty simple circuit as you can see from the attached schematic but you get get some great 'ray gun' sound effects from it.</p>
+<p>I designed the PCB to be as small as possible and to also have the potentiometers directly attached to the board so less wiring. I have used pin headers to connect everything else like like power, switch etc. You can use JST connectors on the pin headers if you want (which is what I did) to as well which makes it easy to connect to the pin headers on the PCB</p>
 <p>I have created a folder in my Google drive which can be found in the below link that has the schematic, PCB and Gerber files</p>
 <p>Google Drive Files</p>
-<p>If you want to get your own board printed, then just save the gerber zip file in the Google Drive Files to your computer and email it to your favourite PCB manufacturer.</p>
-<p>I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well.</p>
-<p>If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.</p>
+<p>If you want to get your own board printed, then just save the gerber zip file in the Google Drive Files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.</p>
 <p>I've attached is a list of the components and you can find an excel version in the Google drive link too. I've also listed them below and added links to where you can buy them - you're welcome!</p>
 <p>PCB Parts List</p>
 <ul>
@@ -198,120 +199,107 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Header pins Male</li>
 <li>JST Connector (Optional) Mini X 4</li>
 <li>Speaker 1W 8 Ohm</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding Components to the PCB image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding Components to the PCB image 7" loading="lazy"></div><p>Now that you have your circuit board, it's time to add the components. There actually isn't very many components to add , although it's a little tight on the PCB</p>
+</ul>
+<ul>
+<li><a href="pdfs/Ray Gun Sound FX - Parts List.pdf">Ray Gun Sound FX - Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/Ray Gun Sound FX - Parts List.pdf" target="_blank">&#8675; Ray Gun Sound FX - Parts List</a><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding Components to the PCB image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding Components to the PCB image 7" loading="lazy"></div><p>Now that you have your circuit board, it's time to add the components. There actually isn't very many components to add , although it's a little tight on the PCB</p>
 <p>STEPS:</p>
 <ol>
 <li>Start with the lowest profile parts first. In this case it's the resistors and the diodes that need to be added first</li>
-</ol>
+</ul>
 <ol>
 <li>Next I like to add the IC sockets. They aren't necessary to add, you could just solder the IC's directly to the PCB. However, you run the risk of potentially having a faulty IC and having to de-solder it</li>
-</ol>
+</ul>
 <ol>
 <li>Then solder on the pin headers and the rest of the components including the 3 potentiometers</li>
-</ol>
+</ul>
 <ol>
 <li>Once you have everything soldered, it's best to give the PCB a test to make sure everything works as it should. I've made a bunch of these now and they have all worked first go so you shouldn't have any issues unless you have a bad solder joint or IC.</li>
-</ol>
+</ul>
 <ol>
 <li>So what does the PCB actually do? Well, there is a speed control allowing you to change the speed of the sounds along with 2 tone pots, which allow you to change tones and pitch. There is also a on/off/on toggle switch which also gives you more control over the sounds produced. Plus, you can add an LED to it and it will turn on when activated.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Vintage Timing Light</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Vintage Timing Light image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Vintage Timing Light image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Vintage Timing Light image 3" loading="lazy"></div><p>One of the key parts to this build is finding yourself a vintage timing light. These are used to tune your car back in the day (still used today as well but they are a little more modern looking).</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Vintage Timing Light</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Vintage Timing Light image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Vintage Timing Light image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Vintage Timing Light image 3" loading="lazy"></div><p>One of the key parts to this build is finding yourself a vintage timing light. These are used to tune your car back in the day (still used today as well but they are a little more modern looking).</p>
 <p>It's almost like the designers of these timing lights knew that someday someone would want to use them as ray guns. They are pretty much perfect in the way that they look and feel.</p>
-<p>The one that I found must of had someone's name engraved in the handle and then someone scratched it out.</p>
-<p>No real problem though as I will add some rubber grip to the handle to cover it up and for grip..</p>
-<p>It'll also give the ray gun a nice looking handle.</p>
-<p>you can actually pick these up quiet easily. Just type into eBay - vintage timing light and you should get a bunch of them.</p><h2><span class="step-num">STEP 4</span>Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 8" loading="lazy"><img src="images/step05_09.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 9" loading="lazy"></div><p>Before I start to tear into the ray gun and add parts to it, I first like to rough out the design.</p>
-<p>This usually entails going through my parts bins, pulling out parts that I think would work with the ray gun and placing them on the timing light.</p>
-<p>As I have mentioned earlier, you could just use the timing light as is as and not worry about adding any additional parts except for the electronics.</p>
-<p>However, that's a little boring so if you want to add greebles and nose cones and other parts, then you will need to start collecting interesting bit and pieces.</p>
-<p>The good news is, the nose cone section you can buy so that wil give you a good start.</p>
-<p>There is a link in the parts step.</p>
+<p>The one that I found must of had someone's name engraved in the handle and then someone scratched it out. No real problem though as I will add some rubber grip to the handle to cover it up and for grip.. It'll also give the ray gun a nice looking handle.</p>
+<p>you can actually pick these up quiet easily. Just type into eBay - vintage timing light and you should get a bunch of them.</p><h2><span class="step-num">STEP 4</span>Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 8" loading="lazy"><img src="images/step05_09.jpg" alt="Step 4: Roughing Out the Design of Your Ray Gun & Making the Nose Cone image 9" loading="lazy"></div><p>Before I start to tear into the ray gun and add parts to it, I first like to rough out the design. This usually entails going through my parts bins, pulling out parts that I think would work with the ray gun and placing them on the timing light.</p>
+<p>As I have mentioned earlier, you could just use the timing light as is as and not worry about adding any additional parts except for the electronics. However, that's a little boring so if you want to add greebles and nose cones and other parts, then you will need to start collecting interesting bit and pieces. The good news is, the nose cone section you can buy so that wil give you a good start. There is a link in the parts step.</p>
 <p>STEPS:</p>
 <ol>
 <li>Rummage through your parts bins and pull out parts that look like would work well on the ray gun, I started with the nose cone and barrel</li>
-</ol>
+</ul>
 <ol>
 <li>To make the barrel, I found an old part that fitted inside the end of the nose cone. It had a thread at both ends which meant I could add a washer and nut and secure it inside the nose cone.</li>
-</ol>
+</ul>
 <ol>
 <li>To finish off the end, I added a small copper plumbing piece which I managed to screw onto the other end of the barrel section. I like the idea that the end had to be a different material to the rest. Maybe because it gets so hot from the laser beam being shot out of the ray gun...</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Roughing Out the Design - Adding Some Greebles</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 4" loading="lazy"></div><p>I decided to go minimalist with the greebles on this build.</p>
-<p>The more things I thought about adding, the more the ray gun was looking odd, like the parts didn't belong.</p>
-<p>I decided to keep with the silver theme across the parts added as well.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Roughing Out the Design - Adding Some Greebles</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Roughing Out the Design - Adding Some Greebles image 4" loading="lazy"></div><p>I decided to go minimalist with the greebles on this build. The more things I thought about adding, the more the ray gun was looking odd, like the parts didn't belong. I decided to keep with the silver theme across the parts added as well.</p>
 <p>The parts used in this step were from a couple of electric razors and also a large potentiometer. The blade sections from the razor I used as as diffusers for LED's that were added as well.</p>
-<p>When deciding where to add the razor parts, I was restricted a little by a screw that is used to hold the body of the ray gun together.</p>
-<p>After playing around with different ideas, I decided on the layout you can see in the last image</p><h2><span class="step-num">STEP 6</span>Step 6: Adding a Greeble to the Body of the Ray Gun</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 4" loading="lazy"></div><p>This little part I believe came from an electric razor. They are small arms and there was 2 of them which is perfect as it meant I could add one on either side of the ray gun.</p>
+<p>When deciding where to add the razor parts, I was restricted a little by a screw that is used to hold the body of the ray gun together. After playing around with different ideas, I decided on the layout you can see in the last image</p><h2><span class="step-num">STEP 6</span>Step 6: Adding a Greeble to the Body of the Ray Gun</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding a Greeble to the Body of the Ray Gun image 4" loading="lazy"></div><p>This little part I believe came from an electric razor. They are small arms and there was 2 of them which is perfect as it meant I could add one on either side of the ray gun.</p>
 <p>STEPS:</p>
 <ol>
 <li>First decide where you want to add the part to the ray gun. In my case I added it near the middle of the ray gun. I had to take into consideration that I wanted the blade from the electric razor sitting flush against it as well as the screw mount on the ray gun</li>
-</ol>
+</ul>
 <ol>
 <li>Next I drilled a couple of small holes in the ray gun which aligned with the holes in the part I used. The holes were slightly smaller then the self tapping screws I used</li>
-</ol>
+</ul>
 <ol>
 <li>I then screwed the parts to the body of the ray gun using self tapping screws. These worked a treat!</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Circuit Board</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Circuit Board image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Circuit Board image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Circuit Board image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Circuit Board image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the Circuit Board image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Adding the Circuit Board image 6" loading="lazy"></div><p>Initially, I wanted to add the potentiometers so they came out the left side of the ray gun.</p>
-<p>However, the pesky screw mount on the ray gun was in the ay again.</p>
-<p>The next best place to add them was on the top which worked out really well.</p>
-<p>The knobs had to be off-set to the centre but that was ok - it didn't flair up my OCD</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Circuit Board</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Circuit Board image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Circuit Board image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Circuit Board image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Circuit Board image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the Circuit Board image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Adding the Circuit Board image 6" loading="lazy"></div><p>Initially, I wanted to add the potentiometers so they came out the left side of the ray gun. However, the pesky screw mount on the ray gun was in the ay again. The next best place to add them was on the top which worked out really well. The knobs had to be off-set to the centre but that was ok - it didn't flair up my OCD</p>
 <p>STEPS:</p>
 <ol>
 <li>The first thing to do is to make a masking tape template of the potentiometers so you can work out where to drill the holes into the ray gun. Just place some masking take across the tops of the pots, mark the middle of each one on the tape and then place the tape onto the ray gun.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, I drill out the holes and test fitted the PCB and pots. I had to make the middle hole slightly larger in order for them to fit but that wasn't an issue.</li>
-</ol>
+</ul>
 <ol>
 <li>Once I placed the pots into place, I then secured them to the ray gun with some nuts.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, I drilled another hole and added the toggle switch. The switch allows you to change through different pitches.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Modifying the Momentary Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Modifying the Momentary Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Modifying the Momentary Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Modifying the Momentary Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Modifying the Momentary Switch image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Modifying the Momentary Switch image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Modifying the Momentary Switch image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Modifying the Momentary Switch image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Modifying the Momentary Switch image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 8: Modifying the Momentary Switch image 9" loading="lazy"></div><p>To activate the ray gun sounds, you need to include a momentary switch.</p>
-<p>The timing light should already have one included and if you are lucky, with a little modification, you should be able to utilize this switch like I did.</p>
+</ul><h2><span class="step-num">STEP 8</span>Step 8: Modifying the Momentary Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Modifying the Momentary Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Modifying the Momentary Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Modifying the Momentary Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Modifying the Momentary Switch image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Modifying the Momentary Switch image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Modifying the Momentary Switch image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Modifying the Momentary Switch image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Modifying the Momentary Switch image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 8: Modifying the Momentary Switch image 9" loading="lazy"></div><p>To activate the ray gun sounds, you need to include a momentary switch. The timing light should already have one included and if you are lucky, with a little modification, you should be able to utilize this switch like I did.</p>
 <p>STEPS:</p>
 <ol>
 <li>Ok - so you might of noticed that this step includes pulling the inside out of the ray gun. I guess this should have been the previous step but I reckon it works better here so that's where I'm going to keep it...</li>
-</ol>
+</ul>
 <ol>
 <li>Pull out the insides of the timing light</li>
-</ol>
+</ul>
 <ol>
 <li>Cut off all of the components from the circuit board, just leaving the momentary switch</li>
-</ol>
+</ul>
 <ol>
 <li>Trim down the circuit board so you can utilize any mounting holes in the circuit board. I was lucky to have 2 mounting holes on either end of the circuit board which allowed e to trim off most of the board.</li>
-</ol>
+</ul>
 <ol>
 <li>Secure the circuit board back into the ray gun and test to make sure it all works ok and the switch is activated when the trigger is pulled.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding Some LED's and Diffusers</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding Some LED's and Diffusers image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding Some LED's and Diffusers image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Adding Some LED's and Diffusers image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Adding Some LED's and Diffusers image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Adding Some LED's and Diffusers image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Adding Some LED's and Diffusers image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 9: Adding Some LED's and Diffusers image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 9: Adding Some LED's and Diffusers image 8" loading="lazy"></div><p>I decided to add 2 filament LED's, one on each side of the ray gun. The light would be diffused by the electric razor blades</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding Some LED's and Diffusers</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding Some LED's and Diffusers image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding Some LED's and Diffusers image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Adding Some LED's and Diffusers image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Adding Some LED's and Diffusers image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Adding Some LED's and Diffusers image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Adding Some LED's and Diffusers image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 9: Adding Some LED's and Diffusers image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 9: Adding Some LED's and Diffusers image 8" loading="lazy"></div><p>I decided to add 2 filament LED's, one on each side of the ray gun. The light would be diffused by the electric razor blades</p>
 <p>STEPS:</p>
 <ol>
 <li>First I soldered wires to each end of the LED's and added some heat shrink to ensure they don't short on the body of the ray gun</li>
-</ol>
+</ul>
 <ol>
 <li>Next, I drilled a couple holes into the ray gun to allow the wires to be threaded through.</li>
-</ol>
+</ul>
 <ol>
 <li>To hold the wires into place I added a couple pieces of fabric tape to the inside.</li>
-</ol>
+</ul>
 <ol>
 <li>As there is only one LED connection point on the ray gun, I had to connect both positives and grounds from the LED's to the one connection. I also tested the LED's to make sure that they worked before moving onto the next step. The filaments are quite fragile so be careful with them when putting them into place.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, I added some superglue to the bottom sections of the razor blades and carefully glued them over the LED's. This is the only time I used superglue to attach a part to the ray gun.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding Power</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Adding Power image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Adding Power image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Adding Power image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 10: Adding Power image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 10: Adding Power image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 10: Adding Power image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 10: Adding Power image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 10: Adding Power image 8" loading="lazy"></div><p>You could always just add a 9v battery to power everything if you wanted to.</p>
-<p>However, I didn't want to have to open the ray gun up each time I need to change the battery so added a rechargeable battery instead.</p>
-<p>I like to re-use mobile phone batteries as they work really well in projects like this.</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding Power</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Adding Power image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Adding Power image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Adding Power image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 10: Adding Power image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 10: Adding Power image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 10: Adding Power image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 10: Adding Power image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 10: Adding Power image 8" loading="lazy"></div><p>You could always just add a 9v battery to power everything if you wanted to. However, I didn't want to have to open the ray gun up each time I need to change the battery so added a rechargeable battery instead. I like to re-use mobile phone batteries as they work really well in projects like this.</p>
 <p>STEPS:</p>
 <ol>
 <li>First, I needed to increase the power from 4.3V to 9V. To do this I added a small buck booster module to the battery and connected the battery to the positive and ground points on the module. I added a little bit of superglue and glued it directly onto the battery</li>
-</ol>
+</ul>
 <ol>
 <li>Next I connected the output on the module to the momentary switch connection on the circuit board</li>
-</ol>
+</ul>
 <ol>
 <li>To be able to re-charge the battery I needed to add a charging module. This is connected to the some solder points on the buck booster as the battery is. There was even a small cutout on the handle that worked perfectly as a space for the micro USB on the charging module! I was very lucky with this build as I didn't have to mod the timing light at all! very rare in a build like this</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Nose Cone</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: Adding the Nose Cone image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: Adding the Nose Cone image 2" loading="lazy"></div><p>I was pretty lucky when it came to connecting a lot of the parts to the timing light as most fitted without having to do too much modding.</p>
-<p>The nose cone especially was very simple to add to the timing light</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: Adding the Nose Cone</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: Adding the Nose Cone image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: Adding the Nose Cone image 2" loading="lazy"></div><p>I was pretty lucky when it came to connecting a lot of the parts to the timing light as most fitted without having to do too much modding. The nose cone especially was very simple to add to the timing light</p>
 <p>STEPS:</p>
 <ul>
 <li>Inside the timing light there was a large lens which was held in place via a couple of grooves. I was able to utilize these to secure the nose cone into place</li>
@@ -322,29 +310,28 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>STEPS:</p>
 <ol>
 <li>Connect a JST connector wires to the speaker positive and ground.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, attached the connector to the speaker pin header on the circuit board</li>
-</ol>
+</ul>
 <ol>
 <li>Once everything is connected and looks right, give the trigger a pull and see what happens! The LED's should come on and you should hear the ray gun sound effects kick in. Try turning the pots and see what happens. If the tone and or speed changes then you know that the pots work. Give the switch a go and if that works as well then you are good to close up the ray gun. If something doesn't work you'll need to do some troubleshooting to identify the problem.</li>
-</ol>
-<p>NOTE: I found that the speaker was very loud.</p>
-<p>To reduce the sound, I added a 20R resister to the positive solder point on the speaker to help reduce the volume.</p>
-<p>Up to you if you want to do this or not - you might want it loud and noisy.</p><h2><span class="step-num">STEP 13</span>Step 13: Adding the Hand Grip</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 13: Adding the Hand Grip image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 13: Adding the Hand Grip image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 13: Adding the Hand Grip image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 13: Adding the Hand Grip image 4" loading="lazy"></div><p>For the handgrips I used some sticky sided rubber grips for steps.</p>
+</ul>
+<p>NOTE: I found that the speaker was very loud. To reduce the sound, I added a 20R resister to the positive solder point on the speaker to help reduce the volume. Up to you if you want to do this or not - you might want it loud and noisy.</p><h2><span class="step-num">STEP 13</span>Step 13: Adding the Hand Grip</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 13: Adding the Hand Grip image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 13: Adding the Hand Grip image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 13: Adding the Hand Grip image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 13: Adding the Hand Grip image 4" loading="lazy"></div><p>For the handgrips I used some sticky sided rubber grips for steps.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, place the rubber grip, white side up and trace around the handle of the gun. This will give you a rough template for the handle</li>
 <li>Next, cut out the rubber grip and place it onto the handle. If you need to trim then further, mark the area's and trim until they fit onto the handle</li>
 <li>Peal off the back paper from the rubber grip and stick into place. Push down hard on the rubber so it is stuck into place</li>
-</ul><h2><span class="step-num">STEP 14</span>Step 14: Making a Display Stand</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 14: Making a Display Stand image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 14: Making a Display Stand image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 14: Making a Display Stand image 3" loading="lazy"></div><p>Now that you have made your ray gun, you'll definitely want to put it on display.</p>
-<p>It can be a little tricky working out the best way to get the gun to stand, however, most of the timing lights will have a hole in the bottom of the handle where the power cord was so you can utilize this to get your ray gun to stand</p>
+</ul><h2><span class="step-num">STEP 14</span>Step 14: Making a Display Stand</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 14: Making a Display Stand image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 14: Making a Display Stand image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 14: Making a Display Stand image 3" loading="lazy"></div><p>Now that you have made your ray gun, you'll definitely want to put it on display. It can be a little tricky working out the best way to get the gun to stand, however, most of the timing lights will have a hole in the bottom of the handle where the power cord was so you can utilize this to get your ray gun to stand</p>
 <p>STEPS:</p>
 <ul>
 <li>First I used a piece of wood as a stand and rounded off the sides with a router</li>
 <li>I then placed the gun on the wood to work out where best to position it</li>
 <li>To enable to gun to mount I added a bolt into the bottom of the wood which stick out the top. The hole in the handle then can be used to mount the ray gun via the bolt in the wood.</li>
 <li>If it is a bit wobbly, you might need to add a support for the front of the ray gun such as a piece of aluminum tube. The tube can be secured to the base and cut so the 'barrel' of the ray gun sits on it.</li>
-</ul>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Ray Gun Sound FX - Parts List.pdf">Ray Gun Sound FX - Parts List</a></li>
+</ul><a class="pdf-download" href="pdfs/Ray Gun Sound FX - Parts List.pdf" target="_blank">&#8675; Ray Gun Sound FX - Parts List</a>
 </body>
 </html>

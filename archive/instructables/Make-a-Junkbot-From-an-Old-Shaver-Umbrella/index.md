@@ -94,6 +94,8 @@ I have also included a PDF of the parts list which you can find attached to this
 - Li-po or old mobile phone battery (see this Ible on how to reuse mobile phone batteries
 
 
+- [LED Chaser - Parts List](pdfs/LED Chaser - Parts List.pdf)
+
 ## Step 2: Removing the Ribs and Stretchers From the Umbrella
 
 ![Step 2: Removing the Ribs and Stretchers From the Umbrella image 1](images/step03_01.jpg)
@@ -334,6 +336,10 @@ STEPS:
 - Add the shaver head back into place
 I think that's everything! how turn on your Junkbot and watch him scan the room for potential enemies to neutralize! As it gets darker, the LED's will slow down but if it gets brighter, they'll speed up. Pretty cool!
 
+
+## Downloads
+
+- [LED Chaser - Parts List](pdfs/LED Chaser - Parts List.pdf)
 
 ---
 *71 images archived*

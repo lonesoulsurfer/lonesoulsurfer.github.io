@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,217 +127,202 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Auto Door for Chicken Feeder</span>
 </nav>
-<h1>Auto Door for Chicken Feeder</h1><div class="source"><a href="https://www.instructables.com/Auto-Door-For-Chicken-Feeder/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Anyone who has chickens has probably experienced rats or mice at some stage.</p>
-<p>They love to get into the chickens food at night and make a mess.</p>
-<p>Most of the rats I have caught in traps and have cleared but I know it won’t be long before they are back.</p>
-<p>I got sick of seeing their food scattered each morning so I decided to make a feeder which automatically closes at night.</p>
-<p>The lid to the feeder is lowered once the sun goes down and rises each morning.</p>
-<p>This is done by a photocell or light sensor detecting whether it’s light or not through an Arduino.</p>
-<p>I'm very much a novice when it comes to Arduino, but after discovering the Control Servo With Light 'ible by quaddel and testing the idea, I knew it wouldn't be too hard.</p>
-<p>The project box which has all of the electronics inside is connected to a 4” exhaust clamp that is used on trucks.</p>
-<p>This way I could easily remove it or change its position if necessary.</p>
-<p>The actual feeder is made from 90mm PVC pipe and is very easy to put together.</p>
-<p>You can find a 'ible here on how to do this.</p>
-<p>The trickiest part of the project was to work out the best way to attach the lid to the servo.</p>
-<p>The solution I came up with works ok for the moment but I might have to revisit at some stage.</p>
-<p>The power source comes from a 12v battery that I'm using for my Automatic chicken coop door.</p>
-<p>I'm going to have to revise this though as it's drawing too much power, especially in Winter.</p>
+<h1>Auto Door for Chicken Feeder</h1><div class="source"><a href="https://www.instructables.com/Auto-Door-For-Chicken-Feeder/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Anyone who has chickens has probably experienced rats or mice at some stage. They love to get into the chickens food at night and make a mess. Most of the rats I have caught in traps and have cleared but I know it won’t be long before they are back. I got sick of seeing their food scattered each morning so I decided to make a feeder which automatically closes at night.</p>
+<p>The lid to the feeder is lowered once the sun goes down and rises each morning. This is done by a photocell or light sensor detecting whether it’s light or not through an Arduino. I'm very much a novice when it comes to Arduino, but after discovering the Control Servo With Light 'ible by quaddel and testing the idea, I knew it wouldn't be too hard.</p>
+<p>The project box which has all of the electronics inside is connected to a 4” exhaust clamp that is used on trucks. This way I could easily remove it or change its position if necessary. The actual feeder is made from 90mm PVC pipe and is very easy to put together. You can find a 'ible here on how to do this.</p>
+<p>The trickiest part of the project was to work out the best way to attach the lid to the servo. The solution I came up with works ok for the moment but I might have to revisit at some stage. The power source comes from a 12v battery that I'm using for my Automatic chicken coop door. I'm going to have to revise this though as it's drawing too much power, especially in Winter.</p>
 <p>Overall I'm happy with the way that it turned out. It opens when the sun rises and closes when dark - exactly what it's supposed to do, and I haven't seen any rats around...</p><h2><span class="step-num">STEP 1</span>Step 1: Parts to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts to Gather image 2" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Large project box</li>
-</ol>
+</ul>
 <ol>
 <li>Arduino uno – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Light sensor – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Step down voltage converter – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>4” Exhaust U Clamp – eBay ( you could probably get away with using a smaller on like 3.5”.</li>
-</ol>
+</ul>
 <ol>
 <li>Wire connector – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Servo – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Servo arm – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Blank circuit board – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>10R resister</li>
-</ol>
+</ul>
 <ol>
 <li>5.5 x 2.1mm barrel jack – eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Coat hanger</li>
-</ol>
+</ul>
 <ol>
 <li>100mm PVC cap</li>
-</ol>
+</ul>
 <ol>
 <li>90mm PVC pipe</li>
-</ol>
+</ul>
 <ol>
 <li>90mm 45 degree coupling</li>
-</ol>
+</ul>
 <ol>
 <li>2 x 90mm screw caps</li>
-</ol>
+</ul>
 <ol>
 <li>Various nuts and screws and bolts</li>
-</ol>
+</ul>
 <p>Tools</p>
 <ol>
 <li>Drill</li>
-</ol>
+</ul>
 <ol>
 <li>Soldering iron</li>
-</ol>
+</ul>
 <ol>
 <li>Dremel</li>
-</ol>
+</ul>
 <ol>
 <li>Pliers</li>
-</ol>
+</ul>
 <ol>
 <li>Drop saw</li>
-</ol>
+</ul>
 <ol>
 <li>PVC pipe glue</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Getting the Servo to Do Your Bidding</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Getting the Servo to Do Your Bidding image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Getting the Servo to Do Your Bidding image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Getting the Servo to Do Your Bidding image 3" loading="lazy"></div><p>The first thing you’ll need to do is to test the servo and light sensor set-up.</p>
-<p>If you look on the net for Arduino controlled servo and light sensor you will be able to find a few examples.</p>
-<p>I tested most of them and the one that worked best for me was on this website.</p>
-<p>The only thing I changed was the resister to a 10R one as the one they recommended was no good for this project.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Getting the Servo to Do Your Bidding</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Getting the Servo to Do Your Bidding image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Getting the Servo to Do Your Bidding image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Getting the Servo to Do Your Bidding image 3" loading="lazy"></div><p>The first thing you’ll need to do is to test the servo and light sensor set-up. If you look on the net for Arduino controlled servo and light sensor you will be able to find a few examples. I tested most of them and the one that worked best for me was on this website. The only thing I changed was the resister to a 10R one as the one they recommended was no good for this project.</p>
 <p>Steps:</p>
 <ol>
 <li>Watch the video that is loaded on the website. It’s only short but it will give you an idea of how it’s put together</li>
-</ol>
+</ul>
 <ol>
 <li>Next check out the image they have of how everything is bread boarded and copy. I have also included the image below.</li>
-</ol>
+</ul>
 <ol>
 <li>Test to make sure that the servo moves when the light sensor is covered. If everything works then it’s time to add the circuit to a circuit board</li>
-</ol>
+</ul>
 <ol>
 <li>You can also play around with some of the values in the script to either make the servo move less or more.</li>
-</ol>
+</ul>
 <ol>
 <li>You could also just use the simple code provided in the 'ible by quaddel This will do the job but will mean you can't play around with the variables (or not that I could work out any how!)</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Creating the Circuit Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Creating the Circuit Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Creating the Circuit Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Creating the Circuit Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Creating the Circuit Board image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Creating the Circuit Board image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Creating the Circuit Board image 6" loading="lazy"></div><p>Once you have found (or created) the script that you are happy with, the next thing to is to make a circuit.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Creating the Circuit Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Creating the Circuit Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Creating the Circuit Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Creating the Circuit Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Creating the Circuit Board image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Creating the Circuit Board image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Creating the Circuit Board image 6" loading="lazy"></div><p>Once you have found (or created) the script that you are happy with, the next thing to is to make a circuit.</p>
 <p>Steps:</p>
 <ol>
 <li>With a small piece of blank circuit board, start to copy what is on the breadboard.</li>
-</ol>
+</ul>
 <ol>
 <li>I used the jumper wires to make the connections to the arduino.</li>
-</ol>
+</ul>
 <ol>
 <li>Carefully solder the wires into place and add the resister. I added some extra long wires for the light sensor.</li>
-</ol>
+</ul>
 <ol>
 <li>Test and make sure everything works</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Power Plug</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Power Plug image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Power Plug image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Power Plug image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Power Plug image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Power Plug image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Power Plug image 6" loading="lazy"></div><p>I know that the arduino comes with a voltage regulator, but I wanted to make sure that I didn't blow anything.</p>
-<p>I decided to use a step-down board so I could ensure that 5V was being delivered to the arduino.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Power Plug</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Power Plug image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Power Plug image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Power Plug image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Power Plug image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Power Plug image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Power Plug image 6" loading="lazy"></div><p>I know that the arduino comes with a voltage regulator, but I wanted to make sure that I didn't blow anything. I decided to use a step-down board so I could ensure that 5V was being delivered to the arduino.</p>
 <p>Steps:</p>
 <ol>
 <li>To power the arduino I used a 5.5 x 2.1mm barrel jack.</li>
-</ol>
+</ul>
 <ol>
 <li>Next get a spare USB cable and cut off one of the ends. Find the positive and negative wires and attach these to the barrel jack. You will have to test to ensure that you have the wires around the right way. Just plug the jack in and if it doesn't work, then reverse.</li>
-</ol>
+</ul>
 <ol>
 <li>I tested everything by adding a 9v battery to the voltage regulator, plug in the USB and make sure that everything lights up on the arduino</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Servo to the Project Box</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Servo to the Project Box image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Servo to the Project Box image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Servo to the Project Box image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Servo to the Project Box image 4" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Servo to the Project Box</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Servo to the Project Box image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Servo to the Project Box image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Servo to the Project Box image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Servo to the Project Box image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>In order to have the servo stick out of the project box, you'll need to cut a hole in it.</li>
-</ol>
+</ul>
 <ol>
 <li>Use a dremel and cut through the plastic. make sure though you mark on the project box exactly how much to cut out.</li>
-</ol>
+</ul>
 <ol>
 <li>I ran into a problem once I cut through the plastic as there was a plastic section in the way - check out the images below.</li>
-</ol>
+</ul>
 <ol>
 <li>To fix this I just cut half way through the plastic pillar. This actually worked in my favour as the servo mounting points now locked into place behind the cut plastic and ii didn't even have to hot glue into place!</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Mounting Bracket (Exhaust Clamp)</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 5" loading="lazy"></div><p>I work in the transport industry and have access to truck parts. I decided to grab a 4" exhaust clamp and use this to mount to the chicken feeder.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Mounting Bracket (Exhaust Clamp)</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Mounting Bracket (Exhaust Clamp) image 5" loading="lazy"></div><p>I work in the transport industry and have access to truck parts. I decided to grab a 4" exhaust clamp and use this to mount to the chicken feeder.</p>
 <p>Steps:</p>
 <ol>
 <li>Mark out on the project box where to mount it too the clamp</li>
-</ol>
+</ul>
 <ol>
 <li>Drill the holes and then mark and drill the clamp.</li>
-</ol>
+</ul>
 <p>Now it's ready to mount. Don't do this yet though as you will need to do a few things to the box first.</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Arduino and Mounting</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Arduino and Mounting image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Arduino and Mounting image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Arduino and Mounting image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Arduino and Mounting image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Arduino and Mounting image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Arduino and Mounting image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Drill a small hole in the top of the box big enough for the light sensor.</li>
-</ol>
+</ul>
 <ol>
 <li>Add some velcro to the bottom of the arduino and attach to the bottom of the box.</li>
-</ol>
+</ul>
 <ol>
 <li>Hot glue into place the light sensor.</li>
-</ol>
+</ul>
 <ol>
 <li>Find good homes for the circuit board, voltage regulator and tuck away the wires.</li>
-</ol>
+</ul>
 <ol>
 <li>To be able to connect the arduino to a power source add a couple of wires to the regulator and drill a hole in the side of the box for these to come out of. Attach a connector to the wires. You will need to attach the other end of the connector to a length of wire which will be connected to the battery.</li>
-</ol>
+</ul>
 <p>you shouldn't have any issues fitting everything into the project box.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Arms (First Try)</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Arms (First Try) image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Arms (First Try) image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Arms (First Try) image 3" loading="lazy"></div><p>First try didn't go so well...</p>
 <ol>
 <li>Obviously on the servo side you can just add a servo arm. You can see from the first picture how I first tried to add the wire for the lid to the servo. This didn't work in the end so I just zip tied and hot glued into place.</li>
-</ol>
+</ul>
 <p>2, For the other side I was going to do something similar as you can see but this didn't really work either. It probably could have though if I used larger terminal sections (those gold bits)</p><h2><span class="step-num">STEP 9</span>Step 9: Adding the Arm (The Version That Worked)</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Arm (The Version That Worked) image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Arm (The Version That Worked) image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Arm (The Version That Worked) image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Arm (The Version That Worked) image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Arm (The Version That Worked) image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Arm (The Version That Worked) image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Attach the metal servo arm to the servo.</li>
-</ol>
+</ul>
 <ol>
 <li>Next I pulled apart an old servo and used the gear and attached a plastic servo arm to the end.</li>
-</ol>
+</ul>
 <ol>
 <li>Once this is done, drill a hole in the side of the project box and push through a bolt. Add a bolt to the end and do this up so it is flush with the box. This creates the axle for the gear to be attached to.</li>
-</ol>
+</ul>
 <ol>
 <li>Lastly, with some pressure, carefully turn the bolt with a screwdriver and force it into the of the gear.</li>
-</ol>
+</ul>
 <ol>
 <li>Add some hot glue to the bolt and gear to keep everything in place.</li>
-</ol>
+</ul>
 <ol>
 <li>Next, attach the project box to the actual chicken feeder. This way you can work out how long the wire arm needs to be for the lid.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Lid</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Lid image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Lid image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Lid image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Lid image 4" loading="lazy"></div><p>Steps:</p>
+</ul><h2><span class="step-num">STEP 10</span>Step 10: Adding the Lid</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Lid image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Lid image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Lid image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Lid image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Cut and straighten out a coat-hanger</li>
-</ol>
+</ul>
 <ol>
 <li>Bend into place so the wire is touching the top of the lid as shown below.</li>
-</ol>
+</ul>
 <ol>
 <li>Attach the wire to the servo arms. This was a little tricky and I would have liked to have come up with a better solution. In the end I just zip tied and hot glued the wire arm into place. It did the job but I will take a bit to replace if necessary</li>
-</ol>
+</ul>
 <ol>
 <li>Mark out on the lid where you have to drill and go for it.</li>
-</ol>
+</ul>
 <ol>
 <li>Attach the lid with some zip ties.</li>
-</ol>
+</ul>
 <p>Done...nearly.</p><h2><span class="step-num">STEP 11</span>Step 11: Getting It Going</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Getting It Going image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Getting It Going image 2" loading="lazy"></div><p>So you've finished and it's time to add some juice and get the ting to work</p>
 <p>Steps:</p>
 <ol>
 <li>Attach the wire that you added the connector to the battery</li>
-</ol>
+</ul>
 <p>2, Next connect the connector from the feeder to the battery connector.</p>
 <ol>
 <li>Test by putting your hand over the light sensor and make sure that the lid closes over the food section. remove your hand and the lid should lift up. If you need to adjust then you can move the project box up or down the feeder. If the lid doesn't go down far enough, then you will need to do some adjustments to the script. It's not a big issue, just means you will have to plug the arduino in to the computer and play around.</li>
-</ol>
+</ul>
 <p>Things I'd do differently next time</p>
 <ul>
 <li>As mentioned previously, I attached the feeder to a battery that I'm using for the auto chicken coop door. This drained the power faster than the solar panel could charge so I had to come up with a new solution.</li>

@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -112,11 +129,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 </nav>
 <h1>Programmer for ATtiny 85</h1><div class="source"><a href="https://www.instructables.com/Programmer-for-ATtiny-85/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>Make your own ATtiny 85 programmer using an Arduino Nano and a custom made PCB!</p>
 <p>I've been building a few projects of late that use a ATtiny 85 microcontrollers and wanted to create a specifically designed programmer to make the job easier.</p>
-<p>If you are an old hand with programming ATtiny 85's or a total novice and want to learn, then this bit of kit is essential.</p>
-<p>Once you have the hardware, programming the ATtiny becomes quite simple.</p>
-<p>I did do an 'Ible on how to Program a ATtiny with an Arduino which you can find here.</p>
-<p>Note that I was only really just learing then myself and did the Ible so I wouldn't forget how to do it!</p>
-<p>However, the programmer I did make was rudimental and I wanted something more permanent.</p>
+<p>If you are an old hand with programming ATtiny 85's or a total novice and want to learn, then this bit of kit is essential. Once you have the hardware, programming the ATtiny becomes quite simple. I did do an 'Ible on how to Program a ATtiny with an Arduino which you can find here. Note that I was only really just learing then myself and did the Ible so I wouldn't forget how to do it! However, the programmer I did make was rudimental and I wanted something more permanent.</p>
 <p>Along with the build of this project, I'll run through how to program the ATtiny 85 and get the blinking light sketch to work. Once you have conquered that - the sky's the limit!</p>
 <p>This build was inspired by SF94's build on Instructables</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>Along with the hardware below, you will also need to get one of the custom PCB's printed. I've explained how to do this in the next step.</p>
 <p>PARTS:</p>
@@ -129,8 +142,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>LED - 3mm (any colours) X 4 - Ali Express</li>
 <li>10uf Capacitor - Ali Express</li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB Printed image 3" loading="lazy"></div><p>Firstly, you can find all of the files including the gerber files for this build in my GitHub Page</p>
-<p>To get your board printed, You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you.</p>
-<p>Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice.</p>
+<p>To get your board printed, You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice.</p>
 <p>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.</p>
 <p>If you are interested in having a look at the schematic or board files then I have included these as well and you can also find them in my Google Drive. I've also attached the schematic to this step.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 5" loading="lazy"></div><p>This is pretty straight forward as there really aren't many components to add to the PCB!</p>
 <p>STEPS:</p>
@@ -157,8 +169,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Upload the sketch to your ATtiny 85</li>
 <li>Watch the little LED blink away!</li>
 </ul>
-<p>Once you have mastered this basic upload to the ATtiny, you can then move on to more fun things like these games that I made, or whatever projects that you can find on line.</p>
-<p>You might even want to try your hand at coding! baby steps first.</p>
+<p>Once you have mastered this basic upload to the ATtiny, you can then move on to more fun things like these games that I made, or whatever projects that you can find on line. You might even want to try your hand at coding! baby steps first.</p>
 <p>I hope this Instrucable was of some help - if you have any questions, please don't hesitate to add a comment and let me know!</p>
 <p>All the best</p>
 <p>Lonesoulsurfer</p>

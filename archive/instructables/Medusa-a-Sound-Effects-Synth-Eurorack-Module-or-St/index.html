@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,9 +127,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth</span>
 </nav>
-<h1>Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth</h1><div class="source"><a href="https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This synth started as a humble Dub Siren and grew from there.</p>
-<p>I wanted a way to add sound effects when playing my modular synth and add some layered soundscapes.</p>
-<p>I ended up including a total of 4 synths or instruments that have a multitude of features to be able to manipluate and expand the beadth of sound!</p>
+<h1>Medusa - a Sound Effects Synth - Eurorack Module or Stand Alone Synth</h1><div class="source"><a href="https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This synth started as a humble Dub Siren and grew from there. I wanted a way to add sound effects when playing my modular synth and add some layered soundscapes. I ended up including a total of 4 synths or instruments that have a multitude of features to be able to manipluate and expand the beadth of sound!</p>
 <p>It runs off a Raspberry Pi Pico and I used Arduino IDE and C++ to code everything up. I also used Claude AI to help finesse the code and get me out of binds!</p>
 <p>Ok - so what does it do? Here is a rundown of what the synth is capable of. Note that I still have some additional features to add.</p>
 <p>Instruments:</p>
@@ -136,15 +151,13 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <p>LFO 2 ( Function + Key 6) - Secondary LFO that modulated frequency for vibrato/tremelo effects</p>
 <p>Drone ( Function + Key 7) - 5-oscillator additive drone synthesizer with drift and detuning</p>
 <p>Sidechain ( Function + Key 8) - Classic "pumping" sidechain compression effect</p>
-<p>And there is even more! I'll provide a complete overview and how to at the end of this 'ible.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>As usual, I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step.</p>
-<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<p>And there is even more! I'll provide a complete overview and how to at the end of this 'ible.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>As usual, I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>In regards to the Raspberry Pi that I used, Make sure that you get the one with 4 analog inputs. The details are in the part list provided.</p>
-<p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
-<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
-<p>I use JLCPCB (not affiliated) to get this done.</p>
-<p>The front panel is actually just a PCB without any components included!</p>
-<p>The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
+<p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p>
+<ul>
+<li><a href="pdfs/Parts List Medusa.pdf">Parts List Medusa</a></li>
+</ul><a class="pdf-download" href="pdfs/Parts List Medusa.pdf" target="_blank">&#8675; Parts List Medusa</a><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
 <p>The files that you need to build Medusa can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer</p>
 <p>STEPS:</p>
 <ul>
@@ -173,13 +186,8 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Solder into place the 2 jack inputs</li>
 <li>Now add the 4 potentiometers</li>
 </ul>
-<p>That was easy! now onto the more tricker part - adding the screen.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screen</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Screen image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Screen image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Screen image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Screen image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Screen image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Adding the Screen image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Adding the Screen image 7" loading="lazy"></div><p>When adding the screen, you want to firstly make sure that it is secure to the front panel and you also want to be able to take the front panel off for any future changes.</p>
-<p>I have found that the best way to do this is using female and male header pins.</p>
-<p>However, it gets tricker as you need to make sure that the header pins are not too big or the screen will make the front panel sit too high.</p>
-<p>I used normal header pins to add the front panel and had to modify the female header pins in order to make the short enough so the front panel fitted correctly.</p>
-<p>I did this by trimming the tops of the female head pins and also the male ones to get them to fit right.</p>
-<p>I have provided alternative header pins in the parts list which I believe will do the job a lot easier.</p>
-<p>Note though that I haven't tried this myself yet</p>
+<p>That was easy! now onto the more tricker part - adding the screen.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screen</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Screen image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Screen image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Screen image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Screen image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Screen image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Adding the Screen image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Adding the Screen image 7" loading="lazy"></div><p>When adding the screen, you want to firstly make sure that it is secure to the front panel and you also want to be able to take the front panel off for any future changes. I have found that the best way to do this is using female and male header pins. However, it gets tricker as you need to make sure that the header pins are not too big or the screen will make the front panel sit too high.</p>
+<p>I used normal header pins to add the front panel and had to modify the female header pins in order to make the short enough so the front panel fitted correctly. I did this by trimming the tops of the female head pins and also the male ones to get them to fit right. I have provided alternative header pins in the parts list which I believe will do the job a lot easier. Note though that I haven't tried this myself yet</p>
 <p>STEPS:</p>
 <ul>
 <li>First, solder the male header pins to the TFT screen. IMPORTANT - you need to make sure that the header pins are sitting flush with the top of the TFT screen PCB. If you don't, then they will hit the front panel and the screen won't sit flat</li>
@@ -234,9 +242,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Now add the code if you haven't aleady and click 'upload'</li>
 </ul>
 <p>Note that the code is currently quite long so it will take some time to upload. I still need to clean it up. However, it should work fine (it's just messy!)</p><h2><span class="step-num">STEP 8</span>Step 8: How to Play</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: How to Play image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: How to Play image 2" loading="lazy"></div><p>Now you can connect it up to a 9V power supply along with a speak and start playing!</p>
-<p>I've provided below instructions on how to use the synth.</p>
-<p>However, you can just start playing and work it out yourself if you want.</p>
-<p>The main point to note is, if you want to play any of the additional functions, then hold down the function key and press any of the 1-8 keys to jump into one of the functions.</p>
+<p>I've provided below instructions on how to use the synth. However, you can just start playing and work it out yourself if you want. The main point to note is, if you want to play any of the additional functions, then hold down the function key and press any of the 1-8 keys to jump into one of the functions.</p>
 <p>Have fun!</p>
 <p>4 Main Knobs:</p>
 <ul>
@@ -382,6 +388,8 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Pot 3: Release Time - how fast it returns</li>
 <li>Syncs with LOOP patterns or SYNC input for rhythmic pumping</li>
 <li>Auto-retriggering creates continuous pumping effect</li>
-</ul>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Parts List Medusa.pdf">Parts List Medusa</a></li>
+</ul><a class="pdf-download" href="pdfs/Parts List Medusa.pdf" target="_blank">&#8675; Parts List Medusa</a>
 </body>
 </html>

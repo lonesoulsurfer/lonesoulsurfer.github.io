@@ -106,6 +106,8 @@ Link to Gerber files, eagle schematic and PCB - Version 2
 NOTE: I revisited this PCB and made a smaller. The files can be found in version 2 link
 
 
+- [Headphone Amp 1](pdfs/Headphone Amp 1.pdf)
+
 ## Step 3:
 
 
@@ -225,6 +227,10 @@ Now that the build is done it's time to try out your amp
 
 3. Turn on the amp and start to play music. The sound should be clear, have more bass, and overall have a richer sound then just listening through your headphone.
 
+
+## Downloads
+
+- [Headphone Amp 1](pdfs/Headphone Amp 1.pdf)
 
 ---
 *31 images archived*

@@ -130,6 +130,8 @@ Also, when you first look at the schematic it might seem that there are 2 op amp
 Make sure you also breadboard the circuit first. Nothing worse than thinking “you got this”, soldering everything into place then realising you have messed it up!
 
 
+- [ne5532](pdfs/ne5532.pdf)
+
 ## Step 3: Pulling Apart the NES Controller
 
 ![Step 3: Pulling Apart the NES Controller image 1](images/step03_01.jpg)
@@ -560,6 +562,10 @@ Steps:
 
 That’s it. You have finished building your own headphone amp
 
+
+## Downloads
+
+- [ne5532](pdfs/ne5532.pdf)
 
 ---
 *89 images archived*

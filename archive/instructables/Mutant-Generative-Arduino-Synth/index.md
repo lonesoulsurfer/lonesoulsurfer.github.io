@@ -77,6 +77,8 @@ PARTS:
 - Mini JST Connector and wire 2 Pin X 11
 
 
+- [Mutant - List of Parts](pdfs/Mutant - List of Parts.pdf)
+
 ## Step 1: PCB, Front Panel & Schematic
 
 ![Step 1: PCB, Front Panel & Schematic image 1](images/step02_01.jpg)
@@ -105,6 +107,8 @@ If you are interested in creating your own front panels then I highly recommend 
 
 In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
 
+
+- [Creating Front Panels](pdfs/Creating Front Panels.pdf)
 
 ## Step 2: Adding Components to the PCB
 
@@ -370,6 +374,11 @@ Seq
 - Function - Number of steps in the sequence 1-16
 - Alternative Function – N/A
 
+
+## Downloads
+
+- [Mutant - List of Parts](pdfs/Mutant - List of Parts.pdf)
+- [Creating Front Panels](pdfs/Creating Front Panels.pdf)
 
 ---
 *57 images archived*

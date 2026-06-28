@@ -39,6 +39,8 @@ Also, when you first look at the schematic it might seem that there are 2 op amp
 The end result is a high quality, high performance portable device that is relatively easy to build and will change the way you listen to music from your phone.
 
 
+- [ne5532](pdfs/ne5532.pdf)
+
 ## Step 2: Tools and Parts
 
 ![Step 2: Tools and Parts image 1](images/step02_01.jpg)
@@ -313,6 +315,10 @@ Troubleshooting
 
 ## Step 10:
 
+
+## Downloads
+
+- [ne5532](pdfs/ne5532.pdf)
 
 ---
 *41 images archived*

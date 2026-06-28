@@ -53,6 +53,8 @@ You can also find an excel version of the parts list in my GitHub page
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
 
+- [Solar - Parts List](pdfs/Solar - Parts List.pdf)
+
 ## Step 1: Getting the PCB's Printed
 
 ![Step 1: Getting the PCB's Printed image 1](images/step02_01.jpg)
@@ -188,6 +190,10 @@ Another thing to note is syncing it in isn't as straight forward as just pluggin
 
 The cool thing about this little synth is, you don't have to sync it with other synths to play along. I love just using the keys and jamming along with my modular.
 
+
+## Downloads
+
+- [Solar - Parts List](pdfs/Solar - Parts List.pdf)
 
 ---
 *30 images archived*

@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -111,14 +128,8 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <span class="nav-title">Book Light Inside a Book!</span>
 </nav>
 <h1>Book Light Inside a Book!</h1><div class="source"><a href="https://www.instructables.com/Book-Light-Inside-a-Book/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This build came about after my nephew asked for a new book light. I took it literally and decided to build him one made from a book!</p>
-<p>Actually, this isn't the first time I've used a book to make a book light.</p>
-<p>I made one a few years ago where you opened the front cover and it had a light inside.</p>
-<p>However, this time I had the idea of making the pages illuminated.</p>
-<p>I did play around with using the actual pages to help diffuse the light but in the end went with some opal acrylic to stand in place of the pages.</p>
-<p>This build is relatively simple and only needs a couple of electronic parts to build.</p>
-<p>Initially I went all out and included a battery but decided against it and just kept it simple.</p>
-<p>It includes a dimmer module which allows you to dim the LED's and also has a built in switch in the potentiometer which is handy.</p>
-<p>Basic soldering skills is all that is needed to make your own.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>PARTS:</p>
+<p>Actually, this isn't the first time I've used a book to make a book light. I made one a few years ago where you opened the front cover and it had a light inside. However, this time I had the idea of making the pages illuminated. I did play around with using the actual pages to help diffuse the light but in the end went with some opal acrylic to stand in place of the pages.</p>
+<p>This build is relatively simple and only needs a couple of electronic parts to build. Initially I went all out and included a battery but decided against it and just kept it simple. It includes a dimmer module which allows you to dim the LED's and also has a built in switch in the potentiometer which is handy. Basic soldering skills is all that is needed to make your own.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>PARTS:</p>
 <ul>
 <li>Book. So this is probably the most important part to the build. You will want to find a hard cover book, something that has a good looking cover and is not too damaged. You will also want to make sure that you check to see if the book is worth anything before you pull it apart! I scout around op shops (thrift stores) where you can find them for cheap.</li>
 <li>Wood. This is used to make the Frame. I used 30mm x 10mm pine strips which I got from the local hardware store. The width of the wood will need to be the same or larger than the width of the book.</li>
@@ -160,10 +171,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Heat with a heat gun (or even a hairdryer will work - it will just take a little longer) until the acrylic starts to bend.</li>
 <li>Use 2 pieces of wood to make the bend. One piece holding the top section and the other to push the acrylic down to make the bend. Hold for 20 seconds or until the acrylic starts to stiffen up</li>
 <li>Now you can place the acrylic back on top of the wood frame and trim up the acrylic where needed.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Electronics - Dimmer Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 5" loading="lazy"></div><p>I mentioned in the intro that you could make a simple version of this and I'll explain what I mean.</p>
-<p>You could just add the USB-C adapter section into the frame, connect this up to the LED strips and you are done.</p>
-<p>There is no 'on/off' switch so you'd have to turn it on/off from the wall switch and you can't dim the LED's but it is def a simple solution.</p>
-<p>However, if you want to add a battery and dimmer - then continue on.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Electronics - Dimmer Module</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Electronics - Dimmer Module image 5" loading="lazy"></div><p>I mentioned in the intro that you could make a simple version of this and I'll explain what I mean. You could just add the USB-C adapter section into the frame, connect this up to the LED strips and you are done. There is no 'on/off' switch so you'd have to turn it on/off from the wall switch and you can't dim the LED's but it is def a simple solution. However, if you want to add a battery and dimmer - then continue on.</p>
 <p>STEPS:</p>
 <ul>
 <li>You can locate the dimmer module under the top horizontal piece of wood that makes up the wood frame. I put mine on top first then realized that it would interfere with the LED's. Doh!</li>
@@ -172,9 +180,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Secure the dimmer module with a couple small screws to the frame. There are a couple mount holes in the module which makes it easy.</li>
 <li>Now, to work out where to make a hole in the spine of the book cover do the following. Add some black marker to the end of the potentiometer and then push the cover into place on the wood frame. This will leave a mark on the inside of the cover where to drill. I used a stepper drill piece to make the hole as these leave a clean finish around the drilled hole</li>
 <li>Check and make sure the potentiometer and wood frame fit onto the book cover</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Electronics - USB-C Adapter</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 6: Adding the Electronics - USB-C Adapter image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 7" loading="lazy"></div><p>You may be wondering why I just didn't use the USB-C adapter on the charging module.</p>
-<p>Well - for the simple reason that I wouldn't have been able to access the one on the charging module as it is too short.</p>
-<p>Using a separate adapter allows you to place it inside the wood frame and connect it separately to the charging module later on.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Electronics - USB-C Adapter</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 6: Adding the Electronics - USB-C Adapter image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Electronics - USB-C Adapter image 7" loading="lazy"></div><p>You may be wondering why I just didn't use the USB-C adapter on the charging module. Well - for the simple reason that I wouldn't have been able to access the one on the charging module as it is too short. Using a separate adapter allows you to place it inside the wood frame and connect it separately to the charging module later on.</p>
 <p>STEPS:</p>
 <ul>
 <li>Solder a couple of wires to the solder points on the USB-C adapter. These wires need to be long enough to reach the dimmer module which is located in the tpop section of the frame. Note the leg polarity on the USB-C Adapter in the attached image. You'll need to make sure that these are connected to the right solder pads on the charging module later on</li>
@@ -204,9 +210,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Use superglue again and add a little all around the top of the wood frame</li>
 <li>Carefully push the cover against the frame and add some pressure. The best way to do this is to lay the book flat and add pressure from the top.</li>
 <li>Leave the other side for the moment.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Pages to the Inside of the Book</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 4" loading="lazy"></div><p>To give some weight to the book light, I decided to add the pages back inside the book!</p>
-<p>Well, back inside the wood frame.</p>
-<p>You don't have to do this but it does help with keeping the book light secure when it's standing up</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Adding the Pages to the Inside of the Book</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Adding the Pages to the Inside of the Book image 4" loading="lazy"></div><p>To give some weight to the book light, I decided to add the pages back inside the book! Well, back inside the wood frame. You don't have to do this but it does help with keeping the book light secure when it's standing up</p>
 <p>STEPS:</p>
 <ul>
 <li>As the pages are now too big to fit inside the wood frame , you'll need to cut the pages in order for them to fit. I used my belt saw to do this but you could also use a stanley knife to cut the pages. Actually the belt saw worked better then I expected and made short work of trimming the book down</li>

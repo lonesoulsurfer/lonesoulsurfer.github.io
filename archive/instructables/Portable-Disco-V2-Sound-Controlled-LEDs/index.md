@@ -128,6 +128,10 @@ As you can only design boards at a certain size in Eagle (unless you pay), so I 
 You will also need the smaller audio board that I designed if you want to be able to plug the LED's directly into a audio source. I have also included the gerber files etc in the link above.
 
 
+- [Audio Circuit](pdfs/Audio Circuit.pdf)
+- [Dancing LED's Additional Board](pdfs/Dancing LED_s Additional Board.pdf)
+- [Dancing LED's Main Board](pdfs/Dancing LED_s Main Board.pdf)
+
 ## Step 3: Routing a Slot in the Wood and Cutting
 
 ![Step 3: Routing a Slot in the Wood and Cutting image 1](images/step03_01.jpg)
@@ -386,6 +390,12 @@ Well if you have built this one successfully, you can try your hand at extending
 
 Thanks for checking this 'ible out and happy building.
 
+
+## Downloads
+
+- [Audio Circuit](pdfs/Audio Circuit.pdf)
+- [Dancing LED's Additional Board](pdfs/Dancing LED_s Additional Board.pdf)
+- [Dancing LED's Main Board](pdfs/Dancing LED_s Main Board.pdf)
 
 ---
 *64 images archived*

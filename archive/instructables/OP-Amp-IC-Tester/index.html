@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -111,70 +128,57 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <span class="nav-title">OP Amp IC Tester</span>
 </nav>
 <h1>OP Amp IC Tester</h1><div class="source"><a href="https://www.instructables.com/OP-Amp-IC-Tester/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>There is nothing more satisfying then building a circuit and having it work as you intended and nothing so infuriating at it failing and not knowing why!</p>
-<p>There’s usually a few main culprits that can cause a circuit to fail.</p>
-<p>There could be a solder bridge or a part missing, maybe you have wired something up incorrectly.</p>
-<p>All these types of failures can be checked, identified and fixed, but what happens if it’s the IC that fails and how do you check if it is working as it should?</p>
-<p>If you use an IC socket, then you could remove the IC and replace with another.</p>
-<p>The problem though is, you still wouldn’t know if the IC’s faulty or not.</p>
-<p>To rectify this, I decided to build an IC tester that could test a few common Op amps (along with a Vactrol).</p>
-<p>The Op amps that it tests are LM358, LM386 and LM741.</p>
+<p>There’s usually a few main culprits that can cause a circuit to fail. There could be a solder bridge or a part missing, maybe you have wired something up incorrectly. All these types of failures can be checked, identified and fixed, but what happens if it’s the IC that fails and how do you check if it is working as it should?</p>
+<p>If you use an IC socket, then you could remove the IC and replace with another. The problem though is, you still wouldn’t know if the IC’s faulty or not. To rectify this, I decided to build an IC tester that could test a few common Op amps (along with a Vactrol). The Op amps that it tests are LM358, LM386 and LM741.</p>
 <p>Each test uses an LED that flashes to indicate whether the IC is working correctly or not. If the LED stays on or off constantly, then you know that the IC doesn’t function correctly.</p>
 <p>I’ve included the Eagle schematics and board design along with the gerber files so you can get a board printed up yourself and make your own.</p>
 <p>Let’s get testing!</p>
 <p>Hackster did a review on this build also - link below if you want to check it out!</p>
-<p>Hackster Review</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"></div><p>I have included the parts list in the attached image as well as in a PDF format.</p>
-<p>You can also find it in the Google drive link I have provided in the next step.</p>
-<p>Also check out the next step for the PCB printing options.</p>
+<p>Hackster Review</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"></div><p>I have included the parts list in the attached image as well as in a PDF format. You can also find it in the Google drive link I have provided in the next step. Also check out the next step for the PCB printing options.</p>
 <p>The links below are to specific parts in the attached parts list</p>
 <p>PARTS:</p>
 <ol>
 <li>9V Battery holder - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>8 dip IC sockets - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>Slider switch - eBay</li>
-</ol>
+</ul>
 <ol>
 <li>9 V battery (only if you want to power the tester via a 9V battery. You can also power the board a few other ways.</li>
-</ol>
+</ul>
 <p>4.PCB pin headers, Male & female - eBay</p>
 <ol>
 <li>The rest of the components like resistors, capacitors, LED's can be found on the attached list of parts</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: How It All Works</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: How It All Works image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: How It All Works image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 2: How It All Works image 3" loading="lazy"></div><p>I have included 3 IC testers for different Op amp IC’s along with a Vactrol or Optocoupler.</p>
-<p>I also decided to add a few ways to power the whole circuit, including adding a 9V battery to the back of it!</p>
-<p>This way there are a few options for me to choose from depending on how I want to provide the power.</p>
-<p>All you need to do to test an op amp, is to add it into the IC socket, turn the circuit on and see if the LED/s blink or not.</p>
-<p>If the LED/s stay on or off, then you will have a fault in the IC.</p>
-<p>If the IC also starts to heat up, then you will also have a fault.</p>
+</ul>
+<ul>
+<li><a href="pdfs/Book2.pdf">Book2</a></li>
+</ul><a class="pdf-download" href="pdfs/Book2.pdf" target="_blank">&#8675; Book2</a><h2><span class="step-num">STEP 2</span>Step 2: How It All Works</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: How It All Works image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: How It All Works image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 2: How It All Works image 3" loading="lazy"></div><p>I have included 3 IC testers for different Op amp IC’s along with a Vactrol or Optocoupler. I also decided to add a few ways to power the whole circuit, including adding a 9V battery to the back of it! This way there are a few options for me to choose from depending on how I want to provide the power.</p>
+<p>All you need to do to test an op amp, is to add it into the IC socket, turn the circuit on and see if the LED/s blink or not. If the LED/s stay on or off, then you will have a fault in the IC. If the IC also starts to heat up, then you will also have a fault.</p>
 <p>For the Vactrol/optocoupler, the LED should come on only. If it doesn’t, then it is faulty.</p>
-<p>The way the op amp tester’s work is by using the voltage comparator/s inside the op amp.</p>
-<p>These have an inverting (-) and non-inverting (+) input and an output.</p>
-<p>You can connect these up in such a way to generate a square wave at the output which results in the LED flashing.</p>
-<p>The 358 op amp has 2 comparators which is why there are 2 LED’s to test this IC.</p>
+<p>The way the op amp tester’s work is by using the voltage comparator/s inside the op amp. These have an inverting (-) and non-inverting (+) input and an output. You can connect these up in such a way to generate a square wave at the output which results in the LED flashing. The 358 op amp has 2 comparators which is why there are 2 LED’s to test this IC.</p>
 <p>The diagrams for each of the IC’s show the inverting and non-inverting inputs along with the output. This is the section of the IC that is tested by the circuit.</p><h2><span class="step-num">STEP 3</span>Step 3: Schematic, Board and Gerber Files</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Schematic, Board and Gerber Files image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Schematic, Board and Gerber Files image 2" loading="lazy"></div><p>I have created a folder in my Google drive which can be found in the below link that has the schematic, PCB and Gerber files</p>
 <p>Google Drive Files</p>
-<p>If you wantb to get your own board printed, then just save the gerber zip file and email it to your favourite PCB manufacturer.</p>
-<p>I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well.</p>
-<p>I think I might do an instucatable soon on how to actually get a PCB printed.</p>
-<p>It isn't hard but there are a couple steps involved and I remember thinking back when I was starting - what the hell was a gerber file and how do I get one!</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Components to the PCB</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Components to the PCB image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Components to the PCB image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Components to the PCB image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Components to the PCB image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Components to the PCB image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Components to the PCB image 6" loading="lazy"></div><p>This is relatively straight forward and all of the values etc are printed on the board for each component.</p>
+<p>If you wantb to get your own board printed, then just save the gerber zip file and email it to your favourite PCB manufacturer. I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well.</p>
+<p>I think I might do an instucatable soon on how to actually get a PCB printed. It isn't hard but there are a couple steps involved and I remember thinking back when I was starting - what the hell was a gerber file and how do I get one!</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Components to the PCB</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Components to the PCB image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Components to the PCB image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Components to the PCB image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Components to the PCB image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Components to the PCB image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Components to the PCB image 6" loading="lazy"></div><p>This is relatively straight forward and all of the values etc are printed on the board for each component.</p>
 <p>STEPS:</p>
 <ol>
 <li>As always, start with the lowest profile components - In this instance it's the resistors. Solder these into place along with the diodes</li>
-</ol>
+</ul>
 <ol>
 <li>Next, I like to add the IC sockets as these are low profile as well.</li>
-</ol>
+</ul>
 <ol>
 <li>Once the IC sockets are in place, add the voltage connectors. For some reason I decided to add 4 different ways to add voltage to this board! I think I wanted to make sure there were options in case I didn't have a certain plug etc. You can also add a 9v battery to the back of you want to as well. You can see that I have done this in the images. However, I had to remove it as I didn't connect it to the switch so power was constantly on. I've fixed this in the schematic and gerber files.</li>
-</ol>
+</ul>
 <ol>
 <li>Add the capacitors and LED's. That's it! you are now ready to start testing your IC's</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Time to Test Some Op Amps!</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Time to Test Some Op Amps! image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Time to Test Some Op Amps! image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Time to Test Some Op Amps! image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Time to Test Some Op Amps! image 4" loading="lazy"></div><p>Now you are all ready to start testing your op amps. This is also a good way to check that the board works as well!</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Time to Test Some Op Amps!</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Time to Test Some Op Amps! image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Time to Test Some Op Amps! image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Time to Test Some Op Amps! image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Time to Test Some Op Amps! image 4" loading="lazy"></div><p>Now you are all ready to start testing your op amps. This is also a good way to check that the board works as well!</p>
 <p>Add an op amp into each of the IC sockets and test to see if: A - the curcuit works, and B - if the op amp is good or not.</p>
-<p>The good news is, you can use the tester to test other op amps!</p>
-<p>For example, if you want to test a 5532 op amp, then just plug it into the LM358 testing circuit.</p>
-<p>You shouldbe able to test quite a few different op amps with this tester so go ahead and test out what you have and see if you get a blinking LED.</p>
+<p>The good news is, you can use the tester to test other op amps! For example, if you want to test a 5532 op amp, then just plug it into the LM358 testing circuit. You shouldbe able to test quite a few different op amps with this tester so go ahead and test out what you have and see if you get a blinking LED.</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Book2.pdf">Book2</a></li>
+</ul><a class="pdf-download" href="pdfs/Book2.pdf" target="_blank">&#8675; Book2</a>
 </body>
 </html>

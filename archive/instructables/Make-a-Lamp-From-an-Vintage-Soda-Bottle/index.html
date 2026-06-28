@@ -85,6 +85,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -110,16 +127,10 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make a Lamp From an Vintage Soda Bottle</span>
 </nav>
-<h1>Make a Lamp From an Vintage Soda Bottle</h1><div class="source"><a href="https://www.instructables.com/Make-a-Lamp-From-an-Vintage-Soda-Bottle/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>The aim of this build was to showcase a vintage soda bottle that I had found at a local junk store.</p>
-<p>I actually was going to use an old Fanta bottle but decided to use one with some graphics on the front.</p>
-<p>This helped difuse the LED's which are quite bright.</p>
-<p>I'm really happy with how the lamp turned out!</p>
-<p>I had an idea outlined when I started the build with how I wanted the lamp to look.</p>
-<p>The bottle was always going to be the hero of the build but I wanted the rest of the parts to work as a whole which I managed to pull off.</p>
+<h1>Make a Lamp From an Vintage Soda Bottle</h1><div class="source"><a href="https://www.instructables.com/Make-a-Lamp-From-an-Vintage-Soda-Bottle/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>The aim of this build was to showcase a vintage soda bottle that I had found at a local junk store. I actually was going to use an old Fanta bottle but decided to use one with some graphics on the front. This helped difuse the LED's which are quite bright.</p>
+<p>I'm really happy with how the lamp turned out! I had an idea outlined when I started the build with how I wanted the lamp to look. The bottle was always going to be the hero of the build but I wanted the rest of the parts to work as a whole which I managed to pull off.</p>
 <p>I also wanted the feel that the bottle was still filled with liquid so I used a mixture of yellow and red filament LED's to create a really nice orange/pink glow.</p>
-<p>As with any build of this nature, there are sections of the build where you might have to come up with your own solutions.</p>
-<p>For example, I have no idea whether the soda bottle I used can be found in other countries!</p>
-<p>However, I have provided links to just about everything you need or tried to steer you in the right direction on where to find some parts.</p>
+<p>As with any build of this nature, there are sections of the build where you might have to come up with your own solutions. For example, I have no idea whether the soda bottle I used can be found in other countries! However, I have provided links to just about everything you need or tried to steer you in the right direction on where to find some parts.</p>
 <p>Let's get building...</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Supplies image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Supplies image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Supplies image 11" loading="lazy"><img src="images/step01_12.gif" alt="Supplies image 12" loading="lazy"></div><p>PARTS:</p>
 <ul>
 <li>Vintage Soft Drink Bottle - There are literally 1000's of different bottle designs to choose from! If you type in 'vintage soft drink bottle' into eBay then you'll be able to find something you like. The one I used can be found on eBay Try to choose a bottle that either has graphics on the front or the glass itself has some type of wave in it (Look up - vintage Fanta bottle to see what I mean). Oh and somehow I managed not to take one image of the bottle so the ones shown are ripped from the net.</li>
@@ -168,8 +179,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Enlarge the hole in the bottom slightly with a 5mm drill bit</li>
 <li>Next is to drill a section out for the potentiometer switch. This hole needs to be drill from the bottom up. I used a 19mm spade drill bit and drilled the hole until again the drill bit poked out the top. Make the hole a little bigger so the potentiometer will fit through it.</li>
 <li>Lastly, I decided to route out a section on the back so I could hide the wires. I used a router bit on my dremel to do this.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Arms to Hold the Bottle Into Place</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 6" loading="lazy"><img src="images/step05_07.gif" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 7" loading="lazy"><img src="images/step05_08.gif" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 8" loading="lazy"><img src="images/step05_09.gif" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 9" loading="lazy"></div><p>The arms are made from 4.5mm brass tubing and some cut off pieces from larger pipe.</p>
-<p>If you don't have 22mm and 50mm tubing, then you could use some brass strips, bend them around similar radius's of the neck and base of the bottle and use them instead</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Arms to Hold the Bottle Into Place</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 6" loading="lazy"><img src="images/step05_07.gif" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 7" loading="lazy"><img src="images/step05_08.gif" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 8" loading="lazy"><img src="images/step05_09.gif" alt="Step 4: Making the Arms to Hold the Bottle Into Place image 9" loading="lazy"></div><p>The arms are made from 4.5mm brass tubing and some cut off pieces from larger pipe. If you don't have 22mm and 50mm tubing, then you could use some brass strips, bend them around similar radius's of the neck and base of the bottle and use them instead</p>
 <p>STEPS:</p>
 <ul>
 <li>Cut a piece of the 22mm copper tube off, making a ring aprox 6-7mm wide</li>
@@ -179,10 +189,7 @@ code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size:
 <li>Place the 4.5mm brass tube into the hole and add some flux and solder it into place. This ring will be used to go around the neck (top section) of the bottle</li>
 <li>Do the same for the 50mm tube and make another ring This ring will be used to hole the bottom section of the bottle. Initially I wasn't going to add a ring to the bottom but the bottle wasn't stable enough with just 1 at the top.</li>
 <li>Place the top copper ring around the bottle neck. You might need to give it a good wiggle and push as it should be a tight fit. Don't worry about adding the bottom one yet</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Section That Sits on Top of the Bottle</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 5" loading="lazy"></div><p>As I mentioned in the parts list, I made my own top section from brass fittings I had around.</p>
-<p>However, there is really no need to make your own as it'd easier to just add a brass light bulb socket.</p>
-<p>This should will fit really well onto the top of the bottle.</p>
-<p>Make sure you don't remove the carboard inside the socket though as this helps secure it onto the top of the bottle.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Section That Sits on Top of the Bottle</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Making the Section That Sits on Top of the Bottle image 5" loading="lazy"></div><p>As I mentioned in the parts list, I made my own top section from brass fittings I had around. However, there is really no need to make your own as it'd easier to just add a brass light bulb socket. This should will fit really well onto the top of the bottle. Make sure you don't remove the carboard inside the socket though as this helps secure it onto the top of the bottle.</p>
 <p>STEPS:</p>
 <ul>
 <li>I don't go through now I made mine (I've included some images though).</li>

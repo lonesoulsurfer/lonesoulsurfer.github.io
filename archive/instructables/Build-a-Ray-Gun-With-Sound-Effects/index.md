@@ -133,6 +133,8 @@ PCB Parts List
 - Speaker 1W 8 Ohm
 
 
+- [Ray Gun Sound FX - Parts List](pdfs/Ray Gun Sound FX - Parts List.pdf)
+
 ## Step 2: Adding Components to the PCB
 
 ![Step 2: Adding Components to the PCB image 1](images/step03_01.jpg)
@@ -451,6 +453,10 @@ STEPS:
 - To enable to gun to mount I added a bolt into the bottom of the wood which stick out the top. The hole in the handle then can be used to mount the ray gun via the bolt in the wood.
 - If it is a bit wobbly, you might need to add a support for the front of the ray gun such as a piece of aluminum tube. The tube can be secured to the base and cut so the 'barrel' of the ray gun sits on it.
 
+
+## Downloads
+
+- [Ray Gun Sound FX - Parts List](pdfs/Ray Gun Sound FX - Parts List.pdf)
 
 ---
 *89 images archived*
