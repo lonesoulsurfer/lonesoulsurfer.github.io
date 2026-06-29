@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,154 +127,68 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Portable Variable Power Supply</span>
 </nav>
-<h1>Portable Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Portable-Variable-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>One of the tools that any electronic hobbyist should have in their kit is a portable, veritable power supply.</p>
-<p>I've made one before ('Ibles below) using a different module but this one is definitely my favourite.</p>
-<p>The voltage regulator and charging module that makes up the heart of this build is one I used in a lot of my projects.</p>
-<p>I've even done an Instructable on how to use it to re-use mobile batteries!</p>
-<p>They are cheap to buy and very reliable.</p>
-<p>The power is supplied by a li-po battery from an old laptop.</p>
-<p>You could use a mobile phone battery, 18650 li-ion battery or anything else that is similar.</p>
-<p>The batteries rechargeable which makes the power supply portable.</p>
+<h1>Portable Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Portable-Variable-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>One of the tools that any electronic hobbyist should have in their kit is a portable, veritable power supply. I've made one before ('Ibles below) using a different module but this one is definitely my favourite.</p>
+<p>The voltage regulator and charging module that makes up the heart of this build is one I used in a lot of my projects. I've even done an Instructable on how to use it to re-use mobile batteries! They are cheap to buy and very reliable.</p>
+<p>The power is supplied by a li-po battery from an old laptop. You could use a mobile phone battery, 18650 li-ion battery or anything else that is similar. The batteries rechargeable which makes the power supply portable.</p>
 <p>The build is a relatively easy and only needs some basic solder skills to make. Oh and as a bonus, you can also use it as a voltage tester too!</p>
-<p>I made <a href="https://www.instructables.com/Portable-Variable-Power-Supply-1/">this one</a> using a different module.</p>
-<p>I found however that the module can burn out easily and has a weird habit of overloading which causes voltages to not be accurate.</p>
+<p>I made this one using a different module. I found however that the module can burn out easily and has a weird habit of overloading which causes voltages to not be accurate.</p>
 <p>Hackster also did a nice review of this build which can be found in the link below</p>
-<p><a href="https://www.hackster.io/news/an-easy-peasy-portable-power-supply-dc2970f55c47">Hackster Review</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"></div><ol>
-<li>Charger and step-up module - <a href="https://www.ebay.com.au/itm/3pcs-3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge/313035747718?_trkparms=ispr%3D1&hash=item48e2627186:g:CcUAAOSwiFFeeCan&amdata=enc%3AAQAFAAACoBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkRjLZq23gAR%252BKma9gM2Z1hiOXe1GbPluHF7lMldnuIBDj1HsK7odAl1X4rZGWK5cUTbfylxqsZW7tfU9EPu%252FEIJ0IMdf6RletPpJqHsqzza3R9L3Tr3xbiWbLJpUL5%252FA7VKzZwl%252BkR7boEoXta1NwLkGNBGSyRm%252FZo4PSHEdSzLCK5PyYndYJhl6cX0m9LYCipx02L4fkQSCrrwfn2LRXiefMoTEOOat1vLUy8sHoEsB3st759c7j9Gm34LFH73wqwvKa%252F8CTOXimkGbZBIhEUjieGs5LsTuZMhIhzxLxkkKNfbe5DJgbRjvWanbpT1CwRKphTxq2pbqqBHDnlsesndkXdGDf9zGFFWjZJoBhH3bdF8gJwXKNckqXTddE%252F%252FxjkWXPUODQkCLtyRBqoZXZ%252BUCPrz%252FZt%252FDxMX43rmMXdHd4dfm0e6xrRVZBJwWGKSDJ2KezqJ8aTv3HMElRCf2xrdZqQ%252FyfvPm5EfQKnVkRpz2VP%252BJDCwQiCbt%252Feves%252Bjuelo3EfGKFLpNYVZjd2Jz%252FFsMYzjkqFGEE45nzrCQXKlAjKOFeWLBZqaV4HI8BJWX7tfJNf26meQt1Rp%252B2gi6LEPzRruws4u2YNIciKyOr3RkHc7%252BAscMWi%252BLKAUEju2bX18H7wnuw7TaM8VSsl8MQ6%252FO%252Bci2jePEi3NLCVkzgaFap0GhWkTW75rQJqQfnIUig8lLRKfoGaA6u9QznjsOV3O3hFcQo7mv3fG%252BiIhkjYmVZCuD4eHiN7fTrgY0%252Bp70NCky0qv2PXZJzY3JSywgx5PJtLgJXc82KVP3Q9kS2etAackfb3E3AKxVW8mXrDhyxqEQ%252BtXoEACwjBfs51BdH7Q%253D%253D%7Ccksum%3A313035747718b2284b62e340455fba7b37e97519f906%7Campid%3APL_CLK%7Cclp%3A2334524&frcectupt=true">eBay</a> The link is for 3 of them</li>
-</ol>
-<ol>
-<li>Battery. You can use an old (or new) <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=samsung+mobile+battery&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=[18650](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=18650+battery&_sacat=0">mobile battery</a>+battery), 18650 <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=3.7v+lithium+ion+battery&_sacat=0&LH_TitleDesc=0&_sop=15">li-ion</a>, or almost any other rechargeable battery</li>
-</ol>
-<ol>
-<li>Voltage meter - <a href="https://www.ebay.com.au/c/18015900933">eBay</a></li>
-</ol>
-<ol>
-<li>SPDT Switch - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=spdt+switch&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=voltage+meter">eBay</a></li>
-</ol>
-<ol>
-<li>250K Pot - <a href="https://www.aliexpress.com/item/1005001528856486.html?spm=a2g0o.productlist.0.0.24c936bewhzFMn&algo_pvid=d2a03ca4-cb5f-44ad-9fc9-8a6d3df7962b&algo_expid=d2a03ca4-cb5f-44ad-9fc9-8a6d3df7962b-25&btsid=0bb0622e16036828376391606e31c8&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_">Ali Express.</a> I used a 100K pot which also works fine, however, you can only increase the voltage to 14v which is more then enough for most projects</li>
-</ol>
-<ol>
-<li><a href="https://www.ebay.com.au/itm/2-10-20pcs-4mm-Banana-Plug-Socket-Jack-Binding-Post-Nut-Male-Connector-for-video/392323195472?hash=item5b5848e250:g:HBgAAOSwTsNdFyX1&frcectupt=true">Fe[male</a>](https://www.ebay.com.au/itm/10Pcs-4mm-Banana-Panel-Socket-Test-Probe-Binding-Post-Nut-Plug-Jack-Connector-zh/383705564606?hash=item5956a245be:g:WWsAAOSw9IpXyqAZ) and male banana plugs - eBay. The female ones I have linked are 4mm and these fit nicely into the case.</li>
-</ol>
-<ol>
-<li>Alligator Test Lead Clips – <a href="https://www.ebay.com.au/itm/Banana-plug-to-Alligator-Clip-Clamp-for-Multimeter-Connector-Probe-test-Lead-new/133123207703?_trkparms=ispr%3D1&hash=item1efec2f217:g:ZU4AAOSw31ddOQP2&amdata=enc%3AAQAFAAACcBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkBUIiHwYv5YgVss0WaiENz6j%252FxojC98Qzl0onVdjohtFBL6OZA%252FczboPYb8gLwKt7h0s3I8xDGDssux6bP%252BJziDpIaEQtXBoNT%252Fx6SolZvoilt2svTuFRP1Dv%252Bx0YekRWcUWPo1fF%252BIgR75EFRe6ukjkrbfMKkgKTh4%252FFiP3L1DwGR4OCztMWmTx5cEQjPO2MeBBfIa%252B8y%252FLd5kiNdbJ%252BD2zUf4J%252BA3K%252FTEHbROpSYIj3rXKwgCqbGPeO%252BxVgWE7BtSRhFM97zXOxebiOgVufCPwggEu%252BoLFLKCswbAlmu6JYFEKPPEiuTBSsAekUPZmNCmv8h%252BAolnz%252FQi%252BjKuOPm0%252F7xucmf0F4gadePz4c%252FxqbulTnaMQBLnzTcsn%252Bu9pYV8Cu%252FcNmBqqO%252F%252BSgQtZCH2j%252FEPv5gJr8na2OksObs2X9jKYg4eryzz3auhsj7Nnn0KilDgK92vcJpY6YaJ4QIVi3Q3qyw5s3WNQTHisesoEgPV6lbhi6sx1lfP%252FZR1r9AdxzSUASFNx3dOR0T%252FilEn00G1F7xsOmNmzjO854asGbP18C9K4HiYxg7A5VWbOlVYXfeSZFXkhYnQFXc6E%252BpZ2lWiZvYui8o9oO%252Fbtetoo349o91iD6kfWUHe8j0zcFUyMH5ggCsKorVCBW65o5l2h%252FqcdNQ9JPzaGjgmyGSAl53VtitGPbRy718Bf7gB6T0qVGE91FSN80ab9qwsnx7TsVwSL3Mf8G08UgFoZ5n%252BhaV0y9qqxTT443xsS%252F2w7CUbiZk1ptymHzGH3E6Zyx4g%253D%253D%7Ccksum%3A133123207703ca9dc8c6fce345c5acc63ee5c574150f%7Campid%3APL_CLK%7Cclp%3A2334524&frcectupt=true">eBay</a></li>
-</ol>
-<ol>
-<li>Hook Clip Test Probe – <a href="https://www.ebay.com.au/itm/1-Pair-Banana-Plug-To-Test-Hook-Clip-Probe-Cable-For-Test-Equipment-B2AD/402249338632?hash=item5da7edcf08:g:yHkAAOSw4nhZ~NqH&frcectupt=true">eBay</a></li>
-</ol>
-<ol>
-<li>For the case I used a 2 X AA battery holder. A better one to use would be <a href="https://www.ebay.com.au/itm/3-7V-2x-18650-Battery-Holder-Connector-Storage-Case-Box-ON-OFF-Switch-With-Le-W7/224009994856?hash=item3428094268:g:4pIAAOSw9-tevNua&frcectupt=true">this holder</a> which is a 2 X 18650 battery holder. It's larger, will fit more types of batteries and you could wire 2 X 19650 batteries in parallel which would allow you to use the module to charge them</li>
-</ol>
-<ol>
+<p>Hackster Review</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"></div><ol>
+<li>Charger and step-up module - eBay The link is for 3 of them</li>
+<li>Battery. You can use an old (or new) mobile battery, 18650 li-ion, or almost any other rechargeable battery</li>
+<li>Voltage meter - eBay</li>
+<li>SPDT Switch - eBay</li>
+<li>250K Pot - Ali Express. I used a 100K pot which also works fine, however, you can only increase the voltage to 14v which is more then enough for most projects</li>
+<li>Female and male banana plugs - eBay. The female ones I have linked are 4mm and these fit nicely into the case.</li>
+<li>Alligator Test Lead Clips – eBay</li>
+<li>Hook Clip Test Probe – eBay</li>
+<li>For the case I used a 2 X AA battery holder. A better one to use would be this holder which is a 2 X 18650 battery holder. It's larger, will fit more types of batteries and you could wire 2 X 19650 batteries in parallel which would allow you to use the module to charge them</li>
 <li>Wire</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding a Potentiometer to the Module</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding a Potentiometer to the Module image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding a Potentiometer to the Module image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding a Potentiometer to the Module image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding a Potentiometer to the Module image 4" loading="lazy"></div><p>The module has micro potentiometer on it already but is way too small to use easily.</p>
-<p>However, the good people who developed this module also added some holes to solder on a potentiometer.</p>
-<p>The value of the pot I used is 100K and allows the voltage to go up to 14v.</p>
-<p>If you want to go higher then add a 250K pot which should bring it up to the full 30V's.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding a Potentiometer to the Module</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding a Potentiometer to the Module image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding a Potentiometer to the Module image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding a Potentiometer to the Module image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding a Potentiometer to the Module image 4" loading="lazy"></div><p>The module has micro potentiometer on it already but is way too small to use easily. However, the good people who developed this module also added some holes to solder on a potentiometer. The value of the pot I used is 100K and allows the voltage to go up to 14v. If you want to go higher then add a 250K pot which should bring it up to the full 30V's.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the pot into the holes of the module. There is a SMD resistor right behind the pot which makes it angle down. To rectify this I added a slither of thin plastic to the front to make it sit straight</li>
-</ol>
-<ol>
 <li>Solder in place the pot to the module</li>
-</ol>
-<ol>
 <li>Be carful when adding the solder as there are a couple of solder points very close to the potentiometer ones and you don't want to bridge them.</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Adding Some Wires to the Output</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding Some Wires to the Output image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding Some Wires to the Output image 2" loading="lazy"></div><p>Next you need to solder a couple wires to the output on the module. These are the solder points I mentioned in the previous step.</p>
 <p>Steps:</p>
 <ol>
 <li>Add a little solder to the solder points one the module</li>
-</ol>
-<ol>
 <li>Carefully solder on a couple of wires to each of them</li>
-</ol>
-<ol>
 <li>Check to make sure that there are no solder bridges between the pot and the output</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Modifying a AA Battery Holder to Make the Csse</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 7" loading="lazy"></div><p>I initially didn't go with a battery holder as the case.</p>
-<p>I started to use a piece of plastic which I heated and bent (see last photo), but unfortunately this was weak at the bend and snapped on me.</p>
-<p>The battery case is ridged and also has a side section to add the banana plugs into.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Modifying a AA Battery Holder to Make the Csse</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Modifying a AA Battery Holder to Make the Csse image 7" loading="lazy"></div><p>I initially didn't go with a battery holder as the case. I started to use a piece of plastic which I heated and bent (see last photo), but unfortunately this was weak at the bend and snapped on me. The battery case is ridged and also has a side section to add the banana plugs into.</p>
 <p>Steps:</p>
 <ol>
 <li>First, you need to remove any gussets and pieces of plastic inside the battery holder. Use a pair of wire cutters to remove this.</li>
-</ol>
-<ol>
 <li>The case actually comes with an on/off switch so you can utilize this if you want to. mine was broken so I removed it as well and added a toggle switch</li>
-</ol>
-<ol>
 <li>If you are going to add a toggle switch then you'll need to drill a hole into the bottom of the holder at the end where the original switch was located</li>
-</ol>
-<ol>
 <li>Lastly, drill a couple holes in the side of the battery holder for the banana plugs to go into</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Banana Plugs to the Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Banana Plugs to the Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Banana Plugs to the Case image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Banana Plugs to the Case image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Banana Plugs to the Case image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Banana Plugs to the Case image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Pull the banana plugs apart. To make sure there is enough room in the case, I removed one of the plastic rings on the banana plugs</li>
-</ol>
-<ol>
 <li>Place the plug into the hole and add the small plastic ring to the other side</li>
-</ol>
-<ol>
 <li>Secure them in place with the small nut provided</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Drilling, Sticking and Soldering</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Drilling, Sticking and Soldering image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Drilling, Sticking and Soldering image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Drilling, Sticking and Soldering image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Drilling, Sticking and Soldering image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Drilling, Sticking and Soldering image 5" loading="lazy"></div><p>I used the bottom of the battery holder as the top section and mounted the module and voltage meter to this section.</p>
-<p>In order to hide the wires as best I could I drilled some holes into the top of the case for them.</p>
-<p>To stick everything down I used good, double sided tape</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Drilling, Sticking and Soldering</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Drilling, Sticking and Soldering image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Drilling, Sticking and Soldering image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Drilling, Sticking and Soldering image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Drilling, Sticking and Soldering image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Drilling, Sticking and Soldering image 5" loading="lazy"></div><p>I used the bottom of the battery holder as the top section and mounted the module and voltage meter to this section. In order to hide the wires as best I could I drilled some holes into the top of the case for them. To stick everything down I used good, double sided tape</p>
 <p>Steps:</p>
 <ol>
 <li>Place the module on top of the battery holder and mark out where the holes need to be drilled into it. You'll need some holes for the battery wires and also the output wires so 4 in total for the module</li>
-</ol>
-<ol>
 <li>Do the same for the voltage meter, you'll need 2 for that</li>
-</ol>
-<ol>
 <li>Make sure you solder wires to the module for the battery and output before you stick the module into place with the double sided tape.</li>
-</ol>
-<ol>
 <li>Thread the wires through the holes and secure the module</li>
-</ol>
-<ol>
 <li>Solder the output wires to the solder points on the banana plugs. You'll also need to solder the wires from the volt meter to the same solder points once it has been attached to the case</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Voltage Meter and Battery</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Voltage Meter and Battery image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Voltage Meter and Battery image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Voltage Meter and Battery image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Like you did for the module, thread the wires on the voltage meter though the holes in the case and secure it with double sided tape</li>
-</ol>
-<ol>
 <li>Connect positive to the red banana plug and ground to the black one</li>
-</ol>
-<ol>
 <li>Solder the battery wires from the module to the battery. Check and make sure you have the polarities right.</li>
-</ol>
-<ol>
 <li>before you secure the battery, test to make sure everything is working as it should. Make sure the that the micro pot that comes on the module is turned fully anti-clockwise. This will ensure that the pot added to the module will work smoothly</li>
-</ol>
-<ol>
 <li>Use some superglue to secure the battery to the bottom of the case.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Making Some Connectors</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making Some Connectors image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making Some Connectors image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making Some Connectors image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making Some Connectors image 4" loading="lazy"></div><p>You can buy different connectors such as the alligator and hook type test clips.</p>
-<p>However, If you want to use the regulator on a bread board you'll need to add a couple of jumper wires to some male banana plugs.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Making Some Connectors</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making Some Connectors image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making Some Connectors image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making Some Connectors image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making Some Connectors image 4" loading="lazy"></div><p>You can buy different connectors such as the alligator and hook type test clips. However, If you want to use the regulator on a bread board you'll need to add a couple of jumper wires to some male banana plugs.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut the end off a long red and black jumper wire</li>
-</ol>
-<ol>
 <li>Add a little solder to the ends that you cut off and secure each of the wires into a male banana plug.</li>
-</ol>
-<ol>
 <li>There isn't any other steps - you're all done!</li>
 </ol>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

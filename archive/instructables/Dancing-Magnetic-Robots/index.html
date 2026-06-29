@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,22 +127,96 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Dancing, Magnetic Robots</span>
 </nav>
-<h1>Dancing, Magnetic Robots</h1><div class="source"><a href="https://www.instructables.com/Dancing-Magnetic-Robots/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><h2><span class="step-num">STEP 2</span>Step 2: Making Your Robot - Legs</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making Your Robot - Legs image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making Your Robot - Legs image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making Your Robot - Legs image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making Your Robot - Legs image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making Your Robot - Legs image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making Your Robot - Legs image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making Your Robot - Legs image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Making Your Robot - Legs image 8" loading="lazy"></div><h2><span class="step-num">STEP 3</span>Step 3: Attaching the Arms and Body</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Attaching the Arms and Body image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Attaching the Arms and Body image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Attaching the Arms and Body image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Attaching the Arms and Body image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Attaching the Arms and Body image 5" loading="lazy"></div><h2><span class="step-num">STEP 4</span>Step 4: Adding the Rest of the Bits.</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Rest of the Bits. image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Rest of the Bits. image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Rest of the Bits. image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Rest of the Bits. image 4" loading="lazy"></div><h2><span class="step-num">STEP 5</span>Step 5: Modifying the Book - Making the First Cut</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 7" loading="lazy"></div><h2><span class="step-num">STEP 6</span>Step 6: Moddig the Book - Adding the Batteries</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 6" loading="lazy"></div><h2><span class="step-num">STEP 7</span>Step 7: Modding the Book - Adding the Light and Switch</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 10" loading="lazy"><img src="images/step07_11.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 11" loading="lazy"><img src="images/step07_12.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 12" loading="lazy"></div><h2><span class="step-num">STEP 8</span>Step 8: Mdding the Book - Adding the Motor</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 7" loading="lazy"></div><h2><span class="step-num">STEP 9</span>Step 9: Finished!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finished! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finished! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finished! image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finished! image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finished! image 5" loading="lazy"></div>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<h1>Dancing, Magnetic Robots</h1><div class="source"><a href="https://www.instructables.com/Dancing-Magnetic-Robots/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Make a pair of dancing robots using magnets!</p>
+<p>While messing around with some magnets I purchased from Ebay I discovered something really cool.  If you put a small washer on a flat surface and move a magnet in a circle motion underneath the washer, it will spin one way and then another.</p>
+<p>As soon as I saw this I just had to incorporate it into a project.  In the end I came up with robot dancers - the ideas a little left of centre but the end result looks great.  The robots really look like they are dancing and the cool thing is you can’t see any mechanisms moving them.</p>
+<p>I chose a book to have the robots dancing on as I wanted it to seem that the robots were casually being displayed on top of the  book.  You could use a wooden box (or cardboard box) to hide the motor etc, but a book does the job pretty well.</p>
+<p>Here's a video of the robots in action</p>
+<p>And here’s how you do it…</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>Materials</p>
+<ul>
+<li>A hard back book.</li>
+<li>3v geared motor 15rpm.  Can be purchased on Ebay</li>
+<li>White LED. - Switch.   Can be purchased on Ebay</li>
+<li>2 x LED holders.  Can be purchased on Ebay</li>
+<li>Old fuse.</li>
+<li>Copper tube - Copper wire (thin)</li>
+<li>wire</li>
+<li>2 x rare earth magnets.  Can be purchased on Ebay</li>
+<li>Battery holder.  Can be purchased on Ebay</li>
+<li>Toggle switch.  Can be purchased on Ebay</li>
+<li>Old electrical parts, resistors, transistors, pots whatever you can get your hands on.  These bits are used to build your robot.</li>
+<li>2 x washers.  Make sure that they are as thin and shiny as possible.</li>
+</ul>
+<p>Tools:</p>
+<ul>
+<li>hot glue</li>
+<li>solder and soldering iron</li>
+<li>pliers</li>
+<li>Stanley knife</li>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Making Your Robot - Legs</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making Your Robot - Legs image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making Your Robot - Legs image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making Your Robot - Legs image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making Your Robot - Legs image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making Your Robot - Legs image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making Your Robot - Legs image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making Your Robot - Legs image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Making Your Robot - Legs image 8" loading="lazy"></div><p>How you make your robot is up to you.  Have a look what you have around the house, any old electrical components, old radios, whatever you can pull apart and use will work.</p>
+<p>Firstly gather all of the parts that you think will make a good robot.  Experiment with different parts to see what works best.</p>
+<p>I had an old amp that I found on hard rubbish day outside someones house which had all of the parts I needed.</p>
+<p>Steps:</p>
+<ol>
+<li>Gather your parts</li>
+<li>I used a couple of transistors for the legs which I straightened out the legs and attached to a switch as shown.</li>
+<li>Once the legs have been attached to the switch, I slightly bent them out to open the legs up a bit.</li>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Attaching the Arms and Body</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Attaching the Arms and Body image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Attaching the Arms and Body image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Attaching the Arms and Body image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Attaching the Arms and Body image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Attaching the Arms and Body image 5" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Next I used an old potentionmeter for the body.  I took out he middle bit and used the casing as the body</li>
+<li>I used a couple of resistors and attached them to the body for the arms.  The soldering of the arms to the body was a little tricky but I managed to ge them to stick.  make sure you heat the body up with your soldering iron and addted a glob of solder to it before you try and attach the arms.</li>
+<li>I attached an old LED to the front to give it a retro look.  This was done by soldering the LED legs to the body which I trimmed.</li>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Rest of the Bits.</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Rest of the Bits. image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Rest of the Bits. image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Rest of the Bits. image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Rest of the Bits. image 4" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Next I added the head.  It took me awhile to decide what this should be but finally I decided to use an old phototransister (I think!) for the head.</li>
+<li>I trimmed the wire and hot glued it into place</li>
+<li>Next I hot glued the legs and torso into the body.</li>
+<li>Finally I soldered a small washer onto the legs.  This is the most important part as it's the washer which will make the robot dance!</li>
+</ol>
+<p>Note : The washers that I used were very thin and smooth.  It's really important to use a washer that is as thin as possible.  All of the other, thicker washers i tried didn't work nearly as well.</p>
+<ol>
+<li>I re-soldered the legs to make sure that the robot looked like it had some movement as you can see in the pictures below.</li>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Modifying the Book - Making the First Cut</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 7" loading="lazy"></div><p>The next step is to find the right book to mod and add your battery, motor, and magnets in.  The key here is to find a book that is thick enough to contain the motor and everything else.  I have lots of books so it wasn't too hard to find the right one (the hardest thing was actually cutting a book up!)</p>
+<p>Steps:</p>
+<ol>
+<li>First measure a square in the middle of the book. This is where the motor will spin the magnets.</li>
+<li>Start cutting out the pages making sure that you refresh your blade regularly. Once you have gone down about 10mm stop.</li>
+<li>Find the centre of the square and mark out a 15mm by 15mm square as shown. Use your Stanley knife and cut through to the back of the book.</li>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Moddig the Book - Adding the Batteries</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Moddig the Book - Adding the Batteries image 6" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Next mark out where the batteries are to go.</li>
+<li>Use the Stanley knife to cut the paper until the battery pack fits nicely into the book.</li>
+<li>Make a small channel in the book to the motor as shown in the image below. This is where the wires from the battery will sit.</li>
+<li>Next thing to do is to wire the battery pack up. You will need 3 lots of wire. I used computer cable and wired them together as shown.  each wire is for the following:</li>
+</ol>
+<p>switch</p>
+<p>motor</p>
+<p>LED</p><h2><span class="step-num">STEP 7</span>Step 7: Modding the Book - Adding the Light and Switch</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 10" loading="lazy"><img src="images/step07_11.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 11" loading="lazy"><img src="images/step07_12.jpg" alt="Step 7: Modding the Book - Adding the Light and Switch image 12" loading="lazy"></div><p>Next thing to do is to add the on/off switch and light. The light isn't really needed so it’s up to you if you want to add it or not.</p>
+<p>Steps:</p>
+<ol>
+<li>Bend the copper tube as shown</li>
+<li>Thread through some wire, making sure it is sticking out both ends.</li>
+<li>On the straight end I attached a LED holder. This way I could screw it into the book.</li>
+<li>On the other end I also attached an LED holder but around the other way. I also attached a fuse to the end by first removing one of the metal ends and inserting the glass tube into the end if the LED holder.</li>
+<li>Attach an LED to the end to the copper tube and then push the LED holder with the glass fuse into the end.</li>
+<li>Next you need to drill 2 holes into the book, one for the switch and one for the light. Cut out the pages where needed so the switch and light fit neatly.</li>
+<li>Make 2 channels into the book for the wires as shown.</li>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Mdding the Book - Adding the Motor</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Mdding the Book - Adding the Motor image 7" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>When adding the motor, I decided to add a hose clamp to the motor which enabled it to fit tightly into the book.</li>
+<li>I also glued down the pages where the wire channels were made. There is a lot of cuts made to this section so to make it stable I used paper glue to strengthen the pages.</li>
+<li>Push the motor into the middle hole and hot glue into place.  It should be a pretty tight fit - if not use some tape around the motor so the hose clamp isn't so closed.</li>
+<li>Attach the wires to the switch and the LED.</li>
+<li>Next thing is to add the arm to the motor.  This will have the magnets at each end to enable the robots to dance.  First shape the arm as shown. Next trim so it spins inside the square you first made.</li>
+<li>Attach the magnets with hot glue. I put the magnets on a slight angle to help with the dancing of the robots.</li>
+<li>Solder onto the motor as shown.</li>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Finished!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finished! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finished! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finished! image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finished! image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finished! image 5" loading="lazy"></div><p>You should now have some dancing robots, twirling around on top of a book!</p>
+<p>Some key things to remember if you are going to take on this project are as follows:</p>
+<ol>
+<li>Make sure that you find the thinnest washers possible.  Do some experimenting to decide which ones spin the best.  I got my washers from an old circuit board but I'm sure that you could buy some.</li>
+<li>Play around with how high the magnets are in relation to the top of the book.  I noticed that if the magnets are sitting just before the top of the book, the robots spin best.</li>
+<li>Take your time and find the right book - the thicker the pages the better.</li>
+</ol>
+<p>Good luck and if you need any hlep - just let me know in the comments section.</p>
 </body>
 </html>

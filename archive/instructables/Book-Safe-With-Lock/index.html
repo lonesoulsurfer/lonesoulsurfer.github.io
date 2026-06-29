@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -163,216 +128,104 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Book Safe With Lock</span>
 </nav>
 <h1>Book Safe With Lock</h1><div class="source"><a href="https://www.instructables.com/Book-Safe-With-Lock/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I've been making book safes since I was a wee little thing. Actually, I still have the first one that I made (I keep some old letters in it).</p>
-<p>A couple years ago I made a book safe which had a locked secret compartment.</p>
-<p>I made and designed a locking mechanism which worked fine but was fiddly to make.</p>
-<p>I had been thinking recently about how I could improve the original idea and decided to add a lock to the cover instead.</p>
-<p>I also purchased a lock mechanism which made the job a lot easier.</p>
+<p>A couple years ago I made a book safe which had a locked secret compartment. I made and designed a locking mechanism which worked fine but was fiddly to make. I had been thinking recently about how I could improve the original idea and decided to add a lock to the cover instead. I also purchased a lock mechanism which made the job a lot easier.</p>
 <p>The tricky part was to ensure that when the lock is engaged, it would stay that way. After all, a book is still only made from paper!</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>A book. This will need to be a hard back book in relatively good condition. I also try to find a book with thick pages as it means less cutting and gluing.</li>
-</ol>
-<ol>
-<li>Lock - <a href="http://www.ebay.com.au/itm/Classical-Vintage-Drawer-Cabinet-Wardrobe-Cupboard-Door-Zinc-Alloy-Lock-Key-/282248232210?hash=item41b74e3d12:g:tkAAAOSwnbZYIDmg">eBay</a></li>
-</ol>
-<ol>
+<li>Lock - eBay</li>
 <li>Strip of wood. The size will depend on how deep your secret compartment is. The wood is used to line the inside of the compartment.</li>
-</ol>
-<ol>
 <li>Felt. Used for the bottom of the secret compartment.</li>
-</ol>
-<ol>
 <li>Some nice paper - used this to line the wood sides.</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Glue sticks - I went through about 4 of them</li>
-</ol>
-<ol>
 <li>General purpose glue - I used tiger glue but anything which you can stick wood together will be fine</li>
-</ol>
-<ol>
 <li>Stanley knife</li>
-</ol>
-<ol>
 <li>Ruler</li>
-</ol>
-<ol>
 <li>Drill</li>
-</ol>
-<ol>
 <li>Drop saw</li>
-</ol>
-<ol>
 <li>Sandpaper</li>
-</ol>
-<ol>
 <li>Files</li>
-</ol>
-<ol>
 <li>Chisel</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Secret Compartment - Cutting</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Making the Secret Compartment - Cutting image 9" loading="lazy"></div><p>The first step is finding the right book. I usually visit thrift shops and have a good hunt around for a vintage book in relatively good condition.</p>
 <p>Steps:</p>
 <ol>
 <li>Mark out the area that you want to cut. I usually do this on the second or third page.</li>
-</ol>
-<ol>
 <li>With your utility knife, carefully run it down the ruler 4-5 times. Add some pressure to ensure you make a good cut along the marked area. Also, slightly go over the line so you ensure that the corners meet-up. Do this for all 4 sides and remove the cutout paper</li>
-</ol>
-<ol>
 <li>Continue to do this until you have removed all of the paper inside the book. You may notice the 2 sides of the inside of the compartment are uneven. Don't stress, this happens most times when making a book safe and is due to how a book is manufactured. You can fix this up afterwards.</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Secret Compartment - Gluing</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Secret Compartment - Gluing image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Secret Compartment - Gluing image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Secret Compartment - Gluing image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Secret Compartment - Gluing image 4" loading="lazy"></div><p>This is probably the most tedious task and will take sometime to complete. Each page needs to be stuck together to make the compartment secure</p>
 <p>Steps:</p>
 <ol>
 <li>Grab your glue-stick and add glue to each side of the first cutout page. Push the other page against it so they are evenly stuck together. Continue to do this for the first 30 odd pages. It's best to stop about this many as the pages can start to get wavy due to the glue wetting them.</li>
-</ol>
-<ol>
 <li>Next, place the book under some heavy weights (I used more books) and leave for about 30 minutes. This will allow time for the glue to dry and will also ensure that the pages are flat.</li>
-</ol>
-<ol>
 <li>Continue this process until all of the pages are glued together.</li>
-</ol>
-<ol>
 <li>Lastly, if you left any pages at the front, glue these to the front cover.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Secret Compartment - Tidying Up</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Secret Compartment - Tidying Up image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Secret Compartment - Tidying Up image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Secret Compartment - Tidying Up image 3" loading="lazy"></div><p>Once everything is glued down you may have noticed that the 2 vertical sides of the compartment are uneven.</p>
-<p>Don't stress, this happens most times when making a book safe and is due to how a book is manufactured.</p>
-<p>However, you will need straighten up the right hand side section which can be done with a utility knife.</p>
-<p>The left hand side tends to go inwards and this doesn't really pose an issue when you later add the wood to the sides.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Secret Compartment - Tidying Up</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Secret Compartment - Tidying Up image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Secret Compartment - Tidying Up image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Secret Compartment - Tidying Up image 3" loading="lazy"></div><p>Once everything is glued down you may have noticed that the 2 vertical sides of the compartment are uneven. Don't stress, this happens most times when making a book safe and is due to how a book is manufactured. However, you will need straighten up the right hand side section which can be done with a utility knife. The left hand side tends to go inwards and this doesn't really pose an issue when you later add the wood to the sides.</p>
 <p>Steps:</p>
 <ol>
 <li>Grab your utility knife and carefully start to remove the excess paper on the right hand side wall.</li>
-</ol>
-<ol>
 <li>Remove any pieces of paper that are sticking out and might cause the wood sides to not sit flush with the inside of the compartment.</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Wooden Sides - Cutting</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Wooden Sides - Cutting image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Wooden Sides - Cutting image 2" loading="lazy"></div><p>To enable the lock to engage and stay secure, I added some wooden sides to the inside of the secret compartment. The height of the wood will depend on the depth of the secret compartment.</p>
 <p>Steps:</p>
 <ol>
 <li>Measure the lengths of all of the sides and cut the wood to length.</li>
-</ol>
-<ol>
 <li>Place the wood inside the secret compartment and make sure that the fitment is right.</li>
-</ol>
-<ol>
 <li>Don't glue the wood into place yet, you need to do a couple of other things before you secure it in place.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Keyhole in the Book Cover</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making the Keyhole in the Book Cover image 8" loading="lazy"></div><p>Now that you have the wood sides in place, it's time to make the keyhole in the book. The most important thing here is to ensure that your measurement are right.</p>
 <p>Steps:</p>
 <ol>
 <li>First measure the distance from the outside of the book to the edge of the wood. Add a few millimeters to the total and this will give you the distance that the lock needs to be secured in place.</li>
-</ol>
-<ol>
 <li>Make a template of the lock and keyhole (I used some tape) and with the measurement you made,. place it on the front of the cover.</li>
-</ol>
-<ol>
 <li>Next, drill out the keyhole in the book cover. Just drill 2 holes and with a exacto knife remove the excess cover.</li>
-</ol>
-<ol>
 <li>Smooth out the inside of the keyhole with a file.</li>
-</ol>
-<ol>
 <li>Place the keyhole cover over the hole and check if it is the right size. Keep on removing any excess book cover until the hole is the right size.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Securing the Lock to a Piece of Wood</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 8" loading="lazy"></div><p>If you wanted to, you could just attach the lock directly to the book cover with some small nuts and screws.</p>
-<p>The problem with doing it like this is would would see the screw heads on the cover and I didn't want this.</p>
-<p>Plus I don't think the lock would be very secure.</p>
-<p>Instead, I decided to add the lock to a piece of wood which is then glued to the back of the front cover.</p>
-<p>It is also held in place by the screws that hold the keyhole in place.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Securing the Lock to a Piece of Wood</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Securing the Lock to a Piece of Wood image 8" loading="lazy"></div><p>If you wanted to, you could just attach the lock directly to the book cover with some small nuts and screws. The problem with doing it like this is would would see the screw heads on the cover and I didn't want this. Plus I don't think the lock would be very secure. Instead, I decided to add the lock to a piece of wood which is then glued to the back of the front cover. It is also held in place by the screws that hold the keyhole in place.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut a small piece of wood. Make sure it fits inside the secret compartment correctly. I initially just cut a piece of wood without checking correctly and found out later that it was too long and touched one of the wooden sides. In the end I removed this piece of wood and rounded the ends to give it a better finish.</li>
-</ol>
-<ol>
 <li>Place the lock onto the top of the wood and mark the position.</li>
-</ol>
-<ol>
 <li>Make another template and place this onto the wood. The side of the lock that is going to be used should sit right on the edge of the wood.</li>
-</ol>
-<ol>
 <li>Next drill a couple of holes in the wood where the keyhole is positioned.</li>
-</ol>
-<ol>
 <li>Use a small chisel to remove the excess wood and file the inside to smooth out.</li>
-</ol>
-<ol>
 <li>Lastly, screw the lock onto the wood with some screws and test to make sure that the key opens and closes the loick</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Add the Lock to the Book</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Add the Lock to the Book image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Add the Lock to the Book image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Add the Lock to the Book image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Add the Lock to the Book image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Add the Lock to the Book image 5" loading="lazy"></div><p>As you have already made the keyhole in the book, positioning the lock mechanism is pretty straight forward.</p>
 <p>Steps:</p>
 <ol>
 <li>Open the cover of the book.</li>
-</ol>
-<ol>
 <li>Add some PVA or all purpose glue to the back of the wood.</li>
-</ol>
-<ol>
 <li>Next place the piece of wood with the lock onto the back and align the key section with the keyhole in the cover.</li>
-</ol>
-<ol>
 <li>Add some weight to the top of the wood and leave to dry for a few hours</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Add the Keyhole Escutcheon (Cover) to the Book</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Add the Keyhole Escutcheon (Cover) to the Book image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Add the Keyhole Escutcheon (Cover) to the Book image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Add the Keyhole Escutcheon (Cover) to the Book image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Add the Keyhole Escutcheon (Cover) to the Book image 4" loading="lazy"></div><p>To ensure the lock is properly secured to the book I used screws for the escutcheon that also went through the wood.</p>
 <p>Steps:</p>
 <ol>
 <li>As the screws were a little larger than what was needed to secure the escutcheon, I had to make the holes a little larger with a drill.</li>
-</ol>
-<ol>
 <li>Next, place the escutcheon on top of the keyhole in the book cover, mark and drill the holes.</li>
-</ol>
-<ol>
 <li>Lastly, screw the screws into place.</li>
 </ol>
 <p>That's it for the lock section, now it's time to make the hole so the lock can engage.</p><h2><span class="step-num">STEP 10</span>Step 10: Lock Hole and Gluing the Wood</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Lock Hole and Gluing the Wood image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Lock Hole and Gluing the Wood image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Lock Hole and Gluing the Wood image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Lock Hole and Gluing the Wood image 4" loading="lazy"></div><p>Now you have attached the lock, you next need to make a notch in the wood side for the lock to engage into.</p>
 <p>Lock Hole - Steps:</p>
 <ol>
 <li>Close the front cover until just about closed. Mark on the wood where the lock hits the wood.</li>
-</ol>
-<ol>
 <li>Remove the wood from the book and mark out where to make the notch.</li>
-</ol>
-<ol>
 <li>With a saw cut down the sides and remove the rest of the wood with a chisel. File to make smooth.</li>
-</ol>
-<ol>
 <li>Next place the wood back into the secret compartment, shut the front cover and try and lock the book. If you can't lock it then you will need to remove some more of the wood. Remove a little more and try again until the lock engages.</li>
 </ol>
 <p>Gluing the Wood - Steps:</p>
 <ol>
 <li>Add a generous amount of PVA glue to the bottom and side of each piece of wood and push into place.</li>
-</ol>
-<ol>
 <li>Don't worry if there are any gaps etc as these will be covered later with the thin cardboard.</li>
-</ol>
-<ol>
 <li>Leave to dry for 12 hours.</li>
-</ol>
-<ol>
 <li>Once dry, test to make sure that the lock engages and the cover stays closed.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Adding Felt and Paper to the Inside</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding Felt and Paper to the Inside image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding Felt and Paper to the Inside image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding Felt and Paper to the Inside image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding Felt and Paper to the Inside image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding Felt and Paper to the Inside image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding Felt and Paper to the Inside image 6" loading="lazy"></div><p>This step isn't really necessary but I wanted to clean-up the inside a little.</p>
 <p>Steps:</p>
 <ol>
 <li>First get your hands on some nice paper. I used a slightly thicker paper which is really more like thin cardboard.</li>
-</ol>
-<ol>
 <li>Next bend it around the wood until you are happy with how it is sitting and all of the wood is hidden. As I mentioned though, this isn't really necessary, especially if the wood looks good enough.</li>
-</ol>
-<ol>
 <li>Next, cut a piece of felt for the bottom of the compartment.</li>
-</ol>
-<ol>
 <li>Lastly, glue everything in place and leave to dry.</li>
 </ol>
 <p>.</p><h2><span class="step-num">STEP 12</span>Step 12: Done</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Done image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Done image 2" loading="lazy"></div><p>That's it! You should now have your own secret book which locks. The last thing to do is to now work out where to hide the key!</p>
 <p>If you have any questions or get stuck in any section, let me know in the comments and I'll try and help.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

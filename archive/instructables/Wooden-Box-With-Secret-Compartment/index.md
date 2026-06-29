@@ -48,6 +48,8 @@ I also made a short video of it in action. I didn't bother doing a whole build v
 
 ![Supplies image 8](images/step01_08.jpg)
 
+View 5 more
+
 
 ## Step 1: Routing a Groove & Cutting the Wood for the Box
 

@@ -15,7 +15,7 @@ Source: https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Ver
 
 ![Intro 4](images/intro_04.jpg)
 
-I'm back again with a new and improved version of my [Conway's Game of Life - Handheld Version](https://www.instructables.com/Conways-Game-of-Life-Handheld-Version-Powered-by-A/) This version has a number of improvements including, coloured screen, more games, different cell sizes and a lot cheaper to make! See below for the full game overview
+I'm back again with a new and improved version of my Conway's Game of Life - Handheld Version This version has a number of improvements including, coloured screen, more games, different cell sizes and a lot cheaper to make! See below for the full game overview
 
 Instead of using a Adafruit Trinket M0 (which are quite expensive), I've used a Raspberry Pi Pico Zero (which are cheap as chips!). I've also used a coloured TFT screen which are also inexpensive and gives the held held game a heap more options to play around with.
 
@@ -122,32 +122,30 @@ I have included a PDF of the parts list with links for all of the parts which yo
 
 PARTS:
 
-Raspberry Pi Pico Zero X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-Raspberry-Pi-Pico-Zero.html?spm=a2g0o.home.search.0)
+Raspberry Pi Pico Zero X 1 - Ali Express
 
-Charging & voltage step-up module X 1 - [Ali Express](https://www.aliexpress.com/item/1005005656423941.html?invitationCode=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21926311787&bizType=ProductDetail&spreadCode=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&tt=MG&aff_fsk=_mtlLJJx&aff_platform=default&sk=_mtlLJJx&aff_trace_key=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&shareId=21926311787&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
+Charging & voltage step-up module X 1 - Ali Express
 
-TFT Display 2.0 inch OLED LCD Drive IC ST7789V 240 X 320 X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-TFT-Display-2.0-inch-OLED-LCD-Drive-IC-ST7789V-240.html?spm=a2g0o.detail.search.0)
+TFT Display 2.0 inch OLED LCD Drive IC ST7789V 240 X 320 X 1 - Ali Express
 
 Battery -
 
-Tactile Switch - [Ali Express](https://www.aliexpress.com/item/1005007076344493.html?invitationCode=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21926321283&bizType=ProductDetail&spreadCode=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&tt=MG&aff_fsk=_mqidysZ&aff_platform=default&sk=_mqidysZ&aff_trace_key=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&shareId=21926321283&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
+Tactile Switch - Ali Express
 
-On/Off Switch - [Ali Express](https://www.aliexpress.com/item/1005001517398513.html?spm=a2g0o.order_list.order_list_main.11.30491802K9cNyZ)
+On/Off Switch - Ali Express
 
-Buzzer - [Ali Express](https://www.aliexpress.com/w/wholesale-Buzzer-9032-5020-7525-9650-1230.html?spm=a2g0o.detail.search.0)
+Buzzer - Ali Express
 
-Micro Momentary Switch - [Ali Express](https://www.aliexpress.com/item/1005006956741903.html?spm=a2g0o.productlist.main.6.3714VtyYVtyYWA&aem_p4p_detail=202512012013053186468671941280003530927&algo_pvid=77e41f87-a64a-474c-910f-b4c95e360006&algo_exp_id=77e41f87-a64a-474c-910f-b4c95e360006-5&pdp_ext_f=%7B%22order%22%3A%228%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%213.23%212.75%21%21%2114.75%2112.54%21%402103129017646487854512530eb65b%2112000038853341475%21sea%21AU%21129764711%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&curPageLogUid=meKpY4AXI4Zs&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006956741903%7C_p_origin_prod%3A&search_p4p_id=202512012013053186468671941280003530927_2)
+Micro Momentary Switch - Ali Express
 
-SMD Male Pin Headers - [Ali Express](https://www.aliexpress.com/item/1005008164411410.html?spm=a2g0o.order_list.order_list_main.47.30491802K9cNyZ)
+SMD Male Pin Headers - Ali Express
 
-M2 Screws - [Ali Express](https://www.aliexpress.com/item/1005007159750547.html?spm=a2g0o.order_list.order_list_main.23.30491802K9cNyZ)
+M2 Screws - Ali Express
 
-M2 Spacers - [Ali Express](https://www.aliexpress.com/w/wholesale-spacer-M2-kit.html?spm=a2g0o.productlist.search.0)
+M2 Spacers - Ali Express
 
-Ribbon Wire - [Ali Express](https://www.aliexpress.com/item/1005007868158870.html?spm=a2g0o.productlist.main.5.c95f47bdP8JDuq&aem_p4p_detail=202601022008397380272548107300006821870&algo_pvid=2f9a9453-9b42-4b1b-85ab-ae9699014313&algo_exp_id=2f9a9453-9b42-4b1b-85ab-ae9699014313-4&pdp_ext_f=%7B%22order%22%3A%221354%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%212.27%212.22%21%21%2110.44%2110.23%21%402101ea8c17674133197688477ec307%2112000042656642090%21sea%21AU%21129764711%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&curPageLogUid=TGqy8VLWcAFl&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007868158870%7C_p_origin_prod%3A&search_p4p_id=202601022008397380272548107300006821870_5)
+Ribbon Wire - Ali Express
 
-
-- [Parts List](pdfs/Parts List.pdf)
 
 ## Step 1: Getting the PCB & Front Panel Printed
 
@@ -159,14 +157,14 @@ Ribbon Wire - [Ali Express](https://www.aliexpress.com/item/1005007868158870.htm
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!).
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
 
-The files that you need to build your own Game of Life can be found in my [GitHub](https://github.com/lonesoulsurfer/Game_of_Life_Colour_Handheld) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer
+The files that you need to build your own Game of Life can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer
 
 STEPS:
 
-- Send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Game_of_Life_Colour_Handheld) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+- Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
 - NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 - Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
@@ -190,7 +188,7 @@ STEPS:
 - Place the switch on top of the pads and then heat up the solder to secure it into place. If it looks good, you can then secure the other 3 feet on the switch
 - Now do the same for the down switch
 - You can now add the left and right switches into place along with the A and B switches
-- There is one more momentary switch to add.  This is a mirco momentary switch which is to be a rest for the raspberry Pi.  I added this so you could easily reset the Pi and put it in Boot mode for when you want to update the sketch
+- There is one more momentary switch to add. This is a mirco momentary switch which is to be a rest for the raspberry Pi. I added this so you could easily reset the Pi and put it in Boot mode for when you want to update the sketch
 
 
 ## Step 3: Adding the Charging/boost Module
@@ -205,7 +203,7 @@ The charging and voltage booster module is a great little board. It allows you t
 
 STEPS:
 
-- First, lets set the output voltage to 5V from the Charging & voltage booster module.  Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
+- First, lets set the output voltage to 5V from the Charging & voltage booster module. Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
 - Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.
 - Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place
 - Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.
@@ -225,8 +223,8 @@ The raspberry Pi Zero is another great little board. It has less GP pins then a 
 
 STEPS:
 
-- As everything is surface mount on the PCB, you need to first solder into place some SMD header pins.  Add these to both sections on the PCB
-- Now, you can solder the Raspberry Pi Pico Zero into place on the header pins.  Make sure that the USB connector is facing up.
+- As everything is surface mount on the PCB, you need to first solder into place some SMD header pins. Add these to both sections on the PCB
+- Now, you can solder the Raspberry Pi Pico Zero into place on the header pins. Make sure that the USB connector is facing up.
 - If you wanted to, you could add small, male header pins to the Raspberry Pi so it is removeable
 
 
@@ -279,18 +277,18 @@ The screenis not directly connected to the PCB! It is first connected to the fro
 
 STEPS:
 
-- The TFT screen that I purchased had the header pins already soldered into place.  You will need to remove these if yours is the same.   Just heat up the solder on the pin and use a pair of pliers to pull out each of the pins.  Make sure you remove as much solder from the top of the holes as well.
+- The TFT screen that I purchased had the header pins already soldered into place. You will need to remove these if yours is the same. Just heat up the solder on the pin and use a pair of pliers to pull out each of the pins. Make sure you remove as much solder from the top of the holes as well.
 - Place the screen against the front panel and secure it into place using some M2 X 8mm screws and nuts.
 - Now add a M2 X 6mm spacer onto each of the screws.
 - Add an M2 X 4mm screw to the holes in each corner of the front panel in each bottom corner. Don’t add nuts to these, just add a M2 X 8mm spacer to each one.
 - Now, to test fitment, place the PCB into place and push the screws through the holes in the PCB.
 - If the buttons fit ok, then you can now move onto attacheding the screen to the PCB.
-- I used computer ribbon wire to make the connections between the TFT screen and PCB.  Trim the wire and tin the ends.
+- I used computer ribbon wire to make the connections between the TFT screen and PCB. Trim the wire and tin the ends.
 - Now make small cuts between each wire - about 8 mm should be fine.
 - spread the wires out so they align with the solder points on the TFT screen.
 - Add some solder to the solderpoints on thescreen and then solder each wire to the solder points.
-- Now you can do the same thing for the solder points onthe PCB.  To work out how long you need the wire, place the screen next to the PCB and then cut the wire where it meets up with the solder points on the PCB.
-- Now test fit the front panel and PCB again.  You might need to squeeze the wire and bend it so it lays flat and doesn't add to much pressure to the inside components.
+- Now you can do the same thing for the solder points onthe PCB. To work out how long you need the wire, place the screen next to the PCB and then cut the wire where it meets up with the solder points on the PCB.
+- Now test fit the front panel and PCB again. You might need to squeeze the wire and bend it so it lays flat and doesn't add to much pressure to the inside components.
 Now you are ready for testing so lets go and load up the Game of Life code to the Raspberry Pi
 
 
@@ -302,7 +300,7 @@ In you haven't installed Arduino on your computer, then this is the first thing 
 
 STEPS:
 
-- Install Arduino IDE.  Download from https://www.arduino.cc/en/software
+- Install Arduino IDE. Download from https://www.arduino.cc/en/software
 - Install version 2.0 or newer (recommended)
 - Install RP2040 Board Support
 - Open Arduino IDE
@@ -322,7 +320,7 @@ https://github.com/earlephilhower/arduino-pico/releases/download/global/package_
 - Select the Board
 - Go to Tools → Board → Raspberry Pi RP2040 Boards
 - Select "Waveshare RP2040-Zero" (or "Raspberry Pi Pico" if Zero isn't listed)
-- Configure Settings.  These need to be set under tools befoe youupload the sketch
+- Configure Settings. These need to be set under tools befoe youupload the sketch
 - Tools → CPU Speed: 133 MHz (default)
 - Tools → Optimize: Small (-Os) (default)
 - Tools → USB Stack: "Pico SDK"
@@ -494,10 +492,6 @@ Color Modes
 
 - All game modes support color! Press UP + DOWN together to toggle.
 
-
-## Downloads
-
-- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *46 images archived*

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -164,28 +129,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Re-purpose Broken Power Banks</h1><div class="source"><a href="https://www.instructables.com/Re-purpose-Broken-Power-Banks/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I hate throwing anything away - especially if it can be fixed (and hopefully improved!).</p>
 <p>I have a few power banks that have kicked the bucket and instead of adding them to the great 'e-waste spirit in the sky', I decided to pull them apart and re-build them.</p>
-<p>I've found that in most cases, it's not the battery that has failed but the electronics inside.</p>
-<p>I'm not too sure why this happens (prob built with cheap components), however by pulling out the circuit board and replacing it, you can usually revamp a power bank and give it a new lease on life.</p>
+<p>I've found that in most cases, it's not the battery that has failed but the electronics inside. I'm not too sure why this happens (prob built with cheap components), however by pulling out the circuit board and replacing it, you can usually revamp a power bank and give it a new lease on life.</p>
 <p>To make it even more useful, I also added a voltage regulator module which allows me to power any of my circuit builds I am working on!</p>
-<p>The build isn't a difficult one, although I probably make it more complex then necessary with the case I built.</p>
-<p>You could easily just find a project box and stick all of the components and battery into.</p>
-<p>However, I'm really happy with the overall finish of the build so hopefully you take the time (if you decided to do this project) to make a nice case for your build.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>PARTS:</p>
+<p>The build isn't a difficult one, although I probably make it more complex then necessary with the case I built. You could easily just find a project box and stick all of the components and battery into. However, I'm really happy with the overall finish of the build so hopefully you take the time (if you decided to do this project) to make a nice case for your build.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>PARTS:</p>
 <p>Components</p>
 <ul>
-<li>Old power bank. If you just want to build this power bank yourself you could just buy a li-po battery <a href="https://www.aliexpress.com/item/32991242474.html?spm=a2g0o.productlist.0.0.4d1d2028Lik7zN&algo_pvid=34ea0dfa-a2b0-4d92-8700-103fa59798f8&algo_exp_id=34ea0dfa-a2b0-4d92-8700-103fa59798f8-54&pdp_ext_f=%7B%22sku_id%22%3A%2266864078148%22%7D&pdp_pi=-1%3B12.07%3B-1%3B-1%40salePrice%3BAUD%3Bsearch-mainSearch">here</a></li>
-<li>Power bank charging module - <a href="https://www.aliexpress.com/premium/LED-Dual-USB-5V-2.4A-Micro%252FType%25252dC-USB-Mobile-Power.html?d=y&origin=y&catId=0&initiative_id=SB_20220116212105&SearchText=LED%20Dual%20USB%205V%202.4A%20Micro/Type-C%20USB%20Mobile%20Power">here</a></li>
-<li>Voltage regulator - step up/step down module - <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116212738&isPremium=y&SearchText=voltage+regulator+module+step+up+down">[here</a>](https://www.aliexpress.com/item/1005002858852690.html?spm=a2g0o.productlist.0.0.54792164HK11Cd&algo_pvid=37ab066e-5d7f-4cf2-9f7f-3f31ae2cbcf4&aem_p4p_detail=20220116212108609408538880180000034179&algo_exp_id=37ab066e-5d7f-4cf2-9f7f-3f31ae2cbcf4-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000022490006878%22%7D&pdp_pi=-1%3B2.76%3B-1%3B-1%40salePrice%3BAUD%3Bsearch-mainSearch). There are quite a few different varieties that you could use so if you are looking for something a bit more robust then try here</li>
-<li>10K Potentiometer - <a href="https://www.aliexpress.com/item/1005002139655581.html?spm=a2g0o.productlist.0.0.7d236078OkJwBc&algo_pvid=9ee5c6c7-ebf2-4682-bd9c-a0b25314e39e&aem_p4p_detail=202201162131103952735205965920000061824&algo_exp_id=9ee5c6c7-ebf2-4682-bd9c-a0b25314e39e-5&pdp_ext_f=%7B%22sku_id%22%3A%2212000018872210791%22%7D&pdp_pi=-1%3B1.47%3B-1%3BAUD+2.67%40salePrice%3BAUD%3Bsearch-mainSearch">here</a></li>
-<li>Voltage meter display - <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116213956&isPremium=y&SearchText=voltage+meter+display">here</a></li>
-<li>Banana Plugs (<a href="https://www.aliexpress.com/item/32694951313.html?spm=a2g0o.detail.1000060.2.6eff2e8c0Y6Ugs&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=bd52c0ee-6710-49b3-adba-dc9124ffc15e&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:bd52c0ee-6710-49b3-adba-dc9124ffc15e,tpp_buckets:668%232846%238107%231934&&pdp_ext_f=%7B%22sceneId%22:%223339%22,%22sku_id%22:%2260586282037%22%7D">male</a> & <a href="https://www.aliexpress.com/item/32693928136.html?spm=a2g0o.productlist.0.0.70e84b96Wj65Ge&algo_pvid=034305ea-3bd9-4089-938f-e2f2448b740a&aem_p4p_detail=202201162123551335134734879620000055991&algo_exp_id=034305ea-3bd9-4089-938f-e2f2448b740a-18&pdp_ext_f=%7B%22sku_id%22%3A%2260631300307%22%7D&pdp_pi=-1%3B1.65%3B-1%3B-1%40salePrice%3BAUD%3Bsearch-mainSearch">female</a>) while you are at it - you may as well get a couple of connectors like <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116213150&isPremium=y&SearchText=banana+plug+alligator">alligator clips</a></li>
-<li>SPDT Switch - <a href="https://www.aliexpress.com/premium/spdt-toggle-switch.html?d=y&origin=y&catId=0&initiative_id=SB_20220116213825&SearchText=spdt%20toggle%20switch">here</a></li>
-<li>Momentary tactile switch - <a href="https://www.aliexpress.com/premium/tactile-switch-micro.html?d=y&origin=y&catId=0&initiative_id=SB_20220116213848&SearchText=tactile%20switch%20micro">here</a></li>
+<li>Old power bank. If you just want to build this power bank yourself you could just buy a li-po battery here</li>
+<li>Power bank charging module - here</li>
+<li>Voltage regulator - step up/step down module - here. There are quite a few different varieties that you could use so if you are looking for something a bit more robust then try here</li>
+<li>10K Potentiometer - here</li>
+<li>Voltage meter display - here</li>
+<li>Banana Plugs (male & female) while you are at it - you may as well get a couple of connectors like alligator clips</li>
+<li>SPDT Switch - here</li>
+<li>Momentary tactile switch - here</li>
 <li>Wire</li>
 </ul>
 <p>Case</p>
 <ul>
 <li>Skirting board (hardwood). I used 20mm by 5mm but you can use whatever size you want</li>
-<li>Acrylic - <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116215121&isPremium=y&SearchText=acrylic+3mm+a5">here</a></li>
+<li>Acrylic - here</li>
 </ul>
 <p>Tools</p>
 <ul>
@@ -197,26 +159,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Wire cutters</li>
 <li>Sander</li>
 <li>Drill</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Pulling Your Power Bank Apart</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Pulling Your Power Bank Apart image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Pulling Your Power Bank Apart image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Pulling Your Power Bank Apart image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Pulling Your Power Bank Apart image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Pulling Your Power Bank Apart image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Pulling Your Power Bank Apart image 6" loading="lazy"></div><p>At first glance, it might not look like your power bank can come apart - where the hell are the screws!!</p>
-<p>It can be a little tricky sometimes to find out how it has been put together but with a little perseverance you'll work it out.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Pulling Your Power Bank Apart</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Pulling Your Power Bank Apart image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Pulling Your Power Bank Apart image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Pulling Your Power Bank Apart image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Pulling Your Power Bank Apart image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Pulling Your Power Bank Apart image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 1: Pulling Your Power Bank Apart image 6" loading="lazy"></div><p>At first glance, it might not look like your power bank can come apart - where the hell are the screws!! It can be a little tricky sometimes to find out how it has been put together but with a little perseverance you'll work it out.</p>
 <p>STEPS:</p>
 <ul>
-<li>I had to remove the 2 front covers of the power bank to reveal a couple of small screws inside.  To remove these I used a <a href="https://en.wikipedia.org/wiki/Spudger">spudger tool</a></li>
+<li>I had to remove the 2 front covers of the power bank to reveal a couple of small screws inside. To remove these I used a spudger tool</li>
 <li>Once the screws were un-done the battery and circuit board just slipped right out</li>
 <li>Remove the battery and circuit board from any plastic holder that may be in place so you are only left with the battery and circuit board</li>
 </ul><h2><span class="step-num">STEP 2</span>Step 2: Testing the Power Bank Charging Module (and Battery)</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Testing the Power Bank Charging Module (and Battery) image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Testing the Power Bank Charging Module (and Battery) image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Testing the Power Bank Charging Module (and Battery) image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Testing the Power Bank Charging Module (and Battery) image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Testing the Power Bank Charging Module (and Battery) image 5" loading="lazy"></div><p>The next thing to do is to check and see if the battery is ok by connecting the charging module</p>
 <p>STEPS:</p>
 <ul>
-<li>The first thing to do is to remove the circuit board from the battery.  Mine was spot welded to the battery so I used a pair of wire cutters to cut through the tabs.  Be careful when you do this though - my battery was fully charged (def a problem with the circuit board) and I accidently touched the 2 tabs with the pliers and nearly melted one of them!</li>
+<li>The first thing to do is to remove the circuit board from the battery. Mine was spot welded to the battery so I used a pair of wire cutters to cut through the tabs. Be careful when you do this though - my battery was fully charged (def a problem with the circuit board) and I accidently touched the 2 tabs with the pliers and nearly melted one of them!</li>
 <li>Make sure you mark which tab on the battery is ground and which is positive.</li>
 <li>Add some solder to each of the tabs and to the solder points on the charging module and connect them together with some wires</li>
-<li>To activate the charging module, you need to push a small tactile button on the side of the module. If nothing happens it could either be because the battery is flat or the module needs a re-boot.  you can re-boot it simply by plugging in a micro USB to the front of it and connecting to mains power.</li>
-<li>Try the button again.  You should now get a % reading that shows you how much power is inside the battery.</li>
+<li>To activate the charging module, you need to push a small tactile button on the side of the module. If nothing happens it could either be because the battery is flat or the module needs a re-boot. you can re-boot it simply by plugging in a micro USB to the front of it and connecting to mains power.</li>
+<li>Try the button again. You should now get a % reading that shows you how much power is inside the battery.</li>
 <li>Leave it to charge fully to 100%</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Planning Out Where All the Components Will Go</h2><div class="step-images single"><img src="images/step04_01.jpg" alt="Step 3: Planning Out Where All the Components Will Go image 1" loading="lazy"></div><p>Now its time to work out how to layout the components.</p>
 <p>STEPS:</p>
 <ul>
-<li>Start to place each of the components around or on the battery.  You want to make it as compact as possible whilst also practical.</li>
+<li>Start to place each of the components around or on the battery. You want to make it as compact as possible whilst also practical.</li>
 <li>There is a good chance that the layout will change (mine did) but it will give you a good place to start working out how big to make the case</li>
 <li>Once you have a layout you like - it's then time to make the case</li>
 </ul><h2><span class="step-num">STEP 4</span>Step 4: Making the Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making the Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making the Case image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making the Case image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making the Case image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making the Case image 5" loading="lazy"></div><p>I went with some hardwood edging for the case. it's relatively cheap, cut to size and easy to work with</p>
@@ -224,25 +185,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ul>
 <li>Measure each of the sides of the layout so you can get a rough outline of what lengths to cut the wood at</li>
 <li>Cut each of the sides and place around the layout to make sure it fits ok</li>
-<li>If you are happy with the size, it's then time to glue the case together.  I used superglue to stick the wood together.  You will add a base in the next step and this will help make the case strong.</li>
+<li>If you are happy with the size, it's then time to glue the case together. I used superglue to stick the wood together. You will add a base in the next step and this will help make the case strong.</li>
 <li>Once the case has been glued, place it again over the layout to make sure you are happy with the size</li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Making the Base & Top of the Power Bank</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 5: Making the Base & Top of the Power Bank image 8" loading="lazy"></div><p>For the top and bottom of the case I used some acrylic that I had lying around the workshop. I'm actually quick chuffed on how it turned out!</p>
 <p>STEPS:</p>
 <ul>
-<li>Mark out and cut the pieces of acrylic to size.  you can see that I used a red and white piece - that's because it's what I had spare!</li>
-<li>Superglue the bottom section onto the case.  for the top section, add a couple dots of superglue and glue it also onto the case.  you will need to take it off later so go gentle on the glue</li>
-<li>Now it is time to sand the sides and make them flush.  I used a belt sander which made the job easy.  just keep on sanding until the acrylic is flush with the sides of the case</li>
+<li>Mark out and cut the pieces of acrylic to size. you can see that I used a red and white piece - that's because it's what I had spare!</li>
+<li>Superglue the bottom section onto the case. for the top section, add a couple dots of superglue and glue it also onto the case. you will need to take it off later so go gentle on the glue</li>
+<li>Now it is time to sand the sides and make them flush. I used a belt sander which made the job easy. just keep on sanding until the acrylic is flush with the sides of the case</li>
 <li>Lastly, pop off the top with a small screwdriver</li>
 </ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs image 7" loading="lazy"></div><p>Now it's time to do some measurements and make some cuts into the case and top.</p>
 <p>STEPS:</p>
 <p>Let's start with the voltage indicator</p>
 <ul>
 <li>Firstly, find the centre of the acrylic top and mark</li>
-<li>Take measurements of the voltage indicator along with how far the indicator is away from the input/outputs on the module.  the input/output USB's will need to slightly stick out of the case to enable you to use them</li>
+<li>Take measurements of the voltage indicator along with how far the indicator is away from the input/outputs on the module. the input/output USB's will need to slightly stick out of the case to enable you to use them</li>
 <li>Once you have the measurements, mark on the acrylic and check them again to make sure they are right</li>
-<li>I used a dremel to make the cutout but  you could also do it with a drill and files as well</li>
-<li>Check to see if the voltage indicator fits.  make small adjustments where necessary until the display fits into the space</li>
-<li>I didn't have to glue anything into place as it was a very tight fit.  if yours is a little loose, then add some superglue around the indicator and stick into place</li>
+<li>I used a dremel to make the cutout but you could also do it with a drill and files as well</li>
+<li>Check to see if the voltage indicator fits. make small adjustments where necessary until the display fits into the space</li>
+<li>I didn't have to glue anything into place as it was a very tight fit. if yours is a little loose, then add some superglue around the indicator and stick into place</li>
 </ul>
 <p>Next let's make the cutout on the case</p>
 <ul>
@@ -251,43 +212,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use a dremel or some files to remove the section marked on the case</li>
 <li>Test to make sure the module fits into the cutout section</li>
 <li>Now do the same thing for the voltage display for the voltage regulator</li>
-<li>Lastly, you need to add a tactile switch to the charging module.  There is already one on it but you need to add one to the top of the case.</li>
+<li>Lastly, you need to add a tactile switch to the charging module. There is already one on it but you need to add one to the top of the case.</li>
 <li>Solder a couple wires to the legs of the switch</li>
 <li>Drill a couple small holes into the acrylic for the legs of the tactile switch to go into and thread the soldered wires through them</li>
-<li>Solder the other ends of the wires to the solder points on the tactile switch on the module.  Add a little glue to the legs to hold them in place.</li>
+<li>Solder the other ends of the wires to the solder points on the tactile switch on the module. Add a little glue to the legs to hold them in place.</li>
 <li>Test to make sure it works and the voltage indicator display comes on</li>
 </ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the Battery and Voltage Regulator to the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Battery and Voltage Regulator to the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Battery and Voltage Regulator to the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Battery and Voltage Regulator to the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the Battery and Voltage Regulator to the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the Battery and Voltage Regulator to the Case image 5" loading="lazy"></div><p>Time to secure the battery and add the voltage regulator</p>
 <p>STEPS:</p>
 <ul>
-<li>You may of noticed that I put the voltage regulator up-side-down in the case.  The reason was, the caps on the regulator stuck up above the height of the case so I had to come up with another way of adding it.</li>
-<li>You will need to first remove the trimmer potentiometer from the regulator and replace it with a 10K potentiometer.  I don't have any photos of this as I had already done it a while ago.  You could also prob just buy a regulator with a pot already attached if you look around.</li>
-<li>As the regulator is up-side-down, I decided to solder all the wires to the board along with the on/off swtich.  A wiring diagram can be found on the next step.</li>
-<li>Drill a hole into the side of the case for the potentiometer.  As the wood is slightly too thick to add the pot nut, I had to add a little superglue to the pot and glue it onto the wood.  Not ideal as adding glue to pots and switches can cause them to be damaged.  However, if you use a small amount you'll be fine</li>
+<li>You may of noticed that I put the voltage regulator up-side-down in the case. The reason was, the caps on the regulator stuck up above the height of the case so I had to come up with another way of adding it.</li>
+<li>You will need to first remove the trimmer potentiometer from the regulator and replace it with a 10K potentiometer. I don't have any photos of this as I had already done it a while ago. You could also prob just buy a regulator with a pot already attached if you look around.</li>
+<li>As the regulator is up-side-down, I decided to solder all the wires to the board along with the on/off swtich. A wiring diagram can be found on the next step.</li>
+<li>Drill a hole into the side of the case for the potentiometer. As the wood is slightly too thick to add the pot nut, I had to add a little superglue to the pot and glue it onto the wood. Not ideal as adding glue to pots and switches can cause them to be damaged. However, if you use a small amount you'll be fine</li>
 <li>Next, attach the toggle switch to the case</li>
 </ul><h2><span class="step-num">STEP 8</span>Step 8: Wiring & Testing</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Wiring & Testing image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Wiring & Testing image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Wiring & Testing image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Wiring & Testing image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Wiring & Testing image 5" loading="lazy"></div><p>I've included a wiring diagram to help make it clear</p>
 <p>STEPS:</p>
 <ul>
 <li>Follow the wiring diagram attached and connect the battery up to the voltage indicator and regulator modules</li>
 <li>Don't forget to connect the output of the regulator to the voltage meter and also the banana plugs</li>
-<li>Before you close up the top section with superglue (I couldn't add screws because the wood for the case is too thin and there isn't enough material to add screws), test everything to make sure it works.  This includes testing charging through the module and also connecting up a phone to make sure it is charging</li>
-<li>If everything works, then you are ready to close up the top.  Add some superglue long the top section of the case and carefully place the top onto the case, making sure everything is aligned.</li>
+<li>Before you close up the top section with superglue (I couldn't add screws because the wood for the case is too thin and there isn't enough material to add screws), test everything to make sure it works. This includes testing charging through the module and also connecting up a phone to make sure it is charging</li>
+<li>If everything works, then you are ready to close up the top. Add some superglue long the top section of the case and carefully place the top onto the case, making sure everything is aligned.</li>
 </ul>
 <p>That's it! you have successfully re-used and re-built your power bank to be even more useful than before!</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

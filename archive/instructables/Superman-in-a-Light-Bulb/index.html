@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,203 +127,92 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Superman in a Light Bulb</span>
 </nav>
-<h1>Superman in a Light Bulb</h1><div class="source"><a href="https://www.instructables.com/Superman-in-a-Light-Bulb/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Whilst daydreaming during a particularly long and boring meeting, I hit upon this 'ible.</p>
-<p>I've put things inside light bulbs before (<a href="https://www.instructables.com/id/Plane-in-a-Globe-Hacking-A-PIR-Sensor-To-Do-Your/">see this 'ible</a>) and I really like the effect.</p>
-<p>This time I decided to add a miniature Superman!</p>
-<p>No particular reason, just thought it would look cool.</p>
-<p>The Superman is actually a miniature train figure that I painted and added a cape to.</p>
-<p>He flies around inside the bulb and his speed can be controlled using a PMW speed controller.</p>
-<p>I also added a couple of LED lights so it also functions as a light, which kinda makes sense considering its a light bulb (but that's all that makes sense in this 'ible!)</p>
-<p>Although a little fiddly in some parts, anyone with some basic soldering skills and a steady hand can put one of these together.</p>
-<p>If you don't like Superman (who doesn't) then you could change it too whatever takes your fancy.</p>
-<p>I'm thinking of doing one of these with a miniature Star Wars space ship or maybe a rubber goldfish!</p>
+<h1>Superman in a Light Bulb</h1><div class="source"><a href="https://www.instructables.com/Superman-in-a-Light-Bulb/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Whilst daydreaming during a particularly long and boring meeting, I hit upon this 'ible. I've put things inside light bulbs before (see this 'ible) and I really like the effect. This time I decided to add a miniature Superman! No particular reason, just thought it would look cool.</p>
+<p>The Superman is actually a miniature train figure that I painted and added a cape to. He flies around inside the bulb and his speed can be controlled using a PMW speed controller. I also added a couple of LED lights so it also functions as a light, which kinda makes sense considering its a light bulb (but that's all that makes sense in this 'ible!)</p>
+<p>Although a little fiddly in some parts, anyone with some basic soldering skills and a steady hand can put one of these together. If you don't like Superman (who doesn't) then you could change it too whatever takes your fancy. I'm thinking of doing one of these with a miniature Star Wars space ship or maybe a rubber goldfish!</p>
 <p>To see it in action, check out the video below.</p><h2><span class="step-num">STEP 1</span>Step 1: Watch the Video</h2><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Things to Gather image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Things to Gather image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Things to Gather image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Things to Gather image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Things to Gather image 10" loading="lazy"></div><p>Bits:</p>
 <ol>
-<li>Empty light bulb - <a href="http://www.ebay.com.au/itm/Light-Bulb-Stand-Glass-Plant-Flower-Vase-Hydroponic-Container-Home-Wedding-Decor-/131344036704?hash=item1e94b6f360:g:JQ0AAOSwabhUYdjz">eBay</a></li>
-</ol>
-<ol>
-<li>Motor speed controller - <a href="http://www.ebay.com.au/itm/PWM-Low-Voltage-DC-1-8V-to-12V-2A-30W-Motor-Speed-Controller-Switch-32x32mm-/131623723171?hash=item1ea562a0a3:g:jC4AAOSwgQ9VyYq8">eBay</a></li>
-</ol>
-<ol>
-<li>15 rpm motor - <a href="http://www.ebay.com.au/itm/DC-3V-0-3A-15RPM-Electrical-Geared-Box-Motor-for-Robot-WS-/221762105392?hash=item33a20d3030:g:WYgAAOSwqu9VRgOz">eBay</a></li>
-</ol>
-<ol>
-<li>Vintage light bulb socket - <a href="http://www.ebay.com.au/itm/E27-Retro-110-220V-Aluminum-Vintage-Edison-Zipper-Ceiling-Light-Socket-Pendant-/301762967151?var=&hash=item464279766f:m:m3BhU30DnUpSrJFpYry9NEg">eBay</a></li>
-</ol>
-<ol>
-<li>Miniature train figure - <a href="http://www.ebay.com.au/itm/100pcs-Z-Scale-1-200-Mix-Painted-Model-People-Train-Park-Passenger-Figures-/131167632756?hash=item1e8a333d74:g:ZmQAAOxylpNTTOa7">eBay</a></li>
-</ol>
-<ol>
-<li>3 x AA battery holder - <a href="http://www.ebay.com.au/itm/Hard-Plastic-Storage-Holder-Case-Box-For-3-X-AA-Battery-With-Wire-Leads-/380930673781?hash=item58b13ccc75:g:zv8AAOSwcnpTnqQG">eBay</a></li>
-</ol>
-<ol>
+<li>Empty light bulb - eBay</li>
+<li>Motor speed controller - eBay</li>
+<li>15 rpm motor - eBay</li>
+<li>Vintage light bulb socket - eBay</li>
+<li>Miniature train figure - eBay</li>
+<li>3 x AA battery holder - eBay</li>
 <li>3 x AA batteries</li>
-</ol>
-<ol>
 <li>A bunch of electrical wires</li>
-</ol>
-<ol>
 <li>An old lamp base.</li>
-</ol>
-<ol>
 <li>Thin musical wire. You can get this from hobby stores</li>
-</ol>
-<ol>
-<li>Very fine paint brushes - <a href="http://www.ebay.com.au/itm/Set-of-15-tiny-paint-brush-for-model-war-hammer-figurine-art-nail-fine-craft-/111816706539?hash=item1a08cb89eb:g:He4AAOSw0e9UsgDp">ebay</a></li>
-</ol>
-<ol>
+<li>Very fine paint brushes - ebay</li>
 <li>Hobby paint (red, yellow, blue and black)</li>
-</ol>
-<ol>
-<li>A couple of LED's. I went with pink and blue. - <a href="http://www.ebay.com.au/itm/70-5mm-Mixed-Red-Green-Blue-Yellow-Purple-Pink-White-LED-Light-90-Metal-Resistor-/110948827875?hash=item19d510c2e3:m:mRmwWQlkra06t3Syb5lHHsA">eBay</a></li>
+<li>A couple of LED's. I went with pink and blue. - eBay</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Pliers</li>
-</ol>
-<ol>
 <li>Soldering Iron</li>
-</ol>
-<ol>
 <li>Wire cutters</li>
-</ol>
-<ol>
 <li>Super glue</li>
-</ol>
-<ol>
 <li>Dremel</li>
-</ol>
-<ol>
 <li>Masking tape</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Testing the Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Testing the Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Testing the Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Testing the Circuit image 3" loading="lazy"></div><p>Before you dive into putting the electronics together, it's good practice to test everything first.</p>
 <p>Steps:</p>
 <ol>
 <li>Using a breadboard, wire up everything.</li>
-</ol>
-<ol>
 <li>Test the motor controller and make sure it works correctly. The speed controller will also dim and brighten your LED's.</li>
-</ol>
-<ol>
 <li>Lastly take note of the way the motor spins. This will determine which way Superman faces.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Making Superman</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making Superman image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making Superman image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making Superman image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making Superman image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making Superman image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making Superman image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making Superman image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making Superman image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making Superman image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making Superman image 10" loading="lazy"><img src="images/step04_11.jpg" alt="Step 4: Making Superman image 11" loading="lazy"><img src="images/step04_12.jpg" alt="Step 4: Making Superman image 12" loading="lazy"><img src="images/step04_13.jpg" alt="Step 4: Making Superman image 13" loading="lazy"><img src="images/step04_14.jpg" alt="Step 4: Making Superman image 14" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Go through the miniature train figures and pick one that has his arm up. This will look like he is flying once pained and the cape is added</li>
-</ol>
-<ol>
 <li>Get a picture of Superman. Most of his clothing is blue with red boots, red underwear, and a red and yellow symbol on his chest. He also has a yellow belt. The first thing to do is to paint the figure blue. Leave the face and hands.</li>
-</ol>
-<ol>
 <li>Once dry, carefully paints the boots red and also his underwear. Add a small dab of red on his chest as well.</li>
-</ol>
-<ol>
 <li>Next add some yellow for the belt and a tiny it of yellow for the symbol.</li>
-</ol>
-<ol>
 <li>I also went over his hair again with some black paint.</li>
-</ol>
-<ol>
 <li>Lastly, I went over his hands and face with some skin coloured paint.</li>
-</ol>
-<ol>
 <li>For the cape all I did was to paint some thin white fabric red. Then I cut out a small cap and super glued this to his neck. Yes it's a little fiddly but the end result looks great.</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Add Superman to the Wire</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Add Superman to the Wire image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Add Superman to the Wire image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Add Superman to the Wire image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Add Superman to the Wire image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Add Superman to the Wire image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Add Superman to the Wire image 6" loading="lazy"></div><p>This is an important step as you want to make sure that your little Superman is stuck well to the wire. You also want to ensure that he can spin freely inside the globe and not hit any of the glass.</p>
 <p>Steps:</p>
 <ol>
 <li>With a pair of needle nose pliers, twist the end of the music wire so it forms a flat section. This will make sure that the glue has something to take hold of.</li>
-</ol>
-<ol>
 <li>Next decide how much to bend the wire to make the arm. I tried to get a much use out of the globe as possible without Superman touching the inside of the globe.</li>
 </ol>
-<p>REMOVING THE SCREW SECTION FROM THE GLOBE- If you use the same light bulbs that I used, then you'll notice that the metal section is stuck on with hot glue.</p>
-<p>Just heat-up the metal section a little and then unscrew it.</p>
-<p>The good thing about this is the hot glue acts as thread and you will be able to screw the bulb back.</p>
+<p>REMOVING THE SCREW SECTION FROM THE GLOBE- If you use the same light bulbs that I used, then you'll notice that the metal section is stuck on with hot glue. Just heat-up the metal section a little and then unscrew it. The good thing about this is the hot glue acts as thread and you will be able to screw the bulb back.</p>
 <ol>
 <li>To secure the wire to the motor I used a mall piece of copper tubing. Add the music wire to the inside of the tubing and slide it over the motor shaft. It should be a tight fit but not so tight that you can't remove it. Put Superman inside the globe and see how he fits. If he is too high then you will need to trim the music wire a little.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Moding the Light Bulb and Socket</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Moding the Light Bulb and Socket image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Moding the Light Bulb and Socket image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Moding the Light Bulb and Socket image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Moding the Light Bulb and Socket image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Moding the Light Bulb and Socket image 5" loading="lazy"></div><p>In order for the motor to fit inside the light bulb and socket, you'll need to get the dremel out.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove some of the material on the aluminium screw section on the light bulb. Just enough so the motor with the LED's attached can fit through. Secure with some hot glue</li>
-</ol>
-<ol>
 <li>Next you have to remove the switch mechanism from the light socket. Drill out the hucks that are holding the 2 pieces together. You can discard the switch section once removed .</li>
-</ol>
-<ol>
 <li>The female screw section has a hole in the bottom which you will need to enlarge. Do this with the dremel until the motor can fit through and screw onto the light bulb.</li>
-</ol>
-<ol>
 <li>To ensure the the female section of the socket fits tightly into the actual socket, I added some masking tape and pushed it into place</li>
-</ol>
-<ol>
 <li>Lastly, push the bottom of the light socket onto the main body</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Motor and LED's</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Motor and LED's image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Motor and LED's image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Motor and LED's image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Motor and LED's image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Motor and LED's image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Motor and LED's image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Motor and LED's image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Motor and LED's image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Motor and LED's image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Motor and LED's image 10" loading="lazy"></div><p>Now you have Superman attached to the motor, it's time to add the LED's.</p>
-<p>As there isn't much space inside the bulb socket (you have to do a little moding to this as well) you will need to keep the LED's as close as possible to the motors.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Motor and LED's</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Motor and LED's image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Motor and LED's image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Motor and LED's image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Motor and LED's image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Motor and LED's image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Motor and LED's image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Motor and LED's image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Motor and LED's image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Motor and LED's image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Motor and LED's image 10" loading="lazy"></div><p>Now you have Superman attached to the motor, it's time to add the LED's. As there isn't much space inside the bulb socket (you have to do a little moding to this as well) you will need to keep the LED's as close as possible to the motors.</p>
 <p>Steps:</p>
 <ol>
 <li>Add some heat-shrink to each of the LED legs.</li>
-</ol>
-<ol>
 <li>Orientate the LED's so the negative legs are close to the motor terminal that the negative wire is to be attached to. Do the same for the positive wire</li>
-</ol>
-<ol>
 <li>With another piece of larger heat shrink, secure the LED's in place</li>
-</ol>
-<ol>
 <li>Next you need to attached the negative legs and motor terminal together. I just used a leg from a resister and soldered this onto the legs/terminal. Do the same for the positive wires</li>
-</ol>
-<ol>
 <li>Lastly, solder some long wires to the terminals on the motor and add some hot glue to ensure the wires don't pull out.</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Completing the Globe</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Completing the Globe image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Completing the Globe image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Completing the Globe image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Completing the Globe image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Completing the Globe image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Completing the Globe image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Completing the Globe image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Completing the Globe image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Completing the Globe image 9" loading="lazy"></div><p>Steps.</p>
 <ol>
 <li>Once the motor has been secured in the female section to the socket, it's time to complete the globe. Thread the wire through the bottom of the socket and push the end into place</li>
-</ol>
-<ol>
 <li>Carefully insert Superman into the globe and screw it into place.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a Stand</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Stand image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Stand image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Stand image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Stand image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding a Stand image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding a Stand image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding a Stand image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding a Stand image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding a Stand image 9" loading="lazy"></div><p>So now you have your light bulb with a tiny little Superman inside, it's time to add it to some type of stand.</p>
-<p>I found a very old lamp stand at the tip and modified this.</p>
-<p>I was initially just going to use a simple lamp stand with a silver base and shaft but decided to use the vintage in instead.</p>
-<p>As long as the stand is hollow underneath, then you can pretty much use anything.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a Stand</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Stand image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Stand image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Stand image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Stand image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding a Stand image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding a Stand image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding a Stand image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding a Stand image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding a Stand image 9" loading="lazy"></div><p>So now you have your light bulb with a tiny little Superman inside, it's time to add it to some type of stand. I found a very old lamp stand at the tip and modified this. I was initially just going to use a simple lamp stand with a silver base and shaft but decided to use the vintage in instead. As long as the stand is hollow underneath, then you can pretty much use anything.</p>
 <p>I'll go through what I did but each stand will be a little different.</p>
 <p>Steps:</p>
 <ol>
 <li>Pull apart the stand and give it a good clean if it needs it.</li>
-</ol>
-<ol>
 <li>Next I had to find a way to attach the neck of the lamp to the base. All I did was remove the screw section, drilled a hole through the middle (for the wires to go through) and then added a couple small screws - see below</li>
-</ol>
-<ol>
 <li>As the base is hollow, I decided to add a piece of ply wood to the bottom. With a jigsaw, measure and cut-out a piece of wood that fits neatly into the bottom of the lamp. Drill a hole in the base and attach the speed controller.</li>
-</ol>
-<ol>
 <li>Lastly, I also had to mod the neck section a little so the light socket would fit correctly. All I did as added some copper tubing and make a small connector that went into the neck of the lamp and also inside the bottom of the socket.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Final Stand Steps</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Final Stand Steps image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Final Stand Steps image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Final Stand Steps image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Final Stand Steps image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Final Stand Steps image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Final Stand Steps image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Drill a hole into the base where the speed controller will be located. Screw the potentiometer into place</li>
-</ol>
-<ol>
 <li>Next add some double sided tape to the bottom of the battery holder ad circuit board and attach to the wood base</li>
-</ol>
-<ol>
 <li>Carefully push the wood bottom into place</li>
-</ol>
-<ol>
 <li>Turn the potentiometer and hopefully you see your little Superman stat too fly around inside the globe.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Done</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Done image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Done image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Done image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Done image 4" loading="lazy"></div><p>That's it. You should now have your own little Superman trapped inside a light bulb.</p>
 <p>There are plenty of other things you would put inside your globe. Anything from a Lego spaceman to Minitaure plane and everything in between.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

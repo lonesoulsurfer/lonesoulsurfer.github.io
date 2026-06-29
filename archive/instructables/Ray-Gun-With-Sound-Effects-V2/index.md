@@ -40,15 +40,15 @@ Let’s get on with the build.
 
 Parts List
 
-Circuit Board - Gerber files can be [found here](https://drive.google.com/drive/folders/1xbZ980t1Gh90-KWeYtzDYXtfIJQZVWX8?usp=sharing)
+Circuit Board - Gerber files can be found here
 
-1. 40106 IC – [eBay](https://www.ebay.com.au/itm/10PCS-CD40106-CD40106BE-40106-DIP-14-HEX-SCHMITT-TRIGGER-IC/381374858810?hash=item58cbb6863a:g:E6IAAOSwF1dUPnly&frcectupt=true)
+1. 40106 IC – eBay
 
-2. 2 X 1M Pot – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=1m+potentiometer&_sacat=0&_sop=15)
+2. 2 X 1M Pot – eBay
 
-3. 100K Pot – [eBay.](https://www.ebay.com.au/itm/2PCS-3Pin-6MM-B-Type-B100K-Ohm-Rotary-Potentiometer-Shaft-Adjustable-Resistance/392303688905?hash=item5b571f3cc9:g:a9kAAOSwApVc67qV&frcectupt=true)
+3. 100K Pot – eBay.
 
-Buy your caps in bulk assorted lots on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=capacitors+assorted&_sacat=0&_sop=15)
+Buy your caps in bulk assorted lots on eBay
 
 4. 4.7uf cap
 
@@ -60,19 +60,19 @@ Buy your caps in bulk assorted lots on [eBay](https://www.ebay.com.au/sch/i.html
 
 8. 100nf cap
 
-9. 2 X 2N3904 Transistor – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=N3904&_sacat=0&_sop=15)
+9. 2 X 2N3904 Transistor – eBay
 
-Buy your resistors in bulk assorted lots on - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistors+assorted.TRS0&_nkw=resistors+assorted&_sacat=0)
+Buy your resistors in bulk assorted lots on - eBay
 
 10. 1K resistor
 
 11. 2 X 470K resistor
 
-12. Optocoupler - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l2632.R2.TR2.TRC1.A0.H0.XOptocoupler.TRS0&_nkw=optocoupler&_sacat=92074&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=N3904), or you could make one. Check out this [‘ible](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/) on how to easily make one from an LED and a LDR
+12. Optocoupler - eBay, or you could make one. Check out this ‘ible on how to easily make one from an LED and a LDR
 
-13. Mobile battery - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xsamsung+mobile+phone+battery.TRS0&_nkw=samsung+mobile+phone+battery&_sacat=92074&LH_TitleDesc=0&_sop=15&_osacat=92074&_odkw=samsung+mobile+phone+). You can also get these for free! - check out this ['ible](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/) on where to find them
+13. Mobile battery - eBay. You can also get these for free! - check out this 'ible on where to find them
 
-14. Charger and voltage regulator module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
+14. Charger and voltage regulator module - eBay
 
 15. Switch – this would work well - eBay, or maybe a momentary switch like this The drill came with a trigger switch, which I used.
 
@@ -82,9 +82,9 @@ Buy your resistors in bulk assorted lots on - [eBay](https://www.ebay.com.au/sch
 
 Power
 
-1. Mobile Battery - You probably have an old mobile sitting around that you can pilfer one from or get a new one from [eBay.](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xsamsung+mobile+battery.TRS0&_nkw=samsung+mobile+battery&_sacat=0)
+1. Mobile Battery - You probably have an old mobile sitting around that you can pilfer one from or get a new one from eBay.
 
-2. Charging and voltage regulator module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
+2. Charging and voltage regulator module - eBay
 
 
 ## Step 2: The Ray Gun Sound Effect Circuit
@@ -97,18 +97,16 @@ Power
 
 ![Step 2: The Ray Gun Sound Effect Circuit image 4](images/step02_04.jpg)
 
-I'm adding 2 circuits to this gun, the first is a ray gun sound effects schematic that was featured in [Make magazine](https://makezine.com/projects/make-35/raygun-vector-weapon/) and the 2nd is one I came up with for a speed controlled, flashing LED.
+I'm adding 2 circuits to this gun, the first is a ray gun sound effects schematic that was featured in Make magazine and the 2nd is one I came up with for a speed controlled, flashing LED.
 
 I took the ray gun schematic one step further and designed a printed board for it as well. You can always just use the schematic attached and make it on prototype board if that works better for you.
 
-I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on [schematic](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all) and [board](https://learn.sparkfun.com/tutorials/using-eagle-board-layout) design. They are easy to understand and once you get the hang of it, easier than you think.
+I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design. They are easy to understand and once you get the hang of it, easier than you think.
 
-You can't attach zip files to Instructables pages so I have linked all of the files to my [Google drive](https://drive.google.com/drive/folders/1xbZ980t1Gh90-KWeYtzDYXtfIJQZVWX8?usp=sharing). The zip file has all of the gerber files which you need to get the PCB printed. Just save that file and sent it to your favourite PCB manufacture. I use [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQjwuJz3BRDTARIsAMg-HxXQlC6JQ_bVu3kRlQAl3ErrFHUAW0t2TbWZCCef_iWWsQPk8QTpZg0aAqOpEALw_wcB) but there are plenty of others you can use.
+You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive. The zip file has all of the gerber files which you need to get the PCB printed. Just save that file and sent it to your favourite PCB manufacture. I use JLCPCB but there are plenty of others you can use.
 
 The flashing LED circuit I used some prototype board as it was only a small circuit to build. You find the schematic attached and I've also designed a board for it as well which can be found on my Google drive
 
-
-- [Pew Pew Sound Effects 1](pdfs/Pew Pew Sound Effects 1.pdf)
 
 ## Step 3: Parts for the Flashing LED Circuit
 
@@ -120,30 +118,28 @@ The flashing LED circuit I used some prototype board as it was only a small circ
 
 ![Step 3: Parts for the Flashing LED Circuit image 4](images/step03_04.jpg)
 
-For the flashing LED circuit, I used some prototype board as it was only a small circuit to build. I've attached the schematic and also designed a board for it as well which can be found on my [Google drive](https://drive.google.com/drive/folders/1JUetub_dn_97O93Il4eXH9o4zh11aX2X?usp=sharing)
+For the flashing LED circuit, I used some prototype board as it was only a small circuit to build. I've attached the schematic and also designed a board for it as well which can be found on my Google drive
 
 The circuit is a simple 555 timer one and I've included 2 LED's which are controlled by a 100k pot
 
 Parts List
 
-Gerber file and schematic can be [found here](https://drive.google.com/drive/folders/1JUetub_dn_97O93Il4eXH9o4zh11aX2X?usp=sharing)
+Gerber file and schematic can be found here
 
-1. 555 Timer - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=555+timer&_sacat=0&_sop=15)
+1. 555 Timer - eBay
 
-2. 10K Resistor - [eBay](https://www.ebay.com.au/itm/100pcs-1-4w-Watt-10K-ohm-10Kohm-0-25W-1-Metal-Film-Resistor-Hot/223096236929?epid=17022442066&hash=item33f1926b81:g:EkEAAOSwVP5bbQca)
+2. 10K Resistor - eBay
 
-3. 1k Resistor X 2 - [eBay](https://www.ebay.com.au/itm/100Pcs-Resistors-1K-OHM-1-4W-5-Carbon-Film-100pcs-10K-OHM-1-4W-1-Metal-Film/382986372504?hash=item592bc44598:g:nvwAAOSwIzpc9Mtr)
+3. 1k Resistor X 2 - eBay
 
-4. 100K potentiometer - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=100k+potentiometer&_sacat=0&_sop=15)
+4. 100K potentiometer - eBay
 
-5. 3.3uf Capacitor - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=3.3uf+capacitor&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=3.3uf+potentiometer)
+5. 3.3uf Capacitor - eBay
 
-6. 5mm LED's X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.X5mm+led.TRS0&_nkw=5mm+led&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=3.3uf+capacitor)
+6. 5mm LED's X 2 - eBay
 
 7. Wires
 
-
-- [Flashing LED - 555](pdfs/Flashing LED - 555.pdf)
 
 ## Step 4: Getting an Idea of the Design for the Ray Gun
 
@@ -408,7 +404,7 @@ Steps:
 
 If you want to you could just use a 9V battery to power everything. It will mean though that you will need to be able to get inside your ray gun change change it when flat.
 
-Another way is to use a mobile battery and run the power through a voltage regulator and charging module. I [made an Instructable](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/) on how to use this module and hook it up to a battery. It's very straight forward and is a great way to re-use old mobile batteries.
+Another way is to use a mobile battery and run the power through a voltage regulator and charging module. I made an Instructable on how to use this module and hook it up to a battery. It's very straight forward and is a great way to re-use old mobile batteries.
 
 Steps:
 
@@ -516,11 +512,6 @@ The last thing to do is to make a stand for the ray gun. I used some old wood i 
 
 phew - that's pretty much it! There seems to be a lot of parts and steps that went into making this ray gun! However, it's the journey that makes it all worth while in the end.
 
-
-## Downloads
-
-- [Pew Pew Sound Effects 1](pdfs/Pew Pew Sound Effects 1.pdf)
-- [Flashing LED - 555](pdfs/Flashing LED - 555.pdf)
 
 ---
 *97 images archived*

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,217 +127,107 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Lamp Made From Found Objects</span>
 </nav>
-<h1>Lamp Made From Found Objects</h1><div class="source"><a href="https://www.instructables.com/Lamp-Made-From-Found-Objects/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I found this Fanta bottle from the 60's whilst digging in the back yard and thought it would be great to use in a lamp build.</p>
-<p>That's what usually happens with projects like this that I make - I find something and from there I base the build around it.</p>
-<p>All the parts in the build are things that I had in my parts bins so it really is a lamp made only from found objects.</p>
-<p>The base is made from an old fence post, the body from a piece of 50mm copper and the switch is an old lock!</p>
-<p>It's always tricky doing a step by step of a build like this as it will be hard to find the exact parts I used.</p>
-<p>However, hopefully I can give you some ideas how how you can build your own lamp with found objects you might have around your house.</p>
+<h1>Lamp Made From Found Objects</h1><div class="source"><a href="https://www.instructables.com/Lamp-Made-From-Found-Objects/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I found this Fanta bottle from the 60's whilst digging in the back yard and thought it would be great to use in a lamp build. That's what usually happens with projects like this that I make - I find something and from there I base the build around it.</p>
+<p>All the parts in the build are things that I had in my parts bins so it really is a lamp made only from found objects. The base is made from an old fence post, the body from a piece of 50mm copper and the switch is an old lock!</p>
+<p>It's always tricky doing a step by step of a build like this as it will be hard to find the exact parts I used. However, hopefully I can give you some ideas how how you can build your own lamp with found objects you might have around your house.</p>
 <p>There are 2 video's as well. A very short one of the finished lamp and one that goes for a little longer on the build.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Step 1: Parts image 11" loading="lazy"></div><p>Below is a list of parts that I used. I have also put some links (where I could find them) to where you can buy some of the parts i used</p>
 <p>PARTS:</p>
 <ol>
-<li>Old soda bottle. I used a Fanta bottle which is made from quite thick glass and is rippled (must be for grip!). <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=vintage+fanta+bottle&_sacat=0">eBay</a></li>
-</ol>
-<ol>
+<li>Old soda bottle. I used a Fanta bottle which is made from quite thick glass and is rippled (must be for grip!). eBay</li>
 <li>Copper tube 65mm (body of the lamp) - You could use a 3" piece which is a similar size</li>
-</ol>
-<ol>
 <li>Copper tube - 15mm. This piece of copper is used to hold the bulb inside the bottle</li>
-</ol>
-<ol>
 <li>Small vintage lock - ok so you might have a problem trying to find one of these. However, I did find the exact one on eBay my typing in 'small vintage door lock'</li>
-</ol>
-<ol>
 <li>Piece of wood for the base. Just find a nice, solid piece of wood to use. Mine was from a fence post and is red wood</li>
-</ol>
-<ol>
-<li>G4 bulb socket - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=g4+socket&_sacat=0">eBay</a></li>
-</ol>
-<ol>
-<li>G4 LED globe - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=g4+led&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=g4+socket">eBay</a>. I used a 200 lumen globe</li>
-</ol>
-<ol>
-<li>9v DC power adapter. You could use 12v but I had a 9v one lying around which works fine - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=9v+power+adapter&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=g4+led">eBay</a></li>
-</ol>
-<ol>
+<li>G4 bulb socket - eBay</li>
+<li>G4 LED globe - eBay. I used a 200 lumen globe</li>
+<li>9v DC power adapter. You could use 12v but I had a 9v one lying around which works fine - eBay</li>
 <li>Other parts. The rest of the parts are just ad-hoc bits and pieces I had in my parts bin</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Base From a Chunk of Wood</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Base From a Chunk of Wood image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Base From a Chunk of Wood image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Base From a Chunk of Wood image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Base From a Chunk of Wood image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Base From a Chunk of Wood image 5" loading="lazy"></div><p>The wood I used is red wood and was from an old fence that a friend had pulled down</p>
 <p>STEPS:</p>
 <ol>
 <li>First thing I needed to do was to work out how big to make the base. I put the copper tube on top and marked out where to make the cut</li>
-</ol>
-<ol>
 <li>Once I had cut the wood to the size I wanted, I next had to give it a good sanding to reveal the beautiful underneath. I used my belt sander to do this which took some time. The wood wasn't square as well so I had to do some extra sanding to get it as square as possible</li>
-</ol>
-<ol>
 <li>I also rounded the edges to give a better finish to the base. I probably should have used my router to do it but I just sanded them round in the end.</li>
-</ol>
-<ol>
 <li>Once I had the shape I wanted I used some finer grit sandpaper to give it a smooth finish</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Making Some Holes to Add Parts to the Base</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making Some Holes to Add Parts to the Base image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making Some Holes to Add Parts to the Base image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making Some Holes to Add Parts to the Base image 3" loading="lazy"></div><p>There were 3 holes needed in the base in order to be able to add the power socket, on/off switch and the main hole on top which has all the wires etc in it.</p>
 <p>STEPS:</p>
 <ol>
 <li>I made the larger hole in the top first which a 32mm hole bit. It goes about half way through the wood. The hole was made to the centre of the top of the wood as well.</li>
-</ol>
-<ol>
 <li>I also made 2 other holes, one on the front and back of the base. These holes needed to go right through to the larger hole so I could connect wires up to the switch and power socket</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Designing the Body of the Lamp</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Designing the Body of the Lamp image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Designing the Body of the Lamp image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Designing the Body of the Lamp image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Designing the Body of the Lamp image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Designing the Body of the Lamp image 5" loading="lazy"></div><p>I had a pretty rough idea on how I was going to build that lamp.</p>
-<p>However, a build like this is constantly changing (for me at least) as I'm always thinking what else I could add and whether I need to change the design.</p>
-<p>The body though I knew I wanted to use the copper tube as the Fanta bottle fitted nicely inside.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Designing the Body of the Lamp</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Designing the Body of the Lamp image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Designing the Body of the Lamp image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Designing the Body of the Lamp image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Designing the Body of the Lamp image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Designing the Body of the Lamp image 5" loading="lazy"></div><p>I had a pretty rough idea on how I was going to build that lamp. However, a build like this is constantly changing (for me at least) as I'm always thinking what else I could add and whether I need to change the design. The body though I knew I wanted to use the copper tube as the Fanta bottle fitted nicely inside.</p>
 <p>STEPS:</p>
 <ol>
 <li>The first thing I did was to give the copper pieces a good polish. I used a metal polish to do this. I also used some clear acrylic on each of them to ensure that the copper wouldn't tarnish again. The finished polish isn't to a high sheen but I didn't want it to look new</li>
-</ol>
-<ol>
 <li>Next thing I did was to place the large copper pipe onto the wood. I wasn't really happy with the way it looked so I went into the parts bin and found this old wheel. fortuitously, the copper fitted nicely inside the wheel and gave a nice finish to the base section of the lamp.</li>
-</ol>
-<ol>
 <li>As I'm putting parts together I'm constantly thinking 'how the heck I'm I going to connect all these parts!' I kind of left it for the moment as I had an idea on how to connect the smaller piece of copper tube to the wheel</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Connecting the Smaller Copper Tube to the Wheel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Connecting the Smaller Copper Tube to the Wheel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Connecting the Smaller Copper Tube to the Wheel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Connecting the Smaller Copper Tube to the Wheel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Connecting the Smaller Copper Tube to the Wheel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Connecting the Smaller Copper Tube to the Wheel image 5" loading="lazy"></div><p>Ok - I'm going to stop calling it the 'smaller piece of copper tube' and call it the light rod from now on.</p>
 <p>In order to connect the light rod to the base of the wheel, I decided to jam a nut inside the tube which I could then add a bolt through the wheel and connect them together that way</p>
 <p>STEPS:</p>
 <ol>
 <li>I found nut slightly larger then the ID of the tube. To jam it in there I just laid the nut onto a hard surface and with a hammer bashed the top of the copper until the nut was wedged inside</li>
-</ol>
-<ol>
 <li>I then used a bolt to connect the light rod to the base of the wheel. To tell you the truth I also added some very good quality super glue as well to make sure it would go anywhere. it's only one of the two times I used super glue in this build - promise!</li>
-</ol>
-<ol>
 <li>To be able to secure the body of the lamp to the wheel, I drilled 3 holes into the side of the wheel, used a die cutter to add some thread to the holes and added 3 small bolts. I reckon I broke about 8 drill bits trying to drill into the hardened steel! Now all I needed to do to secure the body of the lamp (large copper tube) was to place it into the wheel and tighten up the bolts</li>
-</ol>
-<ol>
 <li>Now I had that done I decided to move onto the on/off switch.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Making an On/Off Switch From an Old Lock</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 6" loading="lazy"></div><p>I was just going to add an old switch that I had lying around but after a bit of rummaging around in the parts bin I found this old lock buried deep.</p>
-<p>After a little messing about I decided that it would be an awesome way to turn off and on the lamp!</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making an On/Off Switch From an Old Lock</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making an On/Off Switch From an Old Lock image 6" loading="lazy"></div><p>I was just going to add an old switch that I had lying around but after a bit of rummaging around in the parts bin I found this old lock buried deep. After a little messing about I decided that it would be an awesome way to turn off and on the lamp!</p>
 <p>STEPS:</p>
 <ol>
 <li>The first thing I did was to give the lock a bit of a polish. I only wanted to bring out the brass on the lock so only gave those sections a good polish.</li>
-</ol>
-<ol>
 <li>Next I slightly modified the inside of the lock in order to be able to fit the momentary level switch inside. Once I was happy with how it worked I soldered a couple of wires to the switch and super glued it into place. Yes, this is the second place I added some super glue!</li>
-</ol>
-<ol>
 <li>I also added a little strip of plastic to the inside of the lock to ensure the switch didn't short on the metal.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Some Brackets to the Body of the Lamp</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Some Brackets to the Body of the Lamp image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Some Brackets to the Body of the Lamp image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Some Brackets to the Body of the Lamp image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Some Brackets to the Body of the Lamp image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding Some Brackets to the Body of the Lamp image 5" loading="lazy"></div><p>Initially I wasn't going to add anything on top of the lamp. However, I found this cage in the parts bin and thought it would look great as a surround over the Fanta bottle.</p>
 <p>STEPS:</p>
 <ol>
 <li>After working out how far the brackets had to come out, I bent a piece of copper 90 degrees and then cut them to size.</li>
-</ol>
-<ol>
 <li>Once I have 4 of them made, the next thing to do was to solder them to the copper tube body. I used a small alligator clip to hold the bracket into place (also added some flux as well) and then placed a strip of silver solder on top. I used silver solder (its about 5% silver) as it holds better then just lead/tin solder.</li>
-</ol>
-<ol>
 <li>To ensure it melts right, I heated up the metal around the solder and the bracket until the solder just started to melt. I then place the heat directly onto the solder.</li>
-</ol>
-<ol>
 <li>I did it 3 more times and voila - I had 4 brackets attached to the top of the body of the lamp</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Working on 'The Cage' for the Lamp Surround</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 5" loading="lazy"></div><p>Here's the cage surround I was talking about in the last step.</p>
-<p>You can see why now I needed 4 brackets soldered onto the body of the lamp.</p>
-<p>I wish I could remember what this come off but I have no idea.</p>
-<p>Suffice to say it was protecting something hot!</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Working on 'The Cage' for the Lamp Surround</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Working on 'The Cage' for the Lamp Surround image 5" loading="lazy"></div><p>Here's the cage surround I was talking about in the last step. You can see why now I needed 4 brackets soldered onto the body of the lamp. I wish I could remember what this come off but I have no idea. Suffice to say it was protecting something hot!</p>
 <p>STEPS:</p>
 <ol>
 <li>To jazz up the surround I decided to add some copper from an old light fitting. The first thing I did was to cut out the centre section. I did this with a dremel and filed the edges to ensure they were nice and smooth.</li>
-</ol>
-<ol>
 <li>I then drilled a couple of holes into the cage on the top and secured the top section of the light fitting to it with a couple of nuts and bolts</li>
-</ol>
-<ol>
 <li>The other part of the light fitting I also used as well. You'll see where in a couple of steps.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 9" loading="lazy"></div><p>I had to come up with a way to secure the bottle inside the copper tube lamp body.</p>
-<p>I initially tried some O rings but that didn't work as the O rings were too thick.</p>
-<p>I then though that a strip of rubber might work and found an old tyre tube which I used to secure it into place.</p>
-<p>Actually, I was really pleased with the solution I worked out here.</p>
-<p>Using rubber ensures that the glass is protected and it really makes a great, tight fit.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding the Fanta Bottle Into the Copper Body of the Lamp image 9" loading="lazy"></div><p>I had to come up with a way to secure the bottle inside the copper tube lamp body. I initially tried some O rings but that didn't work as the O rings were too thick. I then though that a strip of rubber might work and found an old tyre tube which I used to secure it into place. Actually, I was really pleased with the solution I worked out here. Using rubber ensures that the glass is protected and it really makes a great, tight fit.</p>
 <p>STEPS:</p>
 <ol>
 <li>First thing I did was to cut a long strip of rubber from a bike tyre tube.</li>
-</ol>
-<ol>
 <li>I then wrapped it tightly around the top section of the bottle 3 times. I didn't bother sticking it down once wrapped as it stayed in place once I pushed it into the copper</li>
-</ol>
-<ol>
 <li>So when I pushed it into the copper, I gave the bottle a bit of a twist until the rubber was hidden inside the copper tube.</li>
-</ol>
-<ol>
 <li>Last thing to do is to make sure the bottle is sitting straight inside the copper tube.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Modified Light Fitting to the Lamp</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Modified Light Fitting to the Lamp image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Modified Light Fitting to the Lamp image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Modified Light Fitting to the Lamp image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Modified Light Fitting to the Lamp image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Modified Light Fitting to the Lamp image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Modified Light Fitting to the Lamp image 6" loading="lazy"></div><p>Remember that lamp fitting that I cut the top off? Sure you do - it was like 2 steps ago. Well I used the bottom half as a surround to cover the brackets that i added to the copper tube body.</p>
 <p>STEPS:</p>
 <ol>
 <li>The first thing I had to do was to make sure it would fit over the Fanta bottle and sit nicely on the brackets - it did.</li>
-</ol>
-<ol>
 <li>If you have a look at the image of the light fitting surround, you will see that there are 3 screws in it. I was going to use these to secure the ring to the body of the lamp but it turns out I didn't have to. The cage section actually golds the surround in place so I got rid of the screws in it.</li>
-</ol>
-<ol>
 <li>The next thing I did was to secure the cage over the bottle and to the brackets via some nuts and bolts.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Staining the Wood Base</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Staining the Wood Base image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Staining the Wood Base image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Staining the Wood Base image 3" loading="lazy"></div><p>Now that all of the parts that need to be added to the base were done, it was time to then give it a stain</p>
 <p>STEPS:</p>
 <ol>
 <li>The stain I used was called 'aged teak' and I have used it in a lot of builds. It works well on lots of different types of wood and I had no complaints using it on this red wood base</li>
-</ol>
-<ol>
 <li>With a cloth, I carefully added the stain onto the wood</li>
-</ol>
-<ol>
 <li>Once it has been covered I left out in the sun to dry.</li>
-</ol>
-<ol>
 <li>Adding more coats will mean the wood will go darker and take on more of an 'aged' look. However, after 1 coat I was happy with the finish so left it at that</li>
 </ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Lock Switch to the Front</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Lock Switch to the Front image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Lock Switch to the Front image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Lock Switch to the Front image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding the Lock Switch to the Front image 4" loading="lazy"></div><p>This was pretty straight forward as I had already drilled the holes in the wood and modded the lock into an on/off switch.</p>
 <p>STEPS:</p>
 <ol>
 <li>First, I placed the lock in the position I wanted it on the front of the wood</li>
-</ol>
-<ol>
 <li>Next I threaded the wires from the lock switch through the hole and out through the large top hole</li>
-</ol>
-<ol>
 <li>I then drilled 4 holes for the screws and attached the loc</li>
 </ol>
 <p>Wiring up everything will come a little later</p><h2><span class="step-num">STEP 13</span>Step 13: Adding the Power Jack and LED Globe</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Power Jack and LED Globe image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Power Jack and LED Globe image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Power Jack and LED Globe image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Power Jack and LED Globe image 4" loading="lazy"><img src="images/step13_05.png" alt="Step 13: Adding the Power Jack and LED Globe image 5" loading="lazy"></div><p>STEPS:</p>
 <ol>
 <li>The first thing I did was to solder a couple of long wires to the G4 socket that the LED globe goes into.</li>
-</ol>
-<ol>
 <li>These wires were then threaded through the smaller copper tube which is attached to the wheel. I had to drill a hole into the side of the copper tube as the other end was blocked by the bolt which was holding the wheel to the tube</li>
-</ol>
-<ol>
 <li>I added a little bit of superglue to the socket (ok so I used superglue 3 times, who's counting though...) and glued it to the top of the copper tube</li>
-</ol>
-<ol>
 <li>Next was to add the power jack to the other side of the base and then wire up the switch, jack and globe. I've added a wiring diagram to make it easy to understand how I did it.</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Adding the Light Rod and Body of the Lamp to the Base</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 6" loading="lazy"></div><p>So close now.</p>
-<p>This is the most exciting part of the build for me, getting to the end and seeing the finished build in front of me.</p>
-<p>I'm always a little nervous though - what happens if it doesn't turn out the way I wanted or doesn't work!</p>
-<p>Luckily for this build it turned out exactly as I imagined it would.</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Adding the Light Rod and Body of the Lamp to the Base</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Adding the Light Rod and Body of the Lamp to the Base image 6" loading="lazy"></div><p>So close now. This is the most exciting part of the build for me, getting to the end and seeing the finished build in front of me. I'm always a little nervous though - what happens if it doesn't turn out the way I wanted or doesn't work! Luckily for this build it turned out exactly as I imagined it would.</p>
 <p>STEPS:</p>
 <ol>
 <li>To secure the wheel and light rod to the wood base, I used a couple of small brackets and just screwed it down directly onto the wood</li>
-</ol>
-<ol>
 <li>To secure the body (large copper tube) to the base, I just place it into the wheel and tightened up the screws in the wheel which keeps the body in place</li>
-</ol>
-<ol>
 <li>Big moment - drum roll please ............</li>
 </ol>
 <p>And we have light!</p>
 <p>The LED bulb I used was 200 lumen. It's pretty bright which is fine but if I wanted something a bit less in brightness i could use say 100 lumen globe.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

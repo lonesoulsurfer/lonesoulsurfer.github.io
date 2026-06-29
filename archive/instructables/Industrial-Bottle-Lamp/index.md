@@ -17,7 +17,7 @@ Source: https://www.instructables.com/Industrial-Bottle-Lamp/
 
 This lamp was born out of a bunch of parts that I had lying around the workshop. However, you should be able to find most of these parts on eBay or your local junk store. If not, then you’ll probably need to improvise a little.
 
-The LED’s used are copper string fairy lights and can be purchased very cheaply on eBay. They run on 3 x AA batteries (4.5V) which I converted over to a wall plug. When added into the inside of the bottle, the LED’s give off an ambient, soft light which is quite beautiful. There are plenty of projects about adding these LED’s to the inside of bottles so if you need more inspiration – [check out this link on Google](https://www.google.com.au/search?q=fairly+LED%27s+inside+bottles&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZ0aaC6trUAhVNz2MKHTz6AwsQ_AUIBigB&biw=1733&bih=990)
+The LED’s used are copper string fairy lights and can be purchased very cheaply on eBay. They run on 3 x AA batteries (4.5V) which I converted over to a wall plug. When added into the inside of the bottle, the LED’s give off an ambient, soft light which is quite beautiful. There are plenty of projects about adding these LED’s to the inside of bottles so if you need more inspiration – check out this link on Google
 
 
 ## Step 1: Parts and Tools
@@ -36,21 +36,21 @@ The LED’s used are copper string fairy lights and can be purchased very cheapl
 
 Parts:
 
-1. Fairy LED’s – [eBay](http://www.ebay.com.au/itm/20-50-100-LED-String-Copper-Wire-Fairy-Lights-Lamp-Powered-Waterproof-XU/371882425581?ssPageName=STRK%3AMEBIDX%3AIT&var=640846828835&_trksid=p2060353.m1438.l2649)
+1. Fairy LED’s – eBay
 
-2. Vintage Bottle – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xvintage+bottle.TRS0&_nkw=vintage+bottle&_sacat=0)
+2. Vintage Bottle – eBay
 
-3. Vintage Light Socket – [eBay](http://www.ebay.com.au/itm/E27-E26-Copper-Vintage-Edison-Screw-Bulb-Socket-Hang-Lamp-Pendant-Light-Holder/371952233598?ssPageName=STRK%3AMEBIDX%3AIT&var=640900450512&_trksid=p2060353.m1438.l2649)
+3. Vintage Light Socket – eBay
 
-4. Lamp Base – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=vintage+lamp&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xvintage++lamp+base.TRS0&_nkw=vintage++lamp+base&_sacat=0). I'd also check the local thrift and op shops as well. You should definitely find something there
+4. Lamp Base – eBay. I'd also check the local thrift and op shops as well. You should definitely find something there
 
-5. Beaker Holder – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=beaker+holder&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xbeaker+stand.TRS0&_nkw=beaker+stand&_sacat=0).
+5. Beaker Holder – eBay.
 
-6. Wire (Cord) – [eBay](http://www.ebay.com.au/itm/3-3-Cotton-Cloth-Covered-Twisted-Electrical-Wire-Vintage-Lamp-Cord-Antique-Fan-/231861944108?var=&hash=item35fc0c7f2c:m:mBUv-RNzGTSjIIk1FFh68Cw)
+6. Wire (Cord) – eBay
 
-7. 4.5v Power supply – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=4.5v+power+adapter+0.3&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X4.5v+power+adapter+300.TRS0&_nkw=4.5v+power+adapter+300&_sacat=0)
+7. 4.5v Power supply – eBay
 
-8. Various O rings – [eBay](http://www.ebay.com.au/itm/225-x-18-Size-Rubber-O-Ring-O-Ring-Washer-Seals-Assorted-Black-Car-Air-Gas-Kit/152174111698?_trksid=p2045573.c100506.m3226&_trkparms=aid%3D555014%26algo%3DPL.DEFAULT%26ao%3D1%26asc%3D20151005190705%26meid%3De1c92e0c2a2a4e43aae1186c6cc0d850%26pid%3D100506%26rk%3D1%26rkt%3D1%26)
+8. Various O rings – eBay
 
 Tools
 

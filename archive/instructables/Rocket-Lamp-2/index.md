@@ -38,11 +38,11 @@ This project only needs some basic tools and soldering skills. I have also added
 
 Parts
 
-1. Milk White Acrylic Tube 40mm OD - [Aliexpress](https://www.aliexpress.com/item/50cm-lot-OD-20-25-30-40-50-60-70-80-100mm-2mm-Thick-Milk/32788363314.html?spm=a2g0s.9042311.0.0.15504c4dWPnP22)
+1. Milk White Acrylic Tube 40mm OD - Aliexpress
 
-2. LED Strip and remote. I used white for mine which you can buy here - [[eBay](https://www.ebay.com.au/itm/0-5-1-2-3-4-5M-USB-LED-Strip-Light-RGB-5050-TV-Back-Lamp-Colour-Changing-Remote/162718301323?hash=item25e2c43c8b:rk:1:pf:0&var)](https://www.ebay.com.au/itm/5M-Cool-White-3528-300SMD-12V-Flexible-Led-Strip-Lights-RF-Remote-Controller/132870356447?hash=item1eefb0bddf:g:X-sAAOSwlx9b~jDT:rk:31:pf:0). You could also use coloured LED's as well - eBay
+2. LED Strip and remote. I used white for mine which you can buy here - eBay. You could also use coloured LED's as well - eBay
 
-3. 12v, 1A Wall adapter - [eBay](https://www.ebay.com.au/itm/AC-DC-5V-12V-24V-Power-Supply-Adapter-Transformer-Charger-AU-EU-UK-US-Wall-Plug/183304121040?hash=item2aadc6ead0:rk:4:pf:0&var)
+3. 12v, 1A Wall adapter - eBay
 
 4. Nice piece of wood for the base. Make sure it is a larger piece so the lamp is stable.
 
@@ -94,21 +94,21 @@ The rocket is probably the trickiest part to the build (it was for me anyhow). I
 
 If you are good with wood and have a lathe, then you could easily turn one.
 
-Here's a link to my Pinterest [rocket collection](https://www.pinterest.com.au/marcusdunn/rockets/) for some ideas. Below is a few that I found on eBay which would work as well. You could use a model rocket like the ones you can launch or ones that you build.
+Here's a link to my Pinterest rocket collection for some ideas. Below is a few that I found on eBay which would work as well. You could use a model rocket like the ones you can launch or ones that you build.
 
-[eBay rocket 1](https://www.ebay.com.au/itm/Alexander-Taron-Tin-Toy-Rocket-Ship-Space-Toy-Spring-Activated-Door-Action-SALE/302975342676?hash=item468abcd854:g:iUQAAOSwMVdYFjGT:rk:19:pf:0)
+eBay rocket 1
 
-[eBay rocket 2](https://www.ebay.com.au/itm/Friction-Powered-Tinplate-Rocket-Spaceship-Model-Tin-Toy-Children-Adult-Toys/123123335234?hash=item1caab90042)
+eBay rocket 2
 
-[eBay rocket 3](https://www.ebay.com.au/itm/Dragon-1-400-CZ-2F-Rocket-DS-56253-Brand-New/223147528387?hash=item33f4a110c3:g:2LwAAOSwrqBbncb7:rk:37:pf:0)
+eBay rocket 3
 
-[eBay rocket 4](https://www.ebay.com.au/p/Pegasus-1-72-Apollo-27-Rocket-9101/1641187313?iid=132305093408&_trkparms=aid%3D222007%26algo%3DSIM.MBE%26ao%3D1%26asc%3D20140122130056%26meid%3Dedbc699a4354478b82daa5253071a7e6%26pid%3D100010%26rk%3D1%26rkt%3D2%26sd%3D223155616537%26itm%3D132305093408&_trksid=p2047675.c100010.m2109)
+eBay rocket 4
 
-[eBay rocket 5](https://www.ebay.com.au/itm/Bandai-Space-Battleship-YAMATO-2199-Deusula-the-2nd-Core-Ship-model-kit-196720/132655626786?hash=item1ee2e43a22:g:gBUAAOSw1m5bGsp-:rk:37:pf:0)
+eBay rocket 5
 
 What about a ship from Star Wars
 
-[eBay Star Wars ship](https://www.ebay.com.au/itm/Star-Wars-Y-Wing-Ship-Action-Fleet-Galoob-1990-s-Toy-Model/163398652512?hash=item260b519260:g:l1QAAOSwfbRbX2dr:rk:14:pf:0)
+eBay Star Wars ship
 
 
 ## Step 4: Making Your Own Rocket

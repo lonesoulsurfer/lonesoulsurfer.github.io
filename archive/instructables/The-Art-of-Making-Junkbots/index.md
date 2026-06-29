@@ -54,9 +54,9 @@ Check out some of my favourite Junkbots below. You can see that their body parts
 
 Here's a couple of my favourite sites and artists to get you started
 
-[Tal Avitzur](http://www.jazjaz.net/2012/06/tal-avitzurs-robot-night-lights.html)
+Tal Avitzur
 
-[Recycle Nation](http://recyclenation.com/2011/09/cute-little-robots-recycle-retro-household-junk)
+Recycle Nation
 
 
 ## Step 2: Saving Images for Inspiration
@@ -71,9 +71,9 @@ I also save images of parts that would work well on a Junkbot on the page as wel
 
 Getting inspiration from someones design and build will definitely help you get started on your own.
 
-[My Pinterest Page](https://www.pinterest.com/marcusdunn/junk-robots/)
+My Pinterest Page
 
-[Dark Roasted Blend](http://www.darkroastedblend.com/2010/03/utterly-irresistible-robot-sculptures.html)
+Dark Roasted Blend
 
 
 ## Step 3: Finding Parts
@@ -187,9 +187,9 @@ Sometimes it's best to start simple and small. It's much easier to put together 
 
 The following steps show you how to put together a Junkbot with parts from an old video of DVD player and a couple of spare parts from your junk bins.
 
-This idea was inspired by [JunkBOTJon](https://www.instructables.com/member/JunkBOTJon) who has done a stella job designing and making miniature Junkbots. Check out his blog below to see the rest of the collection.
+This idea was inspired by JunkBOTJon who has done a stella job designing and making miniature Junkbots. Check out his blog below to see the rest of the collection.
 
-[Blog](http://junkbotjoninventory.blogspot.com.au/)
+Blog
 
 If however you think your ready to tackle something larger, you can just skip the next few steps and go to step "Ways to Connect the Parts"
 
@@ -389,9 +389,9 @@ Getting started on a larger Junkbot starts with one part. That part usually jump
 
 I've posted a couple of other ibles' on Junkbots which you can find at the below links if your interested.
 
-[Junkbot in Resin](https://www.instructables.com/id/Junkbot-in-Resin/)
+Junkbot in Resin
 
-[Make a Junkbot](https://www.instructables.com/id/Make-a-Junkbot/)
+Make a Junkbot
 
 Good luck with your own Junkbots.
 

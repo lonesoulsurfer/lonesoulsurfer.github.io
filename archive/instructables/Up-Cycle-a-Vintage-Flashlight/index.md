@@ -46,27 +46,27 @@ Note: after hacking the flashlight, I discovered that you can't charge iphones o
 
 Bits:
 
-1. Vintage flashlight - [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1313.TR0.TRC0.H0.Xvintage+flashlight.TRS0&_nkw=vintage+flashlight&_sacat=0)
+1. Vintage flashlight - eBay
 
-2. 3 x AAA battery holder - [eBay](http://www.ebay.com.au/itm/Black-Plastic-15cm-6inch-Leads-3x-1-5V-AAA-Battery-Box-Holder-/301419201473?pt=LH_DefaultDomain_15&hash=item462dfc03c1)
+2. 3 x AAA battery holder - eBay
 
-3. 3 X AAA rechargeable batteries - [eBay](http://www.ebay.com.au/itm/12x-1-2V-1000mAH-AAA-NI-MH-Recharge-Rechargeable-Battery-/281226395830?pt=AU_Electronics_Batteries_Chargers&hash=item417a6640b6)
+3. 3 X AAA rechargeable batteries - eBay
 
-4. Cree LED. I pulled mine from a LED headlight - [eBay](http://www.ebay.com.au/itm/CNT-1000-Lumen-CREE-Q5-LED-3-Mode-Zoomable-Headlamp-Head-torch-Light-Lamp-/331282915664?pt=LH_DefaultDomain_15&hash=item4d22002150)
+4. Cree LED. I pulled mine from a LED headlight - eBay
 
-5. Step-up power supply module - [eBay](http://www.ebay.com.au/itm/2x600MA-USB-0-9V-5V-to-5V-dc-Boost-Step-up-Power-Supply-Module-PFM-Control-DC-DC-/271750684714?pt=LH_DefaultDomain_15&hash=item3f459a602a)
+5. Step-up power supply module - eBay
 
-6. Schottky Diode - [eBay](http://www.ebay.com.au/itm/20Pcs-1N5819-DO-41-Diode-Schottky-Diode-40V-25A-New-/120894272717?pt=LH_DefaultDomain_15&hash=item1c25dc34cd)
+6. Schottky Diode - eBay
 
-7. 5.5V solar panel - [eBay](http://www.ebay.com.au/itm/5-5V-0-825W-150mA-Mini-Solar-Panel-Module-DIY-for-Phone-Toys-Charger-/161394418847?pt=LH_DefaultDomain_15&hash=item2593db649f)
+7. 5.5V solar panel - eBay
 
-8. small, red led - [eBay](http://www.ebay.com.au/itm/5mm-LEDs-50-pcs-Pack-10x-Red-Green-Blue-Yellow-White-PIC-Arduino-/181467055939?pt=LH_DefaultDomain_15&hash=item2a40478743)
+8. small, red led - eBay
 
 9. resister - eBay
 
-10. circuit board (strip board) - [eBay](http://www.ebay.com.au/itm/10PC-New-DIY-PCB-Universal-Prototype-Paper-Matrix-Circuit-Board-Stripboard-5x7CM-/191122267568?pt=LH_DefaultDomain_15&hash=item2c7fc65db0)
+10. circuit board (strip board) - eBay
 
-11. toggle switch - [eBay](http://www.ebay.com.au/itm/4pcs-Toggle-Switch-small-mini-SPDT-ON-ON-Motor-Amp-250V-1-5A-/121474422252?pt=LH_DefaultDomain_0&hash=item1c487095ec)
+11. toggle switch - eBay
 
 12. thin wire
 

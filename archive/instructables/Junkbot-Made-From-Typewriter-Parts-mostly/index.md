@@ -56,18 +56,18 @@ Most of the main parts are available to buy and I have added links below on wher
 
 PARTS:
 
-- Typewriter. I picked mine up at a op-shop for a tenner. You can get them cheaply on sites like facebook marketplace and [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=typewriter&_sacat=0). The one I brought was broken so I didn't feel too bad pulling it apart!
+- Typewriter. I picked mine up at a op-shop for a tenner. You can get them cheaply on sites like facebook marketplace and eBay. The one I brought was broken so I didn't feel too bad pulling it apart!
 - Pneumatic Bowl - Search for one on the net. If you can't find one then see step 11 on how to make one similar from a bottle.
 - The following parts you can also get from a hardware store
-- Stainless Steel Half Spheres - [Ali Express](https://www.aliexpress.com/item/4000640370997.html?spm=a2g0o.productlist.main.1.54c95425ibRct5&algo_pvid=4cbac7d4-da7a-4c31-8854-1cfd6ef4216c&algo_exp_id=4cbac7d4-da7a-4c31-8854-1cfd6ef4216c-0&pdp_npi=3%40dis%21AUD%2118.11%2113.95%21%21%21%21%21%40211beca116833380352601763d07ea%2110000004779158835%21sea%21AU%21129764711&curPageLogUid=6nUveoaN8lFK)
+- Stainless Steel Half Spheres - Ali Express
 - M6 bolts with dome nut end X 8 - Ali Express
-- M6 Nuts X 8 - [Ali Express](https://www.aliexpress.com/af/m6-nut.html?catId=0&initiative_id=SB_20230505180004&SearchText=m6+nut&spm=a2g0o.productlist.1000002.0)
-- M2 Screws and nuts X 10 - [Ali Express](https://www.aliexpress.com/item/33059389249.html?spm=a2g0o.order_list.order_list_main.64.2f3f1802kM3Gcw)
-- M8 Dome nut X 2 - [Ali Express](https://www.aliexpress.com/af/m8-dome-nut.html?catId=0&initiative_id=SB_20230505175850&SearchText=m8+dome+nut&spm=a2g0o.productlist.1000002.0)
-- M8 Threaded Rod - [Ali Express](https://www.aliexpress.com/af/m8-threaded-rod.html?catId=0&initiative_id=SB_20230505180505&SearchText=m8+threaded+rod&spm=a2g0o.productlist.1000002.0)
+- M6 Nuts X 8 - Ali Express
+- M2 Screws and nuts X 10 - Ali Express
+- M8 Dome nut X 2 - Ali Express
+- M8 Threaded Rod - Ali Express
 - Wire. 1.25mm (or there about)
 - Wire 2mm (or there about)
-- U Channel Rubber - [Ali Express](https://www.aliexpress.com/af/u-channel-rubber-seal.html?catId=0&initiative_id=SB_20230505180709&SearchText=u+channel+rubber+seal&spm=a2g0o.productlist.1000002.0)
+- U Channel Rubber - Ali Express
 - Thin aluminum tube (these are used to make the 'pistons'. You can also get this tube from hobby stores
 - 3/16" (4.76mm) - K&S number 1111
 - 5/32" (3.97mm) - K&S number 1110
@@ -102,7 +102,7 @@ The typewriter I used is a very common one and you should easily be able to find
 
 STEPS:
 
-- Flip the typewriter over and un-screw the bottom plate.  It will probably be held on with a screw in each corner
+- Flip the typewriter over and un-screw the bottom plate. It will probably be held on with a screw in each corner
 - You'll now be able to remove the cowling around the typewriter and be able to get to the key levers inside.
 
 
@@ -128,12 +128,12 @@ STEPS:
 
 STEPS:
 
-- The key levers are held in place by 3 rods so you'll need to remove these first.  I slightly pushed them out with a small screwdriver so I could grab them with a pair of pliers
+- The key levers are held in place by 3 rods so you'll need to remove these first. I slightly pushed them out with a small screwdriver so I could grab them with a pair of pliers
 - Use the pliers to pull out each of the 3 rods
-- You can now start to remove the key levers.  They will be connected to the main body of the typewriter with some small springs and rods.
-- Unhook the rods from the levers and carefully remove the springs as you'll be using these later.  Don't worry too much if you stretch the end of the springs a little, they can be bent back into place
+- You can now start to remove the key levers. They will be connected to the main body of the typewriter with some small springs and rods.
+- Unhook the rods from the levers and carefully remove the springs as you'll be using these later. Don't worry too much if you stretch the end of the springs a little, they can be bent back into place
 - Keep of the key levers, springs and rods that come off the typewriter as they can all be used in this and other builds.
-- Next thing to do is to remove the letter levers.  They are also held into place with a rod but this one is curved.  You can use a nail punch or something similar to remove this rod.  You'll need to give it a couple hits with a hammer to pop it out a little.  Use pliers again to remove it from the typewriter
+- Next thing to do is to remove the letter levers. They are also held into place with a rod but this one is curved. You can use a nail punch or something similar to remove this rod. You'll need to give it a couple hits with a hammer to pop it out a little. Use pliers again to remove it from the typewriter
 - Un-hook all of the letter levers and also save these along with the connecting rods. I only used 2 of them in this project but they make great little insect legs which I'll be using in another build.
 
 
@@ -158,9 +158,9 @@ You'll notice that there are 4 main types of key levers. You need to find pairs 
 STEPS:
 
 - Move the plastic 'key' or letter off the ends of the levers
-- You now have to round off the ends of each.  The reason why is, in order for the legs to be able to be positioned on the junkbot, they need to be able to move freely when connected to the main body of the junkbot.  If you leave them as is then they will hit the body section and won't be able to be positioned.
-- I used a dremel to cut off the small end section and then just sanded them round.  You could use a file to this part as well.
-- You next need to drill a couple holes into the levers.  The first hole is so you can connect the leg to a bolt that will later be connected to the main body.  The other hole is to you can add a small rod and spring later on.
+- You now have to round off the ends of each. The reason why is, in order for the legs to be able to be positioned on the junkbot, they need to be able to move freely when connected to the main body of the junkbot. If you leave them as is then they will hit the body section and won't be able to be positioned.
+- I used a dremel to cut off the small end section and then just sanded them round. You could use a file to this part as well.
+- You next need to drill a couple holes into the levers. The first hole is so you can connect the leg to a bolt that will later be connected to the main body. The other hole is to you can add a small rod and spring later on.
 - The first, larger hole (needs to be at least 2 to 2.5mm in diameter) is drilled in the rounded section.
 - The section hole should be 1.5 to 2mm in diameter and drilled in the section as shown in the last image.
 
@@ -187,10 +187,10 @@ I used M6 bolts with dome nut ends which are used to connect the leg to the main
 
 STEPS:
 
-- Place the bolt into a vice and with a centre punch mark out where to drill.  I used a 2mm drill piece which is the same size as the M2 screws that will later be used to join everything together.
+- Place the bolt into a vice and with a centre punch mark out where to drill. I used a 2mm drill piece which is the same size as the M2 screws that will later be used to join everything together.
 - Start to drill out the hole, adding a little oil now and then so you keep the metal cool and lubricated.
 - Clean-up the hole ends with a small file so there are no burrs
-- Now you are ready to connect the levers to the bolt.  Use the M2 screw and push this through the first lever and into the bolt hole.  Add the other lever and then the nut and screw it on tight.
+- Now you are ready to connect the levers to the bolt. Use the M2 screw and push this through the first lever and into the bolt hole. Add the other lever and then the nut and screw it on tight.
 
 
 ## Step 5: Making the Legs - Adding Wire and Pistons
@@ -221,15 +221,15 @@ The rods are just pieces of wire that are soldered into place. I also make a 'pi
 
 STEPS:
 
-- You first need to make the pistons.  They are made from small diameter aluminum tube that I picked up from my local hobby store.
-- The longer, smaller diameter piece fits between the opening in the lever as you can see in other images in this step.  The shorter, larger diameter piece fits over the small piece and makes a pretty basic but decent looking piston.
+- You first need to make the pistons. They are made from small diameter aluminum tube that I picked up from my local hobby store.
+- The longer, smaller diameter piece fits between the opening in the lever as you can see in other images in this step. The shorter, larger diameter piece fits over the small piece and makes a pretty basic but decent looking piston.
 - You need to drill a couple holes in the longer piece and it should be measured and marked against one of the levers.
 - Place the levers into a vice so the end section (which will be the foot) are together in the vice.
-- Now that you have a piston, you now need a way to connect it to the levers.  I used some 2mm and 1.25mm wire which fitted into the holes in the lever.
+- Now that you have a piston, you now need a way to connect it to the levers. I used some 2mm and 1.25mm wire which fitted into the holes in the lever.
 - Cut a couple small lengths of the wire and thread the 2mm wire through the larger holes in the levers and include the piston as well.
 - Do the same with the thinner wire so the piston is suspended between the 2 levers as shown in the images.
-- I soldered the wires to the levers  secure the them into place.  The first thing to do is to add some flux to each of the solder points.  I was pretty liberal with the flux as it's a very easy way to give your parts some age. Plus, a little on the pistons makes it look like they have been leaking oil which is a nice touch.
-- Use a blow torch and heat up the metal around the area you want to solder.  Once the flux starts flowing and smoking, you are ready then to add the solder.
+- I soldered the wires to the levers secure the them into place. The first thing to do is to add some flux to each of the solder points. I was pretty liberal with the flux as it's a very easy way to give your parts some age. Plus, a little on the pistons makes it look like they have been leaking oil which is a nice touch.
+- Use a blow torch and heat up the metal around the area you want to solder. Once the flux starts flowing and smoking, you are ready then to add the solder.
 - Add solder to each of the sections where the wire comes through the lever and leave to cool once done
 
 
@@ -248,7 +248,7 @@ STEPS:
 STEPS:
 
 - Slightly bend the wire as shown in the first image and then trim making sure that there is a little wire sticking out at each end.
-- Grab a couple of the tiny springs from the typewriter.  If the end of the spring is out of shape, then just squeeze it a little to make it round again
+- Grab a couple of the tiny springs from the typewriter. If the end of the spring is out of shape, then just squeeze it a little to make it round again
 - Connect a spring on each end of the wire as shown in the images
 - That's one leg made - now go ahead and make 3 more!
 
@@ -287,7 +287,7 @@ The body is made up of 2 half stainless steel spheres. They had been polished an
 STEPS:
 
 - I used 600 grit sandpaper first and sanded all of the surface of the spheres. This removed the polish finish but left small scratch marks in the metal.
-- I then used some '0' grade steel wool to smooth out the finish and remove some of the scratches in the spheres.  I think it might have been better to start with a grittier steel wool first and work done to a finer one but all I had was '0' grade available.
+- I then used some '0' grade steel wool to smooth out the finish and remove some of the scratches in the spheres. I think it might have been better to start with a grittier steel wool first and work done to a finer one but all I had was '0' grade available.
 
 
 ## Step 9: Making the Body - Drilling & Adding Some Rubber
@@ -308,9 +308,9 @@ The junkbot is all held together using a threaded rod so you'll need to drill a 
 
 STEPS:
 
-- First, turn one of the spheres over and locate the middle of the sphere.  As close as possible will do.
+- First, turn one of the spheres over and locate the middle of the sphere. As close as possible will do.
 - The rod is M8 (8mm) so you'll need to drill a hole around the same size.
-- Next you need to drill 4 holes (remember I started off with 6 legs so there is an extra couple holes) for the legs.  These are attached to the bottom half sphere.  The best way to decide where you want to attach the legs to the sphere is to just place them againt the sphere and eyeball what looks good. Thefront & back legs on mine were about 45mm apart.
+- Next you need to drill 4 holes (remember I started off with 6 legs so there is an extra couple holes) for the legs. These are attached to the bottom half sphere. The best way to decide where you want to attach the legs to the sphere is to just place them againt the sphere and eyeball what looks good. Thefront & back legs on mine were about 45mm apart.
 - The bolts on the legs are M6 (6mm) so drill holes slightly larger than that.
 - The last thing Iadded was some rubber around the bottom sphere. You don't have to do this (you don't have to do anything I did!) but it hides any miss alignment and I think looks good as well.
 
@@ -339,7 +339,7 @@ STEPS
 - Add a M6 nut and do it up tight.
 - Now add the rest of the legs to the bottom sphere.
 - You can position the legs as you want them by bending them at the joints.
-- I didn't mention it in the previous step but you also need to make acouole holes in the top half sphere to ad the claws into place.  Secure the claws to the top section and once done place it on top of the bottom sphere.  It actually looks prety cool just like this I think.  If you wanted to you could add a eye to the top and your done!  I was even thinking of not adding the top section and turn into a bowl with legs.
+- I didn't mention it in the previous step but you also need to make acouole holes in the top half sphere to ad the claws into place. Secure the claws to the top section and once done place it on top of the bottom sphere. It actually looks prety cool just like this I think. If you wanted to you could add a eye to the top and your done! I was even thinking of not adding the top section and turn into a bowl with legs.
 
 
 ## Step 11: The Plastic Dome and Threaded Rod
@@ -360,7 +360,7 @@ However, you could make one yourself using a bottle and a glass cutter and cutti
 
 STEPS:
 
-- Let's start with the threaded rod.  Add a M8 dome nut to one end of the rod
+- Let's start with the threaded rod. Add a M8 dome nut to one end of the rod
 - Next, place the rod through the bottom of the half sphere and then add the top half sphere and push the rod through
 - You can now add the plastic dome (or modified glass/plastic bottle) and sit it on top of the sphere with the rod going through the top
 - Later you'll add a dome nut but to the top of the threaded rod and this is how everything will be connected together. But first you need to make the inside of the head.
@@ -392,9 +392,9 @@ This bit is actully quite fun. You won't be able to do it exactly as I did as I 
 
 STEPS:
 
-- Start to add parts to the threaded rod. Play around with the order that you place the parts onto the rod and different bits until you end up with something you are happy with.  The 8mm reel makes a really good head and gives it a nice retro feel.
-- The top setion which sits on top of the plastic dome is made from other typewriter parts.  Again you can make this from whatever parts you may have or even just leave it out if you want. I wanted my junkbot to have a mechanical and organic feel and the head section looks a little like insect antenna.
-- Once you are happy with everthing, it's time to add the dome nut and connect everything together.  Do it up tight and make sure everything is aligned right.
+- Start to add parts to the threaded rod. Play around with the order that you place the parts onto the rod and different bits until you end up with something you are happy with. The 8mm reel makes a really good head and gives it a nice retro feel.
+- The top setion which sits on top of the plastic dome is made from other typewriter parts. Again you can make this from whatever parts you may have or even just leave it out if you want. I wanted my junkbot to have a mechanical and organic feel and the head section looks a little like insect antenna.
+- Once you are happy with everthing, it's time to add the dome nut and connect everything together. Do it up tight and make sure everything is aligned right.
 
 
 ## Step 13: Your Junkbot Is Complete

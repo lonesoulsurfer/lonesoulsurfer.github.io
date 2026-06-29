@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,133 +127,63 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Portable, Variable Power Supply</span>
 </nav>
-<h1>Portable, Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Portable-Variable-Power-Supply-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I’ve been using a bread board a lot lately to build electronic projects and wanted to come up with a small, portable power supply.</p>
-<p>After a bit of rummaging through my spare parts I managed to find all of the bits needed to build one!</p>
-<p>This is a simple project but has been invaluable in powering my circuit projects.</p>
-<p>You only need a handful of parts and some basic soldering skills to make your own and if you tinker with circuits and electronics, you’ll find this little, portable power supply come in handy.</p>
-<p>The power can vary from 2 volts to 25 volts and has a potentiometer to allow you to change the voltage easily.</p>
-<p>I also wanted to be able to change the ends of the testing wires for different projects so also added banana plugs to be able to swap and change.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts:</p>
+<h1>Portable, Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Portable-Variable-Power-Supply-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I’ve been using a bread board a lot lately to build electronic projects and wanted to come up with a small, portable power supply. After a bit of rummaging through my spare parts I managed to find all of the bits needed to build one!</p>
+<p>This is a simple project but has been invaluable in powering my circuit projects. You only need a handful of parts and some basic soldering skills to make your own and if you tinker with circuits and electronics, you’ll find this little, portable power supply come in handy.</p>
+<p>The power can vary from 2 volts to 25 volts and has a potentiometer to allow you to change the voltage easily. I also wanted to be able to change the ends of the testing wires for different projects so also added banana plugs to be able to swap and change.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>9v Battery Holder – <a href="https://www.ebay.com.au/itm/5PCS-9V-Battery-Holder-Box-Case-Pack-with-Wire-Lead-Cover-ON-OFF-Switch-New/162321778230?hash=item25cb21c636:g:F0UAAOSwImRYlW9c">eBay</a></li>
-</ol>
-<ol>
+<li>9v Battery Holder – eBay</li>
 <li>9V Battery</li>
-</ol>
-<ol>
-<li>10K Potentiometer – <a href="https://www.ebay.com.au/itm/10pcs-10k-Log-Potentiometer-18T-Spline-10mm-Single-Horizontal-PCB/252494718370?hash=item3ac9dba5a2:g:obMAAOSwV0RXqozJ">eBay</a></li>
-</ol>
-<ol>
-<li>Voltage meter – <a href="https://www.ebay.com.au/p/Mini-Red-LED-Panel-Voltage-Meter-3-digital-Adjustment-Voltmeter-GP/18015900933?iid=282868814877&_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D2%26asc%3D20151029142714%26meid%3D7fdda48bb6d54f9e9480e99a69df9bd7%26pid%3D100005%26rk%3D3%26rkt%3D12%26sd%3D162286534916%26itm%3D282868814877&_trksid=p2047675.c100005.m1851">eBay</a></li>
-</ol>
-<ol>
-<li>Bread Board Jumper Wires – <a href="https://www.ebay.com.au/itm/Module-3-3V-5V-Breadboard-Board-830-Point-Solderless-65PCS-Jump-Cable-Wires/322392227587?epid=2137006037&hash=item4b1012ff03:g:cB0AAOSwZQRYfHGN">eBay</a></li>
-</ol>
-<ol>
-<li>Voltage Regulator - <a href="https://www.ebay.com.au/itm/Boost-Buck-DC-DC-Adjustable-Step-Up-Down-Converter-XL6009-Module/112776945295?hash=item1a42079e8f:g:BHwAAOSwTmtauEsr">[eBay</a>](https://www.ebay.com/itm/Boost-Buck-DC-adjustable-step-up-down-Converter-XL6009-Module-Voltage-NEW/191673952440?epid=26017822539&hash=item2ca0a868b8:g:0CAAAOSwLVZVs4ch) or eBay</li>
-</ol>
-<ol>
-<li>Banana Plug Socket Jack Connectors – <a href="https://www.ebay.com.au/itm/272580293813?_trksid=p2060353.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT">eBay</a></li>
-</ol>
-<ol>
-<li>Alligator Test Lead Clips – <a href="https://www.ebay.com.au/itm/2-Pair-Alligator-Test-Lead-Clip-to-Male-Banana-Plug-Cord-Cable-1M-Red-Black-CT-/291969847283?hash=item43fac24ff3:g:R94AAOSw-0xYN69e">eBay</a></li>
-</ol>
-<ol>
-<li>Hook Clip Test Probe – <a href="https://www.ebay.com.au/itm/1-pair-2-Colors-Single-Hook-Clip-Mini-Grabber-Test-Probe-for-SMD-IC-Multimeter-/162354186452?hash=item25cd1048d4:g:FB4AAOSwa~BYdIH7">eBay</a></li>
-</ol>
-<ol>
-<li>Banana Plug Multimeters Probe – <a href="https://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-F6/282209034819?_trksid=p2045573.c100507.m3226&_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3D32cbaaaf5eb245feaca55b36b0bba86c%26pid%3D100507%26rk%3D1%26rkt%3D1%26">eBay</a></li>
-</ol>
-<ol>
+<li>10K Potentiometer – eBay</li>
+<li>Voltage meter – eBay</li>
+<li>Bread Board Jumper Wires – eBay</li>
+<li>Voltage Regulator - eBay or eBay</li>
+<li>Banana Plug Socket Jack Connectors – eBay</li>
+<li>Alligator Test Lead Clips – eBay</li>
+<li>Hook Clip Test Probe – eBay</li>
+<li>Banana Plug Multimeters Probe – eBay</li>
 <li>Small piece of scrap plastic.</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Hot Glue</li>
-</ol>
-<ol>
 <li>Soldering Iron</li>
-</ol>
-<ol>
 <li>Wire Cutters</li>
-</ol>
-<ol>
 <li>Super Glue</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Removing the Potentiometer</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing the Potentiometer image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing the Potentiometer image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing the Potentiometer image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing the Potentiometer image 4" loading="lazy"></div><p>The first thing that you need to do is to remove the 10k pot from the voltage regulator. The reason being this is too small to easily change the voltage so adding a larger one makes the job easier.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the pot into a vice, pliers or anything else that will hold it for you.</li>
-</ol>
-<ol>
 <li>Heat-up the solder points with a soldering iron and wiggle the pot loose. You might have to try and do one side first and then the other to enable to get it out.</li>
-</ol>
-<ol>
 <li>Once it’s out, clean-up the solder points and get ready to add the new 10 K Pot</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the New Poteniometer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the New Poteniometer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the New Poteniometer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the New Poteniometer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the New Poteniometer image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Place the legs of the pot in the holes of where the original pot sat. You will probably have solder blocking them so you will need to re-heat the solder point</li>
-</ol>
-<ol>
 <li>Heat the solder points with a soldering iron and push the pot into place. Make sure that the legs are lined-up to the holes in the circuit board correctly.</li>
-</ol>
-<ol>
 <li>Add some more solder so it is secure and cut the excess legs coming out of the holes.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Banana Plugs</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Banana Plugs image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Banana Plugs image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Banana Plugs image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Banana Plugs image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Banana Plugs image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Banana Plugs image 6" loading="lazy"></div><p>To be able to add the plugs I had to add some extra plastic to the 9v battery case.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut and shape a piece of scrap plastic. It should be strong enough to not bend when putting the plugs into the female connectors.</li>
-</ol>
-<ol>
 <li>Drill a couple of small holes into the ends of the plastic and secure the banana plugs into each one.</li>
-</ol>
-<ol>
 <li>Next rough up the areas of the plastic so the super glue gets a better hold on it. Add some super glue and attach the plastic to the back end of the battery case. Make sure that the banana plugs are orientated correctly by placing the regulator on top of the case and lining up the positive solder point to the red plug and the same with the negative.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Voltage Meter</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Voltage Meter image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Voltage Meter image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Voltage Meter image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Voltage Meter image 4" loading="lazy"></div><p>To be able to know how much voltage is being supplied by the regulator, you need to add a voltage meter.</p>
-<p>If you managed to get your hands on a regulator which already have a voltage meter, then move to the next step</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Voltage Meter</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Voltage Meter image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Voltage Meter image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Voltage Meter image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Voltage Meter image 4" loading="lazy"></div><p>To be able to know how much voltage is being supplied by the regulator, you need to add a voltage meter. If you managed to get your hands on a regulator which already have a voltage meter, then move to the next step</p>
 <p>Steps:</p>
 <ol>
 <li>The wires from the voltage meter can be attached to the banana plugs. To do this first unscrew the tops of the banana plugs.</li>
-</ol>
-<ol>
 <li>Cut the wires on the meter top length and wrap the wires round the metal section of the plugs.</li>
-</ol>
-<ol>
 <li>Replace the tops onto the banana plugs.</li>
-</ol>
-<ol>
 <li>Lastly, glue down the meter with some hot glue.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: The Battery Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The Battery Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The Battery Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The Battery Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: The Battery Case image 4" loading="lazy"></div><p>The next thing to do is to add some power to the regulator.</p>
 <p>Steps:</p>
 <ol>
 <li>Hot glue the regulator on the battery case. It should be attached to the bottom of the battery case (where the switch is located).</li>
-</ol>
-<ol>
 <li>Trim the wires on the battery holder and solder them onto the corresponding solder points.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Banana Plugs to the Regulator</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Banana Plugs to the Regulator image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Banana Plugs to the Regulator image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Banana Plugs to the Regulator image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Attaching the Banana Plugs to the Regulator image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Solder a red wire to the positive solder point on the regulator and attach this to the red banana plug</li>
-</ol>
-<ol>
 <li>Do the same thing for the negative wire.</li>
-</ol>
-<ol>
 <li>Lastly, add a battery and test to make sure everything is working as it should.</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: How to Use the Power Supply</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: How to Use the Power Supply image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: How to Use the Power Supply image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: How to Use the Power Supply image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: How to Use the Power Supply image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: How to Use the Power Supply image 5" loading="lazy"></div><p>Using the power supply is pretty simple. To change the voltage you just adjust the poteniometer on the regulator. The voltage level will change on the meter as you tun the pot.</p>
 <p>Having a range of connectors will help attach the power supply to different applications. I also added a couple of banana plug ends to some jumper wires so I could also use it on a bread board.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

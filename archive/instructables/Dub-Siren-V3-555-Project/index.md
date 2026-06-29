@@ -31,7 +31,7 @@ This dub siren is based around 2 x 555 timers and a LM741 Op amp. Adding a bunch
 
 They are usually played with a reverb guitar pedal but I decided to add my own reverb circuit (no need to make this one as you can buy them on eBay) to the final build. Adding this circuit gives you some amazing sounds to help you play along to your favourite dub, hip hop, disco house or whatever else you want to play along to.
 
-When I think back to the first one that I built ([link here](https://www.instructables.com/Dub-Siren-555-Timer/)), I can't believe that I actually got it to work! I mean it looks great (in my humble opinion) but used 3 X 9v batteries to power it and was a hot mess of wires and electronics.
+When I think back to the first one that I built (link here), I can't believe that I actually got it to work! I mean it looks great (in my humble opinion) but used 3 X 9v batteries to power it and was a hot mess of wires and electronics.
 
 In this version, The dub siren and amp are on one, slim PCB and there are JST connectors for easy connection to the echo/reverb module, battery and switches. The potentiometers are also mounted on the PCB which reduces the amount of wires needed.
 
@@ -41,9 +41,9 @@ I have provided all of the gerber & Eagle files along with the front panel desig
 
 Hackaday and Hackster have also done a review on this build. I've provided the links if you are interested in checking them out
 
-[Hackaday](https://hackaday.com/2021/09/24/classic-chip-line-up-powers-this-fun-dub-siren-synth/)
+Hackaday
 
-[Hackster](https://www.hackster.io/news/this-diy-dub-siren-uses-a-pair-of-555-timers-to-produce-novel-beats-789fedf9610e)
+Hackster
 
 Let's get going
 
@@ -54,28 +54,54 @@ Let's get going
 
 ![Step 1: Dub Siren & Echo Reverb Module Parts List image 2](images/step01_02.jpg)
 
-I have included the component parts list in a PDF (attached) and you can also find an excel version in my [Google Drive](https://drive.google.com/drive/folders/1tdtQw7Q4QNez3CEZK4sB7OX1WpOUYxZ7). It might make it easier having a printable parts list when you are shopping for the parts. I have also included links to the parts below:
+I have included the component parts list in a PDF (attached) and you can also find an excel version in my Google Drive. It might make it easier having a printable parts list when you are shopping for the parts. I have also included links to the parts below:
 
 Dub Siren
 
-- Capacitor Polyester - [eBay](https://www.ebay.com.au/itm/192966192524?ssPageName=STRK%3AMEBIDX%3AIT&var=493165233349&_trksid=p2060353.m1438.l2649)
-- Capacitor Polarized - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=capacitor+radial&_sacat=0&LH_TitleDesc=0&_odkw=capacitor+polarized&_osacat=0&_sop=15)
+- Capacitor Polyester - eBay
+47nf X 2
+150nf
+- 47nf X 2
+- 150nf
+- Capacitor Polarized - eBay
+47uf
+220uf
+100uf
+10uf
+- 47uf
+- 220uf
+- 100uf
+- 10uf
 - IC
-- LED 5mm - [[eBay](https://www.ebay.com.au/itm/133797296755?hash=item1f26f0ba73:g:BcsAAOSw1PFdahSx&frcectupt=true)](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=5mm+led&_sacat=0&LH_TitleDesc=0&_odkw=555+ic&_osacat=0&_sop=15) or LED Filament - eBay
-- Potentiometer 50K X 5 - [Ali Express](https://www.aliexpress.com/item/1005001494460025.html?spm=a2g0o.productlist.0.0.231c615bAntawJ&algo_pvid=6d515b5b-2b76-435c-872c-4a75fe5f38b1&algo_exp_id=6d515b5b-2b76-435c-872c-4a75fe5f38b1-11)
-- Switch Momentary - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=mommentary+switch&_sacat=0&LH_TitleDesc=0&_odkw=potentiometer+50k&_osacat=0&_sop=15)
-- Switch SPDT X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=toggle+spdt+mini+switch&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=momentary+switch&_sop=15)
-- Resistors - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=resistors+assorted&_sacat=0&LH_TitleDesc=0&_odkw=toggle+spdt+mini+switch&_osacat=0&_sop=15)
-- Transistor 2N3904 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=2n3904&_sacat=0&LH_TitleDesc=0&_odkw=resistor+assortment&_osacat=0&_sop=15)
-- JST Connector Mini 2.0 X 8 - [Ali Express](https://www.aliexpress.com/item/4001253349808.html?spm=a2g0s.9042311.0.0.27424c4darxVFG)
-- Speaker 8 ohm - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=speaker+2w+8+ohm&_sacat=0&LH_TitleDesc=0&_odkw=speaker+3w+8+ohm&_osacat=0&_sop=15)
-- Audio Jack Input - Switched - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=5+pin+3.5mm+Audio+Jack+Socket+PCB+Panel+Mount+&_sacat=0)
+741 - eBay
+386 - eBay
+555 X 2 - eBay
+- 741 - eBay
+- 386 - eBay
+- 555 X 2 - eBay
+- LED 5mm - eBay or LED Filament - eBay
+- Potentiometer 50K X 5 - Ali Express
+- Switch Momentary - eBay
+- Switch SPDT X 2 - eBay
+- Resistors - eBay
+560R X 3
+4.7K10K X 2
+10R
+68K
+2.2K X 2
+- 560R X 3
+- 4.7K10K X 2
+- 10R
+- 68K
+- 2.2K X 2
+- Transistor 2N3904 - eBay
+- JST Connector Mini 2.0 X 8 - Ali Express
+- Speaker 8 ohm - eBay
+- Audio Jack Input - Switched - eBay
 - Echo/Reverb Module
-- Module - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=PT2399+Reverb+module&_sacat=0&LH_TitleDesc=0&_odkw=reverb+module&_osacat=0&_sop=15)
-- Potentiometer 50K X 2 - [Ali Express](https://www.aliexpress.com/item/1005001494460025.html?spm=a2g0o.productlist.0.0.231c615bAntawJ&algo_pvid=6d515b5b-2b76-435c-872c-4a75fe5f38b1&algo_exp_id=6d515b5b-2b76-435c-872c-4a75fe5f38b1-11)
+- Module - eBay
+- Potentiometer 50K X 2 - Ali Express
 
-
-- [dub Siren - V2 - Parts List](pdfs/dub Siren - V2 - Parts List.pdf)
 
 ## Step 2: The Dub Siren PCB
 
@@ -85,22 +111,20 @@ Dub Siren
 
 ![Step 2: The Dub Siren PCB image 3](images/step02_03.jpg)
 
-I have provided the gerber & Eagle files in a Google Drive link which can be found [here](https://drive.google.com/drive/folders/1tdtQw7Q4QNez3CEZK4sB7OX1WpOUYxZ7?usp=sharing). You'll need to get the PCB printed and you can do this by sending the zipped gerber files to a PCB manufacturer like J[LCPCB](https://jlcpcb.com/VGR?gclid=CjwKCAjwlrqHBhByEiwAnLmYUF94zWW0VoUwkqQ5Ofm7qbL3fQmJyMLMyCHS2YXLOJg566nMGBOsghoCzSYQAvD_BwE) (not affiliated). It's a very simple process, just save the file on your computer and follow the instructions on the website.
+I have provided the gerber & Eagle files in a Google Drive link which can be found here. You'll need to get the PCB printed and you can do this by sending the zipped gerber files to a PCB manufacturer like JLCPCB (not affiliated). It's a very simple process, just save the file on your computer and follow the instructions on the website.
 
-Here is a ['ible I did](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/) on what Gerber files are and how to use them to get your PCB printed.
+Here is a 'ible I did on what Gerber files are and how to use them to get your PCB printed.
 
 If you know how to use Eagle (like most things, it's easy once you have done it a few times), I have provided the files in the Google Drive link. If you are interested in learning, I recommend sparkfuns tutorials:
 
-[Installing Eagle](https://learn.sparkfun.com/tutorials/how-to-install-and-setup-eagle/using-the-sparkfun-libraries)
+Installing Eagle
 
-[Creating Schematics](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all)
+Creating Schematics
 
-[Creating PCB's](https://learn.sparkfun.com/tutorials/using-eagle-board-layout)
+Creating PCB's
 
 Note that the amp (386IC) isn't connrcted to the main schematic. The reson being, the amp needs to drive the echo/reverb board so this is routed through the 'echo-in' 'echo-out' connections on the schematic.
 
-
-- [Dub Siren V3.1](pdfs/Dub Siren V3.1.pdf)
 
 ## Step 3: The Other Parts You'll Need
 
@@ -124,23 +148,23 @@ Note that the amp (386IC) isn't connrcted to the main schematic. The reson being
 
 Parts For The Circuit:
 
-1. Knobs X 7 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=potentiometer+knobs&_sacat=0)
+1. Knobs X 7 - eBay
 
-2. Speaker mesh - [[Ali Express](https://www.aliexpress.com/item/4000087528885.html?spm=a2g0o.detail.1000060.3.558d3448OBgvSN&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=5c5b96e8-0d74-453e-9094-3c84d1b9f853&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:5c5b96e8-0d74-453e-9094-3c84d1b9f853,tpp_buckets:668%230%23131923%2338_668%230%23131923%2338_668%23888%233325%2318_668%23888%233325%2318_668%232846%238107%231934_668%235811%2327186%2373_668%236421%2330823%23292_668%232717%237559%2342_668%231000022185%231000066058%230_668%236808%2332768%2373_668%233468%2315607%239_668%232846%238107%231934_668%235811%2327186%2373_668%236421%2330823%23292_668%232717%237559%2342_668%233164%239976%2390_668%236808%2332768%2373_668%233468%2315607%239&&pdp_ext_f=%7B%22scene%22:%223339%22%7D)](https://www.aliexpress.com/item/4000087528885.html?spm=a2g0o.detail.1000060.3.558d3448OBgvSN&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=5c5b96e8-0d74-453e-9094-3c84d1b9f853&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:5c5b96e8-0d74-453e-9094-3c84d1b9f853,tpp_buckets:668%230%23131923%2338_668%230%23131923%2338_668%23888%233325%2318_668%23888%233325%2318_668%232846%238107%231934_668%235811%2327186%2373_668%236421%2330823%23292_668%232717%237559%2342_668%231000022185%231000066058%230_668%236808%2332768%2373_668%233468%2315607%239_668%232846%238107%231934_668%235811%2327186%2373_668%236421%2330823%23292_668%232717%237559%2342_668%233164%239976%2390_668%236808%2332768%2373_668%233468%2315607%239&&pdp_ext_f=%7B%22scene%22:%223339%22%7D)Ali Express
+2. Speaker mesh - Ali ExpressAli Express
 
 Parts for Powering:
 
-1. Lo-po or mobile phone battery - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=mobile+phone+battery&_sacat=0&LH_TitleDesc=0&_sop=15). I get all my mobile phone batteries for free! If you have an e-waste centre near you - go and check it out as it's a great source for them. You could also just use a 9v battery and you won't need the rest of the below. I like to have the ability to re-charge my builds so I don't have to worry bout flat batteries
+1. Lo-po or mobile phone battery - eBay. I get all my mobile phone batteries for free! If you have an e-waste centre near you - go and check it out as it's a great source for them. You could also just use a 9v battery and you won't need the rest of the below. I like to have the ability to re-charge my builds so I don't have to worry bout flat batteries
 
-2. Voltage boost Converter - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210923212430&SearchText=Mini+Boost+Module+Step+Up+Board)
+2. Voltage boost Converter - Ali Express
 
-3. Micro USB adapter - [eBay](https://www.ebay.com.au/itm/294043046602?var=592734849219)
+3. Micro USB adapter - eBay
 
 Parts For the Front Panel
 
-1. Opal Acrylic - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=opal+acrylic&_sacat=0)
+1. Opal Acrylic - eBay
 
-2. A4 Transparent Clear Self Adhesive Sticker Paper - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=A4+Clear+Transparent+Glossy+Self+Adhesive+Sticker+Paper+Label&_sacat=0)
+2. A4 Transparent Clear Self Adhesive Sticker Paper - eBay
 
 3. Hard wood Edging - Hardware store
 
@@ -180,7 +204,7 @@ STEPS:
 
 ![Step 5: Modding the Echo/Reverb Board image 3](images/step05_03.jpg)
 
-i've actually done an in depth 'ible on how to do the mod on the reverb board which can be found [here](https://www.instructables.com/Echo-Reverb-Box/). However, I'll go through the steps you need to do below as well.
+i've actually done an in depth 'ible on how to do the mod on the reverb board which can be found here. However, I'll go through the steps you need to do below as well.
 
 STEPS:
 
@@ -211,7 +235,7 @@ Usually I would use a water decal, print the panel on that and add it to the acr
 
 STEPS:
 
-1. The first thing to do is to grab the PDF provided. I have included 2 different types, one with the speaker and one without in case you want to use a different style of speaker. They are also available in my [Google Drive](https://drive.google.com/drive/folders/1tdtQw7Q4QNez3CEZK4sB7OX1WpOUYxZ7?usp=sharing). Print the panel design onto some A4 transparent, adhesive. You can this this from eBay and there is a link in step 3
+1. The first thing to do is to grab the PDF provided. I have included 2 different types, one with the speaker and one without in case you want to use a different style of speaker. They are also available in my Google Drive. Print the panel design onto some A4 transparent, adhesive. You can this this from eBay and there is a link in step 3
 
 2. Once you have it printed, cut out the front panel, remove the backing paper and carefully place on a piece of acrylic.
 
@@ -221,9 +245,6 @@ STEPS:
 
 5. To make the speaker cut-out, I first drilled a couple holes at the top and bottom and then used a dremel with a cutting wheel to cut the straight sections. I used some sandpaper to finish off the edges
 
-
-- [Dub Siren v3 - No Speaker](pdfs/Dub Siren v3 - No Speaker.pdf)
-- [Dub Siren v3](pdfs/Dub Siren v3.pdf)
 
 ## Step 7: Making a Groove in the Wood to Fit the Panel
 
@@ -395,13 +416,6 @@ STEPS:
 
 4. Get some dub reggae on and start playing!
 
-
-## Downloads
-
-- [dub Siren - V2 - Parts List](pdfs/dub Siren - V2 - Parts List.pdf)
-- [Dub Siren V3.1](pdfs/Dub Siren V3.1.pdf)
-- [Dub Siren v3 - No Speaker](pdfs/Dub Siren v3 - No Speaker.pdf)
-- [Dub Siren v3](pdfs/Dub Siren v3.pdf)
 
 ---
 *67 images archived*

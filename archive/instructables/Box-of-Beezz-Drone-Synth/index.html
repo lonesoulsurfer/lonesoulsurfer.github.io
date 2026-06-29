@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -163,78 +128,66 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Box of Beezz - Drone Synth</span>
 </nav>
 <h1>Box of Beezz - Drone Synth</h1><div class="source"><a href="https://www.instructables.com/Box-of-Beezz-Drone-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This is my 'Box of Beezz' drone synth using transistors as simple oscillators!</p>
-<p>This build uses what is known as a relaxation oscillator.</p>
-<p>A relaxation oscillator is an oscillator that repeats itself over and over again from the charging of a capacitor to some event threshold and then the discharging of the capacitor.</p>
-<p>So basically the repetitive charging up of the capacitor and discharging of the capacitor creates oscillations via a transistor.</p>
-<p>There are 9 in total built into the circuit and by using different capacitor values you can get different oscillations.</p>
-<p>The recharge and discharge time of the capacitor determines the time period and frequency of the oscillations</p>
+<p>This build uses what is known as a relaxation oscillator. A relaxation oscillator is an oscillator that repeats itself over and over again from the charging of a capacitor to some event threshold and then the discharging of the capacitor. So basically the repetitive charging up of the capacitor and discharging of the capacitor creates oscillations via a transistor.</p>
+<p>There are 9 in total built into the circuit and by using different capacitor values you can get different oscillations. The recharge and discharge time of the capacitor determines the time period and frequency of the oscillations</p>
 <p>The LED connected to each oscillator acts as an output and these flicker on and off depending on the output signal. Plus, every project needs LED's!</p>
 <p>Sawtooth oscillations are produced and they actually sound great. When you add 9 of them in total then you really get some interesting sounds generated.</p>
 <p>There is also a master tone knob and I've included a control voltage output so you can hock the drone synth up to a sequencer.</p>
 <p>The project was inspired by 'Look Mum No Computers' super simple oscillator build which I have linked below</p>
-<p><a href="https://www.lookmumnocomputer.com/projects#/circledroneofdoom">Super Simple Oscillator</a></p>
-<p>Oh and hackaday did a review of this project which you can find <a href="https://hackaday.com/2022/05/29/relax-and-enjoy-this-simple-drone-synthesizer/">here</a></p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Supplies image 9" loading="lazy"></div><p>Components for the circuit board</p>
+<p>Super Simple Oscillator</p>
+<p>Oh and hackaday did a review of this project which you can find here</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Supplies image 9" loading="lazy"></div><p>Components for the circuit board</p>
 <ul>
 <li>PCB - See the next step on how to get your PCB printed</li>
-<li>Tactile 7x7mm switches - <a href="https://www.aliexpress.com/item/32985880305.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU">Ali Express</a></li>
-<li>Tactile push button caps - <a href="https://www.aliexpress.com/item/32891579029.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU">Ali Express</a></li>
+<li>Tactile 7x7mm switches - Ali Express</li>
+<li>Tactile push button caps - Ali Express</li>
 <li>JST Connector mini</li>
-<li>2 pins X 6 <a href="https://www.aliexpress.com/item/32828414999.html?spm=a2g0o.productlist.0.0.18044784kWjGNS&algo_pvid=5dfbb9c1-94f4-4cff-b61e-8657a8ae27f2&algo_exp_id=5dfbb9c1-94f4-4cff-b61e-8657a8ae27f2-22&pdp_ext_f=%7B%22sku_id%22%3A%2264992858497%22%7D&pdp_npi=2%40dis%21AUD%21%212.35%21%21%21%21%21%402101e9d416532854085127665efc59%2164992858497%21sea">Ali Express</a></li>
-<li>3 pins X 1 <a href="https://www.aliexpress.com/item/4000898605030.html?spm=a2g0o.productlist.0.0.12724ca9HQFmtK&algo_pvid=a4588927-af8a-48ed-ae67-70bce4981b1e&algo_exp_id=a4588927-af8a-48ed-ae67-70bce4981b1e-11&pdp_ext_f=%7B%22sku_id%22%3A%2210000010469613342%22%7D&pdp_npi=2%40dis%21AUD%21%211.23%21%21%211.78%21%21%400bb0623d16532856736751867e512f%2110000010469613342%21sea">Ali Express</a></li>
-<li>Capacitor Polarized <a href="https://www.aliexpress.com/item/1005003217967608.html?spm=a2g0o.productlist.0.0.5383a549eNb9Hi&algo_pvid=19cea181-0a76-4a8d-ae3b-b8e565418771&aem_p4p_detail=20220522230301721145109342840059391218&algo_exp_id=19cea181-0a76-4a8d-ae3b-b8e565418771-2&pdp_ext_f=%7B%22sku_id%22%3A%2212000024708472323%22%7D&pdp_npi=2%40dis%21AUD%21%210.26%21%21%212.78%21%21%40210318bb16532857811005385e9354%2112000024708472323%21sea">Ali Express</a></li>
+<li>2 pins X 6 Ali Express</li>
+<li>3 pins X 1 Ali Express</li>
+<li>Capacitor Polarized Ali Express</li>
 <li>2.2uf X 3</li>
 <li>4.7uf X 3</li>
 <li>10uf X 4</li>
-<li>Capacitor Poly 100nf X 3 <a href="https://www.aliexpress.com/item/1005003649560151.html?spm=a2g0o.productlist.0.0.4ada357crKofPu&algo_pvid=732f2d09-6507-4d7a-9fe1-36ffeced0171&aem_p4p_detail=2022052223041910578676285903680059383201&algo_exp_id=732f2d09-6507-4d7a-9fe1-36ffeced0171-4&pdp_ext_f=%7B%22sku_id%22%3A%2212000026647727895%22%7D&pdp_npi=2%40dis%21AUD%21%213.32%21%21%212.04%21%21%402101fd4b16532858596622643e180a%2112000026647727895%21sea">Ali Express</a></li>
-<li>LED 3mm white X 9 <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220522221515&isPremium=y&SearchText=3mm+led+white&spm=a2g0o.productlist.1000002.0">Ali Express</a></li>
-<li>Resistors - Buy them in assorted lots - <a href="https://www.aliexpress.com/premium/resistor-assorted.html?d=y&origin=y&catId=0&initiative_id=SB_20220522221640&SearchText=resistor%20assorted&spm=a2g0o.detail.1000002.0">Ali Express</a></li>
+<li>Capacitor Poly 100nf X 3 Ali Express</li>
+<li>LED 3mm white X 9 Ali Express</li>
+<li>Resistors - Buy them in assorted lots - Ali Express</li>
 <li>47K X 18</li>
 <li>3.3K X 10</li>
 <li>1K X1</li>
-<li>Transistors 2N4401 X 9 <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220525180232&SearchText=transistor+4401&spm=a2g0o.productlist.1000002.0">Ali Express</a></li>
-<li>Potentiometers 9mm Vertical <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220522221833&isPremium=y&SearchText=potentiometer+9mm+vertical&spm=a2g0o.productlist.1000002.0">Ali Express</a></li>
+<li>Transistors 2N4401 X 9 Ali Express</li>
+<li>Potentiometers 9mm Vertical Ali Express</li>
 <li>10K X 10</li>
 <li>100K X 3</li>
 </ul>
 <p>Other components</p>
 <ul>
 <li>Speaker - eBay</li>
-<li>Speaker Mesh - <a href="https://www.aliexpress.com/item/4000087549083.html?spm=a2g0s.9042311.0.0.27424c4debfuno">Ali Express</a></li>
-<li>Amplifier Module - <a href="https://www.aliexpress.com/item/32847729011.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU">Ali Express</a></li>
-<li>Pot knobs - <a href="https://www.aliexpress.com/item/32954107409.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU">Ali Express</a></li>
-<li>USB C Charging module - <a href="https://www.aliexpress.com/item/32930640893.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU">eBay</a></li>
-<li>Battery - I used an old mobile battery to power everything which worked fine. You can usually find them for free or you can can buy one - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=samsung+mobile+phone+battery&_sacat=0">eBay</a></li>
-<li>Voltage step up module - <a href="https://www.aliexpress.com/item/1005001622004014.html?spm=a2g0o.productlist.0.0.72ea1b5f1O41Tz&algo_pvid=f4a6b564-adaf-4dc1-b424-5f7634c9725b&aem_p4p_detail=202205181559142981785717844500018549615&algo_exp_id=f4a6b564-adaf-4dc1-b424-5f7634c9725b-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000016846792106%22%7D&pdp_npi=2%40dis%21AUD%21%211.07%21%21%211.95%21%21%402103255a16529147544003345e9b6a%2112000016846792106%21sea">Ali Express</a></li>
-<li>3.5mm Headphones Jack Socket X 3 - <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220518145551&isPremium=y&SearchText=3.5mm+Headphones+Jack+Socket+Connector&spm=a2g0o.productlist.1000002.0">Ali Express</a></li>
-<li>SPDT Toggle Switch X 2 - <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220518150557&isPremium=y&SearchText=SPDT+6MM+Reset+Latching+Toggle+Switch+&spm=a2g0o.productlist.1000002.0">eBay</a></li>
-<li>Vactrol - 5mm white LED & LDR See <a href="https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/">this Instructable</a> on how to make one</li>
+<li>Speaker Mesh - Ali Express</li>
+<li>Amplifier Module - Ali Express</li>
+<li>Pot knobs - Ali Express</li>
+<li>USB C Charging module - eBay</li>
+<li>Battery - I used an old mobile battery to power everything which worked fine. You can usually find them for free or you can can buy one - eBay</li>
+<li>Voltage step up module - Ali Express</li>
+<li>3.5mm Headphones Jack Socket X 3 - Ali Express</li>
+<li>SPDT Toggle Switch X 2 - eBay</li>
+<li>Vactrol - 5mm white LED & LDR See this Instructable on how to make one</li>
 </ul>
 <p>Case & Front Panel</p>
 <ul>
-<li>Clear, adhesive paper - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=clear+transparent+glossy+self+adhesive+sticker+paper&_sacat=0&LH_TitleDesc=0&_odkw=Clear+Transparent+Glossy+Self+Adhesive+Sticker+Paper+Label+Laser+Print&_osacat=0">eBay</a></li>
-<li>Opal Acrylic - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=opal+acrylic+a3&_sacat=0">eBay</a></li>
+<li>Clear, adhesive paper - eBay</li>
+<li>Opal Acrylic - eBay</li>
 <li>Hard wood for the case - I use edging 40mm X 8mm X 1M</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: The Schematic, PCB & Getting Your PCB Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: The Schematic, PCB & Getting Your PCB Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: The Schematic, PCB & Getting Your PCB Printed image 2" loading="lazy"></div><p>If you want a deeper insight on how this circuit works, then check out <a href="http://www.learningaboutelectronics.com/Articles/Relaxation-oscillator-circuit-with-a-transistor.php">this link</a></p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: The Schematic, PCB & Getting Your PCB Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: The Schematic, PCB & Getting Your PCB Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: The Schematic, PCB & Getting Your PCB Printed image 2" loading="lazy"></div><p>If you want a deeper insight on how this circuit works, then check out this link</p>
 <p>The board is actually 2 sided. On one side are all of the components like capacitor, resistors, transistors etc. On the other side are the potentiometers and switches.</p>
-<p>Due to the size limitations on circuit design in Eagle (100mm X 100mm) I had to jam a lot onto a small sized board.</p>
-<p>However, you can make the board bigger to add screw mounting holes so the actual size is ...</p>
-<p>The oscillators are lined-up in 3 rows of 3 for a total of 9.</p>
-<p>I've also added tone pots for each row and there is also a master tone pot.</p>
-<p>There is a on/off switch for each row so you can turn each one off when tuning.</p>
-<p>If you would like to play around with the schematic and board in Eagle, well I have also provided these in my <a href="https://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synthhttps://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synth">GitHub Page</a> You can also find a PDF of the schematic in this step.</p>
+<p>Due to the size limitations on circuit design in Eagle (100mm X 100mm) I had to jam a lot onto a small sized board. However, you can make the board bigger to add screw mounting holes so the actual size is ...</p>
+<p>The oscillators are lined-up in 3 rows of 3 for a total of 9. I've also added tone pots for each row and there is also a master tone pot. There is a on/off switch for each row so you can turn each one off when tuning.</p>
+<p>If you would like to play around with the schematic and board in Eagle, well I have also provided these in my GitHub Page You can also find a PDF of the schematic in this step.</p>
 <p>There are actually 2 versions available of the PCB. Both are available in my Google Drive</p>
 <p>Version 1</p>
 <p>This is the one I used ion this build. It has a tone pot for each line of drones (3) plus a master one. I don't use the tone pots very often so decided to do a version 2</p>
 <p>Version 2</p>
 <p>This has the tone pots removed (only has the master one) and an extra drone circuit for a total of 12 drones!</p>
 <p>Getting Your Board Printed</p>
-<p>To have the board printed, save the gerber zip file in the <a href="https://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synth">GitHub Page</a> files to your computer and email it to your favourite PCB manufacturer.</p>
-<p>I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well.</p>
-<p>If you are thinking 'what the hell is a gerber file!', then <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">check this 'ible out</a> which is a step by step guide on how to get a PCB manufactured.</p>
-<ul>
-<li><a href="pdfs/Box of Beezz - Drone Synth V1 - Schematic.pdf">Box of Beezz - Drone Synth V1 - Schematic</a></li>
-<li><a href="pdfs/Box of Beezz - Drone Synth V2 - Schematic.pdf">Box of Beezz - Drone Synth V2 - Schematic</a></li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 7" loading="lazy"></div><p>Adding the components is pretty straight forward. However, you should start with adding the components first. Oh and you need to modify the transistors as well slightly!</p>
+<p>To have the board printed, save the gerber zip file in the GitHub Page files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB manufactured.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding the Components to the PCB - Part 1 image 7" loading="lazy"></div><p>Adding the components is pretty straight forward. However, you should start with adding the components first. Oh and you need to modify the transistors as well slightly!</p>
 <p>STEPS:</p>
 <ul>
 <li>As usual, start with the lowest profile parts - in the case it's the resistors</li>
@@ -246,11 +199,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add the switches next. Note that the switches have an orientation and how you add them to the PCB will either mean they are normally on or normally off. Just make sure that you orientate them the 3 switches the same way on the board.</li>
 <li>Lastly, add the pots to the PCB.</li>
 <li>You should now go ahead and test the board to make sure everything is working. You'll need to put 18V through it and connect to an amp to hear anything.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: The Front Panel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: The Front Panel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: The Front Panel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: The Front Panel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: The Front Panel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: The Front Panel image 5" loading="lazy"><img src="images/step05_06.gif" alt="Step 4: The Front Panel image 6" loading="lazy"><img src="images/step05_07.gif" alt="Step 4: The Front Panel image 7" loading="lazy"></div><p>I use <a href="https://inkscape.org/">inkscape</a> to design my front panels.</p>
-<p>You can find the raw files in my <a href="https://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synth">GitHub Page</a> in case you want to play around with it.</p>
-<p>As I have mentioned, I have made 2 versions of the PCB and have also done a panel design for version 2 which is in my Google drive.</p>
-<p>I've also come up with a neat way to easily create front panels that match up perfectly to a PCB.</p>
-<p>Check out the YouTube clip if you are interested in learning how.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: The Front Panel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: The Front Panel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: The Front Panel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: The Front Panel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: The Front Panel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: The Front Panel image 5" loading="lazy"><img src="images/step05_06.gif" alt="Step 4: The Front Panel image 6" loading="lazy"><img src="images/step05_07.gif" alt="Step 4: The Front Panel image 7" loading="lazy"></div><p>I use inkscape to design my front panels. You can find the raw files in my GitHub Page in case you want to play around with it. As I have mentioned, I have made 2 versions of the PCB and have also done a panel design for version 2 which is in my Google drive. I've also come up with a neat way to easily create front panels that match up perfectly to a PCB. Check out the YouTube clip if you are interested in learning how.</p>
 <p>STEPS:</p>
 <ul>
 <li>Use the attached PDF copy of the front panel design. Pick whether you want to include the one with the cutout for the speaker or not. You may have a different style of speaker than mine</li>
@@ -258,10 +207,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut out the image and carefully place onto the opal acrylic and remove any air bubbles. I peal away the top section and lay this onto the acrylic. I then use something flat like a ruler and carefully run it down the adhesive paper to ensure no creases or air bubbles are introduced.</li>
 <li>Cut the acrylic to size if you haven't already.</li>
 <li>To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.</li>
-</ul>
-<ul>
-<li><a href="pdfs/Drone Synth 1.pdf">Drone Synth 1</a></li>
-<li><a href="pdfs/Drone Synth 2.pdf">Drone Synth 2</a></li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Drilling & Making Cut-outs on the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Drilling & Making Cut-outs on the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Drilling & Making Cut-outs on the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Drilling & Making Cut-outs on the Front Panel image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Drilling & Making Cut-outs on the Front Panel image 4" loading="lazy"></div><p>Time to drill out the holes for the pots and switches and also cut out the section for the speaker</p>
 <p>STEPS:</p>
 <ul>
@@ -272,11 +217,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You'll also need to mark out and drill 4 holes in order to mount the speaker</li>
 <li>Place the PCB into the front panel, mark on the acrylic where to drill the 4 mounting holes to mount the PCB and drill away.</li>
 <li>Don't secure the PCB to the front panel yet - first you need to sort out the case</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Making the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Making the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Making the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Making the Case image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Making the Case image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Making the Case image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Making the Case image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Making the Case image 8" loading="lazy"></div><p>I have made a simple box shaped case for this build.</p>
-<p>It's similar to the ones I have previously built but gives a great finish to the project.</p>
-<p>The case does require either a router or a dremel with a special attachment.</p>
-<p>If you don't have any of these then you can just attached the panel directly on top of the wood!</p>
-<p>The finish won't be the same but it'll be close.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Making the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Making the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Making the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Making the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Making the Case image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Making the Case image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Making the Case image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Making the Case image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Making the Case image 8" loading="lazy"></div><p>I have made a simple box shaped case for this build. It's similar to the ones I have previously built but gives a great finish to the project. The case does require either a router or a dremel with a special attachment. If you don't have any of these then you can just attached the panel directly on top of the wood! The finish won't be the same but it'll be close.</p>
 <p>STEPS:</p>
 <ul>
 <li>The first thing you need to do is to cut a groove along the wood in order to secure the panel into. I use a dremel with a router attachment to do this.</li>
@@ -296,26 +237,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul><h2><span class="step-num">STEP 7</span>Step 7: Adding the PCB & Speaker</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the PCB & Speaker image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the PCB & Speaker image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the PCB & Speaker image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Adding the PCB & Speaker image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Adding the PCB & Speaker image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Adding the PCB & Speaker image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 7: Adding the PCB & Speaker image 7" loading="lazy"></div><p>Now that you have the front panel secured into the case, it's time to add the PCB</p>
 <p>STEPS:</p>
 <ul>
-<li>Place the PCB into the front panel.  if you haven't already, mark out the PCB mounting holes on the back of the panel and drill.</li>
+<li>Place the PCB into the front panel. if you haven't already, mark out the PCB mounting holes on the back of the panel and drill.</li>
 <li>Secure them in place with some small screws and nuts</li>
 <li>For the speaker, also mark and drill out the mounting holes if not already done.</li>
-<li>I also added some speaker grill mesh.  Just cut it to shape and drill some holes for mounting to the speaker and case</li>
+<li>I also added some speaker grill mesh. Just cut it to shape and drill some holes for mounting to the speaker and case</li>
 <li>Put it all together with 4 screws and nuts</li>
 </ul><h2><span class="step-num">STEP 8</span>Step 8: Adding the Components to the Case</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Adding the Components to the Case image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Adding the Components to the Case image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Adding the Components to the Case image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Adding the Components to the Case image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Adding the Components to the Case image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Adding the Components to the Case image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Adding the Components to the Case image 7" loading="lazy"></div><p>I have included an amp on this build along with a voltage boosting module, USB C charging module, vactrol (for the control voltage) and a couple other components which will all need to be added to the case.</p>
 <p>STEPS:</p>
 <ul>
-<li>Let's start with the charging module.  Remove the back from the case</li>
+<li>Let's start with the charging module. Remove the back from the case</li>
 <li>with a file, make a groove in the bottom section of the case big enough for the module to sit in.</li>
 <li>Super glue the module into place</li>
 <li>Next, place the volume potentiometer into the case and secure into place</li>
 <li>Add the switches, audio sockets and secure into place</li>
 <li>Lastly, add the 10K 'master tone' potentiometer into the front panel and secure.</li>
-<li>The vactrol I used is made from an LED and an LDR.  You can easily make your own following <a href="https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/">this Instructable</a></li>
-<li>Secure the LDR legs to the 'CV' section on the PCB  The LED legs need to be connected to the CV out socket.  Make sure that you attached the positive leg of the LED to the L and R terminals on the audio socket and the ground of the LED to the ground on the socket</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Wiring Everything Up!</h2><div class="step-images"><img src="images/step10_01.png" alt="Step 9: Wiring Everything Up! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Wiring Everything Up! image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Wiring Everything Up! image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Wiring Everything Up! image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Wiring Everything Up! image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Wiring Everything Up! image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 9: Wiring Everything Up! image 7" loading="lazy"></div><p>I've included a wiring schematic to help you wire everything up.</p>
-<p>Note that I have slightly revised the PCB and have included a power JST connector for the amp and also a connection to add the vactrol LDR legs too.</p>
-<p>My goal when I'm designing something like this is to have the least amount of wires possible.</p>
-<p>Unfortunately, there is quite a bit of wiring due to the fact that I had to remove the volume pot from the amp and there are wires needed to connect the vactrol and amp up to everything.</p>
+<li>The vactrol I used is made from an LED and an LDR. You can easily make your own following this Instructable</li>
+<li>Secure the LDR legs to the 'CV' section on the PCB The LED legs need to be connected to the CV out socket. Make sure that you attached the positive leg of the LED to the L and R terminals on the audio socket and the ground of the LED to the ground on the socket</li>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Wiring Everything Up!</h2><div class="step-images"><img src="images/step10_01.png" alt="Step 9: Wiring Everything Up! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Wiring Everything Up! image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Wiring Everything Up! image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Wiring Everything Up! image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Wiring Everything Up! image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Wiring Everything Up! image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 9: Wiring Everything Up! image 7" loading="lazy"></div><p>I've included a wiring schematic to help you wire everything up. Note that I have slightly revised the PCB and have included a power JST connector for the amp and also a connection to add the vactrol LDR legs too. My goal when I'm designing something like this is to have the least amount of wires possible. Unfortunately, there is quite a bit of wiring due to the fact that I had to remove the volume pot from the amp and there are wires needed to connect the vactrol and amp up to everything.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, connect the out 3.5mm audio socket to the out on the PCB</li>
@@ -328,27 +266,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To increase the voltage from 3.7v to 18v, I used a step up module. Connect this to the out on the charging module and then connect it to the power connection on the PCB.</li>
 <li>Once you have wired everything together, add the knobs to the potentiometers.</li>
 </ul>
-<p>That's it! Now go and make some noise.</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
-<li><a href="pdfs/Box of Beezz - Drone Synth V1 - Schematic.pdf">Box of Beezz - Drone Synth V1 - Schematic</a></li>
-<li><a href="pdfs/Box of Beezz - Drone Synth V2 - Schematic.pdf">Box of Beezz - Drone Synth V2 - Schematic</a></li>
-<li><a href="pdfs/Drone Synth 1.pdf">Drone Synth 1</a></li>
-<li><a href="pdfs/Drone Synth 2.pdf">Drone Synth 2</a></li>
-</ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<p>That's it! Now go and make some noise.</p>
 </body>
 </html>

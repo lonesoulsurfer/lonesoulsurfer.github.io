@@ -17,7 +17,7 @@ Source: https://www.instructables.com/Bring-Old-Toys-Back-to-Life/
 
 ![Intro 5](images/intro_05.jpg)
 
-On a recent visit to my local tip/dump, I came across an original 70’s walking robot. Anyone old enough (me damn it!), might remember owning one way back when. The robots were designed by Horikawa, a Japanese toy manufacturer specializing in toy robots. If you would like top see some of their designs - check out [this website.](http://www.tinrobot.jp/horikawa_e.html)
+On a recent visit to my local tip/dump, I came across an original 70’s walking robot. Anyone old enough (me damn it!), might remember owning one way back when. The robots were designed by Horikawa, a Japanese toy manufacturer specializing in toy robots. If you would like top see some of their designs - check out this website.
 
 But I digress... My tip has a shop where you can buy most things for a couple bucks. I’ve brought many a weird and wonderful objects over the years; it’s a great place to find the unusual.
 
@@ -61,7 +61,7 @@ Bits and Pieces
 
 1. Vintage Robot. I'd suggest you look for a vintage Horikawa type which is what I used. You really want to find one that is no longer working and needs some love. Try eBay, or your local junk shop.
 
-- [One I used](http://www.ebay.com.au/itm/Vintage-Horikawa-Super-Space-Commander-Battery-Operated-Robot-in-Box-/191891275002?hash=item2cad9c7cfa:g:qAEAAOSwepJXV2bA)
+- One I used
 
 2. Geared motor – eBay
 

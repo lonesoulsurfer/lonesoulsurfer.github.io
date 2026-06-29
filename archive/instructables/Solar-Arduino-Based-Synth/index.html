@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,7 +127,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Solar - Arduino Based Synth</span>
 </nav>
-<h1>Solar - Arduino Based Synth</h1><div class="source"><a href="https://www.instructables.com/Solar-Arduino-Based-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>First and foremost - a big shoutout to the creative team over at <a href="https://bleeplabs.com/product/nebulophone/">Bleep Labs</a> for the original build which is called the Neblophone.</p>
+<h1>Solar - Arduino Based Synth</h1><div class="source"><a href="https://www.instructables.com/Solar-Arduino-Based-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>First and foremost - a big shoutout to the creative team over at Bleep Labs for the original build which is called the Neblophone.</p>
 <p>I wanted to be able to add some playability to the little modular synth that I'm putting together and after a extensive search on Google I stumbled on the Neblophone which I have re-named 'Solar' for this build.</p>
 <p>The main changes that I have implemented are; I changed the stylus style keyboard over to actual momentary switches, I designed a front panel and custom PCB which can be used in Eurorack modules (or as a fun standalone synth) and lastly, added a sync in so you can connect it to other synths.</p>
 <p>So what are the features of the little synth?</p>
@@ -172,24 +137,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>– Adjustable temperament and key.</p>
 <p>– Six arpeggio modes with adjustable rate.</p>
 <p>It's the first time that I have utilized cherry MX switches and I'm so glad that I used them! They are an equivalent to a tactile keyboard switch and have a very satisfying 'click' and movement.</p>
-<p>Lastly, as I have mentioned above, Solar makes a fun standalone synth and has been designed to be able to fit in Eurorack modules and powered via a Eurorack power supply!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>I've created a parts list which can be found in my <a href="https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine">GitHub</a> page and in the PDF file attached to this step.</p>
-<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<p>Lastly, as I have mentioned above, Solar makes a fun standalone synth and has been designed to be able to fit in Eurorack modules and powered via a Eurorack power supply!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>You can also find an excel version of the parts list in my GitHub page</p>
-<p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p>
-<ul>
-<li><a href="pdfs/Solar - Parts List.pdf">Solar - Parts List</a></li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB's Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB's Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting the PCB's Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB's Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
-<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
-<p>I use JLCPCB (not affiliated) to get this done.</p>
-<p>The front panel is actually just a PCB without any components included!</p>
-<p>The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to build your own Solar Synth can be found in my <a href="https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine">GitHub</a> page.</p>
-<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+<p>The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB's Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB's Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting the PCB's Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB's Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
+<p>The files that you need to build your own Solar Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
 <p>STEPS:</p>
 <ul>
-<li>You’ll need to send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the PCB and front panel for you. Download the 2 Gerber files from my GitHub page to your computer and then send them off to the PCB manufacturer of choice. Keep the the files zipped as well when you send them.</li>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
+<li>You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download the 2 Gerber files from my GitHub page to your computer and then send them off to the PCB manufacturer of choice. Keep the the files zipped as well when you send them.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated. I also add a note saying' please add order number to the back of the panel' just to make sure.</li>
 </ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Components Part 1 image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding the Components Part 1 image 7" loading="lazy"></div><p>As the PCB is 2 sided, the order you add the components does matter. Of you get it wrong it's not the end of the world but it might make it a little harder to add some component</p>
@@ -198,7 +154,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.</li>
 <li>I've included a mini JST connector to power the board. Solder the connecter next into place.</li>
 <li>You can now add the capacitors, start with the polyester caps and then add the electrolytic caps</li>
-<li>This synth also has a vactrol. A vactrol is a white LED and a photoresistor which are enclosed so no light can enter. They are simple to make and I have done an Instructable on how to do which you can find <a href="https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/">here</a>. Below is a very quick guide on how to make one</li>
+<li>This synth also has a vactrol. A vactrol is a white LED and a photoresistor which are enclosed so no light can enter. They are simple to make and I have done an Instructable on how to do which you can find here. Below is a very quick guide on how to make one</li>
 <li>Get a white LED (I like to use the flat head ones so they sit nicely against the photoresistor)</li>
 <li>Grab some heat shrink (it should be just bigger then the LED, and cut about a 25mm length.</li>
 <li>Place the LED and photoresistor into the heat shrink and with a lighter first heat the end of the heat shrink where the LED is and crimp the end. Do the same for the photoresistor.</li>
@@ -208,8 +164,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now it's time to add the Arduino. I always included header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board</li>
 <li>Add the header pins to the Arduino and then place them into the board and solder into place.</li>
 </ul>
-<p>That's the first side done, next, it's time to add the controls to the reverse side</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Components Part 3</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Components Part 3 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Components Part 3 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Components Part 3 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Components Part 3 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Components Part 3 image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Components Part 3 image 6" loading="lazy"></div><p>I left the cherry momentary switches to last and I think it would have been easier to add these first onto the front side.</p>
-<p>They are a little tricky to solder in straight so having no other components soldered on the front of the PCB might have made it simpler to get them straight.</p>
+<p>That's the first side done, next, it's time to add the controls to the reverse side</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Components Part 3</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Components Part 3 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Components Part 3 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Components Part 3 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Adding the Components Part 3 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Adding the Components Part 3 image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 4: Adding the Components Part 3 image 6" loading="lazy"></div><p>I left the cherry momentary switches to last and I think it would have been easier to add these first onto the front side. They are a little tricky to solder in straight so having no other components soldered on the front of the PCB might have made it simpler to get them straight.</p>
 <p>STEPS:</p>
 <ul>
 <li>Start with the cherry switches. Add the cap to the switch and place it into the PCB. Make sure it is straight and in the proper position and then press down the switch to hold it into place.</li>
@@ -217,8 +172,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now solder in the 3 LED's. They will need to sit up off the PCB to ensure that they poke through the holes in the front panel. I use a little jig that sits the LED up about 10 mm and then solder the legs into place</li>
 <li>Now add the audio jacks and solder them into place along with the toggle switches and potentiometers.</li>
 </ul>
-<p>You're ready to program the Arduino and give the synth a test run</p><h2><span class="step-num">STEP 5</span>Step 5: Uploading the Sketch to the Arduino</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Uploading the Sketch to the Arduino image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Uploading the Sketch to the Arduino image 2" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out <a href="https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE">this link</a>.</p>
-<p>It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
+<p>You're ready to program the Arduino and give the synth a test run</p><h2><span class="step-num">STEP 5</span>Step 5: Uploading the Sketch to the Arduino</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Uploading the Sketch to the Arduino image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Uploading the Sketch to the Arduino image 2" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
 <p>STEPS:</p>
 <ul>
 <li>Open the sketch in the software folder which will take you to Arduino IDE</li>
@@ -234,31 +188,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now you can add the nuts to the pots, audio jacks and on/off switches to secure the front panel to the PCB.</li>
 <li>Now that the front panel is in place you can either make an individual case you house it in or add it to your Eurorack.</li>
 </ul>
-<p>I need to make a new enclosure for my Eurorack so I haven't been able to add this module yet</p><h2><span class="step-num">STEP 7</span>Step 7: How to Play Solar</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 7: How to Play Solar image 1" loading="lazy"></div><p>This is a pretty easy little synth to play so I won't go into too much details on how to play it.</p>
-<p>You really just have to start turning knobs and hitting keys and find out for yourself the sounds that you can make from it.</p>
-<p>Note that the images of the synth are from the first version.</p>
-<p>V2 has one major change where I added a sync in to the arpeggiator and moved the knobs around.</p>
-<p>It means that you can sync into either the LFO or the arpeggiator and connect it to other modules or synths.</p>
-<p>Another thing to note is syncing it in isn't as straight forward as just plugging in a cable to the input.</p>
-<p>You actually need to turn the LFO or ARP depending which one you are connected to until the LED next to the know starts to flash in time with the sync that you are connected to.</p>
-<p>The cool thing about this little synth is, you don't have to sync it with other synths to play along. I love just using the keys and jamming along with my modular.</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
-<li><a href="pdfs/Solar - Parts List.pdf">Solar - Parts List</a></li>
-</ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<p>I need to make a new enclosure for my Eurorack so I haven't been able to add this module yet</p><h2><span class="step-num">STEP 7</span>Step 7: How to Play Solar</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 7: How to Play Solar image 1" loading="lazy"></div><p>This is a pretty easy little synth to play so I won't go into too much details on how to play it. You really just have to start turning knobs and hitting keys and find out for yourself the sounds that you can make from it.</p>
+<p>Note that the images of the synth are from the first version. V2 has one major change where I added a sync in to the arpeggiator and moved the knobs around. It means that you can sync into either the LFO or the arpeggiator and connect it to other modules or synths.</p>
+<p>Another thing to note is syncing it in isn't as straight forward as just plugging in a cable to the input. You actually need to turn the LFO or ARP depending which one you are connected to until the LED next to the know starts to flash in time with the sync that you are connected to.</p>
+<p>The cool thing about this little synth is, you don't have to sync it with other synths to play along. I love just using the keys and jamming along with my modular.</p>
 </body>
 </html>

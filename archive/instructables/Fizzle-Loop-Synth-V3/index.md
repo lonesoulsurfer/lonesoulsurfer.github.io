@@ -15,7 +15,7 @@ Source: https://www.instructables.com/Fizzle-Loop-Synth-V3/
 
 ![Intro 4](images/intro_04.jpg)
 
-This is my 3rd Fizzle Loop Synth circuit and it builds on the previous 2 which can be found [[here](https://www.instructables.com/id/Fizzle-Loop-Synth-II/)](https://www.instructables.com/id/Fizzle-Loop-Synth-555-Timer/) and here.
+This is my 3rd Fizzle Loop Synth circuit and it builds on the previous 2 which can be found here and here.
 
 The heart of the synth is 3, 555 Timer IC's which are used to make some really interesting beeps and boops. The difference between this version and the others is; I have reduced the number of IC's down to 3 (version 2 have 4!), the rhythms and sounds you can make from this version are in my opinion are better and lastly, there is a drum sound option which gives some really cool beats.
 
@@ -23,9 +23,9 @@ I also have shrunk this synth into a pocket sized one. By placing some of the ca
 
 You could probably use something like an altoids tin as a substitute case.
 
-I have also been playing around with designing schematics and have included a circuit diagram which (I hope!) is easy to understand. I've also decided not to do a step by step guide to making the circuit as I don't really think it helps too much. However, if I'm wrong let me know and I'll do it in the future. What I have done instead is described some of the trickier sections and have added explanations where necessary. Such as what a [Vactrol](https://en.wikipedia.org/wiki/Resistive_opto-isolator) is and how to make one.
+I have also been playing around with designing schematics and have included a circuit diagram which (I hope!) is easy to understand. I've also decided not to do a step by step guide to making the circuit as I don't really think it helps too much. However, if I'm wrong let me know and I'll do it in the future. What I have done instead is described some of the trickier sections and have added explanations where necessary. Such as what a Vactrol is and how to make one.
 
-[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) were nice enough to do a review of this project which can be found [here](https://hackaday.com/2019/04/05/fizzle-loop-synth-does-it-with-555-timers/)
+Hackaday were nice enough to do a review of this project which can be found here
 
 Finally - I've made a video of the synth in action so check that out to hear how it sounds.
 
@@ -52,7 +52,7 @@ Parts:
 
 1. Resistors.
 
-Use metal film ones – they are better quality and cost about the same as other ones. Also, buy them in assorted lots on [eBay](https://www.ebay.com.au/sch/i.html?_osacat=0&_odkw=metal+film+restitor+assorted&_from=R40&_trksid=m570.l1313&_nkw=metal+film+resistors+assorted&_sacat=0)
+Use metal film ones – they are better quality and cost about the same as other ones. Also, buy them in assorted lots on eBay
 
 - 4.7K X 2
 
@@ -66,7 +66,7 @@ Use metal film ones – they are better quality and cost about the same as other
 
 2. Capacitors
 
-You can also buy these in assorted lots on [eBay](https://www.ebay.com.au/sch/i.html?_osacat=0&_odkw=capacitors+resistors+assorted&_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xcapacitors+assorted.TRS0&_nkw=capacitors+assorted&_sacat=0), which I suggest you do
+You can also buy these in assorted lots on eBay, which I suggest you do
 
 - 100uf X 2
 
@@ -80,37 +80,37 @@ You can also buy these in assorted lots on [eBay](https://www.ebay.com.au/sch/i.
 
 3. Making a vactrol
 
-- 5mm white LED X 2 – [eBay](https://www.ebay.com.au/itm/20pcs-5mm-Superbright-White-Round-LED-20000-MCD-LJ/183559984060?hash=item2abd0713bc:g:vzEAAOSwzpFbJeM-&frcectupt=true)
+- 5mm white LED X 2 – eBay
 
-- LDR (Light Dependent Resistor) X 2 - [eBay](https://www.ebay.com.au/itm/20pcs-5mm-Superbright-White-Round-LED-20000-MCD-LJ/183559984060?hash=item2abd0713bc:g:vzEAAOSwzpFbJeM-&frcectupt=true)
+- LDR (Light Dependent Resistor) X 2 - eBay
 
 - Heat shrink (needs to be able to fit over the LED so 5 mm should be fine.
 
-4. 10K Potentiometers X 6 – [eBay](https://www.ebay.com.au/itm/3Pcs-6mm-Knurled-Shaft-Single-Linear-B-Type10K-ohm-Rotary-Potentiometer-New/262852339228?epid=1684420726&hash=item3d3338661c:g:Np8AAOSwax5Yos7P)
+4. 10K Potentiometers X 6 – eBay
 
-5. Potentiometer knobs X 6 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xpotentiometer+knob.TRS0&_nkw=potentiometer+knob&_sacat=0)
+5. Potentiometer knobs X 6 - eBay
 
-6. 555 Timer X 3 – [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/263770865456?var=&hash=item3d69f7ff30&enc=AQADAAAC4FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVXRDIZzFRvPOpCg5qnj%2BzXXgYqTg2dnBTflL1esofw%2B04Q009pbVc%2BDXNg2FbRZkrkVqbWhMMiHd6nuwtAG1iyvhctqEY%2B6UN57pqqWQmBkJjU4iqrMEQcQO0ica%2F6cnHGoQvpXQcaD1g3cOpHJbxTKO%2BQ17Q6ysXd5PqS6eA4J1F8zjQdPfMpMhGzanNYnb5Q1pCEseISkv7Hw73fOdWMMNrJAZN13iqwPkRy3yTtFS3C96nBBbM7VjmkmeDth%2FseqP4hAPAogQ7SZXi3S0W22extD6hQtejQMAcycNWtcJZJjzsfN3ypNiERLMaR7hu9Dl3nCPIQpjhpWeJz2zYroGLQwmNI%2BObx%2Bg4PaAULxjtTL6QIsVX6FYsEegxLZM1gc3VC9OlUB1KhAZZ3UuFn01Qt8cdIosPzdC6rDDXhZPlgqOhz4jX68gUv66vzpAVFSE%2BbmhNhwMxn%2FSdW4%2BVFKxYcQdfg3QGztLdKBPtE9Gpl%2BnCOK6HLKZMCHrT8oK%2FSQev1YK0EZtUzcLzR5KUagNgdqy6aruXZg4u5vdLePhKrHbKAukE%2FgmlrbxLt5kvDmJSEYHcItLaNv0p%2Bqe25Z8LkVeq43Pa2lBpwXI9%2BY6b4IFljV25FIeEZjAPjUw1z3rr9ciqyuMY3%2FBsqz3zzZ4%2Bao5435yAL7tb6fqVkB1SQeR46X1JkeDmQSIr5sd6DbJyqbUz6jGSaEJbUnS7XqhaWWqTDBDb8yC50vp9C2QIYVefafShPgPjFEC16XA9PIvqHdcFvVj1cx54W0Wv7OPdpi1timsS8jsxxIVsFtXmwrWVuCQTvNwlkARC6HF%2BWNkwR4RU7R9nMD%2FvLjWNRioBQ9A6aUpaiDKd%2FCWJf%2FKWCfMLSH1qYKOTA86b2eA6LV%2BLfoWPjDEPHKt72GvnHI2LJILj01pNFmYGxZ9qA4M%3D&checksum=263770865456bb718d0f7d3547f0a8fed1a112177148&frcectupt=true)
+6. 555 Timer X 3 – eBay
 
-7. 3mm LED X 2 – [eBay](https://www.ebay.com.au/itm/100PCS-3mm-White-LED-Super-Bright-Round-Lighting-Bulbs/322656683959?hash=item4b1fd647b7&enc=AQADAAAC4FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduV968OS3LaeFsmQTqp1Xhipkp6ZWfwcDOdYQYkgF9jvImWXbosqk5LVlEk5ACkMhjR0npZxGbwF3lpQfoOuAvqK6JGOjnTRl5JWSvj%2BWPZ1jPIqFPMsWV3jfX0uj1q8tmJ4Q02nlOeeEmDrxnB%2BnpnJKrA9STV9Qb4g%2FjTRBo6ugZtzrbSuosc3Gh8qwZrQ4r%2FnXzkvlrbM8Nk4AudYC5Hufnd4%2F3G1sl4jhUQJsCcW6%2FFuhhWxHENOrDEz9aDkfAKIF2KQDLvSX563m3rMfDIHtt5Q%2F6dOJziqUG3kB2n3u%2BvhVuU9jxmMHI40oMmQ5NtKx7V%2BjrvCQ65Dcc0O1ewsDrnekCq4zAFD7l0fOW8JUe5QZmkF40C1vhA2eEwpR10HMEcJqhhk%2B36ilMov4N6iVminIYLh73LduZY3p6Pn%2FEyUwj6MeFCsrViKpNhjeHsowVBiKrDucfGjXfPVu7b%2FfEAeMumcrUSEXDdpUbg2SmHstA%2BTt5IJUcn82gI5USHKTFlS3TA27yheKIT51qvgu8AA%2FFR4gD%2FSCCOU66fxfvldUROJJSHkAZCcugm70jN1OF%2B9b9asLVVKASnB5ItKi%2FCA7C1nXFMme78Q539VEN6tsWgcsxKccKqL3Ly3N0U8oMfetoQawVao8WKtwGeQ1BYf0lU3EcfJEJ9E3C%2BK%2BSUdPhCbTo1I0hq91Sz8%2BXhQz%2Fb2qcHHa370o5QdbPp2KK4OHeKK7tJBLApfXbOYVT%2BEB0%2FyPE%2BAfGlaTKXXP8oUh6fGmQFc9kDbS%2FEVKqLC85FedZHQXZxp2gObIgutJMr2TWY%2FZb4idZi5pbFCcsWiwDm2tk5xd%2FJonCQfjK%2Bvo1ur1nQZ82%2Bx4PrP7Jw2j144MYNrWL0X8utbkxgHTASwxSTETJqhKpRBgJY8ZVnFQ3wQdypkR%2B17p1cVc%2FwF7Q%3D&checksum=3226566839594a726d95acf1428fbce36cad384d75be&frcectupt=true)
+7. 3mm LED X 2 – eBay
 
-8. SPDT Switches X 2 – [eBay.](https://www.ebay.com.au/itm/1-2-5-10pcs-Mini-ON-ON-MTS-102-3-Pin-SPDT125V-AC-6A-Miniature-Toggle-Switches/282588148734?hash=item41cb90f3fe:m:mLb9w5GnglPqNho7fNbdIEA&frcectupt=true)
+8. SPDT Switches X 2 – eBay.
 
-9. 0.5W 8ohm speaker – [eBay](https://www.ebay.com.au/itm/2x-20mm-8Ohm-8-0-5W-Audio-Speaker-Stereo-Woofer-Loudspeaker-Trumpet-Horn-New/122266516483?hash=item1c77a6fc03:g:kpQAAOSwfZhXNUCv&frcectupt=true). You can use a larger one if you want to I used a small one as my case was small.
+9. 0.5W 8ohm speaker – eBay. You can use a larger one if you want to I used a small one as my case was small.
 
-10. 3.5mm output jack socket – [eBay](https://www.ebay.com.au/itm/5Pcs-3-5mm-PCB-Panel-Mount-Stereo-Jack-Female-Socket-Connector-Earphone/173601296623?hash=item286b7190ef:g:4TYAAOSwED5Z2eKX)
+10. 3.5mm output jack socket – eBay
 
 11. 9v Battery
 
-12. 9V battery holder – [eBay](https://www.ebay.com.au/itm/10PCS-MN1604-9V-PP3-9volt-Battery-Holder-Clip-Snap-On-Connector-Cable-Lead/282606951665?hash=item41ccafdcf1:g:EYoAAOSwr~dZjXn2)
+12. 9V battery holder – eBay
 
-13. Prototype Board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+13. Prototype Board – eBay
 
-14. Momentary Switches X 2 – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=Momentary+off%2Fon+Push+Button&_sacat=0&_sop=15)
+14. Momentary Switches X 2 – eBay
 
 If you also want to add a amp to increase the volume – then you will also need the following parts
 
-14. Small amp module – [eBay](https://www.ebay.com.au/itm/Headphone-150mW-Amplifier-Board-Differential-Balanced-4812-HIFI-Amp-SGM-Module/311736734716?epid=504490827&hash=item4894f513fc:g:3uwAAOSwGhFcb3DT&frcectupt=true)
+14. Small amp module – eBay
 
 15. 10K pot (This is one of the 6 that I have included above)
 
@@ -241,7 +241,7 @@ Check out the next step on how the caps are attached to the SPDT switches
 
 ![Step 6: Making the Circuit - IC Timer 3 image 4](images/step06_04.jpg)
 
-555 IC 3 is the timer that gives you your tunes. It's actually a basic light thermin based on the [slidersynth](http://hackaweek.com/hacks/?attachment_id=1515) by Deno which I have also [built here](https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/). I've taken it a few steps further with the fizzle loop synth but basically it uses the same concepts. I'll go through a few highlights of this section of the build
+555 IC 3 is the timer that gives you your tunes. It's actually a basic light thermin based on the slidersynth by Deno which I have also built here. I've taken it a few steps further with the fizzle loop synth but basically it uses the same concepts. I'll go through a few highlights of this section of the build
 
 Steps:
 

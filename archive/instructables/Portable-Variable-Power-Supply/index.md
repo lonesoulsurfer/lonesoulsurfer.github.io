@@ -23,11 +23,11 @@ The power is supplied by a li-po battery from an old laptop. You could use a mob
 
 The build is a relatively easy and only needs some basic solder skills to make. Oh and as a bonus, you can also use it as a voltage tester too!
 
-I made [this one](https://www.instructables.com/Portable-Variable-Power-Supply-1/) using a different module. I found however that the module can burn out easily and has a weird habit of overloading which causes voltages to not be accurate.
+I made this one using a different module. I found however that the module can burn out easily and has a weird habit of overloading which causes voltages to not be accurate.
 
 Hackster also did a nice review of this build which can be found in the link below
 
-[Hackster Review](https://www.hackster.io/news/an-easy-peasy-portable-power-supply-dc2970f55c47)
+Hackster Review
 
 
 ## Step 1: Parts
@@ -46,23 +46,23 @@ Hackster also did a nice review of this build which can be found in the link bel
 
 ![Step 1: Parts image 7](images/step01_07.jpg)
 
-1. Charger and step-up module - [eBay](https://www.ebay.com.au/itm/3pcs-3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge/313035747718?_trkparms=ispr%3D1&hash=item48e2627186:g:CcUAAOSwiFFeeCan&amdata=enc%3AAQAFAAACoBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkRjLZq23gAR%252BKma9gM2Z1hiOXe1GbPluHF7lMldnuIBDj1HsK7odAl1X4rZGWK5cUTbfylxqsZW7tfU9EPu%252FEIJ0IMdf6RletPpJqHsqzza3R9L3Tr3xbiWbLJpUL5%252FA7VKzZwl%252BkR7boEoXta1NwLkGNBGSyRm%252FZo4PSHEdSzLCK5PyYndYJhl6cX0m9LYCipx02L4fkQSCrrwfn2LRXiefMoTEOOat1vLUy8sHoEsB3st759c7j9Gm34LFH73wqwvKa%252F8CTOXimkGbZBIhEUjieGs5LsTuZMhIhzxLxkkKNfbe5DJgbRjvWanbpT1CwRKphTxq2pbqqBHDnlsesndkXdGDf9zGFFWjZJoBhH3bdF8gJwXKNckqXTddE%252F%252FxjkWXPUODQkCLtyRBqoZXZ%252BUCPrz%252FZt%252FDxMX43rmMXdHd4dfm0e6xrRVZBJwWGKSDJ2KezqJ8aTv3HMElRCf2xrdZqQ%252FyfvPm5EfQKnVkRpz2VP%252BJDCwQiCbt%252Feves%252Bjuelo3EfGKFLpNYVZjd2Jz%252FFsMYzjkqFGEE45nzrCQXKlAjKOFeWLBZqaV4HI8BJWX7tfJNf26meQt1Rp%252B2gi6LEPzRruws4u2YNIciKyOr3RkHc7%252BAscMWi%252BLKAUEju2bX18H7wnuw7TaM8VSsl8MQ6%252FO%252Bci2jePEi3NLCVkzgaFap0GhWkTW75rQJqQfnIUig8lLRKfoGaA6u9QznjsOV3O3hFcQo7mv3fG%252BiIhkjYmVZCuD4eHiN7fTrgY0%252Bp70NCky0qv2PXZJzY3JSywgx5PJtLgJXc82KVP3Q9kS2etAackfb3E3AKxVW8mXrDhyxqEQ%252BtXoEACwjBfs51BdH7Q%253D%253D%7Ccksum%3A313035747718b2284b62e340455fba7b37e97519f906%7Campid%3APL_CLK%7Cclp%3A2334524&frcectupt=true) The link is for 3 of them
+1. Charger and step-up module - eBay The link is for 3 of them
 
-2. Battery. You can use an old (or new) [mobile battery](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=samsung+mobile+battery&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=[18650](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=18650+battery&_sacat=0)+battery), 18650 [li-ion](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=3.7v+lithium+ion+battery&_sacat=0&LH_TitleDesc=0&_sop=15), or almost any other rechargeable battery
+2. Battery. You can use an old (or new) mobile battery, 18650 li-ion, or almost any other rechargeable battery
 
-3. Voltage meter - [eBay](https://www.ebay.com.au/c/18015900933)
+3. Voltage meter - eBay
 
-4. SPDT Switch - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=spdt+switch&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=voltage+meter)
+4. SPDT Switch - eBay
 
-5. 250K Pot - [Ali Express.](https://www.aliexpress.com/item/1005001528856486.html?spm=a2g0o.productlist.0.0.24c936bewhzFMn&algo_pvid=d2a03ca4-cb5f-44ad-9fc9-8a6d3df7962b&algo_expid=d2a03ca4-cb5f-44ad-9fc9-8a6d3df7962b-25&btsid=0bb0622e16036828376391606e31c8&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_) I used a 100K pot which also works fine, however, you can only increase the voltage to 14v which is more then enough for most projects
+5. 250K Pot - Ali Express. I used a 100K pot which also works fine, however, you can only increase the voltage to 14v which is more then enough for most projects
 
-6. [Fe[male](https://www.ebay.com.au/itm/2-10-20pcs-4mm-Banana-Plug-Socket-Jack-Binding-Post-Nut-Male-Connector-for-video/392323195472?hash=item5b5848e250:g:HBgAAOSwTsNdFyX1&frcectupt=true)](https://www.ebay.com.au/itm/10Pcs-4mm-Banana-Panel-Socket-Test-Probe-Binding-Post-Nut-Plug-Jack-Connector-zh/383705564606?hash=item5956a245be:g:WWsAAOSw9IpXyqAZ) and male banana plugs - eBay. The female ones I have linked are 4mm and these fit nicely into the case.
+6. Female and male banana plugs - eBay. The female ones I have linked are 4mm and these fit nicely into the case.
 
-7. Alligator Test Lead Clips – [eBay](https://www.ebay.com.au/itm/Banana-plug-to-Alligator-Clip-Clamp-for-Multimeter-Connector-Probe-test-Lead-new/133123207703?_trkparms=ispr%3D1&hash=item1efec2f217:g:ZU4AAOSw31ddOQP2&amdata=enc%3AAQAFAAACcBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkBUIiHwYv5YgVss0WaiENz6j%252FxojC98Qzl0onVdjohtFBL6OZA%252FczboPYb8gLwKt7h0s3I8xDGDssux6bP%252BJziDpIaEQtXBoNT%252Fx6SolZvoilt2svTuFRP1Dv%252Bx0YekRWcUWPo1fF%252BIgR75EFRe6ukjkrbfMKkgKTh4%252FFiP3L1DwGR4OCztMWmTx5cEQjPO2MeBBfIa%252B8y%252FLd5kiNdbJ%252BD2zUf4J%252BA3K%252FTEHbROpSYIj3rXKwgCqbGPeO%252BxVgWE7BtSRhFM97zXOxebiOgVufCPwggEu%252BoLFLKCswbAlmu6JYFEKPPEiuTBSsAekUPZmNCmv8h%252BAolnz%252FQi%252BjKuOPm0%252F7xucmf0F4gadePz4c%252FxqbulTnaMQBLnzTcsn%252Bu9pYV8Cu%252FcNmBqqO%252F%252BSgQtZCH2j%252FEPv5gJr8na2OksObs2X9jKYg4eryzz3auhsj7Nnn0KilDgK92vcJpY6YaJ4QIVi3Q3qyw5s3WNQTHisesoEgPV6lbhi6sx1lfP%252FZR1r9AdxzSUASFNx3dOR0T%252FilEn00G1F7xsOmNmzjO854asGbP18C9K4HiYxg7A5VWbOlVYXfeSZFXkhYnQFXc6E%252BpZ2lWiZvYui8o9oO%252Fbtetoo349o91iD6kfWUHe8j0zcFUyMH5ggCsKorVCBW65o5l2h%252FqcdNQ9JPzaGjgmyGSAl53VtitGPbRy718Bf7gB6T0qVGE91FSN80ab9qwsnx7TsVwSL3Mf8G08UgFoZ5n%252BhaV0y9qqxTT443xsS%252F2w7CUbiZk1ptymHzGH3E6Zyx4g%253D%253D%7Ccksum%3A133123207703ca9dc8c6fce345c5acc63ee5c574150f%7Campid%3APL_CLK%7Cclp%3A2334524&frcectupt=true)
+7. Alligator Test Lead Clips – eBay
 
-8. Hook Clip Test Probe – [eBay](https://www.ebay.com.au/itm/1-Pair-Banana-Plug-To-Test-Hook-Clip-Probe-Cable-For-Test-Equipment-B2AD/402249338632?hash=item5da7edcf08:g:yHkAAOSw4nhZ~NqH&frcectupt=true)
+8. Hook Clip Test Probe – eBay
 
-9. For the case I used a 2 X AA battery holder. A better one to use would be [this holder](https://www.ebay.com.au/itm/3-7V-2x-18650-Battery-Holder-Connector-Storage-Case-Box-ON-OFF-Switch-With-Le-W7/224009994856?hash=item3428094268:g:4pIAAOSw9-tevNua&frcectupt=true) which is a 2 X 18650 battery holder. It's larger, will fit more types of batteries and you could wire 2 X 19650 batteries in parallel which would allow you to use the module to charge them
+9. For the case I used a 2 X AA battery holder. A better one to use would be this holder which is a 2 X 18650 battery holder. It's larger, will fit more types of batteries and you could wire 2 X 19650 batteries in parallel which would allow you to use the module to charge them
 
 10. Wire
 

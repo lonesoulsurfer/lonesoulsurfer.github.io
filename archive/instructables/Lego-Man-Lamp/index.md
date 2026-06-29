@@ -19,7 +19,7 @@ Build a Lego man lamp!
 
 (If you are using a mobile and want to see it in action, click on the last picture (its a GIF)
 
-If I could be any lego man it would be vintage space man. Definitely the coolest and happiest dude that ever flew in space. Last year I made a Lego man lamp which had a space man encased in resin with LED’s underneath [(see here)](https://www.instructables.com/id/Lego-Man-Space-Lamp/). This time I wanted to incorporate the LED into the actual Lego man so it would look like he was holding one in his hands.
+If I could be any lego man it would be vintage space man. Definitely the coolest and happiest dude that ever flew in space. Last year I made a Lego man lamp which had a space man encased in resin with LED’s underneath (see here). This time I wanted to incorporate the LED into the actual Lego man so it would look like he was holding one in his hands.
 
 As everyone knows, Lego men are small and fiddly. There isn’t much room to add anything let alone an LED, wires switch and batteries. That’s when I hit upon the idea of using fine copper wire from a DC motor for the wires. I could thread them through small drilled holes in the Lego man so you couldn’t see them, and hide the batteries and switch inside a small Lego box.
 
@@ -279,6 +279,8 @@ Steps:
 ![Step 11: image 5](images/step11_05.jpg)
 
 ![Step 11: image 6](images/step11_06.jpg)
+
+View 3 more
 
 
 ---

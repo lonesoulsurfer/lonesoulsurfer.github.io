@@ -82,14 +82,12 @@ And there is even more! I'll provide a complete overview and how to at the end o
 
 ![Supplies image 6](images/step01_06.jpg)
 
-As usual, I've created a parts list which can be found in my [GitHub](https://github.com/lonesoulsurfer/Medusa_Sound_Effects_Modular_Synth) page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+As usual, I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 In regards to the Raspberry Pi that I used, Make sure that you get the one with 4 analog inputs. The details are in the part list provided.
 
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
-
-- [Parts List Medusa](pdfs/Parts List Medusa.pdf)
 
 ## Step 1: Getting the PCB & Front Panel Printed
 
@@ -101,14 +99,14 @@ The parts list attached doesn't included the PCB or front panel. You'll need to 
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
 
-The files that you need to build Medusa can be found in my [GitHub](https://github.com/lonesoulsurfer/Medusa_Sound_Effects_Modular_Synth) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer
+The files that you need to build Medusa can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer
 
 STEPS:
 
-- Send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Medusa_Sound_Effects_Modular_Synth) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+- Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
 - NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 - Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
@@ -127,8 +125,8 @@ STEPS:
 
 - First - add the resistor into the PCB and solder into place.
 - Now do the same for the capacitors
-- You can also add the JST connector as well.  This is where we'll be powering the board.  If you are adding this module to a Eurorack, then you can power it via a Eurorack style header pins.
-- That's it for the passive components - now you can flip the board over and start adding the momentary switches which there are 16 of!  The trick with these is to add 4 at a time.  once they are soldered into place, make sure that they are sitting flat.  If not, just hit the legs again with the soldering iron and push down on the button on the switch.  This will ensure that they are properly seated.
+- You can also add the JST connector as well. This is where we'll be powering the board. If you are adding this module to a Eurorack, then you can power it via a Eurorack style header pins.
+- That's it for the passive components - now you can flip the board over and start adding the momentary switches which there are 16 of! The trick with these is to add 4 at a time. once they are soldered into place, make sure that they are sitting flat. If not, just hit the legs again with the soldering iron and push down on the button on the switch. This will ensure that they are properly seated.
 
 
 ## Step 3: Adding Components to the PCB - Part 2
@@ -143,7 +141,7 @@ STEPS:
 
 - Firstly, if you haven't already, solder some male header pins to the Raspberry pi.
 - Now, connect the female header pins to the male header ones on the Pi.
-- Place the female header pins into the PCB and solder into place.  This is the best way to do as it ensures that the header pins are straight and that the Raspberry Pi will fit right.
+- Place the female header pins into the PCB and solder into place. This is the best way to do as it ensures that the header pins are straight and that the Raspberry Pi will fit right.
 
 
 ## Step 4: Adding Components to the PCB - Part 3
@@ -190,12 +188,12 @@ I used normal header pins to add the front panel and had to modify the female he
 
 STEPS:
 
-- First, solder the male header pins to the TFT screen.  IMPORTANT - you need to make sure that the header pins are sitting flush with the top of the TFT screen PCB. If you don't, then they will hit the front panel and the screen won't sit flat
-- Now secure the screen to the front panel.  I used an M2 screen and placed this through the hole of the front panel and screen.  I then added a nut to each to secure the screen onto the front panel
-- Now - you need to add a small M2 spacer to each of the screws.  Use the smallest one in the assorted pack that I have recommended to get in the parts list
-- This is a good time to test fit the front panel to the PCB.  Carefully place the front panel on top of the PCB.  If you find that the end of the screw isn't lining up with the hole in the PCB, then give it a little push towards the hole with a screwdriver, keeping pressure on the front panel.
-- Once in place you will see that the pins on the TFT screen just about touch the pin holes on the PCB.  You will probably need to trim the male header pin legs to ensure that they fit correctly.  leave though for the moment.
-- Remove the front panel and add the female header pins to the male ones on the TFT screen.  Now test fit again.  How does it look?  are the pins making it so the front panel isn't sitting as low as it can go?  if so, you will need to trim the male header pins and try again.  You want it so the front panel is touching the bottom of the screw section on the toggle switch.
+- First, solder the male header pins to the TFT screen. IMPORTANT - you need to make sure that the header pins are sitting flush with the top of the TFT screen PCB. If you don't, then they will hit the front panel and the screen won't sit flat
+- Now secure the screen to the front panel. I used an M2 screen and placed this through the hole of the front panel and screen. I then added a nut to each to secure the screen onto the front panel
+- Now - you need to add a small M2 spacer to each of the screws. Use the smallest one in the assorted pack that I have recommended to get in the parts list
+- This is a good time to test fit the front panel to the PCB. Carefully place the front panel on top of the PCB. If you find that the end of the screw isn't lining up with the hole in the PCB, then give it a little push towards the hole with a screwdriver, keeping pressure on the front panel.
+- Once in place you will see that the pins on the TFT screen just about touch the pin holes on the PCB. You will probably need to trim the male header pin legs to ensure that they fit correctly. leave though for the moment.
+- Remove the front panel and add the female header pins to the male ones on the TFT screen. Now test fit again. How does it look? are the pins making it so the front panel isn't sitting as low as it can go? if so, you will need to trim the male header pins and try again. You want it so the front panel is touching the bottom of the screw section on the toggle switch.
 - If everything looks like it is lining up - then you can go ahead and solder the header pin into the PCB.
 I hope that this wasn't too confusing!
 
@@ -209,7 +207,7 @@ To ensure the front is secured to the PCB, you need to add a couple more spacer 
 STEPS:
 
 - Find the right sized spacer that fits between the front panel and PCB
-- Push this into place and secure it into place with an M2 screw.  You'll need to hold the spacer with a pair of pliers whilst adding the screw into pace
+- Push this into place and secure it into place with an M2 screw. You'll need to hold the spacer with a pair of pliers whilst adding the screw into pace
 - Do this for the other side as well.
 Ok - now you are ready to upload the code
 
@@ -396,15 +394,11 @@ Sidechain (Function + Key 8)
 - Classic "pumping" sidechain compression effect
 - Press Key 8 to toggle SIDECHAIN ON/OFF
 - Pot 1: Ducking Depth (0-100%) - how much volume reduction
-- Pot 2: Attack Time  - how fast it ducks
+- Pot 2: Attack Time - how fast it ducks
 - Pot 3: Release Time - how fast it returns
 - Syncs with LOOP patterns or SYNC input for rhythmic pumping
 - Auto-retriggering creates continuous pumping effect
 
-
-## Downloads
-
-- [Parts List Medusa](pdfs/Parts List Medusa.pdf)
 
 ---
 *34 images archived*

@@ -13,9 +13,9 @@ Source: https://www.instructables.com/Lucky-Ladybug-Pendant/
 
 ![Intro 3](images/intro_03.jpg)
 
-I like to go metal detecting in my spare time and love to watch guys on YouTube finding long lost treasure. One of the guys I like to watch is [Klugscheisser Dan](https://www.youtube.com/channel/UC9cKOiojT3oQEqVYjSXGzbA/videos) who finds some of the most amazing artifacts.
+I like to go metal detecting in my spare time and love to watch guys on YouTube finding long lost treasure. One of the guys I like to watch is Klugscheisser Dan who finds some of the most amazing artifacts.
 
-On one of his trips ([which can be found here](https://www.youtube.com/watch?v=ls6wUUSOc6o)) he found a coin which had a ladybug attached to it! The coin was worn as a pendent and the ladybird would have been hidden on the back. I thought that this was a really cool idea and decided to make my own version.
+On one of his trips (which can be found here) he found a coin which had a ladybug attached to it! The coin was worn as a pendent and the ladybird would have been hidden on the back. I thought that this was a really cool idea and decided to make my own version.
 
 So why did they attach a ladybird. It turns out that this was for good luck! Having a ladybug land on you can be a magical moment. While other insects may pose a threat to humans, animals and crops, ladybugs are harmless - and even better, they're beneficial! That's why so many cultures over the centuries have cherished ladybugs, believing them to bring good luck. Plus everyone know that you can make a wish if a ladybird lands on you.
 
@@ -40,11 +40,11 @@ Parts:
 
 1. Old coin. Any old coin really – just make sure that it’s interesting and larger than the ladybird
 
-2. Ladybirds – [eBay](http://www.ebay.com.au/itm/50x-Vintage-Silver-Alloy-Ladybird-Pendants-Charms-Antiqued-Jewellery-Findings-BS-/361271655064?hash=item541d77fa98:g:RrkAAOSwymxVLiE2)
+2. Ladybirds – eBay
 
-3. Junp Rings7mm – [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xjump+ring+7mm.TRS0&_nkw=jump+ring+7mm&_sacat=0)
+3. Junp Rings7mm – eBay
 
-4. If you want to make an owl one, you can buy them on [eBay](http://www.ebay.com.au/itm/15pcs-Vintage-Tibetan-Silver-Tone-Hollow-Carved-Owl-Animal-Charms-Pendant-DIY-BS-/161706719778?hash=item25a678ba22:g:tdQAAOSw~OdVVvTg)
+4. If you want to make an owl one, you can buy them on eBay
 
 Tools:
 

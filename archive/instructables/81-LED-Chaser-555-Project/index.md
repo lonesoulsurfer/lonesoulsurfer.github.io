@@ -29,13 +29,13 @@ I have also designed a PCB for this build so you can easily build your own. Ther
 
 The end project however is definitely worth all that soldering. It's a really fun and interesting build and I've been playing with every day.
 
-The build was inspired by a project created by [Eddy Bergman](https://www.eddybergman.com/). He has built some great circuits and if you are interested in building a modular synth then this is the place to go!
+The build was inspired by a project created by Eddy Bergman. He has built some great circuits and if you are interested in building a modular synth then this is the place to go!
 
 Lastly, I build a small enclosure and designed a front panel to complete the build
 
 Note - it's not easy to film a lot of LED's moving around due to the recording frame rate of a phone. What you see in the video looks different to what you see in real life.
 
-Hackster have also done a review of this project which can be found [here](https://www.hackster.io/news/this-project-incorporates-a-pair-of-two-555-timers-in-an-interesting-way-2291201a83ba)
+Hackster have also done a review of this project which can be found here
 
 
 ## Supplies
@@ -56,47 +56,45 @@ Step 2 has the parts list for the case and front panel
 
 The best way to buy electronics is in bulk and I have added a link to each. I also used 5mm square LED's and they look awesome! You can also use round ones as well but I highly recommend that you just buy the square ones. I got 1000 for $14!
 
-Lastly, I have attached a PDF of the parts list and it can also be found on my [Google Drive](https://drive.google.com/drive/folders/1mJGPKbme5RYg0_qoCq5FkkLm-IpazQ78?usp=sharing)
+Lastly, I have attached a PDF of the parts list and it can also be found on my Google Drive
 
 Components for the Circuit
 
-- Capacitor polarized - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=assorted+capacitors&_sacat=0&_sop=15)
+- Capacitor polarized - eBay
 - 1uf X 2
 - 470uf X 1
 - Capacitor polyester
-- 220nf X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=polyester+capacitor+220nf&_sacat=0&LH_TitleDesc=0&_odkw=assorted+capacitors&_osacat=0&_sop=15)
-- Switch - 6 pin X 4 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=6+pin+switch+pcb+7mm+x+7mm&_sacat=0&LH_TitleDesc=0&_odkw=6+pin+switch+pcb+7+x+7&_osacat=0&_sop=15) Note that these are 7mm X 7mm self locking switches. They come in 2 states, normally open or closed so the orientation in the PCB is important.
-- Switch cap - [ali express](https://www.aliexpress.com/item/32891579029.html?spm=a2g0o.9042311.0.0.27424c4dYKlbQT)
+- 220nf X 2 - eBay
+- Switch - 6 pin X 4 - eBay Note that these are 7mm X 7mm self locking switches. They come in 2 states, normally open or closed so the orientation in the PCB is important.
+- Switch cap - ali express
 - IC
-- 4017 X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=4017+ic&_sacat=0&LH_TitleDesc=0&_odkw=4017&_osacat=0&_sop=15)
-- 555 X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=555+ic&_sacat=0&LH_TitleDesc=0&_odkw=4017+ic&_osacat=0&_sop=15)
+- 4017 X 2 - eBay
+- 555 X 2 - eBay
 - IC Socket
 - 16 pin X 2 - eBay
 - 8 pin X 2
 - LED
-- square or round 5mm X 81 - [eBay](https://www.aliexpress.com/item/10000205465099.html?spm=a2g0o.9042311.0.0.50914c4dL7rVSi) (this is for the square ones)
-- JST Connector Mini X 1 - [Ali Express](https://www.aliexpress.com/item/4001253349808.html?spm=a2g0o.9042311.0.0.7f4f4c4d5MviAV)
-- Resistor - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=resistor+assortment&_sacat=0&_sop=15)
+- square or round 5mm X 81 - eBay (this is for the square ones)
+- JST Connector Mini X 1 - Ali Express
+- Resistor - eBay
 - 3.3K X 1
 - 220R X 9
 - 10K X 11
-- Transistor - BC547 X 18 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=bc547&_sacat=0&LH_TitleDesc=0&_odkw=resistor+assortment&_osacat=0&_sop=15)
-- Potentiometer - Linear 9mm vertical 100K X 2 - [Ali Express](https://www.aliexpress.com/item/1005002139655581.html?spm=a2g0o.productlist.0.0.20e766a1V9uuDi&algo_pvid=21db71b3-5433-43c1-8913-058ef657dfe5&aem_p4p_detail=202202142050501282002106938600166341580&algo_exp_id=21db71b3-5433-43c1-8913-058ef657dfe5-14&pdp_ext_f=%7B%22sku_id%22%3A%2212000018872210791%22%7D&pdp_pi=-1%3B1.65%3B-1%3B269%40salePrice%3BAUD%3Bsearch-mainSearch)
+- Transistor - BC547 X 18 - eBay
+- Potentiometer - Linear 9mm vertical 100K X 2 - Ali Express
 Parts for Front Panel and Case
 
-- Opal Acrylic A5 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=a5+acrylic+opal+3mm&_sacat=0)
-- Clear, adhesive A4 label - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=clear+transparent+glossy+self+adhesive+sticker+paper&_sacat=0&LH_TitleDesc=0&_odkw=Clear+Transparent+Glossy+Self+Adhesive+Sticker+Paper+Label+Laser+Print&_osacat=0)
+- Opal Acrylic A5 - eBay
+- Clear, adhesive A4 label - eBay
 - Hardwood edging (for the case) 40mm x 8mm x 1M - any hardware store
 Powering the PCB.
 
 You can use a 9v battery but I like to re-use old mobile batteries.
 
 - Mobile battery - If you want to find them just visit your local e-waste or check in the top drawer for an old phone! You can always just buy a new one on eBay as well...
-- Power module (this will increase the voltage from 3.7v to 9v - [Ali Express](https://www.aliexpress.com/item/4000322402819.html?spm=a2g0o.9042311.0.0.27424c4dqABz91)
-- USB charging module (so you can charge the battery up) - [Ali Express](https://www.aliexpress.com/item/32930640893.html?spm=a2g0o.9042311.0.0.27424c4dscumHq)
+- Power module (this will increase the voltage from 3.7v to 9v - Ali Express
+- USB charging module (so you can charge the battery up) - Ali Express
 
-
-- [Parts List - 81 LED Chaser](pdfs/Parts List - 81 LED Chaser.pdf)
 
 ## Step 1: Printing the PCB
 
@@ -106,14 +104,12 @@ You can use a 9v battery but I like to re-use old mobile batteries.
 
 The board is actually 2 sided. On one side are all of the components like capacitor, resistors, IC's etc. On the other side is the potentiometers and switches.
 
-To have the board printed, save the gerber zip file in the [Google Drive](https://drive.google.com/drive/folders/1mJGPKbme5RYg0_qoCq5FkkLm-IpazQ78?usp=sharing) files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then [check this 'ible out](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/) which is a step by step guide on how to get a PCB printed.
+To have the board printed, save the gerber zip file in the Google Drive files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.
 
 If you would like to play around with the schematic and board in Eagle, well I have also provided these in my Google Drive. You can also find a PDF of the schematic in this step
 
 You might have noticed that the board looks a little different to mine. Well that's because I made a couple improvements - you're welcome!
 
-
-- [81 LED Chaser - Schematic](pdfs/81 LED Chaser - Schematic.pdf)
 
 ## Step 2: Adding the Components to the PCB - LED's
 
@@ -136,10 +132,10 @@ As the board is 2 sided, the component sequence is important to get right. The f
 STEPS:
 
 - Place 9 LED's in the first top row and add 1 in each of the bottom corners.
-- Carefully flip the PCB and ensure that the LED's are all still in place.  To do this I just put some pressure on the legs whilst flipping the board.
-- Make sure that the lags are all sitting up straight and start to add some solder to 1 leg of each LED.  Once done you can check to make sure that they are all sitting flat and straight.  if any are not straight, then just slightly twist it with some tweezers to straighten it up.
+- Carefully flip the PCB and ensure that the LED's are all still in place. To do this I just put some pressure on the legs whilst flipping the board.
+- Make sure that the lags are all sitting up straight and start to add some solder to 1 leg of each LED. Once done you can check to make sure that they are all sitting flat and straight. if any are not straight, then just slightly twist it with some tweezers to straighten it up.
 - Add solder to the other legs if everything is good
-- Do this another 9 times!  actually - it doesn't take very long once you get into the swing of things.
+- Do this another 9 times! actually - it doesn't take very long once you get into the swing of things.
 
 
 ## Step 3: Adding the Components to the PCB - Continued
@@ -191,7 +187,7 @@ STEPS:
 
 I decided to keep the front panel pretty simple - there is already enough going on with all those LED's. I designed the front panel to fit directly onto the PCB.
 
-I use [inkscape](https://inkscape.org/) to design my front panels. You can find the raw files in my Google drive in case you want to play around with them
+I use inkscape to design my front panels. You can find the raw files in my Google drive in case you want to play around with them
 
 STEPS:
 
@@ -202,8 +198,6 @@ STEPS:
 - Cut the acrylic to size if you haven't already
 - To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
 
-
-- [81 LED Chaser](pdfs/81 LED Chaser.pdf)
 
 ## Step 5: Drilling and Making the Cutouts in the Front Panel
 
@@ -325,12 +319,6 @@ STEPS:
 - Add a couple of potentiometer knobs to the pots
 - Turn on and enjoy!
 
-
-## Downloads
-
-- [Parts List - 81 LED Chaser](pdfs/Parts List - 81 LED Chaser.pdf)
-- [81 LED Chaser - Schematic](pdfs/81 LED Chaser - Schematic.pdf)
-- [81 LED Chaser](pdfs/81 LED Chaser.pdf)
 
 ---
 *64 images archived*

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,24 +127,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED Filament Lamp</span>
 </nav>
-<h1>LED Filament Lamp</h1><div class="source"><a href="https://www.instructables.com/LED-Filament-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>LED's come in all shapes and sizes these days and one of my favourites are LED filaments.</p>
-<p>You might have seen them in those knock off Edison light globes which use a 30mm LED filament instead of actual wire filaments.</p>
+<h1>LED Filament Lamp</h1><div class="source"><a href="https://www.instructables.com/LED-Filament-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>LED's come in all shapes and sizes these days and one of my favourites are LED filaments. You might have seen them in those knock off Edison light globes which use a 30mm LED filament instead of actual wire filaments.</p>
 <p>Inside the filament is a row of tiny LED's covered with a flexible material. They run off 3V's and are super bright.</p>
-<p>The lamp I built in this 'ible utilizes 120mm yellow LED's (you can get them in 300mm lengths and they come in a variety of colours) and runs off a 5V wall adapter.</p>
-<p>The main body of the lamp is made from brass tubing and copper pipe</p>
+<p>The lamp I built in this 'ible utilizes 120mm yellow LED's (you can get them in 300mm lengths and they come in a variety of colours) and runs off a 5V wall adapter. The main body of the lamp is made from brass tubing and copper pipe</p>
 <p>I incorporated a dimmer module too which also acts as an on/off switch.</p>
 <p>The light given off by the LED's is diffused using some plastic 'opal' coloured tubing and creates a beautiful ambient light.</p>
-<p>Hackaday have also done a review on the build which can be found <a href="https://hackaday.com/2023/02/18/led-filament-lamp-is-subtle-warm-and-elegant/">here</a></p>
+<p>Hackaday have also done a review on the build which can be found here</p>
 <p>Let's get started...</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"></div><p>You don't need many supplies for the build and most parts are available on-line.</p>
 <p>PARTS:</p>
 <ul>
-<li>Bass tubing - 5.56mm (7/32") SKU - KS8130 - <a href="https://www.amazon.com.au/PRECISION-METALS-32x12-BRS-Tube/dp/B002MUWQ7Q">Amazon Aust</a>, <a href="https://www.amazon.com/s?k=7%2F32+x+12+SQ+Brass+Tube&crid=237OWAPO2FA6&sprefix=7%2F32+x+12+sq+brass+tube%2Caps%2C555&ref=nb_sb_noss">Amazon US</a></li>
+<li>Bass tubing - 5.56mm (7/32") SKU - KS8130 - Amazon Aust, Amazon US</li>
 <li>White Polystyrene Tube - 4.8mm (3/16") - Available at most hobby shops. Just put into google - Evergreen 226 tube and you'll find it.</li>
-<li>LED Filaments (2). I used yellow but you could use any colour you want - <a href="https://www.aliexpress.com/item/1005004500671003.html?spm=a2g0o.order_list.order_list_main.54.19ff1802lqshmE">Ali Express</a></li>
-<li>Dimmer Module - <a href="https://www.aliexpress.com/item/32998136001.html?spm=a2g0o.order_list.order_list_main.74.19ff1802he76fr">Ali Express</a></li>
-<li>10R resistor - <a href="https://www.aliexpress.com/premium/10R-resistor.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20230211215749&origin=y&dida=y">Ali Express</a></li>
-<li>1uF capacitor - <a href="https://www.aliexpress.com/premium/1uf-capacitor.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20230211215816&origin=y&dida=y">Ali Express</a></li>
-<li>Thin copper wire - <a href="https://www.aliexpress.com/premium/thin-copper-wire.html?catId=0&initiative_id=SB_20230211215904&SearchText=thin+copper+wire&spm=a2g0o.productlist.1000002.0">Ali Express</a></li>
+<li>LED Filaments (2). I used yellow but you could use any colour you want - Ali Express</li>
+<li>Dimmer Module - Ali Express</li>
+<li>10R resistor - Ali Express</li>
+<li>1uF capacitor - Ali Express</li>
+<li>Thin copper wire - Ali Express</li>
 <li>50 Copper Tube (for the base) - your local hardware or plumbing store should have some.</li>
 <li>Small piece if wood. Whatever you have lying around really. I had some wood I found at the beach and used that.</li>
 </ul>
@@ -203,7 +166,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>First - cut off a length of tube about 200mm long. I like to use a tube cutter to do this as it give you a nice, straight cut</li>
 <li>Tape up one of the ends well using some good quality tape. I used fabric tape to do this.</li>
 <li>Place the brass tube in a vice to hold it vertical.</li>
-<li>Create a small funnel out of paper so you can pore the sand into the tube.  Tape it onto the tube so it doesn't move about.</li>
+<li>Create a small funnel out of paper so you can pore the sand into the tube. Tape it onto the tube so it doesn't move about.</li>
 <li>Fill up the tube with fine sand and every now and then give it a good tap on something hard to make sure the sand fills all of the tube.</li>
 <li>Tape up the other end once full.</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Bending the Brass Tube - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Bending the Brass Tube - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Bending the Brass Tube - Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Bending the Brass Tube - Part 2 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Bending the Brass Tube - Part 2 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Bending the Brass Tube - Part 2 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Bending the Brass Tube - Part 2 image 6" loading="lazy"><img src="images/step04_07.gif" alt="Step 3: Bending the Brass Tube - Part 2 image 7" loading="lazy"></div><p>STEPS:</p>
@@ -221,30 +184,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The LED's are 120mm in length. I decided to cut the opal tubing to 150mm in length which gave me 15mm on either side to secure it into the brass tubing</li>
 <li>If you use a tube cutter to cut the brass tube then you will need to de-burr the insides of the tube. You can use a file for this or a be-burring tool if you have one.</li>
 <li>Place the opal tubing inside the brass tube and ensure that the lamp goes together as it should</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Wiring Up the Lamp - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 9" loading="lazy"><img src="images/step06_10.gif" alt="Step 5: Wiring Up the Lamp - Part 1 image 10" loading="lazy"></div><p>I used thin copper wire to connect everything up which worked well.</p>
-<p>Copper wire is threaded through the plastic tubing as well for the ground connection.</p>
-<p>If the wire is too thick it might affect the light from the LED's.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Wiring Up the Lamp - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 5: Wiring Up the Lamp - Part 1 image 9" loading="lazy"><img src="images/step06_10.gif" alt="Step 5: Wiring Up the Lamp - Part 1 image 10" loading="lazy"></div><p>I used thin copper wire to connect everything up which worked well. Copper wire is threaded through the plastic tubing as well for the ground connection. If the wire is too thick it might affect the light from the LED's.</p>
 <p>Refer to the wiring diagram as it explains how to wire up the lamp better than I can!</p>
 <p>STEPS:</p>
 <ul>
 <li>You need to connect the ground on the LED's together. Solder some copper wire to one of the grounds on the LED and add some heat shrink to the end</li>
 <li>Thread the copper wire through one of the U bends and solder to ground on the other LED. You also need to attach a longer length of wire to the same ground so do this and then add some heat shrink. This longer piece will be connected to ground on the dimmer module.</li>
-<li>Before wiring up the positive end of the LED's, drill a hole into the bottom of the U bend.  This is where the neck of the lamp will be soldered and also where the ground and positive wires from the LED's will come out of.</li>
-<li>On one of the positive ends of the LED's, solder another piece of copper wire, thread through the copper tubing and connect to the  positive end of the other LED.  Also solder on another longer piece.  This will be connected to positive on the dimmer.</li>
-<li>Thread both the ground and positive wires through the hole in the bottom of the U bend.  It's hard to make any adjustments once this is done so make sure that the LED's are aligned with the opal tubing.</li>
+<li>Before wiring up the positive end of the LED's, drill a hole into the bottom of the U bend. This is where the neck of the lamp will be soldered and also where the ground and positive wires from the LED's will come out of.</li>
+<li>On one of the positive ends of the LED's, solder another piece of copper wire, thread through the copper tubing and connect to the positive end of the other LED. Also solder on another longer piece. This will be connected to positive on the dimmer.</li>
+<li>Thread both the ground and positive wires through the hole in the bottom of the U bend. It's hard to make any adjustments once this is done so make sure that the LED's are aligned with the opal tubing.</li>
 <li>Push the brass tube onto the opal tubing.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Attaching the Lamp Neck</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Attaching the Lamp Neck image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Attaching the Lamp Neck image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Attaching the Lamp Neck image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Attaching the Lamp Neck image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Attaching the Lamp Neck image 5" loading="lazy"><img src="images/step07_06.gif" alt="Step 6: Attaching the Lamp Neck image 6" loading="lazy"></div><p>I was concerned about soldering the neck of the lamp to the main body.</p>
-<p>My biggest worry was stripping the coating off the copper wire and it was heated up inside the brass tube.</p>
-<p>However, by carefully applying heat I managed to pull it off!</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Attaching the Lamp Neck</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Attaching the Lamp Neck image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Attaching the Lamp Neck image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Attaching the Lamp Neck image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Attaching the Lamp Neck image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Attaching the Lamp Neck image 5" loading="lazy"><img src="images/step07_06.gif" alt="Step 6: Attaching the Lamp Neck image 6" loading="lazy"></div><p>I was concerned about soldering the neck of the lamp to the main body. My biggest worry was stripping the coating off the copper wire and it was heated up inside the brass tube. However, by carefully applying heat I managed to pull it off!</p>
 <p>STEPS:</p>
 <ul>
 <li>To ensure the the neck fits correctly to the main body of the lamp, you need to make a round groove in the top of the brass tube. I used a small, round file to do this</li>
 <li>Next, thread the copper wire through the brass tube (neck) and place the lamp on a level surface. I used a couple heat resistant bricks and left a gap where I needed to solder.</li>
 <li>Add a little flux to the joint.</li>
 <li>Slowly and carefully start to apply heat around the area that needs to be soldered. Once the area is heated enough, add the solder to the joint.</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Base</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Base image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Base image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Base image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Base image 4" loading="lazy"><img src="images/step08_05.gif" alt="Step 7: Making the Base image 5" loading="lazy"><img src="images/step08_06.gif" alt="Step 7: Making the Base image 6" loading="lazy"><img src="images/step08_07.gif" alt="Step 7: Making the Base image 7" loading="lazy"><img src="images/step08_08.gif" alt="Step 7: Making the Base image 8" loading="lazy"><img src="images/step08_09.gif" alt="Step 7: Making the Base image 9" loading="lazy"></div><p>For the base I was going to use some wood but decided to use some 50mm copper tubing.</p>
-<p>It was a lot easier then having to hollow out the wood and it worked well with the overall ascetics.</p>
-<p>I did add a little bit of wood which is used as a surface to attach the neck of the lamp to.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Base</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Base image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Base image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Base image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Base image 4" loading="lazy"><img src="images/step08_05.gif" alt="Step 7: Making the Base image 5" loading="lazy"><img src="images/step08_06.gif" alt="Step 7: Making the Base image 6" loading="lazy"><img src="images/step08_07.gif" alt="Step 7: Making the Base image 7" loading="lazy"><img src="images/step08_08.gif" alt="Step 7: Making the Base image 8" loading="lazy"><img src="images/step08_09.gif" alt="Step 7: Making the Base image 9" loading="lazy"></div><p>For the base I was going to use some wood but decided to use some 50mm copper tubing. It was a lot easier then having to hollow out the wood and it worked well with the overall ascetics. I did add a little bit of wood which is used as a surface to attach the neck of the lamp to.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, cut a piece of 50mm copper tube to the desired height. Mine was about 150mm height.</li>
@@ -273,21 +230,5 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Lastly, add a small cable tie to the USB wire inside the copper tube. This will stop it from being pulled out.</li>
 </ul>
 <p>Congrats - you're done!</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

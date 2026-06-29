@@ -52,7 +52,7 @@ Below is a list of parts that I used. I have also put some links (where I could 
 
 PARTS:
 
-1. Old soda bottle. I used a Fanta bottle which is made from quite thick glass and is rippled (must be for grip!). [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=vintage+fanta+bottle&_sacat=0)
+1. Old soda bottle. I used a Fanta bottle which is made from quite thick glass and is rippled (must be for grip!). eBay
 
 2. Copper tube 65mm (body of the lamp) - You could use a 3" piece which is a similar size
 
@@ -62,11 +62,11 @@ PARTS:
 
 5. Piece of wood for the base. Just find a nice, solid piece of wood to use. Mine was from a fence post and is red wood
 
-6. G4 bulb socket - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=g4+socket&_sacat=0)
+6. G4 bulb socket - eBay
 
-7. G4 LED globe - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=g4+led&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=g4+socket). I used a 200 lumen globe
+7. G4 LED globe - eBay. I used a 200 lumen globe
 
-8. 9v DC power adapter. You could use 12v but I had a 9v one lying around which works fine - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=9v+power+adapter&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=g4+led)
+8. 9v DC power adapter. You could use 12v but I had a 9v one lying around which works fine - eBay
 
 9. Other parts. The rest of the parts are just ad-hoc bits and pieces I had in my parts bin
 

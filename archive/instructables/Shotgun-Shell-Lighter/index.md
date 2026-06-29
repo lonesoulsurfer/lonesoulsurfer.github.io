@@ -21,7 +21,7 @@ Make your own lighter from a shotgun shell.
 
 NOTE: I have done an updated version of this lighter which can be found below
 
-[https://www.instructables.com/Shotgun-Shell-Lighte...](https://www.instructables.com/Shotgun-Shell-Lighter-V2/)
+https://www.instructables.com/Shotgun-Shell-Lighte...
 
 I live close to a gun club and visit them every so often to grab some spent shotgun shells. I’ve made a few projects with them before (check them out in the below links).
 
@@ -52,25 +52,25 @@ Enjoy
 
 Parts:
 
-1. Empty Shotgun shell – [Etsy](https://www.etsy.com/au/search?q=shotgun%20shell) or your local gun club
+1. Empty Shotgun shell – Etsy or your local gun club
 
-2. Nutsert (M5, 13mm) – [eBay](https://www.ebay.com.au/itm/20Pcs-Flat-Head-Metric-Threaded-Blind-Rivet-Nut-Insert-Nutsert-Screw-Pop/122726405435?hash=item1c9310553b&var&_trkparms=ispr%3D1&enc=AQADAAADMFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVNGfuukpg0MLB2B05ezm0S0aNpul%2FKFfaL9QPqhM%2Bihbyl6zMa%2BkI0klu5aXWv%2BJPiMpw5Sn8IZPS%2FrgyI0qDO1AsTfMZ9u4FIa6u4tw8BToaFdHXG5MpWspRRZpoL7%2FbsveIqO%2Bfp8IAWoO3ZlPBsG1cUQpGi%2B2PoGTHTYJA7UavLsdw4QWxYv257qIAyRuvTsIgOAi0tB3mgG1Qn0Vfe%2BEn8VtIoxS1sOHD0VrGsvwZlqKw7CLNZGqo56En8qIPJY08ROu1mvCn3JqXLOxsZiXb4QIuGJDCh97%2BKIxn%2FXaZLOTprus%2BZbxb%2FznPgmIhbEyLRacNBweyvxvaM8J0vChm4Ag%2BZUjYmVSjfV0HXrAJ5NGxxPLKXpCxZ9S%2Bfmd2bdPeggZQNScRiLZjn%2BYIO1t078Mu2ogVAknA%2BHcwQ6RDg2w6XU1euFPmNbWwudo8o0v7oLGnG9mwP7Ws0CDtzmnw5ZYJ4v54krNTATSe7AQZ6aHjRbAc7XuFVNkwoszq2gRkwLLIvk%2FVtH5X8hDw5tk1Rkj4YDoEim9JC7wM%2B81%2FhKKElvF2BPy7B4aluIRJRis7f%2FxMEn%2BIbWuMXhtZVn6424RogL7lXYwfn3eJbvJivF0EOf8i3qHaUZc%2FwfLs%2Fe8XgjVC09rOehqyOBi4knugI9WCTJd6qffC0oBQGGS3W6qQ85l7fGPAafoevR6lFZgeBY78pgqg0I45ufbla2B5XSJcuv3PAorVucquwiFCXUnJqMrFyY8HEtE5dFs0FAXlIchGuKtkZs%2BegoP7u8LUXAl1SVZ3id0jbJgsukl4QGOl5ILdg0XPhi54V3d0IF73VvSmDu52aN3HYEbLPVL8IW6%2F1G8Pz80j2MocPxbd7MU1oXeGBMlagieEVV664ouccO9ZLr1ZHuYOy2eAsuLozzS05dQqkRkh2U7k6netxgca8Gm9majdx7rUSxSG%2FytNvGunu2kEeXiwWT%2Bj7cAb%2BHyCfFkDmDNUEtBi7qPw44K%2FPmJSdGERKx5ZcKwBOtfHoVJuZr9zmOCLl1drrg%3D%3D&checksum=122726405435d8143404fa0c4e91948dfd7ff4012bed&frcectupt=true)
+2. Nutsert (M5, 13mm) – eBay
 
-3. Button head bolt (M5) – [eBay](https://www.ebay.com.au/itm/M3-M4-M5-M6-Hex-Socket-Flanged-Button-Head-Allen-Bolts-Screws-A2-Stainless-Steel/232741628717?var=532257358982&hash=item36307b6b2d:m:mWeYSmaohZuR15QbRt-HdYA)
+3. Button head bolt (M5) – eBay
 
-4. Spark wheel fire starter – [eBay](https://www.ebay.com.au/itm/Hiking-Camping-Outdoor-Survival-Tool-Brass-Gear-Spark-Wheel-Fire-Starter-Lighter/202648927753?hash=item2f2ed13e09:g:thEAAOSwwmBcq2uh&frcectupt=true), [Aliexpress](https://www.aliexpress.com/item/32916639075.html?spm=a2g0o.productlist.0.0.14403239jDW5Lw&algo_pvid=ae935649-fb51-4d30-9aaa-21c610ea0f9f&algo_expid=ae935649-fb51-4d30-9aaa-21c610ea0f9f-0&btsid=829ec9dd-905a-42ff-83ac-ba589a7b9f3a&ws_ab_test=searchweb0_0%2Csearchweb201602_5%2Csearchweb201603_55)
+4. Spark wheel fire starter – eBay, Aliexpress
 
-5. Shrader Valve [eBay](https://www.ebay.com.au/itm/2X-1-8-BSP-BSPT-SCHRADER-TANK-VALVE-25MM-WHEEL-AIR-COMPRESSOR-500-PSI-35-BAR/202038532530?epid=882868009&hash=item2f0a6f59b2:g:c8AAAOSwIi5dwVMS) [These](https://www.ebay.com.au/itm/10pcs-TR161-Metal-Car-Truck-Bolt-In-Tire-Tyre-Valve-Short-Stems-with-Dust-Cap/283005202064?epid=14028337867&hash=item41e46cae90:g:NYsAAOSwfCpbH3KK) valves also work really well.
+5. Shrader Valve eBay These valves also work really well.
 
-6. Shrader cap X 2– [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Shrader+cap+&_sacat=0)
+6. Shrader cap X 2– eBay
 
-7. Cotton rope (Hash cord) – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR11.TRC1.A0.H0.Xsash+cord.TRS0&_nkw=sash+cord&_sacat=0)
+7. Cotton rope (Hash cord) – eBay
 
 8. Cotton wool
 
-9. Star Washer - [eBay](https://www.ebay.com.au/itm/External-Tooth-Lock-Washer-M8-8mm-Metric-Star-Steel-Zinc-Plated/192144087500?hash=item2cbcae19cc&var&_trkparms=ispr%3D1&enc=AQADAAAC8FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduV4ZTXe6kjYvMdZCqSEXCACyo8QY%2F2LsdT2fYXCJkhzpb5FcDNTV0YqUmahAAq4RIQSLCmK0TQahA7TeWCUVv2Ynjxj6ssGeTDmvZW0aditLYJr0E9%2FEaCp4%2BFHDff8pluKdszniuN%2Bd8YOB6bXm9bgHad46ANKp2eiqzSlnPb82f06guWLlJIjDWL1gvZV1UFLuokXPlnnvMjNJ9CMwEX38%2B1lAhj4q%2BbfFEgJEdlGQAQq0xkeIoF16aBwREBufd1IcEJW5vkPqavdr4zP7HlOy66Qlf2WFNBtihAr7VdLx1RnzUo6ddZvL%2F%2B8y6C2imQOFmJtA%2BgxbdIZiS3hiRdmVESCXnB2EJ0thcaHluw4NCg%2Fn5z%2BJNiH01Ds4Q9VuggJihlzRjzCEjKxfUDJFpFH7i669w%2BOjtNo9en3sm6nvncbyORpraYxBmwwAsi7r3iyRyFyQVxSYC60Pg3zUl66E4uuMa87QZj6XDqG75vSa7rlZUpV0Htj0OUEOMQ3tSljSpXW8oVuYHZEk%2BNm77bHFn1zM60DM6BM6pipB5smFPRoVWtVJNBExsIxHbrMBxL%2B8T6A15VZ5peu4O8PbOe6doVbEdpYtelOLGGAC%2BRy7CexGmR8imzFSoIgoG1eRU7TZdETOOGMmMrTPziyqZ%2Bes6iTcSe2bC3ZIw9SHUJx2EOkSdY4pzmXJVdkYpdylwfA%2BwcTyLxWUpDZkucLecKkwBgYe%2BPSbkiNSk8Skcq1UuciHahQCyIxbvL84MtXhmfhj%2BlxGEMlS1FDqFAlp%2B9gAb22wsCHVjK5tjMqPgLLQn4TovyIeR%2FWPOKAcGjJYrwqlCNFgsnB2MoElCwEVqR9s%2FFhvI5nT2bcawucItJwfjo04JT5TnFWAcOEQF6pESBj%2F9QM3YWvCj4pDM1eF5urVQlbM9x8tPs0Pxztr1QsrJgriJUtCZVnQpZnN1bcmqp&checksum=192144087500bacab1ec2fb74050b67b5f230f71c736&frcectupt=true). Just go to your local hardware store for these - it's cheaper
+9. Star Washer - eBay. Just go to your local hardware store for these - it's cheaper
 
-10. Rubber washer - [eBay](https://www.ebay.com.au/itm/Form-A-Flat-Black-Thick-Neoprene-Rubber-Washers-M3-M4-M5-M6-M8-M10-M12-NT/202538459915?hash=item2f283ba30b:m:mAAd2tXryQ0T9x4A5Wga_Yw&frcectupt=true) You can also get these at the hardware store
+10. Rubber washer - eBay You can also get these at the hardware store
 
 Tools
 

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,26 +127,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Micro Junkbot Display</span>
 </nav>
-<h1>Micro Junkbot Display</h1><div class="source"><a href="https://www.instructables.com/Micro-Junkbot-Display/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>If you take a look inside a vintage radio, VCR or any other used and unwanted electronics, chances are you’ll find some really interesting parts inside.</p>
-<p>If you are like me, then you’ve probably pulled a whole bunch of these out and then wondered what the hell I am going to do with them now!</p>
+<h1>Micro Junkbot Display</h1><div class="source"><a href="https://www.instructables.com/Micro-Junkbot-Display/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>If you take a look inside a vintage radio, VCR or any other used and unwanted electronics, chances are you’ll find some really interesting parts inside. If you are like me, then you’ve probably pulled a whole bunch of these out and then wondered what the hell I am going to do with them now!</p>
 <p>One of the things that I like most doing with old parts is to make Junkbots out of them. I have done some ‘ibles in the past on Junkbots and they can be found below.</p>
-<p>As I have written before; becoming a Junkbot maker (a Junkbotter if you will) doesn’t take much skill or technical knowledge.</p>
-<p>What you will need however is a good imagination and a collection of junk parts.</p>
-<p>In the next step are a few photos of larger Junkbots that I have made.</p>
-<p>This time however I wanted to make some miniature junkbots.</p>
-<p>They are a lot easier to make then larger ones and you usually only need a few components to make them.</p>
-<p>Most of the components are stuck together with super glue so make sure you get a good quality one.</p>
-<p>I also soldered some parts together as well.</p>
-<p>To display them I decided to use small bell jar displays.</p>
-<p>This has a two fold benefit, one it keeps them safe from breaking (unless you drop the bell jar display!) and two, it helps to display them in a really cool way.</p>
+<p>As I have written before; becoming a Junkbot maker (a Junkbotter if you will) doesn’t take much skill or technical knowledge. What you will need however is a good imagination and a collection of junk parts.</p>
+<p>In the next step are a few photos of larger Junkbots that I have made. This time however I wanted to make some miniature junkbots. They are a lot easier to make then larger ones and you usually only need a few components to make them. Most of the components are stuck together with super glue so make sure you get a good quality one. I also soldered some parts together as well.</p>
+<p>To display them I decided to use small bell jar displays. This has a two fold benefit, one it keeps them safe from breaking (unless you drop the bell jar display!) and two, it helps to display them in a really cool way.</p>
 <p>Instructables on Junkbots</p>
-<p><a href="https://www.instructables.com/id/The-Art-of-Making-Junkbots/">The Art of making Junkbots</a></p>
-<p><a href="https://www.instructables.com/id/Make-a-Junkbot/">Making a Junkbot</a></p>
-<p><a href="https://www.instructables.com/id/Dancing-Magnetic-Robots/">Dancing, Magnetic Robots</a></p>
-<p><a href="https://www.instructables.com/id/Junkbot-in-Resin/">Junkbot in Resin</a></p><h2><span class="step-num">STEP 1</span>Step 1: Junkbots I've Made</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Junkbots I've Made image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Junkbots I've Made image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Junkbots I've Made image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Junkbots I've Made image 4" loading="lazy"></div><p>Here a few Junkbots that I've made over the last couple of years.</p>
-<p>These ones are a lot larger than the micro bots in this 'ible and a little more complex but if you want to make your own - check out <a href="https://www.instructables.com/id/The-Art-of-Making-Junkbots/">this link</a></p><h2><span class="step-num">STEP 2</span>Step 2: Where to Find Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Where to Find Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Where to Find Parts image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Where to Find Parts image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Where to Find Parts image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Where to Find Parts image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Where to Find Parts image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Where to Find Parts image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Where to Find Parts image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Where to Find Parts image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Where to Find Parts image 10" loading="lazy"></div><p>The great thing about making Junkbots is you can usevirtually anything you have lying about.</p>
-<p>You might however have to go looking for parts so I have added a list of places below to start your hunt.</p>
-<p>If you can, try and get the parts for little or no money – after all – you are just going to pull it apart to get to the goodies inside</p>
+<p>The Art of making Junkbots</p>
+<p>Making a Junkbot</p>
+<p>Dancing, Magnetic Robots</p>
+<p>Junkbot in Resin</p><h2><span class="step-num">STEP 1</span>Step 1: Junkbots I've Made</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Junkbots I've Made image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Junkbots I've Made image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Junkbots I've Made image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Junkbots I've Made image 4" loading="lazy"></div><p>Here a few Junkbots that I've made over the last couple of years. These ones are a lot larger than the micro bots in this 'ible and a little more complex but if you want to make your own - check out this link</p><h2><span class="step-num">STEP 2</span>Step 2: Where to Find Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Where to Find Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Where to Find Parts image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Where to Find Parts image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Where to Find Parts image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Where to Find Parts image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Where to Find Parts image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Where to Find Parts image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Where to Find Parts image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Where to Find Parts image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Where to Find Parts image 10" loading="lazy"></div><p>The great thing about making Junkbots is you can usevirtually anything you have lying about. You might however have to go looking for parts so I have added a list of places below to start your hunt. If you can, try and get the parts for little or no money – after all – you are just going to pull it apart to get to the goodies inside</p>
 <p>Op-shops (thrift stores)</p>
 <ul>
 <li>There is always plenty of interesting and unique parts available from your local op-shop. Check out the electrical section if they have one or even the bric-a-brac section. I have found some fantastic copper bowls that I have used to make heads and bodies out of.</li>
@@ -197,85 +152,34 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Friends and Family’s home</p>
 <ul>
 <li>Most of us have some vintage electrical gizmo hidden away in some cupboard. If not, then I bet someone you know has a piece of useless technology just gathering dust. Ask if you can have a scout around their garage or attic and I bet that you'll find something unique. They will probably be happy to give it you as most people don't even realize they have it or have no use for it any more.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Pulling Things Apart</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Things Apart image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Things Apart image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Things Apart image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Things Apart image 4" loading="lazy"><img src="images/step03_05.gif" alt="Step 3: Pulling Things Apart image 5" loading="lazy"><img src="images/step03_06.gif" alt="Step 3: Pulling Things Apart image 6" loading="lazy"></div><p>Once you have gathered a few old parts, it's time to start to pull them apart.</p>
-<p>Remember, there are many parts that could be used, so make sure you really have a good look at each bit and make the decision to either keep or discard.</p>
-<p>Many a times have I pulled something apart and discarded parts which I wished I had kept.</p>
-<p>It's better to be safe than sorry and keep too many parts than throw away.</p>
-<p>If your garage starts to look like you’re a hoarder though, then it's probably time to clear out some of the parts you haven't used.</p>
-<p>As you start to sort your parts you’ll notice that some resemble heads, while others could be torsos, legs etc.</p>
-<p>Take note of these as sometimes all it takes is a little inspiration from a part that looks like a robots head and everything else just falls into line.</p>
-<p>You will also need to stick the parts together.</p>
-<p>On these micro junkbots the best thing to use is super glue.</p>
-<p>However I also used a mini blow torch and solder to attach some of the parts as well.</p>
-<p>As these micro junkbots are going to be displayed in bell jars they will be protected well.</p>
-<p><a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Clear+Acrylic+Plastic+Display+Box+Case+Stand+Dustproof+Tray+Protection+Cube+Show&_sacat=0">The bell jars can be purchased on eBay</a></p><h2><span class="step-num">STEP 4</span>Step 4: Making a Micro Junkbot - Head, Body and Arms</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 10" loading="lazy"></div><p>So now you have a bunch of parts, it’s time to make aJunkbot. As everyone’s parts bin will be different to everyone else’s, I’ll go through step by step how I put one of mine together.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Pulling Things Apart</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Things Apart image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Things Apart image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Things Apart image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Things Apart image 4" loading="lazy"><img src="images/step03_05.gif" alt="Step 3: Pulling Things Apart image 5" loading="lazy"><img src="images/step03_06.gif" alt="Step 3: Pulling Things Apart image 6" loading="lazy"></div><p>Once you have gathered a few old parts, it's time to start to pull them apart. Remember, there are many parts that could be used, so make sure you really have a good look at each bit and make the decision to either keep or discard. Many a times have I pulled something apart and discarded parts which I wished I had kept. It's better to be safe than sorry and keep too many parts than throw away. If your garage starts to look like you’re a hoarder though, then it's probably time to clear out some of the parts you haven't used.</p>
+<p>As you start to sort your parts you’ll notice that some resemble heads, while others could be torsos, legs etc. Take note of these as sometimes all it takes is a little inspiration from a part that looks like a robots head and everything else just falls into line.</p>
+<p>You will also need to stick the parts together. On these micro junkbots the best thing to use is super glue. However I also used a mini blow torch and solder to attach some of the parts as well. As these micro junkbots are going to be displayed in bell jars they will be protected well.</p>
+<p>The bell jars can be purchased on eBay</p><h2><span class="step-num">STEP 4</span>Step 4: Making a Micro Junkbot - Head, Body and Arms</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making a Micro Junkbot - Head, Body and Arms image 10" loading="lazy"></div><p>So now you have a bunch of parts, it’s time to make aJunkbot. As everyone’s parts bin will be different to everyone else’s, I’ll go through step by step how I put one of mine together.</p>
 <p>Steps</p>
 <ol>
 <li>When I put this Junkbot together I first found the head which was actually a tape head and came from an old tape deck. The tape head even has what looks like 2 eyes at the front – perfect.</li>
-</ol>
-<ol>
 <li>Next I had to work out the arms. I started to pull apart a relay that I had and inside is a metal bracket which I thought would be perfect for arms</li>
-</ol>
-<ol>
 <li>Lastly, for a body, I used a potentiometer from an old radio. If you do crack open a radio, you usually see these small, metal cases which have variable resistors (I think!) Inside of them. Just de-solder them from the circuit board, take out the insides and you have a perfect, little robot body</li>
-</ol>
-<ol>
 <li>You can just add super glue to stick everything together</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Legs and the Rest</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Legs and the Rest image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Legs and the Rest image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Legs and the Rest image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Legs and the Rest image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Legs and the Rest image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Legs and the Rest image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Legs and the Rest image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Legs and the Rest image 8" loading="lazy"><img src="images/step05_09.jpg" alt="Step 5: Legs and the Rest image 9" loading="lazy"><img src="images/step05_10.jpg" alt="Step 5: Legs and the Rest image 10" loading="lazy"><img src="images/step05_11.jpg" alt="Step 5: Legs and the Rest image 11" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To be able to attach the legs to the body I used another tape head (the tape player I pulled apart had one for erasing as well) for the torso. This fitted nicely inside the body section. I super glued this into place.</li>
-</ol>
-<ol>
 <li>For legs I decided to use capacitors. These make great legs – all you need to do is to remove the outside plastic wrapping.</li>
-</ol>
-<ol>
 <li>Next I cut one of the wires from the capacitor and soldered it to the solder points on the tape head</li>
-</ol>
-<ol>
 <li>To finish the Junkbot off, I added a couple of antenna which came from a relay and some air tanks to his back made from capacitors. Again I just super glued these on.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Make More Micro Junkbots</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Make More Micro Junkbots image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Make More Micro Junkbots image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Make More Micro Junkbots image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Make More Micro Junkbots image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Make More Micro Junkbots image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Make More Micro Junkbots image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Make More Micro Junkbots image 7" loading="lazy"></div><p>So now you have made one – it’s time to make a bunch more. I decided on making 6 in total but I’m sure that I will continue to make more as inspiration dictates.</p>
-<p>The images below show the 6 that I made.</p>
-<p>You might notice some themes running through them like the bodies are made from the same part, and I have used capacitors for legs for a few etc.</p>
-<p>This is really down to what parts I had available when I made these micro Junkbots.</p>
-<p>You might have different parts available and come up with Junkbots that are made from totally different parts.</p><h2><span class="step-num">STEP 7</span>Step 7: Display</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Display image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Display image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Display image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Display image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Display image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Display image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Display image 7" loading="lazy"></div><p>Now that you have hopefully made a few of your own. It’s time to work out how best to display them.</p>
+<p>The images below show the 6 that I made. You might notice some themes running through them like the bodies are made from the same part, and I have used capacitors for legs for a few etc. This is really down to what parts I had available when I made these micro Junkbots. You might have different parts available and come up with Junkbots that are made from totally different parts.</p><h2><span class="step-num">STEP 7</span>Step 7: Display</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Display image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Display image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Display image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Display image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Display image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Display image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Display image 7" loading="lazy"></div><p>Now that you have hopefully made a few of your own. It’s time to work out how best to display them.</p>
 <p>Steps:</p>
 <ol>
 <li>To help the junkbots stand, I attached them to bottle lids! These look like little display stands of their own and if you wanted to you could just leave them as is.</li>
-</ol>
-<ol>
 <li>Add a little super glue to the bottom of the feet of the junkbot</li>
-</ol>
-<ol>
 <li>Glue down to the bottle lid and leave to dry</li>
-</ol>
-<ol>
 <li>Next I decided to display them in small bell jars. The ones I used are plastic and I might look to get glass ones in the future</li>
-</ol>
-<ol>
 <li>Add a small amount of glue to the inside of the bottle lid</li>
-</ol>
-<ol>
 <li>Glue down onto the bell jar display platform</li>
-</ol>
-<ol>
 <li>Add the bell jar</li>
 </ol>
 <p>Done!</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

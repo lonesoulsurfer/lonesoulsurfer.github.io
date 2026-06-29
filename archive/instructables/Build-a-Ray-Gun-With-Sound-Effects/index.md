@@ -29,7 +29,7 @@ I've made 2 of these so far using timing lights and it makes the job pretty easy
 
 I’ve built a few ray guns now and usually there is a lot of modification to fit everything together. In this build the only mod I had to do was to remove a couple screw supports in the handle and that’s it! Everything else just seemed to fit pretty much perfectly which is a first for me. There is also plenty of room inside the timing light so adding the electronics was a breeze.
 
-The other great thing was, the timing light already looked like it was from the future. All I had to do was to add a nose cone and barrel as well as a few [greebles](https://en.wikipedia.org/wiki/Greeble) and it was pretty much done. If you wanted a slick, minimalist look you could just use the timing light as is.
+The other great thing was, the timing light already looked like it was from the future. All I had to do was to add a nose cone and barrel as well as a few greebles and it was pretty much done. If you wanted a slick, minimalist look you could just use the timing light as is.
 
 The sound effects board that I made has a whole range of different ray gun sounds you can use and you can also add an LED to extra zappy effects.
 
@@ -58,17 +58,17 @@ The main parts you'll need is the timing light and the sound FX circuit, all the
 
 PARTS:
 
-1. Vintage timing light - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=vintage+timing+light&_sacat=0) You can probably also find
+1. Vintage timing light - eBay You can probably also find
 
-2. LED's - I used LED filaments - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=led+filament+10&_sacat=0&LH_TitleDesc=0&_odkw=vintage+timing+light&_osacat=0)
+2. LED's - I used LED filaments - eBay
 
-3. Nose Cone - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=ron+Circular+Nozzle+Diameter+9mm+&_sacat=0&LH_TitleDesc=0&_odkw=potentiometer+knobs&_osacat=0)
+3. Nose Cone - eBay
 
 4. There are a few other parts that I used which were pulled from other parts. For example, I used the tops of 2 electric razors for light diffusers. The barrel of the gun was some type of shaft that I pulled out of something. I'll go through all of this in step 5.
 
 5. Various small screws, nuts and bolts
 
-6. Potentiometer knobs - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=potentiometer+knobs&_sacat=0&LH_TitleDesc=0&_odkw=led+filament+10&_osacat=0)
+6. Potentiometer knobs - eBay
 
 Power Supply
 
@@ -76,9 +76,9 @@ You could just use a 9v battery if you wanted to. However, I didn't want to have
 
 1. Li-Po battery. I like to use old mobile phone batteries. You can usually get them for free as well from e-waste centres or those mobile phone bins
 
-2. Buck booster - you need to increase the voltage from 4.3v to 9v - I used [this one](https://www.aliexpress.com/item/4000322402819.html?spm=a2g0s.9042311.0.0.27424c4dB7yOrw) from Ali Express
+2. Buck booster - you need to increase the voltage from 4.3v to 9v - I used this one from Ali Express
 
-3. Micro USB charger module - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=micro+usb+charger+module&_sacat=0&LH_TitleDesc=0&_odkw=micro+usb+charger&_osacat=0&_sop=15)
+3. Micro USB charger module - eBay
 
 
 ## Step 1: The PCB & Getting It Printed
@@ -95,9 +95,9 @@ I designed the PCB to be as small as possible and to also have the potentiometer
 
 I have created a folder in my Google drive which can be found in the below link that has the schematic, PCB and Gerber files
 
-[Google Drive Files](https://drive.google.com/drive/folders/1TynMveqtogDEQklaGbANMo-2KdEFsj8P?usp=sharing)
+Google Drive Files
 
-If you want to get your own board printed, then just save the gerber zip file in the Google Drive Files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then [check this 'ible out](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/) which is a step by step guide on how to get a PCB printed.
+If you want to get your own board printed, then just save the gerber zip file in the Google Drive Files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.
 
 I've attached is a list of the components and you can find an excel version in the Google drive link too. I've also listed them below and added links to where you can buy them - you're welcome!
 
@@ -132,8 +132,6 @@ PCB Parts List
 - JST Connector (Optional) Mini X 4
 - Speaker 1W 8 Ohm
 
-
-- [Ray Gun Sound FX - Parts List](pdfs/Ray Gun Sound FX - Parts List.pdf)
 
 ## Step 2: Adding Components to the PCB
 
@@ -226,7 +224,7 @@ STEPS:
 
 ![Step 5: Roughing Out the Design - Adding Some Greebles image 4](images/step06_04.jpg)
 
-I decided to go minimalist with the [greebles](https://en.wikipedia.org/wiki/Greeble) on this build. The more things I thought about adding, the more the ray gun was looking odd, like the parts didn't belong. I decided to keep with the silver theme across the parts added as well.
+I decided to go minimalist with the greebles on this build. The more things I thought about adding, the more the ray gun was looking odd, like the parts didn't belong. I decided to keep with the silver theme across the parts added as well.
 
 The parts used in this step were from a couple of electric razors and also a large potentiometer. The blade sections from the razor I used as as diffusers for LED's that were added as well.
 
@@ -388,10 +386,10 @@ I was pretty lucky when it came to connecting a lot of the parts to the timing l
 
 STEPS:
 
-- Inside the timing light there was a large lens which was held in place via a couple of grooves.  I was able to utilize these to secure the nose cone into place
+- Inside the timing light there was a large lens which was held in place via a couple of grooves. I was able to utilize these to secure the nose cone into place
 - To ensure it wouldn't move around, I added a couple of large washers and used these as spacers to clamp the nose cone into place.
 - You can see in the images that I cut one in half which helped secure the nose cone better
-- and that's all I had to do to secure the nose cone into place!  Simple.
+- and that's all I had to do to secure the nose cone into place! Simple.
 
 
 ## Step 12: Adding a Speaker, Testing and Closing Up the Ray Gun
@@ -431,9 +429,9 @@ For the handgrips I used some sticky sided rubber grips for steps.
 
 STEPS:
 
-- First, place the rubber grip, white side up and trace around the handle of the gun.  This will give you a rough template for the handle
-- Next, cut out the rubber grip and place it onto the handle.  If you need to trim then further, mark the area's and trim until they fit onto the handle
-- Peal off the back paper from the rubber grip and stick into place.  Push down hard on the rubber so it is stuck into place
+- First, place the rubber grip, white side up and trace around the handle of the gun. This will give you a rough template for the handle
+- Next, cut out the rubber grip and place it onto the handle. If you need to trim then further, mark the area's and trim until they fit onto the handle
+- Peal off the back paper from the rubber grip and stick into place. Push down hard on the rubber so it is stuck into place
 
 
 ## Step 14: Making a Display Stand
@@ -450,13 +448,9 @@ STEPS:
 
 - First I used a piece of wood as a stand and rounded off the sides with a router
 - I then placed the gun on the wood to work out where best to position it
-- To enable to gun to mount I added a bolt into the bottom of the wood which stick out the top.  The hole in the handle then can be used to mount the ray gun via the bolt in the wood.
-- If it is a bit wobbly, you might need to add a support for the front of the ray gun such as a piece of aluminum tube.    The tube can be secured to the base and cut so the 'barrel' of the ray gun sits on it.
+- To enable to gun to mount I added a bolt into the bottom of the wood which stick out the top. The hole in the handle then can be used to mount the ray gun via the bolt in the wood.
+- If it is a bit wobbly, you might need to add a support for the front of the ray gun such as a piece of aluminum tube. The tube can be secured to the base and cut so the 'barrel' of the ray gun sits on it.
 
-
-## Downloads
-
-- [Ray Gun Sound FX - Parts List](pdfs/Ray Gun Sound FX - Parts List.pdf)
 
 ---
 *89 images archived*

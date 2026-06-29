@@ -17,17 +17,17 @@ I've been building (and trying to perfect) the headphone amp for some time now. 
 
 On my older builds I have always used prototype board to build the circuit. Nothing wrong with doing it this way mind you but there is more potential to make mistakes and it can be tricky trying to add all of the parts in the smallest space possible using prototype board.
 
-I thought it was time to throw myself in the deep end and start to design my own PCB's! The Instructable crew have put together some training on how to do this which can be [found here](https://www.instructables.com/class/Circuit-Board-Design-Class/). I found the Sparkfun tutorial very helpful and primarily used this one to learn how to create my own PCB's. It's a great resource and easy to follow the step by step instructions.
+I thought it was time to throw myself in the deep end and start to design my own PCB's! The Instructable crew have put together some training on how to do this which can be found here. I found the Sparkfun tutorial very helpful and primarily used this one to learn how to create my own PCB's. It's a great resource and easy to follow the step by step instructions.
 
 The software to design the PCB's is eagle and is free to download. Just follow each of the tutorials below from Sparkfun and in no time you'll be designing your own as well.
 
-However, If you just want to use my gerber files (the files you upload to the PCB printing company to make the board), then I've supplied them in this 'ible. All you need to do is to load the zip file up to a manufacturer such as [JLCPCB](https://jlcpcb.com/) and they'll print it up for you.
+However, If you just want to use my gerber files (the files you upload to the PCB printing company to make the board), then I've supplied them in this 'ible. All you need to do is to load the zip file up to a manufacturer such as JLCPCB and they'll print it up for you.
 
 Sparkfun Tutorials
 
-1st one to do : [Using EAGLE: Schematic](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all)
+1st one to do : Using EAGLE: Schematic
 
-2nd one to do: [Using EAGLE: Board Layout](https://learn.sparkfun.com/tutorials/using-eagle-board-layout)
+2nd one to do: Using EAGLE: Board Layout
 
 You might be asking yourself right about now, what the hell is a headphone amp and why do I need one! Your phone doesn’t really have the power to drive a pair of headphones. You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range. When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.
 
@@ -42,43 +42,43 @@ So let's get cracking.
 
 Circuit
 
-1. PCB. You can find the gerber files [here](https://drive.google.com/drive/folders/1khjtbpl3LDGxoIbwnCDU4SXZjNsY8nSS?usp=sharing). Instructables don't allow you to add zip files so I had to link it to my Google drive
+1. PCB. You can find the gerber files here. Instructables don't allow you to add zip files so I had to link it to my Google drive
 
-2. 220 uF capacitors X 3 - [eBay](https://www.ebay.com.au/itm/10V-50V-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitors-105C-1uF-3300uF/264388201105?ssPageName=STRK%3AMEBIDX%3AIT&var=564005352631&_trksid=p2060353.m2749.l2649)
+2. 220 uF capacitors X 3 - eBay
 
-3. 4.7uF Capacitors X 3 - [eBay](https://www.ebay.com.au/itm/50PCS-50V-4-7uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-5X11mm/264397802400?hash=item3d8f564ba0:g:tuwAAOSwtKRdHsHs)
+3. 4.7uF Capacitors X 3 - eBay
 
-4. 22pf Capacitor X 2 - [eBay](https://www.ebay.com.au/itm/20Pcs-Pack-50V-10pF-10uF-Multilayer-Ceramic-Capacitors-Assorted-Kit-Wholesale-5/401563553242?hash=item5d7f0d8dda:g:qd8AAOSwLmlbPulT)
+4. 22pf Capacitor X 2 - eBay
 
-5. 3.5mm Headphone Jack Connector X 2 - [eBay](https://www.ebay.com.au/itm/10pcs-3-5mm-Headphone-Jack-Connector-Female-Stereo-Audio-Socket-5-Pin-PCB-Mount/153301421302?epid=8016332340&hash=item23b17a0cf6:g:vLUAAOSwAFFcEcY3)
+5. 3.5mm Headphone Jack Connector X 2 - eBay
 
-6. 5532 IC - [eBay](https://www.ebay.com.au/itm/10PCS-NE5532P-NE5532-DIP-8-Dual-Low-Noise-Op-Amp-TI-IC-NEW/232812686621?hash=item3634b7ad1d:g:9YoAAOSwa69bKgik:rk:1:pf:1&frcectupt=true)
+6. 5532 IC - eBay
 
-7. IC Dip 8 pin dip socket - [eBay](https://www.ebay.com.au/itm/20-50-100PCS-8pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe-NEW/302772458949?hash=item467ea515c5:m:mU03b60t-BPlVH-Taq7boXA:rk:8:pf:0)
+7. IC Dip 8 pin dip socket - eBay
 
-8. 18K Resistor X 2 - [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0)
+8. 18K Resistor X 2 - eBay
 
-9. 68K Resistor X 4 - [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0)
+9. 68K Resistor X 4 - eBay
 
-10. 470K Resistor - [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0)
+10. 470K Resistor - eBay
 
-11. 20K Duel Potentiometer - [eBay](https://www.ebay.com.au/itm/2-Pcs-20K-B20K-Dual-Linear-RK097G-Sealed-Potentiometer-Pot-15mm-Shaft-6pins/162989019220?hash=item25f2e71054:g:CFAAAOSwroZayvhV)
+11. 20K Duel Potentiometer - eBay
 
-12. Knob - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR7.TRC2.A0.H0.Xpotentiometer+knob.TRS0&_nkw=potentiometer+knob&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=volume+knob)
+12. Knob - eBay
 
-12. 5mm LED - [eBay](https://www.ebay.com.au/itm/100PCS-3MM-5MM-ASSORTED-COLOR-2-PIN-DIFFUSED-LED-LIGHT-EMITTING-DIODES-PACK-6C4/143275338014?var=442194138299&hash=item215be0291e:g:VRAAAOSweldc8JH8&frcectupt=true)
+12. 5mm LED - eBay
 
-13. SPDT Switch - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2322090.m570.l1313.TR12.TRC2.A0.H0.Xspdt+switch.TRS0&_nkw=spdt+switch&_sacat=0)
+13. SPDT Switch - eBay
 
 Power
 
 You can use a 9V battery if you want to. I wanted to be able to re-charge the amp so I used the following
 
-1. Voltage regulator - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns&frcectupt=true)
+1. Voltage regulator - eBay
 
-2. Mobile Battery - I get most of mine from phone recycle bins but you can also buy them on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR11.TRC1.A0.H0.Xsamsung+mobile+battery.TRS0&_nkw=samsung+mobile+battery&_sacat=0)
+2. Mobile Battery - I get most of mine from phone recycle bins but you can also buy them on eBay
 
-Check out [this Instructable](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/) on how to use these
+Check out this Instructable on how to use these
 
 Other Parts
 
@@ -95,18 +95,16 @@ Other Parts
 
 In the link below you can find the schematic, board and gerber files. If you already use eagle then you can save the schematic and the board and add them to eagle to play around with.
 
-If you want to just get the board made then save the Headphone Amp Zip file and you can then just send it to someone like [JLCPCB](https://jlcpcb.com/) (not affiliated) who will print it for you. Hit the "quote now" button on the website and then just upload the gerber files. easy.
+If you want to just get the board made then save the Headphone Amp Zip file and you can then just send it to someone like JLCPCB (not affiliated) who will print it for you. Hit the "quote now" button on the website and then just upload the gerber files. easy.
 
 FYI - I'm not affiliated with JLCPCB in any way - just find them easy to use.
 
-[Link to Gerber files, eagle schematic and PCB - Version 1](https://drive.google.com/drive/folders/1JADVR2uCMUSsN8Ugm_yViibeqSS7GWDv?usp=sharing)
+Link to Gerber files, eagle schematic and PCB - Version 1
 
-[Link to Gerber files, eagle schematic and PCB - Version 2](https://drive.google.com/drive/folders/1PK22g43kLWdS6ySFPT6xD8JQK1qT_ESt?usp=sharing)
+Link to Gerber files, eagle schematic and PCB - Version 2
 
 NOTE: I revisited this PCB and made a smaller. The files can be found in version 2 link
 
-
-- [Headphone Amp 1](pdfs/Headphone Amp 1.pdf)
 
 ## Step 3:
 
@@ -154,9 +152,9 @@ Steps:
 
 ![Step 5: What Case to Use image 4](images/step05_04.jpg)
 
-You can use whatever case that takes your fancy. I like to add them into old [tobacco tins](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1311.R1.TR12.TRC2.A0.H0.Xtobacco+tin.TRS0&_nkw=tobacco+tins&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=tobaccotin) as they come all ready to use. I've used [NES controllers](https://www.ebay.com.au/itm/Classic-NES-Style-Retro-Game-USB-Controller-Gamepad-Joystick-Joypad-For-PC/122368176185?hash=item1c7db63039:g:n7IAAOSw32lYrg5R&frcectupt=true) before as well which are fun to do but there is a lot less room in one of those.
+You can use whatever case that takes your fancy. I like to add them into old tobacco tins as they come all ready to use. I've used NES controllers before as well which are fun to do but there is a lot less room in one of those.
 
-If you can't find any tobacco tins then you could an [Altoids tin](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.XAltoids+tin.TRS0&_nkw=Altoids+tin&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=tobacco+tins), [projects box](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xproject+box.TRS0&_nkw=project+box&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=Altoids+tin), literally any small container that will fit the parts inside will do.
+If you can't find any tobacco tins then you could an Altoids tin, projects box, literally any small container that will fit the parts inside will do.
 
 
 ## Step 6: Adding the Parts to the Case - Circuit Board
@@ -192,7 +190,7 @@ Steps:
 
 ![Step 7: Adding the Parts to the Case - Battery, Switch & LED image 4](images/step07_04.jpg)
 
-I went with a rechargeable battery and charging module to power the circuit. If you don't want to do this then just use a 9v battery. I did an Instructable on how to use the module and adding it to a Li-ion battery which you can [find here](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/)
+I went with a rechargeable battery and charging module to power the circuit. If you don't want to do this then just use a 9v battery. I did an Instructable on how to use the module and adding it to a Li-ion battery which you can find here
 
 Steps:
 
@@ -227,10 +225,6 @@ Now that the build is done it's time to try out your amp
 
 3. Turn on the amp and start to play music. The sound should be clear, have more bass, and overall have a richer sound then just listening through your headphone.
 
-
-## Downloads
-
-- [Headphone Amp 1](pdfs/Headphone Amp 1.pdf)
 
 ---
 *31 images archived*

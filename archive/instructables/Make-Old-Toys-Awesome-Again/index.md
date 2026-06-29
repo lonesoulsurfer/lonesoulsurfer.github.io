@@ -63,33 +63,33 @@ The Toy
 
 Electronics
 
-2. 2 X 555 timers – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=555+timer&_sacat=0)
+2. 2 X 555 timers – eBay
 
-3. 100k Pot – [eBay](https://www.ebay.com.au/itm/2-5PCS-3-6Pin-6MM-Rotary-Potentiometer-Adjustable-Resistance-5-20-50-100K-Ohm/392335538338?hash=item5b590538a2:m:mqOtDVMgaJzNUj3E3gGFQAg)
+3. 100k Pot – eBay
 
-4. 500k pot – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=500k+potentiometer+linear&_sacat=0&LH_TitleDesc=0&_sop=1&_ipg=200)
+4. 500k pot – eBay
 
-5. 6 x 3.3k resistors - [eBay](https://www.ebay.com.au/itm/MR25-0-25W-3-3K-3K3-Ohm-Metal-Film-Resistor-25-Pieces/251852154489?hash=item3aa38ee679:g:p70AAOSwqu9U6nsC)
+5. 6 x 3.3k resistors - eBay
 
-6. 2 x 10uf cap – [eBay](https://www.ebay.com.au/itm/Lelon-10uF-50V-High-Temp-PCB-Electrolytic-Capacitor-Pack-of-50/161397832287?hash=item25940f7a5f:g:fhEAAOSwyc1ZnkLY)
+6. 2 x 10uf cap – eBay
 
-7. 100nf Cap – [eBay](https://www.ebay.com.au/itm/450Pcs-15Value-10pF-100nF-Ceramic-Disc-Capacitor-Monolithic-MLCC-Assortment-Kit/163479950474?_trkparms=ispr%3D1&hash=item26102a148a:g:~CwAAOSwQ5pcNzQ4&enc=AQAEAAAB4BPxNw%2BVj6nta7CKEs3N0qVEI2xmOw1QDtfo7gb3evko0xbg%2FO7d4W%2Bx5SqzuU1Q3gw4LzMDD8DQxPfstwrQGvSisQ81n%2BCXol4tXURhLJG2CpKDRMPTqWiPMcSgcnQnPrAOBU%2F6UDk7aOZLB%2F4oN%2FgRCKlVGDwhDjWUt4cHmH9qjJI383zAcHSDWfd5VId0w5EESmxIRIY0BnisyHU3w4IV%2FUT4dz3ulvxYugcKqjNDSRU6gEYWDxbAMOIl5ygF4n3SmrsdR5qQEinML5UjWDrQs7mcx2wwxgJOGsUX7qeT%2FEjaSXdiC0w4s6imWzR8EgBRGuAwTPDOBba2%2FFhTN697oKKVkRQ0s681OBYzgGaoXiGViaiSvVuRvf85KEYTqtvtdizSrFH4kaMOjF4DV9ROMGojy9LhpK841CqXxO29%2BumKhemNEKRq0Fi0bUea3eoIVvNFWL%2FGPVDxF%2B7Y59jJazeT0ZScqznUeibx28je0gGmfvQDp9mTjKTmddQAIQNl2mJUrGcf%2B9kEDtBmGLB8NNRl%2FIHrqB1alWScQ4AbsDiuFwzBxef%2BGiZbItK9CGwfZJIB08SIiUf5dkcWX%2BAfsYTwT07DikikJlZoA%2B%2BxsBw1rYIBs2lAW2wSEmCNKA%3D%3D&checksum=16347995047443bb98251a934167b3a4f797d622acc1)
+7. 100nf Cap – eBay
 
-8. 8ohm 0.5w speaker – [eBay](https://www.ebay.com.au/itm/2x-20mm-8Ohm-8-0-5W-Audio-Speaker-Stereo-Woofer-Loudspeaker-Trumpet-HornFAA/274015403892?hash=item3fcc973f74:g:kpQAAOSwfZhXNUCv)
+8. 8ohm 0.5w speaker – eBay
 
-9. 2 X SPDT Switches – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC0.A0.H1.Xspdt+switch+.TRS0&_nkw=spdt+switch+&_sacat=0)
+9. 2 X SPDT Switches – eBay
 
-10. 5 X 3mm LED’s - buy assorted on [eBay.](https://www.ebay.com.au/itm/300-3mm-Round-Light-Emitting-LED-Diode-Assorted-Kit-Mix-Blue-Yellow-Red-Green/133152108427?hash=item1f007bef8b:g:01sAAOSwQ~FdY8f1) Use whatever colour you want. I used 2 red (for the guns) 2 blue and 1 yellow
+10. 5 X 3mm LED’s - buy assorted on eBay. Use whatever colour you want. I used 2 red (for the guns) 2 blue and 1 yellow
 
-11. 2 X 5mm Flashing LED’s – [eBay](https://www.ebay.com.au/itm/100PCS-5mm-LED-Flicker-Diodes-Flashing-Yellow-Candle-Flickering-Flash-Blink-Diod/254268895939?hash=item3b339b72c3:g:17QAAOSw7cldCh6X&frcectupt=true)
+11. 2 X 5mm Flashing LED’s – eBay
 
-12. Prototype Board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+12. Prototype Board – eBay
 
 13. Bunch of wires
 
-14. Lithium Ion battery I usually just source these from old phones. you can also get them from - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xli+po+battery.TRS0&_nkw=li+po+battery&_sacat=0)
+14. Lithium Ion battery I usually just source these from old phones. you can also get them from - eBay
 
-15. Charger and voltage module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-E8S0/113698283835?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649) These little modules are amazing!
+15. Charger and voltage module - eBay These little modules are amazing!
 
 Tools
 

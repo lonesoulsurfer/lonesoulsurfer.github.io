@@ -51,35 +51,35 @@ What you add to your up-cycled torch will depend on how much room you have. I wa
 
 Parts
 
-1. Torch - [Check eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR0.TRC0.H0.Xvintage+flashlight.TRS0&_nkw=vintage+flashlight&_sacat=0)
+1. Torch - Check eBay
 
-2. 8 x AA battery holder - [eBay](http://www.ebay.com.au/itm/2-Pcs-Plastic-Double-Sided-8-x-1-5V-AA-Battery-Clip-Holder-Box-Case-Black-/331722196503?hash=item4d3c2f0617:g:bsAAAOSwa-dWs2Xr)
+2. 8 x AA battery holder - eBay
 
-3. 8 x 3000mAH Ni-MH Rechargeable Battery's - [eBay](http://www.ebay.com.au/itm/12x-AA-3000mAH-Ni-MH-NiMH-Recycle-Rechargeable-Battery-/351493635844?hash=item51d6a73f04:g:a24AAOxyOlhSrpwm)
+3. 8 x 3000mAH Ni-MH Rechargeable Battery's - eBay
 
-4. 5.5 v solar panel - [eBay](http://www.ebay.com.au/itm/5Pcs-0-5-1-2-3-4-5-5-6V-Mini-Solar-Panel-Module-For-CellPhone-Charger-Toys-Light-/252157944386?var=&hash=item3ab5c8e242:m:mvIL38ZEIScvSG2NBvHVUpQ)
+4. 5.5 v solar panel - eBay
 
-5. LED Dimmer - [eBay](http://www.ebay.com.au/itm/DC-12V-8A-LED-Light-Protect-Strip-Dimmer-Adjustable-Brightness-Controller-OK-/261574851751?hash=item3ce7137ca7:g:6McAAOSwxH1T~C0C)
+5. LED Dimmer - eBay
 
-6. Step-up voltage booster - [eBay](http://www.ebay.com.au/itm/5W-DC-DC-Boost-Converter-Step-Up-5V-to-12V-Power-Module-for-Mobile-Power-LED-/271957051158?hash=item3f51e74716:g:fDIAAOSwcwhVQe7T)
+6. Step-up voltage booster - eBay
 
-7. 9v battery clip - [eBay](http://www.ebay.com.au/itm/5pcs-New-Black-Snap-on-9V-9-Volt-Battery-Clip-Connector-Hard-Shell-Buckle-/281788107742?hash=item419be14bde:g:8~MAAOSw~gRV5Rhc)
+7. 9v battery clip - eBay
 
-8. Momentary switch - [eBay](http://www.ebay.com.au/itm/SMD-Tactile-Momentary-Push-Button-Micro-Switch-x20-3mm-x-6mm-x-2-5mm-/131727566215?hash=item1eab932587:g:DuAAAOSwezVWwDL3)
+8. Momentary switch - eBay
 
-9. Voltage meter - [eBay](http://www.ebay.com.au/itm/Mini-LED-DC2-5-30V-Red-Volt-Voltage-Meter-Display-Digital-Voltmeter-Self-Powered-/200960460374?hash=item2eca2d4656:g:VWMAAOSweW5VfLTB)
+9. Voltage meter - eBay
 
-10. 12v LED globe - [eBay](http://www.ebay.com.au/sch/i.html?_odkw=1w+12v+led+globe&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xled+globe+g4.TRS0&_nkw=led+globe+g4&_sacat=0)
+10. 12v LED globe - eBay
 
-11. LED strip light - [eBay](http://www.ebay.com.au/itm/2Pc-Cool-White-12-LEDs-30cm-11-8-5050-SMD-LED-Strip-Light-Waterproof-12V-Car-/391086364493?hash=item5b0e90574d:g:PdEAAOSw7ThUgnmg)
+11. LED strip light - eBay
 
-12. 6-24V to 5V 3A step down Converter - [eBay](http://www.ebay.com.au/itm/Hot-6-24V-12V-24V-to-5V-3A-CAR-USB-Charger-Module-DC-Buck-step-down-Converter-/171955857255?hash=item28095e2767:g:q-4AAOSwKIpWC0gl)
+12. 6-24V to 5V 3A step down Converter - eBay
 
-13. Toggle switch - [eBay](http://www.ebay.com.au/itm/Hot-5pcs-AC-125V-6A-ON-ON-2-Position-SPDT-3-Pins-Mini-Toggle-Switch-/251737056023?hash=item3a9cb2a317:g:4UwAAOSwg3FUeYoa)
+13. Toggle switch - eBay
 
-14. Female jack socket - [eBay](http://www.ebay.com.au/itm/10Pcs-DC-Power-Supply-Jack-Socket-Female-Panel-Mount-Connector-5-5-x-2-1mm-Hot-/141875401843?hash=item21086ed473:g:NkYAAOSwaA5WlL7Y)
+14. Female jack socket - eBay
 
-15. 12v Charger - [eBay](http://www.ebay.com.au/itm/AC-110-240V-12V-2A-convertor-led-Power-Charger-Supply-AC-DC-Adapter-AU-plug-cord-/121706405080?hash=item1c56445cd8:g:jWsAAOSwT6pVqMg4)
+15. 12v Charger - eBay
 
 
 ## Step 3: Checking Out Your Torch

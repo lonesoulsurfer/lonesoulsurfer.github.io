@@ -56,25 +56,25 @@ And now onto the hack...
 
 Parts
 
-1. Brownie Movie Camera - [eBay](http://www.ebay.com/sch/i.html?_trksid=m570.l3201&_nkw=brownie+movie+camera&_sacat=0)
+1. Brownie Movie Camera - eBay
 
 2. Bag strap. I used an old leather belt I found at a charity shop.
 
 3. Hinges (Small). I got mine from the local hardware store. The only ones I could find that would work were brass, some stainless steel ones would be ideal
 
-4. Metal strap loops x 2 - [eBay](http://www.ebay.com.au/itm/10-20-50-Loop-Oval-Ring-Leather-Purse-Bag-Handbag-Strap-1-2-5-8-1-1-25-1-5-/191213123777?pt=LH_DefaultDomain_0&var&hash=item2c8530b8c1&_uhb=1) I scavenged mine from an old back pack
+4. Metal strap loops x 2 - eBay I scavenged mine from an old back pack
 
-5. Small rare earth magnets (2) - [eBay](http://www.ebay.com/itm/20pcs-N35-Super-Strong-Block-Square-Rare-Earth-Neodymium-Magnets-10-x-5-x-3mm-/231267359206?pt=LH_DefaultDomain_0&hash=item35d89bd9e6)
+5. Small rare earth magnets (2) - eBay
 
 6. Scrap fabric - I used some thick fabric that I had left over from another project. Curtain fabric would also work well.
 
 If you want to add the light you will need the following as well:
 
-7. Cree LED - [eBay](http://www.ebay.com.au/itm/CREE-XREQ5-LED-White-Flashlight-Lamp-Bead-Light-Torch-Bulb-500Lm-3-3-7V-/230989428367?pt=AU_Car_Parts_Accessories&hash=item35c80af68f&_uhb=1)
+7. Cree LED - eBay
 
-8. 1 X CR2032 battery holder - [eBay](http://www.ebay.com.au/itm/10pcs-Portable-CR2032-CR2025-General-Button-Battery-Clip-Holder-Box-Case-v-h9-/221298022151?pt=AU_Electronics_Batteries_Chargers&hash=item338663d707&_uhb=1)
+8. 1 X CR2032 battery holder - eBay
 
-9. 1 X CR2032 battery - [eBay](http://www.ebay.com.au/itm/2-brand-new-PANASONIC-CR2032-3v-Lithium-Battery-in-original-package-free-postage-/130736096373?pt=AU_Electronics_Batteries_Chargers&hash=item1e707a8475&_uhb=1)
+9. 1 X CR2032 battery - eBay
 
 10. A couple lengths of wire
 

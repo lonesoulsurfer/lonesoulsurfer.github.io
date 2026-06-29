@@ -23,25 +23,25 @@ This version is also waterproof (pretty important when trying to light fires!) a
 
 You could also add a few other survival parts to this kit such as needles, floss, small hook etc. I tried to make it as small as possible but there is no reason why you couldn’t make it larger and add more survival gear inside.
 
-If you know nothing about soldering brass and copper - then [check this 'ible out](https://www.youtube.com/audio?video_referrer=watch&v=KhvaXLESKdM) to get started
+If you know nothing about soldering brass and copper - then check this 'ible out to get started
 
 Lastly, the evolution of the design changed a couple of times so there might be a couple discrepancies in the images
 
 Other emergency fire starters I've made
 
-[Simple Fire Piston](https://www.instructables.com/id/Simple-Mini-Fire-Piston/)
+Simple Fire Piston
 
-[Fire Starter and Tinder Case](https://www.instructables.com/id/Sparkwheel-Firestarter-Tinder-Holder-V2/)
+Fire Starter and Tinder Case
 
-[Flint and Sparkwheel Fire Starter](https://www.instructables.com/id/Flint-and-Spark-Wheel-Fire-Starter/)
+Flint and Sparkwheel Fire Starter
 
-[Simple Fire Piston](https://www.instructables.com/id/Simple-Fire-Piston/)
+Simple Fire Piston
 
-[Steel Wool Emergency Fire Starter](https://www.instructables.com/id/Steel-Wool-Emergency-Fire-Starter/)
+Steel Wool Emergency Fire Starter
 
-[Mini Emergency Survival Kit](https://www.instructables.com/id/Steel-Wool-Emergency-Fire-Starter/)
+Mini Emergency Survival Kit
 
-[Wax and Lint Tinder](https://www.instructables.com/id/Wax-and-Lint-Tinder/)
+Wax and Lint Tinder
 
 
 ## Step 1: Parts and Tools
@@ -66,7 +66,7 @@ Parts
 
 6. Small copper tube (this need to hold the sparkwheel from the lighter)
 
-7. Clipper Lighter – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xclipper+lighter.TRS0&_nkw=clipper+lighter&_sacat=0) or a newsagent. The sparkwheel and flint is replaceable in these lighters and can be easily removed as you can see from the images. You only need this
+7. Clipper Lighter – eBay or a newsagent. The sparkwheel and flint is replaceable in these lighters and can be easily removed as you can see from the images. You only need this
 
 Tools:
 

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,114 +127,52 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Lightning Detector and Counter</span>
 </nav>
-<h1>Lightning Detector and Counter</h1><div class="source"><a href="https://www.instructables.com/Lightening-Detector-and-Counter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve always wanted to make a lightening detector but found the circuit schematics a little beyond my capabilities.</p>
-<p>Recently whilst surfing the net, I came across a very cool circuit which counts lightning strikes as they happen!</p>
-<p>After looking over the circuit schematic I thought – finally, here’s a lightning detector that I can make with my limited skills.</p>
+<h1>Lightning Detector and Counter</h1><div class="source"><a href="https://www.instructables.com/Lightening-Detector-and-Counter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve always wanted to make a lightening detector but found the circuit schematics a little beyond my capabilities. Recently whilst surfing the net, I came across a very cool circuit which counts lightning strikes as they happen! After looking over the circuit schematic I thought – finally, here’s a lightning detector that I can make with my limited skills.</p>
 <p>The detector is a simple design and anyone with some basic electronic skills should have no issue making one.</p>
 <p>The way it works is the circuit can detect discharge from lightning and counts up to 9 through a 7 segment display. Once you get past 9 it re-sets back to 0.</p>
-<p>A big shout-out to <a href="https://dmohankumar.wordpress.com/2015/11/09/lightning-counter-simple-design-14/">D.Mohankumar</a> who designed the lightning counter and detector.</p>
-<p>The main components that make up the detector are an IC (CD 4033) and a 7 segment counter.</p>
-<p>Both a cheap and easy to find on eBay.</p>
-<p>Basically, the IC’s number 1 input pin is very sensitive to electric discharges such as lightning.</p>
-<p>Whenever lightning strikes the earth, it releases thousands of volts which can be detected by the IC.</p>
-<p>The IC then converts the signal into a numerical output on the 7 segment display.</p>
-<p>I have listed all of the parts needed and have also added links to where you can find them.</p>
-<p>If you have never tackled something like this I really encourage you to give it a go.</p>
-<p>As I mentioned before, it’s relatively simple to make and a heap of fun.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
+<p>A big shout-out to D.Mohankumar who designed the lightning counter and detector.</p>
+<p>The main components that make up the detector are an IC (CD 4033) and a 7 segment counter. Both a cheap and easy to find on eBay. Basically, the IC’s number 1 input pin is very sensitive to electric discharges such as lightning. Whenever lightning strikes the earth, it releases thousands of volts which can be detected by the IC. The IC then converts the signal into a numerical output on the 7 segment display.</p>
+<p>I have listed all of the parts needed and have also added links to where you can find them. If you have never tackled something like this I really encourage you to give it a go. As I mentioned before, it’s relatively simple to make and a heap of fun.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>IC – CD 4033 – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1313.TR0.TRC0.H0.XCD4033BE+IC+COUNTR%2FDIVIDR+DECADE+16-DIP.TRS0&_nkw=CD4033BE+IC+COUNTR%2FDIVIDR+DECADE+16-DIP&_sacat=0">eBay</a></li>
-</ol>
-<ol>
-<li>7 Segment display (common cathode) – <a href="http://www.ebay.com.au/itm/5-pcs-LED-7-Segment-Display-1-Bit-Red-Common-Cathode-0-56-in-5O-/192286104395?epid=566156997&hash=item2cc5251b4b:g:YTQAAOSwMmBVwIAw">eBay</a></li>
-</ol>
-<ol>
-<li>100R Resistor – <a href="https://www.ebay.com.au/itm/100pcs-1-4W-Watt-0-25W-Metal-Film-Resistor-1-1R-to-1K-Ohm-Accessories-New-/222401836897?var=&hash=item33c82eb761:m:mfTU2Ec6OAWVd95hY9DXomw">eBay</a></li>
-</ol>
-<ol>
-<li>1K Resistor – <a href="http://www.ebay.com.au/itm/50-x-1-4W-250V-1-5K-ohm-1K5-Axial-Carbon-Film-Resistors-/201899887936?epid=1066822147&hash=item2f022bcd40:g:mrEAAOSwVm5Y-dpK">eBay</a></li>
-</ol>
-<ol>
-<li>9V battery holder – <a href="http://www.ebay.com.au/itm/Replacement-9V-Battery-Box-Case-Holder-Connector-CS-/202060412901?hash=item2f0bbd37e5:g:pO8AAOSwqd1Zwh7D">eBay</a></li>
-</ol>
-<ol>
-<li>1uF Capacitor – <a href="https://www.ebay.com.au/itm/30-100pcs-1uF-to-1000uF-25V-35V-50V-Aluminum-Electrolytic-Capacitors-/272776227430?var=&hash=item3f82baea66:m:mJXFbyIQXAnF-D6h8orZ8Aw">eBay</a></li>
-</ol>
-<ol>
-<li>Antenna – <a href="http://www.ebay.com.au/itm/Replacement-25-4cm-10-5-Sections-Telescopic-Antenna-Aerial-for-Radio-TV-L5D9-/282561182107?epid=1153505772&hash=item41c9f5799b:g:EvgAAOSwiA9ZX0gX">eBay</a></li>
-</ol>
-<ol>
-<li>Sold core wire (breadboard wire) – <a href="https://www.ebay.com.au/itm/400pcs-Breadboard-Jumper-Cable-Electronic-Wires-6cm-Kit-Experiment-Test-Tinned/252428303605?_trkparms=aid%3D555019%26algo%3DPL.BANDIT%26ao%3D1%26asc%3D20151005190705%26meid%3Dd59fb3a39e1545b3a3dfd8b3fdd96946%26pid%3D100506%26rk%3D1%26rkt%3D1%26&_trksid=p2045573.c100506.m3226">eBay</a></li>
-</ol>
-<ol>
-<li>Blank PCB - <a href="http://www.ebay.com.au/itm/Electronic-Kit-Circuit-Breadboards-Blank-PCB-Universal-DIY-Phototype-Board-HOT-/122680152992?hash=item1c904e93a0:g:1DUAAOSwsIZZpPvr">eBay</a></li>
-</ol>
-<ol>
+<li>IC – CD 4033 – eBay</li>
+<li>7 Segment display (common cathode) – eBay</li>
+<li>100R Resistor – eBay</li>
+<li>1K Resistor – eBay</li>
+<li>9V battery holder – eBay</li>
+<li>1uF Capacitor – eBay</li>
+<li>Antenna – eBay</li>
+<li>Sold core wire (breadboard wire) – eBay</li>
+<li>Blank PCB - eBay</li>
 <li>9V Battery</li>
-</ol>
-<ol>
-<li>Project Box – <a href="http://www.ebay.com.au/itm/5-Pcs-DIY-100x60x25mm-Plastic-Electronic-Project-Box-Enclosure-Instrument-Case-/131571667714?hash=item1ea2485302:g:72YAAOSw~OdVZWsl">eBay</a></li>
-</ol>
-<ol>
-<li>6pin DIP IC Socket Adapter - <a href="https://www.ebay.com.au/itm/10PCS-16pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe-Contact-/262857158981?hash=item3d3381f145:g:dDgAAOSwdGFYpqGv">eBay</a></li>
-</ol>
-<ol>
-<li>Switch - <a href="https://www.ebay.com.au/itm/5-x-Heavy-Duty-Toggle-Flick-Switch-ON-OFF-Car-Dash-Light-Metal-SPST-Contacts-AU-/263024516128?epid=501119715&hash=item3d3d7b9c20:g:a7cAAOSwPh5ZN6AG">eBay</a></li>
-</ol>
-<ol>
+<li>Project Box – eBay</li>
+<li>6pin DIP IC Socket Adapter - eBay</li>
+<li>Switch - eBay</li>
 <li>Various small screws etc</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Hot Glue</li>
-</ol>
-<ol>
 <li>Dremel</li>
-</ol>
-<ol>
 <li>Soldering iron</li>
-</ol>
-<ol>
 <li>Bread Board</li>
-</ol>
-<ol>
 <li>Super glue</li>
-</ol>
-<ol>
 <li>Pliers</li>
-</ol>
-<ol>
 <li>Screwdrivers etc</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Circuits and Diagrams</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Circuits and Diagrams image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Circuits and Diagrams image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Circuits and Diagrams image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Circuits and Diagrams image 4" loading="lazy"></div><p>Familiarise yourself with the circuit diagram.</p>
-<p>The first 2 images show the original circuit diagram and the other how I slightly modified it.</p>
-<p>The reason why I added an extra wire from the negative leg on the capacitor to the ground on the battery was because I was getting no reading from the 7 segment display initially.</p>
-<p>After doing a little investigating I found out what the issue was and added an extra wire which did the trick.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Circuits and Diagrams</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Circuits and Diagrams image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Circuits and Diagrams image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Circuits and Diagrams image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Circuits and Diagrams image 4" loading="lazy"></div><p>Familiarise yourself with the circuit diagram. The first 2 images show the original circuit diagram and the other how I slightly modified it. The reason why I added an extra wire from the negative leg on the capacitor to the ground on the battery was because I was getting no reading from the 7 segment display initially. After doing a little investigating I found out what the issue was and added an extra wire which did the trick.</p>
 <p>I included both circuit diagrams so you can see the difference. You can also find the original one here.</p>
 <p>The next diagram is the pin out for the 7 segment display. Make sure that you take note of how the pins are numbered and laid out.</p>
 <p>The last diagram is the pin out for the IC. Again, take note of how the pins are numbered and laid out.</p>
-<p>Let’s go back to the main circuit diagram.</p>
-<p>You can see there are 7 connections to the 7 segment display out of the 10.</p>
-<p>Another 2 are connected together and are attached to ground via the 100 ohm resistor.</p>
-<p>That leaves 1 pin left which is pin 5 which is for the decimal point on the display which we won’t be utilising</p>
+<p>Let’s go back to the main circuit diagram. You can see there are 7 connections to the 7 segment display out of the 10. Another 2 are connected together and are attached to ground via the 100 ohm resistor. That leaves 1 pin left which is pin 5 which is for the decimal point on the display which we won’t be utilising</p>
 <p>The other main connections from the IC are either to ground or to positive. Pin 1 is connected to the 1K resistor and also the antenna.</p>
 <p>That’s really it. It’s a simple design once you break it down. Now it’s time to get started and breadboard the circuit before doing any soldering</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the IC Connections to Ground and Positive</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the IC Connections to Ground and Positive image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the IC Connections to Ground and Positive image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the IC Connections to Ground and Positive image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the IC Connections to Ground and Positive image 4" loading="lazy"></div><p>First thing to do is to make the connections on the IC to the ground and positive terminals.</p>
 <p>Steps:</p>
 <p>Positive Connections</p>
 <ol>
 <li>Add the IC to the breadboard</li>
-</ol>
-<ol>
 <li>Attach the 1k resistor to leg 1 on the IC and the other leg to the section on the breadboard that you want to make positive.</li>
-</ol>
-<ol>
 <li>Next add the negative leg of the capacitor to leg 15 on the IC. Also add a wire from the negative leg to the section on the breadboard that you want to make ground.</li>
-</ol>
-<ol>
 <li>Add the positive leg to the positive section on the breadboard</li>
-</ol>
-<ol>
 <li>Add a couple of jumper wires to legs 3 and 16 to the positive section</li>
-</ol>
-<ol>
 <li>Lastly, add a wire to the antenna and attach this to leg 1 on the IC next to the 1K resistor</li>
 </ol>
 <p>Ground Connections</p>
@@ -279,100 +182,39 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Steps:</p>
 <ol>
 <li>Push the 7 segment into the breadboard</li>
-</ol>
-<ol>
 <li>Start to add the wires from the IC to the corresponding leg on the display. Start with the lowest value leg on the IC which happens to be 7 and attach a jumper wire from leg 7 to leg 10 on the display.</li>
-</ol>
-<ol>
 <li>Keep going until all of the connections have been done from the IC to the display</li>
-</ol>
-<ol>
 <li>Next, add a couple of jumper wires to legs 3 and 8 on the display. These should then be connected to one of the legs on the 100R resistor and the other leg of the resistor to the Ground section on the breadboard.</li>
-</ol>
-<ol>
 <li>Next, attach the battery to the ground and positive sections. You should see the LED’s in the display light up and show a ‘0”. If you don’t or have missing segments, check the wires to make sure everything is connected correctly.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Testing Your Circuit.</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Testing Your Circuit. image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Testing Your Circuit. image 2" loading="lazy"></div><p>The good news is you don’t have to wait for lightning to test your circuit.</p>
-<p>All you need is a lighter with a clicker (piezo electric) starter in it which you can buy in most places that sell cigarettes.</p>
-<p>I used something similar to this to test which worked a treat.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Testing Your Circuit.</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Testing Your Circuit. image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Testing Your Circuit. image 2" loading="lazy"></div><p>The good news is you don’t have to wait for lightning to test your circuit. All you need is a lighter with a clicker (piezo electric) starter in it which you can buy in most places that sell cigarettes. I used something similar to this to test which worked a treat.</p>
 <p>Steps:</p>
 <ol>
 <li>First, extend the antenna</li>
-</ol>
-<ol>
 <li>Next, turn on the detector. The display should have a zero showing.</li>
-</ol>
-<ol>
 <li>Place the lighter (or spark generator) close to the antenna and make a spark. This should register on the display as a 1. Try it again and you will see the display count up to 9 and then re-set to zero.</li>
-</ol>
-<ol>
 <li>If it doesn’t register, try putting the spark closer to the antenna. Make sure you aren’t touching the antenna when making the spark or it won’t register.</li>
-</ol>
-<ol>
 <li>If you ground the circuit you will find that you get a better reading. Try adding another wire to the ground section and touch the end with your finger. Move the spark generator further away and try it again. You should be able to hold the spark around 150mm away from the antenna before it stops registering. In the final build I kept this wire and added a small piece of copper to help ground the circuit better</li>
-</ol>
-<ol>
 <li>If you still don’t get anything coming up on the display, try removing the capacitor. Initially I couldn’t get anything coming up but once I removed the capacitor it worked fine. You could leave the capacitor out of the circuit but I found that it would sometimes just jump to 0 if I moved the circuit. I think that it’s because leg 15 which the capacitor is connected to is the reset leg and the capacitor stabilises this. Once I connected the capacitor to the ground wire it worked fine so I replaced it.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Soldering the Circuit Together</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Soldering the Circuit Together image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Soldering the Circuit Together image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Soldering the Circuit Together image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Soldering the Circuit Together image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Soldering the Circuit Together image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Soldering the Circuit Together image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Soldering the Circuit Together image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Soldering the Circuit Together image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Soldering the Circuit Together image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Soldering the Circuit Together image 10" loading="lazy"><img src="images/step06_11.jpg" alt="Step 6: Soldering the Circuit Together image 11" loading="lazy"></div><p>If your circuit has been tested and is working fine, next you need to add to a permanent PCB.</p>
-<p>I won’t go through this step by step as it’s not viable to do this.</p>
-<p>However, I will give a few tips on how I proceeded.</p>
-<p>I’m really just a novice myself so I’m sure that there are better ways to get it done.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Soldering the Circuit Together</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Soldering the Circuit Together image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Soldering the Circuit Together image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Soldering the Circuit Together image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Soldering the Circuit Together image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Soldering the Circuit Together image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Soldering the Circuit Together image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Soldering the Circuit Together image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Soldering the Circuit Together image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Soldering the Circuit Together image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Soldering the Circuit Together image 10" loading="lazy"><img src="images/step06_11.jpg" alt="Step 6: Soldering the Circuit Together image 11" loading="lazy"></div><p>If your circuit has been tested and is working fine, next you need to add to a permanent PCB. I won’t go through this step by step as it’s not viable to do this. However, I will give a few tips on how I proceeded. I’m really just a novice myself so I’m sure that there are better ways to get it done.</p>
 <p>Steps:</p>
 <ol>
 <li>First, solder into place the IC pin DIP Connector.</li>
-</ol>
-<ol>
 <li>Next, start to wire in the wires from the IC to the positive and ground connections. The best way to do this is to make a section on the PCB that all of the ground wires and positive wires can be connected to.</li>
-</ol>
-<ol>
 <li>Once you have these connections done, add the wires to the IC for the display.</li>
-</ol>
-<ol>
 <li>How you connect the display is up to you. I just did it “dead bug” style by soldering the wires directly to the legs on the display. You could attach the display to a piece of PCB and solder that way as well.</li>
-</ol>
-<ol>
 <li>I also decided to add a wire from the ground to a small strip of copper. The copper would be attached to the outside of the case which would ground the circuit when I hold it in my hand. This should help with sensitivity.</li>
-</ol>
-<ol>
 <li>Don't forget to also add a switch so you can turn the circuit on and off. This can be done by adding a switch on the positive battery wire</li>
-</ol>
-<ol>
 <li>Once everything is connected, test again to make sure everything works as it should.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding to an Enclosure</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding to an Enclosure image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding to an Enclosure image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding to an Enclosure image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding to an Enclosure image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding to an Enclosure image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding to an Enclosure image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding to an Enclosure image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Adding to an Enclosure image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Adding to an Enclosure image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Adding to an Enclosure image 10" loading="lazy"><img src="images/step07_11.jpg" alt="Step 7: Adding to an Enclosure image 11" loading="lazy"></div><p>It’s up to you what type of enclosure you want to use. You could use an old walkie talkie or even a small cardboard box if that’s all you have around. I used a cheap project box which worked well.</p>
 <p>Steps:</p>
 <ol>
 <li>First, work out where the display is going to go. Use a dremel or something similar to cut out the section and check to make sure the display fits into the hole.</li>
-</ol>
-<ol>
 <li>Next, attach the battery to the inside of the case</li>
-</ol>
-<ol>
 <li>Drill holes for the Antenna, switch and the wire for the ground wire</li>
-</ol>
-<ol>
 <li>Secure the antenna and switch into place.</li>
-</ol>
-<ol>
 <li>Solder onto the ground wire a small piece of copper or something similar. Glue into place onto the side of the case. It should be in a position where your fingers naturally hold it</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Find a Storm</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 8: Find a Storm image 1" loading="lazy"></div><p>Ok, so I didn't manage to test this lightening detector in a storm.</p>
-<p>I'm hoping a storm will come through my area soon so I can test and post a video.</p>
-<p>I appreciate that a lightening detector ible' should at least show that it actually detects lightening but I got impatient :)</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Find a Storm</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 8: Find a Storm image 1" loading="lazy"></div><p>Ok, so I didn't manage to test this lightening detector in a storm. I'm hoping a storm will come through my area soon so I can test and post a video. I appreciate that a lightening detector ible' should at least show that it actually detects lightening but I got impatient :)</p>
 <p>If you do make one and a storm blows past your house, let me know whether your detector counts the lightening strikes.</p>
 <p>Nevertheless, it's still a fun project to make and anyone who is keen to learn circuitry will find this project a great place to start.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

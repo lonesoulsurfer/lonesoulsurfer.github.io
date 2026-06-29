@@ -42,9 +42,9 @@ PARTS:
 
 The parts list is nice and short
 
-1. 1" Copper Pipe - [hardware store](https://www.bunnings.com.au/kembla-1-x-1-5m-copper-straight-lengths_p0081146?store=6435&gclid=CjwKCAjw64eJBhAGEiwABr9o2DeRKrr5IAdioCCkObyU1NIkyI9jIdW2ufv93RcCHREWpXCgursDnxoC_GIQAvD_BwE&gclsrc=aw.ds). I've added a link to a hardware store in Australia so you have a reference
+1. 1" Copper Pipe - hardware store. I've added a link to a hardware store in Australia so you have a reference
 
-2. Shotgun shell cartridges - I get mine from a local gun range for free. You can also buy them on [etsy](https://www.etsy.com/au/search?q=shotgun%20shell)
+2. Shotgun shell cartridges - I get mine from a local gun range for free. You can also buy them on etsy
 
 TOOLS:
 

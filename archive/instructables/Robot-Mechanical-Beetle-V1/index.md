@@ -19,7 +19,7 @@ Source: https://www.instructables.com/Robot-Mechanical-Beetle-V1/
 
 This is a little robot that I made after coming across some micro worm motors. I have no idea what the motors are actually supposed to be used for, but they are ideal for small robots. The beetle can move about at some speed and can also avoid obstacles using his feelers. I've tested him over flat, stony and inclined surfaces and he performes brilliantly.
 
-If the clip doesn't work - try [this one](https://www.youtube.com/watch?v=49kxy-yz1Eo)
+If the clip doesn't work - try this one
 
 This is my first version and I'm sure I'll be improving the design in my next efforts. Overall though I really like the way this little fella moves about. He's got a gangly, jumping type of gait and moves about with some speed. I also added a couple of "feelers" so when he runs into something, only one side moves and he turns.
 
@@ -44,13 +44,13 @@ check out the video below to see the beetle in action.
 
 Parts:
 
-1. Small worm motors (4) - [eBay](http://www.ebay.com.au/itm/5pcs-DC-3v-5v-Worm-Gear-Motor-Variable-Speed-Gearmotor-micro-reduction-gear-box-/221319657435?pt=LH_DefaultDomain_0&hash=item3387adf7db)
+1. Small worm motors (4) - eBay
 
-2. 9 v battery holder - [eBay](http://www.ebay.com.au/itm/Plastic-Battery-Storage-Case-Box-Holder-For-9V-with-leads-New-/261712756743?pt=LH_DefaultDomain_15&hash=item3cef4bc007)
+2. 9 v battery holder - eBay
 
 3. Copper wire (size 3mm)
 
-4. Momentary switches (2) - [eBay](http://www.ebay.com.au/itm/10-x-Hinge-Lever-Arm-SPDT-1NO-1NC-Momentary-Micro-Switch-3-Pins-AC-250V-5A-/301436464773?pt=LH_DefaultDomain_15&hash=item462f036e85) The ones I used were small but the lever failed after awhile. The ones I have suggested here would be much hardier
+4. Momentary switches (2) - eBay The ones I used were small but the lever failed after awhile. The ones I have suggested here would be much hardier
 
 5. 9 v battery
 
@@ -60,7 +60,7 @@ Parts:
 
 8. Strong, double sided tape. The kind that you use to attach metal stripping to a car. You can find this at a hardware store.
 
-9. small on/off switch - [eBay](http://www.ebay.com.au/itm/5pcs-x-3-Pin-On-Off-2-Position-1P2T-SPDT-Mini-Slide-Switch-PCB-Panel-DIY-SS12F48-/390993645975?pt=LH_DefaultDomain_15&hash=item5b09099197)
+9. small on/off switch - eBay
 
 10. Rubber ends from a coat hanger. These are the type that have 2 clips to hand pants on. You could also use some heat shrink
 
@@ -164,7 +164,7 @@ Steps:
 
 ![Step 5: Making the Feelers and Wiring image 9](images/step05_09.gif)
 
-The wiring is quite simple and I have added a schematic to hopefully help you If you do need more info on how to wire the feelers up, then check out [this link](http://www.robotshop.com/blog/en/how-to-build-a-simple-robot-beetle-robot-4085).
+The wiring is quite simple and I have added a schematic to hopefully help you If you do need more info on how to wire the feelers up, then check out this link.
 
 Steps:
 
@@ -203,7 +203,7 @@ Steps:
 
 5. The other 2 motor wires (you can see them in the last image) will be attached to the switch along with the positive battery wire.
 
-The schematic below comes from [this website](http://www.robotshop.com/blog/en/how-to-build-a-simple-robot-beetle-robot-4085). It is a good guide on how the wiring should go but you will see that it is slightly different. In the drawing, the bottom motor wires are connected to a separate wire that has been added to the battery holder. I have attached this to the negative battery wire.
+The schematic below comes from this website. It is a good guide on how the wiring should go but you will see that it is slightly different. In the drawing, the bottom motor wires are connected to a separate wire that has been added to the battery holder. I have attached this to the negative battery wire.
 
 
 ## Step 7: Adding the Legs and Switch

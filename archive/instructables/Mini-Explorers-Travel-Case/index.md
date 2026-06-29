@@ -235,6 +235,8 @@ Steps:
 
 ![Step 8: Go and Test It Out! image 8](images/step08_08.jpg)
 
+View 5 more
+
 
 ---
 *51 images archived*

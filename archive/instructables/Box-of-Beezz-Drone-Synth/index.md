@@ -33,9 +33,9 @@ There is also a master tone knob and I've included a control voltage output so y
 
 The project was inspired by 'Look Mum No Computers' super simple oscillator build which I have linked below
 
-[Super Simple Oscillator](https://www.lookmumnocomputer.com/projects#/circledroneofdoom)
+Super Simple Oscillator
 
-Oh and hackaday did a review of this project which you can find [here](https://hackaday.com/2022/05/29/relax-and-enjoy-this-simple-drone-synthesizer/)
+Oh and hackaday did a review of this project which you can find here
 
 
 ## Supplies
@@ -61,41 +61,41 @@ Oh and hackaday did a review of this project which you can find [here](https://h
 Components for the circuit board
 
 - PCB - See the next step on how to get your PCB printed
-- Tactile 7x7mm switches - [Ali Express](https://www.aliexpress.com/item/32985880305.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU)
-- Tactile push button caps - [Ali Express](https://www.aliexpress.com/item/32891579029.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU)
+- Tactile 7x7mm switches - Ali Express
+- Tactile push button caps - Ali Express
 - JST Connector mini
-- 2 pins X 6 [Ali Express](https://www.aliexpress.com/item/32828414999.html?spm=a2g0o.productlist.0.0.18044784kWjGNS&algo_pvid=5dfbb9c1-94f4-4cff-b61e-8657a8ae27f2&algo_exp_id=5dfbb9c1-94f4-4cff-b61e-8657a8ae27f2-22&pdp_ext_f=%7B%22sku_id%22%3A%2264992858497%22%7D&pdp_npi=2%40dis%21AUD%21%212.35%21%21%21%21%21%402101e9d416532854085127665efc59%2164992858497%21sea)
-- 3 pins X 1 [Ali Express](https://www.aliexpress.com/item/4000898605030.html?spm=a2g0o.productlist.0.0.12724ca9HQFmtK&algo_pvid=a4588927-af8a-48ed-ae67-70bce4981b1e&algo_exp_id=a4588927-af8a-48ed-ae67-70bce4981b1e-11&pdp_ext_f=%7B%22sku_id%22%3A%2210000010469613342%22%7D&pdp_npi=2%40dis%21AUD%21%211.23%21%21%211.78%21%21%400bb0623d16532856736751867e512f%2110000010469613342%21sea)
-- Capacitor Polarized [Ali Express](https://www.aliexpress.com/item/1005003217967608.html?spm=a2g0o.productlist.0.0.5383a549eNb9Hi&algo_pvid=19cea181-0a76-4a8d-ae3b-b8e565418771&aem_p4p_detail=20220522230301721145109342840059391218&algo_exp_id=19cea181-0a76-4a8d-ae3b-b8e565418771-2&pdp_ext_f=%7B%22sku_id%22%3A%2212000024708472323%22%7D&pdp_npi=2%40dis%21AUD%21%210.26%21%21%212.78%21%21%40210318bb16532857811005385e9354%2112000024708472323%21sea)
+- 2 pins X 6 Ali Express
+- 3 pins X 1 Ali Express
+- Capacitor Polarized Ali Express
 - 2.2uf X 3
 - 4.7uf X 3
 - 10uf X 4
-- Capacitor Poly 100nf X 3 [Ali Express](https://www.aliexpress.com/item/1005003649560151.html?spm=a2g0o.productlist.0.0.4ada357crKofPu&algo_pvid=732f2d09-6507-4d7a-9fe1-36ffeced0171&aem_p4p_detail=2022052223041910578676285903680059383201&algo_exp_id=732f2d09-6507-4d7a-9fe1-36ffeced0171-4&pdp_ext_f=%7B%22sku_id%22%3A%2212000026647727895%22%7D&pdp_npi=2%40dis%21AUD%21%213.32%21%21%212.04%21%21%402101fd4b16532858596622643e180a%2112000026647727895%21sea)
-- LED 3mm white X 9 [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220522221515&isPremium=y&SearchText=3mm+led+white&spm=a2g0o.productlist.1000002.0)
-- Resistors - Buy them in assorted lots - [Ali Express](https://www.aliexpress.com/premium/resistor-assorted.html?d=y&origin=y&catId=0&initiative_id=SB_20220522221640&SearchText=resistor%20assorted&spm=a2g0o.detail.1000002.0)
+- Capacitor Poly 100nf X 3 Ali Express
+- LED 3mm white X 9 Ali Express
+- Resistors - Buy them in assorted lots - Ali Express
 - 47K X 18
 - 3.3K X 10
 - 1K X1
-- Transistors 2N4401 X 9 [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220525180232&SearchText=transistor+4401&spm=a2g0o.productlist.1000002.0)
-- Potentiometers 9mm Vertical [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220522221833&isPremium=y&SearchText=potentiometer+9mm+vertical&spm=a2g0o.productlist.1000002.0)
+- Transistors 2N4401 X 9 Ali Express
+- Potentiometers 9mm Vertical Ali Express
 - 10K X 10
 - 100K X 3
 Other components
 
 - Speaker - eBay
-- Speaker Mesh - [Ali Express](https://www.aliexpress.com/item/4000087549083.html?spm=a2g0s.9042311.0.0.27424c4debfuno)
-- Amplifier Module - [Ali Express](https://www.aliexpress.com/item/32847729011.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU)
-- Pot knobs - [Ali Express](https://www.aliexpress.com/item/32954107409.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU)
-- USB C Charging module - [eBay](https://www.aliexpress.com/item/32930640893.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU)
-- Battery - I used an old mobile battery to power everything which worked fine. You can usually find them for free or you can can buy one - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=samsung+mobile+phone+battery&_sacat=0)
-- Voltage step up module - [Ali Express](https://www.aliexpress.com/item/1005001622004014.html?spm=a2g0o.productlist.0.0.72ea1b5f1O41Tz&algo_pvid=f4a6b564-adaf-4dc1-b424-5f7634c9725b&aem_p4p_detail=202205181559142981785717844500018549615&algo_exp_id=f4a6b564-adaf-4dc1-b424-5f7634c9725b-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000016846792106%22%7D&pdp_npi=2%40dis%21AUD%21%211.07%21%21%211.95%21%21%402103255a16529147544003345e9b6a%2112000016846792106%21sea)
-- 3.5mm Headphones Jack Socket X 3 - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220518145551&isPremium=y&SearchText=3.5mm+Headphones+Jack+Socket+Connector&spm=a2g0o.productlist.1000002.0)
-- SPDT Toggle Switch X 2 - [eBay](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220518150557&isPremium=y&SearchText=SPDT+6MM+Reset+Latching+Toggle+Switch+&spm=a2g0o.productlist.1000002.0)
-- Vactrol - 5mm white LED & LDR See [this Instructable](https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/) on how to make one
+- Speaker Mesh - Ali Express
+- Amplifier Module - Ali Express
+- Pot knobs - Ali Express
+- USB C Charging module - eBay
+- Battery - I used an old mobile battery to power everything which worked fine. You can usually find them for free or you can can buy one - eBay
+- Voltage step up module - Ali Express
+- 3.5mm Headphones Jack Socket X 3 - Ali Express
+- SPDT Toggle Switch X 2 - eBay
+- Vactrol - 5mm white LED & LDR See this Instructable on how to make one
 Case & Front Panel
 
-- Clear, adhesive paper - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=clear+transparent+glossy+self+adhesive+sticker+paper&_sacat=0&LH_TitleDesc=0&_odkw=Clear+Transparent+Glossy+Self+Adhesive+Sticker+Paper+Label+Laser+Print&_osacat=0)
-- Opal Acrylic - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=opal+acrylic+a3&_sacat=0)
+- Clear, adhesive paper - eBay
+- Opal Acrylic - eBay
 - Hard wood for the case - I use edging 40mm X 8mm X 1M
 
 
@@ -105,7 +105,7 @@ Case & Front Panel
 
 ![Step 1: The Schematic, PCB & Getting Your PCB Printed image 2](images/step02_02.png)
 
-If you want a deeper insight on how this circuit works, then check out [this link](http://www.learningaboutelectronics.com/Articles/Relaxation-oscillator-circuit-with-a-transistor.php)
+If you want a deeper insight on how this circuit works, then check out this link
 
 The board is actually 2 sided. On one side are all of the components like capacitor, resistors, transistors etc. On the other side are the potentiometers and switches.
 
@@ -113,7 +113,7 @@ Due to the size limitations on circuit design in Eagle (100mm X 100mm) I had to 
 
 The oscillators are lined-up in 3 rows of 3 for a total of 9. I've also added tone pots for each row and there is also a master tone pot. There is a on/off switch for each row so you can turn each one off when tuning.
 
-If you would like to play around with the schematic and board in Eagle, well I have also provided these in my [GitHub Page](https://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synthhttps://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synth) You can also find a PDF of the schematic in this step.
+If you would like to play around with the schematic and board in Eagle, well I have also provided these in my GitHub Page You can also find a PDF of the schematic in this step.
 
 There are actually 2 versions available of the PCB. Both are available in my Google Drive
 
@@ -127,11 +127,8 @@ This has the tone pots removed (only has the master one) and an extra drone circ
 
 Getting Your Board Printed
 
-To have the board printed, save the gerber zip file in the [GitHub Page](https://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synth) files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then [check this 'ible out](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/) which is a step by step guide on how to get a PCB manufactured.
+To have the board printed, save the gerber zip file in the GitHub Page files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB manufactured.
 
-
-- [Box of Beezz - Drone Synth V1 - Schematic](pdfs/Box of Beezz - Drone Synth V1 - Schematic.pdf)
-- [Box of Beezz - Drone Synth V2 - Schematic](pdfs/Box of Beezz - Drone Synth V2 - Schematic.pdf)
 
 ## Step 2: Adding the Components to the PCB - Part 1
 
@@ -193,7 +190,7 @@ STEPS:
 
 ![Step 4: The Front Panel image 7](images/step05_07.gif)
 
-I use [inkscape](https://inkscape.org/) to design my front panels. You can find the raw files in my [GitHub Page](https://github.com/lonesoulsurfer/Box_of_Beezz---Drone_Synth) in case you want to play around with it. As I have mentioned, I have made 2 versions of the PCB and have also done a panel design for version 2 which is in my Google drive. I've also come up with a neat way to easily create front panels that match up perfectly to a PCB. Check out the YouTube clip if you are interested in learning how.
+I use inkscape to design my front panels. You can find the raw files in my GitHub Page in case you want to play around with it. As I have mentioned, I have made 2 versions of the PCB and have also done a panel design for version 2 which is in my Google drive. I've also come up with a neat way to easily create front panels that match up perfectly to a PCB. Check out the YouTube clip if you are interested in learning how.
 
 STEPS:
 
@@ -203,9 +200,6 @@ STEPS:
 - Cut the acrylic to size if you haven't already.
 - To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
 
-
-- [Drone Synth 1](pdfs/Drone Synth 1.pdf)
-- [Drone Synth 2](pdfs/Drone Synth 2.pdf)
 
 ## Step 5: Drilling & Making Cut-outs on the Front Panel
 
@@ -288,10 +282,10 @@ Now that you have the front panel secured into the case, it's time to add the PC
 
 STEPS:
 
-- Place the PCB into the front panel.  if you haven't already, mark out the PCB mounting holes on the back of the panel and drill.
+- Place the PCB into the front panel. if you haven't already, mark out the PCB mounting holes on the back of the panel and drill.
 - Secure them in place with some small screws and nuts
 - For the speaker, also mark and drill out the mounting holes if not already done.
-- I also added some speaker grill mesh.  Just cut it to shape and drill some holes for mounting to the speaker and case
+- I also added some speaker grill mesh. Just cut it to shape and drill some holes for mounting to the speaker and case
 - Put it all together with 4 screws and nuts
 
 
@@ -315,14 +309,14 @@ I have included an amp on this build along with a voltage boosting module, USB C
 
 STEPS:
 
-- Let's start with the charging module.  Remove the back from the case
+- Let's start with the charging module. Remove the back from the case
 - with a file, make a groove in the bottom section of the case big enough for the module to sit in.
 - Super glue the module into place
 - Next, place the volume potentiometer into the case and secure into place
 - Add the switches, audio sockets and secure into place
 - Lastly, add the 10K 'master tone' potentiometer into the front panel and secure.
-- The vactrol I used is made from an LED and an LDR.  You can easily make your own following [this Instructable](https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/)
-- Secure the LDR legs to the 'CV' section on the PCB  The LED legs need to be connected to the CV out socket.  Make sure that you attached the positive leg of the LED to the L and R terminals on the audio socket and the ground of the LED to the ground on the socket
+- The vactrol I used is made from an LED and an LDR. You can easily make your own following this Instructable
+- Secure the LDR legs to the 'CV' section on the PCB The LED legs need to be connected to the CV out socket. Make sure that you attached the positive leg of the LED to the L and R terminals on the audio socket and the ground of the LED to the ground on the socket
 
 
 ## Step 9: Wiring Everything Up!
@@ -356,13 +350,6 @@ STEPS:
 - Once you have wired everything together, add the knobs to the potentiometers.
 That's it! Now go and make some noise.
 
-
-## Downloads
-
-- [Box of Beezz - Drone Synth V1 - Schematic](pdfs/Box of Beezz - Drone Synth V1 - Schematic.pdf)
-- [Box of Beezz - Drone Synth V2 - Schematic](pdfs/Box of Beezz - Drone Synth V2 - Schematic.pdf)
-- [Drone Synth 1](pdfs/Drone Synth 1.pdf)
-- [Drone Synth 2](pdfs/Drone Synth 2.pdf)
 
 ---
 *69 images archived*

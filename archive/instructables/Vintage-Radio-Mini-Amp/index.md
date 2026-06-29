@@ -44,12 +44,12 @@ Enjoy
 
 Materials
 
-1. Mini amp - I used [[[this](http://www.ebay.com.au/itm/TONE-MONSTER-MAH3-NO-SOLDER-Guitar-Amp-Kit-3W-4-SPK-Overdrive-HDPH-Cigar-Box-/111377376573?pt=LH_DefaultDomain_0&hash=item19ee9be53d&_uhb=1)](http://www.ebay.com.au/itm/111353408199)](http://www.ebay.com.au/itm/Daphon-Battery-Powered-Portable-Amp-3W-Mini-Guitar-Amplifier-/231107744195?pt=AU_Amplifiers&hash=item35cf1851c3&_uhb=1) one but you could just make your own or buy a kit like this or this
+1. Mini amp - I used this one but you could just make your own or buy a kit like this or this
 
 2. Vintage Radio.
 Ebay has heaps. Pick the one you want, just make sure that it is easy to open and has plenty of room inside
 
-3. 9V battery holder - [eBay](http://www.ebay.com.au/itm/P4PM-2pcs-Single-Slots-1x-9V-Battery-Clip-Holder-Case-Box-with-Wire-Leads-DIY-/301021111326?pt=AU_Electronics_Batteries_Chargers&hash=item461641a41e&_uhb=1)
+3. 9V battery holder - eBay
 
 Tools
 

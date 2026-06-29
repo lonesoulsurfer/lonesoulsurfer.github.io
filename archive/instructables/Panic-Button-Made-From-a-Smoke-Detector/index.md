@@ -32,9 +32,9 @@ Parts:
 
 1. Smoke Alarm. - eBay. If you buy one to use in this project, then make sure you just replace an old one and use this. Not worth destroying a new one if you don’t have to
 
-2. Light switch – [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR1.TRC0.A0.H0.X1+Gang+Light+Switch.TRS0&_nkw=1+Gang+Light+Switch&_sacat=0) [Bunnings](https://www.bunnings.com.au/hpm-white-linea-1-gang-light-switch_p4330578) / hardware store
+2. Light switch – eBay Bunnings / hardware store
 
-3. Mounting Block for the light switch – [eBay](http://www.ebay.com.au/sch/i.html?_odkw=37mm+Surface+Mounting+Block&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X34mm+Surface+Mounting+Block.TRS0&_nkw=34mm+Surface+Mounting+Block&_sacat=0), [Bunnings](https://www.bunnings.com.au/hpm-37mm-deep-white-surface-mounting-block_p7053474) / hardware store
+3. Mounting Block for the light switch – eBay, Bunnings / hardware store
 
 4. White flute board (for the back if you are not wall mounting it)
 

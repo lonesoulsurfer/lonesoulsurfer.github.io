@@ -57,19 +57,19 @@ The parts below are for the 5V all adapter version. The battery version parts li
 PARTS:
 
 - Resistors (metal Film)
-- [1M X 1](https://www.aliexpress.com/w/wholesale-1m-Resistor.html?spm=a2g0o.productlist.search.0)
-- [1K X 1](https://www.aliexpress.com/w/wholesale-1k-Resistor.html?spm=a2g0o.productlist.search.0)
-- [22K X 1](https://www.aliexpress.com/w/wholesale-22k-resistor.html?spm=a2g0o.productlist.auto_suggest.1.4bbb41a6O8fMLp)
-- LED Display 7 Segment [5101AS X 5](https://www.aliexpress.com/w/wholesale-5101AS.html?spm=a2g0o.productlist.search.0)
+- 1M X 1
+- 1K X 1
+- 22K X 1
+- LED Display 7 Segment 5101AS X 5
 - IC's
-- [Decade Counter 4033 X 5](https://www.aliexpress.com/w/wholesale-4033-ic.html?spm=a2g0o.productlist.search.0)
-- [Binary Counter 4060 X 2](https://www.aliexpress.com/w/wholesale-4060-ic.html?spm=a2g0o.productlist.search.0)
+- Decade Counter 4033 X 5
+- Binary Counter 4060 X 2
 - Switches
-- momentary switch [SKRCADD010 X 1](https://www.aliexpress.com/w/wholesale-SKRCADD010.html?spm=a2g0o.productlist.search.0)
-- micro slide switch [MSK-12D19 X 2](https://www.aliexpress.com/item/1005005877515591.html?spm=a2g0o.order_list.order_list_main.386.503d1802HJPTn8)
-- [USB C X 1](https://www.aliexpress.com/item/1005006140199994.html?spm=a2g0o.order_list.order_list_main.65.65691802z57dr5)
-- Crystal Oscillator [32.768kHz X 1](https://www.aliexpress.com/w/wholesale-32.768kHz.html?spm=a2g0o.detail.search.0)
-- Red Translucent [acrylic X 1](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=red+transparent+acrylic&_sacat=0)
+- momentary switch SKRCADD010 X 1
+- micro slide switch MSK-12D19 X 2
+- USB C X 1
+- Crystal Oscillator 32.768kHz X 1
+- Red Translucent acrylic X 1
 
 
 ## Step 1: Designing the Circuit & Getting Your Own PCB Printed
@@ -84,13 +84,13 @@ PARTS:
 
 When designing this PCB I wanted to make sure that it was a complete unit with no need for added wires or external components to make it work. It can be powered directly via USB C.
 
-All of the information including the Gerber file, Eagle files and schematic can be found on my [GitHub Page](https://github.com/lonesoulsurfer/CMOS_Clock_Counter)
+All of the information including the Gerber file, Eagle files and schematic can be found on my GitHub Page
 
 There are 2 versions available - one that is powered by 5V USB C and the other by a 9V battery and USB C - you choose which one you want to build
 
 Getting the PCB Printed – Steps
 
-- Download the ‘Gerber file’ folder from my [GitHub Page](https://github.com/lonesoulsurfer/CMOS_Clock_Counter) and save it somewhere on your computer
+- Download the ‘Gerber file’ folder from my GitHub Page and save it somewhere on your computer
 - You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Just follow the steps and download the Gerber files to the website.
 - You will see the PCB once it has been loaded. Now you can choose your colour by ticking which one in the list below
 - Every PCB printed has an order number automatically added. However, you can opt to have it added to a ‘specific’ spot.  Make sure you click the specific tick box and it will be located on the back of the PCB.
@@ -169,10 +169,10 @@ This isn't necessary but it does give a great finish to the build so You should 
 STEPS:
 
 - Place a blank circuit board onto the red acrylic and measure out the size on the backing of the acrylic
-- If you have a band saw then use this to cut the acrylic.  If not you can use a fine tooth saw to cut it out
+- If you have a band saw then use this to cut the acrylic. If not you can use a fine tooth saw to cut it out
 - Sand and then file the sides to make them smooth.
-- Place the board back onot the acrylic and mark out the 4 drill holes in each corner.  Use a 2.5mm drill piece to drill out the holes
-- To secure the acrylic into place you'll need to use some spacers.  Check the parts list on where to get these
+- Place the board back onot the acrylic and mark out the 4 drill holes in each corner. Use a 2.5mm drill piece to drill out the holes
+- To secure the acrylic into place you'll need to use some spacers. Check the parts list on where to get these
 - Secure the spacers to the board and acrylic using the screws that come with the spacers
 
 
@@ -186,8 +186,8 @@ I decided to mount mine to the wall. You could also make a witre stand and have 
 
 STEPS:
 
-- Decide where you want to have your clock counter.  Prob best to have it close to a power source so it's easy to power.
-- Use a couple snall screws and add them to the 2 small holes about half way up the PCB.  You might need to remove the acrilic cover first if you ahve already added it
+- Decide where you want to have your clock counter. Prob best to have it close to a power source so it's easy to power.
+- Use a couple snall screws and add them to the 2 small holes about half way up the PCB. You might need to remove the acrilic cover first if you ahve already added it
 - Connect a USB C cord to the adapter on the PCB and power it up
 
 

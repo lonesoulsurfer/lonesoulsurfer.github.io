@@ -13,7 +13,7 @@ Source: https://www.instructables.com/Secret-Book-Switch/
 
 ![Intro 3](images/intro_03.jpg)
 
-All credit goes to [B.Light Design](http://blightdesign.com/misc_book.html) who came up with this inventive secret, hidden book switch. After seeing this on the web I knew I just had to make my own.
+All credit goes to B.Light Design who came up with this inventive secret, hidden book switch. After seeing this on the web I knew I just had to make my own.
 
 NOTE - the last image is a GIF but I'm finding that they don't work on Mobile devices. They work fine though on PC's.
 
@@ -23,7 +23,7 @@ I have wired up the switch to activate a light on my bookshelf. It’s powered b
 
 I’m thinking about making a secret draw somewhere on my bookshelf which is activated and opens by the secret book switch.
 
-[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) were nice enough to do a review of this project which can be found [here](https://hackaday.com/tag/instructables/)
+Hackaday were nice enough to do a review of this project which can be found here
 
 
 ## Step 1: Parts and Tools
@@ -38,19 +38,19 @@ I’m thinking about making a secret draw somewhere on my bookshelf which is act
 
 Parts:
 
-1. Fan Switch – [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F142240252674)
+1. Fan Switch – eBay
 
-2. Aluminium strip 10mm x 3mm 1m Aluminium – [Bunnings](https://www.bunnings.com.au/metal-mate-10-x-3mm-1m-aluminium-flat-bar_p1063146) or any local hardware store
+2. Aluminium strip 10mm x 3mm 1m Aluminium – Bunnings or any local hardware store
 
-3. Aluminium Strip 20mm x 1.6mm 1m Aluminium – [Bunnings](https://www.bunnings.com.au/metal-mate-20-x-1-6mm-1m-aluminium-flat-bar_p1064257) or any local hardware store
+3. Aluminium Strip 20mm x 1.6mm 1m Aluminium – Bunnings or any local hardware store
 
-4. Block Terminal – [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F272810353267)
+4. Block Terminal – eBay
 
 5. Various sized screws
 
-6. Braid fishing line – [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F311182013799)
+6. Braid fishing line – eBay
 
-7. Hinge 10mm x 8mm - [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F401150971133)
+7. Hinge 10mm x 8mm - eBay
 
 Tools:
 

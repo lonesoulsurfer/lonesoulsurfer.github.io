@@ -20,7 +20,7 @@ LED’s will dance around to the sound.
 
 This is a really run little circuit to build and only needs a few components to make it. The main one being the 4017 IC which is also known as a decade counter. This little integrated circuit can count to 1 to 10 and controls the LED’s. You can use these IC’s to build LED chasers (just like Kit from Knightrider) and this build is similar but for one major difference. It utilises a transistor and microphone which allows it to react to sound!
 
-If you have never built a circuit before or are only a beginner, then I strongly suggest that you check out [my ‘ible here](https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/) and get the basics down first.
+If you have never built a circuit before or are only a beginner, then I strongly suggest that you check out my ‘ible here and get the basics down first.
 
 The case I used is a cigarette rolling machine which you can pick-up cheaply on eBay.
 
@@ -49,17 +49,17 @@ Check out the YouTube clip to see it in action
 
 PARTS LIST:
 
-1. 4017 IC – [eBay](https://www.ebay.com.au/itm/10PCS-CD4017BE-4017-CD4017-Decade-Counter-Divider-IC-LJ/183521267128?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D55157%26meid%3D3fd60f4e0315454386e74aa938f76922%26pid%3D101006%26rk%3D1%26rkt%3D1%26%26itm%3D183521267128&_trksid=p2045573.c101006.m3226)
+1. 4017 IC – eBay
 
-2. Toggle Switch – [eBay](https://www.ebay.com.au/itm/5-x-On-Off-Small-Toggle-Switch-Miniature-SPST-6mm-AC250V-3A-120V-5A-W2U5/192331787403?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D55157%26meid%3D75f3c12e86b848d093f0867356809f30%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D192331787403&_trksid=p2045573.c100505.m3226)
+2. Toggle Switch – eBay
 
-3. LED’s X 11 – Buy an assorted lot from [eBay](https://www.ebay.com.au/itm/300-Pack-LED-Diode-3mm-5mm-LED-Lights-Emitting-Diodes-Assorted-Clear-Bulbs-R1E4/282904138367?epid=2282666457&hash=item41de66927f:g:gxEAAOSwUUxavKGQ:rk:4:pf:0).
+3. LED’s X 11 – Buy an assorted lot from eBay.
 
-4. BC547 Transistor – [eBay](https://www.ebay.com.au/itm/10-20-50Pcs-BC547-NPN-T092h-General-Purpose-Transistor/162749020690?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D55157%26meid%3D55540976d9624b6d94ef699995b67772%26pid%3D101006%26rk%3D1%26rkt%3D1%26%26itm%3D162749020690&_trksid=p2045573.c101006.m3226)
+4. BC547 Transistor – eBay
 
-5. 1uf Capacitor – Buy them in assorted lots [eBay](https://www.ebay.com.au/itm/1uF-470uF-120pcs-12-Value-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/311708836381?hash=item48934b621d:g:WLAAAOSwCGVX6fec:rk:23:pf:0)
+5. 1uf Capacitor – Buy them in assorted lots eBay
 
-6. Resistors - buy them in assorted lots - [eBay](https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/271860510973?epid=24025613485&hash=item3f4c2630fd:g:LMwAAOSwrklVSIC7:rk:9:pf:0)
+6. Resistors - buy them in assorted lots - eBay
 
 a. 2 x 470R
 
@@ -67,17 +67,17 @@ b. 2 X 20K
 
 c. 1 X 2M
 
-7. Electret Condenser Microphone - [eBay](https://www.ebay.com.au/itm/10-PCS-9-7mm-x-7mm-2-Pin-MIC-Capsule-Electret-Condenser-Microphone-SY-AU/252252909548?epid=1463651267&hash=item3abb71efec:g:QtcAAOSwLnlWmfBa:rk:9:pf:0)
+7. Electret Condenser Microphone - eBay
 
-8. Prototype Board - [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+8. Prototype Board - eBay
 
-9. Cigarette Roller Machine (Case) – [eBay](https://www.ebay.com.au/itm/Metal-Automatic-Cigarette-Tobacco-Roller-Roll-Rolling-Machine-Box-Case-Tin-G-N/132490533373?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20180905084756%26meid%3Dd450bddccbe2432484b20598023f7857%26pid%3D100506%26rk%3D1%26rkt%3D1%26%26itm%3D132490533373&_trksid=p2045573.c100506.m3226)
+9. Cigarette Roller Machine (Case) – eBay
 
 10. Wires
 
 11. 9V Battery
 
-12. 9V Battery holder – [eBay](https://www.ebay.com.au/itm/10pcs-PP3-MN1604-9V-9volt-Battery-Holder-Clip-Snap-On-Connector-Cable-Lead-New/263287410073?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D55157%26meid%3Dcdcaaebba15b44e3ade0f73979e10d63%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D263287410073&_trksid=p2045573.c100505.m3226)
+12. 9V Battery holder – eBay
 
 
 ## Step 2: Modding the Case

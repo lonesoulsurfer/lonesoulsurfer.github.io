@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,14 +127,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make Old Toys Awesome Again</span>
 </nav>
-<h1>Make Old Toys Awesome Again</h1><div class="source"><a href="https://www.instructables.com/Make-Old-Toys-Awesome-Again/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I found this retro looking spaceship from a local junk store for $2 and couldn’t resist buying it.</p>
-<p>I was initially just going to give it to my nephews as is but I wanted to make it a little more fun to play with.</p>
-<p>I decided to use the trusty 555 ic and build in some flashing LED’s and a buzzing engine sound effect, all controlled by a couple of pots.</p>
-<p>The circuit is quite simple and uses 2 x 555 IC’s – one to control the speed of the flashing LED’s and one to control the sound effects.</p>
-<p>The best part (and the hardest) part of a build like this is to work out where you are going to add all those parts inside the toy.</p>
-<p>My spaceship only had limited room and I always like the challenge of working out how to cram in all the bits and pieces whist making it look like the toy was made like that.</p>
-<p>This build will be different for most people as there’s slim chance you’ll have the same spaceship as me.</p>
-<p>However, I’m hoping that it will give you some inspiration and tips on how to put a build like this together and make old toys awesome again.</p>
+<h1>Make Old Toys Awesome Again</h1><div class="source"><a href="https://www.instructables.com/Make-Old-Toys-Awesome-Again/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I found this retro looking spaceship from a local junk store for $2 and couldn’t resist buying it. I was initially just going to give it to my nephews as is but I wanted to make it a little more fun to play with.</p>
+<p>I decided to use the trusty 555 ic and build in some flashing LED’s and a buzzing engine sound effect, all controlled by a couple of pots. The circuit is quite simple and uses 2 x 555 IC’s – one to control the speed of the flashing LED’s and one to control the sound effects.</p>
+<p>The best part (and the hardest) part of a build like this is to work out where you are going to add all those parts inside the toy. My spaceship only had limited room and I always like the challenge of working out how to cram in all the bits and pieces whist making it look like the toy was made like that.</p>
+<p>This build will be different for most people as there’s slim chance you’ll have the same spaceship as me. However, I’m hoping that it will give you some inspiration and tips on how to put a build like this together and make old toys awesome again.</p>
 <p>There’s a video of the build as well below.</p><h2><span class="step-num">STEP 1</span>Step 1: GIF's</h2><div class="step-images"><img src="images/step01_01.gif" alt="Step 1: GIF's image 1" loading="lazy"><img src="images/step01_02.gif" alt="Step 1: GIF's image 2" loading="lazy"><img src="images/step01_03.gif" alt="Step 1: GIF's image 3" loading="lazy"><img src="images/step01_04.gif" alt="Step 1: GIF's image 4" loading="lazy"></div><p>I had a few GIF's of the lights in action.</p><h2><span class="step-num">STEP 2</span>Step 2: Parts and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Parts and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Parts and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Parts and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Parts and Tools image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Parts and Tools image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Parts and Tools image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Parts and Tools image 7" loading="lazy"></div><p>Parts</p>
 <p>The Toy</p>
 <ol>
@@ -177,288 +138,137 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol>
 <p>Electronics</p>
 <ol>
-<li>2 X 555 timers – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=555+timer&_sacat=0">eBay</a></li>
-</ol>
-<ol>
-<li>100k Pot – <a href="https://www.ebay.com.au/itm/2-5PCS-3-6Pin-6MM-Rotary-Potentiometer-Adjustable-Resistance-5-20-50-100K-Ohm/392335538338?hash=item5b590538a2:m:mqOtDVMgaJzNUj3E3gGFQAg">eBay</a></li>
-</ol>
-<ol>
-<li>500k pot – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=500k+potentiometer+linear&_sacat=0&LH_TitleDesc=0&_sop=1&_ipg=200">eBay</a></li>
-</ol>
-<ol>
-<li>6 x 3.3k resistors - <a href="https://www.ebay.com.au/itm/MR25-0-25W-3-3K-3K3-Ohm-Metal-Film-Resistor-25-Pieces/251852154489?hash=item3aa38ee679:g:p70AAOSwqu9U6nsC">eBay</a></li>
-</ol>
-<ol>
-<li>2 x 10uf cap – <a href="https://www.ebay.com.au/itm/Lelon-10uF-50V-High-Temp-PCB-Electrolytic-Capacitor-Pack-of-50/161397832287?hash=item25940f7a5f:g:fhEAAOSwyc1ZnkLY">eBay</a></li>
-</ol>
-<ol>
-<li>100nf Cap – <a href="https://www.ebay.com.au/itm/450Pcs-15Value-10pF-100nF-Ceramic-Disc-Capacitor-Monolithic-MLCC-Assortment-Kit/163479950474?_trkparms=ispr%3D1&hash=item26102a148a:g:~CwAAOSwQ5pcNzQ4&enc=AQAEAAAB4BPxNw%2BVj6nta7CKEs3N0qVEI2xmOw1QDtfo7gb3evko0xbg%2FO7d4W%2Bx5SqzuU1Q3gw4LzMDD8DQxPfstwrQGvSisQ81n%2BCXol4tXURhLJG2CpKDRMPTqWiPMcSgcnQnPrAOBU%2F6UDk7aOZLB%2F4oN%2FgRCKlVGDwhDjWUt4cHmH9qjJI383zAcHSDWfd5VId0w5EESmxIRIY0BnisyHU3w4IV%2FUT4dz3ulvxYugcKqjNDSRU6gEYWDxbAMOIl5ygF4n3SmrsdR5qQEinML5UjWDrQs7mcx2wwxgJOGsUX7qeT%2FEjaSXdiC0w4s6imWzR8EgBRGuAwTPDOBba2%2FFhTN697oKKVkRQ0s681OBYzgGaoXiGViaiSvVuRvf85KEYTqtvtdizSrFH4kaMOjF4DV9ROMGojy9LhpK841CqXxO29%2BumKhemNEKRq0Fi0bUea3eoIVvNFWL%2FGPVDxF%2B7Y59jJazeT0ZScqznUeibx28je0gGmfvQDp9mTjKTmddQAIQNl2mJUrGcf%2B9kEDtBmGLB8NNRl%2FIHrqB1alWScQ4AbsDiuFwzBxef%2BGiZbItK9CGwfZJIB08SIiUf5dkcWX%2BAfsYTwT07DikikJlZoA%2B%2BxsBw1rYIBs2lAW2wSEmCNKA%3D%3D&checksum=16347995047443bb98251a934167b3a4f797d622acc1">eBay</a></li>
-</ol>
-<ol>
-<li>8ohm 0.5w speaker – <a href="https://www.ebay.com.au/itm/2x-20mm-8Ohm-8-0-5W-Audio-Speaker-Stereo-Woofer-Loudspeaker-Trumpet-HornFAA/274015403892?hash=item3fcc973f74:g:kpQAAOSwfZhXNUCv">eBay</a></li>
-</ol>
-<ol>
-<li>2 X SPDT Switches – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC0.A0.H1.Xspdt+switch+.TRS0&_nkw=spdt+switch+&_sacat=0">eBay</a></li>
-</ol>
-<ol>
-<li>5 X 3mm LED’s - buy assorted on <a href="https://www.ebay.com.au/itm/300-3mm-Round-Light-Emitting-LED-Diode-Assorted-Kit-Mix-Blue-Yellow-Red-Green/133152108427?hash=item1f007bef8b:g:01sAAOSwQ~FdY8f1">eBay.</a> Use whatever colour you want. I used 2 red (for the guns) 2 blue and 1 yellow</li>
-</ol>
-<ol>
-<li>2 X 5mm Flashing LED’s – <a href="https://www.ebay.com.au/itm/100PCS-5mm-LED-Flicker-Diodes-Flashing-Yellow-Candle-Flickering-Flash-Blink-Diod/254268895939?hash=item3b339b72c3:g:17QAAOSw7cldCh6X&frcectupt=true">eBay</a></li>
-</ol>
-<ol>
-<li>Prototype Board – <a href="https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3">eBay</a></li>
-</ol>
-<ol>
+<li>2 X 555 timers – eBay</li>
+<li>100k Pot – eBay</li>
+<li>500k pot – eBay</li>
+<li>6 x 3.3k resistors - eBay</li>
+<li>2 x 10uf cap – eBay</li>
+<li>100nf Cap – eBay</li>
+<li>8ohm 0.5w speaker – eBay</li>
+<li>2 X SPDT Switches – eBay</li>
+<li>5 X 3mm LED’s - buy assorted on eBay. Use whatever colour you want. I used 2 red (for the guns) 2 blue and 1 yellow</li>
+<li>2 X 5mm Flashing LED’s – eBay</li>
+<li>Prototype Board – eBay</li>
 <li>Bunch of wires</li>
-</ol>
-<ol>
-<li>Lithium Ion battery I usually just source these from old phones. you can also get them from - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xli+po+battery.TRS0&_nkw=li+po+battery&_sacat=0">eBay</a></li>
-</ol>
-<ol>
-<li>Charger and voltage module - <a href="https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-E8S0/113698283835?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649">eBay</a> These little modules are amazing!</li>
+<li>Lithium Ion battery I usually just source these from old phones. you can also get them from - eBay</li>
+<li>Charger and voltage module - eBay These little modules are amazing!</li>
 </ol>
 <p>Tools</p>
 <ol>
 <li>Soldering Iron</li>
-</ol>
-<ol>
 <li>Screwdrivers and Phillips heads</li>
-</ol>
-<ol>
 <li>Exacto knife, Stanley knife</li>
-</ol>
-<ol>
 <li>Hot glue</li>
-</ol>
-<ol>
 <li>Superglue</li>
-</ol>
-<ol>
 <li>Dremel (always handy)</li>
-</ol>
-<ol>
 <li>Drill</li>
-</ol>
-<ol>
 <li>Small files</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Get a Toy</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Get a Toy image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Get a Toy image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Get a Toy image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Get a Toy image 4" loading="lazy"></div><p>The first thing you need to do is to find a toy. As I mentioned in the intro, this doesn’t have to be a spaceship – it could be a race car, nerf gun, motorbike – whatever you think would work well.</p>
 <p>I picked-up this spaceship for $2 at the local junk shop. When you are looking to mod a toy there are a few things to look out for.</p>
 <ol>
 <li>Make sure the toy has some empty voids inside. You’re going to need space for the electronics, batteries etc</li>
-</ol>
-<ol>
 <li>Make sure that it easily pulls apart – no weird screws or push tabs</li>
-</ol>
-<ol>
 <li>Check on the net before you mod the toy – it could be worth something</li>
-</ol>
-<ol>
 <li>Lastly, try not to use a toy with sentimental value – you are going to hack at it and change it forever so be prepared at the possibility of totally wreaking the toy!</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Pulling Apart & Cleaning</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pulling Apart & Cleaning image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pulling Apart & Cleaning image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pulling Apart & Cleaning image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pulling Apart & Cleaning image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pulling Apart & Cleaning image 5" loading="lazy"></div><p>My spaceship looked like it had been sitting around for a few years and not stored very well. There was a lot of dirt and grim from over the years.</p>
 <p>Steps:</p>
 <ol>
 <li>First, pull the toy apart. If it is a complex toy then it’s best to take a bunch of photos and document the parts so you know how to put it back together.</li>
-</ol>
-<ol>
 <li>If your toy is dirty like mine then you need to give the parts a wash. The safest way is just to use warm, soapy water and gently remove the grime. An old toothbrush is good for this.</li>
-</ol>
-<ol>
 <li>Dry with some paper towel</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Flashing LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 5" loading="lazy"></div><p>The circuit is primarily a couple of 555 timers which blink and buzz.</p>
-<p>The build isn’t very hard for anyone who has played around with circuits before.</p>
-<p>If you are a beginner, then I suggest you read this ‘ible to help you get started.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - Flashing LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - Flashing LED's image 5" loading="lazy"></div><p>The circuit is primarily a couple of 555 timers which blink and buzz. The build isn’t very hard for anyone who has played around with circuits before. If you are a beginner, then I suggest you read this ‘ible to help you get started.</p>
 <p>I also included the fritzing file so you can go in and make any changes or additions if you want to</p>
 <p>The first thing to do is to breadboard the circuit to make sure you have it working</p>
 <p>Steps:</p>
 <ol>
 <li>You want to make sure that the circuit is as small and compact as possible. Add a socket holder for the first 555 timer</li>
-</ol>
-<ol>
 <li>Connect pin 1 to ground and pins 4 and 8 to positive</li>
-</ol>
-<ol>
 <li>Add a 10uf cap to pin 2 and ground</li>
-</ol>
-<ol>
 <li>Connect pins 2 and 6 together</li>
-</ol>
-<ol>
 <li>Don’t worry about the resister on pins 3 and 6 – I removed this and added a pot so I could change the speed of the LEDs</li>
-</ol>
-<ol>
 <li>That’s it for the flashing LED circuit.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - Buzzing Sound Effect</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - Buzzing Sound Effect image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - Buzzing Sound Effect image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Circuit - Buzzing Sound Effect image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Circuit - Buzzing Sound Effect image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Connect pin 1 to ground and pins 4 and 8 to positive</li>
-</ol>
-<ol>
 <li>Add a 100nf cap to pin 2 and ground</li>
-</ol>
-<ol>
 <li>Connect pins 2 and 6 together</li>
-</ol>
-<ol>
 <li>Add a 10uf cap to pin 3 and connect the positive leg to a spare spot on the prototype board.</li>
-</ol>
-<ol>
 <li>That’s it for the circuit. Next you need to add some wires to connect it to the parts in the toy</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Wires to the Circuit</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Wires to the Circuit image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Wires to the Circuit image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Wires to the Circuit image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Wires to the Circuit image 4" loading="lazy"></div><p>Now that you have the circuit built, it's time to add all the wires that will connect it to the pots, LED's, power and switch.</p>
 <p>Steps:</p>
 <ol>
 <li>Start to add the wires to each part of the circuit making sure you use the schematic to identify the right connections.</li>
-</ol>
-<ol>
 <li>There are quite a few wires so take your time and ensure you add all that you need. You can always add any that you have forgotten later but it's way easier doing it now then later when you have started to connect the wires.</li>
-</ol>
-<ol>
 <li>Once you have them all soldered into place, trim the excess circuit board to reduce it's size. I just use some wire cutters to do this.</li>
-</ol>
-<ol>
 <li>That's it for the circuit board for now. You could test it prior to adding it to the ray gun but that would mean connecting all the LED's, pots etc and that's just a pain. Better I reckon to just connect everything on the toy and problem solve if necessary later</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding Some LED Lasers</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding Some LED Lasers image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding Some LED Lasers image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding Some LED Lasers image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding Some LED Lasers image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding Some LED Lasers image 5" loading="lazy"></div><p>My ship already had a couple of ports that I think used to shoot missiles (long lost!).</p>
-<p>The holes made a perfect place to add a couple of flashing “laser” LED’s.</p>
-<p>I found these cool looking LED covers from the local electronics store which were perfect for simulating lasers</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding Some LED Lasers</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding Some LED Lasers image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding Some LED Lasers image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding Some LED Lasers image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding Some LED Lasers image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding Some LED Lasers image 5" loading="lazy"></div><p>My ship already had a couple of ports that I think used to shoot missiles (long lost!). The holes made a perfect place to add a couple of flashing “laser” LED’s. I found these cool looking LED covers from the local electronics store which were perfect for simulating lasers</p>
 <p>Steps:</p>
 <ol>
 <li>As the LED holders didn’t quite fit into the plastic ends of the gun sections on the spaceship, I decided to drill them out slightly. You have to be careful though when doing this as the plastic isn’t very thick and you don’t want to drill too much plastic away</li>
-</ol>
-<ol>
 <li>Once the LED holders fitted, I super glued them into place</li>
-</ol>
-<ol>
 <li>Next, I extended the legs on a couple LED’s with a couple of resistor legs and pushed them inside the LED holders and hot glued them into place.</li>
-</ol>
-<ol>
 <li>Actually, check that the LED’s are good first before hot gluing them as they are a pain to get out again.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a On/Off Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a On/Off Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a On/Off Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a On/Off Switch image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a On/Off Switch image 4" loading="lazy"></div><p>Every electronics project needs a switch. I salvage most of mine from old electronics as they always come in handy for builds such as this one.</p>
 <p>Steps:</p>
 <ol>
 <li>Identify the best place to add a switch. I decided to add mine to the back of the spaceship</li>
-</ol>
-<ol>
 <li>Mark the area and then drill a couple of holes approximately the same width of the switch.</li>
-</ol>
-<ol>
 <li>To make the drilled section rectangle shape, I use some small files and carefully remove the excess plastic.</li>
-</ol>
-<ol>
 <li>Keep trying the switch until it pops into place</li>
-</ol>
-<ol>
 <li>Lastly I secured in place with some self-tapping screws</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Adding Some LED's to Simulate Retro Rockets</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding Some LED's to Simulate Retro Rockets image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding Some LED's to Simulate Retro Rockets image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding Some LED's to Simulate Retro Rockets image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding Some LED's to Simulate Retro Rockets image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding Some LED's to Simulate Retro Rockets image 5" loading="lazy"></div><p>I kinds cheated a little here and used 5mm “blinking” LEDs – you know the ones used in electronic candles. The really look good and there is no need to add any extra circuitry to get a similar effect.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill out the area in the back of the ship where you want to add the rocket LED’s</li>
-</ol>
-<ol>
 <li>Add a couple of 3.3K resistors to the ground leg of the LED’s</li>
-</ol>
-<ol>
 <li>Push the LED’s into the drilled holes and super glue into place. When you use super glue like this it really creates a strong bond. So strong that if you want to replace the LED for whatever reason, you’ll probably have to drill it out!</li>
-</ol>
-<ol>
 <li>Your retro rockets are done!</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Pots</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Pots image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Pots image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Pots image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Pots image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Pots image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Pots image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Pots image 7" loading="lazy"></div><p>To control the speed of the LED’s on the front of the spaceship and to also control the sound, you will need to add a couple of Potentiometers somewhere.</p>
-<p>Actually, the Pot for controlling the LED’s was an afterthought but I’m glad I added it.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Pots</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Pots image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Pots image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Pots image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Pots image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Pots image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Pots image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Pots image 7" loading="lazy"></div><p>To control the speed of the LED’s on the front of the spaceship and to also control the sound, you will need to add a couple of Potentiometers somewhere. Actually, the Pot for controlling the LED’s was an afterthought but I’m glad I added it.</p>
 <p>Steps:</p>
 <ol>
 <li>Have a good think about where the best place to add the pots will be. Remember, if a child is playing with the toy they will want to be able to reach them easily. I was lucky to have a couple of holes that I could utilise in the top of the ship.</li>
-</ol>
-<ol>
 <li>I had to make some slight modifications in order for the pots to fit and removed some plastic gussets with a pair of pliers and an exacto knife.</li>
-</ol>
-<ol>
 <li>Once the top of the ship fitted flush with the bottom section and the pots weren’t getting in the way I was ready to move onto the next problem</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Flashing LED's</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Flashing LED's image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Flashing LED's image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Flashing LED's image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding the Flashing LED's image 4" loading="lazy"></div><p>Initially I was thinking of adding the flashing LED's to the front section of the spaceship but once I pulled it apart I realised this wasn't going to be possible.</p>
-<p>I went with adding them to the front top section as there was easy access, and a fair amount of room that I could utilize.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Flashing LED's</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Flashing LED's image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Flashing LED's image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Flashing LED's image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding the Flashing LED's image 4" loading="lazy"></div><p>Initially I was thinking of adding the flashing LED's to the front section of the spaceship but once I pulled it apart I realised this wasn't going to be possible. I went with adding them to the front top section as there was easy access, and a fair amount of room that I could utilize.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill 3 holes for the LED's to fit into</li>
-</ol>
-<ol>
 <li>Super glue the LED's into place</li>
-</ol>
-<ol>
 <li>Use the schematic and add a resistor to each LED. There are 2 added to negative and one to positive legs on the LED's.</li>
-</ol>
-<ol>
 <li>Connect the legs as per the schematic. I must admit I got this wrong the first time and the LED's didn't flash in the sequence i wanted them to. I had to play around a bit until I got the sequence the way I wanted it.</li>
 </ol><h2><span class="step-num">STEP 13</span>Step 13: Adding a Speaker</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding a Speaker image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding a Speaker image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding a Speaker image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>I decided to add the speaker to the bottom of the spaceship as there was a nice little space to place it. I have no idea where I got this speaker from but it was perfect for this project.</li>
-</ol>
-<ol>
 <li>Mark the area and drill some holes to allow the sound to come out</li>
-</ol>
-<ol>
 <li>Super glue the speaker into place</li>
 </ol><h2><span class="step-num">STEP 14</span>Step 14: Separate Switch for the Sound Effects</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Separate Switch for the Sound Effects image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Separate Switch for the Sound Effects image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Separate Switch for the Sound Effects image 3" loading="lazy"></div><p>I wanted to have the ability to turn the sound on and off so I added a separate switch for the sound. I'm making this for a nephew and didn't want to drive his mum insane.</p>
 <p>Steps:</p>
 <ol>
 <li>Find a good spot to add the switch. Try and add it to a section of the toy that is easy to reach for anyone playing with it and it's in easy reach.</li>
-</ol>
-<ol>
 <li>I used some superglue to hold it in place. Be careful whenever you use glue and switches - I've stuck many a switches together using too much glue.</li>
 </ol><h2><span class="step-num">STEP 15</span>Step 15: Adding All Those Wires</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Adding All Those Wires image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Adding All Those Wires image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Adding All Those Wires image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Adding All Those Wires image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: Adding All Those Wires image 5" loading="lazy"><img src="images/step15_06.jpg" alt="Step 15: Adding All Those Wires image 6" loading="lazy"></div><p>Look at all those wires! It's like bad bed hair. I kinda left too much length of the wire but I think it's better to have too much length then too little (so does my wife).</p>
 <p>Steps:</p>
 <ol>
 <li>Find a place in the toy that the circuit board can fit into. You need to ensure you plan where you are going to put it beforehand though to make sure you have enough space to place it.</li>
-</ol>
-<ol>
 <li>Slowly and carefully, start to work out which wire goes to which part.</li>
-</ol>
-<ol>
 <li>Once you have the right wire, measure, trim and solder it to the part.</li>
-</ol>
-<ol>
 <li>Keep on working through each of the connections until that birds nest of wires is all cleaned-up and soldered.</li>
 </ol>
-<p>Getting close now...</p><h2><span class="step-num">STEP 16</span>Step 16: Adding Power</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Adding Power image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Adding Power image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Adding Power image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Adding Power image 4" loading="lazy"><img src="images/step16_05.jpg" alt="Step 16: Adding Power image 5" loading="lazy"><img src="images/step16_06.jpg" alt="Step 16: Adding Power image 6" loading="lazy"></div><p>To power the circuit and LED's I used a li-po that I pulled of something and sometime.</p>
-<p>As the circuit needs 9v's and the li-po only generates 3.7v I needed to boost the power up to 9v and also be able to charge the li-po battery.</p>
+<p>Getting close now...</p><h2><span class="step-num">STEP 16</span>Step 16: Adding Power</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Adding Power image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Adding Power image 2" loading="lazy"><img src="images/step16_03.jpg" alt="Step 16: Adding Power image 3" loading="lazy"><img src="images/step16_04.jpg" alt="Step 16: Adding Power image 4" loading="lazy"><img src="images/step16_05.jpg" alt="Step 16: Adding Power image 5" loading="lazy"><img src="images/step16_06.jpg" alt="Step 16: Adding Power image 6" loading="lazy"></div><p>To power the circuit and LED's I used a li-po that I pulled of something and sometime. As the circuit needs 9v's and the li-po only generates 3.7v I needed to boost the power up to 9v and also be able to charge the li-po battery.</p>
 <p>Luckily there is this awesome module that has both a voltage booster and charger built in one. I always buy a few of these at a time as they in very handy.</p>
 <p>Steps:</p>
 <ol>
 <li>first, work out where you want to add the battery and charging module. You will need to make a small opening in the toy so the mini usb on the charger can be accessed.</li>
-</ol>
-<ol>
 <li>On the module there is a couple of solder points for the battery. Solder the battery wires to these</li>
-</ol>
-<ol>
 <li>Next, you need to connect the positive and negative wires from the circuit to the output on the module.</li>
-</ol>
-<ol>
 <li>Now the big moment - turn on the power and see what happens. If everything is connected correctly your spaceship should be flashing like mad. Hit the sound switch - you should now get some awesome spaceship sounds. Try the potentiometers to change the speed of the leds and the sound effects.</li>
-</ol>
-<ol>
 <li>If everything works - congrats - you are now ready to close up the case. If you are having any issues you're gonna have to go though your connections and find out where the problem is. If it makes you feel any better, 9 out of 10 times my circuits don;t work for the first time. I've usually added a wires incorrectly or messed-up some connection.</li>
 </ol><h2><span class="step-num">STEP 17</span>Step 17: Final Step! - Closing-up the Case</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Final Step! - Closing-up the Case image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Final Step! - Closing-up the Case image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Final Step! - Closing-up the Case image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Final Step! - Closing-up the Case image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: Final Step! - Closing-up the Case image 5" loading="lazy"></div><p>This is probably one of the most satisfying steps - closing up the case of the spaceship!</p>
 <p>Steps:</p>
 <ol>
 <li>First, check everything again to make sure all the electronics were working as they should.</li>
-</ol>
-<ol>
 <li>Next, carefully put the 2 halves together and start to screw everything back into place</li>
-</ol>
-<ol>
 <li>Once it's together, test everything again to ensure that it's working perfectly. If the LED's are flashing and the sound effects are going then you are all done!</li>
 </ol>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

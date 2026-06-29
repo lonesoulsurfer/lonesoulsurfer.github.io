@@ -23,11 +23,11 @@ So what is an optocoupler and why do you need to know how to make one. If you bu
 
 Here's a couple of links for those who want to learn more about optocouplers
 
-[link 1](https://www.electronics-tutorials.ws/blog/optocoupler.html)
+link 1
 
-[link 2](https://circuitdigest.com/tutorial/opto-coupler-types-working-applications)
+link 2
 
-More Technical [Link 3](http://denethor.wlu.ca/pc300/optoisolators/analogoptoisolatorintroduction.pdf)
+More Technical Link 3
 
 
 ## Step 1: Identifying an Optocoupler in a Circuit
@@ -149,10 +149,6 @@ Steps:
 
 That's it. You have now made your own optocoupler which will work just as good as any store brought one.
 
-
-## Downloads
-
-- [Link 3](pdfs/Link 3.pdf)
 
 ---
 *30 images archived*

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,193 +127,89 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make a Ribbon Controller</span>
 </nav>
-<h1>Make a Ribbon Controller</h1><div class="source"><a href="https://www.instructables.com/Make-a-Ribbon-Controller/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Ribbon controllers are a great way to control a synth.</p>
-<p>They consist of a touch-sensitive strip that lets you control pitch continuously.</p>
-<p>The electrically conductive strip called 'velostat' that responds to changes in voltage or resistance caused by moving your finger along its surface.</p>
-<p>These changes in voltage can be applied to any number of voltage-controlled oscillators, filters or amplifiers in analog synthesizers.</p>
-<p>The basic design of a ribbon controller is fairly simple.</p>
-<p>It acts as a linear potentiometer that generates different control voltages depending on where it is touched.</p>
-<p>Think of it as a rotary knob that has been “unrolled".</p>
-<p>You could also think of it as a striped down slide pot.</p>
-<p>Making your own is pretty simple and you'll only need a few parts to do it.</p>
-<p>I've also included a schematic for a small synth that I have made that will allow you to test and play the ribbon controller.</p>
-<p>I haven't explored fully yet what it is capable of but I will definitely be including an output for all the synths i make going forward so I can plug this into them.</p>
-<p>Hackaday did a review of the ribbon controller which you can find <a href="https://hackaday.com/2020/05/03/diy-ribbon-controller-for-a-diy-synth/">here</a></p><h2><span class="step-num">STEP 1</span>Step 1: PARTS & TOOLS</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: PARTS & TOOLS image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: PARTS & TOOLS image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: PARTS & TOOLS image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: PARTS & TOOLS image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: PARTS & TOOLS image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: PARTS & TOOLS image 6" loading="lazy"></div><p>Parts:</p>
+<h1>Make a Ribbon Controller</h1><div class="source"><a href="https://www.instructables.com/Make-a-Ribbon-Controller/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Ribbon controllers are a great way to control a synth. They consist of a touch-sensitive strip that lets you control pitch continuously. The electrically conductive strip called 'velostat' that responds to changes in voltage or resistance caused by moving your finger along its surface. These changes in voltage can be applied to any number of voltage-controlled oscillators, filters or amplifiers in analog synthesizers.</p>
+<p>The basic design of a ribbon controller is fairly simple. It acts as a linear potentiometer that generates different control voltages depending on where it is touched. Think of it as a rotary knob that has been “unrolled". You could also think of it as a striped down slide pot.</p>
+<p>Making your own is pretty simple and you'll only need a few parts to do it. I've also included a schematic for a small synth that I have made that will allow you to test and play the ribbon controller. I haven't explored fully yet what it is capable of but I will definitely be including an output for all the synths i make going forward so I can plug this into them.</p>
+<p>Hackaday did a review of the ribbon controller which you can find here</p><h2><span class="step-num">STEP 1</span>Step 1: PARTS & TOOLS</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: PARTS & TOOLS image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: PARTS & TOOLS image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: PARTS & TOOLS image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: PARTS & TOOLS image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: PARTS & TOOLS image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: PARTS & TOOLS image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Copper Strip 19mm wide X 215mm long - <a href="https://www.ebay.com.au/itm/Copper-strip-15-mm-x-1-mm-x-30-cm-plastic-peelaway-mirror-side-99-99-pure/324088728270?hash=item4b75318ace:g:wjAAAOSwxD1eWzs9">eBay</a>. Most hobby shops will have it too in 300mm lengths</li>
-</ol>
-<ol>
+<li>Copper Strip 19mm wide X 215mm long - eBay. Most hobby shops will have it too in 300mm lengths</li>
 <li>3 X Copper Strips 6.3mm wide X 300mm long - eBay. Again, most hobby shops will have it in 300mm lengths</li>
-</ol>
-<ol>
-<li>Velostat Sheet - <a href="https://www.ebay.com.au/itm/Adafruit-Pressure-Sensitive-Conductive-Sheet-Velostat-Linqstat/264658530396?hash=item3d9ee0b05c:g:~ZsAAOSwoi1X88Wi">eBay</a> or <a href="https://core-electronics.com.au/pressure-sensitive-conductive-sheet-velostat-linqstat.html?utm_source=google_shopping&gclid=CjwKCAjw-YT1BRAFEiwAd2WRtk34pbblRbpS9HhcgwNTImOTXBmEy_a5jk2HlAjmEGS1KsrPQPUHthoCIAwQAvD_BwE">Core electronics</a> if you are in Australia</li>
-</ol>
-<ol>
-<li>Masking Tape - <a href="https://www.ebay.com.au/itm/6mm-10mm-12mm-18mm-50mm-Masking-Tape-Model-Paint-Spray-Modeling-Refill-50MM164ft/182498758173?hash=item2a7dc60e1d:m:mHZhQ9jrVQmw-jXnEktOdEg">eBay</a></li>
-</ol>
-<ol>
-<li>Aluminium or copper tape - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1311.R5.TR6.TRC2.A0.H0.Xcopper+tape.TRS0&_nkw=copper+shielding+tape&_sacat=0">[eBay</a>](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xaluminium+tape.TRS0&_nkw=aluminium+tape&_sacat=0) or eBay</li>
-</ol>
-<ol>
-<li>Polystyrene Tube 3.2mm - <a href="https://www.ebay.com.au/itm/Evergreen-White-Polystyrene-Rectangular-Tube-0-125-x-0-250-x-14-3-2mm-x-6-4mm/202602656370?hash=item2f2c0f3272:g:O2sAAOSweuldeTNy">eBay</a> or hobby shops</li>
-</ol>
-<ol>
-<li>Clear plastic A4 Binding Cover - <a href="https://www.ebay.com.au/itm/200micron-A4-PVC-Binding-Cover-Pack-of-100-Clear/110891049695?hash=item19d19f22df:g:5NUAAOxyaTxRQWDY">eBay</a> or any office supply place</li>
-</ol>
-<ol>
-<li>Jack input - <a href="https://www.ebay.com.au/itm/10Pcs-DIP-PCB-Mount-3-Pins-Female-3-5mm-Stereo-Audio-Jack-Socket-s649-3/281725301507?hash=item419822f303:g:hr8AAOSwT6pVgQni">eBay</a></li>
-</ol>
-<ol>
+<li>Velostat Sheet - eBay or Core electronics if you are in Australia</li>
+<li>Masking Tape - eBay</li>
+<li>Aluminium or copper tape - eBay or eBay</li>
+<li>Polystyrene Tube 3.2mm - eBay or hobby shops</li>
+<li>Clear plastic A4 Binding Cover - eBay or any office supply place</li>
+<li>Jack input - eBay</li>
 <li>Length of wood to mount the ribbon controller on. Not necessary but gives a nice finish.</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Stanley and/or exacto knife</li>
-</ol>
-<ol>
 <li>Double sided tape</li>
-</ol>
-<ol>
 <li>Good pair of scissors</li>
-</ol>
-<ol>
 <li>Soldering Iron</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: The Basic Design</h2><div class="step-images single"><img src="images/step02_01.jpg" alt="Step 2: The Basic Design image 1" loading="lazy"></div><p>Below is a drawing of the basic design of the ribbon controller. Take some time and look at the image so you get the gist on how this is put together.</p>
-<p>You will notice that there is a main copper strip and 3 smaller ones.</p>
-<p>The smaller ones form a point where you can attach wires.</p>
-<p>The main copper strip and the 2 smaller ones shown attached to it form the ground.</p>
-<p>The 2 smaller ones are connected to the main one via some aluminium tape which ensures that they form one complete ground plate</p>
-<p>Next there is some masking tape to isolate the ground from the velostat and the other copper strip.</p>
-<p>It's important that the ground is fully isolated from the rest of the build or your ribbon controller won't work.</p>
-<p>To separate the velostat from the ground, a couple small strips of plastic are used which are also stuck to the ground via masking tape.</p><h2><span class="step-num">STEP 3</span>Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 5" loading="lazy"></div><p>The first thing that you need to do is to cut 3 small pieces off the thinner copper strip. 2 of these will be connected to either end of the larger copper strip and will act as the ground.</p>
-<p>As in any potentiometer, you have 2 fixed ends which in this case we'll call ground and one variable end which we'll call the wiper.</p>
-<p>The image attached will help you visualise what I am talking about.</p>
+<p>You will notice that there is a main copper strip and 3 smaller ones. The smaller ones form a point where you can attach wires. The main copper strip and the 2 smaller ones shown attached to it form the ground. The 2 smaller ones are connected to the main one via some aluminium tape which ensures that they form one complete ground plate</p>
+<p>Next there is some masking tape to isolate the ground from the velostat and the other copper strip. It's important that the ground is fully isolated from the rest of the build or your ribbon controller won't work.</p>
+<p>To separate the velostat from the ground, a couple small strips of plastic are used which are also stuck to the ground via masking tape.</p><h2><span class="step-num">STEP 3</span>Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Measuring & Cutting the Copper for Ground and Wiper Connectors image 5" loading="lazy"></div><p>The first thing that you need to do is to cut 3 small pieces off the thinner copper strip. 2 of these will be connected to either end of the larger copper strip and will act as the ground. As in any potentiometer, you have 2 fixed ends which in this case we'll call ground and one variable end which we'll call the wiper. The image attached will help you visualise what I am talking about.</p>
 <p>Steps:</p>
 <ol>
 <li>First, place the smaller strip of copper (terminal) against the larger piece (ground) and mark its about 5-10mm longer then the width of the ground plate.</li>
-</ol>
-<ol>
 <li>Cut 3 of the terminals of the same length and if you want to round off the edges like I did.</li>
-</ol>
-<ol>
 <li>2 of these will next be attached to the ground plate</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Attaching 2 Terminals to the Ground Plate</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 8" loading="lazy"></div><p>The easiest way to attach the 2 terminals to the ground plate is to use some conductive adhesive.</p>
-<p>I went with aluminium tape as it's what I had around.</p>
-<p>You could also use copper tape as well.</p>
-<p>Just make sure it's good quality tape.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Attaching 2 Terminals to the Ground Plate</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Attaching 2 Terminals to the Ground Plate image 8" loading="lazy"></div><p>The easiest way to attach the 2 terminals to the ground plate is to use some conductive adhesive. I went with aluminium tape as it's what I had around. You could also use copper tape as well. Just make sure it's good quality tape.</p>
 <p>Steps:</p>
 <ol>
 <li>Firstly, you might have to trim the main ground strip. Mine is ...and this gives you from 10K too 100k resistance. The longer the ground plate, the higher the resistance.</li>
-</ol>
-<ol>
 <li>Cut a couple of strips of the aluminium tape. It needs to be as wide as the ground plate and wrap around both sides as the images show below.</li>
-</ol>
-<ol>
 <li>Place a connector on the ground plate and tape down. Make sure that's it's taped down well and the connection is strong.</li>
-</ol>
-<ol>
 <li>Do the same with the other end of the ground plate</li>
-</ol>
-<ol>
 <li>Next you need to isolate the bottom section of the ground plate. To do this just use some masking tape and cover about 70mm on each side.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Wiper Terminal</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Wiper Terminal image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Wiper Terminal image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Wiper Terminal image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Wiper Terminal image 4" loading="lazy"></div><p>Next step is to add the last terminal.</p>
-<p>This will be your wiper terminal so needs to be isolated from the ground.</p>
-<p>That's one of the reasons why you added the masking tape at the end of the ground plate.</p>
-<p>I made a small mistake here and placed the wiper terminal at the wrong end.</p>
-<p>It meant that I had to have the terminals on the bottom of the build and not the top.</p>
-<p>No big deal but I would add the wiper terminal on the left so it is on the top of the ribbon controller.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Wiper Terminal</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Wiper Terminal image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Wiper Terminal image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Wiper Terminal image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Wiper Terminal image 4" loading="lazy"></div><p>Next step is to add the last terminal. This will be your wiper terminal so needs to be isolated from the ground. That's one of the reasons why you added the masking tape at the end of the ground plate. I made a small mistake here and placed the wiper terminal at the wrong end. It meant that I had to have the terminals on the bottom of the build and not the top. No big deal but I would add the wiper terminal on the left so it is on the top of the ribbon controller.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the terminal next to the ground terminal making sure it isn't touching any section of the ground plate.</li>
-</ol>
-<ol>
 <li>Use some more aluminium tape to secure it into place, again making sure it doesn't touch the ground plate at all.</li>
-</ol>
-<ol>
 <li>Place another piece of aluminium tape at the other end of the ground terminal. Again making sure it is isolated from ground.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Polish Up the Ground Plate</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Polish Up the Ground Plate image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Polish Up the Ground Plate image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Polish Up the Ground Plate image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Polish Up the Ground Plate image 4" loading="lazy"></div><p>This isn't really necessary but I wanted to get the best connection as possible so removed any tarnish from the ground plate.</p>
 <p>Steps:</p>
 <ol>
 <li>Grab some metal polish</li>
-</ol>
-<ol>
 <li>Add some to the ground plate and give it a good polish</li>
-</ol>
-<ol>
 <li>Wipe off the excess polish and give it a clean</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Some Small Strips of Plastic to the Ground Plate</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding Some Small Strips of Plastic to the Ground Plate image 7" loading="lazy"></div><p>The small plastic strips that are located top and bottom on the ground plate help to isolate the ribbon. You don't want the ribbon to be touching the ground at all.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing to do is to cut as couple of thin strips from the plastic. If you have a guillotine handy then use this, if not, cut a couple strips with a stanley or exacto knife..</li>
-</ol>
-<ol>
 <li>A plastic strip will need to go across the top and bottom of the main copper strip. Place the first one one the strips against the main copper strip.</li>
-</ol>
-<ol>
 <li>Bend the ends around the copper and secure with a small piece of aluminium tape on the back. Do the same for the bottom one</li>
-</ol>
-<ol>
 <li>Lastly, add a little masking tape to each end of the copper. This will ensure that the ribbon doesn't touch the copper strip at all unless you push down on it.</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding Some Conductive Plastic (Velostat) to the Copper Strip. image 8" loading="lazy"></div><p>So what's velostat? Well it's a pressure sensitive, conductive plastic that is really the heart of the ribbon controller. The velostat is attached at each end to the terminals via some aluminium tape</p>
 <p>Steps:</p>
 <ol>
 <li>First, you need to cut a strip of the velostat as wide as the main copper strip and 30 mm or so longer</li>
-</ol>
-<ol>
 <li>Place the velostat on the strip and bend over the ends.</li>
-</ol>
-<ol>
 <li>Add a piece of aluminium tape to one end of the velostat. When sticking it down to the back of the strip, it shouldn't touch the copper ground strip at all.</li>
-</ol>
-<ol>
 <li>Do the same for the other end of the velostat, making sure you pull it tight before sticking down.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding Some Edging Via Some Polystyrene Tube</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 9" loading="lazy"></div><p>You don't have to do this step if you don't want to.</p>
-<p>I just thought it gave a great finish to the controller.</p>
-<p>I couldn't find C channel that would work so I went with a rectangle piece of polystyrene tube and cut it in half.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding Some Edging Via Some Polystyrene Tube</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding Some Edging Via Some Polystyrene Tube image 9" loading="lazy"></div><p>You don't have to do this step if you don't want to. I just thought it gave a great finish to the controller. I couldn't find C channel that would work so I went with a rectangle piece of polystyrene tube and cut it in half.</p>
 <p>Steps:</p>
 <ol>
 <li>So to cut the tube in half and straight, I had to make a small, simple jig with a clamp and a piece of stare copper strip. You can see what I did in the images below. I secured the poly tube into place and carefully made a cut with an exacto knife along the tube. Take your time and don't rush as it is easy for the knife to pull away from the copper edge.</li>
-</ol>
-<ol>
 <li>You will have 2 C channel pieces once cut.</li>
-</ol>
-<ol>
 <li>To ensure that the plastic was a tight fit all along the copper strip., I added another small piece of the copper strip to the back and secured down with some masking tape.</li>
-</ol>
-<ol>
 <li>Place the bottom one on first by sliding it along the copper strip. Make sure nothing catches and take your time.</li>
-</ol>
-<ol>
 <li>For the other one, you will need to make a couple of small slits in the top of the C channel in order to fit the terminals through. I just used as dremel to do this.</li>
-</ol>
-<ol>
 <li>With this channel, you won't be able to slide this due to the terminals. To fit it, place the terminals through the slots in the channel and carefully push into place. You may need a small screwdriver to help wedge the velostat and tape under the channel.</li>
-</ol>
-<ol>
 <li>Add some superglue to the back of the channel once you have tested and know everything works.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Making a Base and Adding an Input Jack.</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 6" loading="lazy"></div><p>The input jack was a last minute thought but I'm glade I did add it.</p>
-<p>It allows me to plug the ribbon controller into synths via a 3.5mm jack.</p>
-<p>I also mounted it on some wood to finish it off.</p>
-<p>If you want to incorporate the ribbon controller into a synth, then you wouldn't need to do this step.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Making a Base and Adding an Input Jack.</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Making a Base and Adding an Input Jack. image 6" loading="lazy"></div><p>The input jack was a last minute thought but I'm glade I did add it. It allows me to plug the ribbon controller into synths via a 3.5mm jack. I also mounted it on some wood to finish it off. If you want to incorporate the ribbon controller into a synth, then you wouldn't need to do this step.</p>
 <p>Steps:</p>
 <ol>
 <li>First thing to do is to prepare the piece wood that will be used as a base. I used a piece of hard wood that is slightly larger then the width of the ribbon controller.</li>
-</ol>
-<ol>
 <li>Trim and add a stain to the wood and stick the controller down with some double sided tape</li>
-</ol>
-<ol>
 <li>For the input jack, first you should connect the left and right legs together which I did with a resister leg. Trim the legs once you have them connected.</li>
-</ol>
-<ol>
 <li>Solder a couple small wires to the ground and left/right solder points on the jack and add some double sided tape to secure into place on the wood.</li>
-</ol>
-<ol>
 <li>Lastly, solder the ground wire to the ground terminal on the ribbon controller and the other wire to the other terminal</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: So Now What?</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: So Now What? image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: So Now What? image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: So Now What? image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: So Now What? image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: So Now What? image 5" loading="lazy"></div><p>If you are looking to use the ribbon controller but don't know where to start, then you could build this synth made from a 4049 CMOS chip.</p>
-<p>I've included the schematic in case you want to get s PCB made.</p>
-<p>All of the files can be found in my <a href="https://drive.google.com/drive/folders/1WaNJPsrYGfioNEDXc7KHLyFmacyS3coK?usp=sharing">Google drive</a> and includes gerber files, schematic, and Eagle files.</p>
-<p>If you want to get the PCB printed, just send the zipper gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?gclid=Cj0KCQiA2af-BRDzARIsAIVQUOc5lDybfwXcCif6zTfM1BEXEQ8qkZD-hXFMAUGSv0o-h35Z_iy8m_kaAtcBEALw_wcB">JLCPCB</a> (not affiliated) and they will print them up for you.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: So Now What?</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: So Now What? image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: So Now What? image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: So Now What? image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: So Now What? image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: So Now What? image 5" loading="lazy"></div><p>If you are looking to use the ribbon controller but don't know where to start, then you could build this synth made from a 4049 CMOS chip. I've included the schematic in case you want to get s PCB made. All of the files can be found in my Google drive and includes gerber files, schematic, and Eagle files. If you want to get the PCB printed, just send the zipper gerber files to a PCB manufacturer like JLCPCB (not affiliated) and they will print them up for you.</p>
 <p>It's a pretty simple circuit and allows you to play the ribbon controller like a keyboard. You can check out the video at the start of this 'ible on how it sounds.</p>
 <p>Parts List</p>
 <p>Non-polarized Capacitor</p>
@@ -366,30 +227,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>470K X 2</p>
 <p>10M X 1</p>
 <p>Speaker 8 Ohm</p>
-<p>One of the reasons why I made a ribbon controller is because of a comment left on another 'ible I made which was a <a href="https://www.instructables.com/id/Moog-Style-Synth/">moog style synth</a>.</p>
-<p>I've created a PCB for this circuit and and look to hook-up the ribbon controller</p>
-<ul>
-<li><a href="pdfs/Ribbon Controller Synth.pdf">Ribbon Controller Synth</a></li>
-<li><a href="pdfs/Ribbon Controller Synth.pdf">Ribbon Controller Synth</a></li>
-</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
-<li><a href="pdfs/Ribbon Controller Synth.pdf">Ribbon Controller Synth</a></li>
-<li><a href="pdfs/Ribbon Controller Synth.pdf">Ribbon Controller Synth</a></li>
-</ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<p>One of the reasons why I made a ribbon controller is because of a comment left on another 'ible I made which was a moog style synth. I've created a PCB for this circuit and and look to hook-up the ribbon controller</p>
 </body>
 </html>

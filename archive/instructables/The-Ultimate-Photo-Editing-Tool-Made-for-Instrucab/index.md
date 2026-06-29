@@ -46,9 +46,9 @@ Everything you need is free and runs entirely in your browser — no installs, n
 
 - That's it!
 
-Open the editor here: [https://lonesoulsurfer.github.io/clear-cut-photo-editor/](https://lonesoulsurfer.github.io/clear-cut-photo-editor/)
+Open the editor here: https://lonesoulsurfer.github.io/clear-cut-photo-editor/
 
-Full source code and documentation available on GitHub: [https://github.com/lonesoulsurfer/clear-cut-photo-editor](https://github.com/lonesoulsurfer/clear-cut-photo-editor)
+Full source code and documentation available on GitHub: https://github.com/lonesoulsurfer/clear-cut-photo-editor
 
 
 ## Step 1: Starting a Session
@@ -94,13 +94,13 @@ STEPS:
 
 The right panel contains all tone and colour controls.
 
-- Brightness  — Overall exposure. Push up to lift the image, pull down to darken.
-- Contrast    — Separation between lights and darks.
-- Sharpness   — Edge crispness. Useful for product shots.
-- Colour      — Saturation. Pull left to desaturate, push right to boost.
-- Warmth      — Colour temperature. Orange/warm vs blue/cool.
-- Highlights  — Recover blown highlights or push them brighter.
-- Shadows     — Lift or crush the shadow areas independently.
+- Brightness — Overall exposure. Push up to lift the image, pull down to darken.
+- Contrast — Separation between lights and darks.
+- Sharpness — Edge crispness. Useful for product shots.
+- Colour — Saturation. Pull left to desaturate, push right to boost.
+- Warmth — Colour temperature. Orange/warm vs blue/cool.
+- Highlights — Recover blown highlights or push them brighter.
+- Shadows — Lift or crush the shadow areas independently.
 - All sliders default to 0. The value badge turns accent-coloured when a slider is active.
 ROTATION & STRAIGHTEN
 
@@ -182,7 +182,7 @@ STEPS:
 After background removal, the Shadow panel lets you add a realistic drop shadow to your subject.
 
 - enable the shadow application
-- You will see a shadow appear instantly under the image.  This now can be adjusted to suit the image by using the controls
+- You will see a shadow appear instantly under the image. This now can be adjusted to suit the image by using the controls
 Controls
 
 - Drag the angle dial to set the direction the light is coming from
@@ -217,7 +217,7 @@ Switch to Collage mode by clicking the Collage tab at the top of the screen. You
 Choosing a Layout
 
 - The left panel shows a grid of layout options — click any icon to select it
-- Use the Gap slider to set the spacing between images in pixels.  The colour you pick will also create a frame around the saved images.
+- Use the Gap slider to set the spacing between images in pixels. The colour you pick will also create a frame around the saved images.
 - Choose a gap colour using the White / Black / Grey buttons — this is the colour shown between and around your images
 Assigning Images to Slots
 
@@ -228,7 +228,7 @@ Assigning Images to Slots
 - Once assigned, scroll to zoom and right-drag to pan within each slot to frame the image exactly how you want it
 Adjusting Each Image
 
-- The adjustments work exactly the same as when in editor mode.  same with removing backgrounds, adding shadows etc.
+- The adjustments work exactly the same as when in editor mode. same with removing backgrounds, adding shadows etc.
 Saving
 
 - Click Save collage to export the full layout as a single image

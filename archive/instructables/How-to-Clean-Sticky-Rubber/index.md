@@ -38,7 +38,7 @@ Tools
 
 1. 90% isopropyl solution. You can get this from the chemist or hardware store.
 
-2. I have also used Methylated sprits which can be purchased from a hardware store or even your local supermarket. It seems that methylated spirits is called by a few different names. In the US there's something similar called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous). I've also heard that this can be damaging to plastic so be wary using it to remove rubber and do a test first. There is also methyl hydrate, or fondue fuel available in the US as well. Again I would do a test first to see how well these work before using it. In Europe, it may be called spirits. check out [this link](https://en.wikipedia.org/wiki/Denatured_alcohol) to find out more
+2. I have also used Methylated sprits which can be purchased from a hardware store or even your local supermarket. It seems that methylated spirits is called by a few different names. In the US there's something similar called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous). I've also heard that this can be damaging to plastic so be wary using it to remove rubber and do a test first. There is also methyl hydrate, or fondue fuel available in the US as well. Again I would do a test first to see how well these work before using it. In Europe, it may be called spirits. check out this link to find out more
 
 Preparation
 

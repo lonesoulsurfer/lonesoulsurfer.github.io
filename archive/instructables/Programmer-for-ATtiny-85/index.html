@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -164,44 +129,39 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Programmer for ATtiny 85</h1><div class="source"><a href="https://www.instructables.com/Programmer-for-ATtiny-85/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>Make your own ATtiny 85 programmer using an Arduino Nano and a custom made PCB!</p>
 <p>I've been building a few projects of late that use a ATtiny 85 microcontrollers and wanted to create a specifically designed programmer to make the job easier.</p>
-<p>If you are an old hand with programming ATtiny 85's or a total novice and want to learn, then this bit of kit is essential.</p>
-<p>Once you have the hardware, programming the ATtiny becomes quite simple.</p>
-<p>I did do an 'Ible on how to Program a ATtiny with an Arduino which you can find here.</p>
-<p>Note that I was only really just learing then myself and did the Ible so I wouldn't forget how to do it!</p>
-<p>However, the programmer I did make was rudimental and I wanted something more permanent.</p>
+<p>If you are an old hand with programming ATtiny 85's or a total novice and want to learn, then this bit of kit is essential. Once you have the hardware, programming the ATtiny becomes quite simple. I did do an 'Ible on how to Program a ATtiny with an Arduino which you can find here. Note that I was only really just learing then myself and did the Ible so I wouldn't forget how to do it! However, the programmer I did make was rudimental and I wanted something more permanent.</p>
 <p>Along with the build of this project, I'll run through how to program the ATtiny 85 and get the blinking light sketch to work. Once you have conquered that - the sky's the limit!</p>
-<p>This build was inspired by <a href="https://www.instructables.com/member/SF94/">SF94's</a> build on <a href="https://www.instructables.com/Compact-Attiny-138584-Programmer-Using-Arduino-Nan/">Instructables</a></p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>Along with the hardware below, you will also need to get one of the custom PCB's printed. I've explained how to do this in the next step.</p>
+<p>This build was inspired by SF94's build on Instructables</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>Along with the hardware below, you will also need to get one of the custom PCB's printed. I've explained how to do this in the next step.</p>
 <p>PARTS:</p>
 <ul>
-<li>Arduino Nano - <a href="https://www.aliexpress.com/w/wholesale-aduino-nano.html?spm=a2g0o.home.auto_suggest.3.7f2776db9rTDeg">Ali Express</a></li>
-<li>Header Pins Female - (Length - 15 pins) X 2 - <a href="https://www.aliexpress.com/w/wholesale-header-pins-female-15.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
-<li>Header Pins female - (2X3) - <a href="https://www.aliexpress.com/w/wholesale-header-pins-2-X-6.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
-<li>Zif 14 ic socket - <a href="https://www.aliexpress.com/w/wholesale-zif-14-ic-.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
-<li>330R Resistors X 4 - <a href="https://www.aliexpress.com/w/wholesale-resistor-metal-film.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
-<li>LED - 3mm (any colours) X 4 - <a href="https://www.aliexpress.com/w/wholesale-led-3mm-assorted.html?spm=a2g0o.productlist.search.0">Ali Express</a></li>
-<li>10uf Capacitor - <a href="https://www.aliexpress.com/w/wholesale-10uf-electrolytic-capacitor.html?spm=a2g0o.productlist.auto_suggest.2.63c3Xr6wXr6wQK">Ali Express</a></li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB Printed image 3" loading="lazy"></div><p>Firstly, you can find all of the files including the gerber files for this build in my <a href="https://github.com/lonesoulsurfer/ATtiny_85_Programmer">GitHub Page</a></p>
-<p>To get your board printed, You’ll need to send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> (Not affiliated) who will print the boards for you.</p>
-<p>Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice.</p>
-<p>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</p>
+<li>Arduino Nano - Ali Express</li>
+<li>Header Pins Female - (Length - 15 pins) X 2 - Ali Express</li>
+<li>Header Pins female - (2X3) - Ali Express</li>
+<li>Zif 14 ic socket - Ali Express</li>
+<li>330R Resistors X 4 - Ali Express</li>
+<li>LED - 3mm (any colours) X 4 - Ali Express</li>
+<li>10uf Capacitor - Ali Express</li>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting the PCB Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB Printed image 3" loading="lazy"></div><p>Firstly, you can find all of the files including the gerber files for this build in my GitHub Page</p>
+<p>To get your board printed, You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the Gerber file to your computer and then send them off to your PCB manufacturer of choice.</p>
+<p>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.</p>
 <p>If you are interested in having a look at the schematic or board files then I have included these as well and you can also find them in my Google Drive. I've also attached the schematic to this step.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB Part 1 image 5" loading="lazy"></div><p>This is pretty straight forward as there really aren't many components to add to the PCB!</p>
 <p>STEPS:</p>
 <ul>
 <li>Always stsrt with the lowest profile components which in this case is the resistors</li>
-<li>Solder the 4 LED's into place.  3 of these are indicators when the sketch is uploading, the other is for the blink skech whih we will load upa little laer to the ATtiny. It's a simple way to make sure everything is working as it should be.</li>
-<li>Next you can add the header pins in for the capacitot.  The capcitor is removable as you can sometimes have issues with loading Sketches when it is in place.</li>
-<li>I've also included a header pin so you can use jumper wires to connect to an ATtiny if it is soldered in place to a PCB.  This can also be soldered into place.</li>
-<li>Now you can add the Arduino to he PCB.   Make sure that you add the header pins in first to the Arduino and then solder it intp place to the PCB. It will ensure that the Arduino is lined up right and the header pins go in straight</li>
+<li>Solder the 4 LED's into place. 3 of these are indicators when the sketch is uploading, the other is for the blink skech whih we will load upa little laer to the ATtiny. It's a simple way to make sure everything is working as it should be.</li>
+<li>Next you can add the header pins in for the capacitot. The capcitor is removable as you can sometimes have issues with loading Sketches when it is in place.</li>
+<li>I've also included a header pin so you can use jumper wires to connect to an ATtiny if it is soldered in place to a PCB. This can also be soldered into place.</li>
+<li>Now you can add the Arduino to he PCB. Make sure that you add the header pins in first to the Arduino and then solder it intp place to the PCB. It will ensure that the Arduino is lined up right and the header pins go in straight</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Adding Components to the PCB Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding Components to the PCB Part 2 image 7" loading="lazy"></div><p>Now it's time to add he ZIF socket IC holder. This is an easy way o hold he ATtiny into place whist you are programming it</p>
 <p>STEPS:</p>
 <ul>
 <li>Place the socket holder ino place in he PCB</li>
 <li>Make sure that the little lock handle is facing down towards the LED's</li>
 <li>Now you can solder it into place</li>
-<li>Trim the capacitor legs and place into the 2 header pin.  I have indicaed on the board wih a little - symbol which leg of the cap needs to go to ground.</li>
+<li>Trim the capacitor legs and place into the 2 header pin. I have indicaed on the board wih a little - symbol which leg of the cap needs to go to ground.</li>
 <li>Lastly, add a ATtiny to the ZIP socket holder</li>
 </ul>
-<p>That's it - you are now ready to sart programming your ATtiny</p><h2><span class="step-num">STEP 4</span>Step 4: Programming the ATtiny 85</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Programming the ATtiny 85 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Programming the ATtiny 85 image 2" loading="lazy"><img src="images/step05_03.gif" alt="Step 4: Programming the ATtiny 85 image 3" loading="lazy"></div><p>I've actually done an 'Ible now how to program the ATtiny using a Aduino Nano which you can find <a href="https://www.instructables.com/How-to-Program-a-ATtiny-With-Arduino/">here</a></p>
+<p>That's it - you are now ready to sart programming your ATtiny</p><h2><span class="step-num">STEP 4</span>Step 4: Programming the ATtiny 85</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Programming the ATtiny 85 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Programming the ATtiny 85 image 2" loading="lazy"><img src="images/step05_03.gif" alt="Step 4: Programming the ATtiny 85 image 3" loading="lazy"></div><p>I've actually done an 'Ible now how to program the ATtiny using a Aduino Nano which you can find here</p>
 <p>However, I've also gone through he process again in the vid that you can find in the intro</p>
 <p>STEPS:</p>
 <ul>
@@ -209,26 +169,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Upload the sketch to your ATtiny 85</li>
 <li>Watch the little LED blink away!</li>
 </ul>
-<p>Once you have mastered this basic upload to the ATtiny, you can then move on to more fun things like <a href="https://www.instructables.com/Tiny-Arcade-Game-Attiny85/">these games</a> that I made, or whatever projects that you can find on line.</p>
-<p>You might even want to try your hand at coding! baby steps first.</p>
+<p>Once you have mastered this basic upload to the ATtiny, you can then move on to more fun things like these games that I made, or whatever projects that you can find on line. You might even want to try your hand at coding! baby steps first.</p>
 <p>I hope this Instrucable was of some help - if you have any questions, please don't hesitate to add a comment and let me know!</p>
 <p>All the best</p>
 <p>Lonesoulsurfer</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

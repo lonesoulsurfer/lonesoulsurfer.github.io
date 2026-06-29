@@ -50,21 +50,19 @@ Check out the video to see it in action.
 
 Instead of adding a long list of parts to this step - I decided to instead include the parts list as a PDF file which is attached. The file includes all of the components and auxiliary parts that you will need to put the circuit board together. I have included links and images of each part so you can easily find/buy/identify them. I think it will be handy also as a PDF as you can print it off, visit your local electronics store and see if they have the parts available
 
-The parts list is also available on my [GitHub Page](https://github.com/lonesoulsurfer/Elements-Little_Synths_With_BIG_Sounds_-1) in Excel format
+The parts list is also available on my GitHub Page in Excel format
 
 The below parts are the rest that you will need to build the synth.
 
 PARTS (Other than circuit components):
 
 - 9V Battery
-- Nylon Hex Stand Offs Assorted 2mm - [Ali Express](https://www.aliexpress.com/w/wholesale-nylon-hex-standoff.html?catId=0&initiative_id=SB_20230913185757&SearchText=nylon+hex+standoff&spm=a2g0o.detail.1000002.0). These will be used to connect the front panel to the PCB
+- Nylon Hex Stand Offs Assorted 2mm - Ali Express. These will be used to connect the front panel to the PCB
 - A4 Clear Acrylic (3mm) - eBay This is for the base. It isn't necessary but will protect the electronics and finishes of the build nicely.
 That's it! You don't have to worry bout building a case because it doesn't have one :)
 
 The rest of the parts can be found in the PDF attached below or on my Google Drive
 
-
-- [Elements - Parts List - Excel](pdfs/Elements - Parts List - Excel.pdf)
 
 ## Step 1: PCB, Front Panel & Eagle Files
 
@@ -74,20 +72,18 @@ The rest of the parts can be found in the PDF attached below or on my Google Dri
 
 ![Step 1: PCB, Front Panel & Eagle Files image 3](images/step02_03.png)
 
-Firstly, all of the files that you need can be found in my [GitHub Page](https://github.com/lonesoulsurfer/Elements-Little_Synths_With_BIG_Sounds_-1)
+Firstly, all of the files that you need can be found in my GitHub Page
 
-To get your own PCB and front panel printed, you will need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GVdFKX-Hevhd6kw8GeZu3nYS_I10AJjhGupCabeBPJ_yEL6WvauxcaAtqKEALw_wcB) (Not affiliated) who will print the boards for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+To get your own PCB and front panel printed, you will need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find here.
 
 Note the following: Usually you can have JLCPCB remove the order number by adding 'JLCJLCJLCJLC' to the back of the PCB. Unfortunately this didn't work for me and they printed it on the front of the PCB! You can request that a order number is not included by ticking the box indicated. It costs an extra $2 to have it removed.
 
 You can also change the colour of the PCB's so go crazy and pick whatever colour you want to make the front panel and PCB.
 
-In my [GitHub Page](https://github.com/lonesoulsurfer/Elements-Little_Synths_With_BIG_Sounds_-1) you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
+In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
 
 Parts list for the circuit board can be found below and I've also provided the list in excel which can also be found (surprise) in my Google Drive.
 
-
-- [Elements Schematic - PDF](pdfs/Elements Schematic - PDF.pdf)
 
 ## Step 2: Adding the Components to the PCB
 
@@ -126,7 +122,7 @@ Whats a Vactrol?
 
 Put simply, a vactrol consists of 2 components, an LED and a light dependent resistor (LDR), incorporated into one package. Some heat shrink is used to keep the parts together and so no light can enter or escape. The LED and LDR face each other inside the package and interact when the LED is activated. This build uses 3 of them, one for the control voltage (CV) and 2 to control the PWM. Basically, they are voltage controlled resistors. Neat hey!
 
-I've actually done an 'ible on how to make them which you can find [here](https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/). Just make sure you use flat head LED and not the round head ones as they work better.
+I've actually done an 'ible on how to make them which you can find here. Just make sure you use flat head LED and not the round head ones as they work better.
 
 - Cut a piece of 6mm heat shrink about 15mm long
 - Place the white, flat head LED into the heat shrink so it covers all of the LED and hangs a little over the legs
@@ -278,11 +274,6 @@ Thoughts on changes for the next build
 - This synth would sound incredible played through a echo/reverb module. I will be designing a fun one soon which will be part of the 'little synths with big sounds' series
 - There are probably some more mods you could do - no I'm sure there is.
 
-
-## Downloads
-
-- [Elements - Parts List - Excel](pdfs/Elements - Parts List - Excel.pdf)
-- [Elements Schematic - PDF](pdfs/Elements Schematic - PDF.pdf)
 
 ---
 *53 images archived*

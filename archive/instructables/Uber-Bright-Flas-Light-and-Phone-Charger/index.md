@@ -42,13 +42,13 @@ I've also included a short video of the torch in action
 
 Things to Gather:
 
-1. 6v spot light. Check [[[eBay](http://www.ebay.com.au/sch/i.html?_odkw=old+spotlight&LH_PrefLoc=2&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xvintage+spotlight.TRS0&_nkw=vintage+spotlight&_sacat=0)](http://www.ebay.com.au/sch/i.html?_odkw=vintage+spotlight&LH_PrefLoc=2&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xold+spotlight.TRS0&_nkw=old+spotlight&_sacat=0)](http://www.ebay.com.au/itm/VINTAGE-Small-Studio-black-Industrial-light-Spot-Light-W-Westinghouse-bulb-Old-/271946646528?hash=item3f51488400). Here are a few that I found eBay, eBay, eBay
+1. 6v spot light. Check eBay. Here are a few that I found eBay, eBay, eBay
 
-2. 6 v Globe - If you can't find a stage spot light or something similar, the you could always just use the globe and hack it into the PVC [eBay](http://www.ebay.com.au/itm/like/191214117372?limghlpsr=true&hlpht=true&ul_noapp=true&hlpv=2&chn=ps&lpid=107&ops=true&viphx=1)
+2. 6 v Globe - If you can't find a stage spot light or something similar, the you could always just use the globe and hack it into the PVC eBay
 
-3. 3 x plastic draw handles - [eBay](http://www.ebay.com/itm/White-plastic-handle-drawer-pull-cabinet-quantity-4-for-BIN-price-/221383327941)
+3. 3 x plastic draw handles - eBay
 
-4. 12v USB charger - [ebay](http://www.ebay.com.au/itm/12-24V-USB-Charger-Cigarette-Adapter-In-Car-Socket-for-iPhone-iPad-Samsung-iPod-/400900129492?var=&hash=item5d578282d4)
+4. 12v USB charger - ebay
 
 5. 90mm PVC pipe, about 150mm long
 
@@ -56,11 +56,11 @@ Things to Gather:
 
 7. 2 x 90mm female lids
 
-8. 2 x toggle switches - [eBay](http://www.ebay.com.au/itm/New-4-Pcs-Blue-AC-125V-6A-3-Pin-SPDT-On-Off-On-3-Position-Mini-Toggle-Switch-/221551523241?hash=item33957ff5a9)
+8. 2 x toggle switches - eBay
 
-9. 6v 4.5a battery and charger - [eBay](http://www.ebay.com.au/itm/Brand-New-6V-4-0AH-SLA-Rechargeable-battery-6volt-Sealed-Lead-4ah-with-Charger/351358087542?_trksid=p2047675.c100005.m1851&_trkparms=aid%3D222007%26algo%3DSIC.MBE%26ao%3D1%26asc%3D20140106155344%26meid%3D082385c644634ef0a19b23ae0b22be6d%26pid%3D100005%26rk%3D2%26rkt%3D6%26sd%3D350472165979)
+9. 6v 4.5a battery and charger - eBay
 
-10. male and female DC power socket - [eBay](http://www.ebay.com.au/itm/Lockable-5-5mmx2-1mm-DC-Plug-Power-Socket-Male-Female-Nut-Panel-Adapter-/271935735232?hash=item3f50a205c0)
+10. male and female DC power socket - eBay
 
 Note - The battery and charger that I used was pulled from one of those kids cars which run on a small dc motor. I got mine from the tip for $5, it's definitely the way to go.
 

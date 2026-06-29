@@ -42,33 +42,33 @@ I didn't bother showing images of all of the parts - I don't want to scare you o
 
 Parts for the circuit
 
-1. 4 X 555 Timers – [eBay](https://www.ebay.com.au/itm/10-20-50-NEW-NE555N-NE555-DIP-8-High-Precision-Oscillator-Timer-IC-Timer-Chip/222661294015?hash=item33d7a5b7bf%3Am%3AmWkES_XElGF_RKXc5FY0pUw&var=521514365068)
+1. 4 X 555 Timers – eBay
 
-2. 2 X 22uf Capacitors – [eBay](https://www.ebay.com.au/itm/120pcs-1uF-470uF-12-Types-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/351774763287?epid=2113501882&hash=item51e768e917:g:knwAAOSwSwpbaUUR)
+2. 2 X 22uf Capacitors – eBay
 
-3. 2 X 10uF Capacitors – [eBay](https://www.ebay.com.au/itm/120pcs-1uF-470uF-12-Types-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/351774763287?epid=2113501882&hash=item51e768e917:g:knwAAOSwSwpbaUUR)
+3. 2 X 10uF Capacitors – eBay
 
-4. 2 X 0.1uf (103) Capacitors - [eBay](https://www.ebay.com.au/itm/450pcs-10Value-50V-10pF-100nF-Ceramic-Capacitors-Assortment-Assorted-Kit-Box/163087715384?hash=item25f8c90c38:g:Dn0AAOSwKJZbGjdI)
+4. 2 X 0.1uf (103) Capacitors - eBay
 
-5. 2 X 10K resistors – [eBay](https://www.ebay.com.au/itm/600pcs-30-Value-1-4W-Resistance-1-Metal-Film-Resistor-Assorted-Kit-Each-20pcs/282857372402?epid=22016229248&hash=item41db9cfaf2:g:ZfMAAOSwBahVSH49)
+5. 2 X 10K resistors – eBay
 
-6. 2 X 1.5K resistors – [eBay](https://www.ebay.com.au/itm/600pcs-30-Value-1-4W-Resistance-1-Metal-Film-Resistor-Assorted-Kit-Each-20pcs/282857372402?epid=22016229248&hash=item41db9cfaf2:g:ZfMAAOSwBahVSH49)
+6. 2 X 1.5K resistors – eBay
 
-7. 1k Resistor - [eBay](https://www.ebay.com.au/itm/600pcs-30-Value-1-4W-Resistance-1-Metal-Film-Resistor-Assorted-Kit-Each-20pcs/282857372402?epid=22016229248&hash=item41db9cfaf2:g:ZfMAAOSwBahVSH49)
+7. 1k Resistor - eBay
 
-8. 3 X 500K Potentiometer – [eBay](https://www.ebay.com.au/itm/10pcs-Guitar-Potentiometer-A500K-Split-Shaft-Pots-Audio-Tone-Switch-Control-New/263890658531?epid=623933707&hash=item3d711be4e3:g:wW8AAOSwiFtbe4Kc)
+8. 3 X 500K Potentiometer – eBay
 
-9. 2 X 100K Potentiometer – [eBay](https://www.ebay.com.au/itm/5-x-100K-ohm-B100K-Top-Adjustment-Dual-Linear-Potentiometer-Pots-Q0B1/302461097029?epid=1153220041&hash=item466c161445:g:tKsAAOSwXLpZw3Ig)
+9. 2 X 100K Potentiometer – eBay
 
-10. 1 X 5K Potentiometer - [eBay](https://www.ebay.com.au/itm/10PCS-5K-Ohm-B5K-Knurled-Shaft-Linear-Rotary-Taper-Potentiometer/232458669052?hash=item361f9dcbfc:g:uKIAAOSwXGtZm-aY)
+10. 1 X 5K Potentiometer - eBay
 
-11. 4 X 5mm White LED’s – [eBay](https://www.ebay.com.au/itm/50PCS-5MM-LED-WATERCLEAR-RED-GREEN-BLUE-YELLOW-WHITE/112851069914?hash=item1a4672abda%3Am%3AmU4gBiy--CuF9BXwMsdgeMg&var=413267733848)
+11. 4 X 5mm White LED’s – eBay
 
-12. 2 X Photo Cells – [eBay](https://www.ebay.com.au/itm/30PCS-Photoresistor-GL5516-LDR-CDS-5mm-Light-Dependent-Resistor-Sensor-Arduino/123284262861?hash=item1cb4508fcd:g:0MAAAOSwBgVbEOWL)
+12. 2 X Photo Cells – eBay
 
-13. 8 ohm speaker – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR2.TRC0.A0.H0.X8+ohm+speaker.TRS0&_nkw=8+ohm+speaker&_sacat=0)
+13. 8 ohm speaker – eBay
 
-14. Proto board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+14. Proto board – eBay
 
 15. Lots of thin wire. I use computer cables to get from my local tip.
 
@@ -76,11 +76,11 @@ Parts for the circuit
 
 17. 6 X AA batteries (equals 9v). You could also just use a 9v battery.
 
-18. 6 X AA Battery holder – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.X6+x+aa+battery+holder.TRS0&_nkw=6+x+aa+battery+holder&_sacat=0)
+18. 6 X AA Battery holder – eBay
 
-19. On/off switch for the power - [eBay](https://www.ebay.com.au/itm/5PCS-Blue-LED-Light-12V-Car-Boat-Round-Rocker-ON-OFF-Toggle-Switch-HOTSYSTEM-AU/172573456828?epid=728904450&hash=item282e2df9bc:g:8RAAAOSwSlBYxktg)
+19. On/off switch for the power - eBay
 
-20. 4 X on/off toggle switches – [eBay](https://www.ebay.com.au/itm/10pcs-3-Pin-SPDT-ON-ON-Mini-Toggle-Switch-6A-125VAC-Mini-Switches-New/380752503888?hash=item58a69e2450:g:3HIAAOxy-8pSaL9M)
+20. 4 X on/off toggle switches – eBay
 
 21. Audio out jack - eBay
 
@@ -90,11 +90,11 @@ Parts for the case
 
 2. Knobs – I used following ones
 
-[Skull knobs](https://www.ebay.com.au/itm/3pcs-Skull-Head-Electric-Guitar-Knobs-Control-Volume-Tone/232333763720?epid=873680866&hash=item36182be488:g:YxMAAOSwaeRZFppI)
+Skull knobs
 
-[Small knobs](https://www.ebay.com.au/itm/5X-Useful-Volume-Control-Rotary-Knobs-For-6mm-Dia-Knurled-Shaft-Potentiometer/111831954006?epid=24009482719&hash=item1a09b43256:g:tAEAAOSwv-NWU8zx)
+Small knobs
 
-[Large knobs](https://www.ebay.com.au/itm/5-set-Rotary-Potentiometer-Knobs-Caps-with-5Pcs-Counting-Dial-0-100-Scale-MZ/202125337635?hash=item2f0f9be423:g:lzkAAOSwdrhZnrN6)
+Large knobs
 
 3. Speaker cover. I haven’t been able to find the one I used on the net but here is a similar one
 

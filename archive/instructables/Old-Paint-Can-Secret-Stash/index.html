@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,145 +127,68 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Old Paint Can Secret Stash</span>
 </nav>
-<h1>Old Paint Can Secret Stash</h1><div class="source"><a href="https://www.instructables.com/Old-Paint-Can-Secret-Stash/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I recently made a secret <a href="https://www.instructables.com/id/Secret-Jurassic-Park-Stash/">stash out of a WD40 can</a> which worked out really well.</p>
-<p>In the comments someone mentioned that a spray paint can – all old and crummy would be a great alternative to the WD40 can.</p>
-<p>I thought that this was a pretty good idea so instead of using a spray can, I used an old, crappy tin of paint that had been sitting around my shed for a couple of years.</p>
-<p>There are a couple of benefits on using a paint can over a spray can that I can see.</p>
-<p>Someone else in the comments mentioned that they had their shed broken into and all that was taken was the spray cans.</p>
-<p>Guess some kids wanted to do some tagging.</p>
-<p>The other benefit is that 90mm pluming parts fit nearly perfectly into the can, making the job pretty straight forward.</p>
+<h1>Old Paint Can Secret Stash</h1><div class="source"><a href="https://www.instructables.com/Old-Paint-Can-Secret-Stash/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I recently made a secret stash out of a WD40 can which worked out really well. In the comments someone mentioned that a spray paint can – all old and crummy would be a great alternative to the WD40 can. I thought that this was a pretty good idea so instead of using a spray can, I used an old, crappy tin of paint that had been sitting around my shed for a couple of years.</p>
+<p>There are a couple of benefits on using a paint can over a spray can that I can see. Someone else in the comments mentioned that they had their shed broken into and all that was taken was the spray cans. Guess some kids wanted to do some tagging. The other benefit is that 90mm pluming parts fit nearly perfectly into the can, making the job pretty straight forward.</p>
 <p>I also made a “how to” video so if you can’t be asked reading the ‘ible, then just watch the video</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>All of the PVC parts can be found at any hardware store. I have added links to Bunnings, an Australian hardware chain so you can easily identify the plumbing parts</p>
 <p>Parts:</p>
 <ol>
 <li>1 litre paint can – preferably well used</li>
-</ol>
-<ol>
-<li>90mm threaded coupling - <a href="https://www.bunnings.com.au/holman-90mm-pvc-stormwater-threaded-insert-fitting_p4770411">Bunnings</a></li>
-</ol>
-<ol>
-<li>90mm screw cap - <a href="https://www.bunnings.com.au/holman-90mm-threaded-pvc-storm-cap_p4770388">Bunnings</a></li>
-</ol>
-<ol>
-<li>90mm push on cap - <a href="https://www.bunnings.com.au/holman-90mm-push-on-pvc-storm-cap_p4750196">Bunnings</a></li>
-</ol>
-<ol>
-<li>90mm PVC tube - <a href="https://www.bunnings.com.au/holman-90mm-threaded-pvc-storm-cap_p4770388">Bunnings</a></li>
+<li>90mm threaded coupling - Bunnings</li>
+<li>90mm screw cap - Bunnings</li>
+<li>90mm push on cap - Bunnings</li>
+<li>90mm PVC tube - Bunnings</li>
 </ol>
 <p>Tools</p>
 <ol>
 <li>Dremmel with a cutting wheel attached. You could also use an angle grinder with a thin cutting wheel.</li>
-</ol>
-<ol>
 <li>Clothes to clean the inside of the can</li>
-</ol>
-<ol>
 <li>Super glue</li>
-</ol>
-<ol>
 <li>Epoxy glue</li>
-</ol>
-<ol>
 <li>Belt Sander (you can substitute this with files and sandpaper</li>
-</ol>
-<ol>
 <li>Sandpaper</li>
-</ol>
-<ol>
 <li>Hole saw. I think it was about 80mm diameter.</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Cleaning the Can</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cleaning the Can image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cleaning the Can image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cleaning the Can image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cleaning the Can image 4" loading="lazy"></div><p>Actually, you only want to give the inside a clean and remove any excess paint inside. The dirtier the can the better!</p>
 <p>Steps:</p>
 <ol>
 <li>Empty the can of any paint that might be inside</li>
-</ol>
-<ol>
 <li>Wash out the excess paint with some water</li>
-</ol>
-<ol>
 <li>With a cloth, dry and wipe the inside of the can and the lid to remove any last traces of paint</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Cut the Bottom Off the Can</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cut the Bottom Off the Can image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cut the Bottom Off the Can image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Cut the Bottom Off the Can image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Cut the Bottom Off the Can image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Make sure that the can is secured well before you start to cut. I placed mine in an open vice (but didn’t close it around the can) so I could easily turn it and also keep it secure</li>
-</ol>
-<ol>
 <li>Use a dremel with a cutting wheel to carefully go around the bottom of the can. Don’t cut right on the lip of the bottom of the can or you will go through the bottom. Give yourself a couple of millimetres above the lip when cutting</li>
-</ol>
-<ol>
 <li>Keep on moving the can around slowly until you have cut the bottom off the can</li>
 </ol>
 <p><strong>Be careful here as the can will be sharp and it is very easy to cut yourself</strong></p><h2><span class="step-num">STEP 4</span>Step 4: Sanding the Can and Super-gluing the Lid</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Sanding the Can and Super-gluing the Lid image 8" loading="lazy"></div><p>Both the can and the bottom section will be very sharp so it is important that you remove the burrs and give the edges a sand to remove any danger of cutting yourself</p>
 <p>Steps:</p>
 <ol>
 <li>Place the end of the can on a belt sander and carefully sand down the edges. This also has an added benefit of straightening up the cut that you made.</li>
-</ol>
-<ol>
 <li>Keep turning the can around making sure that all of the edges have been sanded and that the end is flat</li>
-</ol>
-<ol>
 <li>Next thing to do is to remove any pieces of metal on the bottom of the can. You can also use the belt sander to remove these as well. Just hold the bottom at an angle to the belt sander and remove any leftover can from the lip.</li>
-</ol>
-<ol>
 <li>Use some sandpaper (I used 400 grit) to finish off the edge and remove any last burrs or sharp edges.</li>
-</ol>
-<ol>
 <li>Lastly, super glue the lid onto the can.</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screw Cap to the Can</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Screw Cap to the Can image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Screw Cap to the Can image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Screw Cap to the Can image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Screw Cap to the Can image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Screw Cap to the Can image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Screw Cap to the Can image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Screw Cap to the Can image 7" loading="lazy"></div><p>You need to remove the middle from the cap so only the thread section remains. I found the easiest way to do this was with a hole saw</p>
 <p>Steps:</p>
 <ol>
 <li>Attach a hole saw that is a little smaller in diameter then the screw cap.</li>
-</ol>
-<ol>
 <li>Place the cap in a vice and drill out the middle section</li>
-</ol>
-<ol>
 <li>You will need to sand the inside of the cap to make sure that you remove the plastic left inside and to smooth it out</li>
-</ol>
-<ol>
 <li>Around the edges of the cap are small ridges for grip. You will need to sand these down in order for the cap to fit inside the can. Don’t totally remove them but just reduce their size with the belt sander</li>
-</ol>
-<ol>
 <li>Test to make sure it fits inside the can. It should be a nice, snug fit.</li>
-</ol>
-<ol>
 <li>Add some epoxy around the edges and glue into place. It should sit around 5mm inside the can</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Bottom to the Coupling</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Bottom to the Coupling image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Bottom to the Coupling image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Bottom to the Coupling image 3" loading="lazy"></div><p>To ensure that the bottom section of the can is sitting correctly and it is screwed into place, you need to do the following</p>
 <p>Steps:</p>
 <ol>
 <li>First, screw the coupling into the cap section in the bottom of the can. Make sure you don’t screw it all the way as it needs to sit on the bottom of the can when gluing.</li>
-</ol>
-<ol>
 <li>Add some epoxy around the bottom rim of the coupling where it will sit against the bottom of the can.</li>
-</ol>
-<ol>
 <li>Put the bottom of the can on a flat area and place the can on top of it. You may have to adjust the coupling until the bottom of the can is sitting flush</li>
-</ol>
-<ol>
 <li>Leave to dry for a good hour or so.</li>
-</ol>
-<ol>
 <li>Test to make sure that the bottom screws into the can and everything is working as it should. You may have to add some more epoxy around the coupling and bottom of the can.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Some PVC Tube for the Container</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Some PVC Tube for the Container image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Some PVC Tube for the Container image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Some PVC Tube for the Container image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Some PVC Tube for the Container image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding Some PVC Tube for the Container image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Cut a piece of 90mm tube so it fits inside the can once placed into the coupling.</li>
-</ol>
-<ol>
 <li>I also added a cap to the top of the tube for added safety. The cap is quite loose so secure it down by adding some electrical tape around the tube which will act like a seal.</li>
 </ol>
 <p>That’s it! Pretty simple really. When you add it to a shelf in the garage with all of the other used paint cans, no-one’s ever going suspect that there is a stash of goodies inside.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

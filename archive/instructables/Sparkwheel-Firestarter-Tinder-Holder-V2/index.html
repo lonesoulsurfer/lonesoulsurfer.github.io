@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,226 +127,108 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Firestarter & Tinder Case V2</span>
 </nav>
-<h1>Firestarter & Tinder Case V2</h1><div class="source"><a href="https://www.instructables.com/Sparkwheel-Firestarter-Tinder-Holder-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Some of you might recall the <a href="https://www.instructables.com/id/Flint-and-Spark-Wheel-Fire-Starter/">flint and sparkwheel firelighter</a> that I made awhile ago.</p>
-<p>It's very handy for getting char cloth lit or even gas stoves or blowtorches but there was no-where to store tinder.</p>
-<p>After a couple of good ideas supplied by the community I decided to revisit and include a container to store tinder.</p>
+<h1>Firestarter & Tinder Case V2</h1><div class="source"><a href="https://www.instructables.com/Sparkwheel-Firestarter-Tinder-Holder-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Some of you might recall the flint and sparkwheel firelighter that I made awhile ago. It's very handy for getting char cloth lit or even gas stoves or blowtorches but there was no-where to store tinder. After a couple of good ideas supplied by the community I decided to revisit and include a container to store tinder.</p>
 <p>As you can see from the images, the main body is quite large. This is where the tinder is kept! The container is held into place with a screw that also serves as a stopper for the spring and flint.</p>
-<p>The spark generated is larger than a normal lighter.</p>
-<p>This is because there is more force from the spring onto the flint.</p>
-<p>It will use the flint up quicker but you can just replace once it has been depleted.</p>
-<p>I've also experimented with a few different types of tinder which you can see in the video and in step 12.</p>
-<p>All of these will fit into the container and the sparkwheel does an excellent job in igniting them.</p>
+<p>The spark generated is larger than a normal lighter. This is because there is more force from the spring onto the flint. It will use the flint up quicker but you can just replace once it has been depleted. I've also experimented with a few different types of tinder which you can see in the video and in step 12. All of these will fit into the container and the sparkwheel does an excellent job in igniting them.</p>
 <p>If you wanted to you could add some other survival tools inside the storage area instead like hook and sinker, floss (great for fishing line, binding) etc.</p>
 <p>This is also a great use for old, disposable lighters as well.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Old lighter. Try and make it the larger kind as the sparkwheel is larger and so is the flint.</li>
-</ol>
-<ol>
 <li>2 x 15mm brass caps</li>
-</ol>
-<ol>
 <li>12.7mm copper tube. You can find this in the plumbing section at your hardware store. This tube will fit inside the 15mm caps</li>
-</ol>
-<ol>
 <li>Small brass or copper tube. The size will depend on the dimensions of the spring in the lighter. I pulled apart the lighter and took this to the hobby shop to find the right sized tube</li>
-</ol>
-<ol>
 <li>Brass or copper strip. Hobby shop. Don't get it too thick or you will never be able to bend it. Same goes with too thin!</li>
-</ol>
-<ol>
 <li>Screw. The screw needs to be slightly smaller than the small brass tube.</li>
-</ol>
-<ol>
 <li>Copper wire. Hobby shop. This is used to make the ring</li>
-</ol>
-<ol>
 <li>Cloth. Best cloth to use is cotton cloth.</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Pliers. Needle nose, small and large ones. Just use whatever you have</li>
-</ol>
-<ol>
 <li>Blow torch. I used a mini one and a larger one to solder the larger copper piping together.</li>
-</ol>
-<ol>
 <li>Solder</li>
-</ol>
-<ol>
 <li>Dremel (always comes in handy)</li>
-</ol>
-<ol>
 <li>Grinder</li>
-</ol>
-<ol>
 <li>Files</li>
-</ol>
-<ol>
 <li>Drill</li>
-</ol>
-<ol>
 <li>Metal Polish</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Pull the Lighter Apart.</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pull the Lighter Apart. image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pull the Lighter Apart. image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pull the Lighter Apart. image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Pull the Lighter Apart. image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First remove the metal guard.</li>
-</ol>
-<ol>
 <li>Next, carefully remove the sparkwheel making sure that the spring doesn't fly off.</li>
-</ol>
-<ol>
 <li>Put aside the sparkwheel, flint and spring</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Cut the Small Tube</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Cut the Small Tube image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cut the Small Tube image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Cut the Small Tube image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Cut the Small Tube image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Put the spring next to the tube. You want about 10-15mm mm of spring sticking out the top. The more pressure you have the spring under, the more spark you'll get. However, it will mean that putting the screw in place to hold the spring will mean it is under pressure and could make the job hard.</li>
-</ol>
-<ol>
 <li>Cut the tube. I used a dremel with a cutting wheel</li>
-</ol>
-<ol>
 <li>File the end and make it smooth. Also, de-burr the inside. You can see in the last image that once the flint is in the tube there is about 10-12mm of the spring sticking out.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Make the Bracket - Bending</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Make the Bracket - Bending image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Make the Bracket - Bending image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Make the Bracket - Bending image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Make the Bracket - Bending image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Make the Bracket - Bending image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Make the Bracket - Bending image 6" loading="lazy"></div><p>This can be a little tricky. You want to make the bracket so the spark wheel fits correctly.</p>
 <p>Steps:</p>
 <ol>
 <li>Make a 90 degree bend in the copper strip.</li>
-</ol>
-<ol>
 <li>Next, grab the spark wheel and use this to work out where to make the next bend. You want to have it so when bent into a "U" shape, the 2 pins on the spark wheel rest on the copper strip.</li>
-</ol>
-<ol>
 <li>Cut and trim the bracket and lastly, round off the edges. I used a sanding drum on my dremel but you could also use a file.</li>
-</ol>
-<ol>
 <li>Lastly, you need to drill a hole into the bottom of the bracket. Mark the centre and make a hole. The hole should be the same size as the small brass tube. You want this section to be a tight fit so start with a drill bit slightly smaller than the tube and work your way up.</li>
 </ol>
 <p>You now have all of the parts for the sparkwheel and flint section, you now need to build the storage section</p><h2><span class="step-num">STEP 5</span>Step 5: Cutting the Copper Tube for the Container</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Cutting the Copper Tube for the Container image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Cutting the Copper Tube for the Container image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Cutting the Copper Tube for the Container image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Cutting the Copper Tube for the Container image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Grab the small copper tube and place it against the large copper tube. You need to cut the large copper tube roughly the same size as the small one.</li>
-</ol>
-<ol>
 <li>Use a grinder to cut the tube</li>
-</ol>
-<ol>
 <li>File down the ends and de-burr</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Soldering and Drilling the Cap</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Soldering and Drilling the Cap image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Soldering and Drilling the Cap image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Soldering and Drilling the Cap image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Soldering and Drilling the Cap image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Soldering and Drilling the Cap image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Soldering and Drilling the Cap image 6" loading="lazy"></div><p>You need to solder one of the 15mm caps onto the copper tube. This will make your storage container</p>
 <p>Steps:</p>
 <ol>
 <li>Once you have cut the large copper tube to size, add a little flux to one edge and push on a 15mm cap</li>
-</ol>
-<ol>
 <li>With a blow torch, heat the tube and cap and once hot enough add some solder around the edge.</li>
-</ol>
-<ol>
 <li>Once cooled, mark out the centre of the cap (or as close as possible) and with a drill make a hole. The hole needs to be a little larger than the small brass tube.</li>
-</ol>
-<ol>
 <li>Lastly give it a clean with some metal polish</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Sparkwheel Bracket to the Cap</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 7: Adding the Sparkwheel Bracket to the Cap image 10" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Find the centre of the cap and drill a hole into it. The hole needs to be the same size as the small brass tube. It doesn't have to be too tight a fit but you don't want much slop. Put it to one side for the second</li>
-</ol>
-<ol>
 <li>Next, grab the sparkwheel bracket and place the smaller brass tube into it. You only want the smallest amount of tube showing out the other side (like in the images below)</li>
-</ol>
-<ol>
 <li>Add some flux to the top of the cap and then push the small brass tube through the hole so it is touching the bracket.</li>
-</ol>
-<ol>
 <li>Grab the blow torch, heat-up the metal and add some solder to the bracket and cap.</li>
-</ol>
-<ol>
 <li>Push the container onto the cap and make sure that the smaller tube lines-up with the hole in the cap. If it doesn't, then use something to jimmy the small tube until it lines-up with the hole.</li>
-</ol>
-<ol>
 <li>Lastly give it a polish</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Sparkwheel to the Bracket</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Sparkwheel to the Bracket image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Sparkwheel to the Bracket image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Sparkwheel to the Bracket image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Use the spark wheel to determine where you need to add the first hole. Once the first hole is drilled you can use this to determine where the second needs to go. If the holes aren't lined-up correctly, the wheel will be crocked and you may have to redo which would be a pain.</li>
-</ol>
-<ol>
 <li>Carefully drill the first hole. The drill piece you use should be the same size as the pins on the spark wheel. The hole can be off-centre so if it isn't in the middle don't fret.</li>
-</ol>
-<ol>
 <li>Drill the other hole and remove any burrs.</li>
-</ol>
-<ol>
 <li>Here's what you need to do to get the wheel into the bracket: - Put the wheel on top of the arms of the bracket. - Push down on the wheel and try and push it into the bracket. - once in the bracket, line-up the pins on the wheel to the holes in the bracket. If one of the sides of the bracket is bent out, use some pliers or a vice to straighten. You may have to bend one of the brackets slightly outwards to get the wheel in. If you do, use a pair of pliers to push the arm back into place once the wheel is located correctly.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Screw and Putting It All Together</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Screw and Putting It All Together image 8" loading="lazy"></div><p>As mentioned previously, you need to add a screw into the end of the small copper tube. The screw also holds the</p>
 <p>Parts:</p>
 <ol>
 <li>Push the screw into the top and then with a phillips head, start to turn the screw into the copper. I just screwed the screw in with force to make the thread.</li>
-</ol>
-<ol>
 <li>Take your time and if it feels like it's getting stuck, un-screw and re-screw until it's got a good foothold.</li>
-</ol>
-<ol>
 <li>I left the tinder container in place whist I forced the screw into place. It gives you something to hold whist you are doing this.</li>
-</ol>
-<ol>
 <li>Once the screw is in place and is holding everything together, you then can undo and place the flint and spring into the small tube. Put the container into place and put the screw into place. Be careful as the spring will be under load and might "pop" out if you are not careful.</li>
-</ol>
-<ol>
 <li>Test the sparkwheel and ensure the flint is sparking.</li>
-</ol>
-<ol>
 <li>Lastly give the whole thing a good polish</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Ring</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Ring image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Ring image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Ring image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Ring image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Ring image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First thing to do is to bend the copper wire into a ring. I used a pair of round pliers to do this but you could just as easily bend the wire around a pencil or something else round.</li>
-</ol>
-<ol>
 <li>Cut the ring off once you have a good, round shape.</li>
-</ol>
-<ol>
 <li>Next, add some flux to the join in the ring and align this to the top of the screws head. I had a 3rd arm hold this in place</li>
-</ol>
-<ol>
 <li>Lastly, with a mini blow torch, heat-up and add a good quantity of solder. You will be using the ring to loosen and tighten so it needs to be secured well.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: How to Use</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: How to Use image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: How to Use image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: How to Use image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: How to Use image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: How to Use image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: How to Use image 6" loading="lazy"></div><p>Hopefully “how to use” is self-explanatory but if it isn’t - keep on reading</p>
 <p>Steps:</p>
 <ol>
 <li>To open the container first you undo the screw by turning the ring</li>
-</ol>
-<ol>
 <li>Once you have undone the screw the spring will pop out. Put this to one side and make sure you don’t lose the flint as well.</li>
-</ol>
-<ol>
 <li>The container fits into the top brass cap so just pull the bottom cap to remove it</li>
-</ol>
-<ol>
 <li>I keep 4 x cotton bud heads in one and some wax and lint in the other. As I’ve already mentioned though, you could keep whatever you like inside.</li>
 </ol><h2><span class="step-num">STEP 12</span>Step 12: What Tinder to Use</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: What Tinder to Use image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: What Tinder to Use image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: What Tinder to Use image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: What Tinder to Use image 4" loading="lazy"></div><p>Char Cloth</p>
-<p>You can make some char cloth as tinder and this lights instantly when hit with the spark.</p>
-<p>If you want to use this then check out this ible' - step 7.</p>
-<p>The downfall of charcloth is it doesn't flame, it smolders so it can be hard to ignite what your trying to set on fire.</p>
-<p>Also, it's fragile so storing it in the container can easily tear and wreck it.</p>
+<p>You can make some char cloth as tinder and this lights instantly when hit with the spark. If you want to use this then check out this ible' - step 7. The downfall of charcloth is it doesn't flame, it smolders so it can be hard to ignite what your trying to set on fire. Also, it's fragile so storing it in the container can easily tear and wreck it.</p>
 <p>As the spark produced is quite large, you should be able to light cloth directly. Just make sure that the cloth is cotton and a little frayed. I have done this plenty of times</p>
 <p>Cotton Buds and Wax</p>
-<p>This is what I put into my one.</p>
-<p>The great thing about them is they catch on fire easily and the plastic then catches alight and act like a match.</p>
-<p>I also add a little wax to the bottom of the cotton bud so they burn a little longer</p>
+<p>This is what I put into my one. The great thing about them is they catch on fire easily and the plastic then catches alight and act like a match. I also add a little wax to the bottom of the cotton bud so they burn a little longer</p>
 <p>Link and Wax</p>
-<p>This burns very well and is easy to ignite Check out <a href="https://www.instructables.com/id/Steel-Wool-Emergency-Fire-Starter/">this ible</a>' to see how to make it</p>
-<p>Check out the Youtube clip in the intro to see these tinder's ignite</p><h2><span class="step-num">STEP 13</span>Step 13: What Next</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: What Next image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: What Next image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: What Next image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: What Next image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: What Next image 5" loading="lazy"></div><p>Maybe there is a better way to hold the container in place where you don't have to un-screw the flint/spring section?</p>
-<p>Actually I'm sure there is and if you know what it is, please let me know in the comments.</p>
+<p>This burns very well and is easy to ignite Check out this ible' to see how to make it</p>
+<p>Check out the Youtube clip in the intro to see these tinder's ignite</p><h2><span class="step-num">STEP 13</span>Step 13: What Next</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: What Next image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: What Next image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: What Next image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: What Next image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: What Next image 5" loading="lazy"></div><p>Maybe there is a better way to hold the container in place where you don't have to un-screw the flint/spring section? Actually I'm sure there is and if you know what it is, please let me know in the comments.</p>
 <p>What about tinder? I'm sure that there are a tonne of different tinder that you could use.</p>
 <p>I think I could also just turn these into lighters with a wick etc. Might explore that in a later ible'</p>
 <p>In the end I'm really happy with the finish. Don't forget to post an image in the comments if you do make one.</p>
 <p>Any questions, please let me know.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

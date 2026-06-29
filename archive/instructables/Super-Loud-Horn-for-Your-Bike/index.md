@@ -11,6 +11,12 @@ Source: https://www.instructables.com/Super-Loud-Horn-for-Your-Bike/
 
 ![Intro 2](images/intro_02.jpg)
 
+I wanted to come-up with the loudest horn possible for by motoried push bike without it taking up too much room and also have the batteries rechargable.
+
+The following is the end result.
+
+With this horn I promoise you'll never be worried about a car getting too close again.  Just one blast is enough to let those pesky car drivers know that there's a bike close by so beware!
+
 
 ## Step 1: Parts
 

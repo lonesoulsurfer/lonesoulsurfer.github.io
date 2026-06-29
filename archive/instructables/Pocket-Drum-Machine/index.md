@@ -32,7 +32,7 @@ I couldn't just throw these cards away, plus they have some cool electronics in 
 
 Parts:
 
-1. Drum Birthday Card - [buy here](https://www.dayspring.com/wowbirthdayadifferentdrummer2interactivesongcards) the good thing here is you can get 2 for $14.00. You can also get them from Kmart for $10 if you are in Australia
+1. Drum Birthday Card - buy here the good thing here is you can get 2 for $14.00. You can also get them from Kmart for $10 if you are in Australia
 
 2. Small Tin. I used a tobacco tin.
 

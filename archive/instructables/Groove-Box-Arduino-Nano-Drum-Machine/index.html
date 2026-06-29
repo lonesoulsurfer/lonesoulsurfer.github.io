@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,21 +127,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Groove Box - Arduino Nano Drum Machine</span>
 </nav>
-<h1>Groove Box - Arduino Nano Drum Machine</h1><div class="source"><a href="https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>In this build I recreate the awesome little drum synth called <a href="https://github.com/mattybrad/drumkid">drum kid</a> by <a href="https://github.com/mattybrad">Mattybrad</a>.</p>
-<p>Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds.</p>
-<p>Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!</p>
+<h1>Groove Box - Arduino Nano Drum Machine</h1><div class="source"><a href="https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>In this build I recreate the awesome little drum synth called drum kid by Mattybrad. Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds. Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!</p>
 <p>I'm a total novice when it comes to coding so this solution wasn't elegant but works perfectly.</p>
-<p>So, what the the Groove Box?</p>
-<p>Well it's a generative drum machine allowing you to control and change the drumbeat on the fly.</p>
-<p>There are a heap of effects that you can play around with and if you find a beat you like, you an save it and load it up instantly whenever you like!</p>
-<p>The original DrumKid is a stand alone drum synth.</p>
-<p>However, I wanted my version to be able to fit into a Eurorack so have designed it to be modular.</p>
-<p>This is in line with the last couple of builds I have done which you an find below.</p>
-<p>The plan is to build my own modular synth that anyone can make and play and have it powered by 9V's so it is portable.</p>
-<p>I've put together a small trial case just so I can get a feel for what it could look like which is what you see if the video.</p>
-<p>This will be scrapped and re-built on once I have done a couple more modules.</p>
-<p>As always, I'm keen to get any feedback on what modules or sound effects you think I should add so please let me know in the comments.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>I've created a parts list which can be found in my <a href="https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine">GitHub</a> page and in the PDF file attached to this step.</p>
-<p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
+<p>So, what the the Groove Box? Well it's a generative drum machine allowing you to control and change the drumbeat on the fly. There are a heap of effects that you can play around with and if you find a beat you like, you an save it and load it up instantly whenever you like!</p>
+<p>The original DrumKid is a stand alone drum synth. However, I wanted my version to be able to fit into a Eurorack so have designed it to be modular. This is in line with the last couple of builds I have done which you an find below.</p>
+<p>The plan is to build my own modular synth that anyone can make and play and have it powered by 9V's so it is portable. I've put together a small trial case just so I can get a feel for what it could look like which is what you see if the video. This will be scrapped and re-built on once I have done a couple more modules.</p>
+<p>As always, I'm keen to get any feedback on what modules or sound effects you think I should add so please let me know in the comments.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>PARTS:</p>
 <ul>
 <li>PCB - I've designed one for this build with the information on how to print your own in the next step</li>
@@ -194,20 +150,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Female Header Pin Socket 15 Pin X 2</li>
 <li>Audio Socket 3.5mm (PN - PJ-301M) X 3</li>
 <li>Mini JST Connector and wire 2 Pin X 11</li>
-</ul>
-<ul>
-<li><a href="pdfs/List of Parts.pdf">List of Parts</a></li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting Your Boards Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting Your Boards Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting Your Boards Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting Your Boards Printed image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: Getting Your Boards Printed image 4" loading="lazy"><img src="images/step02_05.png" alt="Step 1: Getting Your Boards Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I always try my best to provide a clear step by step guide.</p>
-<p>If however, you're an old hand at this type of thing then you can probably skip a bunch of the steps.</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
-<p>I use JLCPCB (not affliated) to get this done.</p>
-<p>The front panel is actually just a PCB without any components included!</p>
-<p>The front design is done in a program called Inkscape (available free) and the panel including the holes is done in Fusion 360 (also free!)</p>
-<p>ll the files that you need to build your own Groove Box can be found in my <a href="https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine">GitHub</a> page This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting Your Boards Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting Your Boards Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting Your Boards Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting Your Boards Printed image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: Getting Your Boards Printed image 4" loading="lazy"><img src="images/step02_05.png" alt="Step 1: Getting Your Boards Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I always try my best to provide a clear step by step guide. If however, you're an old hand at this type of thing then you can probably skip a bunch of the steps.</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the holes is done in Fusion 360 (also free!)</p>
+<p>ll the files that you need to build your own Groove Box can be found in my GitHub page This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
 <p>STEPS:</p>
 <ul>
-<li>You’ll need to send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.</li>
-<li>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
+<li>You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.</li>
+<li>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.</li>
 </ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components Part 1 image 5" loading="lazy"></div><p>As the PCB is 2 sided, the order you add the components does matter. Of you get it wrong it's not the end of the world but it might make it a little harder to add some components</p>
@@ -229,8 +178,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the on/off switch into place</li>
 <li>Now you can move onto the 4 audio jacks</li>
 <li>Lastly, solder all of the 4 pots into place.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Uploading the Sketch to the Arduino</h2><div class="step-images"><img src="images/step05_01.png" alt="Step 4: Uploading the Sketch to the Arduino image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Uploading the Sketch to the Arduino image 2" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out <a href="https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE">this link</a>.</p>
-<p>It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Uploading the Sketch to the Arduino</h2><div class="step-images"><img src="images/step05_01.png" alt="Step 4: Uploading the Sketch to the Arduino image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Uploading the Sketch to the Arduino image 2" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
 <p>STEPS:</p>
 <ul>
 <li>Open the sketch in the software folder which will take you to Arduino IDE</li>
@@ -246,7 +194,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now you can add the nuts to the pots, audio jacks and on/off switches to secure the front panel to the PCB.</li>
 <li>This is actually the 2nd iteration of the Groove Box, the first one had the audio jacks at the bottom which held the front panel well. However, the 2nd version I found that the front panel wasn't secured as well where the momentary switches are so I've modified the files to include a couple of M2 screws and nuts to help better secure it.</li>
 <li>Now that the front panel is in place you can either make an individual case you house it in or add it to your Eurorack. You can see in the images that I've included it in my little Eurorack synth.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: How to Play the Groove Box</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: How to Play the Groove Box image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: How to Play the Groove Box image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: How to Play the Groove Box image 3" loading="lazy"></div><p>Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my <a href="https://github.com/lonesoulsurfer/Groove_Box_Drum_Machine">GitHub</a> page</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: How to Play the Groove Box</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: How to Play the Groove Box image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: How to Play the Groove Box image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: How to Play the Groove Box image 3" loading="lazy"></div><p>Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my GitHub page</p>
 <p>Inputs</p>
 <p>There are 4 audio inputs included on the Groove Box. 2 of these are Sync outs for 4/4 time signature, 1 is 1/4 time signature and the other is Audio out.</p>
 <p>Basic Functions</p>
@@ -295,147 +243,52 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Swing</li>
 <li>Tempo</li>
 </ul>
-<p>You can try out each parameter by starting a rhythm (using the start/stop button), then selecting a group and turning the different knobs.</p>
-<p>For example, try selecting group B (by pressing the B button) then turning the first knob, which will now control "pitch".</p>
-<p>You should hear the sound change.</p>
-<p>Below are descriptions of exactly what each parameter does, and how it can be used.</p>
-<p>Chance - The probability of extra drum hits being generated.</p>
-<p>At zero, the beat will be completely unchanged, while for higher values there will be lots of extra events, usually creating a busier, messier beat.</p>
-<p>This can be used in conjunction with zoom, midpoint, and range to create drum fills that transition organically from a simple beat.</p>
-<p>Zoom - Chooses which subdivision of the beat should be affected by the randomly generated extra hits.</p>
-<p>When zoom is at zero, beats will only be generated for "whole notes" (i.e. the first beat of the bar).</p>
-<p>Higher values will affect half notes, quarter notes, eighth notes, and so on.</p>
-<p>A medium value is a good place to start for zoom, but turning it up can make a beat or fill sound more "urgent".</p>
-<p>Some of the smaller subdivisions will vary depending on the current "swing" setting.</p>
-<p>Range - This is the range of velocities which will be assigned to the random hits, and works in conjunction with "midpoint" (see below).</p>
-<p>For all the random hits to have the same velocity as each other, keep this value at zero.</p>
-<p>For a wide range of velocities, turn this up high.</p>
-<p>Midpoint - This is the average velocity of the randomly generated hits, and works in conjunction with "range".</p>
-<p>Note that this control does allow negative values (below halfway).</p>
-<p>If you set the midpoint to maximum and have range set at zero, all the randomly generated hits will be at max velocity.</p>
-<p>Conversely, if you set it at zero, some hits will be muted.</p>
-<p>Setting it somewhere in the middle (with non-zero range) will add some random hits while reducing the volume of others.</p>
-<p>Try keeping midpoint at a three-quarters setting to add a bustling undercurrent to your beat, or turn it up briefly to create a drum fill.</p>
+<p>You can try out each parameter by starting a rhythm (using the start/stop button), then selecting a group and turning the different knobs. For example, try selecting group B (by pressing the B button) then turning the first knob, which will now control "pitch". You should hear the sound change. Below are descriptions of exactly what each parameter does, and how it can be used.</p>
+<p>Chance - The probability of extra drum hits being generated. At zero, the beat will be completely unchanged, while for higher values there will be lots of extra events, usually creating a busier, messier beat. This can be used in conjunction with zoom, midpoint, and range to create drum fills that transition organically from a simple beat.</p>
+<p>Zoom - Chooses which subdivision of the beat should be affected by the randomly generated extra hits. When zoom is at zero, beats will only be generated for "whole notes" (i.e. the first beat of the bar). Higher values will affect half notes, quarter notes, eighth notes, and so on. A medium value is a good place to start for zoom, but turning it up can make a beat or fill sound more "urgent". Some of the smaller subdivisions will vary depending on the current "swing" setting.</p>
+<p>Range - This is the range of velocities which will be assigned to the random hits, and works in conjunction with "midpoint" (see below). For all the random hits to have the same velocity as each other, keep this value at zero. For a wide range of velocities, turn this up high.</p>
+<p>Midpoint - This is the average velocity of the randomly generated hits, and works in conjunction with "range". Note that this control does allow negative values (below halfway). If you set the midpoint to maximum and have range set at zero, all the randomly generated hits will be at max velocity. Conversely, if you set it at zero, some hits will be muted. Setting it somewhere in the middle (with non-zero range) will add some random hits while reducing the volume of others. Try keeping midpoint at a three-quarters setting to add a bustling undercurrent to your beat, or turn it up briefly to create a drum fill.</p>
 <p>Pitch - Alters the playback speed of the samples. Will play samples backwards if you turn the knob below halfway.</p>
 <p>Crush - Reduces the number of bits used to calculate the audio output, creating a digital distortion effect. Higher values are clean, lower values are more distorted (fewer bits).</p>
 <p>Crop - Crops the end of the samples, creating a staccato effect. Lower values are more cropped.</p>
-<p>Drop - This control mutes some or all of the drum channels, allowing you to quickly "drop" everything except the hi-hat and snare, for example, or only retain the kick drum.</p>
-<p>Broadly, this control has "treble-y" channels at one end and "bass-y" channels at the other.</p>
-<p>The setting corresponding to all the channels being audible is somewhere in the middle.</p>
-<p>Drone - generates a drone which can be mixed with the drum sounds.</p>
-<p>The "drone" parameter controls the amount of raw drone signal added to the mix.</p>
-<p>Turning to the left adds a single tone, while turning to the right adds two tones, a fifth apart.</p>
-<p>A halfway value mutes the drone.</p>
-<p>Modulation - The drone can also used to modulate the audio signal from the drums, creating a robotic effect.</p>
-<p>When "modulation" is set at halfway, no effect is heard.</p>
-<p>Turning the knob to the left modulates the drums with a single drone, while turning it to the right modulates the drums with two tones, a fifth apart.</p>
-<p>Turning the knob all the way left or right creates an extreme effect, while values closer to halfway will be more subtle.</p>
+<p>Drop - This control mutes some or all of the drum channels, allowing you to quickly "drop" everything except the hi-hat and snare, for example, or only retain the kick drum. Broadly, this control has "treble-y" channels at one end and "bass-y" channels at the other. The setting corresponding to all the channels being audible is somewhere in the middle.</p>
+<p>Drone - generates a drone which can be mixed with the drum sounds. The "drone" parameter controls the amount of raw drone signal added to the mix. Turning to the left adds a single tone, while turning to the right adds two tones, a fifth apart. A halfway value mutes the drone.</p>
+<p>Modulation - The drone can also used to modulate the audio signal from the drums, creating a robotic effect. When "modulation" is set at halfway, no effect is heard. Turning the knob to the left modulates the drums with a single drone, while turning it to the right modulates the drums with two tones, a fifth apart. Turning the knob all the way left or right creates an extreme effect, while values closer to halfway will be more subtle.</p>
 <p>Tuning - Controls the overall tuning of the drones (both the single and fifth tones).</p>
 <p>Note - Alter the root note of the drones, in semitone steps over an octave range.</p>
 <p>Beat - Chooses between a series of basic underlying drum patterns (see "preset beat list" below).</p>
-<p>Beats/bar - Alters the time signature of the beat, i.e. the number of steps in the pattern.</p>
-<p>You can have between 1 and 13 beats in a bar, or if you turn the knob all the way to the right, the time signature will be randomised at the start of each bar.</p>
+<p>Beats/bar - Alters the time signature of the beat, i.e. the number of steps in the pattern. You can have between 1 and 13 beats in a bar, or if you turn the knob all the way to the right, the time signature will be randomised at the start of each bar.</p>
 <p>Swing - Creates a swing feel to a beat by altering the timing of certain hits. There are three settings: straight, partial swing, and full (triplet) swing.</p>
-<p>Tempo - Alters the tempo (BPM) of the beat.</p>
-<p>Will override any tempo previously set using the tap tempo function.</p>
-<p>Has a range of 10BPM to ~1000BPM, with the "sensible" tempos grouped in the middle of the range.</p>
+<p>Tempo - Alters the tempo (BPM) of the beat. Will override any tempo previously set using the tap tempo function. Has a range of 10BPM to ~1000BPM, with the "sensible" tempos grouped in the middle of the range.</p>
 <p>Pre-set beat list</p>
 <p>The pre-set beats can be accessed via hitting button D and turning pot 1.</p>
 <p>Beat - Chooses between a series of basic underlying drum patterns</p>
 <p>Please note that the LED pattern for each beat is illustrated to help you find the correct beat.</p>
 <ol>
 <li>You can leave your hat on ⚫⚪⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Johnny Two-Hats ⚪⚫⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Drum lesson ⚪⚪⚫⚪⚪</li>
-</ol>
-<ol>
 <li>Half-time rock ⚪⚪⚪⚫⚪</li>
-</ol>
-<ol>
 <li>There there ⚪⚪⚪⚪⚫</li>
-</ol>
-<ol>
 <li>Metal ⚫⚪⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Four to the floor ⚪⚫⚪⚪⚪</li>
-</ol>
-<ol>
 <li>"Dance" ⚪⚪⚫⚪⚪</li>
-</ol>
-<ol>
 <li>Blue Monday ⚪⚪⚪⚫⚪</li>
-</ol>
-<ol>
 <li>Chime ⚪⚪⚪⚪⚫</li>
-</ol>
-<ol>
 <li>Funk Soul Brother ⚫⚪⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Amen I ⚪⚫⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Amen I ⚪⚪⚫⚪⚪</li>
-</ol>
-<ol>
 <li>Superstition ⚪⚪⚪⚫⚪</li>
-</ol>
-<ol>
 <li>Derribar el muro ⚪⚪⚪⚪⚫</li>
-</ol>
-<ol>
 <li>Hips don't lie ⚫⚪⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Videotape ⚪⚫⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Videotape (Bonnaroo) ⚪⚪⚫⚪⚪</li>
-</ol>
-<ol>
 <li>Military ⚪⚪⚪⚫⚪</li>
-</ol>
-<ol>
 <li>Ballad ⚪⚪⚪⚪⚫</li>
-</ol>
-<ol>
 <li>Waltz ⚫⚪⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Take Five ⚪⚫⚪⚪⚪</li>
-</ol>
-<ol>
 <li>Unsquare ⚪⚪⚫⚪⚪</li>
-</ol>
-<ol>
 <li>Nihil ⚪⚪⚪⚫⚪</li>
 </ol>
-<ul>
-<li><a href="pdfs/manual - Groove Box.pdf">manual - Groove Box</a></li>
-</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
-<li><a href="pdfs/List of Parts.pdf">List of Parts</a></li>
-<li><a href="pdfs/manual - Groove Box.pdf">manual - Groove Box</a></li>
-</ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

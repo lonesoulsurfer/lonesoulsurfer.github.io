@@ -42,7 +42,7 @@ I also decided to start to design my own front panels. To do this I downloaded I
 
 I've broken up the parts list so it's a little easier to read. First let's go through what you'll need for the DS-8
 
-You can find the gerber files for the board in my Google drive [here](https://drive.google.com/drive/folders/1_UcQMlpJbc68a_Bw1BfDyM5o3cCno9F7?usp=sharing). I have also provided the schematic in the same folder along with a complete parts list. The schematic, and board were designed in Eagle so knock yourself out and have a play with it.
+You can find the gerber files for the board in my Google drive here. I have also provided the schematic in the same folder along with a complete parts list. The schematic, and board were designed in Eagle so knock yourself out and have a play with it.
 
 Parts
 
@@ -58,8 +58,6 @@ Board
 
 2. Next to each Pot section on the board there is a "F" or "B" next to it. That means the pot is either solder to the top of the board of the bottom. I did this to allow more space between the pots.
 
-
-- [DS-8 Parts List](pdfs/DS-8 Parts List.pdf)
 
 ## Step 2: All the Other Parts
 
@@ -81,21 +79,21 @@ Parts - Electrical
 
 1. Reverb/Echo Board - eBay
 
-2. Wire. I used jumper wires - [eBay](https://www.ebay.com.au/itm/40-Pcs-Jumper-Wire-M-M-M-F-F-F-Cable-Pi-Pic-Breadboard-For-Arduino-B-zh/383702151622?hash=item59566e31c6:g:ZWAAAOSwFnFV94L0&frcectupt=true)
+2. Wire. I used jumper wires - eBay
 
-3. 2 X SPDT switches - [Ali Express](https://www.aliexpress.com/item/4000177976189.html?spm=a2g0s.9042311.0.0.37f24c4dRe7FMz)
+3. 2 X SPDT switches - Ali Express
 
-4. Momentary Switch - [Ali Express](https://www.aliexpress.com/item/32976478577.html?spm=a2g0o.productlist.0.0.48c22095XdJxLW&algo_pvid=748f0502-749a-4a24-9a02-fdc720055543&algo_expid=748f0502-749a-4a24-9a02-fdc720055543-44&btsid=0bb0623d16040389935037808ebb2e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
+4. Momentary Switch - Ali Express
 
-5. Battery. I used a mobile phone battery -[eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2060353.m570.l1313&_nkw=mobile+battery+samsung&_sacat=0)
+5. Battery. I used a mobile phone battery -eBay
 
-6. Charging and voltage regulator module - [Ali Express](https://www.aliexpress.com/item/32950938641.html?spm=a2g0s.9042311.0.0.27424c4d8pVLHn)
+6. Charging and voltage regulator module - Ali Express
 
-7. Micro USB Module - [eBay](https://www.ebay.com.au/itm/FT-5Pcs-CJMCU-5V-Micro-USB-Board-Interface-Power-Switch-Adapter-Breakout-Module/324108091584?hash=item4b765900c0:g:dH0AAOSwK~tdoXXg)
+7. Micro USB Module - eBay
 
-8. 4 X Audio sockets - [eBay](https://www.ebay.com.au/itm/Lovoski-Black-3-Pin-3-5mm-Female-Audio-Mono-Headphone-Jacks-Socket-10Pcs/183171615145?_trkparms=ispr%3D1&hash=item2aa5e109a9:g:OnEAAOSw2PtazA-5&amdata=enc%3AAQAFAAACcBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickk8Fd9si%252FIbtWQr%252BhnlRwjDXvWNoBDIgZ3ecAzZ3e%252Fck5rX0gYjICre5FLjXCWjdb0B75pm0cRbPwPIac9Zwwt1c5wUs0gxx10MrWOhWOqmdeyzhHG0pAemQriD3gBdeNggHwfVOFHHBXDF3AQ5mj1LE75lVsrAgINTTL%252FPeCrj99lUmXsD1JarMNzQ0TIuJftHykvJwb%252BpaHq8wtnvLz9tLKJw92n9U3W3NavbmyQxInLrGJsVYDBEPQQuiGtjxUZmlhp5GO28TSTtH1OfiWNLPQNKuSEWIXmQuKh4Y8P%252Bi%252B9X2lne%252BEU21HzpfCqlKGOecNJg1Ol2snfzzWoqVmRvnrWT5pGa3WTUYC2ptdzqtZeJ161nzydorXRhpJlPGZx8NUXPLJdEQaUT5w2%252BdthbC%252FpRwoQF0EYL0nTPTK14cb40iUSkGUdz8lAtyTJ1kaYfpuoWZMHJ3kHZHf4OWB5fJkyApWiLoLB94At0ptb04CuGtdPQvC1WuLHZMtKSSDJhLIQos5SqZjFwJwsIr0gRr41M1IDvI0gStuBMlEoBwOlbQ5oKo5axYPB4Ob%252BSsD4CV8QY%252Fizas2IlKg8qeML2Mu5hx3GhHPHiymoH3t19oaiTWyhY3Y01ccAWKr29HvtlEwmOgNJfs8bfUG59TZzu4iGerpgY%252FY6oMV21lwveo%252F3MR8G0iTHS4wNyUhXCln5JQ5qnQJQ3xeG%252BqTJXyH7s37AffwIbQvf0n1fzxIuoF4OVFMce%252FwPShxaX7kdC6aWGGAjDisJyRRXqvdYXstwug%253D%253D%7Ccksum%3A1831716151455d439cd1d0554ebcbba9006435e81490%7Campid%3APL_CLK%7Cclp%3A2334524)
+8. 4 X Audio sockets - eBay
 
-9. Male right angle header pins - [eBay](https://www.ebay.com.au/itm/10pcs-Right-Angle-40-pin-2-54mm-Male-Header-for-Breadboard-1x40-Single-Row/392287448510?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
+9. Male right angle header pins - eBay
 
 Other Parts
 
@@ -105,11 +103,11 @@ Other Parts
 
 3. Ply wood for base - Hardware store
 
-4. Water Decal - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=water+decal+a4&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=water+decal)
+4. Water Decal - eBay
 
-5. Opal Acrylic - [eBay](https://www.ebay.com.au/itm/Coloured-Perspex-Acrylic-Sheets-Cut-Panels-Free-Tracked-Shipping/221974331742?_trkparms=ispr%3D1&hash=item33aeb3815e:g:AGcAAOSwvmNa~SjK&amdata=enc%3AAQAFAAACcBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkgCVySCgrNFPU8Iu85TabMMqb%252FzFiWrwNQbas1nj5sgePqtHbGIEESoeITQLLMNzCetHWJg9rbFSfKJKUxztvLNkzfEBQBfUxWbaXSmzHXZ1Kda9i0ZZDonqVWQ3aEmgM2lFl3vVF7P9FoVN5ofBWjSrYET7lCoGbq0YWgfDsz6ydQSM0ZmzvBWnGYymiP59y72QcD8VTzc4o%252BHDWhAqjvTq2%252FusGlzTCMO7%252FSY0cyfpSYOhTxuC9x7wWAU5m1l7b5%252B1yTxtisqCGEj1QG1LS1kcKt6aZYrUWusIkTqRgIf%252FZarv5lTxIyfvUntZXmEZvaWn%252F2jQQB8d3HJJgvqpaurqIBegIapw664aXhhwVlAzctjqgoQRf1GMl%252FRbXSuAzO%252BuOp1Jw%252BjY5pgO2Ycvjp4GUdboAV%252BfguDK61j2KF2ymdCiG9c6JHotUL9KJ5oZHFQ554Lr1RvKmVzAZQI6UyywqNALIjLaU%252FhFAA%252FedJHBuOTiEZQBScjHLz8Ml%252Ftc52TmqxdY6jdSbOeCFCdD%252FprGKxaYo2Tf%252B0Feylx53AfIzNaQ11qJFzzjHf9LDzqaqHxlbyfztGCZaCPqsPSNyUIr3njnv70E4J7v66jRsf0TsIRF0SU8FbuvdJHtDG45nW%252BFtVdh7vkdBBP691pzPa8yGjp5oAoElwkf%252BOrUMBqGp79yitbeuLVAf%252BeCZG0hZoTGl9u2DVMmuYujYhERsMmMPvqiTNZS86W2V6Hyb3QGt9k4UTr3iCO2IJlY2T9eSxEC0oiIqQlJHRE%252FJ%252Flx62w%253D%253D%7Ccksum%3A2219743317426961b26d0c8e4f60b0f8292504c255ef%7Campid%3APL_CLK%7Cclp%3A2334524&frcectupt=true)
+5. Opal Acrylic - eBay
 
-6. Pot knobs - [Ali Express](https://www.aliexpress.com/item/32954107409.html?spm=a2g0s.9042311.0.0.37f24c4dRe7FMz)
+6. Pot knobs - Ali Express
 
 
 ## Step 3: Schematic, Board and Gerber Files
@@ -120,8 +118,6 @@ Other Parts
 
 Here's the link to my Google drive with all of the files. Included is the parts list, Eagle schematic and board along with the Gerber files. The gerber zip folder can be sent to a PCB manufacturer and they will print the board up for you
 
-
-- [DS8 - Pots Soldered on Board](pdfs/DS8 - Pots Soldered on Board.pdf)
 
 ## Step 4: DS-8 Board - Soldering on the Components
 
@@ -262,16 +258,14 @@ Steps:
 
 ![Step 9: Designing the Front Panel image 1](images/step09_01.jpg)
 
-To design the panels I used [Inkscape](https://inkscape.org/), a vector graphics editor which you can download for free! I've only been playing around with it for a few weeks and found it easy to pick up. There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.
+To design the panels I used Inkscape, a vector graphics editor which you can download for free! I've only been playing around with it for a few weeks and found it easy to pick up. There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.
 
 I did a couple video's on how to design knob scales and also make a front panel which I have included above.
 
-There is even an extension that you can download so you can design knob scales easily and simply which you can [download here](https://inkscape.org/~sincoon/%E2%98%85knob-scale-generator)
+There is even an extension that you can download so you can design knob scales easily and simply which you can download here
 
 However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also includes the Inkscape file so you can play around with that as well if you want to.
 
-
-- [DS1 Drum Synth - Single Drum V3](pdfs/DS1 Drum Synth - Single Drum V3.pdf)
 
 ## Step 10: Drilling and Adding the Water Decal
 
@@ -386,7 +380,7 @@ Steps:
 
 ![Step 13: Moding the Echo/Reverb Module image 1](images/step13_01.jpg)
 
-I did an Instructable on how to mod the echo and reverb module which can be found [here](https://www.instructables.com/Echo-Reverb-Box/). It's not really a mod per se, more just now to had the echo pot and what resistor to remove. I won't go through this in much detail here so if you need further instructions, check out the 'ible above.
+I did an Instructable on how to mod the echo and reverb module which can be found here. It's not really a mod per se, more just now to had the echo pot and what resistor to remove. I won't go through this in much detail here so if you need further instructions, check out the 'ible above.
 
 Steps:
 
@@ -469,7 +463,7 @@ Steps:
 
 2. First thing you should do is complete an soldering that needs to be done. Solder the wires from the echo/reverb module to the relevant pots on the front panel
 
-3. Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found [here](https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/). Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module.
+3. Next, stick the battery charger and voltage regulator module on top of the battery. If you want more details on how to use this module then I've done an Instructable on this as well which can be found here. Wire-up the battery to the module and connect to the on/off switch. Also set the voltage to 9V on the module.
 
 4. You'll also need to add a couple wires from the echo/reverb module to the output on the charging module to power it.
 
@@ -496,12 +490,6 @@ Next I want to use the other 3 drums to make a 3 drum pad DS-8 synth! This build
 
 If you have any questions, please add them to the comments and I'll help where I can
 
-
-## Downloads
-
-- [DS-8 Parts List](pdfs/DS-8 Parts List.pdf)
-- [DS8 - Pots Soldered on Board](pdfs/DS8 - Pots Soldered on Board.pdf)
-- [DS1 Drum Synth - Single Drum V3](pdfs/DS1 Drum Synth - Single Drum V3.pdf)
 
 ---
 *84 images archived*

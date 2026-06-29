@@ -19,7 +19,7 @@ If not, then check out my projects for a quick update.
 
 A buffered Multiple is a module that allows you to add a sync in from say a drum machine, and use that signal to sync up other modules via the 6 Sync in's.
 
-Initially, I got a little stuck on this project as I couldn't find a good schematic without having to use negative voltages which my build doesn't use. I put out a call to [Reddit](https://www.reddit.com/r/synthdiy/comments/1m7yj92/buffered_multiple_without_negative_voltage/) and came up with a version using the 4050 chip which worked fine. However, I wanted to add a couple more features which an Arduino was perfect for.
+Initially, I got a little stuck on this project as I couldn't find a good schematic without having to use negative voltages which my build doesn't use. I put out a call to Reddit and came up with a version using the 4050 chip which worked fine. However, I wanted to add a couple more features which an Arduino was perfect for.
 
 So what does it do?
 
@@ -47,34 +47,32 @@ All of the parts needed to build your own can be found below. I have also includ
 
 PARTS:
 
-Capacitor Polypropylene X 1 - [Ali Express](https://vi.aliexpress.com/w/wholesale-capacitor-100nf.html?spm=a2g0o.productlist.search.0)
+Capacitor Polypropylene X 1 - Ali Express
 
-Capacitor Polarized X 1 - [Ali Express](https://vi.aliexpress.com/w/wholesale-capacitor-100uf-.html?spm=a2g0o.productlist.search.0)
+Capacitor Polarized X 1 - Ali Express
 
-Switch - Momentary X 3 - [Ali Express](https://www.aliexpress.com/w/wholesale-SKRCADD010.html?spm=a2g0o.productlist.search.0)
+Switch - Momentary X 3 - Ali Express
 
-Switch - Toggle X 1 - [Ali Express](https://www.aliexpress.com/item/1005001510219617.html?spm=a2g0o.order_list.order_list_main.126.21ef1802tppsV9&gatewayAdapt=vnm2glo)
+Switch - Toggle X 1 - Ali Express
 
-Female Header Pin Socket X 2 - [Ali Express](https://vi.aliexpress.com/w/wholesale-Single-Row-Female-2.54MM-Spacing-Pin.html?spm=a2g0o.detail.search.0)
+Female Header Pin Socket X 2 - Ali Express
 
-Arduino Nano X 1 - [Ali Express](https://vi.aliexpress.com/w/wholesale-arduino-nano.html?spm=a2g0o.detail.search.0)
+Arduino Nano X 1 - Ali Express
 
-Audio Socket X 7 - [Ali Express](https://www.aliexpress.com/item/1005005352992401.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.3.79e8oSDKoSDKlL&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=fbbe9b5c-27f0-4bb1-845b-4fd955b2e5f3&_t=gps-id%3ApcDetailTopMoreOtherSeller%2Cscm-url%3A1007.40050.354490.0%2Cpvid%3Afbbe9b5c-27f0-4bb1-845b-4fd955b2e5f3%2Ctpp_buckets%3A668%232846%238112%231997&pdp_npi=4%40dis%21AUD%2111.21%2110.65%21%21%2153.35%2150.68%21%4021032dcb17247320167598620e5367%2112000032717531978%21rec%21AU%21129764711%21XZ&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A&gatewayAdapt=vnm2glo)
+Audio Socket X 7 - Ali Express
 
-Mini JST Connector and wire X 1 - [Ali Express](https://www.aliexpress.com/item/1005005939956886.html?spm=a2g0o.productlist.main.7.7e264a70WvNDdM&algo_pvid=b63886e7-4a9b-476c-a3a7-6728c5570c76&aem_p4p_detail=202408262116298398603954887850001041877&algo_exp_id=b63886e7-4a9b-476c-a3a7-6728c5570c76-3&pdp_npi=4%40dis%21AUD%215.18%214.77%21%21%2124.65%2122.68%21%402140d2dc17247321890732393e7a9d%2112000035184099770%21sea%21AU%21129764711%21X&curPageLogUid=ZBXPr2hTlgeC&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202408262116298398603954887850001041877_1&gatewayAdapt=vnm2glo)
+Mini JST Connector and wire X 1 - Ali Express
 
-LED X 1 - [Ali Express](https://vi.aliexpress.com/w/wholesale-3mm-led-assorted.html?spm=a2g0o.productlist.search.0)
+LED X 1 - Ali Express
 
-OLED Display 128X64 X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-oled-128-x-64.html?spm=a2g0o.home.search.0)
+OLED Display 128X64 X 1 - Ali Express
 
-Resistors - [Ali Express](https://vi.aliexpress.com/w/wholesale-resistor-metal-film.html?spm=a2g0o.productlist.search.0)
+Resistors - Ali Express
 
 220 X 6
 
 2.2K X 1
 
-
-- [Parts List](pdfs/Parts List.pdf)
 
 ## Step 1: PCB & Front Panel
 
@@ -88,14 +86,14 @@ Resistors - [Ali Express](https://vi.aliexpress.com/w/wholesale-resistor-metal-f
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
 
-The files that you need to build your own Bleep Drum Synth can be found in my [GitHub](https://github.com/lonesoulsurfer/Game_of_Life_Attiny13) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer
+The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer
 
 STEPS:
 
-- Send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Game_of_Life_Attiny13) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+- Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
 - NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 - Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
@@ -111,8 +109,8 @@ The PCB is 2 sided with the Arduino and caps being soldered on the reverse side.
 STEPS:
 
 - The first thing to do is to solder the resistors to the PCB.
-- Now you can solder into place the JST connector.  This is how I power muy modules.  I have also included a 16 Pin Eurorack connector which you can use to power the synth via 12V
-- At this stage it’s best to flip the board over and add the Arduino.  If you don’t and add the rest of the components, you’ll find it tricky to add the Arduino later.
+- Now you can solder into place the JST connector. This is how I power muy modules. I have also included a 16 Pin Eurorack connector which you can use to power the synth via 12V
+- At this stage it’s best to flip the board over and add the Arduino. If you don’t and add the rest of the components, you’ll find it tricky to add the Arduino later.
 
 
 ## Step 3: Adding the Arduino to the PCB
@@ -134,7 +132,7 @@ Next step is to add the Arduino to the PCB. There is a way to do this that ensur
 STEPS:
 
 - First, add the header pins to the pins on the Arduino.
-- Now, put the header pins into the PCB and add some solder to the corner legs to hold it into place.  Make sure that the rest of the header pins are sitting correctly in the PCB.
+- Now, put the header pins into the PCB and add some solder to the corner legs to hold it into place. Make sure that the rest of the header pins are sitting correctly in the PCB.
 - Now you can solder the rest of the pins to the PCB.
 - Remove the Arduino once done so you can get at the legs of the components that need to be soldered on next
 - Oh, and you may as well solder into place the 2 capacitors on the reverse side
@@ -164,9 +162,9 @@ STEPS:
 
 - Solder the audio 3.5 connectors into place – all 7 of them
 - Now do the momentary switches and the toggle switch
-- The last thing to solder is the OLED screen.  Add a female header pin to the PCB and the solder into place 4 X male header pin to the OLED.
+- The last thing to solder is the OLED screen. Add a female header pin to the PCB and the solder into place 4 X male header pin to the OLED.
 - Remove the little plastic spacer on the 4 X male header pin and trim each leg about the same height as the spacer.
-- Now push the OLED into place.  It should now be the exact right height to go flush onto the front panel.
+- Now push the OLED into place. It should now be the exact right height to go flush onto the front panel.
 
 
 ## Step 5: Adding the Sketch to the Arduino & Testing
@@ -175,11 +173,11 @@ STEPS:
 
 It’s always good practice to test the PCB first before adding the front panel. Before we can test, we need to load the sketch into the Arduino.
 
-If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out [this link](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE). It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
+If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
 
 STEPS:
 
-- Open the sketch in the Arduino folder which will take you to Arduino IDE. This can be found in the folder that you downloaded from my [GitHub](https://github.com/lonesoulsurfer/Sync_Out_Buffered_Multi) page
+- Open the sketch in the Arduino folder which will take you to Arduino IDE. This can be found in the folder that you downloaded from my GitHub page
 - Connect your Arduino and upload the sketch
 - Once the sketch is loaded to Arduino you can connect it to the PCB for testing.
 - Connect the PCB to a 9V to 12V power source and check that the buffered multi works. The screen should come on with 'Sync' and if you push select, the screen should change to the BPM and menu for changing the speed of each Sync in
@@ -208,7 +206,7 @@ Right – now it’s time to add the front panel to the PCB.
 STEPS:
 
 - Place the front panel on top of the PCB and push into place. It’s a nice, snug fit so just give it a wiggle to make sure that the components push through the holes
-- Add the nuts to the audio 3.5mm jacks and secure them into place. You can actually make your own tool to easily secure these if you want to – [check out this build](https://syntherjack.net/jack-nut-tool/)
+- Add the nuts to the audio 3.5mm jacks and secure them into place. You can actually make your own tool to easily secure these if you want to – check out this build
 - Now add the nut to the on/off switch.
 - Once the front panel is in place, you can do a final test before sticking it into your Eurorack case
 
@@ -246,10 +244,6 @@ Each mode serves a distinct musical purpose, and the intensity levels (50%/75%) 
 
 The two intensity levels (50% and 75%) offer enough adjustability without overcomplicating the interface. This gives users six distinct groove feels to choose from (three types × two intensities)
 
-
-## Downloads
-
-- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *35 images archived*

@@ -17,6 +17,13 @@ Source: https://www.instructables.com/Electric-Light-Candle-Hack/
 
 ![Intro 5](images/intro_05.jpg)
 
+Why re-invent the mousetrap?
+For that matter, why re-invent the candle?  It's been around forever, works every time, and does what is says on the box!  The Egyptians and Cretans were using candles made from beeswax, as early as 3000 BC.  This Instructable then is really just a homage to an invention that has been around since the start of the Bronze Age when man first built cities and started to write.
+
+So without further ado, please find below my attempt to improve on something that doesn't need improving on, whilst stealing someone else’s clever circuit (and idea) just so I can say "why re-invent the mousetrap?"
+
+Enjoy.
+
 
 ## Step 1: Things to Gather
 
@@ -25,6 +32,26 @@ Source: https://www.instructables.com/Electric-Light-Candle-Hack/
 ![Step 1: Things to Gather image 2](images/step01_02.jpg)
 
 ![Step 1: Things to Gather image 3](images/step01_03.jpg)
+
+Materials
+
+- Copper (any size copper wire will do, as long as you can bend it easily)
+- Solder
+- Led candle (you can get these on eBay [here](http://blog.makezine.com/2008/09/23/build-an-led-candle-that/) or at any $2 shop)
+
+***A note on the LED Candle*** 
+These are really simple but cool idea which allows a led light to flicker just like a candle.  The circuit is quite simple and if you feel up to it you can also make your own.  Check out Make Magazines one [here](http://blog.makezine.com/2008/09/23/build-an-led-candle-that/)
+
+- Light globes (the best are the ones used for the rear lights in cars)
+- Solar panel (min 4.5v)
+- 3 x AAA re-chargeable batteries
+- Red and black wires
+
+Tools
+
+- Soldering iron
+- Pliers (all types, especially needle nose ones)
+- Hot glue gun
 
 
 ## Step 2: Lets Get Started - Step 1
@@ -114,6 +141,25 @@ To keep everything stable, it's best to add solder to the loops:
 
 ![Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 8](images/step05_08.jpg)
 
+View 5 more
+Ok - now it's time to add the batteries to the body of the electric candle.  I really like the look of the batteries without their covers.  The problem with removing these is you start to short circuit everything once they are put into the battery holders.  To get around this do the following:
+
+1. Remove the covers around the batteries.
+
+2. Wrap the batteries in clear tape
+
+3. Trim excess tape.
+
+4. Put them into the battery holders.  Be careful not to catch the tape and rip it.
+
+5. Hopefully the fit is tight.  If not - don't worry too much, once you solder the end together it should make them fit better.
+
+6. Next is to connect the ends.  This will join all of the batteries up to make 1 4.5V battery with 1 positive and 1 negative end.
+
+7. Solder some copper as shown on each end and also add a small length of copper to each of the terminal ends,  This will allow you to attach the solar panel (more of that later).
+
+8. On one of the ends of the terminals, solder on an on/off switch.  I used the one that came with the led candle.  The orientation of the switch is up to you.  First I had this horizontal but later changed it to sit vertical as this moved it out of the way.~
+
 
 ## Step 6: Step 6 - Removing the Important Bits From the Led Candle
 
@@ -147,6 +193,25 @@ To keep everything stable, it's best to add solder to the loops:
 ![Step 7: Step 7 - Attaching the Microphone and Led to the Curcuit image 5](images/step07_05.jpg)
 
 ![Step 7: Step 7 - Attaching the Microphone and Led to the Curcuit image 6](images/step07_06.jpg)
+
+View 3 more
+In the following steps you need to be careful.  Make sure that the soldering iron isn't too hot or you will blow the circuit.
+
+1. Remove the led and microphone from the circuit board.  Take notice of where everything goes.  I found it helped to make a template of the circuit board on some paper to make sure I didn't get muddled up.
+
+2. First you need to cut some wire like you did for the legs.  Only this time you need to make the semi circles smaller - as shown.
+
+3. Solder these onto the circuit board making sure that they are as straight and parallel as possible.
+
+4. Solder on the microphone.  Make sure that it is soldered on correctly with the positive on positive and negative on negative.  A good way to make sure you don't mess this up is to cut one of the wires from the circuit and tie a knot in it.  This way you can remember which terminal it belongs to.
+
+5. Next you need to add some straight pieces of copper for the LED.
+
+6. Cut 2 equal lengths of copper and grind off the ends to make flat.
+
+7. Solder onto the circuit board, making sure everything is straight.  Take your time, you, might have to try few times to get this right.
+
+8. Add the LED.  shorten the legs on the led and make sure it is correctly aligned~
 
 
 ## Step 8: Step 8 - Attaching the Circuit to the Battery Holder
@@ -198,6 +263,25 @@ On the circuit board that came with my led candle, there was a un-soldered secti
 
 ![Step 9: Step 9 - Sorting Out the Light Globe to Use image 8](images/step09_08.jpg)
 
+View 5 more
+This part is probably the hardest part and will take some practice runs before you get it right.  You'll probably get it first time and I'll look like a right nob - so here goes:
+
+1. Find a good shaped globe.  I used rear car light globes as these are easy to get.
+
+2. I went out and brought some globes and then went ahead and broke these pretty much straight away.  Next I went to a wrecker and got pocket loads of the things so I could experiment a lot more without worrying about breaking them.
+
+3. You need to remove the sliver end.  To do this, break the black glass on the end or use a pair of pliers to cut straight through the tin.
+
+4. Once this has been removed, you will then need to remove the cement that was used to hold the tin end in place.  I used a fine wire brush on my grinder to do this.  Obviously be careful -- its glass!
+
+5. So now you are left with just the globe.  You need to clear out the centre of the globe and this is where is can go horribly wrong.  Be really careful and try not to remove the whole centre - you'll just crack the glass.  All you want to do is to make enough room so the led can fit nicely into the globe.  I did remove the whole centre for one of the candles and managed not to crack the globe but it was pure luck.
+
+6. In one of the pictures below you can see that I was going to go with an orange globe that I pulled out of a car.  I thought it would glow a nice orange but it didn’t really work so I went with the smaller globe on the right.
+
+7. Once you have decided which globe you want to use and have removed the tin end, attach it to the led with some hot glue.
+
+8. There are Instructables which go into more detail about hollowing out a light globe if you need mor information.
+
 
 ## Step 10: Step -10 Making a Solar Charger
 
@@ -223,7 +307,7 @@ On the circuit board that came with my led candle, there was a un-soldered secti
 
 ![Step 10: Step -10 Making a Solar Charger image 11](images/step10_11.jpg)
 
-[$4 Solar Battery Charger](https://www.instructables.com/id/4-Solar-Battery-Charger/)
+$4 Solar Battery Charger
 
 
 ## Step 11: Step 11 - Phew!- Your Finished
@@ -239,6 +323,15 @@ On the circuit board that came with my led candle, there was a un-soldered secti
 ![Step 11: Step 11 - Phew!- Your Finished image 5](images/step11_05.jpg)
 
 ![Step 11: Step 11 - Phew!- Your Finished image 6](images/step11_06.jpg)
+
+View 3 more
+See not too hard!  Now you have an electric light candle that looks great, and adds a really beautiful ambient light to any room.
+
+The design that I came up with is pretty basic, you can pretty much do want you want in regards to how you want your electric candle to look.  If you do get around to having a go at making one of these - make sure that you post a picture so I can check it out!
+
+So after all of this - "why re-invent the mousetrap?"
+
+Because I can.
 
 
 ---

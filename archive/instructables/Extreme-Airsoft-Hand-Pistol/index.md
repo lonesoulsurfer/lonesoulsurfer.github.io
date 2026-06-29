@@ -21,11 +21,11 @@ Source: https://www.instructables.com/Extreme-Airsoft-Hand-Pistol/
 
 Make your own Airsoft gun with just a few off the shelf parts.
 
-Over the last few years I have been playing around with launchers made from PVC and sprinkler valves. I first came across the idea from [Make Magazine](http://makezine.com/projects/make-15/compressed-air-rocket/) where they used a sprinkler valve to launch paper rockets. As soon as I could I made one of these and had a blast with it. I wondered though if it could be made more portable? After a little experimenting I worked out a way to add a hand-pump and from this came the [Handheld Compressed Air Launcher](https://www.instructables.com/id/Hand-held-Compressed-Air-GunLauncher/).
+Over the last few years I have been playing around with launchers made from PVC and sprinkler valves. I first came across the idea from Make Magazine where they used a sprinkler valve to launch paper rockets. As soon as I could I made one of these and had a blast with it. I wondered though if it could be made more portable? After a little experimenting I worked out a way to add a hand-pump and from this came the Handheld Compressed Air Launcher.
 
-I recently decided to revisit this idea and made a more powerful one which needed an external pump. From this, the [Compressed Air Acorn Gun](https://www.instructables.com/id/Compressed-Air-Acorn-Launcher/) was born. Still I wasn't happy. I didn't want to wait around for Autumn before I could go shoot things!
+I recently decided to revisit this idea and made a more powerful one which needed an external pump. From this, the Compressed Air Acorn Gun was born. Still I wasn't happy. I didn't want to wait around for Autumn before I could go shoot things!
 
-I decided that I needed something that was more portable and able to shoot readily available bullets. A quick search on Instructables and I found [NightHawkInLight’s great Ible’](https://www.instructables.com/id/How-to-Make-a-SniperShotgun-Airsoft-Rifle/) for making a portable airsoft gun. Only problem was, I couldn't find the brake tubing anywhere that he used. Also, although the triggering system is genius, I wanted a more traditional way to release my bullet.
+I decided that I needed something that was more portable and able to shoot readily available bullets. A quick search on Instructables and I found NightHawkInLight’s great Ible’ for making a portable airsoft gun. Only problem was, I couldn't find the brake tubing anywhere that he used. Also, although the triggering system is genius, I wanted a more traditional way to release my bullet.
 
 So now I come to my latest incarnation. This would have to be the best one that I have built to date. I was totally blown away by how powerful this beast is! Just 5 pumps of the hand-pump and you’re ready to go. The air is released quickly by the electric sprinkler valve, and that little airsoft bullet is released at some seriously dangerous speeds.
 
@@ -68,7 +68,7 @@ Copper fittings
 
 Copper or brass tubing and wire can usually be found at your local hobby shop. If not, then you will be able to order it on eBay
 
-1. 5/16 (8mm) Hose Barb x 3/4" inch Female Thread - [Aliexpress](http://www.aliexpress.com/item/-/1925039971.html). This ended up being the wrong sized barb. I did however hack a way to use it and it worked fine. I would suggest taking the 7mm copper tubing down to your local hardware store and working out which hose barb fits best.
+1. 5/16 (8mm) Hose Barb x 3/4" inch Female Thread - Aliexpress. This ended up being the wrong sized barb. I did however hack a way to use it and it worked fine. I would suggest taking the 7mm copper tubing down to your local hardware store and working out which hose barb fits best.
 
 2. 1 x 7mm (OD) piece of tubing. Aprox 300mm length
 
@@ -80,17 +80,17 @@ Copper or brass tubing and wire can usually be found at your local hobby shop. I
 
 Other Parts
 
-1. Push button (Momentary) - [eBay](http://www.ebay.com.au/itm/4-Tones-6X-LED-Light-Electronic-Siren-Horn-Beeper-Bell-for-Bike-Bicycle-/161229057312?pt=AU_Bicycle_Accessorries&hash=item258a002d20)
+1. Push button (Momentary) - eBay
 
 2. 9v battery
 
-3. Small spring (needs to fit snuggly over the 7mm copper tubing. - [eBay](http://www.ebay.com.au/itm/ASSORTED-SMALL-COMPRESSION-SPRINGS-VARIOUS-50pcs-1PACK-/181251836791?pt=AU_Clothing_Merchandise_Media&hash=item2a33738b77)
+3. Small spring (needs to fit snuggly over the 7mm copper tubing. - eBay
 
 4. 2 x self tapping screws (if you are using the same switch as me)
 
 5. 9v battery terminal
 
-6. Sprinkler valve - [eBay](http://www.ebay.com.au/itm/231062116550?ssPageName=STRK:MEWAX:IT&_trksid=p3984.m1423.l2649)
+6. Sprinkler valve - eBay
 
 7. Small hand pump
 
@@ -100,7 +100,7 @@ Other Parts
 
 10. 500mm length of thin electrical wire (aprox)
 
-11. Holographic sight - [eBay](http://www.ebay.com.au/itm/Holographic-Laser-Red-Green-4-Reticle-Dot-Sight-Projected-Reflex-Scope-for-Gun-/181064160450?hash=item2a2843d4c2:g:NjEAAOSwdsFUPgs5)
+11. Holographic sight - eBay
 
 Tools
 

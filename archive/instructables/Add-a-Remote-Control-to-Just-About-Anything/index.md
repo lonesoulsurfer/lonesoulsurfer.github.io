@@ -13,6 +13,19 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 
 ![Intro 3](images/intro_03.jpg)
 
+In [this Instructable](https://www.instructables.com/id/Mounting-a-Spy-Video-Camera-on-an-Compressed-Air/) I’ll show you how to add a cheap remote control to just about anything! that takes your fancy.
+
+Last year I built a compressed air rocket launcher which was featured in [MAKE Magazine](http://blog.makezine.com/2008/12/13/compressed-air-rocket/).  The rocket launcher is a heap of fun and my kids love it.  The rockets themselves are made from paper and masking tape and are surprisingly strong and robust.  So strong in fact that you can tape a “spy” camera to one and shoot it off and get some great aerial footage as I did in [this Instructable](https://www.instructables.com/id/Mounting-a-Spy-Video-Camera-on-an-Compressed-Air/).
+
+One of the drawbacks of the design is you need to have a wire attached to the launcher and then trigger with a switch at the other end whenever you want to launch a rocket.  The wire has to be long as you don’t want to get too close to the rocket when it goes off, and it always seems to get tangled and twisted.
+
+To alleviate this I decided to add a remote control to the launcher and get rid of the wire altogether.  After a little searching I found [this remote control on EBay](http://www.ebay.com.au/itm/New-12V-Signal-Channel-Fixed-Encoding-Wireless-Remote-Control-Switch-/310634856335?pt=UK_Gadgets&hash=item485347bf8f).  It only set me back a couple of bucks and works like a charm.
+
+Check out the Youtube clip below - Apologies for the dodgy American accent!
+
+This Instructable is really just a guideline on how to wire one of the remotes up as I couldn’t find much at all on the net.
+I hope it also gives you a few ideas on what you could hook one of these remotes up to.
+
 
 ## Step 1: Things to Gather
 
@@ -21,6 +34,23 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 ![Step 1: Things to Gather image 2](images/step01_02.jpg)
 
 ![Step 1: Things to Gather image 3](images/step01_03.jpg)
+
+Part needed:
+
+1. 2 X 9V battery clips
+2. Wire
+3. Remote control and receiver – try [eBay](http://www.ebay.com.au/itm/12V-1Ch-Control-Wireless-Remote-Non-Lock-Switch-Module-5A-220VAC-10A-12V-DC-tk-/140924098897?pt=AU_B_I_Electrical_Test_Equipment&hash=item20cfbb1951)
+4. Project box
+5. Wire connecting terminal (terminal block)
+6. Heat shrink
+
+Tools needed:
+
+1. Soldering iron
+2. Wire snips
+3. Multimeter
+4. Small Phillips head
+5. Small Screwdriver
 
 
 ## Step 2: So How Does It Work?
@@ -33,6 +63,13 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 
 ![Step 2: So How Does It Work? image 4](images/step02_04.jpg)
 
+The remote is made up of the (surprise surprise!) a remote (transmitter) and a receiver.  The remote is powered by a small 12v battery and works from a distance of supposedly 100 meters, although I’d be wary of this!  The wireless signal can pass through walls, floors and doors.  Once the button on the remote has been pressed, it activates the receiver which turns on a relay and allows power to flow to whatever you want to turn on.
+
+The remote control receiver needs to have 12v to enable it to trigger the relay.  I used 2 X 9v batteries to do the job and it works fine but you could potentially use a small, 12v battery; the same used in the remote.
+
+As the rocket launcher uses 18V to activate the sprinkler valve, I was able to wire up the receiver so when the relay was closed (activated by the remote) it used the power from the 2, 9V batteries to trigger the sprinkler valve.   
+If your device that you want to power uses a different voltage then the receiver, then you can also rig it up so it uses a different power source.
+
 
 ## Step 3: Wiring Schematics
 
@@ -41,6 +78,13 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 ![Step 3: Wiring Schematics image 2](images/step03_02.png)
 
 ![Step 3: Wiring Schematics image 3](images/step03_03.png)
+
+The 2 drawings attached show the different ways that the receivers can be wired.  The first is if you want to use the same power source as the receiver, and the second is if you want to use an alternative power source.  For the Compressed Air Rocket I used the first option.
+
+There is also an on/off switch added to the receiver.  I found that the receiver slowly leaks power (it's always on) so you will need to add a switch to make sure you can turn it off when your not using it
+
+Relays:
+I have also included a drawing of how the relay works.  For more info check out this [website](http://www.pcbheaven.com/wikipages/How_Relays_Work/) - its really good at explaining how they work.
 
 
 ## Step 4: Getting Started – Wiring the Terminal
@@ -55,6 +99,13 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 
 ![Step 4: Getting Started – Wiring the Terminal image 5](images/step04_05.jpg)
 
+View 2 more
+Steps:
+
+1. First you need to wire-up your terminal.  The terminal isn’t an essential but I find they make wiring-up something like this very simple.  Wire-up as shown in the image below
+
+2. Next you need to connect the 9v terminals together.  Solder and use heat shrink to make sure all bare wires are covered.  Connect to the terminal.  Don’t add the batteries yet – it hurts if you get shocked by 18 volts!
+
 
 ## Step 5: Wiring the Receiver
 
@@ -65,6 +116,14 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 ![Step 5: Wiring the Receiver image 3](images/step05_03.jpg)
 
 ![Step 5: Wiring the Receiver image 4](images/step05_04.jpg)
+
+Steps:
+
+1. Now connect the power wires from the terminal to the receiver, making sure polarities are correct.
+
+2. Connect the rest of the wires from the terminal to the receiver as shown in the drawing.
+
+3. Check that the receiver is working properly by attaching the batteries and testing with a multimeter.
 
 
 ## Step 6: Adding Everything Into a Project Box
@@ -79,6 +138,17 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 
 ![Step 6: Adding Everything Into a Project Box image 5](images/step06_05.jpg)
 
+View 2 more
+Steps:
+
+1. Once you have tested and everything works ok, add all of the bits into a project box.
+
+2. Drill a hole in the project box and stick the wires out that will join up to the launcher.
+
+3. Connect the project box to your device – in my case it was the launcher.
+
+4. Test.
+
 
 ## Step 7: Finished!
 
@@ -87,6 +157,10 @@ Source: https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anythin
 ![Step 7: Finished! image 2](images/step07_02.jpg)
 
 ![Step 7: Finished! image 3](images/step07_03.jpg)
+
+Now you have one fine looking remote control - time to go and take over the world.
+
+Have fun and if you making something cool - post a picture so i can check it out!
 
 
 ---

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,22 +127,65 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Junk Yard Beetles</span>
 </nav>
-<h1>Junk Yard Beetles</h1><div class="source"><a href="https://www.instructables.com/Junk-Yard-Beetles/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><h2><span class="step-num">STEP 2</span>Step 2: Deciding on Your Beetle</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Deciding on Your Beetle image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Deciding on Your Beetle image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Deciding on Your Beetle image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Deciding on Your Beetle image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Deciding on Your Beetle image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Deciding on Your Beetle image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Deciding on Your Beetle image 7" loading="lazy"></div><h2><span class="step-num">STEP 3</span>Step 3: Making the Head</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Head image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Head image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Head image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Head image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Head image 5" loading="lazy"></div><h2><span class="step-num">STEP 4</span>Step 4: Making the Body and Legs</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Body and Legs image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Body and Legs image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Body and Legs image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Body and Legs image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Body and Legs image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Body and Legs image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Body and Legs image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Body and Legs image 8" loading="lazy"></div><h2><span class="step-num">STEP 5</span>Step 5: Attaching the Bits Together</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Attaching the Bits Together image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Attaching the Bits Together image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Attaching the Bits Together image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Attaching the Bits Together image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Attaching the Bits Together image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Attaching the Bits Together image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Attaching the Bits Together image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Attaching the Bits Together image 8" loading="lazy"></div><h2><span class="step-num">STEP 6</span>Step 6: Making the Box</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Box image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Box image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Box image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Box image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Box image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Box image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Box image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making the Box image 8" loading="lazy"></div><h2><span class="step-num">STEP 7</span>Step 7: Add the Label</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Add the Label image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Add the Label image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Add the Label image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Add the Label image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Add the Label image 5" loading="lazy"></div><h2><span class="step-num">STEP 8</span>Step 8: Mounting</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Mounting image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Mounting image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Mounting image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Mounting image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Mounting image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Mounting image 6" loading="lazy"></div>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<h1>Junk Yard Beetles</h1><div class="source"><a href="https://www.instructables.com/Junk-Yard-Beetles/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Meet  "Mechanica Scarabaeus" - better known as the mechanical beetle.</p>
+<p>These junk yard beetles are very easy to make and literally cost nothing in parts.  That's because everything is sourced from the local auto wreckers.</p>
+<p>The Beetles are made from the bits no-one wants and are rusting on the ground.  The rust and patina is the most interesting thing about these parts - it's what makes them worth picking up!</p>
+<p>As mentioned before, I found all of my parts from a car wreckers.  You could easily though find parts from a scrapyard, although I would suggest getting the wheel nuts from the wreckers, as there are usually heaps of these just lying around, rusting.</p>
+<p>So if you want to make a junk yard beetle, get out to your local wreckers, and start scavenging!</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>First things first - go and visit your local wreckers and collect some interesting, rusted parts.  most of the body is made from wheel nuts so make sure you get a good bunch of these in all sizes.</p>
+<p>Parts:</p>
+<ol>
+<li>Rusted junk - as many interesting parts as you can find.  Check on the ground that the wreckers- that's where you'll find all the great parts no-one wants.</li>
+<li>hard wood (if you want to make a frame)</li>
+</ol>
+<p>Tools:</p>
+<ol>
+<li>Pliers</li>
+<li>Hammer</li>
+<li>Grinder</li>
+<li>Dremmel</li>
+<li>Files</li>
+<li>Tin snips</li>
+<li>Various other tools</li>
+<li>Welder (if you don't have one of these you can use glue or solder)</li>
+<li>Table saw</li>
+<li>Vice</li>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Deciding on Your Beetle</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Deciding on Your Beetle image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Deciding on Your Beetle image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Deciding on Your Beetle image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Deciding on Your Beetle image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Deciding on Your Beetle image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Deciding on Your Beetle image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Deciding on Your Beetle image 7" loading="lazy"></div><p>Go on the web and type in beetles.  You'll get a heap of pictures of bugs, beetles (and VW's).  If you look at any beetle, they are divided into 3 parts, the head, thorax and abdomen.  They usually have some pincers and long, spindly legs.</p>
+<p>Your beetle doesn't have to look exactly like a real one - as long as it's an approximation of one.  Get some ideas on how you want your beetle to look and get making.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Head</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Head image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Head image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Head image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Head image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Head image 5" loading="lazy"></div><p>Steps.</p>
+<ol>
+<li>Pick a wheel nut which has a rounded end, this will be the head.  Some wheel nuts don't have a closed rounded end.  You could use one of these but the ones with the rounded end (look at the one in the vice below) really work well as heads.</li>
+<li>Make a cut through the top with a grinder.  In the cut add what you want to use as the pincers and use a vice to squash the end of the nut together.  My pincers were just some scrap that I found on the ground at the wreckers.   When hunting for pincers, try to look for things which are curved and have the same ends like the ones below.</li>
+<li>If you find that the pincers are slipping out or are loose, use some strong glue to secure into place.</li>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Body and Legs</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Body and Legs image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Body and Legs image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Body and Legs image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Body and Legs image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Body and Legs image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Body and Legs image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Body and Legs image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Body and Legs image 8" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Next you should think about what to use for the thorax.  I found an old iron pipe which I cut in half with a grinder.</li>
+<li>The abdomen is a little harder.  There really isn't many parts lying around at the wreckers which would work well as an abdomen.  I did however find an old oil tin which was rusted all through.  I decided to cut one out of this.</li>
+<li>Use a pair of tin snips and cut a section of tin as shown bellow.  Use some pliers and bend the edges slightly to make an abdomen.   The end that joins onto the thorax needs to be a tight fit.</li>
+</ol>
+<p>4,   Lastly you need to make some legs.  I used some old wire I found at the wreckers.  It can be tricky to make sure that the legs are bent correctly.  Use a picture of a beetle that is a birds eye view.</p><h2><span class="step-num">STEP 5</span>Step 5: Attaching the Bits Together</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Attaching the Bits Together image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Attaching the Bits Together image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Attaching the Bits Together image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Attaching the Bits Together image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Attaching the Bits Together image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Attaching the Bits Together image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Attaching the Bits Together image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Attaching the Bits Together image 8" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Once you have all the parts done - you need to grind off any of the rust where you will be welding (or gluing) the parts together.</li>
+<li>First attach the head to the thorax.  Use a welder and weld together</li>
+<li>Next add the 2 front legs.  Be careful if you are using a arc welder as the wire can just break from the heat.  If you have a mig welder obviously use this.</li>
+<li>Next comes the abdomen - weld this onto the thorax.</li>
+<li>Lastly weld the back legs to the abdomen.</li>
+</ol>
+<p>*As mentioned before - you can always just use a string glue to stick everything together.  I have also use a blow torch and soldered the parts too.</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Box</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Box image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Box image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Box image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Box image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Box image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Box image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making the Box image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making the Box image 8" loading="lazy"></div><p>The inspiration to making these beetles come from the old Victorian way of displaying insects in display boxes.  People still do it today, but it started way back when the Victorians had a fetish of collecting everything of interest.</p>
+<p>Steps:</p>
+<ol>
+<li>Cut out the wood to form a rectangle and join together.</li>
+<li>Add a ply-wood back and nail on</li>
+<li>Use some clear cabothane (clear lacquer) and add a few coats to the box.</li>
+<li>Next add a hook (bent nail).  This is how the beetle will be mounted.</li>
+<li>Lastly add a label to the bottom with whatever you want to call your beetle.</li>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Add the Label</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Add the Label image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Add the Label image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Add the Label image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Add the Label image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Add the Label image 5" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Decide the name of your beetle - I went for Mechanica Scarabaeus.</li>
+<li>Jump onto word and decide what font to use.  I went for a bunch so I could make sure I got the right one.</li>
+<li>Cut the names tags out and put into a metal cooking dish</li>
+<li>Add some coffee to some warm water and pour over the labels</li>
+<li>Put in the oven on a low heat (150 degrees Celsius)and heat until the coffee evaporates.</li>
+<li>Use some spray glue and attach the label that looks the best to the display case.</li>
+</ol>
+<p>done</p><h2><span class="step-num">STEP 8</span>Step 8: Mounting</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Mounting image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Mounting image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Mounting image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Mounting image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Mounting image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Mounting image 6" loading="lazy"></div><p>So now all you need to do is find a good place to hang your beetle.  You don't have to mount him (I didn't do this for my first one), but I think it really gives them a great finish.</p>
 </body>
 </html>

@@ -38,12 +38,12 @@ Well I discovered that they make fantastic side tables! You can buy hairpin legs
 
 PARTS:
 
-- Wooden Case - Facebook Marketplace, Gumtree or any other place that sells things like this.  Just type in wooden case and see what comes up
-- Hairpin Legs - [Ali Express](https://www.aliexpress.com/w/wholesale-hairpin-legs.html?spm=a2g0o.home.search.0), Amazon
-- Ply wood. This is used to strengthen the case and helps to add structure for the legs to be connected.  Hardware store or if you know a place that gets deliveries by pallets, then you can sometimes pick up sheets that have been used for delivering products
+- Wooden Case - Facebook Marketplace, Gumtree or any other place that sells things like this. Just type in wooden case and see what comes up
+- Hairpin Legs - Ali Express, Amazon
+- Ply wood. This is used to strengthen the case and helps to add structure for the legs to be connected. Hardware store or if you know a place that gets deliveries by pallets, then you can sometimes pick up sheets that have been used for delivering products
 - Varnish - I used 'Cabothane Clear' but you can use whatever you can get.
 - Stain - I used 'Aged Teak' which helps bring up the grain and gives the case a nice finish
-- Vinegar - I used this to soak the hardware in.  It all depends on the condition of the hardware on the case and whether you can use vinegar or something stronger to get the grime off.
+- Vinegar - I used this to soak the hardware in. It all depends on the condition of the hardware on the case and whether you can use vinegar or something stronger to get the grime off.
 
 
 ## Step 1: Removing the Hardware
@@ -72,9 +72,9 @@ The first thing to do, prior to any cleaning of the case, is to remove all of th
 
 STEPS:
 
-- Make sure you have a few good Phillips head and screwdrivers around.  The screws are usually pretty old on these cases and might take some effort to get undone
+- Make sure you have a few good Phillips head and screwdrivers around. The screws are usually pretty old on these cases and might take some effort to get undone
 - Remove each of the screws and store them in a safe place along with the hardware you remove
-- If you do come across a threaded screw, then you might have drill it out.  I've tried to use tools specifically to remove threaded screws but haven't had much luck.  I find that by using a drill bit a little smaller then the screw head and drilling off the top of the screw works ok.  You will then need to use some pliers or muti grips to remove the rest of the screw
+- If you do come across a threaded screw, then you might have drill it out. I've tried to use tools specifically to remove threaded screws but haven't had much luck. I find that by using a drill bit a little smaller then the screw head and drilling off the top of the screw works ok. You will then need to use some pliers or muti grips to remove the rest of the screw
 
 
 ## Step 2: Cleaning the Hardware
@@ -95,10 +95,10 @@ The hardware on case might not be worth using again and if that is the case, the
 
 STEPS:
 
-- The hardware on my case had some type of varnish on it and weren't looking great.  The first thing I did was to soak them in some vinegar for 24 hours.  This was enough to loosen the grim but they still didn't look great.
+- The hardware on my case had some type of varnish on it and weren't looking great. The first thing I did was to soak them in some vinegar for 24 hours. This was enough to loosen the grim but they still didn't look great.
 - If you find that vinegar isn't doing the job, then you might need a stronger cleaning solution to help clean them up
-- To remove the rest of the rust and varnish, I used a dremel.   I used a brass wheel which worked well.  I then used a wire wheel on my grinder to help remove the rest of the varnish.  I did this lightly as I didn't want to damage or scratch up the hardware.
-- Lastly, I used a buffing wheel to give them some shine and did a final clean.  They are not perfect but I didn't want them looking like new.
+- To remove the rest of the rust and varnish, I used a dremel. I used a brass wheel which worked well. I then used a wire wheel on my grinder to help remove the rest of the varnish. I did this lightly as I didn't want to damage or scratch up the hardware.
+- Lastly, I used a buffing wheel to give them some shine and did a final clean. They are not perfect but I didn't want them looking like new.
 
 
 ## Step 3: Cleaning the Case
@@ -118,10 +118,10 @@ I've made a few of these now and I find that the best way to clean the case is j
 STEPS:
 
 - get some hot water in a bucket and use dishwashing liquid to clean the case
-- I like to start with a cloth first and see if I can get away with that.  On this case, I also used a soft scourer to help remove the grim that was in deep.
+- I like to start with a cloth first and see if I can get away with that. On this case, I also used a soft scourer to help remove the grim that was in deep.
 - Make sure that you use clean water to remove the soap from the case
 - Leave to dry for an hour or so.
-- Note - Don't use harsh cleaners like Jiff.  It is too abrasive and small particles from it will get caught in the grain and you will see white steaks that you won't be able to get out.
+- Note - Don't use harsh cleaners like Jiff. It is too abrasive and small particles from it will get caught in the grain and you will see white steaks that you won't be able to get out.
 
 
 ## Step 4: Making a Box Within a Box!
@@ -152,11 +152,11 @@ I like to make the insides of my side tables look nice and clean which is why I 
 
 STEPS:
 
-- measure and cut all of the pieces needed for the ply inside the case.  This includes top and bottom and the 4 sides.
+- measure and cut all of the pieces needed for the ply inside the case. This includes top and bottom and the 4 sides.
 - The fit should be nice and tight and the top section of the ply on the sides should be just below the top of the case.
-- Once you have everything fitting nicely, it is time to glue the ply into place.  I don't use nails as I don't want anything to take away from the case and having fresh nails in it wouldn't look great!
+- Once you have everything fitting nicely, it is time to glue the ply into place. I don't use nails as I don't want anything to take away from the case and having fresh nails in it wouldn't look great!
 - Add wood glue to the ply base and push it into place
-- Do the same for the 4 sides.  Use clamps and weights to ensure the plywood has good connection to the inside of the case
+- Do the same for the 4 sides. Use clamps and weights to ensure the plywood has good connection to the inside of the case
 - leave dry for 24 hours
 
 
@@ -178,9 +178,9 @@ You don't have to do this if you don't think it is necessary. However, adding a 
 
 STEPS:
 
-- To give the case a bit of a facelift, I like to use a stain like 'aged teak'  This helps to protect the wood and helps to show off the grain in the wood.
+- To give the case a bit of a facelift, I like to use a stain like 'aged teak' This helps to protect the wood and helps to show off the grain in the wood.
 - Just add one coat - any more and it starts to take away the patina and age of the case
-- I also like to add a vanish to do a final protection of the wood.  Adding a varnish also brings out the grain in the wood and gloss to the finish.  As I mentioned, it isn't necessary to add the varnish.  you might like how the case came out just with some soap and water and that's fine.
+- I also like to add a vanish to do a final protection of the wood. Adding a varnish also brings out the grain in the wood and gloss to the finish. As I mentioned, it isn't necessary to add the varnish. you might like how the case came out just with some soap and water and that's fine.
 
 
 ## Step 6: Adding the Hardware Back Onto the Case
@@ -216,9 +216,9 @@ The legs that I use are called 'hairpin' legs. They work fantastic on a build li
 
 STEPS:
 
-- Place one of the legs onto the bottom of the case.  and align it with the corner of the case.  I like to bring in the legs about 5 mm's from the edge to ensure that the screws get a good grip of the plywood inside the case
+- Place one of the legs onto the bottom of the case. and align it with the corner of the case. I like to bring in the legs about 5 mm's from the edge to ensure that the screws get a good grip of the plywood inside the case
 - Mark the holes and pre-drill the holes for the screws
-- Place the lag back into place and add the screws into place.  It can be a little awkward adding the inner screws due to the angle of the legs.  Just make sure you have a good Phillips head bit and it will go in ok
+- Place the lag back into place and add the screws into place. It can be a little awkward adding the inner screws due to the angle of the legs. Just make sure you have a good Phillips head bit and it will go in ok
 - do this for all 4 legs and add the little plastic feet to the ends of the legs
 
 

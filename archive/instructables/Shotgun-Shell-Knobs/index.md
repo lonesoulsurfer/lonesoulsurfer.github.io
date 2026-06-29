@@ -44,7 +44,7 @@ PARTS:
 
 1. Shotgun Shell Shell. I get mine for free at the local gun club. You can also buy them on sites like Etsy.
 
-2. Potentiometer knob - [eBay](https://www.ebay.com.au/itm/184829571361?hash=item2b08b37121:g:KeIAAOSwy6hal1QY). I found that these ones work very well.
+2. Potentiometer knob - eBay. I found that these ones work very well.
 
 TOOLS:
 

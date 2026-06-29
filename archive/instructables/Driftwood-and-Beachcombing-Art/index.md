@@ -19,6 +19,16 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 
 ![Intro 6](images/intro_06.jpg)
 
+I love the feel and look of driftwood, especially old planks and discarded peices of wood.  The patina that can occur when a peice of wood has been at sea for some time, the rusty stains and smooth, bleeched texture make this a fantastic material to design with.
+
+The best thing of all is the wood comes free, all you need to do is to look for it!
+
+I find the best places to find driftwood are at surf beaches and at beaches that people don't visit much.  It can take some time to find the right wood but who doesn't like walking on the beach ; )
+
+On my last visit to the beach, I discoved an old palllet (beachcombing heaven) which had some great patina running along the wood.  I got the pallet home and this is the outcome of my attempt to design 4 different objects, each one made to showcase the beautiful things that can be found at the beach.
+
+Enjoy.
+
 
 ## Step 1: Tools
 
@@ -29,6 +39,16 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 ![Step 1: Tools image 3](images/step01_03.jpg)
 
 ![Step 1: Tools image 4](images/step01_04.jpg)
+
+Tools:
+
+1. Circular Saw
+2. Hammer
+3. Ruler
+4. Nails
+5. Drop Saw
+6. Clamps
+7. Square Ruler
 
 
 ## Step 2: Material
@@ -45,6 +65,13 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 
 ![Step 2: Material image 6](images/step02_06.jpg)
 
+View 3 more
+Material:
+
+1.Drift wood. I used an old pallet I found at the beach. You can see that there are a lot of old, rusty nails. KEEP THESE. They are great to use instead of new nails and will keep the look of the design authentic.
+
+2. Anything that looks cool to display.
+
 
 ## Step 3: Making the Display Shelves - Cutting the Wood
 
@@ -59,6 +86,21 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 ![Step 3: Making the Display Shelves - Cutting the Wood image 5](images/step03_05.jpg)
 
 ![Step 3: Making the Display Shelves - Cutting the Wood image 6](images/step03_06.jpg)
+
+View 3 more
+Firstly I will be showing how I made the display shelving. Initially this was going to be a free standing shelf but I decided it would look better as a wall display.
+
+It is really important to have good think about what you are going to make before you start. What you end up with will be determined with what wood you have been able to find.
+
+Steps:
+
+1. Clamp together. The wood that you usually find at the beach is warped, and buckled which can make it hard to work with, although this is what gives it character!
+
+2. Measure out where the shelves are to go. I wanted to have 7 shelves so I just divided the length of the sides by 7.
+
+3. Cut out grooves in the sides for the shelves to fit into. I used a circular saw for this and it did the job really well, I didn't even have to use a chisel to even out.
+
+4. next cut out the shelving. I used a drop saw to make sure all shelves were the same length.
 
 
 ## Step 4: Display Shelves - Assemble
@@ -89,6 +131,11 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 
 ![Step 5: Display Shelves - Finished. image 5](images/step05_05.jpg)
 
+View 2 more
+That's It!
+
+You should now have some pretty cool display shelves to put all of your beach treasures on.
+
 
 ## Step 6: Driftwood Frame - Cutting Out the Wood
 
@@ -99,6 +146,16 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 ![Step 6: Driftwood Frame - Cutting Out the Wood image 3](images/step06_03.jpg)
 
 ![Step 6: Driftwood Frame - Cutting Out the Wood image 4](images/step06_04.jpg)
+
+Next is a driftwood frame which is really easy to make, doesn't need any glue or nails and looks pretty cool.
+
+Steps:
+
+1. Cut out 4 equal length pieces of wood.
+
+2. Mark out where to make the cuts
+
+3. Cut grooves half way down as shown, making sure that they are just wide enough for the side of the wood to slide into. I used a circular saw to make the grooves.
 
 
 ## Step 7: Driftwood Frame - Assemble
@@ -121,6 +178,10 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 ![Step 8: Feather Sculpture - Material image 2](images/step08_02.jpg)
 
 ![Step 8: Feather Sculpture - Material image 3](images/step08_03.jpg)
+
+For this one all you need is some feathers and a nice peice of driftwood.
+
+The feathers I found were all the same and came from some type of gull.  The wood was pretty cool as it has a natural crack in it which the feathers fitted very nicely.
 
 
 ## Step 9: Feather Sculpture - Assemble
@@ -155,6 +216,18 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 
 ![Step 10: Display Stand - Assembly image 6](images/step10_06.jpg)
 
+View 3 more
+I had a little bit of wood left and instead of just throwing it away I figured I may as well make something else : )
+On my holiday I found some great sea glass and stones so I thought a small display stand would be ideal to show these off.
+
+Steps:
+
+1. Decide how you want the display to look like. It might depend (like me) on what wood you might have left. I went with having 3 shelves on one side and 2 on the other.
+
+2. Cut the wood long ways if necessary. I had to ensure I had enough wood to make the stand.
+
+3. Assemble. I used nails to assemble everything together. It's pretty rough and ready but that's what this type of thing is supposed to look like.
+
 
 ## Step 11: Done
 
@@ -167,6 +240,11 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 ![Step 11: Done image 4](images/step11_04.jpg)
 
 ![Step 11: Done image 5](images/step11_05.jpg)
+
+View 2 more
+So that's it.  Really easy actually and all for free!
+
+making any of these things is simple - it just takes the right materials.  Good luck and happy hunting!
 
 
 ---

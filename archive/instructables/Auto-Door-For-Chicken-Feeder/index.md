@@ -19,11 +19,11 @@ Source: https://www.instructables.com/Auto-Door-For-Chicken-Feeder/
 
 Anyone who has chickens has probably experienced rats or mice at some stage. They love to get into the chickens food at night and make a mess. Most of the rats I have caught in traps and have cleared but I know it won’t be long before they are back. I got sick of seeing their food scattered each morning so I decided to make a feeder which automatically closes at night.
 
-The lid to the feeder is lowered once the sun goes down and rises each morning. This is done by a photocell or light sensor detecting whether it’s light or not through an Arduino. I'm very much a novice when it comes to Arduino, but after discovering the [Control Servo With Light](https://www.instructables.com/id/Control-Servo-with-Light/) 'ible by [quaddel](https://www.instructables.com/member/quaddel/) and testing the idea, I knew it wouldn't be too hard.
+The lid to the feeder is lowered once the sun goes down and rises each morning. This is done by a photocell or light sensor detecting whether it’s light or not through an Arduino. I'm very much a novice when it comes to Arduino, but after discovering the Control Servo With Light 'ible by quaddel and testing the idea, I knew it wouldn't be too hard.
 
-The project box which has all of the electronics inside is connected to a 4” exhaust clamp that is used on trucks. This way I could easily remove it or change its position if necessary. The actual feeder is made from 90mm PVC pipe and is very easy to put together. You can find a ['ible here](https://www.instructables.com/id/PVC-Chicken-Feeder/) on how to do this.
+The project box which has all of the electronics inside is connected to a 4” exhaust clamp that is used on trucks. This way I could easily remove it or change its position if necessary. The actual feeder is made from 90mm PVC pipe and is very easy to put together. You can find a 'ible here on how to do this.
 
-The trickiest part of the project was to work out the best way to attach the lid to the servo. The solution I came up with works ok for the moment but I might have to revisit at some stage. The power source comes from a 12v battery that I'm using for my [Automatic chicken coop door](https://www.instructables.com/id/Simple-Automatic-Chicken-Coop-Door/). I'm going to have to revise this though as it's drawing too much power, especially in Winter.
+The trickiest part of the project was to work out the best way to attach the lid to the servo. The solution I came up with works ok for the moment but I might have to revisit at some stage. The power source comes from a 12v battery that I'm using for my Automatic chicken coop door. I'm going to have to revise this though as it's drawing too much power, especially in Winter.
 
 Overall I'm happy with the way that it turned out. It opens when the sun rises and closes when dark - exactly what it's supposed to do, and I haven't seen any rats around...
 
@@ -105,7 +105,7 @@ Steps:
 
 4. You can also play around with some of the values in the script to either make the servo move less or more.
 
-5. You could also just use the simple code provided in the ['ible by quaddel](https://www.instructables.com/id/Control-Servo-with-Light/) This will do the job but will mean you can't play around with the variables (or not that I could work out any how!)
+5. You could also just use the simple code provided in the 'ible by quaddel This will do the job but will mean you can't play around with the variables (or not that I could work out any how!)
 
 
 ## Step 3: Creating the Circuit Board

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,160 +127,77 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Voice Changer Hack for DIY Synths</span>
 </nav>
-<h1>Voice Changer Hack for DIY Synths</h1><div class="source"><a href="https://www.instructables.com/Voice-Changer-Synth-Hack/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>For those who have been following my latest 'ibles - you will know that I have been building a few 555 timer synths of late.</p>
-<p>Recently during a trip to my local recycling depot, I found a kids voice changer.</p>
-<p>It's the type where you talk into a mike and it changes your voice to you can sound like a robot!</p>
-<p>Pretty sweet toy actually.</p>
-<p>I managed to get it for a dollar and started to think about how I could hack it to add it as a sound effect to my synths.</p>
-<p>I found out pretty quickly that it was easy to hack once I pulled it apart.</p>
-<p>Initially I extended the microphone and placed it near the synth speaker to try and get the synth to play through the voice changer.</p>
-<p>It wasn't too successful so I added a 3.5mm male jack (the same type that is at the end of your headphones) and replaced the mike with this.</p>
-<p>It gave me a way to directly input into the voice changer from the synth - Bingo!</p>
+<h1>Voice Changer Hack for DIY Synths</h1><div class="source"><a href="https://www.instructables.com/Voice-Changer-Synth-Hack/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>For those who have been following my latest 'ibles - you will know that I have been building a few 555 timer synths of late. Recently during a trip to my local recycling depot, I found a kids voice changer. It's the type where you talk into a mike and it changes your voice to you can sound like a robot! Pretty sweet toy actually. I managed to get it for a dollar and started to think about how I could hack it to add it as a sound effect to my synths.</p>
+<p>I found out pretty quickly that it was easy to hack once I pulled it apart. Initially I extended the microphone and placed it near the synth speaker to try and get the synth to play through the voice changer. It wasn't too successful so I added a 3.5mm male jack (the same type that is at the end of your headphones) and replaced the mike with this. It gave me a way to directly input into the voice changer from the synth - Bingo!</p>
 <p>This is a pretty easy mod for anyone who is interested in getting some really cool, interesting sounds out of a synth or even just from your iPhone.</p>
-<p>I have no idea what brand of voice changer I used in this hack and I must admit, I couldn't find it on the net.</p>
-<p>However, I have linked a couple that I have found on eBay which are similar and would also work well in this hack.</p>
+<p>I have no idea what brand of voice changer I used in this hack and I must admit, I couldn't find it on the net. However, I have linked a couple that I have found on eBay which are similar and would also work well in this hack.</p>
 <p>555 Synths I have Made:</p>
-<p><a href="https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/">LIGHT THEREMIN IN A NES CONTROLLER</a></p>
-<p><a href="https://www.instructables.com/id/Fizzle-Loop-Synth-555-Timer/">FIZZLE LOOP SYNTH - 555 TIMER</a></p>
-<p><a href="https://www.instructables.com/id/Cigar-Box-Synth/">CIGAR BOX SYNTH</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"></div><p>You won't need many parts to make this.</p>
-<p>The main parts are a voice changer, something to put the parts in, and a male 3.5mm jack which you can get from a set of old head phones.</p>
-<p>I used a old torch as the case for the parts but you could use anything you have lying around.</p>
+<p>LIGHT THEREMIN IN A NES CONTROLLER</p>
+<p>FIZZLE LOOP SYNTH - 555 TIMER</p>
+<p>CIGAR BOX SYNTH</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"></div><p>You won't need many parts to make this. The main parts are a voice changer, something to put the parts in, and a male 3.5mm jack which you can get from a set of old head phones. I used a old torch as the case for the parts but you could use anything you have lying around.</p>
 <p>Parts:</p>
 <ol>
-<li>Voice changer - <a href="https://www.ebay.com.au/itm/Red-Voice-Changer-Loud-LED-Superbright-Children-Kids-Toy-10-Sound-Effects-Gift/292261114948?hash=item440c1eb444:g:gqoAAOSwRDtZwPCk">Try this</a> <a href="https://www.ebay.com.au/itm/Wireless-Mini-Handheld-8-Spy-Voice-Changer-Telemarketers-Phone-Disguiser/182056330479?epid=795208868&hash=item2a636724ef:g:4KsAAOSwh-1W6Qjz">or this</a> on eBay</li>
-</ol>
-<ol>
+<li>Voice changer - Try this or this on eBay</li>
 <li>Case. I used an old torch but you could use a cigar box, project box, the actual voice changer, whatever you want.</li>
-</ol>
-<ol>
-<li>3.5mm Male jack - <a href="https://www.ebay.com.au/itm/10-Pcs-Panel-PCB-Female-3-5mm-Headphone-Jack-Audio-Connectors-JR/132565480819?hash=item1edd84b573:g:a8UAAOSw~P9avdwj">eBay</a></li>
-</ol>
-<ol>
+<li>3.5mm Male jack - eBay</li>
 <li>A synth! If you are interested in making one, then you could try one of my 555 timer synths in the intro The most important thing when making a synth and using this is you need to have a female added so you can plug it in! You could also use one you have at home or even just download one on a app!</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Pull Apart the Voice Changer</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pull Apart the Voice Changer image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pull Apart the Voice Changer image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pull Apart the Voice Changer image 3" loading="lazy"></div><p>The fun part...</p>
 <p>Steps:</p>
 <ol>
 <li>Remove all of the screws holding the outside of the voice changer</li>
-</ol>
-<ol>
 <li>Remove any screws holding the circuit board to the inside of the voice changer</li>
-</ol>
-<ol>
 <li>Remove the speaker, mike and circuit board.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the Speaker (and LED's) to the Case</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 5" loading="lazy"></div><p>As mentioned, I used an old torch that I had lying around.</p>
-<p>The front part of the torch I used to hold the speaker and the LED's that came with the voice changer.</p>
-<p>I'm going to assume that you also have the same torch (or something similar when writing the 'ible)</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the Speaker (and LED's) to the Case</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Speaker (and LED's) to the Case image 5" loading="lazy"></div><p>As mentioned, I used an old torch that I had lying around. The front part of the torch I used to hold the speaker and the LED's that came with the voice changer. I'm going to assume that you also have the same torch (or something similar when writing the 'ible)</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the front section of the torch.</li>
-</ol>
-<ol>
 <li>Measure and drill holes into the front of the torch for the LED's and some holes for the speaker</li>
-</ol>
-<ol>
 <li>I managed to secure the LED's into the holes I made and didn't have to use any glue. Glue though if necessary.</li>
-</ol>
-<ol>
 <li>Glue the speaker to the inside on the LED circuit board.</li>
 </ol>
-<p>You will need to de-solder the wires from the speaker and LED's later on to add some longer wires.</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Potentiometers and Any Switches</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 7" loading="lazy"></div><p>I decided to add the poteniometers to the top of the torch.</p>
-<p>Some voice changes don't have potentiometers, they have switches to change the sound of your voice.</p>
-<p>You could add the switches instead if your has them.</p>
-<p>Also, mine had a 3 way switch to change the effect of the sounds.</p>
+<p>You will need to de-solder the wires from the speaker and LED's later on to add some longer wires.</p><h2><span class="step-num">STEP 4</span>Step 4: Adding the Potentiometers and Any Switches</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Potentiometers and Any Switches image 7" loading="lazy"></div><p>I decided to add the poteniometers to the top of the torch. Some voice changes don't have potentiometers, they have switches to change the sound of your voice. You could add the switches instead if your has them. Also, mine had a 3 way switch to change the effect of the sounds.</p>
 <p>Steps:</p>
 <ol>
 <li>I had to clean-up the inside of the top of the torch as it has some pretty corroded wires inside</li>
-</ol>
-<ol>
 <li>Drill a couple of holes into the top</li>
-</ol>
-<ol>
 <li>Attach the potentiometers to the top of the torch</li>
-</ol>
-<ol>
 <li>I added the switch which changes the sound to the back of the lid</li>
-</ol>
-<ol>
 <li>Add some hot glue to the inside to hold the potentiomeners and switch in place</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Removing the Activation Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Removing the Activation Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Removing the Activation Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Removing the Activation Switch image 3" loading="lazy"></div><p>To turn the voice changer on, there is a trigger which needs to be pulled. I decided to remove this and just add some solder to join the wires together which disabled the switch.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut the switch off from the base of the circuit board</li>
-</ol>
-<ol>
 <li>Add solder to the 2 solder points on the circuit board to disable the switch</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Removing the Mic and Adding a Jack</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Removing the Mic and Adding a Jack image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Removing the Mic and Adding a Jack image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Removing the Mic and Adding a Jack image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Removing the Mic and Adding a Jack image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Removing the Mic and Adding a Jack image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Removing the Mic and Adding a Jack image 6" loading="lazy"></div><p>To be able to input the voice changer to a synth, you need to remove the mic and add a male jack in it's place.</p>
 <p>Steps:</p>
 <ol>
 <li>De-solder the wires of the mic from the circuit board</li>
-</ol>
-<ol>
 <li>Cut the wire on the jack and strip it so you have the 2 wires ready to solder to the circuit board</li>
-</ol>
-<ol>
 <li>Solder the wire ends to the circuit board.</li>
-</ol>
-<ol>
 <li>Drill a hole into the torch (or whatever you are using) and thread the jack end through it.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Speaker</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Speaker image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Speaker image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Speaker image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Speaker image 4" loading="lazy"></div><p>As mentioned earlier, I decided to remove the wires from the speaker and LED's and replace these with longer wires.</p>
 <p>Steps:</p>
 <ol>
 <li>You will first need to de-solder the speaker and LED wires from the circuit board. Make a note on how the wires are attached so you make sure that you re-wire in the correct polarity later.</li>
-</ol>
-<ol>
 <li>Next de-solder the wires from the speaker and LED's</li>
-</ol>
-<ol>
 <li>Attach some longer wires to the solder points on the speaker and LED's</li>
-</ol>
-<ol>
 <li>I had to thread these through the torch as shown in the image below and then screw the lens section onto the torch body before I soldered onto the circuit board. If I didn't do this, then the wires would have become twisted when I screwed it on.</li>
-</ol>
-<ol>
 <li>Lastly, solder the wires onto the circuit board.</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Add an External Audio Out</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Add an External Audio Out image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Add an External Audio Out image 2" loading="lazy"></div><p>So I could play the voice changer through an amp, I also added a audio out plug. You don't have to do this but I recommend that you do so you can get a louder sound out of it.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a couple of wires to the audio plug</li>
-</ol>
-<ol>
 <li>Find a good spot to add the plug to the case and secure it in place</li>
-</ol>
-<ol>
 <li>Lastly, solder the ends of the wire to the same solder points on the circuit board that the speakers are attached to.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Plug It in and Test</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Plug It in and Test image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Plug It in and Test image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Plug It in and Test image 3" loading="lazy"></div><p>So now you have completed the hack it's time to plug it in and give it a play.</p>
 <p>Steps:</p>
 <ol>
 <li>Turn the voice controller on</li>
-</ol>
-<ol>
 <li>Plug the jack into whatever synth you may have. If you want some inspiration to make your own, check out the ones I have done which I have added links to in the intro.</li>
-</ol>
-<ol>
 <li>Turn on the synth and start to play some tunes.</li>
-</ol>
-<ol>
 <li>You will notice that both the synth and the voice changer play at the same time. You can turn the synth down to just hear the voice changer playing or mix the two together.</li>
-</ol>
-<ol>
 <li>Plug in an amp to the sound changer and crank up the volume.</li>
 </ol>
 <p>I found that this was a pretty simple way to get some great sounds out of a home made synth (or even a shop brought one). Next I want o buy a whole bunch of these and string them together!</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

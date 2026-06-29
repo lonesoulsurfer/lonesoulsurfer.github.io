@@ -13,6 +13,19 @@ Source: https://www.instructables.com/Modify-an-80s-Retro-Handheld-Game-by-Addin
 
 ![Intro 3](images/intro_03.jpg)
 
+I have a bunch of very cool 80s handheld games - some in great condition, others have seen better days.  One I had was totally dead, and no matter how hard I tried I just couldn't throw it away.  So instead I decided to bring it back to life with a modern twist.
+
+I scoured ebay trying to find the perfect MP4/MP3 player that I could intergrate into the casing of the game without having to do too much damage to the original look of the handheld.  I managed to find the below MP3/MP4 player which with a few modifications actually fitted amazingly well within the handheld.
+
+MP4/MP3 player
+[http://www.ebay.com.au/itm/New-listing-6th-Gen-Clip-8GB-1-8-LCD-Fm-Video-Player-MP3-MP4-MIX-7-colors-Blue-/370542899926?pt=AU_Electronics_Portable_Audio_Accessories&hash=item564613f2d6](http://www.ebay.com.au/itm/New-listing-6th-Gen-Clip-8GB-1-8-LCD-Fm-Video-Player-MP3-MP4-MIX-7-colors-Blue-/370542899926?pt=AU_Electronics_Portable_Audio_Accessories&hash=item564613f2d6)
+
+Check out the clip below on the mod in action:
+
+This really was an easy mod which only needed a dremel, soldering iron and a little ingenuity - anyone can make this.
+
+Here's what you'll need to do...
+
 
 ## Step 1: The Bits and Tools You'll Need
 

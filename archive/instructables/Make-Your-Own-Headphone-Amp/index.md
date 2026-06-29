@@ -15,7 +15,7 @@ Source: https://www.instructables.com/Make-Your-Own-Headphone-Amp/
 
 I never really thought much about headphone amps until I tried one. I used to think it was all a bit of a gimmick. Why would you need a separate amp to drive the speakers in your headphones! It’s only when you try a headphone amp that you realise the benefits and sound quality improvement possible from a separate amp. The only problem is, you’ll never be able to listen to music again without one!
 
-You can buy an off-the-shelf one if you want to but I’m going to assume you’re reading this because you’d rather build your own. The build itself isn’t too difficult, although you will need some soldering and circuit experience to make this. If you have never done any circuit building, then you should [start with this ‘ible](https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/) which I did some time ago to help beginners.
+You can buy an off-the-shelf one if you want to but I’m going to assume you’re reading this because you’d rather build your own. The build itself isn’t too difficult, although you will need some soldering and circuit experience to make this. If you have never done any circuit building, then you should start with this ‘ible which I did some time ago to help beginners.
 
 The heart of the amp is 2 X LM386 IC’s. Unlike some headphone amps, you can run this one on a 9v battery but because of this, you need to be careful how you hook-up the ground connections. I’ll take you through this in the following steps.
 
@@ -30,35 +30,35 @@ Lastly, I’ll be building a few more of these and comparing different models in
 
 Parts:
 
-1. 2 X LM386 IC – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=lm386+ic&_sacat=0&_sop=15)
+1. 2 X LM386 IC – eBay
 
 Resistors. Use the metal film type, which are superior to the carbon ones, at least for this project
 
-2. 10 Ohm – [eBay](https://www.ebay.com.au/itm/25-100PCS-10R-0-25W-1-Metal-Film-Resistor-10-OHM-1-4W-MF/164178713602?hash=item2639d05c02:g:g~wAAOSwxe5eqTOS&frcectupt=true)
+2. 10 Ohm – eBay
 
-3. 18K – [eBay](https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-1K-910K-Ohm-1K-10K-100K-47K-22K-33K/192901341321?hash=item2ce9d0e089:g:6pcAAOSwjDZYd168&frcectupt=true)
+3. 18K – eBay
 
 Capacitors. Make sure you use good, audio ones for the best possible sound. The electrolytic ones should be low leakage; low impedance type and the ceramic should be metal film, polypropylene. I have added links to eBay for these types of caps
 
-4. 4 X 10uf – [eBay](https://www.ebay.com.au/itm/250V-Low-ESR-high-frequency-aluminum-capacitor-2-2-10-22-15-100-220-330-UF/192997516955?var=493199886066&hash=item2cef8c669b:g:deMAAOSweWldLvRl&frcectupt=true)
+4. 4 X 10uf – eBay
 
-5. 3 X 470 uf [eBay](https://www.ebay.com.au/itm/10pcs-470uF-16V-8x12mm-Panasonic-FR-Low-ESR-16V470uF-Audio-grade-Capacitor/252622023449?hash=item3ad1722b19:g:0goAAOSwMVdYEXv~)
+5. 3 X 470 uf eBay
 
-6. 3 X 0.1uf - [eBay](https://www.ebay.com.au/itm/10pcs-CBB-104J-100V-0-1UF-100NF-P5mm-Metallized-Film-Capacitor-104-100v-SEbc/333708219469?hash=item4db28f544d:g:MHAAAOSwsaZa2bkk)
+6. 3 X 0.1uf - eBay
 
-7. 100k duel gang potentiometer – [eBay](https://www.ebay.com.au/itm/5-pcs-10K-ohm-Linear-Taper-Rotary-Potentiometer-Panel-pot-B10-Tw/133458900705?hash=item1f12c536e1:g:hPIAAOSw3xJXn382)
+7. 100k duel gang potentiometer – eBay
 
-8. 2 X 3.5mm stereo jack sockets – [eBay](https://www.ebay.com.au/itm/2pcs-3-5MM-audio-jack-socket-3-pole-black-stereo-solder-panel-mount-with-nuH1/402436346123?hash=item5db313510b:g:9TYAAOSws7Fci2gL)
+8. 2 X 3.5mm stereo jack sockets – eBay
 
 9. 9v Battery
 
-10. 9V Battery holder – [eBay](https://www.ebay.com.au/itm/Replacement-9V-Battery-Box-Case-Holder-Connector-R4B9/392821604951?hash=item5b75fe0257:g:FugAAOSwcLNe1K2R)
+10. 9V Battery holder – eBay
 
-11. DPST toggle switch – [eBay](https://www.ebay.com.au/itm/2-Pcs-AC-SPDT-On-Off-3-Position-Momentary-Toggle-Switch-AC250V-2A-120V-5A-B-AU/254693639157?hash=item3b4cec83f5:g:oQ8AAOSwQFJauzRQ)
+11. DPST toggle switch – eBay
 
-12. Knob – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=potentiometer+knob&_sacat=0)
+12. Knob – eBay
 
-13. Male to male audio cable 3.5mm - [eBay](https://www.ebay.com.au/itm/FT-CO-Portable-3-5mm-Male-to-Male-Stereo-Audio-Cable-AUX-Auxiliary-Cord-for-PC/333533101608?hash=item4da81f3e28:g:HqEAAOSwWnRdzdyC)
+13. Male to male audio cable 3.5mm - eBay
 
 You can also add a charging socket which will require a 330 Ohm resistor as well as a socket. I’ll probably add this later so left it in the circuit diagram.
 

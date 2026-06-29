@@ -31,13 +31,13 @@ To display them I decided to use small bell jar displays. This has a two fold be
 
 Instructables on Junkbots
 
-[The Art of making Junkbots](https://www.instructables.com/id/The-Art-of-Making-Junkbots/)
+The Art of making Junkbots
 
-[Making a Junkbot](https://www.instructables.com/id/Make-a-Junkbot/)
+Making a Junkbot
 
-[Dancing, Magnetic Robots](https://www.instructables.com/id/Dancing-Magnetic-Robots/)
+Dancing, Magnetic Robots
 
-[Junkbot in Resin](https://www.instructables.com/id/Junkbot-in-Resin/)
+Junkbot in Resin
 
 
 ## Step 1: Junkbots I've Made
@@ -50,7 +50,7 @@ Instructables on Junkbots
 
 ![Step 1: Junkbots I've Made image 4](images/step01_04.jpg)
 
-Here a few Junkbots that I've made over the last couple of years. These ones are a lot larger than the micro bots in this 'ible and a little more complex but if you want to make your own - check out [this link](https://www.instructables.com/id/The-Art-of-Making-Junkbots/)
+Here a few Junkbots that I've made over the last couple of years. These ones are a lot larger than the micro bots in this 'ible and a little more complex but if you want to make your own - check out this link
 
 
 ## Step 2: Where to Find Parts
@@ -114,7 +114,7 @@ As you start to sort your parts you’ll notice that some resemble heads, while 
 
 You will also need to stick the parts together. On these micro junkbots the best thing to use is super glue. However I also used a mini blow torch and solder to attach some of the parts as well. As these micro junkbots are going to be displayed in bell jars they will be protected well.
 
-[The bell jars can be purchased on eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Clear+Acrylic+Plastic+Display+Box+Case+Stand+Dustproof+Tray+Protection+Cube+Show&_sacat=0)
+The bell jars can be purchased on eBay
 
 
 ## Step 4: Making a Micro Junkbot - Head, Body and Arms

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,31 +127,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Moog Light Synth V3</span>
 </nav>
-<h1>Moog Light Synth V3</h1><div class="source"><a href="https://www.instructables.com/Moog-Light-Synth-V3/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter.</p>
-<p>The "growling" oscillator tonality is supplied via a PWM and an awesome high-resonance low pass filter.</p>
-<p>The oscillator is controlled via 2 Light dependent resistors (LDR) and gives you the ability to create amazing musical expression.</p>
-<p>The 13 “keys” give you different tones and allow you to play it like a 1 octave keyboard.</p>
-<p>Also included is 2 Hex inverter drones, supplied via a 40106 IC.</p>
-<p>The 2 two adjustable drone oscillators give this synth three oscillators in total.</p>
-<p>You also have the ability to turn off the 2 hex inverter drones and just play around with the other oscillator.</p>
+<h1>Moog Light Synth V3</h1><div class="source"><a href="https://www.instructables.com/Moog-Light-Synth-V3/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. The "growling" oscillator tonality is supplied via a PWM and an awesome high-resonance low pass filter. The oscillator is controlled via 2 Light dependent resistors (LDR) and gives you the ability to create amazing musical expression. The 13 “keys” give you different tones and allow you to play it like a 1 octave keyboard.</p>
+<p>Also included is 2 Hex inverter drones, supplied via a 40106 IC. The 2 two adjustable drone oscillators give this synth three oscillators in total. You also have the ability to turn off the 2 hex inverter drones and just play around with the other oscillator.</p>
 <p>Also included is a delay section via a echo/reverb module that has been modified to include feedback.</p>
-<p>Lastly, I've included in this build an arpeggiator (like in the first version I built) which really makes this synth so much fun to play!</p>
-<p>You also have the ability to play the synth just with one potentiometer and the LDR’s.</p>
-<p>When all this is combined with the echo/reverb feature you can really get some fantastic sounds from the synth.</p>
+<p>Lastly, I've included in this build an arpeggiator (like in the first version I built) which really makes this synth so much fun to play! You also have the ability to play the synth just with one potentiometer and the LDR’s. When all this is combined with the echo/reverb feature you can really get some fantastic sounds from the synth.</p>
 <p>Just watch the YouTube clip and you’ll see what I mean</p>
-<p>Lastly, I have to give a shout out to <a href="https://www.youtube.com/channel/UCk4mtz-tZbXdk1Xb0DSd2QQ">Pete McBennett</a> who designed this awesome circuit. Check out his YouTube channel here</p>
+<p>Lastly, I have to give a shout out to Pete McBennett who designed this awesome circuit. Check out his YouTube channel here</p>
 <p>You can check out the other versions below</p>
-<p><a href="https://www.instructables.com/Moog-Style-Synth/">Version1</a></p>
-<p><a href="https://www.instructables.com/Moog-Style-Synth-V2/">Version 2</a></p>
+<p>Version1</p>
+<p>Version 2</p>
 <p>Oh and Hackaday did a bit of a review on this project which you can find in the below link</p>
-<p><a href="https://hackaday.com/2022/09/15/this-simple-light-controlled-synth-has-a-surprisingly-rich-sound/">Hackaday</a></p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"></div><p>The Moog Synth</p>
+<p>Hackaday</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.png" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"></div><p>The Moog Synth</p>
 <p>The circuit and board were put together using Eagle and all of the files including the schematic, board, gerber files & parts listing can be found in the next step.</p>
 <p>The Rest of the Parts:</p>
 <p>Electronics</p>
 <ul>
 <li>Echo/Reverb Board - Ali Express</li>
 <li>Step-up Voltage Regulator - Ali Express</li>
-<li>USB C Charging module - <a href="https://www.aliexpress.com/item/32930640893.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU">eBay</a></li>
+<li>USB C Charging module - eBay</li>
 <li>Mobile Phone Battery - Ali Express (you could also just use a 9v battery as well but I wanted a rechargeable option.</li>
 <li>3.5mm Audio Female Socket - Ali-Express</li>
 <li>3 X 50K Potentiometers - Ali Express</li>
@@ -198,9 +156,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Clear, Adhesive Decals - eBay</li>
 <li>Hard wood for the case - I use edging sizes 40mm X 8mm X 1M</li>
 <li>Potentiometer Knobs - Ali Express</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Schematic, Board and Parts</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Schematic, Board and Parts image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Schematic, Board and Parts image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Schematic, Board and Parts image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Schematic, Board and Parts image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Schematic, Board and Parts image 5" loading="lazy"></div><p>All of the files including gerber and eagle files can be found in my <a href="https://github.com/lonesoulsurfer/Moog_Light_Synth_V3">GitHub Pag</a>e I've included the shcematic as an attachement ion PDF as well which can be found in this step.</p>
-<p>I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/e?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GVdFKX-Hevhd6kw8GeZu3nYS_I10AJjhGupCabeBPJ_yEL6WvauxcaAtqKEALw_wcB">JLCPCB</a> (Not affiliated) who will print the board for you.</p>
-<p>If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Schematic, Board and Parts</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Schematic, Board and Parts image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Schematic, Board and Parts image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Schematic, Board and Parts image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Schematic, Board and Parts image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Schematic, Board and Parts image 5" loading="lazy"></div><p>All of the files including gerber and eagle files can be found in my GitHub Page I've included the shcematic as an attachement ion PDF as well which can be found in this step.</p>
+<p>I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the board for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find here.</p>
 <p>I have also included the Eagle schematic and board files so you can play around with them and modify as you want to</p>
 <p>Parts list for the circuit board can be found below and I've also provided the list in excel. which can be found in my Google Drive</p>
 <p>PARTS LIST</p>
@@ -240,9 +197,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>82K X 1</li>
 <li>7.5K X 1</li>
 </ul>
-<p>*Note that the following resistors make up the resistor ladder for the 1 octave keyboard.</p>
-<p>They have values which you can either just find something close to or you can add a couple in series to get as close as possible to the values below.</p>
-<p>The closer you are, the more 'in tune' it will be.</p>
+<p>*Note that the following resistors make up the resistor ladder for the 1 octave keyboard. They have values which you can either just find something close to or you can add a couple in series to get as close as possible to the values below. The closer you are, the more 'in tune' it will be.</p>
 <ul>
 <li>4.02K X 1</li>
 <li>3.83K X 1</li>
@@ -257,32 +212,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>2.43K X 1</li>
 <li>2.26K X 1</li>
 <li>38.3K X 1</li>
-</ul>
-<ul>
-<li><a href="pdfs/Moog Light Synth V3 - Schematic.pdf">Moog Light Synth V3 - Schematic</a></li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: About the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: About the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: About the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: About the PCB image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: About the PCB image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: About the PCB image 5" loading="lazy"></div><p>Before we start to add components to the PCB, I thought I would go through a couple of things that you should know.</p>
-<p>You can download all of the files for the PCB on my <a href="https://github.com/lonesoulsurfer/Moog_Light_Synth_V3">GitHub page</a></p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: About the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: About the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: About the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: About the PCB image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: About the PCB image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: About the PCB image 5" loading="lazy"></div><p>Before we start to add components to the PCB, I thought I would go through a couple of things that you should know. You can download all of the files for the PCB on my GitHub page</p>
 <p>What is that cutout section for?</p>
-<p>I always try to add as many components to the board as possible.</p>
-<p>It means less wiring and less hassle.</p>
-<p>Unfortunately I couldn't find a DPDT (Double Pole, Double Throw) PCB mounted switch which sat low enough on the PCB.</p>
-<p>To compensate, I made a cutout on the board and the switch is secured directly into the front panel.</p>
-<p>It means you have to wire it up but that is straight forward</p>
+<p>I always try to add as many components to the board as possible. It means less wiring and less hassle. Unfortunately I couldn't find a DPDT (Double Pole, Double Throw) PCB mounted switch which sat low enough on the PCB. To compensate, I made a cutout on the board and the switch is secured directly into the front panel. It means you have to wire it up but that is straight forward</p>
 <p>Why is the PCB double sided?</p>
-<p>Most of the components like IC's resistors etc are on one side and the on the other I have the pots, switches etc.</p>
-<p>This is to ensure the front panel will sit flush and the components don't get in the way</p>
+<p>Most of the components like IC's resistors etc are on one side and the on the other I have the pots, switches etc. This is to ensure the front panel will sit flush and the components don't get in the way</p>
 <p>What the hell are those weird resistor values!</p>
-<p>To be able to have the keys in tune, you need to create a resistor ladder at very specific values.</p>
-<p>It's probably the trickiest part as you can either take the easy road and just find close values or add resistors in series and get as close as possible.</p>
-<p>The closer you are the more 'in tune' the keys will be.</p>
-<p>It's tricky though because if you are out then this will compound and will mean the rest will be out as well.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Components to the PCB</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Components to the PCB image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Components to the PCB image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Components to the PCB image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Components to the PCB image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Components to the PCB image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Components to the PCB image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding the Components to the PCB image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 3: Adding the Components to the PCB image 8" loading="lazy"></div><p>As mentioned, the PCB is double sided. Always start with the side with the resistors, caps etc and then move onto the other side which has the pots, switches.</p>
+<p>To be able to have the keys in tune, you need to create a resistor ladder at very specific values. It's probably the trickiest part as you can either take the easy road and just find close values or add resistors in series and get as close as possible. The closer you are the more 'in tune' the keys will be. It's tricky though because if you are out then this will compound and will mean the rest will be out as well.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Components to the PCB</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Components to the PCB image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Components to the PCB image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Components to the PCB image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Components to the PCB image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Components to the PCB image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Components to the PCB image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding the Components to the PCB image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 3: Adding the Components to the PCB image 8" loading="lazy"></div><p>As mentioned, the PCB is double sided. Always start with the side with the resistors, caps etc and then move onto the other side which has the pots, switches.</p>
 <p>STEPS:</p>
 <ul>
 <li>First thing as always is to start with the lowest profile parts - in this case the resistors</li>
 <li>When you come to the resistors for the keys (the ones with strange values, as previously mentioned, you can either just find a close value and add that or you can add a couple in series to try and get as close as possible to the values. You can see that I have done this in the 2nd image.</li>
 <li>Next add the IC sockets, polyester caps and trimmer pot. The trimmer is used to fine tune the PWM later on.</li>
 <li>Before you flip it over and add the rest of the components, you first need to make some vactrols!</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Making a Vactrol</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making a Vactrol image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making a Vactrol image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making a Vactrol image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making a Vactrol image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making a Vactrol image 5" loading="lazy"><img src="images/step05_06.gif" alt="Step 4: Making a Vactrol image 6" loading="lazy"><img src="images/step05_07.gif" alt="Step 4: Making a Vactrol image 7" loading="lazy"><img src="images/step05_08.gif" alt="Step 4: Making a Vactrol image 8" loading="lazy"></div><p>A vactrol (or Optocoupler), are easy to make In actual fact, I've done a separate Instructable on how to make this which can be found <a href="https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/">here.</a></p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Making a Vactrol</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Making a Vactrol image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Making a Vactrol image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Making a Vactrol image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 4: Making a Vactrol image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 4: Making a Vactrol image 5" loading="lazy"><img src="images/step05_06.gif" alt="Step 4: Making a Vactrol image 6" loading="lazy"><img src="images/step05_07.gif" alt="Step 4: Making a Vactrol image 7" loading="lazy"><img src="images/step05_08.gif" alt="Step 4: Making a Vactrol image 8" loading="lazy"></div><p>A vactrol (or Optocoupler), are easy to make In actual fact, I've done a separate Instructable on how to make this which can be found here.</p>
 <p>I won't go into too much detail as you can always refer to the Instructable I did. All a vactrol is is an LED and a LDR. They are used in this build in the arpeggiator section of the build</p>
 <p>STEPS:</p>
 <ul>
@@ -293,9 +236,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Bend the legs over. NOTE: make sure that the positive and negative (Anode and Cathode) legs line up with the positive and negative on the PCB. If you look at the vactrol symbols you will see a little positive and negative symbol.</li>
 <li>Place them into the PCB and solder into place</li>
 <li>Now you can solder into place the rest of the components onto the board</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Reverb & Echo Board</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Reverb & Echo Board image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Reverb & Echo Board image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Reverb & Echo Board image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Reverb & Echo Board image 4" loading="lazy"><img src="images/step06_05.gif" alt="Step 5: Reverb & Echo Board image 5" loading="lazy"></div><p>The echo and reverb board makes up the delay section of the synth.</p>
-<p>The module is cheap to buy ($3-5) and can be modified a few different ways.</p>
-<p>Shoutout to <a href="https://www.instructables.com/member/mayasfinest/">mayasfinest</a> who provided the feedback mod.</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Reverb & Echo Board</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Reverb & Echo Board image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Reverb & Echo Board image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Reverb & Echo Board image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Reverb & Echo Board image 4" loading="lazy"><img src="images/step06_05.gif" alt="Step 5: Reverb & Echo Board image 5" loading="lazy"></div><p>The echo and reverb board makes up the delay section of the synth. The module is cheap to buy ($3-5) and can be modified a few different ways. Shoutout to mayasfinest who provided the feedback mod.</p>
 <p>As I already did the mods to the module (and don't have another spare!) I put together a wiring diagram which shows you what you need to do in order to mod the board.</p>
 <p>STEPS:</p>
 <ul>
@@ -308,18 +249,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>the 'in" on the module is connected to the 'out' on the moog PCB</li>
 <li>The 'out' on the echo module is connected to a female audio socket</li>
 </ul>
-<p>TIP: Once you have soldered everything onto the Moog PCB, I'd then do the above mods and test it out to make sure everything works as it should.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Panel to the Opal Acrylic</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 5" loading="lazy"><img src="images/step07_06.gif" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 6" loading="lazy"><img src="images/step07_07.gif" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 8" loading="lazy"></div><p>Now that the circuit has been built (and hopefully works as it should), the next step is to add the front cover design to some acrylic.</p>
-<p>I have used opal acrylic so you can see the on/off indicator LED inside the panel.</p>
-<p>You could also use white which I'm sure would still allow the LED to be seen</p>
+<p>TIP: Once you have soldered everything onto the Moog PCB, I'd then do the above mods and test it out to make sure everything works as it should.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Panel to the Opal Acrylic</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 5" loading="lazy"><img src="images/step07_06.gif" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 6" loading="lazy"><img src="images/step07_07.gif" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 7" loading="lazy"><img src="images/step07_08.gif" alt="Step 6: Adding the Front Panel to the Opal Acrylic image 8" loading="lazy"></div><p>Now that the circuit has been built (and hopefully works as it should), the next step is to add the front cover design to some acrylic. I have used opal acrylic so you can see the on/off indicator LED inside the panel. You could also use white which I'm sure would still allow the LED to be seen</p>
 <p>STEPS:</p>
 <ul>
 <li>First thing to do is to print the front panel design onto some clear adhesive. This has a sticky back which allows you to attach it to the acrylic. The front panel design can be found as an attachment in this step.</li>
 <li>It can be a little tricky adding a label this big. It's easy to get wrinkles and air pockets. You need to take your time and use something flat like a ruler to drag around the adhesive to ensure these are kept at a minimum.</li>
 <li>Once the front panel is on the acrylic, use something flat to remove any air pockets. You want to use something which has a soft edge so you don't scratch the ink on the panel. I used a piece of floating floor which has some foam on the back.</li>
 <li>To protect the front panel, you need to spray it a few times with some clear acrylic paint. I use a matt one as it give a nice, clean finish. Let it dry between coats</li>
-</ul>
-<ul>
-<li><a href="pdfs/Moog Light Synth V3 - Front Panel.pdf">Moog Light Synth V3 - Front Panel</a></li>
 </ul><h2><span class="step-num">STEP 7</span>Step 7: Drilling and Test Fitting the Front Panel</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Drilling and Test Fitting the Front Panel image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Drilling and Test Fitting the Front Panel image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Drilling and Test Fitting the Front Panel image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Drilling and Test Fitting the Front Panel image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Drilling and Test Fitting the Front Panel image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 7: Drilling and Test Fitting the Front Panel image 6" loading="lazy"><img src="images/step08_07.gif" alt="Step 7: Drilling and Test Fitting the Front Panel image 7" loading="lazy"></div><p>I use a step drill piece to drill the holes as it works very well and allows you to easily create the correct sized holes for the components.</p>
 <p>STEPS:</p>
 <ul>
@@ -347,18 +283,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>With a file, make a cutout in the bottom section of the case</li>
 <li>The cutout should be deep enough for the module to sit flush and the base shouldn't touch it when placed on top.</li>
 <li>Use some superglue to secure the module into place</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: Wiring the Switches and Securing the PCB Into the Front Panel</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 6" loading="lazy"><img src="images/step12_07.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 7" loading="lazy"><img src="images/step12_08.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 8" loading="lazy"><img src="images/step12_09.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 9" loading="lazy"><img src="images/step12_10.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 10" loading="lazy"></div><p>This is a pretty exciting step! you get to see how it all looks with the switches and PCB in place.</p>
-<p>Note that I did include some markings on the PCB where you could drill holes to secure the PCB to the front panel.</p>
-<p>I decided that I didn't need to add these as the switches held the PCB into place well enough.</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: Wiring the Switches and Securing the PCB Into the Front Panel</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 6" loading="lazy"><img src="images/step12_07.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 7" loading="lazy"><img src="images/step12_08.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 8" loading="lazy"><img src="images/step12_09.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 9" loading="lazy"><img src="images/step12_10.gif" alt="Step 11: Wiring the Switches and Securing the PCB Into the Front Panel image 10" loading="lazy"></div><p>This is a pretty exciting step! you get to see how it all looks with the switches and PCB in place. Note that I did include some markings on the PCB where you could drill holes to secure the PCB to the front panel. I decided that I didn't need to add these as the switches held the PCB into place well enough.</p>
 <p>STEPS:</p>
 <ul>
 <li>Start to place each of the white switches in first into the bottom holes. There are 8 in total to add. Make sure that the legs on the switches line up as you need to connect a leg from each of the switches together</li>
 <li>Add the black ones next.</li>
 <li>Grab a think piece of wire and start to solder the wire onto a leg of each switch.</li>
 <li>Once the switches have been done, you can then add the PCB. Carefully put it into place and add the washer and nut to each of the switches. As mentioned above, this should be enough to secure the PCB into place.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: Adding an LED Filament to the on Switch</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 6" loading="lazy"></div><p>This is something I added at the last minute.</p>
-<p>You could just use an LED and have it coming out of the front panel but I decided to utilize the name of the synth and have that light up when the synth is turned on.</p>
-<p>I only had a pink filament LED but I think it looks great!</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: Adding an LED Filament to the on Switch</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 12: Adding an LED Filament to the on Switch image 6" loading="lazy"></div><p>This is something I added at the last minute. You could just use an LED and have it coming out of the front panel but I decided to utilize the name of the synth and have that light up when the synth is turned on. I only had a pink filament LED but I think it looks great!</p>
 <p>STEPS:</p>
 <ul>
 <li>To keep the LED straight, I used some clear plastic tube. The LED fits nicely inside and keeps it flush to the bottom of the acrylic</li>
@@ -374,8 +306,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To connect the DPDT switch, first secure the switch into the front panel.</li>
 <li>Next, add a wire to the first solder point on the PCB and connect this to the switch. Keep on going until each of the 6 legs are wired up. Check out the image to see what this looks like</li>
 <li>You now need to add 3 potentiometers to the delay section. The feedback pots value is 1M and the other 2 are 50K. If you have already wired up the echo/reverb module then just use the pots on the module to the front panel.</li>
-</ul><h2><span class="step-num">STEP 14</span>Step 14: Adding a Battery and a Little More Wiring</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 5" loading="lazy"><img src="images/step15_06.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 6" loading="lazy"><img src="images/step15_07.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 7" loading="lazy"><img src="images/step15_08.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 8" loading="lazy"></div><p>To power everything I used an old mobile phone battery.</p>
-<p>As previously mentioned, you could just use a 9v battery but then you'll have to open up the case each time you need to replace it and that's just a pain in the butt.</p>
+</ul><h2><span class="step-num">STEP 14</span>Step 14: Adding a Battery and a Little More Wiring</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 5" loading="lazy"><img src="images/step15_06.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 6" loading="lazy"><img src="images/step15_07.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 7" loading="lazy"><img src="images/step15_08.jpg" alt="Step 14: Adding a Battery and a Little More Wiring image 8" loading="lazy"></div><p>To power everything I used an old mobile phone battery. As previously mentioned, you could just use a 9v battery but then you'll have to open up the case each time you need to replace it and that's just a pain in the butt.</p>
 <p>STEPS:</p>
 <ul>
 <li>The little step up module used in this build is set at 5V's. You need to bring it up to 9. To do this, you connect the 2 little solder points indicated on the board.</li>
@@ -425,25 +356,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Turn it on and play with the base and tenor until they are in tune</li>
 <li>It give more depth to the overall sound and when played with delay, really opens up the sound effects</li>
 </ul>
-<p>The rest you can work out. There are a bunch of different sound effects that you can get so have fun finding them and good luck with the build!</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
-<li><a href="pdfs/Moog Light Synth V3 - Schematic.pdf">Moog Light Synth V3 - Schematic</a></li>
-<li><a href="pdfs/Moog Light Synth V3 - Front Panel.pdf">Moog Light Synth V3 - Front Panel</a></li>
-</ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<p>The rest you can work out. There are a bunch of different sound effects that you can get so have fun finding them and good luck with the build!</p>
 </body>
 </html>

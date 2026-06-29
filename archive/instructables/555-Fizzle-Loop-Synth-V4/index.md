@@ -33,11 +33,11 @@ It's a really run little synth which has a heap of different beats that can be g
 
 Here are the other iterations of the Fizzle Loop Synths
 
-[V1](https://www.instructables.com/Fizzle-Loop-Synth-555-Timer/)
+V1
 
-[V2](https://www.instructables.com/Fizzle-Loop-Synth-II/)
+V2
 
-[V3](https://www.instructables.com/Fizzle-Loop-Synth-V3/)
+V3
 
 
 ## Step 1: The Circuit & Board
@@ -48,24 +48,20 @@ Here are the other iterations of the Fizzle Loop Synths
 
 ![Step 1: The Circuit & Board image 3](images/step01_03.jpg)
 
-I created a schematic and board files in Eagle which makes life a lot easier when putting the PCB together. You can find the schematic and board files along with the gerber files in this [Google Drive link](https://drive.google.com/drive/folders/1L0cG3s8eofmWnCaaOoxGSxFMp1p22EOy?usp=sharing). All you need to do if you want to get one printed is to save the gerber file and send it to someone like [JCLPCB](https://jlcpcb.com/b?utm_source=bing_ads&utm_medium=cpc&utm_campaign=tyc_EU_20200708&msclkid=28a272e339c2140a9f5112a727bc5569) (Not affiliated) and they'll print up the board for you.
+I created a schematic and board files in Eagle which makes life a lot easier when putting the PCB together. You can find the schematic and board files along with the gerber files in this Google Drive link. All you need to do if you want to get one printed is to save the gerber file and send it to someone like JCLPCB (Not affiliated) and they'll print up the board for you.
 
 If you know how to use Eagle then please take a look at the schematic and board and see if you can make any improvements. If you have never used Eagle before, then I highly recommend the following 2 Sparkfun's tutorials.
 
-[Creating Schematics](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all)
+Creating Schematics
 
-[Creating Boards](https://learn.sparkfun.com/tutorials/using-eagle-board-layout)
+Creating Boards
 
-You can download Eagle for free [here](https://learn.sparkfun.com/tutorials/how-to-install-and-setup-eagle)
+You can download Eagle for free here
 
 It's actually easier then it seems and a lot of fun as well
 
 I've included a PDF of the schematic along with a parts list. You can also find this information in the Google drive link above.
 
-
-- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
-- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
-- [Parts List - 555 Fizzle Loop Synth Circuit](pdfs/Parts List - 555 Fizzle Loop Synth Circuit.pdf)
 
 ## Step 2: The Rest of the Parts
 
@@ -89,23 +85,23 @@ Along with the circuit, you'll need a few other parts to be able to build this s
 
 Parts:
 
-1. Opal Acrylic - [eBay](https://www.ebay.com.au/itm/Coloured-Perspex-Acrylic-Sheets-Cut-Panels-Free-Tracked-Shipping/221974331742?_trkparms=ispr%3D1&hash=item33aeb3815e:g:AGcAAOSwvmNa~SjK&amdata=enc%3AAQAFAAACcBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkgCVySCgrNFPU8Iu85TabMMqb%252FzFiWrwNQbas1nj5sgePqtHbGIEESoeITQLLMNzCN0BvZyosN4vFoRXDn46UR0zt3zLN%252FENLTJ%252FSvjcTUdOCsuKVm2bxl4uHhmFqup2NOyetybAA2qZqnRVPU08skAFQ5XGV%252Fav94SHtZhLQZpX2xqhFm3mc9KF3OIePAlGzugE0%252F2Ykrarf3ODfLb2%252BsDdPho1VFzHZagjc4i9ext9RKar%252F5aKscY%252FdjmWfdgFecdImNJqzVkoaHt8jzJ3N0MsvblLkIF%252FXJKzwWgrDuQN3aIyVHdXN6esifJ4%252BUjAbV9clvEUewXMkrJWxfXi3Ar98U0FVK66I2QiQmYq6r%252FWRah8JVhJKOC53Ry3ffuAXk7PVvHXCd%252FH0%252FLCK3dGc7hFDhbPq75Yt2rNttHbh9QYl2wbFTsWc3QWm%252BrCgvGH7UsDQtR1M8Z5yE019tB4bFh5yxe7B7JV7t%252BWxTqHfJurls5G5Hw2qB3vWqcCJ5oLalXeP74Ux6W0blC6q2sBWA1w%252FNhTvlnmZ1yEsE%252FeFC33inIwHJGV7ouUu4UO56DcyVHv1twQQ7%252BRg%252FDMU%252FMkV0HUkZk894iaDTXGhfvNgfX3uiDcmOBV9l%252FQXleseleUSPwVlCGqKABlG7bdwx%252B7uLGkl2u6bMHSBnb6NiiF9w51EpwBuIJKGaA7I%252BFNwz5Hicf1WyJhnX2XKR1OuR00AwuoFjhBq6dlO2BgNJ%252FjzjMgzDz%252FzEio4ORnp0UjLEnoG8h%252BA0NUXnC4KbbQ9GWsLiw%253D%253D%7Ccksum%3A22197433174214eecebc7cc748f2a6911b601d5bbb4f%7Campid%3APL_CLK%7Cclp%3A2334524). You can use any colour you want
+1. Opal Acrylic - eBay. You can use any colour you want
 
 2. 40mm X 80mm X 10mm length of hard wood (for making the case) - Hardware store
 
-3. Potentiometer Knobs x 5 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=potentiometer+knob&_sacat=0)
+3. Potentiometer Knobs x 5 - eBay
 
-4. Potentiometer slider Knob - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=potentiometer+slider+knob&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=potentiometer+knob)
+4. Potentiometer slider Knob - eBay
 
-5. Rotary Switch 3 positions - [eBay](https://www.ebay.com.au/itm/SR16MM-Rotary-Switch-2-Pole-3-4-position-1-Pole-5-6-8-Position-Axis-Band-Swi-3C/224257488773?hash=item3436c9b785:g:dTYAAOSwsxNe101N)
+5. Rotary Switch 3 positions - eBay
 
-6. 2 X SPDT switches - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=spdt+toggle+switch+mini&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=spdt+toggle+switch)
+6. 2 X SPDT switches - eBay
 
-7. Momentary 'lock' switches - [Ali Express](https://www.aliexpress.com/item/32992258393.html?spm=a2g0s.9042311.0.0.c9cf4c4dAmSR7K). The ones I got have LED's in them but I had issues getting to work.
+7. Momentary 'lock' switches - Ali Express. The ones I got have LED's in them but I had issues getting to work.
 
-8. Water Decal - [eBay](https://www.ebay.com.au/itm/up-to-20pcs-A4-Waterslide-Transfer-Decal-Paper-Inkjet-Laser-Printer-Soap-Glass/333684811956?ssPageName=STRK%3AMEBIDX%3AIT&var=542773779046&_trksid=p2060353.m2749.l2649)
+8. Water Decal - eBay
 
-9. Voltage regulator and Charger module - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=+3.7V+9V+5V+2A+Adjustable+Step+Up+18650+&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=voltage+regulator+adjustable+charging)
+9. Voltage regulator and Charger module - eBay
 
 10. Battery. I like to use mobile batteries as i can usually get them for free from my local e-waste. However, if you can't then you could use any li-po style battery. you could even just use a 9v and you wouldn't need the voltage regulator module
 
@@ -143,16 +139,14 @@ Steps:
 
 ![Step 4: Making the Front Panel image 1](images/step04_01.jpg)
 
-To design the panels I used [Inkscape](https://inkscape.org/), a vector graphics editor which you can download for free! There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it before
+To design the panels I used Inkscape, a vector graphics editor which you can download for free! There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features if you haven't used it before
 
 I did a video on how to design knob scales and also make a front panel which I have included above.
 
-T[here](https://inkscape.org/~sincoon/%E2%98%85knob-scale-generator) is even an extension that you can download so you can design knob scales easily and simply which you can download here
+There is even an extension that you can download so you can design knob scales easily and simply which you can download here
 
-However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also included the Inkscape file which can be found in my [Google drive](https://drive.google.com/drive/folders/1cdEKVC5Us2lCTEbqzDl3VlNQ0YUfLifI?usp=sharing) so you can play around with that as well if you want to.
+However, if you don't want to bother learning how to design your own, you can always just use mine which I have attached as a PDF. I have also included the Inkscape file which can be found in my Google drive so you can play around with that as well if you want to.
 
-
-- [555 fizzle loop synth 2](pdfs/555 fizzle loop synth 2.pdf)
 
 ## Step 5: Adding the Water Acrylic to the Front Panel
 
@@ -311,7 +305,7 @@ Now that the base has been done, you can now go ahead and add the battery to the
 
 Steps:
 
-1. To be able to charge and set the voltage I use a small module which can do both things. I did an ible on how to use and wire-up one of these modules which can be found [here](https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/)
+1. To be able to charge and set the voltage I use a small module which can do both things. I did an ible on how to use and wire-up one of these modules which can be found here
 
 2. Glue or tape the module onto the battery and connect the ground to the battery. If you connect the positive to the module as well, I found that the module will slowly drain the power so it's best to connect the positive to the on/off switch. Check out the wiring diagram I did below for reference
 
@@ -367,13 +361,6 @@ I think for version 5 I will look at adding an extra vactrol like I did in V2 an
 
 There are so many different mods you could do this this synth and I guess that's why I keep on coming back to it and tryig different things out.
 
-
-## Downloads
-
-- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
-- [555 Fizzle Loop Synth](pdfs/555 Fizzle Loop Synth.pdf)
-- [Parts List - 555 Fizzle Loop Synth Circuit](pdfs/Parts List - 555 Fizzle Loop Synth Circuit.pdf)
-- [555 fizzle loop synth 2](pdfs/555 fizzle loop synth 2.pdf)
 
 ---
 *69 images archived*

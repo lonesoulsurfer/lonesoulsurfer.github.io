@@ -19,19 +19,19 @@ Source: https://www.instructables.com/Trench-Lighter-V2/
 
 The following ‘ible is my second attempt to make a lighter in the style of a trench lighter. Trench lighters has been made by soldiers since WWI. Soldiers would make their own out of used ammunition shells and whatever else that they had around them. I have no idea how a soldier managed to make one of these sitting in a muddy trench with virtually no tools.
 
-Version 2 is a definite improvement on the first one and is easier to make. You will only need some basic tools and be able to solder using a blow torch. For those who are new to brass and copper soldering, I recently did an Instructable on the basics which can be [found here](https://www.instructables.com/id/Brass-and-Copper-Soldering/)
+Version 2 is a definite improvement on the first one and is easier to make. You will only need some basic tools and be able to solder using a blow torch. For those who are new to brass and copper soldering, I recently did an Instructable on the basics which can be found here
 
 The parts needed are also pretty basic and most if not all can be purchased from a hardware store. As I’m in Australia I will link the parts that I could purchase from my local hardware store and also eBay. I've also created a printout that you can take with you when sourcing the products - see the Parts and Tools Step 1.
 
 I’ve made a lot of different types of lighters recently but this would have to me one of my favourites. It’s nice and compact and the flame burns at a good size. If you would like to see others lighter that I have made, check out the links below:
 
-[Make a Trench Lighter](https://www.instructables.com/id/Make-a-Trench-Lighter/)
+Make a Trench Lighter
 
-[Rope Lighter](https://www.instructables.com/id/Rope-Lighter/)
+Rope Lighter
 
-[Uber Lighter](https://www.instructables.com/id/Uber-Lighter/)
+Uber Lighter
 
-[Uber Lighter 2](https://www.instructables.com/id/Uber-Lighter-20/)
+Uber Lighter 2
 
 
 ## Step 1: Parts and Tools
@@ -58,21 +58,21 @@ Parts:
 
 Lighter Body
 
-1. ½” copper tube – [Bunnings](https://www.bunnings.com.au/kinetic-1-2in-3m-copper-straight-length_p4910032)
+1. ½” copper tube – Bunnings
 
-2. 3/4” copper tube – [Bunnings](https://www.bunnings.com.au/kinetic-3-4in-3m-copper-straight-length_p4910033)
+2. 3/4” copper tube – Bunnings
 
-3. 10mm brass locking nut. They don’t sell these at Bunnings any longer but you can get them from plumbing stores or [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F351611130650)
+3. 10mm brass locking nut. They don’t sell these at Bunnings any longer but you can get them from plumbing stores or eBay
 
-4. 10mm threaded plug – *Bunnings. You will be able to get this plug from any hardware store, [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F262663903398) have them but they are ridiculously expensive
+4. 10mm threaded plug – *Bunnings. You will be able to get this plug from any hardware store, eBay have them but they are ridiculously expensive
 
-5. ¾” to ½” reducer – *Bunnings , [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F252977134389)
+5. ¾” to ½” reducer – *Bunnings , eBay
 
-6. 1/2:” Cap – *Bunnings, [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F272558435797)
+6. 1/2:” Cap – *Bunnings, eBay
 
-7. O Rings – [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F152174111698) (you can get these from hardware stores but it’s better to buy in bulk and in different sizes
+7. O Rings – eBay (you can get these from hardware stores but it’s better to buy in bulk and in different sizes
 
-8. 1/8” barb with ½ male screw. [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F262650002487). This part needs to be modified and is added into the top of the lighter to hold the wick in place. See Step …for more information
+8. 1/8” barb with ½ male screw. eBay. This part needs to be modified and is added into the top of the lighter to hold the wick in place. See Step …for more information
 
 9. Sash cord. *Bunnings. eBay This is used as the wick and is 100% cotton
 
@@ -86,11 +86,11 @@ Also - I would try and get most of these parts from your local hardware store - 
 
 Sparkwheel
 
-1. Brass or copper tube. 3.18mm ID Hobby shop, RC shop, [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F232116456523). If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube
+1. Brass or copper tube. 3.18mm ID Hobby shop, RC shop, eBay. If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube
 
-2. Brass strip. 6.35mm Wide , 0.64mm Thick Hobby shop, RC shop, [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F272865627300). Don't get it too thick or you will never be able to bend it. Same goes with too thin! This is used as a bracket for the sparkwheel
+2. Brass strip. 6.35mm Wide , 0.64mm Thick Hobby shop, RC shop, eBay. Don't get it too thick or you will never be able to bend it. Same goes with too thin! This is used as a bracket for the sparkwheel
 
-3. 1 x small screw M3.5 - [eBay](https://rover.ebay.com/rover/0/0/0?mpre=https%3A%2F%2Fwww.ebay.com.au%2Fulk%2Fitm%2F252997823390). These are used to hold the spring into place. I found that the screw from a large wire terminal is the perfect size as well.
+3. 1 x small screw M3.5 - eBay. These are used to hold the spring into place. I found that the screw from a large wire terminal is the perfect size as well.
 
 4. Old Lighter (preferably the larger sized BIC Lighter)
 
@@ -186,7 +186,7 @@ Steps:
 
 2. Once you have the hex nut as round as you get it, use a belt sander to smooth and round further. You can also use a file for this as well but it just takes longer
 
-3. Next I used my homemade lathe made from a drill ([check here to leave how I did it](https://www.instructables.com/id/Simple-Metal-Lathe/)) to smooth out further the hex nut. A file does pretty quick work of this when the lighter is spinning around on the lathe.
+3. Next I used my homemade lathe made from a drill (check here to leave how I did it) to smooth out further the hex nut. A file does pretty quick work of this when the lighter is spinning around on the lathe.
 
 
 ## Step 4: Making the Top Section

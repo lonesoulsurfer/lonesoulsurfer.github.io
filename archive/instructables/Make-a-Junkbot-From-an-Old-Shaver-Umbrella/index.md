@@ -27,7 +27,7 @@ I also wanted to add some way that the junkbot could interact with the world, so
 
 This isn’t a hard build, but it will take some planning. You might not be able to find the exact parts that I used but that’s what fun about making Junkbots – trying to find just the right part to use!
 
-I have also done an ‘Ible on how to build Junkbots which you can find [here.](https://www.instructables.com/The-Art-of-Making-Junkbots/)
+I have also done an ‘Ible on how to build Junkbots which you can find here.
 
 
 ## Supplies
@@ -58,7 +58,7 @@ Electronics
 
 - PCB and Parts - see next step
 - Voltage boost converter module - Ali Express
-- Li-po or old mobile phone battery (see [this Ible](https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/) on how to reuse mobile phone batteries
+- Li-po or old mobile phone battery (see this Ible on how to reuse mobile phone batteries
 - USC C Charging module – Ali Express
 - Toggle Switch – Ali Express
 - Thin wires
@@ -78,7 +78,7 @@ TOOLS:
 
 PARTS:
 
-PCB - you will need to get one printed from a company like JLCPCB (not affiliated) I have provided all of the files you will need to get yours printed which you can find in my [GitHub page](https://github.com/lonesoulsurfer/LED_Chaser_Circuit). If you are unsure how to go about getting a board printed, then you are in luck as I have made a 'Ible on how to get it done which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/)
+PCB - you will need to get one printed from a company like JLCPCB (not affiliated) I have provided all of the files you will need to get yours printed which you can find in my GitHub page. If you are unsure how to go about getting a board printed, then you are in luck as I have made a 'Ible on how to get it done which you can find here
 
 I have also included a PDF of the parts list which you can find attached to this step
 
@@ -91,10 +91,8 @@ I have also included a PDF of the parts list which you can find attached to this
 - 10 X 1N4148 Diodes – Ali Express
 - 5 X LED’s – Ali Express
 - Voltage boost converter module - Ali Express
-- Li-po or old mobile phone battery (see [this Ible](https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/) on how to reuse mobile phone batteries
+- Li-po or old mobile phone battery (see this Ible on how to reuse mobile phone batteries
 
-
-- [LED Chaser - Parts List](pdfs/LED Chaser - Parts List.pdf)
 
 ## Step 2: Removing the Ribs and Stretchers From the Umbrella
 
@@ -111,7 +109,7 @@ The legs are made up of arms which consist of the rib, rib end (tip) and stretch
 STEPS
 
 - First cut away the thread that is holding the canopy to the tip, rib and stretcher. You want to remove all of the canopy material so you are only left with the umbrella skeleton
-- The stretcher and ribs are connected to the runner section of the umbrella.  There is usually some wire holding the parts to the runner which you can cut away.  This will allow you to remove the rib & stretcher sections.  These will form the basis of the legs
+- The stretcher and ribs are connected to the runner section of the umbrella. There is usually some wire holding the parts to the runner which you can cut away. This will allow you to remove the rib & stretcher sections. These will form the basis of the legs
 
 
 ## Step 3: Forming the Legs – Part 1
@@ -128,10 +126,10 @@ STEPS
 
 STEPS:
 
-- A leg is made from the rib and one of the stretcher sections.  You will notice that there is wire along the stretcher sections. It is used to keep the umbrella arms taut.
+- A leg is made from the rib and one of the stretcher sections. You will notice that there is wire along the stretcher sections. It is used to keep the umbrella arms taut.
 - Cut the wire and the stretcher arm away from the rest of the umbrella arm and then trim the stretcher to aprox 40 to 50mm long (see image 2)
-- To secure the wire in the stretcher arm you need to bend the stretcher around the wire.  I used a pair of plyers to do this.  Once you have moved the rib to the position that you want the leg you can then trim the wire (image 3)
-- You now have the beginnings for the first leg.  – you will be able to adjust the legs later so don’t worry too much about the angle. However, you should at least place it against the body of the shaver and make sure you are happy with the angle as you will be using this leg later as a template for the rest
+- To secure the wire in the stretcher arm you need to bend the stretcher around the wire. I used a pair of plyers to do this. Once you have moved the rib to the position that you want the leg you can then trim the wire (image 3)
+- You now have the beginnings for the first leg. – you will be able to adjust the legs later so don’t worry too much about the angle. However, you should at least place it against the body of the shaver and make sure you are happy with the angle as you will be using this leg later as a template for the rest
 
 
 ## Step 4: Forming the Legs – Part 2
@@ -157,10 +155,10 @@ STEPS:
 STEPS:
 
 - Now it is time to add a stretcher part to the leg to give it some rigidity and a better look!
-- First, remove one of the stretcher arms that is connected to the rest of the umbrella arm.  I used a drill to drill out the rivet holding it in place
-- Now grab a Dremel or small hacksaw and make a slit to the back of each end.  This will allow you to open up those sections so they fit onto the leg like you can see in image 6
+- First, remove one of the stretcher arms that is connected to the rest of the umbrella arm. I used a drill to drill out the rivet holding it in place
+- Now grab a Dremel or small hacksaw and make a slit to the back of each end. This will allow you to open up those sections so they fit onto the leg like you can see in image 6
 - Once you have the stretcher in place and your happy with the placement, you will now have to drill a small hole into the stretcher arm that makes up the top part of the leg so you can secure the other stretcher into place.
-- You can secure the stretcher into place by using some M2 screws and nuts.  Don’t do the nut up too tight around the rib for the moment. You can make adjustments later if you need to to the angle of the legs and then tighten them up when he is standing as you want him to.
+- You can secure the stretcher into place by using some M2 screws and nuts. Don’t do the nut up too tight around the rib for the moment. You can make adjustments later if you need to to the angle of the legs and then tighten them up when he is standing as you want him to.
 Do this another 3 times!
 
 
@@ -205,11 +203,11 @@ You need a way to hold the legs in place. For this I used some audio jack connec
 
 STEPS:
 
-- The first thing to do is to position the jack connector against the shaver to determine the best positions to drill the 4 holes for the legs.  I added mine to the top section of the shaver as this ensured that the metal chassis that fits into the bottom would be in the way.
-- Drill the holes and then attached the audio connectors.  You an also now to try and fit the legs into the audio connector holes.  You may need to squish then ends of the legs a little more with some plyers to ensure that they  fit right.
+- The first thing to do is to position the jack connector against the shaver to determine the best positions to drill the 4 holes for the legs. I added mine to the top section of the shaver as this ensured that the metal chassis that fits into the bottom would be in the way.
+- Drill the holes and then attached the audio connectors. You an also now to try and fit the legs into the audio connector holes. You may need to squish then ends of the legs a little more with some plyers to ensure that they fit right.
 - To be able to re-charge the battery, you’ll need to be able co connect it to a USC C connector. I decided to attach mine to the switch section on the shaver.
 - Place the USB C module against the shaver and mark where you need to drill the holes.
-- Use a M2 drill bit to drill a couple holes and secure the module to the side of the shaver using some screws and nuts.  We’ll connect it later to the battery.
+- Use a M2 drill bit to drill a couple holes and secure the module to the side of the shaver using some screws and nuts. We’ll connect it later to the battery.
 - Once done, it's time to stick the legs into place and see what he looks like!
 
 
@@ -225,8 +223,8 @@ Now it’s time to put the legs into the body and see how everything looks.
 
 STEPS:
 
-- Pick up a leg and push it into the audio connector hole.  You may need to squash the stretcher arm metal a little more in order for it to fit.  You want it a good, tight fit, that way you won’t have to use any glue and will be able to move and position the legs whenever you like
-- Do the same for the next 3 legs and stand your Junkbot up.  If he is little a little wobbly on his feet, then move the legs around until he is standing with all 4 feet on the ground.  You can also make the stand of each leg shorter or longer.
+- Pick up a leg and push it into the audio connector hole. You may need to squash the stretcher arm metal a little more in order for it to fit. You want it a good, tight fit, that way you won’t have to use any glue and will be able to move and position the legs whenever you like
+- Do the same for the next 3 legs and stand your Junkbot up. If he is little a little wobbly on his feet, then move the legs around until he is standing with all 4 feet on the ground. You can also make the stand of each leg shorter or longer.
 - Once you have him positioned in the way that you like, tighten up the screws that are holding the stretcher arm around the rib which will lock the legs into place
 
 
@@ -267,11 +265,11 @@ STEPS:
 
 - As always, start with the lowest profile components - in this case it's the resistors.
 - you can now move onto the diodes and solder these into place
-- Next move onto the IC's. I decided not to add IC sockets as I wanted to keep the profile as low as possible.  There's always a small risk that the IC is faulty but if it is you can always de-solder it.
-- Now you can solder the JST connector in place if you are using one.  It isn't necessary as you can just solder wires directly to the PCB
-- The capacitor can now be soldered into place.  As mentioned above, you should lie the cap down to help save room.
-- For the LDR, as this will be placed so it can detect light, just add some thin wire to the solder points on the PCB.  You can connect the LDR up later
-- The last thing is to solder into place the LED's.  Place the first LED into place and bend 90 degrees.  Make sure that it is orientated right and solder into place.  Do the same for the rest of the LED's
+- Next move onto the IC's. I decided not to add IC sockets as I wanted to keep the profile as low as possible. There's always a small risk that the IC is faulty but if it is you can always de-solder it.
+- Now you can solder the JST connector in place if you are using one. It isn't necessary as you can just solder wires directly to the PCB
+- The capacitor can now be soldered into place. As mentioned above, you should lie the cap down to help save room.
+- For the LDR, as this will be placed so it can detect light, just add some thin wire to the solder points on the PCB. You can connect the LDR up later
+- The last thing is to solder into place the LED's. Place the first LED into place and bend 90 degrees. Make sure that it is orientated right and solder into place. Do the same for the rest of the LED's
 - Best to also test your PCB as well once finished to make sure everything is working.
 
 
@@ -329,17 +327,13 @@ STEPS:
 - Use the wiring diagram I made in step 10 to help you work out how to wire everything up.
 - Connect the positive from the output of the power booster module to the switch and then connect the other leg of the switch to positive on the PCB
 - connect ground from the power booster module to ground on the PCB
-- Drill a couple small holes in the top of the shaver for the legs of the LDR to go through.  solder the legs to the LDR wire on the PCB
-- You'll need to work out the best way to add the PCB into the Junkbot so the shaver closes up.  In my initial attempt, I found that the PCB sat too high so had to add a small wedge of wood under the PCB and secure it inside the shaver at an angle.  As long as the LED's are in the middle of the shaver head, then it doesn't really matter too much how the PCB is angled.
+- Drill a couple small holes in the top of the shaver for the legs of the LDR to go through. solder the legs to the LDR wire on the PCB
+- You'll need to work out the best way to add the PCB into the Junkbot so the shaver closes up. In my initial attempt, I found that the PCB sat too high so had to add a small wedge of wood under the PCB and secure it inside the shaver at an angle. As long as the LED's are in the middle of the shaver head, then it doesn't really matter too much how the PCB is angled.
 - I used some glue to secure this into place
 - Now you can carefully place the top back onto the shaver and secure to the bottom section with screws.
 - Add the shaver head back into place
 I think that's everything! how turn on your Junkbot and watch him scan the room for potential enemies to neutralize! As it gets darker, the LED's will slow down but if it gets brighter, they'll speed up. Pretty cool!
 
-
-## Downloads
-
-- [LED Chaser - Parts List](pdfs/LED Chaser - Parts List.pdf)
 
 ---
 *71 images archived*

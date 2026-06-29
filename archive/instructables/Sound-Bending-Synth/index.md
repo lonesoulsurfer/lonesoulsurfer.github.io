@@ -19,7 +19,7 @@ The basis of this synth is a circuit bend sound recording module. You can contro
 
 I stuck it all in a vintage tuner analyser which I found at the local junk shop.
 
-Hackaday were also nice enough to review this 'ible - check it out [here](https://hackaday.com/2020/02/04/nifty-soundbender-built-from-ebay-modules/)
+Hackaday were also nice enough to review this 'ible - check it out here
 
 Enjoy
 
@@ -40,25 +40,25 @@ Parts
 
 Modules
 
-Sound Module – [eBay](https://www.ebay.com.au/itm/ISD1820-Sound-Recorder-Voice-Recording-Module-With-Micophone-Loudspeaker-New/191993549376?hash=item2cb3b51240:m:m4nwD-DzuPQ4Ogejrvm8M5g:rk:1:pf:0)
+Sound Module – eBay
 
-Reverb Module – [eBay](https://www.ebay.com.au/itm/PT2399-Microphone-Reverb-Plate-Reverberation-Board-No-Preamplifier-Function/232453344559?hash=item361f4c8d2f:g:D-MAAOSwcgZZlvbt:rk:1:pf:0)
+Reverb Module – eBay
 
-Amp Module– [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=DC+1.8-12V+0.1+W-5+W+TDA2822M+&_sacat=0)
+Amp Module– eBay
 
 Switches
 
-Momentary on/off X 2 – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xmomentary+switch.TRS0&_nkw=momentary+switch&_sacat=0)
+Momentary on/off X 2 – eBay
 
-On/off X 1 – [eBay](https://www.ebay.com.au/itm/AC-250V-2A-120V-5A-ON-ON-2-Position-SPDT-Mini-Micro-Toggle-Switch-Red-C1Y9/183032785348?epid=1394258673&hash=item2a9d9aa9c4:rk:1:pf:0)
+On/off X 1 – eBay
 
-On/off X 1 (3 solder points) - [eBay](https://www.ebay.com.au/itm/2-X-AC120V-5A-250V-2A-3PDT-9-Pin-ON-ON-2-Positions-Latching-Toggle-Switch/122624737551?hash=item1c8d01010f:rk:1:pf:0)
+On/off X 1 (3 solder points) - eBay
 
 Potentiometers
 
-50K X 1 – [eBay](https://www.ebay.com.au/itm/2PCS-50K-B50K-Ohm-Linear-3-Terminal-Taper-Rotary-Potentiometer-Panel-Pot/232389701062?hash=item361b816dc6:g:FxIAAOSwXXxZU3sL:rk:9:pf:0)
+50K X 1 – eBay
 
-500K X 1 – [eBay](https://www.ebay.com.au/itm/2-5-10PCS-B500K-50K-1K-Ohm-3-Pins-Shaft-Linear-Rotary-Taper-Potentiometer-WH148/263838249404?hash=item3d6dfc31bc:m:mgx7CZa9H2tiDe7pctMa_2Q:rk:10:pf:0)
+500K X 1 – eBay
 
 Batteries
 
@@ -397,7 +397,7 @@ The other one is connected to the solder points on the mic. If you plug your pho
 
 You can also add more controls if you want to.
 
-Check out my [circuit bent sound module ible here](https://www.instructables.com/id/Lo-Fi-Voice-Sampler-Circuit-Bending-/). It has a few more add-ons that you can include to the sound module
+Check out my circuit bent sound module ible here. It has a few more add-ons that you can include to the sound module
 
 I have included an image below with the synth labelled so you know what each pot and button does.
 

@@ -38,13 +38,13 @@ This really isn’t a hard project and you only need some basic tools to make. A
 
 Parts:
 
-1. Brass Hex Nut 15mm (1/2") – [eBay](http://www.ebay.com.au/itm/1-2BSP-Female-Thread-Brass-Pipe-Fitting-Hex-Lock-Nut-5pcs-/301830276309?hash=item46467c84d5:m:m5a_Ljmg98gEEUMSDqeJp6w) or hardware store (the size I used)
+1. Brass Hex Nut 15mm (1/2") – eBay or hardware store (the size I used)
 
-Brass Hex Nut 9.5mm (3/8") - [eBay](http://www.ebay.com.au/itm/3-8BSP-Female-Thread-Brass-Pipe-Fitting-Hex-Lock-Nut-5pcs-/252218782589?hash=item3ab969337d:m:meG1_q_nGd0BxOoxlZd9Kmw) smaller sized ring
+Brass Hex Nut 9.5mm (3/8") - eBay smaller sized ring
 
 You can get different sizes of the nut on eBay - just type in "Female Thread Brass Pipe Fitting Hex Lock Nut Brass"
 
-2. Small brass nut (optional). You can either just leave the ring as is or attach a small brass nut on for extra bling. – [[eBay](http://www.ebay.com.au/itm/SOLID-BRASS-HEX-DOME-NUTS-ACORN-CAP-NUTS-FOR-BOLTS-SCREWS-M3-4-5-6-8-10-12-20-/222132399860?var=&hash=item33b81f6ef4:m:mKaga9Si1qUKIh1gsSUBoeg)](http://www.ebay.com.au/itm/SOLID-BRASS-FULL-HEX-NUTS-FOR-BOLTS-SCREWS-M2-2-5-3-4-5-6-8-10-12-16-20-24-/322125937595?var=&hash=item4b0033bbbb:m:mOkwLWrFp5cMhhjPo1Nz42Q). You could also use a small dome nut which would also look pretty cool. You can buy them on eBay
+2. Small brass nut (optional). You can either just leave the ring as is or attach a small brass nut on for extra bling. – eBay. You could also use a small dome nut which would also look pretty cool. You can buy them on eBay
 
 Tools:
 

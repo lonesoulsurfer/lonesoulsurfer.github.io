@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,116 +127,52 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Pocket Drum Machine</span>
 </nav>
-<h1>Pocket Drum Machine</h1><div class="source"><a href="https://www.instructables.com/Pocket-Drum-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I'm sure everyone at some stage has received one of those birthday cards that sing and play music.</p>
-<p>Recently the guys who make the cards have really stepped-up their game.</p>
-<p>The technology has come a long way and now you can get cards that are interactive.</p>
-<p>I recently had a birthday and got a Yoda card where you had to blow out candles to become a Jedi night.</p>
-<p>Another one I got had a picture of a drum set where you could actually play the drums!</p>
-<p>I couldn't just throw these cards away, plus they have some cool electronics in them, so I decided to make use of the electronics.</p>
-<p>This Instructable is my version of a portable pocket drum machine.</p>
-<p>Really all I have done is removed the electronics from the card and stuck them in a tin.</p>
-<p>There is some re-soldering to do which is a little fiddly, but it pretty simple hack.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
+<h1>Pocket Drum Machine</h1><div class="source"><a href="https://www.instructables.com/Pocket-Drum-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I'm sure everyone at some stage has received one of those birthday cards that sing and play music. Recently the guys who make the cards have really stepped-up their game. The technology has come a long way and now you can get cards that are interactive. I recently had a birthday and got a Yoda card where you had to blow out candles to become a Jedi night. Another one I got had a picture of a drum set where you could actually play the drums!</p>
+<p>I couldn't just throw these cards away, plus they have some cool electronics in them, so I decided to make use of the electronics. This Instructable is my version of a portable pocket drum machine. Really all I have done is removed the electronics from the card and stuck them in a tin. There is some re-soldering to do which is a little fiddly, but it pretty simple hack.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Drum Birthday Card - <a href="https://www.dayspring.com/wowbirthdayadifferentdrummer2interactivesongcards">buy here</a> the good thing here is you can get 2 for $14.00. You can also get them from Kmart for $10 if you are in Australia</li>
-</ol>
-<ol>
+<li>Drum Birthday Card - buy here the good thing here is you can get 2 for $14.00. You can also get them from Kmart for $10 if you are in Australia</li>
 <li>Small Tin. I used a tobacco tin.</li>
-</ol>
-<ol>
 <li>Toggle Switch - eBay</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Drill</li>
-</ol>
-<ol>
 <li>Soldering Iron</li>
-</ol>
-<ol>
 <li>Double sided tape (good quality)</li>
-</ol>
-<ol>
 <li>Pliers</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Getting the Electronics Out the Card</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Getting the Electronics Out the Card image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Getting the Electronics Out the Card image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Getting the Electronics Out the Card image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Getting the Electronics Out the Card image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Getting the Electronics Out the Card image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Getting the Electronics Out the Card image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>This is a pretty easy step. First rip open the card to get at the electronics.</li>
-</ol>
-<ol>
 <li>Once you have revealed the electronics, carefully pull them off the card. They are held in place with double sided tape. You can remove the double sided tape by rubbing it until it comes off.</li>
-</ol>
-<ol>
 <li>Once you have set the electronics free, put them to one side and also grab some of the double sided foam which is also on the card. You'll be using this later to mount the speaker</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: The Tin - Making the Speaker Holes</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Tin - Making the Speaker Holes image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Tin - Making the Speaker Holes image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: The Tin - Making the Speaker Holes image 3" loading="lazy"></div><p>Initially, I was just going to put the speaker on top of the tin. After a little bit of experimenting though I found that I could put it inside the tin and still get a good sound.</p>
 <p>Steps:</p>
 <ol>
 <li>Decide how you want to set-up the pads. Make sure that you leave room for the speaker holes.</li>
-</ol>
-<ol>
 <li>Drill 5 holes in the tin.</li>
-</ol>
-<ol>
 <li>It's best not to have the speaker directly on the tin as you don't get the best sound. To mount the speaker, I used a couple of pieces of the foam tape from the card. This ensured the speaker didn't touch the inside of the tin.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Switch image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Switch image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Adding the Switch image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Adding the Switch image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Adding the Switch image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Adding the Switch image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Adding the Switch image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Adding the Switch image 10" loading="lazy"><img src="images/step04_11.jpg" alt="Step 4: Adding the Switch image 11" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>The circuit board has a switch on it already but you need to remove this and add a toggle. First cut off the switch arm on the circuit board with a pair of pliers.</li>
-</ol>
-<ol>
 <li>Next add some solder to the 2 solder points on the circuit board as shown below.</li>
-</ol>
-<ol>
 <li>Solder a couple wires to the solder points.</li>
-</ol>
-<ol>
 <li>Drill a hole into the side of the tin of the switch.</li>
 </ol>
 <p>side note: I added a hinge to this tin sometime ago just to see if I could do it. It's not necessary however to have a hinge on your tin.</p>
 <ol>
 <li>Add the switch and secure in place.</li>
-</ol>
-<ol>
 <li>lastly, solder the ends of the wire to the switch.</li>
 </ol>
-<p>Test to make sure the drums come on.</p><h2><span class="step-num">STEP 5</span>Step 5: The Tin - Attaching the Drum Pads</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 8" loading="lazy"><img src="images/step05_09.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 9" loading="lazy"><img src="images/step05_10.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 10" loading="lazy"></div><p>This is probably the most difficult part of the project.</p>
-<p>I found that the soldering on the pads was quite weak and that the wires on some of them would just come away.</p>
-<p>This can be easily fixed by adding some more solder.</p>
-<p>Make sure you fix them straight away as you don't want to get them mixed up.</p>
+<p>Test to make sure the drums come on.</p><h2><span class="step-num">STEP 5</span>Step 5: The Tin - Attaching the Drum Pads</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 8" loading="lazy"><img src="images/step05_09.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 9" loading="lazy"><img src="images/step05_10.jpg" alt="Step 5: The Tin - Attaching the Drum Pads image 10" loading="lazy"></div><p>This is probably the most difficult part of the project. I found that the soldering on the pads was quite weak and that the wires on some of them would just come away. This can be easily fixed by adding some more solder. Make sure you fix them straight away as you don't want to get them mixed up.</p>
 <p>Steps:</p>
 <ol>
 <li>Add some double sided tape to the circuit board and stick to the bottom of the tin.</li>
-</ol>
-<ol>
 <li>De-solder the wires from one of the drum pads. Take a photo first though so you know how to re-attach them.</li>
-</ol>
-<ol>
 <li>Add some double sided tape to the back of the drum pad.</li>
-</ol>
-<ol>
 <li>Attach the pad to the top of the tin.</li>
-</ol>
-<ol>
 <li>Drill small holes (however many are needed for the wires) next to the solder pads on the drum pad.</li>
-</ol>
-<ol>
 <li>Thread the wires through the hole and re-solder onto the pad.</li>
-</ol>
-<ol>
 <li>Repeat for all of the pads</li>
 </ol>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

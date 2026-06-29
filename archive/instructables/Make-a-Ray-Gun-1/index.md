@@ -25,7 +25,7 @@ The main section of my ray gun is made from a compressed air blow gun. As soon a
 
 In this ible’ I’ll go through what parts I used to make mine and show you how I built it. Each ray gun will be unique as the parts you find will define what your ray gun looks like. Hopefully though my build will give you a few ideas and inspire you to make your own.
 
-Also, if you want some more inspiration - check out [this Pinterest page](https://www.pinterest.com.au/marcusdunn/ray-guns/)
+Also, if you want some more inspiration - check out this Pinterest page
 
 
 ## Step 1: Parts and Tools

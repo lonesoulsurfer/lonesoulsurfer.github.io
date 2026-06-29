@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,7 +127,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Super Loud Horn for Your Bike</span>
 </nav>
-<h1>Super Loud Horn for Your Bike</h1><div class="source"><a href="https://www.instructables.com/Super-Loud-Horn-for-Your-Bike/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"></div><ul>
+<h1>Super Loud Horn for Your Bike</h1><div class="source"><a href="https://www.instructables.com/Super-Loud-Horn-for-Your-Bike/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>I wanted to come-up with the loudest horn possible for by motoried push bike without it taking up too much room and also have the batteries rechargable.</p>
+<p>The following is the end result.</p>
+<p>With this horn I promoise you'll never be worried about a car getting too close again.  Just one blast is enough to let those pesky car drivers know that there's a bike close by so beware!</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"></div><ul>
 <li>12 V battery.  I used a small Century PS1208 battery</li>
 <li>Motorbike Horn - you can get these on email cheaply</li>
 <li>SPST switch</li>
@@ -189,21 +156,5 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Attach all of the wires from the switch to the horn and battery (see schematic - step 3)</li>
 <li>Now block your ears and push the switch.</li>
 </ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

@@ -17,9 +17,9 @@ Source: https://www.instructables.com/Proton-Little-Synths-With-BIG-Sounds-2/
 
 ![Intro 5](images/intro_05.jpg)
 
-This is the 2nd in a series of little synths that I'll be publishing over the next few builds. Like my [Elements synth](https://www.instructables.com/Elements-Little-Synths-With-Big-Sounds-1/), I've kept everything as simple as possible on this build so anyone with a soldering iron and basic soldering skills can make it. I've done away with a case and fancy power supplies to keep the build simple.
+This is the 2nd in a series of little synths that I'll be publishing over the next few builds. Like my Elements synth, I've kept everything as simple as possible on this build so anyone with a soldering iron and basic soldering skills can make it. I've done away with a case and fancy power supplies to keep the build simple.
 
-Props to [Synther Jack](https://syntherjack.net/totoro-1-ic-simple-synth/) who designed this amazing little synth. All I've done is redesigned the PCB and created a front panel. I've also done a couple of mods and have included these on this build. Please check out Synther Jacks write up if you want a thorough run through on how the synth works.
+Props to Synther Jack who designed this amazing little synth. All I've done is redesigned the PCB and created a front panel. I've also done a couple of mods and have included these on this build. Please check out Synther Jacks write up if you want a thorough run through on how the synth works.
 
 The synth runs off 1 IC which is an incredible feat when you consider the amazing sounds this beast can produce. The other amazing thing about this synth is it only needs 2 X AA batteries to power it!
 
@@ -50,23 +50,21 @@ Check out the vid to hear it in action
 
 Instead of adding a long list of parts to this step - I decided to instead include the parts list as a PDF file which is attached. The file includes all of the components and auxiliary parts that you will need to put the circuit board together. I have included links and images of each part so you can easily find/buy/identify them. I think it will be handy also as a PDF as you can print it off, visit your local electronics store and tick them off as you get them.
 
-The parts list is also available on my [GitHub Page](https://github.com/lonesoulsurfer/Proton_-_Little_Synths_With_BIG_Sounds_No2) in Excel format
+The parts list is also available on my GitHub Page in Excel format
 
 The below parts are the rest that you will need to build the synth.
 
 PARTS (Other than circuit components):
 
 - 2 X AA Batteries
-- Nylon Hex Stand offs Assorted 2mm - [Ali Express](https://www.aliexpress.com/w/wholesale-nylon-hex-standoff.html?catId=0&initiative_id=SB_20230913185757&SearchText=nylon+hex+standoff&spm=a2g0o.detail.1000002.0). These will be used to connect the front panel to the PCB
+- Nylon Hex Stand offs Assorted 2mm - Ali Express. These will be used to connect the front panel to the PCB
 - A4 Clear Acrylic (3mm) - eBay This is for the base. It isn't necessary but will protect the electronics and finishes of the build nicely.
-- Potentiometer Knobs (9.5mm) X7 NOTE: These are quite small knobs which suit the PCB. Make sure you don't get the 'D' type as they won't fit onto the potentiometers- [Ali Express](https://www.aliexpress.com/item/1005002883283709.html?spm=a2g0o.productlist.main.1.25c6ayFKayFKYF&algo_pvid=d22c035f-7b4d-410b-8eca-56a3c118b48f&algo_exp_id=d22c035f-7b4d-410b-8eca-56a3c118b48f-0&pdp_npi=4%40dis%21AUD%211.26%211.17%21%21%210.80%21%21%402101e9a216970929907792349e174e%2112000022606692813%21sea%21AU%21129764711%21&curPageLogUid=cTYyVCt9jrOX)
-- Button Caps for the 6 pin switches X 5 - [Ali Express](https://www.aliexpress.com/item/1005004204951839.html?spm=a2g0o.productlist.main.43.224fiDdHiDdH9U&algo_pvid=28163ab0-5cd9-437d-b19f-8ea75006c66f&aem_p4p_detail=2023101123452510817195964665640003406238&algo_exp_id=28163ab0-5cd9-437d-b19f-8ea75006c66f-21&pdp_npi=4%40dis%21AUD%210.19%210.17%21%21%210.12%21%21%402101c5bf16970931258947397e9438%2112000028371147166%21sea%21AU%21129764711%21&curPageLogUid=fEVjCqSDTCBz&search_p4p_id=2023101123452510817195964665640003406238_22)
+- Potentiometer Knobs (9.5mm) X7 NOTE: These are quite small knobs which suit the PCB. Make sure you don't get the 'D' type as they won't fit onto the potentiometers- Ali Express
+- Button Caps for the 6 pin switches X 5 - Ali Express
 That's it! You don't have to worry bout building a case because it doesn't have one :)
 
-The rest of the parts can be found in the PDF attached below or on my [GitHub Page](https://github.com/lonesoulsurfer/Proton_-_Little_Synths_With_BIG_Sounds_No2)
+The rest of the parts can be found in the PDF attached below or on my GitHub Page
 
-
-- [Proton - Part List - PDF](pdfs/Proton - Part List - PDF.pdf)
 
 ## Step 1: Front Panel, Schematic & Eagle Files
 
@@ -78,9 +76,9 @@ The rest of the parts can be found in the PDF attached below or on my [GitHub Pa
 
 ![Step 1: Front Panel, Schematic & Eagle Files image 4](images/step02_04.png)
 
-Firstly, all of the files that you need can be found in my [GitHub Page](https://github.com/lonesoulsurfer/Proton_-_Little_Synths_With_BIG_Sounds_No2)
+Firstly, all of the files that you need can be found in my GitHub Page
 
-To get your own PCB and front panel printed, you will need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GVdFKX-Hevhd6kw8GeZu3nYS_I10AJjhGupCabeBPJ_yEL6WvauxcaAtqKEALw_wcB) (Not affiliated) who will print the boards for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+To get your own PCB and front panel printed, you will need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find here.
 
 NOTE: the ,manufacture will include a order number on both the PCB and front panel. It doesn't really matter about including it on the PCB but you don't want to do what I did and have it included on the front panel! You can 'specify a location' once the Gerber files have been loaded so hit this and the manufacturer will add it to the back of the front panel. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.
 
@@ -88,15 +86,12 @@ Front Panel
 
 The front panel is actually just a PCB without the components! I use the slik screen on the PCB for printing the design and then include drill holes for the components. All this information is in the Gerber files for the front panel which the manufacturer uses to print the board.
 
-If you are interested in creating your own front panels then I highly recommend watching this [YouTube vid](https://www.youtube.com/watch?v=UOQezMJ560o&t=4321s). I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.
+If you are interested in creating your own front panels then I highly recommend watching this YouTube vid. I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.
 
-In my [GitHub Page](https://github.com/lonesoulsurfer/Proton_-_Little_Synths_With_BIG_Sounds_No2) you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
+In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
 
 Parts list for the circuit board can be found in the supplies step above and I've also provided the list in excel which can also be found (surprise) in my Google Drive.
 
-
-- [Creating Front Panels](pdfs/Creating Front Panels.pdf)
-- [Proton - Schematic](pdfs/Proton - Schematic.pdf)
 
 ## Step 2: Adding Components to the PCB - Reverse Sise
 
@@ -236,12 +231,6 @@ I think I'm going to leave it there. You can mess about with different combinati
 
 If you do decide to make this then good luck with the build and let me know if you have any questions.
 
-
-## Downloads
-
-- [Proton - Part List - PDF](pdfs/Proton - Part List - PDF.pdf)
-- [Creating Front Panels](pdfs/Creating Front Panels.pdf)
-- [Proton - Schematic](pdfs/Proton - Schematic.pdf)
 
 ---
 *48 images archived*

@@ -40,12 +40,12 @@ You don't need very many parts to build your own Martian
 
 PARTS:
 
-- Vacuum Tube - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=vacuum+tube&_sacat=0)
-- Copper or brass Rod - K&S METAL #8162 1/16′ (1.59mm) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26s+8162+1%2F16%E2%80%B2&_sacat=0&LH_TitleDesc=0&_odkw=k%26s+metal+8162+1%2F16%E2%80%B2&_osacat=0)
-- Copper or brass Rod - K&S METAL #8161 3/64′ (1.19mm) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=K%26S+8161+3%2F64%E2%80%B2&_sacat=0&LH_TitleDesc=0&_odkw=k%26s+8162+1%2F16%E2%80%B2&_osacat=0)
-- Copper or brass tube - K&S METAL #8118 3/32′ (3.38mm) OD - [eBay.](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=K%26S+8118+3%2F32%E2%80%B2+&_sacat=0&LH_TitleDesc=0&_odkw=K%26S+8161+3%2F64%E2%80%B2&_osacat=0)
+- Vacuum Tube - eBay
+- Copper or brass Rod - K&S METAL #8162 1/16′ (1.59mm) - eBay
+- Copper or brass Rod - K&S METAL #8161 3/64′ (1.19mm) - eBay
+- Copper or brass tube - K&S METAL #8118 3/32′ (3.38mm) OD - eBay.
 - NOTE - The rod needs to be able to fit inside the tube. You can get the rod and tube from hobby shops as well
-- For the eye I used a 2.5mm audio jack input socket ([eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=2.5mm+audio+socket+pcb&_sacat=0&LH_TitleDesc=0&_odkw=2.5mm+audio+socket&_osacat=0)) and a small copper surround. I have no idea what the copper surround was from! You could use a piece of copper tube in it's place
+- For the eye I used a 2.5mm audio jack input socket (eBay) and a small copper surround. I have no idea what the copper surround was from! You could use a piece of copper tube in it's place
 TOOLS
 
 - Solder iron

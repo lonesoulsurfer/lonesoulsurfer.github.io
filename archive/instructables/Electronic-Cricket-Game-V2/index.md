@@ -19,11 +19,11 @@ Build your own electronic, handheld cricket game! Cricket Test matches are known
 
 The electronic game itself is pretty straight forward, score as many runs as possible before you go out! I usually give myself 3 outs before I call game over. There are a few cricket terms added to the board which will hopefully help anyone who is keen to learn a little more about the game. I've included a bit of a glossary in the last step and also instructions on how to play the game.
 
-The board I designed in Eagle and all of the components are soldered directly to the board so no need for any messy wires. [Version one](https://www.instructables.com/Electronic-Cricket-Game/) was all done on prototype board and was a real pain. There were wires everywhere and it was glitchy. This new version was a breeze to put together and works perfectly.
+The board I designed in Eagle and all of the components are soldered directly to the board so no need for any messy wires. Version one was all done on prototype board and was a real pain. There were wires everywhere and it was glitchy. This new version was a breeze to put together and works perfectly.
 
 If you are new to soldering then this project would be great to hone your soldering skills. I have provided all of the gerber files (the files you need to get your own board printed) and have provided a step below on how to get boards printed.
 
-[Hackster.io](https://www.hackster.io/) did a review on this project which you can find [here](https://www.hackster.io/news/cricket-game-on-a-pcb-4f52304e8e6d)
+Hackster.io did a review on this project which you can find here
 
 
 ## Supplies
@@ -42,34 +42,34 @@ If you are new to soldering then this project would be great to hone your solder
 
 ![Supplies image 7](images/step01_07.jpg)
 
-I have put together a parts list below. This list can also be found as a spreadsheet in my [Google Drive](https://drive.google.com/drive/folders/1Vk5rnJPDEPiJuTB6_2kFPIFAsm2iB6-t?usp=sharing). I have also added the gerber files, schematic and board in there as well. More on those in the next steps.
+I have put together a parts list below. This list can also be found as a spreadsheet in my Google Drive. I have also added the gerber files, schematic and board in there as well. More on those in the next steps.
 
 PARTS:
 
 - PCB - see the next step on how to get your own printed
 - 9V battery
-- 9V battery holder (one that is made for PCB connection) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=9v+battery+holder+pcb&_sacat=0)
-- Tactile momentary switches X 3 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=tactile+switch&_sacat=0&LH_TitleDesc=0&_odkw=9v+battery+holder+pcb&_osacat=0)
-- SPDT Sliding switches X 2 - [eBay](https://www.ebay.com.au/itm/313899904350?hash=item4915e46d5e:g:jrcAAOSwZ1BXegEr)
+- 9V battery holder (one that is made for PCB connection) - eBay
+- Tactile momentary switches X 3 - eBay
+- SPDT Sliding switches X 2 - eBay
 - Capacitors
-- 1uf - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=1uf+capacitor+electrolytic&_sacat=0&LH_TitleDesc=0&_odkw=1uf+capacitor&_osacat=0)
-- 3.3uf- [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=3.3uf+capacitor+electrolytic&_sacat=0&LH_TitleDesc=0&_odkw=1uf+capacitor+electrolytic&_osacat=0)
-- 10uf - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=10uf+capacitor+electrolytic&_sacat=0&LH_TitleDesc=0&_odkw=3.3uf+capacitor+electrolytic&_osacat=0)
-- 1nf X 2 - [eBay](https://www.ebay.com.au/itm/133802532498?hash=item1f27409e92:g:UzoAAOSwuVZbSHtl&amdata=enc%3AAQAHAAAA4Hw3fx6WSGcRbWOetIEjghv9Hn4tQCF10YcXoAJYDpBE0XizSTmCdarSnnoOYzna%2BDry1xeQTFYn8b6BtJCalB1asz5%2B54jyEwnm3i5XXH1%2BB4xxhSRA%2B6%2B%2FDspqL1g0i%2BQpFu9bFXq7FhIuDoRYpTGSLBsPZ7OOMJEEiyaVOUarzMnTZxJnBryHEbGcbNVOkhMmnA1sMU289JF6gkpvelhlbKM6YD0NGlsDw07hA97Eq1ihb6Koy%2Bn2YrNZ%2BzhD0hnkP5Fuz4ovMbt2Ynsb%2F9PwyugLMS7ZgQ9PTnXnE5zU%7Ctkp%3ABFBM1u6ur5dg)
-- Resistors - Buy these in assorted lots - it's cheaper and you get a large variety - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=resistors+assorted+metal+film&_sacat=0&LH_TitleDesc=0&_odkw=resistors+assorted&_osacat=0&_sop=15)
+- 1uf - eBay
+- 3.3uf- eBay
+- 10uf - eBay
+- 1nf X 2 - eBay
+- Resistors - Buy these in assorted lots - it's cheaper and you get a large variety - eBay
 - 12K x 2
 - 20K
 - 10k X 2
-- Trimmer Pot 5K (3362P) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=5k+trimmer+pot+3362&_sacat=0&LH_TitleDesc=0&_odkw=5k+trimmer+pot&_osacat=0&_sop=15)
-- 7 Segment display (common cathode) X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=7+segment+display+anode&_sacat=0&_sop=15)
+- Trimmer Pot 5K (3362P) - eBay
+- 7 Segment display (common cathode) X 2 - eBay
 - IC's
-- 555 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=555+timer&_sacat=0&LH_TitleDesc=0&_odkw=5k+trimmer+pot+3362&_osacat=0&_sop=15)
-- 4017 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=4017+ic&_sacat=0&LH_TitleDesc=0&_odkw=555+timer&_osacat=0&_sop=15)
-- 4026 X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=4026+ic&_sacat=0&LH_TitleDesc=0&_odkw=4017+ic&_osacat=0&_sop=15)
+- 555 - eBay
+- 4017 - eBay
+- 4026 X 2 - eBay
 - IC Sockets
-- 8 Pin X 1 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=8+pin+socket+ic&_sacat=0&LH_TitleDesc=0&_odkw=8+pin+socket&_osacat=0&_sop=15)
-- 16 Pin X 3 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=16pin+ic+socket+adaptor+solder+type&_sacat=0&LH_TitleDesc=0&_odkw=20Pcs+16pin+IC+socket+adaptor+solder+type&_osacat=0)
-- 3mm LED's X 8 (I used 6 yellow and 2 red) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=3mm+led+assorted+colours&_sacat=0&LH_TitleDesc=0&_odkw=16pin+ic+socket+adaptor+solder+type&_osacat=0)
+- 8 Pin X 1 - eBay
+- 16 Pin X 3 - eBay
+- 3mm LED's X 8 (I used 6 yellow and 2 red) - eBay
 
 
 ## Step 1: Getting the PCB Printed
@@ -80,13 +80,13 @@ PARTS:
 
 ![Step 1: Getting the PCB Printed image 3](images/step02_03.jpg)
 
-The first thing you will need to do is to get the PCB printed. It's very easy to get the board printed up and cheap as well. I like to use [JPLPCB](https://jlcpcb.com/VGR?gclid=Cj0KCQjwi7yCBhDJARIsAMWFScPu3GVQVpxICk3Xsipypc21FhGGB9Nf4arnqmPwZPLnsD9a2xgs_2MaAijiEALw_wcB) (not affiliated at all) who do a good job at printing the boards. You could also use [PCB Way](https://www.pcbway.com/) or [Osh Park](https://oshpark.com/) who also provide a quality product. I have decided to include this step as it can be a little daunting if it's the the first time organising a board to be printed.
+The first thing you will need to do is to get the PCB printed. It's very easy to get the board printed up and cheap as well. I like to use JPLPCB (not affiliated at all) who do a good job at printing the boards. You could also use PCB Way or Osh Park who also provide a quality product. I have decided to include this step as it can be a little daunting if it's the the first time organising a board to be printed.
 
 STEPS:
 
-1. The first thing you will need to do is to save the zipped gerber file in my [GitHub Page](https://github.com/lonesoulsurfer/Electronic_Cricket_Game_V2) Save the file called: Electronic Cricket Game -Gerber file to your computer
+1. The first thing you will need to do is to save the zipped gerber file in my GitHub Page Save the file called: Electronic Cricket Game -Gerber file to your computer
 
-2. Next, go to the [JPLPCB website](https://jlcpcb.com/VGR?gclid=Cj0KCQjwi7yCBhDJARIsAMWFScPu3GVQVpxICk3Xsipypc21FhGGB9Nf4arnqmPwZPLnsD9a2xgs_2MaAijiEALw_wcB) and click on the 'quote now' button
+2. Next, go to the JPLPCB website and click on the 'quote now' button
 
 3. Add the saved gerber file (see the first image provided)
 
@@ -144,11 +144,11 @@ The board I designed is 2 sided. One side has all of the electrical components a
 
 STEPS
 
-- Fist, start with the resistors.  There aren't many to add so will be easy to do
-- Next, I like to add the IC sockets.  To ensure that they are soldered in flat, solder into place pin1 and then pin 9 on the IC.  check to make sure it is sitting flat and if so, solder the rest of the legs to the PCB
+- Fist, start with the resistors. There aren't many to add so will be easy to do
+- Next, I like to add the IC sockets. To ensure that they are soldered in flat, solder into place pin1 and then pin 9 on the IC. check to make sure it is sitting flat and if so, solder the rest of the legs to the PCB
 - Now you can solder on the rest of the components like the caps etc
 - To be able to control the brightness of the LED's I have included a 5K trimmer pot
-- DON'T solder on the battery holder yet.  Leave this to last as there are LED's that need to be soldered on under the battery holder and you need to do this first
+- DON'T solder on the battery holder yet. Leave this to last as there are LED's that need to be soldered on under the battery holder and you need to do this first
 
 
 ## Step 4: Adding the Switches, LED's & 7 Segment Displays to the PCB

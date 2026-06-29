@@ -19,9 +19,9 @@ Source: https://www.instructables.com/Dub-Siren-DelayReverb-2-in-1-Synth-Little-
 
 ![Intro 6](images/intro_06.jpg)
 
-Welcome to the 3rd instalment to my ‘Little synths with BIG sound’ series. This time around I’ve designed a 2 in 1 synth which I am calling Ekoplazm! The first synth is a classic Dub Siren which I have paired up with a Delay and Reverb synth and includes feedback and a couple other tricks. You can play the Dub Siren through the Delay/Reverb section which gives it a rich and full sound or play other synths like my [Proton](https://www.instructables.com/Proton-Little-Synths-With-BIG-Sounds-2/) & [Elements](https://www.instructables.com/Elements-Little-Synths-With-Big-Sounds-1/) synths through the Delay/Reverb section to add some tasty soundscapes to these synths.
+Welcome to the 3rd instalment to my ‘Little synths with BIG sound’ series. This time around I’ve designed a 2 in 1 synth which I am calling Ekoplazm! The first synth is a classic Dub Siren which I have paired up with a Delay and Reverb synth and includes feedback and a couple other tricks. You can play the Dub Siren through the Delay/Reverb section which gives it a rich and full sound or play other synths like my Proton & Elements synths through the Delay/Reverb section to add some tasty soundscapes to these synths.
 
-The Dub Siren isn’t a new circuit to me – I’ve actually done 3 iterations of this in the past! The initial build was the first time I designed a board in Eagle and it needed 3 X 9V batteries to run the beast! If you are interested in taking a look – then [check it out here](https://www.instructables.com/Dub-Siren-555-Timer/)
+The Dub Siren isn’t a new circuit to me – I’ve actually done 3 iterations of this in the past! The initial build was the first time I designed a board in Eagle and it needed 3 X 9V batteries to run the beast! If you are interested in taking a look – then check it out here
 
 In previous builds I have included Delay/Reverb via a module which you had to modify and wire-up to the board. This time, the Echo/Reverb section is included on the PCB, making it a very straight forward and easy build. Like my other builds in the ‘Little synths with BIG sound’ series, I wanted this to be easy to build, great sounding, to be able to connect to other synths and fun to play.
 
@@ -29,9 +29,9 @@ I've provided all of the Gerber files, schematics etc for this build so all you 
 
 So – without further ado, let’s put one together and make some noise :)
 
-[Elements - Little Synths With BIG Sounds #1](https://www.instructables.com/Elements-Little-Synths-With-Big-Sounds-1/)
+Elements - Little Synths With BIG Sounds #1
 
-[Proton - Little Synths with BIG Sounds #](https://www.instructables.com/Elements-Little-Synths-With-Big-Sounds-1/)2
+Proton - Little Synths with BIG Sounds #2
 
 
 ## Supplies
@@ -48,22 +48,20 @@ So – without further ado, let’s put one together and make some noise :)
 
 As with my previous 'Little Synths With BIG Sounds' 'Ibles, I have include the parts list as a PDF file which is attached below. The file includes all of the components and auxiliary parts that you will need to put the circuit board together. I have included links and images of each part so you can easily find/buy/identify them. I think it will be handy also as a PDF as you can print it off, visit your local electronics store and tick them off as you get them.
 
-The parts list is also available on my [GitHub Page](https://github.com/lonesoulsurfer/Ekoplazm_-_Dub_Siren_and_Delay-Reverb_Synth) in Excel format
+The parts list is also available on my GitHub Page in Excel format
 
 The below parts are the rest that you will need to build the synth.
 
 PARTS (Other than circuit components):
 
 - 1 X 9V battery
-- Nylon Hex Stand offs Assorted 2mm - [Ali Express](https://www.aliexpress.com/w/wholesale-nylon-hex-standoff.html?catId=0&initiative_id=SB_20230913185757&SearchText=nylon+hex+standoff&spm=a2g0o.detail.1000002.0). These will be used to connect the front panel to the PCB
+- Nylon Hex Stand offs Assorted 2mm - Ali Express. These will be used to connect the front panel to the PCB
 - A4 Clear Acrylic (3mm) - eBay This is for the base. It isn't necessary but will protect the electronics and finishes of the build nicely.
-- Potentiometer Knobs (9.5mm) X 7. NOTE: These are quite small knobs which suit the PCB. Make sure you don't get the 'D' type as they won't fit onto the potentiometers- [Ali Express](https://www.aliexpress.com/item/1005002883283709.html?spm=a2g0o.productlist.main.1.25c6ayFKayFKYF&algo_pvid=d22c035f-7b4d-410b-8eca-56a3c118b48f&algo_exp_id=d22c035f-7b4d-410b-8eca-56a3c118b48f-0&pdp_npi=4%40dis%21AUD%211.26%211.17%21%21%210.80%21%21%402101e9a216970929907792349e174e%2112000022606692813%21sea%21AU%21129764711%21&curPageLogUid=cTYyVCt9jrOX)
+- Potentiometer Knobs (9.5mm) X 7. NOTE: These are quite small knobs which suit the PCB. Make sure you don't get the 'D' type as they won't fit onto the potentiometers- Ali Express
 That's it! You don't have to worry about building a case because it doesn't have one :)
 
-As mentioned above - the rest of the parts can be found in the PDF attached below or on my [GitHub Page](https://github.com/lonesoulsurfer/Ekoplazm_-_Dub_Siren_and_Delay-Reverb_Synth)
+As mentioned above - the rest of the parts can be found in the PDF attached below or on my GitHub Page
 
-
-- [Ekoplazm - Parts List PDF](pdfs/Ekoplazm - Parts List PDF.pdf)
 
 ## Step 1: Front Panel, Schematic & Eagle Files
 
@@ -73,11 +71,11 @@ As mentioned above - the rest of the parts can be found in the PDF attached belo
 
 ![Step 1: Front Panel, Schematic & Eagle Files image 3](images/step02_03.png)
 
-Firstly, all the files that you need to build your own dub siren and echo/reverb synth can be found in my [GitHub Page](https://github.com/lonesoulsurfer/Ekoplazm_-_Dub_Siren_and_Delay-Reverb_Synth)
+Firstly, all the files that you need to build your own dub siren and echo/reverb synth can be found in my GitHub Page
 
-The build consists of 2 PCB’s – one is for the components and the other the front panel. You’ll need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.
+The build consists of 2 PCB’s – one is for the components and the other the front panel. You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.
 
-If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.
 
 NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 
@@ -87,12 +85,10 @@ Front Panel
 
 As mentioned, the front panel is actually just a PCB without the components! I use the silk screen on the PCB for printing the design and then include drill holes for the components. All this information is in the Gerber files for the front panel which the manufacturer uses to print the board.
 
-If you are interested in creating your own front panels then I highly recommend watching [this YouTube vid](https://www.youtube.com/watch?v=UOQezMJ560o&t=4321s). I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.
+If you are interested in creating your own front panels then I highly recommend watching this YouTube vid. I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.
 
-In my [GitHub Page](https://github.com/lonesoulsurfer/Ekoplazm_-_Dub_Siren_and_Delay-Reverb_Synth) you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
+In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.
 
-
-- [Ekoplazm](pdfs/Ekoplazm.pdf)
 
 ## Step 2: Adding Components to the PCB - Reverse Side
 
@@ -247,11 +243,6 @@ Now – you can plug another synth into the ‘in’ section of the synth and th
 
 Have fun and I’ll see ya next build
 
-
-## Downloads
-
-- [Ekoplazm - Parts List PDF](pdfs/Ekoplazm - Parts List PDF.pdf)
-- [Ekoplazm](pdfs/Ekoplazm.pdf)
 
 ---
 *50 images archived*

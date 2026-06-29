@@ -40,37 +40,37 @@ Parts:
 
 Circuit
 
-1. 2 X Photo Cells – [eBay](https://www.ebay.com.au/itm/20-30-50PCS-LDR-CDS-Photoresistor-Light-Dependent-Resistor-Sensor-GL5516/352201096453?hash=item5200d23d05:m:mYdhQMBERV5OlIHqc6GpO7g)
+1. 2 X Photo Cells – eBay
 
-2. 1 X 5K Pot – [eBay](https://www.ebay.com.au/itm/5K-Ohm-16mm-Linear-Potentiometer-18T-Spline-Single-Horizontal-PCB-Pot-Alpha-B5K/253032246845?hash=item3ae9e5ae3d:g:Hz0AAOSwgv5ZXtFs)
+2. 1 X 5K Pot – eBay
 
-3. 2 X 555 Timers – [eBay](https://www.ebay.com.au/itm/NE555-NE555P-Timer-IC-Texas-Instruments-8-DIP-Pack-of-10/162293413409?epid=22006040298&hash=item25c970f621:g:ctkAAOSwsGdasYLX)
+3. 2 X 555 Timers – eBay
 
-4. .01 Capacitor has “104” on it – [eBay](https://www.ebay.com.au/itm/10-20-50Pcs-0-01uF-10N-50V-Z5U-5mm-Ceramic-Capacitor/162896826853?hash=item25ed6851e5:m:mWvX7a2XOFzP2cZrCzakCOw)
+4. .01 Capacitor has “104” on it – eBay
 
-5. 1k Resistor – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
+5. 1k Resistor – eBay
 
-6. 8 Ohm Speaker – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=8ohm+5w&_osacat=0&_from=R40&_trksid=m570.l1313&_nkw=8ohm+5w+speaker&_sacat=0)
+6. 8 Ohm Speaker – eBay
 
-7. 9v Battery Holder – [eBay](https://www.ebay.com.au/itm/5PCS-9V-Battery-Holder-Box-Case-Pack-with-Wire-Lead-Cover-ON-OFF-Switch-New/162321778230?_trkparms=aid%3D555019%26algo%3DPL.BANDIT%26ao%3D1%26asc%3D20151005190540%26meid%3Dd959197c30854aa984249a7f1b1d00f6%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D162321778230&_trksid=p2045573.c100505.m3226)
+7. 9v Battery Holder – eBay
 
 8. 9v battery
 
-9. Switch – [eBay](https://www.ebay.com.au/itm/Mini-Toggle-Switch-3-Way-On-On-On-6A-125VAC-3A-250VAC-6-Pin-4-Guitar-Bass-Pickup/282478510954?hash=item41c508036a:g:2tUAAOSw~FJZGSzG)
+9. Switch – eBay
 
-10. Perf board – [eBay](https://www.ebay.com.au/itm/Small-Breadboard-Layout-Prototyping-Board/253529968034?epid=944019644&hash=item3b07904da2:g:174AAOSwdkZbDziC:sc:AU_StandardDelivery!3796!AU!-1)
+10. Perf board – eBay
 
 11. wire
 
-12. Flickering [LED](https://www.ebay.com.au/itm/20pcs-3mm-Orange-Candle-Light-Flicker-Ultra-Bright-Flickering-LED-Leds-Lamp-New/321640252279?hash=item4ae340c377:g:q~kAAOSwYGFUs6Nr) – eBay (Optional. I decided to add an LED so it could be used as a lamp as well)
+12. Flickering LED – eBay (Optional. I decided to add an LED so it could be used as a lamp as well)
 
 Resin Skull
 
-1. Resin – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xclear+casting+resin.TRS0&_nkw=clear+casting+resin&_sacat=0)
+1. Resin – eBay
 
-2. Skull Mould – [Etsy](https://www.etsy.com/au/listing/98703693/handmade-supercast-skull-latex-mould)
+2. Skull Mould – Etsy
 
-3. Copper wire – [eBay](https://www.ebay.com.au/itm/K-S-Round-Brass-Rod-2mm-Diameter-4-9863/122353517406?epid=682558292&hash=item1c7cd6835e:g:do8AAOSwr~lYoGPm)
+3. Copper wire – eBay
 
 4. Box for the skull to be mounted on and electronics to be stored in – up to you want you use.
 

@@ -19,7 +19,7 @@ Source: https://www.instructables.com/Lego-Man-Space-Lamp/
 
 ![Intro 6](images/intro_06.jpg)
 
-Messing about with some Lego recently, I found an original [Lego spaceman](http://www.eurobricks.com/forum/index.php?showtopic=30257) mixed in amongst the rest of blocks. For those old enough to remember, the spaceman was quite simple, featuring the classic smiling face and the famous Space logo.
+Messing about with some Lego recently, I found an original Lego spaceman mixed in amongst the rest of blocks. For those old enough to remember, the spaceman was quite simple, featuring the classic smiling face and the famous Space logo.
 
 He was too good to put back into the mix so I decided to work on a way to show him off. After a little thought I came up with the idea of encapsulating him in some resin like he was floating in space! I also thought about making some type of box with some LED’s incorporated and decided to make one out of Lego as well.
 
@@ -38,27 +38,27 @@ Enjoy
 
 Bits and Pieces
 
-1. Lego man – if you want to go vintage go raid your Lego box or check out [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR5.TRC0.A0.H0.Xvintage+lego+spaceman&_nkw=vintage+lego+spaceman&_sacat=0)
+1. Lego man – if you want to go vintage go raid your Lego box or check out eBay
 
 2. Lots of Lego blocks
 
 3. A few flat pieces of Lego
 
-4. Rear bike light – [eBay](http://www.ebay.com.au/itm/Fashion-Bicycle-Bike-Cycling-5-Led-Tail-Rear-Warning-Flashlight-Waterproof-/271523579273?pt=AU_Bicycle_Accessorries&hash=item3f38110589)
+4. Rear bike light – eBay
 
 5. Some lengths of electrical wire
 
-6. LED’s – [eBay](http://www.ebay.com.au/itm/100-x-5mm-2-Pins-Mixed-Color-Super-Bright-LED-Light-Round-Lamp-Bulbs-20000-mcd-/251571805036?pt=AU_B_I_Electrical_Test_Equipment&hash=item3a92d91b6c)
+6. LED’s – eBay
 
-7. Momentary switch – [eBay](http://www.ebay.com.au/itm/50-Pcs-Tactile-Push-Button-Switch-Momentary-Tact-4-Pin-6x6x7mm-/301428886532?pt=AU_B_I_Electrical_Test_Equipment&hash=item462e8fcc04)
+7. Momentary switch – eBay
 
-8. 3 x AAA battery holder – [eBay](http://www.ebay.com.au/itm/5pcs-Battery-Holder-Box-Case-w-Wire-3-X-AAA-4-5V-/290562034591?pt=AU_B_I_Electrical_Test_Equipment&hash=item43a6d8cb9f)
+8. 3 x AAA battery holder – eBay
 
 9. 3 x AAA batteries
 
 10. Mold for the resin
 
-11. Resin (I used Diggers Casting and Embedding Resin. If your in Australia you can get this from [Bunnings](http://www.bunnings.com.au/diggers-500g-cast-and-embedding-resin_p1874117))
+11. Resin (I used Diggers Casting and Embedding Resin. If your in Australia you can get this from Bunnings)
 
 12. Catalyst - Also available from Bunnings
 
@@ -76,7 +76,7 @@ Tools
 
 6. Sandpaper
 
-7. Headlight recovery kit [Amazon](http://www.amazon.com/Mothers-PowerBall-4Lights-Headlight-Restoration/dp/B00341MIAW) or [eBay](http://www.ebay.com.au/sch/i.html?_odkw=headlight+restoration+kit&_sop=15&_from=R40%7CR40&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313&_nkw=mothers+restoration&_sacat=0) This isn't necessary but does help get a great finish on the resin. You can also use [Brasso](http://en.wikipedia.org/wiki/Brasso) and elbow grease to get the job done
+7. Headlight recovery kit Amazon or eBay This isn't necessary but does help get a great finish on the resin. You can also use Brasso and elbow grease to get the job done
 
 
 ## Step 2: Getting Started - Build the Lego Stand

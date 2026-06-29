@@ -40,19 +40,19 @@ Parts
 
 1. Toy gun. This can be anything but if you want to make it as easy as possible type into eBay “Light gun”. You might even have one of these around the house gathering dust. Also, you can just use a toy gun if you wanted to
 
-2. LED – [eBay](http://www.ebay.com.au/itm/CREE-3W-3535-Pure-White-Light-LED-Emitter-Bead-14mm-PCB-300LM-BAAU-/400731618603?hash=item5d4d773d2b:g:3o4AAOSwFTRTqRVN)
+2. LED – eBay
 
-3. 3 x AAA battery holder - [eBay](http://www.ebay.com.au/itm/AA-Size-Power-Battery-Storage-Case-Box-Holder-Leads-With-1-2-3-4-Slots-Elegant-/391102168586?var=&hash=item5b0f817e0a:m:mrqgT1mGpc2nsSDAi3i3R4g)
+3. 3 x AAA battery holder - eBay
 
-4. Female power jack - [eBay](http://www.ebay.com.au/itm/10-Pieces-DC022-2-1x5-5mm-PCB-Mounting-DC-Power-Jack-Socket-Black-EW-/261475595942?hash=item3ce128f6a6:m:ma7nExKPe_p8paqoDzkAlrw)
+4. Female power jack - eBay
 
-5. Male power jack - [eBay](http://www.ebay.com.au/itm/10-x-Black-Plastic-Cover-2-1x5-5mm-Male-DC-Power-Plug-Jack-Connector-WS-/321742627473?hash=item4ae95ae291:g:j2cAAOSwstxVQycM)
+5. Male power jack - eBay
 
 6. 3.6v power charger –eBay
 
-7. Optional – SPDT Lever switch – [eBay](http://www.ebay.com.au/itm/5Pcs-AC-125V-250V-5A-SPDT-3Pin-Long-Hinge-Lever-Momentary-Micro-Switch-/331569772277?hash=item4d331936f5:g:f0gAAOSwXshWrmas)
+7. Optional – SPDT Lever switch – eBay
 
-8. Optional - Small lens – [eBay](http://www.ebay.com.au/itm/Convex-Magnifying-Plastic-Lens-14mm-diameter-focal-length-approx-10mm-/111788172231?hash=item1a071823c7:g:rUYAAOSw0HVWD~PL) or maybe [these](http://www.ebay.com.au/itm/5-pcs-Plastic-Handheld-Mini-Magnifier-Magnifying-Reading-Aid-Kids-Toy-5X-Lens-/400619116530?hash=item5d46c297f2:g:aVcAAOxy3zNSnZd7)
+8. Optional - Small lens – eBay or maybe these
 
 Tools:
 

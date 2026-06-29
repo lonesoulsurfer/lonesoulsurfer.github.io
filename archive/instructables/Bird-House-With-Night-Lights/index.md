@@ -17,7 +17,7 @@ Source: https://www.instructables.com/Bird-House-With-Night-Lights/
 
 ![Intro 5](images/intro_05.jpg)
 
-I recently stumbled onto a really cool night-light by Instructable user [boddhi15](https://www.instructables.com/id/Birdhouse-Nightlight/). This got me thinking about building my own outdoor one. I decided to hack a solar power light and add a couple of little lights out the front.
+I recently stumbled onto a really cool night-light by Instructable user boddhi15. This got me thinking about building my own outdoor one. I decided to hack a solar power light and add a couple of little lights out the front.
 
 The actual hack isn’t very hard, it does however need a voltage regulator to ensure that the circuit from the solar lights works correctly. The usual voltage that the circuits deal with is 1.2V. This has to be upped to 3.6V using 3 x 1.2V batteries. If you just used the 3 batteries, they would light up the LED’s but not very brightly. The problem comes from the circuit board not coping too well with the extra voltage which causes the LED’s to be on during the day. They LED’s would be very dim, but you don’t want them on during the day as the solar panel won’t be able to charge the batteries to their full potential. The voltage regulator fixes this issue and ensures that they only come on at night.
 
@@ -25,7 +25,7 @@ I’m hoping that the lights will attach some insects for the birds to eat!
 
 No birds yet but it's early days.
 
-For those who want to make their own solar night light instead of hacking one - check out t[his](http://www.evilmadscientist.com/2008/simple-solar-circuits/) website
+For those who want to make their own solar night light instead of hacking one - check out this website
 
 Enjoy.
 
@@ -56,13 +56,13 @@ Parts:
 
 1. Solar Light. Any cheap solar light will work.
 
-2. Voltage Regulator – [eBay](http://www.ebay.com.au/itm/USB-Solar-Boost-DC-DC-3V-5V-Adjustable-Power-Supply-Voltage-Converter-Module-NEW-/121297582515?pt=AU_B_I_Electrical_Test_Equipment&hash=item1c3de639b3) I can't remember where I purchased the one I used but this one will do the job just fine.
+2. Voltage Regulator – eBay I can't remember where I purchased the one I used but this one will do the job just fine.
 
-3. 3 x AAA battery holder – [eBay](http://www.ebay.com.au/itm/Battery-case-box-holder-for-3x-AAA-size-cells-4-5V-3402-/281107198904?pt=LH_DefaultDomain_2&hash=item41734b73b8)
+3. 3 x AAA battery holder – eBay
 
 4. 3 x AAA rechargeable batteries – eBay
 
-5. 5.5v solar panel – [eBay](http://www.ebay.com.au/itm/5-5V-0-825W-150mA-Mini-Solar-Panel-Module-DIY-for-Phone-Toys-Charger-/161394418847?pt=AU_Solar&hash=item2593db649f)
+5. 5.5v solar panel – eBay
 
 6. Switch – eBay
 

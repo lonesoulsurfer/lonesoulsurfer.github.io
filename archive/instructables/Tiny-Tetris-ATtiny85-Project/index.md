@@ -38,22 +38,22 @@ Let's get building
 
 ![Supplies image 6](images/step01_06.jpg)
 
-The parts list can also be found on my [GitHub](https://github.com/lonesoulsurfer/Tiny_Tetris) page. The PCB info can be found on the next step
+The parts list can also be found on my GitHub page. The PCB info can be found on the next step
 
 PARTS:
 
-- ATtiny85 - [Ali Express](https://www.aliexpress.com/w/wholesale-attiny-85.html?spm=a2g0o.home.search.0)
-- Buzzer - [Ali Express](https://vi.aliexpress.com/item/1005001482792890.html?spm=a2g0o.productlist.main.75.5adcbd8bCCTMlz&algo_pvid=0e8d47a8-60d0-4b2d-87c9-71356b422f0a&algo_exp_id=0e8d47a8-60d0-4b2d-87c9-71356b422f0a-37&pdp_npi=4%40dis%21AUD%210.56%210.42%21%21%210.37%210.28%21%402103011217200734707541728efb30%2112000034752671980%21sea%21AU%21135072183%21&curPageLogUid=43CnMJA5BeLo&utparam-url=scene%3Asearch%7Cquery_from%3A)
-- OLED 1306 Screen - [Ali Express](https://www.aliexpress.com/w/wholesale-ssd1306.html?spm=a2g0o.productlist.auto_suggest.1.485dIfbVIfbV3y)
-- Micro switch horizontal slide - [Ali Express](https://vi.aliexpress.com/item/33009763749.html?spm=a2g0o.productlist.main.117.7d584bf4qy5kxl&algo_pvid=2856a2f1-9154-44d6-9079-86c2dd5eb6c0&algo_exp_id=2856a2f1-9154-44d6-9079-86c2dd5eb6c0-58&pdp_npi=4%40dis%21AUD%211.99%211.07%21%21%211.32%210.71%21%402103011217200738046484689efb30%2167133660852%21sea%21AU%21135072183%21&curPageLogUid=7Thx4wRXnAoy&utparam-url=scene%3Asearch%7Cquery_from%3A)
-- Momentary Buttons X 4 The ones I used are about 2mm high - [Ali Express](https://vi.aliexpress.com/w/wholesale-momentary-tactile-switch.html?spm=a2g0o.productlist.search.0)
-- Resistors - [Ali Express](https://vi.aliexpress.com/w/wholesale-metal-film-1%25-resistor.html?spm=a2g0o.productlist.search.0)
+- ATtiny85 - Ali Express
+- Buzzer - Ali Express
+- OLED 1306 Screen - Ali Express
+- Micro switch horizontal slide - Ali Express
+- Momentary Buttons X 4 The ones I used are about 2mm high - Ali Express
+- Resistors - Ali Express
 - 2 X 10K
 - 1 X 1K
 - 1 X 2.2K
-- CR2032 battery holder - [Ali Express](https://vi.aliexpress.com/item/4001240194584.html?spm=a2g0o.productlist.main.1.48322325Rouix5&algo_pvid=a1d8fd77-c144-48f6-be76-218ff5d9b9a5&algo_exp_id=a1d8fd77-c144-48f6-be76-218ff5d9b9a5-0&pdp_npi=4%40dis%21AUD%213.61%213.61%21%21%212.39%212.39%21%402103011217200739359075738efb30%2110000015424733532%21sea%21AU%21135072183%21&curPageLogUid=flleZ6i7IOKX&utparam-url=scene%3Asearch%7Cquery_from%3A)
-- CR2032 battery - [Ali Express](https://vi.aliexpress.com/w/wholesale-cr2032-battery.html?spm=a2g0o.productlist.search.0)
-- Optional - Key Chain - [Ali Express](https://vi.aliexpress.com/w/wholesale-key-chain.html?spm=a2g0o.productlist.search.0)
+- CR2032 battery holder - Ali Express
+- CR2032 battery - Ali Express
+- Optional - Key Chain - Ali Express
 
 
 ## Step 1: Getting the PCB Printed
@@ -62,11 +62,11 @@ PARTS:
 
 ![Step 1: Getting the PCB Printed image 2](images/step02_02.jpg)
 
-Firstly, all the files that you need to get the circuit board printed can be found in my [GitHub Page](https://github[.](https://github.com/lonesoulsurfer/Tiny_Tetris)com/lonesoulsurfer/Tiny_Tetris). I've also included the Eagle files for the schematic and the board in my GitHub Page so you can play around with these if you want to as well.
+Firstly, all the files that you need to get the circuit board printed can be found in my GitHub Page. I've also included the Eagle files for the schematic and the board in my GitHub Page so you can play around with these if you want to as well.
 
-You’ll need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) (Not affiliated) who will print the boards for you. Download the repository on my GitHub page to your computer and then send the Gerber files off to your PCB manufacturer of choice. Make sure you keep it zipped.
+You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Download the repository on my GitHub page to your computer and then send the Gerber files off to your PCB manufacturer of choice. Make sure you keep it zipped.
 
-I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+I've put together an Instructable on how to get your broads printed which you can find here.
 
 NOTE: The manufacture will include an order number on the PCB. However, you can 'specify a location' once the Gerber files have been loaded. Click 'specify a location' and add a note saying - 'please add the order number to the back of the board.
 
@@ -86,7 +86,7 @@ The component list is quite low and as mentioned, I've only used through hole co
 STEPS:
 
 - As usual, it's best to start with the lowest profile components which in this case is the resistors. These have been added to the PCB so they are hidden by the OLED screen and also act as supports for the screen. Solder these in place.
-- Next solder the tactile switches into place.  I have used low profile buttons which I think would well on this PCB.
+- Next solder the tactile switches into place. I have used low profile buttons which I think would well on this PCB.
 - Now solder the buzzer (speaker) into place.
 - Before you solder the OLED screen into place, flip the PCB and solder into place the battery holder and on/off switch.
 - Now you can solder the OLED screen into place.
@@ -105,11 +105,11 @@ When I first started to investigate and learn how to program the ATtiny85 I was 
 
 You will however need to get yourself an Arduino Nano which you'll use to program the ATtiny85. Again, I want to reiterate that this really isn't hard to do and if you follow the Instructable below you will be able to program your ATtiny85 with the Tetris sketch
 
-[How to Program ATtiny85 with an Arduino](https://www.instructables.com/How-to-Program-a-ATtiny-With-Arduino/)
+How to Program ATtiny85 with an Arduino
 
 I have also done an Instructable on building your own programmer for the ATtiny85. You can go all out and get a PCB printed or you can just breadboard the programmer.
 
-[Programmer for the ATtiny85](https://www.instructables.com/Programmer-for-ATtiny-85/)
+Programmer for the ATtiny85
 
 Once you know how to program an ATtiny85, you are ready to install Tetris onto it.
 

@@ -19,7 +19,7 @@ Source: https://www.instructables.com/Book-Light-Inside-a-Book/
 
 This build came about after my nephew asked for a new book light. I took it literally and decided to build him one made from a book!
 
-Actually, this isn't the first time I've used a book to make a book light. I made one a few years ago where you opened the front cover and it had a [light inside.](https://www.instructables.com/LED-Book-Light-Inside-a-Book/) However, this time I had the idea of making the pages illuminated. I did play around with using the actual pages to help diffuse the light but in the end went with some opal acrylic to stand in place of the pages.
+Actually, this isn't the first time I've used a book to make a book light. I made one a few years ago where you opened the front cover and it had a light inside. However, this time I had the idea of making the pages illuminated. I did play around with using the actual pages to help diffuse the light but in the end went with some opal acrylic to stand in place of the pages.
 
 This build is relatively simple and only needs a couple of electronic parts to build. Initially I went all out and included a battery but decided against it and just kept it simple. It includes a dimmer module which allows you to dim the LED's and also has a built in switch in the potentiometer which is handy. Basic soldering skills is all that is needed to make your own.
 
@@ -43,9 +43,9 @@ PARTS:
 - Book. So this is probably the most important part to the build. You will want to find a hard cover book, something that has a good looking cover and is not too damaged. You will also want to make sure that you check to see if the book is worth anything before you pull it apart! I scout around op shops (thrift stores) where you can find them for cheap.
 - Wood. This is used to make the Frame. I used 30mm x 10mm pine strips which I got from the local hardware store. The width of the wood will need to be the same or larger than the width of the book.
 - Opal Acrylic A3 - eBay
-- LED's - 5V LED strips - [Ali Express](https://www.aliexpress.com/item/1005002932247185.html?spm=a2g0o.order_list.order_list_main.11.20be1802W8vr6H). I went with the 120 LED's per meter
-- LED Dimmer - [Ali Express](https://www.aliexpress.com/item/1005004858794449.html?spm=a2g0o.productlist.main.45.6df15fbb9noIIC&algo_pvid=6cf55a65-f67f-4f7b-8dda-f80aab8c3ac4&aem_p4p_detail=202402211758521234265912889140001683650&algo_exp_id=6cf55a65-f67f-4f7b-8dda-f80aab8c3ac4-22&pdp_npi=4%40dis%21AUD%211.27%211.27%21%21%210.82%210.82%21%402103247917085671321266330e90c5%2112000030776980820%21sea%21AU%21135072183%21&curPageLogUid=bjYFvE5vpCr6&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202402211758521234265912889140001683650_23) It might come up as 'motor controller' but they also work for LED's
-- USB C - Adapter - [Ali Express](https://www.aliexpress.com/item/1005006140199994.html?spm=a2g0o.order_list.order_list_main.202.71611802vGtCHP)
+- LED's - 5V LED strips - Ali Express. I went with the 120 LED's per meter
+- LED Dimmer - Ali Express It might come up as 'motor controller' but they also work for LED's
+- USB C - Adapter - Ali Express
 - Wire - I use computer ribbon which you can get for free from most E-waste places
 
 
@@ -71,7 +71,7 @@ STEPS:
 - There might also be stitches holding the pages to the cover so you'll also need to cut these away as well.
 - Flip over the book and do the same thing to the back section of the cover
 - Remove the pages and trim away any left over tape etc from the inside of the cover
-- Keep the pages.  We'll use these a little later on!
+- Keep the pages. We'll use these a little later on!
 
 
 ## Step 2: Making the Internal Wood Frame - Part 1
@@ -161,7 +161,7 @@ I mentioned in the intro that you could make a simple version of this and I'll e
 
 STEPS:
 
-- You can locate the dimmer module under the top horizontal piece of wood that makes up the wood frame. I put mine on top first then realized that it would interfere with the LED's.  Doh!
+- You can locate the dimmer module under the top horizontal piece of wood that makes up the wood frame. I put mine on top first then realized that it would interfere with the LED's. Doh!
 - Place the dimmer module into place and mark where the potentiometer handle hits the wood.
 - Drill a hole in the marked section and make sure the dimmer module pot fits into place.
 - Secure the dimmer module with a couple small screws to the frame. There are a couple mount holes in the module which makes it easy.
@@ -193,7 +193,7 @@ STEPS:
 - Use a small drill bit the same diameter as the USB-C adapter and drill 3 small holes into the wood frame section where the spine is. I placed mine low as this seemed the best place to locate it.
 - Clean up the drilled section with a small file and place the USB-C adapter inside the hole. You want the front section of the USB-C adapter to be poking out of the frame by about 2 to 3 mm
 - To secure into place you can use some hot glue.
-- You will also need to make a slot in the spine of the book cover so you can access the USB-C adapter.  The easiest way to do this is to add some black marker around the ebtrance of the USC-C adapter, push the inside of the spine against it and it will mark exactly where you need to make the slot.  Iused a step drill piece ot make the holes and cleaned it up with an exacto knife.
+- You will also need to make a slot in the spine of the book cover so you can access the USB-C adapter. The easiest way to do this is to add some black marker around the ebtrance of the USC-C adapter, push the inside of the spine against it and it will mark exactly where you need to make the slot. Iused a step drill piece ot make the holes and cleaned it up with an exacto knife.
 - Now you can connect the wires to the dimmer module. Glue them to the inside of the frame and secure the ends to the module.
 - I also added a 100uf capacitor between positive and negative on the dimmer. You don't have to do this but I could hear a little humming coming from the dimmer module and adding the cap stopped this.
 
@@ -218,13 +218,13 @@ I used 2 strips of LED's to ensure the book light was bright enough. Also, my LE
 
 STEPS:
 
-- First, drill a small hole through the vertical part of the frame near the bottom.  This is where the wires will be threaded through and connected to the dimmer module
+- First, drill a small hole through the vertical part of the frame near the bottom. This is where the wires will be threaded through and connected to the dimmer module
 - De-solder the wires on the LED's and add longer ones to bioth positive and negative solder points on the LED Strips
-- Thead the wires through the hole you just drilled and start to stick the LED's to the wood frame.  Place these slightly to the right when sticking on as you will need to add another strip beside it
+- Thead the wires through the hole you just drilled and start to stick the LED's to the wood frame. Place these slightly to the right when sticking on as you will need to add another strip beside it
 - Cut the LED strip when it reaches the top horizontal part of the frame making sure you cut them where there are 2 solder points
 - Add another strip to the left side of the frame
 - Connect the 2 strips via the solder points with some small lengths of wire
-- Lastly, connect the wire from the LED's to the dimmer module.  I glued the wire to the inside of the frame to keep it out of the way
+- Lastly, connect the wire from the LED's to the dimmer module. I glued the wire to the inside of the frame to keep it out of the way
 - Now you can test to make sure the LED's and everything else is working properly.
 
 
@@ -246,11 +246,11 @@ Time to glue down the spine and one side of the frame to the book cover!
 
 STEPS:
 
-- First, add some superglue to the inside of the book spine.  Try not to get it too close to the potentiometer and USB-C holes in the book.
-- Place the frame against the spine, making sure the potentiometer is aligned with the hole in the spine.  Push the pot through the hole and check to make sure the USB-C adapter is also aligned correctly.
+- First, add some superglue to the inside of the book spine. Try not to get it too close to the potentiometer and USB-C holes in the book.
+- Place the frame against the spine, making sure the potentiometer is aligned with the hole in the spine. Push the pot through the hole and check to make sure the USB-C adapter is also aligned correctly.
 - Put some pressure against the spine of the book against the frame until the glue as dried
 - Use superglue again and add a little all around the top of the wood frame
-- Carefully push the cover against the frame and add some pressure.  The best way to do this is to lay the book flat and add pressure from the top.
+- Carefully push the cover against the frame and add some pressure. The best way to do this is to lay the book flat and add pressure from the top.
 - Leave the other side for the moment.
 
 
@@ -268,8 +268,8 @@ To give some weight to the book light, I decided to add the pages back inside th
 
 STEPS:
 
-- As the pages are now too big to fit inside the wood frame , you'll need to cut the pages in order for them to fit.  I used my belt saw to do this but you could also use a stanley knife to cut the pages.  Actually the belt saw worked better then I expected and made short work of trimming the book down
-- Place the pages back into the book.  You might have to remove a few pages or trim up the spine a little in order for it to fit right
+- As the pages are now too big to fit inside the wood frame , you'll need to cut the pages in order for them to fit. I used my belt saw to do this but you could also use a stanley knife to cut the pages. Actually the belt saw worked better then I expected and made short work of trimming the book down
+- Place the pages back into the book. You might have to remove a few pages or trim up the spine a little in order for it to fit right
 - Check and make sure evrything is still working once the pages are in place.
 
 
@@ -310,7 +310,7 @@ STEPS:
 
 - Add glue all around the top of the wood and also add some glue to the inside of the cover where the acrylic will sit against.
 - Carefully close the front cover and add pressure until the glue is dry
-- Test again to make sure everything is working as it should be.  If it isn't then you'll need to try and opent the book up and check to see if any wires came out.
+- Test again to make sure everything is working as it should be. If it isn't then you'll need to try and opent the book up and check to see if any wires came out.
 - If everythings good then you are done!
 
 

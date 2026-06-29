@@ -41,10 +41,10 @@ The build is straight forward and you only need a few parts to be able to build 
 PARTS:
 
 - Paint Spray Can. I got mine from a place called Office Works but you can get one from any hardware store.
-- Metal clamp, I used a 2" one - [Ali Express](https://www.aliexpress.com/item/1005004687333816.html?spm=a2g0o.detail.1000014.9.6905507bxuWgWe&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40000.326746.0&scm_id=1007.40000.326746.0&scm-url=1007.40000.326746.0&pvid=9428383c-2ff1-40cf-bf56-7bd033eadac8&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40000.326746.0,pvid:9428383c-2ff1-40cf-bf56-7bd033eadac8,tpp_buckets:668%232846%238113%23685&pdp_npi=3%40dis%21AUD%218.88%216.66%21%21%21%21%21%402101f04d16856796420512305e4887%2112000030101599317%21rec%21AU%21129764711)
-- LED Board 5V - [Ali Express](https://www.aliexpress.com/item/1005005122843105.html?spm=a2g0o.order_list.order_list_main.41.39611802twqCq8)
-- Dimmer Module - [Ali Express](https://www.aliexpress.com/item/1005003768954449.html?spm=a2g0o.order_list.order_list_main.47.d8da1802W3WnFl)
-- Braided Cord - [Ali Express](https://www.aliexpress.com/item/1005003644909366.html?spm=a2g0o.order_list.order_list_main.35.d8da1802W3WnFl)
+- Metal clamp, I used a 2" one - Ali Express
+- LED Board 5V - Ali Express
+- Dimmer Module - Ali Express
+- Braided Cord - Ali Express
 - Aluminium Strip - Hardware store
 - Small screws and nuts
 
@@ -148,11 +148,11 @@ STEPS:
 
 STEPS:
 
-- Drill a hole into the spray can a third of the way up from the top of the can.  This should be at the back of the can
-- Thread the braided wire though the hole and tie a knot into the wire.  This will make sure that it can't be pulled through
+- Drill a hole into the spray can a third of the way up from the top of the can. This should be at the back of the can
+- Thread the braided wire though the hole and tie a knot into the wire. This will make sure that it can't be pulled through
 - I made my wire quite long to enable it to be plugged in from a height.
-- To be able to connect it to a 5V power adapter, you'll need to add a USB connector to the end of the wire.  I just trimmed one from a USB cord I had lying around
-- Remove the plastic around the wires and keep the red and black wires.  The red is positive and black negative.  Tin the ends with some solder
+- To be able to connect it to a 5V power adapter, you'll need to add a USB connector to the end of the wire. I just trimmed one from a USB cord I had lying around
+- Remove the plastic around the wires and keep the red and black wires. The red is positive and black negative. Tin the ends with some solder
 - Connect the USB to the braided wire and use some heat shrink to protect the connections
 
 

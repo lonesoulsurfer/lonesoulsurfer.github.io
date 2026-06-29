@@ -29,17 +29,17 @@ Lastly, I've included in this build an arpeggiator (like in the first version I 
 
 Just watch the YouTube clip and you’ll see what I mean
 
-Lastly, I have to give a shout out to [Pete McBennett](https://www.youtube.com/channel/UCk4mtz-tZbXdk1Xb0DSd2QQ) who designed this awesome circuit. Check out his YouTube channel here
+Lastly, I have to give a shout out to Pete McBennett who designed this awesome circuit. Check out his YouTube channel here
 
 You can check out the other versions below
 
-[Version1](https://www.instructables.com/Moog-Style-Synth/)
+Version1
 
-[Version 2](https://www.instructables.com/Moog-Style-Synth-V2/)
+Version 2
 
 Oh and Hackaday did a bit of a review on this project which you can find in the below link
 
-[Hackaday](https://hackaday.com/2022/09/15/this-simple-light-controlled-synth-has-a-surprisingly-rich-sound/)
+Hackaday
 
 
 ## Supplies
@@ -70,7 +70,7 @@ Electronics
 
 - Echo/Reverb Board - Ali Express
 - Step-up Voltage Regulator - Ali Express
-- USB C Charging module - [eBay](https://www.aliexpress.com/item/32930640893.html?spm=a2g0o.order_list.0.0.7bb21802Fdp9kU)
+- USB C Charging module - eBay
 - Mobile Phone Battery - Ali Express (you could also just use a 9v battery as well but I wanted a rechargeable option.
 - 3.5mm Audio Female Socket - Ali-Express
 - 3 X 50K Potentiometers - Ali Express
@@ -95,9 +95,9 @@ Other Parts
 
 ![Step 1: Schematic, Board and Parts image 5](images/step02_05.jpg)
 
-All of the files including gerber and eagle files can be found in my [GitHub Pag](https://github.com/lonesoulsurfer/Moog_Light_Synth_V3)e I've included the shcematic as an attachement ion PDF as well which can be found in this step.
+All of the files including gerber and eagle files can be found in my GitHub Page I've included the shcematic as an attachement ion PDF as well which can be found in this step.
 
-I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GVdFKX-Hevhd6kw8GeZu3nYS_I10AJjhGupCabeBPJ_yEL6WvauxcaAtqKEALw_wcB) (Not affiliated) who will print the board for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+I have designed a PCB for this circuit so all you need to do is to send the gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the board for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find here.
 
 I have also included the Eagle schematic and board files so you can play around with them and modify as you want to
 
@@ -156,8 +156,6 @@ PARTS LIST
 - 38.3K X 1
 
 
-- [Moog Light Synth V3 - Schematic](pdfs/Moog Light Synth V3 - Schematic.pdf)
-
 ## Step 2: About the PCB
 
 ![Step 2: About the PCB image 1](images/step03_01.jpg)
@@ -170,7 +168,7 @@ PARTS LIST
 
 ![Step 2: About the PCB image 5](images/step03_05.jpg)
 
-Before we start to add components to the PCB, I thought I would go through a couple of things that you should know. You can download all of the files for the PCB on my [GitHub page](https://github.com/lonesoulsurfer/Moog_Light_Synth_V3)
+Before we start to add components to the PCB, I thought I would go through a couple of things that you should know. You can download all of the files for the PCB on my GitHub page
 
 What is that cutout section for?
 
@@ -231,7 +229,7 @@ STEPS:
 
 ![Step 4: Making a Vactrol image 8](images/step05_08.gif)
 
-A vactrol (or Optocoupler), are easy to make In actual fact, I've done a separate Instructable on how to make this which can be found [here.](https://www.instructables.com/How-to-Make-a-Optocoupler-Vactrol/)
+A vactrol (or Optocoupler), are easy to make In actual fact, I've done a separate Instructable on how to make this which can be found here.
 
 I won't go into too much detail as you can always refer to the Instructable I did. All a vactrol is is an LED and a LDR. They are used in this build in the arpeggiator section of the build
 
@@ -258,7 +256,7 @@ STEPS:
 
 ![Step 5: Reverb & Echo Board image 5](images/step06_05.gif)
 
-The echo and reverb board makes up the delay section of the synth. The module is cheap to buy ($3-5) and can be modified a few different ways. Shoutout to [mayasfinest](https://www.instructables.com/member/mayasfinest/) who provided the feedback mod.
+The echo and reverb board makes up the delay section of the synth. The module is cheap to buy ($3-5) and can be modified a few different ways. Shoutout to mayasfinest who provided the feedback mod.
 
 As I already did the mods to the module (and don't have another spare!) I put together a wiring diagram which shows you what you need to do in order to mod the board.
 
@@ -302,8 +300,6 @@ STEPS:
 - Once the front panel is on the acrylic, use something flat to remove any air pockets. You want to use something which has a soft edge so you don't scratch the ink on the panel. I used a piece of floating floor which has some foam on the back.
 - To protect the front panel, you need to spray it a few times with some clear acrylic paint. I use a matt one as it give a nice, clean finish. Let it dry between coats
 
-
-- [Moog Light Synth V3 - Front Panel](pdfs/Moog Light Synth V3 - Front Panel.pdf)
 
 ## Step 7: Drilling and Test Fitting the Front Panel
 
@@ -577,11 +573,6 @@ Drone section
 - It give more depth to the overall sound and when played with delay, really opens up the sound effects
 The rest you can work out. There are a bunch of different sound effects that you can get so have fun finding them and good luck with the build!
 
-
-## Downloads
-
-- [Moog Light Synth V3 - Schematic](pdfs/Moog Light Synth V3 - Schematic.pdf)
-- [Moog Light Synth V3 - Front Panel](pdfs/Moog Light Synth V3 - Front Panel.pdf)
 
 ---
 *119 images archived*

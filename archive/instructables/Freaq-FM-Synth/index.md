@@ -11,9 +11,9 @@ Source: https://www.instructables.com/Freaq-FM-Synth/
 
 ![Intro 2](images/intro_02.jpg)
 
-In my last build I made the awesome [Mutant Synth](https://www.instructables.com/Mutant-Generative-Arduino-Synth/). If you thought that project was good then wait to you see/hear the Freaq FM Synth!
+In my last build I made the awesome Mutant Synth. If you thought that project was good then wait to you see/hear the Freaq FM Synth!
 
-First and foremost - I need to do a huge shoutout to [MeeBleeps](https://github.com/Meebleeps/MeeBleeps-Mutant-Synth) who designed this amazing synth. All I'm doing is creating a PCB and front panel of my own and solving a few issues that I encountered. The following Instructable will take you step by step on how you can build your own. I've included all of the files needed including the gerber files for the PCB and front panel along with the Arduino sketch which you can find in my [Github](https://github.com/lonesoulsurfer/Freaq_FM_Synth-Modular_Synth_Version)
+First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth. All I'm doing is creating a PCB and front panel of my own and solving a few issues that I encountered. The following Instructable will take you step by step on how you can build your own. I've included all of the files needed including the gerber files for the PCB and front panel along with the Arduino sketch which you can find in my Github
 
 The front panel is a Eurorack design so if you are into modular synths then this synth would fit perfectly into your rack! It can be run from 12V power supply and also has a power connector used on on Euroracks.
 
@@ -38,7 +38,7 @@ In the last step you can find the user guide. I'm still a novice myself but ever
 
 ![Supplies image 3](images/step01_03.jpg)
 
-I've created a parts list which can be found in my [Github](https://github.com/lonesoulsurfer/Freaq_FM_Synth-Modular_Synth_Version) and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+I've created a parts list which can be found in my Github and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 PARTS:
 
@@ -59,8 +59,6 @@ PARTS:
 - Mini JST Connector and wire 2 Pin X 11
 
 
-- [Freaq - List of Parts](pdfs/Freaq - List of Parts.pdf)
-
 ## Step 1: PCB, Front Panel & Schematic
 
 ![Step 1: PCB, Front Panel & Schematic image 1](images/step02_01.png)
@@ -73,11 +71,11 @@ PARTS:
 
 ![Step 1: PCB, Front Panel & Schematic image 5](images/step02_05.jpg)
 
-Firstly, all the files that you need to build your own Mutant synth can be found in my [Google Drive](https://github[.](https://github.com/lonesoulsurfer/Freaq_FM_Synth-Modular_Synth_Version)com/lonesoulsurfer/Freaq_FM_Synth-Modular_Synth_Version). This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
+Firstly, all the files that you need to build your own Mutant synth can be found in my Google Drive. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
 
-The build consists of 2 PCB’s – one is for the components and the other the front panel. You’ll need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.
+The build consists of 2 PCB’s – one is for the components and the other the front panel. You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.
 
-If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.
 
 NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 
@@ -127,7 +125,7 @@ Now that you have done the back of the PCB, it’s time to move to the front and
 
 STEPS:
 
-- Let’s start with the LED Dot Matrix.  If you remove the LED matrix from the circuit board it is attached to, you can see indicated ‘In’ and ‘Out’. You can chain these modules together which is why they also have an out. You need to connect the 'In' pins to the RHS solder points in the PCB.   There are solder points to attach header pins to both the 'in' and 'out' on the LED matrix. I included header pins to each to ensure that the matrix was securely in place to the PCB
+- Let’s start with the LED Dot Matrix. If you remove the LED matrix from the circuit board it is attached to, you can see indicated ‘In’ and ‘Out’. You can chain these modules together which is why they also have an out. You need to connect the 'In' pins to the RHS solder points in the PCB.  There are solder points to attach header pins to both the 'in' and 'out' on the LED matrix. I included header pins to each to ensure that the matrix was securely in place to the PCB
 - I wanted to make sure that the module wasn't sticking up too much through the front panel so I removed the plastic surrounds on the pins in order for the module to sit lower on the PCB.
 - Also, the LED matrix has a polarity so make sure you put it back onto the circuit board the right way. If you don’t it will turn on a few LED’s but nothing will happen.
 - Next, solder the 3.5mm Jacks into place
@@ -148,7 +146,7 @@ NOTE - the images attached are for the mutant synth but it's the same thing for 
 
 1 First, go ahead and uninstall Mozzi 2.0 if you have it installed in Arduino IDE and also uninstall FixMath if you have this as well. If you are unsure how to do this, then check out this link:
 
-[https://support.arduino.cc/hc/en-us/articles/360016077340-Uninstall-libraries-from-Arduino-IDE](https://support.arduino.cc/hc/en-us/articles/360016077340-Uninstall-libraries-from-Arduino-IDE)\
+https://support.arduino.cc/hc/en-us/articles/360016077340-Uninstall-libraries-from-Arduino-IDE\
 
 2 You now need to install Mozzi 1.1.2 to Arduino IDE. Look up 'Mozzi' in the library manager search bar and then go to the dropdown and hit version 1.1.2 (see image 1)
 
@@ -167,7 +165,7 @@ NOTE - the images attached are for the mutant synth but it's the same thing for 
 
 STEPS:
 
-- Go to my [Github](https://github.com/lonesoulsurfer/Freaq_FM_Synth-Modular_Synth_Version)[,](https://github.com/lonesoulsurfer/Freaq_FM_Synth-Modular_Synth_Version) open the Arduino Sketch folder and download the MutantFMSynth folder onto your computer
+- Go to my Github, open the Arduino Sketch folder and download the MutantFMSynth folder onto your computer
 - Go into the folder and hit the MutantFMSynth.ino file. This will open Arduino IDE and will also include the other file extensions such as the header and .ccp files which are also in the folder you downloaded
 Side note – I didn’t think the .ccp files were needed so I initially deleted these from the folder. Big mistake – they are needed to ensure the header files are detected!
 
@@ -202,7 +200,7 @@ STEPS:
 - Carefully place the front panel over the components on the PCB. It should fit on perfectly!
 - Now you can add the nuts to the potentiometers and also to the on/off switch and 3.5mm jack sockets. This will keep the panel in place!
 - Now add the knobs to the potentiometers. Use small ones as the larger type will take up too much room and will make it hard to get your fingers in there and turn them.
-- I also added some legs to the front panel so it would sit nice and flat when I was playing it.  I'm going to add this synth along with others in a later build to a case.
+- I also added some legs to the front panel so it would sit nice and flat when I was playing it. I'm going to add this synth along with others in a later build to a case.
 
 
 ## Step 7: How to Play the Freaq Synth
@@ -286,10 +284,6 @@ Next in line to build is my Groove Box synth which you can see in the vids. Afte
 
 I'll continue to to publish each part on Instructables so keep a look out for those upcoming projects.
 
-
-## Downloads
-
-- [Freaq - List of Parts](pdfs/Freaq - List of Parts.pdf)
 
 ---
 *34 images archived*

@@ -13,11 +13,11 @@ Source: https://www.instructables.com/Make-a-Headphone-Amp/
 
 ![Intro 3](images/intro_03.jpg)
 
-After discovering [Cew27's](https://www.instructables.com/member/Cew27/) [Cmoy Headphone Amp](https://www.instructables.com/id/Headphone-Amp-Chu-Moy/) a few months ago on Instructables, I've been inspired to build my own.
+After discovering Cew27's Cmoy Headphone Amp a few months ago on Instructables, I've been inspired to build my own.
 
-I was also inspired by [Koogars](https://www.instructables.com/member/koogar/) amazing [Crystal CMoy Free Form Headphone Amplifier](http://CMoy Free Form Headphone Amplifier) which I have been admiring for a few years now. I even did a bunch of projects using resin because of this project!
+I was also inspired by Koogars amazing Crystal CMoy Free Form Headphone Amplifier which I have been admiring for a few years now. I even did a bunch of projects using resin because of this project!
 
-This is my second headphone amp build – my first [can be found here](https://www.instructables.com/id/Make-Your-Own-Headphone-Amp/). What I really like about this one compared to the first build is a couple of things. Firstly, it’s a simpler build and only needs one IC to run it, and second, you don’t have to worry about separating the input and output grounds as I did with the first build.
+This is my second headphone amp build – my first can be found here. What I really like about this one compared to the first build is a couple of things. Firstly, it’s a simpler build and only needs one IC to run it, and second, you don’t have to worry about separating the input and output grounds as I did with the first build.
 
 Also, in my opinion it has better sound quality then the first build and seems more stable. There is still a small amount of interference sometimes if your mobile isn’t switched to air plane mode, but I don’t think this is really avoidable. Once your phone is on air plane mode, there is no detectable interference and the amp works perfectly.
 
@@ -39,8 +39,6 @@ Also, when you first look at the schematic it might seem that there are 2 op amp
 The end result is a high quality, high performance portable device that is relatively easy to build and will change the way you listen to music from your phone.
 
 
-- [ne5532](pdfs/ne5532.pdf)
-
 ## Step 2: Tools and Parts
 
 ![Step 2: Tools and Parts image 1](images/step02_01.jpg)
@@ -51,43 +49,43 @@ Parts:
 
 It might seem like you need a lot of parts buts most can be purchased in bulk and if you already mess about with electronics then you will probably have most of the components already.
 
-1. 10K duel gang Potentiometer – [eBay](https://www.ebay.com.au/itm/2-Pcs-10K-B10K-Dual-Linear-RK097G-Sealed-Potentiometer-Pot-15mm-Shaft-6pins/162989023343?hash=item25f2e7206f:g:CFAAAOSwroZayvhV:rk:20:pf:0)
+1. 10K duel gang Potentiometer – eBay
 
-2. Potentiometer knob - [eBay](https://www.ebay.com.au/itm/5Pcs-Aluminum-Potentiometer-Knob-6mm-Cap-Inner-Volume-Control-Rotary-Switch/142387618833?hash=item2126f6a411:m:mk-CmZeKA1QScajKjWmkeAQ:rk:1:pf:1&frcectupt=true)
+2. Potentiometer knob - eBay
 
-3. 2 X 18K Resistor – metal film – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0)
+3. 2 X 18K Resistor – metal film – eBay
 
-4. 4 X 68K resistor – metal film – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0)
+4. 4 X 68K resistor – metal film – eBay
 
-5. 47K resistor - [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-22-to-10M/312406630087?hash=item48bce2dec7:m:mFR91af2geS_bQCs6A2ZfSQ:rk:6:pf:0)
+5. 47K resistor - eBay
 
-6. 5mm LED – [eBay](https://www.ebay.com.au/itm/300pcs-3mm-5mm-LED-Diodes-Emitting-White-Yellow-Red-Green-Blue-Assorted-Kit-DIY/153108410105?hash=item23a5f8eef9:g:GOoAAOSwPSxbUvec:rk:17:pf:0)
+6. 5mm LED – eBay
 
-7. NE5532 IC – [eBay](https://www.ebay.com.au/itm/10PCS-NE5532P-NE5532-DIP-8-Dual-Low-Noise-Op-Amp-TI-IC-NEW/232812686621?hash=item3634b7ad1d:g:9YoAAOSwa69bKgik:rk:1:pf:1&frcectupt=true) (10 IC's for just over a dollar!)
+7. NE5532 IC – eBay (10 IC's for just over a dollar!)
 
-8. 8 pin socket holder - [eBay](https://www.ebay.com.au/itm/20-50-100PCS-8pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe-NEW/302772458949?hash=item467ea515c5:m:mU03b60t-BPlVH-Taq7boXA:rk:8:pf:0)
+8. 8 pin socket holder - eBay
 
-9. SPDT switch - [eBay](https://www.ebay.com.au/itm/AC-250V-2A-120V-5A-ON-ON-2-Position-SPDT-Mini-Micro-Toggle-Switch-Red-B2A0/253146892393?epid=1394258673&hash=item3af0bb0869:g:NZIAAOSws1ZZthvk:rk:6:pf:0)
+9. SPDT switch - eBay
 
-10. 3 X 4.7uf capacitor – [eBay](https://www.ebay.com.au/itm/Various-Radial-Aluminium-Electrolytic-Capacitors-10V-450V-105-C-0-1uF-10000uF/223329394557?hash=item33ff781f7d:m:mcORIoO_iVM6d-_E4l3QyLw:rk:2:pf:1&frcectupt=true)
+10. 3 X 4.7uf capacitor – eBay
 
-11. 2 X 22pf ceramic capacitor – [eBay](https://www.ebay.com.au/itm/10-20-50Pcs-22pF-50V-NPO-5mm-Ceramic-Capacitor/153319633028?hash=item23b28ff084:m:m_Y_A-nI3eCcBpKxx06JM0g:rk:12:pf:0)
+11. 2 X 22pf ceramic capacitor – eBay
 
-12. 3 X 220uf capacitor – [eBay](https://www.ebay.com.au/itm/10pcs-220uF-10V-6-3x11mm-Nichicon-FW-10V220uF-High-Grade-HiFi-Audio-Capacitor/252477956012?hash=item3ac8dbdfac:g:qf4AAOSwaB5XlZxY:rk:10:pf:0)
+12. 3 X 220uf capacitor – eBay
 
-13. 2 X 3.5mm stereo jack socket – [eBay](https://www.ebay.com.au/itm/10Pcs-PJ-392-3-Pin-3-5mm-Stereo-Headphone-Audio-Video-Jack-Socket-Plug3C/222746392853?hash=item33dcb83915:rk:5:pf:1&checksum=2227463928535c332b5e5bbe48cfb41a20f2e5641a22&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVQf2tGvodfr8DtagHHXVG98%2FYcZs2e%2FD1gzetEgeRuIznR%2FVotn8Ze8F6ZqZO2tIWRxRK6%2BCiCUxQpLVLYSSkraZKnEKinDmMXlJz3atFZct1CJL%2FNn5w1KzyQt0VJ7WGWKqXOtklSNceRw7C9xu3r9sPNmjuN9GEqbn%2B7OgM43DejirfUyz2ZwyLwEral1SILtSFOaI%2F5qs%2FR9aiyhoI2OOSP1vr2fvc2kjzDZ7TPMfI%2B2ViG0XhgKNQW%2Br8bIVzV2TYK15Lp3fq4JgOOuNE9znVu42r2xW5RccFqOKePNZ8RHah7ye4gnTypwuUlcFDcxvX3KUQgMRqxK2Sj91NUpVMnfFsoLWmWe1d3jasuExco9zsn1g8SAqKoHS%2BilAEnG7mbuATPeaIXHonLphkRY9DX4XiVxJ3L95rTc%2BjdFAlZ2MSds4vENsUeBnJJwVCKWS20ZXThMowvMJrFSm2QLRsLIsGDXdolAtgOXOy7f4%2BkmcEs1S%2FSbasiK3OxZtIgzaylHJLeLbEKz1%2BfX2Ax7Onb936aGWAN4TZIZIVul%2BCyUqSUTCuGVh5FvTGu5UlCODhFMmuDWNU6EYhL3H4VJ%2BH1P2cJ3DjLpIvd6dVGOYBFlmNAlf7d10dq7MK9GN1Nf56LHg54Kxp%2FuBAyFPxbMR0InZN%2FCEx3cjhrTt7rdWAw9xWfX6FvUXUCCoVNg5nFXKoQkjwDIj%2FSnAon8fkIWWD%2FKkkjDNO0L1%2FVXrIXSpIyy9CwWNAwnSLa%2B9fi2aPEo0KlnXlj5sQS6ac7ogJzD76RJQY3ZGwvjIU%2BGwP5vFVVchGLAo04t1Tn%2F5a9rlDtIcX1NjXQk5x1eLnkGYAP%2BUQv4rJEORrF%2FfcKxaQGtYkdGspcsEBSC7TkwUb6uQvasvDWgamRSRZqaj0Uwvd7s1nBmEiEEYbBLnkrEaZSDKcNYAu8Hx2MpiY5hgzVnzrxbxwScy4thR%2B1BRsPJT%2Bbw%3D%3D&frcectupt=true)
+13. 2 X 3.5mm stereo jack socket – eBay
 
-14. Prototype board - [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+14. Prototype board - eBay
 
-15. 9v battery holder - [eBay](https://www.ebay.com.au/itm/10PCS-MN1604-9V-PP3-9volt-Battery-Holder-Clip-Snap-On-Connector-Cable-Lead/282606951665?hash=item41ccafdcf1:g:EYoAAOSwr~dZjXn2:rk:20:pf:0)
+15. 9v battery holder - eBay
 
 16. 9v battery
 
 17. Wires
 
-18. Case. I used a small tin case - [check out [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xaltoids+tin.TRS0&_nkw=altoids+tin&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=altoids+style+tin&LH_TitleDesc=0)](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=tobacco+tin&_sacat=0) if you want to use one similar. You could use a tobacco tin or an altoids tin or something similar - eBay
+18. Case. I used a small tin case - check out eBay if you want to use one similar. You could use a tobacco tin or an altoids tin or something similar - eBay
 
-19. You’ll also need a male to male 3.5mm cord - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR4.TRC1.A0.H0.X3.5mm+male+to+male+cord.TRS0&_nkw=3.5mm+male+to+male+cord&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=22pf+capacitor&LH_TitleDesc=0)
+19. You’ll also need a male to male 3.5mm cord - eBay
 
 Tools
 
@@ -315,10 +313,6 @@ Troubleshooting
 
 ## Step 10:
 
-
-## Downloads
-
-- [ne5532](pdfs/ne5532.pdf)
 
 ---
 *41 images archived*

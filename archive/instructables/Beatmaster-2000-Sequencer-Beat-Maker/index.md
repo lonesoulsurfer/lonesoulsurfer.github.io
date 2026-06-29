@@ -23,7 +23,7 @@ The Beatmaster 2000 isn't a game but it is still a homage to all that is 80's an
 
 Built around 4 CMOS chips, the Beatmaster 2000 is a sequencer that includes 6 buttons to create beats, a speed and pitch control and a 386 op amp to give it some volume.
 
-The circuit was inspired by Sebastian Tomaczak's '[Fun with Sea Moss'](http://www.milkcrate.com.au/_other/sea-moss/) (see what he did there...) post and in particular the sequencer with amplitude envelope circuit design. The changes I did was to add potentiometers to each gate to control the 8 steps in the sequencer. I also added a pitch control and a op amp for the built in speaker and added some on/off switches to the outputs which allows you to create different melodies and beats.
+The circuit was inspired by Sebastian Tomaczak's 'Fun with Sea Moss' (see what he did there...) post and in particular the sequencer with amplitude envelope circuit design. The changes I did was to add potentiometers to each gate to control the 8 steps in the sequencer. I also added a pitch control and a op amp for the built in speaker and added some on/off switches to the outputs which allows you to create different melodies and beats.
 
 I incorporated most of the auxiliary parts to the board which reduces the amount of wiring needed and makes adding the front panel simple.
 
@@ -60,21 +60,21 @@ The next step has all of the parts you'll need for the PCB. I've listed of the o
 
 PARTS:
 
-- Speaker 8 Ohm - [Ali Express](https://www.aliexpress.com/item/4000273743081.html?spm=a2g0o.productlist.0.0.302f48d3MaV0x7&algo_pvid=b82fb460-dc46-463b-807c-6410cad0a4e4&algo_exp_id=b82fb460-dc46-463b-807c-6410cad0a4e4-19&pdp_ext_f=%7B%22sku_id%22%3A%2210000001112430536%22%7D)
-- Audio Female socket 3.5mm - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20211010230952&origin=y&SearchText=3.5mm+Headphones+Jack+Socket+PCB+Mount+Connector)
-- Opal Acrylic - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=opal+acrylic+a3&_sacat=0)
-- Clear, adhesive A4 label - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=clear+transparent+glossy+self+adhesive+sticker+paper&_sacat=0&LH_TitleDesc=0&_odkw=Clear+Transparent+Glossy+Self+Adhesive+Sticker+Paper+Label+Laser+Print&_osacat=0)
+- Speaker 8 Ohm - Ali Express
+- Audio Female socket 3.5mm - Ali Express
+- Opal Acrylic - eBay
+- Clear, adhesive A4 label - eBay
 - Hardwood edging (for the case) 40mm x 8mm x 1M - any hardware store
-- Potentiometer knobs X 11. [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=potentiometer+knobs&_sacat=0&LH_TitleDesc=0&_sop=15)
-- Speaker Mesh - [Ali Express](https://www.aliexpress.com/item/4000087549083.html?spm=a2g0s.9042311.0.0.27424c4debfuno)
+- Potentiometer knobs X 11. eBay
+- Speaker Mesh - Ali Express
 POWER
 
 To power the synth I used an old mobile battery, a mini boost Step Up Board, charging module and a micro USB module. This will bring the power up from 3.7v to 9v and also allow me to have a rechargeable battery. You could use a 9v battery if you wanted to but I get sick or replacing them.
 
-- Mobile battery - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=samsung+mobile+phone+battery&_sacat=0) or visit your local e-waste centre where you should be able to pick them up for free!
-- Step up module - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20211014172555&origin=y&SearchText=Mini+Boost+Module+Step+Up+Board+)
-- Charging module - [eBay](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20211014172618&SearchText=3.7v+charging+module) To save on parts you could always buy a charging module with a micro USB attached
-- Micro USB module - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=micro+usb+module+adapter&_sacat=0&LH_TitleDesc=0&_sop=15)
+- Mobile battery - eBay or visit your local e-waste centre where you should be able to pick them up for free!
+- Step up module - Ali Express
+- Charging module - eBay To save on parts you could always buy a charging module with a micro USB attached
+- Micro USB module - eBay
 
 
 ## Step 1: The PCB, Getting It Printed & Parts
@@ -99,9 +99,9 @@ Another 4051 is used to create the envelope generator and this is also connected
 
 I have created a folder in my Google drive which can be found in the below link that has the schematic, PCB and Gerber files
 
-[Google Drive Files](https://drive.google.com/drive/folders/16FrzuztFKCyY2EooysdT3yF2PJUHYPVp?usp=sharing)
+Google Drive Files
 
-If you want to get your own board printed, then just save the gerber zip file in the Google Drive Files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then [check this 'ible out](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/) which is a step by step guide on how to get a PCB printed.
+If you want to get your own board printed, then just save the gerber zip file in the Google Drive Files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.
 
 I've attached is a list of the components and you can find an excel version in the Google drive link too. I've also listed them below and added links to where you can buy them.
 
@@ -109,23 +109,23 @@ PCB Parts List
 
 I've added an attached parts list which you can print off and use. I've also added the parts list below and have added links to where to buy the parts.
 
-- Resistors - Buy them in assorted lots from [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=resistors+assorted+metal+&_sacat=0&LH_TitleDesc=0&_sop=15)
+- Resistors - Buy them in assorted lots from eBay
 - 22K X 7
 - 330R X 1
 - 4.7K X 2
 - 10R X 1
-- Capacitor Non Polarized.  I like to use Polypropylene Film Capacitors
-- 100nf X 5 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=Polypropylene+Film+100nf&_sacat=0)
-- 47nf X 1 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=polypropylene+film+47nf&_sacat=0&LH_TitleDesc=0&_odkw=Polypropylene+Film+100nf&_osacat=0)
-- Capacitor Polarized - I like to use high frequency radial capacitors - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=High+Frequency+Radial+capacitor&_sacat=0)
+- Capacitor Non Polarized. I like to use Polypropylene Film Capacitors
+- 100nf X 5 - eBay
+- 47nf X 1 - eBay
+- Capacitor Polarized - I like to use high frequency radial capacitors - eBay
 - 1uf
 - 10uf X 10
 - IC's
-- 4051 X 2 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=4051+ic&_sacat=0&LH_TitleDesc=0&_sop=15)
-- 4040 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=4040+ic&_sacat=0&LH_TitleDesc=0&_odkw=4051+ic&_osacat=0&_sop=15)
-- 40160 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=40106+ic&_sacat=0&LH_TitleDesc=0&_odkw=4040+ic&_osacat=0&_sop=15)
-- Op Amp 386 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=386+ic&_sacat=0&LH_TitleDesc=0&_odkw=40106+ic&_osacat=0&_sop=15)
-- IC Socket  - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=IC+sockets&_sacat=0&LH_TitleDesc=0&_odkw=386+ic&_osacat=0&_sop=15)
+- 4051 X 2 - eBay
+- 4040 - eBay
+- 40160 - eBay
+- Op Amp 386 - eBay
+- IC Socket - eBay
 - 16 pin X 3
 - 14 pin X 1
 - 8 pin
@@ -133,17 +133,13 @@ I've added an attached parts list which you can print off and use. I've also add
 - 9mm vertical 10K X 9
 - 9mm Vertical 100K X 2
 - Switch
-- 6 Pin X 6 - [eBay](https://www.ebay.com.au/itm/403195283008?hash=item5de04fc640:g:SZkAAOSwYxBaMiH7)
-- Buttons for Switches X 6 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=cap+button+for+tactile+switch&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=cap+button+for+tactile+switch)
-- SPDT X 1 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=toggle+switch+spdt+mini&_sacat=0&LH_TitleDesc=0&_odkw=cap+button+for+tactile+switch&_osacat=0)
-- Transistor - 2N3904 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=2n3904&_sacat=0&LH_TitleDesc=0&_odkw=toggle+switch+spdt+mini&_osacat=0)
-- LED Filament 38mm X 2 - [Ali Express](https://www.aliexpress.com/item/1005003003497203.html?spm=a2g0o.ams_97944.0.0.7aaeYrqkYrqkj4&pdp_ext_f=%7B%22sku_id%22:%2212000023232957644%22%7D&scm=1007.26694.226824.0&scm_id=1007.26694.226824.0&scm-url=1007.26694.226824.0&pvid=f60cdc23-2e8b-46dd-9cbc-bd896f358cbe&fromRankId=1895709&_t=fromRankId:1895709)
-- JST Connectors Mini X 4 - [Ali Express](https://www.aliexpress.com/item/4001132014579.html?spm=a2g0o.productlist.0.0.5930134dGjBJaa&algo_pvid=a9837e26-6c6f-4ede-b1da-dec8e15f66d5&algo_exp_id=a9837e26-6c6f-4ede-b1da-dec8e15f66d5-5&pdp_ext_f=%7B%22sku_id%22%3A%2210000014717134517%22%7D)
+- 6 Pin X 6 - eBay
+- Buttons for Switches X 6 - eBay
+- SPDT X 1 - eBay
+- Transistor - 2N3904 - eBay
+- LED Filament 38mm X 2 - Ali Express
+- JST Connectors Mini X 4 - Ali Express
 
-
-- [Beatmaster 2000 - Board](pdfs/Beatmaster 2000 - Board.pdf)
-- [Beatmaster 2000 - Parts List](pdfs/Beatmaster 2000 - Parts List.pdf)
-- [Beatmaster 2000 - Schematic](pdfs/Beatmaster 2000 - Schematic.pdf)
 
 ## Step 2: Adding Components to the PCB
 
@@ -170,10 +166,10 @@ The board is actually 2 sided. On one side are all of the components like capaci
 STEPS:
 
 - As always, start with the lowest profile parts - in this case it's the resistors. There is a resistor ladder (the 22k resistors) that need to be added and then a few more for the op amp and LED
-- I usually then add the IC sockets.  It's definitely a good idea using these as it makes the job of replacing a possible faulty IC extremely easy!
+- I usually then add the IC sockets. It's definitely a good idea using these as it makes the job of replacing a possible faulty IC extremely easy!
 - Once all of the components like the caps, resistors have been added, it's time to flip the PCB over and start top add the potentiometers and switches.
-- An important step to note is the orientation of the switches.  There are 6 legs on these switches and if you put them in up-side-down it will mean that they will be activated then the button hasn't been pushed down.  If you flip the switch over you will see a small mark on one side of the switch.  This needs to be at the top when adding the switch.  This will ensure it is in the 'normally open' state
-- In regards to the LED, there are a couple of ways to add them.  You can add say a 5mm LED at the JST connection or you can use 2 X 38mm filament LED's.  I have added some solder points on the board to add them.  I 'lost' all but one of them so had to only include one on this build
+- An important step to note is the orientation of the switches. There are 6 legs on these switches and if you put them in up-side-down it will mean that they will be activated then the button hasn't been pushed down. If you flip the switch over you will see a small mark on one side of the switch. This needs to be at the top when adding the switch. This will ensure it is in the 'normally open' state
+- In regards to the LED, there are a couple of ways to add them. You can add say a 5mm LED at the JST connection or you can use 2 X 38mm filament LED's. I have added some solder points on the board to add them. I 'lost' all but one of them so had to only include one on this build
 
 
 ## Step 3: The Front Panel
@@ -199,10 +195,8 @@ STEPS:
 - Cut out one of the images, leaving about 10mm around the edge of the front panel design
 - Carefully place onto the opal acrylic and remove any air bubbles. Don't worry about cutting the acrylic to size before adding the label. If you add it slightly crooked you can always just cut the acrylic so it is straight!
 - Cut the acrylic to size
-- To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one.  I used a satin finish clear coat on the final design.  You might see some images where the front panel looks glossy - that's because I did use gloss on the first build but scrapped this and decided to use a satin finish which looks a lot better
+- To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design. You might see some images where the front panel looks glossy - that's because I did use gloss on the first build but scrapped this and decided to use a satin finish which looks a lot better
 
-
-- [Beatmaster 2000 Version 1](pdfs/Beatmaster 2000 Version 1.pdf)
 
 ## Step 4: Drilling Holes in the Front Panel
 
@@ -294,7 +288,7 @@ STEPS:
 - You may need to add some more glue or even use a brad nailer gun to ensure the case is secure.
 - Next, it's time to add the back to the case. I use some thin ply wood, cut it to size and then secure it with some small screws to the case.
 - Sand it again to make sure that the back is flush with the case and if you want to you can round off the edges as well.
-- To finish off the wood I added some clear gloss on the body of the frame and some aged-teak for the back.  I think it gives the case a nice contrast.
+- To finish off the wood I added some clear gloss on the body of the frame and some aged-teak for the back. I think it gives the case a nice contrast.
 
 
 ## Step 7: Adding Power
@@ -321,11 +315,11 @@ As previously mentioned, you could power everything by a 9V battery. I like to u
 
 STEPS:
 
-- The step up power module (used to change the voltage from 3.7v to 9v) needs to be formatted to output 9v's.  To do this you need to connect the top 2 solder pads indicated in the image.
+- The step up power module (used to change the voltage from 3.7v to 9v) needs to be formatted to output 9v's. To do this you need to connect the top 2 solder pads indicated in the image.
 - Add a dab of superglue to the back of the module and glue it close to the battery terminals
 - connect using a couple resister legs
-- Next, you need to connect the charging module.  The charging module I used doesn't have a micro USB connector so I had to use a separate one to be able to charge the battery.  superglue the module to the battery and connect the input of the charging module to the battery terminals
-- To be able to charge the battery, you will need to be able to access the micro USB module.  The easiest way is to make a small cutout into the bottom of the case and glue the USB module to it.  You can then connect the USB module to the output on the charging module.
+- Next, you need to connect the charging module. The charging module I used doesn't have a micro USB connector so I had to use a separate one to be able to charge the battery. superglue the module to the battery and connect the input of the charging module to the battery terminals
+- To be able to charge the battery, you will need to be able to access the micro USB module. The easiest way is to make a small cutout into the bottom of the case and glue the USB module to it. You can then connect the USB module to the output on the charging module.
 
 
 ## Step 8: Adding the Speaker
@@ -370,7 +364,7 @@ The front panel has 4 holes in it where you can connect it to the front panel. U
 STEPS:
 
 - Place the pots and switches into the holes of the panel
-- secure to the front panel with 4 screw and nuts. As I couldn't do this, I just held the PCB in place with the pots. I'll add a little bit of superglue to the knobs if I find that the panel is moving  Don't add superglue!  I had to remove the PCB and it was a very painful experience!  the knobs should hold the PCB in place without it
+- secure to the front panel with 4 screw and nuts. As I couldn't do this, I just held the PCB in place with the pots. I'll add a little bit of superglue to the knobs if I find that the panel is moving Don't add superglue! I had to remove the PCB and it was a very painful experience! the knobs should hold the PCB in place without it
 - Attach the knobs to the pots
 - You can now add the SPDT on/off switch and the 3.5mm audio output jack
 
@@ -389,11 +383,11 @@ The good news is, there is only a very minimal amount of wiring that needs to be
 
 STEPS:
 
-- In order to have the speaker turn off if you use headphones or an external speaker, you need to use a switching audio socket.  Solder the ground on the board to ground on the audio socket and connect positive from the board to the 'normally on' on the audio socket.
-- You can now solder the speaker to the audio socket.  Connect ground to the same spot as you connected to the board to.  Positive on the speaker should be connected to the 'normally off'.  Now when you plug a audio jack into the socket, the speaker will disconnect.
+- In order to have the speaker turn off if you use headphones or an external speaker, you need to use a switching audio socket. Solder the ground on the board to ground on the audio socket and connect positive from the board to the 'normally on' on the audio socket.
+- You can now solder the speaker to the audio socket. Connect ground to the same spot as you connected to the board to. Positive on the speaker should be connected to the 'normally off'. Now when you plug a audio jack into the socket, the speaker will disconnect.
 - Connect the battery up to the output on the step up power module
 - Connect the on/off wires up to the toggle switch
-- Now for the big moment - turn it on and make sure everything works.  If you have having any issues, you'll need to do a little problem solving to identify any issues.  If you hear some sounds then you are ready to make some tunes!
+- Now for the big moment - turn it on and make sure everything works. If you have having any issues, you'll need to do a little problem solving to identify any issues. If you hear some sounds then you are ready to make some tunes!
 
 
 ## Step 11: How to Use the Beatmaster 2000
@@ -424,13 +418,6 @@ Volume
 
 - You would expect this one to be self explanatory but you'd be wrong! Yes it does control the volume but it also acts like a filter! This wasn't planned but def adds some great effects. The first 1/4 turn of the vol knob controls the volume, after that the envelope generator kicks in and you get a more beefy sound.
 
-
-## Downloads
-
-- [Beatmaster 2000 - Board](pdfs/Beatmaster 2000 - Board.pdf)
-- [Beatmaster 2000 - Parts List](pdfs/Beatmaster 2000 - Parts List.pdf)
-- [Beatmaster 2000 - Schematic](pdfs/Beatmaster 2000 - Schematic.pdf)
-- [Beatmaster 2000 Version 1](pdfs/Beatmaster 2000 Version 1.pdf)
 
 ---
 *89 images archived*

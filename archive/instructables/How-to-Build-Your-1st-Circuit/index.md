@@ -44,15 +44,15 @@ Soldering Iron
 
 The best advice that I can give you about soldering irons is – don’t go too cheap! Buy something half decent. The soldering Irons below would be fine to use
 
-[Soldering Iron 1](https://www.ebay.com.au/itm/NEW-Soldering-Iron-Station-Kit-Desoldering-Pump-Helping-Hand-Adjustable/331785709074?epid=13012810259&hash=item4d3ff82612:g:C1UAAOSwuAVWyAwZ:sc:AU_StandardDelivery!3796!AU!-1:rk:2:pf:0)
+Soldering Iron 1
 
-[Soldering Iron 2](https://www.amazon.com.au/Yescom-Soldering-Station-Digital-Welding/dp/B075LHQXC9/ref=sr_1_1?ie=UTF8&qid=1539219830&sr=8-1&keywords=soldering+iron)
+Soldering Iron 2
 
 The cheap ones take ages to heat up and you can’t control the heat so they usually aren’t hot enough. One with temperature control will give you a lot more control, especially with solder flow and heat.
 
 Solder
 
-I know that that this might be self evident but you can't solder without solder. I find it best to use a thin solder as it gives me more control. The solder I use is 0.71mm thick and can be purchased from [eBay](https://www.ebay.com.au/itm/0-71mm-Duratech-Solder-Hobby-Tube/253719307445?epid=1740024783&hash=item3b12d964b5:g:t6IAAOSwjE1bts-O:sc:AU_StandardDelivery!3796!AU!-1:rk:12:pf:0). Anything similar size will do the trick.
+I know that that this might be self evident but you can't solder without solder. I find it best to use a thin solder as it gives me more control. The solder I use is 0.71mm thick and can be purchased from eBay. Anything similar size will do the trick.
 
 Variable Power Supply
 
@@ -60,15 +60,15 @@ When prototyping on a breadboard your circuit, being able to have power is adjus
 
 Tip - At a pinch you can also just use a 9v battery and for your power supply as well
 
-[Buy one](https://www.ebay.com.au/itm/DC-Power-Supply-30V-10A-Precision-Variable-Digital-Lab-Adjustable-with-Cable/382586590061?epid=812153397&hash=item5913f0136d:g:H7MAAOSwdjdaA7g9:rk:9:pf:0)
+Buy one
 
-[Make your own](https://www.instructables.com/id/Portable-Variable-Power-Supply-1/)
+Make your own
 
 3rd Hand
 
 If you have ever tried to solder 2 wires together, you will know how hard it is to keep them both aligned. A 3rd hand is literally a helping hand, usually in the form of a couple of alligator clips. These then can hold one of the wires (or any other electrical part) whist you tin (more of that later) and connect the parts together.
 
-A 3rd hand isn’t essential but it will make the job a hell of a lot easier. You can make your own pretty easily like I did. ([ible’ here](https://www.instructables.com/id/DIY-Flexible-Soldering-Helping-Hand/)) or just [buy one](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l2632.R3.TR7.TRC2.A0.H1.Xthird+hand+.TRS0&_nkw=third+hand&_sacat=182941&LH_TitleDesc=0&_osacat=0&_odkw=helping+hand&LH_TitleDesc=0)
+A 3rd hand isn’t essential but it will make the job a hell of a lot easier. You can make your own pretty easily like I did. (ible’ here) or just buy one
 
 Wire Snips (or a pair of small, sharp scissors)
 
@@ -95,7 +95,7 @@ Multi-meter
 
 You really can't live without one of these when you are building circuits. They can measure power in a battery, check the rating of a resistor (very handy), and capacitors and a whole bunch of other things. Grab yourself one and learn how to use it (it's not hard)
 
-[This would be a perfect one to use](https://www.ebay.com.au/itm/Digital-LCD-Multimeter-Voltmeter-Tester-Ammeter-DC-AC-OHM-Auto-Range-8233D-PRO/253837583726?hash=item3b19e6256e:rk:1:pf:0)
+This would be a perfect one to use
 
 Organisers
 
@@ -138,11 +138,11 @@ Resistors
 
 So what are these things called resistors? Well basically they add resistance to current flow through a circuit. They can also be used to reduce the voltage as well. Resistors come in a range of “resistance” values which are calculated in Ohms ( Ω ). You can use a multimeter to read the value of the resistor and I find this the easiest way. The coloured bands also can be used to calculate the Ohms as well. Resistors are one of the main electrical parts you will use in a circuit.
 
-The best way to buy these is in [assorted lots](https://www.ebay.com.au/itm/600pcs-30-Kinds-Each-Value-Metal-Film-Resistor-Pack-1-4W-1-Resistor-Kit-Set-Lot/192254900545?_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D1%26asc%3D20140106155344%26meid%3D8924b5af1b63406983d0fc3920cd358e%26pid%3D100005%26rk%3D2%26rkt%3D3%26sd%3D292747747795%26itm%3D192254900545&_trksid=p2047675.c100005.m1851). You can get these on eBay or Ali Express
+The best way to buy these is in assorted lots. You can get these on eBay or Ali Express
 
-I recently put together an 'ible on how to store and organise your resistors which can be [found here](https://www.instructables.com/id/Resistor-Organizer-and-Storage/)
+I recently put together an 'ible on how to store and organise your resistors which can be found here
 
-[Check out this website](https://www.explainthatstuff.com/resistors.html) for a more comprehensive overview of the resistor
+Check out this website for a more comprehensive overview of the resistor
 
 Capacitors
 
@@ -150,11 +150,11 @@ Capacitors are the other main part in most circuits you build. Basically, they a
 
 Capacitors come in two different types; ceramic, which are usually small and don't have a polarity, and electrolytic which are larger and have a polarity.
 
-[Check out this website](https://www.explainthatstuff.com/capacitors.html) for more information on how a capacitor works
+Check out this website for more information on how a capacitor works
 
-Sometimes capacitor values are represented in different ways. The small, ceramic caps have a number on them, while other times you will see a value which is in a value not on the cap. The attached chart will help identify them for you. You can also find the same [chart here](https://www.justradios.com/uFnFpF.html)
+Sometimes capacitor values are represented in different ways. The small, ceramic caps have a number on them, while other times you will see a value which is in a value not on the cap. The attached chart will help identify them for you. You can also find the same chart here
 
-You can also buy these in assorted lots. Best to buy both types - [ceramic capacitors](https://www.ebay.com.au/itm/450pcs-10Value-50V-10pF-100nF-Ceramic-Capacitors-Assortment-Assorted-Kit-Box/163087715384?hash=item25f8c90c38:rk:1:pf:0) and [electrolytic capacitors](https://www.ebay.com.au/itm/120pcs-1uF-470uF-12-Types-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/351774763287?epid=2113501882&hash=item51e768e917:g:knwAAOSwSwpbaUUR:rk:3:pf:0)
+You can also buy these in assorted lots. Best to buy both types - ceramic capacitors and electrolytic capacitors
 
 
 ## Step 4: What Parts You Need to Get Started
@@ -183,55 +183,55 @@ LED’s are great to play around with and there is plenty of information on-line
 
 The other great thing is they are super cheap and come in multiple colours! You can pick-up a 100 of them for a couple of dollars.
 
-[eBay have plenty of them](https://www.ebay.com.au/itm/300-Pack-LED-Diode-3mm-5mm-LED-Lights-Emitting-Diodes-Assorted-Clear-Bulbs-R1E4/282904138367?epid=2282666457&hash=item41de66927f:g:gxEAAOSwUUxavKGQ:rk:7:pf:0) available
+eBay have plenty of them available
 
 Integrated Circuits (IC’s)
 
 These are the brains of your circuits. To start with buy the following ones.
 
-[555 Timer](https://www.ebay.com.au/itm/10-20-50-100-PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/302152230012?hash=item4659ad247c:m:m0J3yUXSmG3OKjaZZGJ-W3A:rk:8:pf:0)
+555 Timer
 
-[386 Op Amp](https://www.ebay.com.au/itm/10PCS-IC-LM386N-LM386-AMP-AUDIO-PWR-MONO-8DIP-GOOD/232451320090?hash=item361f2da91a:g:cI8AAOSwhYZZlP2z:rk:6:pf:0)
+386 Op Amp
 
 These will allow you to build a whole gamut of circuits and will keep you busy for ages. I will be using a 555 timer in another tip to show you how to build your own circuit
 
 Prototype Boards
 
-Super important as they are what you build the circuit onto. There are many different types but I like to use these ones which you can [buy from eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3). They make connecting Integrated Circuits and other parts a breeze
+Super important as they are what you build the circuit onto. There are many different types but I like to use these ones which you can buy from eBay. They make connecting Integrated Circuits and other parts a breeze
 
 Photo Cells (CdS Photoresistor)
 
 These are pretty much resistors but are controlled by the amount of light in the room! Very cool when you want your circuit to react to the environment
 
-[buy from eBay](https://www.ebay.com.au/itm/20PCS-Photo-Light-Sensitive-Resistor-Photoresistor-Optoresistor-5mm-GL5528/301924802087?hash=item464c1ede27:g:72EAAOSwoydWl5pr:rk:1:pf:0)
+buy from eBay
 
 Potentiometers
 
 These are also resistors but you can adjust the resistance allowing you more control over your circuit. Like resistors, they come in different resistance values
 
-You can buy them easily [on eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xpotentiometer.TRS0&_nkw=potentiometer&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=potentiometers+mixed&LH_TitleDesc=0)
+You can buy them easily on eBay
 
 Potentiometer Knobs
 
-Ok so these aren't essential but they are handy and make turning the potentiometer a lot easier. Most of the ones that I use come from old electronics but they can also be purchased [cheaply on eBay](https://www.ebay.com.au/itm/5Pcs-Aluminum-Potentiometer-Knob-6mm-Cap-Inner-Volume-Control-Rotary-Switch/142387618833?hash=item2126f6a411:m:mk-CmZeKA1QScajKjWmkeAQ:rk:3:pf:0)
+Ok so these aren't essential but they are handy and make turning the potentiometer a lot easier. Most of the ones that I use come from old electronics but they can also be purchased cheaply on eBay
 
 Speakers
 
 I pull most of mine from old toys. However, you can buy 8 ohm 0.5W ones on eBay for cheap and these will work for most projects you build which have sound.
 
-[eBay](https://www.ebay.com.au/itm/2-Pcs-8ohm-Loud-Speaker-8-0-5W-Small-Trumpet-36mm-Diameter-AU-NEW/302106509576?hash=item4656f38108:g:i84AAOSwZJBYAJFX:rk:9:pf:0)
+eBay
 
 Switches
 
 There are a heap of different types of switches believe of or not. It would take too long to go through all of them and what they do so here are 2 you can’t live without.
 
-[Tactile Switch](https://www.ebay.com.au/itm/10-Values-180PCS-Tactile-Push-Button-Switch-Mini-Momentary-Tact-Assortment-A7I2/253253341261?hash=item3af713504d:g:tzUAAOSwjodaBo0J:rk:3:pf:0)
+Tactile Switch
 
-[SPDT](https://www.ebay.com.au/itm/5pcs-AC-125V-6A-3-Position-3Pin-SPDT-ON-OFF-ON-Micro-Mini-Toggle-Switch-TE460/232164669648?hash=item360e17b8d0:g:84EAAOSwcSFbMY9L:rk:7:pf:0) (Single Pole, Double Throw) switch
+SPDT (Single Pole, Double Throw) switch
 
 Battery Holders
 
-Most of the circuits use 9V batteries so just grab a couple of these from [eBay](https://www.ebay.com.au/itm/1PCS-9V-Volt-PP3-Battery-Holder-Box-DC-Case-With-Wire-Lead-ON-OFF-Switch-Cover/222002032508?hash=item33b05a2f7c:g:uZ0AAOSw7PBTm86G:rk:20:pf:0) to start with
+Most of the circuits use 9V batteries so just grab a couple of these from eBay to start with
 
 Wire
 
@@ -262,9 +262,9 @@ Tip a good way to visualise how the connections are made on the breadboard is to
 
 Later on in this Instructable I’ll be building a simple circuit and will go through how to add parts to a breadboard.
 
-[Breadboard to buy](https://www.ebay.com.au/itm/Mb-102-830-Point-Solderless-Prototype-PCB-Breadboard-65-bread-board-jumping-line/272750754063?hash=item3f8136390f:rk:1:pf:0)
+Breadboard to buy
 
-[Jumper wires to buy](https://www.ebay.com.au/itm/65PCS-Male-to-Male-Solderless-Breadboard-Jumper-Cable-Wires-Kit-For-Arduino/282377647819?hash=item41bf04f6cb:g:X6MAAOSwVGhZiXun:rk:53:pf:0)
+Jumper wires to buy
 
 
 ## Step 6: Start Simple When Building Your First Circuits
@@ -287,9 +287,9 @@ The best place to start building circuits is with the 555 IC. If you want to do 
 
 There are literally 100’s of projects on line using this IC, from simple synths and blinking LED’s to Police siren and LED chaser circuits. The attached circuits are just a few of the easier ones. Give some of these a try once you have built the first circuit in this 'ible and once you are confident building simple circuits, you can move onto more complex ones.
 
-50 X [555 Projects](http://www.talkingelectronics.com/projects/50%20-%20555%20Circuits/50%20-%20555%20Circuits.html)
+50 X 555 Projects
 
-other [555 Projects](https://www.google.com.au/search?q=555+projects&safe=active&rlz=1C1GCEA_enUS807US807&source=lnms&sa=X&ved=0ahUKEwiQ68nvzP3dAhWJgLwKHUZ2AKsQ_AUICSgA&biw=1920&bih=920&dpr=1)
+other 555 Projects
 
 
 ## Step 7: Learn What the Circuit Diagram Symbols Mean
@@ -306,9 +306,9 @@ Please note that there are many more symbols which aren’t included on this lis
 
 I have attached an example of this which I usually find on Potentiometers. This can be a confusing one due to the fact that the actual potentiometer has 3 legs and depending on the application, either 2 or 3 legs are connected to the circuit.
 
-To learn more about how to read symbols - [check out this link](https://learn.sparkfun.com/tutorials/how-to-read-a-schematic/schematic-symbols-part-1)
+To learn more about how to read symbols - check out this link
 
-Check out [this link](https://www.electronicshub.org/symbols/) also for more details
+Check out this link also for more details
 
 
 ## Step 8: Learn to Read a Circuit Diagram
@@ -409,21 +409,21 @@ Now that you can hopefully follow the diagram, it’s now time to breadboard. Al
 
 Parts
 
-555 Timer - [eBay](https://www.ebay.com.au/itm/10-20-50-100-PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/302152230012?hash=item4659ad247c:m:m0J3yUXSmG3OKjaZZGJ-W3A:rk:8:pf:0)
+555 Timer - eBay
 
-Resistors - 10K and 3.3K - By in assorted lots - [eBay](https://www.ebay.com.au/itm/1500-Pcs-75-Values-1-ohm-10M-ohm-5-1-4W-Carbon-Film-Resistor-Assorted-kit-W1K7/153205593054?epid=888020991&hash=item23abc3d3de:g:Ey0AAOSwuPZbteoq:rk:10:pf:0)
+Resistors - 10K and 3.3K - By in assorted lots - eBay
 
-Capacitor - 10uf 0 By in assorted lots - [eBay](https://www.ebay.com.au/itm/120pcs-1uF-470uF-12-Types-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/351774763287?epid=2113501882&hash=item51e768e917:g:knwAAOSwSwpbaUUR:rk:10:pf:0)
+Capacitor - 10uf 0 By in assorted lots - eBay
 
-Potentiometer [100K](https://www.ebay.com.au/itm/5pcs-Single-Mono-Linear-Potentiometer-Rotary-100K-for-Arduino/142833025445?hash=item21418301a5:g:IO4AAOSwdrlbI5Ul:rk:12:pf:0) - [eBay](https://www.ebay.com.au/itm/2PCS-10K-Ohm-B10K-Knurled-Shaft-Linear-Rotary-Taper-Potentiometer/232907425079?hash=item363a5d4537:g:HyUAAOSwe09Zpnfy:rk:4:pf:0) (grab a 10K one too for experimenting - eBay)
+Potentiometer 100K - eBay (grab a 10K one too for experimenting - eBay)
 
-LED - [eBay](https://www.ebay.com.au/itm/10pcs-3mm-5mm-LED-Diode-Lamp-Emitting-Beads-for-DIY-Light-Yellow-White-Red-Green/311672674766?hash=item48912399ce:m:mrYxIXTYqHHfcmrKhXpoMoQ:rk:19:pf:0)
+LED - eBay
 
-Prototype Board - [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+Prototype Board - eBay
 
-9v Battery Holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR1.TRC0.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0)
+9v Battery Holder - eBay
 
-You'll also need a breadboard and jumper wires. Here's a good one on [eBay](https://www.ebay.com.au/itm/Mb-102-830-Point-Solderless-Prototype-PCB-Breadboard-65-bread-board-jumping-line/272750754063?hash=item3f8136390f:rk:1:pf:0)
+You'll also need a breadboard and jumper wires. Here's a good one on eBay
 
 Tip - Always buy in bulk when getting electronic components - they are cheap and you'll definitely use them
 

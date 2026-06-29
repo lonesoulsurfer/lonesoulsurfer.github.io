@@ -38,21 +38,21 @@ Let’s get building!
 
 PARTS:
 
-1. Voltage regulator & charging module – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=+3.7V+9V+5V+2A+Adjustable+Step+Up+18650+&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=voltage+regulator+adjustable+charging)
+1. Voltage regulator & charging module – eBay
 
-2. Voltage Meter – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=voltage+meter&_sacat=0&LH_TitleDesc=0&_sop=15&_blrs=recall_filtering)
+2. Voltage Meter – eBay
 
-3. Switch – I used [this one](https://www.ebay.com.au/itm/184761890795?hash=item2b04aab7eb:g:yxUAAOSwk9dZmNIb) from [eBay](https://www.ebay.com.au/itm/274697763470?hash=item3ff5433a8e:g:cQwAAOSwfzZgOHhZ) but you could also use this one
+3. Switch – I used this one from eBay but you could also use this one
 
-4. Header pins. You will need to get double header pins – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=40+Pin+Header+Pins+Double&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=40P+Pin+Header+Pins+2.54mm+Double)
+4. Header pins. You will need to get double header pins – eBay
 
-5. Prototype Board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
+5. Prototype Board – eBay
 
-6. Battery – I used an old mobile battery but you can use any li-po battery such as [18650](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1311&_nkw=18650+battery&_sacat=0) or buy a mobile battery from [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=mobile+battery&_sacat=0&LH_TitleDesc=0&_sop=15)
+6. Battery – I used an old mobile battery but you can use any li-po battery such as 18650 or buy a mobile battery from eBay
 
 7. Wires. I used computer ribbon wire. It’s thin and I get it for free at my local e-waste
 
-8. 100K Potentiometer – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=100k+potentiometer&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=mobile+battery)
+8. 100K Potentiometer – eBay
 
 TOOLS:
 

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -163,37 +128,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Mini Headphone Amp</span>
 </nav>
 <h1>Mini Headphone Amp</h1><div class="source"><a href="https://www.instructables.com/Mini-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Make a small headphone amp from off the shelf modules.</p>
-<p>I made this headphone amp after getting frustrated with terrible sound quality coming out of my headphones whist on a recent plane trip to China.</p>
-<p>The sound was tinny and sounded like I was sharing the same audio driver with about 300 other people (probably was!)</p>
+<p>I made this headphone amp after getting frustrated with terrible sound quality coming out of my headphones whist on a recent plane trip to China. The sound was tinny and sounded like I was sharing the same audio driver with about 300 other people (probably was!)</p>
 <p>Building a small, portable headphone amp helps drive the speakers in your headphone and dramatically improves the quality, clarity and detail of the sound.</p>
 <p>You can use this headphone amp as an everyday amplifier for your headphones if you want as well. I’ve also tested it recently on a plane trip and it worked a treat.</p>
-<p>I’ve made a couple of other versions of these amps which can be found <a href="https://www.instructables.com/id/Make-Your-Own-Headphone-Amp/">[here</a>](https://www.instructables.com/id/Make-a-Headphone-Amp/) and here</p>
+<p>I’ve made a couple of other versions of these amps which can be found here and here</p>
 <p>The amp uses a few off-the-shelf modules that you can get from eBay. I also stuck it all into a 2 X AA battery holder which ended up being just the right sized case.</p>
 <p>So without further ado – let’s get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts & Tools image 8" loading="lazy"></div><p>Parts</p>
 <ol>
-<li>2 X 3.5mm headphone jack sockets - <a href="https://www.ebay.com.au/itm/3-5mm-1-8-Mini-Female-Headphone-Jack-Plug-Stereo-Audio-Panel-Mount-5Pcs-/142751947303?hash=item213cadda27">eBay</a></li>
-</ol>
-<ol>
-<li>Headphone amp module – <a href="https://www.ebay.com.au/itm/LM4881-Headphone-Power-Amplifier-Board-Preamplifier-Module-Max-200mW-DC-2-7-5-5V/332497224679?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649">eBay</a> You can also put into eBay - Headphone Power Amplifier Board to find other types</li>
-</ol>
-<ol>
-<li>Lipo battery – <a href="https://www.ebay.com.au/itm/503035-3-7V-500mAh-Lipo-Battery-Replacement-For-MP3-GPS-BT-Headset-Speaker-9E44/323339426651?hash=item4b48881b5b:g:JFcAAOSwBARbQvgl">eBay</a></li>
-</ol>
-<ol>
-<li>Lipo battery charger – <a href="https://www.ebay.com.au/itm/4Pcs-5V-Micro-USB-1A-Lithium-Li-ion-18650-Battery-Charging-Lipo-Charger-Module-I/254218910494?hash=item3b30a0bb1e:g:QmMAAOSwzCNcu~PV">eBay</a></li>
-</ol>
-<ol>
-<li>2 X AA battery holder – <a href="https://www.ebay.com.au/itm/New-9V-Volt-PP3-Battery-Holder-Box-DC-Case-with-Wire-Lead-ON-OFF-Switch-Cover/172175323885?hash=item281672f2ed:g:xWcAAOSwkEVXGExo">[eBay</a>](https://www.ebay.com.au/itm/1-2-3-4-6-8-10-x-AA-AAA-18650-Battery-Holder-Case-Enclosed-Box-Switch-With-Leads/253265256868?var=&hash=item3af7c921a4&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVr%2BsP1QJRdiihPN%2Bgyq9jRzSYPkXV1v3dAcBBythOLYbk11RzKZQn6s6O78pLgV85A%2FGrd0KPRApajmpgHjhHvwkOWWyUJpCZMG3b2lLj0ikDY%2BrqAKaOKiKxgb5sQV75aGDnyObu5malg8rDwYzjmZ8EW507WoYLPsXMjw02NDDiRzQFuHUdEgZsAAE%2FRD3CHf6Dpro8BDL9rIOrPUAVSsZtNc9slZejwIP8uuL43B2t095W2m07rp2sjR1G1ButBOGkY7Tntl50XKPAOi%2FPkYwXcEENfpuY36FGdBKLVVktP%2FP80vsF5vKbAppQhpqKSA0d3Z3hS2SX5HYL%2FYogAoZbkXcsj8axcqLqwY8%2BKeuyf3sIJoIEr3hatkDARfWvl8ZwJ9SU6adlTH1GeaOyLpU%2FIy9QKFdPRABtDQR33RYbSs8S601OpN3uQMxyCHZGW0HHE7KreMifZp1gv5KhQi0fwABbqFgRZU%2FwZNHB4lkkvyuaj1SnWxVlJAgH86mIitE4M3HNykCyDaREtpQ9iOiVbAVJ%2BFBBLd7cF1hk48DZefzXJ0BQdLtFJqi9o6T5PTOfOInjCZc6W0zERs03ScmvHV1yVKkvSOqHz3pEP6n1xzUUhztEjNYT962JZR5nx0HVDUxLkHSOXUqu1Je1AYIleWMy7OxHcwqt9U6DUyuO4CFsBE9Tznn7BH1Ki6uD53V2tbfR6lgkc7VyxnnHX1Xi89Lj0UBBd4pXGYTgbb7upafEhFy8PzpVBY27fRyv%2FciHwJzR0Nf960zZyVXtjIKbC2AqJ4qP6RPLoPO3VYJAqKzinoEE89Dd2nfgChpmLZb0xs%2BqXiV6gC76vW0KEZlZEiUYfvVcnBs2fFwo4%2B0JNZ31B7dNzOrma4TampF4bz%2BxRqsYYRAEVupwWiPyrG%2BEHnj338xuf3XXOmHHrf4OZsibp55jw%2FEgQ3XPttSPRy3agCgh2EW0HEoGgbB5Zw%3D%3D&checksum=2532652568680a35d82f01b04e75bee4699c0fc297a0&frcectupt=true). This is the case that you will be modifying. You could also use a 9v battery one which you can buy on eBay</li>
-</ol>
-<ol>
+<li>2 X 3.5mm headphone jack sockets - eBay</li>
+<li>Headphone amp module – eBay You can also put into eBay - Headphone Power Amplifier Board to find other types</li>
+<li>Lipo battery – eBay</li>
+<li>Lipo battery charger – eBay</li>
+<li>2 X AA battery holder – eBay. This is the case that you will be modifying. You could also use a 9v battery one which you can buy on eBay</li>
 <li>Thin wires</li>
 </ol>
 <p>If you are using this on a plane then you’ll also need the following:</p>
 <ol>
-<li>Plane headphone adapter – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR1.TRC0.A0.H0.Xplane+headphone+adapter.TRS0&_nkw=plane+headphone+adapter&_sacat=0">eBay</a></li>
-</ol>
-<ol>
-<li>Male to male headphone jack adapter – <a href="https://www.ebay.com.au/itm/2x-3-5mm-Stereo-Headphone-Audio-Male-To-2-Male-Splitter-Cable-Adapter-Plug-Jack/322488760663?epid=784003035&hash=item4b15d3f957:g:nVAAAOSwVm5Y-ERg">eBay</a></li>
+<li>Plane headphone adapter – eBay</li>
+<li>Male to male headphone jack adapter – eBay</li>
 </ol>
 <p>To connect the amp to your phone you’ll need the following:</p>
 <ol>
@@ -202,130 +154,58 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Tools:</p>
 <ol>
 <li>Soldering Iron</li>
-</ol>
-<ol>
 <li>Pliers</li>
-</ol>
-<ol>
 <li>Super glue</li>
-</ol>
-<ol>
 <li>Drill</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Modding the Case and Adding Headphone Jacks</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Modding the Case and Adding Headphone Jacks image 8" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>In order to fit all the parts inside the AA battery holder, you will need to make a few modifications. First, remove the plastic divider in the middle of the battery holder</li>
-</ol>
-<ol>
 <li>Next, remove the battery terminals</li>
-</ol>
-<ol>
 <li>Remove any gussets or pieces of plastic that aren’t needed.</li>
-</ol>
-<ol>
 <li>Next, drill a couple of holes into the end of the case. These will be for the headphone jack sockets. Don’t drill the holes too low as you will need to fit the amp module under tem later on</li>
-</ol>
-<ol>
 <li>Connect the 2 sockets to the case with the connector rings</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the Charging Module</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Charging Module image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Charging Module image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Charging Module image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Charging Module image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Charging Module image 5" loading="lazy"></div><p>The battery is charged via a charging module, which has a micro USB connector. You need to make a small slit into the side of the case so it is accessible.</p>
 <p>I've also included a circuit diagram so you can see how everything is sired-up. Please note that it's only for reference.</p>
 <p>Steps:</p>
 <ol>
 <li>Measure and mark where the USB connector will come out the side of the case and drill some small holes</li>
-</ol>
-<ol>
 <li>Use a file to smooth and shape the slit for the USB connector</li>
-</ol>
-<ol>
 <li>Once it’s the right size, add some super glue to the bottom of the charging module and glue into place</li>
-</ol>
-<ol>
 <li>Be careful that you don’t get any glue on the USB connector</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Wiring the Jack Sockets to the Amp Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Wiring the Jack Sockets to the Amp Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Wiring the Jack Sockets to the Amp Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Wiring the Jack Sockets to the Amp Module image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Wiring the Jack Sockets to the Amp Module image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Wiring the Jack Sockets to the Amp Module image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Wiring the Jack Sockets to the Amp Module image 6" loading="lazy"></div><p>There isn’t much room inside the case so you will need to use the thinnest wires you can get your hands on. I used some thin ribbon cable, which worked well.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder 3 small pieces of wire to each of the solder points on the jack sockets.</li>
-</ol>
-<ol>
 <li>Trim these to size and tin each end of the wires</li>
-</ol>
-<ol>
 <li>Add some solder to each of the solder points on the amp module. You will notice that there are 3 solder points for in and out and a couple for power.</li>
-</ol>
-<ol>
 <li>You now need to solder ground on the jack socket to ground on the module. Ground on the socket is the larger leg in the middle.</li>
-</ol>
-<ol>
 <li>The other 2 are left and right audio. Solder the wires from the socket to each of the left and right solder points.</li>
-</ol>
-<ol>
 <li>Make sure that you solder the 2 sockets up the same way. So the left solder point on each of the sockets should be soldered to the left solder point on the amp and so on.</li>
-</ol>
-<ol>
 <li>Solder on a couple of wires to the power solder points and carefully push the amp module under the sockets so it is out of the way.</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Battery to the Charging and Amp Modules</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Battery to the Charging and Amp Modules image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Battery to the Charging and Amp Modules image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Battery to the Charging and Amp Modules image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Battery to the Charging and Amp Modules image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Wiring the Battery to the Charging and Amp Modules image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Wiring the Battery to the Charging and Amp Modules image 6" loading="lazy"></div><p>The next thing to do is to connect the battery and amp module to the charging module.</p>
 <p>Steps:</p>
 <ol>
 <li>Top connect the amp module to power, the best thing to do is to connect it directly to the solder pads on the charging module.</li>
-</ol>
-<ol>
 <li>The great thing about using the AA battery case is it has a built in on/off switch! Solder the positive wire from the amp to one of the solder points on the switch.</li>
-</ol>
-<ol>
 <li>There will be a wire already soldered to the other solder point of the switch. Attach this to the positive solder point on the charging module</li>
-</ol>
-<ol>
 <li>Next, solder the negative wire from the amp to the other solder point on the charging module</li>
-</ol>
-<ol>
 <li>Lastly, solder the positive and negative wires of the battery to the charging module.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Adding an LED "on" Indicator</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding an LED "on" Indicator image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding an LED "on" Indicator image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding an LED "on" Indicator image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding an LED "on" Indicator image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding an LED "on" Indicator image 5" loading="lazy"></div><p>I decided at the last minute to add an LED to indicate if the amp is no. There's even a hole already in the case there the wires used come out from!</p>
 <p>Steps:</p>
 <ol>
 <li>Solder on the 3.3K resistor to the positive leg on the LED. You'll also need to trim the legs of the LED and resistor.</li>
-</ol>
-<ol>
 <li>Solder a couple wires on to the legs of the LED and resistor.</li>
-</ol>
-<ol>
 <li>Next, place the LED into place and use some super glue to secure it.</li>
-</ol>
-<ol>
 <li>Solder the positive wire to the switch and the negative to the negative solder point to the charging module</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Using Your Headphone Amp</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Using Your Headphone Amp image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Using Your Headphone Amp image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Using Your Headphone Amp image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Using Your Headphone Amp image 4" loading="lazy"></div><p>Now that you have everything wired-up, it’s time to give it a test run.</p>
 <p>Steps:</p>
 <ol>
 <li>Plug your headphone jack into the out socket on the amp. If you have forgotten which one is out and which is in, then don’t worry – just swap the jacks over if you don’t hear anything</li>
-</ol>
-<ol>
 <li>Next, use the 3.5mm cable and plug one end into the amp and the other into your phone</li>
-</ol>
-<ol>
 <li>Turn the amp on and start to play some music from your phone. Make sure though that your phone isn’t too loud or you might damage your ears!</li>
-</ol>
-<ol>
 <li>If everything is soldered correctly you will hear some sweet music. If you hear nothing, then try to swap the jacks in the amp. If there is still nothing then you will need to check your connections to see if anything is wrong.</li>
-</ol>
-<ol>
-<li>You can also grab yourself a Bluetooth connector like the one that can be <a href="https://www.ebay.com.au/sch/i.html?_osacat=0&_odkw=micro+potentiometer&_from=R40&_trksid=m570.l1313&_nkw=3.5mm+Wireless+Bluetooth+Car+Kit+Handsfree+Music+Audio+Receiver&_sacat=0">found here</a> and plug it into the amp. This way you’ll have less cords to worry about and when using it on a plane, you won’t have to worry about any cords at all!</li>
-</ol>
-<ol>
+<li>You can also grab yourself a Bluetooth connector like the one that can be found here and plug it into the amp. This way you’ll have less cords to worry about and when using it on a plane, you won’t have to worry about any cords at all!</li>
 <li>Lastly, get on a plane and give it the ultimate test</li>
 </ol>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

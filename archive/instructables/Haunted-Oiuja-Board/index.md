@@ -64,19 +64,19 @@ Insides
 
 1. Piece of flat aluminium. 10mm wide by about 500mm should do fine
 
-2. Terminal - [eBay](http://www.ebay.com.au/itm/10pcs-Hard-Plastic-12-Position-Wire-Connector-Barrier-Terminal-Strip-Block-10A-/191500517316?hash=item2c9651ffc4:g:YjQAAOSwu4BVyyfs)
+2. Terminal - eBay
 
 3. A bunch of screws, lock nuts, washers etc. These will be used for attaching the actuator arms
 
-4. Rare earth magnets - [eBay](http://www.ebay.com.au/itm/361066405687?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
+4. Rare earth magnets - eBay
 
 5. 9v battery and holder
 
-6. Speed controller - [eBay](http://www.ebay.com.au/itm/Hot-DC-1-8V-3V-5V-6V-12V-2A-Low-Voltage-Motor-Speed-Controller-PWM-1803B-/400814660894?hash=item5d526a5d1e:g:kmcAAOSwD0lUdsbi)
+6. Speed controller - eBay
 
-6. Vent Actuator (HVAC Motor) - If you are handy you can just grab one from the wreckers. If not you can try [[[eBay](http://www.ebay.com.au/itm/99-02-Quest-Villager-98-01-Altima-Heater-AC-Vents-Flap-Actuator-Motor-/221912375814?hash=item33ab022206:g:wMQAAOSwv0tVW2gE)](http://www.ebay.com.au/itm/VW-GOLF-MK4-PASSAT-MK6-FRESH-AIR-HEATER-VENT-CONTROL-MODULE-MOTOR-8D2-820-511-C/371411720767?_trksid=p2047675.c100005.m1851&_trkparms=aid%3D222007%26algo%3DSIC.MBE%26ao%3D1%26asc%3D20140106155344%26meid%3Db989383e1e1e40fe98029e8573f4a40b%26pid%3D100005%26rk%3D1%26rkt%3D2%26sd%3D371273233508)](http://www.ebay.com.au/itm/VW-Passat-Mk6-B5-5-00-04-Air-Heater-Vent-Flap-Positioning-Motor-8D2-820-511-/371273233508?hash=item56719bf464:g:zmoAAOxy0bRTD19H) eBay - eBay - eBay you can also try the [surplus centre](http://www.surpluscenter.com/) in the US or even type [Servo Damper Denso](https://www.google.com.au/search?q=063700-2180+denso&es_sm=93&biw=1762&bih=951&source=lnms&tbm=isch&sa=X&sqi=2&ved=0CAgQ_AUoA2oVChMIst3c_K7NyAIVC9ljCh1OBgoD#tbm=isch&q=SERVO+DAMPER+DENSO) into google to bring them up
+6. Vent Actuator (HVAC Motor) - If you are handy you can just grab one from the wreckers. If not you can try eBay eBay - eBay - eBay you can also try the surplus centre in the US or even type Servo Damper Denso into google to bring them up
 
-7. remote control module - [eBay](http://www.ebay.com.au/itm/400876727286?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
+7. remote control module - eBay
 
 8. Scrap wood
 
@@ -94,7 +94,7 @@ Outsides
 
 6. Ouija board design printed on by a laser printed paper
 
-7. Mod Podge - [eBay](http://www.ebay.com.au/itm/Mod-Podge-Gloss-Finish-236ml-8oz-Waterbase-Sealer-Glue-/121604067624?hash=item1c502ad128:g:krQAAOSw9r1V8bGI)
+7. Mod Podge - eBay
 
 8. wood to make the planchette.
 
@@ -298,7 +298,7 @@ Steps:
 
 ![Step 9: Making the Box - Aging and Staining image 7](images/step09_07.jpg)
 
-To give the box a look that it has been around for a while, I decided to age the wood. This is s simple process but if you want to learn more – [check out this 'ible](https://www.instructables.com/id/Steel-Wool-and-Vinegar-Wood-AgingEbonizingWeathe/)
+To give the box a look that it has been around for a while, I decided to age the wood. This is s simple process but if you want to learn more – check out this 'ible
 
 Steps:
 
@@ -310,7 +310,7 @@ Steps:
 
 4. Lastly stain and then add some furniture wax.
 
-I also did [this ‘ible](https://www.instructables.com/id/Display-Vintage-Matchboxes/) which also goes through the process a little further
+I also did this ‘ible which also goes through the process a little further
 
 
 ## Step 10: Adding the Motor

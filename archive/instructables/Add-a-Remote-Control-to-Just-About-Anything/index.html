@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,22 +127,50 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Add a Remote Control to Just About Anything!</span>
 </nav>
-<h1>Add a Remote Control to Just About Anything!</h1><div class="source"><a href="https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anything/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><h2><span class="step-num">STEP 2</span>Step 2: So How Does It Work?</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: So How Does It Work? image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: So How Does It Work? image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: So How Does It Work? image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: So How Does It Work? image 4" loading="lazy"></div><h2><span class="step-num">STEP 3</span>Step 3: Wiring Schematics</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Wiring Schematics image 1" loading="lazy"><img src="images/step03_02.png" alt="Step 3: Wiring Schematics image 2" loading="lazy"><img src="images/step03_03.png" alt="Step 3: Wiring Schematics image 3" loading="lazy"></div><h2><span class="step-num">STEP 4</span>Step 4: Getting Started – Wiring the Terminal</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 5" loading="lazy"></div><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Receiver</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Receiver image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Receiver image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Receiver image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Receiver image 4" loading="lazy"></div><h2><span class="step-num">STEP 6</span>Step 6: Adding Everything Into a Project Box</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding Everything Into a Project Box image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding Everything Into a Project Box image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding Everything Into a Project Box image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding Everything Into a Project Box image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding Everything Into a Project Box image 5" loading="lazy"></div><h2><span class="step-num">STEP 7</span>Step 7: Finished!</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished! image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished! image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished! image 3" loading="lazy"></div>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<h1>Add a Remote Control to Just About Anything!</h1><div class="source"><a href="https://www.instructables.com/Add-a-Remote-Control-to-Just-About-Anything/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>In <a href="https://www.instructables.com/id/Mounting-a-Spy-Video-Camera-on-an-Compressed-Air/">this Instructable</a> I’ll show you how to add a cheap remote control to just about anything! that takes your fancy.</p>
+<p>Last year I built a compressed air rocket launcher which was featured in <a href="http://blog.makezine.com/2008/12/13/compressed-air-rocket/">MAKE Magazine</a>.  The rocket launcher is a heap of fun and my kids love it.  The rockets themselves are made from paper and masking tape and are surprisingly strong and robust.  So strong in fact that you can tape a “spy” camera to one and shoot it off and get some great aerial footage as I did in <a href="https://www.instructables.com/id/Mounting-a-Spy-Video-Camera-on-an-Compressed-Air/">this Instructable</a>.</p>
+<p>One of the drawbacks of the design is you need to have a wire attached to the launcher and then trigger with a switch at the other end whenever you want to launch a rocket.  The wire has to be long as you don’t want to get too close to the rocket when it goes off, and it always seems to get tangled and twisted.</p>
+<p>To alleviate this I decided to add a remote control to the launcher and get rid of the wire altogether.  After a little searching I found <a href="http://www.ebay.com.au/itm/New-12V-Signal-Channel-Fixed-Encoding-Wireless-Remote-Control-Switch-/310634856335?pt=UK_Gadgets&hash=item485347bf8f">this remote control on EBay</a>.  It only set me back a couple of bucks and works like a charm.</p>
+<p>Check out the Youtube clip below - Apologies for the dodgy American accent!</p>
+<p>This Instructable is really just a guideline on how to wire one of the remotes up as I couldn’t find much at all on the net.</p>
+<p>I hope it also gives you a few ideas on what you could hook one of these remotes up to.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Part needed:</p>
+<ol>
+<li>2 X 9V battery clips</li>
+<li>Wire</li>
+<li>Remote control and receiver – try <a href="http://www.ebay.com.au/itm/12V-1Ch-Control-Wireless-Remote-Non-Lock-Switch-Module-5A-220VAC-10A-12V-DC-tk-/140924098897?pt=AU_B_I_Electrical_Test_Equipment&hash=item20cfbb1951">eBay</a></li>
+<li>Project box</li>
+<li>Wire connecting terminal (terminal block)</li>
+<li>Heat shrink</li>
+</ol>
+<p>Tools needed:</p>
+<ol>
+<li>Soldering iron</li>
+<li>Wire snips</li>
+<li>Multimeter</li>
+<li>Small Phillips head</li>
+<li>Small Screwdriver</li>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: So How Does It Work?</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: So How Does It Work? image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: So How Does It Work? image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: So How Does It Work? image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: So How Does It Work? image 4" loading="lazy"></div><p>The remote is made up of the (surprise surprise!) a remote (transmitter) and a receiver.  The remote is powered by a small 12v battery and works from a distance of supposedly 100 meters, although I’d be wary of this!  The wireless signal can pass through walls, floors and doors.  Once the button on the remote has been pressed, it activates the receiver which turns on a relay and allows power to flow to whatever you want to turn on.</p>
+<p>The remote control receiver needs to have 12v to enable it to trigger the relay.  I used 2 X 9v batteries to do the job and it works fine but you could potentially use a small, 12v battery; the same used in the remote.</p>
+<p>As the rocket launcher uses 18V to activate the sprinkler valve, I was able to wire up the receiver so when the relay was closed (activated by the remote) it used the power from the 2, 9V batteries to trigger the sprinkler valve.</p>
+<p>If your device that you want to power uses a different voltage then the receiver, then you can also rig it up so it uses a different power source.</p><h2><span class="step-num">STEP 3</span>Step 3: Wiring Schematics</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Wiring Schematics image 1" loading="lazy"><img src="images/step03_02.png" alt="Step 3: Wiring Schematics image 2" loading="lazy"><img src="images/step03_03.png" alt="Step 3: Wiring Schematics image 3" loading="lazy"></div><p>The 2 drawings attached show the different ways that the receivers can be wired.  The first is if you want to use the same power source as the receiver, and the second is if you want to use an alternative power source.  For the Compressed Air Rocket I used the first option.</p>
+<p>There is also an on/off switch added to the receiver.  I found that the receiver slowly leaks power (it's always on) so you will need to add a switch to make sure you can turn it off when your not using it</p>
+<p>Relays:</p>
+<p>I have also included a drawing of how the relay works.  For more info check out this <a href="http://www.pcbheaven.com/wikipages/How_Relays_Work/">website</a> - its really good at explaining how they work.</p><h2><span class="step-num">STEP 4</span>Step 4: Getting Started – Wiring the Terminal</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Getting Started – Wiring the Terminal image 5" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>First you need to wire-up your terminal.  The terminal isn’t an essential but I find they make wiring-up something like this very simple.  Wire-up as shown in the image below</li>
+<li>Next you need to connect the 9v terminals together.  Solder and use heat shrink to make sure all bare wires are covered.  Connect to the terminal.  Don’t add the batteries yet – it hurts if you get shocked by 18 volts!</li>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Receiver</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Receiver image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Receiver image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Receiver image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Receiver image 4" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Now connect the power wires from the terminal to the receiver, making sure polarities are correct.</li>
+<li>Connect the rest of the wires from the terminal to the receiver as shown in the drawing.</li>
+<li>Check that the receiver is working properly by attaching the batteries and testing with a multimeter.</li>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding Everything Into a Project Box</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding Everything Into a Project Box image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding Everything Into a Project Box image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding Everything Into a Project Box image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding Everything Into a Project Box image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding Everything Into a Project Box image 5" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Once you have tested and everything works ok, add all of the bits into a project box.</li>
+<li>Drill a hole in the project box and stick the wires out that will join up to the launcher.</li>
+<li>Connect the project box to your device – in my case it was the launcher.</li>
+<li>Test.</li>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Finished!</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished! image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished! image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished! image 3" loading="lazy"></div><p>Now you have one fine looking remote control - time to go and take over the world.</p>
+<p>Have fun and if you making something cool - post a picture so i can check it out!</p>
 </body>
 </html>

@@ -11,7 +11,7 @@ Source: https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/
 
 ![Intro 2](images/intro_02.jpg)
 
-In this build I recreate the awesome little drum synth called [drum kid](https://github.com/mattybrad/drumkid) by [Mattybrad](https://github.com/mattybrad). Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds. Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!
+In this build I recreate the awesome little drum synth called drum kid by Mattybrad. Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds. Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!
 
 I'm a total novice when it comes to coding so this solution wasn't elegant but works perfectly.
 
@@ -34,7 +34,7 @@ As always, I'm keen to get any feedback on what modules or sound effects you thi
 
 ![Supplies image 4](images/step01_04.jpg)
 
-I've created a parts list which can be found in my [GitHub](https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine) page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 PARTS:
 
@@ -55,8 +55,6 @@ PARTS:
 - Mini JST Connector and wire 2 Pin X 11
 
 
-- [List of Parts](pdfs/List of Parts.pdf)
-
 ## Step 1: Getting Your Boards Printed
 
 ![Step 1: Getting Your Boards Printed image 1](images/step02_01.jpg)
@@ -73,12 +71,12 @@ We all have different levels of knowledge, so when it comes to a build like this
 
 So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the holes is done in Fusion 360 (also free!)
 
-ll the files that you need to build your own Groove Box can be found in my [GitHub](https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine) page This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
+ll the files that you need to build your own Groove Box can be found in my GitHub page This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
 
 STEPS:
 
-- You’ll need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.
-- If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+- You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.
+- If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.
 - NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
 - Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.
 
@@ -140,7 +138,7 @@ STEPS:
 
 ![Step 4: Uploading the Sketch to the Arduino image 2](images/step05_02.jpg)
 
-If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out [this link](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE). It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
+If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
 
 STEPS:
 
@@ -183,7 +181,7 @@ STEPS:
 
 ![Step 6: How to Play the Groove Box image 3](images/step07_03.jpg)
 
-Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my [GitHub](https://github.com/lonesoulsurfer/Groove_Box_Drum_Machine) page
+Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my GitHub page
 
 Inputs
 
@@ -322,13 +320,6 @@ Please note that the LED pattern for each beat is illustrated to help you find t
 
 24. Nihil ⚪⚪⚪⚫⚪
 
-
-- [manual - Groove Box](pdfs/manual - Groove Box.pdf)
-
-## Downloads
-
-- [List of Parts](pdfs/List of Parts.pdf)
-- [manual - Groove Box](pdfs/manual - Groove Box.pdf)
 
 ---
 *33 images archived*

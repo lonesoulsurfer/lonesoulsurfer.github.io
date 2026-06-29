@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,151 +127,73 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Bike Light Lamp</span>
 </nav>
-<h1>Bike Light Lamp</h1><div class="source"><a href="https://www.instructables.com/Bike-Light-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I made this bike light lamp from found objects I had in my parts bin.</p>
-<p>I reckon it cost me a total of $5 to build as I managed to get all the parts (except the globe) from the local tip which has a small shop attached.</p>
-<p>They sell all types of flotsam and jetsam for next to nothing.</p>
+<h1>Bike Light Lamp</h1><div class="source"><a href="https://www.instructables.com/Bike-Light-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I made this bike light lamp from found objects I had in my parts bin. I reckon it cost me a total of $5 to build as I managed to get all the parts (except the globe) from the local tip which has a small shop attached. They sell all types of flotsam and jetsam for next to nothing.</p>
 <p>The lamp is built from an old bike light and a drum stand. You could easily find these parts on eBay, or other sites that sell similar bits.</p>
 <p>It is run on a 12v DC power supply which I also picked-up from the tip (dump). It does use main power so you need to know what you are doing when connecting the power supply but it's not hard.</p>
 <p>This is a pretty easy project and the finished build (in my humble opinion) looks pretty awesome.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Bike Light (vintage) - <a href="https://www.ebay.com.au/itm/2016-Retro-Bicycle-Bike-3-LED-Front-Light-Headlight-Vintage-Flashlight-Lamp-RNU/192958493719?_trkparms=ispr%3D1&hash=item2ced38f417:m:mM4q0Zo5hFsA8ADUUrw66tw&enc=AQAEAAAB4BPxNw%2BVj6nta7CKEs3N0qXta35MhILRjFGxLINIw5Wx9Kddh%2Bv%2Bkihxv0QIyVYJXUHVArj2nA0X3nvBrlktOyVVwB4YoDKgQBjGqHLa1h0%2FItlAE%2ByrcEkj6YFuSuoVBLn1Eyw2AfJeqjF6IrrseP5gLHgkb28uWxrV1MYXxyzvKNxR9MbC7EPBXxeAeGrotf6bAtmqscklnCzJiIT%2FvmbZ4wY%2B%2B%2Bgu1Y7P3DcL%2FE14m0536gDroroiglvLxXrY0jmkrVqn6Xi%2BPtaxCkpt7Kuyh%2B18zkvxxYhxdtsYoNZ9aoZKMgYHtRvkwcbU9ANKTV0EtU1EjHHJ99fn1o6X7A83jcN4bvMhtXgiXExbK5ir%2F9jP%2BuOKdFGsezLUBkrNUln6qfZTXIYWKNaDw9dzFkbGC9aaZ0KaNQ6uFcCTXX2NH6UzrRuAuIXu%2Ft%2BNba3K%2BcKm6KtQ3tqj4PuVozOc4M4G40RSMh7twAjPcQhMoo69DIrjM0KMee1697XIt5G3KDPlvT7nL15mtZdUsWQbltM%2FEEN8UP9ln4KY%2FoNlmTuApkydWONsf1dQSntsC%2FKSS7N21B%2F5o0eTfH1np82lJcUOiRiS%2Fpy%2FnFMTwNug3wvpveGvHmZQm62s6aDgXXMRKw%3D%3D&checksum=192958493719d6e5bdf8dfb546028fd1e8ea39688c1c&frcectupt=true">[eBay</a>](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xbike+light+vintage.TRS0&_nkw=bike+light+vintage&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=bike+light) You can also get a retro looking one from eBay for cheap!</li>
-</ol>
-<ol>
-<li>Drum stand - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xdrum+stand.TRS0&_nkw=drum+stand&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=bike+light+vintage">eBay</a></li>
-</ol>
-<ol>
-<li>12v DC power supply - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.X12v+dc+power+adapter.TRS0&_nkw=12v+dc+power+adapter&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=drum+stand">eBay</a></li>
-</ol>
-<ol>
-<li>LED Globe - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=led+globe+12v+g4&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=led+globe+12v">eBay</a></li>
-</ol>
-<ol>
-<li>G4 globe holder - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=MR11+MR16+G5.3+G4+Lamp+Holder&_sacat=0">eBay</a></li>
-</ol>
-<ol>
+<li>Bike Light (vintage) - eBay You can also get a retro looking one from eBay for cheap!</li>
+<li>Drum stand - eBay</li>
+<li>12v DC power supply - eBay</li>
+<li>LED Globe - eBay</li>
+<li>G4 globe holder - eBay</li>
 <li>You might need a few other bits and pieces as every build will be different.</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Soldering Iron & solder</li>
-</ol>
-<ol>
 <li>Screwdrivers/Phillips heads etc</li>
-</ol>
-<ol>
 <li>Super Glue</li>
-</ol>
-<ol>
 <li>Metal polish (esp if your parts are looking a little old and rusty like mine)5.</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: The Bike Light</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Bike Light image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Bike Light image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Bike Light image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: The Bike Light image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: The Bike Light image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: The Bike Light image 6" loading="lazy"></div><p>My bike light was in pretty good condition so I didn't have to do too much to fix it, just a bit of cleaning.</p>
-<p>You can also see on the top of the bike light as a switch which I utilized so I could turn the light on & off.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: The Bike Light</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Bike Light image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Bike Light image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Bike Light image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: The Bike Light image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: The Bike Light image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: The Bike Light image 6" loading="lazy"></div><p>My bike light was in pretty good condition so I didn't have to do too much to fix it, just a bit of cleaning. You can also see on the top of the bike light as a switch which I utilized so I could turn the light on & off.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing you will need to do is to look over your bike light and make sure that everything is straight and nothing is falling off or loose</li>
-</ol>
-<ol>
 <li>Next you'll need to pull it all apart. the reflector section and glass was held in place with a couple of clips which could easily be removed with a screwdriver</li>
-</ol>
-<ol>
 <li>Once you have it all apart you can inspect it again and make sure everything is god to go.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: The Drum Stand</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Drum Stand image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Drum Stand image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: The Drum Stand image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: The Drum Stand image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: The Drum Stand image 5" loading="lazy"></div><p>The drum stand I had lying around for some time and I thought it would be perfect to use in this project.</p>
-<p>I did shorten the stand a little but it isn't really necessary.</p>
-<p>I just thought it was a little high.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: The Drum Stand</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Drum Stand image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Drum Stand image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: The Drum Stand image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: The Drum Stand image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: The Drum Stand image 5" loading="lazy"></div><p>The drum stand I had lying around for some time and I thought it would be perfect to use in this project. I did shorten the stand a little but it isn't really necessary. I just thought it was a little high.</p>
 <p>Steps:</p>
 <ol>
 <li>Inspect the stand and make sure it is working as it should. You might have to lubricate it if it is a little tight.</li>
-</ol>
-<ol>
 <li>Pull it apart. It will make it easier to clean and modify if you want to</li>
-</ol>
-<ol>
 <li>There are 2 parts to the body section which allows it to extend the bike light higher if you want to. I shortened both of these sections by about 150mm or so.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Cleaning</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Cleaning image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Cleaning image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Cleaning image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Cleaning image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Cleaning image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Cleaning image 6" loading="lazy"></div><p>I'm sure that there is better, specific chrome polish out there but I had some metal polish on hand which worked well.</p>
 <p>Steps:</p>
 <ol>
 <li>Add a little of the polish on a clean cloth and start to remove any stains, rust or any other marks that you can. It might take some time depending on how old your parts are</li>
-</ol>
-<ol>
 <li>Keep it up until you are happy with the shine of the chrome.</li>
-</ol>
-<ol>
 <li>For the glass section I used some plastic polish that is used for car headlights.</li>
-</ol>
-<ol>
 <li>The reflector section I used the metal polish which was a little coarse for the job but I managed to remove most scratches with the plastic polish</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: A Small Addition</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: A Small Addition image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: A Small Addition image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: A Small Addition image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: A Small Addition image 4" loading="lazy"></div><p>When I went to attach the bike light to the stand I found that the bolt which held it in place was too short and that the top of the stand was getting in the way of attaching the bike light.</p>
 <p>Steps:</p>
 <ol>
 <li>First thing I did was to find a longer bolt that was the right size to fit the black knob that is used to hold the bike light in place</li>
-</ol>
-<ol>
 <li>Once I had this I also had to add a small spacer to extend the bike light out out a little away from the stand. I used a small piece of aluminium tube to do this.</li>
-</ol>
-<ol>
 <li>I then put it all together to make sure everything fitted as it should.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the LED Globe and Holder</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the LED Globe and Holder image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the LED Globe and Holder image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the LED Globe and Holder image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the LED Globe and Holder image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the LED Globe and Holder image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the LED Globe and Holder image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the LED Globe and Holder image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the LED Globe and Holder image 8" loading="lazy"></div><p>Depending on your bike light, you may have to modify the reflector a little so the globe holder fits into place.</p>
-<p>I was lucky (it doesn't happen very often) that the globe holder fitted perfectly into the back of the reflector.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the LED Globe and Holder</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the LED Globe and Holder image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the LED Globe and Holder image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the LED Globe and Holder image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the LED Globe and Holder image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the LED Globe and Holder image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the LED Globe and Holder image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the LED Globe and Holder image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the LED Globe and Holder image 8" loading="lazy"></div><p>Depending on your bike light, you may have to modify the reflector a little so the globe holder fits into place. I was lucky (it doesn't happen very often) that the globe holder fitted perfectly into the back of the reflector.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to add the globe holder into the reflector. As mine fitted just right, all I had to do is to add a touch of super glue to ensure it wouldn't move</li>
-</ol>
-<ol>
 <li>Once you secure the globe holder, you can then place the LED into place. The LED I used had a small, black piece of plastic around the legs which I removed. The reason being, I wanted the LED to sit flush to the reflector.</li>
-</ol>
-<ol>
 <li>To keep the globe in place I also added a tiny amount of super glue to the bottom of it</li>
-</ol>
-<ol>
 <li>Add the glass and secure it back in place into the body of he bike light.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Power</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Power image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Power image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>To enable the wires from the power adapter to come through the bike light you may have to drill a small hole in the bottom. I didn't have though as there was a little hole already which I could utilize</li>
-</ol>
-<ol>
 <li>The power supply is a 12V, 1A adapter which are very common. It needs to be AC to DC converter so make sure it says that on the description</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Soldering and Testing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Soldering and Testing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Soldering and Testing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Soldering and Testing image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Soldering and Testing image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Soldering and Testing image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Soldering and Testing image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Soldering and Testing image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Soldering and Testing image 8" loading="lazy"></div><p>Before you do start to solder everything together, you should test the globe and firstly, make sure it works and second, identify the positive wire.</p>
-<p>When you connect the power adapter, make sure you make your connections right as it is mains power and you don't want to mess about with it if you don't know what you are doing.</p>
-<p>It is however only 12 volts but still be careful.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Soldering and Testing</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Soldering and Testing image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Soldering and Testing image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Soldering and Testing image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Soldering and Testing image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Soldering and Testing image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Soldering and Testing image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Soldering and Testing image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Soldering and Testing image 8" loading="lazy"></div><p>Before you do start to solder everything together, you should test the globe and firstly, make sure it works and second, identify the positive wire. When you connect the power adapter, make sure you make your connections right as it is mains power and you don't want to mess about with it if you don't know what you are doing. It is however only 12 volts but still be careful.</p>
 <p>Steps:</p>
 <ol>
 <li>Once you know which is ground and which is positive on the LED globe holder, you then have to attached the positive wire from the globe holder to one of the terminals on the switch</li>
-</ol>
-<ol>
 <li>Push the wire from the power adapter through the hole in the bottom of the bike light and fie a knot in the end. This will stop it from being able to be pulled out.</li>
-</ol>
-<ol>
 <li>Solder the positive wire from the adapter to the other terminal on the switch</li>
-</ol>
-<ol>
 <li>The negative from both the globe holder and the power adapter need to also be connected. Make sure you add a small piece of heat shrink around the solder point so you don't short anything</li>
-</ol>
-<ol>
 <li>Test and make sure that everything works and the LED turns on.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Finishing Up</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finishing Up image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finishing Up image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finishing Up image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finishing Up image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finishing Up image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Now it's time to connect the bike light to the stand. It's pretty straight forward as you would have already done it before.</li>
-</ol>
-<ol>
 <li>Tighten up the adjuster until the bike light doesn't move. You should however be able to bend it up and down with a little force.</li>
-</ol>
-<ol>
 <li>Once everything is connected its time to plug it in, sit back and admire your amazing light light lamp</li>
 </ol>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

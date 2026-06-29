@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,22 +127,58 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Miniature Bottle Sculptures</span>
 </nav>
-<h1>Miniature Bottle Sculptures</h1><div class="source"><a href="https://www.instructables.com/Miniature-Bottle-Sculptures/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><h2><span class="step-num">STEP 2</span>Step 2: Balloon Man - Getting Started</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Balloon Man - Getting Started image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Balloon Man - Getting Started image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Balloon Man - Getting Started image 3" loading="lazy"></div><h2><span class="step-num">STEP 3</span>Step 3: Balloon Man - Putting It Together</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Balloon Man - Putting It Together image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Balloon Man - Putting It Together image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Balloon Man - Putting It Together image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Balloon Man - Putting It Together image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Balloon Man - Putting It Together image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Balloon Man - Putting It Together image 6" loading="lazy"></div><h2><span class="step-num">STEP 4</span>Step 4: Balloon Man - Final Steps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Balloon Man - Final Steps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Balloon Man - Final Steps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Balloon Man - Final Steps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Balloon Man - Final Steps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Balloon Man - Final Steps image 5" loading="lazy"></div><h2><span class="step-num">STEP 5</span>Step 5: Ladder, Man and Woman - Assembling the Ladder</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 5" loading="lazy"></div><h2><span class="step-num">STEP 6</span>Step 6: Ladder, Man and Woman - Final Steps</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Ladder, Man and Woman - Final Steps image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Ladder, Man and Woman - Final Steps image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Ladder, Man and Woman - Final Steps image 3" loading="lazy"></div><h2><span class="step-num">STEP 7</span>Step 7: Finished</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finished image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Finished image 5" loading="lazy"></div>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
+<h1>Miniature Bottle Sculptures</h1><div class="source"><a href="https://www.instructables.com/Miniature-Bottle-Sculptures/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Hello again,</p>
+<p>So I decided to make some miniature bottle sculptures by sticking tiny train figurines into them (and onto them).  I had this idea some time ago of creating  little melancholy scenes inside glass bottles.  The following ible' is what I came up with.  I 'm going  to make a whole bunch of different ones, but these are the first 2 that i came up with.</p>
+<p>These aren't too hard to make but can be fiddly at times.  My next mission is to find some more train miniatures which have better refined features and actions.</p>
+<p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>Material</p>
+<ol>
+<li>Miniature train figurines – eBay</li>
+<li>Miniature bottles – eBay</li>
+<li>Matches</li>
+<li>Music wire</li>
+<li>Plastic bb bullets - eBay</li>
+</ol>
+<p>Tools</p>
+<ol>
+<li>Super glue</li>
+<li>Needle nose pliers</li>
+<li>Stanley knife</li>
+<li>Wire cutters</li>
+<li>Lighter</li>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Balloon Man - Getting Started</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Balloon Man - Getting Started image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Balloon Man - Getting Started image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Balloon Man - Getting Started image 3" loading="lazy"></div><ol>
+<li>The first thing is to decide which figurine you are going to use.  Tip those little people out and pick the best one for the job.</li>
+<li>Next decide what colour balloons you want him to hold.  I used BB bullets for this.</li>
+<li>Cut a small piece of music wire (I used .55mm gauge wire) and bend.  This will be the string for your balloons.  Each length of wire should be aprox 10mm long</li>
+<li>Have the super glue and bottle ready</li>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Balloon Man - Putting It Together</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Balloon Man - Putting It Together image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Balloon Man - Putting It Together image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Balloon Man - Putting It Together image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Balloon Man - Putting It Together image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Balloon Man - Putting It Together image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Balloon Man - Putting It Together image 6" loading="lazy"></div><p>Steps</p>
+<ol>
+<li>Heat-up one of the ends of the wire for the string and once red, stick it into one of the BB bullets.</li>
+<li>Next heat-up the other end and do the same with another bullet.</li>
+<li>Lastly add a drop of super glue to a bullet and attach it to the other 2 on the wire.</li>
+<li>Prop-up the balloons on a match and position the man so his hand is in the “V” of the wire.</li>
+<li>Super glue into place.  Leave to dry for 20 minutes</li>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Balloon Man - Final Steps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Balloon Man - Final Steps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Balloon Man - Final Steps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Balloon Man - Final Steps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Balloon Man - Final Steps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Balloon Man - Final Steps image 5" loading="lazy"></div><p>Once completely dry, the next thing to do is to stick him inside the glass jar.  This can be a little tricky but I managed to do it 3 times and each time worked.  If I can do it – anyone can.</p>
+<p>Steps</p>
+<ol>
+<li>Add a couple of drops of glue to a piece of wood and let dry for a few minutes.  This will get the super glue sticky and will mean it will dry faster when you are trying to stick your man down.</li>
+<li>Dip the feet of your man into the glue a couple of times and then with the needle nose pliers, gently lower him into the jar.</li>
+<li>Hold him in place until the glue starts to take effect.  Twice my little men fell and didn’t stick straight away, I used a match to hold him in place whilst the glue stuck hard.</li>
+<li>Leave to dry and 10 minutes/</li>
+<li>Stick the cork into the top.</li>
+<li>Done!</li>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Ladder, Man and Woman - Assembling the Ladder</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Ladder, Man and Woman - Assembling the Ladder image 5" loading="lazy"></div><p>Next one is the Ladder one.</p>
+<p>Steps:</p>
+<ol>
+<li>First get a match.  I used the extra-long ones but you can use whatever you have.</li>
+<li>Split it in 2 using a Stanley knife or exacto knife then get one of the pieces that you have split and do it again.  These will make the ladder supports</li>
+<li>The other half of the match you also need to split into 2 and cut into little rungs.</li>
+<li>Once done super glue the pieces together.</li>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Ladder, Man and Woman - Final Steps</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Ladder, Man and Woman - Final Steps image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Ladder, Man and Woman - Final Steps image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Ladder, Man and Woman - Final Steps image 3" loading="lazy"></div><p>Steps:</p>
+<ol>
+<li>Place the ladder into the glass jar.  If it doesn't fit then you may have to trim off the ends a little.</li>
+<li>Next pick a couple from the miniature train figurines.  Superglue these onto the cork lid.</li>
+<li>Done!</li>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Finished</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finished image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Finished image 5" loading="lazy"></div><p>I’m going to make some different ones as they come to me and will include these in the ible’.  They are really fun and easy to make and would make a great “little” gift for someone.</p>
+<p>I wonder if I can get little Christmas figurines….</p>
 </body>
 </html>

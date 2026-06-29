@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,17 +127,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Conway's Game of Life - Handheld Version, Powered by Adafruit Trinket M0</span>
 </nav>
-<h1>Conway's Game of Life - Handheld Version, Powered by Adafruit Trinket M0</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-Handheld-Version-Powered-by-A/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I’ve been fascinated with Conway’s Game of Life ever since I read ‘<a href="https://books.google.com.au/books?id=0FHqbtajb0wC&printsec=frontcover&redir_esc=y#v=onepage&q&f=false">The Recursive Universe</a>’ way back in 2012.</p>
-<p>Since then, I wanted a way that I could play the game just like you would play a Nintendo ‘<a href="https://www.google.com/search?sca_esv=34443d8b2c0c5fa7&rlz=1C1GCEA_enAU1141AU1141&sxsrf=AE3TifPegSn3Y3lmAGJwoSP3rpSFpeFANQ:1756446570640&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMi5-_D5b5oEjBGcsLP5FUOaaUQ7bIbj4iFLgtkUUPL7iyT1obaAZOUoIS36H-sdAfzLkiFD0gpLK7WTzTqY-FIhr7O-NIYKmuyo6v8-mOxzdUVr41KBdhJUObj5-fCU5AQhxCrsA&q=game+%26+watch&sa=X&sqi=2&ved=2ahUKEwj6xKOvqa-PAxUtcWwGHXBxOZMQtKgLegQIDxAB&biw=1920&bih=911&dpr=1">Game & Watch</a>’ – a pocket-sized version that I could whip out anytime and start to explore & build my own patterns.</p>
-<p>Fast-forward to 2025 and that idea has become reality!</p>
-<p>Arduino AI Assistant has been a massive help in building the code and there is absolutely no way that I could of done it without AI’s assistance.</p>
-<p>If you haven’t used it before and don’t know much about coding, then I strongly recommend that you give it a try.</p>
+<h1>Conway's Game of Life - Handheld Version, Powered by Adafruit Trinket M0</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-Handheld-Version-Powered-by-A/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I’ve been fascinated with Conway’s Game of Life ever since I read ‘The Recursive Universe’ way back in 2012. Since then, I wanted a way that I could play the game just like you would play a Nintendo ‘Game & Watch’ – a pocket-sized version that I could whip out anytime and start to explore & build my own patterns.</p>
+<p>Fast-forward to 2025 and that idea has become reality! Arduino AI Assistant has been a massive help in building the code and there is absolutely no way that I could of done it without AI’s assistance. If you haven’t used it before and don’t know much about coding, then I strongly recommend that you give it a try.</p>
 <p>So, what is Conway’s Game of Life (or GOL for short!). I recently gave the below description in another GOL project which might help those that haven’t heard of it before:</p>
-<p>The Game of Life is a cellular automation created by mathematician John Conway.</p>
-<p>It's what is known as a zero player game, meaning that its evolution and game play is determined by its initial state and requires no further input.</p>
-<p>You interact with the Game of Life by creating an initial configuration and observing how it evolves.</p>
-<p>The game itself is based on a few, simple, mathematical rules consisting of a grid of cells that can either live, die or multiply.</p>
-<p>When the game is run, the cells can give the illusion that they are alive which is what makes this game so interesting.</p>
+<p>The Game of Life is a cellular automation created by mathematician John Conway. It's what is known as a zero player game, meaning that its evolution and game play is determined by its initial state and requires no further input. You interact with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+<p>The game itself is based on a few, simple, mathematical rules consisting of a grid of cells that can either live, die or multiply. When the game is run, the cells can give the illusion that they are alive which is what makes this game so interesting.</p>
 <p>Now you know what it is – what does my hand held game version do?</p>
 <p>Core Game</p>
 <p>Conways 'Game of Life' based on toroidal world: Edges wrap around (top connects to bottom, left to right).</p>
@@ -200,26 +159,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Smart Detection: Automatically detects when patterns die out or start repeating</li>
 <li>Automatic pattern detection and game reset (some modes)</li>
 <li>Menu System: interface with pattern submenu</li>
-</ul><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc.</p>
-<p>The PCB and front panel information can be found on the next step</p>
+</ul><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"></div><p>I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc. The PCB and front panel information can be found on the next step</p>
 <p>PARTS:</p>
-<p>Adafruit Trinket M0 X 1 - <a href="https://www.aliexpress.com/w/wholesale-trinket-M0.html?spm=a2g0o.detail.search.0">Ali Express</a></p>
-<p>Charging & voltage step-up module X 1 - [Ali Express](https://www.aliexpress.com/item/1005005656423941.html?invitation</p>
-<p>Code=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
-<p>BzNkVmWTlBPT0&src</p>
-<p>Sns=sns_More&spread</p>
-<p>Type=social</p>
-<p>Share&social_params=21926311787&biz</p>
-<p>Type=Product</p>
-<p>Detail&spread</p>
-<p>Code=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
-<p>BzNkVmWTlBPT0&aff_fcid=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&tt=MG&aff_fsk=_mtlLJJx&aff_platform=default&sk=_mtlLJJx&aff_trace_key=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&share</p>
-<p>Id=21926311787&business</p>
-<p>Type=Product</p>
-<p>Detail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmart</p>
-<p>Redirect=y)</p>
-<p>OLED Screen - 2.42 inch X 1 - <a href="https://www.aliexpress.com/w/wholesale-oled-2.42.html?spm=a2g0o.detail.search.0">Ali Express</a></p>
-<p>Resistors - <a href="https://www.aliexpress.com/w/wholesale-resistor-metal-film.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
+<p>Adafruit Trinket M0 X 1 - Ali Express</p>
+<p>Charging & voltage step-up module X 1 - Ali Express</p>
+<p>OLED Screen - 2.42 inch X 1 - Ali Express</p>
+<p>Resistors - Ali Express</p>
 <p>1K X 1</p>
 <p>5.1K X 1</p>
 <p>10K X 1</p>
@@ -227,84 +172,46 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>20K X 1</p>
 <p>33K X 1</p>
 <p>39K X 1</p>
-<p>Battery - <a href="https://www.aliexpress.com/w/wholesale-EB425161LU.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
-<p>Tactile Switch - [Ali Express](https://www.aliexpress.com/item/1005007076344493.html?invitation</p>
-<p>Code=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
-<p>BzNkVmWTlBPT0&src</p>
-<p>Sns=sns_More&spread</p>
-<p>Type=social</p>
-<p>Share&social_params=21926321283&biz</p>
-<p>Type=Product</p>
-<p>Detail&spread</p>
-<p>Code=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
-<p>BzNkVmWTlBPT0&aff_fcid=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&tt=MG&aff_fsk=_mqidysZ&aff_platform=default&sk=_mqidysZ&aff_trace_key=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&share</p>
-<p>Id=21926321283&business</p>
-<p>Type=Product</p>
-<p>Detail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmart</p>
-<p>Redirect=y)</p>
-<p>On/Off Switch - [Ali Express](https://www.aliexpress.com/item/32828124825.html?invitation</p>
-<p>Code=U0ZjejE5SDZUR3Rvd3A4dlNzTHhPMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
-<p>BzNkVmWTlBPT0&src</p>
-<p>Sns=sns_More&spread</p>
-<p>Type=social</p>
-<p>Share&social_params=21930568662&biz</p>
-<p>Type=Product</p>
-<p>Detail&spread</p>
-<p>Code=U0ZjejE5SDZUR3Rvd3A4dlNzTHhPMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
-<p>BzNkVmWTlBPT0&aff_fcid=78cd7743d6d84c87a62a111f31d5ed0d-1756352449635-03501-_mMmygFX&tt=MG&aff_fsk=_mMmygFX&aff_platform=default&sk=_mMmygFX&aff_trace_key=78cd7743d6d84c87a62a111f31d5ed0d-1756352449635-03501-_mMmygFX&share</p>
-<p>Id=21930568662&business</p>
-<p>Type=Product</p>
-<p>Detail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmart</p>
-<p>Redirect=y)</p>
+<p>Battery - Ali Express</p>
+<p>Tactile Switch - Ali Express</p>
+<p>On/Off Switch - Ali Express</p>
 <p>M2 Screws - Ali Express</p>
-<p>M2 Spacers - Ali Express</p>
-<ul>
-<li><a href="pdfs/Parts List.pdf">Parts List</a></li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: PCB & Front Panel</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB & Front Panel image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: PCB & Front Panel image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB & Front Panel image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB & Front Panel image 4" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
-<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
-<p>I use <a href="https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE">JLCPCB</a> (not affiliated) to get this done.</p>
-<p>The front panel is actually just a PCB without any components included!</p>
-<p>The front design is done in a program called <a href="https://inkscape.org/">Inkscape</a> (available free) and the panel including the drilled holes is done in <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a> (also free!)</p>
-<p>The files that you need to build your own Bleep Drum Synth can be found in my <a href="https://github.com/lonesoulsurfer/Conways_Game_of_life_Handheld">GitHub</a> page.</p>
-<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
-<p>Download the files to your computer</p>
+<p>M2 Spacers - Ali Express</p><h2><span class="step-num">STEP 1</span>Step 1: PCB & Front Panel</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB & Front Panel image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: PCB & Front Panel image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB & Front Panel image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB & Front Panel image 4" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
+<p>The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer</p>
 <p>STEPS:</p>
 <ul>
-<li>Send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the PCB and front panel for you. Download all of the files from my <a href="https://github.com/lonesoulsurfer/Conways_Game_of_life_Handheld">GitHub</a> page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
+<li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Screen to the Front Panel</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Screen to the Front Panel image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Screen to the Front Panel image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Screen to the Front Panel image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Screen to the Front Panel image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Screen to the Front Panel image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Screen to the Front Panel image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding the Screen to the Front Panel image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: Adding the Screen to the Front Panel image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 2: Adding the Screen to the Front Panel image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 2: Adding the Screen to the Front Panel image 10" loading="lazy"></div><p>I decided not to directly connect the screen to the PCB.</p>
-<p>Instead, I connected the screen to the front panel and added some male header pins to the screen which connect to the PCB via some female headers.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Screen to the Front Panel</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Screen to the Front Panel image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Screen to the Front Panel image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Screen to the Front Panel image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Screen to the Front Panel image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Screen to the Front Panel image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 2: Adding the Screen to the Front Panel image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 2: Adding the Screen to the Front Panel image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 2: Adding the Screen to the Front Panel image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 2: Adding the Screen to the Front Panel image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 2: Adding the Screen to the Front Panel image 10" loading="lazy"></div><p>I decided not to directly connect the screen to the PCB. Instead, I connected the screen to the front panel and added some male header pins to the screen which connect to the PCB via some female headers.</p>
 <p>STEPS:</p>
 <ul>
-<li>The first thing to do is to add male header pins to the screen.  When adding them, you need to make sure that the pins don't stick out the top as they will interfere with the front panel.</li>
+<li>The first thing to do is to add male header pins to the screen. When adding them, you need to make sure that the pins don't stick out the top as they will interfere with the front panel.</li>
 <li>Put the header pins in place and whist holding onto the plastic pin holder, place the pins onto a flat surface and push down so the pins become level with the top of the screen.</li>
 <li>Now add some solder to each to secure them into place.</li>
 <li>Place the screen against the front panel and secure it into place using some M2 X 14mm screws and nuts.</li>
 <li>Now add a M2 X 5mm spacer onto each of the screws.</li>
-<li>Add another 2 M2 screws to the holes in the front panel in each bottom corner.  Don’t add nuts to these, just add a M2 X 7mm spacer to each one</li>
-<li>Now, to test fitment, place the PCB into place and push the screws through the holes in the PCB.  You may need to grab a pair of plyers and manipulate the screws a little to ensure they go through the holes.  Even though the holes in the front panel and PCB align perfectly, the screws sometimes need to be slightly bent to fit!  No idea why this happens</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Momentary Switches</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Momentary Switches image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Momentary Switches image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Momentary Switches image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Momentary Switches image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Momentary Switches image 5" loading="lazy"></div><p>The momentary switches used are SMD ones.</p>
-<p>In my first version of this PCB, I had through hole versions but found that there was too mush interference from my fingers touching the connectors when playing the game.</p>
+<li>Add another 2 M2 screws to the holes in the front panel in each bottom corner. Don’t add nuts to these, just add a M2 X 7mm spacer to each one</li>
+<li>Now, to test fitment, place the PCB into place and push the screws through the holes in the PCB. You may need to grab a pair of plyers and manipulate the screws a little to ensure they go through the holes. Even though the holes in the front panel and PCB align perfectly, the screws sometimes need to be slightly bent to fit! No idea why this happens</li>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Momentary Switches</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Momentary Switches image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Momentary Switches image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Momentary Switches image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Momentary Switches image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Momentary Switches image 5" loading="lazy"></div><p>The momentary switches used are SMD ones. In my first version of this PCB, I had through hole versions but found that there was too mush interference from my fingers touching the connectors when playing the game.</p>
 <p>STEPS:</p>
 <ul>
-<li>You need to make sure that you add the ‘up’ and ‘down’ switches first.  It just makes it easy if you do it in this order.</li>
+<li>You need to make sure that you add the ‘up’ and ‘down’ switches first. It just makes it easy if you do it in this order.</li>
 <li>Add a little solder to one of the solder pads for the ‘up’ switch.</li>
 <li>Place the switch on top of the pads and then heat up the solder to secure it into place. If it looks good, you can then secure the other 3 feet on the switch</li>
 <li>Now do the same for the down switch</li>
 <li>You can now add the left and right switches into place along with the A and B switches</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Charging/boost Module & Trinket M0</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Charging/boost Module & Trinket M0 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Charging/boost Module & Trinket M0 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Charging/boost Module & Trinket M0 image 3" loading="lazy"></div><p>The charging and voltage booster module is a great little board.</p>
-<p>It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Charging/boost Module & Trinket M0</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Charging/boost Module & Trinket M0 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Charging/boost Module & Trinket M0 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Charging/boost Module & Trinket M0 image 3" loading="lazy"></div><p>The charging and voltage booster module is a great little board. It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, lets set the output voltage to 5V from the Charging & voltage booster module.Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)</li>
-<li>Now with a multimeter, check the voltage output.  You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.</li>
-<li>Now you can add the module to the PCB.  I added a little superglue to the bottom of the board to ensure it was secured into place</li>
+<li>Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.</li>
+<li>Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place</li>
 <li>Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.</li>
 <li>Bend the wire down so it is touching the solder pad on the PCB and trim.</li>
-<li>Add solder to the solder pad on the PCB and connect the wire to each.  This will give you a good strong connection.</li>
+<li>Add solder to the solder pad on the PCB and connect the wire to each. This will give you a good strong connection.</li>
 <li>Lastly, add the Trinket M0 to the PCB, making sure that you have it orientated correctly ( Micro USB pointing outwards)</li>
 </ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Rest of the Components</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Rest of the Components image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Rest of the Components image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Rest of the Components image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Rest of the Components image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Rest of the Components image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Adding the Rest of the Components image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 5: Adding the Rest of the Components image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 5: Adding the Rest of the Components image 8" loading="lazy"></div><p>Now you can go ahead and add the rest of the components to the PCB</p>
 <p>STEPS:</p>
@@ -319,16 +226,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add a little superglue to the battery and glue into place.</li>
 <li>Trim the wire if necessary and then solder onto the solder points on the PCB</li>
 </ul>
-<p>Now you are ready for testing so lets go and load up the Game of Life code to the Trinket</p><h2><span class="step-num">STEP 6</span>Step 6: Arduino IDE Set-up</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 6: Arduino IDE Set-up image 1" loading="lazy"><img src="images/step07_02.png" alt="Step 6: Arduino IDE Set-up image 2" loading="lazy"><img src="images/step07_03.png" alt="Step 6: Arduino IDE Set-up image 3" loading="lazy"></div><p>I went with Adafruit's <a href="https://www.adafruit.com/product/3500?srsltid=AfmBOorlKcrPfT_WMRGWG9D_tu8clLowNE86_e1bms7mvAKCX78one8Q">Trinket M0</a> as it has plenty of space and capacity to store the code and run the game.</p>
-<p>You wouldn’t be able to run this from an Arduino Nano for example.</p>
-<p>Plus, the Trinket is small which makes it great for a project like this.</p>
-<p>The first thing you will need to do is to set up Arduino IDE to be able to load code to the Trinket M0.</p>
-<p>This is straight forward and I have provided a step-by-step guide below.</p>
-<p>You can also go to Adafruit’s IDE set-up page as well if you need more info – link can be <a href="https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/arduino-ide-setup">found here</a></p>
+<p>Now you are ready for testing so lets go and load up the Game of Life code to the Trinket</p><h2><span class="step-num">STEP 6</span>Step 6: Arduino IDE Set-up</h2><div class="step-images"><img src="images/step07_01.png" alt="Step 6: Arduino IDE Set-up image 1" loading="lazy"><img src="images/step07_02.png" alt="Step 6: Arduino IDE Set-up image 2" loading="lazy"><img src="images/step07_03.png" alt="Step 6: Arduino IDE Set-up image 3" loading="lazy"></div><p>I went with Adafruit's Trinket M0 as it has plenty of space and capacity to store the code and run the game. You wouldn’t be able to run this from an Arduino Nano for example. Plus, the Trinket is small which makes it great for a project like this.</p>
+<p>The first thing you will need to do is to set up Arduino IDE to be able to load code to the Trinket M0. This is straight forward and I have provided a step-by-step guide below. You can also go to Adafruit’s IDE set-up page as well if you need more info – link can be found here</p>
 <p>Install Board Support:</p>
 <p>Open the Arduino IDE and go to File > Preferences</p>
 <p>Add URLs:</p>
-<p>Enter the following URL into the Arduino IDE's preferences to add Adafruit's board repositories and hit 'OK' <a href="https://adafruit.github.io/arduino-board-index/package_adafruit_index.json">https://adafruit.github.io/arduino-board-index/package_adafruit_index.json</a></p>
+<p>Enter the following URL into the Arduino IDE's preferences to add Adafruit's board repositories and hit 'OK' https://adafruit.github.io/arduino-board-index/package_adafruit_index.json</p>
 <p>Here's a short description of each of the Adafruit supplied packages that will be available in the Board Manager when you add the URL:</p>
 <ul>
 <li>Adafruit AVR Boards - Includes support for Flora, Gemma, Feather 32u4, ItsyBitsy 32u4, Trinket, & Trinket Pro.</li>
@@ -345,7 +248,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Go to Tools > Board > Adafruit SAMD Board and select the Trinket M0 board</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Sketch to the Trinket M0</h2><div class="step-images single"><img src="images/step08_01.png" alt="Step 7: Adding the Sketch to the Trinket M0 image 1" loading="lazy"></div><p>Loading the code up is simple now that you have down the previous step of setting up the Trinket on IDE.</p>
 <p>STEPS:</p>
 <ul>
-<li>I’m sure you would have done this already but if not, download the files from my <a href="https://github.com/lonesoulsurfer/Conways_Game_of_life_Handheld">GitHub</a> page which includes the sketch.</li>
+<li>I’m sure you would have done this already but if not, download the files from my GitHub page which includes the sketch.</li>
 <li>Open the sketch and ensure that your Trinket M0 is connected</li>
 <li>Find the Trinket M0 board on IDE (Tools > Board > Adafruit SAMD)</li>
 <li>Upload the sketch to your Trinket</li>
@@ -356,20 +259,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ul>
 <li>Make sure that the front panel and PCB are correctly pushed together with everything lining-up right.</li>
 <li>Add a M2 nut to each of the screws to secure the PCB to the front panel</li>
-<li>You’ll probably find that the screws are too long, you can trim them with a pair of wire cutters or a Dremel.  Make sure you file any sharp edges down on the screws</li>
+<li>You’ll probably find that the screws are too long, you can trim them with a pair of wire cutters or a Dremel. Make sure you file any sharp edges down on the screws</li>
 <li>That’s it – you have now completed your very own Game of Life – Handheld game console</li>
 </ul><h2><span class="step-num">STEP 9</span>Step 9: What Next?</h2><div class="step-images single"><img src="images/step10_01.jpg" alt="Step 9: What Next? image 1" loading="lazy"></div><p>I’ve used about 13% of the space in the Trinket so there is plenty of room to add some more features to this game.</p>
-<p>If you have never coded before (like me!) and would like to contribute to the code, then I would strongly recommend you check out Arduino AI and Claude.</p>
-<p>You can add all of the code that I have put together into it and request new features such as the ones below or your own and it’ll take you through how to add it!</p>
-<p>It has been a bit of a learning curve, not with the language you need to use, but how and where to add the code suggested by AI.</p>
-<p>However, you can ask it to show you exactly and step by step where to add the code and it’ll hold your hand and show you exactly what to do!</p>
+<p>If you have never coded before (like me!) and would like to contribute to the code, then I would strongly recommend you check out Arduino AI and Claude. You can add all of the code that I have put together into it and request new features such as the ones below or your own and it’ll take you through how to add it!</p>
+<p>It has been a bit of a learning curve, not with the language you need to use, but how and where to add the code suggested by AI. However, you can ask it to show you exactly and step by step where to add the code and it’ll hold your hand and show you exactly what to do!</p>
 <p>Even when something goes wrong and the code doesn’t load, it will find solutions and show you exactly what needs to be updated or changed to get the code to load.</p>
-<p>I’d love for this project to become a collaborative one where we could all share our updates and changes to the game and build on what I have started.</p>
-<p>If you would like to be a collaborator, then just hit me up with a DM on Instructables or GitHub and I’ll add you as a collaborator to my GitHub page.</p>
+<p>I’d love for this project to become a collaborative one where we could all share our updates and changes to the game and build on what I have started. If you would like to be a collaborator, then just hit me up with a DM on Instructables or GitHub and I’ll add you as a collaborator to my GitHub page.</p>
 <p>Here's some more ideas to implement:</p>
 <p>Pattern Management</p>
 <p>• Pattern Save/Load: Store custom patterns in EEPROM with names</p>
-<p>• Pattern Library: More famous patterns (pulsar, Penta decathlon, etc.) <a href="https://playgameoflife.com/">this is a good source for patterns</a></p>
+<p>• Pattern Library: More famous patterns (pulsar, Penta decathlon, etc.) this is a good source for patterns</p>
 <p>• Random Seeds: Different randomization algorithms (sparse, dense, clusters) (done)</p>
 <p>• Symmetrical Patterns: Generate symmetric starting conditions (done)</p>
 <p>Game Modes</p>
@@ -391,12 +291,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>• Sound Effects: Beeps for births/deaths, musical tones for populations</p>
 <p>• Color Coding: Different colors for cell age or generation born</p><h2><span class="step-num">STEP 10</span>Step 10: Bonus - Star Wars Game</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 10: Bonus - Star Wars Game image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 10: Bonus - Star Wars Game image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 10: Bonus - Star Wars Game image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 10: Bonus - Star Wars Game image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 10: Bonus - Star Wars Game image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 10: Bonus - Star Wars Game image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 10: Bonus - Star Wars Game image 7" loading="lazy"></div><p>Whilst putting this together, I started to code a Star Wars game that would also work on the handheld game console made in this Instructable.</p>
 <p>It's a lot of fun and I was initially inspired from the original Star Wars Arcade game that came out in 1983.</p>
-<p>You can find a <a href="https://github.com/lonesoulsurfer/Star_Wars_Handheld_Game">link here</a> to the GitHub page - just download the code and add it to the Trinket.</p>
+<p>You can find a link here to the GitHub page - just download the code and add it to the Trinket.</p>
 <p>Here's a rundown of the game:</p>
 <p>Star Wars: Trench Run - A Complete Arcade Experience for Arduino</p>
 <p>Overview</p>
-<p>Experience the iconic Battle of Yavin in this comprehensive Star Wars arcade game for Arduino!</p>
-<p>This game recreates the climactic Death Star assault from A New Hope, featuring multiple training sequences, intense space combat, and the legendary trench run finale.</p>
+<p>Experience the iconic Battle of Yavin in this comprehensive Star Wars arcade game for Arduino! This game recreates the climactic Death Star assault from A New Hope, featuring multiple training sequences, intense space combat, and the legendary trench run finale.</p>
 <p>Button Configuration</p>
 <ul>
 <li>SET (A Button): Fire/Select</li>
@@ -481,24 +380,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Precision Targeting: Required for exhaust port - take your time!</li>
 <li>Evasive Maneuvers: Keep moving to avoid enemy fire</li>
 <li>Power-up Collection: Fly through power-ups to collect them</li>
-</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
-<li><a href="pdfs/Parts List.pdf">Parts List</a></li>
 </ul>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

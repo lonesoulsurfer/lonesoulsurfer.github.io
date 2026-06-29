@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -162,77 +127,36 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Super Simple Phone Charger</span>
 </nav>
-<h1>Super Simple Phone Charger</h1><div class="source"><a href="https://www.instructables.com/Super-Simple-Phone-Charger/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This could possibly be one of the most simplest phone chargers you can make.</p>
-<p>I wanted to make a charger that could use a 9v battery to power-up my phone.</p>
-<p>The worst thing about having a phone charger which you charge via USB is you never remember to charge it!</p>
-<p>After looking through a few 'ibles I came across <a href="https://www.instructables.com/id/Cellphone-Charger/">this one</a> by <a href="https://www.instructables.com/member/hobbyman/">Hobbyman</a>.</p>
-<p>I loved the simple design and the discussions around the batteries and charging modules.</p>
-<p>I actually went out and purchased an Ultrafire 18650 battery, charging module and a regulator but still haven't done anything with them.</p>
-<p>I was contemplating adding a phone charger inside an umbrella handle (still might!), but decided to make this simple charger instead.</p>
+<h1>Super Simple Phone Charger</h1><div class="source"><a href="https://www.instructables.com/Super-Simple-Phone-Charger/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This could possibly be one of the most simplest phone chargers you can make. I wanted to make a charger that could use a 9v battery to power-up my phone. The worst thing about having a phone charger which you charge via USB is you never remember to charge it!</p>
+<p>After looking through a few 'ibles I came across this one by Hobbyman. I loved the simple design and the discussions around the batteries and charging modules. I actually went out and purchased an Ultrafire 18650 battery, charging module and a regulator but still haven't done anything with them. I was contemplating adding a phone charger inside an umbrella handle (still might!), but decided to make this simple charger instead.</p>
 <p>I wanted a way to have a charger that I could replace the battery whenever it went flat. This way if I'm away from mains power, I can just buy a battery from the shop and charge away.</p>
-<p>You virtually only need 3 parts to make this charger, a 9v battery holder, a battery and a step down voltage regulator.</p>
-<p>You don't even need to solder!</p>
-<p>The total cost including battery is about $7 to make.</p>
+<p>You virtually only need 3 parts to make this charger, a 9v battery holder, a battery and a step down voltage regulator. You don't even need to solder! The total cost including battery is about $7 to make.</p>
 <p>I have charged my phone from flat to charged on one 9v energiser lithium battery. I suggest you get a good 9v battery to get the most charge possible.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts to Gather image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
-<li>Voltage regulator - <a href="http://www.ebay.com.au/itm/DC6-28V-To-5V-1-5A-USB-Output-Step-Down-Voltage-Buck-Module-for-Car-motorcycle-/191238811669?hash=item2c86b8b015">eBay</a></li>
-</ol>
-<ol>
-<li>9v battery holder - <a href="http://www.ebay.com.au/itm/Hot-9V-PP3-Battery-Holder-Box-DC-Case-With-Wire-Lead-ON-OFF-Switch-Cover-Case-/171738890298?hash=item27fc6f803a">eBay</a></li>
-</ol>
-<ol>
+<li>Voltage regulator - eBay</li>
+<li>9v battery holder - eBay</li>
 <li>9v battery</li>
 </ol>
 <p>Tools</p>
 <ol>
 <li>Pliers</li>
-</ol>
-<ol>
 <li>Good glue</li>
-</ol>
-<ol>
 <li>Phillips Head screwdriver</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Cut the Wire</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Cut the Wire image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Cut the Wire image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Cut the Wire image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Cut the Wire image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Cut the Wire image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Cut the Wire image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Place the regulator on top of the battery holder and work out how much wire to trim on the holder. Remember, you need to be able to open the holder to get at the battery so don''t make the wires too short.</li>
-</ol>
-<ol>
 <li>Attach the wires to the terminal section on the regulator and make sure everything fits correctly.</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Glue Down the Regulator</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Glue Down the Regulator image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Glue Down the Regulator image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Glue Down the Regulator image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Glue Down the Regulator image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Remove the wires from the terminal on the regulator.</li>
-</ol>
-<ol>
 <li>Add some araldite glue or something similar to the bottom of the regulator and carefully place on top of the battery holder. The battery holder that I used has a built in on/off switch. This is important as you need to be able to turn off the regulator when not in use</li>
-</ol>
-<ol>
 <li>Leave to dry.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Final Steps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Final Steps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Final Steps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Final Steps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Final Steps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Final Steps image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Once the glue has dried, re-attach the wires to the regulator. Make sure that the polarities are correct, red to positive and black to negative.</li>
-</ol>
-<ol>
 <li>Add the battery and test that the regulator comes on. There is a tiny LED that will come on which will indicate that it is being powered.</li>
-</ol>
-<ol>
 <li>Plug in your phone using a iPhone cord or whatever type of phone you have and you should see it starting to charge.</li>
 </ol>
 <p>That's it! You now have a charger that you can take anywhere. No worrying about charging as you ust replace the 9v when you need power.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

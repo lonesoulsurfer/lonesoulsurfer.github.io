@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -166,37 +131,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>The first thing though is we should talk about what exactly is a 18650 li-ion battery and why you need them in your life.</p>
 <p>Let's start with the name - it is actually derived from the measurements of the battery 18mm x 65mm - makes sense.</p>
 <p>The benefits of using a 18650 battery over others is their long run times, high milliampere hours (anywhere between 2600mAh and 3500mAh) and their ability to be re-charged 100's of times.</p>
-<p>Most 18650 batteries have a life cycle of around 300-500 charge cycles.</p>
-<p>This means that the battery will be able to fully charge to at least 80% of its initial capacity.</p>
-<p>Once it reaches that threshold, the battery’s “life cycle” is considered over.</p>
-<p>Though you can still get plenty more charges out of the battery, although it’s capacity will slowly diminish further with time.</p>
+<p>Most 18650 batteries have a life cycle of around 300-500 charge cycles. This means that the battery will be able to fully charge to at least 80% of its initial capacity. Once it reaches that threshold, the battery’s “life cycle” is considered over. Though you can still get plenty more charges out of the battery, although it’s capacity will slowly diminish further with time.</p>
 <p>They can be found in power hungry devices such as flash lights, power tools, cameras and laptops.</p>
 <p>Now you can go out and buy a 18650 battery easy enough but you'll find that unless you spend good $$ you'll probably get a nasty knock off which won't get anywhere near the mAh noted on the battery.</p>
 <p>However, in laptops, the batteries used are usually very high end, and good quality and this is where you can source your 18650 batteries from!</p>
-<p>If you have a local E-waste recycling plant near you or a computer repair shop then you should be able to find old, discarded laptops.</p>
-<p>In most cases, the battery compartment easily 'clicks' out of the laptop so it's super simple to remove them.</p>
-<p>Before we get into it, you do have to treat these batteries with some respect.</p>
-<p>They can overheat if you are not careful and this could potentially be a bad thing.</p>
-<p>If however, you use the right chargers then you won't have any issues.</p>
+<p>If you have a local E-waste recycling plant near you or a computer repair shop then you should be able to find old, discarded laptops. In most cases, the battery compartment easily 'clicks' out of the laptop so it's super simple to remove them.</p>
+<p>Before we get into it, you do have to treat these batteries with some respect. They can overheat if you are not careful and this could potentially be a bad thing. If however, you use the right chargers then you won't have any issues.</p>
 <p>Let's get started!!</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"></div><p>PARTS</p>
 <ul>
 <li>18650 Batteries - The first thing obviously that you'll need is to get your hands on some 18650 batteries. I get all of mine from E waste facilities where you can pick them up for free out of old laptops. You could also try computer repairers who would probably give them to you for free as well!</li>
-<li>18650 Battery Tester - <a href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221124163837&origin=y&SearchText=Module+18650+Battery+Tester&spm=a2g0o.detail.1000002.0&dida=y">Ali Express</a></li>
-<li>18650 Battery Holder - <a href="https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y">Ali Express</a></li>
+<li>18650 Battery Tester - Ali Express</li>
+<li>18650 Battery Holder - Ali Express</li>
 </ul>
 <p>Parts needed if you want to build the portable, variable battery</p>
 <ul>
-<li>18650 Battery Charger Module - <a href="https://www.aliexpress.com/premium/18650-battery-charger-type-c.html?spm=a2g0o.productlist.1000002.0&initiative_id=AS_20221124164006&dida=y">Ali Express</a></li>
-<li>Step up Booster Module - <a href="https://www.aliexpress.com/item/1005001578810552.html?spm=a2g0o.order_list.0.0.3eb61802fSYa9T">Ali Express</a></li>
-<li>Phone Charging Module - <a href="https://www.aliexpress.com/premium/5v-type-c-usb-mobile-power-bank-18650.html?spm=a2g0o.productlist.1000002.0&initiative_id=SB_20221124164249&dida=y">Ali Express</a></li>
-<li>18650 Battery Holder - <a href="https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y">Ali Express</a></li>
-<li>Magnets 7mm X 3mm - <a href="https://www.aliexpress.com/item/1005004024695474.html?spm=a2g0o.order_list.0.0.3e7a1802ENe6uF">Ali Express</a></li>
-<li>Plastic Tube 8mm Dia - <a href="https://www.aliexpress.com/item/1005001780401160.html?spm=a2g0o.productlist.main.25.357b116btBS5Pv&algo_pvid=f4ba6277-c7dc-4aec-ad0c-107bdcaf237f&algo_exp_id=f4ba6277-c7dc-4aec-ad0c-107bdcaf237f-12&pdp_ext_f=%7B%22sku_id%22%3A%2212000017542563333%22%7D&pdp_npi=2%40dis%21AUD%214.51%213.38%21%21%21%21%21%40212248ba16693451290456439d076a%2112000017542563333%21sea&curPageLogUid=OhZufbons7ll">Ali Express</a></li>
+<li>18650 Battery Charger Module - Ali Express</li>
+<li>Step up Booster Module - Ali Express</li>
+<li>Phone Charging Module - Ali Express</li>
+<li>18650 Battery Holder - Ali Express</li>
+<li>Magnets 7mm X 3mm - Ali Express</li>
+<li>Plastic Tube 8mm Dia - Ali Express</li>
 </ul>
 <p>Parts you'll need if you want to build the phone charger</p>
 <ul>
-<li>Power bank Module - <a href="https://www.aliexpress.com/item/1005002100956877.html?spm=a2g0o.productlist.main.87.619b529faZYRgR&algo_pvid=70d7e89c-03c7-4cdd-9590-787618ec74ae&aem_p4p_detail=20221124185337500948896192670013795726&algo_exp_id=70d7e89c-03c7-4cdd-9590-787618ec74ae-43&pdp_ext_f=%7B%22sku_id%22%3A%2212000018743671359%22%7D&pdp_npi=2%40dis%21AUD%217.74%215.34%21%21%21%21%21%402122457116693448171833182d0732%2112000018743671359%21sea&curPageLogUid=J7aaNTlYDMSg&ad_pvid=20221124185337500948896192670013795726_44&ad_pvid=20221124185337500948896192670013795726_44">Ali Express</a></li>
-<li>18650 Battery Holder - <a href="https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y">Ali Express</a></li>
+<li>Power bank Module - Ali Express</li>
+<li>18650 Battery Holder - Ali Express</li>
 </ul>
 <p>TOOLS</p>
 <ul>
@@ -216,12 +175,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>STEPS:</p>
 <ul>
 <li>The battery cases all have a seam line. You can see this in the first 2 images. Identify the seam line as this is where you'll need to pry the case open from</li>
-<li>Next, you need to use a spudger to help pry open the case. You can easily make your own and I've done an Instructable on how to which you can find <a href="https://www.instructables.com/How-to-Make-Spudgers-prying-Tools-Out-of-Cutlery/">here</a></li>
+<li>Next, you need to use a spudger to help pry open the case. You can easily make your own and I've done an Instructable on how to which you can find here</li>
 <li>Carefully push the spudger into the seam and start to pry up the case. If you are not getting any movement, try a different section of the case</li>
 <li>Eventually the case will start to open. Keep on moving the spudger along the seam line, prying the case up. Be careful though to not damage the batteries inside</li>
 <li>Once you are able to, remove the batteries and circuit protection board from the case</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Removing the Little Welded Strips From the Batteries</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 5" loading="lazy"></div><p>Now that you have freed the batteries, you'll need need to clean them up a little.</p>
-<p>The batteries have ben connected in series and use wire and nickel sheeting which is spot welded to the battery to connect them together.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Removing the Little Welded Strips From the Batteries</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Removing the Little Welded Strips From the Batteries image 5" loading="lazy"></div><p>Now that you have freed the batteries, you'll need need to clean them up a little. The batteries have ben connected in series and use wire and nickel sheeting which is spot welded to the battery to connect them together.</p>
 <p>STEPS:</p>
 <ul>
 <li>Cut any wires connecting the batteries together</li>
@@ -230,20 +188,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To do this I used a pair of wire cutters and by lightly grabbing hold of one end of the nickel, twisted the metal to break the weld spots. You can use some needle nose plyers as well to do the job</li>
 <li>If there is any leftover metal or weld burrs on the battery, then cut these away with the wire cutters</li>
 <li>Lastly, remove any stickers, glue etc from the batteries and give them a good clean</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Charging & Testing the Batteries</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Charging & Testing the Batteries image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Charging & Testing the Batteries image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Charging & Testing the Batteries image 3" loading="lazy"></div><p>Now that you have liberated the batteries, you need to ensure that they can hold a good & sufficient charge.</p>
-<p>To do this you need to get yourself a 18650 battery tester.</p>
-<p>You can pick these up really cheaply ($6.00) from Ali Express.</p>
-<p>It will allow you to determine what the capacity of the battery is (mAh) which will tell you if the battery is any good or not.</p>
-<p>In most cases, I have found that the batteries hold over 2200 mAh which is great.</p>
-<p>If they are below 2000 which I have had a couple, they will still work fine, you are just going to get as long a run with them.</p>
+</ul><h2><span class="step-num">STEP 4</span>Step 4: Charging & Testing the Batteries</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Charging & Testing the Batteries image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Charging & Testing the Batteries image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Charging & Testing the Batteries image 3" loading="lazy"></div><p>Now that you have liberated the batteries, you need to ensure that they can hold a good & sufficient charge. To do this you need to get yourself a 18650 battery tester. You can pick these up really cheaply ($6.00) from Ali Express. It will allow you to determine what the capacity of the battery is (mAh) which will tell you if the battery is any good or not.</p>
+<p>In most cases, I have found that the batteries hold over 2200 mAh which is great. If they are below 2000 which I have had a couple, they will still work fine, you are just going to get as long a run with them.</p>
 <p>STEPS:</p>
 <ul>
 <li>With the tester I got, there is an auto function which allows you to charge and then discharge the battery. This gives you the capacity and let's you know the condition of the battery.</li>
 <li>You can also just charge the battery up and test it with a multimeter as well. However, this won't give you the mAh only the amperage.</li>
 <li>If you do come across a battery that isn't taking charge then don't bother keeping it.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Making a Portable, Variable Battery</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making a Portable, Variable Battery image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making a Portable, Variable Battery image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making a Portable, Variable Battery image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making a Portable, Variable Battery image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Making a Portable, Variable Battery image 5" loading="lazy"></div><p>I thought I would also include a couple of projects that you can do with the batteries.</p>
-<p>I will be using these in electronic projects that I build but you can also use them in phone chargers and also this project.</p>
-<p>This build is a way to power electronics and have a rechargeable battery replace the alkaline you would usually find in electronics</p>
+</ul><h2><span class="step-num">STEP 5</span>Step 5: Making a Portable, Variable Battery</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Making a Portable, Variable Battery image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Making a Portable, Variable Battery image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Making a Portable, Variable Battery image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Making a Portable, Variable Battery image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Making a Portable, Variable Battery image 5" loading="lazy"></div><p>I thought I would also include a couple of projects that you can do with the batteries. I will be using these in electronic projects that I build but you can also use them in phone chargers and also this project. This build is a way to power electronics and have a rechargeable battery replace the alkaline you would usually find in electronics</p>
 <p>STEPS:</p>
 <ul>
 <li>You will need a way to charge the battery up and also change the voltage. you can do this with a couple cheap modules.</li>
@@ -251,9 +203,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place the step up booster module next to the charging one</li>
 <li>Add a small switch to the battery holder and connect the positive wire to one of the legs</li>
 <li>Next wire up every as shown in the diagram.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding Magnets As Connectors</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding Magnets As Connectors image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding Magnets As Connectors image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding Magnets As Connectors image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding Magnets As Connectors image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding Magnets As Connectors image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding Magnets As Connectors image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding Magnets As Connectors image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding Magnets As Connectors image 8" loading="lazy"></div><p>Initially I was thinking how cleaver I was coming up with magnets as a way to connect the battery to the terminals inside the electronic thing I wanted to power.</p>
-<p>Then came the realization that if the magnets stuck to one another you'd short the battery and probably have a fire.</p>
-<p>I then realized I could just make sure that the magnets repelled one another and started to celebrate myself again.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding Magnets As Connectors</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding Magnets As Connectors image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding Magnets As Connectors image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding Magnets As Connectors image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding Magnets As Connectors image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding Magnets As Connectors image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding Magnets As Connectors image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding Magnets As Connectors image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding Magnets As Connectors image 8" loading="lazy"></div><p>Initially I was thinking how cleaver I was coming up with magnets as a way to connect the battery to the terminals inside the electronic thing I wanted to power. Then came the realization that if the magnets stuck to one another you'd short the battery and probably have a fire. I then realized I could just make sure that the magnets repelled one another and started to celebrate myself again.</p>
 <p>STEPS:</p>
 <ul>
 <li>I used 3 magnets in each connector. Place 2 magnets next to the tube, mark on the tube the height of the magnets and drill a small hole</li>
@@ -263,8 +213,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>With some scrap plastic (I was a butter container lid!) cut out a couple small sections and glue these to the top of the connector</li>
 <li>Trim with an exacto knife when dry</li>
 <li>Do the same for the other connector, making sure that the magnets repel each other</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Using the Portable Battery</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Using the Portable Battery image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Using the Portable Battery image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Using the Portable Battery image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Using the Portable Battery image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Using the Portable Battery image 5" loading="lazy"></div><p>Before you go and connect it to something, make sure you check the output voltage is set to the voltage requirements of the electronic item.</p>
-<p>This can be done by connecting the connectors to a multimeter and turning the trimmer pot on the step up booster until you reach the required voltage</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Using the Portable Battery</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Using the Portable Battery image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Using the Portable Battery image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Using the Portable Battery image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Using the Portable Battery image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 7: Using the Portable Battery image 5" loading="lazy"></div><p>Before you go and connect it to something, make sure you check the output voltage is set to the voltage requirements of the electronic item. This can be done by connecting the connectors to a multimeter and turning the trimmer pot on the step up booster until you reach the required voltage</p>
 <p>STEPS:</p>
 <ul>
 <li>Grab something you want to power. I gave an old radio a try. The voltage input required was 9 volts. I actually didn't think it would work as it look D cell batteries. spoiler - it did!</li>
@@ -283,21 +232,5 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>So what's next?</p>
 <p>I want to explore using a battery monitoring system (BMS) and see if I can make my own battery spot welder! There is definite opportunities to build a awesome battery pack to take camping as well!</p>
 <p>I'll def be using these to power my electronic projects in the future as well. I'm currently using old mobile batteries but I feel that I'll get longer power from a 18650.</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>

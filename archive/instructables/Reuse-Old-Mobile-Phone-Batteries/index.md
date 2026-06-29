@@ -38,21 +38,21 @@ This ible’ shows you how to connect the module along with a micro USB adapter 
 
 Parts:
 
-1. Li-ion Charger and step-up module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns). The charger will also do Lipo batteries
+1. Li-ion Charger and step-up module - eBay. The charger will also do Lipo batteries
 
-2. Micro USB Adapter – [eBay](https://www.ebay.com.au/itm/5PCS-CJMCU-5V-Micro-USB-Interface-Power-Adapter-Board-Breakout-Module/264009126118?hash=item3d782b90e6:g:T~8AAOSw7Vtb1DPT&frcectupt=true). The micro USB that comes on the module for charging is slightly recessed which makes it hard to access in a project. I prefer to use a micro USB adapter to do this
+2. Micro USB Adapter – eBay. The micro USB that comes on the module for charging is slightly recessed which makes it hard to access in a project. I prefer to use a micro USB adapter to do this
 
-3. USB Adapter – [eBay.](https://www.ebay.com.au/itm/10PCS-Type-A-DIP-Female-USB-To-2-54mm-PCB-Board-Adapter-Converter-For-Arduino-AU/362757031057?epid=18024876193&hash=item5476010491:g:2zQAAOSwSrVak60R&frcectupt=true) I used this so I could connect the phone to the module to charge it. If you are using it to power a project then it isn’t necessary – you just wire the project straight up to the module
+3. USB Adapter – eBay. I used this so I could connect the phone to the module to charge it. If you are using it to power a project then it isn’t necessary – you just wire the project straight up to the module
 
-4. Li-ion Battery. I used discarded ones one you can always buy on pretty cheaply on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_sacat=0&_nkw=samsung+mobile+phone+battery&_sop=15).
+4. Li-ion Battery. I used discarded ones one you can always buy on pretty cheaply on eBay.
 
 5. Wire. I used resistor legs to connect everything together
 
 The followingbisn't necessary but I decided to add it at the last minute. The voltage meter allows me to check the voltage of the battery easily for this build
 
-1. Voltage meter - [eBay](https://www.ebay.com.au/itm/0-36-DC-4-40V-LED-Digital-Mini-Voltmeter-Gauge-Voltage-Meter-Gauge-Panel-Tester/153584158553?hash=item23c2544759:m:mbaXYKe2LzBwhZzQYgKvViQ)
+1. Voltage meter - eBay
 
-2. Tactile switch - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR7.TRC0.A0.H0.Xtactile+switch.TRS0&_nkw=tactile+switch&_sacat=0)
+2. Tactile switch - eBay
 
 Tools
 

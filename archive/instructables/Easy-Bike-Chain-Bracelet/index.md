@@ -42,9 +42,9 @@ The good news is you only need 2 parts to be able to make your own!
 
 PARTS:
 
-1. Bike Chain. You could use an old bike chain if you have one - would probably look quite good with some patina on the links. You can also just buy one as well - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=bike+chain&_sacat=0)
+1. Bike Chain. You could use an old bike chain if you have one - would probably look quite good with some patina on the links. You can also just buy one as well - eBay
 
-2. Leather Cord - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=brown+leather+cord&_sacat=0)
+2. Leather Cord - eBay
 
 TOOLS:
 

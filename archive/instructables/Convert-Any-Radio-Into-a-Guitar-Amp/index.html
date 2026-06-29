@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,41 +120,6 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Lightbox */
-.lb-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    cursor: zoom-out;
-    align-items: center;
-    justify-content: center;
-}
-.lb-overlay.active { display: flex; }
-.lb-overlay img {
-    max-width: 92vw;
-    max-height: 92vh;
-    object-fit: contain;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.8);
-    cursor: default;
-    margin: 0;
-}
-.lb-close {
-    position: fixed;
-    top: 16px; right: 24px;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.7;
-    font-family: monospace;
-    z-index: 1001;
-}
-.lb-close:hover { opacity: 1; }
-.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -166,165 +131,67 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>This is probably one of my favourite hacks that I have ever stumbled across! It’s so simple that anyone with a soldering iron and screwdriver can do it.</p>
 <p>All radios have an amplifier built into them – it’s how your able to increase the volume. What this hack allows you to do is to tap into the radio’s amplifier so you can play guitar through it.</p>
 <p>You may be thinking why in hell would I want to do that!</p>
-<p>Well hacking a radio (especially a vintage radio) gives you the most amazing vintage tone.</p>
-<p>The distinct “Lo-fidelity” sounds that come out of these vintage radio’s will really surprise you.</p>
-<p>It’s a real raw and dirty sound which is perfect for playing some bluesy riffs.</p>
-<p>There is also the added bonus of creating your very own sound as no 2 radios are ever alike.</p>
-<p>When you get your hands on a radio that you want to hack, there is a good change that it would have seen some miles.</p>
-<p>You’ll probably find that the speaker hisses or rattles, the volume jumps around or it has some other left-of-centre feature which is what makes these amps so cool.</p>
+<p>Well hacking a radio (especially a vintage radio) gives you the most amazing vintage tone. The distinct “Lo-fidelity” sounds that come out of these vintage radio’s will really surprise you. It’s a real raw and dirty sound which is perfect for playing some bluesy riffs. There is also the added bonus of creating your very own sound as no 2 radios are ever alike.</p>
+<p>When you get your hands on a radio that you want to hack, there is a good change that it would have seen some miles. You’ll probably find that the speaker hisses or rattles, the volume jumps around or it has some other left-of-centre feature which is what makes these amps so cool.</p>
 <p>So if you have a vintage radio lying about gathering dust, it’s time to crack it open and turn it into something beautiful.</p>
-<p>Check out <a href="http://www.radio-guitar-amps.com/">this website</a> - it has some wicked ideas on how to convert radio's into amps and is a great source of information</p><h2><span class="step-num">STEP 1</span>Step 1: Check Out the Video</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Check Out the Video image 1" loading="lazy"></div><p>Here's the amp in action. Excuse my lame playing - its been awhile since I picked-up the axe...</p>
-<p>I have also recently hacked another radio I found and made a video of it.</p>
-<p>This is the second clip I go through how I repaired and added a jack to the radio.</p>
-<p>So if you can't be asked reading the ible' then just watch the clip!</p>
+<p>Check out this website - it has some wicked ideas on how to convert radio's into amps and is a great source of information</p><h2><span class="step-num">STEP 1</span>Step 1: Check Out the Video</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Check Out the Video image 1" loading="lazy"></div><p>Here's the amp in action. Excuse my lame playing - its been awhile since I picked-up the axe...</p>
+<p>I have also recently hacked another radio I found and made a video of it. This is the second clip I go through how I repaired and added a jack to the radio. So if you can't be asked reading the ible' then just watch the clip!</p>
 <p>I'm having issues with posting clips so if you don't see the right one then try either of the 2 links below</p>
-<p><a href="https://www.youtube.com/watch?v=6IqswC_Rydo&list=UU3KVtVSsFk13MCDUBh34Drw">Link 1</a></p>
-<p><a href="https://www.youtube.com/watch?v=o6tTHIfKfjs&list=UU3KVtVSsFk13MCDUBh34Drw">Link 2</a></p><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"></div><p>Parts</p>
+<p>Link 1</p>
+<p>Link 2</p><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Vintage radio - check out your local thrift store or op shop. If you have no luck at these places, then there is always eBay!</li>
-</ol>
-<ol>
-<li>1/4 mono, input jack - <a href="http://www.ebay.com.au/itm/Hot-New-1-4-Mono-Female-Input-Jack-Socket-Plug-Fr-Electric-Guitar-Bass-/140749667726?pt=AU_Laptop_Accessories&hash=item20c5557d8e">eBay</a></li>
-</ol>
-<ol>
+<li>1/4 mono, input jack - eBay</li>
 <li>Wire - any old lengths</li>
 </ol>
 <p>Tools:</p>
 <ol>
 <li>Soldering Iron</li>
-</ol>
-<ol>
 <li>Guitar</li>
-</ol>
-<ol>
 <li>Guitar cord</li>
-</ol>
-<ol>
 <li>Drill</li>
-</ol>
-<ol>
 <li>Screwdriver / Phillips head</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: What Type of Radio Is Best?</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: What Type of Radio Is Best? image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: What Type of Radio Is Best? image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: What Type of Radio Is Best? image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: What Type of Radio Is Best? image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: What Type of Radio Is Best? image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: What Type of Radio Is Best? image 6" loading="lazy"></div><p>I'm no expert on this hack, but after some research and a little experimentation, there are some radio's that will work better than others.</p>
-<p>Below I have included some notes on what to look for when your out searching for a vintage radio to convert.</p>
-<p>The radio that I hacked isn't anything too vintage, but I wanted to start on something that didn't matter if I messed it up or not.</p>
-<p>The second radio was a little more older but I found that this was even easier to hack!</p>
-<p>The back just clipped off and there as some cardboard hiding all of the electronics!</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: What Type of Radio Is Best?</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: What Type of Radio Is Best? image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: What Type of Radio Is Best? image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: What Type of Radio Is Best? image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: What Type of Radio Is Best? image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: What Type of Radio Is Best? image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: What Type of Radio Is Best? image 6" loading="lazy"></div><p>I'm no expert on this hack, but after some research and a little experimentation, there are some radio's that will work better than others. Below I have included some notes on what to look for when your out searching for a vintage radio to convert.</p>
+<p>The radio that I hacked isn't anything too vintage, but I wanted to start on something that didn't matter if I messed it up or not. The second radio was a little more older but I found that this was even easier to hack! The back just clipped off and there as some cardboard hiding all of the electronics!</p>
 <p>Types of radio's</p>
-<p>There isn't really many radio's that can't be modified into an amp.</p>
-<p>The trick is to find one that has some style and is large enough to pump out some decent sound.</p>
-<p>You can modify small transistor radios but you'll probably find that they aren't very loud or have any distortion.</p>
-<p>Reason being that they are too compact.</p>
-<p>If the radio has no handle and a wrist strap or is in a little leather case it will be a bit too small to waste you time with.</p>
-<p>This is due to the small, crappy speaker that they come with.</p>
-<p>Look for a radio that's at least 5 by 5 inches or so with at least a 3 inch speaker that will ensure the speaker is big enough to have an effect on the tone.</p>
+<p>There isn't really many radio's that can't be modified into an amp. The trick is to find one that has some style and is large enough to pump out some decent sound. You can modify small transistor radios but you'll probably find that they aren't very loud or have any distortion. Reason being that they are too compact. If the radio has no handle and a wrist strap or is in a little leather case it will be a bit too small to waste you time with. This is due to the small, crappy speaker that they come with. Look for a radio that's at least 5 by 5 inches or so with at least a 3 inch speaker that will ensure the speaker is big enough to have an effect on the tone.</p>
 <p>Batteries</p>
-<p>The size and quantity of the batteries that the radio takes will effect the tone!!</p>
-<p>The bigger the size of battery the fuller the tone and the more volume the radio will have.</p>
-<p>Try and find a radio which takes "C" or "D" batteries as these will give you the best result.</p>
-<p>Radios which take a 9v or AA batteries won't give you the best sound.</p>
-<p>It is definitely worth though experimenting and seeing what type of sound you can get out of the small "transistor" type radio's.</p>
-<p>You never know...</p><h2><span class="step-num">STEP 4</span>Step 4: Pull Apart Your Radio</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pull Apart Your Radio image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pull Apart Your Radio image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pull Apart Your Radio image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pull Apart Your Radio image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pull Apart Your Radio image 5" loading="lazy"></div><p>The first radio that I did the mod on was more of a recent one.</p>
-<p>I didn't want to screw-up a vintage one on my first go.</p>
-<p>Turns out it's really quite a simple hack, especially if you have AM and FM, but more on that later.</p>
-<p>It also turned out that this modern radio has amazing tones and overdrive!</p>
+<p>The size and quantity of the batteries that the radio takes will effect the tone!! The bigger the size of battery the fuller the tone and the more volume the radio will have. Try and find a radio which takes "C" or "D" batteries as these will give you the best result. Radios which take a 9v or AA batteries won't give you the best sound. It is definitely worth though experimenting and seeing what type of sound you can get out of the small "transistor" type radio's. You never know...</p><h2><span class="step-num">STEP 4</span>Step 4: Pull Apart Your Radio</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Pull Apart Your Radio image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Pull Apart Your Radio image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Pull Apart Your Radio image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Pull Apart Your Radio image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Pull Apart Your Radio image 5" loading="lazy"></div><p>The first radio that I did the mod on was more of a recent one. I didn't want to screw-up a vintage one on my first go. Turns out it's really quite a simple hack, especially if you have AM and FM, but more on that later. It also turned out that this modern radio has amazing tones and overdrive!</p>
 <p>Steps:</p>
 <ol>
 <li>First un-screw all of the screws holing the radio together.</li>
-</ol>
-<ol>
 <li>With a screwdriver, lever off the knobs and switches. They should pop off with some jiggling.</li>
-</ol>
-<ol>
 <li>Gently remove the cover making sure that no wires are pulled out.</li>
-</ol>
-<ol>
 <li>Lastly un-screw the circuit board.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Jack and Identifying the Volume Pot</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 6" loading="lazy"></div><p>When deciding on where to add the positive wire on the voltage pot, you need to do a little bit of testing.</p>
-<p>There are usually about 5 solder points that the voltage pot has, and the wire from the jack will need to be soldered to the right one for the amp to work.</p>
-<p>Don't worry, it's really simple.</p>
-<p>I promise anyone can do this, even if you know absolutely nothing about electronics.</p>
-<p>What is a volume pot?</p>
-<p>Damn good question!</p>
-<p>The simple answer is it's the thing that you turn to increase or decrease the volume.</p>
-<p>You can see from the pictures that the solder points are easily recognisable.</p>
-<p>Locate this on the circuit board.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Jack and Identifying the Volume Pot</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Wiring the Jack and Identifying the Volume Pot image 6" loading="lazy"></div><p>When deciding on where to add the positive wire on the voltage pot, you need to do a little bit of testing. There are usually about 5 solder points that the voltage pot has, and the wire from the jack will need to be soldered to the right one for the amp to work. Don't worry, it's really simple. I promise anyone can do this, even if you know absolutely nothing about electronics.</p>
+<p>What is a volume pot? Damn good question! The simple answer is it's the thing that you turn to increase or decrease the volume. You can see from the pictures that the solder points are easily recognisable. Locate this on the circuit board.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder 2 wires onto the solder points on the female jack. make sure that there is a bit of length on each one. You can trim them later</li>
-</ol>
-<ol>
 <li>Plug in a guitar jack, making sure that the other end is plugged into your guitar.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Testing and Soldering</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Testing and Soldering image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Testing and Soldering image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Testing and Soldering image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Testing and Soldering image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Testing and Soldering image 5" loading="lazy"></div><p>The next steps involve attaching the wires from the jack to the inside of the radio.</p>
-<p>On my first radio I followed the below steps.</p>
-<p>On my second however I accidentally messed the wiring up and everything still worked!</p>
-<p>I'll go through how I wired this one up first and then let you know what I did on the second.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Testing and Soldering</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Testing and Soldering image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Testing and Soldering image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Testing and Soldering image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Testing and Soldering image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Testing and Soldering image 5" loading="lazy"></div><p>The next steps involve attaching the wires from the jack to the inside of the radio. On my first radio I followed the below steps. On my second however I accidentally messed the wiring up and everything still worked! I'll go through how I wired this one up first and then let you know what I did on the second.</p>
 <p>Steps:</p>
 <ol>
 <li>One of the wires needs to be soldered to a negative point on the radio. The easiest place to solder the wire is on the negative terminal inside the battery case. There's already solder there (you'll have to add more though) and it's easy to identify.</li>
-</ol>
-<ol>
 <li>So which wire on the input jack do you solder on to the negative terminal? Well on a jack the tip is the "hot" section meaning its positive and the side is the negative section. In the pictures I have attached a yellow wire to the negative solder point on the jack. Just solder the end of the wire to the negative battery terminal.</li>
-</ol>
-<ol>
 <li>Now with your guitar plugged into the input jack, test each of the solder pads on the volume pot. Place the wire on one, strum the guitar and if nothing happens try the next until you can hear the guitar come out of the radio.</li>
-</ol>
-<ol>
 <li>solder the wire into place and your done with the wiring.</li>
 </ol>
 <p>Notes on my second attempt.</p>
-<p>On my second attempt on making one of these (documented inthe Youtube clip below) I messed-up the wiring.</p>
-<p>Throughout the video I kept on calling the positive terminal the negative (very silly mistake!) Because of this I actually added the negative wire from the input jack to the positive terminal on the radio.</p>
-<p>Surprisingly everything still worked perfectly!</p>
-<p>Just goes to show how easy this hack really is – you can mess-up the wiring and it still works!</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Mono Input Jack to the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 6" loading="lazy"></div><p>Steps:</p>
+<p>On my second attempt on making one of these (documented inthe Youtube clip below) I messed-up the wiring. Throughout the video I kept on calling the positive terminal the negative (very silly mistake!) Because of this I actually added the negative wire from the input jack to the positive terminal on the radio. Surprisingly everything still worked perfectly! Just goes to show how easy this hack really is – you can mess-up the wiring and it still works!</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Mono Input Jack to the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Mono Input Jack to the Case image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Work out the best place to add the ¼ inch jack. The reason why I chose the top was there was a lot of empty space there in the radio. Also, I didn’t want any interference from the circuitry. Probably would have been better to add it to the side but it works either way.</li>
-</ol>
-<ol>
 <li>Drill a hole big enough for the jack to screw into.</li>
-</ol>
-<ol>
 <li>Add the jack, test and if everything is working, screw the radio back together.</li>
-</ol>
-<ol>
 <li>Done! Now go and upset the neighbours.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Notes.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Notes. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Notes. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Notes. image 3" loading="lazy"></div><p>his is a really fun and simple hack and I would recommend anyone who has a guitar to try it out.</p>
-<p>This type of amp is supposed to be perfect for a cigar box guitar so I’m going to have to make one of these next!</p>
-<p>If you’re worried about defacing a vintage radio then don’t.</p>
-<p>You are actually enhancing these things and making them useful again.</p>
-<p>Think about it, when was the last time you listened to AM?</p>
-<p>The only time I listen to it is when I can’t get FM on my radio.</p>
-<p>Oh and my dad sometimes inflicts it on me when his listening to the horse races.</p>
-<p>The great thing is you can keep the radio working!</p>
-<p>The hack doesn’t have to affect it at all.</p>
-<p>As soon as you take out the lead from the input jack, the radio come straight back on.</p>
-<p>I bet if you showed someone the radio after the hack they wouldn’t even know what you did.</p>
-<p>In Australia it is quite hard to find real vintage radio’s.</p>
-<p>Virtually all of the second hand and thrift stores I visited had nothing.</p>
-<p>My first was found down the tip and the second one was purchased at a small county op shop.</p>
-<p>It seems that one brand really dominated in Australia in the 50’s and 60’s and this was AWA.</p>
-<p>Other brands like Silvertone or Motorola seem to have not really been distributed here.</p>
-<p>The US on the other hand has an abundance of very cool vintage radio’s available.</p>
-<p>A quick look on eBay will show a huge variety available.</p>
-<p>The great thing is, most are available to anyone in the world as long as they are willing to pay the shipment costs which can be more than the actual radio.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Notes.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Notes. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Notes. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Notes. image 3" loading="lazy"></div><p>his is a really fun and simple hack and I would recommend anyone who has a guitar to try it out. This type of amp is supposed to be perfect for a cigar box guitar so I’m going to have to make one of these next!</p>
+<p>If you’re worried about defacing a vintage radio then don’t. You are actually enhancing these things and making them useful again. Think about it, when was the last time you listened to AM? The only time I listen to it is when I can’t get FM on my radio. Oh and my dad sometimes inflicts it on me when his listening to the horse races.</p>
+<p>The great thing is you can keep the radio working! The hack doesn’t have to affect it at all. As soon as you take out the lead from the input jack, the radio come straight back on. I bet if you showed someone the radio after the hack they wouldn’t even know what you did.</p>
+<p>In Australia it is quite hard to find real vintage radio’s. Virtually all of the second hand and thrift stores I visited had nothing. My first was found down the tip and the second one was purchased at a small county op shop. It seems that one brand really dominated in Australia in the 50’s and 60’s and this was AWA. Other brands like Silvertone or Motorola seem to have not really been distributed here.</p>
+<p>The US on the other hand has an abundance of very cool vintage radio’s available. A quick look on eBay will show a huge variety available. The great thing is, most are available to anyone in the world as long as they are willing to pay the shipment costs which can be more than the actual radio.</p>
 <p>For anyone interested in going further with their hacks or want more credible info then my ramblings, then check out the below websites</p>
-<p><a href="http://www.radio-guitar-amps.com/">Radio-Guitar-Amps</a></p>
-<p><a href="http://www.cigarboxnation.com/group/vintage-radios-converted-into-guitar-amps">Cigar Box Nation</a></p>
+<p>Radio-Guitar-Amps</p>
+<p>Cigar Box Nation</p>
 <p>Lonesoulsurfer</p>
-<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
-  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
-  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
-</div>
-<script>
-document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        document.getElementById('lb-img').src = this.src;
-        document.getElementById('lb-img').alt = this.alt;
-        document.getElementById('lb').classList.add('active');
-    });
-});
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
-});
-</script>
 </body>
 </html>
