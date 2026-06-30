@@ -10,6 +10,11 @@ import re
 import json
 from pathlib import Path
 from collections import defaultdict
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from config import DISPLAY_NAME
 
 ARCHIVE_DIR   = Path("archive/instructables")
 PROJECTS_JSON = Path("projects.json")
@@ -114,7 +119,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -133,6 +138,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 """
 
 
@@ -195,22 +235,87 @@ def parse_md(md_text):
     return title, source_url, cover_img, steps
 
 
+def split_blob(text, as_list=False):
+    """Break a run-together text blob into separate lines."""
+    if text.count(" - ") >= 3:
+        # Parts/supplies list — split on camelCase joins
+        parts = re.split(r'(?<=[a-z]{3})(?=[A-Z][a-z])', text)
+    else:
+        # Sentence splits
+        parts = re.split(r'(?<=[.!?])\s+(?=[A-Z])', text)
+        if len(parts) < 2:
+            parts = re.split(r'(?<=[a-z]{3})(?=[A-Z][a-z])', text)
+    parts = [p.strip() for p in parts if p.strip()]
+    if as_list:
+        return ["- " + p for p in parts]
+    return parts
+
+
+def expand_steps_blob(text):
+    """Handle blobs containing a STEPS: keyword."""
+    step_match = re.search(r'\bSTEPS:\s*', text, re.IGNORECASE)
+    if not step_match:
+        return None
+    intro = text[:step_match.start()].strip()
+    steps_text = text[step_match.end():].strip()
+    result = []
+    if intro:
+        result.append(intro)
+        result.append("")
+    step_parts = re.split(r'(?<=[.!?])\s+(?=[A-Z])', steps_text)
+    if len(step_parts) < 2:
+        step_parts = re.split(r'(?<=[a-z]{3})(?=[A-Z][a-z])', steps_text)
+    for p in step_parts:
+        p = p.strip()
+        if p:
+            result.append("- " + p)
+    result.append("")
+    return result
+
+
 def lines_to_html(lines):
-    """Convert text lines to HTML."""
+    """Convert text lines to HTML, handling run-together blobs and lists."""
+    UI_ARTIFACTS = {
+        "View 3 more", "View 3 more images", "I Made It!", "Add a Comment",
+        "View more", "Add Tip", "Ask a Question", "Comment", "Favorite", "Share",
+    }
+
+    # Expand blob lines (single lines > 200 chars with no list prefix)
+    expanded = []
+    for line in lines:
+        s = line.strip()
+        if (len(s) > 200
+                and not s.startswith(("- ", "* ", "#"))
+                and not re.match(r'^\d+\.', s)):
+            steps_expanded = expand_steps_blob(s)
+            if steps_expanded:
+                expanded.extend(steps_expanded)
+            elif s.count(" - ") >= 3:
+                expanded.extend(split_blob(s, as_list=True))
+                expanded.append("")
+            else:
+                expanded.extend(split_blob(s, as_list=False))
+                expanded.append("")
+        else:
+            expanded.append(line)
+
     html = []
     in_list = False
     list_type = None
 
     def next_nonblank(lst, idx):
-        for j in range(idx+1, len(lst)):
-            if lst[j].strip(): return lst[j].strip()
+        for j in range(idx + 1, len(lst)):
+            if lst[j].strip():
+                return lst[j].strip()
         return ""
 
-    for line_idx, line in enumerate(lines):
+    for line_idx, line in enumerate(expanded):
         stripped = line.strip()
         if not stripped:
             if in_list:
-                nxt = next_nonblank(lines, line_idx)
+                # Keep the list open across a blank line if the next
+                # non-blank line continues the same list type
+                nxt = next_nonblank(expanded, line_idx)
                 if list_type == "ol" and re.match(r"^\d+\.\s", nxt):
                     continue
                 if list_type == "ul" and (nxt.startswith("- ") or nxt.startswith("* ")):
@@ -220,16 +325,10 @@ def lines_to_html(lines):
                 list_type = None
             continue
 
-        # Skip Instructables UI artifacts
-        UI_ARTIFACTS = {
-            "View 3 more", "View 3 more images", "I Made It!", "Add a Comment",
-            "View more", "Add Tip", "Ask a Question", "Comment", "Favorite", "Share",
-        }
         if stripped in UI_ARTIFACTS:
             continue
         if stripped.startswith("*") and stripped.endswith("images archived*"):
             continue
-        # Strip inline UI injections that appear mid-text
         stripped = re.sub(r'View \d+ more(?: images?)?', '', stripped).strip()
         if not stripped:
             continue
@@ -241,15 +340,15 @@ def lines_to_html(lines):
         stripped = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', stripped)
 
         if stripped.startswith("- ") or stripped.startswith("* "):
-            # PDF download link — render as button
+            # PDF download link — render as button, not list item
             pdf_m = re.match(r'- \[([^\]]+)\]\((pdfs/[^)]+)\)', stripped)
             if pdf_m:
                 if in_list:
                     html.append(f"</{list_type}>")
                     in_list = False
                     list_type = None
-                label2, path2 = pdf_m.group(1), pdf_m.group(2)
-                html.append(f'<a class="pdf-download" href="{path2}" target="_blank">&#8675; {label2}</a>')
+                lbl, pth = pdf_m.group(1), pdf_m.group(2)
+                html.append(f'<a class="pdf-download" href="{pth}" target="_blank">&#8675; {lbl}</a>')
             else:
                 if not in_list or list_type != "ul":
                     if in_list:
@@ -314,10 +413,6 @@ def build_page(project_dir, force=False):
         step_lines = step["lines"]
 
         # Derive a label from the step title rather than a plain counter.
-        # "Introduction"        → INTRO
-        # "Supplies" etc        → SUPPLIES
-        # "Step 3: Foo"         → STEP 3  (number pulled from the title itself)
-        # Anything else         → STEP
         title_lower = step_title.lower()
         if title_lower == "introduction":
             label = "INTRO"
@@ -342,20 +437,10 @@ def build_page(project_dir, force=False):
                 )
             body.append('</div>')
 
-        # Text for this step
+        # Text for this step (includes any PDF download buttons)
         text_html = lines_to_html(step_lines)
         if text_html.strip():
             body.append(text_html)
-
-        # PDF download links in this step
-        for line in step_lines:
-            s = line.strip()
-            if s.startswith("- [") and "](pdfs/" in s:
-                import re as _re
-                m = _re.match(r'- \[([^\]]+)\]\((pdfs/[^)]+)\)', s)
-                if m:
-                    label, path = m.group(1), m.group(2)
-                    body.append(f'<a class="pdf-download" href="{path}" target="_blank">&#8675; {label}</a>')
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -371,6 +456,22 @@ def build_page(project_dir, force=False):
   <span class="nav-title">{title}</span>
 </nav>
 {"".join(body)}
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {{
+    img.addEventListener('click', function() {{
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    }});
+}});
+document.addEventListener('keydown', function(e) {{
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+}});
+</script>
 </body>
 </html>"""
 
@@ -413,11 +514,11 @@ def build_index(projects):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>lonesoulsurfer - All Projects</title>
+<title>{DISPLAY_NAME} - All Projects</title>
 <style>{index_css}</style>
 </head>
 <body>
-<h1>lonesoulsurfer</h1>
+<h1>{DISPLAY_NAME}</h1>
 <p style="color:#666;font-family:monospace;font-size:12px;margin:8px 0 32px">{len(projects)} Instructables &nbsp;|&nbsp; Local archive</p>
 <hr>
 {cat_html}
