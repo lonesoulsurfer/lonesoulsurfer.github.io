@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -131,9 +166,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>NOTE: I have done an updated version of this lighter which can be found below</p>
 <p>https://www.instructables.com/Shotgun-Shell-Lighte...</p>
 <p>I live close to a gun club and visit them every so often to grab some spent shotgun shells. I’ve made a few projects with them before (check them out in the below links).</p>
-<p>I had the idea of making a lighter out of one for some time and finally worked out in my head how to do it. Making one is surprisingly easy and you only need very basic tools to make your own. There’s only a very minimal amount of soldering needed and anyone should be able to put one together.</p>
-<p>The other great thing is they are very cheap and quick to make. If you can get your hands on some spent shells then the total cost is around $5. If you can’t get free shells then you can always buy them on Etsy.</p>
-<p>I’ve also done a video on how to make one if you can’t be asked reading through the ‘ible. There are 2 video's - one a full version of me making the lighter and the other a shorter one. The first is the longer one.</p>
+<p>I had the idea of making a lighter out of one for some time and finally worked out in my head how to do it.</p>
+<p>Making one is surprisingly easy and you only need very basic tools to make your own.</p>
+<p>There’s only a very minimal amount of soldering needed and anyone should be able to put one together.</p>
+<p>The other great thing is they are very cheap and quick to make.</p>
+<p>If you can get your hands on some spent shells then the total cost is around $5.</p>
+<p>If you can’t get free shells then you can always buy them on Etsy.</p>
+<p>I’ve also done a video on how to make one if you can’t be asked reading through the ‘ible.</p>
+<p>There are 2 video's - one a full version of me making the lighter and the other a shorter one.</p>
+<p>The first is the longer one.</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Empty Shotgun shell – Etsy or your local gun club</li>
@@ -157,7 +198,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Screwdriver</li>
 <li>Solder</li>
 <li>Dremel and a copper wire fitting</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Removing the Primer From the Cap</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing the Primer From the Cap image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing the Primer From the Cap image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing the Primer From the Cap image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing the Primer From the Cap image 4" loading="lazy"></div><p>You now need to remove the primer from the middle of the cap. All spent shells should also have a spent primer. However, it is possible (but not likely) that the primer is still primed. Check to see if has a small dint in the top. If so it will mean that it has been fired. The cap will form the top of the lighter.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Removing the Primer From the Cap</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing the Primer From the Cap image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing the Primer From the Cap image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing the Primer From the Cap image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing the Primer From the Cap image 4" loading="lazy"></div><p>You now need to remove the primer from the middle of the cap.</p>
+<p>All spent shells should also have a spent primer.</p>
+<p>However, it is possible (but not likely) that the primer is still primed.</p>
+<p>Check to see if has a small dint in the top.</p>
+<p>If so it will mean that it has been fired.</p>
+<p>The cap will form the top of the lighter.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the cap on a vice with the top facing down and the vice slightly open</li>
@@ -165,7 +211,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>With a small hammer tap the end of the hole punch until the primer pops out</li>
 <li>You can throw the primer away once out</li>
 <li>To be able to fit the valve into the end of the cap, you will need make it slightly larger. Grab a drill bit the same size as the adapter and drill into the top of the cap. Test and make sure that the hole is big enough.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 4" loading="lazy"></div><p>To be able to protect the wick coming out the top of the shotgun shell cap, I decided to use a small valve adapter use on a bike tyre. You then have the wick coming out the top of this and use a cap from a tyre valve to keep it protected. At this stage you don’t want to add the valve adapter, you just want to get the cap ready. It’s easier to do this now then after you have removed the cap from the shell which is the next step</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Enlarging the Hole in the Cap for the Valve Which Will Hold the Wick Into Place image 4" loading="lazy"></div><p>To be able to protect the wick coming out the top of the shotgun shell cap, I decided to use a small valve adapter use on a bike tyre.</p>
+<p>You then have the wick coming out the top of this and use a cap from a tyre valve to keep it protected.</p>
+<p>At this stage you don’t want to add the valve adapter, you just want to get the cap ready.</p>
+<p>It’s easier to do this now then after you have removed the cap from the shell which is the next step</p>
 <p>Steps:</p>
 <ol>
 <li>First, you will need to drill out the top of the cap to the same size as the smaller section of the valve adapter. Use a vice to hold it steady and make sue you use some wood so you don't damage the cap when drilling.</li>
@@ -217,7 +266,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Push the valve through the bottom of the cap and secure it with the connector ring you just made from a valve</li>
 <li>Use a pair of pliers to hold the connector ring while using another pair of pliers to tighten-up the bottom of the valve</li>
 <li>The important thing here is to make sure the valve is secure and doesn't spin inside the cap. Test it by adding a valve cap to the top and doing it tight. If it doesn't move then it should be tight enough.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 10" loading="lazy"></div><p>It isn’t really necessary to add a hole to fill the lighter with fuel as you can do this through the top . However adding fuel in the top of the lighter means you have to pull of the cap each time and it’s a little clumsy as you have the wick in the way. Adding a small nutsert and button head bolt allows you to fill-up the lighter easily.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Adding a Nutsert and Bolt for Filling the Lighter With Fuel image 10" loading="lazy"></div><p>It isn’t really necessary to add a hole to fill the lighter with fuel as you can do this through the top .</p>
+<p>However adding fuel in the top of the lighter means you have to pull of the cap each time and it’s a little clumsy as you have the wick in the way.</p>
+<p>Adding a small nutsert and button head bolt allows you to fill-up the lighter easily.</p>
 <p>Steps:</p>
 <ol>
 <li>First, remove a primer from a shell. Do this the same way as you did last time.</li>
@@ -225,7 +276,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, heat-up the cap end with a mini blow torch. The aim here is to slightly melt the plastic inside. Don’t overheat though as you will start to melt the actual cartridge</li>
 <li>Once the plastic is soft, place the nutsert over the hole and tap into place. The benefit of doing it this way is the plastic forms a tight fit around the nutsert when it sets hard. There’s no need to solder or glue it into place.</li>
 <li>A tip is to place the shell over a piece of pipe and then heating and adding the nutsert. This will stop the plastic piece inside moving when you are hammering in the nutsert which has happened to me before.</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding a Layer of Copper to Steel Parts</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 7" loading="lazy"></div><p>To make all of the parts look like they belong together, I decided to add a layer of copper to anything that was nickel or steel. This is really easy and help gives the lighter a great finish. I did this for the button bolt that’s used for filling with fuel and the tyre valve cap for the wick</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding a Layer of Copper to Steel Parts</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding a Layer of Copper to Steel Parts image 7" loading="lazy"></div><p>To make all of the parts look like they belong together, I decided to add a layer of copper to anything that was nickel or steel.</p>
+<p>This is really easy and help gives the lighter a great finish.</p>
+<p>I did this for the button bolt that’s used for filling with fuel and the tyre valve cap for the wick</p>
 <p>Steps:</p>
 <ol>
 <li>Place the part securely into a vice. For the tyre valve, I screwed this onto a bolt and placed the bolt into a vice. You will need to remove the small rubber gasket inside the tyre valve as well.</li>
@@ -246,7 +299,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Trim the wick so only a small amount is sticking out the top.</li>
 <li>Carefully put the top cap onto the end of the shell and pull the wick through the valve a little. It might be a little tricky to get this on as the top of the shell has been stretched when it was heated to remove the creases.</li>
 </ol>
-<p>NOTE: If you find the the top cap is loose, you cam always add a little glue to the inside to keep it in place. I've made many lighters and I have never have had to change the wick before. If you do have to, then you can just pull on the top and it will break the glue and come off.</p><h2><span class="step-num">STEP 14</span>Step 14: Filling With Fuel</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Filling With Fuel image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Filling With Fuel image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Filling With Fuel image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Filling With Fuel image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Filling With Fuel image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Filling With Fuel image 6" loading="lazy"></div><p>Steps:</p>
+<p>NOTE: If you find the the top cap is loose, you cam always add a little glue to the inside to keep it in place.</p>
+<p>I've made many lighters and I have never have had to change the wick before.</p>
+<p>If you do have to, then you can just pull on the top and it will break the glue and come off.</p><h2><span class="step-num">STEP 14</span>Step 14: Filling With Fuel</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Filling With Fuel image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Filling With Fuel image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Filling With Fuel image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Filling With Fuel image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Filling With Fuel image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Filling With Fuel image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First, remove the button bolt in the bottom of the lighter</li>
 <li>Next, take off the valve cap from the top. This will allow the fuel to flow through the lighter</li>
@@ -257,6 +312,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The flame might be a little big to start with but as the wick burns down you will find that the flames starts to settle and you’ll have a nice, steady flame</li>
 <li>To put out just blow the flame out and replace the valve cap/lid</li>
 </ol>
-<p>I built a prototype about 2 months ago now and it was working great. I haven’t had to fill it again and it seems to retain fuel very well. I've made a few of these now and I'm refining the process each time.</p>
+<p>I built a prototype about 2 months ago now and it was working great.</p>
+<p>I haven’t had to fill it again and it seems to retain fuel very well.</p>
+<p>I've made a few of these now and I'm refining the process each time.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

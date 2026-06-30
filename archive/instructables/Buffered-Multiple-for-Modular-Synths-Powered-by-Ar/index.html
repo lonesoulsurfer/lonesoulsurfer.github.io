@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -130,7 +165,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <h1>Buffered Multiple for Modular Synths - Powered by Arduino</h1><div class="source"><a href="https://www.instructables.com/Buffered-Multiple-for-Modular-Synths-Powered-by-Ar/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>For those who have been following; you'll know that I have been putting together my own modular synth - primarily based around the Arduino Nano.</p>
 <p>If not, then check out my projects for a quick update.</p>
 <p>A buffered Multiple is a module that allows you to add a sync in from say a drum machine, and use that signal to sync up other modules via the 6 Sync in's.</p>
-<p>Initially, I got a little stuck on this project as I couldn't find a good schematic without having to use negative voltages which my build doesn't use. I put out a call to Reddit and came up with a version using the 4050 chip which worked fine. However, I wanted to add a couple more features which an Arduino was perfect for.</p>
+<p>Initially, I got a little stuck on this project as I couldn't find a good schematic without having to use negative voltages which my build doesn't use.</p>
+<p>I put out a call to Reddit and came up with a version using the 4050 chip which worked fine.</p>
+<p>However, I wanted to add a couple more features which an Arduino was perfect for.</p>
 <p>So what does it do?</p>
 <p>This project creates a 1-to-6 sync signal splitter for synthesizers with the following features:</p>
 <ul>
@@ -144,8 +181,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>GF: Shuffle (creates triplet-based rhythm)</li>
 <li>GH: Humanize (adds random timing variations)</li>
 </ul>
-<p>Groove patterns can be adjusted from 50 to 75%% intensity, providing subtle to a more extreme timing effects. The device maintains accurate timing with non-blocking code and offers visual feedback through the display and indicator LED.</p>
-<p>Perfect for synchronizing multiple synthesizers, drum machines, or sequencers while adding rhythmic variety to your setup. More details on the last step.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"></div><p>All of the parts needed to build your own can be found below. I have also included a PDF of all of the parts as well which is attached to this step. The PCB and front panel can be found on the next step.</p>
+<p>Groove patterns can be adjusted from 50 to 75%% intensity, providing subtle to a more extreme timing effects.</p>
+<p>The device maintains accurate timing with non-blocking code and offers visual feedback through the display and indicator LED.</p>
+<p>Perfect for synchronizing multiple synthesizers, drum machines, or sequencers while adding rhythmic variety to your setup. More details on the last step.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"></div><p>All of the parts needed to build your own can be found below.</p>
+<p>I have also included a PDF of all of the parts as well which is attached to this step.</p>
+<p>The PCB and front panel can be found on the next step.</p>
 <p>PARTS:</p>
 <p>Capacitor Polypropylene X 1 - Ali Express</p>
 <p>Capacitor Polarized X 1 - Ali Express</p>
@@ -159,9 +199,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>OLED Display 128X64 X 1 - Ali Express</p>
 <p>Resistors - Ali Express</p>
 <p>220 X 6</p>
-<p>2.2K X 1</p><h2><span class="step-num">STEP 1</span>Step 1: PCB & Front Panel</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB & Front Panel image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB & Front Panel image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB & Front Panel image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB & Front Panel image 4" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
-<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer</p>
+<p>2.2K X 1</p><h2><span class="step-num">STEP 1</span>Step 1: PCB & Front Panel</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: PCB & Front Panel image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB & Front Panel image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB & Front Panel image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: PCB & Front Panel image 4" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it.</p>
+<p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)</p>
+<p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
+<p>I use JLCPCB (not affiliated) to get this done.</p>
+<p>The front panel is actually just a PCB without any components included!</p>
+<p>The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
+<p>The files that you need to build your own Bleep Drum Synth can be found in my GitHub page.</p>
+<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+<p>Download the files to your computer</p>
 <p>STEPS:</p>
 <ul>
 <li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
@@ -233,5 +279,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>Each mode serves a distinct musical purpose, and the intensity levels (50%/75%) allow meaningful adjustment.</p>
 <p>The two intensity levels (50% and 75%) offer enough adjustability without overcomplicating the interface. This gives users six distinct groove feels to choose from (three types × two intensities)</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

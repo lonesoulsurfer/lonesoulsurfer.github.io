@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Modify an 80's Retro Handheld Game by Adding a MP3/MP4 Player</span>
 </nav>
-<h1>Modify an 80's Retro Handheld Game by Adding a MP3/MP4 Player</h1><div class="source"><a href="https://www.instructables.com/Modify-an-80s-Retro-Handheld-Game-by-Adding-a-MP3/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I have a bunch of very cool 80s handheld games - some in great condition, others have seen better days.  One I had was totally dead, and no matter how hard I tried I just couldn't throw it away.  So instead I decided to bring it back to life with a modern twist.</p>
-<p>I scoured ebay trying to find the perfect MP4/MP3 player that I could intergrate into the casing of the game without having to do too much damage to the original look of the handheld.  I managed to find the below MP3/MP4 player which with a few modifications actually fitted amazingly well within the handheld.</p>
+<h1>Modify an 80's Retro Handheld Game by Adding a MP3/MP4 Player</h1><div class="source"><a href="https://www.instructables.com/Modify-an-80s-Retro-Handheld-Game-by-Adding-a-MP3/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I have a bunch of very cool 80s handheld games - some in great condition, others have seen better days.</p>
+<p>One I had was totally dead, and no matter how hard I tried I just couldn't throw it away.</p>
+<p>So instead I decided to bring it back to life with a modern twist.</p>
+<p>I scoured ebay trying to find the perfect MP4/MP3 player that I could intergrate into the casing of the game without having to do too much damage to the original look of the handheld.</p>
+<p>I managed to find the below MP3/MP4 player which with a few modifications actually fitted amazingly well within the handheld.</p>
 <p>MP4/MP3 player</p>
 <p><a href="http://www.ebay.com.au/itm/New-listing-6th-Gen-Clip-8GB-1-8-LCD-Fm-Video-Player-MP3-MP4-MIX-7-colors-Blue-/370542899926?pt=AU_Electronics_Portable_Audio_Accessories&hash=item564613f2d6">http://www.ebay.com.au/itm/New-listing-6th-Gen-Clip-8GB-1-8-LCD-Fm-Video-Player-MP3-MP4-MIX-7-colors-Blue-/370542899926?pt=AU_Electronics_Portable_Audio_Accessories&hash=item564613f2d6</a></p>
 <p>Check out the clip below on the mod in action:</p>
@@ -166,5 +204,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once you have everything in place, carefully put the back casing back on.  I didn't need to hot glue anything down as all the bits fitted nicely.  You might have to though if your having trouble with parts moving about.</li>
 <li>Test.</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

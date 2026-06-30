@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,11 +162,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">How to Fix Corroded Battery Terminals</span>
 </nav>
-<h1>How to Fix Corroded Battery Terminals</h1><div class="source"><a href="https://www.instructables.com/How-to-Fix-Corroded-Battery-Terminals/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Many a time I’ve managed to get my hands on some electronic gizmo only to find that the battery compartment totally corroded. It’s usually one of the main reasons I think that people throw toys and whatever else takes batteries away.</p>
-<p>The corrosion is caused by potassium hydroxide which can leak out of alkaline batteries (these are the usual types of batteries you put inside toys etc). All batteries discharge, either through use or just slowly through the production of hydrogen gas which forms pressure in the battery. Eventually that pressure will find a way out through a seal or as the battery ages, through corrosion or rust in the outer shell.</p>
+<h1>How to Fix Corroded Battery Terminals</h1><div class="source"><a href="https://www.instructables.com/How-to-Fix-Corroded-Battery-Terminals/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Many a time I’ve managed to get my hands on some electronic gizmo only to find that the battery compartment totally corroded.</p>
+<p>It’s usually one of the main reasons I think that people throw toys and whatever else takes batteries away.</p>
+<p>The corrosion is caused by potassium hydroxide which can leak out of alkaline batteries (these are the usual types of batteries you put inside toys etc).</p>
+<p>All batteries discharge, either through use or just slowly through the production of hydrogen gas which forms pressure in the battery.</p>
+<p>Eventually that pressure will find a way out through a seal or as the battery ages, through corrosion or rust in the outer shell.</p>
 <p>As soon as the first signs of a leak forms, then the best thing to do is to get rid of the battery. if you don’t get to it in time however, then the corrosion can grow and spread out of the battery which causes oxidisation and corrosion of the terminals making your device caput.</p>
-<p>This Instructable will go through a couple of ways that you can fix your device to bring it back to life again. The first is the most extreme corrosion where the terminals have to be replaced, the second is a small amount of oxidisation which only needed the potassium hydroxide to be neutralised and the terminals to be cleaned.</p>
-<p>You can take precautions though to stop this happening such as not mixing different battery types in the same device, replacing all of the batteries at the same time, storing in a dry place and at room temperature, and removing batteries for storage of devices. I’m inherently optimistic (and also lazy) so I’ve never taken any of these precautions but it’s definitely good practice, especially with expensive electronic goods.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Your parts are going to be any electronic goods that need terminal cleaning and/or relacing. The following though will come in handy when you are going this type of work</p>
+<p>This Instructable will go through a couple of ways that you can fix your device to bring it back to life again.</p>
+<p>The first is the most extreme corrosion where the terminals have to be replaced, the second is a small amount of oxidisation which only needed the potassium hydroxide to be neutralised and the terminals to be cleaned.</p>
+<p>You can take precautions though to stop this happening such as not mixing different battery types in the same device, replacing all of the batteries at the same time, storing in a dry place and at room temperature, and removing batteries for storage of devices.</p>
+<p>I’m inherently optimistic (and also lazy) so I’ve never taken any of these precautions but it’s definitely good practice, especially with expensive electronic goods.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Your parts are going to be any electronic goods that need terminal cleaning and/or relacing. The following though will come in handy when you are going this type of work</p>
 <p>Tools</p>
 <ol>
 <li>Battery Holders. I have a bunch of these lying around which are good for projects. You can also use the terminals from them to repair other electronic goods.</li>
@@ -146,7 +186,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Rubber gloves – to protect your skin from the potassium hydroxide. I have touched it before and it does mildly irritate the skin so it’s best to use gloves when handling.</li>
 <li>Eye protection – self explanatory</li>
 <li>Protective mouth and nose mask. Potassium hydroxide can be quite dangerous and breathing it in can be toxic. Better to be safe then sorry.</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Removing Leaking Batteries</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing Leaking Batteries image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing Leaking Batteries image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing Leaking Batteries image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing Leaking Batteries image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Removing Leaking Batteries image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Removing Leaking Batteries image 6" loading="lazy"></div><p>Don’t use your fingers to try and remove the batteries. The potassium hydroxide inside the battery can irritate your skin (I know as I’ve touched it before!). Potassium hydroxide is a caustic agent and is the chemical that corrodes the terminals and destroys the batteries. You may have also seen a feathery crystalline structure forming around the battery and terminal as well. This is potassium carbonate and forms when the potassium hydroxide reacts with carbon dioxide in the air.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Removing Leaking Batteries</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Removing Leaking Batteries image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Removing Leaking Batteries image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Removing Leaking Batteries image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Removing Leaking Batteries image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Removing Leaking Batteries image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Removing Leaking Batteries image 6" loading="lazy"></div><p>Don’t use your fingers to try and remove the batteries.</p>
+<p>The potassium hydroxide inside the battery can irritate your skin (I know as I’ve touched it before!).</p>
+<p>Potassium hydroxide is a caustic agent and is the chemical that corrodes the terminals and destroys the batteries.</p>
+<p>You may have also seen a feathery crystalline structure forming around the battery and terminal as well.</p>
+<p>This is potassium carbonate and forms when the potassium hydroxide reacts with carbon dioxide in the air.</p>
 <p>For those who want to understand more about the chemical components inside an alkaline battery, please check out the following</p>
 <p>Steps:</p>
 <ol>
@@ -154,7 +198,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use a small screwdriver to pull the batteries out. The glasses here are very important as it is easy to flick small pieces of the corrosion whist pulling out the batteries.</li>
 <li>Sometimes that batteries can be so corroded that they virtually weld themselves to the terminals. In this case you will need to use a large screwdriver and maybe some pliers to remove them. You’ll probably rip out the terminals as well so be careful you don’t pull any wires out at the same time</li>
 <li>Dispose of the batteries in a plastic bag.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Removing the Corroded Terminals</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing the Corroded Terminals image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing the Corroded Terminals image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing the Corroded Terminals image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing the Corroded Terminals image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Removing the Corroded Terminals image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Removing the Corroded Terminals image 6" loading="lazy"></div><p>Next thing to do is to remove all of the corroded terminals. It can be tricky sometimes to do this if they are severely corroded as bits can break off and the grooves in the battery holder can get clogged-up.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Removing the Corroded Terminals</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing the Corroded Terminals image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing the Corroded Terminals image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing the Corroded Terminals image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing the Corroded Terminals image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Removing the Corroded Terminals image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Removing the Corroded Terminals image 6" loading="lazy"></div><p>Next thing to do is to remove all of the corroded terminals.</p>
+<p>It can be tricky sometimes to do this if they are severely corroded as bits can break off and the grooves in the battery holder can get clogged-up.</p>
 <p>Steps:</p>
 <ol>
 <li>Use a small, thin screwdriver and push this between the top of the terminal and the battery holder. This should bend out the terminal</li>
@@ -168,11 +213,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next if possible, wash out the bottom of the battery holder and clean any of the old potassium hydroxide away from the case. If you can’t remove the battery holder, then you are going to have to be a lot more careful when cleaning the area. Use a damp cloth instead of running water and remove any leftover potassium hydroxide residue</li>
 <li>Next, you may need to remove any pieces of terminal or corrosion that is in-between the grooves that the terminals sit in. Use something thin and sharp to remove anything lodged inside the grooves.</li>
 <li>Lastly, give the area a clean with some Isopropyl Cleaning Alcohol to remove any last traces of oils, stains etc.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Sourcing Some Battery Terminals</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Sourcing Some Battery Terminals image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Sourcing Some Battery Terminals image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Sourcing Some Battery Terminals image 3" loading="lazy"></div><p>In some cases, the corrosion is so bad that you need to replace the terminals inside the battery compartment. One of the easiest places to get these is from old battery holders. You could also grab the terminals out of any old electronic parts.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Sourcing Some Battery Terminals</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Sourcing Some Battery Terminals image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Sourcing Some Battery Terminals image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Sourcing Some Battery Terminals image 3" loading="lazy"></div><p>In some cases, the corrosion is so bad that you need to replace the terminals inside the battery compartment.</p>
+<p>One of the easiest places to get these is from old battery holders.</p>
+<p>You could also grab the terminals out of any old electronic parts.</p>
 <p>You can also buy the terminals from eBay and I have put a link in the parts section</p>
 <p>Steps:</p>
 <p>1 If your battery terminals have tabs on the back, make sure you lift these up first. You might also need to de-solder any wires on them if you got the terminals out of a toy etc.</p>
-<p>2 Next, use a small screwdriver to push them out of the battery holder. Just place the tip of the screwdriver into the bottom of the terminal and lift it out of the battery holder. They are held in place by a couple of grooves in the side of the battery holder so should come out relatively easily.</p><h2><span class="step-num">STEP 6</span>Step 6: Modifying the Battery Terminals</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Modifying the Battery Terminals image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Modifying the Battery Terminals image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Modifying the Battery Terminals image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Modifying the Battery Terminals image 4" loading="lazy"></div><p>Chances are you will need to modify the battery terminals so they will fit into the batter holder. You can do this pretty easily with some wire cutters and a dremel if you have one.</p>
+<p>2 Next, use a small screwdriver to push them out of the battery holder.</p>
+<p>Just place the tip of the screwdriver into the bottom of the terminal and lift it out of the battery holder.</p>
+<p>They are held in place by a couple of grooves in the side of the battery holder so should come out relatively easily.</p><h2><span class="step-num">STEP 6</span>Step 6: Modifying the Battery Terminals</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Modifying the Battery Terminals image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Modifying the Battery Terminals image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Modifying the Battery Terminals image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Modifying the Battery Terminals image 4" loading="lazy"></div><p>Chances are you will need to modify the battery terminals so they will fit into the batter holder. You can do this pretty easily with some wire cutters and a dremel if you have one.</p>
 <p>Steps:</p>
 <p>1 First, try and fit one of the terminals into the battery holder grooves. If it does fit, then you can probably ignore this step and move onto the next. If not, then you will need to modify it.</p>
 <p>2 Trim the sides of the terminal with some wire cutters and try to push into the grooves again in the battery holder</p>
@@ -190,14 +239,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Lastly, give it another test and make sure it works</li>
 <li>Now if you don’t want to have to do this all over again, go back to the intro and follow the precautions</li>
 </ol>
-<p>This is really the most extreme case of having to fix battery terminals. The next sample, I think is more common and is more oxidisation of the terminals due to some leakage of the batteries. It’s easier too to fix!</p><h2><span class="step-num">STEP 9</span>Step 9: Fixing Oxidised and Minor Corroded Terminals</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 6" loading="lazy"></div><p>I found this cool, vintage mike at the dump and wanted to try and get it going again. Initially I tested it not knowing that it needed an AA battery and thought it was probably something to do with the wiring. After un-screwing the case however, I discovered that it needed a AA battery to run. The battery had been in place for some time and the terminals were oxidised and had some minor corrosion damage. I could have replaced the terminals but decided it would be easier just cleaning them</p>
+<p>This is really the most extreme case of having to fix battery terminals.</p>
+<p>The next sample, I think is more common and is more oxidisation of the terminals due to some leakage of the batteries.</p>
+<p>It’s easier too to fix!</p><h2><span class="step-num">STEP 9</span>Step 9: Fixing Oxidised and Minor Corroded Terminals</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Fixing Oxidised and Minor Corroded Terminals image 6" loading="lazy"></div><p>I found this cool, vintage mike at the dump and wanted to try and get it going again.</p>
+<p>Initially I tested it not knowing that it needed an AA battery and thought it was probably something to do with the wiring.</p>
+<p>After un-screwing the case however, I discovered that it needed a AA battery to run.</p>
+<p>The battery had been in place for some time and the terminals were oxidised and had some minor corrosion damage.</p>
+<p>I could have replaced the terminals but decided it would be easier just cleaning them</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the old battery with a screwdriver and dispose of. Even though there was not as much damage and leakage as the first sample, I still made sure that I wore gloves and eye protection. They are considered safe to dispose of in the bin (imagine how many batteries get thrown away each day!) but there might be some local laws that require you to dispose of them in other ways</li>
 <li>You can see in the images that there is a little corrosion and potassium hydroxide on the end of the terminal but that the terminal itself looks relatively unaffected structurally.</li>
 <li>The brown streaks you can see running through the middle of the battery holder is actually glue that has discoloured over time, not corrosion</li>
 <li>The next step is to neutralise the alkaline from the potassium hydroxide.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Neutralise the Acid</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Neutralise the Acid image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Neutralise the Acid image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Neutralise the Acid image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Neutralise the Acid image 4" loading="lazy"></div><p>Next thing to do is to neutralise any residual potassium hydroxide left of the terminals. There have been many comments left on how best to neutralise the corrosives from the potassium hydroxide. As potassium hydroxide is a strong base, then an acid like vinegar or lemon juice is probably the best thing to use when neutralising an alkaline like potassium hydroxide.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Neutralise the Acid</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Neutralise the Acid image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Neutralise the Acid image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Neutralise the Acid image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Neutralise the Acid image 4" loading="lazy"></div><p>Next thing to do is to neutralise any residual potassium hydroxide left of the terminals.</p>
+<p>There have been many comments left on how best to neutralise the corrosives from the potassium hydroxide.</p>
+<p>As potassium hydroxide is a strong base, then an acid like vinegar or lemon juice is probably the best thing to use when neutralising an alkaline like potassium hydroxide.</p>
 <p>Here's a little more information on acids and bases for those who are interested and how to neutralising.</p>
 <p>Steps:</p>
 <ol>
@@ -218,5 +275,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol>
 <p>That’s it! Hopefully you have managed to bring something back to life again with only a little bit of work.</p>
 <p>Do you have any other tips? Let me know in the comments</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

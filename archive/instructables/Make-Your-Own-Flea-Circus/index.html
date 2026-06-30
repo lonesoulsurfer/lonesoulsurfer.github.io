@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,10 +163,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Make Your Own Flea Circus</span>
 </nav>
 <h1>Make Your Own Flea Circus</h1><div class="source"><a href="https://www.instructables.com/Make-Your-Own-Flea-Circus/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Make your own miniature flea circus.</p>
-<p>Flea circuses have been around since the Victorian times when actual human fleas were used to perform circus tricks.  The flea would be harnessed with a small, thin piece of gold wire and made to do acts like pull a miniature chariot, type rope walk, sword fighting, and kicking a small ball!  Unfortunately for the live flea circus (and fortunately for us!) the human flea is virtually extinct due to our much cleaner ways.</p>
+<p>Flea circuses have been around since the Victorian times when actual human fleas were used to perform circus tricks.</p>
+<p>The flea would be harnessed with a small, thin piece of gold wire and made to do acts like pull a miniature chariot, type rope walk, sword fighting, and kicking a small ball!</p>
+<p>Unfortunately for the live flea circus (and fortunately for us!) the human flea is virtually extinct due to our much cleaner ways.</p>
 <p>The type of flea circus that I have built is called a "humbug" flea circus and all the acts are performed using hidden, mechanical means.</p>
-<p>Initially I wanted to make a  flea circus inside a small cigar box or wooden case.  In the end I went with a small wooden case as it was a little deeper than a cigar box.  Kind of wished I went with a little larger box as i couldn't fit everything I wanted into the small case that I ended up using.</p>
-<p>The project itself was a real learning experience, and everything I built was trial and error.  I tried to take as many photos as possible but with the electronics it just became too hard to take photos of every step.  I have drawn-up some schematics which will help you through this section though.  Also I couldn't get the tight-rope to work well.  I left all of the steps though in the Instructable as i believe it would have worked if I had used a separate servo for the type rope.</p>
+<p>Initially I wanted to make a  flea circus inside a small cigar box or wooden case.</p>
+<p>In the end I went with a small wooden case as it was a little deeper than a cigar box.</p>
+<p>Kind of wished I went with a little larger box as i couldn't fit everything I wanted into the small case that I ended up using.</p>
+<p>The project itself was a real learning experience, and everything I built was trial and error.</p>
+<p>I tried to take as many photos as possible but with the electronics it just became too hard to take photos of every step.</p>
+<p>I have drawn-up some schematics which will help you through this section though.</p>
+<p>Also I couldn't get the tight-rope to work well.</p>
+<p>I left all of the steps though in the Instructable as i believe it would have worked if I had used a separate servo for the type rope.</p>
 <p>The flea circus can be built over a weekend with most parts being available on eBay or your local electronics shop.</p>
 <p>Hope you enjoy – and happy making.</p>
 <p>if the clip doesn't work above - <a href="https://www.youtube.com/watch?v=a7cNSp8WYMM&feature=c4-overview&list=UU3KVtVSsFk13MCDUBh34Drw">try this one</a></p><h2><span class="step-num">STEP 1</span>Step 1: Parts, Materials and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts, Materials and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts, Materials and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts, Materials and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts, Materials and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts, Materials and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts, Materials and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts, Materials and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts, Materials and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts, Materials and Tools image 9" loading="lazy"></div><p>Parts and Materials</p>
@@ -188,7 +231,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Stanley knife</li>
 <li>Drill</li>
 <li>Wire cutters</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Deciding on the Case</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Deciding on the Case image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Deciding on the Case image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Deciding on the Case image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Deciding on the Case image 4" loading="lazy"></div><p>First things first.  You need to decide on what type of case you want to use to house your flea circus.  After a little research I decided to use a little wooden suitcase which I purchased from eBay.  There are 2 sizes available and I decided to go with the small one.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Deciding on the Case</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Deciding on the Case image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Deciding on the Case image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Deciding on the Case image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Deciding on the Case image 4" loading="lazy"></div><p>First things first.</p>
+<p>You need to decide on what type of case you want to use to house your flea circus.</p>
+<p>After a little research I decided to use a little wooden suitcase which I purchased from eBay.</p>
+<p>There are 2 sizes available and I decided to go with the small one.</p>
 <p>Steps:</p>
 <ol>
 <li>First remove the handle and clasp and put aside</li>
@@ -221,7 +267,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Push the copper tubing through the copper wire and bend the copper wire down as shown.</li>
 <li>Add two 4mm x 4mm rare earth magnets to the ends of the see-saw with superglue.</li>
 <li>The next step is to add a small, wire loop in the floor so the base of the see-saw can slip into .  If you don't do this the see-saw will be pulled around by the magnets.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Electronics</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Electronics image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Electronics image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Electronics image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Electronics image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Electronics image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Electronics image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Electronics image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Electronics image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the Electronics image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Adding the Electronics image 10" loading="lazy"></div><p>This was a little tricky but with a little patience it worked out ok.  Instead of going through each of the steps, I have created a couple of schematics for you to use.  The first one is if you want to use a remote to make the acts work and the second is if you don't want to include the remote.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Electronics</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Electronics image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Electronics image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Electronics image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Electronics image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Electronics image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Electronics image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Electronics image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Electronics image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the Electronics image 9" loading="lazy"><img src="images/step06_10.jpg" alt="Step 6: Adding the Electronics image 10" loading="lazy"></div><p>This was a little tricky but with a little patience it worked out ok.</p>
+<p>Instead of going through each of the steps, I have created a couple of schematics for you to use.</p>
+<p>The first one is if you want to use a remote to make the acts work and the second is if you don't want to include the remote.</p>
 <p>Steps:</p>
 <p>Servo Tester</p>
 <ol>
@@ -324,25 +372,42 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>To make fleas all you need to go is cut up some old, rusted metal into tiny bits.  Experiment on how small you can get these.  If you don't have rusty metal, you can always just use a black highlighter to cover the metal.  The fleas look very real as they bounce along the circus ring.</li>
 <li>When you have made enough, store them in a match box and get them out with a pair of tweezers.</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Finished!</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Finished! image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Finished! image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Finished! image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Finished! image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Finished! image 5" loading="lazy"></div><p>You should now have a pretty good looking, mini flea circus to astound your friends with.   Practice your acts and I promise you’ll have every kid in the neighbourhood believing you have trained fleas to do your bidding.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Finished!</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Finished! image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Finished! image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Finished! image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Finished! image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Finished! image 5" loading="lazy"></div><p>You should now have a pretty good looking, mini flea circus to astound your friends with.</p>
+<p>Practice your acts and I promise you’ll have every kid in the neighbourhood believing you have trained fleas to do your bidding.</p>
 <p>Things to consider</p>
-<p>Next one I make I’ll definitely make sure that it’s in a larger case.  The one I used, although very cute, was a little too small.  The eBay seller who I purchased from has a larger one which would work great.  I would like to add more than 1 servo in the next one – I think with 3 you could do a whole lot of cool tricks (and I could get that pesky type rope working).</p>
-<p>I have also been toying with the idea of using an EZ-B to control all of the servos etc.  an EZ-B is a fantastic processor which I have used in the past to make a robot with.  You can connect up to 20 Servos to it and has some really neat features like voice command.  Instead of twisting a little knob at the back, all you would need to do it tell your fleas what to do and they would do it!  The speed of the servos could be easily controlled as well.  This would be a big project, but if I got it right it would be really impressive.</p><h2><span class="step-num">STEP 14</span>Step 14: NOT USED: Tight-Rope - Part 1</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 8" loading="lazy"><img src="images/step14_09.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 9" loading="lazy"><img src="images/step14_10.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 10" loading="lazy"><img src="images/step14_11.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 11" loading="lazy"></div><p><strong><em>NOTE</strong></em></p>
-<p>I didn't use this act in the end.  Not because I didn't want to - I just couldn't get it to work properly.  The biggest hurdle was trying to find the right type of string to use.  Every time I thought I had it the knot would get caught somewhere and it would jam.  Also it really needed it's own servo.</p>
-<p>I tried everything from fishing line to dental floss but for some reason I though cotton would be too weak.  It was only went I was speaking to my mum (an avid sower) about the problem and she showed me all the different types of cottons available which would have done the job well!</p>
+<p>Next one I make I’ll definitely make sure that it’s in a larger case.</p>
+<p>The one I used, although very cute, was a little too small.</p>
+<p>The eBay seller who I purchased from has a larger one which would work great.</p>
+<p>I would like to add more than 1 servo in the next one – I think with 3 you could do a whole lot of cool tricks (and I could get that pesky type rope working).</p>
+<p>I have also been toying with the idea of using an EZ-B to control all of the servos etc.  an EZ-B is a fantastic processor which I have used in the past to make a robot with.</p>
+<p>You can connect up to 20 Servos to it and has some really neat features like voice command.</p>
+<p>Instead of twisting a little knob at the back, all you would need to do it tell your fleas what to do and they would do it!</p>
+<p>The speed of the servos could be easily controlled as well.</p>
+<p>This would be a big project, but if I got it right it would be really impressive.</p><h2><span class="step-num">STEP 14</span>Step 14: NOT USED: Tight-Rope - Part 1</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 8" loading="lazy"><img src="images/step14_09.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 9" loading="lazy"><img src="images/step14_10.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 10" loading="lazy"><img src="images/step14_11.jpg" alt="Step 14: NOT USED: Tight-Rope - Part 1 image 11" loading="lazy"></div><p><strong><em>NOTE</strong></em></p>
+<p>I didn't use this act in the end.</p>
+<p>Not because I didn't want to - I just couldn't get it to work properly.</p>
+<p>The biggest hurdle was trying to find the right type of string to use.</p>
+<p>Every time I thought I had it the knot would get caught somewhere and it would jam.</p>
+<p>Also it really needed it's own servo.</p>
+<p>I tried everything from fishing line to dental floss but for some reason I though cotton would be too weak.</p>
+<p>It was only went I was speaking to my mum (an avid sower) about the problem and she showed me all the different types of cottons available which would have done the job well!</p>
 <p>Next step is to add the tight-rope poles.  I used copper tube for these.</p>
 <p>Making the Poles</p>
 <ol>
 <li>First decide on how high you want the poles to be.  Once this is done cut to size with a dremmel.</li>
 <li>Bend a flat piece of copper as shown below and solder onto the top of the pole.</li>
 </ol>
-<p>NOTE: The best way to solder the copper together is to use a small soldering torch like the one in the tool section.  Cover the areas that you want to solder in solder flux and get the copper really hot before introducing the solder.  Move the flame away just before you add the solder, and once it has melted, introduce the flame back again.</p>
+<p>NOTE: The best way to solder the copper together is to use a small soldering torch like the one in the tool section.</p>
+<p>Cover the areas that you want to solder in solder flux and get the copper really hot before introducing the solder.</p>
+<p>Move the flame away just before you add the solder, and once it has melted, introduce the flame back again.</p>
 <ol>
 <li>Next cut another piece of copper and bend the 2 sides as shown.  Drill a hole in the middle just big enough for the pole to fit in and solder into place as shown.</li>
 <li>Do this twice.</li>
 </ol>
 <p>Adding the poles to the case</p>
-<p>The poles will be needed to be attached to the box.  The solution that I can up with was to attach a couple of copper tubes to the box which were slightly larger than the poles.  The poles then would slip into these and be kept into place.</p>
+<p>The poles will be needed to be attached to the box.</p>
+<p>The solution that I can up with was to attach a couple of copper tubes to the box which were slightly larger than the poles.</p>
+<p>The poles then would slip into these and be kept into place.</p>
 <ol>
 <li>Cut 2 equal sized pieces of copper.</li>
 <li>Use some tin snips and make 3, small incisions at the bottom and snip one of them off.</li>
@@ -352,7 +417,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut a couple of pieces of flat copper and bend and drill as shown.  These will be the braces to hold the copper tubes into place.</li>
 <li>Screw into place as shown.</li>
 </ol><h2><span class="step-num">STEP 15</span>Step 15: NOT USED: Tight-Rope - Part 2</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 4" loading="lazy"><img src="images/step15_05.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 5" loading="lazy"><img src="images/step15_06.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 6" loading="lazy"><img src="images/step15_07.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 7" loading="lazy"><img src="images/step15_08.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 8" loading="lazy"><img src="images/step15_09.jpg" alt="Step 15: NOT USED: Tight-Rope - Part 2 image 9" loading="lazy"></div><p>Adding the poles to the case</p>
-<p>The poles will be needed to be attached to the box.  The solution that I can up with was to attach a couple of copper tubes to the box which were slightly larger than the poles.  The poles then would slip into these and be kept into place.</p>
+<p>The poles will be needed to be attached to the box.</p>
+<p>The solution that I can up with was to attach a couple of copper tubes to the box which were slightly larger than the poles.</p>
+<p>The poles then would slip into these and be kept into place.</p>
 <ol>
 <li>Cut 2 equal sized pieces of copper.</li>
 <li>Use some tin snips and make 3, small incisions at the bottom and snip one of them off.</li>
@@ -362,5 +429,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut a couple of pieces of flat copper and bend and drill as shown.  These will be the braces to hold the copper tubes into place.</li>
 <li>Screw into place as shown.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

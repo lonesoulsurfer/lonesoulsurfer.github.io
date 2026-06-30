@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,10 +164,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Lego Man Lamp</h1><div class="source"><a href="https://www.instructables.com/Lego-Man-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Build a Lego man lamp!</p>
 <p>(If you are using a mobile and want to see it in action, click on the last picture (its a GIF)</p>
-<p>If I could be any lego man it would be vintage space man. Definitely the coolest and happiest dude that ever flew in space. Last year I made a Lego man lamp which had a space man encased in resin with LED’s underneath (see here). This time I wanted to incorporate the LED into the actual Lego man so it would look like he was holding one in his hands.</p>
-<p>As everyone knows, Lego men are small and fiddly. There isn’t much room to add anything let alone an LED, wires switch and batteries. That’s when I hit upon the idea of using fine copper wire from a DC motor for the wires. I could thread them through small drilled holes in the Lego man so you couldn’t see them, and hide the batteries and switch inside a small Lego box.</p>
+<p>If I could be any lego man it would be vintage space man.</p>
+<p>Definitely the coolest and happiest dude that ever flew in space.</p>
+<p>Last year I made a Lego man lamp which had a space man encased in resin with LED’s underneath (see here).</p>
+<p>This time I wanted to incorporate the LED into the actual Lego man so it would look like he was holding one in his hands.</p>
+<p>As everyone knows, Lego men are small and fiddly.</p>
+<p>There isn’t much room to add anything let alone an LED, wires switch and batteries.</p>
+<p>That’s when I hit upon the idea of using fine copper wire from a DC motor for the wires.</p>
+<p>I could thread them through small drilled holes in the Lego man so you couldn’t see them, and hide the batteries and switch inside a small Lego box.</p>
 <p>The cool coincidence about LED’s and Lego is that the sizes LED’s come in (5mm and 10mm) fit great into many different Lego pieces</p>
-<p>The Lego man that I used isn’t actually a Lego man - it’s a knock off I found at a 2nd hand store. The only reason why I used him was I had him lying around doing nothing. You could just as easily use an authentic Lego man if you wanted to. Actually I think a Darth Vader with a light sabre would work great…</p>
+<p>The Lego man that I used isn’t actually a Lego man - it’s a knock off I found at a 2nd hand store.</p>
+<p>The only reason why I used him was I had him lying around doing nothing.</p>
+<p>You could just as easily use an authentic Lego man if you wanted to.</p>
+<p>Actually I think a Darth Vader with a light sabre would work great…</p>
 <p>This isn’t too hard a build but it can be fiddly (thin wires and tiny drill pieces).</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things to Gather image 6" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Lego man – your choice</li>
@@ -186,7 +230,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol>
 <p>Legs – drill a hole through the top of the legs. The hole should be to either the left or the right.</p>
 <p>Body – the body will be hollow so you don’t have to do anything there</p>
-<p>Arm – carefully drill a hole in the inside of the arm where the hand joins. Try not to go right through to the shoulder if possible. If you do it doesn’t really matter as the hole is so small you won’t really see it anyhow.</p>
+<p>Arm – carefully drill a hole in the inside of the arm where the hand joins.</p>
+<p>Try not to go right through to the shoulder if possible.</p>
+<p>If you do it doesn’t really matter as the hole is so small you won’t really see it anyhow.</p>
 <p>Shoulder - Next drill a hole through the side of the shoulder so it joins to the other hole that you just drilled.</p>
 <p>Hand – drill a hole through the hand</p>
 <ol>
@@ -201,12 +247,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next solder on one of the copper wires to the switch terminal and one of the battery wires to the other switch terminal.</li>
 <li>Lastly, solder the last wire from the battery to the other copper wire</li>
 </ol>
-<p>The battery should now be connected</p><h2><span class="step-num">STEP 9</span>Step 9:</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: image 2" loading="lazy"></div><h2><span class="step-num">STEP 10</span>Step 10: ​Making the Torch</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: ​Making the Torch image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: ​Making the Torch image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: ​Making the Torch image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: ​Making the Torch image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: ​Making the Torch image 5" loading="lazy"></div><p>You don’t have to do this step if you don’t want to – you could always just have a 5mm LED in his hand. It fits perfectly and would work just as well. I wanted to take it another step and made a small torch for him to hold.</p>
+<p>The battery should now be connected</p><h2><span class="step-num">STEP 9</span>Step 9:</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: image 2" loading="lazy"></div><h2><span class="step-num">STEP 10</span>Step 10: ​Making the Torch</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: ​Making the Torch image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: ​Making the Torch image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: ​Making the Torch image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: ​Making the Torch image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: ​Making the Torch image 5" loading="lazy"></div><p>You don’t have to do this step if you don’t want to – you could always just have a 5mm LED in his hand.</p>
+<p>It fits perfectly and would work just as well.</p>
+<p>I wanted to take it another step and made a small torch for him to hold.</p>
 <p>Steps:</p>
 <ol>
 <li>Go through your Lego bin and find one of those small poles that fit into your Lego man’s hand. You want one with a tube fitting in the end that can fit on a small 1 x 1 clear coloured piece. The LED will sit inside this.</li>
 <li>Next go even deeper into your Lego bin and find a clear, coloured 1 x 1 piece. Also find a 1 x 1 flat tile, also clear / coloured.</li>
 <li>Grab the drill and make a hole through the top of the pole. Go carefully and check your work constantly to ensure you don’t drill too far. You want a hole large enough for the LED’s legs to fit into but not touch. The pole I used had 2 little slots on the side where the ends of the legs came out of.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11:</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: image 6" loading="lazy"></div>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,9 +164,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Electronic Cricket  Game</h1><div class="source"><a href="https://www.instructables.com/Electronic-Cricket-Game/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>Build your own electronic, handheld cricket game. Cricket Test matches are known for being played over 5 days and sometimes there’s still not a winner – 5 days!!!</p>
 <p>I think you need to have been brought up watching cricket matches on TV and playing games in the street as a kid to be able to really appreciate it.</p>
-<p>These days, it’s very rare that I find the time to watch a whole test match through to the bitter end. I just don’t have the time (or the patience) to sit and watch a whole game. So in honor of the noble game, I decided to build my own electronic cricket match handheld game so I could play it anytime I wanted (with the added benefit of nice, quick matches)</p>
-<p>The electronics are built from circuit schematics I found on-line. here are 2 circuits to build for this game, one for the scoring and one for the actual game. I also managed to add all of the parts inside an old battery tester I found at a flea market which made the perfect case for the game.</p>
-<p>You could probably build this very easily with an Arduino or something similar. However, I wanted to build it from the ground up as I’m trying to learn more about electronics. The project is for people who have intermediate skills in soldering and electronics. If you are a beginner, I would start with a few 555 timer projects first and then try your hand at this.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>The project is made up of 2 different circuits. One for the actual cricket game and one for scoring. I have listed the parts for each circuit below</p>
+<p>These days, it’s very rare that I find the time to watch a whole test match through to the bitter end.</p>
+<p>I just don’t have the time (or the patience) to sit and watch a whole game.</p>
+<p>So in honor of the noble game, I decided to build my own electronic cricket match handheld game so I could play it anytime I wanted (with the added benefit of nice, quick matches)</p>
+<p>The electronics are built from circuit schematics I found on-line. here are 2 circuits to build for this game, one for the scoring and one for the actual game.</p>
+<p>I also managed to add all of the parts inside an old battery tester I found at a flea market which made the perfect case for the game.</p>
+<p>You could probably build this very easily with an Arduino or something similar.</p>
+<p>However, I wanted to build it from the ground up as I’m trying to learn more about electronics.</p>
+<p>The project is for people who have intermediate skills in soldering and electronics.</p>
+<p>If you are a beginner, I would start with a few 555 timer projects first and then try your hand at this.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>The project is made up of 2 different circuits. One for the actual cricket game and one for scoring. I have listed the parts for each circuit below</p>
 <p>Cricket Game Parts</p>
 <ol>
 <li>Perf Board - eBay</li>
@@ -160,10 +201,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>555 IC – eBay</li>
 <li>2 X 4026 IC’s – eBay</li>
 <li>Perf Board – eBay</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Bread-boarding the Circuits</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Bread-boarding the Circuits image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: Bread-boarding the Circuits image 2" loading="lazy"><img src="images/step02_03.gif" alt="Step 2: Bread-boarding the Circuits image 3" loading="lazy"><img src="images/step02_04.gif" alt="Step 2: Bread-boarding the Circuits image 4" loading="lazy"></div><p>First things first - you should always breadboard your circuits first to make sure that the work. The initial schematic that I used for the scoreboard worked really well but I accidentally deleted it and couldn't find it again on-line. I did find another and it seemed to do the trick.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Bread-boarding the Circuits</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Bread-boarding the Circuits image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: Bread-boarding the Circuits image 2" loading="lazy"><img src="images/step02_03.gif" alt="Step 2: Bread-boarding the Circuits image 3" loading="lazy"><img src="images/step02_04.gif" alt="Step 2: Bread-boarding the Circuits image 4" loading="lazy"></div><p>First things first - you should always breadboard your circuits first to make sure that the work.</p>
+<p>The initial schematic that I used for the scoreboard worked really well but I accidentally deleted it and couldn't find it again on-line.</p>
+<p>I did find another and it seemed to do the trick.</p>
 <p>Once you have made the circuits and everything is working as it should be, it's then time to move onto soldering the first one together which will be the actual cricket game.</p>
 <p>You can find the original circuit design website for the cricket game here</p>
-<p>You can find the original circuit design website for the scoreboard here</p><h2><span class="step-num">STEP 3</span>Step 3: Cricket Match Game - Circuit</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Cricket Match Game - Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cricket Match Game - Circuit image 2" loading="lazy"></div><p>This circuit is pretty straight forward but like the scoreboard, it will need a lot of wires to connect all of the LED's together. Note that there is a 100R resistor that connects the negative from the LED's to ground. I decided to replace this with a 50K potentiometer so I could dim the LED's as they were very bright. Up to you though if you want to replace it or not.</p>
+<p>You can find the original circuit design website for the scoreboard here</p><h2><span class="step-num">STEP 3</span>Step 3: Cricket Match Game - Circuit</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Cricket Match Game - Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cricket Match Game - Circuit image 2" loading="lazy"></div><p>This circuit is pretty straight forward but like the scoreboard, it will need a lot of wires to connect all of the LED's together.</p>
+<p>Note that there is a 100R resistor that connects the negative from the LED's to ground.</p>
+<p>I decided to replace this with a 50K potentiometer so I could dim the LED's as they were very bright.</p>
+<p>Up to you though if you want to replace it or not.</p>
 <p>Also, this game could be replaced with any game you want. If football is your sport or baseball, then adapting this would be very easy - you just need a different scoring system.</p>
 <p>I also added a couple of Capacitors to the 555 IC so I could change the speed of the flashing LED's. You can either have it on fast mode or slow mode in case you keep on going out!</p><h2><span class="step-num">STEP 4</span>Step 4: Soldering the IC's and Wiring the 555</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Soldering the IC's and Wiring the 555 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Soldering the IC's and Wiring the 555 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Soldering the IC's and Wiring the 555 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Soldering the IC's and Wiring the 555 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Soldering the IC's and Wiring the 555 image 5" loading="lazy"></div><p>I'll go through each of the steps and in most of them I have progressive images to help. However, I did make a coulple of mistakes which I had to fix up later and will highlight these as I go along.</p>
 <p>Steps:</p>
@@ -176,7 +222,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Pins 2 and 6 need to be soldered together. I just added a small piece of wire to the underside of the circuit as you can see in the image below</li>
 <li>Next you need to solder pin 4 and 8 to positive</li>
 </ol>
-<p>3 The 2 12K resistors need to be added next. solder one to pin 6 and 7 and one to pin 7 and somewhere blank of the perf board. You will attaching a wire to this and to positive later for the switch to play the game</p><h2><span class="step-num">STEP 6</span>Step 6: Continuing to Wire the 555</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Continuing to Wire the 555 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Continuing to Wire the 555 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Continuing to Wire the 555 image 3" loading="lazy"></div><p>Steps:</p>
+<p>3 The 2 12K resistors need to be added next. solder one to pin 6 and 7 and one to pin 7 and somewhere blank of the perf board.</p>
+<p>You will attaching a wire to this and to positive later for the switch to play the game</p><h2><span class="step-num">STEP 6</span>Step 6: Continuing to Wire the 555</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Continuing to Wire the 555 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Continuing to Wire the 555 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Continuing to Wire the 555 image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>It's now time to add a wire from the 555 IC to 4017 IC. Solder a wire to pin 3 on the 555 to pin 14 on the 4017</li>
 <li>Next solder a 10K resistor to pin 3 on the 555 to ground</li>
@@ -197,7 +244,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add a wire to the positive and negative sections. These will provide power to the circuit</li>
 <li>Lastly you will need to soldered all of the 8 wires for the LED's. Just follow the schematic which shows which pins to solder the wires to.</li>
 </ol>
-<p>Done! It's time to move onto the case and add the LEDs switches and knobs for the game</p><h2><span class="step-num">STEP 10</span>Step 10: Modding the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Modding the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Modding the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Modding the Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Modding the Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Modding the Case image 5" loading="lazy"></div><p>I was lucky to find an almost perfect case for this game build. It was an old battery tester and had plenty of room inside for all of the electronics. You could use a cigar box which was also something I was considering until I stumbled across this little beauty.</p>
+<p>Done! It's time to move onto the case and add the LEDs switches and knobs for the game</p><h2><span class="step-num">STEP 10</span>Step 10: Modding the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Modding the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Modding the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Modding the Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Modding the Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Modding the Case image 5" loading="lazy"></div><p>I was lucky to find an almost perfect case for this game build.</p>
+<p>It was an old battery tester and had plenty of room inside for all of the electronics.</p>
+<p>You could use a cigar box which was also something I was considering until I stumbled across this little beauty.</p>
 <p>Steps:</p>
 <ol>
 <li>First I pulled the case apart</li>
@@ -209,9 +258,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>First I made a couple of cuts into the plastic cover. This was so I could push the pins from the 7 segment display though them.</li>
 <li>Once I was happy with how it was fitting, I added some superglue and secured them to the front of the cover.</li>
 </ol>
-<p>Remember, this might be completely different from the way that you attach yours so just work out what is best for you</p><h2><span class="step-num">STEP 12</span>Step 12: Front Cover for Game</h2><div class="step-images"><img src="images/step12_01.png" alt="Step 12: Front Cover for Game image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Front Cover for Game image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Front Cover for Game image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Front Cover for Game image 4" loading="lazy"></div><p>To make the front cover I just got an image from the net and sized it to fit onto the front of my case. As you case will probably be different to mine, just find the image you want to used and size it for your case.</p>
-<p>I went through a few before I decided on the final one. That's because I had some trouble gluing it down. I used spray adhesive first but the paper didn't sit flat. I then added some thin cardboard to the back and glued it down with some modge podge which seemed to do the trick</p>
-<p>The little "X's" on the image is where I added LED's. I used a hole punch to make the holes</p><h2><span class="step-num">STEP 13</span>Step 13: Switches and LED's</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Switches and LED's image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Switches and LED's image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Switches and LED's image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Switches and LED's image 4" loading="lazy"></div><p>Once you have built the game circuit, it's then time to mod the case. You could make both circuits first I guess but I wanted to make sure the game section worked before starting on the scoring section.</p>
+<p>Remember, this might be completely different from the way that you attach yours so just work out what is best for you</p><h2><span class="step-num">STEP 12</span>Step 12: Front Cover for Game</h2><div class="step-images"><img src="images/step12_01.png" alt="Step 12: Front Cover for Game image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Front Cover for Game image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Front Cover for Game image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Front Cover for Game image 4" loading="lazy"></div><p>To make the front cover I just got an image from the net and sized it to fit onto the front of my case.</p>
+<p>As you case will probably be different to mine, just find the image you want to used and size it for your case.</p>
+<p>I went through a few before I decided on the final one.</p>
+<p>That's because I had some trouble gluing it down.</p>
+<p>I used spray adhesive first but the paper didn't sit flat.</p>
+<p>I then added some thin cardboard to the back and glued it down with some modge podge which seemed to do the trick</p>
+<p>The little "X's" on the image is where I added LED's. I used a hole punch to make the holes</p><h2><span class="step-num">STEP 13</span>Step 13: Switches and LED's</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Switches and LED's image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Switches and LED's image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Switches and LED's image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Switches and LED's image 4" loading="lazy"></div><p>Once you have built the game circuit, it's then time to mod the case.</p>
+<p>You could make both circuits first I guess but I wanted to make sure the game section worked before starting on the scoring section.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill the holes for the LED's. I used the artwork (a spare one I printed off) as a template and drilled the holes where indicated on the cover</li>
@@ -238,8 +292,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Attach the positive wire that was soldered on for power to the solder point on the toggle switch. Solder another wire on the other solder point on the switch. This will be connected to the battery</li>
 <li>Lastly, you need to solder the wires to pay the game to the momentary switch.</li>
 </ol>
-<p>Now everything is wired up, test to make sure the game is working by adding a 9v battery to the positive and negative wires and making sure the game works. Are the LED's flashing? good, next hit the game button which will stop the LED's flashing and only have one on. If everything works as it should, move onto the next circuit, if not, faut find the circuit and try and identify the issue.</p><h2><span class="step-num">STEP 16</span>Step 16: 7 Segment Display - Score Counter</h2><div class="step-images single"><img src="images/step16_01.png" alt="Step 16: 7 Segment Display - Score Counter image 1" loading="lazy"></div><p>Now it's time to start the scoring circuit. There were a couple of issues with the design which I have fixed on the attached schematic. Make sure you breadboard the circuit first and make sure you understand the design.</p>
-<p>Strangely, the design wasn't quite right and I found that it was missing connections to pin 16 on both 4026 IC's. I have added these in along with a momentary switch on pin 15 on the 2nd IC. the switch is used to re-set the scoreboard but you could also scrap this and just turn the game off and on.</p><h2><span class="step-num">STEP 17</span>Step 17: Adding IC 's and Wiring the 555</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 4" loading="lazy"></div><p>Steps:</p>
+<p>Now everything is wired up, test to make sure the game is working by adding a 9v battery to the positive and negative wires and making sure the game works.</p>
+<p>Are the LED's flashing? good, next hit the game button which will stop the LED's flashing and only have one on.</p>
+<p>If everything works as it should, move onto the next circuit, if not, faut find the circuit and try and identify the issue.</p><h2><span class="step-num">STEP 16</span>Step 16: 7 Segment Display - Score Counter</h2><div class="step-images single"><img src="images/step16_01.png" alt="Step 16: 7 Segment Display - Score Counter image 1" loading="lazy"></div><p>Now it's time to start the scoring circuit.</p>
+<p>There were a couple of issues with the design which I have fixed on the attached schematic.</p>
+<p>Make sure you breadboard the circuit first and make sure you understand the design.</p>
+<p>Strangely, the design wasn't quite right and I found that it was missing connections to pin 16 on both 4026 IC's.</p>
+<p>I have added these in along with a momentary switch on pin 15 on the 2nd IC. the switch is used to re-set the scoreboard but you could also scrap this and just turn the game off and on.</p><h2><span class="step-num">STEP 17</span>Step 17: Adding IC 's and Wiring the 555</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Adding IC 's and Wiring the 555 image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First thing to do is to solder on the IC's. Solder the 555 first and then the 2 4026 IC's into place. Give yourself some space between them as you might need to run wires between the IC's</li>
 <li>I'll start with the wiring of the 555. connect pin 1 to ground</li>
@@ -295,5 +354,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol><h2><span class="step-num">STEP 24</span>Step 24: Done</h2><div class="step-images"><img src="images/step24_01.jpg" alt="Step 24: Done image 1" loading="lazy"><img src="images/step24_02.jpg" alt="Step 24: Done image 2" loading="lazy"><img src="images/step24_03.jpg" alt="Step 24: Done image 3" loading="lazy"><img src="images/step24_04.jpg" alt="Step 24: Done image 4" loading="lazy"></div><p>Now it is time to sit back and get a good cricket match started.</p>
 <p>I usually make the rule up that you cannot go out first ball and you have to go out twice before it’s the next players turn.</p>
 <p>Have fun and don’t forget to post an image if you make your own</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

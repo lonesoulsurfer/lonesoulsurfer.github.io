@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Skateboard Shelf With LED's!</span>
 </nav>
-<h1>Skateboard Shelf With LED's!</h1><div class="source"><a href="https://www.instructables.com/Skateboard-Shelf-With-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>My boys recently decided to move into their own rooms. As a kind of "room warming" gift, I decided to make my youngest a skateboard shelf. I also decided to add some LED's to the bottom of the shelf so he could use it as a reading light at night.</p>
-<p>To attach it to the wall, I used gas fittings as brackets which worked really well. They are easy to put together and look great once painted and attached to the board. The board itself is a very well used one that I found in the garbage. What I really love about it is the patina that the board has got over the years of use, mostly from water damage and some hard use.</p>
-<p>The LED's were an afterthought but I'm glad I did add them as they really turn the shelving into something special. To diffuse the LED's, I added some translucent silicone which finished off the board and gave it a really nice finish.</p>
+<h1>Skateboard Shelf With LED's!</h1><div class="source"><a href="https://www.instructables.com/Skateboard-Shelf-With-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>My boys recently decided to move into their own rooms.</p>
+<p>As a kind of "room warming" gift, I decided to make my youngest a skateboard shelf.</p>
+<p>I also decided to add some LED's to the bottom of the shelf so he could use it as a reading light at night.</p>
+<p>To attach it to the wall, I used gas fittings as brackets which worked really well.</p>
+<p>They are easy to put together and look great once painted and attached to the board.</p>
+<p>The board itself is a very well used one that I found in the garbage.</p>
+<p>What I really love about it is the patina that the board has got over the years of use, mostly from water damage and some hard use.</p>
+<p>The LED's were an afterthought but I'm glad I did add them as they really turn the shelving into something special.</p>
+<p>To diffuse the LED's, I added some translucent silicone which finished off the board and gave it a really nice finish.</p>
 <p>If you would like to check out what other things I've done with old decks, then check out this ible'</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Skateboard deck. You could use a new one or just use an old deck. I think a used deck is definitely better way to go if you can get one.</li>
@@ -175,13 +216,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next grad a hand sander and start sanding. Start with some rough grit paper (80 to 120) and remove any artwork on the bottom of the board.</li>
 <li>Sand the top as well until you are left with a bare, naked board. The board that I used had a lot of water stains and scuffs etc from use. This left a great patina on the board and gave it a real vintage look.</li>
 <li>Finally, give it a sand with some finer grit paper and clean off any saw dust left on the board.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Router the Groove for the LED's</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Router the Groove for the LED's image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Router the Groove for the LED's image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Router the Groove for the LED's image 3" loading="lazy"></div><p>Next thing to do is to router a groove for the LED’s to sit into. Actually, you don’t have to do this if you don’t want to or don’t have a router. You could just stick the LED’s direct to the board. If you don’t want to does this then skip this step and move onto the next. I’m not great at using the router but I do think it finishes off the board better.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Router the Groove for the LED's</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Router the Groove for the LED's image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Router the Groove for the LED's image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Router the Groove for the LED's image 3" loading="lazy"></div><p>Next thing to do is to router a groove for the LED’s to sit into.</p>
+<p>Actually, you don’t have to do this if you don’t want to or don’t have a router.</p>
+<p>You could just stick the LED’s direct to the board.</p>
+<p>If you don’t want to does this then skip this step and move onto the next.</p>
+<p>I’m not great at using the router but I do think it finishes off the board better.</p>
 <p>Steps:</p>
 <ol>
 <li>Secure the board and decide how deep and where you want to add the routed groove.</li>
 <li>Carefully make the grooves on each side of the board</li>
 <li>The groove that joins the 2 side routed sections I had to do freestyle. I couldn’t work out how to actually do it right so I just drew a line on the board and followed this with the router. I practiced a bit on some other wood and just went for it. Turned out fine (and straight luckily!)</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Staining</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Staining image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Staining image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Staining image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Staining image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Staining image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Staining image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Staining image 7" loading="lazy"></div><p>I decided to stain my board with some Scandinavian oil. You could use wax or whatever you like. I found though that the oil really brought out the patina in the board which is something I wanted to do.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Staining</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Staining image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Staining image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Staining image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Staining image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Staining image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Staining image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Staining image 7" loading="lazy"></div><p>I decided to stain my board with some Scandinavian oil.</p>
+<p>You could use wax or whatever you like.</p>
+<p>I found though that the oil really brought out the patina in the board which is something I wanted to do.</p>
 <p>Steps:</p>
 <ol>
 <li>Make sure that there is no saw dust left on the board.</li>
@@ -213,7 +260,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some double sided tape to the back of the control box.</li>
 <li>Stick into place on the board.</li>
 <li>Test and make sure everything works right</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Attaching the Brackets</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Attaching the Brackets image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Attaching the Brackets image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Attaching the Brackets image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Attaching the Brackets image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Attaching the Brackets image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Attaching the Brackets image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Attaching the Brackets image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Attaching the Brackets image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Attaching the Brackets image 9" loading="lazy"></div><p>Attaching the brackets is really quite easy. 2 of the holes in the mounting plates match 2 of the drilled holes for the trucks. You only need to add a couple screws to hold the board in place to each mounting plate so there is no need to drill any.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Attaching the Brackets</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Attaching the Brackets image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Attaching the Brackets image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Attaching the Brackets image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Attaching the Brackets image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Attaching the Brackets image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Attaching the Brackets image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Attaching the Brackets image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Attaching the Brackets image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Attaching the Brackets image 9" loading="lazy"></div><p>Attaching the brackets is really quite easy. 2 of the holes in the mounting plates match 2 of the drilled holes for the trucks.</p>
+<p>You only need to add a couple screws to hold the board in place to each mounting plate so there is no need to drill any.</p>
 <p>Steps:</p>
 <ol>
 <li>Paint the nuts, washers and screws black if necessary</li>
@@ -230,5 +278,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>The LED’s also turned out fantastic. Although my routing wasn’t too crash hot, the silicone hid many of the mistakes and smoothed out the finish.</p>
 <p>If you do make one, please don’t forget to add an image to the comments.</p>
 <p>Cheers</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

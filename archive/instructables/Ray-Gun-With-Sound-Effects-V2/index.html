@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Ray Gun With Sound Effects V2</span>
 </nav>
-<h1>Ray Gun With Sound Effects V2</h1><div class="source"><a href="https://www.instructables.com/Ray-Gun-With-Sound-Effects-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I recently came across an old drill at a junk store and the instant I saw it knew I had to make a ray gun out of it. I’ve made a few ray guns now and they always start with inspiration from some found object. You can check out my other builds in the below links.</p>
-<p>Like the last one I did, I also added some sound effects inside this ray gun as well. I decided to design and have printed a PCB for the sound effects and the board worked awesomely. I’ve only recently started to create PCB’s and it isn’t as hard as you might imagine. I have provided the gerber files so you can have your own printed if you want to.</p>
+<h1>Ray Gun With Sound Effects V2</h1><div class="source"><a href="https://www.instructables.com/Ray-Gun-With-Sound-Effects-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I recently came across an old drill at a junk store and the instant I saw it knew I had to make a ray gun out of it.</p>
+<p>I’ve made a few ray guns now and they always start with inspiration from some found object.</p>
+<p>You can check out my other builds in the below links.</p>
+<p>Like the last one I did, I also added some sound effects inside this ray gun as well.</p>
+<p>I decided to design and have printed a PCB for the sound effects and the board worked awesomely.</p>
+<p>I’ve only recently started to create PCB’s and it isn’t as hard as you might imagine.</p>
+<p>I have provided the gerber files so you can have your own printed if you want to.</p>
 <p>The first video is the ray gun build, the second is the electronics and finished ray gun</p>
 <p>Let’s get on with the build.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts for the Ray Gun Sound Effect Circuit</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts for the Ray Gun Sound Effect Circuit image 7" loading="lazy"></div><p>Parts List</p>
 <p>Circuit Board - Gerber files can be found here</p>
@@ -163,9 +203,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Charging and voltage regulator module - eBay</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: The Ray Gun Sound Effect Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Ray Gun Sound Effect Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Ray Gun Sound Effect Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Ray Gun Sound Effect Circuit image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: The Ray Gun Sound Effect Circuit image 4" loading="lazy"></div><p>I'm adding 2 circuits to this gun, the first is a ray gun sound effects schematic that was featured in Make magazine and the 2nd is one I came up with for a speed controlled, flashing LED.</p>
 <p>I took the ray gun schematic one step further and designed a printed board for it as well. You can always just use the schematic attached and make it on prototype board if that works better for you.</p>
-<p>I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design. They are easy to understand and once you get the hang of it, easier than you think.</p>
-<p>You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive. The zip file has all of the gerber files which you need to get the PCB printed. Just save that file and sent it to your favourite PCB manufacture. I use JLCPCB but there are plenty of others you can use.</p>
-<p>The flashing LED circuit I used some prototype board as it was only a small circuit to build. You find the schematic attached and I've also designed a board for it as well which can be found on my Google drive</p><h2><span class="step-num">STEP 3</span>Step 3: Parts for the Flashing LED Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 4" loading="lazy"></div><p>For the flashing LED circuit, I used some prototype board as it was only a small circuit to build. I've attached the schematic and also designed a board for it as well which can be found on my Google drive</p>
+<p>I have started to design my own PCB's using Eagle.</p>
+<p>If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design.</p>
+<p>They are easy to understand and once you get the hang of it, easier than you think.</p>
+<p>You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive.</p>
+<p>The zip file has all of the gerber files which you need to get the PCB printed.</p>
+<p>Just save that file and sent it to your favourite PCB manufacture.</p>
+<p>I use JLCPCB but there are plenty of others you can use.</p>
+<p>The flashing LED circuit I used some prototype board as it was only a small circuit to build.</p>
+<p>You find the schematic attached and I've also designed a board for it as well which can be found on my Google drive</p><h2><span class="step-num">STEP 3</span>Step 3: Parts for the Flashing LED Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Parts for the Flashing LED Circuit image 4" loading="lazy"></div><p>For the flashing LED circuit, I used some prototype board as it was only a small circuit to build.</p>
+<p>I've attached the schematic and also designed a board for it as well which can be found on my Google drive</p>
 <p>The circuit is a simple 555 timer one and I've included 2 LED's which are controlled by a 100k pot</p>
 <p>Parts List</p>
 <p>Gerber file and schematic can be found here</p>
@@ -182,7 +229,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>What I like to do is to start rummaging through my collection of parts that I have collected to this specific purpose. I don’t keep a lot of parts but if I come across something interesting I store it away for later use.</li>
 <li>I then started to put different parts in front of the drill until something appals to me. I found a great surround awhile ago and this made an excellent “heat-shield” section for the gun. Now that I had a basic idea, it was time to start to work out how to attach the head-shield to the front of the drill</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Parts for the Ray Gun</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Parts for the Ray Gun image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Parts for the Ray Gun image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Parts for the Ray Gun image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Parts for the Ray Gun image 4" loading="lazy"></div><p>A parts list is a hard one for a build like this. The electronics is fine as that is a definite list of parts, the ray gun however is a different kettle of fish. However, if you are building a ray gun out of an old drill, then there are a few parts that I can recommend to you and get you started</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Parts for the Ray Gun</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Parts for the Ray Gun image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Parts for the Ray Gun image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Parts for the Ray Gun image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Parts for the Ray Gun image 4" loading="lazy"></div><p>A parts list is a hard one for a build like this.</p>
+<p>The electronics is fine as that is a definite list of parts, the ray gun however is a different kettle of fish.</p>
+<p>However, if you are building a ray gun out of an old drill, then there are a few parts that I can recommend to you and get you started</p>
 <p>Parts:</p>
 <ol>
 <li>Drill.</li>
@@ -191,11 +240,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Threaded rod.</li>
 </ol>
-<p>a. These are great to use to form the backbone of your ray gun. It can be connected easily to the drill with only a couple washers and nuts. You can then add the barrel, nozzle etc to it the same way. It comes in different thickness, I used a M8 threaded rod for this build. You can get this at your local hardware store</p>
+<p>a.</p>
+<p>These are great to use to form the backbone of your ray gun.</p>
+<p>It can be connected easily to the drill with only a couple washers and nuts.</p>
+<p>You can then add the barrel, nozzle etc to it the same way.</p>
+<p>It comes in different thickness, I used a M8 threaded rod for this build.</p>
+<p>You can get this at your local hardware store</p>
 <ol>
 <li>Aluminium Tubing.</li>
 </ol>
-<p>a. Again, a very handy part to have. You can use it to cover the threaded rod and make your ray gun really stand out. Plus it’s silver coloured so works well with most builds. I buy this in a few different dimensions. I also ensure that I get a piece that just fits over the threaded rod. You can also get it at hardware stores</p>
+<p>a.</p>
+<p>Again, a very handy part to have.</p>
+<p>You can use it to cover the threaded rod and make your ray gun really stand out.</p>
+<p>Plus it’s silver coloured so works well with most builds.</p>
+<p>I buy this in a few different dimensions.</p>
+<p>I also ensure that I get a piece that just fits over the threaded rod.</p>
+<p>You can also get it at hardware stores</p>
 <ol>
 <li>Nuts and washers</li>
 </ol>
@@ -203,7 +263,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Other Parts</li>
 </ol>
-<p>a. The rest will be up to you. Start to collect interesting parts, things that appeal to you, a lens, small mechanical parts, vintage or old looking parts, vacuum tubes, knobs from old stereos, whatever you can find that you think might possibly work on a build like this. Most you won’t use but there will be gems in the mix that will be perfect for your build.</p><h2><span class="step-num">STEP 6</span>Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 5" loading="lazy"></div><p>The first thing you are going to want to do is to remove the motor and give your drill a very good clean. Mine had what I first though was built up sawdust and mould but as soon as started to clean it, I realised it was chunks of grease, covered in sawdust!</p>
+<p>a.</p>
+<p>The rest will be up to you.</p>
+<p>Start to collect interesting parts, things that appeal to you, a lens, small mechanical parts, vintage or old looking parts, vacuum tubes, knobs from old stereos, whatever you can find that you think might possibly work on a build like this.</p>
+<p>Most you won’t use but there will be gems in the mix that will be perfect for your build.</p><h2><span class="step-num">STEP 6</span>Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Cleaning the Drill 7 Removing Any Unwanted Parts image 5" loading="lazy"></div><p>The first thing you are going to want to do is to remove the motor and give your drill a very good clean.</p>
+<p>Mine had what I first though was built up sawdust and mould but as soon as started to clean it, I realised it was chunks of grease, covered in sawdust!</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing I needed to do is to pull apart the drill. It had 3 screws holding it together, I removed these and wiggled the drill case to separate them.</li>
@@ -211,14 +275,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The last part that I had to remove was the front of the drill, also known as the chuck. This was a little harder as I couldn’t work out how it was held into place. I cut off a cog at the back and was able to hammer it out of the collar of the drill. I later worked out that it’s held in place with a “C” clip</li>
 <li>I also removed the switch which was sticking and needed a good clean – that’s for the next step!</li>
 <li>Once I had all of the parts removed, I then had to give it a good, old fashioned clean. The insides were filthy and full of grease. I used a rag and just started to remove the grease, sawdust, and crud that had been building up over the years.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Fixing & Cleaning the Switch</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Fixing & Cleaning the Switch image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Fixing & Cleaning the Switch image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Fixing & Cleaning the Switch image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Fixing & Cleaning the Switch image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Fixing & Cleaning the Switch image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Fixing & Cleaning the Switch image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Fixing & Cleaning the Switch image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Fixing & Cleaning the Switch image 8" loading="lazy"></div><p>The switch was sticking when the trigger was pulled so I thought I’d give it a clean, add some WD40 and I’d be done. What I didn’t realise was, once you undid the screws in the back, the whole thing came apart! It meant I could give it a through clean but putting it back together was a mission. It’s got a very unique trigger system and it confused the crap out of me.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Fixing & Cleaning the Switch</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Fixing & Cleaning the Switch image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Fixing & Cleaning the Switch image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Fixing & Cleaning the Switch image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Fixing & Cleaning the Switch image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Fixing & Cleaning the Switch image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Fixing & Cleaning the Switch image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Fixing & Cleaning the Switch image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Fixing & Cleaning the Switch image 8" loading="lazy"></div><p>The switch was sticking when the trigger was pulled so I thought I’d give it a clean, add some WD40 and I’d be done.</p>
+<p>What I didn’t realise was, once you undid the screws in the back, the whole thing came apart!</p>
+<p>It meant I could give it a through clean but putting it back together was a mission.</p>
+<p>It’s got a very unique trigger system and it confused the crap out of me.</p>
 <p>Steps:</p>
 <ol>
 <li>So after I removed the 2 screws at the back and the whole thing had fallen apart on me, I laid out all of the parts and started to clean them.</li>
 <li>I used some Isopropyl to remove the grease and gunk which worked really well. There was a lot of build-up on the terminals which came off easily with some Isopropyl and a rag</li>
 <li>Once everything was clean, I had to put the sucker back together! After about 20 frustrating minutes, I finally got my head around how it worked and managed to put it back together. I used a multi-meter to test for continuity.</li>
 <li>Lastly, I screwed it back into position on the drill</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding a Threaded Rod to the Drill</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 6" loading="lazy"></div><p>One of the best ways to connect parts together in a project like this is to use a threaded rod. You can pick these up quite cheaply at any hardware store and they are very handy to have around. The other part that you shouldn’t do without when building one of these is Aluminium tubing. Get yourself some different sized dimensions from any hardware store.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding a Threaded Rod to the Drill</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding a Threaded Rod to the Drill image 6" loading="lazy"></div><p>One of the best ways to connect parts together in a project like this is to use a threaded rod.</p>
+<p>You can pick these up quite cheaply at any hardware store and they are very handy to have around.</p>
+<p>The other part that you shouldn’t do without when building one of these is Aluminium tubing.</p>
+<p>Get yourself some different sized dimensions from any hardware store.</p>
 <p>In the following step, I go through how I added a piece of aluminium tubing to the threaded rod. This piece forms a part of the barrel</p>
 <p>Steps:</p>
 <ol>
@@ -234,21 +304,32 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, I slid the rod inside the hole. The piece of aluminium tube I added earlier and the washer meant that the rod could only go in so far.</li>
 <li>I then added a large washer to the back section and a nut and did them up tight.</li>
 <li>That’s it! Pretty simple really but effective. Now I have a good base to add all of the tother parts.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Attaching the "Heat-Shield"</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Attaching the "Heat-Shield" image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Attaching the "Heat-Shield" image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Attaching the "Heat-Shield" image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Attaching the "Heat-Shield" image 4" loading="lazy"></div><p>I’m calling the next part I added the “heat-shield”. It’s from some filtering system and came with 2 of these bad boys. I decided to keep it dirty so it would blend in with the overall look of the ray gun.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Attaching the "Heat-Shield"</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Attaching the "Heat-Shield" image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Attaching the "Heat-Shield" image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Attaching the "Heat-Shield" image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Attaching the "Heat-Shield" image 4" loading="lazy"></div><p>I’m calling the next part I added the “heat-shield”.</p>
+<p>It’s from some filtering system and came with 2 of these bad boys.</p>
+<p>I decided to keep it dirty so it would blend in with the overall look of the ray gun.</p>
 <p>Without the threaded rod, adding this part would have been a real pain.</p>
 <p>Steps:</p>
 <ol>
 <li>To secure the heat-shield to the rod I used a couple of large washers and a nut. First I placed one of the washers over the threaded rod</li>
 <li>Next, I placed the heat-shield onto the threaded rod along with the other washer</li>
 <li>Lastly, I added a nut to the threaded rod and tightened it has hard as I could. I had to make sure that the heat-shield was straight first though before tightening.</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Making a Sight</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Making a Sight image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Making a Sight image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Making a Sight image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Making a Sight image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Making a Sight image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Making a Sight image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Making a Sight image 7" loading="lazy"></div><p>I like to add sights to my ray guns. It isn’t necessary but it does give more dimension to the ray gun. The sight is made up out of bits and pieces that I have collected. A lens, a potentiometer slider knob, a couple misc parts and some aluminium. I like to make a ray gun with as little glue as possible. The easy thing to do would be to just glue the parts together – I like to take the hard road…</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Making a Sight</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Making a Sight image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Making a Sight image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Making a Sight image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Making a Sight image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Making a Sight image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Making a Sight image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Making a Sight image 7" loading="lazy"></div><p>I like to add sights to my ray guns.</p>
+<p>It isn’t necessary but it does give more dimension to the ray gun.</p>
+<p>The sight is made up out of bits and pieces that I have collected.</p>
+<p>A lens, a potentiometer slider knob, a couple misc parts and some aluminium.</p>
+<p>I like to make a ray gun with as little glue as possible.</p>
+<p>The easy thing to do would be to just glue the parts together – I like to take the hard road…</p>
 <p>Steps:</p>
 <ol>
 <li>So first, I decided that the body of the sight should be a piece of aluminium tubing. I cut a piece longer than needed which I could shorten later.</li>
 <li>I then rummaged through my parts bin and found a small lens and a black, metal surround. These fitted quite nicely together and I pushed them into the end of the tube</li>
 <li>I next added a slider pot. I rounded the bottom so it would sit flush on a black piece of tube I had and screwed it into place</li>
 <li>I then placed the back tube onto the aluminium tube (which fitted snuggly) and placed it on the gun to see how it would look. It looked good!</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Attaching the Sight</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Attaching the Sight image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Attaching the Sight image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Attaching the Sight image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Attaching the Sight image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Attaching the Sight image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Attaching the Sight image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Attaching the Sight image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Attaching the Sight image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Attaching the Sight image 9" loading="lazy"></div><p>I really like to ensure that if I add something to the ray gun, it looks like it belongs there and was made specifically to fit. That usually means that I have to shape a part to make it fit right. Take for example the sight stand. This is a small piece of aluminium, which was flat on both ends. In order to have it seamlessly fit onto the sight, I gave the end a concave edge.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Attaching the Sight</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Attaching the Sight image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Attaching the Sight image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Attaching the Sight image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Attaching the Sight image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Attaching the Sight image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Attaching the Sight image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Attaching the Sight image 7" loading="lazy"><img src="images/step12_08.jpg" alt="Step 12: Attaching the Sight image 8" loading="lazy"><img src="images/step12_09.jpg" alt="Step 12: Attaching the Sight image 9" loading="lazy"></div><p>I really like to ensure that if I add something to the ray gun, it looks like it belongs there and was made specifically to fit.</p>
+<p>That usually means that I have to shape a part to make it fit right.</p>
+<p>Take for example the sight stand.</p>
+<p>This is a small piece of aluminium, which was flat on both ends.</p>
+<p>In order to have it seamlessly fit onto the sight, I gave the end a concave edge.</p>
 <p>Steps:</p>
 <ol>
 <li>To mount the sight I used a small bolt and some aluminium tubing (good ol’ trust tubing)</li>
@@ -256,13 +337,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I then worked out the best place to mount the sight to the ray gun and drill a hole into the top of the gun and into the bottom of the sight.</li>
 <li>I added a thread to the hole in the sight with a tap and secured the whole thing with a bolt</li>
 </ol><h2><span class="step-num">STEP 13</span>Step 13: Powering the Circuits</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Powering the Circuits image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Powering the Circuits image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Powering the Circuits image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Powering the Circuits image 4" loading="lazy"></div><p>If you want to you could just use a 9V battery to power everything. It will mean though that you will need to be able to get inside your ray gun change change it when flat.</p>
-<p>Another way is to use a mobile battery and run the power through a voltage regulator and charging module. I made an Instructable on how to use this module and hook it up to a battery. It's very straight forward and is a great way to re-use old mobile batteries.</p>
+<p>Another way is to use a mobile battery and run the power through a voltage regulator and charging module.</p>
+<p>I made an Instructable on how to use this module and hook it up to a battery.</p>
+<p>It's very straight forward and is a great way to re-use old mobile batteries.</p>
 <p>Steps:</p>
 <ol>
 <li>Attach the module to the top of the mobile battery with some good double sided tape</li>
 <li>Connect the battery terminals to the battery input on the module. I use resister legs to do this.</li>
 <li>You can that the micro USB on the module is slightly recessed (only fault on these modules that I can find) so you may have to extend this using a micro USB adapter. Just solder some wires to the "in" solder points on the module and you can place the micro USB adapter anywhere you want to on your build</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Working Out How to Add the Electronics Into the Ray Gun</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 8" loading="lazy"></div><p>There are a few components that need to be fitted inside the drill. The tricky thing is - the inside of the drill is round and that makes it hard to add the components. However, I came up with a solution to this by adding a piece of plastic as a base for the components which could slip into the drill and sit on a couple of metal strips inside.</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Working Out How to Add the Electronics Into the Ray Gun</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: Working Out How to Add the Electronics Into the Ray Gun image 8" loading="lazy"></div><p>There are a few components that need to be fitted inside the drill.</p>
+<p>The tricky thing is - the inside of the drill is round and that makes it hard to add the components.</p>
+<p>However, I came up with a solution to this by adding a piece of plastic as a base for the components which could slip into the drill and sit on a couple of metal strips inside.</p>
 <p>Steps:</p>
 <ol>
 <li>First i cut the piece of plastic to size so it would sit flat inside the drill.</li>
@@ -282,7 +367,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>One of the last things I had to attach was the speaker. I just added a little super glue to the back and attached it to a gusset inside the drill</li>
 </ol><h2><span class="step-num">STEP 17</span>Step 17: Finished... Nearly</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Finished... Nearly image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Finished... Nearly image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Finished... Nearly image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Finished... Nearly image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: Finished... Nearly image 5" loading="lazy"><img src="images/step17_06.jpg" alt="Step 17: Finished... Nearly image 6" loading="lazy"></div><p>Once all of the components are added and secured into place, I then closed up the drill and added the screws back into place.</p>
 <p>I then added some knobs to the pots, turned it on and gave it a go.</p>
-<p>The last thing to do is to make a stand for the ray gun. I used some old wood i found at the beach and added a piece of aluminum rod to it. There is a hole in the bottom of the handle of the ray gun which the rod fits into and holds the gun up-right.</p>
+<p>The last thing to do is to make a stand for the ray gun.</p>
+<p>I used some old wood i found at the beach and added a piece of aluminum rod to it.</p>
+<p>There is a hole in the bottom of the handle of the ray gun which the rod fits into and holds the gun up-right.</p>
 <p>phew - that's pretty much it! There seems to be a lot of parts and steps that went into making this ray gun! However, it's the journey that makes it all worth while in the end.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

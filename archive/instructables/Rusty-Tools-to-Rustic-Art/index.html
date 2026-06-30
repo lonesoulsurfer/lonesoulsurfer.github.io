@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,9 +163,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Rusty Tools to Rustic Art</span>
 </nav>
 <h1>Rusty Tools to Rustic Art</h1><div class="source"><a href="https://www.instructables.com/Rusty-Tools-to-Rustic-Art/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Turn some rusty tools into works of rustic art.</p>
-<p>I have a recycling centre near me that has a shop where you can buy all types of wondrous junk. Whilst doing a little rummaging I came across a bunch of old rusty tools which looked like treasure to me</p>
-<p>I have wanted to make some rustic sculptures ever since I discovered Oriol Cabrero’s art. He takes some random parts and makes beautiful and simple sculptures out of them. I’ve taken some inspiration from some of his sculptures and have made my own versions whist a couple are all me.</p>
-<p>It’s really hard making an ible” on this type of subject as it comes down to personal taste and creativity. However, hopefully I can explain a few techniques I have learnt and help you get started on making your own rustic art.</p>
+<p>I have a recycling centre near me that has a shop where you can buy all types of wondrous junk.</p>
+<p>Whilst doing a little rummaging I came across a bunch of old rusty tools which looked like treasure to me</p>
+<p>I have wanted to make some rustic sculptures ever since I discovered Oriol Cabrero’s art.</p>
+<p>He takes some random parts and makes beautiful and simple sculptures out of them.</p>
+<p>I’ve taken some inspiration from some of his sculptures and have made my own versions whist a couple are all me.</p>
+<p>It’s really hard making an ible” on this type of subject as it comes down to personal taste and creativity.</p>
+<p>However, hopefully I can explain a few techniques I have learnt and help you get started on making your own rustic art.</p>
 <p>The wood that I used is all drift wood. You could just any old wood really but I have always liked working with found wood.</p>
 <p>Lastly, if you need some inspiration, check out this Pinterest page</p><h2><span class="step-num">STEP 1</span>Step 1: Parts to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts to Gather image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -164,9 +203,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Hammer</li>
 <li>Wire cutters</li>
 <li>Tin snips</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: What to Make!</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: What to Make! image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: What to Make! image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: What to Make! image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: What to Make! image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: What to Make! image 5" loading="lazy"></div><p>So you have found a bunch of rusty tools and some scuffed and scarred wood and now it’s time to make something. But what? That’s really is up to you want you want to make depending on what you have found. Animals are always great to make but you could as easily make a person or object like a boat. What is going to determine what you make is what you have found.</p>
-<p>Look at the rusty bits and see if anything resembles a head, beak, horns, wings, body part etc. Grab parts out and imagine what it could represent. Stick parts against each other and see if they start to look like something. It can take some time but eventually you start to see the potential of a part or parts and once you get a little inspiration your away.</p>
-<p>I have also put together a bunch of really cool ideas that I found on the net and have saved them to my Pinterest account which can be found here. The net is a great place to get inspiration and I always check out what others are doing to get some ideas.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: What to Make!</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: What to Make! image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: What to Make! image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: What to Make! image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: What to Make! image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: What to Make! image 5" loading="lazy"></div><p>So you have found a bunch of rusty tools and some scuffed and scarred wood and now it’s time to make something.</p>
+<p>But what?</p>
+<p>That’s really is up to you want you want to make depending on what you have found.</p>
+<p>Animals are always great to make but you could as easily make a person or object like a boat.</p>
+<p>What is going to determine what you make is what you have found.</p>
+<p>Look at the rusty bits and see if anything resembles a head, beak, horns, wings, body part etc.</p>
+<p>Grab parts out and imagine what it could represent.</p>
+<p>Stick parts against each other and see if they start to look like something.</p>
+<p>It can take some time but eventually you start to see the potential of a part or parts and once you get a little inspiration your away.</p>
+<p>I have also put together a bunch of really cool ideas that I found on the net and have saved them to my Pinterest account which can be found here.</p>
+<p>The net is a great place to get inspiration and I always check out what others are doing to get some ideas.</p>
 <p>Another thing to do is to just check out animal pictures on the net or in a book. Once I have an idea, I thin go and find a bunch of pictures of that animal and print out images to help me visualize.</p><h2><span class="step-num">STEP 3</span>Step 3: Make a Bull - Head Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Make a Bull - Head Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Make a Bull - Head Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Make a Bull - Head Section image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Make a Bull - Head Section image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Make a Bull - Head Section image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Make a Bull - Head Section image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Make a Bull - Head Section image 7" loading="lazy"></div><p>Here how I made a cow out of an old gardening tool, a block of drift wood and some wire.</p>
 <p>Steps:</p>
 <ol>
@@ -196,7 +243,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill a hole for each leg</li>
 <li>Lastly, push the bulls legs into the holes. I also use a hammer and gave the top of the bull a tap to ensure the legs were secure.</li>
 </ol>
-<p>Complete</p><h2><span class="step-num">STEP 7</span>Step 7: Finished</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finished image 4" loading="lazy"></div><p>Here's a few images of the finished bull</p><h2><span class="step-num">STEP 8</span>Step 8: Make a Hummingbird - Body and Beak</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 8: Make a Hummingbird - Body and Beak image 1" loading="lazy"></div><p>The hummingbird is made from an old file and handle, a rusty hacksaw blade, a small piece of sheet metal and a few other bits. I got the idea after finding the file which was bent and looked like the beak of a hummingbird.</p>
+<p>Complete</p><h2><span class="step-num">STEP 7</span>Step 7: Finished</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Finished image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Finished image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Finished image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Finished image 4" loading="lazy"></div><p>Here's a few images of the finished bull</p><h2><span class="step-num">STEP 8</span>Step 8: Make a Hummingbird - Body and Beak</h2><div class="step-images single"><img src="images/step08_01.jpg" alt="Step 8: Make a Hummingbird - Body and Beak image 1" loading="lazy"></div><p>The hummingbird is made from an old file and handle, a rusty hacksaw blade, a small piece of sheet metal and a few other bits.</p>
+<p>I got the idea after finding the file which was bent and looked like the beak of a hummingbird.</p>
 <p>I downloaded a few pictures of hummingbirds from the net and got to work.</p>
 <p>Steps:</p>
 <ol>
@@ -248,6 +296,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>As mentioned, the weight of the ram made the ram tip overt. I added a large rusty gear to the bottom by drilling out a hole into the wood and securing with liquid nails.</li>
 <li>Lastly I pushed the ram into place and have it a light tap on top to make sure the legs were secured.</li>
 </ol><h2><span class="step-num">STEP 17</span>Step 17: The Final Sculpture</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: The Final Sculpture image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: The Final Sculpture image 2" loading="lazy"></div><p>Here's a couple images of the final product.</p>
-<p>Hope this has inspired you to go out and make your own. If you do i'd love to see some images of what you make so please make sure you post them in the comments. These aren't hard to make, you just need a bunch of old rusty tools and parts and your away.</p>
+<p>Hope this has inspired you to go out and make your own.</p>
+<p>If you do i'd love to see some images of what you make so please make sure you post them in the comments.</p>
+<p>These aren't hard to make, you just need a bunch of old rusty tools and parts and your away.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

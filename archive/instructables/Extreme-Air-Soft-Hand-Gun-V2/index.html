@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,13 +163,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Extreme Airsoft Hand Gun V2</span>
 </nav>
 <h1>Extreme Airsoft Hand Gun V2</h1><div class="source"><a href="https://www.instructables.com/Extreme-Air-Soft-Hand-Gun-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>Make your own compressed air hand gun with a few off the shelf parts.</p>
-<p>Over the years I've used compressed air to launch many projectiles, from paper and straw rocket launchers to acorn, airsoft, and blow dart guns. Using compressed air as a propellant works great and you can really get some distance if you can release the air quickly enough. Using a sprinkler valve is the best way to achieve this as it releases the air instantly. I first saw the idea of a sprinkler valve as an air release mechanism in Make Magazine and thought it was genius.</p>
-<p>The way the gun works is there is a air pump that is used to fill a air chamber inside the gun. To release the air and propel the airsoft bullet, you push a switch (which acts as the trigger) which releases the air valve and expels the air instantly.</p>
-<p>In this version I decided to reduce the air chamber which means less pumps are needed to fill the chamber. I did think that maybe this might reduce the power of the gun but it didn't make a difference all at. Now all you need to do is to pump about 6 times on the air pump to fill the chamber and your ready to shoot. I have been talking to people a lot smarter than me on how to make the gun more powerful. One of the suggestions was to reduce the piston size of the air pump which will allow you to increase the PSI. I'll have to explore this in the next build.</p>
+<p>Over the years I've used compressed air to launch many projectiles, from paper and straw rocket launchers to acorn, airsoft, and blow dart guns.</p>
+<p>Using compressed air as a propellant works great and you can really get some distance if you can release the air quickly enough.</p>
+<p>Using a sprinkler valve is the best way to achieve this as it releases the air instantly.</p>
+<p>I first saw the idea of a sprinkler valve as an air release mechanism in Make Magazine and thought it was genius.</p>
+<p>The way the gun works is there is a air pump that is used to fill a air chamber inside the gun.</p>
+<p>To release the air and propel the airsoft bullet, you push a switch (which acts as the trigger) which releases the air valve and expels the air instantly.</p>
+<p>In this version I decided to reduce the air chamber which means less pumps are needed to fill the chamber.</p>
+<p>I did think that maybe this might reduce the power of the gun but it didn't make a difference all at.</p>
+<p>Now all you need to do is to pump about 6 times on the air pump to fill the chamber and your ready to shoot.</p>
+<p>I have been talking to people a lot smarter than me on how to make the gun more powerful.</p>
+<p>One of the suggestions was to reduce the piston size of the air pump which will allow you to increase the PSI.</p>
+<p>I'll have to explore this in the next build.</p>
 <p>Disclaimer:</p>
 <p>I'm assuming that anyone thinking of making this is a responsible and intelligent human being. This is a serious weapon and could do some real damage so please use it responsibly.</p>
 <p>Lets get making</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts and Tools image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Step 1: Parts and Tools image 11" loading="lazy"><img src="images/step01_12.jpg" alt="Step 1: Parts and Tools image 12" loading="lazy"></div><p>Parts:</p>
-<p>PVC Pipe. 25mm = 1 inch so if you are in the US just use 1 inch equivalents. These PVC parts are very common and you will be able to buy from any hardware store anywhere. As I'm in Australia I have linked all of the PVC parts to Bunnings.</p>
+<p>PVC Pipe. 25mm = 1 inch so if you are in the US just use 1 inch equivalents.</p>
+<p>These PVC parts are very common and you will be able to buy from any hardware store anywhere.</p>
+<p>As I'm in Australia I have linked all of the PVC parts to Bunnings.</p>
 <ol>
 <li>25mm tube - Bunnings</li>
 <li>2 X 25mm Caps - Bunnings</li>
@@ -169,14 +215,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Flux</li>
 <li>Blow torch</li>
 <li>Drill</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding the Pump to the PVC Tube</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 8" loading="lazy"></div><p>In other versions that I have made, the pump always stuck out of the end of the gun. This time I wanted to conceal the pump within the gun. To do this I had to seal the pump inside the air chamber. The pump is smaller in diameter than the 25mm PVC tube (and too big for 20mm tube) so you have to do some modifications to the tube to ensure the pump forms an air tight seal in the air chamber.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding the Pump to the PVC Tube</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Adding the Pump to the PVC Tube image 8" loading="lazy"></div><p>In other versions that I have made, the pump always stuck out of the end of the gun.</p>
+<p>This time I wanted to conceal the pump within the gun.</p>
+<p>To do this I had to seal the pump inside the air chamber.</p>
+<p>The pump is smaller in diameter than the 25mm PVC tube (and too big for 20mm tube) so you have to do some modifications to the tube to ensure the pump forms an air tight seal in the air chamber.</p>
 <p>Steps:</p>
 <ol>
 <li>If you put the pump inside the PVC you will see that the top section of the pump is slightly too big to push the pump all the way through. This is a good thing as you will be modifying the tube to allow the pump to slot into the PVC. Cut a piece of tube slighly longer than the pump.</li>
 <li>With a dremel (sanding drum attached) remove some of the plastic in the inside of the tube. You only want to go about 10mm deep and remove just enough so the pumps end fits inside the tube</li>
 <li>Next to help secure the pump a little better (it's quite loose inside the pipe) I added some 20mm PVC tubing around the pump. With a cutting wheel on the dremel, cut down the middle. Next cut a couple of pieces off the tube and place them around the pump</li>
 <li>To secure the pump into place add a good amount of PVC glue to the pump body and slide into the 25mm tubing. also add a good amount to the top of the top of the pump as well and push into place. Leave to dry for a few hours</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Modifying the Tee PVC Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Modifying the Tee PVC Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Modifying the Tee PVC Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Modifying the Tee PVC Section image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Modifying the Tee PVC Section image 4" loading="lazy"></div><p>You will also need to modify the Tee to allow the 25mm tube and pump to be pushed right through. Remember, the tube and pump forms part of your air chamber so it needs to be air tight. That's why you need to push it right through the Tee</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Modifying the Tee PVC Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Modifying the Tee PVC Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Modifying the Tee PVC Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Modifying the Tee PVC Section image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Modifying the Tee PVC Section image 4" loading="lazy"></div><p>You will also need to modify the Tee to allow the 25mm tube and pump to be pushed right through.</p>
+<p>Remember, the tube and pump forms part of your air chamber so it needs to be air tight.</p>
+<p>That's why you need to push it right through the Tee</p>
 <p>Steps:</p>
 <ol>
 <li>Grab you dremel (with the sanding drum attachment) and start to remove the plastic from the inside. You want to remove the plastic around the middle section of the Tee.</li>
@@ -217,7 +268,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, trim the wires so they are just long enough to touch the solder points on the sprinkler valve</li>
 <li>Solder the wires into place. you don't have to worry about polarities.</li>
 <li>Lastly, test by attaching the battery and pushing the switch. You should hear a clicking sound in the valve which means the solenoid is opening and closing.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Barrel</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Barrel image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Barrel image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Barrel image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Barrel image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Barrel image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Making the Barrel image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Making the Barrel image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Making the Barrel image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Making the Barrel image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Making the Barrel image 10" loading="lazy"><img src="images/step09_11.jpg" alt="Step 9: Making the Barrel image 11" loading="lazy"><img src="images/step09_12.jpg" alt="Step 9: Making the Barrel image 12" loading="lazy"></div><p>To make the barrel you need to ensure that you have a piece of brass tube that an airsoft pallet. The best way to find the ideal tube is to take a few airsoft pallets down to your local hobby shop and find a brass tube that the pallets just fit down. The size that I used was 7mm OD so the ID was about 6.6mm which is perfect for a airsoft pallet to fit into. I have included a link to eBay on where you can buy this tube from if you don’t have a hobby shop nearby.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Barrel</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Barrel image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Barrel image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Barrel image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Barrel image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Barrel image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Making the Barrel image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Making the Barrel image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Making the Barrel image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Making the Barrel image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Making the Barrel image 10" loading="lazy"><img src="images/step09_11.jpg" alt="Step 9: Making the Barrel image 11" loading="lazy"><img src="images/step09_12.jpg" alt="Step 9: Making the Barrel image 12" loading="lazy"></div><p>To make the barrel you need to ensure that you have a piece of brass tube that an airsoft pallet.</p>
+<p>The best way to find the ideal tube is to take a few airsoft pallets down to your local hobby shop and find a brass tube that the pallets just fit down.</p>
+<p>The size that I used was 7mm OD so the ID was about 6.6mm which is perfect for a airsoft pallet to fit into.</p>
+<p>I have included a link to eBay on where you can buy this tube from if you don’t have a hobby shop nearby.</p>
 <p>As the barrel ID was smaller than the hose barb (this screws onto the sprinkler valve), you have to add a couple of larger pieces of copper tube to ensure the barrel fits correctly.</p>
 <p>Steps:</p>
 <ol>
@@ -242,7 +296,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, load an airsoft pallet into the end of the barrel. On my last build I made a section in the barrel where you could load the airsoft pallet into the barrel. If you want to make this then go to step 7 in this ible' to see how I did it. As I had shortened the barrel, I didn’t think it was necessary to do this step.</li>
 <li>Aim and fire. If everything goes well the pallet should shoot out the end with some serious speed. Do a whole bunch of tests - You won’t be able to help yourself.</li>
 <li>The next thing to do is to add a laser sight to the gun so its accurate.</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding a Laser Sight</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding a Laser Sight image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding a Laser Sight image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding a Laser Sight image 3" loading="lazy"></div><p>There are a lot of different sights that you can buy to add to your gun. On my last build I added a holographic sight which although I think better, was very hard to attach to the gun without it moving. You really don’t want to sight to move once it has been dialed in. Using the laser sight meant that I could clamp it to the body of the gun and lock it into place.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding a Laser Sight</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding a Laser Sight image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding a Laser Sight image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding a Laser Sight image 3" loading="lazy"></div><p>There are a lot of different sights that you can buy to add to your gun.</p>
+<p>On my last build I added a holographic sight which although I think better, was very hard to attach to the gun without it moving.</p>
+<p>You really don’t want to sight to move once it has been dialed in.</p>
+<p>Using the laser sight meant that I could clamp it to the body of the gun and lock it into place.</p>
 <p>Steps:</p>
 <ol>
 <li>Attach the bottom clamp section of the laser sight to the body of the gun. I did this in pretty much the only place you can do it, right at the front of the gun near the barrel. You may need to use longer bolts as I found the ones supplied didn’t quite do the job.</li>
@@ -251,5 +308,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>That’s pretty much it. You should now have an accurate, working airsoft gun that has some serious fire power.</li>
 </ol>
 <p>Remember to be responsible and don’t shoot any of the neighbours kids.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

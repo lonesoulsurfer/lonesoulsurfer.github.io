@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Shotgun Shell LED Candles</span>
 </nav>
-<h1>Shotgun Shell LED Candles</h1><div class="source"><a href="https://www.instructables.com/Shotgun-Shell-LED-Candles/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Recently I went to my local gun range to pick-up some spent shotgun shells. I needed a few for a project but ended up taking a whole box home! I've been using these in a few projects, some of which can be found in previous 'Ibles. In amongst them I found a couple of clear shells which I thought would like damn cool with LED's in them.</p>
-<p>Initially I wanted to make these into stand alone LED candles, but after a little experimenting I decided to mount them on some wood. This way I could easily add batteries, switch, led's etc and mount the shells to the wood. I say "easily" but there was still the problem of how to made a cutout in the wood which would contain the batteries. I sorted this out by chiseling out the area and making a section for them to sit in.</p>
+<h1>Shotgun Shell LED Candles</h1><div class="source"><a href="https://www.instructables.com/Shotgun-Shell-LED-Candles/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Recently I went to my local gun range to pick-up some spent shotgun shells.</p>
+<p>I needed a few for a project but ended up taking a whole box home!</p>
+<p>I've been using these in a few projects, some of which can be found in previous 'Ibles.</p>
+<p>In amongst them I found a couple of clear shells which I thought would like damn cool with LED's in them.</p>
+<p>Initially I wanted to make these into stand alone LED candles, but after a little experimenting I decided to mount them on some wood.</p>
+<p>This way I could easily add batteries, switch, led's etc and mount the shells to the wood.</p>
+<p>I say "easily" but there was still the problem of how to made a cutout in the wood which would contain the batteries.</p>
+<p>I sorted this out by chiseling out the area and making a section for them to sit in.</p>
 <p>lastly I went with some candle LED's which flicker, giving the shells a really soft and authentic "flicker".</p>
 <p>This isn't a hard hack, you just need to get your hands on some clear shells and the rest is pretty simple.</p><h2><span class="step-num">STEP 1</span>Step 1: Gather Your Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Gather Your Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Gather Your Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Gather Your Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Gather Your Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Gather Your Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Gather Your Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Gather Your Parts image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -183,7 +224,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some more heat shrink to the other copper wire that you soldered to the LED. Solder the other LED leg to the piece of copper that you just soldered to the switch. Before you do this, make sure your happy with the height of the LED. If it's too short or too high, just trim the copper wire.</li>
 <li>Lastly bend the copper wire slightly inside the hole. You will be soldering one of the battery wires to this. Do the same for the other one.</li>
 </ol>
-<p>The reason why I set-up the LED's like this is to make sure that they were pointing down inside the shotgun shell. The alternative is to just have the LED's pointing up which would be easier but I don't think as effective.</p><h2><span class="step-num">STEP 7</span>Step 7: Wiring the Battery Holders</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Wiring the Battery Holders image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Wiring the Battery Holders image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Wiring the Battery Holders image 3" loading="lazy"></div><p>Steps:</p>
+<p>The reason why I set-up the LED's like this is to make sure that they were pointing down inside the shotgun shell.</p>
+<p>The alternative is to just have the LED's pointing up which would be easier but I don't think as effective.</p><h2><span class="step-num">STEP 7</span>Step 7: Wiring the Battery Holders</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Wiring the Battery Holders image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Wiring the Battery Holders image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Wiring the Battery Holders image 3" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>trim the wires on the battery holders. you want to not have any excess wire as this will mighht make the battery holder not sit correctly in the wood.</li>
 <li>Solder one of the wires to the end of the copper wire that you bent inside the hole in the wood.</li>
@@ -191,7 +233,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Do the same to the other battery holder</li>
 <li>Screw down the battery holders and add batteries. Test</li>
 </ol>
-<p>NOTE: Make sure that your polarities are right when soldering on the batteries. Also make sure that the positives and negatives from the battery holder are both on the same sections on the LED's So if the positives are attached to the switch, make sure that the positives from BOTH battery holders are joined to the switch.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Shells</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Shells image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Shells image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Shells image 3" loading="lazy"></div><p>So now it's time to add the shells!</p>
+<p>NOTE: Make sure that your polarities are right when soldering on the batteries.</p>
+<p>Also make sure that the positives and negatives from the battery holder are both on the same sections on the LED's So if the positives are attached to the switch, make sure that the positives from BOTH battery holders are joined to the switch.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Shells</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Shells image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Shells image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Shells image 3" loading="lazy"></div><p>So now it's time to add the shells!</p>
 <p>Steps:</p>
 <ol>
 <li>Place the shell end that you removed the cap from over the end of the shell as below.</li>
@@ -205,5 +248,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Push the shell onto the cap. You can add a little glue if you want but I decided to leave them loose in case I have to take them off for some reason. They sit quite firmly in the cap and won't come out unless you give them a good tug.</li>
 </ol>
 <p>Done!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

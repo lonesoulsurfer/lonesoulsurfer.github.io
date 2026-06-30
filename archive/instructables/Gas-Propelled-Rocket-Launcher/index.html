@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Gas Propelled Rocket Launcher</span>
 </nav>
-<h1>Gas Propelled Rocket Launcher</h1><div class="source"><a href="https://www.instructables.com/Gas-Propelled-Rocket-Launcher/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Build your own gas powered rocket launcher with a few off the shelf parts. Some time ago I built a Remote Control Rocket Launcher which used butane fuel as the propellant. It worked really well so I decided to make a hand held version.</p>
-<p>I’ve use Butane again as the propellant. The gas reservoir and piping are pulled from a BBQ lighter which are very cheap and easy to get your hands on. The spark to light the gas is generated from a battery operated Piezo Electric generator. If you wanted to you could use the piezo electric spark generator from the BBQ lighter. However, I find that using an electric one maintains a steady spark and makes the job of ignition a hell of a lot easier to do. Plus kids can easily push the button and set off the rocket.</p>
-<p>The rest of the launcher is made from PVC pipe which you can get at any hardware store. The barrel section I used some opal pipe with is translucent. I had a piece of this pipe lying around and thought it would look pretty cool being able to see the flame in the barrel.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
+<h1>Gas Propelled Rocket Launcher</h1><div class="source"><a href="https://www.instructables.com/Gas-Propelled-Rocket-Launcher/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Build your own gas powered rocket launcher with a few off the shelf parts.</p>
+<p>Some time ago I built a Remote Control Rocket Launcher which used butane fuel as the propellant.</p>
+<p>It worked really well so I decided to make a hand held version.</p>
+<p>I’ve use Butane again as the propellant.</p>
+<p>The gas reservoir and piping are pulled from a BBQ lighter which are very cheap and easy to get your hands on.</p>
+<p>The spark to light the gas is generated from a battery operated Piezo Electric generator.</p>
+<p>If you wanted to you could use the piezo electric spark generator from the BBQ lighter.</p>
+<p>However, I find that using an electric one maintains a steady spark and makes the job of ignition a hell of a lot easier to do.</p>
+<p>Plus kids can easily push the button and set off the rocket.</p>
+<p>The rest of the launcher is made from PVC pipe which you can get at any hardware store.</p>
+<p>The barrel section I used some opal pipe with is translucent.</p>
+<p>I had a piece of this pipe lying around and thought it would look pretty cool being able to see the flame in the barrel.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Spark Generator – eBay. You could also probably use one of these as well, although you would have to solder it together. You could also try an arc lighter like this one as well</li>
 <li>BBQ Lighter – eBay</li>
@@ -182,7 +226,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Attach a piece of the 25mm PVC pipe to the male coupling. I used about a 250mm length of PVC pipe. As mentioned earlier, I used a piece of translucent pipe which was slightly too big for the coupling. To make the opening larger, I used a dremel with a sanding drum attached and removed some of the material</li>
 <li>To attach the PVC, you will need PVC glue. Make sure the areas are clean, add some glue to the inside of the coupling and push together.</li>
 <li>Next you need to add a small piece of PVC tubing to one of the ends of the Tee. Cut and glue into place. The pipe should be long enough to fit the 25mm cap to the end</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Gas Tank</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Gas Tank image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Gas Tank image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Gas Tank image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Gas Tank image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Gas Tank image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Gas Tank image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Gas Tank image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Adding the Gas Tank image 8" loading="lazy"></div><p>When adding the gas tank it’s important that you can easily refill the tank and also use the trigger on the top of the tank to fill-up the chamber. To do this I added the tank to the end of the cap. This allows we to easily reach the trigger and I can just pull of the cap and fill the tank when I need to. The important thing here is to make sure the tube is long enough. You don’t want to take the cap of and have the tube too short to be able to re-fill the tank.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Gas Tank</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Gas Tank image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Gas Tank image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Gas Tank image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Gas Tank image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Gas Tank image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Gas Tank image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Gas Tank image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Adding the Gas Tank image 8" loading="lazy"></div><p>When adding the gas tank it’s important that you can easily refill the tank and also use the trigger on the top of the tank to fill-up the chamber.</p>
+<p>To do this I added the tank to the end of the cap.</p>
+<p>This allows we to easily reach the trigger and I can just pull of the cap and fill the tank when I need to.</p>
+<p>The important thing here is to make sure the tube is long enough.</p>
+<p>You don’t want to take the cap of and have the tube too short to be able to re-fill the tank.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a couple of holes into the top of the cap.</li>
@@ -223,10 +271,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, release a small amount of gas into the chamber. Point the launcher away from yourself and push the button. You should see some flames come out the top of the gun.</li>
 </ol>
 <p>How to Adjust the Flame</p>
-<p>If you saw a clue flame come out the end then your launcher is pretty well dialled in. If you saw a yellow flame come out the end then you have have to put less gas into the chamber. The more gas you add, the less the air will be available to help combustion. You only need to release a second or two worth of gas usually.</p>
+<p>If you saw a clue flame come out the end then your launcher is pretty well dialled in.</p>
+<p>If you saw a yellow flame come out the end then you have have to put less gas into the chamber.</p>
+<p>The more gas you add, the less the air will be available to help combustion.</p>
+<p>You only need to release a second or two worth of gas usually.</p>
 <ol>
 <li>Once you have ignited the gas you will need to un-screw the barrel and wave it a couple of times. This will remove any stale air and old gas. It’s important that you do this each time otherwise the gas won’t ignite in the barrel</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Make a Paper Rocket - Main Body</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 4" loading="lazy"></div><p>When making the paper rocket there are a few things you need to keep in mind. Make sure that the rocket isn’t too big or heavy, don’t have it too tight around the barrel and make sure you make it last (at least for a few launches!)</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Make a Paper Rocket - Main Body</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Make a Paper Rocket - Main Body image 4" loading="lazy"></div><p>When making the paper rocket there are a few things you need to keep in mind.</p>
+<p>Make sure that the rocket isn’t too big or heavy, don’t have it too tight around the barrel and make sure you make it last (at least for a few launches!)</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to get either some A4 paper. It should be stiff paper for best results. Cut the paper through the middle and trim about 50mm off the side.</li>
@@ -251,11 +303,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>In order for the gas inside the barrel to propel the rocket, you</li>
 </ol>
-<p>will need to add some tape around the barrel. When pushing on the rocket, the bottom section should slipe over the tape. The connection between the tape and the rocket should be quite tight. This will ensure you get some good height when launching.</p>
+<p>will need to add some tape around the barrel.</p>
+<p>When pushing on the rocket, the bottom section should slipe over the tape.</p>
+<p>The connection between the tape and the rocket should be quite tight.</p>
+<p>This will ensure you get some good height when launching.</p>
 <ol>
 <li>Add some fuel into the barrel. How you add depends on how much comes up the nozzle of the gas tank and also how long the barrel is. You will need to probably experiment a couple of time before you work out the right mix of butane and air. If there is too much butane then you won’t get the height, and if there is too little then it won’t ignite</li>
 <li>Point the rocket launcher up into the air and hit the fire button. Your rocket should get propelled high into the air.</li>
 <li>Remove the barrel after firing and give it a couple shakes and try it again. It’s important to remove the stale gas and air in the barrel before each flight of the rocket.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

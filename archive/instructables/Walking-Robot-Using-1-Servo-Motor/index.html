@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Walking Robot Using 1 Servo Motor</h1><div class="source"><a href="https://www.instructables.com/Walking-Robot-Using-1-Servo-Motor/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I've been wanting to build this walker robot even since I saw it on YouTube. After a little searching I found some more information on it and decided to make my own.</p>
 <p>The goal I had building this walker was to try and make it as small as I possibly could. I wanted it to fit in the palm of my hand and although I have pretty big palms, the legs just hang over.</p>
-<p>The robot itself runs off a micro servo which has been modified to turn continuously. As the servo spins, it moves a couple of linkages which in turn move the back legs up and down and the front legs side to side allowing it to walk.</p>
-<p>The build itself isn't very difficult but "tuning" it in so the walking gait is right takes a little time. I did a fair bit of experimenting and have a few tips which hopefully will help you tune it in easier then it was for me.</p>
+<p>The robot itself runs off a micro servo which has been modified to turn continuously.</p>
+<p>As the servo spins, it moves a couple of linkages which in turn move the back legs up and down and the front legs side to side allowing it to walk.</p>
+<p>The build itself isn't very difficult but "tuning" it in so the walking gait is right takes a little time.</p>
+<p>I did a fair bit of experimenting and have a few tips which hopefully will help you tune it in easier then it was for me.</p>
 <p>If you have never built a walking robot before and want to jump in the deep end, then this is the perfect project to start with.</p>
 <p>Hackaday did a review of my walker - check it out below:</p>
 <p>Hackaday</p>
@@ -175,14 +212,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Carefully cut the side walls of the channel to the bottom.</li>
 <li>If you have a dremel, use a cutting wheel to make the final cut along the edge to remove the side sections. If you don't, you can prob get away with the angle grinder.</li>
 <li>Next, use a file to clean-up the cut sections. Check and make sure the servo fits. It should be a nice, snug fit.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Making a Cut-out for the Battery</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making a Cut-out for the Battery image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making a Cut-out for the Battery image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making a Cut-out for the Battery image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making a Cut-out for the Battery image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making a Cut-out for the Battery image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making a Cut-out for the Battery image 6" loading="lazy"></div><p>Next step is to make a cut-out for the battery. It's pretty much the same process as the servo. This chassis wasn't actually the final one I used. I did a faux-pas on this one and had to make another which I'm glad I did as it turned out cleaner then the one in the images</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making a Cut-out for the Battery</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making a Cut-out for the Battery image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making a Cut-out for the Battery image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making a Cut-out for the Battery image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making a Cut-out for the Battery image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making a Cut-out for the Battery image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making a Cut-out for the Battery image 6" loading="lazy"></div><p>Next step is to make a cut-out for the battery.</p>
+<p>It's pretty much the same process as the servo.</p>
+<p>This chassis wasn't actually the final one I used.</p>
+<p>I did a faux-pas on this one and had to make another which I'm glad I did as it turned out cleaner then the one in the images</p>
 <p>Steps:</p>
 <ol>
 <li>Like the servo, place the battery on the aluminium channel and mark out the section on the channel on where to cut. There needs to be about a 5mm gap between the servo and battery. That's where the toggle switch will go. Plus, you need to give yourself a little room for the wires as well.</li>
 <li>Make the vertical cuts with the angle grinder and the horizontal ones with the dremel</li>
 <li>de-burr the cut section with a file and smooth out the edges.</li>
 <li>You don't want to have the battery a too tight a fit as it will be sitting in aluminum which is conductive and could short the battery if both positive and ground are touching the chassis. You can always add a little electrical tape to one end to ensure the battery doesn't short</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screws and Switch to the Chassis</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 7" loading="lazy"></div><p>To attach the legs to the chassis, you need to add a couple of screws. To make them move, you need to attach another screw as a pivot point to the side of the chassis. I did a diagram on where each of the holes need to be drilled so use this to help you.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Screws and Switch to the Chassis</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding the Screws and Switch to the Chassis image 7" loading="lazy"></div><p>To attach the legs to the chassis, you need to add a couple of screws.</p>
+<p>To make them move, you need to attach another screw as a pivot point to the side of the chassis.</p>
+<p>I did a diagram on where each of the holes need to be drilled so use this to help you.</p>
 <p>Steps:</p>
 <ol>
 <li>First, hole 1 in what will be the back section of the walker. You can easily identify the back of the walker as that is where the servo will go. The hole needs to be big enough for the screw to fit into. The back legs will be attached to this screw.</li>
@@ -192,7 +234,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Hole 5 needs to go directly opposite hole 3. This hole is there to allow you to place the screw into place and to use a screwdriver. Without this hole how would you add the screw to the side of the chassis! make sure it is large enough for the screw head to go through.</li>
 <li>Now all the holes have been drilled, it's time to add the screws. Secure them in place with the lucknuts.</li>
 </ol>
-<p>NOTE: the screw in hole 3 needs to be able to turn so make sure you do it up securely but also ensure that the screw can turn in the hole. the other 2 can be done up tightly.</p><h2><span class="step-num">STEP 6</span>Step 6: Modifying the Servo to Make It Continuous.</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 8" loading="lazy"></div><p>Before you secure the servo into the chassis, you first need to do a little modification to it. This is a very common modification and you can find plenty of tutorials on Google if you need more information. The modification allows the servo to to continuously spin, without the modification, the servo would only rotate 180 degrees.</p>
+<p>NOTE: the screw in hole 3 needs to be able to turn so make sure you do it up securely but also ensure that the screw can turn in the hole. the other 2 can be done up tightly.</p><h2><span class="step-num">STEP 6</span>Step 6: Modifying the Servo to Make It Continuous.</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Modifying the Servo to Make It Continuous. image 8" loading="lazy"></div><p>Before you secure the servo into the chassis, you first need to do a little modification to it.</p>
+<p>This is a very common modification and you can find plenty of tutorials on Google if you need more information.</p>
+<p>The modification allows the servo to to continuously spin, without the modification, the servo would only rotate 180 degrees.</p>
 <p>Steps:</p>
 <ol>
 <li>First, remove the screws on the bottom of the servo</li>
@@ -200,13 +244,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place the top section back on and remove the bottom section. snip the wires off the potentiometer. Don't worry if you're not sure what wires to cut, you need to remove them all so just cut away</li>
 <li>On the bottom of the motor there will be 2 solder points. You will need to solder a couple of wires directly to the motor. Use the thinest wire you have as it will mean it will take up less space on the walker and you will be able to hide it well.</li>
 <li>Place the motor back into the case and screw everything back together. Give the servo a test by connecting it up to the battery you are using for the walking. If it spins continuously then you have successfully made the mod.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up.</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 6" loading="lazy"></div><p>Now it's time to add the main parts to the chassis! I wanted to try and hide the wires as much as possible so it does get a little tight. I actually had a short the first time and melted the wires which was a pain. I had the positive and ground wires too close together!</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up.</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Servo, Battery and Charger and Wiring Everything Up. image 6" loading="lazy"></div><p>Now it's time to add the main parts to the chassis!</p>
+<p>I wanted to try and hide the wires as much as possible so it does get a little tight.</p>
+<p>I actually had a short the first time and melted the wires which was a pain.</p>
+<p>I had the positive and ground wires too close together!</p>
 <p>Steps:</p>
 <ol>
 <li>First thing to do is to secure the servo into the chassis. The servo arm needs to be as close as possible to the side of the chassis. If you clip off the screw supports on the servo, you will be able to have the side of the servo flush with the chassis. Add a little superglue and secure it in place</li>
 <li>Next is the battery. Before that it secured in place, you will need to solder and add some wires directly to the battery, The positive end of the battery should be placed at the switch end and the ground at the back.</li>
 </ol>
-<p>NOTE: You want the servo to turn in a clockwise direction. Test to make sure you know which wire on the servo to connect to which end of the battery. If you get it wrong then your walker will go backwards!</p>
+<p>NOTE: You want the servo to turn in a clockwise direction.</p>
+<p>Test to make sure you know which wire on the servo to connect to which end of the battery.</p>
+<p>If you get it wrong then your walker will go backwards!</p>
 <ol>
 <li>Solder on the ground wire on the servo to the ground on the battery. Also add an extra wire to ground as this will be connected to the charger module later</li>
 <li>The wires will go under the battery and then come up the front so they remain hidden.</li>
@@ -225,7 +274,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Hold the wire so the first bend is facing you and make a right angle bend at 30mm. This is the first leg.</li>
 <li>You now have to do the same as the front and make a "U" shape about 35mm in the middle</li>
 <li>Bend the other side leg the same as the first.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Soldering on Some Pivots to the Legs</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 7" loading="lazy"></div><p>OK, so I decided to use the inside of a female banana plug for the pivots. These fit perfectly onto the M4 screws and have very little side movement. You could use some copper tubing if you wanted to instead, just make sure it is a good fit on the screws. This step is a little tricky so make sure you secure the leg and pivot well before soldering. I used a screw and a 3rd hand to ensure everything was sitting right before soldering</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Soldering on Some Pivots to the Legs</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Soldering on Some Pivots to the Legs image 7" loading="lazy"></div><p>OK, so I decided to use the inside of a female banana plug for the pivots.</p>
+<p>These fit perfectly onto the M4 screws and have very little side movement.</p>
+<p>You could use some copper tubing if you wanted to instead, just make sure it is a good fit on the screws.</p>
+<p>This step is a little tricky so make sure you secure the leg and pivot well before soldering.</p>
+<p>I used a screw and a 3rd hand to ensure everything was sitting right before soldering</p>
 <p>Steps:</p>
 <ol>
 <li>First, pull the banana plug apart and remove all of the plastic bits so you are only left with the metal section.</li>
@@ -236,14 +289,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Do the exact same for the other leg.</li>
 <li>Last thing to do is to secure the legs onto the screws with some locknuts. You want to tighten them to a point where the legs still move side to side but with a minimal amount of wiggle as possible.</li>
 </ol>
-<p>The legs kinda look a little weird in the images. The 'toe" sections still need to be shaped a little so the front legs are sitting up quite a lot.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding a Terminal to the Arm of the Servo</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 4" loading="lazy"></div><p>The terminals used in the build were pulled out of a wire terminal. Using these allows you to secure the arms later on the move the legs and easily adjust them to get your walker walking right. It's a few adjustments (maybe more then a few!) to get your robot walking right.</p>
+<p>The legs kinda look a little weird in the images. The 'toe" sections still need to be shaped a little so the front legs are sitting up quite a lot.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding a Terminal to the Arm of the Servo</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding a Terminal to the Arm of the Servo image 4" loading="lazy"></div><p>The terminals used in the build were pulled out of a wire terminal.</p>
+<p>Using these allows you to secure the arms later on the move the legs and easily adjust them to get your walker walking right.</p>
+<p>It's a few adjustments (maybe more then a few!) to get your robot walking right.</p>
 <p>Steps:</p>
 <ol>
 <li>First, you need to drill a hole into the servo arm. The hole should be slightly larger than then screw as the terminal needs to be able to turn with the servo.</li>
 <li>I drilled a hole into the second hole in the servo arm. There isn't much material right at the end of the arm so using the 2nd hole will give you just enough material to drill the hole.</li>
 <li>Use one of the small screws on the terminal and secure the terminal to the servo arm</li>
 <li>Lastly, secure the servo arm to the servo</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Linkages to Make the Legs Move</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Linkages to Make the Legs Move image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Linkages to Make the Legs Move image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Linkages to Make the Legs Move image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Linkages to Make the Legs Move image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Linkages to Make the Legs Move image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Linkages to Make the Legs Move image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Linkages to Make the Legs Move image 7" loading="lazy"></div><p>Getting the linkages right took me a couple of goes. However, I've made some dimensional drawings which should help in getting them right. You don't have to get exactly the same sizes so don't stress on trying to get them the same as mine. As long as they are close.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Linkages to Make the Legs Move</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Linkages to Make the Legs Move image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Linkages to Make the Legs Move image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Linkages to Make the Legs Move image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Linkages to Make the Legs Move image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Linkages to Make the Legs Move image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Linkages to Make the Legs Move image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Linkages to Make the Legs Move image 7" loading="lazy"></div><p>Getting the linkages right took me a couple of goes.</p>
+<p>However, I've made some dimensional drawings which should help in getting them right.</p>
+<p>You don't have to get exactly the same sizes so don't stress on trying to get them the same as mine.</p>
+<p>As long as they are close.</p>
 <p>Steps:</p>
 <p>Back Leg Arm</p>
 <ol>
@@ -282,5 +340,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Keep fine tuning your walker until you can get both the front legs lifting around the same amount. You won't be able to get them exact but close enough will do.</li>
 <li>Last thing to do is to let him start to explore his surroundings. Try putting some obstacles in his way and see if he can climb over them. You'll be surprised at what he manages to get over. He can even turn when he hits a wall by using one foot to turn himself.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

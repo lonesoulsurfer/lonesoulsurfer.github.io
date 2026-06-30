@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Pocket Rocket</h1><div class="source"><a href="https://www.instructables.com/Pocket-Rocket-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>There’s nothing like rockets, fire and explosions to get your blood pumping. Even something as small as this Pocket Rocket still manages to bring out the kid in me.</p>
 <p>The rocket is powered by butane gas that is fed into a launch tube. A remote control then activates a battery operated piezoelectric spark generator which ignites the gas, shooting the rocket upwards.</p>
-<p>Initially I was going to use the piezoelectric spark generator from the lighter. After some experimentation, I discovered that extending the wires meant the spark became too weak and wouldn't light the gas. I had a battery operated one however which has a continuous spark and works a treat.</p>
-<p>The build is a lot of fun and only needs some basic electronic knowledge to build. You’ll need to do a little soldering as well. I’ve included a few diagrams however to help you understand the wiring, so even someone completely new to electronics should be able to build this.</p>
+<p>Initially I was going to use the piezoelectric spark generator from the lighter.</p>
+<p>After some experimentation, I discovered that extending the wires meant the spark became too weak and wouldn't light the gas.</p>
+<p>I had a battery operated one however which has a continuous spark and works a treat.</p>
+<p>The build is a lot of fun and only needs some basic electronic knowledge to build.</p>
+<p>You’ll need to do a little soldering as well.</p>
+<p>I’ve included a few diagrams however to help you understand the wiring, so even someone completely new to electronics should be able to build this.</p>
 <p>The thing I love best about this build is the re-fueling system. It makes launching the rocket easy and beats having to add accelerate manually each time you want to launch.</p><h2><span class="step-num">STEP 1</span>Step 1: Watch the Video</h2><h2><span class="step-num">STEP 2</span>Step 2: ​Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: ​Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: ​Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: ​Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: ​Things to Gather image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Lighter light the one in the image below – eBay</li>
@@ -178,7 +217,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Hot glue the lid of the Berocca container to the top of the wooden box</li>
 <li>Next, drill 3 small holes into the lid. One in the middle, and 2 on the side as shown in the image</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Butane Reservoir</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Butane Reservoir image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Butane Reservoir image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Butane Reservoir image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Butane Reservoir image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Butane Reservoir image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Butane Reservoir image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Butane Reservoir image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Butane Reservoir image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Adding the Butane Reservoir image 9" loading="lazy"></div><p>In order to power up your rocket, it’s necessary to add a butane reservoir. You can get these from a BBQ lighter (they also have a manual piezoelectric generator which are fun to play with). The reservoir has a little lever on the top where you can push down and butane will escape through the tubing. You can also increase the amount by moving the other lever left ot right.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Butane Reservoir</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Butane Reservoir image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Butane Reservoir image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Butane Reservoir image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Butane Reservoir image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Butane Reservoir image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Butane Reservoir image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Butane Reservoir image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Butane Reservoir image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Adding the Butane Reservoir image 9" loading="lazy"></div><p>In order to power up your rocket, it’s necessary to add a butane reservoir.</p>
+<p>You can get these from a BBQ lighter (they also have a manual piezoelectric generator which are fun to play with).</p>
+<p>The reservoir has a little lever on the top where you can push down and butane will escape through the tubing.</p>
+<p>You can also increase the amount by moving the other lever left ot right.</p>
 <p>Steps:</p>
 <ol>
 <li>Pull apart the lighter and remove the butane reservoir.</li>
@@ -201,11 +243,40 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, cut 3 equal triangles out of the cardboard. these will be the tail fins. Bend the edges and hot glue onto the body of the rocket.</li>
 </ol>
 <p>So that's it! You've made a small, but strong and light weight rocket.</p><h2><span class="step-num">STEP 11</span>Step 11: How to Fire the Rocket</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: How to Fire the Rocket image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: How to Fire the Rocket image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: How to Fire the Rocket image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: How to Fire the Rocket image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: How to Fire the Rocket image 5" loading="lazy"></div><p>So now you have your rocket launcher and rockets, it's time to launch.</p>
-<p>Give your rocket a try. How does it fly? is it popping off the launch tube and flying high or just kinda limping off? If you find that your rocket isn't getting the height that it should be, then here's a few tips to really make your rocket move:</p>
-<p>Make sure that there is a good seal between the rocket and the tube. This is very important. Without a good seal, your rocket won't fly very high. The best way to get a good seal, is to add some masking tape, 20mm from the top. Wrap it around a couple of times and put the rocket back on. The rocket should be tight around the tube. Experiment to get the best seal</p>
+<p>Give your rocket a try.</p>
+<p>How does it fly? is it popping off the launch tube and flying high or just kinda limping off?</p>
+<p>If you find that your rocket isn't getting the height that it should be, then here's a few tips to really make your rocket move:</p>
+<p>Make sure that there is a good seal between the rocket and the tube.</p>
+<p>This is very important.</p>
+<p>Without a good seal, your rocket won't fly very high.</p>
+<p>The best way to get a good seal, is to add some masking tape, 20mm from the top.</p>
+<p>Wrap it around a couple of times and put the rocket back on.</p>
+<p>The rocket should be tight around the tube.</p>
+<p>Experiment to get the best seal</p>
 <p>Increase the amount of butane is being released inside the tube. Increase the butane by turning the lever on the reservoir to the right.</p>
-<p>Only put a couple of seconds of butane in the tube. Don't release too much butane. Remember, you need a good mix of fuel and oxygen to ignite the butane and make the rocket fly. Too much and your fuel won't ignite.</p>
-<p>Blow into the tube after firing. If you are finding that your fuel won't ignite after firing, you might have some stale butane inside the tube. Remember, you need oxygen as well as fuel to ignite the butane, so blowing in the tube will clean out the stale air</p>
+<p>Only put a couple of seconds of butane in the tube.</p>
+<p>Don't release too much butane.</p>
+<p>Remember, you need a good mix of fuel and oxygen to ignite the butane and make the rocket fly.</p>
+<p>Too much and your fuel won't ignite.</p>
+<p>Blow into the tube after firing.</p>
+<p>If you are finding that your fuel won't ignite after firing, you might have some stale butane inside the tube.</p>
+<p>Remember, you need oxygen as well as fuel to ignite the butane, so blowing in the tube will clean out the stale air</p>
 <p>Make sure that there is a good seal between the rocket and the tube</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,7 +164,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>81 LED Chaser - 555 Project</h1><div class="source"><a href="https://www.instructables.com/81-LED-Chaser-555-Project/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>If you have ever checked out 555 projects on the net, you may have come across an LED chaser. For those old enough, it's the same thing that Kitt used in Knight Rider!</p>
 <p>However, where most LED chasers use around 10 LED's, this build uses a matrix of 9 X 9 LEDS, making a total of 81!</p>
-<p>The other difference in this build to your normal LED chaser is it includes two pulse width generators, curtesy of 2 555 timers. This allows you to make some really interesting patterns and shapes via 2 potentiometers that control the X and Y axis. I also included the ability to change the speed from slow to fast for each axis which gives you even more ability to change the patterns produced.</p>
+<p>The other difference in this build to your normal LED chaser is it includes two pulse width generators, curtesy of 2 555 timers.</p>
+<p>This allows you to make some really interesting patterns and shapes via 2 potentiometers that control the X and Y axis.</p>
+<p>I also included the ability to change the speed from slow to fast for each axis which gives you even more ability to change the patterns produced.</p>
 <p>I have also designed a PCB for this build so you can easily build your own. There is quite a bit of soldering (81 LED's plus heaps of transistors) so be prepared for an hour of soldering!</p>
 <p>The end project however is definitely worth all that soldering. It's a really fun and interesting build and I've been playing with every day.</p>
 <p>The build was inspired by a project created by Eddy Bergman. He has built some great circuits and if you are interested in building a modular synth then this is the place to go!</p>
@@ -138,7 +175,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Hackster have also done a review of this project which can be found here</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>Below are the components need to build this project.</p>
 <p>Step 1 has the information around the PCB.</p>
 <p>Step 2 has the parts list for the case and front panel</p>
-<p>The best way to buy electronics is in bulk and I have added a link to each. I also used 5mm square LED's and they look awesome! You can also use round ones as well but I highly recommend that you just buy the square ones. I got 1000 for $14!</p>
+<p>The best way to buy electronics is in bulk and I have added a link to each.</p>
+<p>I also used 5mm square LED's and they look awesome!</p>
+<p>You can also use round ones as well but I highly recommend that you just buy the square ones.</p>
+<p>I got 1000 for $14!</p>
 <p>Lastly, I have attached a PDF of the parts list and it can also be found on my Google Drive</p>
 <p>Components for the Circuit</p>
 <ul>
@@ -178,9 +218,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Power module (this will increase the voltage from 3.7v to 9v - Ali Express</li>
 <li>USB charging module (so you can charge the battery up) - Ali Express</li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: Printing the PCB</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Printing the PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Printing the PCB image 2" loading="lazy"></div><p>The board is actually 2 sided. On one side are all of the components like capacitor, resistors, IC's etc. On the other side is the potentiometers and switches.</p>
-<p>To have the board printed, save the gerber zip file in the Google Drive files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.</p>
+<p>To have the board printed, save the gerber zip file in the Google Drive files to your computer and email it to your favourite PCB manufacturer.</p>
+<p>I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well.</p>
+<p>If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB printed.</p>
 <p>If you would like to play around with the schematic and board in Eagle, well I have also provided these in my Google Drive. You can also find a PDF of the schematic in this step</p>
-<p>You might have noticed that the board looks a little different to mine. Well that's because I made a couple improvements - you're welcome!</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - LED's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 5" loading="lazy"><img src="images/step03_06.gif" alt="Step 2: Adding the Components to the PCB - LED's image 6" loading="lazy"><img src="images/step03_07.gif" alt="Step 2: Adding the Components to the PCB - LED's image 7" loading="lazy"></div><p>As the board is 2 sided, the component sequence is important to get right. The first thing to start with is the LED's. I was going to build a jig to ensure that they were all straight but didn't have to in the end as the LED's are flat on top!</p>
+<p>You might have noticed that the board looks a little different to mine. Well that's because I made a couple improvements - you're welcome!</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB - LED's</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components to the PCB - LED's image 5" loading="lazy"><img src="images/step03_06.gif" alt="Step 2: Adding the Components to the PCB - LED's image 6" loading="lazy"><img src="images/step03_07.gif" alt="Step 2: Adding the Components to the PCB - LED's image 7" loading="lazy"></div><p>As the board is 2 sided, the component sequence is important to get right.</p>
+<p>The first thing to start with is the LED's.</p>
+<p>I was going to build a jig to ensure that they were all straight but didn't have to in the end as the LED's are flat on top!</p>
 <p>STEPS:</p>
 <ul>
 <li>Place 9 LED's in the first top row and add 1 in each of the bottom corners.</li>
@@ -254,5 +298,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add a couple of potentiometer knobs to the pots</li>
 <li>Turn on and enjoy!</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

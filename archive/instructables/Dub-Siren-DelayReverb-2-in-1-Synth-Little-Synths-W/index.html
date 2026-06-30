@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,13 +162,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Dub Siren & Delay/Reverb - 2 in 1 Synth - Little Synths With BIG Sounds #3</span>
 </nav>
-<h1>Dub Siren & Delay/Reverb - 2 in 1 Synth - Little Synths With BIG Sounds #3</h1><div class="source"><a href="https://www.instructables.com/Dub-Siren-DelayReverb-2-in-1-Synth-Little-Synths-W/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Welcome to the 3rd instalment to my ‘Little synths with BIG sound’ series. This time around I’ve designed a 2 in 1 synth which I am calling Ekoplazm! The first synth is a classic Dub Siren which I have paired up with a Delay and Reverb synth and includes feedback and a couple other tricks. You can play the Dub Siren through the Delay/Reverb section which gives it a rich and full sound or play other synths like my Proton & Elements synths through the Delay/Reverb section to add some tasty soundscapes to these synths.</p>
-<p>The Dub Siren isn’t a new circuit to me – I’ve actually done 3 iterations of this in the past! The initial build was the first time I designed a board in Eagle and it needed 3 X 9V batteries to run the beast! If you are interested in taking a look – then check it out here</p>
-<p>In previous builds I have included Delay/Reverb via a module which you had to modify and wire-up to the board. This time, the Echo/Reverb section is included on the PCB, making it a very straight forward and easy build. Like my other builds in the ‘Little synths with BIG sound’ series, I wanted this to be easy to build, great sounding, to be able to connect to other synths and fun to play.</p>
+<h1>Dub Siren & Delay/Reverb - 2 in 1 Synth - Little Synths With BIG Sounds #3</h1><div class="source"><a href="https://www.instructables.com/Dub-Siren-DelayReverb-2-in-1-Synth-Little-Synths-W/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Welcome to the 3rd instalment to my ‘Little synths with BIG sound’ series.</p>
+<p>This time around I’ve designed a 2 in 1 synth which I am calling Ekoplazm!</p>
+<p>The first synth is a classic Dub Siren which I have paired up with a Delay and Reverb synth and includes feedback and a couple other tricks.</p>
+<p>You can play the Dub Siren through the Delay/Reverb section which gives it a rich and full sound or play other synths like my Proton & Elements synths through the Delay/Reverb section to add some tasty soundscapes to these synths.</p>
+<p>The Dub Siren isn’t a new circuit to me – I’ve actually done 3 iterations of this in the past!</p>
+<p>The initial build was the first time I designed a board in Eagle and it needed 3 X 9V batteries to run the beast!</p>
+<p>If you are interested in taking a look – then check it out here</p>
+<p>In previous builds I have included Delay/Reverb via a module which you had to modify and wire-up to the board.</p>
+<p>This time, the Echo/Reverb section is included on the PCB, making it a very straight forward and easy build.</p>
+<p>Like my other builds in the ‘Little synths with BIG sound’ series, I wanted this to be easy to build, great sounding, to be able to connect to other synths and fun to play.</p>
 <p>I've provided all of the Gerber files, schematics etc for this build so all you need to do is to get them printed (I'll go through how to do this as well) and add the components.</p>
 <p>So – without further ado, let’s put one together and make some noise :)</p>
 <p>Elements - Little Synths With BIG Sounds #1</p>
-<p>Proton - Little Synths with BIG Sounds #2</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>As with my previous 'Little Synths With BIG Sounds' 'Ibles, I have include the parts list as a PDF file which is attached below. The file includes all of the components and auxiliary parts that you will need to put the circuit board together. I have included links and images of each part so you can easily find/buy/identify them. I think it will be handy also as a PDF as you can print it off, visit your local electronics store and tick them off as you get them.</p>
+<p>Proton - Little Synths with BIG Sounds #2</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"></div><p>As with my previous 'Little Synths With BIG Sounds' 'Ibles, I have include the parts list as a PDF file which is attached below.</p>
+<p>The file includes all of the components and auxiliary parts that you will need to put the circuit board together.</p>
+<p>I have included links and images of each part so you can easily find/buy/identify them.</p>
+<p>I think it will be handy also as a PDF as you can print it off, visit your local electronics store and tick them off as you get them.</p>
 <p>The parts list is also available on my GitHub Page in Excel format</p>
 <p>The below parts are the rest that you will need to build the synth.</p>
 <p>PARTS (Other than circuit components):</p>
@@ -145,14 +190,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>That's it! You don't have to worry about building a case because it doesn't have one :)</p>
 <p>As mentioned above - the rest of the parts can be found in the PDF attached below or on my GitHub Page</p><h2><span class="step-num">STEP 1</span>Step 1: Front Panel, Schematic & Eagle Files</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Front Panel, Schematic & Eagle Files image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Front Panel, Schematic & Eagle Files image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Front Panel, Schematic & Eagle Files image 3" loading="lazy"></div><p>Firstly, all the files that you need to build your own dub siren and echo/reverb synth can be found in my GitHub Page</p>
-<p>The build consists of 2 PCB’s – one is for the components and the other the front panel. You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.</p>
+<p>The build consists of 2 PCB’s – one is for the components and the other the front panel.</p>
+<p>You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you.</p>
+<p>Jump into my Google Drive link, download the 2 Gerber files to your computer and then send them off to your PCB manufacturer of choice.</p>
 <p>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.</p>
 <p>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</p>
-<p>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated.. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.</p>
+<p>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated..</p>
+<p>You can also just hit 'No' when asked if you want to remove the order number.</p>
+<p>However, this costs $2.</p>
 <p>Front Panel</p>
-<p>As mentioned, the front panel is actually just a PCB without the components! I use the silk screen on the PCB for printing the design and then include drill holes for the components. All this information is in the Gerber files for the front panel which the manufacturer uses to print the board.</p>
-<p>If you are interested in creating your own front panels then I highly recommend watching this YouTube vid. I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.</p>
-<p>In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB - Reverse Side</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 5" loading="lazy"></div><p>The board is 2 sided, top side has all of the controls such as potentiometers, switches etc . The reverse side has all of the passive components like the resistors, capacitors, IC etc. We'll be starting with the reverse side first. You always want to start with the lowest profile components which in most cases is the resistors.</p>
+<p>As mentioned, the front panel is actually just a PCB without the components!</p>
+<p>I use the silk screen on the PCB for printing the design and then include drill holes for the components.</p>
+<p>All this information is in the Gerber files for the front panel which the manufacturer uses to print the board.</p>
+<p>If you are interested in creating your own front panels then I highly recommend watching this YouTube vid.</p>
+<p>I watched it as couple times and also put together a step by step guide for myself which I have also included as a PDF in this step.</p>
+<p>In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding Components to the PCB - Reverse Side</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding Components to the PCB - Reverse Side image 5" loading="lazy"></div><p>The board is 2 sided, top side has all of the controls such as potentiometers, switches etc .</p>
+<p>The reverse side has all of the passive components like the resistors, capacitors, IC etc.</p>
+<p>We'll be starting with the reverse side first.</p>
+<p>You always want to start with the lowest profile components which in most cases is the resistors.</p>
 <p>STEPS:</p>
 <ul>
 <li>I'm sure you will have a multimeter and if you don't - grab yourself one. Test each resistor before soldering into place to double check the value. It takes a little extra time but it will save you a heap of time in the long run if you have to troubleshoot later on.</li>
@@ -179,7 +234,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>First, you need to secure the battery holder to the board using some M2 screws and nuts. I used hex type screws and these fitted flush with the bottom of the battery holder.</li>
 <li>Tighten up the nuts and then use a pair of wire cutters to trim the excess length of screw</li>
 <li>You can now solder the legs of the battery holder to the PCB.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Panel & Pot Knobs</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 6" loading="lazy"></div><p>Adding the front panel to the PCB and watching it fit perfectly over the switches and pots is a great feeling. The design of the synth before this is just a concept so when everything fits just right makes it all worth while.</p>
+</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Panel & Pot Knobs</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Front Panel & Pot Knobs image 6" loading="lazy"></div><p>Adding the front panel to the PCB and watching it fit perfectly over the switches and pots is a great feeling.</p>
+<p>The design of the synth before this is just a concept so when everything fits just right makes it all worth while.</p>
 <p>STEPS:</p>
 <ul>
 <li>To secure the board to the PCB, you'll need to use some spacers. Buy an assorted pack of them which I have linked in the supply section.</li>
@@ -193,10 +249,36 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place the acrylic onto the spacers and secure into place with a 2M screw.</li>
 <li>Lastly, add some clear, sticky bottom rubber 'feet' to keep everything steady</li>
 </ul><h2><span class="step-num">STEP 8</span>Step 8: How to Play the Synth</h2><div class="step-images single"><img src="images/step09_01.png" alt="Step 8: How to Play the Synth image 1" loading="lazy"></div><p>As mentioned in the intro – this synth is a ‘2 in 1’ as you can play it as a dub siren or use the delay/reverb section to add effects to other synths.</p>
-<p>There are 2 on/off switches – one which turns the synth on and off and the other to turn the dub siren off when using the delay/reverb section. However, you can also just leave the dub siren on and play that along with whatever else you have plugged the echo-reverb section into.</p>
-<p>Lets start with the delay/reverb section. There are 3 potentiometers the first is reverb and this adds (surprise surprise!) reverb to the sound. You must have reverb on for the delay section to work. The next is delay and the length of the delay can be controlled with this pot. Lastly, you have feedback. This is a really fun control where you can add feedback to what you are playing which gives out some amazing soundscapes. There are also a couple momentary switches to add some sound effects.</p>
-<p>The dub siren has 4 pots where you can control the different siren sounds, from speed and tone to modulation and pitch. If you hit the momentary switch the dub siren will sound. Play around with the controls on both the dub siren and echo/reverb section to build some really interesting sounds.</p>
-<p>Now – you can plug another synth into the ‘in’ section of the synth and then a speaker to the out section and add echo/reverb to whatever synth you have. You can also play your guitar through it (you’ll need a 6.5mm to 3.5mm jack adapter)</p>
+<p>There are 2 on/off switches – one which turns the synth on and off and the other to turn the dub siren off when using the delay/reverb section.</p>
+<p>However, you can also just leave the dub siren on and play that along with whatever else you have plugged the echo-reverb section into.</p>
+<p>Lets start with the delay/reverb section.</p>
+<p>There are 3 potentiometers the first is reverb and this adds (surprise surprise!) reverb to the sound.</p>
+<p>You must have reverb on for the delay section to work.</p>
+<p>The next is delay and the length of the delay can be controlled with this pot.</p>
+<p>Lastly, you have feedback.</p>
+<p>This is a really fun control where you can add feedback to what you are playing which gives out some amazing soundscapes.</p>
+<p>There are also a couple momentary switches to add some sound effects.</p>
+<p>The dub siren has 4 pots where you can control the different siren sounds, from speed and tone to modulation and pitch.</p>
+<p>If you hit the momentary switch the dub siren will sound.</p>
+<p>Play around with the controls on both the dub siren and echo/reverb section to build some really interesting sounds.</p>
+<p>Now – you can plug another synth into the ‘in’ section of the synth and then a speaker to the out section and add echo/reverb to whatever synth you have.</p>
+<p>You can also play your guitar through it (you’ll need a 6.5mm to 3.5mm jack adapter)</p>
 <p>Have fun and I’ll see ya next build</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

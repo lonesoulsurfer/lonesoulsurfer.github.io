@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Super Secret Book Safe</h1><div class="source"><a href="https://www.instructables.com/Super-Secret-Book-Safe/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Make a book safe with a secret compartment that needs a key to open it.</p>
 <p>I made my first book safe when I was about 10.  I still have it, and although it's pretty rough, it still does exactly what it's supposed to - hide things :)</p>
-<p>I now own a lot of books so it's pretty easy to hide my little safe amongst the other ones on the shelf -  (even my wife doesn't know which one it is!).    If you only have a few books on your shelf though,  then you could be in trouble as there's a chance that someone might come along and find it.</p>
-<p>I waned to improve on my original one so decided to add an extra secret section which would need a key to open.  The extra section is located behind the initial"safe" in the book, and is kept hidden by the home-made lock and key.</p>
+<p>I now own a lot of books so it's pretty easy to hide my little safe amongst the other ones on the shelf -  (even my wife doesn't know which one it is!).</p>
+<p>If you only have a few books on your shelf though,  then you could be in trouble as there's a chance that someone might come along and find it.</p>
+<p>I waned to improve on my original one so decided to add an extra secret section which would need a key to open.</p>
+<p>The extra section is located behind the initial"safe" in the book, and is kept hidden by the home-made lock and key.</p>
 <p>It's quite an easy project, it just takes some time and patience preparing the book.</p>
 <p>Here's a short video</p>
 <p>If the above doesn't work try t<a href="https://www.youtube.com/watch?v=IaOugB4LltM&list=UU3KVtVSsFk13MCDUBh34Drw">his link</a></p><h2><span class="step-num">STEP 1</span>Step 1: Things You'll Need</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things You'll Need image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things You'll Need image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things You'll Need image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things You'll Need image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things You'll Need image 5" loading="lazy"></div><p>Parts:</p>
@@ -178,7 +215,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Start cutting out the secret  section.  I made this section about half the size of the main one.  Remember it's a secret one so it doesn't have to be too big.</li>
 <li>Keep on cutting until you have about 20-30 left at the bottom.</li>
 <li>Glue the cut pages together.   Make sure that you leave about 7 pages NOT glued -  you will need to do some modification later.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Lock - Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Lock - Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Lock - Part 1 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Lock - Part 1 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Lock - Part 1 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Lock - Part 1 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Lock - Part 1 image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Lock - Part 1 image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Lock - Part 1 image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making the Lock - Part 1 image 9" loading="lazy"></div><p>So now you have most of the book done its time to make the lock.  I have also included an exploded view of the lock which should hopefully help with the build - see below.  I will be using the terms that I have used in this drawing so you can also use this as a reference if necessary.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Lock - Part 1</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Lock - Part 1 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Lock - Part 1 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Lock - Part 1 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Lock - Part 1 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Lock - Part 1 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Lock - Part 1 image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Lock - Part 1 image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Lock - Part 1 image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making the Lock - Part 1 image 9" loading="lazy"></div><p>So now you have most of the book done its time to make the lock.</p>
+<p>I have also included an exploded view of the lock which should hopefully help with the build - see below.</p>
+<p>I will be using the terms that I have used in this drawing so you can also use this as a reference if necessary.</p>
 <p>MAKING THE LOCK</p>
 <p>Steps:</p>
 <ol>
@@ -220,7 +259,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next you need to make a small collar out of the same tubing you used for the latch arm chamber.  cut a small piece of the 10mm tubing no longer than 3-5mm.</li>
 <li>Place this over the latch arm and super glue into place.</li>
 </ol>
-<p>NOTE: I decided to use a larger collar as I was finding that the top of the latch arm was bending.  The collar that I went with went flush with the latch arm.  This worked well and gave it more strength.  See the photos of the finished book.</p>
+<p>NOTE: I decided to use a larger collar as I was finding that the top of the latch arm was bending.</p>
+<p>The collar that I went with went flush with the latch arm.</p>
+<p>This worked well and gave it more strength.</p>
+<p>See the photos of the finished book.</p>
 <ol>
 <li>Lastly with a dremmel, cut 2 small grooves into the latch arm as shown below.  This is how you will open the lock with your key.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Making the Lock - Part 6</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Making the Lock - Part 6 image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Making the Lock - Part 6 image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Making the Lock - Part 6 image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Making the Lock - Part 6 image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Making the Lock - Part 6 image 5" loading="lazy"></div><p>MAKING THE KEY</p>
@@ -243,5 +285,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once everything is glued, add some heavy weights to the book so the glue spreads evenly.</li>
 <li>Ensure that the key still turns ok.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Finished!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Finished! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Finished! image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Finished! image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Finished! image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Finished! image 5" loading="lazy"></div><p>That's it.  You now have a super secret book safe.  All you need to do now is to find a place to hide the key!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

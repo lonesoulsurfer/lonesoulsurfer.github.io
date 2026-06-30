@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -130,8 +165,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <h1>LED Gun Torch</h1><div class="source"><a href="https://www.instructables.com/LED-Gun-Torch/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Turn any old toy gun into a torch.</p>
 <p>My boys find it hilarious that I add LED’s to everything. Recently, I was talking about making a dog kennel and the first thing they ask is “you going to add LEDS?” Of course the answer is yes.</p>
 <p>Why wouldn’t you though! They are simple to use, cheap and a great way to mod.</p>
-<p>This ‘ible then is all about how to add an LED to a toy gun. The gun that I used is a cheap light gun that was used on the PS1. I found it at the tip and it had the cord missing. You could really use any gun with this mod, as long as there is enough room to add a 3 x AAA battery holder. That really is the only pre-requisite when deciding on what gun to use.</p>
-<p>The gun I chose though had 2 of the main features that made this build very easy, a lens at the front and a SPDT lever switch. These things though are easy and cheap to buy from eBay, so if your gun doesn’t have them, don’t worry, I’ll put in some links to where you can buy them from</p>
+<p>This ‘ible then is all about how to add an LED to a toy gun.</p>
+<p>The gun that I used is a cheap light gun that was used on the PS1.</p>
+<p>I found it at the tip and it had the cord missing.</p>
+<p>You could really use any gun with this mod, as long as there is enough room to add a 3 x AAA battery holder.</p>
+<p>That really is the only pre-requisite when deciding on what gun to use.</p>
+<p>The gun I chose though had 2 of the main features that made this build very easy, a lens at the front and a SPDT lever switch.</p>
+<p>These things though are easy and cheap to buy from eBay, so if your gun doesn’t have them, don’t worry, I’ll put in some links to where you can buy them from</p>
 <p>Let’s get on with the build…</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Toy gun. This can be anything but if you want to make it as easy as possible type into eBay “Light gun”. You might even have one of these around the house gathering dust. Also, you can just use a toy gun if you wanted to</li>
@@ -168,7 +208,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the negative wire from the battery terminal to the negative terminal on the power socket. This is the one that is not connected to the middle pin on the power socket. See diagram of the socket below which will help you identify which pin to use.</li>
 <li>Next solder another wire to the same terminal on the socket to the “open” terminal on the switch. This is to be soldered to the negative terminal on the LED.</li>
 </ol>
-<p>For those who haven’t used SPDT switch before there are 2 modes that these can be in “always open or always closed” We want to wire it up so when you pull the trigger, it pushes the level and the power comes on. That’s why you need to open it up to the “open” terminal. I have included a diagram which might make it easier to understand.</p>
+<p>For those who haven’t used SPDT switch before there are 2 modes that these can be in “always open or always closed” We want to wire it up so when you pull the trigger, it pushes the level and the power comes on.</p>
+<p>That’s why you need to open it up to the “open” terminal.</p>
+<p>I have included a diagram which might make it easier to understand.</p>
 <ol>
 <li>Next solder the positive wire on the battery to the “positive” terminal on the power socket. This is the middle pin.</li>
 <li>Solder another wire to the same place and attach this to the positive section of the LED</li>
@@ -184,7 +226,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>If everything is ok, hot glue down the charging socket</li>
 <li>Next hot glue down the battery pack</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: How to Charge the Batteries</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: How to Charge the Batteries image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: How to Charge the Batteries image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: How to Charge the Batteries image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: How to Charge the Batteries image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: How to Charge the Batteries image 5" loading="lazy"></div><p>As mentioned previously, I didn’t want to have to unscrew the gun each time I wanted to charge the batteries. The charging socket allows you to charge the batteries without having to do this.</p>
-<p>The batteries I used are rechargeable 1.2v batteries (total of 3.6v) and can be purchased at most stores that sell batteries. I luckily had a 3.6v charger which I could use to charge them. All I have to do is to plug it in and leave for a couple hours and it’s fully charged.</p>
+<p>The batteries I used are rechargeable 1.2v batteries (total of 3.6v) and can be purchased at most stores that sell batteries.</p>
+<p>I luckily had a 3.6v charger which I could use to charge them.</p>
+<p>All I have to do is to plug it in and leave for a couple hours and it’s fully charged.</p>
 <p>I think having maybe a 4.5v charger would work better but the 3.6v one does the trick.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

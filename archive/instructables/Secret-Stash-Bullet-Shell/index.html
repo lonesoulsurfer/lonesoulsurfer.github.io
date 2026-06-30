@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Secret Stash Bullet Shell</span>
 </nav>
-<h1>Secret Stash Bullet Shell</h1><div class="source"><a href="https://www.instructables.com/Secret-Stash-Bullet-Shell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This project only was made with only 3 parts. The end result in my humble opinion, turned out pretty damn good! I have been thinking about how to turn a bullet into a secret container and had a few ideas which I tried but didn't get the look I was after. After some frustration I went back to basics and looked around in my electronic bins to see what I could use. I found a push on/off switch and had one of those eureka moments.</p>
+<h1>Secret Stash Bullet Shell</h1><div class="source"><a href="https://www.instructables.com/Secret-Stash-Bullet-Shell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This project only was made with only 3 parts.</p>
+<p>The end result in my humble opinion, turned out pretty damn good!</p>
+<p>I have been thinking about how to turn a bullet into a secret container and had a few ideas which I tried but didn't get the look I was after.</p>
+<p>After some frustration I went back to basics and looked around in my electronic bins to see what I could use.</p>
+<p>I found a push on/off switch and had one of those eureka moments.</p>
 <p>The main tool you will need in this project is a mini blow torch as there is some soldering that will need to be done. Other then that, all other tools can be improvised.</p>
-<p>So what do you keep in a bullet secret stash! Anything that fits... Actually there isn't a lot of room inside a 444 magnum shell so whatever you decide to add,, it will have to be small. I keep a rolled-up $5 note in mine, but you could easily keep a small memento, matches, small survival kit (not a bad idea actually) or whatever takes your fancy.</p>
+<p>So what do you keep in a bullet secret stash!</p>
+<p>Anything that fits...</p>
+<p>Actually there isn't a lot of room inside a 444 magnum shell so whatever you decide to add,, it will have to be small.</p>
+<p>I keep a rolled-up $5 note in mine, but you could easily keep a small memento, matches, small survival kit (not a bad idea actually) or whatever takes your fancy.</p>
 <p>So without further ado - Here is my Secret Stash Bullet Shell</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>44 magnum bullet casing - Etsy</li>
@@ -171,7 +213,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some flux to the filed section and add it to the dome nut.</li>
 <li>Clamp it together, heat-up and add some solder.</li>
 <li>Done</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Test</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Test image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Test image 2" loading="lazy"></div><p>So you should now be able to screw the dome nut into the bullet case. If you wanted to stop here you could just leave it as is. I decided to give it a polish and add a loop so I could add it to a key ring or necklace.</p><h2><span class="step-num">STEP 7</span>Step 7: Adding a Loop</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Loop image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Loop image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Loop image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Loop image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding a Loop image 5" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Test</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Test image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Test image 2" loading="lazy"></div><p>So you should now be able to screw the dome nut into the bullet case.</p>
+<p>If you wanted to stop here you could just leave it as is.</p>
+<p>I decided to give it a polish and add a loop so I could add it to a key ring or necklace.</p><h2><span class="step-num">STEP 7</span>Step 7: Adding a Loop</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Loop image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Loop image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Loop image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Loop image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding a Loop image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Twist a piece of copper wire to make a loop and arm section.</li>
 <li>Next add some flux and solder to the bottom of the bullet.</li>
@@ -181,5 +225,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I used a general metal polish and it worked a treat.</li>
 </ol>
 <p>Fiinished</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

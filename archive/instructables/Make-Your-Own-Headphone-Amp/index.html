@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Make Your Own Headphone Amp V1</span>
 </nav>
-<h1>Make Your Own Headphone Amp V1</h1><div class="source"><a href="https://www.instructables.com/Make-Your-Own-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I never really thought much about headphone amps until I tried one. I used to think it was all a bit of a gimmick. Why would you need a separate amp to drive the speakers in your headphones! It’s only when you try a headphone amp that you realise the benefits and sound quality improvement possible from a separate amp. The only problem is, you’ll never be able to listen to music again without one!</p>
-<p>You can buy an off-the-shelf one if you want to but I’m going to assume you’re reading this because you’d rather build your own. The build itself isn’t too difficult, although you will need some soldering and circuit experience to make this. If you have never done any circuit building, then you should start with this ‘ible which I did some time ago to help beginners.</p>
-<p>The heart of the amp is 2 X LM386 IC’s. Unlike some headphone amps, you can run this one on a 9v battery but because of this, you need to be careful how you hook-up the ground connections. I’ll take you through this in the following steps.</p>
+<h1>Make Your Own Headphone Amp V1</h1><div class="source"><a href="https://www.instructables.com/Make-Your-Own-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I never really thought much about headphone amps until I tried one.</p>
+<p>I used to think it was all a bit of a gimmick.</p>
+<p>Why would you need a separate amp to drive the speakers in your headphones!</p>
+<p>It’s only when you try a headphone amp that you realise the benefits and sound quality improvement possible from a separate amp.</p>
+<p>The only problem is, you’ll never be able to listen to music again without one!</p>
+<p>You can buy an off-the-shelf one if you want to but I’m going to assume you’re reading this because you’d rather build your own.</p>
+<p>The build itself isn’t too difficult, although you will need some soldering and circuit experience to make this.</p>
+<p>If you have never done any circuit building, then you should start with this ‘ible which I did some time ago to help beginners.</p>
+<p>The heart of the amp is 2 X LM386 IC’s.</p>
+<p>Unlike some headphone amps, you can run this one on a 9v battery but because of this, you need to be careful how you hook-up the ground connections.</p>
+<p>I’ll take you through this in the following steps.</p>
 <p>Lastly, I’ll be building a few more of these and comparing different models in future ‘ibles.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>2 X LM386 IC – eBay</li>
@@ -139,7 +182,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>10 Ohm – eBay</li>
 <li>18K – eBay</li>
 </ol>
-<p>Capacitors. Make sure you use good, audio ones for the best possible sound. The electrolytic ones should be low leakage; low impedance type and the ceramic should be metal film, polypropylene. I have added links to eBay for these types of caps</p>
+<p>Capacitors.</p>
+<p>Make sure you use good, audio ones for the best possible sound.</p>
+<p>The electrolytic ones should be low leakage; low impedance type and the ceramic should be metal film, polypropylene.</p>
+<p>I have added links to eBay for these types of caps</p>
 <ol>
 <li>4 X 10uf – eBay</li>
 <li>3 X 470 uf eBay</li>
@@ -155,10 +201,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>You can also add a charging socket which will require a 330 Ohm resistor as well as a socket. I’ll probably add this later so left it in the circuit diagram.</p>
 <ol>
 <li>Case. I found a great case at Jaycar (electronics shop in Aust) which has its own battery compartment. It’s a little on the larger size but makes the job of fitting everything inside a pretty easy one. You can get them on eBay too</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Separating Input and Output Grounds</h2><div class="step-images single"><img src="images/step02_01.jpg" alt="Step 2: Separating Input and Output Grounds image 1" loading="lazy"></div><p>Before you start to build this amp, you should read the below which goes through how to hook-up the ground connections. The important thing to remember is to separate the input and output grounds. If you don’t then you will get oscillations which will be auditable through the headphones.</p>
-<p>So what does it mean to keep the input and output grounds separated? Basically it means to connect all of the input grounds in the circuit together and all of the output grounds together. They are then connected together by a single connection.</p>
-<p>The following at all input grounds so will need to be connected together on the prototype board. Ground input from the socket, volume control ground pin, pins 2 and 4 of both IC's. All others are output grounds.</p>
-<p>All I did to separate the grounds was to add the input connections along one of the vertical bus strips and the output next to them on the other vertical bus strip. This way you can connect the bus strips together at one point.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit Pins 1, 2 & 4</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 6" loading="lazy"></div><p>I’ll go through how you make one channel of the circuit. The other is built exactly the same.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Separating Input and Output Grounds</h2><div class="step-images single"><img src="images/step02_01.jpg" alt="Step 2: Separating Input and Output Grounds image 1" loading="lazy"></div><p>Before you start to build this amp, you should read the below which goes through how to hook-up the ground connections.</p>
+<p>The important thing to remember is to separate the input and output grounds.</p>
+<p>If you don’t then you will get oscillations which will be auditable through the headphones.</p>
+<p>So what does it mean to keep the input and output grounds separated?</p>
+<p>Basically it means to connect all of the input grounds in the circuit together and all of the output grounds together.</p>
+<p>They are then connected together by a single connection.</p>
+<p>The following at all input grounds so will need to be connected together on the prototype board.</p>
+<p>Ground input from the socket, volume control ground pin, pins 2 and 4 of both IC's.</p>
+<p>All others are output grounds.</p>
+<p>All I did to separate the grounds was to add the input connections along one of the vertical bus strips and the output next to them on the other vertical bus strip.</p>
+<p>This way you can connect the bus strips together at one point.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit Pins 1, 2 & 4</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit Pins 1, 2 & 4 image 6" loading="lazy"></div><p>I’ll go through how you make one channel of the circuit. The other is built exactly the same.</p>
 <p>Steps:</p>
 <ol>
 <li>First, solder an IC socket header for the LM386 IC to the prototype board</li>
@@ -206,12 +259,32 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once everything is connected, add a battery and check to make sure the amp works as it should. If it doesn't, check your connections and also the solder points on the circuit board so there's no short circuits.</li>
 <li>If the amp works as it should, close up the case and get ready to be rocked by awesome sound.</li>
 </ol>
-<p>NOTE: You may have noticed that here is an extra circuit inside the case. This was a voltage regulator that I was going to add until I noticed that it was causing some interference so I took it out. There isn't really any need for it, I just thought it might help add a filter to the power.</p><h2><span class="step-num">STEP 8</span>Step 8: Using You Headphone Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Using You Headphone Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Using You Headphone Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Using You Headphone Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Using You Headphone Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Using You Headphone Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Using You Headphone Amp image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Using You Headphone Amp image 7" loading="lazy"></div><p>Steps:</p>
+<p>NOTE: You may have noticed that here is an extra circuit inside the case.</p>
+<p>This was a voltage regulator that I was going to add until I noticed that it was causing some interference so I took it out.</p>
+<p>There isn't really any need for it, I just thought it might help add a filter to the power.</p><h2><span class="step-num">STEP 8</span>Step 8: Using You Headphone Amp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Using You Headphone Amp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Using You Headphone Amp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Using You Headphone Amp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Using You Headphone Amp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Using You Headphone Amp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Using You Headphone Amp image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Using You Headphone Amp image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Now you have everything inside the case, it’s time to finally add the battery, turn it on and listen to the best sounding music your ears have heard!</li>
 <li>Also, remember to make sure you don’t have the volume turned up fully on the amp and also your phone when you turn it on – you could damage your ears as it really pumps out the noise.</li>
 </ol>
 <p>NOTE:</p>
-<p>You may experience some “ticking” sounds sometimes when you have the volume down. This is caused by interference from usually a phone. The best thing to do if you experience this is to turn your phone onto aeroplane mode, which should stop any interference.</p>
+<p>You may experience some “ticking” sounds sometimes when you have the volume down.</p>
+<p>This is caused by interference from usually a phone.</p>
+<p>The best thing to do if you experience this is to turn your phone onto aeroplane mode, which should stop any interference.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Simple Homemade Lighter</span>
 </nav>
-<h1>Simple Homemade Lighter</h1><div class="source"><a href="https://www.instructables.com/Simple-Homemade-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Make a simple lighter out of a few off the shelf parts. I’ve made a few lighters of late (see list below) and this would have to be the one of the simplest and easiest to make. All of the parts can be purchased easily and you could make this with very basic tools. The most complicated tool you’ll need is a small blowtorch for soldering!</p>
-<p>The main parts that go into making this is a schrader valve (air valve like the one in a bike tube), some copper pipe, nutsert, and the sparkwheel from a clipper lighter. For those who don’t know, a clipper lighter can be purchased cheaply from most places that sell tobacco. They are re-fillable lighters that also have a replaceable sparkwheel, which is ideal to use in this project.</p>
+<h1>Simple Homemade Lighter</h1><div class="source"><a href="https://www.instructables.com/Simple-Homemade-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Make a simple lighter out of a few off the shelf parts.</p>
+<p>I’ve made a few lighters of late (see list below) and this would have to be the one of the simplest and easiest to make.</p>
+<p>All of the parts can be purchased easily and you could make this with very basic tools.</p>
+<p>The most complicated tool you’ll need is a small blowtorch for soldering!</p>
+<p>The main parts that go into making this is a schrader valve (air valve like the one in a bike tube), some copper pipe, nutsert, and the sparkwheel from a clipper lighter.</p>
+<p>For those who don’t know, a clipper lighter can be purchased cheaply from most places that sell tobacco.</p>
+<p>They are re-fillable lighters that also have a replaceable sparkwheel, which is ideal to use in this project.</p>
 <p>Lighters I have made</p>
 <p>TRENCH LIGHTER V2</p>
 <p>UBER LIGHTER 2.0</p>
@@ -174,7 +214,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some flux around the edges of the valve and brass tube.</li>
 <li>Heat-up the area with a small blow torch</li>
 <li>Add some solder all around the edges. Try not to get any on the thread of the valve.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Rounding the Edges</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Rounding the Edges image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Rounding the Edges image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Rounding the Edges image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Rounding the Edges image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Rounding the Edges image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Rounding the Edges image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Rounding the Edges image 7" loading="lazy"></div><p>There’s a simple way to round off the top of the lighter using a drill as a makeshift lathe. I also did an ‘ible on how to do this which can be found here. In this version, I just used a drill bit and some tape to make the shaft for the lathe!</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Rounding the Edges</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Rounding the Edges image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Rounding the Edges image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Rounding the Edges image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Rounding the Edges image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Rounding the Edges image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Rounding the Edges image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Rounding the Edges image 7" loading="lazy"></div><p>There’s a simple way to round off the top of the lighter using a drill as a makeshift lathe.</p>
+<p>I also did an ‘ible on how to do this which can be found here.</p>
+<p>In this version, I just used a drill bit and some tape to make the shaft for the lathe!</p>
 <p>Steps:</p>
 <ol>
 <li>Place the drill into a vice to hold it steady.</li>
@@ -216,5 +258,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>When filling with zippo fuel, make sure you have the lid loose on the top so the fuel will flow down the lighter. Fill it up until the fuel starts to either come out the top or stops being absorbed by the cotton wool.</li>
 <li>Screw in the bolt to the bottom, wipe off any excess fuel and try it out.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

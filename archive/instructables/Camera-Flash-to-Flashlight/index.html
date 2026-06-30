@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,10 +163,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Camera Flash to Flashlight</span>
 </nav>
 <h1>Camera Flash to Flashlight</h1><div class="source"><a href="https://www.instructables.com/Camera-Flash-to-Flashlight/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I was bored over the weekend so decided to have a rummage through my parts bins for some inspiration and came up with this ‘ible.</p>
-<p>The flash I used I picked up a few months ago for a couple of bucks and the rest of the parts I had left over from other projects. I was tempted to just leave the flash as is and put it on display, as it’s a damn cool item just by itself. However, the hacking gods whispered in my ear “pull it apart” and I was powerless against them.</p>
+<p>The flash I used I picked up a few months ago for a couple of bucks and the rest of the parts I had left over from other projects.</p>
+<p>I was tempted to just leave the flash as is and put it on display, as it’s a damn cool item just by itself.</p>
+<p>However, the hacking gods whispered in my ear “pull it apart” and I was powerless against them.</p>
 <p>I’m actually very pleased on how the torch turned out. I still managed to keep the flashes retro ascetic’s whist turning it into something useful again.</p>
-<p>The flash isn’t just a boring old flashlight though. I also added a dimmer for the LED’ and rechargeable batteries which can be charged via solar panels attached to the side of the flash or by an external socket.</p>
-<p>The other thing I really like about this torch is you can mount it to a tripod as well. Come in handy when you need light for filming, camping, reading or whatever else.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Please note that this build was a rummage one and I just used parts that I had on hand. I had to use a few parts that were probably not ideal but did the job. I’ve highlighted these below and have also included alternatives to the parts that I used.</p>
+<p>The flash isn’t just a boring old flashlight though.</p>
+<p>I also added a dimmer for the LED’ and rechargeable batteries which can be charged via solar panels attached to the side of the flash or by an external socket.</p>
+<p>The other thing I really like about this torch is you can mount it to a tripod as well. Come in handy when you need light for filming, camping, reading or whatever else.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Please note that this build was a rummage one and I just used parts that I had on hand.</p>
+<p>I had to use a few parts that were probably not ideal but did the job.</p>
+<p>I’ve highlighted these below and have also included alternatives to the parts that I used.</p>
 <p>Parts</p>
 <ol>
 <li>Vintage Camera Flash – eBay</li>
@@ -176,7 +216,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill a hole and attach the pot</li>
 <li>You will need to connect the battery and LED wires a little later on so make sure that the dimmer circuit is secured inside the flash and accessible</li>
 <li>You can also add the pot knob as well</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Batteries</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Batteries image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Batteries image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Batteries image 3" loading="lazy"></div><p>These little LED’s run fine on 3V’s. The 3 rechargeable batteries have a total of 3.6V which is also fine for the LED’s. However, test them to make sure that they aren’t overheating and if they do start to get hot, add a resistor to reduce the current.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Batteries</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Batteries image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Batteries image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Batteries image 3" loading="lazy"></div><p>These little LED’s run fine on 3V’s.</p>
+<p>The 3 rechargeable batteries have a total of 3.6V which is also fine for the LED’s.</p>
+<p>However, test them to make sure that they aren’t overheating and if they do start to get hot, add a resistor to reduce the current.</p>
 <p>Steps:</p>
 <ol>
 <li>Most old flashes use 4 X AA batteries. If your battery compartment isn’t all corroded (mine was), then you could just re-use the terminals and connect one of them together so you only need 3 X Aa batteries. You could also just replace the terminals (I did an ‘ible on how to do this) and add a spare battery inside as a spacer. I used a 4 X AA battery holder for mine</li>
@@ -208,5 +250,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next I wanted to be able to mount it onto a tripod. I added the mounting bracket and realised that I would need to modify it so it could screw into a tripod mount. I just removed the original mount and added a screw. It's a little weird how it mounts to the tripod but it works.</li>
 </ol>
 <p>That's it! You now have your very own flash flashlight!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

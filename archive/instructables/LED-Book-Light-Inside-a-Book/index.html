@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED Book Light - Inside a Book!</span>
 </nav>
-<h1>LED Book Light - Inside a Book!</h1><div class="source"><a href="https://www.instructables.com/LED-Book-Light-Inside-a-Book/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Just like the title states, this Instructable will show you how to make a book light inside a book. I was initially thinking of using a very small book for this build so it could be pocket size (still might make one) but I decided to make it easy for myself and used a large book for the project.</p>
-<p>the book I used is an old Children's book with thick paper and a very nice, vintage look about it. It was falling apart and the paper that the pages are made from was starting to become flaky. By adding some Mod Podge glue to the book I was able to stabilize it and make a solid casing for the LED's inside.</p>
-<p>The LED's are in the strip form and I went with an internal battery source (mobile battery) instead of external mains power. I wanted it to be used anywhere and a cord coming out the back spoils the look.</p>
+<h1>LED Book Light - Inside a Book!</h1><div class="source"><a href="https://www.instructables.com/LED-Book-Light-Inside-a-Book/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.png" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Just like the title states, this Instructable will show you how to make a book light inside a book.</p>
+<p>I was initially thinking of using a very small book for this build so it could be pocket size (still might make one) but I decided to make it easy for myself and used a large book for the project.</p>
+<p>the book I used is an old Children's book with thick paper and a very nice, vintage look about it.</p>
+<p>It was falling apart and the paper that the pages are made from was starting to become flaky.</p>
+<p>By adding some Mod Podge glue to the book I was able to stabilize it and make a solid casing for the LED's inside.</p>
+<p>The LED's are in the strip form and I went with an internal battery source (mobile battery) instead of external mains power.</p>
+<p>I wanted it to be used anywhere and a cord coming out the back spoils the look.</p>
 <p>The build will take some patience and some soldering skills but anyone should be able to build one.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>A Book. Make it a large one as it will be easier to do. It will also need to be hardback</li>
@@ -150,15 +189,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Mod Podge glue</li>
 <li>General purpose glue (a good quality one)</li>
 <li>Saw. A band saw works well to cut the acrylic and the wood</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Picking the Right Book</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Picking the Right Book image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Picking the Right Book image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Picking the Right Book image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Picking the Right Book image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Picking the Right Book image 5" loading="lazy"></div><p>I added this step as I think it's important to pick the right book for this project. That's doesn't mean that you need some type of special type of book, but it helps to try and find a book with a few, specific properties</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Picking the Right Book</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Picking the Right Book image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Picking the Right Book image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Picking the Right Book image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Picking the Right Book image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Picking the Right Book image 5" loading="lazy"></div><p>I added this step as I think it's important to pick the right book for this project.</p>
+<p>That's doesn't mean that you need some type of special type of book, but it helps to try and find a book with a few, specific properties</p>
 <p>Size</p>
-<p>The bigger the better really. You want to make sure that when you add the LED's, there is enough space between them and the diffuser or they won't defuse properly. A larger book also makes it easier to add all the parts inside it.</p>
+<p>The bigger the better really.</p>
+<p>You want to make sure that when you add the LED's, there is enough space between them and the diffuser or they won't defuse properly.</p>
+<p>A larger book also makes it easier to add all the parts inside it.</p>
 <p>Paper</p>
 <p>If you get a book with thin paper then it will take a lot longer to cut out the compartment. Try and find a book with thick paper which the book I used had</p>
 <p>Look</p>
 <p>Ok so this isn't vital but if you are going to have this book displayed all of the time then it's probably a good idea to have a nice looking book.</p>
 <p>Hardback</p>
-<p>Make sure that the book is a hardback to ensure rigidity when it is standing up</p><h2><span class="step-num">STEP 3</span>Step 3: Gluing the Pages Together</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Gluing the Pages Together image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Gluing the Pages Together image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Gluing the Pages Together image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Gluing the Pages Together image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Gluing the Pages Together image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Gluing the Pages Together image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Gluing the Pages Together image 7" loading="lazy"></div><p>I used to glue every page together and it usually ended up as a hot mess. Someone mentioned on another 'ible I did that you can use Mod Podge glue and just add it to the sides of the book. It makes it so much more easier and the pages sit more naturally when completed.</p>
+<p>Make sure that the book is a hardback to ensure rigidity when it is standing up</p><h2><span class="step-num">STEP 3</span>Step 3: Gluing the Pages Together</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Gluing the Pages Together image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Gluing the Pages Together image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Gluing the Pages Together image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Gluing the Pages Together image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Gluing the Pages Together image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Gluing the Pages Together image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Gluing the Pages Together image 7" loading="lazy"></div><p>I used to glue every page together and it usually ended up as a hot mess.</p>
+<p>Someone mentioned on another 'ible I did that you can use Mod Podge glue and just add it to the sides of the book.</p>
+<p>It makes it so much more easier and the pages sit more naturally when completed.</p>
 <p>Steps:</p>
 <ol>
 <li>The book I used was a little worse for wear so I had to do some running repairs before I started. The cover was coming away from the inside so I added some glue to the inside of the cover and glued the first few pages together.</li>
@@ -181,7 +225,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Maker sure that all the exposed, cut pages are coated and also add some to the bottom as well. This will give the book some strength.</li>
 <li>Place some weights along the edges of the pages so they are compressed and leave it for a good few hours.</li>
 <li>Add another coat of glue if necessary</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Making a Frame for the Inside Compartment</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 8" loading="lazy"></div><p>You will need to add some type of frame to the inside of the compartment. This is what the Acrylic will sit on along with the momentary switch. The wood I used is just a piece of edging that you can buy from any hardware store. The dimensions are 7mm width by 30mm High. The height though will depend on the height of the compartment.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Making a Frame for the Inside Compartment</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Making a Frame for the Inside Compartment image 8" loading="lazy"></div><p>You will need to add some type of frame to the inside of the compartment.</p>
+<p>This is what the Acrylic will sit on along with the momentary switch.</p>
+<p>The wood I used is just a piece of edging that you can buy from any hardware store.</p>
+<p>The dimensions are 7mm width by 30mm High.</p>
+<p>The height though will depend on the height of the compartment.</p>
 <p>Steps:</p>
 <ol>
 <li>Measure and cut out 4 pieces of wood so they will fit inside the book and make a "frame" for the acrylic.</li>
@@ -202,7 +250,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You will need to remove some of the rubber to reveal the solder points. The best way that I found to do this is carefully run a stanley knife or exacto blade between the rubber and copper section. It comes off pretty easily so you shouldn't have to push too hard.</li>
 <li>Once you have a small amount lifted up, cut it off with some scissors.</li>
 <li>Tin each of the copper points with some solder</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Battery, Charging Module and Sticking Down the LED's</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 5" loading="lazy"></div><p>I did an Instructable a little while ago which go through how to use the charging module and connect it to a battery. The great thing about these little modules is that also have a voltage regulator so you can set the voltage at 12v which is what the LED's need. Check out the link here to learn how to use them</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Battery, Charging Module and Sticking Down the LED's</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 5" loading="lazy"></div><p>I did an Instructable a little while ago which go through how to use the charging module and connect it to a battery.</p>
+<p>The great thing about these little modules is that also have a voltage regulator so you can set the voltage at 12v which is what the LED's need.</p>
+<p>Check out the link here to learn how to use them</p>
 <p>Steps:</p>
 <ol>
 <li>Connect the battery up to the charging module and set the voltage to 12V. Check the link out above to see how this is done.</li>
@@ -212,7 +262,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Connect all of the negative and positive solder points together. I used some resistor legs to do this but you could also just use some wire</li>
 <li>Connect the negative from the charging module to negative on the LED's.</li>
 <li>Connect the momentary switch to the positive terminal on the charging module and also to the positive of the LED's</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Testing and Finishing Touches</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Testing and Finishing Touches image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Testing and Finishing Touches image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Testing and Finishing Touches image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Testing and Finishing Touches image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Testing and Finishing Touches image 5" loading="lazy"></div><p>As soon as you connect the switch you should see the LED's come on. Push down on the little arm of the switch and they should turn off. If everything is working as it should be it's now time to add the acrylic</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Testing and Finishing Touches</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Testing and Finishing Touches image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Testing and Finishing Touches image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Testing and Finishing Touches image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Testing and Finishing Touches image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Testing and Finishing Touches image 5" loading="lazy"></div><p>As soon as you connect the switch you should see the LED's come on.</p>
+<p>Push down on the little arm of the switch and they should turn off.</p>
+<p>If everything is working as it should be it's now time to add the acrylic</p>
 <p>Steps:</p>
 <ol>
 <li>If you haven't already, add a little superglue to the back of the switch and stick this into place</li>
@@ -221,6 +273,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I also added some fabric tape to the inside of the spine as it was starting to fall apart.</li>
 <li>That;s it! So what would I do differently? We for starters, i would probably locate the battery and switch at the bottom of the book, not the top. I'm not sure why i did that in the first place - must of had some reason. I'll also add an DC output plug next time so I can just run it through mains if I choose to.</li>
 </ol>
-<p>Overall though I'm very happy with how this book light turned out. It has a very lovely soft light and it's dimmable! All you need to do is to open the book slightly for a little light and right up to light up a room.</p>
+<p>Overall though I'm very happy with how this book light turned out.</p>
+<p>It has a very lovely soft light and it's dimmable!</p>
+<p>All you need to do is to open the book slightly for a little light and right up to light up a room.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

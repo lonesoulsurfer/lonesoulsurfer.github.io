@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED Cube Light</span>
 </nav>
-<h1>LED Cube Light</h1><div class="source"><a href="https://www.instructables.com/LED-Cube-Light/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I've been wanting to make a simple LED Light box for some time now so decided to build one. I had some filament LED's left over from another build which worked perfectly to illuminate the diffused acrylic.</p>
-<p>You usually find filament LED's inside light bulbs which are in the style of Edison light globes. However, you can also buy them individually for pretty cheap. They throw off a lot of light and when you use some diffusing acrylic, you get a beautiful, soft light.</p>
+<h1>LED Cube Light</h1><div class="source"><a href="https://www.instructables.com/LED-Cube-Light/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I've been wanting to make a simple LED Light box for some time now so decided to build one.</p>
+<p>I had some filament LED's left over from another build which worked perfectly to illuminate the diffused acrylic.</p>
+<p>You usually find filament LED's inside light bulbs which are in the style of Edison light globes.</p>
+<p>However, you can also buy them individually for pretty cheap.</p>
+<p>They throw off a lot of light and when you use some diffusing acrylic, you get a beautiful, soft light.</p>
 <p>Instead of using a toggle switch to turn the LED's on and off, I used a mercury switch. To turn it off you simply turn the box up-side-down. This way it keeps the build simple and clean.</p>
 <p>To power the LED's I used an old mobile battery but you could use a li-po battery or 3 x AAA rechargeable batteries.</p>
 <p>The final result is a minimalist light box that looks great and gives off a beautiful, soft light.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"></div><p>Parts:</p>
@@ -177,7 +215,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I like to use Aged Teak stain as it give a great finish.</li>
 <li>Paint the outside of the wood and leave to dry</li>
 </ol>
-<p>NOTE: I stained the wood prior to final sanding. It meant that once the box was done, I had to go back and sand the sides to make them nice and flat. It meant that I had to re-stain those sections again. The only problem with re-staining is I had to add some masking tape on the acrylic to protect it from the stain. I guess what I saying is it's prob better to wait until the box is completely finished to stain.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the LED's</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the LED's image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the LED's image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the LED's image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the LED's image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the LED's image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the LED's image 6" loading="lazy"></div><p>Initially I was going to only add 1 LED filament but I figured why add one when you can add 2!</p>
+<p>NOTE: I stained the wood prior to final sanding.</p>
+<p>It meant that once the box was done, I had to go back and sand the sides to make them nice and flat.</p>
+<p>It meant that I had to re-stain those sections again.</p>
+<p>The only problem with re-staining is I had to add some masking tape on the acrylic to protect it from the stain.</p>
+<p>I guess what I saying is it's prob better to wait until the box is completely finished to stain.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the LED's</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the LED's image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the LED's image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the LED's image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the LED's image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the LED's image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the LED's image 6" loading="lazy"></div><p>Initially I was going to only add 1 LED filament but I figured why add one when you can add 2!</p>
 <p>Steps:</p>
 <ol>
 <li>In order to have the LED's "floating" inside the box, you need to add some support. I used some copper wire to do this. Bend the copper wire to make an L shape.</li>
@@ -199,5 +241,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once dry you might want to sand the sides to make them flush. This will remove the stain but you can always re-stain the sections you sanded.</li>
 </ol>
 <p>That's it! Give the battery a charge and enjoy some very beautiful light.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,7 +163,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Elements - Little Synths With BIG Sounds #1</span>
 </nav>
 <h1>Elements - Little Synths With BIG Sounds #1</h1><div class="source"><a href="https://www.instructables.com/Elements-Little-Synths-With-Big-Sounds-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Hello everyone.</p>
-<p>This synth which I've called 'elements', builds on a number of other electronic projects that I have published on Instructables. The synth is based around a pulse width modulated (PWM) oscillator routed through a resonant low pass filter. There are a number of ways to control the 'growling' tonality of this synth, either through a couple of light dependent resistors (LDR's) or through LED control via a couple vactrol's (LED and LDR connected together).</p>
+<p>This synth which I've called 'elements', builds on a number of other electronic projects that I have published on Instructables.</p>
+<p>The synth is based around a pulse width modulated (PWM) oscillator routed through a resonant low pass filter.</p>
+<p>There are a number of ways to control the 'growling' tonality of this synth, either through a couple of light dependent resistors (LDR's) or through LED control via a couple vactrol's (LED and LDR connected together).</p>
 <p>But that's not all! There are a bunch of other potentiometers to control cutoff, speed, modulation, and resonance .</p>
 <p>The front panel is actually a PCB which you can easily get printed up by a PCB manufacturer. I designed it so it fits perfectly over the board giving the synth a really great finish.</p>
 <p>Oh and I forgot to mention that I also included CV and gate outputs so you can hook it up to a sequencer or other synths.</p>
@@ -136,7 +173,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>I've kept everything as simple as possible on this build so anyone who can solder will be able to make it. I've done away with a case and fancy power supplies to keep the build easy.</p>
 <p>I'll be doing a series of 'little synths with big sounds' builds like this so keep an eye out for them.</p>
 <p>I had a few goals when building this synth. It had to be fun to play, be able to connect to external inputs like a sequencer and to keep it as simple as possible!</p>
-<p>Check out the video to see it in action.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"></div><p>Instead of adding a long list of parts to this step - I decided to instead include the parts list as a PDF file which is attached. The file includes all of the components and auxiliary parts that you will need to put the circuit board together. I have included links and images of each part so you can easily find/buy/identify them. I think it will be handy also as a PDF as you can print it off, visit your local electronics store and see if they have the parts available</p>
+<p>Check out the video to see it in action.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.png" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"></div><p>Instead of adding a long list of parts to this step - I decided to instead include the parts list as a PDF file which is attached.</p>
+<p>The file includes all of the components and auxiliary parts that you will need to put the circuit board together.</p>
+<p>I have included links and images of each part so you can easily find/buy/identify them.</p>
+<p>I think it will be handy also as a PDF as you can print it off, visit your local electronics store and see if they have the parts available</p>
 <p>The parts list is also available on my GitHub Page in Excel format</p>
 <p>The below parts are the rest that you will need to build the synth.</p>
 <p>PARTS (Other than circuit components):</p>
@@ -147,8 +187,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>That's it! You don't have to worry bout building a case because it doesn't have one :)</p>
 <p>The rest of the parts can be found in the PDF attached below or on my Google Drive</p><h2><span class="step-num">STEP 1</span>Step 1: PCB, Front Panel & Eagle Files</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: PCB, Front Panel & Eagle Files image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: PCB, Front Panel & Eagle Files image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: PCB, Front Panel & Eagle Files image 3" loading="lazy"></div><p>Firstly, all of the files that you need can be found in my GitHub Page</p>
-<p>To get your own PCB and front panel printed, you will need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you. If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find here.</p>
-<p>Note the following: Usually you can have JLCPCB remove the order number by adding 'JLCJLCJLCJLC' to the back of the PCB. Unfortunately this didn't work for me and they printed it on the front of the PCB! You can request that a order number is not included by ticking the box indicated. It costs an extra $2 to have it removed.</p>
+<p>To get your own PCB and front panel printed, you will need to send the Gerber files to a PCB manufacturer like JLCPCB (Not affiliated) who will print the boards for you.</p>
+<p>If you have no idea how to do this well I've put together an Instructable on how to get your broads printed which you can find here.</p>
+<p>Note the following: Usually you can have JLCPCB remove the order number by adding 'JLCJLCJLCJLC' to the back of the PCB.</p>
+<p>Unfortunately this didn't work for me and they printed it on the front of the PCB!</p>
+<p>You can request that a order number is not included by ticking the box indicated.</p>
+<p>It costs an extra $2 to have it removed.</p>
 <p>You can also change the colour of the PCB's so go crazy and pick whatever colour you want to make the front panel and PCB.</p>
 <p>In my GitHub Page you will also find the Eagle schematic and board (PCB) files. You can play around and modify these if you like.</p>
 <p>Parts list for the circuit board can be found below and I've also provided the list in excel which can also be found (surprise) in my Google Drive.</p><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components to the PCB</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components to the PCB image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components to the PCB image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components to the PCB image 3" loading="lazy"></div><p>STEPS:</p>
@@ -158,7 +202,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Keep on making your way up with the next highest profile parts - in this case it's the IC sockets. It's always good practice to use IC sockets so you can easily change the IC's out if one is faulty</li>
 </ul><h2><span class="step-num">STEP 3</span>Step 3: Making a Vactrol or 3!</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Making a Vactrol or 3! image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Making a Vactrol or 3! image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Making a Vactrol or 3! image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Making a Vactrol or 3! image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Making a Vactrol or 3! image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Making a Vactrol or 3! image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Making a Vactrol or 3! image 7" loading="lazy"></div><p>STEPS:</p>
 <p>Whats a Vactrol?</p>
-<p>Put simply, a vactrol consists of 2 components, an LED and a light dependent resistor (LDR), incorporated into one package. Some heat shrink is used to keep the parts together and so no light can enter or escape. The LED and LDR face each other inside the package and interact when the LED is activated. This build uses 3 of them, one for the control voltage (CV) and 2 to control the PWM. Basically, they are voltage controlled resistors. Neat hey!</p>
+<p>Put simply, a vactrol consists of 2 components, an LED and a light dependent resistor (LDR), incorporated into one package.</p>
+<p>Some heat shrink is used to keep the parts together and so no light can enter or escape.</p>
+<p>The LED and LDR face each other inside the package and interact when the LED is activated.</p>
+<p>This build uses 3 of them, one for the control voltage (CV) and 2 to control the PWM.</p>
+<p>Basically, they are voltage controlled resistors.</p>
+<p>Neat hey!</p>
 <p>I've actually done an 'ible on how to make them which you can find here. Just make sure you use flat head LED and not the round head ones as they work better.</p>
 <ul>
 <li>Cut a piece of 6mm heat shrink about 15mm long</li>
@@ -185,7 +234,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now you can add all of the potentiometers into place, checking each of the values before soldering. I also leave off soldering the tabs on the potentiometers until I've tested everything first. This way if something is wrong you can easily de-solder them if necessary.</li>
 <li>After that you can solder the LED. Make sure that the polarity is right and that the LED is is about 15mm above the board. If you do it flush with the board it won't stick out of the hole in the front panel!</li>
 </ul>
-<p>Best to test the board now and make sure everything works. Add a battery, turn the synth on and plug in a portable speaker. You should hear the synth make noise. If not, check the PWM trimmer pot and adjust. Also push the 6 pin switch as it could be on for the LDR's. Play around with it and get some sounds playing. IMPORTANT - the resonance will not work until the 2 LDR's are connected to the board so we'll do this next</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Panel & LDR's</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Front Panel & LDR's image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Front Panel & LDR's image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Front Panel & LDR's image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Front Panel & LDR's image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Front Panel & LDR's image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Front Panel & LDR's image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Front Panel & LDR's image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding the Front Panel & LDR's image 8" loading="lazy"></div><p>This is the fun bit! Adding the front panel to the PCB. Give it a test first and make sure all of the components are aligned and that the front panel sits flat. There shouldn't be any issues with fitment.</p>
+<p>Best to test the board now and make sure everything works.</p>
+<p>Add a battery, turn the synth on and plug in a portable speaker.</p>
+<p>You should hear the synth make noise.</p>
+<p>If not, check the PWM trimmer pot and adjust.</p>
+<p>Also push the 6 pin switch as it could be on for the LDR's.</p>
+<p>Play around with it and get some sounds playing.</p>
+<p>IMPORTANT - the resonance will not work until the 2 LDR's are connected to the board so we'll do this next</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Panel & LDR's</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Front Panel & LDR's image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Front Panel & LDR's image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Front Panel & LDR's image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Front Panel & LDR's image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Front Panel & LDR's image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Front Panel & LDR's image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Front Panel & LDR's image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding the Front Panel & LDR's image 8" loading="lazy"></div><p>This is the fun bit!</p>
+<p>Adding the front panel to the PCB.</p>
+<p>Give it a test first and make sure all of the components are aligned and that the front panel sits flat.</p>
+<p>There shouldn't be any issues with fitment.</p>
 <p>STEPS:</p>
 <ul>
 <li>To secure the board to the PCB you'll need to use some spacers. Buy an assorted pack of them which I have linked in the supply section. Attach 10mm spacers with male screw ends to the from panel.</li>
@@ -193,7 +251,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To add the 2 light dependent resistors first, push the legs from the first LDR through the front panel and then into the holes in the PCB. Do the same for the other one</li>
 <li>Make sure that they are sitting flush with the front panel and then solder them in place on the PCB.</li>
 </ul>
-<p>Now at this stage you could leave it as is and be done. However, I decided to add some clear acrylic to the bottom to hep protect the electronics. It's really easy to do and gives the synth a nice finish so check out the next step on how to do it</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Pots</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Pots image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Pots image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Pots image 3" loading="lazy"></div><p>Before we add the clear acrylic, you can now go ahead and add some pot knobs to each of the potentiometers. It isn't totally necessary to do this but I think it finishes off the look very nicely. You may note that in the video the knobs are different. I changed them because these ones were too slippery!</p>
+<p>Now at this stage you could leave it as is and be done.</p>
+<p>However, I decided to add some clear acrylic to the bottom to hep protect the electronics.</p>
+<p>It's really easy to do and gives the synth a nice finish so check out the next step on how to do it</p><h2><span class="step-num">STEP 7</span>Step 7: Adding the Pots</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Adding the Pots image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Adding the Pots image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Adding the Pots image 3" loading="lazy"></div><p>Before we add the clear acrylic, you can now go ahead and add some pot knobs to each of the potentiometers.</p>
+<p>It isn't totally necessary to do this but I think it finishes off the look very nicely.</p>
+<p>You may note that in the video the knobs are different.</p>
+<p>I changed them because these ones were too slippery!</p>
 <p>You can also add a couple nuts to the toggle switches as well.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Clear Acrylic Bottom</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Adding the Clear Acrylic Bottom image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Adding the Clear Acrylic Bottom image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Adding the Clear Acrylic Bottom image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Adding the Clear Acrylic Bottom image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Adding the Clear Acrylic Bottom image 5" loading="lazy"></div><p>STEPS:</p>
 <ul>
 <li>Place one of the front panels (you would have received 5 of them when ordered) on top of the the acrylic and mark out the sides and also the screw holes</li>
@@ -221,5 +284,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>This synth would sound incredible played through a echo/reverb module. I will be designing a fun one soon which will be part of the 'little synths with big sounds' series</li>
 <li>There are probably some more mods you could do - no I'm sure there is.</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

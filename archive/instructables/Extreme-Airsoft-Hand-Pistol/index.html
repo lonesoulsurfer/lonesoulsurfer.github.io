@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,12 +163,28 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">DIY Extreme Airsoft Gun</span>
 </nav>
 <h1>DIY Extreme Airsoft Gun</h1><div class="source"><a href="https://www.instructables.com/Extreme-Airsoft-Hand-Pistol/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Make your own Airsoft gun with just a few off the shelf parts.</p>
-<p>Over the last few years I have been playing around with launchers made from PVC and sprinkler valves. I first came across the idea from Make Magazine where they used a sprinkler valve to launch paper rockets. As soon as I could I made one of these and had a blast with it. I wondered though if it could be made more portable? After a little experimenting I worked out a way to add a hand-pump and from this came the Handheld Compressed Air Launcher.</p>
-<p>I recently decided to revisit this idea and made a more powerful one which needed an external pump. From this, the Compressed Air Acorn Gun was born. Still I wasn't happy. I didn't want to wait around for Autumn before I could go shoot things!</p>
-<p>I decided that I needed something that was more portable and able to shoot readily available bullets. A quick search on Instructables and I found NightHawkInLight’s great Ible’ for making a portable airsoft gun. Only problem was, I couldn't find the brake tubing anywhere that he used. Also, although the triggering system is genius, I wanted a more traditional way to release my bullet.</p>
-<p>So now I come to my latest incarnation. This would have to be the best one that I have built to date. I was totally blown away by how powerful this beast is! Just 5 pumps of the hand-pump and you’re ready to go. The air is released quickly by the electric sprinkler valve, and that little airsoft bullet is released at some seriously dangerous speeds.</p>
+<p>Over the last few years I have been playing around with launchers made from PVC and sprinkler valves.</p>
+<p>I first came across the idea from Make Magazine where they used a sprinkler valve to launch paper rockets.</p>
+<p>As soon as I could I made one of these and had a blast with it.</p>
+<p>I wondered though if it could be made more portable?</p>
+<p>After a little experimenting I worked out a way to add a hand-pump and from this came the Handheld Compressed Air Launcher.</p>
+<p>I recently decided to revisit this idea and made a more powerful one which needed an external pump.</p>
+<p>From this, the Compressed Air Acorn Gun was born.</p>
+<p>Still I wasn't happy.</p>
+<p>I didn't want to wait around for Autumn before I could go shoot things!</p>
+<p>I decided that I needed something that was more portable and able to shoot readily available bullets.</p>
+<p>A quick search on Instructables and I found NightHawkInLight’s great Ible’ for making a portable airsoft gun.</p>
+<p>Only problem was, I couldn't find the brake tubing anywhere that he used.</p>
+<p>Also, although the triggering system is genius, I wanted a more traditional way to release my bullet.</p>
+<p>So now I come to my latest incarnation.</p>
+<p>This would have to be the best one that I have built to date.</p>
+<p>I was totally blown away by how powerful this beast is!</p>
+<p>Just 5 pumps of the hand-pump and you’re ready to go.</p>
+<p>The air is released quickly by the electric sprinkler valve, and that little airsoft bullet is released at some seriously dangerous speeds.</p>
 <p>So to all those out there who want to build their own – I happily present the following instructions.</p>
-<p>DISCLAIMER – This has the potential to be a really dangerous project! I'm assuming you’re all responsible, intelligent people who know how to put things together. Make sure you use the right materials, glues etc as you are dealing with some serious pressure.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things to Gather image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Things to Gather image 7" loading="lazy"></div><p>Parts:</p>
+<p>DISCLAIMER – This has the potential to be a really dangerous project!</p>
+<p>I'm assuming you’re all responsible, intelligent people who know how to put things together.</p>
+<p>Make sure you use the right materials, glues etc as you are dealing with some serious pressure.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things to Gather image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Things to Gather image 7" loading="lazy"></div><p>Parts:</p>
 <p>PVC Piping (pressure piping):</p>
 <ol>
 <li>1 x 25mm “T” section</li>
@@ -201,14 +252,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You need to modify the valve slightly. First remove the plastic filter inside the valve. This till just slow down the air leaving the chamber and we don't want that.</li>
 <li>Next un-screw the 4 screws holding the solenoid on to the cowling. turn it 90 degrees so the wires are facing away from the front of the valve.</li>
 <li>Put the valve into a vice and screw into the female coupling as below.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Electronics</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Electronics image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Electronics image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Electronics image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Electronics image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Electronics image 5" loading="lazy"></div><p>Next you need to wire-up the sprinkler valve to the battery and push switch. Initially I was going to add a safety switch and had drilled all of the holes but found that it wouldn't fit because of the battery. I left the schematic just in case anyone wants to add one.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Electronics</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Electronics image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Electronics image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Electronics image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Electronics image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Electronics image 5" loading="lazy"></div><p>Next you need to wire-up the sprinkler valve to the battery and push switch.</p>
+<p>Initially I was going to add a safety switch and had drilled all of the holes but found that it wouldn't fit because of the battery.</p>
+<p>I left the schematic just in case anyone wants to add one.</p>
 <p>Steps:</p>
 <ol>
 <li>The switch I went with was from a kids bike horn. You can get these from eBay of you went to use the same switch. Otherwise just use any momentary switch. Drill the appropriate holes and attach the switch.</li>
 <li>Drill another hole on the side of the T section to allow thew wires from the valve to go through.</li>
 <li>Next is to solder the battery terminal, valve and switch together. This is pretty simple but if you need a reference check out the attached schematic.</li>
 <li>Attach the battery and test.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: The Loading Chamber - Part 1</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: The Loading Chamber - Part 1 image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: The Loading Chamber - Part 1 image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: The Loading Chamber - Part 1 image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: The Loading Chamber - Part 1 image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: The Loading Chamber - Part 1 image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: The Loading Chamber - Part 1 image 6" loading="lazy"></div><p>For my initial prototype, I used a ram rod to push the bbbullet down the barrel if it was a little tight. I wanted to avoid having to have to do this so I can up with a way to load the barrel. You don’t have to do this if you want to keep it simple. Take a look at the last step to see what I did with the prototype.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: The Loading Chamber - Part 1</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: The Loading Chamber - Part 1 image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: The Loading Chamber - Part 1 image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: The Loading Chamber - Part 1 image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: The Loading Chamber - Part 1 image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: The Loading Chamber - Part 1 image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: The Loading Chamber - Part 1 image 6" loading="lazy"></div><p>For my initial prototype, I used a ram rod to push the bbbullet down the barrel if it was a little tight.</p>
+<p>I wanted to avoid having to have to do this so I can up with a way to load the barrel.</p>
+<p>You don’t have to do this if you want to keep it simple.</p>
+<p>Take a look at the last step to see what I did with the prototype.</p>
 <p>Steps:</p>
 <ol>
 <li>First things first – you need to make a hole in the 7mm tubing. The hole needs to be big enough for a BB to fit into. To do this I used a small bit on the drill and started off drilling a small hole. I then changed to a larger one to complete it.</li>
@@ -220,9 +276,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Replace the spring, latch and other collar and then solder on the collar to the barrel. You may have to put the latch into a vice and hold it back so it doesn’t also get soldered.</li>
 <li>Wipe away any flux and clean the spring. Test and make sure that the latch pulls back correctly.</li>
 <li>Done</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Barrel</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Barrel image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Barrel image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Barrel image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Barrel image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Barrel image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Barrel image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Barrel image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Barrel image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding the Barrel image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Adding the Barrel image 10" loading="lazy"><img src="images/step09_11.jpg" alt="Step 9: Adding the Barrel image 11" loading="lazy"><img src="images/step09_12.jpg" alt="Step 9: Adding the Barrel image 12" loading="lazy"></div><p>One of the trickiest steps for me was working out how to attach the barrel to the sprinkler valve. It took me some time to come up with the finished version due to the different sizes between the barrel and end of the valve. In my initial prototype, I did manage to get the barrel on by using a copper reducer, a bolt and a lot of solder. The main problem with this idea though was it was pretty much impossible to get the barrel straight. I had to re-solder a few times until I was happy with the end result.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding the Barrel</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Barrel image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Barrel image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Barrel image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Barrel image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Barrel image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Barrel image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Barrel image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Barrel image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding the Barrel image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Adding the Barrel image 10" loading="lazy"><img src="images/step09_11.jpg" alt="Step 9: Adding the Barrel image 11" loading="lazy"><img src="images/step09_12.jpg" alt="Step 9: Adding the Barrel image 12" loading="lazy"></div><p>One of the trickiest steps for me was working out how to attach the barrel to the sprinkler valve.</p>
+<p>It took me some time to come up with the finished version due to the different sizes between the barrel and end of the valve.</p>
+<p>In my initial prototype, I did manage to get the barrel on by using a copper reducer, a bolt and a lot of solder.</p>
+<p>The main problem with this idea though was it was pretty much impossible to get the barrel straight.</p>
+<p>I had to re-solder a few times until I was happy with the end result.</p>
 <p>The version below is quite simple but will ensure that the barrel is straight and that the solder points are strong.</p>
-<p>Note - The 3/4 inch female with the 8mm barb I purchased wasn't the correct size. Although the barb was 8mm, that was the OD size, not the ID. It meant that I had to do a little more re-work than expected but it still works great.</p>
+<p>Note - The 3/4 inch female with the 8mm barb I purchased wasn't the correct size.</p>
+<p>Although the barb was 8mm, that was the OD size, not the ID.</p>
+<p>It meant that I had to do a little more re-work than expected but it still works great.</p>
 <p>Steps:</p>
 <ol>
 <li>As the OD of the barb is pretty much the same as the barrel (7mm) you'll have to add some 9mm tube first. The 9mm is a tight fit but a few hits on the end with a hammer and it will go on ok.</li>
@@ -231,10 +293,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now you will be able to slip the 7mm tube that the barrel is made out of into the 8mm tube you have just soldered. Before you solder it though, climp the end of the 7mm tube slightly so the bb bullet doesn't role back into the valve.</li>
 <li>Screw into the sprinkler valve and test.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Optional - Make a Tripod and Adding a Sight</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Optional - Make a Tripod and Adding a Sight image 9" loading="lazy"></div><p>Tripod</p>
-<p>You don't need to have a tripod for your bb gun so I’m not going to go into much detail on this. All I used was a tripod, some bits and pieces from the ratchet set (u-joint, extension pole etc) and a spare 25mm PVC cap.</p>
+<p>You don't need to have a tripod for your bb gun so I’m not going to go into much detail on this.</p>
+<p>All I used was a tripod, some bits and pieces from the ratchet set (u-joint, extension pole etc) and a spare 25mm PVC cap.</p>
 <p>Check out the video at the start of the ‘ible to see it in action.</p>
 <p>Holographic Sight</p>
-<p>You can pick these up on eBay for about $25.00. Definitely something you should think about adding. I secured mine with hot glue and cable ties. You want to make sure that it is secured fast as the slightest movement will put the sight out.</p><h2><span class="step-num">STEP 11</span>Step 11: Optional - Make a Case!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Optional - Make a Case! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Optional - Make a Case! image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Optional - Make a Case! image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Optional - Make a Case! image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Optional - Make a Case! image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Optional - Make a Case! image 6" loading="lazy"></div><p>Recently I came across a great old wooden case and thought it would make a fantastic case for my gun. This isn’t necessary at all, but is a good way to store and carry about all those bits you need in order to shoot a few rounds off.</p>
+<p>You can pick these up on eBay for about $25.00.</p>
+<p>Definitely something you should think about adding.</p>
+<p>I secured mine with hot glue and cable ties.</p>
+<p>You want to make sure that it is secured fast as the slightest movement will put the sight out.</p><h2><span class="step-num">STEP 11</span>Step 11: Optional - Make a Case!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Optional - Make a Case! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Optional - Make a Case! image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Optional - Make a Case! image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Optional - Make a Case! image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Optional - Make a Case! image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Optional - Make a Case! image 6" loading="lazy"></div><p>Recently I came across a great old wooden case and thought it would make a fantastic case for my gun.</p>
+<p>This isn’t necessary at all, but is a good way to store and carry about all those bits you need in order to shoot a few rounds off.</p>
 <p>Steps:</p>
 <ol>
 <li>Find or make yourself a wooden case large enough to carry everything in.</li>
@@ -257,12 +324,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next that the bullets are pretty useless over large distances. Not that they lose speed, but trying to hit a target with a little wind becomes nigh on impossible.</li>
 <li>Lastly that bb guns are a whole lot of fun.</li>
 </ul>
-<p>What would I do differently next time? Usually I have a whole list of things that I would do differently. This time though there really isn’t much I would change. That’s because I made a prototype initially and gleaned a whole bunch of ideas from the initial build. If I had to point out a few flaws, then this is what I could have changed.</p>
+<p>What would I do differently next time?</p>
+<p>Usually I have a whole list of things that I would do differently.</p>
+<p>This time though there really isn’t much I would change.</p>
+<p>That’s because I made a prototype initially and gleaned a whole bunch of ideas from the initial build.</p>
+<p>If I had to point out a few flaws, then this is what I could have changed.</p>
 <ul>
 <li>The barb that the barrel went into. Ok so I purchased the wrong sized one initially but it still worked after a couple of modifications. The ideal one would have had the barrel fit snuggly into the barb.</li>
 <li>Pump. The pump that I used is fine but it has a plastic handle section which will probably break at some stage. The good thing is if it does, the actually body section is cheap and easy to make. The bad thing is it might break at some stage.</li>
 <li>The extra holes I accidently drilled. I was going to add a safety switch and LED indicator to this gun but after I wired everything up and had most parts in place, I realised that there was nowhere to comfortably add the safety switch! Usually I would locate this in the handle but the 9V battery took up the space where I wanted to add the switch.</li>
-</ul><h2><span class="step-num">STEP 13</span>Step 13: Optional - Pump Handle Mod</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Optional - Pump Handle Mod image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Optional - Pump Handle Mod image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Optional - Pump Handle Mod image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Optional - Pump Handle Mod image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Optional - Pump Handle Mod image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Optional - Pump Handle Mod image 6" loading="lazy"></div><p>I have only recently done this mod to the pump handle as it started to become bent. The handle shafts are only plastic so it doesn't take much for them to become bent. The mod is pretty simple but works a treat.</p>
+</ul><h2><span class="step-num">STEP 13</span>Step 13: Optional - Pump Handle Mod</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Optional - Pump Handle Mod image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Optional - Pump Handle Mod image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Optional - Pump Handle Mod image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Optional - Pump Handle Mod image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Optional - Pump Handle Mod image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Optional - Pump Handle Mod image 6" loading="lazy"></div><p>I have only recently done this mod to the pump handle as it started to become bent.</p>
+<p>The handle shafts are only plastic so it doesn't take much for them to become bent.</p>
+<p>The mod is pretty simple but works a treat.</p>
 <p>Steps:</p>
 <ol>
 <li>You will first need to remove the pump handle from the pump. It's not very hard to do, depending on the type of pump you have. just pull really hard on the handle and move side to side. The pump I used has 2 pieces of plastic which hold the pump handle in place. These popped off with a little pressure</li>
@@ -273,5 +346,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You may have to enlarge the hole that the shaft goes into as you have now increased the size. I used a dremel to remove some of the material.</li>
 <li>Put the handle back into the pump and push the little plastic bits back into place.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

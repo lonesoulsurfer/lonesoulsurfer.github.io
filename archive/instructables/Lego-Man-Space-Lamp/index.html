@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Lego Man Space Lamp</span>
 </nav>
-<h1>Lego Man Space Lamp</h1><div class="source"><a href="https://www.instructables.com/Lego-Man-Space-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Messing about with some Lego recently, I found an original Lego spaceman mixed in amongst the rest of blocks. For those old enough to remember, the spaceman was quite simple, featuring the classic smiling face and the famous Space logo.</p>
-<p>He was too good to put back into the mix so I decided to work on a way to show him off. After a little thought I came up with the idea of encapsulating him in some resin like he was floating in space! I also thought about making some type of box with some LED’s incorporated and decided to make one out of Lego as well.</p>
+<h1>Lego Man Space Lamp</h1><div class="source"><a href="https://www.instructables.com/Lego-Man-Space-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Messing about with some Lego recently, I found an original Lego spaceman mixed in amongst the rest of blocks.</p>
+<p>For those old enough to remember, the spaceman was quite simple, featuring the classic smiling face and the famous Space logo.</p>
+<p>He was too good to put back into the mix so I decided to work on a way to show him off.</p>
+<p>After a little thought I came up with the idea of encapsulating him in some resin like he was floating in space!</p>
+<p>I also thought about making some type of box with some LED’s incorporated and decided to make one out of Lego as well.</p>
 <p>So after a couple of set-backs (see the mold section), I finally completed my Lego Man Space lamp.</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Bits and Pieces</p>
 <ol>
@@ -164,7 +202,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Height (quantity of blocks used) …</p>
 <p>Width (number of circles across) …</p>
 <p>Length (number of circles across) …</p>
-<p>Once you have made your box set aside and start on the Bike Light</p><h2><span class="step-num">STEP 3</span>Step 3: Hacking the Bike Light - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 6" loading="lazy"></div><p>If you aren't very electrical minded or are new at soldering etc – don’t worry, this is pretty straight forward. The Bike light circuit board is quite hardy and it’s not easy to break one. I’ll take you through each step and give you a few tips to make it as easy as possible.</p>
+<p>Once you have made your box set aside and start on the Bike Light</p><h2><span class="step-num">STEP 3</span>Step 3: Hacking the Bike Light - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Hacking the Bike Light - Part 1 image 6" loading="lazy"></div><p>If you aren't very electrical minded or are new at soldering etc – don’t worry, this is pretty straight forward.</p>
+<p>The Bike light circuit board is quite hardy and it’s not easy to break one.</p>
+<p>I’ll take you through each step and give you a few tips to make it as easy as possible.</p>
 <p>Steps:</p>
 <ol>
 <li>First take the cover off the light and remove the 2 screws holding the circuit board in place. The circuit board should just come away.</li>
@@ -173,14 +213,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>TIP: Check how the LED’s are aligned on the circuit board. Make a mark on the circuit board so you know which way the polarities go.</p>
 <ol>
 <li>Lastly, solder on some wires to each of the LED solder pads. Make the negative ones a different colour to the positive ones so you don’t get confused later</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Hacking the Bike Light - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Hacking the Bike Light - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Hacking the Bike Light - Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Hacking the Bike Light - Part 2 image 3" loading="lazy"></div><p>Next you will need to solder on the LED’s. It’s best to use certain colours when adding the LED’s as some don’t work to well with others due to the current needed to drive them. I went with pink (x2), red, blue and … If you used a yellow say, then you might blow the LED as it only needs low voltage to work.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Hacking the Bike Light - Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Hacking the Bike Light - Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Hacking the Bike Light - Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Hacking the Bike Light - Part 2 image 3" loading="lazy"></div><p>Next you will need to solder on the LED’s.</p>
+<p>It’s best to use certain colours when adding the LED’s as some don’t work to well with others due to the current needed to drive them.</p>
+<p>I went with pink (x2), red, blue and … If you used a yellow say, then you might blow the LED as it only needs low voltage to work.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder on the LED’s to the wires. Make sure the polarity is right on each one. If they aren’t it won’t be too big a deal, you can always de-solder and swap it around.</li>
 <li>solder the battery holder wires onto the solder pads on the circuit board</li>
 <li>Next (and this can be a tricky part), you will need to solder a couple of wires onto the switch section on the solder board. If you look closely at the solder pads on the switch section, you’ll see that there are actually 2 different sections, one inner and one outer section. Add a very small amount of solder to each section, making sure that the solder doesn’t touch the other. Carefully solder on the wires. If you do add too much solder, you can always heat it up and use your soldering iron to remove it.</li>
 <li>Lastly, solder on the momentary switch to the wires that you added to the switch solder pads</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Drilling the Holes for the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Drilling the Holes for the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Drilling the Holes for the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Drilling the Holes for the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Drilling the Holes for the LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Drilling the Holes for the LED's image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Drilling the Holes for the LED's image 6" loading="lazy"></div><p>Now its tome to add the LED’s to the Lego box. There are 5 LED’s in total that you can add to the box. I decided only to add 4 and put another into a clear brick. The reason being, it was a lot easier to add 4 to the flat Lego sections than 5!</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Drilling the Holes for the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Drilling the Holes for the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Drilling the Holes for the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Drilling the Holes for the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Drilling the Holes for the LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Drilling the Holes for the LED's image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Drilling the Holes for the LED's image 6" loading="lazy"></div><p>Now its tome to add the LED’s to the Lego box.</p>
+<p>There are 5 LED’s in total that you can add to the box.</p>
+<p>I decided only to add 4 and put another into a clear brick.</p>
+<p>The reason being, it was a lot easier to add 4 to the flat Lego sections than 5!</p>
 <p>Steps:</p>
 <ol>
 <li>Drill 4 holes into the flat Lego sections. Drill the holes from underneath as the little round hollow sections are the perfect size to fit an LED into.</li>
@@ -191,7 +236,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Carefully drill a hole into one of the 4 across blocks. The hole should be big enough for the momentary switch to fit through easily.</li>
 </ol>
 <p>2.</p>
-<p>Trim away some of the middle pillar inside the Lego block and push the momentary switch into place. My switch pretty much locked into place which is a good thing as you don’t want to have to use glue if you can help it. If it doesn’t, add a little hot glue to keep in place</p>
+<p>Trim away some of the middle pillar inside the Lego block and push the momentary switch into place.</p>
+<p>My switch pretty much locked into place which is a good thing as you don’t want to have to use glue if you can help it.</p>
+<p>If it doesn’t, add a little hot glue to keep in place</p>
 <p>3.</p>
 <p>The wires should have been already soldered on. Push down the little metal legs on the momentary switch as far as they will go.</p>
 <ol>
@@ -202,7 +249,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Get yourself a clear Lego block and drill a hole in the back of it.</li>
 <li>Push through the LED and hold into place with a little super glue</li>
 <li>Attach the Lego block to the Lego box.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Resin Lamp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Resin Lamp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Resin Lamp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Resin Lamp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Resin Lamp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Resin Lamp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Resin Lamp image 6" loading="lazy"></div><p>Your now ready to start making the resin lamp section. Resin can be tricky to use so if you haven’t used it before, make sure you read the manufactures instructions carefully and keep to their suggestions. I’ve used resin in a few projects now and it can be finicky to use. If too little or too much catalyst is used then it can cause the resin to overheat and discolour.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Resin Lamp</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Resin Lamp image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Resin Lamp image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Resin Lamp image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Resin Lamp image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Resin Lamp image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Resin Lamp image 6" loading="lazy"></div><p>Your now ready to start making the resin lamp section.</p>
+<p>Resin can be tricky to use so if you haven’t used it before, make sure you read the manufactures instructions carefully and keep to their suggestions.</p>
+<p>I’ve used resin in a few projects now and it can be finicky to use.</p>
+<p>If too little or too much catalyst is used then it can cause the resin to overheat and discolour.</p>
 <p>Steps:</p>
 <ol>
 <li>Find a suitable mold to use. I went with a tall, plastic bottle that had cooking oil in it. Give a good clean and cut off the top.</li>
@@ -210,22 +260,47 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Let set and once dry, add your Lego man. I added some super glue to one of his feet and carefully stuck him to the resin.</li>
 <li>Make some more resin up and pour over the Lego man and bring the resin to the top of the mold.</li>
 <li>Let set.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Sanding and Polishing</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Sanding and Polishing image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Sanding and Polishing image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Sanding and Polishing image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Sanding and Polishing image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Sanding and Polishing image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Sanding and Polishing image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Sanding and Polishing image 7" loading="lazy"></div><p>Once the resin has set, it’s time to remove it from the mold. This can sometimes be tricky depending on what material the mold is made out of. It took a bit of coaxing to get the hardened resin out of the mold but I managed it in the end.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Sanding and Polishing</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Sanding and Polishing image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Sanding and Polishing image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Sanding and Polishing image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Sanding and Polishing image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Sanding and Polishing image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Sanding and Polishing image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Sanding and Polishing image 7" loading="lazy"></div><p>Once the resin has set, it’s time to remove it from the mold.</p>
+<p>This can sometimes be tricky depending on what material the mold is made out of.</p>
+<p>It took a bit of coaxing to get the hardened resin out of the mold but I managed it in the end.</p>
 <p>Steps:</p>
 <ol>
 <li>If you find that the resin is stuck fast to the mold, you’ll need to cut it free. Carefully use a Stanley knife and cut away the mold.</li>
 <li>Once removed you should hopefully have a pretty good looking pillar of resin with a Lego spaceman inside.</li>
 </ol>
-<p>*Unfortunately this didn’t happen for me! The mold I used became distorted due to the heat of the resin and when I added the last layer of resin, some of it dripped down the insides of the mold and onto the sides of the harden resin. Also, the mold became slightly bent so the resin came out a little crookedly. The good news is you can fix all of these issue with a bit of sanding and polishing</p>
+<p>*Unfortunately this didn’t happen for me!</p>
+<p>The mold I used became distorted due to the heat of the resin and when I added the last layer of resin, some of it dripped down the insides of the mold and onto the sides of the harden resin.</p>
+<p>Also, the mold became slightly bent so the resin came out a little crookedly.</p>
+<p>The good news is you can fix all of these issue with a bit of sanding and polishing</p>
 <ol>
 <li>The best way to sand resin is to use an electric hand sander. I have done it manually before and couldn’t move my hand the next day. Put the resin in a vice and ensure that it is straight. Use the sander and start to remove the resin. You will need to constantly give the sandpaper a bit of a hit with something flexible like a ruler to remove any stuck resin.</li>
 <li>Keep on turning the resin until all 4 sides are even, and flat.</li>
 <li>Next use some low grit sandpaper like 800 grit and go over each side. Once done, finish off with some 1200 grit.</li>
 <li>Lastly use a polishing agent and start to polish. I used a headlight restorer kit to do the finial polishing and it worked brilliantly</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Finito</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Finito image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Finito image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Finito image 3" loading="lazy"></div><p>Well done – you now have your very own floating Lego spaceman lamp!</p>
-<p>I’m pretty happy on how this came out. I was a little worried that you would be able to see the join in the resin, but it’s pretty much invisible. I really love how the LED light reacts in the resin – it gives a real mellow, ambient light.</p>
-<p>I think next time I would try and use a different mold. It’s one of the hardest things I find when using resin – trying to get the right sized mold. You can buy mold kits but the mold rubber is quite expensive and I’m pretty tight so I’m always looking for the cheap option.</p>
+<p>I’m pretty happy on how this came out.</p>
+<p>I was a little worried that you would be able to see the join in the resin, but it’s pretty much invisible.</p>
+<p>I really love how the LED light reacts in the resin – it gives a real mellow, ambient light.</p>
+<p>I think next time I would try and use a different mold.</p>
+<p>It’s one of the hardest things I find when using resin – trying to get the right sized mold.</p>
+<p>You can buy mold kits but the mold rubber is quite expensive and I’m pretty tight so I’m always looking for the cheap option.</p>
 <p>The best material I have found is silicone. You can by silicone molds for candles, cakes and soaps but unfortunately there were none the size that I wanted.</p>
 <p>If you have any questions – please let me know</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

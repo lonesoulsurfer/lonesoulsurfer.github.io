@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,10 +164,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Instamatic Film Camera</h1><div class="source"><a href="https://www.instructables.com/Mod-Instamatic-Film-Into-a-Digital-Camera-and-Vide/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Turn an old 126 film cartridge from an Instamatic into a digital camera and video recorder.</p>
 <p>Anyone who was born in the 70’s (like me) will have photo albums full of old Instamatic and Polaroid photos.</p>
-<p>Instamatic cameras were known as point-and-shoot cameras.  They were inexpensive, easy to load, and simple to use.  Unfortunately it is very hard (but not impossible) to find film for these camera’s anymore.  The film used was known as 126 film.  It came in a cartridge which just slipped into the back of the camera, it was very simple to load and un-load.</p>
+<p>Instamatic cameras were known as point-and-shoot cameras.</p>
+<p>They were inexpensive, easy to load, and simple to use.</p>
+<p>Unfortunately it is very hard (but not impossible) to find film for these camera’s anymore.</p>
+<p>The film used was known as 126 film.</p>
+<p>It came in a cartridge which just slipped into the back of the camera, it was very simple to load and un-load.</p>
 <p>The film is so scare now that if you check eBay for a used cartridge you’ll find that it is more expensive that an actual instamatic camera!</p>
-<p>Initially when I started this project I wanted to use an instamatic camera and hack it with a digital camera.  Once I purchased one from eBay and discovered film inside of it, I instantly changed my mind and decided to go with the 126 film canister instead.</p>
-<p>This isn’t a hard project, although some bits are a little fiddly and there is a fair bit of modding to do to the film canister.  The great thing is the digital camera that I used is very small and quite hardy.  I had to move it around a lot and use it as a template when deciding where to mod the canister, and it still works perfectly.</p>
+<p>Initially when I started this project I wanted to use an instamatic camera and hack it with a digital camera.</p>
+<p>Once I purchased one from eBay and discovered film inside of it, I instantly changed my mind and decided to go with the 126 film canister instead.</p>
+<p>This isn’t a hard project, although some bits are a little fiddly and there is a fair bit of modding to do to the film canister.</p>
+<p>The great thing is the digital camera that I used is very small and quite hardy.</p>
+<p>I had to move it around a lot and use it as a template when deciding where to mod the canister, and it still works perfectly.</p>
 <p>So if you’re interested in making your own – read on.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>The great thing about this mod is it really only needs 3 things to build.</p>
 <p>Parts:</p>
 <ol>
@@ -183,5 +225,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once you have it to the right size and it fits against the back nicely, hot glue into place.</li>
 <li>Next hot glue the buttons onto the switches on the circuit board.  Be careful and don’t add too much glue or you’ll stick your buttons down!</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Finished</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finished image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finished image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finished image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finished image 4" loading="lazy"></div><p>That’s it.  Your modded-film-canister-digital-camera is ready to go out in the world and amaze</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

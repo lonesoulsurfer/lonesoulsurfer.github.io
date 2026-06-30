@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Vintage Flash Light Lamp</span>
 </nav>
-<h1>Vintage Flash Light Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Flash-Light-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I love hacking old, vintage flashlights, the more unusual the better. Recently I came across a couple of old flashlights in a op-shop and picked them up for a couple of bucks. As cool as they are, their not very practical, especially considering the insides are void of all necessary bits to make it work! Plus old school globes don't throw out much illumination.</p>
-<p>So instead of just having them as interesting pieces on a shelf, I decided to make them into lamps. The hack is pretty easy and only takes a minimal of skill. The great thing is yo can either have these as lamps that sit on a desk, or as floor lamps depending on how you want too use them.</p>
-<p>The flashlights run off 12v mains but I did consider using batteries. In the end though it was just easier to add a power cord and run the LED's off it. Plus, you'd have to change the batteries constantly if you were using the lamp everyday.</p>
+<h1>Vintage Flash Light Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Flash-Light-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I love hacking old, vintage flashlights, the more unusual the better.</p>
+<p>Recently I came across a couple of old flashlights in a op-shop and picked them up for a couple of bucks.</p>
+<p>As cool as they are, their not very practical, especially considering the insides are void of all necessary bits to make it work!</p>
+<p>Plus old school globes don't throw out much illumination.</p>
+<p>So instead of just having them as interesting pieces on a shelf, I decided to make them into lamps.</p>
+<p>The hack is pretty easy and only takes a minimal of skill.</p>
+<p>The great thing is yo can either have these as lamps that sit on a desk, or as floor lamps depending on how you want too use them.</p>
+<p>The flashlights run off 12v mains but I did consider using batteries.</p>
+<p>In the end though it was just easier to add a power cord and run the LED's off it.</p>
+<p>Plus, you'd have to change the batteries constantly if you were using the lamp everyday.</p>
 <p>You could however rig them up so they do use batteries which would make them extremely portable.</p>
 <p>There a short video bellow with the lamp in action.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Parts</p>
 <ol>
@@ -152,7 +194,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Pliers</li>
 <li>Driill</li>
 <li>Hot Glue</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Get Yourself a Vintage Torch</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Get Yourself a Vintage Torch image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Get Yourself a Vintage Torch image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Get Yourself a Vintage Torch image 3" loading="lazy"></div><p>This is a pretty obvious step but I wanted to add it in as the torch (flashlight) IS the most important part of this project. A quick search on eBay will bring up a gamut of cool torches. It's up to you on what you want to use, but my suggestion is to find something with some character and patina. There are also plenty of colourful and funky torches that would also work a treat - just make sure it stands out from the crowd.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Get Yourself a Vintage Torch</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Get Yourself a Vintage Torch image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Get Yourself a Vintage Torch image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Get Yourself a Vintage Torch image 3" loading="lazy"></div><p>This is a pretty obvious step but I wanted to add it in as the torch (flashlight) IS the most important part of this project.</p>
+<p>A quick search on eBay will bring up a gamut of cool torches.</p>
+<p>It's up to you on what you want to use, but my suggestion is to find something with some character and patina.</p>
+<p>There are also plenty of colourful and funky torches that would also work a treat - just make sure it stands out from the crowd.</p>
 <p>Check out the ones bellow I found on eBay - now all I need is more money!</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Torch to the TrIpod</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Torch to the TrIpod image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Torch to the TrIpod image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Torch to the TrIpod image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Torch to the TrIpod image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Torch to the TrIpod image 5" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First things first, find the middle on the bottom of the torch, mark and drill a hole. The hole needs to be just big enough to go onto the tripod camera mount bolt.</li>
@@ -183,5 +228,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Test the switch and make sure it works ok</li>
 </ol>
 <p>Done!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

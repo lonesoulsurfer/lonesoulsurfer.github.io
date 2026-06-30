@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,11 +162,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Up-Cycle a Vintage Flashlight</span>
 </nav>
-<h1>Up-Cycle a Vintage Flashlight</h1><div class="source"><a href="https://www.instructables.com/Up-Cycle-a-Vintage-Flashlight/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>To hack or not to hack - that is the question. There are so many useless (but beautiful) items out there that have no use anymore. It really is a shame to see them gathering dust on a shelf, or stuffed in a draw. Better me thinks to pull them apart, give them a new identity and revel in their je ne c'est quoi!</p>
-<p>So to that end I present to you my most recent hack; an up-cycled vintage flashlight! I found the 2 in this ible' on eBay and got them for a steal. They have a great, vintage look, oodles of character and patina, and most importantly, have plenty of room inside...</p>
+<h1>Up-Cycle a Vintage Flashlight</h1><div class="source"><a href="https://www.instructables.com/Up-Cycle-a-Vintage-Flashlight/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>To hack or not to hack - that is the question.</p>
+<p>There are so many useless (but beautiful) items out there that have no use anymore.</p>
+<p>It really is a shame to see them gathering dust on a shelf, or stuffed in a draw.</p>
+<p>Better me thinks to pull them apart, give them a new identity and revel in their je ne c'est quoi!</p>
+<p>So to that end I present to you my most recent hack; an up-cycled vintage flashlight!</p>
+<p>I found the 2 in this ible' on eBay and got them for a steal.</p>
+<p>They have a great, vintage look, oodles of character and patina, and most importantly, have plenty of room inside...</p>
 <p>So what did I do to make this an uber flashlight? I added a super bright cree LED, a 5v phone charger, and to top it up a solar panel to charge the 3 aa rechargeable batteries inside.</p>
 <p>Check out the clip below to see it in action.</p>
-<p>Note: after hacking the flashlight, I discovered that you can't charge iphones on it. This is because Apple are a bunch on money grabbing horders who don;t like to share their toys. Samsung on the other hand works perfectly.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather.</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather. image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather. image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather. image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather. image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather. image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things to Gather. image 6" loading="lazy"></div><p>Bits:</p>
+<p>Note: after hacking the flashlight, I discovered that you can't charge iphones on it.</p>
+<p>This is because Apple are a bunch on money grabbing horders who don;t like to share their toys.</p>
+<p>Samsung on the other hand works perfectly.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather.</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather. image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather. image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather. image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather. image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather. image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things to Gather. image 6" loading="lazy"></div><p>Bits:</p>
 <ol>
 <li>Vintage flashlight - eBay</li>
 <li>3 x AAA battery holder - eBay</li>
@@ -168,7 +210,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>With a dremel, carefully cut out the area marked. Take your time and keep on trying to push the USB end through. It needs to be a tight fit.</li>
 <li>To clean up the hole, use some small files so smooth out the area.</li>
 <li>Lastly push the USB in through the hole and attach the switch.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Start Wiring - Charger and Battery Holder</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 5" loading="lazy"></div><p>My first version that I made I wired the charger and battery holder first, then made the holes to attach it to the flashlight. In the second one, I made the holes first and this worked a shed load better.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Start Wiring - Charger and Battery Holder</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Start Wiring - Charger and Battery Holder image 5" loading="lazy"></div><p>My first version that I made I wired the charger and battery holder first, then made the holes to attach it to the flashlight.</p>
+<p>In the second one, I made the holes first and this worked a shed load better.</p>
 <p>I have also added a schematic which should help with understanding the wiring.</p>
 <p>Steps</p>
 <ol>
@@ -179,7 +222,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The negative wires will mostly be soldered onto one of the points on the switch. Solder the battery negative wire to one of the solder points on the switch.</li>
 <li>Lastly solder a wire from the other solder point on the switch to the negative solder pint on the strip board.</li>
 </ol>
-<p>You have now soldered the circuit for the charger!</p><h2><span class="step-num">STEP 5</span>Step 5: Start Wiring - Adding the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Start Wiring - Adding the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Start Wiring - Adding the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Start Wiring - Adding the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Start Wiring - Adding the LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Start Wiring - Adding the LED's image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Start Wiring - Adding the LED's image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Start Wiring - Adding the LED's image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Start Wiring - Adding the LED's image 8" loading="lazy"></div><p>The Cree LED I used was pulled from a head lamp. I used one of these as the initial one I used couldn't handle the 3.6V that I was pumping into it. It got so hot it melted the silver part of the flashlight! The head light LED as a rating of 4.5 V and works perfectly. Plus these as ridiculously cheap on eBay so why not just pull apart one.</p>
+<p>You have now soldered the circuit for the charger!</p><h2><span class="step-num">STEP 5</span>Step 5: Start Wiring - Adding the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Start Wiring - Adding the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Start Wiring - Adding the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Start Wiring - Adding the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Start Wiring - Adding the LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Start Wiring - Adding the LED's image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Start Wiring - Adding the LED's image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Start Wiring - Adding the LED's image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Start Wiring - Adding the LED's image 8" loading="lazy"></div><p>The Cree LED I used was pulled from a head lamp.</p>
+<p>I used one of these as the initial one I used couldn't handle the 3.6V that I was pumping into it.</p>
+<p>It got so hot it melted the silver part of the flashlight!</p>
+<p>The head light LED as a rating of 4.5 V and works perfectly.</p>
+<p>Plus these as ridiculously cheap on eBay so why not just pull apart one.</p>
 <p>Steps:</p>
 <ol>
 <li>Hot glue the LED into place on the flashlight.</li>
@@ -199,7 +246,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Thread the wires through the holes and solder the negative wire to the negative end of the solder point on the switch. The positive wire needs to be attached to the other end of the diode.</li>
 <li>Attach the solar panel to the back of the flashlight with some strong, double sided tape.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Test</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Test image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Test image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Test image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Test image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Test image 5" loading="lazy"></div><p>So now you have wired everything up - it's time to teat and make sure everything works. Plug in a phone and make sure the charger is working. When you hit the toggle switch, the red LED should come on. depending on the resister you used, will depend on how bright the led is.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Test</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Test image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Test image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Test image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Test image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Test image 5" loading="lazy"></div><p>So now you have wired everything up - it's time to teat and make sure everything works.</p>
+<p>Plug in a phone and make sure the charger is working.</p>
+<p>When you hit the toggle switch, the red LED should come on. depending on the resister you used, will depend on how bright the led is.</p>
 <p>Next give the actual flashlight a test. This should be so bright as to make you see white spots if you happen to shine it in your eyes. I've been blinding my kids with it every time they walk past me.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

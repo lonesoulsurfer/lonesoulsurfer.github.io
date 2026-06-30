@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>LED and Copper Lamp</h1><div class="source"><a href="https://www.instructables.com/LED-and-Copper-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Here’s my modern twist on a candelabrum. Whilst messing about with some small jars and copper piping, I got the idea of making an LED candle.</p>
 <p>The flickering LED’s used in the ible’ are quite common now, you can buy small tea lights with the LED’s for very cheap on eBay. You can also just buy the LED’s themselves on eBay which is what I did.</p>
-<p>The copper tubing is available in any hardware store. I have created a cheat sheet for you in the parts step so you can print this out and take it with you when you are buying the parts. As anybody who has worked with copper knows, it tends to tarnish very easily and quickly. So instead of polishing the candelabrum I decided to age the copper and give it some patina. I go through the process in step…I also didn’t clean up the solder joins too much as this added to the “wear”.</p>
-<p>You are going to need some soldering skills to pull this project off. I used a small blow torch on the copper (easy enough to do) and also a soldering iron for the electronics. You don’t have to be an expert and if you have never soldered copper before, then don’t worry too much as it’s quite easy.</p>
+<p>The copper tubing is available in any hardware store.</p>
+<p>I have created a cheat sheet for you in the parts step so you can print this out and take it with you when you are buying the parts.</p>
+<p>As anybody who has worked with copper knows, it tends to tarnish very easily and quickly.</p>
+<p>So instead of polishing the candelabrum I decided to age the copper and give it some patina.</p>
+<p>I go through the process in step…I also didn’t clean up the solder joins too much as this added to the “wear”.</p>
+<p>You are going to need some soldering skills to pull this project off.</p>
+<p>I used a small blow torch on the copper (easy enough to do) and also a soldering iron for the electronics.</p>
+<p>You don’t have to be an expert and if you have never soldered copper before, then don’t worry too much as it’s quite easy.</p>
 <p>Check out the video to see the candelabrum in action</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Copper Parts</p>
 <ol>
 <li>1 X 1/2" x 1.5m Copper Tube</li>
@@ -151,7 +192,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>4 X Flickering LED's (3mm) - eBay</li>
 <li>3 X AAA Battery Holders - eBay</li>
 <li>Toggle switch - eBay</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Switch Section</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Switch Section image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Switch Section image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Switch Section image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Switch Section image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Switch Section image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Switch Section image 6" loading="lazy"></div><p>The first thing to do is to make the switch section. For this I used a Copper Reducing Tee and soldered a piece of flat copper to the bottom hole of the tee. I was then able to drill a hole into the flat copper and add a toggle switch.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Switch Section</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Switch Section image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Switch Section image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Switch Section image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Switch Section image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Switch Section image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Switch Section image 6" loading="lazy"></div><p>The first thing to do is to make the switch section.</p>
+<p>For this I used a Copper Reducing Tee and soldered a piece of flat copper to the bottom hole of the tee.</p>
+<p>I was then able to drill a hole into the flat copper and add a toggle switch.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut a small piece of the copper sheet off. It needs to cover the bottom hole in the Tee.</li>
@@ -182,7 +225,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next pull everything apart and start to assemble again adding flux to the end of the couplings</li>
 <li>Just follow the images below to see how I assembled the top section.</li>
 <li>Heat-up the copper and add solder to all of the joins. Let cool and check that the solder has connected the copper parts.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Securing the Neck Into the Base</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Securing the Neck Into the Base image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Securing the Neck Into the Base image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Securing the Neck Into the Base image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Securing the Neck Into the Base image 4" loading="lazy"></div><p>The best way I found to secure the neck into place was to drill a hole into the back and use a die to create a thread and secure with a screw. You could also just slightly bend the coupling so it was more oval shape and this would also do the job.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Securing the Neck Into the Base</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Securing the Neck Into the Base image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Securing the Neck Into the Base image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Securing the Neck Into the Base image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Securing the Neck Into the Base image 4" loading="lazy"></div><p>The best way I found to secure the neck into place was to drill a hole into the back and use a die to create a thread and secure with a screw.</p>
+<p>You could also just slightly bend the coupling so it was more oval shape and this would also do the job.</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a hole into the neck making sure that it also goes through the coupling.</li>
@@ -194,7 +238,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Grab a dremel (or a file if you don’t have a dremel) , attached a sanding drum wheel and start to sand the inside of the 20mm coupling</li>
 <li>Keep on checking to see whether the top of the jar fits into the coupling. If not, continue to remove the copper from the inside until the jar fits tightly.</li>
 <li>You may want to have your jar top all the way into the coupling. I decided to only have about half as you can see in the images</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Connecting the Battery Holders</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Connecting the Battery Holders image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Connecting the Battery Holders image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Connecting the Battery Holders image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Connecting the Battery Holders image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Connecting the Battery Holders image 5" loading="lazy"></div><p>I was unable to find a battery holder that could hold the batteries end to end. I had to work out a way to connect them and initially did this with small screws. This didn’t work very well at all so I came with the below design.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Connecting the Battery Holders</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Connecting the Battery Holders image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Connecting the Battery Holders image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Connecting the Battery Holders image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Connecting the Battery Holders image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Connecting the Battery Holders image 5" loading="lazy"></div><p>I was unable to find a battery holder that could hold the batteries end to end.</p>
+<p>I had to work out a way to connect them and initially did this with small screws.</p>
+<p>This didn’t work very well at all so I came with the below design.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut off the red wire on one of the battery holders</li>
@@ -204,7 +250,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the black wire to the positive mount.</li>
 <li>Do the same for the rest of the battery holders</li>
 </ol>
-<p>NOTE: I only used 3 AAA battery holders in the end (total of 4.5v) as 6 volts was too much for the little LED's</p><h2><span class="step-num">STEP 9</span>Step 9: Threading Wire Into the Lamp and Adding the Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Threading Wire Into the Lamp and Adding the Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Threading Wire Into the Lamp and Adding the Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Threading Wire Into the Lamp and Adding the Switch image 3" loading="lazy"></div><p>So now comes the wiring! I must admit, it took me awhile to work out how the hell I was going to thread the wires through the top and neck of the lamp. I tried everything from magnets to trying to force it through but nothing worked until I made a hook out of some wire. I also used quite thin wire as wire can take up a fair bit of room in any project. Plus I had to get the battery pack inside the neck and I didn’t want to block the hole with wire</p>
+<p>NOTE: I only used 3 AAA battery holders in the end (total of 4.5v) as 6 volts was too much for the little LED's</p><h2><span class="step-num">STEP 9</span>Step 9: Threading Wire Into the Lamp and Adding the Switch</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Threading Wire Into the Lamp and Adding the Switch image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Threading Wire Into the Lamp and Adding the Switch image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Threading Wire Into the Lamp and Adding the Switch image 3" loading="lazy"></div><p>So now comes the wiring!</p>
+<p>I must admit, it took me awhile to work out how the hell I was going to thread the wires through the top and neck of the lamp.</p>
+<p>I tried everything from magnets to trying to force it through but nothing worked until I made a hook out of some wire.</p>
+<p>I also used quite thin wire as wire can take up a fair bit of room in any project.</p>
+<p>Plus I had to get the battery pack inside the neck and I didn’t want to block the hole with wire</p>
 <p>Steps:</p>
 <ol>
 <li>You need to first thread the wire through the holes in the top of the lamp. Bend the wire slightly and thread it through one of the holes in the top. Also, make sure you use a good length of wire.</li>
@@ -215,20 +265,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Screw the switch into place and add some hot glue to the inside so the wires don’t come away.</li>
 <li>Carefully push the battery pack into the neck of the lamp. Make sure that the wires don’t get in the way.</li>
 <li>Lastly, you need to thread 2 lengths of wire through the tops of the lamps. These will be used to connect the positives and negatives up on each of the LED's. Again, just use a pair of needle nose pliers and thread them through the holes on top of the lamp.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: LED's - Using Fuses for Diffusion</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 4" loading="lazy"></div><p>I decided to put the LED’s inside a couple of fuses. That way I could defuse the light from the LED’s by frosting fuse glass. It does make things a little more difficult but I think it give a great finish. If you want though, you could just put the LED’s into the jars and skip the next couple steps.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: LED's - Using Fuses for Diffusion</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: LED's - Using Fuses for Diffusion image 4" loading="lazy"></div><p>I decided to put the LED’s inside a couple of fuses.</p>
+<p>That way I could defuse the light from the LED’s by frosting fuse glass.</p>
+<p>It does make things a little more difficult but I think it give a great finish.</p>
+<p>If you want though, you could just put the LED’s into the jars and skip the next couple steps.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to remove the caps from the end of the fuses. To do this heat-up the cap with a lighter or small blow torch and use a pair of pliers to pull of the cap. Do this for both caps</li>
 <li>Next thing to do is to frost the glass. I did this by sanding the glass. Start with a grit of 280 and move down to a grit of 600 to remove any large scratches.</li>
 <li>Keep on sanding until the glass is completely frosted.</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: LED's - Soldering the LED's Together</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: LED's - Soldering the LED's Together image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: LED's - Soldering the LED's Together image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: LED's - Soldering the LED's Together image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: LED's - Soldering the LED's Together image 4" loading="lazy"></div><p>I went with adding 2 LED’s to the inside of each fuse. You could just add one to each fuse if you wanted to but I thought 2 would give a little more light. There isn’t much room inside the fuse so you need to be very careful on how you solder the LED’s together. 2 legs will be soldered together and the other 2 will be soldered to the caps on the fuse. Adding 2 can be quite hard and I broke a few fuses before I managed to get this to work.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: LED's - Soldering the LED's Together</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: LED's - Soldering the LED's Together image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: LED's - Soldering the LED's Together image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: LED's - Soldering the LED's Together image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: LED's - Soldering the LED's Together image 4" loading="lazy"></div><p>I went with adding 2 LED’s to the inside of each fuse.</p>
+<p>You could just add one to each fuse if you wanted to but I thought 2 would give a little more light.</p>
+<p>There isn’t much room inside the fuse so you need to be very careful on how you solder the LED’s together. 2 legs will be soldered together and the other 2 will be soldered to the caps on the fuse.</p>
+<p>Adding 2 can be quite hard and I broke a few fuses before I managed to get this to work.</p>
 <p>Steps:</p>
 <ol>
 <li>When soldering the LED legs together, you need to solder either the 2 positive or 2 negative legs together. You can’t solder a positive and negative together as an LED has polarity and only 1 will turn on. So the first step is to bend the negative leg on one of the LED’s 180 degrees so it is facing straight up</li>
 <li>Next you need to bend the positive leg on another LED so it is bent straight up like the other negative leg.</li>
 <li>You now need to solder the bent negative leg onto another LED negative leg. Do this carefully and only add the minimal amount of solder needed</li>
 <li>Do the same for the positive leg. This leg may cause you trouble when you go to add the LED’s into the fuse. I bent the leg around the back of the LED (see images) and this seemed to help</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: LED's - Adding the LED's to the Inside of the Fuse</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 7" loading="lazy"></div><p>Here comes the fun bit! You now need to push the LED’s into the fuse. Now with some luck you may be able to push the LED’s into the fuse and they will fit fine. However, if they don’t you’ll need to modify the LED legs slightly to enable them to fit inside the fuse. Also, I chipped the bottom of the glass fuse on one of them but it didn’t matter as the cap hid the chip.</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: LED's - Adding the LED's to the Inside of the Fuse</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: LED's - Adding the LED's to the Inside of the Fuse image 7" loading="lazy"></div><p>Here comes the fun bit!</p>
+<p>You now need to push the LED’s into the fuse.</p>
+<p>Now with some luck you may be able to push the LED’s into the fuse and they will fit fine.</p>
+<p>However, if they don’t you’ll need to modify the LED legs slightly to enable them to fit inside the fuse.</p>
+<p>Also, I chipped the bottom of the glass fuse on one of them but it didn’t matter as the cap hid the chip.</p>
 <p>Steps:</p>
 <ol>
 <li>Try pushing the LED’s into the glass fuse. If it gets stuck at a point and won’t go any further, you will need to pull them out and see if you can modify the LED’s so they will fit.</li>
@@ -239,7 +299,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place a cap onto the end and heat-up with a soldering iron. Do the same for the other end</li>
 <li>Test to make sure that the LED’s light up.</li>
 <li>Do the same for the other fuse</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: LED's - Making Holders for the Fuses</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 5" loading="lazy"></div><p>Now that you have your diffuses, you now need to have the ability to attach a couple of arms to the tops of the fuses. These will be connected to the LED wires from inside the fuse and will allow power to travel into the LED’s.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: LED's - Making Holders for the Fuses</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: LED's - Making Holders for the Fuses image 5" loading="lazy"></div><p>Now that you have your diffuses, you now need to have the ability to attach a couple of arms to the tops of the fuses.</p>
+<p>These will be connected to the LED wires from inside the fuse and will allow power to travel into the LED’s.</p>
 <p>Steps:</p>
 <ol>
 <li>To make te arms I used some very small copper tubing. You could just use copper or brass wire however. It needs to be strong enough to hold up the fuse so make sure it isn’t too thin. If you use copper tubing, the fiurst thing you need to do is to squash one end with a pair of pliers. This will make it easier to solder onto the fuse holders</li>
@@ -255,7 +316,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Do the same to the other fuse.</li>
 <li>Next, to secure the LED inside the glass tube, you need to use the cork that came with the glass vials. Carefully drill a couple of small holes into the top of the cork and thread the brass legs through the holes.</li>
 <li>Test by attaching 3v’s to either end of the brass tubes. The LED’s should come on and flash. Take note of the polarities of each brass tube as this will become important when wiring them up to the lamp</li>
-</ol><h2><span class="step-num">STEP 15</span>Step 15: LED's - Wiring</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: LED's - Wiring image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: LED's - Wiring image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: LED's - Wiring image 3" loading="lazy"></div><p>Wiring is up next. This wasn’t as tricky as I thought it would be. Out of the holes from the top of the lamp, there will be 3 wires, 2 of these will be wires that you threaded through the 2 holes in the top of the lamp, and one will be either positive or negative. Make sure you know exactly which one is which as this will become important later. I just used an LED to test the polarities of the wire.</p>
+</ol><h2><span class="step-num">STEP 15</span>Step 15: LED's - Wiring</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: LED's - Wiring image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: LED's - Wiring image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: LED's - Wiring image 3" loading="lazy"></div><p>Wiring is up next.</p>
+<p>This wasn’t as tricky as I thought it would be.</p>
+<p>Out of the holes from the top of the lamp, there will be 3 wires, 2 of these will be wires that you threaded through the 2 holes in the top of the lamp, and one will be either positive or negative.</p>
+<p>Make sure you know exactly which one is which as this will become important later.</p>
+<p>I just used an LED to test the polarities of the wire.</p>
 <p>Steps:</p>
 <ol>
 <li>First make sure that you know the polarities on the brass arms which are connected to the fuse.</li>
@@ -269,7 +334,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Push the cork into the bottom of the glass jar. Make sure that the fuse is straight inside the jar.</li>
 <li>Push the bottom of the jar into the brass coupling. If necessary, add some glue. I was able to jam the glass jar into the coupling so it was secure. This is the best option as you can get to the fuse if necessary and fix anything inside the glass jar.</li>
 <li>Flick on the switch and watch the LED's come to life.</li>
-</ol><h2><span class="step-num">STEP 17</span>Step 17: Done!</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Done! image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Done! image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Done! image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Done! image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: Done! image 5" loading="lazy"></div><p>So that's it. I decided not to polish the copper as I liked the patina look of the copper. Plus some of my soldering wasn't great so keeping it rustic helps to blend in any soldering that has bleed. I'm really happy with the finished result. Even though it was a challenge in parts i.e adding the LEDs to the fuses was an interesting challenge.</p>
+</ol><h2><span class="step-num">STEP 17</span>Step 17: Done!</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: Done! image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: Done! image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: Done! image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: Done! image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: Done! image 5" loading="lazy"></div><p>So that's it.</p>
+<p>I decided not to polish the copper as I liked the patina look of the copper.</p>
+<p>Plus some of my soldering wasn't great so keeping it rustic helps to blend in any soldering that has bleed.</p>
+<p>I'm really happy with the finished result.</p>
+<p>Even though it was a challenge in parts i.e adding the LEDs to the fuses was an interesting challenge.</p>
 <p>If you do make one or use this 'ible as inspiration, then I'd love to see what you come up with.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,10 +163,26 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Nerf Hack - Battery Powered Water Pistol V2</span>
 </nav>
 <h1>Nerf Hack - Battery Powered Water Pistol V2</h1><div class="source"><a href="https://www.instructables.com/Nerf-Hack-Battery-Powered-Water-Pistol-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Greetings.</p>
-<p>As the description indicates, this is my second try at making an automatic water pistol from a Nerf gun. Although I was happy with my first try, I was starting to get seriously frustrated with how many 9v batteries it was going through. The pump I used (same in in this ‘ible) is for a windscreen washer and runs on 12v’s. Running it on 9v’s worked ok but as soon as the voltage reduced, it would slow down and start to sputter.</p>
-<p>This time I went with 2 Li-ion batteries. Each battery is 3.7v, making 7.4v for 2 of them together. Even though the voltage doesn’t come to 12v, the amperage more than makes up for it. The biggest benefit I have found though is the pump is tonnes more powerful and the batteries last a hell lot longer.</p>
-<p>Initially I installed a step-up voltage regulator to bring the power up to 12v. Throughout the ‘ible you’ll see images of the regulator. The reason why I wanted to add one was 2 fold; first, I thought bringing the voltage to 12v would mean more power for the pump. Second, the charging module that I brought would only charge 1 battery at a time or 2 in series. I wired-up the batteries so that they were in series and would charge as 3.7v. I ran into problems though with the voltage output to the pump. When I measured the voltage from the regulator it read 12v but when I pulled the trigger and measured the voltage to the motor it only read 3.5v. For some reason the pump was only drawing power from 1 battery. It was probably the way that I re-wired the battery holder to turn it into a series one. This idea I believe would work but I’ll think I’ll leave it for version 3…</p>
-<p>The way that I got around charging 2 batteries was I added 2 female sockets, one for each battery. It means that you have to charge twice (not ideal) but as charging is infrequent, it doesn’t really matter.</p>
+<p>As the description indicates, this is my second try at making an automatic water pistol from a Nerf gun.</p>
+<p>Although I was happy with my first try, I was starting to get seriously frustrated with how many 9v batteries it was going through.</p>
+<p>The pump I used (same in in this ‘ible) is for a windscreen washer and runs on 12v’s.</p>
+<p>Running it on 9v’s worked ok but as soon as the voltage reduced, it would slow down and start to sputter.</p>
+<p>This time I went with 2 Li-ion batteries.</p>
+<p>Each battery is 3.7v, making 7.4v for 2 of them together.</p>
+<p>Even though the voltage doesn’t come to 12v, the amperage more than makes up for it.</p>
+<p>The biggest benefit I have found though is the pump is tonnes more powerful and the batteries last a hell lot longer.</p>
+<p>Initially I installed a step-up voltage regulator to bring the power up to 12v.</p>
+<p>Throughout the ‘ible you’ll see images of the regulator.</p>
+<p>The reason why I wanted to add one was 2 fold; first, I thought bringing the voltage to 12v would mean more power for the pump.</p>
+<p>Second, the charging module that I brought would only charge 1 battery at a time or 2 in series.</p>
+<p>I wired-up the batteries so that they were in series and would charge as 3.7v.</p>
+<p>I ran into problems though with the voltage output to the pump.</p>
+<p>When I measured the voltage from the regulator it read 12v but when I pulled the trigger and measured the voltage to the motor it only read 3.5v.</p>
+<p>For some reason the pump was only drawing power from 1 battery.</p>
+<p>It was probably the way that I re-wired the battery holder to turn it into a series one.</p>
+<p>This idea I believe would work but I’ll think I’ll leave it for version 3…</p>
+<p>The way that I got around charging 2 batteries was I added 2 female sockets, one for each battery.</p>
+<p>It means that you have to charge twice (not ideal) but as charging is infrequent, it doesn’t really matter.</p>
 <p>Enough of me rambling – let’s get on with the Instructable.</p><h2><span class="step-num">STEP 1</span>Step 1: Watch the Video...</h2><h2><span class="step-num">STEP 2</span>Step 2: ​Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: ​Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: ​Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: ​Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: ​Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: ​Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: ​Things to Gather image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: ​Things to Gather image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: ​Things to Gather image 8" loading="lazy"></div><p>Bits</p>
 <ol>
 <li>Nerf Gun. I used a “strong arm’ Nerf gun but just use whatever you have lying around or buy a cheap one.</li>
@@ -160,7 +211,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Un-screw all of the screws holding the gun together. Nerf guns are notorious for lots of screws and usually 1 hidden one somewhere</li>
 <li>Once you have your gun apart, start to assess how the extra parts will fit into your gun. You will probably discard most of the inner parts as you will need room for the batteries etc. Remember though to keep the trigger complete as you can use this for activate the water pistol.</li>
 <li>Once you have worked ot where everything is to go, you can start to add the lever switch</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Switch image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Switch image 4" loading="lazy"></div><p>The nerf gun that I used pretty much had a spot for me to add the level switch and I didn’t have to do much moding. The important thing when adding the switch is to make sure that the trigger moves freely and activates the switch when pulled back. Where you locate the lever switch will depend on what gun you are using</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Switch</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding the Switch image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding the Switch image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding the Switch image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding the Switch image 4" loading="lazy"></div><p>The nerf gun that I used pretty much had a spot for me to add the level switch and I didn’t have to do much moding.</p>
+<p>The important thing when adding the switch is to make sure that the trigger moves freely and activates the switch when pulled back.</p>
+<p>Where you locate the lever switch will depend on what gun you are using</p>
 <p>Steps:</p>
 <ol>
 <li>Find a good spot to attach the switch. Make sure that when the trigger is pulled back, the lever on the witch is also pushed.</li>
@@ -215,8 +268,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next solder the positive to the centre point on the jack and the negative to the outside of the jack.</li>
 <li>Pull the plastic cover over the jack - done</li>
 </ol>
-<p>Test but plugging the charger module into a 5v adapter and into one of the female sockets. The light should come on the charging module. After awhile it will start to flash. As it chargers the battery the light will flash slower until it is completely off. This means the battery is fully charged.</p><h2><span class="step-num">STEP 13</span>Step 13: Testing</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Testing image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Testing image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Testing image 3" loading="lazy"></div><p>So now you have built your water pistol, it''s time to give it a test run. I found that the pump didn't work the first time that I used it and I had to loosen the screws holding the gears in place a little. Once I did this the pump worked fine.</p>
+<p>Test but plugging the charger module into a 5v adapter and into one of the female sockets.</p>
+<p>The light should come on the charging module.</p>
+<p>After awhile it will start to flash.</p>
+<p>As it chargers the battery the light will flash slower until it is completely off.</p>
+<p>This means the battery is fully charged.</p><h2><span class="step-num">STEP 13</span>Step 13: Testing</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Testing image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Testing image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Testing image 3" loading="lazy"></div><p>So now you have built your water pistol, it''s time to give it a test run.</p>
+<p>I found that the pump didn't work the first time that I used it and I had to loosen the screws holding the gears in place a little.</p>
+<p>Once I did this the pump worked fine.</p>
 <p>The Iced tea bottles that I used come in 2 sizes which is handy if you have a toddler who wants to have a shot.</p>
 <p>I would still like to try and use the step-up regulator and I'll try work out what went wrong last time aand fix it. It would make charging the batteries a lot quicker.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

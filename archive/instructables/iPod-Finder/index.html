@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,7 +163,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">IPod Finder</span>
 </nav>
 <h1>IPod Finder</h1><div class="source"><a href="https://www.instructables.com/iPod-Finder/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Find your lost iPod by whistling for it!</p>
-<p>If you have kids and if they have iPods then you’ll understand why I made this.  The amount of time that I had to spend searching for a lost iPod was doing my head in.   One day whilst searching for it yet again, I started whistling for it, calling for it like I would a dog (clearly becoming delusional).  Then it hit me – why not make it answer back!</p>
+<p>If you have kids and if they have iPods then you’ll understand why I made this.</p>
+<p>The amount of time that I had to spend searching for a lost iPod was doing my head in.</p>
+<p>One day whilst searching for it yet again, I started whistling for it, calling for it like I would a dog (clearly becoming delusional).</p>
+<p>Then it hit me – why not make it answer back!</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>The parts list is really simple:</p>
 <p>Parts:</p>
 <ol>
@@ -155,7 +193,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next you need to mark out where the speaker will sit in the case.</li>
 <li>Use a dremmel to cut out the area needed for the speaker.  Make sure you don’t go right to the edge; you want the rim of the speaker to sit against the case.</li>
 <li>Put the circuit board and speaker into the case and test.  If everything sits flush, then you are ready to put the case back onto the iPod.  If it isn’t dremmel out the areas which are causing it not to sit flush.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Finished</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Finished image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Finished image 2" loading="lazy"></div><p>So now you should have the circuit board and speaker sitting pretty flush inside the case.  The hole in the back of the case will have the batteries and LED poking out a bit, but I gave the iPod to my son and he said it didn’t even notice it when he held the iPod.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Finished</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Finished image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Finished image 2" loading="lazy"></div><p>So now you should have the circuit board and speaker sitting pretty flush inside the case.</p>
+<p>The hole in the back of the case will have the batteries and LED poking out a bit, but I gave the iPod to my son and he said it didn’t even notice it when he held the iPod.</p>
 <p>This mod could easily be used on an iPhone, as long as the case was thick enough to take the circuit board and speaker.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

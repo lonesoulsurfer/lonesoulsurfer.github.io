@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,10 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">555 Timer Metronome - Audio & Visual</span>
 </nav>
-<h1>555 Timer Metronome - Audio & Visual</h1><div class="source"><a href="https://www.instructables.com/555-Timer-Metronome-Audio-Visual/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>My son has recently started to play the ukulele and I thought a metronome would help with his timing. As a maker, I figured I could whip one up myself pretty easily with a 555 timer (what can’t you make with one…) After a little searching on the web I found a nice circuit which included a couple of timing LED’s for a visual reference which I thought was a nice touch.</p>
-<p>The tick, ticking of the metronome isn’t very loud so I added a output jack to you an also listen to it through a set of headphones as well. The speed of the metronome is controlled by a potentiometer and has a good range of speeds.</p>
+<h1>555 Timer Metronome - Audio & Visual</h1><div class="source"><a href="https://www.instructables.com/555-Timer-Metronome-Audio-Visual/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>My son has recently started to play the ukulele and I thought a metronome would help with his timing.</p>
+<p>As a maker, I figured I could whip one up myself pretty easily with a 555 timer (what can’t you make with one…) After a little searching on the web I found a nice circuit which included a couple of timing LED’s for a visual reference which I thought was a nice touch.</p>
+<p>The tick, ticking of the metronome isn’t very loud so I added a output jack to you an also listen to it through a set of headphones as well.</p>
+<p>The speed of the metronome is controlled by a potentiometer and has a good range of speeds.</p>
 <p>Lastly, I used an old tobacco tin (I always have a bunch of these around to stick projects in) as the case which I think worked out well.</p>
-<p>This is a pretty easy 555 project so if you have some basic experience putting circuits together then it should be a cinch. If you want to learn about circuits, then I did an ‘ible on making your first circuit which can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts:</p>
+<p>This is a pretty easy 555 project so if you have some basic experience putting circuits together then it should be a cinch.</p>
+<p>If you want to learn about circuits, then I did an ‘ible on making your first circuit which can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>555 Timer – eBay</li>
 <li>2 X 22uf Capacitors – eBay (you can also use 10uf if you want to)</li>
@@ -155,8 +193,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Super glue</li>
 <li>Wire cutters</li>
 <li>Double sided tape</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit - Bread-boarding</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Circuit - Bread-boarding image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Circuit - Bread-boarding image 2" loading="lazy"></div><p>Just a heads-up, I did make a couple of mistakes putting this circuit together as I had to do it from memory. they were easy fixes (I usually make at least one mistake when putting a circuit together) so just beware and use the circuit diagram as a guide. I will highlight where I made the mistake so you know where it is in the images.</p>
-<p>The first thing to do in any electronic project is to breadboard it. This will help you understand the circuit and will show whether it’s working as it should. The other good thing about bread-boarding is you can make changes to the circuit and customise it.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Circuit - Bread-boarding</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Circuit - Bread-boarding image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Circuit - Bread-boarding image 2" loading="lazy"></div><p>Just a heads-up, I did make a couple of mistakes putting this circuit together as I had to do it from memory. they were easy fixes (I usually make at least one mistake when putting a circuit together) so just beware and use the circuit diagram as a guide.</p>
+<p>I will highlight where I made the mistake so you know where it is in the images.</p>
+<p>The first thing to do in any electronic project is to breadboard it.</p>
+<p>This will help you understand the circuit and will show whether it’s working as it should.</p>
+<p>The other good thing about bread-boarding is you can make changes to the circuit and customise it.</p>
 <p>This isn't a complex circuit but it's still always good practice to breadboard prior to soldering.</p><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit - Part 1 image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit - Part 1 image 6" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First, I like to add an IC holder to the prototype board. This way I can easily change the IC if it’s faulty or I burn it out</li>
@@ -168,7 +209,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>So here is where I made my mistake. It was with one of the resistors for the LED’s. I was using the breadboard circuit as a reference and messed-up how the LED’s were to be connected to pin 3. It meant that I added a resistor in the wrong spot. I didn’t work this out until I have done all of the wiring and had to move it after everything had been done. Pretty annoying but it worked out ok</li>
 <li>Once you have all of the parts in place you then have to add wires so you can connect the circuit to all the other parts. I use computer ribbon for this as it’s thin, cheap (I get it for free at my local e-waste) and easy to use</li>
 <li>The last thing to do is to connect the battery holder to the circuit. The positive wire on the holder will be connected to the switch</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding a Speaker</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding a Speaker image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding a Speaker image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding a Speaker image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding a Speaker image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding a Speaker image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding a Speaker image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding a Speaker image 7" loading="lazy"></div><p>I had a small speaker cover on hand so I decided to use this and mount it onto the top of the tobacco lid. If you don’t have one of these you can just drill a few holes directly into the lid and add the speaker to the bottom of it. I’ve done this plenty of times and it works well.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding a Speaker</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding a Speaker image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding a Speaker image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding a Speaker image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding a Speaker image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding a Speaker image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding a Speaker image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Adding a Speaker image 7" loading="lazy"></div><p>I had a small speaker cover on hand so I decided to use this and mount it onto the top of the tobacco lid.</p>
+<p>If you don’t have one of these you can just drill a few holes directly into the lid and add the speaker to the bottom of it.</p>
+<p>I’ve done this plenty of times and it works well.</p>
 <p>Steps:</p>
 <ol>
 <li>First, measure where you need to drill any holes and add these to the lid. If you are drilling holes into tin you need to be careful as the tin is thin and can be damaged easily. To help prevent this, Place the lid top down on a piece of wood and drill through the bottom of the lid.</li>
@@ -189,7 +232,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill a couple of holes to fit them into the case</li>
 <li>Use some hot glue or super glue to secure them</li>
 <li>Don’t trim the legs yet as the different lengths will help you remember which is positive and which is ground</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Soldering on All Those Wires.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Soldering on All Those Wires. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Soldering on All Those Wires. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Soldering on All Those Wires. image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Soldering on All Those Wires. image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Soldering on All Those Wires. image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Soldering on All Those Wires. image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Soldering on All Those Wires. image 7" loading="lazy"></div><p>It’s now time to solder that lot of spaghetti to the auxiliary parts and LED’s. This is the final step where you get to see whether the circuit will work first go or if you have to go over it and check to see if there are any short circuits or parts in the wrong place. It’s really hard to take images of this step so I really just have a few finished ones to show you want it looks like</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Soldering on All Those Wires.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Soldering on All Those Wires. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Soldering on All Those Wires. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Soldering on All Those Wires. image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Soldering on All Those Wires. image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Soldering on All Those Wires. image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Soldering on All Those Wires. image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Soldering on All Those Wires. image 7" loading="lazy"></div><p>It’s now time to solder that lot of spaghetti to the auxiliary parts and LED’s.</p>
+<p>This is the final step where you get to see whether the circuit will work first go or if you have to go over it and check to see if there are any short circuits or parts in the wrong place.</p>
+<p>It’s really hard to take images of this step so I really just have a few finished ones to show you want it looks like</p>
 <p>Steps:</p>
 <ol>
 <li>First, solder the switch wires. I usually solder the positive to the switch so connect the positive from the battery and the wire connected to positive from the circuit to the switch</li>
@@ -200,5 +245,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>If everything is working as it should – congrats, you have pretty much finished. The last thing to do is to test to make sure the audio output works. Plug in some headphones and if you can hear the tick tock of the metronome then you’re done</li>
 <li>You can even add an external speaker if you wanted to which would help increase the volume</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

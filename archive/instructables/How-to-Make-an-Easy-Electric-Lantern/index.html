@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,7 +162,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">How to Make an Easy Electric Lantern</span>
 </nav>
-<h1>How to Make an Easy Electric Lantern</h1><div class="source"><a href="https://www.instructables.com/How-to-Make-an-Easy-Electric-Lantern/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>My wife came home the other day with an old paraffin lantern that she had found at the local Op Shop.  Now this thing hadn't worked in many moons and she wanted me to "get the thing started" so instead of trying to fix something that was clearly never going to burn a wick again, I decided to "electrify" the old lantern and bring it into the 21st century.</p>
+<h1>How to Make an Easy Electric Lantern</h1><div class="source"><a href="https://www.instructables.com/How-to-Make-an-Easy-Electric-Lantern/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>My wife came home the other day with an old paraffin lantern that she had found at the local Op Shop.</p>
+<p>Now this thing hadn't worked in many moons and she wanted me to "get the thing started" so instead of trying to fix something that was clearly never going to burn a wick again, I decided to "electrify" the old lantern and bring it into the 21st century.</p>
 <p>Pretty simple instructable really but the end result looks great and now I never have to fill it up with paraffin to keep it going!</p>
 <p>Enjoy.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"></div><p>1)   Paraffin Lantern</p>
 <p>this can be any old lamp as long as it is big enough to hold a globe.</p>
@@ -142,22 +178,28 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>4)   Stanley knife</p>
 <p>5) Hot glue gun</p><h2><span class="step-num">STEP 2</span>Step 2: Pulling Apart Your Electric Lamp</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Pulling Apart Your Electric Lamp image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Pulling Apart Your Electric Lamp image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Pulling Apart Your Electric Lamp image 3" loading="lazy"></div><p>Electric lamps are pretty easy to pull apart - just unscrew the light socket from the lamps body and the power cord and light socket should just come out as one peice.</p>
 <p>Or - you can always just smash it out!</p>
-<p>The first lamp that I pulled apart had a really large light socket which didn't fit into the parrafin lamp.  I was lucky enough to have another old one sitting around so I used the light socket from this one and the power cord from the other.</p><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Paraffin Lantern</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 4" loading="lazy"></div><p>These lantern are usually only made from tin (the one I have is anyway) so they are easy to manipulate and pull apart.</p>
+<p>The first lamp that I pulled apart had a really large light socket which didn't fit into the parrafin lamp.</p>
+<p>I was lucky enough to have another old one sitting around so I used the light socket from this one and the power cord from the other.</p><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Paraffin Lantern</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the Paraffin Lantern image 4" loading="lazy"></div><p>These lantern are usually only made from tin (the one I have is anyway) so they are easy to manipulate and pull apart.</p>
 <p>1)   Take out the glass and remove the cage that the glass sits in from the main body of the lantern.  This should come off easily with some pliers.</p>
 <p>2)   Next get your dremmel and remove the centre peice that holds the wick in place.</p>
 <p>3)   Once this is removed you can jimmy open the surround which is joined to the main body by a couple of tags.  Make sure you don't break these as you need to put it back later on.</p>
 <p>4)   inside the main body of the lantern you will see the main wick holder - remove this.</p><h2><span class="step-num">STEP 4</span>Step 4: Making Room for Your Light Socket</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making Room for Your Light Socket image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making Room for Your Light Socket image 2" loading="lazy"></div><p>Once you can see into your lantern you will notice that there is another, smaller tank inside which holds the parrafin.  this will have to be cut away or grinded back before the light socket will fit.</p>
 <p>1)  I first used a dremmel to try an make the whole bigger.</p>
 <p>2)   I soon got impatient with this so I just grabbed the paraffin tank with my pliers and twisted the tin.  It ripped easily and I was able to make a big enough hole for the socket.</p>
-<p>3)   The light socket should fit snuggly into the lantern.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Power Cord</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Power Cord image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Power Cord image 2" loading="lazy"></div><p>You can add the power cord any way and any where you want.  I wanted to hang my lantern so I made sure that it came out from the top.  If your lantern is going to be on a table then you could easliy have the cord coming from the base.</p>
+<p>3)   The light socket should fit snuggly into the lantern.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Power Cord</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Power Cord image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Power Cord image 2" loading="lazy"></div><p>You can add the power cord any way and any where you want.</p>
+<p>I wanted to hang my lantern so I made sure that it came out from the top.</p>
+<p>If your lantern is going to be on a table then you could easliy have the cord coming from the base.</p>
 <p>1)   Drill a hole through the top of one of the arms - this is where your power cord will come out of.</p>
 <p>2)   Make sure that there is enough clearence at the other end of the arm which is in the base of the lantern.  I had to bend the paraffin tank back some more to enable the cord to come through.</p>
-<p>3)   If you can't thread the power cord through, heat up the end of some wire and poke it through the end of the cord.  Thread the wire down the hole and it should come out through the other end easier.   It's then just a case of pulling the cord through.</p><h2><span class="step-num">STEP 6</span>Step 6: Wiring Up and Construction</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Up and Construction image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Up and Construction image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Up and Construction image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Up and Construction image 4" loading="lazy"></div><p>1)   Once your wire is through the arm, wire-up the socket to the end of the wire.</p>
+<p>3)   If you can't thread the power cord through, heat up the end of some wire and poke it through the end of the cord.</p>
+<p>Thread the wire down the hole and it should come out through the other end easier.</p>
+<p>It's then just a case of pulling the cord through.</p><h2><span class="step-num">STEP 6</span>Step 6: Wiring Up and Construction</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Up and Construction image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Up and Construction image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Up and Construction image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Up and Construction image 4" loading="lazy"></div><p>1)   Once your wire is through the arm, wire-up the socket to the end of the wire.</p>
 <p>2)   I cut a groove through the plastic screw cap which goes onto the end of the light socket so the cord would sit flat in the lantern.</p>
 <p>3)   Put the light socket into the lantern and make sure that it is sitting straight.  Glue in with some hot glue.</p>
 <p>4)   Replace the surround that you pried out in step 3.  I had to cut away some of the glue before it would fit.</p>
 <p>5)   Before you replace the cage that the glass fits into, you need to widen the middle of it so the globe can fit into it.  I just used my dremmel for this.</p>
-<p>6)  Getting the globe in was a little tricky but it went in eventually.</p><h2><span class="step-num">STEP 7</span>Step 7: The Final Bits and Considerations</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: The Final Bits and Considerations image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: The Final Bits and Considerations image 2" loading="lazy"></div><p>Now that you have everything together, it's just a matter of  using some cable ties to secure the cord along the handle of the lantern.  I used the electric cable itself to hang the lamp, once the cables are on there's no danger of it pulling it out of the light socket.</p>
+<p>6)  Getting the globe in was a little tricky but it went in eventually.</p><h2><span class="step-num">STEP 7</span>Step 7: The Final Bits and Considerations</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: The Final Bits and Considerations image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: The Final Bits and Considerations image 2" loading="lazy"></div><p>Now that you have everything together, it's just a matter of  using some cable ties to secure the cord along the handle of the lantern.</p>
+<p>I used the electric cable itself to hang the lamp, once the cables are on there's no danger of it pulling it out of the light socket.</p>
 <p>Considerations</p>
 <ul>
 <li>You could easily rig this up with a solar light such as the ones you use in your garden.</li>
@@ -166,5 +208,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>If you make your own, please make sure that you post a picture of the final product in the comments section.</p>
 <p>Thanks for reading - and happy making.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

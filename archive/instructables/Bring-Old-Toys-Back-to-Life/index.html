@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,12 +162,26 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Bring Old Toys Back to Life</span>
 </nav>
-<h1>Bring Old Toys Back to Life</h1><div class="source"><a href="https://www.instructables.com/Bring-Old-Toys-Back-to-Life/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>On a recent visit to my local tip/dump, I came across an original 70’s walking robot. Anyone old enough (me damn it!), might remember owning one way back when. The robots were designed by Horikawa, a Japanese toy manufacturer specializing in toy robots. If you would like top see some of their designs - check out this website.</p>
+<h1>Bring Old Toys Back to Life</h1><div class="source"><a href="https://www.instructables.com/Bring-Old-Toys-Back-to-Life/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>On a recent visit to my local tip/dump, I came across an original 70’s walking robot.</p>
+<p>Anyone old enough (me damn it!), might remember owning one way back when.</p>
+<p>The robots were designed by Horikawa, a Japanese toy manufacturer specializing in toy robots.</p>
+<p>If you would like top see some of their designs - check out this website.</p>
 <p>But I digress... My tip has a shop where you can buy most things for a couple bucks. I’ve brought many a weird and wonderful objects over the years; it’s a great place to find the unusual.</p>
 <p>The Horikawa robot that I found was able to walk (like a drunken zombie) and also has a drum inside that spins. The drum has some images which when shown through the front lens kinda has a 3D effect.</p>
-<p>Unfortunately, my robot was damaged beyond repair. The batteries looked they had never been changed and had decayed badly causing a lot of damage inside the battery compartment. The insides weren’t too bad but a few of the gears had missing teeth and it wasn’t worth repairing.</p>
-<p>I could have just left him for dead and stuck him on a shelf but that's just cruel. Instead I decided to bring him back from to life. To do this I added a new motor and LED’s and fabricated a bracket to hold everything in place. I also added a sound recorder and now he can speak! Lastly, I removed all of the old electronics and came up with a way to re-attach his legs to him body. You can either just have the LED’s on or Motor and LED together. This way it can be used as a night light or just a cool talking piece.</p>
-<p>So this ible' is how I found an old toy and brought him back to life. The chances are you probably don't have one of these Horikawa robots lying around. No matter, there are plenty of other, vintage toys out there waiting to be re-born. Just check out your local junk / thrift / tip / granny's closet and I'm sure you will find something that needs a little love.</p><h2><span class="step-num">STEP 1</span>Step 1: Check Out the Video</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Check Out the Video image 1" loading="lazy"></div><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Things to Gather image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Things to Gather image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Things to Gather image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Things to Gather image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Things to Gather image 10" loading="lazy"></div><p>Bits and Pieces</p>
+<p>Unfortunately, my robot was damaged beyond repair.</p>
+<p>The batteries looked they had never been changed and had decayed badly causing a lot of damage inside the battery compartment.</p>
+<p>The insides weren’t too bad but a few of the gears had missing teeth and it wasn’t worth repairing.</p>
+<p>I could have just left him for dead and stuck him on a shelf but that's just cruel.</p>
+<p>Instead I decided to bring him back from to life.</p>
+<p>To do this I added a new motor and LED’s and fabricated a bracket to hold everything in place.</p>
+<p>I also added a sound recorder and now he can speak!</p>
+<p>Lastly, I removed all of the old electronics and came up with a way to re-attach his legs to him body.</p>
+<p>You can either just have the LED’s on or Motor and LED together.</p>
+<p>This way it can be used as a night light or just a cool talking piece.</p>
+<p>So this ible' is how I found an old toy and brought him back to life.</p>
+<p>The chances are you probably don't have one of these Horikawa robots lying around.</p>
+<p>No matter, there are plenty of other, vintage toys out there waiting to be re-born.</p>
+<p>Just check out your local junk / thrift / tip / granny's closet and I'm sure you will find something that needs a little love.</p><h2><span class="step-num">STEP 1</span>Step 1: Check Out the Video</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Check Out the Video image 1" loading="lazy"></div><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Things to Gather image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Things to Gather image 7" loading="lazy"><img src="images/step02_08.jpg" alt="Step 2: Things to Gather image 8" loading="lazy"><img src="images/step02_09.jpg" alt="Step 2: Things to Gather image 9" loading="lazy"><img src="images/step02_10.jpg" alt="Step 2: Things to Gather image 10" loading="lazy"></div><p>Bits and Pieces</p>
 <ol>
 <li>Vintage Robot. I'd suggest you look for a vintage Horikawa type which is what I used. You really want to find one that is no longer working and needs some love. Try eBay, or your local junk shop.</li>
 </ol>
@@ -166,7 +215,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Take off the spinning drum by removing the pin holding it in place</li>
 <li>Lastly, give everything a good soapy wash</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Removing the Motor</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Removing the Motor image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Removing the Motor image 2" loading="lazy"></div><p>Steps:</p>
-<p>If you are lucky enough, the motor mechanism and bracket inside the robot will be ok to re-use. Unfortunately, mine was quite brittle and damaged. I took the decision to remove the section and fabricate my own bracket.</p>
+<p>If you are lucky enough, the motor mechanism and bracket inside the robot will be ok to re-use.</p>
+<p>Unfortunately, mine was quite brittle and damaged.</p>
+<p>I took the decision to remove the section and fabricate my own bracket.</p>
 <ol>
 <li>Drill out the hucks holding the motor mechanism in place. Carefully remove the motor mechanism from the body of the robot.</li>
 <li>Make sure that you keep the motor and drum holder together. You will need to use this later as a template when fabricating the new bracket.</li>
@@ -236,8 +287,29 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Make sure that you have enough hot glue on all of the wires before you close the body</li>
 <li>Place the arms in their sockets and close-up the robot. Finish by re-placing the screws into the body.</li>
 </ol><h2><span class="step-num">STEP 15</span>Step 15: Finished</h2><div class="step-images"><img src="images/step15_01.jpg" alt="Step 15: Finished image 1" loading="lazy"><img src="images/step15_02.jpg" alt="Step 15: Finished image 2" loading="lazy"><img src="images/step15_03.jpg" alt="Step 15: Finished image 3" loading="lazy"><img src="images/step15_04.jpg" alt="Step 15: Finished image 4" loading="lazy"></div><p>That’s it!</p>
-<p>Even though some steps were a little fiddly and I had to really have a good think about how to re-mount the motor, overall I’m chuffed about how he came out. I’m going to give him to my nephew so he can use it as a night light. The main problem with old toys is the plastic can before brittle. Luckily I didn’t have any major breakages and he survived the re-build.</p>
-<p>The great thing about old toys is there is usually plenty of room to add new electronics. I would of loved to have got his legs working but this required too much re-work and I decided to sacrifice his movement for ease of build.</p>
-<p>You could easily add an Arduino inside of one with a motion sensor and a few other cool sensors and have his limbs move more.. There is no reason why you could put wheels with servos in his feet and have him actually moving again.</p>
+<p>Even though some steps were a little fiddly and I had to really have a good think about how to re-mount the motor, overall I’m chuffed about how he came out.</p>
+<p>I’m going to give him to my nephew so he can use it as a night light.</p>
+<p>The main problem with old toys is the plastic can before brittle.</p>
+<p>Luckily I didn’t have any major breakages and he survived the re-build.</p>
+<p>The great thing about old toys is there is usually plenty of room to add new electronics.</p>
+<p>I would of loved to have got his legs working but this required too much re-work and I decided to sacrifice his movement for ease of build.</p>
+<p>You could easily add an Arduino inside of one with a motion sensor and a few other cool sensors and have his limbs move more..</p>
+<p>There is no reason why you could put wheels with servos in his feet and have him actually moving again.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

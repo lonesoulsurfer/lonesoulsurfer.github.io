@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,11 +162,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Compressed Air Blow Gun</span>
 </nav>
-<h1>Compressed Air Blow Gun</h1><div class="source"><a href="https://www.instructables.com/Compressed-Air-Blow-Gun/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>I know I might sound a little fussy, but I was never that keen putting my mouth on the end of a blow gun (If you knew my brother you would understand) so I decided to build a compressed air blow gun. Also the title is somewhat of an oxymoron but It works for me.</p>
-<p>I’ve been playing around with compressed air for a while and past projects include: this, this, this and this (phew!) . After coming across a small, flat pump in an op-shop I decided to do something similar to the guns that I had made but in blow gun style.</p>
-<p>This is a pretty easy build; the part which might set you back though is the pump. The pump is curved and sits very nicely on the PVC so it doesn’t get in the way and keeps the blow gun streamline. You could use another pump but I think you would need to come up with a different design.</p>
-<p>The darts are easy to make (and cheap) so there is no issues with ammo. I stole the idea of the darts from The King of Random. I have also attached a laser pointer to the barrel which helps with targeting. To add the air into the air chamber, all you need to do is to push a few times on the pump, aim and pull the trigger. The more you pump, the further the dart goes!</p>
-<p>Disclaimer - This is seriously dangerous. The darts really pack a punch so if you decide to build, please don't shoot each other. I've stuck darts into wood and haven't been able to pull them out. Now just imagine that in flesh!</p><h2><span class="step-num">STEP 1</span>Step 1: Watch It in Action</h2><h2><span class="step-num">STEP 2</span>Step 2: Parts to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Parts to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Parts to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Parts to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Parts to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Parts to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Parts to Gather image 6" loading="lazy"></div><p>Parts:</p>
+<h1>Compressed Air Blow Gun</h1><div class="source"><a href="https://www.instructables.com/Compressed-Air-Blow-Gun/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>I know I might sound a little fussy, but I was never that keen putting my mouth on the end of a blow gun (If you knew my brother you would understand) so I decided to build a compressed air blow gun.</p>
+<p>Also the title is somewhat of an oxymoron but It works for me.</p>
+<p>I’ve been playing around with compressed air for a while and past projects include: this, this, this and this (phew!) .</p>
+<p>After coming across a small, flat pump in an op-shop I decided to do something similar to the guns that I had made but in blow gun style.</p>
+<p>This is a pretty easy build; the part which might set you back though is the pump.</p>
+<p>The pump is curved and sits very nicely on the PVC so it doesn’t get in the way and keeps the blow gun streamline.</p>
+<p>You could use another pump but I think you would need to come up with a different design.</p>
+<p>The darts are easy to make (and cheap) so there is no issues with ammo.</p>
+<p>I stole the idea of the darts from The King of Random.</p>
+<p>I have also attached a laser pointer to the barrel which helps with targeting.</p>
+<p>To add the air into the air chamber, all you need to do is to push a few times on the pump, aim and pull the trigger.</p>
+<p>The more you pump, the further the dart goes!</p>
+<p>Disclaimer - This is seriously dangerous.</p>
+<p>The darts really pack a punch so if you decide to build, please don't shoot each other.</p>
+<p>I've stuck darts into wood and haven't been able to pull them out.</p>
+<p>Now just imagine that in flesh!</p><h2><span class="step-num">STEP 1</span>Step 1: Watch It in Action</h2><h2><span class="step-num">STEP 2</span>Step 2: Parts to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Parts to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Parts to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Parts to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Parts to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Parts to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Parts to Gather image 6" loading="lazy"></div><p>Parts:</p>
 <p>Air Chamber</p>
 <ol>
 <li>20mm PVC Tube</li>
@@ -192,7 +238,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some glue to the 20mm to 15mm coupling and glue this to the other end of the pipe.</li>
 <li>Next add some plumbers tape to the solenoid valve and screw on the 15mm female coupling</li>
 <li>Add some glue to the inside of the coupling on the air chamber and push this into the valve coupling</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Blow Gun Barrel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Blow Gun Barrel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Blow Gun Barrel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Blow Gun Barrel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Blow Gun Barrel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Blow Gun Barrel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Blow Gun Barrel image 6" loading="lazy"></div><p>Initially I made it so you had to push the barrel section onto a coupling once loaded. This causes a few problems, especially as the barrel doesn't want to sit straight in the coupling unless you really jam it into the coupling. This isn't a good idea as it's damn hard to pull out again when you want to reload. I decided to change this and have the barrel screw into place</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Blow Gun Barrel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Blow Gun Barrel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Blow Gun Barrel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Blow Gun Barrel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Blow Gun Barrel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Blow Gun Barrel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Blow Gun Barrel image 6" loading="lazy"></div><p>Initially I made it so you had to push the barrel section onto a coupling once loaded.</p>
+<p>This causes a few problems, especially as the barrel doesn't want to sit straight in the coupling unless you really jam it into the coupling.</p>
+<p>This isn't a good idea as it's damn hard to pull out again when you want to reload.</p>
+<p>I decided to change this and have the barrel screw into place</p>
 <p>Steps:</p>
 <ol>
 <li>Grab the 15mm female screw to 20mm coupling and the barrel. Add a little electrical tape to the barrel end and push it into the end of the 20mm coupling end.</li>
@@ -211,7 +260,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Find the best spot to add your pump. Once you have it, add some double-sided tape to the areas touching the blow gun. Tape into place</li>
 <li>Next add some cable ties to the pump to ensure it is held fast.</li>
 <li>Lastly, add the pump tube and attach this to the tube valve. Test to ensure the air chamber is holding air. If not then you're going to have to try and fix where the air is leaking. If you have followed the steps up to this point then you should be ok.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Battery</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Battery image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Battery image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Battery image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Battery image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Battery image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Battery image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Battery image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Battery image 8" loading="lazy"></div><p>In some of the images you may have seen some small 12v batteries attached to the solenoid valve. I decided not to use these in the end as they didn't have enough amps and when the chamber was under pressure the valve wouldn't release the air. I swapped these for a 9v battery which works perfectly fine. The only problem is a 9v is larger and a lot harder to find a place for on the blow dart. After some experimenting I decided to add it further up the blow gun near the pump.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Battery</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Battery image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Battery image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Battery image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Battery image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Battery image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Battery image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Adding the Battery image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Adding the Battery image 8" loading="lazy"></div><p>In some of the images you may have seen some small 12v batteries attached to the solenoid valve.</p>
+<p>I decided not to use these in the end as they didn't have enough amps and when the chamber was under pressure the valve wouldn't release the air.</p>
+<p>I swapped these for a 9v battery which works perfectly fine.</p>
+<p>The only problem is a 9v is larger and a lot harder to find a place for on the blow dart.</p>
+<p>After some experimenting I decided to add it further up the blow gun near the pump.</p>
 <p>Steps:</p>
 <ol>
 <li>In order to secure the battery holder I used some good epoxy glue. Add some to the cable ties that you used to secure the pump to the blow gun. You might need to add a couple more to ensure that there is enough anchor points to attach the battery case to.</li>
@@ -237,7 +290,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Push the cone into the end of the dart gun and mark where the paper touches the barrel. Cut the excess off and you will find that the cone fits neatly into the barrel.</li>
 <li>Next add a nail into the end of the cone and secure with some hot glue. Add about 1\/3 hot glue to give the dart some weight. Leave too dry.</li>
 </ol>
-<p>Done</p><h2><span class="step-num">STEP 12</span>Step 12: Making the Case - Cut the Wood</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Making the Case - Cut the Wood image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Making the Case - Cut the Wood image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Making the Case - Cut the Wood image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Making the Case - Cut the Wood image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Making the Case - Cut the Wood image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Making the Case - Cut the Wood image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Making the Case - Cut the Wood image 7" loading="lazy"></div><p>The way I made the case was to make the base and lid sections the same size. The only difficult bit with making a case like this was to ensure that the side sections of the case were the same size. I’m not great at woodwork, and don’t really have the right tools to get everything straight and true. I managed however to use what I had (drop saw and sander) to make a case that works well. Also, the case doesn’t need to be a masterpiece; it’s only used to store and hold the blow gun and keep the parts all together.</p>
+<p>Done</p><h2><span class="step-num">STEP 12</span>Step 12: Making the Case - Cut the Wood</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Making the Case - Cut the Wood image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Making the Case - Cut the Wood image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Making the Case - Cut the Wood image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Making the Case - Cut the Wood image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Making the Case - Cut the Wood image 5" loading="lazy"><img src="images/step12_06.jpg" alt="Step 12: Making the Case - Cut the Wood image 6" loading="lazy"><img src="images/step12_07.jpg" alt="Step 12: Making the Case - Cut the Wood image 7" loading="lazy"></div><p>The way I made the case was to make the base and lid sections the same size.</p>
+<p>The only difficult bit with making a case like this was to ensure that the side sections of the case were the same size.</p>
+<p>I’m not great at woodwork, and don’t really have the right tools to get everything straight and true.</p>
+<p>I managed however to use what I had (drop saw and sander) to make a case that works well.</p>
+<p>Also, the case doesn’t need to be a masterpiece; it’s only used to store and hold the blow gun and keep the parts all together.</p>
 <p>Steps:</p>
 <ol>
 <li>Measure how big you will need the box to be and start to cut the wood. As the base and the lid sections will be the same size, you will need 2 equal pieces for each side of the box.</li>
@@ -260,9 +317,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Grab some firm foam and cut 3 pieces big enough to fit into the lid of the box</li>
 <li>Next decide how far the pieces need to be away from each other and hot glue into place</li>
-</ol><h2><span class="step-num">STEP 16</span>Step 16: Go Shoot Something</h2><div class="step-images single"><img src="images/step16_01.jpg" alt="Step 16: Go Shoot Something image 1" loading="lazy"></div><p>Time to really test out the blow gun. I would first try shooting darts at low pressure first to make sure everything is working ok. You don't want something to go wrong and have the dart come out the barrel when you're not ready.</p>
-<p>Once you are happy with how it fires, start to add more pressure into the air chamber. You'll probably find that there is a sweet spot and over pressurizing will start to effect how accurate the dart is.</p>
-<p>This is a very powerful weapon so please be careful. Only shoot at things that can't get hurt. The dart has the potential to cause some serious damage so make sure you don't point it anyone and always use caution.</p>
+</ol><h2><span class="step-num">STEP 16</span>Step 16: Go Shoot Something</h2><div class="step-images single"><img src="images/step16_01.jpg" alt="Step 16: Go Shoot Something image 1" loading="lazy"></div><p>Time to really test out the blow gun.</p>
+<p>I would first try shooting darts at low pressure first to make sure everything is working ok.</p>
+<p>You don't want something to go wrong and have the dart come out the barrel when you're not ready.</p>
+<p>Once you are happy with how it fires, start to add more pressure into the air chamber.</p>
+<p>You'll probably find that there is a sweet spot and over pressurizing will start to effect how accurate the dart is.</p>
+<p>This is a very powerful weapon so please be careful.</p>
+<p>Only shoot at things that can't get hurt.</p>
+<p>The dart has the potential to cause some serious damage so make sure you don't point it anyone and always use caution.</p>
 <p>Go crazy shooting anything else though.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

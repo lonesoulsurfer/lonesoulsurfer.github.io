@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Daliesque Book Light</span>
 </nav>
-<h1>Daliesque Book Light</h1><div class="source"><a href="https://www.instructables.com/Daliesque-Book-Light/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>When I was younger I thought that having Salvador Dali images on my wall made me cool!  I only had a vague idea of what it was all about, and although I liked the paintings in a purely artistic sense, I never was able to delve deeper into their meaning.</p>
+<h1>Daliesque Book Light</h1><div class="source"><a href="https://www.instructables.com/Daliesque-Book-Light/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>When I was younger I thought that having Salvador Dali images on my wall made me cool!</p>
+<p>I only had a vague idea of what it was all about, and although I liked the paintings in a purely artistic sense, I never was able to delve deeper into their meaning.</p>
 <p>It wasn’t until in my 20’s that I had a chance to re-visit Dali’s paintings and look at them with a more "worldlier" mindset.</p>
-<p>I was lucky enough to spend some time in Rome in my 20’s, and while there went to an exhibition of Dali’s early works.  The images that really struck me the most were the ones where he plays with perspective.  I especially loved the images in step 1, there’s a sense of timelessness and familiarity about them that really appeals to me.</p>
+<p>I was lucky enough to spend some time in Rome in my 20’s, and while there went to an exhibition of Dali’s early works.</p>
+<p>The images that really struck me the most were the ones where he plays with perspective.</p>
+<p>I especially loved the images in step 1, there’s a sense of timelessness and familiarity about them that really appeals to me.</p>
 <p>Recently I was looking again at these images and thought it would be cool to try and bring one to life.  Maybe a little ambitious I know but I'm up for the challenge.</p>
 <p>So let me present to you my Dali Book Light.</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Images</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Images image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Images image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Images image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Images image 4" loading="lazy"></div><p>The below images are what inspires me to come up with this ible’.  I wanted to try and capture some of the essence of what Dali was trying to convey.</p><h2><span class="step-num">STEP 2</span>Step 2: Material and Tools</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Material and Tools image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Material and Tools image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Material and Tools image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Material and Tools image 4" loading="lazy"></div><p>Material:</p>
@@ -181,7 +219,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>With a Stanley knife start to cut out the sections regularly checking the depth and size to ensure the battery cases fit ok.</li>
 <li>Once you have the battery cavity's done you will need to also add a switch.  Cut a small cavity near the spine of the book and once done, drill a hole through the spine.</li>
 <li>Push through your switch and attach the bolt on the switch to hold it into place.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Batteries and Wiring</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Batteries and Wiring image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Batteries and Wiring image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Batteries and Wiring image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Batteries and Wiring image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Batteries and Wiring image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Batteries and Wiring image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Batteries and Wiring image 7" loading="lazy"></div><p>The LED that I used can be either red or green depending on the polarity of the battery.  I wanted to make it so could either have it red or green by flicking the switch.  The problem was I couldn’t for the life of me work out how to wire this up with one lot of batteries so I decided to go with 2 sets.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Batteries and Wiring</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Batteries and Wiring image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Batteries and Wiring image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Batteries and Wiring image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Batteries and Wiring image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Batteries and Wiring image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding the Batteries and Wiring image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Adding the Batteries and Wiring image 7" loading="lazy"></div><p>The LED that I used can be either red or green depending on the polarity of the battery.</p>
+<p>I wanted to make it so could either have it red or green by flicking the switch.</p>
+<p>The problem was I couldn’t for the life of me work out how to wire this up with one lot of batteries so I decided to go with 2 sets.</p>
 <p>Steps:</p>
 <ol>
 <li>Once you have the battery cavities done in the book you will need to also add a switch.  Cut a small cavity near the spine of the book and once done, drill a hole through the spine.</li>
@@ -196,8 +236,35 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Carefully add a drop of superglue to their feet and place around the model.  You will have to hold them in place for about 10-20 seconds to ensure that they won’t fall down.</li>
 <li>Once dry the little men and women should be quite stable.  Give each one a little wobble and if any come loose add some more glue.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Done!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Done! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Done! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Done! image 3" loading="lazy"></div><p>You should now have a complete sculpture – well done!</p>
-<p>I think that next time I would maybe use a larger model and some brighter LED’s.  I’d like to use some cree LED’s and really pump out the light through the head.  I also considered adding a PIR sensor so it would come on as you walked past.  I have done this in a couple of previous projects and although it does work well, the LED’s are always coming on and the batteries go flat pretty quick.  If you had it in a low traffic area or maybe had the PIR sensor recessed in the book so it couldn’t detect as well then I think that this would be a good idea.</p>
-<p>I am also in two minds about the switch on the outside of the book.  Initially I was going to have the switch inside the book but that would have meant opening and closing the book each time I wanted to turn it on.  The book I chose was very old and the cover was just about to come off and I don’t think it would have lasted too long with all that opening and closing.  Also, adding the switch on the outside invites people to come along and see what it does.</p>
-<p>In regards to the book I chose, I was very hesitant to destroy this beautiful copy of Edgar Allan Poe’s short stories but the book was in a really bad way and I don’t think it would have stood-up to much reading anymore.  I had to glue about 15 of the front pages together to ensure that the cover would fall off.  Also, the fabric of the cover is very frayed and torn.  I think the title works well though and at least I’ve give it a second chance to be useful.  How often does that happen!</p>
+<p>I think that next time I would maybe use a larger model and some brighter LED’s.</p>
+<p>I’d like to use some cree LED’s and really pump out the light through the head.</p>
+<p>I also considered adding a PIR sensor so it would come on as you walked past.</p>
+<p>I have done this in a couple of previous projects and although it does work well, the LED’s are always coming on and the batteries go flat pretty quick.</p>
+<p>If you had it in a low traffic area or maybe had the PIR sensor recessed in the book so it couldn’t detect as well then I think that this would be a good idea.</p>
+<p>I am also in two minds about the switch on the outside of the book.</p>
+<p>Initially I was going to have the switch inside the book but that would have meant opening and closing the book each time I wanted to turn it on.</p>
+<p>The book I chose was very old and the cover was just about to come off and I don’t think it would have lasted too long with all that opening and closing.</p>
+<p>Also, adding the switch on the outside invites people to come along and see what it does.</p>
+<p>In regards to the book I chose, I was very hesitant to destroy this beautiful copy of Edgar Allan Poe’s short stories but the book was in a really bad way and I don’t think it would have stood-up to much reading anymore.</p>
+<p>I had to glue about 15 of the front pages together to ensure that the cover would fall off.</p>
+<p>Also, the fabric of the cover is very frayed and torn.</p>
+<p>I think the title works well though and at least I’ve give it a second chance to be useful.</p>
+<p>How often does that happen!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

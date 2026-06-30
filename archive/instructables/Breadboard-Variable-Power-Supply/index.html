@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Breadboard - Variable Power Supply</span>
 </nav>
-<h1>Breadboard - Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Breadboard-Variable-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Getting power to your breadboard is one of the most fundamental things you need to do when prototyping and testing circuit. I've been using a 9V battery (my last power supply died a smoky death) and I figured it was time to upgrade.</p>
+<h1>Breadboard - Variable Power Supply</h1><div class="source"><a href="https://www.instructables.com/Breadboard-Variable-Power-Supply/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Getting power to your breadboard is one of the most fundamental things you need to do when prototyping and testing circuit.</p>
+<p>I've been using a 9V battery (my last power supply died a smoky death) and I figured it was time to upgrade.</p>
 <p>The voltage supply in this project connects directly to your breadboard so there is no wires getting in the way, it is variable so you can change the voltage from 3.5V to 13V with a potentiometer, and is also rechargeable so no issues with flat batteries.</p>
-<p>The build itself is relatively simple and you only need some basic soldering skills to make your own. The module that I have used in this project is one that I have used in many projects. It includes variable voltage and battery charger all in one. I even did an ‘ible on how to wire it up which can be found here. The power supply is powered by an old mobile battery but you could use an 18560 li-ion battery or something similar if you wanted to.</p>
+<p>The build itself is relatively simple and you only need some basic soldering skills to make your own.</p>
+<p>The module that I have used in this project is one that I have used in many projects.</p>
+<p>It includes variable voltage and battery charger all in one.</p>
+<p>I even did an ‘ible on how to wire it up which can be found here.</p>
+<p>The power supply is powered by an old mobile battery but you could use an 18560 li-ion battery or something similar if you wanted to.</p>
 <p>Let’s get building!</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>PARTS:</p>
 <ol>
 <li>Voltage regulator & charging module – eBay</li>
@@ -154,7 +194,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>First, cut 2 lots of header pins off with a pair of wire cutters or an exacto knife. You will need a header pin for positive and ground and I used double header pins so they would secure better into the breadboard</li>
 <li>Place the header pins into the power rails on each side of the breadboard. Place the prototype board into the header pins and work out the size that the prototype board can be</li>
 <li>You can cut away sections of the prototype board with a pair or wire cutters. Use a sander and/or files to clean up the edges</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Header Pins Into the Prototype Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 4" loading="lazy"></div><p>You need to make a very small mod on the header pins to be able to solder them into place. The first time I tried to solder the pins into place I did them the wrong way round so make sure you do the mod!</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Soldering the Header Pins Into the Prototype Board</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Soldering the Header Pins Into the Prototype Board image 4" loading="lazy"></div><p>You need to make a very small mod on the header pins to be able to solder them into place.</p>
+<p>The first time I tried to solder the pins into place I did them the wrong way round so make sure you do the mod!</p>
 <p>Steps:</p>
 <ol>
 <li>Grab one set of the header pins and hold them so the short end of the pin is facing down</li>
@@ -170,13 +211,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place another 2 jumper pins into the 'battery' solder points on the voltage regulator and solder them into place</li>
 <li>Next, place the 100K potentiometer into voltage regulator (there are 3 holes in the voltage regulator to do this) and solder into place</li>
 <li>The last thing to do is to solder the regulator onto the prototype board. The pins should fit into the holes in the board, however, you might need to slightly bend one of the legs to ensure a good fit. Make sure that the board is soldered to the back of the prototype board. This will help make turning the pot easier</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding an On/off Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding an On/off Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding an On/off Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding an On/off Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding an On/off Switch image 4" loading="lazy"></div><p>You'll need to add an on/off switch between the battery and the module. The voltage module draws power even when not in use and adding a switch between the battery and module will ensure the power isn't drained. When you charge the battery you need to make sure that the module is 'on' or it won't charge</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding an On/off Switch</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding an On/off Switch image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding an On/off Switch image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding an On/off Switch image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding an On/off Switch image 4" loading="lazy"></div><p>You'll need to add an on/off switch between the battery and the module.</p>
+<p>The voltage module draws power even when not in use and adding a switch between the battery and module will ensure the power isn't drained.</p>
+<p>When you charge the battery you need to make sure that the module is 'on' or it won't charge</p>
 <p>STEPS:</p>
 <ol>
 <li>First find a good spot to locate the switch, remembering you will need to add the voltage meter as well to the prototype board</li>
 <li>I had to remove one of the legs on the switch to be able to locate it in the spot I did.</li>
 <li>Once you find the right spot, solder it into place</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring image 5" loading="lazy"></div><p>It's always hard to show how everything is wired via images so I have included a wiring diagram. You could add the wires to the top section of the prototype board but I wanted to have a clean look on the top so decided to wire underneath.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring image 5" loading="lazy"></div><p>It's always hard to show how everything is wired via images so I have included a wiring diagram.</p>
+<p>You could add the wires to the top section of the prototype board but I wanted to have a clean look on the top so decided to wire underneath.</p>
 <p>STEPS:</p>
 <ol>
 <li>The wires need to be kept as flat and neat as possible. You also need to remember that the battery will need to be attached to the bottom of the prototype board so try and make sure that the wires are out of the way and there is room at attach it</li>
@@ -193,5 +237,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some good quality, double sided tap tot he battery and stick it into place</li>
 </ol>
 <p>And that's it! Connect it to your prototype board and start building some circuits.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,9 +163,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Dancing, Magnetic Robots</span>
 </nav>
 <h1>Dancing, Magnetic Robots</h1><div class="source"><a href="https://www.instructables.com/Dancing-Magnetic-Robots/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Make a pair of dancing robots using magnets!</p>
-<p>While messing around with some magnets I purchased from Ebay I discovered something really cool.  If you put a small washer on a flat surface and move a magnet in a circle motion underneath the washer, it will spin one way and then another.</p>
-<p>As soon as I saw this I just had to incorporate it into a project.  In the end I came up with robot dancers - the ideas a little left of centre but the end result looks great.  The robots really look like they are dancing and the cool thing is you can’t see any mechanisms moving them.</p>
-<p>I chose a book to have the robots dancing on as I wanted it to seem that the robots were casually being displayed on top of the  book.  You could use a wooden box (or cardboard box) to hide the motor etc, but a book does the job pretty well.</p>
+<p>While messing around with some magnets I purchased from Ebay I discovered something really cool.</p>
+<p>If you put a small washer on a flat surface and move a magnet in a circle motion underneath the washer, it will spin one way and then another.</p>
+<p>As soon as I saw this I just had to incorporate it into a project.</p>
+<p>In the end I came up with robot dancers - the ideas a little left of centre but the end result looks great.</p>
+<p>The robots really look like they are dancing and the cool thing is you can’t see any mechanisms moving them.</p>
+<p>I chose a book to have the robots dancing on as I wanted it to seem that the robots were casually being displayed on top of the  book.</p>
+<p>You could use a wooden box (or cardboard box) to hide the motor etc, but a book does the job pretty well.</p>
 <p>Here's a video of the robots in action</p>
 <p>And here’s how you do it…</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>Materials</p>
 <ul>
@@ -176,7 +215,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Note : The washers that I used were very thin and smooth.  It's really important to use a washer that is as thin as possible.  All of the other, thicker washers i tried didn't work nearly as well.</p>
 <ol>
 <li>I re-soldered the legs to make sure that the robot looked like it had some movement as you can see in the pictures below.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Modifying the Book - Making the First Cut</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 7" loading="lazy"></div><p>The next step is to find the right book to mod and add your battery, motor, and magnets in.  The key here is to find a book that is thick enough to contain the motor and everything else.  I have lots of books so it wasn't too hard to find the right one (the hardest thing was actually cutting a book up!)</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Modifying the Book - Making the First Cut</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Modifying the Book - Making the First Cut image 7" loading="lazy"></div><p>The next step is to find the right book to mod and add your battery, motor, and magnets in.</p>
+<p>The key here is to find a book that is thick enough to contain the motor and everything else.</p>
+<p>I have lots of books so it wasn't too hard to find the right one (the hardest thing was actually cutting a book up!)</p>
 <p>Steps:</p>
 <ol>
 <li>First measure a square in the middle of the book. This is where the motor will spin the magnets.</li>
@@ -218,5 +259,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Take your time and find the right book - the thicker the pages the better.</li>
 </ol>
 <p>Good luck and if you need any hlep - just let me know in the comments section.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

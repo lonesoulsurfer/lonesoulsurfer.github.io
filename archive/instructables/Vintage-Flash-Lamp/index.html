@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -130,8 +165,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <h1>Vintage Flash Lamp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Flash-Lamp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Ever since I found my first vintage flash in a junk store I wanted to make a lamp out of one.</p>
 <p>They are actually very beautiful objects and also now very useless. No-one would even dream of using one of these as a flash, plus the fact that finding the bulbs would be a mission in itself!</p>
 <p>So instead of hiding it away in a draw, wanted to put it out on display for everyone to enjoy.</p>
-<p>The lamp itself it quite easy to build, you only really need a couple of main pieces and your away. So if you would like to know how to build your own vintage flash lamp read on...</p><h2><span class="step-num">STEP 1</span>Step 1: Similar But Different</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Similar But Different image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Similar But Different image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Similar But Different image 3" loading="lazy"></div><p>When purchasing more of the vintage flashes I din't realise that there were different sizes! I purchased the same flash (a waltz flash) and each time ended up with smaller ones that the original I used. I decided to use these in a double lamp.</p>
-<p>The modification is pretty much the same as the original one. The main difference with the double lamp is I wanted to hide all of the wires which I managed to do. The switch is located in the base of the lamp and I also used smaller LED globes so they didn't hang down. In the images bellow I used a larger globe</p><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Things to Gather image 6" loading="lazy"></div><p>Parts:</p>
+<p>The lamp itself it quite easy to build, you only really need a couple of main pieces and your away. So if you would like to know how to build your own vintage flash lamp read on...</p><h2><span class="step-num">STEP 1</span>Step 1: Similar But Different</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Similar But Different image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Similar But Different image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Similar But Different image 3" loading="lazy"></div><p>When purchasing more of the vintage flashes I din't realise that there were different sizes!</p>
+<p>I purchased the same flash (a waltz flash) and each time ended up with smaller ones that the original I used.</p>
+<p>I decided to use these in a double lamp.</p>
+<p>The modification is pretty much the same as the original one.</p>
+<p>The main difference with the double lamp is I wanted to hide all of the wires which I managed to do.</p>
+<p>The switch is located in the base of the lamp and I also used smaller LED globes so they didn't hang down.</p>
+<p>In the images bellow I used a larger globe</p><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Things to Gather image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Things to Gather image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Things to Gather image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Vintage flash. I used a waltz flash - eBay</li>
 <li>Microphone stand - eBay (this one is exactly the same as the one I used)</li>
@@ -149,17 +189,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Soldering Iron</li>
 <li>Dremmel</li>
 <li>Drill</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Mod the Microphone Stand</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Mod the Microphone Stand image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Mod the Microphone Stand image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Mod the Microphone Stand image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Mod the Microphone Stand image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Mod the Microphone Stand image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Mod the Microphone Stand image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Mod the Microphone Stand image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Mod the Microphone Stand image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Mod the Microphone Stand image 9" loading="lazy"></div><p>First thing you need to do is mod the mike stand.  All you are really doing is shrinking the stand by cutting it down.  The stand I got was from the tip so it was a little beat-up and dirty.  I cleaned it up as best I could and it actullay turned out very nice.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Mod the Microphone Stand</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Mod the Microphone Stand image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Mod the Microphone Stand image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Mod the Microphone Stand image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Mod the Microphone Stand image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Mod the Microphone Stand image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Mod the Microphone Stand image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Mod the Microphone Stand image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Mod the Microphone Stand image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Mod the Microphone Stand image 9" loading="lazy"></div><p>First thing you need to do is mod the mike stand.</p>
+<p>All you are really doing is shrinking the stand by cutting it down.</p>
+<p>The stand I got was from the tip so it was a little beat-up and dirty.</p>
+<p>I cleaned it up as best I could and it actullay turned out very nice.</p>
 <p>Steps:</p>
 <ol>
 <li>Pull apart the mike stand and clean if not new.</li>
 <li>Cut down the legs.  I made mine about 250mm long each.</li>
 <li>Cut down both the main sections of the mike stand.  It's up to you how high you want your stand to be.  I wanted mine to be able to sit on a desk and not look out of place.</li>
 </ol>
-<p>NOTE: If you want to use a  very simple way of attaching the flash to the stand, just swap the vertical pole and  the horizontal ones around.  On top of the vertical one there is a male screw which will screw into the flash.  Check out step 6 to see what I mean.</p>
+<p>NOTE: If you want to use a  very simple way of attaching the flash to the stand, just swap the vertical pole and  the horizontal ones around.</p>
+<p>On top of the vertical one there is a male screw which will screw into the flash.</p>
+<p>Check out step 6 to see what I mean.</p>
 <ol>
 <li>Keep all of the cut sections - you will need a couple of bits later.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Mod the Flash</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Mod the Flash image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Mod the Flash image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Mod the Flash image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Mod the Flash image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Mod the Flash image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Mod the Flash image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Mod the Flash image 7" loading="lazy"></div><p>The amount of modding you will need to do will depend on the actual flash that you buy.  Most of the bulbs that these flashes took were universal which is kind of lucky as they only need slight modification to enable to fit the light socket into it.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Mod the Flash</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Mod the Flash image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Mod the Flash image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Mod the Flash image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Mod the Flash image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Mod the Flash image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Mod the Flash image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Mod the Flash image 7" loading="lazy"></div><p>The amount of modding you will need to do will depend on the actual flash that you buy.</p>
+<p>Most of the bulbs that these flashes took were universal which is kind of lucky as they only need slight modification to enable to fit the light socket into it.</p>
 <p>Steps:</p>
 <ol>
 <li>Use a dremmel to make the inside of the flash large enough to fit the bi pin light socket into it.</li>
@@ -171,13 +217,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now you have a large enough hole you can add the light socket.  First thread the wires through the hole that you made.</li>
 <li>Next use some strong glue to hold the socket into place.  Don't use hot glue as this will just melt when the ceramic socket gets hot.</li>
 <li>Next add the switch.  I recently found a vintage remote control plane remote which had some cool switches attached.  I used one of these and attached to the body of the flash.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring Everything Up - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 6" loading="lazy"></div><p>Once you have added the light socket, its time to start  wiring everything up.   I decided to use a spiralled wire as it is very reminiscent on the actual wire that was used to attach the flash to the camera.  It also has the added benefit of being very stretchy which enables you to raise and lower the lamp easily.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring Everything Up - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Wiring Everything Up - Part 1 image 6" loading="lazy"></div><p>Once you have added the light socket, its time to start  wiring everything up.</p>
+<p>I decided to use a spiralled wire as it is very reminiscent on the actual wire that was used to attach the flash to the camera.</p>
+<p>It also has the added benefit of being very stretchy which enables you to raise and lower the lamp easily.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to thread the spiralled guitar/amp wire through the mike stand.  The best way to do this is to attach a long piece of thin wire to one end of the amp spiralled wire.</li>
 <li>Drill a hole near the top of the main vertical section of the mike stand - this is where the spiralled wire will come out.  Make sure you file the edges smooth on all holes you drill.  Thread the wire through the bottom of the mike stand and bring it out through the hole.  Take your time and make sure you don't cut into the rubber of the cord.</li>
 <li>Next drill 2 holes in the horizontal arm of the mike stand  The one closest to the vertical section of the mike needs to be about 250mm from where the vertical and horizontal are joined.  The other should be about 100mm from the end  Slowly thread through the wire.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Flash to the Stand</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Flash to the Stand image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Flash to the Stand image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Flash to the Stand image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Attaching the Flash to the Stand image 4" loading="lazy"></div><p>Next you need to work out away to attach the flash to the stand.  Initially I solved this by using a male screw from the mike stand and mdding the flash so it would fit (see below).  After making a couple of these I discovered a much simpler way to attach the flash to the stand.  I have included each of them so you have a couple of ideas on how best to do it.  The first way is what I did on my initial build - its not really the easiest way but it does give a clean finish.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Flash to the Stand</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Flash to the Stand image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Flash to the Stand image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Flash to the Stand image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Attaching the Flash to the Stand image 4" loading="lazy"></div><p>Next you need to work out away to attach the flash to the stand.</p>
+<p>Initially I solved this by using a male screw from the mike stand and mdding the flash so it would fit (see below).</p>
+<p>After making a couple of these I discovered a much simpler way to attach the flash to the stand.</p>
+<p>I have included each of them so you have a couple of ideas on how best to do it.</p>
+<p>The first way is what I did on my initial build - its not really the easiest way but it does give a clean finish.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the male screw plug from the end of the tube that you would have cut off to reduce the stand.  I put the end into a vice and wiggled back and forth until I managed to remove the plug.</li>
@@ -213,5 +265,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Lastly attach the 12v plug to the end of the spiralled wire.  I just soldered the ends together and added heat shrink.  Test by adding the globe to the socket.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Finished</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Finished image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Finished image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Finished image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Finished image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Finished image 5" loading="lazy"></div><p>So that's it!  You should now a have a  pretty good looking lamp with an even cooler lamp shade/vintage flash attached.</p>
 <p>If you have any questions - please let me know and happy making.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

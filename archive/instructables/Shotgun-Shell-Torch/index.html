@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,8 +163,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Shotgun Shell Torch</span>
 </nav>
 <h1>Shotgun Shell Torch</h1><div class="source"><a href="https://www.instructables.com/Shotgun-Shell-Torch/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Make a mini torch out of a shotgun shell.</p>
-<p>This is a pretty simple project which will only require a few tools and materials. The most obvious thing you will need are shotgun shells. I recently acquired a box full of used shells from my local gun range (for another project) and have been thinking what else I could use them for. I have a bunch of projects on the go at the moment which use the shells and this happens to be the first one done.</p>
-<p>The LED I used is super bright and comes from an LED globe that no longer worked. You could use an everyday LED but you wouldn't get the same brightness. When testing the LED I was really amazed at how bright it is. It will light up a whole room when darkened.</p>
+<p>This is a pretty simple project which will only require a few tools and materials.</p>
+<p>The most obvious thing you will need are shotgun shells.</p>
+<p>I recently acquired a box full of used shells from my local gun range (for another project) and have been thinking what else I could use them for.</p>
+<p>I have a bunch of projects on the go at the moment which use the shells and this happens to be the first one done.</p>
+<p>The LED I used is super bright and comes from an LED globe that no longer worked.</p>
+<p>You could use an everyday LED but you wouldn't get the same brightness.</p>
+<p>When testing the LED I was really amazed at how bright it is.</p>
+<p>It will light up a whole room when darkened.</p>
 <p>The LED globe had 3 LED's on it and I decided to go with green. As they take 6v's to work, the green and red are the best to use. The blue is still a little dull and probably could go 7.5v.</p>
 <p>So go shoot a few rounds, collect the shells and keep reading to find hoe to make your own.</p><h2><span class="step-num">STEP 1</span>Step 1: Bits to Harvest</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Bits to Harvest image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Bits to Harvest image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Bits to Harvest image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Bits to Harvest image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Bits to Harvest image 5" loading="lazy"></div><p>Parts</p>
 <ol>
@@ -155,7 +196,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use a screwdriver to pop open the top of the globe.</li>
 <li>Un-screw the circuit board from the globe.</li>
 <li>De-solder the 3 LED's on the circuit board.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Removing a Cap From the Shell</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing a Cap From the Shell image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing a Cap From the Shell image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing a Cap From the Shell image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing a Cap From the Shell image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Removing a Cap From the Shell image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Removing a Cap From the Shell image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Removing a Cap From the Shell image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Removing a Cap From the Shell image 8" loading="lazy"></div><p>So the first thing you’ll need to do is to remove the end from one of the shotgun shells. I’m sure that there are plenty of different ways to do this (check the net), but my way works just fine. The cap (the brass section) is held in place very tightly by some plastic. It is virtually impossible to remove all of the plastic without melting it out.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Removing a Cap From the Shell</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing a Cap From the Shell image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing a Cap From the Shell image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing a Cap From the Shell image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing a Cap From the Shell image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Removing a Cap From the Shell image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Removing a Cap From the Shell image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Removing a Cap From the Shell image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Removing a Cap From the Shell image 8" loading="lazy"></div><p>So the first thing you’ll need to do is to remove the end from one of the shotgun shells.</p>
+<p>I’m sure that there are plenty of different ways to do this (check the net), but my way works just fine.</p>
+<p>The cap (the brass section) is held in place very tightly by some plastic.</p>
+<p>It is virtually impossible to remove all of the plastic without melting it out.</p>
 <p>Steps:</p>
 <ol>
 <li>Use a Stanley knife (exacto knife) to cut away the plastic case.</li>
@@ -163,7 +207,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>With a small blow torch, heat-up the inside of the cap until the plastic starts to melt.</li>
 <li>Grab a pair of needle noes plyers and pinch out the melted plastic. You’ll probably have to melt the plastic again to remove the rest of it from the cap. Obviously be careful – the plastic will melt to your skin if it touches you.</li>
 </ol>
-<p>Note: There is a simpler way to remove the cap from the body of the shell. All you need to do is put the body of the shell into a vice and heat up the cap. Once hot enough use a pair of pliers and pull on the cap. It should come off easily!</p><h2><span class="step-num">STEP 4</span>Step 4: Preparing the Shell and Caps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Preparing the Shell and Caps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Preparing the Shell and Caps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Preparing the Shell and Caps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Preparing the Shell and Caps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Preparing the Shell and Caps image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Preparing the Shell and Caps image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Preparing the Shell and Caps image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Preparing the Shell and Caps image 8" loading="lazy"></div><p>Next steps are to add the loop to the shell and remove the primer in the cap with no plastic.</p>
+<p>Note: There is a simpler way to remove the cap from the body of the shell.</p>
+<p>All you need to do is put the body of the shell into a vice and heat up the cap.</p>
+<p>Once hot enough use a pair of pliers and pull on the cap.</p>
+<p>It should come off easily!</p><h2><span class="step-num">STEP 4</span>Step 4: Preparing the Shell and Caps</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Preparing the Shell and Caps image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Preparing the Shell and Caps image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Preparing the Shell and Caps image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Preparing the Shell and Caps image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Preparing the Shell and Caps image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Preparing the Shell and Caps image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Preparing the Shell and Caps image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Preparing the Shell and Caps image 8" loading="lazy"></div><p>Next steps are to add the loop to the shell and remove the primer in the cap with no plastic.</p>
 <p>Steps:</p>
 <p>Cutting the shell to size</p>
 <ol>
@@ -196,5 +243,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>You should now have a pretty damn cool torch. I was really surprised at how bright the light is! It can even turn you green like the hulk as my son pointed out!</p>
 <p>I recently made another with the blue LED. Second time making one only took about 20 minutes to make.</p>
 <p>Thanks for looking. If you make one and need a hand with any part, please let me know.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

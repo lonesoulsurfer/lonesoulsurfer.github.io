@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,10 +162,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Book Safe With Hidden Magnet Lock</span>
 </nav>
-<h1>Book Safe With Hidden Magnet Lock</h1><div class="source"><a href="https://www.instructables.com/Book-Safe-With-Hidden-Magnet-Lock/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Over the years I’ve made a whole bunch of book safes. A couple of them I posted on Instructables and can be found here and here. To make the book safes that little more secure, I like to incorporate locks into them. Admittedly, the locks that I have designed in the past are simple and are easily located on the book. Plus, you need to take into consideration that a book after all is only paper, if you really wanted to get into it you could probably just rip it open!</p>
-<p>This time I wanted to disguise the lock so you wouldn’t know that the book even had one. This way if someone was looking for a secret book, then hopefully a cursory glance wouldn’t arouse any suspicions. I also have a petty large library so I can easily hide the book amongst my books.</p>
-<p>The lock is a Solenoid Electromagnetic Lock which has a small reed switch and is opened by running a magnet over the switch. This way I can keep the lock mechanism, switch etc inside the book and hidden from view.</p>
-<p>There is a slight danger though in making a lock like this though. If the battery goes flat then you are going to have a hell of a time trying to get it open again and would probably have to destroy the book!</p>
+<h1>Book Safe With Hidden Magnet Lock</h1><div class="source"><a href="https://www.instructables.com/Book-Safe-With-Hidden-Magnet-Lock/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Over the years I’ve made a whole bunch of book safes.</p>
+<p>A couple of them I posted on Instructables and can be found here and here.</p>
+<p>To make the book safes that little more secure, I like to incorporate locks into them.</p>
+<p>Admittedly, the locks that I have designed in the past are simple and are easily located on the book.</p>
+<p>Plus, you need to take into consideration that a book after all is only paper, if you really wanted to get into it you could probably just rip it open!</p>
+<p>This time I wanted to disguise the lock so you wouldn’t know that the book even had one.</p>
+<p>This way if someone was looking for a secret book, then hopefully a cursory glance wouldn’t arouse any suspicions.</p>
+<p>I also have a petty large library so I can easily hide the book amongst my books.</p>
+<p>The lock is a Solenoid Electromagnetic Lock which has a small reed switch and is opened by running a magnet over the switch.</p>
+<p>This way I can keep the lock mechanism, switch etc inside the book and hidden from view.</p>
+<p>There is a slight danger though in making a lock like this though.</p>
+<p>If the battery goes flat then you are going to have a hell of a time trying to get it open again and would probably have to destroy the book!</p>
 <p>I also discovered a new way of gluing all those pages together which is a million times easier than trying to glue every page.</p>
 <p>The project is quite simple and anyone with basic woodwork and soldering skills will be able to make one easily.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -154,7 +197,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Screwdriver/Phillips head</li>
 <li>Soldering iron</li>
 <li>Hot glue</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Secret Compartment</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Secret Compartment image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Secret Compartment image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Secret Compartment image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Secret Compartment image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Secret Compartment image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Secret Compartment image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Secret Compartment image 7" loading="lazy"></div><p>First thing you need to do is to hollow out the book that you have chosen to use. This isn’t very hard to do but you need to take your time and make sure that you get the sides of the secret compartment as straight as possible. You can however go back later and tidy up if your secret compartment sides are a little wonky.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Making the Secret Compartment</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making the Secret Compartment image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making the Secret Compartment image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making the Secret Compartment image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making the Secret Compartment image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making the Secret Compartment image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making the Secret Compartment image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making the Secret Compartment image 7" loading="lazy"></div><p>First thing you need to do is to hollow out the book that you have chosen to use.</p>
+<p>This isn’t very hard to do but you need to take your time and make sure that you get the sides of the secret compartment as straight as possible.</p>
+<p>You can however go back later and tidy up if your secret compartment sides are a little wonky.</p>
 <p>Steps:</p>
 <ol>
 <li>First work out the dimensions that you want to make the compartment . I use the borders of the paragraphs to determine the size of the secret compartment. This way the cuts you make should be the same all the way through.</li>
@@ -202,7 +247,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Leave to dry for a few hours</li>
 <li>REMEMBER, don’t close the cover once the wood is dried if you can’t connect a battery to the relay lock, you’ll never get it open again if the lock engages!</li>
 <li>To test, make sure that the wires from the lock are showing on the outside of the book. Close the lid and engage the lock. Add the battery to the wires and the lock should retract and you should be able to open the cover. If you don’t hear the lock retract, push slightly on the cover and this will retract the lock.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Wiring the Battery, Reed Switch and Lock</h2><div class="step-images"><img src="images/step08_01.png" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 7" loading="lazy"></div><p>The first thing you’ll need to do is to determine where to attach the reed switch. It needs to be in a place where it won’t get damaged and also somewhere close to the cover page of the book so the magnet will activate the switch.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Wiring the Battery, Reed Switch and Lock</h2><div class="step-images"><img src="images/step08_01.png" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Wiring the Battery, Reed Switch and Lock image 7" loading="lazy"></div><p>The first thing you’ll need to do is to determine where to attach the reed switch.</p>
+<p>It needs to be in a place where it won’t get damaged and also somewhere close to the cover page of the book so the magnet will activate the switch.</p>
 <p>Steps:</p>
 <ol>
 <li>Add 2 lengths of wire to the ends of the reed switch</li>
@@ -212,10 +258,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Attach the other wire from the reed switch to the positive wire from the relay lock.</li>
 <li>Solder the negative wire from the lock to the other battery terminal. Attach a battery to the holder and test with a magnet to make sure the lock opens when you pass the magnet over the switch.</li>
 <li>Lastly, make sure that when you close the book that the wires clear the edge of the wood. It’s not super important that they don’t but if you can get them to clear the edge, then the book will close better. I just added some cloth tape to the wire and slightly bent it so when you close the cover, the wire bends out of the way.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Finishing Touches</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finishing Touches image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finishing Touches image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finishing Touches image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finishing Touches image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finishing Touches image 5" loading="lazy"></div><p>Before you close the cover of the book and engage the lock, test first with a magnet to make sure the lock works. The last thing you want to happen is to close the cover, the lock engages and the switch doesn’t work for some reason. You would probably have to rip off the cover to be able to open again!</p>
-<p>If everything works, then close the cover and engage the lock. Place the magnet near where the reed switch is sitting and you should hear the lock open. If you don’t, push slightly on the book cover as there might be a little pressure on the lock which is causing it to stick in the hole in the wood.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Finishing Touches</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finishing Touches image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finishing Touches image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finishing Touches image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finishing Touches image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finishing Touches image 5" loading="lazy"></div><p>Before you close the cover of the book and engage the lock, test first with a magnet to make sure the lock works.</p>
+<p>The last thing you want to happen is to close the cover, the lock engages and the switch doesn’t work for some reason.</p>
+<p>You would probably have to rip off the cover to be able to open again!</p>
+<p>If everything works, then close the cover and engage the lock.</p>
+<p>Place the magnet near where the reed switch is sitting and you should hear the lock open.</p>
+<p>If you don’t, push slightly on the book cover as there might be a little pressure on the lock which is causing it to stick in the hole in the wood.</p>
 <p>I decided to add a small loop to the magnet in order to hang it somewhere. You could get a small locket or something similar and keep the magnet inside for safe keeping.</p>
 <p>I would also probably change the battery every 12 months as well - just to be on the safe side.</p>
 <p>Don’t forget to post a picture if you make your own.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

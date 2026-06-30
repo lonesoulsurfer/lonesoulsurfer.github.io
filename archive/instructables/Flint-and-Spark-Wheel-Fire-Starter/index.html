@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,8 +163,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Flint and Spark Wheel Fire Starter</span>
 </nav>
 <h1>Flint and Spark Wheel Fire Starter</h1><div class="source"><a href="https://www.instructables.com/Flint-and-Spark-Wheel-Fire-Starter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Don't throw away those used lighters, instead turn them into a fire starter.</p>
-<p>I hate to see anything go to waste, so whenever a disposable lighter runs out of fuel I either turn the flint into a firework (see here), or make one of these. The fire starter is made from the spark wheel, spring and flint from the lighter. The body of the fire starter is made from copper.</p>
-<p>There's nothing too difficult making one of these, the hardest thing probably is adding the spark wheel to the copper bracket. It took me a couple of times to work out the best way to make this section.</p>
+<p>I hate to see anything go to waste, so whenever a disposable lighter runs out of fuel I either turn the flint into a firework (see here), or make one of these.</p>
+<p>The fire starter is made from the spark wheel, spring and flint from the lighter.</p>
+<p>The body of the fire starter is made from copper.</p>
+<p>There's nothing too difficult making one of these, the hardest thing probably is adding the spark wheel to the copper bracket.</p>
+<p>It took me a couple of times to work out the best way to make this section.</p>
 <p>The spring is held in place with a screw which has a ring soldered to the bottom of it. This makes the flint easy to change.</p>
 <p>Without further ado - lets get started</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -189,7 +227,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill the hole (should be the same size as the tube) and remove any burrs with a file. I left the spark wheel in place when I did this so if you do the same, be careful when drilling.</li>
 <li>Push the tube into the hole you made in the bracket.</li>
 </ol>
-<p>add some flux to the join and solder in place. I used a mini blow torch to do the job. It's pretty simple to do but if you haven't done this before, maybe practice first. The important thing is to get the copper hot enough to melt the solder on touch.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Ring.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Ring. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Ring. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Ring. image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Ring. image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Ring. image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Ring. image 6" loading="lazy"></div><p>In order to hang it from my keys, I added a small ring top the screw. The other benefit is you can un-do the screw easy with the ring attached</p>
+<p>add some flux to the join and solder in place.</p>
+<p>I used a mini blow torch to do the job.</p>
+<p>It's pretty simple to do but if you haven't done this before, maybe practice first.</p>
+<p>The important thing is to get the copper hot enough to melt the solder on touch.</p><h2><span class="step-num">STEP 8</span>Step 8: Adding the Ring.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Ring. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Ring. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Ring. image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Ring. image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Ring. image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Ring. image 6" loading="lazy"></div><p>In order to hang it from my keys, I added a small ring top the screw. The other benefit is you can un-do the screw easy with the ring attached</p>
 <p>Steps:</p>
 <ol>
 <li>Make a ring out of the copper wire</li>
@@ -201,5 +242,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Be careful not to get polish on the wheel or it will be a pain to clean off</li>
 <li>Done. Give it a test and attach it to your keys or whatever you want to</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

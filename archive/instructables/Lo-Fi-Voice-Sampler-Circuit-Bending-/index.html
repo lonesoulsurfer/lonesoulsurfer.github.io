@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,11 +163,22 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Sound Bending Machine - Intro to Circuit Bending</span>
 </nav>
 <h1>Sound Bending Machine - Intro to Circuit Bending</h1><div class="source"><a href="https://www.instructables.com/Lo-Fi-Voice-Sampler-Circuit-Bending-/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>All credit goes to Dani Dögenigt on this build which happens to be my 100th Instructable!</p>
-<p>I just want to take a moment and and give a massive shout out and a whole lot of thanks to Instrucables. What an amazing place to share ideas and connect with like minded people. It's allowed me to really expand my abilities and has given me an avenue to share a a bunch of projects with you all. Last but not least, I would like to thank anyone who has voted for me in a competition, you dudes rock!</p>
-<p>Back to the project at hand... Whist traversing the hackaday website, I came across the amazing Dani Dögenigt and his website, which in his words "...documents the process of designing analog instruments and reverse-engineering vintage hardware + more". Part of his work is on circuit bending, which I wasn't very familiar with. For those like me who don't know circuit bending is, put simply it's hacking toys, vintage keyboards or anything which makes sounds to make unique sounds. You probe around the circuit, making short circuits to see what other sounds you can produce. Once you have a sound you like you can then add potentiometers, switches etc and create your own music and sampling machine.</p>
+<p>I just want to take a moment and and give a massive shout out and a whole lot of thanks to Instrucables.</p>
+<p>What an amazing place to share ideas and connect with like minded people.</p>
+<p>It's allowed me to really expand my abilities and has given me an avenue to share a a bunch of projects with you all.</p>
+<p>Last but not least, I would like to thank anyone who has voted for me in a competition, you dudes rock!</p>
+<p>Back to the project at hand...</p>
+<p>Whist traversing the hackaday website, I came across the amazing Dani Dögenigt and his website, which in his words "...documents the process of designing analog instruments and reverse-engineering vintage hardware + more".</p>
+<p>Part of his work is on circuit bending, which I wasn't very familiar with.</p>
+<p>For those like me who don't know circuit bending is, put simply it's hacking toys, vintage keyboards or anything which makes sounds to make unique sounds.</p>
+<p>You probe around the circuit, making short circuits to see what other sounds you can produce.</p>
+<p>Once you have a sound you like you can then add potentiometers, switches etc and create your own music and sampling machine.</p>
 <p>The case comes from an old intercom that I had lying around. the great thing about these is they come in pairs so you can easily make 2 if you want.</p>
 <p>check out this website if you want to get a crash course in circuit bending</p>
-<p>The circuit I used is from a very cheapo voice recorder. Dani Dögenigt uses a similar one but is a lot harder to hack. The one I used is relativity simple to find sounds on and solder extra wires to. However, you do need some experience at soldering so if you are a beginner, this might not be the project for you.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts image 9" loading="lazy"></div><p>Parts</p>
+<p>The circuit I used is from a very cheapo voice recorder.</p>
+<p>Dani Dögenigt uses a similar one but is a lot harder to hack.</p>
+<p>The one I used is relativity simple to find sounds on and solder extra wires to.</p>
+<p>However, you do need some experience at soldering so if you are a beginner, this might not be the project for you.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts image 9" loading="lazy"></div><p>Parts</p>
 <ol>
 <li>Voice Recorder - eBay</li>
 <li>4 X Momentary switches - eBay</li>
@@ -157,7 +203,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Locate the 2 points on the circuit board where to attach the positive and negative wires from the battery holder. 2. Solder on the wires to the circuit board</li>
 <li>Place some batteries into the holder and test the sound recorder.</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Start Circuit Bending</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Start Circuit Bending image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Start Circuit Bending image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Start Circuit Bending image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Start Circuit Bending image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Start Circuit Bending image 5" loading="lazy"></div><p>Circuit bending is really quite simple. All you need to do is short circuit 2 connections on the circuit board. To make it even easier, most of the sounds I got from the circuit come from the IC so all you need to do is use a probe and touch the legs on the IC to see what sounds you can get.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Start Circuit Bending</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Start Circuit Bending image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Start Circuit Bending image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Start Circuit Bending image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Start Circuit Bending image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Start Circuit Bending image 5" loading="lazy"></div><p>Circuit bending is really quite simple.</p>
+<p>All you need to do is short circuit 2 connections on the circuit board.</p>
+<p>To make it even easier, most of the sounds I got from the circuit come from the IC so all you need to do is use a probe and touch the legs on the IC to see what sounds you can get.</p>
 <p>Actually I've done all of the hard work for you so if you just want to use the connections I found - skip this step and go to the next one</p>
 <p>How to make a probe</p>
 <ol>
@@ -171,14 +219,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>First thing I did was to get an image of the sound module, enlarge it and print it off. This way I can I can make sure I mark any good connections whist circuit bending</li>
 <li>Next I started to experiment and noted any interesting sounds made when I used the probe. Once I found an interesting sound or effect, I marked it down.</li>
 <li>After finding a bunch of effects that I was happy, I then created a mud map with all of the connections and parts that I will need. You can find this in the images below.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Circuit Board - the Rest of the Wires</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 4" loading="lazy"></div><p>Initially I started to solder the wire directly to the legs of the IC. This didn't work so I decided to add the wires to the IC solder points. I didn't take step by step images of all of the wires as it was just too hard to do. If you follow the diagram though you won't have any issues.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Wiring the Circuit Board - the Rest of the Wires</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Wiring the Circuit Board - the Rest of the Wires image 4" loading="lazy"></div><p>Initially I started to solder the wire directly to the legs of the IC.</p>
+<p>This didn't work so I decided to add the wires to the IC solder points.</p>
+<p>I didn't take step by step images of all of the wires as it was just too hard to do.</p>
+<p>If you follow the diagram though you won't have any issues.</p>
 <p>Steps:</p>
 <ol>
 <li>Have the diagram in front of you and start so add lengths of wire to the reverse solder points.</li>
 <li>Ensure that you don't bridge any of the solder points and take your time adding all of the wires</li>
 <li>I thought adding some jumpers on a board would help but it didn't so I removed this and just soldered wires together where necessary.</li>
 <li>Lastly, take your time and test continuously.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring the Circuit Board - Record, Play and the Microphone</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 4" loading="lazy"></div><p>You will need top add a couple of wires to each of the record and play buttons. Alternatively you could de-solder the buttons and add the wires to the solder points. However, leaving them in place allows you to test throughout the hack.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Wiring the Circuit Board - Record, Play and the Microphone</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Wiring the Circuit Board - Record, Play and the Microphone image 4" loading="lazy"></div><p>You will need top add a couple of wires to each of the record and play buttons.</p>
+<p>Alternatively you could de-solder the buttons and add the wires to the solder points.</p>
+<p>However, leaving them in place allows you to test throughout the hack.</p>
 <p>Steps:</p>
 <ol>
 <li>De-solder the microphone from the circuit board.</li>
@@ -198,7 +251,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Measure and cut the wires to length. Tin the ends and attach them top the switches and potentiometers.</li>
 <li>Make sure you test as you go a.long where possible. If you run into trouble, check your solder points and make sure nothing is bridged or come off the IC</li>
 <li>Lastly close up the case</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Playing Around With Your Lo-Fi Sampler</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Playing Around With Your Lo-Fi Sampler image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Playing Around With Your Lo-Fi Sampler image 2" loading="lazy"></div><p>First thing to do is to record a sound. Once you have added some sound it's time to start bending and sampling. The pots allow you to slow down and speed up the sound making for some cool effects. The distorter switch gives distortion and quieten downs the sound coming out the speaker. The restart button does just that, it restarts the sample.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Playing Around With Your Lo-Fi Sampler</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Playing Around With Your Lo-Fi Sampler image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Playing Around With Your Lo-Fi Sampler image 2" loading="lazy"></div><p>First thing to do is to record a sound.</p>
+<p>Once you have added some sound it's time to start bending and sampling.</p>
+<p>The pots allow you to slow down and speed up the sound making for some cool effects.</p>
+<p>The distorter switch gives distortion and quieten downs the sound coming out the speaker.</p>
+<p>The restart button does just that, it restarts the sample.</p>
 <p>Next plug in some music to the audio in and record some music to the sampler. This is a really fun way to mess around with your favourite song.</p>
 <p>What next?</p>
 <ol>
@@ -208,5 +265,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The sound module only records 10 seconds of sound. You can extend this to 20 seconds by changing a resistor but the sound is degraded. Still might be a good idea to try.</li>
 <li>The schematic of the circuit can be found here</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

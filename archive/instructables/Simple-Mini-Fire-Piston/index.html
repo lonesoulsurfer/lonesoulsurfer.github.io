@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,12 +162,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Simple Mini Fire Piston</span>
 </nav>
-<h1>Simple Mini Fire Piston</h1><div class="source"><a href="https://www.instructables.com/Simple-Mini-Fire-Piston/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I’ve made a few fire pistons over the last couple years and this would have to be my smallest. It fits into the palm of your hand and can easily be added to a small tin along with some char cloth and oil and used as a fire starter.</p>
-<p>For those who may be new to a fire piston, what it does is allow you to ignite char cloth without any form of fire. Once the char cloth is lit, then you can use the ember to light your fire. It works by compressing and heating air until it reaches temperatures of 260°C (500°F). This is hot enough to ignite the char cloth and create an ember which can be used to light your fire.</p>
+<h1>Simple Mini Fire Piston</h1><div class="source"><a href="https://www.instructables.com/Simple-Mini-Fire-Piston/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I’ve made a few fire pistons over the last couple years and this would have to be my smallest.</p>
+<p>It fits into the palm of your hand and can easily be added to a small tin along with some char cloth and oil and used as a fire starter.</p>
+<p>For those who may be new to a fire piston, what it does is allow you to ignite char cloth without any form of fire.</p>
+<p>Once the char cloth is lit, then you can use the ember to light your fire.</p>
+<p>It works by compressing and heating air until it reaches temperatures of 260°C (500°F).</p>
+<p>This is hot enough to ignite the char cloth and create an ember which can be used to light your fire.</p>
 <p>Step 7 shows how to make Char cloth.</p>
 <p>Check out this link if you would like to learn more about the fire piston.</p>
-<p>It doesn’t take any real skill to make one of these and you only need basic tools. The hardest part is getting the seal right on the push rod. This took me a few goes but I learnt a lot so hopefully you won’t have to waste as much time as I did!</p>
-<p>However, it can take some time to perfect using the fire piston. Getting the right action and speed is essential in igniting the char cloth. The last step goes through a few ides to try if you’re not getting the char cloth to ignite.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>The great thing about making a fire piston is you don’t need</p>
+<p>It doesn’t take any real skill to make one of these and you only need basic tools.</p>
+<p>The hardest part is getting the seal right on the push rod.</p>
+<p>This took me a few goes but I learnt a lot so hopefully you won’t have to waste as much time as I did!</p>
+<p>However, it can take some time to perfect using the fire piston.</p>
+<p>Getting the right action and speed is essential in igniting the char cloth.</p>
+<p>The last step goes through a few ides to try if you’re not getting the char cloth to ignite.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>The great thing about making a fire piston is you don’t need</p>
 <p>many parts or tools. I made mine out of aluminium as it was easy to come by at the hardware store. I have added links to Bunnings warehouse (in Australia and now UK) so you can see what it looks like</p>
 <p>Parts:</p>
 <p>Fire Piston</p>
@@ -182,7 +225,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, add some epoxy glue to the inside of the tube and push the plug into place. Make sure that you keep the tube upright and the plug facing down. This way the glue won’t slide down the inside of the tube which would affect how the piston works.</li>
 <li>Place the end with the wooden plug on a bench and then tap the top of the tube with a hammer. Add a small piece of wood to the top so you don’t damage the tube.</li>
 <li>Leave to dry standing up for an hour or so.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Piston - Hole for Char Cloth</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 5" loading="lazy"></div><p>This is probably the trickiest part of the project. You need to make a small hole in the end of the rod and also add a groove for the O ring. Let’s start with the hole first which is there to hold the char cloth in place</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Piston - Hole for Char Cloth</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Piston - Hole for Char Cloth image 5" loading="lazy"></div><p>This is probably the trickiest part of the project.</p>
+<p>You need to make a small hole in the end of the rod and also add a groove for the O ring.</p>
+<p>Let’s start with the hole first which is there to hold the char cloth in place</p>
 <p>Steps:</p>
 <ol>
 <li>Secure the piston in a vice</li>
@@ -195,7 +240,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The best way to make the groove I found was to use the side of a small, thin file. Put the rod into a drill and secure the drill in a vice. Push the side of the file against the aluminium rod and move it up and down slowly. Take your time and don’t go too deep or wide. The groove should only be as wide as the O ring.</li>
 <li>Stop and check regularly. Once you have an even groove, remove the rod from the drill and add the O ring to the groove. If the O ring sits even in the groove, then you are ready to see if it fits into the tube.</li>
 </ol>
-<p>HERE’S THE IMPORTANT BIT. Make sure you add a little bit of oil to the O ring. This will ensure that it moves easily and smoothly inside the tube. I didn’t do this initially and my O ring kept on getting stuck inside.</p>
+<p>HERE’S THE IMPORTANT BIT.</p>
+<p>Make sure you add a little bit of oil to the O ring.</p>
+<p>This will ensure that it moves easily and smoothly inside the tube.</p>
+<p>I didn’t do this initially and my O ring kept on getting stuck inside.</p>
 <ol>
 <li>To test you need to push the rod into the tube. You should feel a “cushion” of compressed air as you push the rod down. This will force the rod to bounce back up again. If you find that the rod isn’t bouncing back, or that it’s too hard to push into the tube, then you will either need to make the groove larger or start again. Don’t despair if your first couple don’t work, getting the seal right will probably take a couple turns. You will know though when it is right as soon as you feel the “cushion” of air forcing the piston back up again.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Making Char Cloth</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making Char Cloth image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making Char Cloth image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making Char Cloth image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making Char Cloth image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making Char Cloth image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making Char Cloth image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Making Char Cloth image 7" loading="lazy"></div><p>Making char cloth is super easy and there are plenty of good instructions on the net on how to make it.</p>
@@ -213,13 +261,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>File the flat section to remove any lumps or burrs and also round the end of the picker</li>
 <li>Lastly, slightly bend the flat section as shown in the pictures below.</li>
 </ol>
-<p>Now you will be able to pull the lite char cloth out of the end of the rod</p><h2><span class="step-num">STEP 9</span>Step 9: Using Your Fire Piston</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Using Your Fire Piston image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Using Your Fire Piston image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Using Your Fire Piston image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Using Your Fire Piston image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Using Your Fire Piston image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Using Your Fire Piston image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Using Your Fire Piston image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Using Your Fire Piston image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Using Your Fire Piston image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Using Your Fire Piston image 10" loading="lazy"><img src="images/step09_11.jpg" alt="Step 9: Using Your Fire Piston image 11" loading="lazy"></div><p>So now you’ve finished your piston, it’s time to get it to work. It does take a little practice but once you get it, it should work for you each time. Don’t be put off if it doesn’t work straight away though.</p>
+<p>Now you will be able to pull the lite char cloth out of the end of the rod</p><h2><span class="step-num">STEP 9</span>Step 9: Using Your Fire Piston</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Using Your Fire Piston image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Using Your Fire Piston image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Using Your Fire Piston image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Using Your Fire Piston image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Using Your Fire Piston image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Using Your Fire Piston image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Using Your Fire Piston image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Using Your Fire Piston image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Using Your Fire Piston image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Using Your Fire Piston image 10" loading="lazy"><img src="images/step09_11.jpg" alt="Step 9: Using Your Fire Piston image 11" loading="lazy"></div><p>So now you’ve finished your piston, it’s time to get it to work.</p>
+<p>It does take a little practice but once you get it, it should work for you each time.</p>
+<p>Don’t be put off if it doesn’t work straight away though.</p>
 <p>Here’s what you do:</p>
 <p>Steps:</p>
 <ol>
 <li>Place a small piece of char cloth into the drilled hole in the piston. What I do is tear a small strip off the chat cloth and roll it up.</li>
 </ol>
-<p>IMPORTANT: after a lot of trial and error, I discovered that the char cloth lights best when below the rim of the hole in the piston. Make should it is pushed into the hole and that there is no char cloth hanging over the edge.</p>
+<p>IMPORTANT: after a lot of trial and error, I discovered that the char cloth lights best when below the rim of the hole in the piston.</p>
+<p>Make should it is pushed into the hole and that there is no char cloth hanging over the edge.</p>
 <ol>
 <li>Add a little oil to the O ring. You don’t have to do this each time, just the first time or until the O ring is dry.</li>
 <li>Push the end of the piston into the tube just to the O ring is inside</li>
@@ -227,7 +278,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Give the piston a quick push down</li>
 <li>Immediately remove the piston and check the char cloth to see if it is lit</li>
 <li>If it is isn't try it again</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Storage Tin</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Storage Tin image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Storage Tin image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Storage Tin image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Storage Tin image 4" loading="lazy"></div><p>Once you have finished the fire piston – you will need something to store the char cloth, piston and oil in. In the parts section I link a tin you can buy on eBay which would do nicely. I’m still waiting for mine to come so in the mean-time I decided to use an old tobacco tin I had lying around.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Storage Tin</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Storage Tin image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Storage Tin image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Storage Tin image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Storage Tin image 4" loading="lazy"></div><p>Once you have finished the fire piston – you will need something to store the char cloth, piston and oil in.</p>
+<p>In the parts section I link a tin you can buy on eBay which would do nicely.</p>
+<p>I’m still waiting for mine to come so in the mean-time I decided to use an old tobacco tin I had lying around.</p>
 <p>A waterproof container would also be a great way to keep your fire piston dry.</p><h2><span class="step-num">STEP 11</span>Step 11: Troubleshooting</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Troubleshooting image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Troubleshooting image 2" loading="lazy"></div><p>If you are having issues getting the Char cloth to light, then check out the below hints</p>
 <p>There is no push back (compression) on the piston</p>
 <ul>
@@ -238,11 +291,28 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>It could mean that you need to make the groove larger. Check and make sure that there are no bumps on the groove and that it is a smooth as possible. It doesn’t have to be perfect though. - Add some oil - Check the size of your O ring</li>
 </ul>
 <p>I’ve pushed down a hundred times and still nothing</p>
-<p>When you push the piston into the tube you need to make sure that it is a quick, sharp action. Push down hard but don’t try to hold it down, let the piston come up naturally which it will because of the compression.</p>
+<p>When you push the piston into the tube you need to make sure that it is a quick, sharp action.</p>
+<p>Push down hard but don’t try to hold it down, let the piston come up naturally which it will because of the compression.</p>
 <ul>
 <li>Check you char cloth. If it doesn’t light after a few pushes then change it.</li>
 <li>Try a different method. There isn’t one sure way to get the char cloth to ignite so find what works best for you.</li>
 <li>Try a different sized O ring, or replace the one you are using.</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

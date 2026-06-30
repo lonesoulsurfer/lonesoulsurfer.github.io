@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Display Frame With LED's</span>
 </nav>
-<h1>Display Frame With LED's</h1><div class="source"><a href="https://www.instructables.com/Display-Frame-With-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I find a lot of great and interesting objects whilst I’m out and about and I wanted a way to display them. You can buy nice wall boxes or even use those boxed photo frames but I wanted to add some LED lighting to my box so needed to customise it.</p>
+<h1>Display Frame With LED's</h1><div class="source"><a href="https://www.instructables.com/Display-Frame-With-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I find a lot of great and interesting objects whilst I’m out and about and I wanted a way to display them.</p>
+<p>You can buy nice wall boxes or even use those boxed photo frames but I wanted to add some LED lighting to my box so needed to customise it.</p>
 <p>The box itself is made from pine which is cheap and easy to work with. Plus adding some Danish varnish or something similar really brings out the grain of the wood which I love.</p>
-<p>The object that I wanted to display was an old cap gun. I found this at a junk store and remember having one very similar as a kid. It’s got a very cool, vintage look and I wanted some way to display it. The cap-gun also uses the rolled type cap which you can’t get any longer (at least in Australia) so displaying it gives it a new purpose.</p>
+<p>The object that I wanted to display was an old cap gun.</p>
+<p>I found this at a junk store and remember having one very similar as a kid.</p>
+<p>It’s got a very cool, vintage look and I wanted some way to display it.</p>
+<p>The cap-gun also uses the rolled type cap which you can’t get any longer (at least in Australia) so displaying it gives it a new purpose.</p>
 <p>I also like to be able to remove the object from the display frame if I want to, especially if it’s a toy so I made it so it could be easily removed from the frame.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Wood for the frame. I used pine wood about 90mm wide. The size though of your frame will depend on what object you are displaying. Local hardware store</li>
@@ -168,13 +207,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next screw the corner brackets to the frame. This will give it strength.</li>
 <li>To ensure that the MDF is sitting flush in the groove, you can add some small pieces of timber to the back of the frame and MDF. Just add some wood glue and clamp into place for a few hours.</li>
 <li>If you haven’t painted the frame yet, now is a good time to use some masking tape to protect the MDF.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Painting</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Painting image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Painting image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Painting image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Painting image 4" loading="lazy"></div><p>It’s up to you how you want to paint the frame. I was going to use some wax but decided to use some clear Danish polish instead. It brought out the grain in the wood really nicely but hasn’t darkened it too much.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Painting</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Painting image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Painting image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Painting image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Painting image 4" loading="lazy"></div><p>It’s up to you how you want to paint the frame.</p>
+<p>I was going to use some wax but decided to use some clear Danish polish instead.</p>
+<p>It brought out the grain in the wood really nicely but hasn’t darkened it too much.</p>
 <p>Steps:</p>
 <ol>
 <li>Use a cloth and add a light layer of varnish to the wood. Be careful of the MDF as you don’t ant to get any on it if you can help it</li>
 <li>After the layer is dry continue to add layers until you are happy with the finish.</li>
 <li>Remove any masking tape</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Object to Display</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Object to Display image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Object to Display image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Object to Display image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Object to Display image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Object to Display image 5" loading="lazy"></div><p>As I mentioned at the start of the ible’, I wanted to be able to remove the gun from the frame so anyone can come along and remove it to have a better look (or play). Using picture hanging strips allows the cap-gun to be secured well to the frame but easily removed as well.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Object to Display</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Object to Display image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Object to Display image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Object to Display image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Object to Display image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Object to Display image 5" loading="lazy"></div><p>As I mentioned at the start of the ible’, I wanted to be able to remove the gun from the frame so anyone can come along and remove it to have a better look (or play).</p>
+<p>Using picture hanging strips allows the cap-gun to be secured well to the frame but easily removed as well.</p>
 <p>Steps:</p>
 <ol>
 <li>Work out where you want to place the object.</li>
@@ -210,5 +252,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Work out where you want the frame to be mounted on the wall and push into place</li>
 <li>Sit back and admire your handiwork</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

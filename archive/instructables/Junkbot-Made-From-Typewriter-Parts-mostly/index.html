@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,10 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Junkbot Made From Typewriter Parts (mostly...)</span>
 </nav>
-<h1>Junkbot Made From Typewriter Parts (mostly...)</h1><div class="source"><a href="https://www.instructables.com/Junkbot-Made-From-Typewriter-Parts-mostly/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>For me, a build like this usually starts with one specific part. That happened to be some levers that I had pulled from a previous typewriter. I was thinking to myself - damn these things look like insect legs! From there I started tinkering - building up layers until I had given the leg some dimension and 'mechanical' feel.</p>
+<h1>Junkbot Made From Typewriter Parts (mostly...)</h1><div class="source"><a href="https://www.instructables.com/Junkbot-Made-From-Typewriter-Parts-mostly/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>For me, a build like this usually starts with one specific part.</p>
+<p>That happened to be some levers that I had pulled from a previous typewriter.</p>
+<p>I was thinking to myself - damn these things look like insect legs!</p>
+<p>From there I started tinkering - building up layers until I had given the leg some dimension and 'mechanical' feel.</p>
 <p>Once one leg was made it was game on and I couldn't stop building until I had created the junkbot that that you see before you.</p>
-<p>The rest of the parts I used I had lying around in my workshop (I'm a collector of things!). The body is made up of half spheres of a steal ball, the head is made from a pneumatic bowl from a filter (maybe a little hard to find but I have added some ideas on how to copy it in the below steps), a 8mm film spool, and other odds and ends.</p>
-<p>Most of the main parts are available to buy and I have added links below on where you can get them. The bits that you cant' buy you'll need to be creative and come up with your own solutions and ideas.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Supplies image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Supplies image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Supplies image 11" loading="lazy"><img src="images/step01_12.jpg" alt="Supplies image 12" loading="lazy"></div><p>PARTS:</p>
+<p>The rest of the parts I used I had lying around in my workshop (I'm a collector of things!).</p>
+<p>The body is made up of half spheres of a steal ball, the head is made from a pneumatic bowl from a filter (maybe a little hard to find but I have added some ideas on how to copy it in the below steps), a 8mm film spool, and other odds and ends.</p>
+<p>Most of the main parts are available to buy and I have added links below on where you can get them.</p>
+<p>The bits that you cant' buy you'll need to be creative and come up with your own solutions and ideas.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Supplies image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Supplies image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Supplies image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Supplies image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Supplies image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Supplies image 10" loading="lazy"><img src="images/step01_11.jpg" alt="Supplies image 11" loading="lazy"><img src="images/step01_12.jpg" alt="Supplies image 12" loading="lazy"></div><p>PARTS:</p>
 <ul>
 <li>Typewriter. I picked mine up at a op-shop for a tenner. You can get them cheaply on sites like facebook marketplace and eBay. The one I brought was broken so I didn't feel too bad pulling it apart!</li>
 <li>Pneumatic Bowl - Search for one on the net. If you can't find one then see step 11 on how to make one similar from a bottle.</li>
@@ -174,7 +214,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Keep of the key levers, springs and rods that come off the typewriter as they can all be used in this and other builds.</li>
 <li>Next thing to do is to remove the letter levers. They are also held into place with a rod but this one is curved. You can use a nail punch or something similar to remove this rod. You'll need to give it a couple hits with a hammer to pop it out a little. Use pliers again to remove it from the typewriter</li>
 <li>Un-hook all of the letter levers and also save these along with the connecting rods. I only used 2 of them in this project but they make great little insect legs which I'll be using in another build.</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Legs - Round Off the Ends</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 7" loading="lazy"></div><p>You'll notice that there are 4 main types of key levers. You need to find pairs of them and I used the largest sized ones for the 4 legs. Note that I actually went with 6 legs originally but decided to make my junkbot a tetrapod.</p>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Making the Legs - Round Off the Ends</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Making the Legs - Round Off the Ends image 7" loading="lazy"></div><p>You'll notice that there are 4 main types of key levers.</p>
+<p>You need to find pairs of them and I used the largest sized ones for the 4 legs.</p>
+<p>Note that I actually went with 6 legs originally but decided to make my junkbot a tetrapod.</p>
 <p>STEPS:</p>
 <ul>
 <li>Move the plastic 'key' or letter off the ends of the levers</li>
@@ -209,14 +251,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Grab a couple of the tiny springs from the typewriter. If the end of the spring is out of shape, then just squeeze it a little to make it round again</li>
 <li>Connect a spring on each end of the wire as shown in the images</li>
 <li>That's one leg made - now go ahead and make 3 more!</li>
-</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Legs & the Claws</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Legs & the Claws image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Legs & the Claws image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Legs & the Claws image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Legs & the Claws image 4" loading="lazy"></div><p>So as mentioned earlier, I was going to make my junkbot a 6 legged one but decided to only give him 4 legs. Not before I actually added the 6 legs mind you and had him finished and on the shelf! The great thing about this build is it is easy to take the junkbot apart and change around things if you want to later on.</p>
+</ul><h2><span class="step-num">STEP 7</span>Step 7: Making the Legs & the Claws</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 7: Making the Legs & the Claws image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 7: Making the Legs & the Claws image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 7: Making the Legs & the Claws image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 7: Making the Legs & the Claws image 4" loading="lazy"></div><p>So as mentioned earlier, I was going to make my junkbot a 6 legged one but decided to only give him 4 legs.</p>
+<p>Not before I actually added the 6 legs mind you and had him finished and on the shelf!</p>
+<p>The great thing about this build is it is easy to take the junkbot apart and change around things if you want to later on.</p>
 <p>I also made a coupe of claws or arms using the smallest levers. They are made exactly the same way as the legs, but just smaller.</p>
 <p>Now all of the legs are done - it's time to move onto the body</p><h2><span class="step-num">STEP 8</span>Step 8: Making the Body - Removing the Shine</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Making the Body - Removing the Shine image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Making the Body - Removing the Shine image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Making the Body - Removing the Shine image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Making the Body - Removing the Shine image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Making the Body - Removing the Shine image 5" loading="lazy"></div><p>The body is made up of 2 half stainless steel spheres. They had been polished and were a little too shiny for my liking so I decided to give them a sand and make them matt finish.</p>
 <p>STEPS:</p>
 <ul>
 <li>I used 600 grit sandpaper first and sanded all of the surface of the spheres. This removed the polish finish but left small scratch marks in the metal.</li>
 <li>I then used some '0' grade steel wool to smooth out the finish and remove some of the scratches in the spheres. I think it might have been better to start with a grittier steel wool first and work done to a finer one but all I had was '0' grade available.</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: Making the Body - Drilling & Adding Some Rubber</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 6" loading="lazy"></div><p>The junkbot is all held together using a threaded rod so you'll need to drill a couple holes through the tops of the spheres. The legs and claws are also added to the spheres so you'll need some holes made for them as well.</p>
+</ul><h2><span class="step-num">STEP 9</span>Step 9: Making the Body - Drilling & Adding Some Rubber</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 9: Making the Body - Drilling & Adding Some Rubber image 6" loading="lazy"></div><p>The junkbot is all held together using a threaded rod so you'll need to drill a couple holes through the tops of the spheres.</p>
+<p>The legs and claws are also added to the spheres so you'll need some holes made for them as well.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, turn one of the spheres over and locate the middle of the sphere. As close as possible will do.</li>
@@ -231,7 +276,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now add the rest of the legs to the bottom sphere.</li>
 <li>You can position the legs as you want them by bending them at the joints.</li>
 <li>I didn't mention it in the previous step but you also need to make acouole holes in the top half sphere to ad the claws into place. Secure the claws to the top section and once done place it on top of the bottom sphere. It actually looks prety cool just like this I think. If you wanted to you could add a eye to the top and your done! I was even thinking of not adding the top section and turn into a bowl with legs.</li>
-</ul><h2><span class="step-num">STEP 11</span>Step 11: The Plastic Dome and Threaded Rod</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 5" loading="lazy"></div><p>The plastic dome is something called a pneumatic bowl and is used on pneumatic filters. I managed to find a couple of these at a junk shop but it seems they aren't that easy to find. I did a dive on the net to see what I could find and the ones I did were all quite expensive.</p>
+</ul><h2><span class="step-num">STEP 11</span>Step 11: The Plastic Dome and Threaded Rod</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 11: The Plastic Dome and Threaded Rod image 5" loading="lazy"></div><p>The plastic dome is something called a pneumatic bowl and is used on pneumatic filters.</p>
+<p>I managed to find a couple of these at a junk shop but it seems they aren't that easy to find.</p>
+<p>I did a dive on the net to see what I could find and the ones I did were all quite expensive.</p>
 <p>However, you could make one yourself using a bottle and a glass cutter and cutting off the top and bottom. I'd look around my local supermarket and see what bottles (plastic or glass) look similar.</p>
 <p>STEPS:</p>
 <ul>
@@ -239,14 +286,34 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, place the rod through the bottom of the half sphere and then add the top half sphere and push the rod through</li>
 <li>You can now add the plastic dome (or modified glass/plastic bottle) and sit it on top of the sphere with the rod going through the top</li>
 <li>Later you'll add a dome nut but to the top of the threaded rod and this is how everything will be connected together. But first you need to make the inside of the head.</li>
-</ul><h2><span class="step-num">STEP 12</span>Step 12: The Inside of the Head</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 12: The Inside of the Head image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 12: The Inside of the Head image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 12: The Inside of the Head image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 12: The Inside of the Head image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 12: The Inside of the Head image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 12: The Inside of the Head image 6" loading="lazy"><img src="images/step13_07.jpg" alt="Step 12: The Inside of the Head image 7" loading="lazy"><img src="images/step13_08.jpg" alt="Step 12: The Inside of the Head image 8" loading="lazy"><img src="images/step13_09.jpg" alt="Step 12: The Inside of the Head image 9" loading="lazy"><img src="images/step13_10.jpg" alt="Step 12: The Inside of the Head image 10" loading="lazy"></div><p>This bit is actully quite fun. You won't be able to do it exactly as I did as I used bits and pieces to make it from my parts bin. It's built up from a number of parts, such as a 8mm vintage film reel, pieces of aluminum tube, and other bits I could find that fitted on the threaded rod. It takes awhile playing around to decide what works and what doesn't until you end up with something that looks good to you.</p>
+</ul><h2><span class="step-num">STEP 12</span>Step 12: The Inside of the Head</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 12: The Inside of the Head image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 12: The Inside of the Head image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 12: The Inside of the Head image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 12: The Inside of the Head image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 12: The Inside of the Head image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 12: The Inside of the Head image 6" loading="lazy"><img src="images/step13_07.jpg" alt="Step 12: The Inside of the Head image 7" loading="lazy"><img src="images/step13_08.jpg" alt="Step 12: The Inside of the Head image 8" loading="lazy"><img src="images/step13_09.jpg" alt="Step 12: The Inside of the Head image 9" loading="lazy"><img src="images/step13_10.jpg" alt="Step 12: The Inside of the Head image 10" loading="lazy"></div><p>This bit is actully quite fun.</p>
+<p>You won't be able to do it exactly as I did as I used bits and pieces to make it from my parts bin.</p>
+<p>It's built up from a number of parts, such as a 8mm vintage film reel, pieces of aluminum tube, and other bits I could find that fitted on the threaded rod.</p>
+<p>It takes awhile playing around to decide what works and what doesn't until you end up with something that looks good to you.</p>
 <p>STEPS:</p>
 <ul>
 <li>Start to add parts to the threaded rod. Play around with the order that you place the parts onto the rod and different bits until you end up with something you are happy with. The 8mm reel makes a really good head and gives it a nice retro feel.</li>
 <li>The top setion which sits on top of the plastic dome is made from other typewriter parts. Again you can make this from whatever parts you may have or even just leave it out if you want. I wanted my junkbot to have a mechanical and organic feel and the head section looks a little like insect antenna.</li>
 <li>Once you are happy with everthing, it's time to add the dome nut and connect everything together. Do it up tight and make sure everything is aligned right.</li>
 </ul><h2><span class="step-num">STEP 13</span>Step 13: Your Junkbot Is Complete</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 13: Your Junkbot Is Complete image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 13: Your Junkbot Is Complete image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 13: Your Junkbot Is Complete image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 13: Your Junkbot Is Complete image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 13: Your Junkbot Is Complete image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 13: Your Junkbot Is Complete image 6" loading="lazy"></div><p>You now have your very own tetrapod junkbot! Play around with how he stands by bending the legs and moving he's claws until you are happy with the position.</p>
-<p>I was thinking about adding some LED's like the ones from Knight Rider and I still might later on. The good thing about this junkbot is it comes aposrt very easily so if you aren't happy with section then it's pretty easy to change.</p>
+<p>I was thinking about adding some LED's like the ones from Knight Rider and I still might later on.</p>
+<p>The good thing about this junkbot is it comes aposrt very easily so if you aren't happy with section then it's pretty easy to change.</p>
 <p>I had a couple extra holes in the bottom half sphere from the 2 legs I removed. I just added a couple audio connectors to these but might change them around if I find something better.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

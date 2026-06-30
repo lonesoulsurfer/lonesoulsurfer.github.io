@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Light Sensitive Junkbot</h1><div class="source"><a href="https://www.instructables.com/Light-Sensitive-Junkbot/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Make your own junkbot that reacts to the amount of light in the room.</p>
 <p>The only parts you’ll need to make the actual junkbot is an old shaver and an umbrella. The electronics inside are a little more complicated but I’ve included step by step instructions to help.</p>
-<p>The circuit is known as a Knight Rider circuit. Anyone who has been the TV show will instantly recognise. For those who have had the misfortune to have not seen the show I’ve included a link below for your viewing pleasure.</p>
-<p>In the original circuit, the LED’s speed is controlled by a Potentiometer. In this build I replaced it with a photo cell so the LED’s speed is relative to the amount of light in the room. Turn the lights down and the Junkbot goes into rest mode and his LED’s slowly move back and forth. Turn a light on and bam! He’s awake and the LED’s move swiftly back and forth.</p>
+<p>The circuit is known as a Knight Rider circuit.</p>
+<p>Anyone who has been the TV show will instantly recognise.</p>
+<p>For those who have had the misfortune to have not seen the show I’ve included a link below for your viewing pleasure.</p>
+<p>In the original circuit, the LED’s speed is controlled by a Potentiometer.</p>
+<p>In this build I replaced it with a photo cell so the LED’s speed is relative to the amount of light in the room.</p>
+<p>Turn the lights down and the Junkbot goes into rest mode and his LED’s slowly move back and forth.</p>
+<p>Turn a light on and bam!</p>
+<p>He’s awake and the LED’s move swiftly back and forth.</p>
 <p>Let’s get started</p>
 <p>Knight Rider</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Parts:</p>
 <p>Junkbot</p>
@@ -162,7 +203,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Stanley Knife</li>
 <li>Hot Glue</li>
 <li>Screwdrivers and the usual other basic tools for a build like this</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: The Circuit and Breadboarding</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Circuit and Breadboarding image 1" loading="lazy"><img src="images/step02_02.gif" alt="Step 2: The Circuit and Breadboarding image 2" loading="lazy"></div><p>The first thing to do is to breadboard the circuit. It’s not too difficult but it can get a little tricky when adding all of the diodes in place. If you find that after prototyping the circuit that an LED doesn’t flash, then you probably have a diode round the wrong way.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: The Circuit and Breadboarding</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Circuit and Breadboarding image 1" loading="lazy"><img src="images/step02_02.gif" alt="Step 2: The Circuit and Breadboarding image 2" loading="lazy"></div><p>The first thing to do is to breadboard the circuit.</p>
+<p>It’s not too difficult but it can get a little tricky when adding all of the diodes in place.</p>
+<p>If you find that after prototyping the circuit that an LED doesn’t flash, then you probably have a diode round the wrong way.</p>
 <p>The original circuit schematic can be found here. You will notice that I have modified it slightly to simplify and ensure that it works with a photo cell instead of a potentiometer.</p>
 <p>Once you have the circuit all worked out and running, it’s then time to build it</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the IC's and First Connections</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the IC's and First Connections image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the IC's and First Connections image 2" loading="lazy"></div><p>Steps:</p>
 <ol>
@@ -175,7 +218,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder pin 4 to positive</li>
 <li>Solder the 68K resistor from pin 7 to positive</li>
 <li>Solder pin 8 to positive</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Connecting the Positive, Negative and the 2 IC's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Connecting the Positive, Negative and the 2 IC's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Connecting the Positive, Negative and the 2 IC's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Connecting the Positive, Negative and the 2 IC's image 3" loading="lazy"></div><p>On the prototype board, on either side, there are 2 strips for ground and positive. To connect these together I added some wire to each strip and soldered these to the corresponding one. This way I could have a positive and ground on both sides of the prototype board.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Connecting the Positive, Negative and the 2 IC's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Connecting the Positive, Negative and the 2 IC's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Connecting the Positive, Negative and the 2 IC's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Connecting the Positive, Negative and the 2 IC's image 3" loading="lazy"></div><p>On the prototype board, on either side, there are 2 strips for ground and positive.</p>
+<p>To connect these together I added some wire to each strip and soldered these to the corresponding one.</p>
+<p>This way I could have a positive and ground on both sides of the prototype board.</p>
 <p>Steps:</p>
 <ol>
 <li>Attach a wire to each of the positive and ground strips on the prototype board and connect them together</li>
@@ -185,7 +230,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Connect pins 8, 13 and 14 to ground</li>
 <li>Connect pin 16 to positive</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Diodes</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Diodes image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Diodes image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Diodes image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Diodes image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Diodes image 5" loading="lazy"></div><p>You need to connect a bunch of diodes to the 4017 which are then connected to the LED's. There isn't an easy way to describe how to do this so make sure you read the schematic carefully and breadboard the circuit before you start to solder every thing together</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding the Diodes</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding the Diodes image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding the Diodes image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding the Diodes image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding the Diodes image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding the Diodes image 5" loading="lazy"></div><p>You need to connect a bunch of diodes to the 4017 which are then connected to the LED's.</p>
+<p>There isn't an easy way to describe how to do this so make sure you read the schematic carefully and breadboard the circuit before you start to solder every thing together</p>
 <p>Steps:</p>
 <ol>
 <li>Connect pins 6 and 7 with a diode making sure it is orientated correctly.</li>
@@ -227,7 +273,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Remove any screws inside the case and remove the motor</li>
 <li>Also, remove the on/off switch and the plastic blade release. Keep these as you will need to replace them later in a slightly modified version</li>
 <li>Lastly, Check to make sure that the circuit and battery fit inside the case. If you are also using a Ronson shaver like mine you should be able to fit everything inside. Remember though you need to add a switch and the photo cell as well.</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the Legs to the Shaver</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Legs to the Shaver image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Legs to the Shaver image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Legs to the Shaver image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Legs to the Shaver image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the Legs to the Shaver image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the Legs to the Shaver image 6" loading="lazy"><img src="images/step13_07.jpg" alt="Step 13: Adding the Legs to the Shaver image 7" loading="lazy"></div><p>Next step is to secure the legs into the shaver. Remember that you need to also fit inside the shaver, a battery and the circuit board so it is important that the legs aren't pushed too deep into the body of the shaver. You can always time though later if you find that there isn't enough room.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the Legs to the Shaver</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the Legs to the Shaver image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the Legs to the Shaver image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the Legs to the Shaver image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the Legs to the Shaver image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the Legs to the Shaver image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the Legs to the Shaver image 6" loading="lazy"><img src="images/step13_07.jpg" alt="Step 13: Adding the Legs to the Shaver image 7" loading="lazy"></div><p>Next step is to secure the legs into the shaver.</p>
+<p>Remember that you need to also fit inside the shaver, a battery and the circuit board so it is important that the legs aren't pushed too deep into the body of the shaver.</p>
+<p>You can always time though later if you find that there isn't enough room.</p>
 <p>Steps:</p>
 <ol>
 <li>I started with one leg to work out how it would sit and if I needed to reduce the size of the legs at all. Once I figured that the size was right, you can start to drill the holes in the case. Make sure that the holes are a tight fit for the legs.</li>
@@ -243,5 +291,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Lastly, screw the shaver back together and place the shaver head in place</li>
 <li>That's it! turn him on and what him react to the light.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

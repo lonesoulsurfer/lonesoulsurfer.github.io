@@ -1,4 +1,4 @@
-# Box of Beezz - Drone Synth
+# Box Of Beezz Drone Synth
 
 Source: https://www.instructables.com/Box-of-Beezz-Drone-Synth/
 

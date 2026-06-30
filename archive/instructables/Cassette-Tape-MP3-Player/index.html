@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Cassette Tape MP3 Player</span>
 </nav>
-<h1>Cassette Tape MP3 Player</h1><div class="source"><a href="https://www.instructables.com/Cassette-Tape-MP3-Player/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I've been trying for some time to come up with a mod for the cassette tape.  Initially I thought it would be cool if I could stick a voice recorder into one of those tiny cassette tapes that used to be used in message machines (trying to ironic!) but it was way too small.</p>
-<p>Then I hit upon using one as an MP3 player.  Surprisingly, no-one has completed one yet as an 'ible so I decided to go down <a href="http://www.ebay.com.au/sch/i.html?_sacat=0&_from=R40&_nkw=credit+mp3&LH_PrefLoc=2">this</a> path.  The hardest part was trying to find the right MP3 to be able to mod.  I finally found this MP3 Player on Ebay which fits really well into a cassette tape once the insides are removed.</p>
+<h1>Cassette Tape MP3 Player</h1><div class="source"><a href="https://www.instructables.com/Cassette-Tape-MP3-Player/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I've been trying for some time to come up with a mod for the cassette tape.</p>
+<p>Initially I thought it would be cool if I could stick a voice recorder into one of those tiny cassette tapes that used to be used in message machines (trying to ironic!) but it was way too small.</p>
+<p>Then I hit upon using one as an MP3 player.</p>
+<p>Surprisingly, no-one has completed one yet as an 'ible so I decided to go down <a href="http://www.ebay.com.au/sch/i.html?_sacat=0&_from=R40&_nkw=credit+mp3&LH_PrefLoc=2">this</a> path.</p>
+<p>The hardest part was trying to find the right MP3 to be able to mod.</p>
+<p>I finally found this MP3 Player on Ebay which fits really well into a cassette tape once the insides are removed.</p>
 <p>The only changes you'll have to do is a bit of trimming to the cassette tape with a dremmel, a little bit of soldering and some design work and your done.</p>
 <p>So in the name of irony, I present to you <a href="http://www.ebay.com.au/sch/i.html?_sacat=0&_from=R40&_nkw=credit+mp3&LH_PrefLoc=2">this</a> Cassette Tape MP3 Player.</p>
 <p>Enjoy.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather.</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather. image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather. image 2" loading="lazy"></div><p>Material</p>
@@ -202,7 +241,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Here's the tricky bit - you now need to screw back into place the other side of the cassette. This took me some time to make sure that everything was aligned but once it is test the buttons again to make sure that they are making contact.</li>
 <li>Screw the cassette tape back together.</li>
 <li>Test - Go and stick some of your favourite music into it and make sure all is ok.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Designing Your Cassette Tape</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Designing Your Cassette Tape image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Designing Your Cassette Tape image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Designing Your Cassette Tape image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Designing Your Cassette Tape image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Designing Your Cassette Tape image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Designing Your Cassette Tape image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Designing Your Cassette Tape image 7" loading="lazy"></div><p>Most of the tapes that you will find at second hand stores are either classical music or artists that you have never heard of before. I wanted to have some cool designs on the front of the cassette player so I decided to add my own.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Designing Your Cassette Tape</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Designing Your Cassette Tape image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Designing Your Cassette Tape image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Designing Your Cassette Tape image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Designing Your Cassette Tape image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Designing Your Cassette Tape image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Designing Your Cassette Tape image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Designing Your Cassette Tape image 7" loading="lazy"></div><p>Most of the tapes that you will find at second hand stores are either classical music or artists that you have never heard of before.</p>
+<p>I wanted to have some cool designs on the front of the cassette player so I decided to add my own.</p>
 <p>Steps:</p>
 <p>Choosing Your Images</p>
 <ol>
@@ -229,5 +269,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>There is a blue light which comes on when the MP3 is turned on. It is near the play/pause button and shines through the crack where the cassette tape joins.</p>
 <p>The overall design is quite strong and the buttons are really prominent and work well.. If you ever get bored with the images, you can easily remove them and add some new ones.</p>
 <p>Happy Modding.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

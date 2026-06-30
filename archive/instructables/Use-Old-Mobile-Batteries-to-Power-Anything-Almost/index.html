@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Use Old Mobile Batteries to Power Anything (Almost!)</span>
 </nav>
-<h1>Use Old Mobile Batteries to Power Anything (Almost!)</h1><div class="source"><a href="https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I have been re-purposing old mobile batteries for sometime now for projects that require power. Most old mobile batteries are still very usable even if they don't seem to last very long in power hungry mobile phones.</p>
-<p>The other great thing about using old mobile phone batteries is you can get them for free! There are plenty of places that have mobile phone recycling bins where you can score a few batteries, free of charge. I have one at my work, which I periodically raid for batteries. You can also visit your local e-waste recycling plant and pick them up for free as well.</p>
-<p>So what can you use the power box for? Well I've made it so you can just power anything that takes batteries and has an external power jack. I actually built this to power a bunch of old vintage handheld games I have but it could literally power anything that uses voltages from 3v to 13v's.</p>
+<h1>Use Old Mobile Batteries to Power Anything (Almost!)</h1><div class="source"><a href="https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything-Almost/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I have been re-purposing old mobile batteries for sometime now for projects that require power.</p>
+<p>Most old mobile batteries are still very usable even if they don't seem to last very long in power hungry mobile phones.</p>
+<p>The other great thing about using old mobile phone batteries is you can get them for free!</p>
+<p>There are plenty of places that have mobile phone recycling bins where you can score a few batteries, free of charge.</p>
+<p>I have one at my work, which I periodically raid for batteries.</p>
+<p>You can also visit your local e-waste recycling plant and pick them up for free as well.</p>
+<p>So what can you use the power box for?</p>
+<p>Well I've made it so you can just power anything that takes batteries and has an external power jack.</p>
+<p>I actually built this to power a bunch of old vintage handheld games I have but it could literally power anything that uses voltages from 3v to 13v's.</p>
 <p>You can also use it as variable voltage bench supply to power any circuits you may be making.</p>
 <p>The other good news is the modules used in this project are very cheap to buy at only around $3 each.</p>
 <p>The wire used has also been scavenged from e-waste (like the batteries) and is ribbon wire found in PC's.</p>
@@ -162,16 +203,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Wire cutters</li>
 <li>Superglue</li>
 <li>Drill</li>
-</ul><h2><span class="step-num">STEP 1</span>Step 1: Where to Find Old Mobile Batteries</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 5" loading="lazy"></div><p>This project relies on recycling old mobile batteries. Yes you could just go and buy one from eBay or Amazon but there is really no need to spend your hard earned cash when they are so readily available.</p>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Where to Find Old Mobile Batteries</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 1: Where to Find Old Mobile Batteries image 5" loading="lazy"></div><p>This project relies on recycling old mobile batteries.</p>
+<p>Yes you could just go and buy one from eBay or Amazon but there is really no need to spend your hard earned cash when they are so readily available.</p>
 <p>So where do you find old mobile batteries? well here are a few ideas on where to find them:</p>
 <p>Family & Friends</p>
-<p>I bet someone you know has an old mobile phone sitting in the top draw somewhere that they are no longer using. It's a bit harder pulling out a battery from an iPhone but any Samsung or similar phone you can easily remove the back and extract the battery</p>
+<p>I bet someone you know has an old mobile phone sitting in the top draw somewhere that they are no longer using.</p>
+<p>It's a bit harder pulling out a battery from an iPhone but any Samsung or similar phone you can easily remove the back and extract the battery</p>
 <p>E-waste</p>
-<p>Most places these days have an e-waste or recycling centre close by. The one near me removes the batteries from any electronics and puts them in a big box! I can just rummage through it and grab what I want for free. They also have a lot of old mobile phones which I raid and take the batteries out of</p>
+<p>Most places these days have an e-waste or recycling centre close by.</p>
+<p>The one near me removes the batteries from any electronics and puts them in a big box!</p>
+<p>I can just rummage through it and grab what I want for free.</p>
+<p>They also have a lot of old mobile phones which I raid and take the batteries out of</p>
 <p>Phone Disposal Boxes</p>
-<p>You may have seen these around supermarkets, shopping centres etc. It's a way for people to recycle their old mobile phone and also a great source of batteries!. Make sure you get permission first before you raid the box.</p><h2><span class="step-num">STEP 2</span>Step 2: About the Voltage Module Used in This Instructable</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 3" loading="lazy"></div><p>About the Module Used in This Build</p>
-<p>The Charging & Step Up Module used in this build is an all-in-one module which allows you to charge the battery and is also a voltage regulator. It's a great little module which I've used in a number of projects. The only problem with it is the micro USB is recessed and it makes it hard to access. You can use a micro USB adapter to help extend it out which is what I have done. Plus, the way that the module is orientated in the box doesn't allow you to access the micro USB on the module.</p>
-<p>It has a tiny potentiometer on the board which you can set the voltage you want. However, the company that designed the module also included the ability to add a larger potentiometer which is what we'll be doing. I have used a 100K pot and this gives you a range for 3V to 13V. If you need higher voltages, then use a 250K pot. This will give you voltages of up to 27V!</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Micro USB Adapter to the Box</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 7" loading="lazy"></div><p>You will need a way to charge the battery. The micro USB adapter will be connected later to the charging & step up module.</p>
+<p>You may have seen these around supermarkets, shopping centres etc.</p>
+<p>It's a way for people to recycle their old mobile phone and also a great source of batteries!.</p>
+<p>Make sure you get permission first before you raid the box.</p><h2><span class="step-num">STEP 2</span>Step 2: About the Voltage Module Used in This Instructable</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: About the Voltage Module Used in This Instructable image 3" loading="lazy"></div><p>About the Module Used in This Build</p>
+<p>The Charging & Step Up Module used in this build is an all-in-one module which allows you to charge the battery and is also a voltage regulator.</p>
+<p>It's a great little module which I've used in a number of projects.</p>
+<p>The only problem with it is the micro USB is recessed and it makes it hard to access.</p>
+<p>You can use a micro USB adapter to help extend it out which is what I have done.</p>
+<p>Plus, the way that the module is orientated in the box doesn't allow you to access the micro USB on the module.</p>
+<p>It has a tiny potentiometer on the board which you can set the voltage you want.</p>
+<p>However, the company that designed the module also included the ability to add a larger potentiometer which is what we'll be doing.</p>
+<p>I have used a 100K pot and this gives you a range for 3V to 13V.</p>
+<p>If you need higher voltages, then use a 250K pot.</p>
+<p>This will give you voltages of up to 27V!</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Micro USB Adapter to the Box</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 3: Adding the Micro USB Adapter to the Box image 7" loading="lazy"></div><p>You will need a way to charge the battery. The micro USB adapter will be connected later to the charging & step up module.</p>
 <p>STEPS:</p>
 <ul>
 <li>First, you'll need to make a small hole in the case in order for the USB to be able to be accessed.</li>
@@ -222,5 +278,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I also brought some plug adapters of different sizes which means I can use the power box on multiple plug sizes.</li>
 <li>The last thing to do is to is to set the voltage, plug it into your device and you are away!</li>
 </ul>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

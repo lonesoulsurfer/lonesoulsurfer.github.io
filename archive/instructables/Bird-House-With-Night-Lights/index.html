@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Bird House With Night Lights</span>
 </nav>
-<h1>Bird House With Night Lights</h1><div class="source"><a href="https://www.instructables.com/Bird-House-With-Night-Lights/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I recently stumbled onto a really cool night-light by Instructable user boddhi15. This got me thinking about building my own outdoor one. I decided to hack a solar power light and add a couple of little lights out the front.</p>
-<p>The actual hack isn’t very hard, it does however need a voltage regulator to ensure that the circuit from the solar lights works correctly. The usual voltage that the circuits deal with is 1.2V. This has to be upped to 3.6V using 3 x 1.2V batteries. If you just used the 3 batteries, they would light up the LED’s but not very brightly. The problem comes from the circuit board not coping too well with the extra voltage which causes the LED’s to be on during the day. They LED’s would be very dim, but you don’t want them on during the day as the solar panel won’t be able to charge the batteries to their full potential. The voltage regulator fixes this issue and ensures that they only come on at night.</p>
+<h1>Bird House With Night Lights</h1><div class="source"><a href="https://www.instructables.com/Bird-House-With-Night-Lights/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I recently stumbled onto a really cool night-light by Instructable user boddhi15.</p>
+<p>This got me thinking about building my own outdoor one.</p>
+<p>I decided to hack a solar power light and add a couple of little lights out the front.</p>
+<p>The actual hack isn’t very hard, it does however need a voltage regulator to ensure that the circuit from the solar lights works correctly.</p>
+<p>The usual voltage that the circuits deal with is 1.2V.</p>
+<p>This has to be upped to 3.6V using 3 x 1.2V batteries.</p>
+<p>If you just used the 3 batteries, they would light up the LED’s but not very brightly.</p>
+<p>The problem comes from the circuit board not coping too well with the extra voltage which causes the LED’s to be on during the day.</p>
+<p>They LED’s would be very dim, but you don’t want them on during the day as the solar panel won’t be able to charge the batteries to their full potential.</p>
+<p>The voltage regulator fixes this issue and ensures that they only come on at night.</p>
 <p>I’m hoping that the lights will attach some insects for the birds to eat!</p>
 <p>No birds yet but it's early days.</p>
 <p>For those who want to make their own solar night light instead of hacking one - check out this website</p>
@@ -163,7 +206,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Remove the circuit board from the solar light cowling</li>
 <li>Lastly cut the wires going to the battery terminals</li>
 </ol>
-<p>You should now have a circuit board with 4 wires coming out and an LED on the top of it. The key thing is to make sure that you know which wires are for the batteries and which are for the solar panel. Also make sure you know the polarities.</p><h2><span class="step-num">STEP 3</span>Step 3: Setting Up the Solar Lights</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Setting Up the Solar Lights image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Setting Up the Solar Lights image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Setting Up the Solar Lights image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Setting Up the Solar Lights image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Setting Up the Solar Lights image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Setting Up the Solar Lights image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Setting Up the Solar Lights image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Setting Up the Solar Lights image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Setting Up the Solar Lights image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Setting Up the Solar Lights image 10" loading="lazy"><img src="images/step03_11.jpg" alt="Step 3: Setting Up the Solar Lights image 11" loading="lazy"></div><p>I suggest that you actually build the whole circuit first. This way you can make sure that everything works as it should before adding the bits to the birdhouse. The below will go through how to add all of the rest of the parts to the circuit board. The pictures added probably won't help all that much, but as long as you follow the circuit in the drawing which is very simple to make, then you won't have any issues.</p>
+<p>You should now have a circuit board with 4 wires coming out and an LED on the top of it.</p>
+<p>The key thing is to make sure that you know which wires are for the batteries and which are for the solar panel.</p>
+<p>Also make sure you know the polarities.</p><h2><span class="step-num">STEP 3</span>Step 3: Setting Up the Solar Lights</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Setting Up the Solar Lights image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Setting Up the Solar Lights image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Setting Up the Solar Lights image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Setting Up the Solar Lights image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Setting Up the Solar Lights image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Setting Up the Solar Lights image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: Setting Up the Solar Lights image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: Setting Up the Solar Lights image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: Setting Up the Solar Lights image 9" loading="lazy"><img src="images/step03_10.jpg" alt="Step 3: Setting Up the Solar Lights image 10" loading="lazy"><img src="images/step03_11.jpg" alt="Step 3: Setting Up the Solar Lights image 11" loading="lazy"></div><p>I suggest that you actually build the whole circuit first.</p>
+<p>This way you can make sure that everything works as it should before adding the bits to the birdhouse.</p>
+<p>The below will go through how to add all of the rest of the parts to the circuit board.</p>
+<p>The pictures added probably won't help all that much, but as long as you follow the circuit in the drawing which is very simple to make, then you won't have any issues.</p>
 <p>Steps:</p>
 <ol>
 <li>De-solder or cut the LED from the circuit board. Make sure that you take notice of the polarities.</li>
@@ -172,14 +220,28 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder on the solar panel and battery holder to the appropriate wires on the circuit board pulled from the solar light</li>
 <li>Lastly, add a couple of LED’s and test.</li>
 </ol>
-<p><em>*</em>Add some batteries and cover the solar panel. The 2 LED’s should come on. If not, adjust the voltage on the regulator until the LED’s come on. Now take your hand off the solar panel and the LED’s should turn completely off. If not, then check all of your connections and polarities are correct</p>
-<p><em>*</em>The reason why you add the voltage regulator is for a couple of reasons. first it allows you to draw 5v from the 3.6v that the batteries supply. Second, it ensures that the LED's arn't on all of the time. I found that if it isn't added, the LED's stay on even in bright light. I have no idea why this happens, probably because the circuit isn't meant to draw so much voltage, but using the voltage regulator ensures it works correctly.</p>
+<p><em>*</em>Add some batteries and cover the solar panel.</p>
+<p>The 2 LED’s should come on.</p>
+<p>If not, adjust the voltage on the regulator until the LED’s come on.</p>
+<p>Now take your hand off the solar panel and the LED’s should turn completely off.</p>
+<p>If not, then check all of your connections and polarities are correct</p>
+<p><em>*</em>The reason why you add the voltage regulator is for a couple of reasons. first it allows you to draw 5v from the 3.6v that the batteries supply.</p>
+<p>Second, it ensures that the LED's arn't on all of the time.</p>
+<p>I found that if it isn't added, the LED's stay on even in bright light.</p>
+<p>I have no idea why this happens, probably because the circuit isn't meant to draw so much voltage, but using the voltage regulator ensures it works correctly.</p>
 <ol>
 <li>Once you have tested everything, remove the solar panel and LED’s.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Getting Inspired</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Getting Inspired image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Getting Inspired image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Getting Inspired image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Getting Inspired image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Getting Inspired image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Getting Inspired image 6" loading="lazy"></div><p>The next step is to decide on what type of birdhouse you</p>
-<p>want to make. Below are a few that I got some inspiration from. The things to remember are: you will need to put the birdhouse somewhere where plenty of sun hit the solar panel and the roof can’t be too steep (won’t get enough sun). The rest really is up to you on how you want the birdhouse to look.</p>
-<p>Oh and also I decided to add a little shed on mine to store all of the electronics in. You can always put the electronics inside the birdhouse; just make sure that you can access them if necessary. You could put a little door in the back to do this.</p>
-<p>If you can’t be bothered to make a birdhouse (or don’t have the tools) you could always buy one and mod it.</p><h2><span class="step-num">STEP 5</span>Step 5: Building Your Birdhouse - Cutting</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Building Your Birdhouse - Cutting image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Building Your Birdhouse - Cutting image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Building Your Birdhouse - Cutting image 3" loading="lazy"></div><p>Once you have an idea on how you want your birdhouse to look, it’s time to start cutting out all of the pieces. I decided to use fence palings as these are weather treated, are cheap and are just the right thickness to build a birdhouse with. I went with new ones as I wanted to paint my birdhouse but you could just as easily use recycled ones.</p>
+<p>want to make.</p>
+<p>Below are a few that I got some inspiration from.</p>
+<p>The things to remember are: you will need to put the birdhouse somewhere where plenty of sun hit the solar panel and the roof can’t be too steep (won’t get enough sun).</p>
+<p>The rest really is up to you on how you want the birdhouse to look.</p>
+<p>Oh and also I decided to add a little shed on mine to store all of the electronics in.</p>
+<p>You can always put the electronics inside the birdhouse; just make sure that you can access them if necessary.</p>
+<p>You could put a little door in the back to do this.</p>
+<p>If you can’t be bothered to make a birdhouse (or don’t have the tools) you could always buy one and mod it.</p><h2><span class="step-num">STEP 5</span>Step 5: Building Your Birdhouse - Cutting</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Building Your Birdhouse - Cutting image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Building Your Birdhouse - Cutting image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Building Your Birdhouse - Cutting image 3" loading="lazy"></div><p>Once you have an idea on how you want your birdhouse to look, it’s time to start cutting out all of the pieces.</p>
+<p>I decided to use fence palings as these are weather treated, are cheap and are just the right thickness to build a birdhouse with.</p>
+<p>I went with new ones as I wanted to paint my birdhouse but you could just as easily use recycled ones.</p>
 <ol>
 <li>Start by making the front and back. If you have a drop down saw then this will make the job pretty easy. My roof slops at 30 degrees</li>
 <li>Next cut the sides.</li>
@@ -213,14 +275,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Do the same as you did with the house roof and file down any rough edges.</li>
 </ol>
 <p>**Don't attach yet either - this roof will need to be removable in case you ever need to access the electronics</p><h2><span class="step-num">STEP 9</span>Step 9: Adding Some Extra Biits</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding Some Extra Biits image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding Some Extra Biits image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding Some Extra Biits image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding Some Extra Biits image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding Some Extra Biits image 5" loading="lazy"></div><p>To give the birdhouse a little more character I added a couple of extra bits that I had lying around. For the shed I added a round, rusted cap which kind of works well as a faux window.</p>
-<p>For the peg at the front of the entrance I added an old rusty bolt that I had in my rusted parts collection (yes I have one of those!). All I did was grind the end down a little on the bolt, drilled a hole into the birdhouse and man handled it in. ,</p>
+<p>For the peg at the front of the entrance I added an old rusty bolt that I had in my rusted parts collection (yes I have one of those!).</p>
+<p>All I did was grind the end down a little on the bolt, drilled a hole into the birdhouse and man handled it in. ,</p>
 <p>I also added a little awing on the side. This was made from some rusted tin which I bent to give it a "V" shape.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding the Electronics - Making the Holes</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Electronics - Making the Holes image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Electronics - Making the Holes image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Electronics - Making the Holes image 3" loading="lazy"></div><p>Once you have made your birdhouse it’s time to add all ofthe electronics inside (and on the outside).</p>
 <p>Steps:</p>
 <ol>
 <li>Decide which side of the roof that you want to install the solar panel. It really depends on where you are going to put the birdhouse as to what side you add the panel. You want it to get as much sun as possible during the day. Drill a small hole in the roof for the wires to go through.</li>
 <li>Solder on the solar panel to the wires and attach using some outdoor mounting tape. This is double sided tape which will hold the panel down through all weather.</li>
 <li>Lastly, you need to add the 2 lights to the front of the birdhouse. Drill 2 small holes on either side of the hole in the front of the house.</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Electronics - Making the Lights</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 8" loading="lazy"><img src="images/step11_09.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 9" loading="lazy"></div><p>Initially I wanted to use some model railway lights I found on eBay. The problem was, when I tied to use them they just weren’t bright enough. In the end I decided to make my own lights with some copper tubing and white LED’s.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Electronics - Making the Lights</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 7" loading="lazy"><img src="images/step11_08.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 8" loading="lazy"><img src="images/step11_09.jpg" alt="Step 11: Adding the Electronics - Making the Lights image 9" loading="lazy"></div><p>Initially I wanted to use some model railway lights I found on eBay.</p>
+<p>The problem was, when I tied to use them they just weren’t bright enough.</p>
+<p>In the end I decided to make my own lights with some copper tubing and white LED’s.</p>
 <p>Below is how I made mine but it’s up to you on how you want yours to look.</p>
 <p>Steps:</p>
 <ol>
@@ -244,5 +309,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Test and make sure the lights come on when the solar panel is covered.</li>
 <li>lastly you'll need a way to be able to hang the birdhouse. I used a ... so I could easily hang the birdhouse on a fence. Remember, you have to make sure that it gets plenty of sun so the batteries will charge each day.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

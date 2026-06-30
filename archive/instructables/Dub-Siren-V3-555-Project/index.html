@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,20 +162,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Dub Siren V3 - 555 Project</span>
 </nav>
-<h1>Dub Siren V3 - 555 Project</h1><div class="source"><a href="https://www.instructables.com/Dub-Siren-V3-555-Project/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>UPDATE - The PCB, Gerber files have all been updated as there was an issue which has been fixed. The files can be found in my Google Drive and are called 'Dub Siren V3.1'. Note also that I have created a different style of PCB which I have also included in a separate folder called 'Dub Siren V4'.</p>
+<h1>Dub Siren V3 - 555 Project</h1><div class="source"><a href="https://www.instructables.com/Dub-Siren-V3-555-Project/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>UPDATE - The PCB, Gerber files have all been updated as there was an issue which has been fixed.</p>
+<p>The files can be found in my Google Drive and are called 'Dub Siren V3.1'.</p>
+<p>Note also that I have created a different style of PCB which I have also included in a separate folder called 'Dub Siren V4'.</p>
 <p>Ok - so this is going to be my last dub siren build (maybe...). This new one is an extension on the others that I have built and is definitely the best and easiest version I have designed.</p>
 <p>So what is a dub siren?</p>
-<p>Dub sirens originated in Jamaica in the late 60’s, early 70’s where they started to use police or fire engine sirens and analog synths to create sound effects for their music. Later it was emulated to live DJ performances.</p>
-<p>This dub siren is based around 2 x 555 timers and a LM741 Op amp. Adding a bunch of pots and buttons allows you to create and control a whole heap of cool sounds from a traditional siren to a long toned note.</p>
-<p>They are usually played with a reverb guitar pedal but I decided to add my own reverb circuit (no need to make this one as you can buy them on eBay) to the final build. Adding this circuit gives you some amazing sounds to help you play along to your favourite dub, hip hop, disco house or whatever else you want to play along to.</p>
-<p>When I think back to the first one that I built (link here), I can't believe that I actually got it to work! I mean it looks great (in my humble opinion) but used 3 X 9v batteries to power it and was a hot mess of wires and electronics.</p>
-<p>In this version, The dub siren and amp are on one, slim PCB and there are JST connectors for easy connection to the echo/reverb module, battery and switches. The potentiometers are also mounted on the PCB which reduces the amount of wires needed.</p>
-<p>I have also designed a front panel which incorporates the PCB and turns this build into a very professional looking one. I should learn how to do 3D printing next so I can design some cases! At the moment though I'm using wood which I'm happy to use as it gives the projects a nice retro feel.</p>
+<p>Dub sirens originated in Jamaica in the late 60’s, early 70’s where they started to use police or fire engine sirens and analog synths to create sound effects for their music.</p>
+<p>Later it was emulated to live DJ performances.</p>
+<p>This dub siren is based around 2 x 555 timers and a LM741 Op amp.</p>
+<p>Adding a bunch of pots and buttons allows you to create and control a whole heap of cool sounds from a traditional siren to a long toned note.</p>
+<p>They are usually played with a reverb guitar pedal but I decided to add my own reverb circuit (no need to make this one as you can buy them on eBay) to the final build.</p>
+<p>Adding this circuit gives you some amazing sounds to help you play along to your favourite dub, hip hop, disco house or whatever else you want to play along to.</p>
+<p>When I think back to the first one that I built (link here), I can't believe that I actually got it to work!</p>
+<p>I mean it looks great (in my humble opinion) but used 3 X 9v batteries to power it and was a hot mess of wires and electronics.</p>
+<p>In this version, The dub siren and amp are on one, slim PCB and there are JST connectors for easy connection to the echo/reverb module, battery and switches.</p>
+<p>The potentiometers are also mounted on the PCB which reduces the amount of wires needed.</p>
+<p>I have also designed a front panel which incorporates the PCB and turns this build into a very professional looking one.</p>
+<p>I should learn how to do 3D printing next so I can design some cases!</p>
+<p>At the moment though I'm using wood which I'm happy to use as it gives the projects a nice retro feel.</p>
 <p>I have provided all of the gerber & Eagle files along with the front panel design so you can also easily build your own dub siren.</p>
 <p>Hackaday and Hackster have also done a review on this build. I've provided the links if you are interested in checking them out</p>
 <p>Hackaday</p>
 <p>Hackster</p>
-<p>Let's get going</p><h2><span class="step-num">STEP 1</span>Step 1: Dub Siren & Echo Reverb Module Parts List</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Dub Siren & Echo Reverb Module Parts List image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Dub Siren & Echo Reverb Module Parts List image 2" loading="lazy"></div><p>I have included the component parts list in a PDF (attached) and you can also find an excel version in my Google Drive. It might make it easier having a printable parts list when you are shopping for the parts. I have also included links to the parts below:</p>
+<p>Let's get going</p><h2><span class="step-num">STEP 1</span>Step 1: Dub Siren & Echo Reverb Module Parts List</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Dub Siren & Echo Reverb Module Parts List image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Dub Siren & Echo Reverb Module Parts List image 2" loading="lazy"></div><p>I have included the component parts list in a PDF (attached) and you can also find an excel version in my Google Drive.</p>
+<p>It might make it easier having a printable parts list when you are shopping for the parts.</p>
+<p>I have also included links to the parts below:</p>
 <p>Dub Siren</p>
 <ul>
 <li>Capacitor Polyester - eBay</li>
@@ -194,13 +240,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Echo/Reverb Module</li>
 <li>Module - eBay</li>
 <li>Potentiometer 50K X 2 - Ali Express</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: The Dub Siren PCB</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Dub Siren PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Dub Siren PCB image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Dub Siren PCB image 3" loading="lazy"></div><p>I have provided the gerber & Eagle files in a Google Drive link which can be found here. You'll need to get the PCB printed and you can do this by sending the zipped gerber files to a PCB manufacturer like JLCPCB (not affiliated). It's a very simple process, just save the file on your computer and follow the instructions on the website.</p>
+</ul><h2><span class="step-num">STEP 2</span>Step 2: The Dub Siren PCB</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Dub Siren PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Dub Siren PCB image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: The Dub Siren PCB image 3" loading="lazy"></div><p>I have provided the gerber & Eagle files in a Google Drive link which can be found here.</p>
+<p>You'll need to get the PCB printed and you can do this by sending the zipped gerber files to a PCB manufacturer like JLCPCB (not affiliated).</p>
+<p>It's a very simple process, just save the file on your computer and follow the instructions on the website.</p>
 <p>Here is a 'ible I did on what Gerber files are and how to use them to get your PCB printed.</p>
-<p>If you know how to use Eagle (like most things, it's easy once you have done it a few times), I have provided the files in the Google Drive link. If you are interested in learning, I recommend sparkfuns tutorials:</p>
+<p>If you know how to use Eagle (like most things, it's easy once you have done it a few times), I have provided the files in the Google Drive link.</p>
+<p>If you are interested in learning, I recommend sparkfuns tutorials:</p>
 <p>Installing Eagle</p>
 <p>Creating Schematics</p>
 <p>Creating PCB's</p>
-<p>Note that the amp (386IC) isn't connrcted to the main schematic. The reson being, the amp needs to drive the echo/reverb board so this is routed through the 'echo-in' 'echo-out' connections on the schematic.</p><h2><span class="step-num">STEP 3</span>Step 3: The Other Parts You'll Need</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Other Parts You'll Need image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Other Parts You'll Need image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: The Other Parts You'll Need image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: The Other Parts You'll Need image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: The Other Parts You'll Need image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: The Other Parts You'll Need image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: The Other Parts You'll Need image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: The Other Parts You'll Need image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: The Other Parts You'll Need image 9" loading="lazy"></div><p>Parts For The Circuit:</p>
+<p>Note that the amp (386IC) isn't connrcted to the main schematic.</p>
+<p>The reson being, the amp needs to drive the echo/reverb board so this is routed through the 'echo-in' 'echo-out' connections on the schematic.</p><h2><span class="step-num">STEP 3</span>Step 3: The Other Parts You'll Need</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Other Parts You'll Need image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Other Parts You'll Need image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: The Other Parts You'll Need image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: The Other Parts You'll Need image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: The Other Parts You'll Need image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: The Other Parts You'll Need image 6" loading="lazy"><img src="images/step03_07.jpg" alt="Step 3: The Other Parts You'll Need image 7" loading="lazy"><img src="images/step03_08.jpg" alt="Step 3: The Other Parts You'll Need image 8" loading="lazy"><img src="images/step03_09.jpg" alt="Step 3: The Other Parts You'll Need image 9" loading="lazy"></div><p>Parts For The Circuit:</p>
 <ol>
 <li>Knobs X 7 - eBay</li>
 <li>Speaker mesh - Ali ExpressAli Express</li>
@@ -232,7 +282,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now solder 3 wires to the solder pads where the pot was. There are also pot connections for the echo so solder 3 wires to these as well.</li>
 <li>Lastly, solder a 50K pot to the ends of each of the 3 wires. One will be for reverb and the other for echo</li>
 <li>Now you can connect up the board to the dub siren board and test to make sure everything works. Just connect the echo module via the echo in/echo out on the dub siren circuit.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Cover Design to the Acrylic</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 5" loading="lazy"></div><p>Usually I would use a water decal, print the panel on that and add it to the acrylic. However, I kept on having issues getting it to stick to the acrylic. Instead, I used a transparent label, printed the design directly onto that and just stuck it on the acrylic - easy!</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Front Cover Design to the Acrylic</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Front Cover Design to the Acrylic image 5" loading="lazy"></div><p>Usually I would use a water decal, print the panel on that and add it to the acrylic.</p>
+<p>However, I kept on having issues getting it to stick to the acrylic.</p>
+<p>Instead, I used a transparent label, printed the design directly onto that and just stuck it on the acrylic - easy!</p>
 <p>STEPS:</p>
 <ol>
 <li>The first thing to do is to grab the PDF provided. I have included 2 different types, one with the speaker and one without in case you want to use a different style of speaker. They are also available in my Google Drive. Print the panel design onto some A4 transparent, adhesive. You can this this from eBay and there is a link in step 3</li>
@@ -240,7 +292,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To ensure the ink won't come off, add a few layers of acrylic spray paint</li>
 <li>Once the acrylic is dry, you can then start to cut out the holes needed to add the components. I used a step drill piece to do most of the drilling with. I found that the adhesive didn't rip or pull up when I drilled either which was good news!</li>
 <li>To make the speaker cut-out, I first drilled a couple holes at the top and bottom and then used a dremel with a cutting wheel to cut the straight sections. I used some sandpaper to finish off the edges</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Making a Groove in the Wood to Fit the Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 6" loading="lazy"></div><p>This does require either a router or a dremel with a special attachment. If you don't have any of these then you can just attached the panel directly on top of the wood! The finish won't be the same but it'll be close.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Making a Groove in the Wood to Fit the Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making a Groove in the Wood to Fit the Panel image 6" loading="lazy"></div><p>This does require either a router or a dremel with a special attachment.</p>
+<p>If you don't have any of these then you can just attached the panel directly on top of the wood!</p>
+<p>The finish won't be the same but it'll be close.</p>
 <p>STEPS:</p>
 <ol>
 <li>The first thing you need to do is to cut a groove along the wood in order to secure the panel into. I use a dremel with a router attachment to do this.</li>
@@ -260,7 +314,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Secure the potentiometers to the front panel. Be careful when tightening the nuts as you don't want to damage the front panel graphics.</li>
 <li>Secure all of the switches including the momentary switch.</li>
 <li>Lastly, add the speaker to the front panel. This is secured in place with 4 small screws and nuts</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring Everything Up!</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring Everything Up! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring Everything Up! image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring Everything Up! image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring Everything Up! image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring Everything Up! image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Wiring Everything Up! image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Wiring Everything Up! image 7" loading="lazy"></div><p>This is a pretty simple process and I have eliminated much of the soldering by including the pots onto the PCB. You will need to add wires to the echo and reverb pots and circuit board and also a couple for the switching input audio socket.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring Everything Up!</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring Everything Up! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring Everything Up! image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring Everything Up! image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring Everything Up! image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring Everything Up! image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Wiring Everything Up! image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Wiring Everything Up! image 7" loading="lazy"></div><p>This is a pretty simple process and I have eliminated much of the soldering by including the pots onto the PCB.</p>
+<p>You will need to add wires to the echo and reverb pots and circuit board and also a couple for the switching input audio socket.</p>
 <p>NOTE - 'echo in' and 'echo-out' on the PCB should be swapped around when connected to the echo/reverb board. In the diagram there are connected incorrectly</p>
 <p>STEPS:</p>
 <ol>
@@ -274,7 +329,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To be able to access the micro USB, You need to make a small cut out into the case. I made mine in the back of the case using a file</li>
 <li>Use some superglue to secure the module into place</li>
 <li>We'll wire it up in the next step</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Battery</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Battery image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Battery image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Battery image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding the Battery image 4" loading="lazy"></div><p>I think I might have a small obsession collecting old mobile batteries. I use them in all my projects and find that they are very cheap (free) way of powering projects like this. Plus it means I don't have to stock up on 9v batteries</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Battery</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Battery image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Battery image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Battery image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Adding the Battery image 4" loading="lazy"></div><p>I think I might have a small obsession collecting old mobile batteries.</p>
+<p>I use them in all my projects and find that they are very cheap (free) way of powering projects like this.</p>
+<p>Plus it means I don't have to stock up on 9v batteries</p>
 <p>STEPS:</p>
 <ol>
 <li>To bring the power up from 3.6V to 9V, you need to connect the battery to a boost converter. I found these tiny ones on Ali Express and they work well. Check out the parts list where I have linked them.</li>
@@ -289,5 +346,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I also added some speaker mesh to the front as well to give it a cleaner finish. I did this after I made the YouTube clip so it is missing there</li>
 <li>Get some dub reggae on and start playing!</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

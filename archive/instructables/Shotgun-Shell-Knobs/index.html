@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Shotgun Shell Knobs</span>
 </nav>
-<h1>Shotgun Shell Knobs</h1><div class="source"><a href="https://www.instructables.com/Shotgun-Shell-Knobs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I recently brought a 2nd hand electric guitar (I'm trying to graduate from acoustic) and it didn;t have any potentiometer knobs. Instead of just using some stock stand knobs from eBay, I decided to pimp it up and add my own, custom shotgun shell knobs.</p>
-<p>I tried a few different methods (starting with the hardest way first!) until I hit on a simple but effective way to mount them on a pot. The trick is to make sure that the potentiometer is centred on the shotgun shell. If it isn't, the shotgun shell will be un-even on the potentiometer and will have a little wobble when turned. My OCD kicks in when I see that happening.</p>
+<h1>Shotgun Shell Knobs</h1><div class="source"><a href="https://www.instructables.com/Shotgun-Shell-Knobs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I recently brought a 2nd hand electric guitar (I'm trying to graduate from acoustic) and it didn;t have any potentiometer knobs.</p>
+<p>Instead of just using some stock stand knobs from eBay, I decided to pimp it up and add my own, custom shotgun shell knobs.</p>
+<p>I tried a few different methods (starting with the hardest way first!) until I hit on a simple but effective way to mount them on a pot.</p>
+<p>The trick is to make sure that the potentiometer is centred on the shotgun shell.</p>
+<p>If it isn't, the shotgun shell will be un-even on the potentiometer and will have a little wobble when turned.</p>
+<p>My OCD kicks in when I see that happening.</p>
 <p>I've also used these knobs on a amp that I built (check out the images) and also on a couple of homemade synths. They add some real style and actually feel really nice to turn.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"></div><p>The good news is, you only need a couple parts to make one of these. There is some technique though so don't think it's as simple as sticking a knob inside the shotgun shell.</p>
 <p>NOTE: I know that it isn't really a shotgun shell but just the brass cap of the shotgun shell. Brass head though doesn't have the same ring though.</p>
 <p>PARTS:</p>
@@ -157,13 +196,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Tap a few times with a hammer to remove the primer. Make sure you keep the primer and you'll need that later</li>
 <li>Inside the brass cap on the shogun shell you will see some small metal teeth. You'll need to reduce the size of these and in the end remove them altogether. To reduce the size, I find the best way is to use a drill bit slightly larger then the primer hole and drill out the teeth as much as you can. You won't get them all but you'll reduce the size and hopefully remove most of them.</li>
 </ol>
-<p>NOTE: Drilling the 'teeth' out isn't100$% necessary. You can just grind the teeth out with a dremal and small grinding stone attachment. Doing this step however, reduces the size of the teeth inside the cap and makes grinding them easier</p><h2><span class="step-num">STEP 3</span>Step 3: Removing the Cap From the Shell</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing the Cap From the Shell image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing the Cap From the Shell image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing the Cap From the Shell image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing the Cap From the Shell image 4" loading="lazy"></div><p>STEPS:</p>
+<p>NOTE: Drilling the 'teeth' out isn't100$% necessary.</p>
+<p>You can just grind the teeth out with a dremal and small grinding stone attachment.</p>
+<p>Doing this step however, reduces the size of the teeth inside the cap and makes grinding them easier</p><h2><span class="step-num">STEP 3</span>Step 3: Removing the Cap From the Shell</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Removing the Cap From the Shell image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Removing the Cap From the Shell image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Removing the Cap From the Shell image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Removing the Cap From the Shell image 4" loading="lazy"></div><p>STEPS:</p>
 <ol>
 <li>Place the shell in a vice and make sure it's secured well</li>
 <li>Heat the end up with a blow torch (you could use a lighter if you don't have a blow torch) and heat up the cap for about 5 seconds</li>
 <li>Place a pair of pliers around the cap and carefully pull off the cap. There should only be a little bit of resistance. Give it some more heat if it doesn't come off first try</li>
 <li>Leave to cool</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Removing the Metal Teeth Inside the Cap</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 4" loading="lazy"></div><p>This can be a little tricky. You want to remove all of the teeth inside the cap and make the inside flat. However, there is a danger that you might remove too much material and damage the cap. I found that using a grinding stone works excellently. You could also file them out with a small, rounded file but this will take some time</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Removing the Metal Teeth Inside the Cap</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Removing the Metal Teeth Inside the Cap image 4" loading="lazy"></div><p>This can be a little tricky.</p>
+<p>You want to remove all of the teeth inside the cap and make the inside flat.</p>
+<p>However, there is a danger that you might remove too much material and damage the cap.</p>
+<p>I found that using a grinding stone works excellently.</p>
+<p>You could also file them out with a small, rounded file but this will take some time</p>
 <p>STEPS:</p>
 <ol>
 <li>Place a grinding stone in the dremel</li>
@@ -192,6 +237,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once dried, sand away any excess hot glue so it is flat with the bottom of the cap</li>
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Add the Shotgun Shell Knobs to Whatever You Want</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Add the Shotgun Shell Knobs to Whatever You Want image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Add the Shotgun Shell Knobs to Whatever You Want image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Add the Shotgun Shell Knobs to Whatever You Want image 3" loading="lazy"></div><p>That's it! You can now add the knob to any potentiometer you want to.</p>
 <p>I'm really happy with how they have turned out and with this process, you'll find that the shotgun shell cap is nice and centred.</p>
-<p>Now that you have made one you may as well go ahead and make some more. They get easier each time and you'll find that you'll be able to make them quickly the more you make. They only take me a few minutes to make each one now.</p>
+<p>Now that you have made one you may as well go ahead and make some more.</p>
+<p>They get easier each time and you'll find that you'll be able to make them quickly the more you make.</p>
+<p>They only take me a few minutes to make each one now.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

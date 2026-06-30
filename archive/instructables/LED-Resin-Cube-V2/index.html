@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,9 +163,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">LED Resin Cube V2</span>
 </nav>
 <h1>LED Resin Cube V2</h1><div class="source"><a href="https://www.instructables.com/LED-Resin-Cube-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Use clear resin to make an LED cube.</p>
-<p>As the title indicates, this is my second version of making a LED resin cube.   The <a href="https://www.instructables.com/id/LED-Resin-Cubes/">original version</a> worked well, however there were so many good ideas posted on how to improve it that I decided to make another, (hopefully improved) version.</p>
-<p>The main issue that I had with the original was how the batteries were charged.  I used a female jack to charge up the batteries.  This took away some of the aesthetic of the finished product and definitely wasn’t the best way to charge the batteries.  The new one has a charging station and the resin cube is totally enclosed.</p>
-<p>In the comment section for the original LED cube, Instructable user - <a href="https://www.instructables.com/tag/type-id/?sort=none&q=Wesley666">Wesley666</a> suggested using a “wireless recharging system” which works on induction, the same way that some electric toothbrushes work.  I thought this was a great idea and purchased <a href="http://imall.iteadstudio.com/im130115001.html">this one</a> which another Instructable user – <a href="https://www.instructables.com/tag/type-id/?sort=none&q=offtherails2010">offtherails2010</a> suggested.</p>
+<p>As the title indicates, this is my second version of making a LED resin cube.</p>
+<p>The <a href="https://www.instructables.com/id/LED-Resin-Cubes/">original version</a> worked well, however there were so many good ideas posted on how to improve it that I decided to make another, (hopefully improved) version.</p>
+<p>The main issue that I had with the original was how the batteries were charged.</p>
+<p>I used a female jack to charge up the batteries.</p>
+<p>This took away some of the aesthetic of the finished product and definitely wasn’t the best way to charge the batteries.</p>
+<p>The new one has a charging station and the resin cube is totally enclosed.</p>
+<p>In the comment section for the original LED cube, Instructable user - <a href="https://www.instructables.com/tag/type-id/?sort=none&q=Wesley666">Wesley666</a> suggested using a “wireless recharging system” which works on induction, the same way that some electric toothbrushes work.</p>
+<p>I thought this was a great idea and purchased <a href="http://imall.iteadstudio.com/im130115001.html">this one</a> which another Instructable user – <a href="https://www.instructables.com/tag/type-id/?sort=none&q=offtherails2010">offtherails2010</a> suggested.</p>
 <p>This version of the resin cube is a little bigger, but the finished product works a treat.</p>
 <p>Hope you enjoy.</p>
 <p>Here’s a video of it working:</p>
@@ -170,7 +210,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Wet/Dry Sandpaper 120 grit, 600 grit, 1200 grit</li>
 <li>Brasso</li>
 <li>Car polisher</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Batteries Part 1</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Batteries Part 1 image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Batteries Part 1 image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Batteries Part 1 image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Batteries Part 1 image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Batteries Part 1 image 5" loading="lazy"></div><p>Initially I used copper wire and made  battery holders out of the wire (image below).  The problem was that you had to add heat to the end of the battery to add some solder and this kept on ruining the batteries.  I didn't want to add a lot of plastic to the design but in the end I compromised.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Batteries Part 1</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Batteries Part 1 image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Batteries Part 1 image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Batteries Part 1 image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Batteries Part 1 image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Batteries Part 1 image 5" loading="lazy"></div><p>Initially I used copper wire and made  battery holders out of the wire (image below).</p>
+<p>The problem was that you had to add heat to the end of the battery to add some solder and this kept on ruining the batteries.</p>
+<p>I didn't want to add a lot of plastic to the design but in the end I compromised.</p>
 <p>Steps:</p>
 <p>Modding the battery holder</p>
 <ol>
@@ -193,7 +235,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Remove the little piece of plastic on the positive end.  This should just slip off.</li>
 <li>You might have to clean the glue off your batteries.  I used a little acetone which did the job nicely.</li>
 <li>Now you should have some stella looking batteries.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Charging Coil</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Charging Coil image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Charging Coil image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Charging Coil image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Charging Coil image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Charging Coil image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Charging Coil image 6" loading="lazy"></div><p>The next thing to do is to attach your charging coil to each end of the battery terminals.  There are a couple of different charging coils available.  I decided to go with the 9v one as it gives me more options in regards to voltage.  The 5v would  work ok if you were only using 3 AAA batteries.   When you are charging batteries you want the voltage higher than the actual voltage of the batteries.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Charging Coil</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Charging Coil image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Charging Coil image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Charging Coil image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Charging Coil image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Charging Coil image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Charging Coil image 6" loading="lazy"></div><p>The next thing to do is to attach your charging coil to each end of the battery terminals.</p>
+<p>There are a couple of different charging coils available.</p>
+<p>I decided to go with the 9v one as it gives me more options in regards to voltage.</p>
+<p>The 5v would  work ok if you were only using 3 AAA batteries.</p>
+<p>When you are charging batteries you want the voltage higher than the actual voltage of the batteries.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing to do is to move the circuit board on the charging coil to the inside of the coil. De-solder the ends from the circuit board, trim to size and then re-solder as shown below.</li>
@@ -219,11 +265,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder onto the circuit board.</li>
 </ol>
 <p>Attaching the Circuit Board to the Batteries</p>
-<p>Remember how you attached the copper battery holder to the positive end of the batteries?  Well the reason why is so the circuit board can be attached to the positive end of the batteries.  I have found that if you solder to the negative end of the circuit board, then for some odd reason the board seems to short somewhere and it won’t work anymore!  This could be just me though.</p>
+<p>Remember how you attached the copper battery holder to the positive end of the batteries?</p>
+<p>Well the reason why is so the circuit board can be attached to the positive end of the batteries.</p>
+<p>I have found that if you solder to the negative end of the circuit board, then for some odd reason the board seems to short somewhere and it won’t work anymore!</p>
+<p>This could be just me though.</p>
 <ol>
 <li>Solder the board onto the positive end of the copper battery holder.  Make sure you add some solder to the copper end and only heat-up the copper when attaching the circuit board.</li>
 <li>Solder the negative wire from the board to the other battery end.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Resin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Resin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Resin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Resin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Resin image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Resin image 5" loading="lazy"></div><p>Hopefully now you have a working, LED’s which only come on when you tip everything on it’s side.  Each time you tip it over it should change colours.  If it doesn’t then you will need to go and check all of your connections to make sure that everything is soldered correctly.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Resin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Resin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Resin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Resin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Resin image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Resin image 5" loading="lazy"></div><p>Hopefully now you have a working, LED’s which only come on when you tip everything on it’s side.</p>
+<p>Each time you tip it over it should change colours.</p>
+<p>If it doesn’t then you will need to go and check all of your connections to make sure that everything is soldered correctly.</p>
 <p>The worst thing that can happen (believe me I know!) is for the circuit board to short and not work.  If this happens, then I’m afraid it’s time to remove it and replace with another one.</p>
 <p>The next step is to add the LED’s into the resin.</p>
 <p>Steps:</p>
@@ -234,9 +285,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Pour in some more resin until the LED’s are completely covered.</li>
 <li>Leave to dry for 24 hours then remove from the mould.</li>
 <li>Leave it to dry again for another 24 hours.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Smoothing and Finishing</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Smoothing and Finishing image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Smoothing and Finishing image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Smoothing and Finishing image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Smoothing and Finishing image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Smoothing and Finishing image 5" loading="lazy"></div><p>Once the resin is completely dry it’s time to polish it.  In my first LED Resin Instructable I went through in detail on how to polish the resin and what materials to use.  I’m going to be really lazy here and ask you to look at <a href="https://www.instructables.com/id/LED-Resin-Cubes/step6/Smoothing-and-Finishing/">step 6 “Smoothing and Finishing</a>” on the other Instructable for how to polish the resin.  The only other info I would like to add is below:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Smoothing and Finishing</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Smoothing and Finishing image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Smoothing and Finishing image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Smoothing and Finishing image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Smoothing and Finishing image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Smoothing and Finishing image 5" loading="lazy"></div><p>Once the resin is completely dry it’s time to polish it.</p>
+<p>In my first LED Resin Instructable I went through in detail on how to polish the resin and what materials to use.</p>
+<p>I’m going to be really lazy here and ask you to look at <a href="https://www.instructables.com/id/LED-Resin-Cubes/step6/Smoothing-and-Finishing/">step 6 “Smoothing and Finishing</a>” on the other Instructable for how to polish the resin.</p>
+<p>The only other info I would like to add is below:</p>
 <p>Finishing:</p>
-<p>Once you get the resin out of the mould (might need a little coxing!) you can determine how much sanding it will need.  The mould I used was very smooth so I only had to sand back the top a little and used some Brasso to finish it off.</p>
+<p>Once you get the resin out of the mould (might need a little coxing!) you can determine how much sanding it will need.</p>
+<p>The mould I used was very smooth so I only had to sand back the top a little and used some Brasso to finish it off.</p>
 <p>You can also use car polisher before the Brasso as it is slightly more abrasive and should help to get any scratches out.</p><h2><span class="step-num">STEP 10</span>Step 10: Docking Station</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Docking Station image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Docking Station image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Docking Station image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Docking Station image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Docking Station image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Docking Station image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Docking Station image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Docking Station image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Docking Station image 9" loading="lazy"></div><p>Now that you have finished your LED Resin Cube you will need a docking station to enable to charge it up.</p>
 <p>Steps:</p>
 <ol>
@@ -250,11 +305,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill a hole in the top of the docking station for the on/off switch and attach.</li>
 <li>Hot glue into place the charging coil.  Don’t put too much glue on first as you want to make sure that you have the coil in the right spot before sticking it down permanently.</li>
 <li>Hot glue the LED into place.</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Finished!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Finished! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Finished! image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Finished! image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Finished! image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Finished! image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Finished! image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Finished! image 7" loading="lazy"></div><p>Ok – so now you should have a pretty substantial LED Resin Cube with its very own docking station.  One thing to remember is not to charge for really long periods.  The batteries will need about 2-3 hours to charge, you wouldn’t want to leave them there overnight as they could get pretty hot.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Finished!</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Finished! image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Finished! image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Finished! image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Finished! image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Finished! image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Finished! image 6" loading="lazy"><img src="images/step11_07.jpg" alt="Step 11: Finished! image 7" loading="lazy"></div><p>Ok – so now you should have a pretty substantial LED Resin Cube with its very own docking station.</p>
+<p>One thing to remember is not to charge for really long periods.</p>
+<p>The batteries will need about 2-3 hours to charge, you wouldn’t want to leave them there overnight as they could get pretty hot.</p>
 <p>I was in 2 minds about making the resin cube translucid by lightly sandpapering it.  The LED light is better diffused.  In the end I decided to keep it clear as it shows the insides really well.</p>
 <p>If I ever do make another one of these I think I’ll use a super cap and attach a charging coil to it.  This way I could keep the size the cube down while keeping the insides of the cube to a minimum.</p>
-<p>This cube is better constructed than the first one and I think look better too.  Adding solder to batteries isn’t too clever as I discovered when one of the batteries started to smoke!  I pulled it out of the copper frame and threw it away as quickly as possible but the smoke was very toxic and I couldn’t work in my shed for an hour or so.</p>
+<p>This cube is better constructed than the first one and I think look better too.</p>
+<p>Adding solder to batteries isn’t too clever as I discovered when one of the batteries started to smoke!</p>
+<p>I pulled it out of the copper frame and threw it away as quickly as possible but the smoke was very toxic and I couldn’t work in my shed for an hour or so.</p>
 <p>Using the plastic battery holder really worked well and I liked how it turned out once I had trimmed all of the excess plastic away.</p>
 <p>Cheers.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

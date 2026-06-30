@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,7 +162,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Fishing Rod Holder for Your Bike</span>
 </nav>
-<h1>Fishing Rod Holder for Your Bike</h1><div class="source"><a href="https://www.instructables.com/Fishing-Rod-Holder-for-Your-Bike/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>There’s a small lake near to where I live and we like nothing better than to ride down on our bikes for a spot of fishing. However, anyone who has tried to carry a fishing rod whist riding a bike knows it’s a tricky thing to do!</p>
+<h1>Fishing Rod Holder for Your Bike</h1><div class="source"><a href="https://www.instructables.com/Fishing-Rod-Holder-for-Your-Bike/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>There’s a small lake near to where I live and we like nothing better than to ride down on our bikes for a spot of fishing.</p>
+<p>However, anyone who has tried to carry a fishing rod whist riding a bike knows it’s a tricky thing to do!</p>
 <p>I finally decided to do something about it and make a fishing rod holder for our bikes.</p>
 <p>The build is really simple and you only need a couple of off the shelf parts to make your own. I actually had the parts already so you might be lucky and have them sitting around in your shed.</p>
 <p>There’s a short video of the holders in use as well.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts:</p>
@@ -166,7 +202,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Trim the rubber and drill a small hole for the bolt head to go through</li>
 <li>Test with the rod in place to make sure it works</li>
 <li>If you are going to paint your holder, you'll need to remove the strap and re-attach a little later</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 4" loading="lazy"></div><p>Now you have a rod holder, you need some way to attach it to your bike. I went with quick and easy cable ties but I’m sure you could come up with a way so the rod holder is easily removable. That will be version 2. For version 1 I went with a more permanent solution</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Adding Holes Into the Rod Holder to Attach It to the Bike image 4" loading="lazy"></div><p>Now you have a rod holder, you need some way to attach it to your bike.</p>
+<p>I went with quick and easy cable ties but I’m sure you could come up with a way so the rod holder is easily removable.</p>
+<p>That will be version 2.</p>
+<p>For version 1 I went with a more permanent solution</p>
 <p>Steps:</p>
 <ol>
 <li>First, locate the best spot on the bike to attach the rod holder. I went with the rear wheel frame</li>
@@ -183,7 +222,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add the strap back into place on the rod holder.</li>
 <li>Next it's time to add the cable ties. You may have to bend the ends of the cable ties in order to thread them through the holes.</li>
 <li>Weave each one through the holes in the holder. I used 4 to secure it to the bike</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Rod Holder to the Bike Frame</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 4" loading="lazy"></div><p>Now you need to attach the rod holder to the bike frame. Make sure you think about which side would be best before you attach it. If the bike is facing you, I went with the right hand side. It meant that the handle of the rod wasn’t in the way of the peddle and kept the reel away from potential damage</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Rod Holder to the Bike Frame</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Attaching the Rod Holder to the Bike Frame image 4" loading="lazy"></div><p>Now you need to attach the rod holder to the bike frame.</p>
+<p>Make sure you think about which side would be best before you attach it.</p>
+<p>If the bike is facing you, I went with the right hand side.</p>
+<p>It meant that the handle of the rod wasn’t in the way of the peddle and kept the reel away from potential damage</p>
 <p>Steps:</p>
 <ol>
 <li>Place the holder against the frame. You want to try and angle it so it’s facing away from the seat.</li>
@@ -197,5 +239,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol>
 <p>You’re done! Now go grab some worms and head out to your favourite fishing spot.</p>
 <p>Happy fishing!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

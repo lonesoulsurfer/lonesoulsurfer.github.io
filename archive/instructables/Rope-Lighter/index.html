@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Rope Lighter (Windproof)</span>
 </nav>
-<h1>Rope Lighter (Windproof)</h1><div class="source"><a href="https://www.instructables.com/Rope-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Rope lighters (also known as Sheppard's lighter) were billed as windproof lighters. Sailors often made them so they could light their pipe or cigarette when the wind blew strong on the deck of the ship. You can still buy them as well but why buy when you can make!</p>
-<p>What makes it unique is that conventional fuel is not needed, and there is no flame. The method of operation is to strike the attached sparkwheel to create sparks, which are caught on a charred cotton rope, that has been partially withdrawn from a metal tube housing. Once an ember is generated, it is windproof, and is extinguished by retracting the cord back inside the tube and an attached lid snuffs it out. It's also an easy way to create a live ember and when combined with tinder, can be coaxed into a flame for starting campfires.</p>
+<h1>Rope Lighter (Windproof)</h1><div class="source"><a href="https://www.instructables.com/Rope-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>Rope lighters (also known as Sheppard's lighter) were billed as windproof lighters.</p>
+<p>Sailors often made them so they could light their pipe or cigarette when the wind blew strong on the deck of the ship.</p>
+<p>You can still buy them as well but why buy when you can make!</p>
+<p>What makes it unique is that conventional fuel is not needed, and there is no flame.</p>
+<p>The method of operation is to strike the attached sparkwheel to create sparks, which are caught on a charred cotton rope, that has been partially withdrawn from a metal tube housing.</p>
+<p>Once an ember is generated, it is windproof, and is extinguished by retracting the cord back inside the tube and an attached lid snuffs it out.</p>
+<p>It's also an easy way to create a live ember and when combined with tinder, can be coaxed into a flame for starting campfires.</p>
 <p>I've made a couple different lighters recently which can be found here and here.</p>
 <p>This is a really fun project and if you have some basic soldering skills you'll be able to make one.</p>
 <p>Check out the video to see it in action.</p>
@@ -226,5 +266,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Strick the sparkwheel and you should instantly see the rope smoulder. Blow on the rope to get it really glowing</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Done</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Done image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Done image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Done image 3" loading="lazy"></div><p>That’s it! Congrats – you have made your very own rope lighter.</p>
 <p>Do you have other ideas on how to improve the lighter? Let me know in the comments</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Vacuum Tube Lamp - Sound Reactive</span>
 </nav>
-<h1>Vacuum Tube Lamp - Sound Reactive</h1><div class="source"><a href="https://www.instructables.com/Vacuum-Tube-Lamp-Sound-Reactive/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve said it before and I’ll say it again – Vacuum tubes are an amazing thing to behold! I actually think I might have a slight vacuum tube obsession. Every time I come across some vacuum tubes on my journeys I’m compelled to buy them.</p>
-<p>The problem I have though is what to do with them all! Most just sit in a draw and I periodically pull them out and to admire them. I've made a display in the past (check out the ‘ible here) but unfortunately I had to damage the bottom of the tube to enable it to be illuminated with an LED.</p>
-<p>Initially I thought about using the heater coils inside the tube as they will softly glow at low voltages. The problem though is they get very hot and could be dangerous to touch. Instead, I decided to light them up with LED’s but this time I didn't want to have to damage the tube. I also included a circuit where the LED’s react to sound, making them flash and dance to music. I also included a way to turn this function off so the LED’s are just on.</p>
+<h1>Vacuum Tube Lamp - Sound Reactive</h1><div class="source"><a href="https://www.instructables.com/Vacuum-Tube-Lamp-Sound-Reactive/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve said it before and I’ll say it again – Vacuum tubes are an amazing thing to behold!</p>
+<p>I actually think I might have a slight vacuum tube obsession.</p>
+<p>Every time I come across some vacuum tubes on my journeys I’m compelled to buy them.</p>
+<p>The problem I have though is what to do with them all!</p>
+<p>Most just sit in a draw and I periodically pull them out and to admire them.</p>
+<p>I've made a display in the past (check out the ‘ible here) but unfortunately I had to damage the bottom of the tube to enable it to be illuminated with an LED.</p>
+<p>Initially I thought about using the heater coils inside the tube as they will softly glow at low voltages.</p>
+<p>The problem though is they get very hot and could be dangerous to touch.</p>
+<p>Instead, I decided to light them up with LED’s but this time I didn't want to have to damage the tube.</p>
+<p>I also included a circuit where the LED’s react to sound, making them flash and dance to music.</p>
+<p>I also included a way to turn this function off so the LED’s are just on.</p>
 <p>I used green LED’s and I’m really happy with the colour. The green LED's really suit the look of the vacuum tubes and the ambient light released is very soft and pleasing.</p>
 <p>Enough said. Now it’s time to build it.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Sound Controlled Circuit – Parts</p>
 <ol>
@@ -162,7 +205,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Hot glue</li>
 <li>Super glue</li>
 <li>Files</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Preparing to Make the Carved Section in the Wood</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 5" loading="lazy"></div><p>The first thing to do is you need to find a nice, chunky piece of wood. My neighbour gave me a nice piece of wood which was an old sign. It’s a type of pine which makes it quite soft. The benefit is it’s easy to carve, the disadvantage is it’s easy to mark. The following step goes through how to mark out the area you need to carve and using an oscillating tool to do it.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Preparing to Make the Carved Section in the Wood</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Preparing to Make the Carved Section in the Wood image 5" loading="lazy"></div><p>The first thing to do is you need to find a nice, chunky piece of wood.</p>
+<p>My neighbour gave me a nice piece of wood which was an old sign.</p>
+<p>It’s a type of pine which makes it quite soft.</p>
+<p>The benefit is it’s easy to carve, the disadvantage is it’s easy to mark.</p>
+<p>The following step goes through how to mark out the area you need to carve and using an oscillating tool to do it.</p>
 <p>Steps:</p>
 <ol>
 <li>First, decide on how many tubes you want to display. I went with 3 in the end. The good thing about the circuit I used is you could use 10 LED’s if you wanted to display 10 tubes</li>
@@ -207,7 +254,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Rub wax into the wood making sure that you really rub it into the grain.</li>
 <li>wipe away any excess wax with a clean cloth</li>
 <li>Repeat if necessary</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Sound Activated Circuit</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Sound Activated Circuit image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Sound Activated Circuit image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Sound Activated Circuit image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Sound Activated Circuit image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Sound Activated Circuit image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Sound Activated Circuit image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Sound Activated Circuit image 7" loading="lazy"></div><p>The circuit used is quite simple and allows you to have the LED's controlled by sound. I have made another 'ible which can be found here, which used a more complicated circuit. You only need a couple of transistors and a few other parts to make this one.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Sound Activated Circuit</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Sound Activated Circuit image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Sound Activated Circuit image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Sound Activated Circuit image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Sound Activated Circuit image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Sound Activated Circuit image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Sound Activated Circuit image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Sound Activated Circuit image 7" loading="lazy"></div><p>The circuit used is quite simple and allows you to have the LED's controlled by sound.</p>
+<p>I have made another 'ible which can be found here, which used a more complicated circuit.</p>
+<p>You only need a couple of transistors and a few other parts to make this one.</p>
 <p>I will also be calling the different legs on the transistors by their correct names. The diagram below of the transistor will help you follow</p>
 <p>Steps:</p>
 <ol>
@@ -223,7 +272,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder a 4.7K resister to the positive leg of the cap and the other end to positive on the prototype board</li>
 <li>Attach a 47uf cap between positive and negative on the prototype board</li>
 <li>I forgot to connect the collector pin on transistor Q1 to ground so make sure you do this as well. In the last image you can see I added a wire under the cap to connect the transistor pin to ground.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Making the Sound Activated Circuit - Continued</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 3" loading="lazy"></div><p>That's it for the components, now you have to add the wires to the circuit board so you can connect it to power, switch and LED's. The wiring might be a little confusing in the images as I had to change this a little. Just use the schematic to work out where to attach wires</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Making the Sound Activated Circuit - Continued</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Making the Sound Activated Circuit - Continued image 3" loading="lazy"></div><p>That's it for the components, now you have to add the wires to the circuit board so you can connect it to power, switch and LED's.</p>
+<p>The wiring might be a little confusing in the images as I had to change this a little.</p>
+<p>Just use the schematic to work out where to attach wires</p>
 <p>Steps:</p>
 <ol>
 <li>Connect a wire to the emitter leg on Q2. This will be connected to one of the solder points on the switch</li>
@@ -244,7 +295,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The last wire soldered on the switch is the ground wire.</li>
 <li>At this stage you could hot glue the switch into place but it's probably wiser to leave it for the time being until you have tested</li>
 <li>If all that sounds confusing, just use the schematic below to help you.</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the LED's</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the LED's image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the LED's image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the LED's image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the LED's image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the LED's image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the LED's image 6" loading="lazy"></div><p>Next thing to do is to add the LED's. Initially I was going to use 3mm red LED's and double them up so the light would be brighter (see first pic). I decided against this for a couple of reasons. First, the red colour wasn't as good as I hoped and second, I somehow blew all the LED's (no idea how) so it was a good reason to swap them out to the green ones.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Adding the LED's</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Adding the LED's image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Adding the LED's image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Adding the LED's image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Adding the LED's image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Adding the LED's image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Adding the LED's image 6" loading="lazy"></div><p>Next thing to do is to add the LED's.</p>
+<p>Initially I was going to use 3mm red LED's and double them up so the light would be brighter (see first pic).</p>
+<p>I decided against this for a couple of reasons.</p>
+<p>First, the red colour wasn't as good as I hoped and second, I somehow blew all the LED's (no idea how) so it was a good reason to swap them out to the green ones.</p>
 <p>Steps:</p>
 <ol>
 <li>You need to add a wire to each of the LED legs. Solder these on and add some heat shrink to protect from short circuiting. To make sure that you can identify positive and negative wires, I tie a small knot in the positive wire.</li>
@@ -253,7 +307,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Connect all of the negative wires and positive wires from the LED's. Strip the ends of the wires and twist them together.</li>
 <li>You then need to connect the ground and positive LED wires to the circuit. The positive LED wires connect to the positive wire attached earlier to the circuit board. the Ground LED wires get connected to the last wire on the switch. Check out the circuit diagram again to see how I did this in step 12.</li>
 <li>Lastly, add some solder to each of the ground and positive ends of the wires and some heat-shrink to each of the ends to protect them</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Gluing, Testing and Adding Tubes</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 7" loading="lazy"></div><p>Now that you have everything wired up, it's time to stick everything down and make secure. You will notice that I didn't add a cover to the bottom of the wood base. I was thinking of adding a ply wood base but decided against it in the end. I like that you can see the electronics inside and see how it works.</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Gluing, Testing and Adding Tubes</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Gluing, Testing and Adding Tubes image 7" loading="lazy"></div><p>Now that you have everything wired up, it's time to stick everything down and make secure.</p>
+<p>You will notice that I didn't add a cover to the bottom of the wood base.</p>
+<p>I was thinking of adding a ply wood base but decided against it in the end.</p>
+<p>I like that you can see the electronics inside and see how it works.</p>
 <p>Make sure you test first before soldering everything down.</p>
 <p>Steps:</p>
 <ol>
@@ -265,5 +322,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Slightly bend out the pins on the tube so when you push it into the hole in the wood base, they will be firm and hold</li>
 <li>Turn on and enjoy!</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,11 +162,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Retro Rocket Made From Junk</span>
 </nav>
-<h1>Retro Rocket Made From Junk</h1><div class="source"><a href="https://www.instructables.com/Retro-Rocket-Made-From-Junk/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Making a rocket out of junk has been on my to-do list for some time (it's an eclectic list!). I've made myself junk robots (colloquially known as junkbots) and also ray guns which you can check out in the links below.</p>
-<p>In my constant search for interesting things, I sometimes stumble across an object (in this case an old hand mixer) that looks like it could be used in another way. The mixer was from the 60's and has an amazing casing that resembled part of a rocket ship.</p>
-<p>Once you have found the part that gives you some inspiration, the rest just falls into place. I mean it still takes a lot of time trying to work out how it's all going to go together but that's the fun bit. Once I start I usually can't stop until it's done and if I do stop I'm constantly thinking about it.</p>
+<h1>Retro Rocket Made From Junk</h1><div class="source"><a href="https://www.instructables.com/Retro-Rocket-Made-From-Junk/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Making a rocket out of junk has been on my to-do list for some time (it's an eclectic list!).</p>
+<p>I've made myself junk robots (colloquially known as junkbots) and also ray guns which you can check out in the links below.</p>
+<p>In my constant search for interesting things, I sometimes stumble across an object (in this case an old hand mixer) that looks like it could be used in another way.</p>
+<p>The mixer was from the 60's and has an amazing casing that resembled part of a rocket ship.</p>
+<p>Once you have found the part that gives you some inspiration, the rest just falls into place.</p>
+<p>I mean it still takes a lot of time trying to work out how it's all going to go together but that's the fun bit.</p>
+<p>Once I start I usually can't stop until it's done and if I do stop I'm constantly thinking about it.</p>
 <p>This particular rocket is mostly made from parts I had in my parts bins. I have also included some LED's in the inside section which are controlled by a remote.</p>
-<p>It's obviously nigh on impossible to try and replicate this actual rocket and if you do build one then no 2 will ever be the same. However, I'll go through how I selected the different parts and put them together to make the finished rocket. My hope if that this Instructable will inspire you to find some junk and build your own.</p>
+<p>It's obviously nigh on impossible to try and replicate this actual rocket and if you do build one then no 2 will ever be the same.</p>
+<p>However, I'll go through how I selected the different parts and put them together to make the finished rocket.</p>
+<p>My hope if that this Instructable will inspire you to find some junk and build your own.</p>
 <p>Ray Gun Builds</p>
 <p>Ray Gun with Sound effects V2</p>
 <p>Ray Gun with Laser Sound Effects</p>
@@ -139,7 +180,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Junkbots</p>
 <p>Light Sensitive Junkbot</p>
 <p>Micro Junkbot Display</p>
-<p>The Art of Making Junkbots</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts & Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts & Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts & Tools image 10" loading="lazy"></div><p>Ok - so a parts list probably isn't going to be of much use, especially considering a lot of the parts I used I can't even remember what they are from! So, instead of a parts list, I've added some idea's on what type of things to look out for. A lot of these you'll need to pull apart. Keep all those interesting bits and bobs that you pull out.</p>
+<p>The Art of Making Junkbots</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts & Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts & Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts & Tools image 10" loading="lazy"></div><p>Ok - so a parts list probably isn't going to be of much use, especially considering a lot of the parts I used I can't even remember what they are from!</p>
+<p>So, instead of a parts list, I've added some idea's on what type of things to look out for.</p>
+<p>A lot of these you'll need to pull apart.</p>
+<p>Keep all those interesting bits and bobs that you pull out.</p>
 <p>Things to look out for</p>
 <ol>
 <li>Any kitchen equipment from the 60's & 70's. I used an old hand mixer for the main section of the body from the 60's. Old blender designs seem to have been inspired from the space race</li>
@@ -160,31 +204,42 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Vice</li>
 <li>Other basic tools.</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Where to Begin - Pulling Apart the Mixer</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Where to Begin - Pulling Apart the Mixer image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Where to Begin - Pulling Apart the Mixer image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Where to Begin - Pulling Apart the Mixer image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Where to Begin - Pulling Apart the Mixer image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Where to Begin - Pulling Apart the Mixer image 5" loading="lazy"></div><p>As I mentioned in the intro, the place to begin is when you find that part that gives you the initial inspiration. In my case it was the old blender that I picked-up at a junk store</p>
-<p>Once you have that special part you'll need to start to pull it apart and remove any pieces you don't need. In my case I had to remove all of the insides of the hand mixer which was the motor along with the front section which held the beaters.</p>
+<p>Once you have that special part you'll need to start to pull it apart and remove any pieces you don't need.</p>
+<p>In my case I had to remove all of the insides of the hand mixer which was the motor along with the front section which held the beaters.</p>
 <p>Steps:</p>
 <ol>
 <li>First thing I did was to remove any screws that i could see</li>
 <li>I then pried off the front section to reveal the motor inside</li>
 <li>Next I removed any visible nuts and screws and pulled out the motor section. It was covered in old grease which is to be expected so try not to get it everywhere</li>
 <li>Once all the parts were removed from the mixer I was left just with the shell of the mixer which is the only part that I needed. Make sure you keep any parts from the mixer that could be used in other projects</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding a Nose Cone Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding a Nose Cone Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding a Nose Cone Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding a Nose Cone Section image 3" loading="lazy"></div><p>So I had the back section of the rocket ship - the next thing to do was to make a nose cone section. I thought that this would take some time to find the right part to firstly fit within the mixer body and 2nd, look like the 2 parts belong as one. Serendipity prevailed and I found a surround from a filter that someone else told me was called a "Master Pneumatic Filter"</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding a Nose Cone Section</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding a Nose Cone Section image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding a Nose Cone Section image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding a Nose Cone Section image 3" loading="lazy"></div><p>So I had the back section of the rocket ship - the next thing to do was to make a nose cone section.</p>
+<p>I thought that this would take some time to find the right part to firstly fit within the mixer body and 2nd, look like the 2 parts belong as one.</p>
+<p>Serendipity prevailed and I found a surround from a filter that someone else told me was called a "Master Pneumatic Filter"</p>
 <p>The surround fitted into the mixer body like they were made for one another. I had to grind away a small tab inside the mixer body and after that the fit was perfect.</p>
 <p>It is a very rare occurrence that 2 parts meet and marry like this in a build. I was preparing myself to have to do a lot of modding for it to happen.</p>
-<p>Later I actually do do some modding to the surround but I'll leave that for another step</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Wings</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Wings image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Wings image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Wings image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Wings image 4" loading="lazy"></div><p>The wings are made from polished aluminum trimming that is used on trucks. Inside the trimming there is a groove which is used to hold it in place via a screw head. I utilized the groove to hold it to the body of the rocket</p>
+<p>Later I actually do do some modding to the surround but I'll leave that for another step</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Wings</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Wings image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Wings image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Wings image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Wings image 4" loading="lazy"></div><p>The wings are made from polished aluminum trimming that is used on trucks.</p>
+<p>Inside the trimming there is a groove which is used to hold it in place via a screw head.</p>
+<p>I utilized the groove to hold it to the body of the rocket</p>
 <p>Steps:</p>
 <ol>
 <li>First I cut 2 ends off the edging. Both were pointed at one end which i used as the front of the wing</li>
 <li>Next I shaped the back section to the wings ended in a point</li>
 <li>To connect them to the body of the rocket I drilled a couple holes on either side of the rocket and added a couple of screws which had flat heads. These were secured with a couple of nuts</li>
 <li>I then just slipped the groove on the inside of the wings onto the screw heads and tightened the nuts up.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Engines</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Engines image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Engines image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Engines image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Engines image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Engines image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Engines image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Engines image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Making the Engines image 8" loading="lazy"></div><p>In some photo's you may see what looks like a large engine strapped to the top section of the rocket. I was close to going with this but decided that it didn't look right and removed it. The last photo in this step shows what it looked like.</p>
-<p>I decided instead to add a couple of rockets made from audio jacks and another part which I can't remember what it is from. You can see it in the first image and it definitely has a twin engine feel about it.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Engines</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Engines image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Engines image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Engines image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Engines image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Engines image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Making the Engines image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Making the Engines image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Making the Engines image 8" loading="lazy"></div><p>In some photo's you may see what looks like a large engine strapped to the top section of the rocket.</p>
+<p>I was close to going with this but decided that it didn't look right and removed it.</p>
+<p>The last photo in this step shows what it looked like.</p>
+<p>I decided instead to add a couple of rockets made from audio jacks and another part which I can't remember what it is from.</p>
+<p>You can see it in the first image and it definitely has a twin engine feel about it.</p>
 <p>Steps:</p>
 <ol>
 <li>To secure the "twin engine engine holder" (there must be a shorter name for it - let's go with TEEH), I drilled a hole into the back section of the mixer and secured with a nut and screw</li>
 <li>I was going to leave it as is and then decided to extend the engines out further. I raided a parts bin which is full of audio parts (I managed to pick up all of these from a junk store for a couple dollars) and found a couple of chrome audio plugs</li>
 <li>I secured them to the TEEH by using a couple of other audio parts which I superglued (eeeekkk, I hate using superglue on a build like this) into the holes in the TEEH and then using a small screw on the audio plugs to secure them into place</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Extending the Nose Cone</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Extending the Nose Cone image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Extending the Nose Cone image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Extending the Nose Cone image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Extending the Nose Cone image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Extending the Nose Cone image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Extending the Nose Cone image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Extending the Nose Cone image 7" loading="lazy"></div><p>As i mentioned in a earlier step, I decided to take the plunge and mod the nose cone. as I only had one of these, if I didn't like it I'd be back to the drawing board. It turns out that shortening the nose cone worked a treat and gave the rocket better proportions. At this stage I also decided to extend the front section of the nose cone as well. I actually change the front again in the next step.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Extending the Nose Cone</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Extending the Nose Cone image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Extending the Nose Cone image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Extending the Nose Cone image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Extending the Nose Cone image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Extending the Nose Cone image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Extending the Nose Cone image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Extending the Nose Cone image 7" loading="lazy"></div><p>As i mentioned in a earlier step, I decided to take the plunge and mod the nose cone. as I only had one of these, if I didn't like it I'd be back to the drawing board.</p>
+<p>It turns out that shortening the nose cone worked a treat and gave the rocket better proportions.</p>
+<p>At this stage I also decided to extend the front section of the nose cone as well.</p>
+<p>I actually change the front again in the next step.</p>
 <p>Steps:</p>
 <ol>
 <li>I used a grinder to cut the nose cone down. I then tested to make sure it fitted and to also see how it looked</li>
@@ -193,14 +248,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To secure the soda bulb to the nose cone I just used a couple large washers and placed one on the outside and one on the inside of the cone and secured with a nut</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: An Extra Part Added to the Nose Cone</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: An Extra Part Added to the Nose Cone image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: An Extra Part Added to the Nose Cone image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: An Extra Part Added to the Nose Cone image 3" loading="lazy"></div><p>I wasn't totally satisfied with the nose cone extension so I decided it needed some other part added. After rummaging through my parts bins I came across the top of a microphone which did the trick.</p>
 <p>It was pretty straight forward adding it, all I had to do was to use a longer threaded rod and add a large washer to the front of the mic end. The rod and nuts at either end hold everything into place</p>
-<p>Now I was happy with the nose cone</p><h2><span class="step-num">STEP 8</span>Step 8: Adding a Tail Fin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a Tail Fin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a Tail Fin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a Tail Fin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a Tail Fin image 4" loading="lazy"></div><p>Initially, what I was going to go for was a plane type tail fin. Looking around the parts bins I couldn't find any parts that would suit so I decided to re-think how the tail fin should look. After some more rummaging I found a piece from a typewriter (top tail section) and a bracket. I played around with the parts for a little bit and finally worked out how I wanted the tail fin to look.</p>
+<p>Now I was happy with the nose cone</p><h2><span class="step-num">STEP 8</span>Step 8: Adding a Tail Fin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a Tail Fin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a Tail Fin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a Tail Fin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a Tail Fin image 4" loading="lazy"></div><p>Initially, what I was going to go for was a plane type tail fin.</p>
+<p>Looking around the parts bins I couldn't find any parts that would suit so I decided to re-think how the tail fin should look.</p>
+<p>After some more rummaging I found a piece from a typewriter (top tail section) and a bracket.</p>
+<p>I played around with the parts for a little bit and finally worked out how I wanted the tail fin to look.</p>
 <p>Steps:</p>
 <ol>
 <li>I decided to cut down the top section of the bracket so it couldn't be seen when the top tail section was added. I used a grinder to cut this off</li>
 <li>I was then going to add a couple of small screws to secure the sections together but went the easy route and used some superglue. It's always good to rough up the sections that are going to glur together so the glue has got something to grab hold of.</li>
 <li>Once they were dried, I secured the tail fin with a small screw and nut. It's always a bit fiddly trying to attach the nut to the screw when it is right down the back of the mixer case. I used a pair of pliers to hold the nut whist I used a Philips head to secure the screw.</li>
 <li>The final results really works well with the rest of the ship and I'm glad I did remove the larger "engine" which was really the wrong colour and too large</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a Cockpit</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Cockpit image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Cockpit image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Cockpit image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Cockpit image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding a Cockpit image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding a Cockpit image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding a Cockpit image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding a Cockpit image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding a Cockpit image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Adding a Cockpit image 10" loading="lazy"></div><p>There was some debate in my house on whether I should add a cockpit or not. In the end the cockpit idea won and I'm glad it did. It was one of the trickier parts of the build due to the fact that I had to have something that would form to the curves of the top of the rocket and it took me a while to work out how to do that.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a Cockpit</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Cockpit image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Cockpit image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Cockpit image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Cockpit image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding a Cockpit image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding a Cockpit image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding a Cockpit image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding a Cockpit image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Adding a Cockpit image 9" loading="lazy"><img src="images/step09_10.jpg" alt="Step 9: Adding a Cockpit image 10" loading="lazy"></div><p>There was some debate in my house on whether I should add a cockpit or not.</p>
+<p>In the end the cockpit idea won and I'm glad it did.</p>
+<p>It was one of the trickier parts of the build due to the fact that I had to have something that would form to the curves of the top of the rocket and it took me a while to work out how to do that.</p>
 <p>Steps:</p>
 <ol>
 <li>So first I placed the door handle surround (that large round thing with the hole in it) on top of the rocket to see how it would look. Once I thought that this could work I then used my bent sander to reduce some of the height.</li>
@@ -209,7 +269,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>next I found an old tin lid and pushed this onto the top opening of the door handle surround. I would have liked to have used here a opaque lid so it looked like a window but didn't have anything suitable so went with the metal one instead.</li>
 <li>To secure it to the rocket all i did was drill a hole into the top of the lid and into the top of the rocket and secured with a screw and nut. I also added a couple of small washers for strength.</li>
 <li>lastly, to hide the screw head and to finish of the look, I added the top off a microphone nd glued this into place</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Every Rocket Needs LED's</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Every Rocket Needs LED's image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Every Rocket Needs LED's image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Every Rocket Needs LED's image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Every Rocket Needs LED's image 4" loading="lazy"></div><p>I was going to design my own circuit and have "Night Rider" style LED's moving inside. I went the easy route in the end as I had these pond LED's which worked perfectly. They are operated via a remote and have a heap of different colours and functions.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Every Rocket Needs LED's</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Every Rocket Needs LED's image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Every Rocket Needs LED's image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Every Rocket Needs LED's image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Every Rocket Needs LED's image 4" loading="lazy"></div><p>I was going to design my own circuit and have "Night Rider" style LED's moving inside.</p>
+<p>I went the easy route in the end as I had these pond LED's which worked perfectly.</p>
+<p>They are operated via a remote and have a heap of different colours and functions.</p>
 <p>Steps:</p>
 <ol>
 <li>In order for the lights to fit inside the rocket body, I had to reduce the size of the surround.</li>
@@ -226,5 +288,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I was going to use 2 pieces of acrylic to hold the rocket to the stand but after testing realized that I could get away with one.</li>
 <li>Place the rocket on top of the stand, turn the LED's on, stand back and admire the build.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

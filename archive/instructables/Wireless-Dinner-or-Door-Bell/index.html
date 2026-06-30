@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Wireless Dinner (or Door) Bell</span>
 </nav>
-<h1>Wireless Dinner (or Door) Bell</h1><div class="source"><a href="https://www.instructables.com/Wireless-Dinner-or-Door-Bell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>My makerspace (which is a very small shed!) is some distance from the house and I wanted some way to know when I'm wanted back in the house. I got a little tired of hearing someone yell from the top of the stairs that dinner is ready, so I built a remote controlled bell.</p>
-<p>The build is made from readily available parts and you will need to build a simple 555 circuit as well. For those new to making circuits, I recently completed an 'ible on getting started in building circuits so check it out here if you need help. The circuit I built in the 'ible is the same as the one needed in this one!</p>
-<p>How it works is there is a small solenoid that is connected to the 555 circuit. The circuit is activated my the remote which in turn makes the solenoid move up and down, striking the bell. You can control the speed of the solenoid with a potentiometer to either have a nice, slow ring or a manic fast one.</p>
+<h1>Wireless Dinner (or Door) Bell</h1><div class="source"><a href="https://www.instructables.com/Wireless-Dinner-or-Door-Bell/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>My makerspace (which is a very small shed!) is some distance from the house and I wanted some way to know when I'm wanted back in the house.</p>
+<p>I got a little tired of hearing someone yell from the top of the stairs that dinner is ready, so I built a remote controlled bell.</p>
+<p>The build is made from readily available parts and you will need to build a simple 555 circuit as well.</p>
+<p>For those new to making circuits, I recently completed an 'ible on getting started in building circuits so check it out here if you need help.</p>
+<p>The circuit I built in the 'ible is the same as the one needed in this one!</p>
+<p>How it works is there is a small solenoid that is connected to the 555 circuit.</p>
+<p>The circuit is activated my the remote which in turn makes the solenoid move up and down, striking the bell.</p>
+<p>You can control the speed of the solenoid with a potentiometer to either have a nice, slow ring or a manic fast one.</p>
 <p>That's enough with the intro - lets get to building.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.png" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"></div><p>Parts</p>
 <p>Electronic Parts</p>
 <ol>
@@ -180,8 +220,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place a little hot glue to the solenoid wires so they don’t break.</li>
 <li>Add 2 wires to positive and ground. These will be connected to the remote receiver. You will also need to solder on the power supply but this will come later</li>
 <li>Lastly, make sure you test the circuit to make sure it works correctly</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Rebuilding the Fire Alarm</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 6: Rebuilding the Fire Alarm image 1" loading="lazy"><img src="images/step06_02.png" alt="Step 6: Rebuilding the Fire Alarm image 2" loading="lazy"><img src="images/step06_03.png" alt="Step 6: Rebuilding the Fire Alarm image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Rebuilding the Fire Alarm image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Rebuilding the Fire Alarm image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Rebuilding the Fire Alarm image 6" loading="lazy"><img src="images/step06_07.gif" alt="Step 6: Rebuilding the Fire Alarm image 7" loading="lazy"></div><p>The first steps of rebuilding the fire alarm is to pull it all apart. The vintage fire alarm that I got my hands on no longer worked (I did try and get it going but to no avail) so I didn’t feel too bad pulling it apart and reusing what I could.</p>
-<p>I have suggested off-the-shelf parts in the part section if you can’t get your hands on a vintage one. You can pretty much make this out of an old bicycle bell and a small project box. I’ll go through how I refurbished and re-purposed the alarm bell in the following steps</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Rebuilding the Fire Alarm</h2><div class="step-images"><img src="images/step06_01.png" alt="Step 6: Rebuilding the Fire Alarm image 1" loading="lazy"><img src="images/step06_02.png" alt="Step 6: Rebuilding the Fire Alarm image 2" loading="lazy"><img src="images/step06_03.png" alt="Step 6: Rebuilding the Fire Alarm image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Rebuilding the Fire Alarm image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Rebuilding the Fire Alarm image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Rebuilding the Fire Alarm image 6" loading="lazy"><img src="images/step06_07.gif" alt="Step 6: Rebuilding the Fire Alarm image 7" loading="lazy"></div><p>The first steps of rebuilding the fire alarm is to pull it all apart.</p>
+<p>The vintage fire alarm that I got my hands on no longer worked (I did try and get it going but to no avail) so I didn’t feel too bad pulling it apart and reusing what I could.</p>
+<p>I have suggested off-the-shelf parts in the part section if you can’t get your hands on a vintage one.</p>
+<p>You can pretty much make this out of an old bicycle bell and a small project box.</p>
+<p>I’ll go through how I refurbished and re-purposed the alarm bell in the following steps</p>
 <p>Steps:</p>
 <ol>
 <li>Remove the top case section (this is just clipped into place)</li>
@@ -194,7 +237,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once all of the grime has been removed, it’s time to polish it up. I did this by placing the end of the bell into a drill and used a metal polisher to polish it up. I’m pretty sure that this isn’t the smartest thing to do but it gets the job done and if you are careful you will be ok. Otherwise you need to polish it by hand and I’m too impatient for that!</li>
 <li>Next you will need to clean-up the body of the alarm and remove any rust, paint etc to get it ready for painting. I used a couple of wire wheels on my dremel to remove most of the rust etc. I should have given it a good wash as well but forgot to before painting.</li>
 <li>Lastly, I made all of the modifications I need to do to the case of the alarm. This included drilling a hole for the potentiometer and 2 for the LED’s. I also had to cut a little piece out of the top in order to fit the solenoid into place</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Solenoid</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Solenoid image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Solenoid image 2" loading="lazy"></div><p>The solenoid have 2 very small screw holes that you can use to attach it to something flat. I managed to find a couple of screws that were the correct size for the thread in my parts bin which was lucky. You could also just glue it into place as well.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Solenoid</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Solenoid image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Solenoid image 2" loading="lazy"></div><p>The solenoid have 2 very small screw holes that you can use to attach it to something flat.</p>
+<p>I managed to find a couple of screws that were the correct size for the thread in my parts bin which was lucky.</p>
+<p>You could also just glue it into place as well.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to work out whether the pin in the solenoid will hit the bell when attached. Secure the bell into place and place the solenoid in the position it will be attached in. Pull down the pin on the solenoid and see whether it hits the bell and goes “ding”. If it works, then mark it.</li>
@@ -207,7 +252,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Before painting, make sure you give everything a good clean and remove any paint rust etc.</li>
 <li>First I sprayed the body of the bell with primer and let this dry for 12 hours</li>
 <li>I decided to go with a red paint as this seemed like the right type of colour to use. I sprayed quite a few coats and left it to dry for 24 hours. In hindsight I should have probably left it to dry for a few days as the paint was still soft and when I added the electronics I left a few finger prints which I had to buff out.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring the Remote Module to the 555 Circuit</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 5" loading="lazy"></div><p>The remote receiver allows you to activate the bell from quite far distance. I haven’t tested the range but my sheds about 60 meters away from the house and it works fine at that distance. The wiring is also pretty straight forward. The power supply to the receiver module is the same that is used for the 555 circuit and the only other 2 wires are connected to the com and NO terminals.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Wiring the Remote Module to the 555 Circuit</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Wiring the Remote Module to the 555 Circuit image 5" loading="lazy"></div><p>The remote receiver allows you to activate the bell from quite far distance.</p>
+<p>I haven’t tested the range but my sheds about 60 meters away from the house and it works fine at that distance.</p>
+<p>The wiring is also pretty straight forward.</p>
+<p>The power supply to the receiver module is the same that is used for the 555 circuit and the only other 2 wires are connected to the com and NO terminals.</p>
 <p>Steps:</p>
 <ol>
 <li>First, secure the 555 circuit to the inside of the case with some good quality, double sided tape. The type that is used in automotive repairs is good and it will also insulate the circuit.</li>
@@ -229,5 +277,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Plug the adapter into a wall socket and test out your bell. You should see LED’s flashing and hear the bell ringing. Turning the knob will allow you to control the speed of the solenoid and either have a chilled sounding one or a frenzy, panic sounding one.</li>
 <li>If you don’t get anything, go back and check your wiring and make sure everything is properly connected and there is no short circuits. I did something pretty dumb on mine and connected the wrong polarities to the relay module – doesn’t take much to mess something up.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,10 +162,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Beachcomber Driftwood Art</span>
 </nav>
-<h1>Beachcomber Driftwood Art</h1><div class="source"><a href="https://www.instructables.com/Driftwood-and-Beachcombing-Art/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I love the feel and look of driftwood, especially old planks and discarded peices of wood.  The patina that can occur when a peice of wood has been at sea for some time, the rusty stains and smooth, bleeched texture make this a fantastic material to design with.</p>
+<h1>Beachcomber Driftwood Art</h1><div class="source"><a href="https://www.instructables.com/Driftwood-and-Beachcombing-Art/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>I love the feel and look of driftwood, especially old planks and discarded peices of wood.</p>
+<p>The patina that can occur when a peice of wood has been at sea for some time, the rusty stains and smooth, bleeched texture make this a fantastic material to design with.</p>
 <p>The best thing of all is the wood comes free, all you need to do is to look for it!</p>
 <p>I find the best places to find driftwood are at surf beaches and at beaches that people don't visit much.  It can take some time to find the right wood but who doesn't like walking on the beach ; )</p>
-<p>On my last visit to the beach, I discoved an old palllet (beachcombing heaven) which had some great patina running along the wood.  I got the pallet home and this is the outcome of my attempt to design 4 different objects, each one made to showcase the beautiful things that can be found at the beach.</p>
+<p>On my last visit to the beach, I discoved an old palllet (beachcombing heaven) which had some great patina running along the wood.</p>
+<p>I got the pallet home and this is the outcome of my attempt to design 4 different objects, each one made to showcase the beautiful things that can be found at the beach.</p>
 <p>Enjoy.</p><h2><span class="step-num">STEP 1</span>Step 1: Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Tools image 4" loading="lazy"></div><p>Tools:</p>
 <ol>
 <li>Circular Saw</li>
@@ -181,5 +218,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Assemble. I used nails to assemble everything together. It's pretty rough and ready but that's what this type of thing is supposed to look like.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Done</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Done image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Done image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Done image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Done image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Done image 5" loading="lazy"></div><p>So that's it.  Really easy actually and all for free!</p>
 <p>making any of these things is simple - it just takes the right materials.  Good luck and happy hunting!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

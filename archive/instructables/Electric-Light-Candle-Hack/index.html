@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,7 +163,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Electric Light - LED Candle Hack</span>
 </nav>
 <h1>Electric Light - LED Candle Hack</h1><div class="source"><a href="https://www.instructables.com/Electric-Light-Candle-Hack/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Why re-invent the mousetrap?</p>
-<p>For that matter, why re-invent the candle?  It's been around forever, works every time, and does what is says on the box!  The Egyptians and Cretans were using candles made from beeswax, as early as 3000 BC.  This Instructable then is really just a homage to an invention that has been around since the start of the Bronze Age when man first built cities and started to write.</p>
+<p>For that matter, why re-invent the candle?</p>
+<p>It's been around forever, works every time, and does what is says on the box!</p>
+<p>The Egyptians and Cretans were using candles made from beeswax, as early as 3000 BC.</p>
+<p>This Instructable then is really just a homage to an invention that has been around since the start of the Bronze Age when man first built cities and started to write.</p>
 <p>So without further ado, please find below my attempt to improve on something that doesn't need improving on, whilst stealing someone else’s clever circuit (and idea) just so I can say "why re-invent the mousetrap?"</p>
 <p>Enjoy.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Materials</p>
 <ul>
@@ -137,7 +175,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Led candle (you can get these on eBay <a href="http://blog.makezine.com/2008/09/23/build-an-led-candle-that/">here</a> or at any $2 shop)</li>
 </ul>
 <p><strong><em>A note on the LED Candle</strong></em></p>
-<p>These are really simple but cool idea which allows a led light to flicker just like a candle.  The circuit is quite simple and if you feel up to it you can also make your own.  Check out Make Magazines one <a href="http://blog.makezine.com/2008/09/23/build-an-led-candle-that/">here</a></p>
+<p>These are really simple but cool idea which allows a led light to flicker just like a candle.</p>
+<p>The circuit is quite simple and if you feel up to it you can also make your own.</p>
+<p>Check out Make Magazines one <a href="http://blog.makezine.com/2008/09/23/build-an-led-candle-that/">here</a></p>
 <ul>
 <li>Light globes (the best are the ones used for the rear lights in cars)</li>
 <li>Solar panel (min 4.5v)</li>
@@ -166,7 +206,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut the copper in 2 equal halves.</li>
 <li>Make sure you grind the ends smooth to ensure steady feet.</li>
 <li>Solder onto the bottom of the battery holder.  This is tricky - you want to make sure that they are at the same angle to one another and that they sit straight.  If the main body doesn't sit right, either trim the legs or re-solder straight.  It might take a few turns but keep at it.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 8" loading="lazy"></div><p>Ok - now it's time to add the batteries to the body of the electric candle.  I really like the look of the batteries without their covers.  The problem with removing these is you start to short circuit everything once they are put into the battery holders.  To get around this do the following:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 7" loading="lazy"><img src="images/step05_08.jpg" alt="Step 5: Step - 5 Sorting Out the Batteries and Soldering the Ends image 8" loading="lazy"></div><p>Ok - now it's time to add the batteries to the body of the electric candle.</p>
+<p>I really like the look of the batteries without their covers.</p>
+<p>The problem with removing these is you start to short circuit everything once they are put into the battery holders.</p>
+<p>To get around this do the following:</p>
 <ol>
 <li>Remove the covers around the batteries.</li>
 <li>Wrap the batteries in clear tape</li>
@@ -190,7 +233,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut 2 equal lengths of copper and grind off the ends to make flat.</li>
 <li>Solder onto the circuit board, making sure everything is straight.  Take your time, you, might have to try few times to get this right.</li>
 <li>Add the LED.  shorten the legs on the led and make sure it is correctly aligned~</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Step 8 - Attaching the Circuit to the Battery Holder</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 8" loading="lazy"></div><p>On the circuit board that came with my led candle, there was a un-soldered section which wasn't used for anything.  This was the perfect place to add some solder and attached to the body of my electric candle</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Step 8 - Attaching the Circuit to the Battery Holder</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Step 8 - Attaching the Circuit to the Battery Holder image 8" loading="lazy"></div><p>On the circuit board that came with my led candle, there was a un-soldered section which wasn't used for anything.</p>
+<p>This was the perfect place to add some solder and attached to the body of my electric candle</p>
 <ol>
 <li>First add some solder to the end of the copper wire that will attach to the circuit</li>
 <li>Carefully solder on the circuit</li>
@@ -208,8 +252,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once you have decided which globe you want to use and have removed the tin end, attach it to the led with some hot glue.</li>
 <li>There are Instructables which go into more detail about hollowing out a light globe if you need mor information.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Step -10 Making a Solar Charger</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Step -10 Making a Solar Charger image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Step -10 Making a Solar Charger image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Step -10 Making a Solar Charger image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Step -10 Making a Solar Charger image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Step -10 Making a Solar Charger image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Step -10 Making a Solar Charger image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Step -10 Making a Solar Charger image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Step -10 Making a Solar Charger image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Step -10 Making a Solar Charger image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Step -10 Making a Solar Charger image 10" loading="lazy"><img src="images/step10_11.jpg" alt="Step 10: Step -10 Making a Solar Charger image 11" loading="lazy"></div><p>$4 Solar Battery Charger</p><h2><span class="step-num">STEP 11</span>Step 11: Step 11 - Phew!- Your Finished</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Step 11 - Phew!- Your Finished image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Step 11 - Phew!- Your Finished image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Step 11 - Phew!- Your Finished image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Step 11 - Phew!- Your Finished image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Step 11 - Phew!- Your Finished image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Step 11 - Phew!- Your Finished image 6" loading="lazy"></div><p>See not too hard!  Now you have an electric light candle that looks great, and adds a really beautiful ambient light to any room.</p>
-<p>The design that I came up with is pretty basic, you can pretty much do want you want in regards to how you want your electric candle to look.  If you do get around to having a go at making one of these - make sure that you post a picture so I can check it out!</p>
+<p>The design that I came up with is pretty basic, you can pretty much do want you want in regards to how you want your electric candle to look.</p>
+<p>If you do get around to having a go at making one of these - make sure that you post a picture so I can check it out!</p>
 <p>So after all of this - "why re-invent the mousetrap?"</p>
 <p>Because I can.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

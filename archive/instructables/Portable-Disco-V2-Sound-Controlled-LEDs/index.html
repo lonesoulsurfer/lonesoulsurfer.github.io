@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Portable Disco V2 -Sound Controlled LED's</span>
 </nav>
-<h1>Portable Disco V2 -Sound Controlled LED's</h1><div class="source"><a href="https://www.instructables.com/Portable-Disco-V2-Sound-Controlled-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I've come a long way with my electronics journey since I made my first portable disco. In the original build I hacked together a circuit on prototype board and managed to build a neat, little pocket disco. This time around I designed my own PCB and worked out a way to have the LED's dance with either a mic or directly from a music source. Having the LED's dance to a direct music source was an afterthought so the board for that I had to use prototype board. However, I did design one in eagle which I have made it available in the Instructable. Version 3 will be even bigger and I'm hoping to incorporate bluetooth as well.</p>
+<h1>Portable Disco V2 -Sound Controlled LED's</h1><div class="source"><a href="https://www.instructables.com/Portable-Disco-V2-Sound-Controlled-LEDs/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I've come a long way with my electronics journey since I made my first portable disco.</p>
+<p>In the original build I hacked together a circuit on prototype board and managed to build a neat, little pocket disco.</p>
+<p>This time around I designed my own PCB and worked out a way to have the LED's dance with either a mic or directly from a music source.</p>
+<p>Having the LED's dance to a direct music source was an afterthought so the board for that I had to use prototype board.</p>
+<p>However, I did design one in eagle which I have made it available in the Instructable.</p>
+<p>Version 3 will be even bigger and I'm hoping to incorporate bluetooth as well.</p>
 <p>I'm really happy with how this portable disco turned out. It looks and works great and the opal acrylic diffuser really gives the LED's some depth.</p>
-<p>The build isn't necessarily a hard one, however, you'll need to know how to solder and have a basic knowledge of electronics. I have also been using my dremel as a small router and used it in this build to cut channels in the wood for the acrylic.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts image 9" loading="lazy"></div><p>Dancing LED Boards & Components</p>
+<p>The build isn't necessarily a hard one, however, you'll need to know how to solder and have a basic knowledge of electronics.</p>
+<p>I have also been using my dremel as a small router and used it in this build to cut channels in the wood for the acrylic.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts image 9" loading="lazy"></div><p>Dancing LED Boards & Components</p>
 <ol>
 <li>Dancing LED circuit boards. You can find the link to these in the next step. There are 2 boards that you will need to get, one is the main board and the other is an extension.</li>
 <li>4017 IC X 2 - eBay. Buy these in lots of 10</li>
@@ -166,11 +207,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>3mm ply wood - your local hardware store will also have this</li>
 <li>Mobile or li-po battery - eBay. You can prob just pull one out of an old mobile you have lying around</li>
 <li>Charging and voltage regulator module - eBay</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Schematics and PCB Files</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Schematics and PCB Files image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematics and PCB Files image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Schematics and PCB Files image 3" loading="lazy"></div><p>I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design. They are easy to understand and you'll be making your own boards before you know it.</p>
-<p>You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive. The zip file has all of the gerber files which you need to get the PCB printed. Just download and save the gerber file and sent it to your favourite PCB manufacture. I use JLCPCB but there are plenty of others you can use.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Schematics and PCB Files</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Schematics and PCB Files image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematics and PCB Files image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Schematics and PCB Files image 3" loading="lazy"></div><p>I have started to design my own PCB's using Eagle.</p>
+<p>If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design.</p>
+<p>They are easy to understand and you'll be making your own boards before you know it.</p>
+<p>You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive.</p>
+<p>The zip file has all of the gerber files which you need to get the PCB printed.</p>
+<p>Just download and save the gerber file and sent it to your favourite PCB manufacture.</p>
+<p>I use JLCPCB but there are plenty of others you can use.</p>
 <p>PCB Boards</p>
 <p>Google Drive Link</p>
-<p>As you can only design boards at a certain size in Eagle (unless you pay), so I made the boards module. There is a main board and then additional boards which can plug into the main board. I don't know how many you can plug into the main one but I reckon you could easily add 3 or 4 to the main one, maybe more!</p>
+<p>As you can only design boards at a certain size in Eagle (unless you pay), so I made the boards module.</p>
+<p>There is a main board and then additional boards which can plug into the main board.</p>
+<p>I don't know how many you can plug into the main one but I reckon you could easily add 3 or 4 to the main one, maybe more!</p>
 <p>You will also need the smaller audio board that I designed if you want to be able to plug the LED's directly into a audio source. I have also included the gerber files etc in the link above.</p><h2><span class="step-num">STEP 3</span>Step 3: Routing a Slot in the Wood and Cutting</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Routing a Slot in the Wood and Cutting image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Routing a Slot in the Wood and Cutting image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Routing a Slot in the Wood and Cutting image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Routing a Slot in the Wood and Cutting image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Routing a Slot in the Wood and Cutting image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Routing a Slot in the Wood and Cutting image 6" loading="lazy"></div><p>To start, you'll need to rout a slot in the wood to secure the acrylic into. You could always just by-pass this whole step and stick the acrylic to the front of the wood if you don't have a router.</p>
 <p>Steps:</p>
 <ol>
@@ -182,7 +230,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>L = 310mm</p>
 <ol>
 <li>Cut the wood and if necessary, sand the ends. Place the equal lengths of wood together and make sure they are the same. If not sand until they are the same lengths.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Cutting the Acrylic and Making the Back</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 6" loading="lazy"></div><p>Now that you have the sides, you now need to cut a piece of the opal acrylic to fit into the slots you just cut with the router. You'll also need to make a back for the box as well and then glue it all together</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Cutting the Acrylic and Making the Back</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Cutting the Acrylic and Making the Back image 6" loading="lazy"></div><p>Now that you have the sides, you now need to cut a piece of the opal acrylic to fit into the slots you just cut with the router.</p>
+<p>You'll also need to make a back for the box as well and then glue it all together</p>
 <p>Steps:</p>
 <ol>
 <li>You need to work out how big to cut the acrylic. The easiest way I found was to place one of the side pieces against a longer piece and place a ruler into the slot.</li>
@@ -190,7 +239,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Test to make sure that the acrylic fits and you can add all the pieces of wood without any gaps.</li>
 <li>Add some wood glue to the sides and clamp together overnight.</li>
 <li>The back is made from 3mm ply wood. Measure and cut a piece for the back. make it slightly larger than needed as you can always sand it down to make it flush with the box. Add some screws to the back first before final sanding so it doesn't move about</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Audio Circuit</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Audio Circuit image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Audio Circuit image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Audio Circuit image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Audio Circuit image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Audio Circuit image 5" loading="lazy"></div><p>As I mentioned earlier in this Instructable, I did design a board for this but the mail has been super slow due to COVID. I couldn't wait any longer so I just built it on prototype board. The board and gerber files though can be found in Step 2. I'll go through though step by step how to put this circuit together. It is needed if you want to plug in music directly into the LED's from an audio source</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Audio Circuit</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Audio Circuit image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Audio Circuit image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Audio Circuit image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Audio Circuit image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Audio Circuit image 5" loading="lazy"></div><p>As I mentioned earlier in this Instructable, I did design a board for this but the mail has been super slow due to COVID.</p>
+<p>I couldn't wait any longer so I just built it on prototype board.</p>
+<p>The board and gerber files though can be found in Step 2.</p>
+<p>I'll go through though step by step how to put this circuit together.</p>
+<p>It is needed if you want to plug in music directly into the LED's from an audio source</p>
 <p>Steps:</p>
 <ol>
 <li>First, add the 386 IC. Use a dip socket as well as it's always good to be able to take out the IC, esp if it is faulty.</li>
@@ -198,7 +251,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Connect pin 4 to ground and pin 6 to positive</li>
 <li>Add a 220 uf cap to pin 3 . The other leg will be connected to the left and right audio jack sockets so connect this to spare spot on the prototype board</li>
 </ol>
-<p>5.</p><h2><span class="step-num">STEP 6</span>Step 6: The Dancing LED Boards</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The Dancing LED Boards image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The Dancing LED Boards image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The Dancing LED Boards image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: The Dancing LED Boards image 4" loading="lazy"></div><p>As you can see, there are 2 different boards. The first is the main board and has most of the components on it, the 2nd is an add-on board and only has a 4017 IC and some LED's. You can connect this board to the main board like an extension. In the schematic and board link in step 2 I made a slight change to the boards so you can now connect them together at a few different points, making them more module.</p>
+<p>5.</p><h2><span class="step-num">STEP 6</span>Step 6: The Dancing LED Boards</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The Dancing LED Boards image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The Dancing LED Boards image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The Dancing LED Boards image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: The Dancing LED Boards image 4" loading="lazy"></div><p>As you can see, there are 2 different boards.</p>
+<p>The first is the main board and has most of the components on it, the 2nd is an add-on board and only has a 4017 IC and some LED's.</p>
+<p>You can connect this board to the main board like an extension.</p>
+<p>In the schematic and board link in step 2 I made a slight change to the boards so you can now connect them together at a few different points, making them more module.</p>
 <p>Steps:</p>
 <ol>
 <li>The first thing to do is to add the pin headers to the boards.</li>
@@ -244,10 +300,33 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Finished. So How Do You Use It?</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Finished. So How Do You Use It? image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Finished. So How Do You Use It? image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Finished. So How Do You Use It? image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Finished. So How Do You Use It? image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Finished. So How Do You Use It? image 5" loading="lazy"><img src="images/step11_06.jpg" alt="Step 11: Finished. So How Do You Use It? image 6" loading="lazy"></div><p>Last thing to do after you have tested is to close up the back. I just added a few screws to hold this in place.</p>
 <p>Now that it is done, how do you use it and what is the pot for?</p>
 <p>First, turn it on. Once it is on, hit the other switch so the mic is activated. Now if you play some music or make some noise, you should see the LED's react.</p>
-<p>Next, plug in a portable speaker to one of the jack sockets, and add a music source like a phone to the other. As you have connected the sockets together, all you really are doing is plugging in the phone to the speaker. However, they are also connected to the dancing LED board so this allows you to hear music whist the LED's dance about.</p>
-<p>Use the pot to help find tune the LED's reaction. If you turn the pot right up the LED's will just dance about without reacting to the music. This is good if you just want to have the lights dance about without any source. turn the pot down and the lights will start to react to the music. Keep on turning until you find the sweet spot where the lights are moving in the way you want them to.</p>
+<p>Next, plug in a portable speaker to one of the jack sockets, and add a music source like a phone to the other.</p>
+<p>As you have connected the sockets together, all you really are doing is plugging in the phone to the speaker.</p>
+<p>However, they are also connected to the dancing LED board so this allows you to hear music whist the LED's dance about.</p>
+<p>Use the pot to help find tune the LED's reaction.</p>
+<p>If you turn the pot right up the LED's will just dance about without reacting to the music.</p>
+<p>This is good if you just want to have the lights dance about without any source. turn the pot down and the lights will start to react to the music.</p>
+<p>Keep on turning until you find the sweet spot where the lights are moving in the way you want them to.</p>
 <p>What next?</p>
-<p>Well if you have built this one successfully, you can try your hand at extending the boards and making an even bigger one. Remember they are module so why not try and add 3, 4 or even more and see what happens. You could end up with a huge panel which would look awesome on a wall.</p>
+<p>Well if you have built this one successfully, you can try your hand at extending the boards and making an even bigger one.</p>
+<p>Remember they are module so why not try and add 3, 4 or even more and see what happens.</p>
+<p>You could end up with a huge panel which would look awesome on a wall.</p>
 <p>Thanks for checking this 'ible out and happy building.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

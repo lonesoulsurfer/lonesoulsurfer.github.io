@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,10 +162,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Moog Style Synth</span>
 </nav>
-<h1>Moog Style Synth</h1><div class="source"><a href="https://www.instructables.com/Moog-Style-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>First and foremost, I have to give a massive shout out to Pete McBennett who designed this awesome circuit. When I came across it on YouTube I couldn't believe the sound that he managed to get out of a handful of components. The synth has a MASSIVE sound and really growls with heavy bass through a good speaker.</p>
-<p>The synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. The "growling" oscillator tonality is supplied via a PWM and a awesome high-resonance low pass filter.</p>
-<p>The light-control aspect which is controlled through 2 Light dependent resistors (LDR), gives amazing musical expression. The heart of the circuit is 5 op amps (LM358) and also a 2 Hex inverter drone synths via a CD40106 IC. The 2 two adjustable drone oscillators give this synth a total of three oscillators.</p>
-<p>The only addition that I included was an additional circuit with a couple of vactrols (LED and LDR facing each other, covered by heatshrink. check this ible on how to make one. This function turns the synth into an arpeggiator type synth and is a tonne of fun to play.</p>
+<h1>Moog Style Synth</h1><div class="source"><a href="https://www.instructables.com/Moog-Style-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>First and foremost, I have to give a massive shout out to Pete McBennett who designed this awesome circuit.</p>
+<p>When I came across it on YouTube I couldn't believe the sound that he managed to get out of a handful of components.</p>
+<p>The synth has a MASSIVE sound and really growls with heavy bass through a good speaker.</p>
+<p>The synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter.</p>
+<p>The "growling" oscillator tonality is supplied via a PWM and a awesome high-resonance low pass filter.</p>
+<p>The light-control aspect which is controlled through 2 Light dependent resistors (LDR), gives amazing musical expression.</p>
+<p>The heart of the circuit is 5 op amps (LM358) and also a 2 Hex inverter drone synths via a CD40106 IC.</p>
+<p>The 2 two adjustable drone oscillators give this synth a total of three oscillators.</p>
+<p>The only addition that I included was an additional circuit with a couple of vactrols (LED and LDR facing each other, covered by heatshrink. check this ible on how to make one.</p>
+<p>This function turns the synth into an arpeggiator type synth and is a tonne of fun to play.</p>
 <p>Ok that's enough babbling, time to watch the video and see this bad boy in action. If you like what you see and want to make your own, then unfortunately you'll have to keep reading.</p>
 <p>Hackaday have also reviewed this build so if you want to check that out just click the link</p><h2><span class="step-num">STEP 1</span>Step 1: Parts Moog Synth Circuit</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts Moog Synth Circuit image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts Moog Synth Circuit image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts Moog Synth Circuit image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts Moog Synth Circuit image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts Moog Synth Circuit image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts Moog Synth Circuit image 6" loading="lazy"></div><p>Here's the parts list. It's a bit of a big one. The case is from an old calculator which I gutted. You will need to design your own case and I have suggested one to use below.</p>
 <ol>
@@ -199,14 +240,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Case. Mine is an old calculator. Use whatever you think would be cool</li>
 <li>Acrylic sheets - eBay</li>
 <li>Audio Output Jack - 3.5mm and 6.35mm - eBay</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: The "Moog" Circuit Schematic</h2><div class="step-images single"><img src="images/step03_01.jpg" alt="Step 3: The "Moog" Circuit Schematic image 1" loading="lazy"></div><p>This is the schematic that you will need to build. It's the main circuit and is the one created by Pete McBennett. I didn't do any changes to this schematic as it doesn't need any changes. However, go crazy with it and try some modifications to see what you can get out of it.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: The "Moog" Circuit Schematic</h2><div class="step-images single"><img src="images/step03_01.jpg" alt="Step 3: The "Moog" Circuit Schematic image 1" loading="lazy"></div><p>This is the schematic that you will need to build.</p>
+<p>It's the main circuit and is the one created by Pete McBennett.</p>
+<p>I didn't do any changes to this schematic as it doesn't need any changes.</p>
+<p>However, go crazy with it and try some modifications to see what you can get out of it.</p>
 <p>Make sure you breadboard it first so you can test and understand how it all goes together.</p>
-<p>I did add another circuit so I could control the LDR's with flashing LED's through a couple of vacrols. This circuit is in the next step and is optional to add.</p><h2><span class="step-num">STEP 4</span>Step 4: Vactrol Circuit for Arpeggiator Sound Effect</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Vactrol Circuit for Arpeggiator Sound Effect image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Vactrol Circuit for Arpeggiator Sound Effect image 2" loading="lazy"></div><p>This circuit creates an arpeggiator effect using some vactols (this this 'ible on how to make ta vactol, also known as a opticoupler). It gives the synth another sound effect which is fun to play around with. However, it isn't necessary to add this circuit if you don't want to.</p>
+<p>I did add another circuit so I could control the LDR's with flashing LED's through a couple of vacrols. This circuit is in the next step and is optional to add.</p><h2><span class="step-num">STEP 4</span>Step 4: Vactrol Circuit for Arpeggiator Sound Effect</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Vactrol Circuit for Arpeggiator Sound Effect image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Vactrol Circuit for Arpeggiator Sound Effect image 2" loading="lazy"></div><p>This circuit creates an arpeggiator effect using some vactols (this this 'ible on how to make ta vactol, also known as a opticoupler).</p>
+<p>It gives the synth another sound effect which is fun to play around with.</p>
+<p>However, it isn't necessary to add this circuit if you don't want to.</p>
 <p>NOTE: I forgot to add the capacitor from p[in 2 on the 555 timer initially. I have updated the schematic and it now incluides it.</p>
-<p>The first schematic shows the circuit which has 2 vactrols and is essentially a flashing LED circuit. The LED's pulse which the LDR's in the vactrol detect and you get some cool, rhythmic sound effects.</p>
-<p>The second schematic shows how I connected this circuit up to the main one. I used a DPDT switch to be able to turn on and off the arpeggiator effect. Hopefully it isn't too confusing on how I connected the 2 circuits together, it took me ages for some reason to work out the best way to connect them via the switch. There's probably a better way so experiment and see how you go. I have also included the fritzing files so you can mess about with them f you want to.</p><h2><span class="step-num">STEP 5</span>Step 5: Breadboard</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Breadboard image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Breadboard image 2" loading="lazy"></div><p>I can't stress more to breadboard these circuits before you even think about soldering. The main "moog" circuit is quite complex and may take a couple of tries before you get it right.</p>
-<p>Keep at it though as I can guarantee that the circuit is correct and works amazingly. There are a bunch of mods that you could do to the actual circuit but I pretty much left it as is. Once you have the "moog" circuit working, you can then add the arpeggiator circuit and have a play around with that.</p>
-<p>If you are happy with how it sounds, next it's time to solder all those components together - gulp!</p><h2><span class="step-num">STEP 6</span>Step 6: The "Moog" Synth Circuit - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The "Moog" Synth Circuit - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The "Moog" Synth Circuit - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The "Moog" Synth Circuit - Part 1 image 3" loading="lazy"></div><p>I was going to do a step by step guide on how to put the circuit together but it would be too tedious (and boring for you). So instead I've taken a few images of putting the circuit together and will go through the steps just in a general fashion.</p>
+<p>The first schematic shows the circuit which has 2 vactrols and is essentially a flashing LED circuit.</p>
+<p>The LED's pulse which the LDR's in the vactrol detect and you get some cool, rhythmic sound effects.</p>
+<p>The second schematic shows how I connected this circuit up to the main one.</p>
+<p>I used a DPDT switch to be able to turn on and off the arpeggiator effect.</p>
+<p>Hopefully it isn't too confusing on how I connected the 2 circuits together, it took me ages for some reason to work out the best way to connect them via the switch.</p>
+<p>There's probably a better way so experiment and see how you go.</p>
+<p>I have also included the fritzing files so you can mess about with them f you want to.</p><h2><span class="step-num">STEP 5</span>Step 5: Breadboard</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Breadboard image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Breadboard image 2" loading="lazy"></div><p>I can't stress more to breadboard these circuits before you even think about soldering. The main "moog" circuit is quite complex and may take a couple of tries before you get it right.</p>
+<p>Keep at it though as I can guarantee that the circuit is correct and works amazingly.</p>
+<p>There are a bunch of mods that you could do to the actual circuit but I pretty much left it as is.</p>
+<p>Once you have the "moog" circuit working, you can then add the arpeggiator circuit and have a play around with that.</p>
+<p>If you are happy with how it sounds, next it's time to solder all those components together - gulp!</p><h2><span class="step-num">STEP 6</span>Step 6: The "Moog" Synth Circuit - Part 1</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The "Moog" Synth Circuit - Part 1 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The "Moog" Synth Circuit - Part 1 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The "Moog" Synth Circuit - Part 1 image 3" loading="lazy"></div><p>I was going to do a step by step guide on how to put the circuit together but it would be too tedious (and boring for you).</p>
+<p>So instead I've taken a few images of putting the circuit together and will go through the steps just in a general fashion.</p>
 <p>Steps:</p>
 <ol>
 <li>First, you need to make sure that your prototype board is going to be big enough. It;s a big circuit and will take up a fair bit of room. I've added a link in the parts section to the one that I used. I use these n most of my electronic projects and they are great</li>
@@ -253,7 +307,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use the schematic and start to connect the rest of the components</li>
 <li>You will need to also make a couple of vactrols. They're simple to make and you only need some heat-shrink, white LED and a LDR. I did an 'ible on how to make one which can be found here.</li>
 <li>The circuit will need to be wired up to a switch later on so that's why there is 2 wires connected to one of the LDR legs on each vactrol. You need to be able to turn off the LDR's on the moog circuit when you want to use the arpeggitor and vice versa. This is done with a DPDT switch. I also found it necessary to turn off power to the arpeggiator when the moog was on as you can here a slight ticking if they are on at the same time.</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Making the Case From an Old Calculator</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Making the Case From an Old Calculator image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Making the Case From an Old Calculator image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Making the Case From an Old Calculator image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Making the Case From an Old Calculator image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Making the Case From an Old Calculator image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Making the Case From an Old Calculator image 6" loading="lazy"></div><p>I found this old calculator at a junk shop. It must of been used in a mechanics shop as it was full of oil and filthy. As it no longerb worked I thought I'd repurpose it and give it another life. You could also use a small keyboard or just build your own enclusre out of a cigar box or something just as cool. I'll go thrugh the next steps and tell you want I had to do in order to make this into the synth.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Making the Case From an Old Calculator</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Making the Case From an Old Calculator image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Making the Case From an Old Calculator image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Making the Case From an Old Calculator image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: Making the Case From an Old Calculator image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: Making the Case From an Old Calculator image 5" loading="lazy"><img src="images/step13_06.jpg" alt="Step 13: Making the Case From an Old Calculator image 6" loading="lazy"></div><p>I found this old calculator at a junk shop.</p>
+<p>It must of been used in a mechanics shop as it was full of oil and filthy.</p>
+<p>As it no longerb worked I thought I'd repurpose it and give it another life.</p>
+<p>You could also use a small keyboard or just build your own enclusre out of a cigar box or something just as cool.</p>
+<p>I'll go thrugh the next steps and tell you want I had to do in order to make this into the synth.</p>
 <p>Steps:</p>
 <ol>
 <li>First I had to pull the calculator apart.</li>
@@ -275,20 +333,29 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>I made a small, retanglar hole in the back of the case, just large enough for the micro USB to poke through</li>
 <li>To hold the USB adapter in place I added a small piece of acrylic and glued it down along with the USB adpater. Be careful when using superglue or any glue on something like this as you don't want to get any inside the USB.</li>
-</ol><h2><span class="step-num">STEP 17</span>Step 17: LDR's and a Couple of Audio Inputs</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 5" loading="lazy"><img src="images/step17_06.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 6" loading="lazy"><img src="images/step17_07.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 7" loading="lazy"></div><p>The synths moog sound is controlled with a couple of LDR's. These needed to be placed close together in order to be able to easily cover them with your hand. I went with an extrnal speaker/amp on this build. Initially I was going to include a LM386 op-amp but I didn't like the sound that it generated. I found that a good portable speaker or guitar amp works best and gives you awesome, deep bass sounds.</p>
+</ol><h2><span class="step-num">STEP 17</span>Step 17: LDR's and a Couple of Audio Inputs</h2><div class="step-images"><img src="images/step17_01.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 1" loading="lazy"><img src="images/step17_02.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 2" loading="lazy"><img src="images/step17_03.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 3" loading="lazy"><img src="images/step17_04.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 4" loading="lazy"><img src="images/step17_05.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 5" loading="lazy"><img src="images/step17_06.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 6" loading="lazy"><img src="images/step17_07.jpg" alt="Step 17: LDR's and a Couple of Audio Inputs image 7" loading="lazy"></div><p>The synths moog sound is controlled with a couple of LDR's.</p>
+<p>These needed to be placed close together in order to be able to easily cover them with your hand.</p>
+<p>I went with an extrnal speaker/amp on this build.</p>
+<p>Initially I was going to include a LM386 op-amp but I didn't like the sound that it generated.</p>
+<p>I found that a good portable speaker or guitar amp works best and gives you awesome, deep bass sounds.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I found a good spot on the calculator to add the LDR's.</li>
 <li>Next, I drilled 4 small holes for the LDR legs to go through and glued them into place.4</li>
 <li>I wanted to be able to play this either througha 3.5mm or 6mm jack so I added tho input sockets. I drilled a couple holes into the back and secured them into place.</li>
-</ol><h2><span class="step-num">STEP 18</span>Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 2" loading="lazy"><img src="images/step18_03.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 3" loading="lazy"><img src="images/step18_04.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 4" loading="lazy"><img src="images/step18_05.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 5" loading="lazy"><img src="images/step18_06.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 6" loading="lazy"></div><p>In order to be able to add the buttons, switches and pots into the calculator, I added some red acrylic pieces. It doesn't look red in the images as it is protected by a paper covering. This is how I added it to the body of the calculator.</p>
+</ol><h2><span class="step-num">STEP 18</span>Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made</h2><div class="step-images"><img src="images/step18_01.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 1" loading="lazy"><img src="images/step18_02.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 2" loading="lazy"><img src="images/step18_03.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 3" loading="lazy"><img src="images/step18_04.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 4" loading="lazy"><img src="images/step18_05.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 5" loading="lazy"><img src="images/step18_06.jpg" alt="Step 18: Adding Some Acrylic Sheets to Fill-up All Those Holes I Made image 6" loading="lazy"></div><p>In order to be able to add the buttons, switches and pots into the calculator, I added some red acrylic pieces.</p>
+<p>It doesn't look red in the images as it is protected by a paper covering.</p>
+<p>This is how I added it to the body of the calculator.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I measured the 2 gaping holes I made in the body of the calculator to work out the dimensions I had to cut the acrylic.</li>
 <li>Next I carefully cut the acrylic pieces, one for the top section which I will be adding 4 pots later on and one for the bottom section which will house the momentary switches, a couple other pots and some switches.</li>
 <li>In order to hold the bottom section into place I utilized the some of the mounting holes already in the calculator case. I measured and drilled holes into the acrylic and after a little adjustment I managed to secure the bottom section into the calculator quite well. I later added some washes and screws to really secure it.</li>
 <li>The top section I went with some epoxy glue (not preferable but it does the job). However, before I glued it into place I needed to add the pots first.</li>
-</ol><h2><span class="step-num">STEP 19</span>Step 19: Adding Some Pots (and a Couple of Switches)</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 3" loading="lazy"><img src="images/step19_04.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 4" loading="lazy"><img src="images/step19_05.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 5" loading="lazy"><img src="images/step19_06.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 6" loading="lazy"><img src="images/step19_07.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 7" loading="lazy"><img src="images/step19_08.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 8" loading="lazy"></div><p>This step will show where I added the pots. As with most of these types of projects, I made a change at the 11th hour so you might notice some changes later. The reason for the change is a modified the circuit so I could add a way to control the synth with only one pot. This pot by-passes the momentary switches and allows you to play it without them.</p>
+</ol><h2><span class="step-num">STEP 19</span>Step 19: Adding Some Pots (and a Couple of Switches)</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 3" loading="lazy"><img src="images/step19_04.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 4" loading="lazy"><img src="images/step19_05.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 5" loading="lazy"><img src="images/step19_06.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 6" loading="lazy"><img src="images/step19_07.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 7" loading="lazy"><img src="images/step19_08.jpg" alt="Step 19: Adding Some Pots (and a Couple of Switches) image 8" loading="lazy"></div><p>This step will show where I added the pots.</p>
+<p>As with most of these types of projects, I made a change at the 11th hour so you might notice some changes later.</p>
+<p>The reason for the change is a modified the circuit so I could add a way to control the synth with only one pot.</p>
+<p>This pot by-passes the momentary switches and allows you to play it without them.</p>
 <p>Steps:</p>
 <ol>
 <li>I went with adding the 4 main pots into the top panel. These are the pots that control the 40106 IC oscillators (2 on the right) and the tuning and PWM from the synth.</li>
@@ -296,7 +363,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The SPDT switch in the top right hand is to be ale to turn off the oscillator off if you want to.</li>
 <li>I then added the 2 pots to control the arpeggiator. The one in the top section is for the modulation and the other is for speed. I later moved these both together and located them on the left on the calculator.</li>
 <li>The 2 switches you can see do the following; turn off the power to the arpeggiator and the other allows you to turn either the synth or arpeggiator on or off.</li>
-</ol><h2><span class="step-num">STEP 20</span>Step 20: Adding the Momentary Switches and Resistors</h2><div class="step-images"><img src="images/step20_01.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 1" loading="lazy"><img src="images/step20_02.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 2" loading="lazy"><img src="images/step20_03.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 3" loading="lazy"><img src="images/step20_04.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 4" loading="lazy"><img src="images/step20_05.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 5" loading="lazy"><img src="images/step20_06.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 6" loading="lazy"><img src="images/step20_07.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 7" loading="lazy"><img src="images/step20_08.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 8" loading="lazy"></div><p>I added the momentary switches near the end of the build as it took some time to find the ones I wanted to use. I’m still not 100% happy with the ones I ended up with but they were the best ones out of all I tested. You want them to have low resistance when pushed down and all the ones I brought were either too big or had high resistance.</p>
+</ol><h2><span class="step-num">STEP 20</span>Step 20: Adding the Momentary Switches and Resistors</h2><div class="step-images"><img src="images/step20_01.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 1" loading="lazy"><img src="images/step20_02.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 2" loading="lazy"><img src="images/step20_03.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 3" loading="lazy"><img src="images/step20_04.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 4" loading="lazy"><img src="images/step20_05.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 5" loading="lazy"><img src="images/step20_06.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 6" loading="lazy"><img src="images/step20_07.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 7" loading="lazy"><img src="images/step20_08.jpg" alt="Step 20: Adding the Momentary Switches and Resistors image 8" loading="lazy"></div><p>I added the momentary switches near the end of the build as it took some time to find the ones I wanted to use.</p>
+<p>I’m still not 100% happy with the ones I ended up with but they were the best ones out of all I tested.</p>
+<p>You want them to have low resistance when pushed down and all the ones I brought were either too big or had high resistance.</p>
 <p>Steps:</p>
 <ol>
 <li>First, I measured where I needed to drill the 10 holes for the switches.</li>
@@ -305,7 +374,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now I had to add the resistors. This is pretty straight forward however, I did manage to wire this the wrong way the first time. You need to make sure that SW10 on the schematic is actually the first switch out of the 10.</li>
 <li>Solder the resistors in series between each of the switches legs. The other leg on the switches need to be connected as well. I used resistor legs to connect all of these together.</li>
 <li>Laslty, I connected pin 1 from U1A IC to the last switch and connected leg 6 from U1A to a 38.3K resistor and connected this to the first switch.</li>
-</ol><h2><span class="step-num">STEP 21</span>Step 21: Adding the Battery and Charging/Voltage Meter Module</h2><div class="step-images"><img src="images/step21_01.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 1" loading="lazy"><img src="images/step21_02.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 2" loading="lazy"><img src="images/step21_03.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 3" loading="lazy"><img src="images/step21_04.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 4" loading="lazy"><img src="images/step21_05.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 5" loading="lazy"><img src="images/step21_06.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 6" loading="lazy"></div><p>The synth will need 9v power supply. You could use a 9v battery but I prefer to use a rechargeable one. There is a great little module that you can get in eBay that have a charger and voltage regulator build into one. This means you can use Li-Po or Li-Ion batteries to run the synth. I like to use old mobile batteries and have done an Instructable on how to do this which can be found here.</p>
+</ol><h2><span class="step-num">STEP 21</span>Step 21: Adding the Battery and Charging/Voltage Meter Module</h2><div class="step-images"><img src="images/step21_01.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 1" loading="lazy"><img src="images/step21_02.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 2" loading="lazy"><img src="images/step21_03.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 3" loading="lazy"><img src="images/step21_04.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 4" loading="lazy"><img src="images/step21_05.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 5" loading="lazy"><img src="images/step21_06.jpg" alt="Step 21: Adding the Battery and Charging/Voltage Meter Module image 6" loading="lazy"></div><p>The synth will need 9v power supply.</p>
+<p>You could use a 9v battery but I prefer to use a rechargeable one.</p>
+<p>There is a great little module that you can get in eBay that have a charger and voltage regulator build into one.</p>
+<p>This means you can use Li-Po or Li-Ion batteries to run the synth.</p>
+<p>I like to use old mobile batteries and have done an Instructable on how to do this which can be found here.</p>
 <p>Steps:</p>
 <ol>
 <li>Connect the module input solder points to the battery terminals.</li>
@@ -323,11 +396,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once you have everything wired-up, it’s time to give it a test run.</li>
 </ol><h2><span class="step-num">STEP 23</span>Step 23: So What Next?</h2><div class="step-images"><img src="images/step23_01.jpg" alt="Step 23: So What Next? image 1" loading="lazy"><img src="images/step23_02.jpg" alt="Step 23: So What Next? image 2" loading="lazy"><img src="images/step23_03.jpg" alt="Step 23: So What Next? image 3" loading="lazy"><img src="images/step23_04.jpg" alt="Step 23: So What Next? image 4" loading="lazy"></div><p>Now that you have finished your synth, it’s time to see what she can do.</p>
 <p>First, plug-in a speaker to the audio output.</p>
-<p>It’s quite simple to play the synth – you just need to turn it on, cover the LDR’s and start to push the momentary switches. You can tune the keys with the master tune pot and use the PWM pot to find that sweet spot.</p>
+<p>It’s quite simple to play the synth – you just need to turn it on, cover the LDR’s and start to push the momentary switches.</p>
+<p>You can tune the keys with the master tune pot and use the PWM pot to find that sweet spot.</p>
 <p>Now flick on the 2 drone oscillators. You can use the two pots to tune this as well and get them to play in sync. Play around with the LDR’s and keys and see what sounds you can get out of it</p>
 <p>To play the arpeggiator, just turn it on and start to play with the pots for speed and modulation.</p>
-<p>I also added a pot that bypasses the momentary switches (keys) so you can play the synth with just one pot and the LDR’s. That’s a lot of fun to do and you can also play the arpeggiator with the one pot as well.</p>
-<p>I also used my Echo and Reverb box (make your own here) and played the synth through that as well. You get some great depth of sound when you hook it up to the synth. I definitely recommend that you also make one of these as it takes the synth to another sonic level.</p>
+<p>I also added a pot that bypasses the momentary switches (keys) so you can play the synth with just one pot and the LDR’s.</p>
+<p>That’s a lot of fun to do and you can also play the arpeggiator with the one pot as well.</p>
+<p>I also used my Echo and Reverb box (make your own here) and played the synth through that as well.</p>
+<p>You get some great depth of sound when you hook it up to the synth.</p>
+<p>I definitely recommend that you also make one of these as it takes the synth to another sonic level.</p>
 <p>Experiment and see what sounds you can get out of your synth.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Echo & Reverb Box</span>
 </nav>
-<h1>Echo & Reverb Box</h1><div class="source"><a href="https://www.instructables.com/Echo-Reverb-Box/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This build is based around a great little reverb module you can get on eBay for under $5. I’ve used it now in a couple of projects (listed below) but this time I wanted to have a stand along reverb and echo effects box. You can use this in a whole bunch of different applications from a guitar pedal and Karaoke effects box to an effects module for DJ’s and synths.</p>
-<p>I built mine primarily for my synths that I have been building over the last 18 months (check out my ible' page for the synth builds). Adding echo gives my bleeps and bloops a whole other dimension. I’ve also used it as a guitar pedal which produces a rich and beautiful sound. You could customise it even further to make it as a stand along guitar pedal very easily if you want to.</p>
+<h1>Echo & Reverb Box</h1><div class="source"><a href="https://www.instructables.com/Echo-Reverb-Box/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>This build is based around a great little reverb module you can get on eBay for under $5.</p>
+<p>I’ve used it now in a couple of projects (listed below) but this time I wanted to have a stand along reverb and echo effects box.</p>
+<p>You can use this in a whole bunch of different applications from a guitar pedal and Karaoke effects box to an effects module for DJ’s and synths.</p>
+<p>I built mine primarily for my synths that I have been building over the last 18 months (check out my ible' page for the synth builds).</p>
+<p>Adding echo gives my bleeps and bloops a whole other dimension.</p>
+<p>I’ve also used it as a guitar pedal which produces a rich and beautiful sound.</p>
+<p>You could customise it even further to make it as a stand along guitar pedal very easily if you want to.</p>
 <p>I brought 2 of these echo modules (I do each time I buy them, I usually kill one of them when I mess around with it!) as I’m starting to build a modular synth and I want to add a reverb and echo board to it.</p>
 <p>Projects I've used this module in</p>
 <p>Sound Bending Synth</p>
@@ -172,7 +212,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>First thing is to decide how you want to lay out all of the parts. If you were making a guitar pedal you would probably place the knobs further back and use a 3PDT guitar pedal switch instead of the momentary one I used.</li>
 <li>Once you are happy with how the parts are going to fit, unscrew the box and get ready to measure and drill some holes</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Drilling Holes for the Switches and Potentiometers</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 5" loading="lazy"></div><p>To ensure that holes were aligned I use a caliper to do all my measurements. You can use a ruler but make sure you follow the rule – measure twice, cut once. I have also recently brought myself some step drill bits. Can’t believe it has taken me this long to get some but they are awesome in making clean holes at the sizes you need.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Drilling Holes for the Switches and Potentiometers</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Drilling Holes for the Switches and Potentiometers image 5" loading="lazy"></div><p>To ensure that holes were aligned I use a caliper to do all my measurements.</p>
+<p>You can use a ruler but make sure you follow the rule – measure twice, cut once.</p>
+<p>I have also recently brought myself some step drill bits.</p>
+<p>Can’t believe it has taken me this long to get some but they are awesome in making clean holes at the sizes you need.</p>
 <p>Steps:</p>
 <ol>
 <li>First I measured where I wanted to add the potentiometers and drill these holes</li>
@@ -195,30 +238,45 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add the SPDT switch. My switch didn’t lock into place so I used some hot glue to secure it</li>
 <li>Add the LED and superglue it into place if necessary</li>
 <li>I added another SPDT toggle switch later on which isn’t shown here. The toggle switch allows you to change from having the echo always on to having off until you hit the red momentary switch.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Audio Inputs to the Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 9" loading="lazy"></div><p>Next thing to do is to add the audio jack inputs into the case. I decided to add 2 different sizes, one for 3.5mm jacks like you use on your headphones and some 6.5mm (1/4”) jacks like the ones you use on your guitar. This makes the echo & reverb box more versatile and open.</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Audio Inputs to the Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 8" loading="lazy"><img src="images/step06_09.jpg" alt="Step 6: Adding the Audio Inputs to the Case image 9" loading="lazy"></div><p>Next thing to do is to add the audio jack inputs into the case.</p>
+<p>I decided to add 2 different sizes, one for 3.5mm jacks like you use on your headphones and some 6.5mm (1/4”) jacks like the ones you use on your guitar.</p>
+<p>This makes the echo & reverb box more versatile and open.</p>
 <p>Steps:</p>
 <ol>
 <li>First you will need to add 4 holes into the side section of the case. Measure, mark and drill the holes for each of the jack inputs.</li>
 <li>Secure each of the jack inputs into place using the small nuts that come with them</li>
 <li>One lot of the jack inputs will be “audio in” and the other lot will be “audio out”. You need to connect a 3.5mm and a6.5mm jack together for each audio in and audio out.</li>
 <li>I’ve added an image of a male jack input which shows how a male jack connects to the points inside a female jack insert. The tip and first ring are left and right and the last ring is ground.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Making Sure Everything Fits Ok</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making Sure Everything Fits Ok image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making Sure Everything Fits Ok image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making Sure Everything Fits Ok image 3" loading="lazy"></div><p>I know that it might be self-evident but I’ve failed to do this before and had some major issues. Once you have everything attached to the case, place the components inside it like the battery and the module and make sure everything fits ok. For a large case I did still have to mod the battery holder slightly in order for everything to fit.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Making Sure Everything Fits Ok</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making Sure Everything Fits Ok image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making Sure Everything Fits Ok image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making Sure Everything Fits Ok image 3" loading="lazy"></div><p>I know that it might be self-evident but I’ve failed to do this before and had some major issues.</p>
+<p>Once you have everything attached to the case, place the components inside it like the battery and the module and make sure everything fits ok.</p>
+<p>For a large case I did still have to mod the battery holder slightly in order for everything to fit.</p>
 <p>The main problem I had was the large on/off switch which I placed top, middle of the case. It hit the top of the battery (just) and I had to make a small mod in order for everything to fit.</p>
-<p>Once you are happy then it’s time to start adding a bunch of wires to the module</p><h2><span class="step-num">STEP 8</span>Step 8: Modding the Module</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Modding the Module image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Modding the Module image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Modding the Module image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Modding the Module image 4" loading="lazy"></div><p>The module only comes with reverb. You need to remove a resistor to control echo as well. You might need to remove the potentiometer attached to the module as well. It will depend on what type of case you use and where you want to place the pots.</p>
+<p>Once you are happy then it’s time to start adding a bunch of wires to the module</p><h2><span class="step-num">STEP 8</span>Step 8: Modding the Module</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Modding the Module image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Modding the Module image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Modding the Module image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Modding the Module image 4" loading="lazy"></div><p>The module only comes with reverb.</p>
+<p>You need to remove a resistor to control echo as well.</p>
+<p>You might need to remove the potentiometer attached to the module as well.</p>
+<p>It will depend on what type of case you use and where you want to place the pots.</p>
 <p>Steps:</p>
 <ol>
 <li>First, locate the R27 resistor. It is labelled R27 and is near 3 small solder points. Those 3 solder points are where you will add the 2nd pot.</li>
 <li>To remove the SMD resistor you can just use an exacto knife and cut it away. Do it carefully though as you don’t want to damage any of the other components</li>
 <li>If you do have to remove the pot on the board then I suggest you use a pair of wire cutters and cut it off. The reason being, the solder pads are very fragile and if you try and de-solder the pot you might rip them off (I’ve done it a couple times before). Easier to just destroy the pot and cut it away then take the chance.</li>
 <li>You’re board is now ready to get a bunch of wires solder to it</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring the Module</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring the Module image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring the Module image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring the Module image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring the Module image 4" loading="lazy"></div><p>Now it’s time to solder some wires to the module. I like to use computer ribbon when I do this as it’s thin, easy to use and I get it for free from my local e-waste. Always make sure that the wire is longer then you need it. You can always trim later but having to extend is a pain.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring the Module</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring the Module image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring the Module image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring the Module image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring the Module image 4" loading="lazy"></div><p>Now it’s time to solder some wires to the module.</p>
+<p>I like to use computer ribbon when I do this as it’s thin, easy to use and I get it for free from my local e-waste.</p>
+<p>Always make sure that the wire is longer then you need it.</p>
+<p>You can always trim later but having to extend is a pain.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder wires to the “+” and “-“ IN Solder points on the module</li>
 <li>Solder wires to the “+” and “-“ OUT Solder points on the module</li>
 <li>You will also need to add wires for the potentiometers. Add a little solder to each of the solder points and connect 3 wires to each one</li>
 <li>You can add the power wires later so don’t worry about them for the moment</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Connecting All of the Components</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Connecting All of the Components image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Connecting All of the Components image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Connecting All of the Components image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Connecting All of the Components image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Connecting All of the Components image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Connecting All of the Components image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Connecting All of the Components image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Connecting All of the Components image 8" loading="lazy"></div><p>Now onto the fun bit! It’s time to connect all those wires to the pots, jacks and switches. I have make a schematic of how I connected the input jacks together and also how to wire everything up including the switches. Those with sharp eyes may have noticed that I have only included 1 switch in the schematic and my build has 2. That’s because you only really need one switch which is an on-off-on one. I used an on-off one to start with and later decided to change the build which meant adding an on-off-on switch.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Connecting All of the Components</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Connecting All of the Components image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Connecting All of the Components image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Connecting All of the Components image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Connecting All of the Components image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Connecting All of the Components image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Connecting All of the Components image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Connecting All of the Components image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Connecting All of the Components image 8" loading="lazy"></div><p>Now onto the fun bit!</p>
+<p>It’s time to connect all those wires to the pots, jacks and switches.</p>
+<p>I have make a schematic of how I connected the input jacks together and also how to wire everything up including the switches.</p>
+<p>Those with sharp eyes may have noticed that I have only included 1 switch in the schematic and my build has 2.</p>
+<p>That’s because you only really need one switch which is an on-off-on one.</p>
+<p>I used an on-off one to start with and later decided to change the build which meant adding an on-off-on switch.</p>
 <p>Steps:</p>
 <ol>
 <li>When connecting the wires from the module to the auxiliary parts, it’s important that you are able to do the following:</li>
@@ -239,5 +297,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>At the last minute, I added an external power input jack. Up to you if you want to do this or not. It allows me to plug it into the wall and bypass the battery</li>
 </ol>
 <p>That's it! You can now add echo and reverb to any audio source! Have fun and if you do make one, post a couple images in the comments section.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,10 +164,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Vintage Radio Guitar Amp</h1><div class="source"><a href="https://www.instructables.com/Vintage-Radio-Mini-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Modify an old, vintage radio and turn it into a mini guitar amp</p>
 <p>Some time ago I found a beautiful old radio at a junk shop. I got it home with thoughts in mind of fixing it. Once I cracked it open I realised this was going to be an act in futility.</p>
-<p>So instead of fixing it I thought I would instead mod it. But mod it with what? I initially wanted to add a bluetooth speaker inside but it would have meant 1 speaker and I didn't want to have a mono bluetooth speaker. After a little searching I decided to add a mini guitar amp to the insides.</p>
+<p>So instead of fixing it I thought I would instead mod it.</p>
+<p>But mod it with what?</p>
+<p>I initially wanted to add a bluetooth speaker inside but it would have meant 1 speaker and I didn't want to have a mono bluetooth speaker.</p>
+<p>After a little searching I decided to add a mini guitar amp to the insides.</p>
 <p>I play guitar (badly) and wanted a small, practice amp so I didn't have to plug into my larger one each time.</p>
-<p>I initially wanted to make my own amp and started to do this but I couldn't get the sound out of it that I wanted. I found a few kits on eBay but these were too expensive. Finally I found a small, decent amp for a good price and decided to use this.</p>
-<p>It's a simple mod as all I'm really doing is moving the insides of the amp to the vintage radio, but I really like the final result. The radios a beautiful design so It's something you can keep on the shelf and pull down any time you want to get loud.</p>
+<p>I initially wanted to make my own amp and started to do this but I couldn't get the sound out of it that I wanted.</p>
+<p>I found a few kits on eBay but these were too expensive.</p>
+<p>Finally I found a small, decent amp for a good price and decided to use this.</p>
+<p>It's a simple mod as all I'm really doing is moving the insides of the amp to the vintage radio, but I really like the final result.</p>
+<p>The radios a beautiful design so It's something you can keep on the shelf and pull down any time you want to get loud.</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"></div><p>Materials</p>
 <ol>
 <li>Mini amp - I used this one but you could just make your own or buy a kit like this or this</li>
@@ -196,5 +237,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Turn It Up and Play It Loud</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Turn It Up and Play It Loud image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Turn It Up and Play It Loud image 2" loading="lazy"></div><p>So now your done it's time to plug in your guitar, turn up the amp and play some tunes.</p>
 <p>Hopefully your a better guitarist than me! (not a hard thing to be).</p>
 <p>Thanks for looking - now go build one.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

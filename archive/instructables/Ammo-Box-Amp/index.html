@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Ammo Box Amp</h1><div class="source"><a href="https://www.instructables.com/Ammo-Box-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Ammo boxes are seriously cool. There is something about them that screams “HACK ME!”</p>
 <p>When I first come across Dustinbikes brilliant ible' on hacking a ammo box into a speaker, I knew I had to do something similar.</p>
-<p>I recently purchased a pair from my local Army Disposal store and couldn't wait to start hacking these into something awesome. I didn't want to just make a speaker out of mine, so I decided to make a guitar amp out of one instead. It also works fantastically as an MP3 speaker and has a headphone jack as well so I get the best of all worlds.</p>
-<p>To give it some flair, I used the ends of shotgun shells as knobs. The hack itself is really quite easy and only needs a minimal of tools. The amp module itself comes pre-soldered so you don’t need any special electrical skills to make your own.</p>
+<p>I recently purchased a pair from my local Army Disposal store and couldn't wait to start hacking these into something awesome.</p>
+<p>I didn't want to just make a speaker out of mine, so I decided to make a guitar amp out of one instead.</p>
+<p>It also works fantastically as an MP3 speaker and has a headphone jack as well so I get the best of all worlds.</p>
+<p>To give it some flair, I used the ends of shotgun shells as knobs.</p>
+<p>The hack itself is really quite easy and only needs a minimal of tools.</p>
+<p>The amp module itself comes pre-soldered so you don’t need any special electrical skills to make your own.</p>
 <p>Enjoy.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Ammo Box - eBay or your local army disposal store</li>
@@ -179,7 +218,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add a 9v battery to the circuit board</li>
 <li>test and make sir that everything is working as it should.</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: Making the Shotgun Shell Knobs</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Shotgun Shell Knobs image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Shotgun Shell Knobs image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Shotgun Shell Knobs image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Shotgun Shell Knobs image 4" loading="lazy"></div><p>In order to turn the knobs and to keep the theme running, I decided to go with shotgun shell caps as knobs. These are quite easy to make and look great on the ammo box</p>
-<p>So the first thing you’ll need to do is to remove the end from one of the shotgun shells. I’m sure that there are plenty of different ways to do this (check the net), but my way works just fine. The cap (the brass section) is held in place very tightly by some plastic. It is virtually impossible to remove all of the plastic without heating it up and melting the plastic.</p>
+<p>So the first thing you’ll need to do is to remove the end from one of the shotgun shells.</p>
+<p>I’m sure that there are plenty of different ways to do this (check the net), but my way works just fine.</p>
+<p>The cap (the brass section) is held in place very tightly by some plastic.</p>
+<p>It is virtually impossible to remove all of the plastic without heating it up and melting the plastic.</p>
 <p>Steps:</p>
 <ol>
 <li>Put the plastic end of the shell into a vice and make sure that it is tight</li>
@@ -213,5 +255,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>recommended speaker is 2"- 8" 4 or 8 ohm rated at 5-15 watts</li>
 </ul>
 <p>Let me know if you make your own and post some pictures in the comments section. If you need any help, please let me know.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

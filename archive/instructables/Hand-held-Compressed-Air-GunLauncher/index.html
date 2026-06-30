@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,7 +163,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Hand-held Compressed Air Gun/Launcher</span>
 </nav>
 <h1>Hand-held Compressed Air Gun/Launcher</h1><div class="source"><a href="https://www.instructables.com/Hand-held-Compressed-Air-GunLauncher/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>UPDATE - Check out step 12 for my latest updated version of my compressed Air Gun Launcher</p>
-<p>Once or twice in your life you might be lucky to come-up with an original idea.  I really thought that this was one of mine.  The use of a sprinkler valve as an air release is a really cleaver idea and this I borrowed.  It was the hand pump in the end of the gun itself which I thought made it one of a kind.  Unfortunately a quick search in Instructables revealed that another clever soul had already come up with it!</p>
+<p>Once or twice in your life you might be lucky to come-up with an original idea.</p>
+<p>I really thought that this was one of mine.</p>
+<p>The use of a sprinkler valve as an air release is a really cleaver idea and this I borrowed.</p>
+<p>It was the hand pump in the end of the gun itself which I thought made it one of a kind.</p>
+<p>Unfortunately a quick search in Instructables revealed that another clever soul had already come up with it!</p>
 <p>The only thing that I can claim is using a hand pump and a sprinkler valve together to make an awesome, hand-held, self-contained, compressed air gun which is easy to make and loads of fun.</p>
 <p>So what can you shoot with it?</p>
 <p>Rockets</p>
@@ -151,13 +190,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Hot glue gun</li>
 <li>Black matt spray paint</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Step - 2 Design</h2><div class="step-images single"><img src="images/step02_01.jpg" alt="Step 2: Step - 2 Design image 1" loading="lazy"></div><p>The drawing below shows an exploded view of the air gun.  It makes it a lot easier to understand how all of the bits go together.</p>
-<p>The best advice that I can give to you is to make sure you have all the correct parts before you start.  You might have to change some of the dimensions to suit your hardware.  You might have to use a different sprinkler valve or pump depending on what you can get your hands on.</p><h2><span class="step-num">STEP 3</span>Step 3: Step - 3 Let's Get Started</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Step - 3 Let's Get Started image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Step - 3 Let's Get Started image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Step - 3 Let's Get Started image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Step - 3 Let's Get Started image 4" loading="lazy"></div><p>The first thing that I started on was the part of the air chamber that fits into the sprinkler valve.</p>
+<p>The best advice that I can give to you is to make sure you have all the correct parts before you start.</p>
+<p>You might have to change some of the dimensions to suit your hardware.</p>
+<p>You might have to use a different sprinkler valve or pump depending on what you can get your hands on.</p><h2><span class="step-num">STEP 3</span>Step 3: Step - 3 Let's Get Started</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Step - 3 Let's Get Started image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Step - 3 Let's Get Started image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Step - 3 Let's Get Started image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Step - 3 Let's Get Started image 4" loading="lazy"></div><p>The first thing that I started on was the part of the air chamber that fits into the sprinkler valve.</p>
 <ol>
 <li>Gather the parts below together</li>
 <li>Cement the small bush into the adapter</li>
 <li>Cement the small bush into the larger bush</li>
 <li>Cement the adapter and bush into the 40mm pipe</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching.</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 7" loading="lazy"></div><p>For those who don't know what a sprinkler valve is - here's the low down.  The valve is used in sprinkler systems that use a timer that switches on the system periodically.  The valve itself has a relay which opens as soon as a current is activated.  The valve opens virtually instantaneously so the air compressed inside the chamber is released in one huge rush.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching.</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Step 4 - Preparing the Sprinkler Valve and Attaching. image 7" loading="lazy"></div><p>For those who don't know what a sprinkler valve is - here's the low down.</p>
+<p>The valve is used in sprinkler systems that use a timer that switches on the system periodically.</p>
+<p>The valve itself has a relay which opens as soon as a current is activated.</p>
+<p>The valve opens virtually instantaneously so the air compressed inside the chamber is released in one huge rush.</p>
 <ol>
 <li>On the valve that I purchased I needed to remove the flanged end to enable the 15mm adapter to be attached.  I used a grinder to remove this.</li>
 <li>There is also a small metal filter in the other end of the sprinkler valve.  I also removed this to allow for better air flow.</li>
@@ -189,14 +233,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cable ite the project box to the gun.</li>
 </ol>
 <p>THAT'S IT!  Now it's time to make the projectiles :)</p><h2><span class="step-num">STEP 9</span>Step 9: Step 9 - Shooting Stuff</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Step 9 - Shooting Stuff image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Step 9 - Shooting Stuff image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Step 9 - Shooting Stuff image 3" loading="lazy"></div><p>What next?</p>
-<p>So hopefully you have now been inspired and want to build your own. I have tried to give you as much detail as possible but this is really just a guide. You might not be able to find the exact same parts but this ible' should help you on your way to making one wicked air compressed gun.</p>
+<p>So hopefully you have now been inspired and want to build your own.</p>
+<p>I have tried to give you as much detail as possible but this is really just a guide.</p>
+<p>You might not be able to find the exact same parts but this ible' should help you on your way to making one wicked air compressed gun.</p>
 <p>What I would have done differently?</p>
 <ul>
 <li>I would have liked to have put the battery on/off switch and momentary switch in the handle and would have hid the project box.</li>
 <li>Adding the bush to the end of the sprinkler valve worked ok but it would have been better to have found something that fitted better. The barrel is just the slightest bit bent because the bush doesn't sit flush on the valve</li>
 <li>Putting the momentary switch in a 15mm coupling worked well but I would have liked this to have sat flush against the handle. This would have meant cutting 2 sides of the end of the coupling with slight curves. I did try to do this but its not flush.</li>
 </ul>
-<p>So that’s it. Enjoy and remember to be safe - this is a weapon after all.</p><h2><span class="step-num">STEP 10</span>Step 10: Step 10 - Making Paper Rockets</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Step 10 - Making Paper Rockets image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Step 10 - Making Paper Rockets image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Step 10 - Making Paper Rockets image 3" loading="lazy"></div><p>These rockets sound like they blow apart as soon as some compressed air is passed through them.  This couldn't be farther from the truth.  If you make the rocket right they become very stable, light and strong. I did make a video on how to make one but <a href="https://www.instructables.com/id/Paper-Rocket-1/">izzy darlow</a> design on Instructables is far superior   The only change that I made was to make bigger fins (check out the PDF file for images of the larger fins.  Also check out the youtube clip below.  It's a pretty damn good explanation on how to make them too.</p>
+<p>So that’s it. Enjoy and remember to be safe - this is a weapon after all.</p><h2><span class="step-num">STEP 10</span>Step 10: Step 10 - Making Paper Rockets</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Step 10 - Making Paper Rockets image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Step 10 - Making Paper Rockets image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Step 10 - Making Paper Rockets image 3" loading="lazy"></div><p>These rockets sound like they blow apart as soon as some compressed air is passed through them.</p>
+<p>This couldn't be farther from the truth.</p>
+<p>If you make the rocket right they become very stable, light and strong.</p>
+<p>I did make a video on how to make one but <a href="https://www.instructables.com/id/Paper-Rocket-1/">izzy darlow</a> design on Instructables is far superior   The only change that I made was to make bigger fins (check out the PDF file for images of the larger fins.</p>
+<p>Also check out the youtube clip below.</p>
+<p>It's a pretty damn good explanation on how to make them too.</p>
 <p>Things to gather:</p>
 <ol>
 <li>A4 paper</li>
@@ -213,7 +264,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ul>
 <p>To see the rocket in action check out the YouTube clup at the start of the instructable.</p>
 <p><a href="https://content.instructables.com/F6S/VOR0/H8I43ILD/F6SVOR0H8I43ILD.pdf">large fin design.pdf</a></p>
-<p><a href="https://content.instructables.com/F6S/VOR0/H8I43ILD/F6SVOR0H8I43ILD.pdf">Download</a></p><h2><span class="step-num">STEP 11</span>Step 11: Step 11 - Plastic Bullets</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Step 11 - Plastic Bullets image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Step 11 - Plastic Bullets image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Step 11 - Plastic Bullets image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Step 11 - Plastic Bullets image 4" loading="lazy"></div><p>Ok so I did get a bit bored with paper rockets - as fun as they are.  I decided to take it to the next step and make a bullet out of some plastic pipe and a rubber cork.  The pipe itself is from a halloween pitch fork handle, the plastic pipe fitted perfectly down the barrel.  The rubber cork can be easily brought from anyone store that sells rubber and foam products.</p>
+<p><a href="https://content.instructables.com/F6S/VOR0/H8I43ILD/F6SVOR0H8I43ILD.pdf">Download</a></p><h2><span class="step-num">STEP 11</span>Step 11: Step 11 - Plastic Bullets</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Step 11 - Plastic Bullets image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Step 11 - Plastic Bullets image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Step 11 - Plastic Bullets image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Step 11 - Plastic Bullets image 4" loading="lazy"></div><p>Ok so I did get a bit bored with paper rockets - as fun as they are.</p>
+<p>I decided to take it to the next step and make a bullet out of some plastic pipe and a rubber cork.</p>
+<p>The pipe itself is from a halloween pitch fork handle, the plastic pipe fitted perfectly down the barrel.</p>
+<p>The rubber cork can be easily brought from anyone store that sells rubber and foam products.</p>
 <p>so here's what I did.</p>
 <ol>
 <li>First I found some pipe that fitted perfectly down the barrel.  I was lucky enough to find some at a bargain store selling halloween products, one which was a pitch-fork with a plastic pole!</li>
@@ -221,11 +275,30 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next a got some rubber corks and stuffed one down the end of the pipe.  Make sure that the cork is right down in the pipe so when put into the end of the barrel the fit makes the bullet just stick.  This will eleviate the friction which will make your bullet go further.</li>
 </ol>
 <p>Check out the YouTube clip at the start of the Instructable to see it in action.</p><h2><span class="step-num">STEP 12</span>Step 12: Setp 12 - V2 Bigger and Better</h2><p>So my original gun finally gave up the ghost after the pump fell apart.  I thought that this would be a good time to do some updates so here's what I did:</p>
-<p>Batteries - Instead of having a cable-tied box on the gun itself, I now have them in the handle.  It was a little tricky but you can see from the PDF image below how I managed to do it.  It also has 2 9v batteries instead of just one.  I was finding that if I put too much pressure in the air chamber the sprinkler wouldn't activate.</p>
+<p>Batteries - Instead of having a cable-tied box on the gun itself, I now have them in the handle.</p>
+<p>It was a little tricky but you can see from the PDF image below how I managed to do it.</p>
+<p>It also has 2 9v batteries instead of just one.</p>
+<p>I was finding that if I put too much pressure in the air chamber the sprinkler wouldn't activate.</p>
 <p>Pump - I used a much better quality pump this time and have also made it removable so when it finally fails I can just replace it.</p>
 <p>Sprinkler Valve - I un-did the valve and turned it around so the wires were facing down the gun and not going sideways (see image)</p>
 <p>Images to come soon.</p>
 <p><a href="https://content.instructables.com/F2C/U5DE/HBNXV0GV/F2CU5DEHBNXV0GV.pdf">Gun V2.pdf</a></p>
 <p><a href="https://content.instructables.com/F2C/U5DE/HBNXV0GV/F2CU5DEHBNXV0GV.pdf">Download</a></p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

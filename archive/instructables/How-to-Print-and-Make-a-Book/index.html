@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,11 +164,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>How to Print and Bind a Book</h1><div class="source"><a href="https://www.instructables.com/How-to-Print-and-Make-a-Book/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>In <a href="http://tuxgraphics.org/npa/book-binding/">this</a> instructable I'll show you how to print and make your own hard cover book.</p>
 <p>So why make your own book?</p>
-<p>There are many books that have been published for free as a PDF for anyone to download and read.  You can just print these off and read as is if you like. If you are like me though, and like to keep the books you read, or just want something better than a bunch of A4 pages stapled together, then making a book is for you.</p>
-<p>The other reason for making a book is they can be quite expensive to purchase, especially if rare or out of print.  This is not the case for most books but Murphys Law means the one you want will inevitably be the one that you can't find or costs a small fortune.</p>
+<p>There are many books that have been published for free as a PDF for anyone to download and read.</p>
+<p>You can just print these off and read as is if you like.</p>
+<p>If you are like me though, and like to keep the books you read, or just want something better than a bunch of A4 pages stapled together, then making a book is for you.</p>
+<p>The other reason for making a book is they can be quite expensive to purchase, especially if rare or out of print.</p>
+<p>This is not the case for most books but Murphys Law means the one you want will inevitably be the one that you can't find or costs a small fortune.</p>
 <p>Binding your own book is also a lot of fun as you get to design it yourself!</p>
-<p>The first book I made  turned out ok but I made a few rookie mistakes.  The second book I managed to get a lot better finish with only a few small changes to the process.  Throughout the instructable I have added tips - these are the little things which will help you make a great book.</p>
-<p>There are quote a few websites where you can find free books to print.  <a href="http://library.worldtracker.org/">This one</a> is quite good and I use it a lot.  You can also just do a search of the book that you want and sometimes you'll be lucky and there will be a PDF available.</p>
+<p>The first book I made  turned out ok but I made a few rookie mistakes.</p>
+<p>The second book I managed to get a lot better finish with only a few small changes to the process.</p>
+<p>Throughout the instructable I have added tips - these are the little things which will help you make a great book.</p>
+<p>There are quote a few websites where you can find free books to print.  <a href="http://library.worldtracker.org/">This one</a> is quite good and I use it a lot.</p>
+<p>You can also just do a search of the book that you want and sometimes you'll be lucky and there will be a PDF available.</p>
 <p>If you have any questions, please let me know in the comments.</p>
 <p>Lastly, I'd like to acknowledge Guido Socher who's instructions on <a href="http://tuxgraphics.org/npa/book-binding/">this</a> website were invaluable.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things to Gather image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things to Gather image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things to Gather image 5" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -153,8 +194,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Rotary knife</li>
 <li>Clamp</li>
 <li>Printer</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Printing Your Book - Signatures</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Printing Your Book - Signatures image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: Printing Your Book - Signatures image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 2: Printing Your Book - Signatures image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 2: Printing Your Book - Signatures image 4" loading="lazy"></div><p>Pick up any book and you will notice that its not just a heap of pages folded and stuck together.  Yes the pages are folded but they are done in signatures.  Signatures are really just small booklets and a book is made up of any number of signatures.  The reason is if you just folded all of the pages together in the middle then the first and last lot of pages would be a lot shorter then the middle ones.  Using signatures allows the pages to be pretty much even.  It also makes the book easier to read as the pages open better.</p>
-<p>TIP - There are programs on line which you can download to make signatures but I couldn't get them to work.  If youcan't get your printer to make signatures then you may have better luck with <a href="http://www.quantumelephant.co.uk/bookbinder/bookbinder.html">this</a> website than me.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Printing Your Book - Signatures</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Printing Your Book - Signatures image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: Printing Your Book - Signatures image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 2: Printing Your Book - Signatures image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 2: Printing Your Book - Signatures image 4" loading="lazy"></div><p>Pick up any book and you will notice that its not just a heap of pages folded and stuck together.</p>
+<p>Yes the pages are folded but they are done in signatures.</p>
+<p>Signatures are really just small booklets and a book is made up of any number of signatures.</p>
+<p>The reason is if you just folded all of the pages together in the middle then the first and last lot of pages would be a lot shorter then the middle ones.</p>
+<p>Using signatures allows the pages to be pretty much even.</p>
+<p>It also makes the book easier to read as the pages open better.</p>
+<p>TIP - There are programs on line which you can download to make signatures but I couldn't get them to work.</p>
+<p>If youcan't get your printer to make signatures then you may have better luck with <a href="http://www.quantumelephant.co.uk/bookbinder/bookbinder.html">this</a> website than me.</p>
 <p>So to make the signatures you really don't have to work out much as your computer and printer will do all of the hard work.</p>
 <p>Steps:</p>
 <ol>
@@ -165,7 +212,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol>
 <p>• Click   - Booklet Fold</p>
 <p>• Tick “fit to paper size</p>
-<p>• Click “Custom Divide” and decide how many sheets you want in each “Signature”.  This number should try and divide into the number of pages you have.  i.e.  4 sheets per subset will go into 64 (64 ÷ 4 = 16)</p>
+<p>• Click “Custom Divide” and decide how many sheets you want in each “Signature”.</p>
+<p>This number should try and divide into the number of pages you have.  i.e.  4 sheets per subset will go into 64 (64 ÷ 4 = 16)</p>
 <ol>
 <li>Print</li>
 </ol>
@@ -193,7 +241,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Press lightly along the spine and make sure that the fabric is touching all parts of the spine.</li>
 <li>Leave to dry for 24 hours.</li>
 </ol>
-<p>TIP - Don't over-do it with the glue - you don't want it to drip down the page and onto the wood that is bracing the signatures together.  Just make sure that you have glue covering all of the stitching.</p><h2><span class="step-num">STEP 5</span>Step 5: Cutting the Cardboard</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Cutting the Cardboard image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Cutting the Cardboard image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Cutting the Cardboard image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Cutting the Cardboard image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Cutting the Cardboard image 5" loading="lazy"></div><p>Next thing to do is to cut the cover out.  The best type of cardboard to use is dense cardboard which you can buy from craft shops.  I decided to go with a box that printing paper comes in.  These are strong and not too thick.</p>
+<p>TIP - Don't over-do it with the glue - you don't want it to drip down the page and onto the wood that is bracing the signatures together.</p>
+<p>Just make sure that you have glue covering all of the stitching.</p><h2><span class="step-num">STEP 5</span>Step 5: Cutting the Cardboard</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Cutting the Cardboard image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Cutting the Cardboard image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Cutting the Cardboard image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Cutting the Cardboard image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Cutting the Cardboard image 5" loading="lazy"></div><p>Next thing to do is to cut the cover out.</p>
+<p>The best type of cardboard to use is dense cardboard which you can buy from craft shops.</p>
+<p>I decided to go with a box that printing paper comes in.</p>
+<p>These are strong and not too thick.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut your piece of cardboard out.  Use the book as a template to work out how big it needs to be.  I made my cover about 15mm larger than it needed to be.</li>
@@ -203,7 +255,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To ensure a good bend in the cardboard for the spine, I used the bottom and side of the cardboard.  This gave me one ready-made crease.  All you then have to do is put another one in to complete the spine.</li>
 <li>To make the crease grab yourself a metal ruler.  This has a flat, straight edge which works perfectly.  Use a hammer and hit the ruler on its side until you have a crease in the cardboard.  Bend the covers closed and ensure the spine is bending as it should.</li>
 </ol>
-<p>TIP - This part is really important - you want to make sure that you have a good strong crease on both sides of the cardboard.  The best way to get a straight line is to draw one on the cardboard.  Use the metal ruler and really give it a good hit with the hammer.  Once done, bend the cardboard right over so it is in half and do this the other way as well.  Do it a  few times until the cover sits flat naturally.</p><h2><span class="step-num">STEP 6</span>Step 6: Cutting and Gluing the Fabric</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Cutting and Gluing the Fabric image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Cutting and Gluing the Fabric image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Cutting and Gluing the Fabric image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Cutting and Gluing the Fabric image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Cutting and Gluing the Fabric image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Cutting and Gluing the Fabric image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Cutting and Gluing the Fabric image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Cutting and Gluing the Fabric image 8" loading="lazy"></div><p>Once you have your cover cut out and the spine is creased, the next thing to do is to add the fabric.</p>
+<p>TIP - This part is really important - you want to make sure that you have a good strong crease on both sides of the cardboard.</p>
+<p>The best way to get a straight line is to draw one on the cardboard.</p>
+<p>Use the metal ruler and really give it a good hit with the hammer.</p>
+<p>Once done, bend the cardboard right over so it is in half and do this the other way as well.</p>
+<p>Do it a  few times until the cover sits flat naturally.</p><h2><span class="step-num">STEP 6</span>Step 6: Cutting and Gluing the Fabric</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Cutting and Gluing the Fabric image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Cutting and Gluing the Fabric image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Cutting and Gluing the Fabric image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Cutting and Gluing the Fabric image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Cutting and Gluing the Fabric image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Cutting and Gluing the Fabric image 6" loading="lazy"><img src="images/step06_07.jpg" alt="Step 6: Cutting and Gluing the Fabric image 7" loading="lazy"><img src="images/step06_08.jpg" alt="Step 6: Cutting and Gluing the Fabric image 8" loading="lazy"></div><p>Once you have your cover cut out and the spine is creased, the next thing to do is to add the fabric.</p>
 <p>Steps:</p>
 <ol>
 <li>Cut out the fabric that you have decided to use.  The best type of fabric is curtain but you can use anything you have on hand.  The fabric should be larger than the cover as shown below.</li>
@@ -216,7 +272,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut 2 tabs on each of the top and bottom flaps as shown below and glue down.  Make sure that the fabric has been pushed into the creases.</li>
 <li>Next, add some glue to one of the fabric wings on the book and glue down onto the cover.   It is important to have the cover flat at this stage so then you have finished; the cover is able to open flat.  If you don’t have it flat when gluing the book on, then you might find that the cover doesn't open flat which is important when reading the book.</li>
 </ol>
-<p>TIP - you will need to set-up a way to have the pages standing up vertically whilst the glue is drying on the wings of the book.  It will also help when centring  the book to the cover.  I used a pair of grips to hold onto the pages and then strung up some string to the roof and tied it to the grips. This way the paper was hanging vertically and was out of the way</p>
+<p>TIP - you will need to set-up a way to have the pages standing up vertically whilst the glue is drying on the wings of the book.</p>
+<p>It will also help when centring  the book to the cover.</p>
+<p>I used a pair of grips to hold onto the pages and then strung up some string to the roof and tied it to the grips.</p>
+<p>This way the paper was hanging vertically and was out of the way</p>
 <ol>
 <li>Add some glue to the other wing and glue down.</li>
 <li>Lastly glue down the top and bottom flaps.</li>
@@ -227,7 +286,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Print and cut to size a picture of the front cover.  You don’t have to use the one that came with the book – pricing your own and add images etc.  If you can, use a guillotine to cut the paper to size.</li>
 <li>Next you need to cover the cardboard showing on the inside of the cover.  I just used a couple of images I found on the net and glued them into place.  Use the spray glue for both the front cover and the inside images.</li>
 </ol><h2><span class="step-num">STEP 9</span>Step 9: Done</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Done image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Done image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Done image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Done image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Done image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Done image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Done image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Done image 8" loading="lazy"></div><p>So now you’re done.  Congratulations!</p>
-<p>There are plenty of other ways (more complicated though) to bookbinding.  These usually need specialized tooling and take a long time to master.  I found this way to be very easy and the end finish looks great.</p>
+<p>There are plenty of other ways (more complicated though) to bookbinding.</p>
+<p>These usually need specialized tooling and take a long time to master.</p>
+<p>I found this way to be very easy and the end finish looks great.</p>
 <p>Next one I want to do will be a miniature book – maybe one with blank pages.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

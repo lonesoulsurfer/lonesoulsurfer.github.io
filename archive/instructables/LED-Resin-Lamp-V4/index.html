@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED Resin Lamp V4</span>
 </nav>
-<h1>LED Resin Lamp V4</h1><div class="source"><a href="https://www.instructables.com/LED-Resin-Lamp-V4/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This is my 4th iteration of the LED Resin Lamp. The main difference between this lamp and the other 3 is you can change the batteries with this one, whist the others had the batteries embedded inside the resin. It seems batteries like to breath and encasing them directly into the resin has meant they don’t hold charge very well any longer. To fix this I added a wood base to the cube which allows you to change the batteries whenever you want to.</p>
-<p>For the LED’s, I modified a small toy that you can buy cheaply on eBay. There are 3 different coloured LED’s which have a few different modes to them. You shake the cube to change the mode and turn it off. The switch is activated by a mercury tilt switch as well.</p>
+<h1>LED Resin Lamp V4</h1><div class="source"><a href="https://www.instructables.com/LED-Resin-Lamp-V4/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>This is my 4th iteration of the LED Resin Lamp.</p>
+<p>The main difference between this lamp and the other 3 is you can change the batteries with this one, whist the others had the batteries embedded inside the resin.</p>
+<p>It seems batteries like to breath and encasing them directly into the resin has meant they don’t hold charge very well any longer.</p>
+<p>To fix this I added a wood base to the cube which allows you to change the batteries whenever you want to.</p>
+<p>For the LED’s, I modified a small toy that you can buy cheaply on eBay.</p>
+<p>There are 3 different coloured LED’s which have a few different modes to them.</p>
+<p>You shake the cube to change the mode and turn it off.</p>
+<p>The switch is activated by a mercury tilt switch as well.</p>
 <p>This is a pretty easy build with all the parts easily available. You do need a little soldering skill but other than that, anyone should be able to make one if they wished to.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>LED Circuit – You can buy the toy on eBay. Make sure you buy a couple in case you mess one up.</li>
@@ -151,7 +192,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Sander</li>
 <li>Sand Paper (180, 400, 600 and 1200 grit)</li>
 <li>Oscillating Tool</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: Modifying the Wood to Add the Battery Holder</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 6" loading="lazy"></div><p>The first thing that you need to do is to make a hole in the bottom of the wood. This will allow you to add the battery holder without it being seen. I use a chisel and also an oscillating tool to help cut out the section. You could also make the hole with a hole drill bit as well if you wanted to</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Modifying the Wood to Add the Battery Holder</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Modifying the Wood to Add the Battery Holder image 6" loading="lazy"></div><p>The first thing that you need to do is to make a hole in the bottom of the wood.</p>
+<p>This will allow you to add the battery holder without it being seen.</p>
+<p>I use a chisel and also an oscillating tool to help cut out the section.</p>
+<p>You could also make the hole with a hole drill bit as well if you wanted to</p>
 <p>Steps:</p>
 <ol>
 <li>Secure the wood so it won’t move when you are chiselling</li>
@@ -187,9 +231,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next solder the negative wire to the negative section on the circuit board</li>
 <li>Pull the wires through the hole so the circuit board sits as flat as possible on top of the wood. Add a little super glue to hold into place</li>
 <li>Test to make sure that everything works as it should.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Making the Mold the Hard Way.</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Mold the Hard Way. image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Mold the Hard Way. image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Mold the Hard Way. image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Mold the Hard Way. image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making the Mold the Hard Way. image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making the Mold the Hard Way. image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Making the Mold the Hard Way. image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Making the Mold the Hard Way. image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Making the Mold the Hard Way. image 9" loading="lazy"></div><p>The next steps involve making the mold for the resin and pouring it. The first mold that I made was from core flute and although it worked kinda ok, there were a few issues which caused a couple of problems. The first was the core flute bends inwards slightly due to the heat and shrinkage of the resin causing it to be slightly concave. also, it was a real pain to try and pull off from the resin as it has stuck fast. I had to really give it some to get the core flute away from the resin.</p>
-<p>Next I used wood thinking that this would be easier to pull away from the resin - I was wrong. I made the mold so it had rubber along the sides which acted as a seal. This worked fine but I didn't notice that there was a small leak which caused a large air bubble to form inside the resin! Also, resin seems to stick to wood extremely well and when it came time to pull the wood mold away I had even more trouble then core flute.</p>
-<p>If I had used some Mold Release such as this one, then I could have avoided the sticking issue. I'll go through the steps for the wood mold as I think that this had the most potential - the core flute I wouldn't bother trying.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Making the Mold the Hard Way.</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Making the Mold the Hard Way. image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Making the Mold the Hard Way. image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Making the Mold the Hard Way. image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Making the Mold the Hard Way. image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Making the Mold the Hard Way. image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Making the Mold the Hard Way. image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Making the Mold the Hard Way. image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 7: Making the Mold the Hard Way. image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 7: Making the Mold the Hard Way. image 9" loading="lazy"></div><p>The next steps involve making the mold for the resin and pouring it.</p>
+<p>The first mold that I made was from core flute and although it worked kinda ok, there were a few issues which caused a couple of problems.</p>
+<p>The first was the core flute bends inwards slightly due to the heat and shrinkage of the resin causing it to be slightly concave. also, it was a real pain to try and pull off from the resin as it has stuck fast.</p>
+<p>I had to really give it some to get the core flute away from the resin.</p>
+<p>Next I used wood thinking that this would be easier to pull away from the resin - I was wrong.</p>
+<p>I made the mold so it had rubber along the sides which acted as a seal.</p>
+<p>This worked fine but I didn't notice that there was a small leak which caused a large air bubble to form inside the resin!</p>
+<p>Also, resin seems to stick to wood extremely well and when it came time to pull the wood mold away I had even more trouble then core flute.</p>
+<p>If I had used some Mold Release such as this one, then I could have avoided the sticking issue.</p>
+<p>I'll go through the steps for the wood mold as I think that this had the most potential - the core flute I wouldn't bother trying.</p>
 <p>Steps:</p>
 <ol>
 <li>First, cut 4 pieces of flat timber which will be used for the sides.</li>
@@ -199,7 +250,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next you need to secure the wood mold around the lamp base. To do this I used a whole bunch of clamps. I was going to use a whole bunch of elastic bands which I still think would also work. Make sure that you clamp each side and there are no gaps</li>
 <li>Do a quick search over the mold to make sure that there are no potential leak spots anywhere. If there is, just add some hot glue to cover these.</li>
 <li>Lastly, add some mold release to the inside of the mold. This will stop the mold sticking to the resin.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Mixing and Pouring the Resin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Mixing and Pouring the Resin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Mixing and Pouring the Resin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Mixing and Pouring the Resin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Mixing and Pouring the Resin image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Mixing and Pouring the Resin image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Mixing and Pouring the Resin image 6" loading="lazy"></div><p>Now it’s time to mix and pour the resin. Resin mixing and ratios will depend on what type of resin you have purchased. I got one on-line with was a 2 to 1 ratio and was very easy to mix. Some you need a catalyst with only a few drops to get it going but I find this resin temperamental at times, especially when it is cold outside. I have had this type of resin turn yellow and also crack due to the heat generated in the curing process.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Mixing and Pouring the Resin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Mixing and Pouring the Resin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Mixing and Pouring the Resin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Mixing and Pouring the Resin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Mixing and Pouring the Resin image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Mixing and Pouring the Resin image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Mixing and Pouring the Resin image 6" loading="lazy"></div><p>Now it’s time to mix and pour the resin.</p>
+<p>Resin mixing and ratios will depend on what type of resin you have purchased.</p>
+<p>I got one on-line with was a 2 to 1 ratio and was very easy to mix.</p>
+<p>Some you need a catalyst with only a few drops to get it going but I find this resin temperamental at times, especially when it is cold outside.</p>
+<p>I have had this type of resin turn yellow and also crack due to the heat generated in the curing process.</p>
 <p>Steps:</p>
 <ol>
 <li>Carefully measure the resin as per the instructions.</li>
@@ -208,7 +263,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Leave for 12 hours to cure.</li>
 <li>Once the resin is hard it’s time then to remove the mold. If you didn’t use mold release then you will have a hell of a time removing the wood from the resin. As you can see from the images below, the wood left splinters in the resin and also chipped the resin away from the top. Although a it looks like a hot mess I knew that sanding would clear most of these issues up.</li>
 </ol>
-<p>What was really concerning however was the air bubbles that formed due to leakage. I did fix this in the end which I will go through in the next step.</p><h2><span class="step-num">STEP 9</span>Step 9: Fixing My Mistakes</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Fixing My Mistakes image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Fixing My Mistakes image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Fixing My Mistakes image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Fixing My Mistakes image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Fixing My Mistakes image 5" loading="lazy"></div><p>After removing the mold I discovered that resin leaked and made an air bubble in the side of the resin. At first I thought I would have to start again but on having another look I decided that I would try and fix it which I’m glad I did as it is hardly noticeable after the fix. I also started to sand the cube whist I still has the air bubble in it. No big issue really but I probably should have fixed before sanding (too impatient)</p>
+<p>What was really concerning however was the air bubbles that formed due to leakage. I did fix this in the end which I will go through in the next step.</p><h2><span class="step-num">STEP 9</span>Step 9: Fixing My Mistakes</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Fixing My Mistakes image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Fixing My Mistakes image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Fixing My Mistakes image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Fixing My Mistakes image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Fixing My Mistakes image 5" loading="lazy"></div><p>After removing the mold I discovered that resin leaked and made an air bubble in the side of the resin.</p>
+<p>At first I thought I would have to start again but on having another look I decided that I would try and fix it which I’m glad I did as it is hardly noticeable after the fix.</p>
+<p>I also started to sand the cube whist I still has the air bubble in it.</p>
+<p>No big issue really but I probably should have fixed before sanding (too impatient)</p>
 <p>Steps:</p>
 <ol>
 <li>Add some core flute to the side of the cube where the hole is in the resin. I used hot glue to stick this into place</li>
@@ -216,14 +274,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Mix a little resin up (only need a very small amount so mix-up the smallest that you can or use some left over from another pour) and pour it into the affected area</li>
 <li>Leave to dry for 24 hours</li>
 <li>Remove the core flute and any hot glue stuck to the side of the resin.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Initial Sanding</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Initial Sanding image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Initial Sanding image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Initial Sanding image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Initial Sanding image 4" loading="lazy"></div><p>The amount of sanding you will need to do depends on how the resin comes out of the mold. If you don’t use mold release then, like me, you are going to have a lot of sanding to do to get the resin clear and looking good. If you have a belt sander you can get this done pretty quickly. If not then prepare your hand for a marathon sanding.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Initial Sanding</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Initial Sanding image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Initial Sanding image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Initial Sanding image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Initial Sanding image 4" loading="lazy"></div><p>The amount of sanding you will need to do depends on how the resin comes out of the mold.</p>
+<p>If you don’t use mold release then, like me, you are going to have a lot of sanding to do to get the resin clear and looking good.</p>
+<p>If you have a belt sander you can get this done pretty quickly.</p>
+<p>If not then prepare your hand for a marathon sanding.</p>
 <p>Steps:</p>
 <ol>
 <li>Start to sand the resin and wood making sure that the side is getting an even sand. As mentioned above, a belt sander is the best way to do this but you can also use a hand sander if you have one. I used a high grit sandpaper the first round.</li>
 <li>Keep turning the lamp to make sure that you get all of the sides sanded evenly.</li>
 <li>The top of my lamp was chipped due to the mold so I decided to round off the top edges on the sander as well</li>
 <li>Keep on sanding until you are happy with the way the lamp looks and you have removed any dints etc in the resin</li>
-</ol><h2><span class="step-num">STEP 11</span>Step 11: Keep on Sanding and Polishing</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Keep on Sanding and Polishing image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Keep on Sanding and Polishing image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Keep on Sanding and Polishing image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Keep on Sanding and Polishing image 4" loading="lazy"></div><p>The next thing to do is to continue to sand with finer and finer grit sandpaper until you have removed all of the scratches and have a finish on the resin like glass. This obviously takes some time (and is messy too!) so go get yourself a whisky and settle in.</p>
+</ol><h2><span class="step-num">STEP 11</span>Step 11: Keep on Sanding and Polishing</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Keep on Sanding and Polishing image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Keep on Sanding and Polishing image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Keep on Sanding and Polishing image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Keep on Sanding and Polishing image 4" loading="lazy"></div><p>The next thing to do is to continue to sand with finer and finer grit sandpaper until you have removed all of the scratches and have a finish on the resin like glass.</p>
+<p>This obviously takes some time (and is messy too!) so go get yourself a whisky and settle in.</p>
 <p>Steps:</p>
 <ol>
 <li>Start with 400 grit wet and dry sandpaper. Add some water to the top of the resin and start to sand. Keep on sanding until you have removed most of the scratches in the resin. If you find that there are some stubborn scratches, you may have to use a heavier grit sandpaper to remove them</li>
@@ -235,9 +297,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add a few layers of your favourite stain.</li>
 <li>Leave to dry for 12 hours</li>
 <li>Done</li>
-</ol><h2><span class="step-num">STEP 13</span>Step 13: Final Thoughts</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Final Thoughts image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Final Thoughts image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Final Thoughts image 3" loading="lazy"><img src="images/step13_04.gif" alt="Step 13: Final Thoughts image 4" loading="lazy"></div><p>Overall I’m happy how the lamp turned out – although I need to come up with a better way to create mould for the resin. I think that using mould release would have helped immensely so I’ll use that next time.</p>
-<p>The resin that I used was ok for the job although it did have a lot of air bubbles. I actually think that this made the lamp more interesting when the Light shines through them but I was initially looking for a crystal clear finish.</p>
+</ol><h2><span class="step-num">STEP 13</span>Step 13: Final Thoughts</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: Final Thoughts image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: Final Thoughts image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: Final Thoughts image 3" loading="lazy"><img src="images/step13_04.gif" alt="Step 13: Final Thoughts image 4" loading="lazy"></div><p>Overall I’m happy how the lamp turned out – although I need to come up with a better way to create mould for the resin.</p>
+<p>I think that using mould release would have helped immensely so I’ll use that next time.</p>
+<p>The resin that I used was ok for the job although it did have a lot of air bubbles.</p>
+<p>I actually think that this made the lamp more interesting when the Light shines through them but I was initially looking for a crystal clear finish.</p>
 <p>I have used diggers resin in the past and although it can be a bit finicky, if you get it right it is crystal clear and has virtually no air bubbles.</p>
 <p>Version 5 I think I’ll go back to diggers resin again and will definitely get a can of mould release!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

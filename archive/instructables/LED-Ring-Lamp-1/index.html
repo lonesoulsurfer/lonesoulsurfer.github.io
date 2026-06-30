@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -130,8 +165,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <h1>LED Ring Lamp</h1><div class="source"><a href="https://www.instructables.com/LED-Ring-Lamp-1/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This build come about as I needed better lighting at my desk for when I'm soldering and putting circuits together.</p>
 <p>I had brought an LED light ring (they are called angel eyes and are used on car headlights) a few months prior for another build and thought it would be perfect to make a lamp out of.</p>
 <p>LED light rings are very inexpensive (I think I paid $4 for the one used in this build), and the light produced is very bright. exactly what I needed to light-up my workspace.</p>
-<p>Now that I had a light, I needed some way to mount it and be able to move the LED ring to direct the light where I needed it. I managed to come up with a pretty neat solution by using a barrel hinge as a way to move the LED ring up and down.</p>
-<p>The rest of the build is made from brass and copper parts that I had in my parts bins along with some reclaimed wood for the base, an old laptop battery and a charging module. The lamp is battery powered so is portable and can be easily charged.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"></div><p>Parts:</p>
+<p>Now that I had a light, I needed some way to mount it and be able to move the LED ring to direct the light where I needed it.</p>
+<p>I managed to come up with a pretty neat solution by using a barrel hinge as a way to move the LED ring up and down.</p>
+<p>The rest of the build is made from brass and copper parts that I had in my parts bins along with some reclaimed wood for the base, an old laptop battery and a charging module.</p>
+<p>The lamp is battery powered so is portable and can be easily charged.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"></div><p>Parts:</p>
 <p>Note - You will be able to get the brass/copper pieces from most hobby stores (expect for the bell)</p>
 <ol>
 <li>LED Ring - eBay</li>
@@ -163,14 +200,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Test to make sure that the switch sticks out enough to secure with the nut to the top of the wood base</li>
 <li>In order to charge the battery, you have to be able to access the micro USB on the charginmg module. You could just stick it to the back of the battery but it would mean you have to lay the lamp on it's side to charge. I decided to make a slit into the side of the base. To do this I used the oscillating saw and made the cut. Don't worry if the slit looks a bit sloppy, you can cover this later with some copper and you won't see it.</li>
 <li>Once the slit was large enough to fit the charging module you are ready to stain. I used some stain called aged teak which I love to use as it gives the wood an aged look.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Hinge for the LED Ring</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Hinge for the LED Ring image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Hinge for the LED Ring image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Hinge for the LED Ring image 3" loading="lazy"></div><p>The cool thing (in my humble opinion) is the hinge on the lamp which allows you to bend the LED ring light up and down so you can direct it to where you need the light. The hinge is made from something called a barrel hinge and they are usually used in builds where you want to hind the hinge.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Making the Hinge for the LED Ring</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Hinge for the LED Ring image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Hinge for the LED Ring image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Hinge for the LED Ring image 3" loading="lazy"></div><p>The cool thing (in my humble opinion) is the hinge on the lamp which allows you to bend the LED ring light up and down so you can direct it to where you need the light.</p>
+<p>The hinge is made from something called a barrel hinge and they are usually used in builds where you want to hind the hinge.</p>
 <p>Steps:</p>
 <ol>
 <li>The LED light ring is attached to the top of the hinge via a Chicago screw so you will need to solder this to the the top of the hinge</li>
 <li>Place some flux on the top of the Chicago screw and add a little more to the bottom of the hinge.</li>
 <li>Secure the Chicago screw in a vice and place the hinge on top of it. heat up both parts and add a small amount of solder to connect them.</li>
 <li>Leave to cool and then test to make sure the hinge is connected well and still moves up and down.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Coupling to the Copper Tube</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 5" loading="lazy"></div><p>You might have noticed that I have a brass coupling at the bottom of the lamp which sits on top of the bell. I added this as it allowed me to push the copper tube into it and also enabled the lamp to be connected to the wood base. I added a small nut to the other end as I had a bolt that fitting the nut but you could always just add a bolt straight to the end of the coupling to connect it to the wood base. I just didn't have one large enough.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Coupling to the Copper Tube</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Coupling to the Copper Tube image 5" loading="lazy"></div><p>You might have noticed that I have a brass coupling at the bottom of the lamp which sits on top of the bell.</p>
+<p>I added this as it allowed me to push the copper tube into it and also enabled the lamp to be connected to the wood base.</p>
+<p>I added a small nut to the other end as I had a bolt that fitting the nut but you could always just add a bolt straight to the end of the coupling to connect it to the wood base.</p>
+<p>I just didn't have one large enough.</p>
 <p>Steps:</p>
 <ol>
 <li>Find a small nut that is slightly larger than copper coupling.</li>
@@ -197,9 +238,31 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You'll need to solder on any wires to the module that you won't be able to get to once it is in place in the slit. Add some superglue to the base to the module and push it through the slit so it is flush with the outside of the base. To cover the slit, just add a piece of copper strip and add a hole for the micro USB</li>
 <li>I used a double throw switch (only one I had lying around) so off is centre and I made it so either pushing or pulling the switch means the light comes on. prob easier just using a single throw switch. Wire-up everything (check out the link above for more detauils on how to wire the module up)</li>
 <li>Stick the battery down to the wood once everything is wired together</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: And...You're Done!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: And...You're Done! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: And...You're Done! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: And...You're Done! image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: And...You're Done! image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: And...You're Done! image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: And...You're Done! image 6" loading="lazy"></div><p>Thant's it! You now have your own ring LED lamp. I've been using mine a lot, either at the dek or at my soldering station and it's ace. The light is bright enough and the hinge allows me to aim the light where needed.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: And...You're Done!</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: And...You're Done! image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: And...You're Done! image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: And...You're Done! image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: And...You're Done! image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: And...You're Done! image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: And...You're Done! image 6" loading="lazy"></div><p>Thant's it!</p>
+<p>You now have your own ring LED lamp.</p>
+<p>I've been using mine a lot, either at the dek or at my soldering station and it's ace.</p>
+<p>The light is bright enough and the hinge allows me to aim the light where needed.</p>
 <p>Using the old laptop battery has meant that the LED light lasts for ages and I haven't even had to charge it yet since the initial charge I gave it.</p>
-<p>It would also be easy to modify any part of this build to your own needs. Maybe you want to build the lamp with the longer neck, then all you need to do is to have a longer piece of copper tube. You could add 2 LED rings and have douple lamp or you could even add a phone charging module as well. I was thinking of maybe building another which has a headphone amp inside as well.</p>
+<p>It would also be easy to modify any part of this build to your own needs.</p>
+<p>Maybe you want to build the lamp with the longer neck, then all you need to do is to have a longer piece of copper tube.</p>
+<p>You could add 2 LED rings and have douple lamp or you could even add a phone charging module as well.</p>
+<p>I was thinking of maybe building another which has a headphone amp inside as well.</p>
 <p>Happy building</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

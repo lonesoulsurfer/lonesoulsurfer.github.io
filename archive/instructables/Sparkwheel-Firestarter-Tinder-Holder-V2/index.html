@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Firestarter & Tinder Case V2</span>
 </nav>
-<h1>Firestarter & Tinder Case V2</h1><div class="source"><a href="https://www.instructables.com/Sparkwheel-Firestarter-Tinder-Holder-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Some of you might recall the flint and sparkwheel firelighter that I made awhile ago. It's very handy for getting char cloth lit or even gas stoves or blowtorches but there was no-where to store tinder. After a couple of good ideas supplied by the community I decided to revisit and include a container to store tinder.</p>
+<h1>Firestarter & Tinder Case V2</h1><div class="source"><a href="https://www.instructables.com/Sparkwheel-Firestarter-Tinder-Holder-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Some of you might recall the flint and sparkwheel firelighter that I made awhile ago.</p>
+<p>It's very handy for getting char cloth lit or even gas stoves or blowtorches but there was no-where to store tinder.</p>
+<p>After a couple of good ideas supplied by the community I decided to revisit and include a container to store tinder.</p>
 <p>As you can see from the images, the main body is quite large. This is where the tinder is kept! The container is held into place with a screw that also serves as a stopper for the spring and flint.</p>
-<p>The spark generated is larger than a normal lighter. This is because there is more force from the spring onto the flint. It will use the flint up quicker but you can just replace once it has been depleted. I've also experimented with a few different types of tinder which you can see in the video and in step 12. All of these will fit into the container and the sparkwheel does an excellent job in igniting them.</p>
+<p>The spark generated is larger than a normal lighter.</p>
+<p>This is because there is more force from the spring onto the flint.</p>
+<p>It will use the flint up quicker but you can just replace once it has been depleted.</p>
+<p>I've also experimented with a few different types of tinder which you can see in the video and in step 12.</p>
+<p>All of these will fit into the container and the sparkwheel does an excellent job in igniting them.</p>
 <p>If you wanted to you could add some other survival tools inside the storage area instead like hook and sinker, floss (great for fishing line, binding) etc.</p>
 <p>This is also a great use for old, disposable lighters as well.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -219,16 +260,38 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The container fits into the top brass cap so just pull the bottom cap to remove it</li>
 <li>I keep 4 x cotton bud heads in one and some wax and lint in the other. As I’ve already mentioned though, you could keep whatever you like inside.</li>
 </ol><h2><span class="step-num">STEP 12</span>Step 12: What Tinder to Use</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: What Tinder to Use image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: What Tinder to Use image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: What Tinder to Use image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: What Tinder to Use image 4" loading="lazy"></div><p>Char Cloth</p>
-<p>You can make some char cloth as tinder and this lights instantly when hit with the spark. If you want to use this then check out this ible' - step 7. The downfall of charcloth is it doesn't flame, it smolders so it can be hard to ignite what your trying to set on fire. Also, it's fragile so storing it in the container can easily tear and wreck it.</p>
+<p>You can make some char cloth as tinder and this lights instantly when hit with the spark.</p>
+<p>If you want to use this then check out this ible' - step 7.</p>
+<p>The downfall of charcloth is it doesn't flame, it smolders so it can be hard to ignite what your trying to set on fire.</p>
+<p>Also, it's fragile so storing it in the container can easily tear and wreck it.</p>
 <p>As the spark produced is quite large, you should be able to light cloth directly. Just make sure that the cloth is cotton and a little frayed. I have done this plenty of times</p>
 <p>Cotton Buds and Wax</p>
-<p>This is what I put into my one. The great thing about them is they catch on fire easily and the plastic then catches alight and act like a match. I also add a little wax to the bottom of the cotton bud so they burn a little longer</p>
+<p>This is what I put into my one.</p>
+<p>The great thing about them is they catch on fire easily and the plastic then catches alight and act like a match.</p>
+<p>I also add a little wax to the bottom of the cotton bud so they burn a little longer</p>
 <p>Link and Wax</p>
 <p>This burns very well and is easy to ignite Check out this ible' to see how to make it</p>
-<p>Check out the Youtube clip in the intro to see these tinder's ignite</p><h2><span class="step-num">STEP 13</span>Step 13: What Next</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: What Next image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: What Next image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: What Next image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: What Next image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: What Next image 5" loading="lazy"></div><p>Maybe there is a better way to hold the container in place where you don't have to un-screw the flint/spring section? Actually I'm sure there is and if you know what it is, please let me know in the comments.</p>
+<p>Check out the Youtube clip in the intro to see these tinder's ignite</p><h2><span class="step-num">STEP 13</span>Step 13: What Next</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: What Next image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: What Next image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: What Next image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: What Next image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: What Next image 5" loading="lazy"></div><p>Maybe there is a better way to hold the container in place where you don't have to un-screw the flint/spring section?</p>
+<p>Actually I'm sure there is and if you know what it is, please let me know in the comments.</p>
 <p>What about tinder? I'm sure that there are a tonne of different tinder that you could use.</p>
 <p>I think I could also just turn these into lighters with a wick etc. Might explore that in a later ible'</p>
 <p>In the end I'm really happy with the finish. Don't forget to post an image in the comments if you do make one.</p>
 <p>Any questions, please let me know.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

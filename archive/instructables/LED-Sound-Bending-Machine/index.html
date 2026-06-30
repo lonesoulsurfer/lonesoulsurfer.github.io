@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,11 +162,19 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">LED & Sound Bending Machine</span>
 </nav>
-<h1>LED & Sound Bending Machine</h1><div class="source"><a href="https://www.instructables.com/LED-Sound-Bending-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>On one of my regular trips to the junk store, I came across an old racing car game. The game itself was pretty lame but what caught my attention was the case. The design was pure retro awesomeness and I knew I had to build something with it.</p>
+<h1>LED & Sound Bending Machine</h1><div class="source"><a href="https://www.instructables.com/LED-Sound-Bending-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>On one of my regular trips to the junk store, I came across an old racing car game.</p>
+<p>The game itself was pretty lame but what caught my attention was the case.</p>
+<p>The design was pure retro awesomeness and I knew I had to build something with it.</p>
 <p>After a little thought, I decided to combine a few other builds I have done in the past to make a sound bender with dancing LED's.</p>
-<p>A sound bender is really just that. You can record sounds into a small IC via a mic and then twist a potentiometer to change the pitch. This can be done quite easily by circuit bending a cheap module from eBay. However, I decided to build a custom PCB which incorporated the voice recorder, dancing LED's and amp.</p>
+<p>A sound bender is really just that.</p>
+<p>You can record sounds into a small IC via a mic and then twist a potentiometer to change the pitch.</p>
+<p>This can be done quite easily by circuit bending a cheap module from eBay.</p>
+<p>However, I decided to build a custom PCB which incorporated the voice recorder, dancing LED's and amp.</p>
 <p>So what does it do?</p>
-<p>Well, you can record a sound and twist and change the pitch. It also has echo and reverb module as well which gives it a whole other sonic dimension. You can pause or restart the sounds as well which gives you the ability to play it (kind of). All the while LED's are dancing around to the sound.</p>
+<p>Well, you can record a sound and twist and change the pitch.</p>
+<p>It also has echo and reverb module as well which gives it a whole other sonic dimension.</p>
+<p>You can pause or restart the sounds as well which gives you the ability to play it (kind of).</p>
+<p>All the while LED's are dancing around to the sound.</p>
 <p>Check out the video of the build and the sound bender in action.</p>
 <p>Hackaday have done a review on my project which you can check out here</p>
 <p>Oh - and so Have Hackster which can be found here</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.png" alt="Step 1: Parts & Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts & Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts & Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts & Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts & Tools image 8" loading="lazy"></div><p>Parts:</p>
@@ -150,8 +193,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Charging module - Ali Express</li>
 <li>Speaker 8 ohm - Ali Express</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Schematic and PCB</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Schematic and PCB image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Schematic and PCB image 2" loading="lazy"></div><p>I designed the schematic and PCB in Eagle and have provided all of the info, including the gerber files in my Google Drive.</p>
-<p>All you need to do is to send the zipped Gerber files to a PCB manufacturer like JLBPCB (not affiliated) and they'll print them up for you. If you know how to use Eagle then you can play around with the circuits and boards as much as you want. If not then check out these 2 tutorials by Sparkfun, schematics and board layout and you'll be on your way to schematic heaven.</p>
-<p>I've also provided some info on how the components are conencted to the board.</p><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Game</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Game image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Game image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Game image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the Game image 4" loading="lazy"></div><p>Ok - so in my excitement, I forgot to take some images of the game so I have had to use a dodgy image from the net. You can see that it's a pretty cheap looking racing game. What really caught my eye though was the case. It's such a cool looking design with it's retro angles and colour that as soon as I saw it, it was a forgone conclusion that i'd mod it in some way.</p>
+<p>All you need to do is to send the zipped Gerber files to a PCB manufacturer like JLBPCB (not affiliated) and they'll print them up for you.</p>
+<p>If you know how to use Eagle then you can play around with the circuits and boards as much as you want.</p>
+<p>If not then check out these 2 tutorials by Sparkfun, schematics and board layout and you'll be on your way to schematic heaven.</p>
+<p>I've also provided some info on how the components are conencted to the board.</p><h2><span class="step-num">STEP 3</span>Step 3: Pulling Apart the Game</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Pulling Apart the Game image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Pulling Apart the Game image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Pulling Apart the Game image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Pulling Apart the Game image 4" loading="lazy"></div><p>Ok - so in my excitement, I forgot to take some images of the game so I have had to use a dodgy image from the net.</p>
+<p>You can see that it's a pretty cheap looking racing game.</p>
+<p>What really caught my eye though was the case.</p>
+<p>It's such a cool looking design with it's retro angles and colour that as soon as I saw it, it was a forgone conclusion that i'd mod it in some way.</p>
 <p>Steps:</p>
 <ol>
 <li>Remove any screws holding the case together</li>
@@ -164,9 +212,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>The first thing I wanted to do was to work out what I was going to add to the large hole on the right of the case. After some rummaging I decided to add a on/off switch there. The bonus of the switch I used is it has an LED light inside which I could utilize for the record LED on the sound IC</li>
 <li>I slightly enlarged the hole and added the switch which I was happy with</li>
 <li>Next I added the pots to the top of the case to see how much room I would have. It's a little tight but planning it out like this helped me visualize how to design the front panel.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Designing a Front Panel & Adding It to the Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 2" loading="lazy"></div><p>I wanted to make it as easy as possible to identify what each of the knobs and buttons do. I've made similar sound machines in the past and I always forget what each button and knob does! I decided to create a front panel in Inkscape and print it up on water decal.</p>
-<p>Inscape is a vector graphics editor which you can download for free! I found it easy to pick up once you learn the basics. There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.</p>
-<p>As my case was pretty unique you might have to play around with my design to suit your needs. I have provided the files in my Google Drive. I've also provided the front panel in PDF so you can just print this out if you want to and uase it.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Water Decal to the Front Cover</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 4" loading="lazy"></div><p>Steps:</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Designing a Front Panel & Adding It to the Case</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Designing a Front Panel & Adding It to the Case image 2" loading="lazy"></div><p>I wanted to make it as easy as possible to identify what each of the knobs and buttons do.</p>
+<p>I've made similar sound machines in the past and I always forget what each button and knob does!</p>
+<p>I decided to create a front panel in Inkscape and print it up on water decal.</p>
+<p>Inscape is a vector graphics editor which you can download for free!</p>
+<p>I found it easy to pick up once you learn the basics.</p>
+<p>There's a lot of information available on how to use it and I would suggest you do a couple of the basic tutorials to familiarize yourself with the different features.</p>
+<p>As my case was pretty unique you might have to play around with my design to suit your needs.</p>
+<p>I have provided the files in my Google Drive.</p>
+<p>I've also provided the front panel in PDF so you can just print this out if you want to and uase it.</p><h2><span class="step-num">STEP 6</span>Step 6: Adding the Water Decal to the Front Cover</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Adding the Water Decal to the Front Cover image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Once you have your design, you will need to print it up on special paper called water decal. Check out eBay or a stationary provider to get some</li>
 <li>Cut out the design and place it in some warm water for about 30 seconds</li>
@@ -222,5 +276,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You could also add an audio in easily to the mic section so you can record music or whatever sounds you want and bend to your hearts content.</li>
 <li>There would also be plenty of circuit bends that you could do to the circuits, especially the echo/reverb module</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

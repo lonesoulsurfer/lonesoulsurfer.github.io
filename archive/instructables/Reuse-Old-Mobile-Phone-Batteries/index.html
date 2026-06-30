@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,10 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Reuse Old Mobile Phone Batteries</span>
 </nav>
-<h1>Reuse Old Mobile Phone Batteries</h1><div class="source"><a href="https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Reuse old mobile phone batteries. I have been using used phone batteries in a bunch of projects recently after discovering an awesome little module on eBay. The module comes with a Li-ion charger and also a voltage regulator, allowing you to increase the voltage of the Li-ion battery from the normal 3.7v’s to up to 30V’s!</p>
-<p>The other great thing about using old mobile phone batteries is you can get them for free! There are plenty of places that have mobile phone recycling bins where you can score a few batteries, free of charge. I have one at my work, which I periodically raid for batteries.</p>
+<h1>Reuse Old Mobile Phone Batteries</h1><div class="source"><a href="https://www.instructables.com/Reuse-Old-Mobile-Phone-Batteries/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Reuse old mobile phone batteries.</p>
+<p>I have been using used phone batteries in a bunch of projects recently after discovering an awesome little module on eBay.</p>
+<p>The module comes with a Li-ion charger and also a voltage regulator, allowing you to increase the voltage of the Li-ion battery from the normal 3.7v’s to up to 30V’s!</p>
+<p>The other great thing about using old mobile phone batteries is you can get them for free!</p>
+<p>There are plenty of places that have mobile phone recycling bins where you can score a few batteries, free of charge.</p>
+<p>I have one at my work, which I periodically raid for batteries.</p>
 <p>The other good news is the modules are very cheap to buy at only around $2 each.</p>
-<p>This ible’ shows you how to connect the module along with a micro USB adapter so you can use the battery as a phone charger. It’s a simple project and will show you how to wire-up the module to use in any project of your choice.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"></div><p>Parts:</p>
+<p>This ible’ shows you how to connect the module along with a micro USB adapter so you can use the battery as a phone charger.</p>
+<p>It’s a simple project and will show you how to wire-up the module to use in any project of your choice.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts & Tools image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Li-ion Charger and step-up module - eBay. The charger will also do Lipo batteries</li>
 <li>Micro USB Adapter – eBay. The micro USB that comes on the module for charging is slightly recessed which makes it hard to access in a project. I prefer to use a micro USB adapter to do this</li>
@@ -156,10 +196,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Mobile phone batteries can lose roughly 20% of their capacity only after 1000 charges. Mobile phones are power hungry beasts and once the battery starts to lose the ability to charge fully, you start to notice the phone needs more charging. Using an old phone battery will probably mean it won’t hold a full charge but even at 80% capacity the battery will still be able to do most things you want it to.</li>
 <li>Li-ion batteries are fussy. This can be true. A battery is a massive ongoing chemical reaction sealed away inside a plastic cover. Put simply, Li-Ion batteries are fussy. They hate excess heat, stress, over voltage, under voltage and short circuit. The module has been designed to ensure the battery is charged correctly. I’ve used it to charge over 30 mobile phone batteries and have had no issues.</li>
 </ol>
-<p>So where can you find mobile phone batteries for free? You probably have an old phone sitting in a draw somewhere that you can pull apart and get the battery out. Samsung, Google, HTC etc are all great as you can easily remove the backs and get the batteries out. Apple phone take more work because they hate to make things replaceable.</p>
+<p>So where can you find mobile phone batteries for free?</p>
+<p>You probably have an old phone sitting in a draw somewhere that you can pull apart and get the battery out.</p>
+<p>Samsung, Google, HTC etc are all great as you can easily remove the backs and get the batteries out.</p>
+<p>Apple phone take more work because they hate to make things replaceable.</p>
 <p>You can also raid the battery-recycling bin, which is what I usually do. There is one at my work I periodically check, which usually yields a few batteries.</p>
 <p>Charging Module</p>
-<p>The module used in this build ensures that the battery is charged to the right capacity and stops charging once the battery reaches aprox 4.2v. Finding information on this particular module on the net is a little difficult. It seems that every site selling this module just copied each others info! However, the basic information on the module can be found below:</p>
+<p>The module used in this build ensures that the battery is charged to the right capacity and stops charging once the battery reaches aprox 4.2v.</p>
+<p>Finding information on this particular module on the net is a little difficult.</p>
+<p>It seems that every site selling this module just copied each others info!</p>
+<p>However, the basic information on the module can be found below:</p>
 <p>Module Specifications:</p>
 <p>Input voltage: 4.5-8V</p>
 <p>DC Output voltage: 4.3-27V DC (Continuously adjustable)</p>
@@ -178,7 +224,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder a couple of breadboard jumper wires to the positive and ground battery solder points on the module. They should have a female end</li>
 <li>Add a little solder to each of the battery terminals (see step 3) and solder another couple of breadboard wires, make them both male ends</li>
 <li>Connect the breadboard wires from the battery to the module and plug in a mini usb cord and connect it to power. A little LED will come on. Wait until the LED changes colour which will indicate when the battery is charged.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Connecting the Module to the Battery</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Connecting the Module to the Battery image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Connecting the Module to the Battery image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Connecting the Module to the Battery image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Connecting the Module to the Battery image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Connecting the Module to the Battery image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Connecting the Module to the Battery image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Connecting the Module to the Battery image 7" loading="lazy"></div><p>In this build, I stuck the module on top of the battery with some double-sided mounting tape. It isn’t necessary to do this but in this project I wanted to make it as compact as possible. If you were adding this into a project then you might want to add the module in a difference place</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Connecting the Module to the Battery</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Connecting the Module to the Battery image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Connecting the Module to the Battery image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Connecting the Module to the Battery image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Connecting the Module to the Battery image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Connecting the Module to the Battery image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Connecting the Module to the Battery image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Connecting the Module to the Battery image 7" loading="lazy"></div><p>In this build, I stuck the module on top of the battery with some double-sided mounting tape.</p>
+<p>It isn’t necessary to do this but in this project I wanted to make it as compact as possible.</p>
+<p>If you were adding this into a project then you might want to add the module in a difference place</p>
 <p>Steps:</p>
 <ol>
 <li>Add some double-sided mounting tape to the bottom of the module.</li>
@@ -186,27 +234,37 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To make the connections from the battery to the module I used resistor legs. First, solder the end of a leg to the positive solder point on the module</li>
 <li>Bend the leg so it sits flat and solder the other end to the positive terminal on the battery</li>
 <li>Do the same for the ground.</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Setting the Voltage</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Setting the Voltage image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Setting the Voltage image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Setting the Voltage image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Setting the Voltage image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Setting the Voltage image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Setting the Voltage image 6" loading="lazy"></div><p>The really great thing about this module is you can set the voltage output from 4.2v to 27v. This is awesome as it allows you to use the battery for a whole heap of different projects. There is a very small pot that you can turned to change the voltage</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Setting the Voltage</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Setting the Voltage image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Setting the Voltage image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Setting the Voltage image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Setting the Voltage image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Setting the Voltage image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Setting the Voltage image 6" loading="lazy"></div><p>The really great thing about this module is you can set the voltage output from 4.2v to 27v.</p>
+<p>This is awesome as it allows you to use the battery for a whole heap of different projects.</p>
+<p>There is a very small pot that you can turned to change the voltage</p>
 <p>Steps:</p>
 <ol>
 <li>First, solder a couple of wires to the output positive and negative on the module. These will allow you to easily attach the module to a multimeter to measure the voltage</li>
 <li>Connect the multimeter to the module</li>
 <li>To change the voltage output, grab a small phillips head and turn the pot slowly. You will see the voltage go either down or up. Set the module to your desired voltage. For this project I set the voltage output to 5v as I’m going to use it as a phone charger</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding a Mirco USB Adapter</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Mirco USB Adapter image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Mirco USB Adapter image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Mirco USB Adapter image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Mirco USB Adapter image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding a Mirco USB Adapter image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding a Mirco USB Adapter image 6" loading="lazy"></div><p>This isn’t really necessary if you are just using this as a phone charger. You can probably just connect the cord to the micro USB that is already on the module. I have found though that if you are using this module in a project, it is hard to access the micro USB as it is recessed in the module. I find that using a micro USB adapter enables you to make a small slot in your project and easier access the input on the micro USB for charging.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding a Mirco USB Adapter</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding a Mirco USB Adapter image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding a Mirco USB Adapter image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding a Mirco USB Adapter image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding a Mirco USB Adapter image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding a Mirco USB Adapter image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding a Mirco USB Adapter image 6" loading="lazy"></div><p>This isn’t really necessary if you are just using this as a phone charger.</p>
+<p>You can probably just connect the cord to the micro USB that is already on the module.</p>
+<p>I have found though that if you are using this module in a project, it is hard to access the micro USB as it is recessed in the module.</p>
+<p>I find that using a micro USB adapter enables you to make a small slot in your project and easier access the input on the micro USB for charging.</p>
 <p>Steps:</p>
 <ol>
 <li>Add a little double-sided tape to the bottom of the micro USC adapter. Note that you could just superglue all these parts as well. I choose not to in case I want to ever remove them</li>
 <li>Stick it down onto the battery, making sure that it is close to the micro USB that comes on the module. There are a couple of solder points that you can use to attach the module and micro USB together</li>
 <li>Again, I used resister legs to connect the 2 parts together.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding a USB Adapter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a USB Adapter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a USB Adapter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a USB Adapter image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a USB Adapter image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding a USB Adapter image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding a USB Adapter image 6" loading="lazy"></div><p>If you are going to use this battery in a project, then there really isn't any need to add a USB adapter. All you would do is connect ground and positive from your project to the output solder points on the module.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding a USB Adapter</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding a USB Adapter image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding a USB Adapter image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding a USB Adapter image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding a USB Adapter image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding a USB Adapter image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding a USB Adapter image 6" loading="lazy"></div><p>If you are going to use this battery in a project, then there really isn't any need to add a USB adapter.</p>
+<p>All you would do is connect ground and positive from your project to the output solder points on the module.</p>
 <p>Steps:</p>
 <ol>
 <li>Stick the USB adapter to the battery using double sided tape</li>
 <li>Next, you need to connect the USB adapter to the output solder points on the module. Just do the same thing as the micro USB and add a couple resister legs to the solder points.</li>
 <li>If you haven't already, plug the micro USB into a power adapter and charge up the battery.</li>
 </ol>
-<p>At this stage you're ready to plug in a phone and charge it up. If you want to add a voltage display then check out the next step. However, it's not really necessary and the battery will charge your phone.</p>
-<p>I kinda realised after I made this that the module might heat-up and as I mentioned at the start of this ible' li-ion batteries don't like to be hot. To counteract this, it would be good to add a heatsink under the module to protect the battery. If yo are using this to power a project then just don't stick the module onto the battery.</p><h2><span class="step-num">STEP 9</span>Step 9: Adding a Voltage Meter</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Voltage Meter image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Voltage Meter image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Voltage Meter image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Voltage Meter image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding a Voltage Meter image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding a Voltage Meter image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding a Voltage Meter image 7" loading="lazy"></div><p>So I did this at the last minute just t see what how it would work. It actually turned out ok so here's how I did it</p>
+<p>At this stage you're ready to plug in a phone and charge it up.</p>
+<p>If you want to add a voltage display then check out the next step.</p>
+<p>However, it's not really necessary and the battery will charge your phone.</p>
+<p>I kinda realised after I made this that the module might heat-up and as I mentioned at the start of this ible' li-ion batteries don't like to be hot.</p>
+<p>To counteract this, it would be good to add a heatsink under the module to protect the battery.</p>
+<p>If yo are using this to power a project then just don't stick the module onto the battery.</p><h2><span class="step-num">STEP 9</span>Step 9: Adding a Voltage Meter</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Voltage Meter image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Voltage Meter image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Voltage Meter image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Voltage Meter image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding a Voltage Meter image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding a Voltage Meter image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding a Voltage Meter image 7" loading="lazy"></div><p>So I did this at the last minute just t see what how it would work. It actually turned out ok so here's how I did it</p>
 <p>Steps:</p>
 <ol>
 <li>You will need a voltage meter and a momentary switch which you can find in the parts list.</li>
@@ -215,8 +273,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>solder one leg of the switch to the positive battery solder point on the module. The other leg solder to the positive wire from the voltage meter</li>
 <li>Solder the ground wire from the meter to the ground solder point on the module.</li>
 <li>You can add a little super glue to hold the voltage meter in place. You can now monitor the voltage of the battery and work out when to charge</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: So What Next?</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: So What Next? image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: So What Next? image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: So What Next? image 3" loading="lazy"></div><p>Using the module and phone battery together allows you to use this set-up for many electronic projects. I have been using mobile phone batteries in place of 9v batteries on most of my projects of late. Having a rechargeable battery means firstly, I don't have to keep changing out batteries, and second, if I'm using an enclosure that doesn't allow easy access to the inside, a rechargeable battery means I don't have to worry about opening it everytime the battery goes flat</p>
-<p>If you wanted to turn this project into a variable voltage supply you can just connect the voltage meter to the output on the module. The voltage meter will then display the voltage output and can be change by adjusting the mini potentiometer on the module.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: So What Next?</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: So What Next? image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: So What Next? image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: So What Next? image 3" loading="lazy"></div><p>Using the module and phone battery together allows you to use this set-up for many electronic projects.</p>
+<p>I have been using mobile phone batteries in place of 9v batteries on most of my projects of late.</p>
+<p>Having a rechargeable battery means firstly, I don't have to keep changing out batteries, and second, if I'm using an enclosure that doesn't allow easy access to the inside, a rechargeable battery means I don't have to worry about opening it everytime the battery goes flat</p>
+<p>If you wanted to turn this project into a variable voltage supply you can just connect the voltage meter to the output on the module.</p>
+<p>The voltage meter will then display the voltage output and can be change by adjusting the mini potentiometer on the module.</p>
 <p>Hope this project helps and happy making</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

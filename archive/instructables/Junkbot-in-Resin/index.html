@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,8 +164,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Junkbot in Resin</h1><div class="source"><a href="https://www.instructables.com/Junkbot-in-Resin/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Seems like I'm sticking everything in resin these days!</p>
 <p>Mostly I've been sticking LED's into resin.  The 'ibles for these can be found which can be found <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a>, here and here.</p>
-<p>You could virtually stick anything you wanted into the resin; I decided to go with a “junk robot”!  In my dancing robot Instructable I also used a couple of junk robots so if you want some more inspiration check out the <a href="https://www.instructables.com/id/Dancing-Magnetic-Robots/">‘ible</a> <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a></p>
-<p>Junk robots are really easy and fun to make.  All you need is some old electronic hardware and circuit boards, super glue your imagination and you’re away.  I find that the older the electronic components the better.  My junk robots were made from parts I scavenged from an old video player and tape recorder, but really you could use just about anything to make them.  Just type in junk robots into Google and you’ll see what I mean.</p>
+<p>You could virtually stick anything you wanted into the resin; I decided to go with a “junk robot”!</p>
+<p>In my dancing robot Instructable I also used a couple of junk robots so if you want some more inspiration check out the <a href="https://www.instructables.com/id/Dancing-Magnetic-Robots/">‘ible</a> <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a></p>
+<p>Junk robots are really easy and fun to make.</p>
+<p>All you need is some old electronic hardware and circuit boards, super glue your imagination and you’re away.</p>
+<p>I find that the older the electronic components the better.</p>
+<p>My junk robots were made from parts I scavenged from an old video player and tape recorder, but really you could use just about anything to make them.</p>
+<p>Just type in junk robots into Google and you’ll see what I mean.</p>
 <p>The following will take you through how to make a junk bot, stick it in resin and light him up.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Junk!  Any old junk really.  My favourite things to use are old electronic parts like motors, capacitors and vintage resistors.  All these things can be pulled out of vintage electronics.</li>
@@ -147,9 +187,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Super glue</li>
 <li>Drill</li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Making a "Junk Robot"</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Making a "Junk Robot" image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Making a "Junk Robot" image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Making a "Junk Robot" image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Making a "Junk Robot" image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Making a "Junk Robot" image 5" loading="lazy"><img src="images/step02_06.jpg" alt="Step 2: Making a "Junk Robot" image 6" loading="lazy"><img src="images/step02_07.jpg" alt="Step 2: Making a "Junk Robot" image 7" loading="lazy"></div><p>Making your own junk robot is really pretty easy.  The main thing that you are going to need is a good collection of old electronic bits and pieces and imagination.</p>
-<p>You can scavenged electronic bits from different places such as 2nd hand shops (thrift shops) hard rubbish, tips, friends and family.  Most people have some type of old electrical hardware sitting around, it's just a matter of getting your hands on some and pulling it apart.</p>
-<p>There are some really impressive ones on Google - just type in "junk robots'.  These might give you some inspiration and guidance on what is possible.  Most of the junk robots that I've made to date have only been very small ones so electronic components work a treat.</p>
-<p>Below are some of the ones that I have made in the past.</p><h2><span class="step-num">STEP 3</span>Step 3: Making Your Junkbot - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 5" loading="lazy"></div><p>So first things first.  You need to gather together a good collection of junk parts.  As mentioned before, these can come from just about anywhere.  I purchase most of my vintage electronic bits and pieces from a local tip which has set-up a shop to sell off all the cool things people throw away.</p>
+<p>You can scavenged electronic bits from different places such as 2nd hand shops (thrift shops) hard rubbish, tips, friends and family.</p>
+<p>Most people have some type of old electrical hardware sitting around, it's just a matter of getting your hands on some and pulling it apart.</p>
+<p>There are some really impressive ones on Google - just type in "junk robots'.</p>
+<p>These might give you some inspiration and guidance on what is possible.</p>
+<p>Most of the junk robots that I've made to date have only been very small ones so electronic components work a treat.</p>
+<p>Below are some of the ones that I have made in the past.</p><h2><span class="step-num">STEP 3</span>Step 3: Making Your Junkbot - Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making Your Junkbot - Part 1 image 5" loading="lazy"></div><p>So first things first.</p>
+<p>You need to gather together a good collection of junk parts.</p>
+<p>As mentioned before, these can come from just about anywhere.</p>
+<p>I purchase most of my vintage electronic bits and pieces from a local tip which has set-up a shop to sell off all the cool things people throw away.</p>
 <p>I'll take you through how I made my "Lanky" junkbot</p>
 <p>Steps:</p>
 <ol>
@@ -173,27 +219,56 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill a small hole in the middle of the metal casing and push on top of the motor shaft.  Glue into place.</li>
 </ol>
 <p>TIP: give your junkbot some life by slightly tilting his head and bending his legs.</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Mold</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Mold image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Mold image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Mold image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Mold image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 6: Making the Mold image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 6: Making the Mold image 6" loading="lazy"></div><h2><span class="step-num">STEP 7</span>Step 7: Cast Baby</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Cast Baby image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Cast Baby image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Cast Baby image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Cast Baby image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Cast Baby image 5" loading="lazy"></div><p>Now the fun begins!  Time to organise the resin, catalyst, measuring cup, container and mould and get casting!</p>
-<p>I have written about casting a few times in my Instructables and gave a pretty detailed description on how to do it.  You can find that <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a> from Step 5 if you want more detailed instructions.  The one tip that I can give is be careful how much catalyst you use.  If you use too much the resin will heat up and crack.</p>
+<p>I have written about casting a few times in my Instructables and gave a pretty detailed description on how to do it.</p>
+<p>You can find that <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a> from Step 5 if you want more detailed instructions.</p>
+<p>The one tip that I can give is be careful how much catalyst you use.</p>
+<p>If you use too much the resin will heat up and crack.</p>
 <p>Steps:</p>
 <ol>
 <li>Glue your robot onto the bottom of the mold.  Position it and make sure everything is w<a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a> you want it before you start to pour the resin.</li>
 <li>Mix a batch of resin, enough to over the robot totally and pour.  Leave to dry for 24 hours.</li>
 <li>Once the resin is totally dry, remove the mold.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Finishing Up the Resin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finishing Up the Resin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finishing Up the Resin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finishing Up the Resin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finishing Up the Resin image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Finishing Up the Resin image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Finishing Up the Resin image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Finishing Up the Resin image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Finishing Up the Resin image 8" loading="lazy"></div><p>If you  used the right amount of catalyst then your resin should be clear as water and you won't have to sand.  Sanding is really only necessary if the sides of the resin are unclear.  If not, then you will need to do the following:</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Finishing Up the Resin</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finishing Up the Resin image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finishing Up the Resin image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finishing Up the Resin image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finishing Up the Resin image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Finishing Up the Resin image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Finishing Up the Resin image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Finishing Up the Resin image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Finishing Up the Resin image 8" loading="lazy"></div><p>If you  used the right amount of catalyst then your resin should be clear as water and you won't have to sand.</p>
+<p>Sanding is really only necessary if the sides of the resin are unclear.</p>
+<p>If not, then you will need to do the following:</p>
 <p>Steps:</p>
 <ol>
 <li>Use some 400 grit wet/dry sandpaper and sand all surfaces until smooth.</li>
 <li>Next use a 600 grit wet/dry sandpaper and repeat.  You will need to use a lot of elbow grease to ensure the resin becomes clear.</li>
 <li>The last part of sanding use a 1200 grit wet/dry sandpaper and go over all of the resin.</li>
 <li>To get that glass finish you will need to rub the resin with a car polisher or Brasso.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a Light</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Light image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Light image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Light image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Light image 4" loading="lazy"></div><p>In some of the photos, the robot is sitting on top of some LED's.  If you want to also have your robot glow, then you will need to make a previous instructable that I did <a href="https://www.instructables.com/id/LED-Light-Globe-Hack/">"LED Light Globe Hack"</a>.  The only thing that needs to be done differentlyare the following:</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Adding a Light</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding a Light image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding a Light image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding a Light image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding a Light image 4" loading="lazy"></div><p>In some of the photos, the robot is sitting on top of some LED's.</p>
+<p>If you want to also have your robot glow, then you will need to make a previous instructable that I did <a href="https://www.instructables.com/id/LED-Light-Globe-Hack/">"LED Light Globe Hack"</a>.</p>
+<p>The only thing that needs to be done differentlyare the following:</p>
 <ul>
 <li>you don't add the diffuser to the LED's</li>
 <li>Break the legs off 4 LED's and glue the tops on the LED's to the corners of the heat shield.</li>
 </ul>
 <p>Thats it!</p>
-<p>The resin acts as a diffuser and scatters the light really well.</p><h2><span class="step-num">STEP 10</span>Step 10: The Ones That Didn't Work!</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: The Ones That Didn't Work! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: The Ones That Didn't Work! image 2" loading="lazy"></div><p>I have a couple of failures when casting these little robots.  I was adding too much catalyst which was causing the resin to heat up and crack.  The strange thing is, I was only adding the amount suggested on the packaging!</p>
-<p>I have noticed that the ambient temperature can have an effect on how the resin sets.  On the successful one, I used about 2/3's of the suggested catalyst and this seemed to work fine.  It takes a little while longer to set but came out without cracking.</p>
-<p>In regards to molds -  using a soft plastic like an ice-cream container makes the resin come out super smooth.  The sanding only needs to be done to the top of the resin.  The problem I had with it is most containers made from this material have rounded corners and I wanted square ones.</p>
+<p>The resin acts as a diffuser and scatters the light really well.</p><h2><span class="step-num">STEP 10</span>Step 10: The Ones That Didn't Work!</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: The Ones That Didn't Work! image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: The Ones That Didn't Work! image 2" loading="lazy"></div><p>I have a couple of failures when casting these little robots.</p>
+<p>I was adding too much catalyst which was causing the resin to heat up and crack.</p>
+<p>The strange thing is, I was only adding the amount suggested on the packaging!</p>
+<p>I have noticed that the ambient temperature can have an effect on how the resin sets.</p>
+<p>On the successful one, I used about 2/3's of the suggested catalyst and this seemed to work fine.</p>
+<p>It takes a little while longer to set but came out without cracking.</p>
+<p>In regards to molds -  using a soft plastic like an ice-cream container makes the resin come out super smooth.</p>
+<p>The sanding only needs to be done to the top of the resin.</p>
+<p>The problem I had with it is most containers made from this material have rounded corners and I wanted square ones.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

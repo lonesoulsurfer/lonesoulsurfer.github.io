@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,10 +164,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Make a Headphone Amp V2</h1><div class="source"><a href="https://www.instructables.com/Make-a-Headphone-Amp/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>After discovering Cew27's Cmoy Headphone Amp a few months ago on Instructables, I've been inspired to build my own.</p>
 <p>I was also inspired by Koogars amazing Crystal CMoy Free Form Headphone Amplifier which I have been admiring for a few years now. I even did a bunch of projects using resin because of this project!</p>
-<p>This is my second headphone amp build – my first can be found here. What I really like about this one compared to the first build is a couple of things. Firstly, it’s a simpler build and only needs one IC to run it, and second, you don’t have to worry about separating the input and output grounds as I did with the first build.</p>
-<p>Also, in my opinion it has better sound quality then the first build and seems more stable. There is still a small amount of interference sometimes if your mobile isn’t switched to air plane mode, but I don’t think this is really avoidable. Once your phone is on air plane mode, there is no detectable interference and the amp works perfectly.</p>
-<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one! Your phone doesn’t really have the power to drive a pair of headphones. You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range. When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
-<p>So without further ado – let’s get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: About the Amp Circuit I Choose to Build</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: About the Amp Circuit I Choose to Build image 1" loading="lazy"></div><p>The amp is built using op amp 5532. The op amp is a low-distortion, low-noise device, which can drive low-impedance loads to a full voltage swing while maintaining low distortion. Furthermore, it is fully output short-circuit proof. I’ve included the datasheet on the op amp in case anyone is interested.</p>
+<p>This is my second headphone amp build – my first can be found here.</p>
+<p>What I really like about this one compared to the first build is a couple of things.</p>
+<p>Firstly, it’s a simpler build and only needs one IC to run it, and second, you don’t have to worry about separating the input and output grounds as I did with the first build.</p>
+<p>Also, in my opinion it has better sound quality then the first build and seems more stable.</p>
+<p>There is still a small amount of interference sometimes if your mobile isn’t switched to air plane mode, but I don’t think this is really avoidable.</p>
+<p>Once your phone is on air plane mode, there is no detectable interference and the amp works perfectly.</p>
+<p>You might be asking yourself right about now, what the hell is a headphone amp and why do I need one!</p>
+<p>Your phone doesn’t really have the power to drive a pair of headphones.</p>
+<p>You can hear this when you listen to music through your phone speakers, the sound sounds flat and has no real range.</p>
+<p>When you plug your headphones into a separate amp, you’ll be astonished at the level of audible improvement in clarity, detail and dynamics you get out of your speakers.</p>
+<p>So without further ado – let’s get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: About the Amp Circuit I Choose to Build</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: About the Amp Circuit I Choose to Build image 1" loading="lazy"></div><p>The amp is built using op amp 5532.</p>
+<p>The op amp is a low-distortion, low-noise device, which can drive low-impedance loads to a full voltage swing while maintaining low distortion.</p>
+<p>Furthermore, it is fully output short-circuit proof.</p>
+<p>I’ve included the datasheet on the op amp in case anyone is interested.</p>
 <p>The other positives about this op amp is it’s cheap, you only need 1 for the circuit and you don’t have to worry about virtual grounds or trying to separate the input and output grounds.</p>
 <p>Also, when you first look at the schematic it might seem that there are 2 op amp IC’s. There is actually only one and is done this way so it is easier to design.</p>
 <p>The end result is a high quality, high performance portable device that is relatively easy to build and will change the way you listen to music from your phone.</p><h2><span class="step-num">STEP 2</span>Step 2: Tools and Parts</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Tools and Parts image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Tools and Parts image 2" loading="lazy"></div><p>Parts:</p>
@@ -203,14 +248,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>If you want to add an LED “on” indicator, solder a 20k resistor to ground and then to a spare solder point. Solder a wire to the other end of the resistor.</li>
 <li>Lastly, trim the circuit board to size.</li>
 </ol>
-<p>That’s it for the board, now it’s time to build the case</p><h2><span class="step-num">STEP 7</span>Step 7: Pick a Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Pick a Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Pick a Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Pick a Case image 3" loading="lazy"></div><p>Picking the right case in my opinion, is just as important as getting the electronics working. It took me awhile to find just the right tin for this project, which a friend actually gave to me. Initially I made a couple of different ones out of wood but I didn’t go with a wood case in the end as it just wasn’t working for me.</p>
-<p>If you are looking for an old tin case, then you can always try eBay. Just type in Tobacco tin and you’ll come across heaps of them. You can also use an Altoids tine which you can now buy in many different designs</p>
+<p>That’s it for the board, now it’s time to build the case</p><h2><span class="step-num">STEP 7</span>Step 7: Pick a Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Pick a Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Pick a Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Pick a Case image 3" loading="lazy"></div><p>Picking the right case in my opinion, is just as important as getting the electronics working.</p>
+<p>It took me awhile to find just the right tin for this project, which a friend actually gave to me.</p>
+<p>Initially I made a couple of different ones out of wood but I didn’t go with a wood case in the end as it just wasn’t working for me.</p>
+<p>If you are looking for an old tin case, then you can always try eBay.</p>
+<p>Just type in Tobacco tin and you’ll come across heaps of them.</p>
+<p>You can also use an Altoids tine which you can now buy in many different designs</p>
 <p>Steps:</p>
 <ol>
 <li>The most important thing about finding the right case is to ensure that you will be able to fit the battery and circuit inside. You’ll also need to add a couple of 3.5mm sockets, a switch and a volume pot to it so make sure you have a little wiggle room for all of the components</li>
 <li>Place the circuit inside the case and if necessary, trim the edges so you can push it right up against the side of the case</li>
 <li>If everything fits ok then you can start to drill all of the holes needed to add the components</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Auxiliary Parts to the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 6" loading="lazy"></div><p>As there isn’t much room in the case, you will need to really think about where you add all of the axillary components. Don’t just start drilling holes into the case, place the circuit and battery inside it and think about the best spots to add the sockets etc. Remember, the amp will probably sit in your pockets so you need to think about having the sockets facing up etc.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Adding the Auxiliary Parts to the Case</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Adding the Auxiliary Parts to the Case image 6" loading="lazy"></div><p>As there isn’t much room in the case, you will need to really think about where you add all of the axillary components.</p>
+<p>Don’t just start drilling holes into the case, place the circuit and battery inside it and think about the best spots to add the sockets etc.</p>
+<p>Remember, the amp will probably sit in your pockets so you need to think about having the sockets facing up etc.</p>
 <p>Steps</p>
 <ol>
 <li>Drill 2 holes for the 3.5mm sockets. Try to put these close together and have them so if the case is in your pocket, they will be facing upwards.</li>
@@ -218,7 +269,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Drill a hole for the potentiometer</li>
 <li>You can’t see it in the images, but you also need to drill a small hole for the LED. Try to get this as close to the switch as possible.</li>
 <li>Once all of the holes are drilled, you can then add all of the auxiliary parts to the case.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring-up the Circuit and Toubleshooting</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 8" loading="lazy"></div><p>It’s now time to solder the wires from the circuit board to the auxiliary parts on the case. This can be a little fiddly, especially if you gave a small case. Wires take up a surprising amount of room so make sure you trim them as much as you can before attaching them. You want to make sure though that you can lift the circuit board up and check underneath and problem solve if necessary.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring-up the Circuit and Toubleshooting</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring-up the Circuit and Toubleshooting image 8" loading="lazy"></div><p>It’s now time to solder the wires from the circuit board to the auxiliary parts on the case.</p>
+<p>This can be a little fiddly, especially if you gave a small case.</p>
+<p>Wires take up a surprising amount of room so make sure you trim them as much as you can before attaching them.</p>
+<p>You want to make sure though that you can lift the circuit board up and check underneath and problem solve if necessary.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the circuit board into the case</li>
@@ -235,5 +289,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>If you only hear out of one speaker, check that you have connected the sockets correctly. Usually, the larger solder lug on the socket is ground. The other 2 are either the inputs or outputs. It doesn’t matter though in what order you wire these up to the prototype board. Also, make sure you have connected pins 3 and 5 together or only 1 speaker will work.</li>
 <li>Make sure that you have connected the IC correctly. I managed to connect pin 8 to ground instead of positive.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10:</h2>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

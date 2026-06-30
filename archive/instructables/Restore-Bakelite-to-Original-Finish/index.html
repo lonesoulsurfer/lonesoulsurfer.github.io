@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,11 +162,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Restore Bakelite to Original Finish</span>
 </nav>
-<h1>Restore Bakelite to Original Finish</h1><div class="source"><a href="https://www.instructables.com/Restore-Bakelite-to-Original-Finish/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Bakelite is an early plastic, developed at the start of the 20th century.  It was one of the first synthetic plastics ever to be produced.   All those beautiful old radios that you see for sale in antique stores are most likely made from Bakelite.   Also made from Bakelite was a lot of electrical appliances such as light switches, telephones, and also wire insulation.  The reason why it worked so well was it's high resistance - not only to electricity, but to heat and chemical action.</p>
-<p>Ok - enough of the history lesson.   This Instructable is about how to restore Bakelite to its original shine and lustre.  Over time Bakelite starts to oxidise due to sunlight and over time will become dull.  The surface has a thin layer of oxidised material which can be removed with some careful cleaning.</p>
+<h1>Restore Bakelite to Original Finish</h1><div class="source"><a href="https://www.instructables.com/Restore-Bakelite-to-Original-Finish/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Bakelite is an early plastic, developed at the start of the 20th century.</p>
+<p>It was one of the first synthetic plastics ever to be produced.</p>
+<p>All those beautiful old radios that you see for sale in antique stores are most likely made from Bakelite.</p>
+<p>Also made from Bakelite was a lot of electrical appliances such as light switches, telephones, and also wire insulation.</p>
+<p>The reason why it worked so well was it's high resistance - not only to electricity, but to heat and chemical action.</p>
+<p>Ok - enough of the history lesson.</p>
+<p>This Instructable is about how to restore Bakelite to its original shine and lustre.</p>
+<p>Over time Bakelite starts to oxidise due to sunlight and over time will become dull.</p>
+<p>The surface has a thin layer of oxidised material which can be removed with some careful cleaning.</p>
 <p>So if you have some plastic that is Bakelite and need to clean - read on.</p>
 <p>Here's a very old promo reel on Bakelite for those who want to learn more about Bakelite.  Tip - skip through the first 6 minutes as this is just an interview and is very tedious.</p>
-<p>Oh and if your not too sure if it is Baklite or not, run the item under hot tap water. If it smells like formaldehyde, it is Bakelite. If it smells like camphor or burnt milk, it is not Bakelite.</p><h2><span class="step-num">STEP 1</span>Step 1: Restoring Light Switches. Removing the Screws</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 5" loading="lazy"></div><p>In this Instructable I will be restoring some old light light switches.  I rescued these from an old shearing shed  near where we go camping.  We had been camping in the area for over 20 years and the shed has deteriorated so much that it wont be long until someone decides to tear it down.</p>
+<p>Oh and if your not too sure if it is Baklite or not, run the item under hot tap water. If it smells like formaldehyde, it is Bakelite. If it smells like camphor or burnt milk, it is not Bakelite.</p><h2><span class="step-num">STEP 1</span>Step 1: Restoring Light Switches. Removing the Screws</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Restoring Light Switches. Removing the Screws image 5" loading="lazy"></div><p>In this Instructable I will be restoring some old light light switches.</p>
+<p>I rescued these from an old shearing shed  near where we go camping.</p>
+<p>We had been camping in the area for over 20 years and the shed has deteriorated so much that it wont be long until someone decides to tear it down.</p>
 <ol>
 <li>The first step is to remove all of the screws holding the cowling on.</li>
 <li>If the screws are rusty put them into some rust remover and let them soak for 30 minutes.</li>
@@ -161,5 +205,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Finally clean off any rust remover from the screws and replace back into the switches</li>
 <li>Give one finial polish to the switches and your done.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

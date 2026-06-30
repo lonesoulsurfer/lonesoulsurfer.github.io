@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,13 +162,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Uber Bright Flash Light / Charger</span>
 </nav>
-<h1>Uber Bright Flash Light / Charger</h1><div class="source"><a href="https://www.instructables.com/Uber-Bright-Flas-Light-and-Phone-Charger/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>In this instructable I'll go through how I put together my own flash light. A flash light you say - sounds amazing (add sarcasm). Yeah well I know a torch doesn't sound that revolutionary, but indulge me a minute and I'll tell you how it came about.</p>
-<p>It all started (yes I'm sorry its one of those stores) when I revisited my old high school. It had recently closed down and I wanted to show my kids the school I went to before they tore it down. It seems the local hooligans had decided to make a start themselves by going on a smashing spree!</p>
-<p>The one consolation of the school being ransacked was my kids got to go inside the school and have a look around. I showed them the photography dark room where I spent most of my senior years, as well as old classrooms I used to waste my time in, learning things I've never used since learning them...</p>
+<h1>Uber Bright Flash Light / Charger</h1><div class="source"><a href="https://www.instructables.com/Uber-Bright-Flas-Light-and-Phone-Charger/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>In this instructable I'll go through how I put together my own flash light.</p>
+<p>A flash light you say - sounds amazing (add sarcasm).</p>
+<p>Yeah well I know a torch doesn't sound that revolutionary, but indulge me a minute and I'll tell you how it came about.</p>
+<p>It all started (yes I'm sorry its one of those stores) when I revisited my old high school.</p>
+<p>It had recently closed down and I wanted to show my kids the school I went to before they tore it down.</p>
+<p>It seems the local hooligans had decided to make a start themselves by going on a smashing spree!</p>
+<p>The one consolation of the school being ransacked was my kids got to go inside the school and have a look around.</p>
+<p>I showed them the photography dark room where I spent most of my senior years, as well as old classrooms I used to waste my time in, learning things I've never used since learning them...</p>
 <p>Keaton, my youngest thought it would be cool if we made a mini documentary. So we did! You can check it out below if your interested.</p>
-<p>Whilst rummaging, I came across a couple of stage spot lights amongst all of the discarded flotsam. I actually remember using these when I was at school! I decided to grab them and see if I could possible make something out of it.</p>
+<p>Whilst rummaging, I came across a couple of stage spot lights amongst all of the discarded flotsam.</p>
+<p>I actually remember using these when I was at school!</p>
+<p>I decided to grab them and see if I could possible make something out of it.</p>
 <p>And that's the story of how this torch came about. The stage globes are 6v and are very, very bright. I also added a USB charger so I could charge my phone as well.</p>
-<p>If you want to make one your going to have to get your hands on a vintage stage light. Not an easy task but you can find them on eBay. You could also just get a 6v globe like the one used in the spot light I used and mod some PVC to make it fit. I might actually try and do something like this myself.</p>
+<p>If you want to make one your going to have to get your hands on a vintage stage light.</p>
+<p>Not an easy task but you can find them on eBay.</p>
+<p>You could also just get a 6v globe like the one used in the spot light I used and mod some PVC to make it fit.</p>
+<p>I might actually try and do something like this myself.</p>
 <p>I've also included a short video of the torch in action</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"></div><p>Things to Gather:</p>
 <ol>
 <li>6v spot light. Check eBay. Here are a few that I found eBay, eBay, eBay</li>
@@ -176,7 +221,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Glue the couplings to the piece of 90mm PVC pipe. The length of the 90mm PVC pipe will determine how big your torch will be. Experiment with some different lengths and decide what works best for you.</li>
 <li>Next drill a hole for the USB charger. This should be a tight fit.</li>
 <li>Last, drill a couple of holes for the toggle switches.</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Add the Handles and Paint</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Add the Handles and Paint image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Add the Handles and Paint image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Add the Handles and Paint image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Add the Handles and Paint image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Add the Handles and Paint image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Add the Handles and Paint image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Add the Handles and Paint image 7" loading="lazy"></div><p>I went with 3 handles as I thought that if I wanted to lie the torch down, it would be supported by 2 of them. This didn't really work as they were too far spaced apart. It still looks cool though and I decided to leave them on.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Add the Handles and Paint</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Add the Handles and Paint image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Add the Handles and Paint image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Add the Handles and Paint image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Add the Handles and Paint image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Add the Handles and Paint image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Add the Handles and Paint image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Add the Handles and Paint image 7" loading="lazy"></div><p>I went with 3 handles as I thought that if I wanted to lie the torch down, it would be supported by 2 of them.</p>
+<p>This didn't really work as they were too far spaced apart.</p>
+<p>It still looks cool though and I decided to leave them on.</p>
 <p>Steps:</p>
 <ol>
 <li>Grab a piece of masking tape and mark out the holes on one of the handles as shown below.</li>
@@ -199,5 +246,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol><h2><span class="step-num">STEP 8</span>Step 8: Finishing Steps.</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finishing Steps. image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finishing Steps. image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finishing Steps. image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finishing Steps. image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Finishing Steps. image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Finishing Steps. image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Finishing Steps. image 7" loading="lazy"></div><p>To make sure that you always have a cable handy for your phone or whatever you want to charge, include one indie the torch!</p>
 <p>Screw on the bottom lid and test that everything works.</p>
 <p>Your done!</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

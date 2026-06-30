@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,10 +163,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Uber Lighter 2.0</span>
 </nav>
 <h1>Uber Lighter 2.0</h1><div class="source"><a href="https://www.instructables.com/Uber-Lighter-20/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>Burn everything in your path with the updated, ups-scaled and most awesome of lighters</p>
-<p>This build is easier to build, you can change the wick simply and without any fuss and ascetically, it’s a much better looking and hardier lighter (in my humble opinion). Also it's around 40% larger as well! The size of the lighter will depend on how long you make the body section. I decided to make this version even bugger than the first.</p>
-<p>Instead of fabricating a sparker section as I did in this 'ible, I went down the easy road and brought one on eBay. I’ve also added a screw cap to the end so filling-up the lighter and changing the rope (which you probably won’t do for years) is a tonne more easier to do. Also, the lighter is all made from off the shelf parts that you can buy from most hardware stores.</p>
-<p>Also, I have changed the fuel type. Instead of using Methylated spirits which does burn well and clean, I changed it to Zippo fuel (Naphtha in the US). I find that it lights easier as well. Only problem with Zippo fuel I find is it does smoke more. Methylated Spirits burn very clean.</p>
-<p>Methylated Spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out this link to find out more.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts and Tools image 10" loading="lazy"></div><p>Parts</p>
+<p>This build is easier to build, you can change the wick simply and without any fuss and ascetically, it’s a much better looking and hardier lighter (in my humble opinion).</p>
+<p>Also it's around 40% larger as well!</p>
+<p>The size of the lighter will depend on how long you make the body section.</p>
+<p>I decided to make this version even bugger than the first.</p>
+<p>Instead of fabricating a sparker section as I did in this 'ible, I went down the easy road and brought one on eBay.</p>
+<p>I’ve also added a screw cap to the end so filling-up the lighter and changing the rope (which you probably won’t do for years) is a tonne more easier to do.</p>
+<p>Also, the lighter is all made from off the shelf parts that you can buy from most hardware stores.</p>
+<p>Also, I have changed the fuel type.</p>
+<p>Instead of using Methylated spirits which does burn well and clean, I changed it to Zippo fuel (Naphtha in the US).</p>
+<p>I find that it lights easier as well.</p>
+<p>Only problem with Zippo fuel I find is it does smoke more.</p>
+<p>Methylated Spirits burn very clean.</p>
+<p>Methylated Spirits is called many different names.</p>
+<p>In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel.</p>
+<p>In Europe, it may be called spirits. check out this link to find out more.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts and Tools image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts and Tools image 8" loading="lazy"><img src="images/step01_09.jpg" alt="Step 1: Parts and Tools image 9" loading="lazy"><img src="images/step01_10.jpg" alt="Step 1: Parts and Tools image 10" loading="lazy"></div><p>Parts</p>
 <p>Brass and Copper Fittings</p>
 <ol>
 <li>15mm Brass Threaded Socket - Bunnings</li>
@@ -225,6 +271,23 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place the bottom cap back on and the lid.</li>
 <li>Give the lighter a wipe and test to make sure it works.</li>
 </ol>
-<p>The flame is quite large in the image but it's actually about half the size of this now. The rope was a little too high when I fist lit it up but I have pulled it back in a little and how it's just right</p>
+<p>The flame is quite large in the image but it's actually about half the size of this now.</p>
+<p>The rope was a little too high when I fist lit it up but I have pulled it back in a little and how it's just right</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

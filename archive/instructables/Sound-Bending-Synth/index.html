@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Sound Bending Synth</span>
 </nav>
-<h1>Sound Bending Synth</h1><div class="source"><a href="https://www.instructables.com/Sound-Bending-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>I’ve built a few sound bending machines before (check out the links below to the ‘ibles). This time I added a reverb and amp module which really gives you a whole new range of sounds to play around with. Plus, the voice recorder module used in the synth is pretty quiet without an amp so now you can really annoy the neighbours properly.</p>
-<p>This is a relatively simple build and doesn’t need any circuits to be made as I use 3 off-the-shelf modules and mash them together. There is some soldering that needs to be done but it’s not too difficult. Anyone who is new to circuits and wants to try their hand at this should check out my ‘ible here.</p>
-<p>The basis of this synth is a circuit bend sound recording module. You can control the speed of the sound recorded along with pause and re-start giving you the ability to control the sound. Next I added a reverb and echo module. This allows you to further control the sound and gives you more options with the sound effects. Lastly, I added an amp module so you can hear everything and also have volume control.</p>
+<h1>Sound Bending Synth</h1><div class="source"><a href="https://www.instructables.com/Sound-Bending-Synth/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>I’ve built a few sound bending machines before (check out the links below to the ‘ibles).</p>
+<p>This time I added a reverb and amp module which really gives you a whole new range of sounds to play around with.</p>
+<p>Plus, the voice recorder module used in the synth is pretty quiet without an amp so now you can really annoy the neighbours properly.</p>
+<p>This is a relatively simple build and doesn’t need any circuits to be made as I use 3 off-the-shelf modules and mash them together.</p>
+<p>There is some soldering that needs to be done but it’s not too difficult.</p>
+<p>Anyone who is new to circuits and wants to try their hand at this should check out my ‘ible here.</p>
+<p>The basis of this synth is a circuit bend sound recording module.</p>
+<p>You can control the speed of the sound recorded along with pause and re-start giving you the ability to control the sound.</p>
+<p>Next I added a reverb and echo module.</p>
+<p>This allows you to further control the sound and gives you more options with the sound effects.</p>
+<p>Lastly, I added an amp module so you can hear everything and also have volume control.</p>
 <p>I stuck it all in a vintage tuner analyser which I found at the local junk shop.</p>
 <p>Hackaday were also nice enough to review this 'ible - check it out here</p>
 <p>Enjoy</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"></div><p>Parts</p>
@@ -152,13 +195,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Other bits and pieces</p>
 <p>Wire</p>
 <p>Case to stick it all in. I used a vintage Tune up analyser for a car</p>
-<p>Speaker – eBay</p><h2><span class="step-num">STEP 2</span>Step 2: Circuit Hacking the Sound Module</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Circuit Hacking the Sound Module image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Circuit Hacking the Sound Module image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Circuit Hacking the Sound Module image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Circuit Hacking the Sound Module image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Circuit Hacking the Sound Module image 5" loading="lazy"></div><p>So of you might remember my ‘ible on circuit hacking a sound recorder. This uses the same module but leaves out a few of the circuit bends I have updated the image which shows all of the circuit bends that you will need to do.</p>
+<p>Speaker – eBay</p><h2><span class="step-num">STEP 2</span>Step 2: Circuit Hacking the Sound Module</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Circuit Hacking the Sound Module image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Circuit Hacking the Sound Module image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Circuit Hacking the Sound Module image 3" loading="lazy"><img src="images/step02_04.jpg" alt="Step 2: Circuit Hacking the Sound Module image 4" loading="lazy"><img src="images/step02_05.jpg" alt="Step 2: Circuit Hacking the Sound Module image 5" loading="lazy"></div><p>So of you might remember my ‘ible on circuit hacking a sound recorder.</p>
+<p>This uses the same module but leaves out a few of the circuit bends I have updated the image which shows all of the circuit bends that you will need to do.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a couple of wires to the bottom of the IC solder pads for the Potentiometer. Use the below image to identify them.</li>
 <li>Next solder 2 more lots of wires to the IC, one lot for the re-start switch and the other for the pause switch.</li>
 </ol>
-<p>That’s the wires for the circuit bend added. If you want to you can add the pot and the momentary switches to the wires and test prior to the build.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Rest of the Wires to the Sound Module</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 5" loading="lazy"></div><p>You need to add a few more wires to the sound module to you can wire it up to the other module and also extend the switches which are on the board. You’ll also need to remove the microphone so you can attach it to the outside of the case.</p>
+<p>That’s the wires for the circuit bend added. If you want to you can add the pot and the momentary switches to the wires and test prior to the build.</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Rest of the Wires to the Sound Module</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Adding the Rest of the Wires to the Sound Module image 5" loading="lazy"></div><p>You need to add a few more wires to the sound module to you can wire it up to the other module and also extend the switches which are on the board.</p>
+<p>You’ll also need to remove the microphone so you can attach it to the outside of the case.</p>
 <p>Steps:</p>
 <ol>
 <li>Add a couple of wires to the speaker output on the module. These will be connected to the reverb module later on</li>
@@ -167,7 +212,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>De-solder the mic from the board and add a couple of wires to the solder points. You’ll need to attach the mic onto the wires later</li>
 <li>Lastly, you will need to add some wires to each of the solder points for play and record. These will be attached to the momentary switches later on.</li>
 </ol>
-<p>That’s it for the sound module. Find a good spot in the case and attach it. I usually just use some good double sided tape in case I need to remove it for some reason later.</p><h2><span class="step-num">STEP 4</span>Step 4: Modding the Reverb Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modding the Reverb Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modding the Reverb Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Modding the Reverb Module image 3" loading="lazy"></div><p>The reverb board needs a couple of modifications to be able to add the echo. I also had to remove the reverb pot on the module so I could place it in a position in the case that made sense. Be careful when removing this pot as the solder pads on the module can come off (I know as it happened to me the first time I tried! That’s why you always buy 2…)</p>
+<p>That’s it for the sound module. Find a good spot in the case and attach it. I usually just use some good double sided tape in case I need to remove it for some reason later.</p><h2><span class="step-num">STEP 4</span>Step 4: Modding the Reverb Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modding the Reverb Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modding the Reverb Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Modding the Reverb Module image 3" loading="lazy"></div><p>The reverb board needs a couple of modifications to be able to add the echo.</p>
+<p>I also had to remove the reverb pot on the module so I could place it in a position in the case that made sense.</p>
+<p>Be careful when removing this pot as the solder pads on the module can come off (I know as it happened to me the first time I tried!</p>
+<p>That’s why you always buy 2…)</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to remove resistor R27. The best way I found was to use an exacto knife and just cut it away. You can also de-solder them quite easily but be careful not to connect the 2 solder points together</li>
@@ -181,7 +229,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, attach a couple of wires to the output section on the module</li>
 <li>Lastly, attach the module to the inside of the case with some good, double sided tape</li>
 </ol><h2><span class="step-num">STEP 6</span>Step 6: How the Modules Are Connected</h2><div class="step-images single"><img src="images/step06_01.jpg" alt="Step 6: How the Modules Are Connected image 1" loading="lazy"></div><p>The heart of this synth is the 3 modules. They are connected together as per the image below. It's actually pretty straight forward once you strip back all of the wires, switches, pots etc.</p>
-<p>The thing you will need to remember is each module will need it's own power supply. If you used the same power supply for the sound recorder module and the amp, then for some reason it by-passes the reverb module. This means you will need 2 X 9v battery's, plus 3 X AAA batteries. It's a fair bit of power not I couldn't find a way around it.</p>
+<p>The thing you will need to remember is each module will need it's own power supply.</p>
+<p>If you used the same power supply for the sound recorder module and the amp, then for some reason it by-passes the reverb module.</p>
+<p>This means you will need 2 X 9v battery's, plus 3 X AAA batteries.</p>
+<p>It's a fair bit of power not I couldn't find a way around it.</p>
 <p>You can however connect all of them together using 1 switch which has 3 solder points on it. I have added a link in the parts section to this switch.</p><h2><span class="step-num">STEP 7</span>Step 7: Modding the Case</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Modding the Case image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Modding the Case image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Modding the Case image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Modding the Case image 4" loading="lazy"></div><p>Whatever case you choose, make sure that it has enough room in it to fit all the batteries, modules etc.</p>
 <p>I went with a vintage car tuner analyser that I got from the local junk shop. I thought it had a pretty cool 70’s futuristic vibe that would suit this synth well.</p>
 <p>I’ll go through some of the mods I did to the case which might give you a few ideas for your one</p>
@@ -191,7 +242,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Remove any of the electronic components from inside the case. If there is any interesting electrical parts, then take these off for future projects</li>
 <li>Next I usually remove any pieces of plastic and gussets that might get in the way when I’m stuffing it with my components.</li>
 <li>Usually I would give it a god wash but I forgot this step</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Designing the Case Front - Part 1</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Designing the Case Front - Part 1 image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Designing the Case Front - Part 1 image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Designing the Case Front - Part 1 image 3" loading="lazy"></div><p>I’ve done a few of these mods now and in my opinion there are a couple ways to go about it. You can either just use the original look of the case and add your parts to it, or you can make it a bit more original. Giving the case an original look and feel isn’t too difficult, although sometimes you need to make a decision that could potentially ruin the case. Luckily I managed not ro wreck this one.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Designing the Case Front - Part 1</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Designing the Case Front - Part 1 image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Designing the Case Front - Part 1 image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Designing the Case Front - Part 1 image 3" loading="lazy"></div><p>I’ve done a few of these mods now and in my opinion there are a couple ways to go about it.</p>
+<p>You can either just use the original look of the case and add your parts to it, or you can make it a bit more original.</p>
+<p>Giving the case an original look and feel isn’t too difficult, although sometimes you need to make a decision that could potentially ruin the case.</p>
+<p>Luckily I managed not ro wreck this one.</p>
 <p>Steps:</p>
 <ol>
 <li>The front section has a metal cover with some labels on it and I didn’t want to have this showing. Plus it had a plastic protection on it which had been there so long it wouldn’t peel off any longer. I decided to remove this and use the back of it instead.</li>
@@ -225,7 +279,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Once you have all of the wires attached to the pots etc, you then need to wire-up the power to each of the modules.</li>
 <li>I used a switch with 3 solder points to connect each of the power sources.</li>
 <li>The last couple of things to do (for me anyhow) is to attach the microphone, speaker and output jacks</li>
-</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Output Jacks</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Output Jacks image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Output Jacks image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Output Jacks image 3" loading="lazy"></div><p>The output jack jacks aren’t necessary but it’s definitely worth taking the time to add them. One allows you to plug in an external amp to get the sound cranking, the other allows you to record music directly into the sound module</p>
+</ol><h2><span class="step-num">STEP 12</span>Step 12: Adding the Output Jacks</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Adding the Output Jacks image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Adding the Output Jacks image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Adding the Output Jacks image 3" loading="lazy"></div><p>The output jack jacks aren’t necessary but it’s definitely worth taking the time to add them.</p>
+<p>One allows you to plug in an external amp to get the sound cranking, the other allows you to record music directly into the sound module</p>
 <p>Steps:</p>
 <p>External Amp</p>
 <ol>
@@ -246,12 +301,32 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Make sure the repeat if off before recording</p>
 <p>If you don’t flick the repeat switch to off then you won’t be able to record into the module. Once you have recorded what you wanted, flick the repeat switch to on and away you go</p>
 <p>If you added audio jacks then you can do a couple neat tricks</p>
-<p>One audio jack is hooked up to the speakers and you can plug-in an external amp and play the synth through this. If you find that it’s not working, then just swap the wires around soldered onto the jack output plug</p>
-<p>The other one is connected to the solder points on the mic. If you plug your phone into this one and hold record on the synth while playing music you can record it directly to the module. This allows you to bend and twist a piece of music of your choice. Only downside is you can’t hear the music as it records so it’s tricky getting the right length etc.</p>
+<p>One audio jack is hooked up to the speakers and you can plug-in an external amp and play the synth through this.</p>
+<p>If you find that it’s not working, then just swap the wires around soldered onto the jack output plug</p>
+<p>The other one is connected to the solder points on the mic.</p>
+<p>If you plug your phone into this one and hold record on the synth while playing music you can record it directly to the module.</p>
+<p>This allows you to bend and twist a piece of music of your choice.</p>
+<p>Only downside is you can’t hear the music as it records so it’s tricky getting the right length etc.</p>
 <p>You can also add more controls if you want to.</p>
 <p>Check out my circuit bent sound module ible here. It has a few more add-ons that you can include to the sound module</p>
 <p>I have included an image below with the synth labelled so you know what each pot and button does.</p>
 <p>Have fun and if you do make one I’d love to see the finished version.</p>
 <p>Let me know if you have any questions as well.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

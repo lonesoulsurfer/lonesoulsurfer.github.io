@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Fire Starter - Waterproof</span>
 </nav>
-<h1>Fire Starter - Waterproof</h1><div class="source"><a href="https://www.instructables.com/Fire-Starter-Waterproof/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Over the years I’ve made a few different emergency fire starters. You can check these out in the links below. There is no right or wrong way to make a fire starter; I mean the best solution is still a flint and steel in my humble opinion. Each version has its own pros and cons which I won’t go into detail here. Suffice to say, as long as it can make a fire when you don’t have matches or a lighter, you’re onto a winner.</p>
-<p>This version is also waterproof (pretty important when trying to light fires!) and uses char cloth in order to get the fire started. Char cloth is simply cotton cloth which has been charred but not set alight. It has a very low burning temp which is easy to light with a spark. Also included is a sparkwheel from a lighter.</p>
-<p>You could also add a few other survival parts to this kit such as needles, floss, small hook etc. I tried to make it as small as possible but there is no reason why you couldn’t make it larger and add more survival gear inside.</p>
+<h1>Fire Starter - Waterproof</h1><div class="source"><a href="https://www.instructables.com/Fire-Starter-Waterproof/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>Over the years I’ve made a few different emergency fire starters.</p>
+<p>You can check these out in the links below.</p>
+<p>There is no right or wrong way to make a fire starter; I mean the best solution is still a flint and steel in my humble opinion.</p>
+<p>Each version has its own pros and cons which I won’t go into detail here.</p>
+<p>Suffice to say, as long as it can make a fire when you don’t have matches or a lighter, you’re onto a winner.</p>
+<p>This version is also waterproof (pretty important when trying to light fires!) and uses char cloth in order to get the fire started.</p>
+<p>Char cloth is simply cotton cloth which has been charred but not set alight.</p>
+<p>It has a very low burning temp which is easy to light with a spark.</p>
+<p>Also included is a sparkwheel from a lighter.</p>
+<p>You could also add a few other survival parts to this kit such as needles, floss, small hook etc.</p>
+<p>I tried to make it as small as possible but there is no reason why you couldn’t make it larger and add more survival gear inside.</p>
 <p>If you know nothing about soldering brass and copper - then check this 'ible out to get started</p>
 <p>Lastly, the evolution of the design changed a couple of times so there might be a couple discrepancies in the images</p>
 <p>Other emergency fire starters I've made</p>
@@ -208,5 +251,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Smooth out any scratches you may have made with the files with some 600 grit wet and dry sandpaper.</li>
 <li>Lastly, polish the whole thing with a metal polish.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

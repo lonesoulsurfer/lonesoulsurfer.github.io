@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,15 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Homemade Lighter</span>
 </nav>
-<h1>Homemade Lighter</h1><div class="source"><a href="https://www.instructables.com/Homemade-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>You’ve been hunkered down in your basement for the last 4 months. All your supplies and rations are either used up or rotten and all you have left is a Molotov cocktail you’ve been saving for this very moment. Up above you can hear the incessant banging of the zombies who haven’t had a feed in weeks and can smell the sweet meat behind the door. You reach for your lighter, spin the spark wheel - nothing happens! It’s then that you realize that it’s finally happened, that one thing which always seems to “just work” has run out of gas…</p>
+<h1>Homemade Lighter</h1><div class="source"><a href="https://www.instructables.com/Homemade-Lighter/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>You’ve been hunkered down in your basement for the last 4 months.</p>
+<p>All your supplies and rations are either used up or rotten and all you have left is a Molotov cocktail you’ve been saving for this very moment.</p>
+<p>Up above you can hear the incessant banging of the zombies who haven’t had a feed in weeks and can smell the sweet meat behind the door.</p>
+<p>You reach for your lighter, spin the spark wheel - nothing happens!</p>
+<p>It’s then that you realize that it’s finally happened, that one thing which always seems to “just work” has run out of gas…</p>
 <p>So what do you do? The only thing you can do, make a lighter out of parts you have lying around the house.</p>
-<p>A friend recently showed me a lighter he had made out of a permanent marker, some rope and methylated spirits. I thought it was a great idea and decided to made my own version. It’s quite simple and if you don’t have the exact same materials lying around, you can always improvise (see last step 11)</p>
+<p>A friend recently showed me a lighter he had made out of a permanent marker, some rope and methylated spirits.</p>
+<p>I thought it was a great idea and decided to made my own version.</p>
+<p>It’s quite simple and if you don’t have the exact same materials lying around, you can always improvise (see last step 11)</p>
 <p>I made this with no power tools (Zombies... remember) to show that it is possible to do without them. However, it's a lot easier to make one with a dremel.</p>
 <p>This can be as simple as just a permanent marker case and some rope in it, or you can go all out and polish it up like I did.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -153,7 +194,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>First you need to release any gas that may be in the lighter. I simply just pull off the gas release trigger (fork). You should now hear any left-over gas escaping. Tip the lighter up-side-down so it escapes quicker</li>
 </ol>
-<p>Once all of the gas is removed, it’s time to start removing the excess plastic. As mentioned earlier, you can also just use a dremel to get the job done quickly. I used a small saw to show you how you can do it with just hand tools.</p>
+<p>Once all of the gas is removed, it’s time to start removing the excess plastic.</p>
+<p>As mentioned earlier, you can also just use a dremel to get the job done quickly.</p>
+<p>I used a small saw to show you how you can do it with just hand tools.</p>
 <ol>
 <li>Start by cutting off the end of the lighter. This way you will be able to see inside and work out where to make the next cuts</li>
 <li>Next, make 2 cuts at the top of the lighter as shown in the images below</li>
@@ -192,7 +235,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To secure the marker to the drill I used a piece of dowel, pushed it though the marker and secured it with some tape.</li>
 <li>Next turn on the drill and with some sandpaper remove the paint on the marker.</li>
 <li>Once the paint has been removed, next it's time to polish. I used some metal polish and a cloth and just turned the drill down low. It doesn't take long to get a really great, polished finish.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Final Step - Adding the Lid and Base</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 5" loading="lazy"></div><p>So now you will have a working, homemade lighter. You can just leave it as is if you want or do this final step which I think finishes it off nicely. Obviously if your pressed for time and need to get a lighter made quickly, then just skip this step.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Final Step - Adding the Lid and Base</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Final Step - Adding the Lid and Base image 5" loading="lazy"></div><p>So now you will have a working, homemade lighter.</p>
+<p>You can just leave it as is if you want or do this final step which I think finishes it off nicely.</p>
+<p>Obviously if your pressed for time and need to get a lighter made quickly, then just skip this step.</p>
 <p>This final step mods the lid so you can put it back on top of the marker. I also</p>
 <p>Steps:</p>
 <ol>
@@ -212,20 +257,46 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use the flint to light up the wick</li>
 <li>If the flame is too high, blow it out and either push the wick in further or trim, There should be just a small amount of wick sticking out of the top</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Experiment</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Experiment image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Experiment image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Experiment image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Experiment image 4" loading="lazy"></div><p>Fuels:</p>
-<p>I like to use Methylated spirits as they burn very clean and don’t leave any sooty residue. You can however use a lot of different fuels to make your candle work. I would use an accelerate like petrol or thinners as these are highly combustible. However diesel might be ok.</p>
+<p>I like to use Methylated spirits as they burn very clean and don’t leave any sooty residue.</p>
+<p>You can however use a lot of different fuels to make your candle work.</p>
+<p>I would use an accelerate like petrol or thinners as these are highly combustible.</p>
+<p>However diesel might be ok.</p>
 <p>Mineral Turpentine - This works ok but it has a lot of oil in it so produces black smoke</p>
 <p>Perfume – As perfume is alcohol based it works very well. Plus added bonus, it smells good!</p>
 <p>Rubbing Alcohol – Works just as well as mentholated spirits.</p>
 <p>Hand Sanitiser - This has about 72% ethyl alcohol so burns very cleanly. It's a little thick though and doesn't absorb into the wick great. It does work though.</p>
 <p>Wicks</p>
-<p>Obviously anything cotton should work ok. The rope that I used is called cotton sash cord. It’s used to seal up windows and can be purchased at any hardware store. Also, I think natural fibre rope should work ok too.</p>
+<p>Obviously anything cotton should work ok.</p>
+<p>The rope that I used is called cotton sash cord.</p>
+<p>It’s used to seal up windows and can be purchased at any hardware store.</p>
+<p>Also, I think natural fibre rope should work ok too.</p>
 <p>Here are a few others that I tried</p>
 <p>Cotton wool - absorbs the fuel very well and will also burn just as good as a wick. You can just replace the top layer once if it gets too burnt.</p>
 <p>Nylon rope - Don't use this. It works but it's basically plastic.</p>
 <p>Bandages - Actually these worked really well. Definitely a good substitute.</p>
 <p>Wool – I made a wick by tying a bunch of pieces of wool together and then wrapped wire around it to give it strength</p>
 <p>Cotton T shirt - Cut into strands and stuffed inside the marker. Again not ideal but did the trick</p><h2><span class="step-num">STEP 12</span>Step 12: Final Thoughts</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Final Thoughts image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Final Thoughts image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Final Thoughts image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Final Thoughts image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Final Thoughts image 5" loading="lazy"></div><p>I'm really happy with the way the lighter works. The wicks don't burn (unless you run out of fuel) and you get about 2 hours of flame out of one fill.</p>
-<p>It's definitely a good idea to add a base. It does however made it a little less portable, especially if you want to keep it in your pocket. A better solution would be to use a rubber stopper like you use on a chair leg. Add a couple of washers for weight and maybe a magnet and I think this would be quite stable.</p>
-<p>Also, instead of moding the flint from the lighter, you could make one of these.(see the first image) and add it to the top of the pen. It would give it a cleaner finish and would also make changing the flint easier</p>
+<p>It's definitely a good idea to add a base.</p>
+<p>It does however made it a little less portable, especially if you want to keep it in your pocket.</p>
+<p>A better solution would be to use a rubber stopper like you use on a chair leg.</p>
+<p>Add a couple of washers for weight and maybe a magnet and I think this would be quite stable.</p>
+<p>Also, instead of moding the flint from the lighter, you could make one of these.(see the first image) and add it to the top of the pen.</p>
+<p>It would give it a cleaner finish and would also make changing the flint easier</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

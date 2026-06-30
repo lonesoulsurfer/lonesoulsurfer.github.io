@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,10 +164,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Simple Automatic Chicken Coop Door</h1><div class="source"><a href="https://www.instructables.com/Simple-Automatic-Chicken-Coop-Door/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>EDIT: It's been 4 years now since I built this Chicken Coop Door and it's still going strong! I have had to replace the battery a couple of times but this build has really worked well.</p>
 <p>In this Instructable I'll be showing how to make an easy automatic chicken coop door opener.</p>
-<p>For anyone who keeps chickens, the ever present threat of predator animals like foxes is always a worry. We recently had all of our chickens (4 of them) killed by a fox and as you could imagine it wasn't a pretty sight. Usually when something like this happens its due to human error, like leaving the coop open. I wanted to ensure that this didn't happen again and so started investigating automatic coop doors. There are quite a few on the web, many expensive or just plain complicated. After much searching I finally stumbled across one which seemed like pure genius.</p>
-<p>The door is lifted and closed by an electric car antenna which is activated by a timer. Simplicity itself! Electric antenna's are easily available from any car wreckers for next to nothing, and it's a great way to re-use something that just going to be land-fill anyhow!</p>
-<p>There are a few versions on the net on how to make this door opener. I noticed though that they all used a couple of computer charges to power the antenna which made it complicated. My version uses a timer and battery and keeps everything simple.</p>
-<p>The reason why I have included the word "simple" in the title is this really is an easy build. If you do a quick search on the net you'll see a bunch of builds which either cost a heap or seem really complicated. This project can be done for as little as $20 if you use mains power.</p>
+<p>For anyone who keeps chickens, the ever present threat of predator animals like foxes is always a worry.</p>
+<p>We recently had all of our chickens (4 of them) killed by a fox and as you could imagine it wasn't a pretty sight.</p>
+<p>Usually when something like this happens its due to human error, like leaving the coop open.</p>
+<p>I wanted to ensure that this didn't happen again and so started investigating automatic coop doors.</p>
+<p>There are quite a few on the web, many expensive or just plain complicated.</p>
+<p>After much searching I finally stumbled across one which seemed like pure genius.</p>
+<p>The door is lifted and closed by an electric car antenna which is activated by a timer.</p>
+<p>Simplicity itself!</p>
+<p>Electric antenna's are easily available from any car wreckers for next to nothing, and it's a great way to re-use something that just going to be land-fill anyhow!</p>
+<p>There are a few versions on the net on how to make this door opener.</p>
+<p>I noticed though that they all used a couple of computer charges to power the antenna which made it complicated.</p>
+<p>My version uses a timer and battery and keeps everything simple.</p>
+<p>The reason why I have included the word "simple" in the title is this really is an easy build.</p>
+<p>If you do a quick search on the net you'll see a bunch of builds which either cost a heap or seem really complicated.</p>
+<p>This project can be done for as little as $20 if you use mains power.</p>
 <p>The following Instructable will take you through how to wire-up the timer and antenna and also how to mount to the door.</p>
 <p>Your chickens ill thank you!</p>
 <p>I've also included a short video of the door in action.(if you are using a mobile, try this link)</p>
@@ -170,8 +216,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>You can use either a 12v battery or power source to power your antenna and timer.  You need to make sure though that the antenna has constant power.  When the power is active the antenna retracts and when the green wire (usually green but it could be another colour) is attached to the red wire, the antenna will extend.</li>
 <li>if you have everything hooked-up correctly, then when the timer is on the antenna will retract, and when the timer is off it will extend.</li>
 </ol><h2><span class="step-num">STEP 3</span>Step 3: Planning the Door</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Planning the Door image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Planning the Door image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Planning the Door image 3" loading="lazy"></div><p>So now you have tested the antenna out and if everything is working, you’ll now have to think how you are going to mount it inside your chicken coop.</p>
-<p>There are many types of coops and most people will probably have a unique arrangement.  Your door should be located in a spot where there is a lot of room and at a high spot in the coop.  The reason for this is so the antenna has enough room to move up and down.  Also, the battery etc can take up a lot of room, so you need to be wary of where this will go in the end.</p>
-<p>Once you have decided where to put the door, you need to then design exactly how the door will work.  Depending on how your coop is made, this could be easy or really challenging.  As you can see from the photos below of my coop – I had a large area where the door to my coop is and decided to use this section to add the chicken door.</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Door - C Channel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Door - C Channel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Door - C Channel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Door - C Channel image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Door - C Channel image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Door - C Channel image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Door - C Channel image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Door - C Channel image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Door - C Channel image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making the Door - C Channel image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making the Door - C Channel image 10" loading="lazy"></div><p>The C channel is what will keep the door in the right position.  For those who don’t know, C Channel is usually a long piece of aluminium shaped like a “C”</p>
+<p>There are many types of coops and most people will probably have a unique arrangement.</p>
+<p>Your door should be located in a spot where there is a lot of room and at a high spot in the coop.</p>
+<p>The reason for this is so the antenna has enough room to move up and down.</p>
+<p>Also, the battery etc can take up a lot of room, so you need to be wary of where this will go in the end.</p>
+<p>Once you have decided where to put the door, you need to then design exactly how the door will work.</p>
+<p>Depending on how your coop is made, this could be easy or really challenging.</p>
+<p>As you can see from the photos below of my coop – I had a large area where the door to my coop is and decided to use this section to add the chicken door.</p><h2><span class="step-num">STEP 4</span>Step 4: Making the Door - C Channel</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making the Door - C Channel image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making the Door - C Channel image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making the Door - C Channel image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making the Door - C Channel image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making the Door - C Channel image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making the Door - C Channel image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making the Door - C Channel image 7" loading="lazy"><img src="images/step04_08.jpg" alt="Step 4: Making the Door - C Channel image 8" loading="lazy"><img src="images/step04_09.jpg" alt="Step 4: Making the Door - C Channel image 9" loading="lazy"><img src="images/step04_10.jpg" alt="Step 4: Making the Door - C Channel image 10" loading="lazy"></div><p>The C channel is what will keep the door in the right position.  For those who don’t know, C Channel is usually a long piece of aluminium shaped like a “C”</p>
 <p>Steps:</p>
 <ol>
 <li>Cut 2 equal lengths of wood.  Mine were 1500mm by 80mm.  I used fence palings for all of the wood that I needed.</li>
@@ -207,14 +258,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Attach the board to the wooden antenna bracket</li>
 <li>Lastly, attach all of the wires from the antenna to the timer</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Attaching the Antenna to the Coop</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Attaching the Antenna to the Coop image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Attaching the Antenna to the Coop image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Attaching the Antenna to the Coop image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Attaching the Antenna to the Coop image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Attaching the Antenna to the Coop image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Attaching the Antenna to the Coop image 6" loading="lazy"></div><p>Once you have The antenna mounted in thew wooden bracket, its time to attach it to the coop.</p>
-<p>Care must be given as to where you mount the antenna as you will need it high enough so the door fully opens, and also it will have to be straight.  The good thing about most of these antennas is they do have some play in them so if you happen to have it a little crookedly, it shouldn’t matter too much.</p>
+<p>Care must be given as to where you mount the antenna as you will need it high enough so the door fully opens, and also it will have to be straight.</p>
+<p>The good thing about most of these antennas is they do have some play in them so if you happen to have it a little crookedly, it shouldn’t matter too much.</p>
 <p>Steps:</p>
 <ol>
 <li>Use some bolts and nuts to mount the antenna to the boards that the C channel is running along.  When mounting the antenna try and have it extended fully – this will help you mount it straight.</li>
 <li>When mounting, if you find that the antenna is too long you can do a couple of things.</li>
 </ol>
 <p>a. Superglue the first length of antenna to the second length.  This way the antenna won’t fully extend.</p>
-<p>b. Cut the antenna.  You will need to be careful when doing this as I’m pretty sure that the antenna will have issues extending again if it is fully retracted.  You can cut it, just don’t retract until you have added the nut to the end (more on that later)</p><h2><span class="step-num">STEP 8</span>Step 8: Making a Door</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making a Door image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making a Door image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making a Door image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making a Door image 4" loading="lazy"></div><p>Steps:</p>
+<p>b.</p>
+<p>Cut the antenna.</p>
+<p>You will need to be careful when doing this as I’m pretty sure that the antenna will have issues extending again if it is fully retracted.</p>
+<p>You can cut it, just don’t retract until you have added the nut to the end (more on that later)</p><h2><span class="step-num">STEP 8</span>Step 8: Making a Door</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making a Door image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making a Door image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making a Door image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making a Door image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>First measure the gap between the C channels and the height from the ground to where the door needs to end.</li>
 <li>Cut out a piece of plywood to fit the gap.  You might have to trim 3-5 mm off one side of the plywood (I did)</li>
@@ -232,7 +287,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now you should have a horizontal bolt sticking out from the vertical antenna. Make sure that the fastener is done-up tightly.</li>
 </ol>
 <p>A Better Way</p>
-<p>Recently I had to replace the bolt as it failed at the solder point. So, instead of soldering, I decided to just drill a hole through the neck of the bolt and threaded the antenna through it. To keep the bolt in place, use some drill stop collars like in the images below. These are great and will keep the bolt in place.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding a Solar Panel and Voltage Meter</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 6" loading="lazy"></div><p>If you go down the battery route you'll need to ensure that the battery is kept charged. You can just add a drip charge if you like but this means it will need to be plugged in the a wall socket and kind of defeats the purpose. The easiest way to keep the battery charged is to use a solar panel to keep the battery charged.</p>
+<p>Recently I had to replace the bolt as it failed at the solder point.</p>
+<p>So, instead of soldering, I decided to just drill a hole through the neck of the bolt and threaded the antenna through it.</p>
+<p>To keep the bolt in place, use some drill stop collars like in the images below.</p>
+<p>These are great and will keep the bolt in place.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding a Solar Panel and Voltage Meter</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding a Solar Panel and Voltage Meter image 6" loading="lazy"></div><p>If you go down the battery route you'll need to ensure that the battery is kept charged.</p>
+<p>You can just add a drip charge if you like but this means it will need to be plugged in the a wall socket and kind of defeats the purpose.</p>
+<p>The easiest way to keep the battery charged is to use a solar panel to keep the battery charged.</p>
 <p>Steps:</p>
 <ol>
 <li>Attach the solar regulator to the wall of the chicken coop. Make sure its close to the antenna and battery</li>
@@ -241,18 +301,43 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next add the wires from the battery to the regulator.</li>
 <li>Lastly I decided to attach a voltage meter to the battery so I could easily check how much power the battery has. All you need to do is to add a switch to the meter and attach the wires to the regulator where the battery connects to.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Testing and Running</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Testing and Running image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Testing and Running image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Testing and Running image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Testing and Running image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Testing and Running image 5" loading="lazy"></div><p>Hopefully you now have a function, automatic chicken coop door!</p>
-<p>So what’s next? You should now test it and make sure that everything is working as it should. Set the time so the antenna retracts (door opens) for the morning and have it shut at night. Keep an eye on it for the first few times and check the voltage level of the battery regularly.</p>
+<p>So what’s next?</p>
+<p>You should now test it and make sure that everything is working as it should.</p>
+<p>Set the time so the antenna retracts (door opens) for the morning and have it shut at night.</p>
+<p>Keep an eye on it for the first few times and check the voltage level of the battery regularly.</p>
 <p>Timer -</p>
 <p>When using the timer it should be set on “auto”. This will mean it is using the times set to open and close.</p>
 <p>If you do need to lower the door for any reason, then you can change the timer to “on” and the door will lower.</p>
 <p>Raising and lowering can also be done by hand – all you have to do is carefully push the door up and down. Don’t go too fast or you will could possibly wreck the gears in the antenna.</p>
 <p>Power supply -</p>
-<p>You could easily run the antenna off the mains by using a 12v DC plug. It would all depend on how long your battery stays charged for. You don't really want to have to charge it every couple of weeks (kind of defeats the purpose of having an automated door!</p>
+<p>You could easily run the antenna off the mains by using a 12v DC plug.</p>
+<p>It would all depend on how long your battery stays charged for.</p>
+<p>You don't really want to have to charge it every couple of weeks (kind of defeats the purpose of having an automated door!</p>
 <p>I will be adding a solar panel soon to the battery so it is being charged each day.</p>
 <p>Things I learnt</p>
-<p>Initially I thought that all of the C channel would have to be perfectly straight and that the antenna would need to aligned up just right. Turns out that the antenna has quite a bit of flex and there is some room for error - not much room mind you, but enough to enable you to install the antenna by sight.</p>
-<p>The important thing about the C channel is to have the same distance between them from top to bottom. Also to make sure that there are no bends or curves when mounting to the coop. If you can do this then you won't have any issues. The don't even have to be vertically straight - as long as everything else is mounted at about the same angle.</p>
+<p>Initially I thought that all of the C channel would have to be perfectly straight and that the antenna would need to aligned up just right.</p>
+<p>Turns out that the antenna has quite a bit of flex and there is some room for error - not much room mind you, but enough to enable you to install the antenna by sight.</p>
+<p>The important thing about the C channel is to have the same distance between them from top to bottom.</p>
+<p>Also to make sure that there are no bends or curves when mounting to the coop.</p>
+<p>If you can do this then you won't have any issues.</p>
+<p>The don't even have to be vertically straight - as long as everything else is mounted at about the same angle.</p>
 <p>Also, when you attach the door to the antenna there is some movement that the antenna can absorb. This is a good thing, especially if the antenna is not mounted perfectly straight.</p>
 <p>Thanks for looking and I hope this has inspired you to make your own automated chicken coop door.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

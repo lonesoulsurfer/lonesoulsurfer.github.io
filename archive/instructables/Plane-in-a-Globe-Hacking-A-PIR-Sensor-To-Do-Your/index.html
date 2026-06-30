@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,9 +163,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Plane in a Globe - Hacking a PIR Sensor to Do Your Bidding</span>
 </nav>
 <h1>Plane in a Globe - Hacking a PIR Sensor to Do Your Bidding</h1><div class="source"><a href="https://www.instructables.com/Plane-in-a-Globe-Hacking-A-PIR-Sensor-To-Do-Your/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>Hi All.</p>
-<p>Ever had an idea pop into your head and you can't stop thinking about it?  Well my idea was to have a tiny plane spinning inside a light bulb, activated by a sensor!  Yes I know - not much of an idea but there it is.</p>
-<p>First I prowled the internet trying to find the right type of sensor and I came across the <a href="https://www.instructables.com/id/PIR-Motion-Sensor-Tutorial/">PIR sensor</a>.  These are really ingenious and work by sensing infrared radiation. Everything emits some low level radiation, and the hotter something is, the more radiation is emitted.</p>
-<p>I purchased a couple from <a href="http://www.ebay.com.au/itm/330709778037?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649">Ebay</a> and started to try and hack them by using a relay.  After much frustration I decided to give this up and try another avenue.  I found a heap of articles using arduino but I wanted to keep it simple.  In the end I decided to use a <a href="http://www.ebay.com.au/itm/130793093598?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649">8 LED Light PIR Motion Sensor</a> .  The sensor had everything I needed to enable me to hack away with ease.</p>
+<p>Ever had an idea pop into your head and you can't stop thinking about it?</p>
+<p>Well my idea was to have a tiny plane spinning inside a light bulb, activated by a sensor!</p>
+<p>Yes I know - not much of an idea but there it is.</p>
+<p>First I prowled the internet trying to find the right type of sensor and I came across the <a href="https://www.instructables.com/id/PIR-Motion-Sensor-Tutorial/">PIR sensor</a>.</p>
+<p>These are really ingenious and work by sensing infrared radiation.</p>
+<p>Everything emits some low level radiation, and the hotter something is, the more radiation is emitted.</p>
+<p>I purchased a couple from <a href="http://www.ebay.com.au/itm/330709778037?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649">Ebay</a> and started to try and hack them by using a relay.</p>
+<p>After much frustration I decided to give this up and try another avenue.</p>
+<p>I found a heap of articles using arduino but I wanted to keep it simple.</p>
+<p>In the end I decided to use a <a href="http://www.ebay.com.au/itm/130793093598?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649">8 LED Light PIR Motion Sensor</a> .</p>
+<p>The sensor had everything I needed to enable me to hack away with ease.</p>
 <p>So here's my idea come to life - kind of.  After much breaking of light bulbs I finally managed to complete the project.</p>
 <p>Hope you Enjoy.</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Get</h2><div class="step-images single"><img src="images/step01_01.jpg" alt="Step 1: Things to Get image 1" loading="lazy"></div><p>Parts List</p>
 <ol>
@@ -169,7 +212,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the new PIR sensor to the wires making sure you have the sensor on correctly.  If could also just solder back on the PIR sensor you cut off.  Just make sure that you leave some wire on the PIR sensor itself.</li>
 <li>Solder on the motor.</li>
 </ol>
-<p>Note: Test - The motor should come on for a minute and then turn off. If you move in front of the sensor the motor should come back on. If not you probably have wired-up something wrong re-check everything and try again.</p><h2><span class="step-num">STEP 4</span>Step 4: Hacking the Sensor - Modding the Case</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 5" loading="lazy"></div><p>Next is to mod the original case so you can put the circuit board back in without it taking-up much room. This will enable you to use the on/off switch on the PIR sensor and will also protect the circuit board</p>
+<p>Note: Test - The motor should come on for a minute and then turn off.</p>
+<p>If you move in front of the sensor the motor should come back on.</p>
+<p>If not you probably have wired-up something wrong re-check everything and try again.</p><h2><span class="step-num">STEP 4</span>Step 4: Hacking the Sensor - Modding the Case</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Hacking the Sensor - Modding the Case image 5" loading="lazy"></div><p>Next is to mod the original case so you can put the circuit board back in without it taking-up much room.</p>
+<p>This will enable you to use the on/off switch on the PIR sensor and will also protect the circuit board</p>
 <p>Steps:</p>
 <ol>
 <li>Use a dremmel to cut away the sides.</li>
@@ -178,7 +224,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol>
 <p>Done! Now you can use the sensor for anything that takes your fancy.</p><h2><span class="step-num">STEP 5</span>Step 5: Modding the Globe</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Modding the Globe image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Modding the Globe image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Modding the Globe image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Modding the Globe image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Modding the Globe image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Modding the Globe image 6" loading="lazy"><img src="images/step05_07.jpg" alt="Step 5: Modding the Globe image 7" loading="lazy"></div><p>Now you have your sensor ready to go, the next step is to put it into something.</p>
 <p>Modding a Globe</p>
-<p>There is heaps of web info on how to pull the insides out of a globe.  If you need instructions more in-depth than the below – check out <a href="http://www.teamdroid.com/diy-hollow-out-a-light-bulb/">this</a> from TeamDroid.  My only suggestion is to get an old style filament globe and not a halogen, as these are hard to do.  The globe in the pictures is a halogen and this broke on me when I tried to get the insides out.</p>
+<p>There is heaps of web info on how to pull the insides out of a globe.</p>
+<p>If you need instructions more in-depth than the below – check out <a href="http://www.teamdroid.com/diy-hollow-out-a-light-bulb/">this</a> from TeamDroid.</p>
+<p>My only suggestion is to get an old style filament globe and not a halogen, as these are hard to do.</p>
+<p>The globe in the pictures is a halogen and this broke on me when I tried to get the insides out.</p>
 <p>Steps:</p>
 <ol>
 <li>First remove the little piece of metal at the bottom of the globe.  Pliers usually will get <a href="http://www.teamdroid.com/diy-hollow-out-a-light-bulb/">this</a> off.</li>
@@ -217,7 +266,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Cut the excess copper wire off and attach some wires.  It is also good to add some heat shrink.  The wires that are shown in the pictures below I decided not to go with.  Instead I used some twisted wire that I pulled from an old computer.</li>
 </ol>
 <p>Now you should have a globe with a plane and 2 LED’s inside – who’d have thought!</p>
-<p>Initially I went with blue LED's but decided that these looked too cold and went for some yellow ones.  You can see in some of the images that there are blue ones sometimes and yellow other times.  If you are thinking of making this, make sure you decide what colour you want first as it was a pain in the ar#& trying to change them.</p><h2><span class="step-num">STEP 8</span>Step 8: Creating the Stand</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Creating the Stand image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Creating the Stand image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Creating the Stand image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Creating the Stand image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Creating the Stand image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Creating the Stand image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Creating the Stand image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Creating the Stand image 8" loading="lazy"></div><p>To make the stand I decided to go use some brass plumbing fittings.</p>
+<p>Initially I went with blue LED's but decided that these looked too cold and went for some yellow ones.</p>
+<p>You can see in some of the images that there are blue ones sometimes and yellow other times.</p>
+<p>If you are thinking of making this, make sure you decide what colour you want first as it was a pain in the ar#& trying to change them.</p><h2><span class="step-num">STEP 8</span>Step 8: Creating the Stand</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Creating the Stand image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Creating the Stand image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Creating the Stand image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Creating the Stand image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Creating the Stand image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Creating the Stand image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Creating the Stand image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Creating the Stand image 8" loading="lazy"></div><p>To make the stand I decided to go use some brass plumbing fittings.</p>
 <p>Steps:</p>
 <ol>
 <li>Find some fittings which fit the end of the globe.  This bit is up to you on how you want it to look.  I just went to me local hardware store and found a few fittings that I thought would look a bit like a light socket.</li>
@@ -234,5 +285,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Test.</li>
 </ol><h2><span class="step-num">STEP 10</span>Step 10: Done</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Done image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Done image 2" loading="lazy"></div><p>That’s it!  You should have a pretty neat looking um…plane in a globe?  Set-it up in a place that gets some foot traffic and watch it come to life.</p>
 <p>Thanks for checking it out and if you have any questions let me know.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

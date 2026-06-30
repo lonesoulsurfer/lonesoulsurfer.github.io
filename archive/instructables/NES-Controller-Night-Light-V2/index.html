@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,9 +162,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">NES Controller Night Light V2</span>
 </nav>
-<h1>NES Controller Night Light V2</h1><div class="source"><a href="https://www.instructables.com/NES-Controller-Night-Light-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>A couple of years ago a made a NES Controller Night Light in Resin. Although I was happy with the final build, it wasn't an easy one to do. I decided to revisit this build recently after a friend wanted me to make them one. I really didn't want to have to go through all of that resin polishing again so I decided to make a slightly different version of the night night.</p>
-<p>This time I wanted to be able to still feel the controller and also make it more of a show piece. I decided to have it in a frame that I could hang on the wall. The NES controller is also removable from the frame which enables it to be portable!</p>
-<p>I wan't going too make an 'ible for this build, but it's a lot easier than my original idea so I thought why not! All you'll need to make this build is some basic soldering skills. a little patience and some simple wood working skills. You don't even have to put it in a frame if you can't be bothered.</p>
+<h1>NES Controller Night Light V2</h1><div class="source"><a href="https://www.instructables.com/NES-Controller-Night-Light-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>A couple of years ago a made a NES Controller Night Light in Resin.</p>
+<p>Although I was happy with the final build, it wasn't an easy one to do.</p>
+<p>I decided to revisit this build recently after a friend wanted me to make them one.</p>
+<p>I really didn't want to have to go through all of that resin polishing again so I decided to make a slightly different version of the night night.</p>
+<p>This time I wanted to be able to still feel the controller and also make it more of a show piece.</p>
+<p>I decided to have it in a frame that I could hang on the wall.</p>
+<p>The NES controller is also removable from the frame which enables it to be portable!</p>
+<p>I wan't going too make an 'ible for this build, but it's a lot easier than my original idea so I thought why not!</p>
+<p>All you'll need to make this build is some basic soldering skills. a little patience and some simple wood working skills.</p>
+<p>You don't even have to put it in a frame if you can't be bothered.</p>
 <p>Check out the video in the first step to see the light in action.</p><h2><span class="step-num">STEP 1</span>Step 1: Watch the Video...</h2><h2><span class="step-num">STEP 2</span>Step 2: Things to Gather</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Things to Gather image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Things to Gather image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Things to Gather image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Rear Bike Light - eBay</li>
@@ -165,7 +207,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Find the middle on each side and mark.</li>
 <li>Using a 3mm drill piece, drill the holes where marked</li>
 </ol><h2><span class="step-num">STEP 5</span>Step 5: Hot Gluing the LED's</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Hot Gluing the LED's image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Hot Gluing the LED's image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Hot Gluing the LED's image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Hot Gluing the LED's image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Hot Gluing the LED's image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Hot Gluing the LED's image 6" loading="lazy"></div><p>Steps:</p>
-<p>When all the holes have been drilled, it's time to then glue the LED's into place. The important thing to do at this stage is to make sure you install the LED's with their polarities all the same way. This will stop any mistakes when you are wiring them up too the circuit later. All I did was to make sure the short leg (negative or cathode) side was always on the left.</p>
+<p>When all the holes have been drilled, it's time to then glue the LED's into place.</p>
+<p>The important thing to do at this stage is to make sure you install the LED's with their polarities all the same way.</p>
+<p>This will stop any mistakes when you are wiring them up too the circuit later.</p>
+<p>All I did was to make sure the short leg (negative or cathode) side was always on the left.</p>
 <ol>
 <li>Push an LED through the hole and add some hot glue. Hold in place until the glue dries.</li>
 <li>Do the same for the other 6 LED's and if necessary, go over each with a little more glue to ensure they won't move. Don't worry about cutting the legs yet, this comes later.</li>
@@ -174,10 +219,14 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Pry the top off the bike light.</li>
 <li>Un-screw the circuit board. This should just come off. You can see from the images that the board isn't the best made or cleanest that you are going to come across, but for $1, I'm complaining.</li>
 </ol>
-<p>NOTE: Make sure you mark on the board which side is negative and which is positive.. As LED's come with a handy flat edge on the LED to tell you the polarity, this is easily done by just looking at the LED. Mark on the board so you don't forget.</p>
+<p>NOTE: Make sure you mark on the board which side is negative and which is positive..</p>
+<p>As LED's come with a handy flat edge on the LED to tell you the polarity, this is easily done by just looking at the LED.</p>
+<p>Mark on the board so you don't forget.</p>
 <ol>
 <li>Next thing to do is to remove the LED's. Initially I soldered them off but I think the heat from the soldering iron damaged the IC and one of the lights didn't work. I didn't find this out until after I had wired everything up! The other thing you can do (and I did this on the 2nd circuit board I used) is to just use a pair of wire snips and cut off the LED's! This worked fine and didn't damage the board</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Wiring and Gluing</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Wiring and Gluing image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Wiring and Gluing image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Wiring and Gluing image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Wiring and Gluing image 4" loading="lazy"></div><p>The first thing to do is to add some wires to the power section and switch. The wires I used were recycled from the cord that comes with the controller. Inside there are 5 wires including a red and black one which I used to wire up the circuit board.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Wiring and Gluing</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Wiring and Gluing image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Wiring and Gluing image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Wiring and Gluing image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Wiring and Gluing image 4" loading="lazy"></div><p>The first thing to do is to add some wires to the power section and switch.</p>
+<p>The wires I used were recycled from the cord that comes with the controller.</p>
+<p>Inside there are 5 wires including a red and black one which I used to wire up the circuit board.</p>
 <p>Steps:</p>
 <ol>
 <li>Add a red wire to the positive terminal and a black to the negative. If you are unsure which one is positive and negative, then just have a look at the battery section on the bike light and match-up the terminals to the battery tabs in the light.</li>
@@ -189,7 +238,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the wires from the LED's to the solder mounts on the bike light circuit board. Again making sure that the polarities are correct.</li>
 <li>Once all of the wires are soldered, it's time to test. Add some batteries and touch the 2 wires together from the switch. The LED's should come one. If any don't then you might find that it has been wired incorrectly. Un-solder and try again.</li>
 <li>Lastly, as you can see,, I glued into place the D pad and the start/select buttons. I didn't have to do this in the end as I replaced the circuit board from the controller.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Faulty Board!!!</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Faulty Board!!! image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Faulty Board!!! image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Faulty Board!!! image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Faulty Board!!! image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Faulty Board!!! image 5" loading="lazy"></div><p>So my first board that I used had something wrong with it and as you can see from the images, one of the lights didn't work. I tried swapping the wires and also replacing the LED but in the end it was the board so I had to re-wire another one. This really isn't as bad as it seems as the boards are easy to pull out of the bike lights and the LEDs also are simple to remove. Plus the lights cost $1 so I brought 5 just in case this happened.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Faulty Board!!!</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Faulty Board!!! image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Faulty Board!!! image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Faulty Board!!! image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Faulty Board!!! image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Faulty Board!!! image 5" loading="lazy"></div><p>So my first board that I used had something wrong with it and as you can see from the images, one of the lights didn't work.</p>
+<p>I tried swapping the wires and also replacing the LED but in the end it was the board so I had to re-wire another one.</p>
+<p>This really isn't as bad as it seems as the boards are easy to pull out of the bike lights and the LEDs also are simple to remove.</p>
+<p>Plus the lights cost $1 so I brought 5 just in case this happened.</p>
 <p>Once I re-wired a new circuit board into place everything worked fine.</p><h2><span class="step-num">STEP 9</span>Step 9: Adding the Switch.</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Adding the Switch. image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Adding the Switch. image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Adding the Switch. image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Adding the Switch. image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Adding the Switch. image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Adding the Switch. image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Adding the Switch. image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Adding the Switch. image 8" loading="lazy"></div><p>The cool thing about being able to touch the NES controller (unlike my first version) is I could utilize the buttons. after some trial and error, I came up with the below solution.</p>
 <p>Steps:</p>
 <ol>
@@ -198,7 +250,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Glue the switch into place with some hot glue</li>
 <li>Put all of the buttons back into place and screw down the circuit board. I added another small screw and a little washer to help support the board.</li>
 <li>Test and make sure it works.</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Battery Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Battery Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Battery Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Battery Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Battery Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Battery Case image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Battery Case image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Battery Case image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding the Battery Case image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Adding the Battery Case image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Adding the Battery Case image 10" loading="lazy"></div><p>In my original NES Night Light I incorporated the batteries inside the controller. As I wanted to make this one a more simpler version, I decided to have the batteries on the outside. You could paint the black battery holder grey and also have one which is enclosed so you can't see the batteries. As I was displaying mine though in a frame I wasn't so worried about what the back looked like. Hoewever, you can remove the controller from the frame and have it side by your bed for example so making the back blend in would probably be a good step.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding the Battery Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Battery Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Battery Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Battery Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Battery Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Battery Case image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Battery Case image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Battery Case image 7" loading="lazy"><img src="images/step10_08.jpg" alt="Step 10: Adding the Battery Case image 8" loading="lazy"><img src="images/step10_09.jpg" alt="Step 10: Adding the Battery Case image 9" loading="lazy"><img src="images/step10_10.jpg" alt="Step 10: Adding the Battery Case image 10" loading="lazy"></div><p>In my original NES Night Light I incorporated the batteries inside the controller.</p>
+<p>As I wanted to make this one a more simpler version, I decided to have the batteries on the outside.</p>
+<p>You could paint the black battery holder grey and also have one which is enclosed so you can't see the batteries.</p>
+<p>As I was displaying mine though in a frame I wasn't so worried about what the back looked like.</p>
+<p>Hoewever, you can remove the controller from the frame and have it side by your bed for example so making the back blend in would probably be a good step.</p>
 <p>Steps:</p>
 <ol>
 <li>Mark on the back of the controller where you will be positioning the battery holder. I marked mine about 4mm from the bottom. This way, when the controller is resting it is on a slight angle and presents better.</li>
@@ -223,5 +279,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Grab a thin bladed saw and cut out the marked section</li>
 <li>You want the battery holder to fit snuggly into the hole. Sand if necessary</li>
 </ol><h2><span class="step-num">STEP 13</span>Step 13:</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: image 3" loading="lazy"><img src="images/step13_04.jpg" alt="Step 13: image 4" loading="lazy"><img src="images/step13_05.jpg" alt="Step 13: image 5" loading="lazy"></div>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

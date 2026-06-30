@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,9 +163,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Fizzle Loop Synth II</span>
 </nav>
 <h1>Fizzle Loop Synth II</h1><div class="source"><a href="https://www.instructables.com/Fizzle-Loop-Synth-II/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>This is my 2nd version of the fizzle loop synth and this time I use 4 x 555 times (yes you heard me right!)</p>
-<p>Its circuit is really just 2 flashing LED circuits and also a light Theremin circuit mashed together. I’ve added a potentiometer to each LED to be able to dim it along with the ability to change capacitor and resistor values via switches. This gives you the ability to change the sound, tone and speed of the synth making for a much more varied sound machine then the first Fizzle Loop synth.</p>
+<p>Its circuit is really just 2 flashing LED circuits and also a light Theremin circuit mashed together.</p>
+<p>I’ve added a potentiometer to each LED to be able to dim it along with the ability to change capacitor and resistor values via switches.</p>
+<p>This gives you the ability to change the sound, tone and speed of the synth making for a much more varied sound machine then the first Fizzle Loop synth.</p>
 <p>I also used 2 vactrol’s (check out step 3 on what these are if you haven’t heard of them before) which connect the flashing LED’s circuits to the light Theremin circuit.</p>
-<p>After a bit of experimenting I found that the values on the resistors and caps I choose gave me a good range of sound. I strongly encourage you if you do make one of these, to do your own experimentation to find what works best for you.</p>
+<p>After a bit of experimenting I found that the values on the resistors and caps I choose gave me a good range of sound.</p>
+<p>I strongly encourage you if you do make one of these, to do your own experimentation to find what works best for you.</p>
 <p>Check out the video of the synth in action</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>I didn't bother showing images of all of the parts - I don't want to scare you off!</p>
 <p>Parts for the circuit</p>
 <ol>
@@ -176,14 +214,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Wire cutters</li>
 <li>Screwdrivers, spanners, etc</li>
 <li>Hot Glue</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: The Flashing LED Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Flashing LED Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Flashing LED Circuit image 2" loading="lazy"></div><p>The first image below shows the original flashing LED circuit and the 2nd shows how I modified it. In the original, you controlled the speed of the LED by the 100K Potentiometer. The 10K resistor between pins 6 and 7 control how fast the LED will flash. A lower resistor will make the LED flash faster.</p>
-<p>In the modified circuit, I have added another potentiometer at pin 3 which now allows you to control the brightness of the potentiometer. You can also see that I have added a switch for the resistors on pins 6 and 7 which give the ability to change the speed of the LED. I have also added another switch on pin 2 and an extra capacitor so I can switch between these as well which also gives you more ability to change the sound.</p>
-<p>Lastly, you can see that I have added another LED which is connected to a 7.5k resistor. This LED goes on the outside of the synth so I can visually see how fast and how bright the LED inside the vactrol is flashing</p>
-<p>I would suggest that you build the original circuit first and get this going. Then experiment by adding different value resistors and caps to see what happens to the LED.</p><h2><span class="step-num">STEP 3</span>Step 3: The Light Theremin and Final Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Light Theremin and Final Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Light Theremin and Final Circuit image 2" loading="lazy"></div><p>The first circuit in the images is the light Theremin and it doesn’t really have any modifications. The only thing different is the 2 CdS cells or photo cells are added into vactrol’s. I also added a 500K potentiometer to one of the photo cells. This helps change the tone and adds another way to change the sound.</p>
-<p>The next circuit is the final circuit with both Flashing LED and Theremin circuits joined together. You may notice that in the flashing LED circuit on the left, that there is a 10K potentiometer to control the brightness of the LED. I found that a 100K pot had too much resistance and was turning the LED off when turned about half way on this circuit.</p>
-<p>Lastly, I’m not going to go through step by step instructions on how to put the circuit together. It will just be too long and I’m going to assume that you at least know how to breadboard and solder circuits.</p><h2><span class="step-num">STEP 4</span>Step 4: What Is a Vactrol?</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: What Is a Vactrol? image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: What Is a Vactrol? image 2" loading="lazy"></div><p>A Vactrol acts like a potentiometer - applying a voltage to the Vactrol's LED has the same effect as turning up the knob on the potentiometer.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: The Flashing LED Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: The Flashing LED Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: The Flashing LED Circuit image 2" loading="lazy"></div><p>The first image below shows the original flashing LED circuit and the 2nd shows how I modified it.</p>
+<p>In the original, you controlled the speed of the LED by the 100K Potentiometer.</p>
+<p>The 10K resistor between pins 6 and 7 control how fast the LED will flash.</p>
+<p>A lower resistor will make the LED flash faster.</p>
+<p>In the modified circuit, I have added another potentiometer at pin 3 which now allows you to control the brightness of the potentiometer.</p>
+<p>You can also see that I have added a switch for the resistors on pins 6 and 7 which give the ability to change the speed of the LED.</p>
+<p>I have also added another switch on pin 2 and an extra capacitor so I can switch between these as well which also gives you more ability to change the sound.</p>
+<p>Lastly, you can see that I have added another LED which is connected to a 7.5k resistor.</p>
+<p>This LED goes on the outside of the synth so I can visually see how fast and how bright the LED inside the vactrol is flashing</p>
+<p>I would suggest that you build the original circuit first and get this going. Then experiment by adding different value resistors and caps to see what happens to the LED.</p><h2><span class="step-num">STEP 3</span>Step 3: The Light Theremin and Final Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: The Light Theremin and Final Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: The Light Theremin and Final Circuit image 2" loading="lazy"></div><p>The first circuit in the images is the light Theremin and it doesn’t really have any modifications.</p>
+<p>The only thing different is the 2 CdS cells or photo cells are added into vactrol’s.</p>
+<p>I also added a 500K potentiometer to one of the photo cells.</p>
+<p>This helps change the tone and adds another way to change the sound.</p>
+<p>The next circuit is the final circuit with both Flashing LED and Theremin circuits joined together.</p>
+<p>You may notice that in the flashing LED circuit on the left, that there is a 10K potentiometer to control the brightness of the LED.</p>
+<p>I found that a 100K pot had too much resistance and was turning the LED off when turned about half way on this circuit.</p>
+<p>Lastly, I’m not going to go through step by step instructions on how to put the circuit together.</p>
+<p>It will just be too long and I’m going to assume that you at least know how to breadboard and solder circuits.</p><h2><span class="step-num">STEP 4</span>Step 4: What Is a Vactrol?</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: What Is a Vactrol? image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: What Is a Vactrol? image 2" loading="lazy"></div><p>A Vactrol acts like a potentiometer - applying a voltage to the Vactrol's LED has the same effect as turning up the knob on the potentiometer.</p>
 <p>It consists of two components incorporated into one package: a light-emitting diode (LED), and a photoresistor (a resistor whose resistance drops when it is exposed to light)</p>
-<p>It’s important that the only light that the photo cell can detect is from the LED. If outside light is able to reach the photo cell, then it will interfere with the performance and sound, that’s why you need to add something like heat shrink to protect them.</p><h2><span class="step-num">STEP 5</span>Step 5: Making a Vactrol</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making a Vactrol image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making a Vactrol image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making a Vactrol image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making a Vactrol image 4" loading="lazy"></div><p>Steps:</p>
+<p>It’s important that the only light that the photo cell can detect is from the LED.</p>
+<p>If outside light is able to reach the photo cell, then it will interfere with the performance and sound, that’s why you need to add something like heat shrink to protect them.</p><h2><span class="step-num">STEP 5</span>Step 5: Making a Vactrol</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making a Vactrol image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making a Vactrol image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making a Vactrol image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making a Vactrol image 4" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Cut a small length of heat shrink tube. The LED and photo cell need to be able to fit inside.</li>
 <li>Place the LED into the heat shrink with the legs facing out and also the same for the photo cell. Make sure that they are touching inside the heat shrink.</li>
@@ -211,13 +262,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, solder the LED section to the Vactrol making sure your polarities are right.</li>
 <li>You will probably use most of the protoboard so make sure that the case you choose is big enough to house the whole thing.</li>
 </ol>
-<p>That’s pretty much it for the circuit. It’s now time to start on the case</p><h2><span class="step-num">STEP 9</span>Step 9: A Few Ad-hoc Changes</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: A Few Ad-hoc Changes image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: A Few Ad-hoc Changes image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: A Few Ad-hoc Changes image 3" loading="lazy"></div><p>It took me 3 tries before I got this circuit right! The first 2 half worked but I couldn't trouble shoot them to work out why they wouldn't work properly. Each time I re-started the circuit I add a couple new ideas which I'll go through now.</p>
+<p>That’s pretty much it for the circuit. It’s now time to start on the case</p><h2><span class="step-num">STEP 9</span>Step 9: A Few Ad-hoc Changes</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: A Few Ad-hoc Changes image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: A Few Ad-hoc Changes image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: A Few Ad-hoc Changes image 3" loading="lazy"></div><p>It took me 3 tries before I got this circuit right!</p>
+<p>The first 2 half worked but I couldn't trouble shoot them to work out why they wouldn't work properly.</p>
+<p>Each time I re-started the circuit I add a couple new ideas which I'll go through now.</p>
 <p>Adding IC sockets</p>
-<p>I usually just solder the IC directly to the circuit board. The problem with doing this way is you can't remove the IC if it doesn't work. Well you can but you have to de-solder and everything just starts to become a mess. In the 3rd iteration I added IC sockets so I could easily change them if I needed to.</p>
+<p>I usually just solder the IC directly to the circuit board.</p>
+<p>The problem with doing this way is you can't remove the IC if it doesn't work.</p>
+<p>Well you can but you have to de-solder and everything just starts to become a mess.</p>
+<p>In the 3rd iteration I added IC sockets so I could easily change them if I needed to.</p>
 <p>Making the Capacitors Changeable</p>
-<p>This wasn't necessary but I thought if I wanted to get different sounds out of the synth, then making the capacitors easily changeable would allow me to change the sounds later on. I just used some female headers and soldered them onto the circuit board. the legs of the capacitors fit inside them.</p>
+<p>This wasn't necessary but I thought if I wanted to get different sounds out of the synth, then making the capacitors easily changeable would allow me to change the sounds later on.</p>
+<p>I just used some female headers and soldered them onto the circuit board. the legs of the capacitors fit inside them.</p>
 <p>Testing</p>
-<p>I know that this is probably self evident, but I tend to rush when I'm making and sometimes skip the testing stages. On the final board I tested each circuit (both flashing LED's and light theremin) to ensure they worked before I finally attached them altogether. It meant that I had to add a couple of temporary parts each time but it was worth it.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding the Switches and Knobs to the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 7" loading="lazy"></div><p>I used a cigar box for the case. I find that they have a lot of room inside to add all of the parts and they also look pretty damn cool. I also added the knobs and switches first before the speaker. This way I could work out the best position once all of the other parts had been added. I'm going to assume you too have a cigar box for your case as well.</p>
+<p>I know that this is probably self evident, but I tend to rush when I'm making and sometimes skip the testing stages.</p>
+<p>On the final board I tested each circuit (both flashing LED's and light theremin) to ensure they worked before I finally attached them altogether.</p>
+<p>It meant that I had to add a couple of temporary parts each time but it was worth it.</p><h2><span class="step-num">STEP 10</span>Step 10: Adding the Switches and Knobs to the Case</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 5" loading="lazy"><img src="images/step10_06.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 6" loading="lazy"><img src="images/step10_07.jpg" alt="Step 10: Adding the Switches and Knobs to the Case image 7" loading="lazy"></div><p>I used a cigar box for the case.</p>
+<p>I find that they have a lot of room inside to add all of the parts and they also look pretty damn cool.</p>
+<p>I also added the knobs and switches first before the speaker.</p>
+<p>This way I could work out the best position once all of the other parts had been added.</p>
+<p>I'm going to assume you too have a cigar box for your case as well.</p>
 <p>Steps:</p>
 <ol>
 <li>First drill 3 holes and add the 500K pots.</li>
@@ -232,7 +295,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Use a hole bit on a drill and make a hole in the top of the cigar box just big enough to fit the speaker inside</li>
 <li>I added a computer fan cover next over the speaker to protect it. To do this I also needed to add some spaces to ensure the fan cover wasn't touching the speaker. Secure in place with some small screws and nuts.</li>
 </ol>
-<p>So that's pretty much for the lid of the case. I added a few extra switches later on which I'll go through in the next step.</p><h2><span class="step-num">STEP 12</span>Step 12: Soldering the Circuit Board to the Pots and Switches</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 5" loading="lazy"></div><p>Once you have added all of the switches and pots, it’s time to solder the circuit board to them. This isn’t really a hard step, it just needs a little patience to sort out the wires and where they are to be attached. It’s up to you on how you want to configure the different effects and sounds – I’ll go through how I laid-out my synth but you may want to do it totally different</p>
+<p>So that's pretty much for the lid of the case. I added a few extra switches later on which I'll go through in the next step.</p><h2><span class="step-num">STEP 12</span>Step 12: Soldering the Circuit Board to the Pots and Switches</h2><div class="step-images"><img src="images/step12_01.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 1" loading="lazy"><img src="images/step12_02.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 2" loading="lazy"><img src="images/step12_03.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 3" loading="lazy"><img src="images/step12_04.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 4" loading="lazy"><img src="images/step12_05.jpg" alt="Step 12: Soldering the Circuit Board to the Pots and Switches image 5" loading="lazy"></div><p>Once you have added all of the switches and pots, it’s time to solder the circuit board to them.</p>
+<p>This isn’t really a hard step, it just needs a little patience to sort out the wires and where they are to be attached.</p>
+<p>It’s up to you on how you want to configure the different effects and sounds – I’ll go through how I laid-out my synth but you may want to do it totally different</p>
 <p>Steps:</p>
 <ol>
 <li>The 2 large pots on the left and right of the synth are used to control the brightness of the LED in the Vactrol</li>
@@ -249,7 +314,8 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Attach the batteries to the on/off switch and also the circuit board</li>
 <li>Next solder the speaker wires to the volume pot</li>
 <li>For the audio out, solder a couple wires to the positive and negative terminals on the speaker and attach these to the audio out. You can also add a 10uf cap from the positive wire to the positive terminal on the jack which will help clean-up the sound.</li>
-</ol><h2><span class="step-num">STEP 14</span>Step 14: Bonus! Change the Sound by Adding Some Capacitors</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 8" loading="lazy"></div><p>Adding the extra capacitors to the speaker to get different sounds only occurred to me by accident. However, it can really help clear-up the sound and also add some delay depending on the size of the capacitor.</p>
+</ol><h2><span class="step-num">STEP 14</span>Step 14: Bonus! Change the Sound by Adding Some Capacitors</h2><div class="step-images"><img src="images/step14_01.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 1" loading="lazy"><img src="images/step14_02.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 2" loading="lazy"><img src="images/step14_03.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 3" loading="lazy"><img src="images/step14_04.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 4" loading="lazy"><img src="images/step14_05.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 5" loading="lazy"><img src="images/step14_06.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 6" loading="lazy"><img src="images/step14_07.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 7" loading="lazy"><img src="images/step14_08.jpg" alt="Step 14: Bonus! Change the Sound by Adding Some Capacitors image 8" loading="lazy"></div><p>Adding the extra capacitors to the speaker to get different sounds only occurred to me by accident.</p>
+<p>However, it can really help clear-up the sound and also add some delay depending on the size of the capacitor.</p>
 <p>I added a couple of momentary switches to I could turn these on when I wanted to along with a couple of SPTD (toggle) switches to be able to keep them on all of the time</p>
 <p>Momentary Switches</p>
 <p>Steps:</p>
@@ -268,5 +334,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder one to the speakers positive and the other to the capacitor</li>
 <li>Lastly solder the other wire from the switch to ground</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

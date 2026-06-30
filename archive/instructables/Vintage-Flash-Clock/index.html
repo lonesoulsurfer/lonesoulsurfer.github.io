@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -129,7 +164,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </nav>
 <h1>Vintage Flash Clock</h1><div class="source"><a href="https://www.instructables.com/Vintage-Flash-Clock/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>In my searches for interesting things, I sometimes come across vintage camera flashes and find myself always buying them. I have a draw full of old flashes and I have no idea why!</p>
 <p>I have made lamps out of them (check these ‘ibles here and here) before which is a great way to display them. This time though I decided to make a clock out of one.</p>
-<p>I found a nice clock module recently on Ali Express and they fit quite well inside an old flash. They even have a temperature reading which is a nice add. The clock can run on anything from 3 volts to 30. I decided to use an old mobile phone battery as the power source which can be charge using a micro USB. You can also just leave the micro USB attached if you don't want to keep charging. The battery lasts about a week.</p>
+<p>I found a nice clock module recently on Ali Express and they fit quite well inside an old flash.</p>
+<p>They even have a temperature reading which is a nice add.</p>
+<p>The clock can run on anything from 3 volts to 30.</p>
+<p>I decided to use an old mobile phone battery as the power source which can be charge using a micro USB.</p>
+<p>You can also just leave the micro USB attached if you don't want to keep charging.</p>
+<p>The battery lasts about a week.</p>
 <p>You could easily use a small tripod as a stand if you wanted to. I decided to make my own with a few parts I had lying around.</p>
 <p>Let’s get cracking</p><h2><span class="step-num">STEP 1</span>Step 1: Parts & Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts & Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts & Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts & Tools image 3" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -171,7 +211,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Place the module inside the reflector. It should be sitting flush with the front of the reflector.</li>
 <li>Use some small files to smooth off the cuts</li>
 <li>Remove the "flash" globe inside the reflector. I managed to pull mine out without breaking it but if you need to break it then use a pair of pliers. You can use the holes left in the reflector for the wires needed.</li>
-</ol><h2><span class="step-num">STEP 4</span>Step 4: Modifying the Clock Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modifying the Clock Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modifying the Clock Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Modifying the Clock Module image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Modifying the Clock Module image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Modifying the Clock Module image 5" loading="lazy"></div><p>The clock module has 2, small momentary switches on it. These are used to change the time and move through the different functions. In order to be able to use these when the clock is inside the flash, you will need to have them on the outside of the case</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Modifying the Clock Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modifying the Clock Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modifying the Clock Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Modifying the Clock Module image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Modifying the Clock Module image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Modifying the Clock Module image 5" loading="lazy"></div><p>The clock module has 2, small momentary switches on it.</p>
+<p>These are used to change the time and move through the different functions.</p>
+<p>In order to be able to use these when the clock is inside the flash, you will need to have them on the outside of the case</p>
 <p>Steps:</p>
 <ol>
 <li>I know that it’s a bit crude, but the easiest way to remove the switches is to cut them off. I used some wire cutters and carefully cut them away.</li>
@@ -187,7 +229,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>My flash already had one and all I needed to do was slightly enlarge it with a small file</li>
 <li>Place the charging module in place and add a little hot glue to secure it</li>
 <li>I also added the original switch back into place so I could turn the clock on or off</li>
-</ol><h2><span class="step-num">STEP 6</span>Step 6: Securing the Clock & Reflector to the Flash</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 4" loading="lazy"></div><p>I don’t know if this is a feature of most old flashes but I found that the reflector was really only held into place by the circuit board. It means that you will need to work out a way to keep it in place inside the flash. Don’t do what I did and use superglue. I should have learnt by now that plastic lenses and hate superglue and you always get fogging. I had to rub the lens back with some plastic polishing compound to remove it. Took ages!</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Securing the Clock & Reflector to the Flash</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Securing the Clock & Reflector to the Flash image 4" loading="lazy"></div><p>I don’t know if this is a feature of most old flashes but I found that the reflector was really only held into place by the circuit board.</p>
+<p>It means that you will need to work out a way to keep it in place inside the flash.</p>
+<p>Don’t do what I did and use superglue.</p>
+<p>I should have learnt by now that plastic lenses and hate superglue and you always get fogging.</p>
+<p>I had to rub the lens back with some plastic polishing compound to remove it.</p>
+<p>Took ages!</p>
 <p>Steps:</p>
 <ol>
 <li>You need to secure the clock module to the modified reflector. Thread the wires through the holes that the flash globe came out of.</li>
@@ -200,7 +247,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>For the stand I used an old fly-wheel from a tape deck. The hole in the centre was just the right size to jam a piece of aluminium tube into.</li>
 <li>To be able to connect the base of the flash to the stand, I added a small nut inside the aluminium tube. The nuts a tight fit and I used a hammer to whack it into place.</li>
 <li>I then drilled a hole off-centre into the bottom of the flash and used a bolt to hold it into place.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Wiring and Adding a Battery</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Wiring and Adding a Battery image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Wiring and Adding a Battery image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Wiring and Adding a Battery image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Wiring and Adding a Battery image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Wiring and Adding a Battery image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Wiring and Adding a Battery image 6" loading="lazy"></div><p>I was going to run this clock through a 5v adapter but decided to add a battery as well at the last minute. You may have noticed that the USB module was change from being just an adapter to a charging one. The battery (an old mobile one) lasts about a week or so. You can also just use a micro USB cable and run it through mains power.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Wiring and Adding a Battery</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Wiring and Adding a Battery image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Wiring and Adding a Battery image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Wiring and Adding a Battery image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Wiring and Adding a Battery image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Wiring and Adding a Battery image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Wiring and Adding a Battery image 6" loading="lazy"></div><p>I was going to run this clock through a 5v adapter but decided to add a battery as well at the last minute.</p>
+<p>You may have noticed that the USB module was change from being just an adapter to a charging one.</p>
+<p>The battery (an old mobile one) lasts about a week or so.</p>
+<p>You can also just use a micro USB cable and run it through mains power.</p>
 <p>Steps:</p>
 <ol>
 <li>First, connect positive from the clock to the switch</li>
@@ -217,5 +267,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Set the time with the switches at the back.</li>
 </ol>
 <p>Sit back and enjoy your creation :)</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

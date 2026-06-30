@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,8 +163,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Sand in a Bottle - Fuse Pendant</span>
 </nav>
 <h1>Sand in a Bottle - Fuse Pendant</h1><div class="source"><a href="https://www.instructables.com/Sand-in-a-Bottle-Pendant/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"></div><p>I'm currently enjoying an awesome Summer holiday with the fam, swimming, fishing and snorkling at my favourite beach.</p>
-<p>I wanted to have a way of keeping a little part of the beach with me (esp when I'm at work!) to remind me of the sunshine and good times we had. So I decided the best way to do this would be to keep a little bit of sand from one of my favourite beaches always near me in a pendant.</p>
-<p>The pendant itself is made from a glass fuse where the inside section is removed and a small jump ring is soldered to one of the end caps. The jump ring allows you to hang the pendant from a chain or a piece of leather. You can also add a jump ring to both end caps to dispaly the pendant on its side.</p>
+<p>I wanted to have a way of keeping a little part of the beach with me (esp when I'm at work!) to remind me of the sunshine and good times we had.</p>
+<p>So I decided the best way to do this would be to keep a little bit of sand from one of my favourite beaches always near me in a pendant.</p>
+<p>The pendant itself is made from a glass fuse where the inside section is removed and a small jump ring is soldered to one of the end caps.</p>
+<p>The jump ring allows you to hang the pendant from a chain or a piece of leather.</p>
+<p>You can also add a jump ring to both end caps to dispaly the pendant on its side.</p>
 <p>It isn't a hard build but you will need a mini blow torch and have basic soldering skills to make your own.</p><h2><span class="step-num">STEP 1</span>Step 1: Things You'll Need</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things You'll Need image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things You'll Need image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Things You'll Need image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Things You'll Need image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Things You'll Need image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Things You'll Need image 6" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Fuse - eBay</li>
@@ -187,6 +225,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Pinch a mall amount and carefully add it into the glass tube</li>
 <li>Fill up the glass tube close to the top. In the image I have it right to the top but it's better to not fill it right up. I like the sand to be able to move around in the tube</li>
 <li>Lastly, add some superglue to the other cap and glue it into place</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Finished</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finished image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finished image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finished image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finished image 4" loading="lazy"></div><p>That's pretty much it! As I mentioned in an earlier step, you can also add a jump ring to both ends of the caps to display the pendant horizontally. Ypou can hang it from a chain or piece of leather and wear it around your neck, wrist or even from your keys.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Finished</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Finished image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Finished image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Finished image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Finished image 4" loading="lazy"></div><p>That's pretty much it!</p>
+<p>As I mentioned in an earlier step, you can also add a jump ring to both ends of the caps to display the pendant horizontally.</p>
+<p>Ypou can hang it from a chain or piece of leather and wear it around your neck, wrist or even from your keys.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

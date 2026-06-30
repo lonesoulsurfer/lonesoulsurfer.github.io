@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,10 +163,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">Fizzle Loop Synth V3 (555 Timer)</span>
 </nav>
 <h1>Fizzle Loop Synth V3 (555 Timer)</h1><div class="source"><a href="https://www.instructables.com/Fizzle-Loop-Synth-V3/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>This is my 3rd Fizzle Loop Synth circuit and it builds on the previous 2 which can be found here and here.</p>
-<p>The heart of the synth is 3, 555 Timer IC's which are used to make some really interesting beeps and boops. The difference between this version and the others is; I have reduced the number of IC's down to 3 (version 2 have 4!), the rhythms and sounds you can make from this version are in my opinion are better and lastly, there is a drum sound option which gives some really cool beats.</p>
-<p>I also have shrunk this synth into a pocket sized one. By placing some of the capacitors directly onto switches and shrinking the prototype board down, I managed to stuff all of the pots, switches and components into a small flashlight case.</p>
+<p>The heart of the synth is 3, 555 Timer IC's which are used to make some really interesting beeps and boops.</p>
+<p>The difference between this version and the others is; I have reduced the number of IC's down to 3 (version 2 have 4!), the rhythms and sounds you can make from this version are in my opinion are better and lastly, there is a drum sound option which gives some really cool beats.</p>
+<p>I also have shrunk this synth into a pocket sized one.</p>
+<p>By placing some of the capacitors directly onto switches and shrinking the prototype board down, I managed to stuff all of the pots, switches and components into a small flashlight case.</p>
 <p>You could probably use something like an altoids tin as a substitute case.</p>
-<p>I have also been playing around with designing schematics and have included a circuit diagram which (I hope!) is easy to understand. I've also decided not to do a step by step guide to making the circuit as I don't really think it helps too much. However, if I'm wrong let me know and I'll do it in the future. What I have done instead is described some of the trickier sections and have added explanations where necessary. Such as what a Vactrol is and how to make one.</p>
+<p>I have also been playing around with designing schematics and have included a circuit diagram which (I hope!) is easy to understand.</p>
+<p>I've also decided not to do a step by step guide to making the circuit as I don't really think it helps too much.</p>
+<p>However, if I'm wrong let me know and I'll do it in the future.</p>
+<p>What I have done instead is described some of the trickier sections and have added explanations where necessary.</p>
+<p>Such as what a Vactrol is and how to make one.</p>
 <p>Hackaday were nice enough to do a review of this project which can be found here</p>
 <p>Finally - I've made a video of the synth in action so check that out to hear how it sounds.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts image 6" loading="lazy"><img src="images/step01_07.jpg" alt="Step 1: Parts image 7" loading="lazy"><img src="images/step01_08.jpg" alt="Step 1: Parts image 8" loading="lazy"></div><p>Parts:</p>
 <ol>
@@ -182,7 +223,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Small amp module – eBay</li>
 <li>10K pot (This is one of the 6 that I have included above)</li>
 <li>Some type of case to add everything into. I used an old torch I had lying around.</li>
-</ol><h2><span class="step-num">STEP 2</span>Step 2: About the Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: About the Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: About the Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: About the Circuit image 3" loading="lazy"></div><p>At first glance, the circuit might look a little complicated but it's really pretty simple. The best way to make this synth is in stages which is how I will explain each step in making the circuit. You'll also notice that I have included 2 schmatics, the 2nd one includes a amp module and volume pot. It's not necessary to add this but it will dramatically increase the volume. However, I did add an output socket so you can just plug it into a portable speaker to increase the colume. If you also download Fritzing you can play around with the schematics yourself.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: About the Circuit</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: About the Circuit image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: About the Circuit image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: About the Circuit image 3" loading="lazy"></div><p>At first glance, the circuit might look a little complicated but it's really pretty simple.</p>
+<p>The best way to make this synth is in stages which is how I will explain each step in making the circuit.</p>
+<p>You'll also notice that I have included 2 schmatics, the 2nd one includes a amp module and volume pot.</p>
+<p>It's not necessary to add this but it will dramatically increase the volume.</p>
+<p>However, I did add an output socket so you can just plug it into a portable speaker to increase the colume.</p>
+<p>If you also download Fritzing you can play around with the schematics yourself.</p>
 <p>I'll go through what each 555 timer does and will try to explain some of the features and how the synth works.</p>
 <p>555 Timer 1 & 2</p>
 <ol>
@@ -199,9 +245,13 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Lastly, IC 3 generates different sounds depending on the brightness of light. There is also a pot that controls pitch.</li>
 <li>IC 3 is connected to IC's 1 and 2 via 2 vactrols. When you connect the LED's to the LDR's (which is what a vacrol is) you have a fizzle loop synth!</li>
 </ol>
-<p>So to summarise - LED's blink at different rates and brightness's which create rhythms and beats controlled by various pots and switches.</p><h2><span class="step-num">STEP 3</span>Step 3: What's a Vacrol?</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: What's a Vacrol? image 1" loading="lazy"><img src="images/step03_02.gif" alt="Step 3: What's a Vacrol? image 2" loading="lazy"></div><p>A vacrtol is made from 2 common component, an LED and a Light Dependant Resistor (LDR). The parts are incorporated into one package and face each other. I use heat shrink which seems to work well as a casing.</p>
-<p>It’s important that the only light that the photo cell can detect is from the LED. If outside light is able to reach the photo cell, then it will interfere with the performance and sound, that’s why you need to add something like heat shrink to protect them.</p>
-<p>When wired-up, the Vactrol acts like a potentiometer - applying a voltage to the Vactrol's LED has the same effect as turning up the knob on the potentiometer. Now if you dim the LED or flash it (like in the Fizzle Loop Synth) and hook it up to a 555 timer, then you can generate different tones and rhythms.</p>
+<p>So to summarise - LED's blink at different rates and brightness's which create rhythms and beats controlled by various pots and switches.</p><h2><span class="step-num">STEP 3</span>Step 3: What's a Vacrol?</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: What's a Vacrol? image 1" loading="lazy"><img src="images/step03_02.gif" alt="Step 3: What's a Vacrol? image 2" loading="lazy"></div><p>A vacrtol is made from 2 common component, an LED and a Light Dependant Resistor (LDR).</p>
+<p>The parts are incorporated into one package and face each other.</p>
+<p>I use heat shrink which seems to work well as a casing.</p>
+<p>It’s important that the only light that the photo cell can detect is from the LED.</p>
+<p>If outside light is able to reach the photo cell, then it will interfere with the performance and sound, that’s why you need to add something like heat shrink to protect them.</p>
+<p>When wired-up, the Vactrol acts like a potentiometer - applying a voltage to the Vactrol's LED has the same effect as turning up the knob on the potentiometer.</p>
+<p>Now if you dim the LED or flash it (like in the Fizzle Loop Synth) and hook it up to a 555 timer, then you can generate different tones and rhythms.</p>
 <p>Next I'll go through how to easily make your own vacrol. You will need 2 for this project</p><h2><span class="step-num">STEP 4</span>Step 4: Making a Vactrol</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Making a Vactrol image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Making a Vactrol image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 4: Making a Vactrol image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Making a Vactrol image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 4: Making a Vactrol image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 4: Making a Vactrol image 6" loading="lazy"><img src="images/step04_07.jpg" alt="Step 4: Making a Vactrol image 7" loading="lazy"></div><p>Steps:</p>
 <ol>
 <li>Cut a small length of heat shrink tube. The LED and photo cell need to be able to fit inside snuggly. You also want to have a little excess heat shrink so you can pinch it together once heated and ensure no light can enter the vacrol.</li>
@@ -210,11 +260,17 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Do the same for the LDR</li>
 <li>Make 2 of these</li>
 <li>That’s it! You have made an important component to the fizzle loop synth</li>
-</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - IC Timer 1 and 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 5" loading="lazy"></div><p>As mentioned earlier, I'm not going to go through a step by step process on how to add each component to the circuit. I'm going to assume you have put circuits together and my schematic makes some sense. I will go through a few interesting parts of building this section of the circuit. The first 2 timers are pretty much identical in how they are connected to the board. The only difference is a switch connected to the 2nd IC.</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Making the Circuit - IC Timer 1 and 2</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Making the Circuit - IC Timer 1 and 2 image 5" loading="lazy"></div><p>As mentioned earlier, I'm not going to go through a step by step process on how to add each component to the circuit.</p>
+<p>I'm going to assume you have put circuits together and my schematic makes some sense.</p>
+<p>I will go through a few interesting parts of building this section of the circuit.</p>
+<p>The first 2 timers are pretty much identical in how they are connected to the board.</p>
+<p>The only difference is a switch connected to the 2nd IC.</p>
 <p>The LED</p>
 <p>You may have noticed that there is an LED by itself, connected to pin 3, along with the vactol. This LED acts as a visual when creating tunes and flashes at the same time as the LED inside the vacrol</p>
 <p>Wires</p>
-<p>You'll need to add wires to the circuit board which will be connected to the pots and switches later on. I use computer ribbon cable wire for this as it's strong, thin and you can pick it up for free at most ewaste recycle places. Add all of the wires to the circuit board first and make sure you give yourself enough length on each as they will need to be connected later on once the circuit is completed.</p>
+<p>You'll need to add wires to the circuit board which will be connected to the pots and switches later on.</p>
+<p>I use computer ribbon cable wire for this as it's strong, thin and you can pick it up for free at most ewaste recycle places.</p>
+<p>Add all of the wires to the circuit board first and make sure you give yourself enough length on each as they will need to be connected later on once the circuit is completed.</p>
 <p>Adding the Vactrol</p>
 <ol>
 <li>Solder the legs of the LED's and LDR directly to the prototype board</li>
@@ -222,27 +278,36 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Connect the positive LED leg to pin 3 and the ground to ground on the prototype board</li>
 <li>Connect one of the legs of the LDR to positive, the other will be connected to pin 6 on 555 timer 3</li>
 </ol>
-<p>Check out the next step on how the caps are attached to the SPDT switches</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - IC Timer 3</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 4" loading="lazy"></div><p>555 IC 3 is the timer that gives you your tunes. It's actually a basic light thermin based on the slidersynth by Deno which I have also built here. I've taken it a few steps further with the fizzle loop synth but basically it uses the same concepts. I'll go through a few highlights of this section of the build</p>
+<p>Check out the next step on how the caps are attached to the SPDT switches</p><h2><span class="step-num">STEP 6</span>Step 6: Making the Circuit - IC Timer 3</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: Making the Circuit - IC Timer 3 image 4" loading="lazy"></div><p>555 IC 3 is the timer that gives you your tunes.</p>
+<p>It's actually a basic light thermin based on the slidersynth by Deno which I have also built here.</p>
+<p>I've taken it a few steps further with the fizzle loop synth but basically it uses the same concepts.</p>
+<p>I'll go through a few highlights of this section of the build</p>
 <p>Steps:</p>
 <ol>
 <li>There's a 10K pot that is connected to pin 6 and ground. This is used to control the overall pitch of the synth. You could use a 5K pot as well for this section. Just experiment and work out what works best for you.</li>
 <li>You will also notice that there is a momentary switch connected to the vactol on the 2nd IC and also connected to pin 7 on IC 3. This momentary switch should always be on and is only off when you push it down. It changes the tone when pushed down</li>
 <li>After experimenting a little I worked out that connecting pins 3 on both both IC 2 and 3 you can get an interesting drum type sound. Adding a switch to this section allows you to change between rythum and drums.</li>
 <li>Lastly I included a 3.5mm jack socket. This allows you to plug it into an amp for a louder sound. I definitly suggest you add an output socket so you can really pump up the volumne.</li>
-</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Capacitors Directly to the Switches</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 6" loading="lazy"></div><p>One of the aims in making the circuit was to try and reduce the size as most as possible. I had to if I wanted it to fit inside a small case such as the flashlight case that I used in this project. Because of this I decided not to solder the capacitors connected to pin 2 to the prototype board but directly to the SPDT switch.</p>
+</ol><h2><span class="step-num">STEP 7</span>Step 7: Adding Capacitors Directly to the Switches</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Adding Capacitors Directly to the Switches image 6" loading="lazy"></div><p>One of the aims in making the circuit was to try and reduce the size as most as possible.</p>
+<p>I had to if I wanted it to fit inside a small case such as the flashlight case that I used in this project.</p>
+<p>Because of this I decided not to solder the capacitors connected to pin 2 to the prototype board but directly to the SPDT switch.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder the positive legs of the 100uf cap to the first pin on the switch, the 220uf to the middle pin and the 330uf cap to the last pin</li>
 <li>Do the same again for the other caps for 555 timer 2. There are different cap values for this timer - you just need to make sure that they are connected in descending order, 10k 22k and 47k</li>
 <li>For each switch, connect all of the ground legs of the caps together. These will be connected to pin 2 on 555 timers later on</li>
 <li>The other pins on each of the switches can also be connected together. These will be connected to ground on the prototype board later.</li>
-</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Case - Adding the Components</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Case - Adding the Components image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Case - Adding the Components image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Case - Adding the Components image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Case - Adding the Components image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Case - Adding the Components image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Case - Adding the Components image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Case - Adding the Components image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Making the Case - Adding the Components image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Making the Case - Adding the Components image 9" loading="lazy"><img src="images/step08_10.jpg" alt="Step 8: Making the Case - Adding the Components image 10" loading="lazy"><img src="images/step08_11.jpg" alt="Step 8: Making the Case - Adding the Components image 11" loading="lazy"></div><p>The case I used is an old flashlight that I had lying around. The lens section was a perfect spot to add a small speaker. The case is a tight fit for all of the electronics but I wanted tpo make a pocket sized flzzle loop synth this time.</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Making the Case - Adding the Components</h2><div class="step-images"><img src="images/step08_01.jpg" alt="Step 8: Making the Case - Adding the Components image 1" loading="lazy"><img src="images/step08_02.jpg" alt="Step 8: Making the Case - Adding the Components image 2" loading="lazy"><img src="images/step08_03.jpg" alt="Step 8: Making the Case - Adding the Components image 3" loading="lazy"><img src="images/step08_04.jpg" alt="Step 8: Making the Case - Adding the Components image 4" loading="lazy"><img src="images/step08_05.jpg" alt="Step 8: Making the Case - Adding the Components image 5" loading="lazy"><img src="images/step08_06.jpg" alt="Step 8: Making the Case - Adding the Components image 6" loading="lazy"><img src="images/step08_07.jpg" alt="Step 8: Making the Case - Adding the Components image 7" loading="lazy"><img src="images/step08_08.jpg" alt="Step 8: Making the Case - Adding the Components image 8" loading="lazy"><img src="images/step08_09.jpg" alt="Step 8: Making the Case - Adding the Components image 9" loading="lazy"><img src="images/step08_10.jpg" alt="Step 8: Making the Case - Adding the Components image 10" loading="lazy"><img src="images/step08_11.jpg" alt="Step 8: Making the Case - Adding the Components image 11" loading="lazy"></div><p>The case I used is an old flashlight that I had lying around.</p>
+<p>The lens section was a perfect spot to add a small speaker.</p>
+<p>The case is a tight fit for all of the electronics but I wanted tpo make a pocket sized flzzle loop synth this time.</p>
 <p>Steps:</p>
 <ol>
 <li>First you need to design the layout of the pots and switches. This is an important part, especially if you are using a small case like I did in thsis build.</li>
 <li>You'll also need to take into consideration how everything will fit inside the case. Wires, battery and the circuit board will need to be cramed inside so make sure you plan this out too.</li>
 <li>Once you have planned out the build it's then time to start to add the components. Drill the holes in the case and attach all of the pots, switches and LED's needed for the build.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring-up the Circuit</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring-up the Circuit image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring-up the Circuit image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring-up the Circuit image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring-up the Circuit image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring-up the Circuit image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring-up the Circuit image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring-up the Circuit image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring-up the Circuit image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Wiring-up the Circuit image 9" loading="lazy"></div><p>The case should now have all of the components added to it ready for wiring. Wire for some odd reason takes up a fair amount of space inside a case so you should try to make the wires a short as possible. Also, it's good practice to be able to remove the circuit board out of the case so you can fix any issues with the connections if necessary.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Wiring-up the Circuit</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Wiring-up the Circuit image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Wiring-up the Circuit image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Wiring-up the Circuit image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Wiring-up the Circuit image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Wiring-up the Circuit image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 9: Wiring-up the Circuit image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 9: Wiring-up the Circuit image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 9: Wiring-up the Circuit image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 9: Wiring-up the Circuit image 9" loading="lazy"></div><p>The case should now have all of the components added to it ready for wiring.</p>
+<p>Wire for some odd reason takes up a fair amount of space inside a case so you should try to make the wires a short as possible.</p>
+<p>Also, it's good practice to be able to remove the circuit board out of the case so you can fix any issues with the connections if necessary.</p>
 <p>Steps:</p>
 <ol>
 <li>Place the circuit board inside the case. Also place the battery in the case to make sure you have enough room for everything.</li>
@@ -250,7 +315,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Trim the excess wire before soldering onto each component.</li>
 <li>If you want to add an audio amp and volume pot - check out the next step.</li>
 <li>Once all the wires are connected add the battery and test. If nothing happens, you'll have to check over your connections and see if any are incorrect. If it works then congrats, you have made your very own fizzle loop synth. Now to add the knobs and work out how this thing works</li>
-</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding an Audio Amp and Volume Pot</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 5" loading="lazy"></div><p>Once I had built the synth I decided that adding a small amp and volume pot would allow me to really annoy everyone in the house. It's a easy add-on and definitely worth including in the build. The amp I used can be picked-up on eBay for cheap and I have included a link in the parts section.</p>
+</ol><h2><span class="step-num">STEP 10</span>Step 10: Adding an Audio Amp and Volume Pot</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 2" loading="lazy"><img src="images/step10_03.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 3" loading="lazy"><img src="images/step10_04.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 4" loading="lazy"><img src="images/step10_05.jpg" alt="Step 10: Adding an Audio Amp and Volume Pot image 5" loading="lazy"></div><p>Once I had built the synth I decided that adding a small amp and volume pot would allow me to really annoy everyone in the house.</p>
+<p>It's a easy add-on and definitely worth including in the build.</p>
+<p>The amp I used can be picked-up on eBay for cheap and I have included a link in the parts section.</p>
 <p>Steps:</p>
 <ol>
 <li>Check out the schematic. I have highlighted the added amp and pot and also where they are connected. In the schematic the symbol for the amp is missing the ground wires for input and output. Check out the other schematic which I did which will also help work out hownto wire this up</li>
@@ -260,8 +327,26 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>To add a volume pot I found that the best place to connect it is to the output socket. If you add it directly to the speaker I found that it caused some interference to the synth and changed the sound. Adding it to the socket isolates it from the speaker and stops the interference.</li>
 </ol><h2><span class="step-num">STEP 11</span>Step 11: Adding the Knobs and How to Play the Synth</h2><div class="step-images"><img src="images/step11_01.jpg" alt="Step 11: Adding the Knobs and How to Play the Synth image 1" loading="lazy"><img src="images/step11_02.jpg" alt="Step 11: Adding the Knobs and How to Play the Synth image 2" loading="lazy"><img src="images/step11_03.jpg" alt="Step 11: Adding the Knobs and How to Play the Synth image 3" loading="lazy"><img src="images/step11_04.jpg" alt="Step 11: Adding the Knobs and How to Play the Synth image 4" loading="lazy"><img src="images/step11_05.jpg" alt="Step 11: Adding the Knobs and How to Play the Synth image 5" loading="lazy"></div><p>The final part of the build is to add some knobs to the build. You are now ready to start experimenting and making some awesome sounds.</p>
 <p>Check out the image attached which shows what each knob and switch does.</p>
-<p>Don’t be afraid to experiment with different capacitor values on the switches or different resistor values on the LED’s. These are a tonne of different options on these parts and you can get many different sounds by changing them. You could also look at changing the potentiometer values as well, which would give you a different range of sounds.</p>
+<p>Don’t be afraid to experiment with different capacitor values on the switches or different resistor values on the LED’s.</p>
+<p>These are a tonne of different options on these parts and you can get many different sounds by changing them.</p>
+<p>You could also look at changing the potentiometer values as well, which would give you a different range of sounds.</p>
 <p>You could even add another flashing LED 555 timer and tie this into the light Theremin 555 timer (timer 3 on the schematic). Maybe add a switch to each 555 timer so you can turn it off or no.</p>
 <p>There are a tonne of mods you could do, so make sure you try some different set-ups before you build your own</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

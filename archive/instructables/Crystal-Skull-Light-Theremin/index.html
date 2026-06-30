@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -127,8 +162,11 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Crystal Skull Light Theremin</span>
 </nav>
-<h1>Crystal Skull Light Theremin</h1><div class="source"><a href="https://www.instructables.com/Crystal-Skull-Light-Theremin/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve been playing around with 555 timers a lot recently and decided to make myself a light Theremin. After some searching I found one which uses 2 photo cells and is kinda similar to an Atari punk console but without the pots.</p>
-<p>I came up with the idea of adding the Theremin inside a resin skull! I had the mould of the skull lying around from another project and have been wanting to use it again for some time. The photo cells sit inside the skull and to play the Theremin you wave your hands around the skull to change the light hitting the photo cells which in turn changes the pitch of the Theremin.</p>
+<h1>Crystal Skull Light Theremin</h1><div class="source"><a href="https://www.instructables.com/Crystal-Skull-Light-Theremin/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>I’ve been playing around with 555 timers a lot recently and decided to make myself a light Theremin.</p>
+<p>After some searching I found one which uses 2 photo cells and is kinda similar to an Atari punk console but without the pots.</p>
+<p>I came up with the idea of adding the Theremin inside a resin skull!</p>
+<p>I had the mould of the skull lying around from another project and have been wanting to use it again for some time.</p>
+<p>The photo cells sit inside the skull and to play the Theremin you wave your hands around the skull to change the light hitting the photo cells which in turn changes the pitch of the Theremin.</p>
 <p>I have included a step by step walkthrough of building the circuit for anyone new to electronics. It’s pretty straight forward though for anyone who has played around with circuits before.</p>
 <p>Check out the video to see it in action.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"><img src="images/step01_06.jpg" alt="Step 1: Parts and Tools image 6" loading="lazy"></div><p>Parts:</p>
 <p>Circuit</p>
@@ -167,7 +205,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Place the timers into the perf board making sure that they are close together as shown below. Also make sure that the little notch on the side is on the left hand side. This will orientate the 555 time correctly.</li>
 <li>Solder all of the legs to the perf board</li>
-</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 6" loading="lazy"></div><p>The little legs on the 555 timers I will be calling pins and I will start with the 555 timer furthest of the left of the perf board. The perf board that I used has a section for all of the negative and positive connections to be soldered to. I find that this type of board is best to use in these projects</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 5" loading="lazy"><img src="images/step03_06.jpg" alt="Step 3: Making the Circuit - Pins 1, 2 and 6 on the First 555 Timer image 6" loading="lazy"></div><p>The little legs on the 555 timers I will be calling pins and I will start with the 555 timer furthest of the left of the perf board.</p>
+<p>The perf board that I used has a section for all of the negative and positive connections to be soldered to.</p>
+<p>I find that this type of board is best to use in these projects</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a wire to pin 1 and ground</li>
@@ -241,7 +281,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <ol>
 <li>Mark on the box where you need to drill for the copper rod to go into. You will need to drill 4 holes for each of the wires</li>
 <li>Drill the holes and make sure that the copper rods in the skull fit into the holes correctly and that the skull sits nice and flat.</li>
-</ol><h2><span class="step-num">STEP 16</span>Step 16: Wiring the Switch and Battery</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Wiring the Switch and Battery image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Wiring the Switch and Battery image 2" loading="lazy"></div><p>The switch is a 3 way switch. This means that whist in the middle everything is off. If you move it up or down then you either turn on the Theremin or LED. First I will wire-up the Circuit board for the Theremin.</p>
+</ol><h2><span class="step-num">STEP 16</span>Step 16: Wiring the Switch and Battery</h2><div class="step-images"><img src="images/step16_01.jpg" alt="Step 16: Wiring the Switch and Battery image 1" loading="lazy"><img src="images/step16_02.jpg" alt="Step 16: Wiring the Switch and Battery image 2" loading="lazy"></div><p>The switch is a 3 way switch.</p>
+<p>This means that whist in the middle everything is off.</p>
+<p>If you move it up or down then you either turn on the Theremin or LED.</p>
+<p>First I will wire-up the Circuit board for the Theremin.</p>
 <p>Steps:</p>
 <ol>
 <li>Solder a positive wire from the circuit board to one of the solder points on the switch. It would be on one of the ends</li>
@@ -261,7 +304,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Next, solder a wire from the last solder point on the pot to the negative solder point on the speaker</li>
 <li>Lastly, solder one of the wires that you soldered to the positive section on the circuit board to the positive solder point on the speaker</li>
 </ol>
-<p>At this stage you can test the Theremin and make sure that everything is working. You should be able to change the pitch and tone of the 555 by waving your hands in front of the photo cells. If nothing happens try turning the volume switch to full. If nothing happens still, you may have to go over the circuit board to make sure you have wired everything up correctly.</p><h2><span class="step-num">STEP 19</span>Step 19: Adding the LED</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Adding the LED image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Adding the LED image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Adding the LED image 3" loading="lazy"></div><p>Nearly there!</p>
+<p>At this stage you can test the Theremin and make sure that everything is working.</p>
+<p>You should be able to change the pitch and tone of the 555 by waving your hands in front of the photo cells.</p>
+<p>If nothing happens try turning the volume switch to full.</p>
+<p>If nothing happens still, you may have to go over the circuit board to make sure you have wired everything up correctly.</p><h2><span class="step-num">STEP 19</span>Step 19: Adding the LED</h2><div class="step-images"><img src="images/step19_01.jpg" alt="Step 19: Adding the LED image 1" loading="lazy"><img src="images/step19_02.jpg" alt="Step 19: Adding the LED image 2" loading="lazy"><img src="images/step19_03.jpg" alt="Step 19: Adding the LED image 3" loading="lazy"></div><p>Nearly there!</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a small hole into the lid of the case under the skull. Needs to be big enough to fit a 3mm LED</li>
@@ -273,8 +319,27 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the negative wire to the negative solder point on the circuit board</li>
 <li>Test to make sure the LED come on</li>
 </ol>
-<p>DONE!</p><h2><span class="step-num">STEP 20</span>Step 20: Done</h2><div class="step-images"><img src="images/step20_01.jpg" alt="Step 20: Done image 1" loading="lazy"><img src="images/step20_02.jpg" alt="Step 20: Done image 2" loading="lazy"></div><p>Now that you have finished, it’s time to play with your Theremin. I find that it works best not in direct sunlight or really bright lights, this could be different however for your build. Playing your light Theremin is pretty simple, you just wave your hands in front of the photo cells to change the pitch and tones.</p>
+<p>DONE!</p><h2><span class="step-num">STEP 20</span>Step 20: Done</h2><div class="step-images"><img src="images/step20_01.jpg" alt="Step 20: Done image 1" loading="lazy"><img src="images/step20_02.jpg" alt="Step 20: Done image 2" loading="lazy"></div><p>Now that you have finished, it’s time to play with your Theremin.</p>
+<p>I find that it works best not in direct sunlight or really bright lights, this could be different however for your build.</p>
+<p>Playing your light Theremin is pretty simple, you just wave your hands in front of the photo cells to change the pitch and tones.</p>
 <p>After a while you start to work out how to make different sound effects by moving your hands slightly to change pitch.</p>
-<p>I have managed to get some interesting sounds out of the light Theremin but you definitely wouldn’t use it to entertain your friends unless you want to un-friend them! Some of the tones generated are pretty harsh to anyone within earshot.</p>
+<p>I have managed to get some interesting sounds out of the light Theremin but you definitely wouldn’t use it to entertain your friends unless you want to un-friend them!</p>
+<p>Some of the tones generated are pretty harsh to anyone within earshot.</p>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>

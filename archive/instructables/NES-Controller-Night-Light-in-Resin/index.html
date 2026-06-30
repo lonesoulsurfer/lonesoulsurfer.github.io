@@ -101,7 +101,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
+.pdf-download:hover { background: #e8a020; color: #000; text-decoration: none; }
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -120,6 +120,41 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 .nav a { color: #e8a020; text-decoration: none; text-transform: uppercase; }
 .nav a:hover { color: #fff; }
 .nav-title { color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lightbox */
+.lb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+.lb-overlay.active { display: flex; }
+.lb-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    cursor: default;
+    margin: 0;
+}
+.lb-close {
+    position: fixed;
+    top: 16px; right: 24px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    font-family: monospace;
+    z-index: 1001;
+}
+.lb-close:hover { opacity: 1; }
+.step-images img, img.cover-img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -128,17 +163,24 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <span class="nav-title">NES Controller Night Light in Resin</span>
 </nav>
 <h1>NES Controller Night Light in Resin</h1><div class="source"><a href="https://www.instructables.com/NES-Controller-Night-Light-in-Resin/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"><img src="images/intro_05.jpg" alt="Intro 5" loading="lazy"><img src="images/intro_06.jpg" alt="Intro 6" loading="lazy"></div><p>How to mod a NES controller and turn it into a night light.</p>
-<p>Anyone who was lucky enough to own a NES (Nintendo Entertainment System) will remember the sheer joy of playing games on this ground breaking system.  I got mine in 1987 (the year it was released in Australia) for my 13th birthday (yes I am old) and couldn’t actually believe how amazing the games looked on my small TV!  I played Super Mario Brothers, arguably one of the best game ever made, for hours every day until I finished it.  Games like Kung-Fu, Punch-out, Mach-Rider and Metroid were on continuous play, and not surprisingly I suddenly had a lot more friends coming around to hang out.</p>
+<p>Anyone who was lucky enough to own a NES (Nintendo Entertainment System) will remember the sheer joy of playing games on this ground breaking system.</p>
+<p>I got mine in 1987 (the year it was released in Australia) for my 13th birthday (yes I am old) and couldn’t actually believe how amazing the games looked on my small TV!</p>
+<p>I played Super Mario Brothers, arguably one of the best game ever made, for hours every day until I finished it.</p>
+<p>Games like Kung-Fu, Punch-out, Mach-Rider and Metroid were on continuous play, and not surprisingly I suddenly had a lot more friends coming around to hang out.</p>
 <p>I still have an NES which I occasionally bring out and reminisce over my misspent youth with a few rounds of Punch-out.</p>
-<p>The NES controller was a big part of the playing experience, and has now become one of the most recognised iconic images of the 1980's.  It's simple, clean design and clever button lay-out made the game play instinctive and wickedly fun.  The layout of the controller and D-pad was revolutionary for it's day, and Nintendo still utilise the D-pad today</p>
+<p>The NES controller was a big part of the playing experience, and has now become one of the most recognised iconic images of the 1980's.</p>
+<p>It's simple, clean design and clever button lay-out made the game play instinctive and wickedly fun.</p>
+<p>The layout of the controller and D-pad was revolutionary for it's day, and Nintendo still utilise the D-pad today</p>
 <p>The only problem I had was after hours of play, my right thumb would start to hurt from all of the furious button pushing!</p>
-<p>Last time I pulled it out, I noticed that one of the controllers I had didn’t work anymore.  I could bring myself to throw it away and probably should have tried to fix it, but instead decided to something a little different.</p>
+<p>Last time I pulled it out, I noticed that one of the controllers I had didn’t work anymore.</p>
+<p>I could bring myself to throw it away and probably should have tried to fix it, but instead decided to something a little different.</p>
 <p>So this Instructable is my homage to a great gaming system.  Hope you enjoy.</p>
 <p>Check out the video below of the finished product:</p><h2><span class="step-num">STEP 1</span>Step 1: Things to Gather</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Things to Gather image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Things to Gather image 2" loading="lazy"></div><p>Materials</p>
 <ol>
 <li>NES Controller.</li>
 </ol>
-<p>The one that I used didn't work anymore.  You can purchase these from <a href="http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0&_nkw=Silicone+Cube+Rectangle+Jelly+Mould+Jello+Ice+Maker+Mold+&_sacat=0&_from=R40">Ebay</a></p>
+<p>The one that I used didn't work anymore.</p>
+<p>You can purchase these from <a href="http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0&_nkw=Silicone+Cube+Rectangle+Jelly+Mould+Jello+Ice+Maker+Mold+&_sacat=0&_from=R40">Ebay</a></p>
 <ol>
 <li>3 AAA rechargeable batteries</li>
 <li>5.5v solar panel -  <a href="http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0&_nkw=Silicone+Cube+Rectangle+Jelly+Mould+Jello+Ice+Maker+Mold+&_sacat=0&_from=R40">Ebay</a></li>
@@ -146,7 +188,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Mercury switch - <a href="http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0&_nkw=Silicone+Cube+Rectangle+Jelly+Mould+Jello+Ice+Maker+Mold+&_sacat=0&_from=R40">Ebay</a></li>
 <li>Rear bike light.</li>
 </ol>
-<p>I found this one on the ground!  You can buy them though from <a href="http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0&_nkw=Silicone+Cube+Rectangle+Jelly+Mould+Jello+Ice+Maker+Mold+&_sacat=0&_from=R40">Ebay</a> for dirt cheap.  The one that I have linked to is a 9 LED, the one I used had 7.</p>
+<p>I found this one on the ground!</p>
+<p>You can buy them though from <a href="http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0&_nkw=Silicone+Cube+Rectangle+Jelly+Mould+Jello+Ice+Maker+Mold+&_sacat=0&_from=R40">Ebay</a> for dirt cheap.</p>
+<p>The one that I have linked to is a 9 LED, the one I used had 7.</p>
 <ol>
 <li>Computer wire.  Pulled from an old PC</li>
 <li>Casting Resin.  purchased from my local hardware store</li>
@@ -198,7 +242,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the wire ends to the LED’s.  To ensure you have the polarities right, attached a battery to the battery wire, if you have the polarity correct the LED will light up.  You can touch the switch wires together to get the LED’s to work.</li>
 <li>You will also need to wire the batteries up.  You can solder the wires direct to the battery but be careful as heat and batteries don’t mix too well.  I taped the batteries together as well.  To make enough room you will need to remove some of the plastic that the "start / select" buttons are.  I dremmeled (very carefully) away some of the plastic so they would fit, and it's a very tight fit!</li>
 </ol>
-<p>Note - I had to add an extra battery as the rechargeable ones are only 1.2 volts and 2 wasn't enough to power the LED's properly.  This caused a few headaches as I has to remove a couple of LED's, then dremmel some of the case to make room for the extra bbatttery.  See photos in step 6.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Solar Panel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Solar Panel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Solar Panel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Solar Panel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Solar Panel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Solar Panel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Solar Panel image 6" loading="lazy"></div><p>The solar panel is added to the back of the controller.  Any time you want to charge it all you have to do is turn it so the panel is facing up and leave it in the sun!</p>
+<p>Note - I had to add an extra battery as the rechargeable ones are only 1.2 volts and 2 wasn't enough to power the LED's properly.</p>
+<p>This caused a few headaches as I has to remove a couple of LED's, then dremmel some of the case to make room for the extra bbatttery.</p>
+<p>See photos in step 6.</p><h2><span class="step-num">STEP 5</span>Step 5: Adding the Solar Panel</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 5: Adding the Solar Panel image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 5: Adding the Solar Panel image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 5: Adding the Solar Panel image 3" loading="lazy"><img src="images/step05_04.jpg" alt="Step 5: Adding the Solar Panel image 4" loading="lazy"><img src="images/step05_05.jpg" alt="Step 5: Adding the Solar Panel image 5" loading="lazy"><img src="images/step05_06.jpg" alt="Step 5: Adding the Solar Panel image 6" loading="lazy"></div><p>The solar panel is added to the back of the controller.  Any time you want to charge it all you have to do is turn it so the panel is facing up and leave it in the sun!</p>
 <p>Steps:</p>
 <ol>
 <li>Drill a hole in the back of the controller.  The solder points on the solar panel will determine where you have to make a hole in the controller panel.</li>
@@ -216,18 +262,29 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Test.</li>
 <li>Add some hot glue to the hole that the cable hole - this will make sure that no resin gets inside the case.</li>
 </ol><h2><span class="step-num">STEP 7</span>Step 7: Emersing in Resin</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 7: Emersing in Resin image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 7: Emersing in Resin image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 7: Emersing in Resin image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 7: Emersing in Resin image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 7: Emersing in Resin image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 7: Emersing in Resin image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 7: Emersing in Resin image 7" loading="lazy"></div><p>Casting Resin is a really easy material to use and the finished product looks great.</p>
-<p>I recently finished another Instructable on resin which can be found <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a>.  As I don’t really want to write the same thing twice, I’ll be referencing <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> Instructable where necessary.</p>
-<p>The first step is finding the right mould to use.  The best type of material to use is the stuff that ice cream containers are made out of.  As I wanted a certain type of shape I decided to go with a silicon mould.  T<a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a> are plenty of different silicon cake moulds available these days; it was just a matter of finding the right one for size and shape.  I finally found <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> one on Ebay which was exactly what I needed.</p>
+<p>I recently finished another Instructable on resin which can be found <a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a>.</p>
+<p>As I don’t really want to write the same thing twice, I’ll be referencing <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> Instructable where necessary.</p>
+<p>The first step is finding the right mould to use.</p>
+<p>The best type of material to use is the stuff that ice cream containers are made out of.</p>
+<p>As I wanted a certain type of shape I decided to go with a silicon mould.</p>
+<p>T<a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a> are plenty of different silicon cake moulds available these days; it was just a matter of finding the right one for size and shape.</p>
+<p>I finally found <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> one on Ebay which was exactly what I needed.</p>
 <p>Steps:</p>
 <ol>
 <li>The first step is deciding how much resin you will need to create the initial layer.</li>
 </ol>
-<p>I wanted to have 15mm of resin on either side of the controller so I worked out the volume needed was 250 ml .  If you need an on-line calculator, then try <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> one.</p>
+<p>I wanted to have 15mm of resin on either side of the controller so I worked out the volume needed was 250 ml .</p>
+<p>If you need an on-line calculator, then try <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> one.</p>
 <ol>
 <li>Mix the resin as instructed and pour the initial layer.</li>
 <li>After 24 hours the resin will be hard enough to place the controller on top.  Before you do <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> though, make up some more resin (50mm) and pour on top of the hard resin.  This will ensure that t<a href="https://www.instructables.com/id/LED-Resin-Cubes/">here</a> are no air bubbles when you put the controller on top and also ensure that the controller will be stuck down when you add the rest of the resin.</li>
 </ol>
-<p>Note:    In my first initial try at doing the above I just dumped the rest of the resin on top of the controller.  This resulted in the controller moving and floating about in the resin!  By the time I checked it (a couple of hours later) the resin had already started to go hard and the controller was sitting sideways with one corner sticking out.  I had to remove the controller from the half dried resin (not fun) and try to get as much of it off as possible.  This resulted in me being covered in resin and little bits of fluff stuck to the controller.  Acetone helped a lot in removing most of <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> but it also removed some of the colour from the front of the controller.</p>
+<p>Note:    In my first initial try at doing the above I just dumped the rest of the resin on top of the controller.</p>
+<p>This resulted in the controller moving and floating about in the resin!</p>
+<p>By the time I checked it (a couple of hours later) the resin had already started to go hard and the controller was sitting sideways with one corner sticking out.</p>
+<p>I had to remove the controller from the half dried resin (not fun) and try to get as much of it off as possible.</p>
+<p>This resulted in me being covered in resin and little bits of fluff stuck to the controller.</p>
+<p>Acetone helped a lot in removing most of <a href="http://mathcentral.uregina.ca/volume_calculator">this</a> but it also removed some of the colour from the front of the controller.</p>
 <ol>
 <li>Pour the rest of the resin (500ml)  in and let to dry for 48 hours.</li>
 <li>Carefully remove from the mould and let to further dry for 24 hours</li>
@@ -237,7 +294,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>First you will need to use some rougher sandpaper – I used 400 grit initially.  When sanding, move the resin across the sandpaper and make sure that the sandpaper is on a flat, even surface and it can’t move around.  I used some clamps to hold it still.</li>
 <li>Next is to use some wet / dry sandpaper.  How to use this can be found on my other Instructable here.</li>
 <li>Once you have sanded the resin down to a smooth finish it’s time for the final polishing.  The best thing to use is something like Brasso.  Use a cloth and in a circular motion, rub the resin all over.  Wipe clean and repeat until you have a water clear finish.</li>
-</ol><h2><span class="step-num">STEP 9</span>Step 9: Finished</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finished image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finished image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finished image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finished image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finished image 5" loading="lazy"></div><p>You should now hopefully have something like the below.  The first part of this project (making the controller) was the easy bit.  Emersing it in resin took a couple of tries before I got it right.  Am I happy with the final product?  Yes I am.  I would have liked to have had more resin on the back but it really doesn't matter as no-one will really see this part of the controller anyhow.</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: Finished</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 9: Finished image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 9: Finished image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 9: Finished image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 9: Finished image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 9: Finished image 5" loading="lazy"></div><p>You should now hopefully have something like the below.</p>
+<p>The first part of this project (making the controller) was the easy bit.</p>
+<p>Emersing it in resin took a couple of tries before I got it right.</p>
+<p>Am I happy with the final product?</p>
+<p>Yes I am.</p>
+<p>I would have liked to have had more resin on the back but it really doesn't matter as no-one will really see this part of the controller anyhow.</p>
 <p>Learnings:</p>
 <ol>
 <li>Working with large amounts of resin isn't fun.</li>
@@ -245,5 +307,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Resin is hard to get off your hands</li>
 <li>There's not much room in a NES controller.</li>
 </ol>
+<div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
+  <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.querySelectorAll('.step-images img, img.cover-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        document.getElementById('lb-img').src = this.src;
+        document.getElementById('lb-img').alt = this.alt;
+        document.getElementById('lb').classList.add('active');
+    });
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lb').classList.remove('active');
+});
+</script>
 </body>
 </html>
