@@ -1,33 +1,19 @@
 #!/usr/bin/env python3
 """
-download_archive.py  --  Download all Instructables content to local markdown + images
+download_archive.py  --  Download all Instructables with per-step images.
+
+Strategy:
+- Use Playwright to render each page
+- Extract step sections via section[class*="_step_"]
+- For each step, only take FULL SIZE images (those with frame= in URL)
+- Skip width=270 thumbnails entirely
+- For the intro section, use og:image cover + first unique full-size images
 
 Usage:
     python3 download_archive.py                    # archive everything
-    python3 download_archive.py --new-only         # only projects not yet archived
-    python3 download_archive.py --url <URL>        # archive one specific project
-
-Output structure:
-    ../archive/instructables/
-    ├── led-filament-lamp/
-    │   ├── index.md        ← all steps as clean markdown
-    │   └── images/
-    │       ├── step1_01.jpg
-    │       ├── step2_01.jpg
-    │       └── ...
-    ├── simple-fire-piston/
-    │   ├── index.md
-    │   └── images/
-    ...
-
-Requirements:
-    pip install requests beautifulsoup4 markdownify
-
-Notes:
-    - Full archive of 254 projects with all images will be 2-5 GB and take 1-2 hours.
-    - Run with --new-only after each new Instructable to keep archive current.
-    - Images are saved with descriptive names so they're readable offline.
-    - Git LFS is required for the images folder. See README for setup.
+    python3 download_archive.py --new-only         # only new/incomplete
+    python3 download_archive.py --url <URL>        # one project
+    python3 download_archive.py --force            # re-archive everything
 """
 
 import argparse
@@ -37,30 +23,32 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 
 try:
     import requests
     from bs4 import BeautifulSoup
 except ImportError:
-    print("ERROR: Missing dependencies. Run:  pip install requests beautifulsoup4 markdownify")
+    print("ERROR: Run:  pip install requests beautifulsoup4")
     sys.exit(1)
 
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from config import USERNAME, DISPLAY_NAME
+
 try:
-    from markdownify import markdownify as md
-    HAS_MARKDOWNIFY = True
+    from playwright.sync_api import sync_playwright
 except ImportError:
-    HAS_MARKDOWNIFY = False
-    print("[warn] markdownify not installed -- steps will be saved as plain text")
-    print("       Run:  pip install markdownify")
+    print("ERROR: Run:  pip install playwright && python3 -m playwright install chromium")
+    sys.exit(1)
 
 # ── CONFIG ───────────────────────────────────────────────────────────────────
-BASE_URL     = "https://www.instructables.com"
 PROJECTS_JSON = Path(__file__).parent.parent / "projects.json"
-ARCHIVE_DIR  = Path(__file__).parent.parent / "archive" / "instructables"
-DELAY        = 1.2   # seconds between requests (archive runs slowly -- be respectful)
-IMG_DELAY    = 0.3   # between image downloads
-MAX_IMG_SIZE = 20 * 1024 * 1024  # skip images over 20MB
+ARCHIVE_DIR   = Path(__file__).parent.parent / "archive" / "instructables"
+PAGE_TIMEOUT  = 45000
+SCROLL_WAIT   = 2000
+IMG_DELAY     = 0.15
+MAX_IMG_SIZE  = 15 * 1024 * 1024
 
 HEADERS = {
     "User-Agent": (
@@ -68,248 +56,423 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36"
     ),
-    "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer":         BASE_URL,
 }
 
 
 # ── HELPERS ──────────────────────────────────────────────────────────────────
 
-def get(url, session, stream=False, retries=3):
-    for attempt in range(retries):
-        try:
-            time.sleep(DELAY if not stream else IMG_DELAY)
-            r = session.get(url, headers=HEADERS, timeout=30, stream=stream)
-            r.raise_for_status()
-            return r
-        except requests.RequestException as e:
-            print(f"    [warn] attempt {attempt+1} failed: {e}")
-            time.sleep(2 ** attempt)
-    return None
-
-
-def slugify(text):
-    """Convert a title to a filesystem-safe slug."""
-    text = text.lower().strip()
-    text = re.sub(r"[^\w\s\-]", "", text)
-    text = re.sub(r"[\s_]+", "-", text)
-    text = re.sub(r"-+", "-", text).strip("-")
-    return text[:80]
-
-
 def slug_from_url(url):
-    """Extract slug from an Instructables URL."""
     path = urlparse(url).path.strip("/")
-    return path.split("/")[-1] if path else slugify(url)
+    return path.split("/")[-1] if path else url
 
-
-def safe_filename(name, ext=""):
-    """Make a safe filename."""
-    name = re.sub(r'[<>:"/\\|?*]', "_", name)
-    name = name.strip(". ")[:100]
-    return name + ext
-
-
-def download_image(img_url, dest_path, session):
-    """Download one image. Returns True on success."""
-    if dest_path.exists():
-        return True  # already downloaded
-
-    r = get(img_url, session, stream=True)
-    if not r:
-        return False
-
-    # Check content length before downloading
-    content_length = int(r.headers.get("content-length", 0))
-    if content_length > MAX_IMG_SIZE:
-        print(f"    [skip] image too large ({content_length//1024}KB): {img_url}")
-        return False
-
-    dest_path.parent.mkdir(parents=True, exist_ok=True)
-    try:
-        with open(dest_path, "wb") as f:
-            for chunk in r.iter_content(chunk_size=8192):
-                f.write(chunk)
-        return True
-    except IOError as e:
-        print(f"    [error] could not save {dest_path}: {e}")
-        return False
-
-
-# ── PARSING ──────────────────────────────────────────────────────────────────
-
-def extract_img_ext(url):
-    """Get file extension from image URL."""
+def extract_ext(url):
     path = urlparse(url).path
     ext = os.path.splitext(path)[1].lower()
-    if ext not in (".jpg", ".jpeg", ".png", ".gif", ".webp"):
-        ext = ".jpg"
-    return ext
+    return ext if ext in (".jpg", ".jpeg", ".png", ".gif", ".webp") else ".jpg"
+
+def is_full_size(url):
+    """Full size images have frame= in URL. Thumbnails have width=270."""
+    return "frame=" in url or ("content.instructables.com" in url and "width=" not in url)
+
+def base_url(url):
+    """Strip query params to get base image identifier."""
+    return url.split("?")[0]
+
+def download_image(url, dest, session):
+    if dest.exists():
+        return True
+    try:
+        time.sleep(IMG_DELAY)
+        r = session.get(url, headers=HEADERS, timeout=20, stream=True)
+        r.raise_for_status()
+        size = int(r.headers.get("content-length", 0))
+        if size > MAX_IMG_SIZE:
+            return False
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        with open(dest, "wb") as f:
+            for chunk in r.iter_content(8192):
+                f.write(chunk)
+        return True
+    except Exception:
+        return False
 
 
-def parse_instructable(html, page_url, images_dir, session):
+# ── STEP EXTRACTION ───────────────────────────────────────────────────────────
+
+def extract_page_data(page, url):
     """
-    Parse a full Instructable page.
-    Returns (markdown_string, list_of_downloaded_image_paths)
+    Use Playwright JS evaluation to extract all step data directly from DOM.
+    Returns dict with title, cover_url, steps list.
+    Each step: {title, text, images: [url, ...]}
     """
-    soup = BeautifulSoup(html, "html.parser")
-    lines = []
-    downloaded_images = []
+    page.goto(url, wait_until="domcontentloaded", timeout=PAGE_TIMEOUT)
+    page.wait_for_timeout(SCROLL_WAIT)
+    # Scroll to trigger lazy loading of full-size images
+    page.evaluate("window.scrollTo(0, document.body.scrollHeight / 3)")
+    page.wait_for_timeout(500)
+    page.evaluate("window.scrollTo(0, document.body.scrollHeight * 2 / 3)")
+    page.wait_for_timeout(500)
+    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+    page.wait_for_timeout(1500)
 
-    # ── Title ──
-    title_el = soup.find("h1") or soup.find("title")
-    title = title_el.get_text(strip=True) if title_el else "Untitled"
-    lines.append(f"# {title}\n")
-    lines.append(f"Source: {page_url}\n")
+    try:
+        data = page.evaluate("""
+        () => {
+            const result = { title: '', coverUrl: '', steps: [] };
 
-    # ── Author / date ──
-    author_el = soup.select_one("span.author, a.author, [itemprop='author']")
-    date_el   = soup.select_one("time, span.date, [itemprop='datePublished']")
-    meta_parts = []
-    if author_el:
-        meta_parts.append(f"By: {author_el.get_text(strip=True)}")
-    if date_el:
-        meta_parts.append(f"Published: {date_el.get('datetime', date_el.get_text(strip=True))}")
-    if meta_parts:
-        lines.append("  ".join(meta_parts) + "\n")
+            const h1 = document.querySelector('h1');
+            result.title = h1 ? h1.innerText.trim() : document.title.split('|')[0].trim();
 
-    lines.append("---\n")
+            const og = document.querySelector('meta[property="og:image"]');
+            result.coverUrl = og ? og.content : '';
 
-    # ── Cover image ──
-    og_img = soup.find("meta", property="og:image")
-    if og_img and og_img.get("content"):
-        cover_url = og_img["content"]
-        ext = extract_img_ext(cover_url)
-        fname = f"cover{ext}"
-        dest = images_dir / fname
-        if download_image(cover_url, dest, session):
-            lines.append(f"![Cover](images/{fname})\n")
-            downloaded_images.append(dest)
+            const sections = document.querySelectorAll('section[class*="_step_"]');
 
-    # ── Steps ──
-    # Instructables uses section.step or div.step
-    steps = soup.select("section.step, div.step, article.step")
+            sections.forEach(function(section) {
+                const h2 = section.querySelector('h2');
+                const title = h2 ? h2.innerText.trim() : 'Introduction';
 
-    if not steps:
-        # Fallback: look for step headers
-        steps = soup.select("div[id^='step'], section[id^='step']")
+                if (title.includes('People Made This') || title === 'Recommendations') return;
 
-    if not steps:
-        # Last resort: just grab all body content
-        body = soup.select_one("div#content, main, article, div.instructable-content")
-        if body:
-            steps = [body]
+                const imgs = [];
+                const seenBases = new Set();
+                section.querySelectorAll('img').forEach(function(img) {
+                    const src = img.src || img.getAttribute('data-src') || '';
+                    if (!src.includes('content.instructables.com')) return;
+                    const base = src.split('?')[0];
+                    if (seenBases.has(base)) return;
+                    seenBases.add(base);
+                    imgs.push(base);
+                });
 
-    for step_idx, step in enumerate(steps, 1):
-        # Step title
-        step_title_el = step.find(re.compile(r"^h[1-6]$"))
-        step_title = step_title_el.get_text(strip=True) if step_title_el else f"Step {step_idx}"
-        lines.append(f"\n## {step_title}\n")
+                const bodyEl = section.querySelector('[class*="_stepBody_"]') || section;
+                const parts = [];
 
-        # Step images
-        step_imgs = step.find_all("img", src=True)
-        for img_idx, img_el in enumerate(step_imgs, 1):
-            src = img_el.get("src", "")
-            if not src or "pixel.png" in src or "assets" in src:
-                continue
-            if src.startswith("//"):
-                src = "https:" + src
-            elif src.startswith("/"):
-                src = urljoin(BASE_URL, src)
+                function nodeToMd(el) {
+                    const kids = Array.from(el.childNodes);
+                    for (let ci = 0; ci < kids.length; ci++) {
+                        const child = kids[ci];
+                        if (child.nodeType === 3) {
+                            const t = child.textContent.replace(/\s+/g, ' ').trim();
+                            if (t) parts.push(t);
+                        } else if (child.nodeType === 1) {
+                            const tag = child.tagName.toLowerCase();
+                            if (tag === 'p') {
+                                const pt = child.innerText.trim();
+                                if (pt) { parts.push(pt); parts.push(''); }
+                            } else if (tag === 'ul') {
+                                const lis = child.querySelectorAll(':scope > li');
+                                for (let i = 0; i < lis.length; i++) {
+                                    parts.push('- ' + lis[i].innerText.trim());
+                                }
+                                parts.push('');
+                            } else if (tag === 'ol') {
+                                const lis = child.querySelectorAll(':scope > li');
+                                for (let i = 0; i < lis.length; i++) {
+                                    parts.push((i + 1) + '. ' + lis[i].innerText.trim());
+                                }
+                                parts.push('');
+                            } else if (tag === 'li') {
+                                parts.push('- ' + child.innerText.trim());
+                            } else if (tag === 'h3' || tag === 'h4' || tag === 'h5') {
+                                const ht = child.innerText.trim();
+                                if (ht) { parts.push('**' + ht + '**'); parts.push(''); }
+                            } else if (tag === 'br') {
+                                parts.push('');
+                            } else if (tag !== 'script' && tag !== 'style' && tag !== 'img' && tag !== 'h2') {
+                                nodeToMd(child);
+                            }
+                        }
+                    }
+                }
 
-            ext = extract_img_ext(src)
-            fname = f"step{step_idx:02d}_{img_idx:02d}{ext}"
-            dest = images_dir / fname
-            if download_image(src, dest, session):
-                alt = img_el.get("alt", f"Step {step_idx} image {img_idx}")
-                lines.append(f"![{alt}](images/{fname})\n")
-                downloaded_images.append(dest)
+                nodeToMd(bodyEl);
+                const text = parts.join('\n').replace(/\n\n\n+/g, '\n\n').trim();
+                result.steps.push({ title: title, images: imgs, text: text });
+            });
 
-        # Step text
-        # Remove img tags from a copy so we don't double-process
-        step_copy = BeautifulSoup(str(step), "html.parser")
-        for img in step_copy.find_all("img"):
-            img.decompose()
-        for nav in step_copy.find_all(["nav", "footer", "aside"]):
-            nav.decompose()
-        # Remove the title we already added
-        for h in step_copy.find_all(re.compile(r"^h[1-6]$")):
-            h.decompose()
+            return result;
+        }
+    """)
+    except Exception:
+        data = {"title": "", "coverUrl": "", "steps": []}
 
-        if HAS_MARKDOWNIFY:
-            step_md = md(str(step_copy), heading_style="ATX", bullets="-").strip()
-        else:
-            step_md = step_copy.get_text("\n", strip=True)
-
-        if step_md:
-            lines.append(step_md + "\n")
-
-    return "\n".join(lines), downloaded_images
+    return data
 
 
-# ── ARCHIVE ONE PROJECT ───────────────────────────────────────────────────────
+# ── GET INTRO IMAGES ──────────────────────────────────────────────────────────
 
-def archive_project(project_url, project_title, session):
+def get_intro_images(page, cover_url):
     """
-    Download one Instructable to the archive folder.
-    Returns True on success.
+    Get intro/hero images from the _mobilePhotoset_ container.
+    This is the intro image carousel at the top of the page.
     """
-    folder_name = slug_from_url(project_url)
+    imgs = page.evaluate("""
+        () => {
+            const imgs = [];
+            const seenBases = new Set();
+
+            // The intro images live in _mobilePhotoset_ divs
+            // This is the only reliable container for hero shots
+            const photoset = document.querySelector('[class*="_mobilePhotoset_"]');
+            if (!photoset) return imgs;
+
+            photoset.querySelectorAll('img').forEach(function(img) {
+                const src = img.src || '';
+                if (!src.includes('content.instructables.com')) return;
+
+                const base = src.split('?')[0];
+                if (seenBases.has(base)) return;
+                seenBases.add(base);
+                imgs.push(base);
+            });
+
+            return imgs;
+        }
+    """)
+
+    # Exclude cover image
+    cover_base = cover_url.split("?")[0] if cover_url else ""
+    return [i for i in imgs if i != cover_base][:6]
+
+
+def get_view_count(page):
+    """Extract the view count using the data-testid attribute (JS-rendered)."""
+    try:
+        el = page.query_selector('[data-testid="project-view-count"]')
+        if el:
+            text = el.inner_text().strip()
+            text = text.lower().replace(",", "")
+            if text.endswith("m"):
+                return int(float(text[:-1]) * 1_000_000)
+            if text.endswith("k"):
+                return int(float(text[:-1]) * 1_000)
+            return int(text)
+    except Exception:
+        pass
+    return 0
+
+
+def archive_project(url, project_title, page, session, force=False):
+    folder_name = slug_from_url(url)
     project_dir = ARCHIVE_DIR / folder_name
     index_path  = project_dir / "index.md"
     images_dir  = project_dir / "images"
 
-    # Skip if already fully archived
-    if index_path.exists() and images_dir.exists():
-        print(f"  [skip] already archived: {folder_name}")
-        return True
+    # Skip if already done with per-step images
+    if not force and index_path.exists():
+        step_imgs = list(images_dir.glob("step*")) if images_dir.exists() else []
+        if len(step_imgs) > 0:
+            print(f"  [skip] {folder_name}")
+            return True
 
     print(f"  Archiving: {project_title[:60]}")
-    r = get(project_url, session)
-    if not r:
-        print(f"  [error] could not fetch {project_url}")
-        return False
-
     project_dir.mkdir(parents=True, exist_ok=True)
     images_dir.mkdir(parents=True, exist_ok=True)
 
-    markdown, imgs = parse_instructable(r.text, project_url, images_dir, session)
+    try:
+        data = extract_page_data(page, url)
+    except Exception as e:
+        print(f"    [error] page load: {e}")
+        return False
+
+    title     = data.get("title") or project_title
+    views     = get_view_count(page)
+
+    # Update the view count in projects.json for this URL
+    try:
+        projects_path = Path(__file__).parent.parent / "projects.json"
+        if projects_path.exists():
+            import json as _json
+            with open(projects_path, encoding="utf-8") as f:
+                all_projects = _json.load(f)
+            changed = False
+            for p in all_projects:
+                if p.get("url") == url and views:
+                    if p.get("views") != views:
+                        p["views"] = views
+                        changed = True
+                    break
+            if changed:
+                with open(projects_path, "w", encoding="utf-8") as f:
+                    _json.dump(all_projects, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"    [warn] could not update projects.json views: {e}")
+    cover_url = data.get("coverUrl", "")
+    steps     = data.get("steps", [])
+
+    # Get intro images
+    intro_images = get_intro_images(page, cover_url)
+
+    lines = []
+    lines.append(f"# {title}\n")
+    lines.append(f"Source: {url}\n")
+    lines.append("---\n")
+
+    # Download cover image
+    if cover_url and "content.instructables.com" in cover_url:
+        ext   = extract_ext(cover_url)
+        fname = f"cover{ext}"
+        if download_image(cover_url, images_dir / fname, session):
+            lines.append(f"![Cover](images/{fname})\n")
+
+    total_imgs = 0
+
+    # Add intro section — images from _mobilePhotoset_, text from the DOM intro step
+    intro_text = ""
+    for step in steps:
+        if step.get("title") == "Introduction":
+            intro_text = step.get("text", "")
+            break
+
+    # Fallback: if page.evaluate failed, extract all step text via Playwright Python API
+    SKIP_TEXT = {"I Made It!", "Add a Comment", "Favorite", "Share", "Add Tip", "Ask a Question"}
+    if not steps or all(not s.get("text") for s in steps):
+        try:
+            all_sections = page.query_selector_all('section[class*="_step_"]')
+            for section in all_sections:
+                h2 = section.query_selector('h2')
+                title = h2.inner_text().strip() if h2 else 'Introduction'
+                if 'People Made This' in title or title == 'Recommendations':
+                    continue
+                # Get images
+                img_els = section.query_selector_all('img')
+                img_urls = []
+                seen = set()
+                for img in img_els:
+                    src = img.get_attribute('src') or ''
+                    if 'content.instructables.com' not in src:
+                        continue
+                    base = src.split('?')[0]
+                    if base not in seen:
+                        seen.add(base)
+                        img_urls.append(base)
+                # Get text — paragraphs, list items, headings
+                body = section.query_selector('[class*="_stepBody_"]') or section
+                els = body.query_selector_all('p, li, h3, h4, h5') if body else []
+                parts = []
+                for el in els:
+                    t = el.inner_text().strip()
+                    if not t or t in SKIP_TEXT:
+                        continue
+                    tag = el.evaluate('el => el.tagName.toLowerCase()')
+                    if tag == 'li':
+                        parts.append('- ' + t)
+                    elif tag in ('h3', 'h4', 'h5'):
+                        parts.append('**' + t + '**')
+                        parts.append('')
+                    else:
+                        parts.append(t)
+                        parts.append('')
+                # Fallback for older pages with no <p>/<li> tags — use raw inner_text
+                if not parts:
+                    try:
+                        raw = section.inner_text().strip()
+                        h2 = section.query_selector('h2')
+                        if h2:
+                            raw = raw[len(h2.inner_text()):].strip()
+                        # Collect links to inject back into text
+                        link_map = {}
+                        try:
+                            for a in section.query_selector_all('a'):
+                                href = a.get_attribute('href') or ''
+                                lbl = a.inner_text().strip()
+                                if href.startswith('http') and lbl:
+                                    link_map[lbl] = href
+                        except Exception:
+                            pass
+                        for para in raw.split('\n\n'):
+                            para = para.strip().replace('\xa0', ' ')
+                            if not para or para in SKIP_TEXT or len(para) <= 3:
+                                continue
+                            # Inject markdown links
+                            for lbl, href in link_map.items():
+                                if lbl in para:
+                                    para = para.replace(lbl, f'[{lbl}]({href})', 1)
+                            parts.append(para)
+                            parts.append('')
+                    except Exception:
+                        pass
+
+                text = "\n".join(parts).strip()
+                steps.append({"title": title, "images": img_urls, "text": text})
+        except Exception as e:
+            print(f"    [warn] fallback extraction: {e}")
+
+    # Extract intro text from steps list
+    if not intro_text:
+        for step in steps:
+            if step.get("title") == "Introduction":
+                intro_text = step.get("text", "")
+                break
+
+    if intro_images or intro_text:
+        lines.append("\n## Introduction\n")
+        img_count = 0
+        for img_url in intro_images:
+            img_count += 1
+            ext   = extract_ext(img_url)
+            fname = f"intro_{img_count:02d}{ext}"
+            if download_image(img_url, images_dir / fname, session):
+                lines.append(f"![Intro {img_count}](images/{fname})\n")
+                total_imgs += 1
+        if intro_text:
+            lines.append(intro_text + "\n")
+
+    # Process each step — use a separate counter so skipped steps don't offset it
+    real_step_idx = 0
+    for step in steps:
+        step_title  = step.get("title", "")
+        step_images = step.get("images", [])
+        step_text   = step.get("text", "")
+
+        # Skip intro (handled above) and junk sections
+        if step_title in ("Introduction", "5 People Made This Project!", "Recommendations"):
+            continue
+
+        real_step_idx += 1
+        lines.append(f"\n## {step_title}\n")
+
+        # Download images for this step
+        img_count = 0
+        for img_url in step_images:
+            img_count += 1
+            ext   = extract_ext(img_url)
+            fname = f"step{real_step_idx:02d}_{img_count:02d}{ext}"
+            if download_image(img_url, images_dir / fname, session):
+                lines.append(f"![{step_title} image {img_count}](images/{fname})\n")
+                total_imgs += 1
+
+        # Write step text with paragraph breaks preserved
+        if step_text:
+            cleaned = re.sub(r'\n{3,}', '\n\n', step_text).strip()
+            lines.append(cleaned + "\n")
+
+    lines.append(f"\n---\n*{total_imgs} images archived*\n")
 
     with open(index_path, "w", encoding="utf-8") as f:
-        f.write(markdown)
+        f.write("\n".join(lines))
 
-    print(f"    Saved: {index_path.name} + {len(imgs)} images")
+    print(f"    {len(steps)} steps, {total_imgs} images")
     return True
 
 
-# ── INDEX PAGE ────────────────────────────────────────────────────────────────
+# ── ARCHIVE INDEX ─────────────────────────────────────────────────────────────
 
 def write_archive_index(projects):
-    """Write a simple markdown index of all archived projects."""
-    index_path = ARCHIVE_DIR.parent / "README.md"
-    lines = [
-        "# lonesoulsurfer -- Instructables Archive\n",
-        f"Local backup of {len(projects)} Instructables by lonesoulsurfer.\n",
-        "Each folder contains `index.md` (all steps as markdown) and `images/`.\n",
-        "\n---\n",
-    ]
-
-    # Group by category
     from collections import defaultdict
+    index_path = ARCHIVE_DIR.parent / "README.md"
+    lines = [f"# {DISPLAY_NAME} -- Instructables Archive\n\n"]
     by_cat = defaultdict(list)
     for p in projects:
         by_cat[p.get("category", "making")].append(p)
-
     for cat in sorted(by_cat):
         lines.append(f"\n## {cat.title()}\n")
         for p in by_cat[cat]:
-            folder = slug_from_url(p["url"])
-            title  = p["title"]
-            views  = p.get("views", 0)
+            slug     = slug_from_url(p["url"])
+            views    = p.get("views", 0)
             view_str = f"{views:,}" if views else "--"
-            lines.append(f"- [{title}](instructables/{folder}/index.md) ({view_str} views)\n")
-
+            lines.append(f"- [{p['title']}](instructables/{slug}/index.md) ({view_str} views)\n")
     with open(index_path, "w", encoding="utf-8") as f:
         f.writelines(lines)
     print(f"Wrote archive index: {index_path}")
@@ -318,72 +481,78 @@ def write_archive_index(projects):
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Archive Instructables locally")
-    parser.add_argument("--new-only", action="store_true",
-                        help="Only archive projects not yet in the archive folder")
-    parser.add_argument("--url", type=str,
-                        help="Archive a single specific Instructable URL")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--new-only", action="store_true")
+    parser.add_argument("--url",      type=str)
+    parser.add_argument("--force",    action="store_true")
     args = parser.parse_args()
 
     print("=" * 60)
-    print("lonesoulsurfer Instructables archive downloader")
+    print(f"{DISPLAY_NAME} archive downloader (per-step images)")
     print("=" * 60)
 
     session = requests.Session()
 
-    # Single URL mode
-    if args.url:
-        title = args.url.split("/")[-2].replace("-", " ").title()
-        archive_project(args.url.rstrip("/") + "/", title, session)
-        return
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page    = browser.new_page()
+        page.set_default_timeout(PAGE_TIMEOUT)
 
-    # Load project list from projects.json
-    if not PROJECTS_JSON.exists():
-        print(f"ERROR: {PROJECTS_JSON} not found.")
-        print("Run scrape.py first to generate the project list.")
-        sys.exit(1)
+        if args.url:
+            title = args.url.rstrip("/").split("/")[-1].replace("-", " ").title()
+            archive_project(args.url.rstrip("/") + "/", title, page, session, force=True)
+            browser.close()
+            return
 
-    with open(PROJECTS_JSON) as f:
-        projects = json.load(f)
+        if not PROJECTS_JSON.exists():
+            print(f"ERROR: {PROJECTS_JSON} not found.")
+            browser.close()
+            sys.exit(1)
 
-    print(f"Loaded {len(projects)} projects from {PROJECTS_JSON.name}")
+        with open(PROJECTS_JSON) as f:
+            projects = json.load(f)
 
-    if args.new_only:
-        before = len(projects)
-        projects = [p for p in projects
-                    if not (ARCHIVE_DIR / slug_from_url(p["url"]) / "index.md").exists()]
-        print(f"  {before - len(projects)} already archived, {len(projects)} to download")
+        print(f"Loaded {len(projects)} projects")
 
-    if not projects:
-        print("Nothing to archive.")
-        return
+        to_process = []
+        for proj in projects:
+            folder    = ARCHIVE_DIR / slug_from_url(proj["url"])
+            imgs_dir  = folder / "images"
+            step_imgs = list(imgs_dir.glob("step*")) if imgs_dir.exists() else []
+            if args.force or not folder.exists() or len(step_imgs) == 0:
+                to_process.append(proj)
 
-    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+        print(f"  {len(projects) - len(to_process)} already archived")
+        print(f"  {len(to_process)} to process")
 
-    success = 0
-    fail    = 0
-    for i, p in enumerate(projects, 1):
-        print(f"\n[{i}/{len(projects)}]")
-        ok = archive_project(p["url"], p["title"], session)
-        if ok:
-            success += 1
-        else:
-            fail += 1
+        if not to_process:
+            print("Nothing to do.")
+            browser.close()
+            return
 
-    # Reload full list for index (not just the ones we just downloaded)
+        ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+        success = fail = 0
+
+        for i, proj in enumerate(to_process, 1):
+            print(f"\n[{i}/{len(to_process)}]")
+            ok = archive_project(
+                proj["url"], proj["title"], page, session, force=args.force
+            )
+            if ok:
+                success += 1
+            else:
+                fail += 1
+
+        browser.close()
+
     with open(PROJECTS_JSON) as f:
         all_projects = json.load(f)
     write_archive_index(all_projects)
 
     print(f"\n{'='*60}")
     print(f"Done. {success} archived, {fail} failed.")
-    print(f"Archive location: {ARCHIVE_DIR}")
-    print("\nRemember to commit with Git LFS enabled:")
-    print("  git lfs track 'archive/**/*.jpg'")
-    print("  git lfs track 'archive/**/*.png'")
-    print("  git add .gitattributes archive/")
-    print("  git commit -m 'update archive'")
-    print("  git push")
+    print("Run: python3 build_html.py")
+    print("="*60)
 
 
 if __name__ == "__main__":

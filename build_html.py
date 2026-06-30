@@ -98,6 +98,23 @@ hr { border: none; border-top: 1px solid #2a2a2a; margin: 32px 0; }
 ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 4px; }
 code { background: #1a1a1a; padding: 2px 6px; font-family: monospace; font-size: 0.9em; color: #e8a020; }
+a { color: #a0b4c8; text-decoration: none; }
+a:hover { color: #d4cfc8; text-decoration: underline; }
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #e8a020;
+    color: #e8a020;
+    font-family: monospace;
+    font-size: 11px;
+    padding: 6px 14px;
+    margin: 4px 4px 4px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+.pdf-download:hover {{ background: #e8a020; color: #000; text-decoration: none; }}
 .nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -182,19 +199,39 @@ def lines_to_html(lines):
     """Convert text lines to HTML."""
     html = []
     in_list = False
+    list_type = None
 
-    for line in lines:
+    def next_nonblank(lst, idx):
+        for j in range(idx+1, len(lst)):
+            if lst[j].strip(): return lst[j].strip()
+        return ""
+
+    for line_idx, line in enumerate(lines):
         stripped = line.strip()
         if not stripped:
             if in_list:
-                html.append("</ul>")
+                nxt = next_nonblank(lines, line_idx)
+                if list_type == "ol" and re.match(r"^\d+\.\s", nxt):
+                    continue
+                if list_type == "ul" and (nxt.startswith("- ") or nxt.startswith("* ")):
+                    continue
+                html.append(f"</{list_type}>")
                 in_list = False
+                list_type = None
             continue
 
         # Skip Instructables UI artifacts
-        if stripped in ("View 3 more", "View 3 more images", "I Made It!", "Add a Comment"):
+        UI_ARTIFACTS = {
+            "View 3 more", "View 3 more images", "I Made It!", "Add a Comment",
+            "View more", "Add Tip", "Ask a Question", "Comment", "Favorite", "Share",
+        }
+        if stripped in UI_ARTIFACTS:
             continue
         if stripped.startswith("*") and stripped.endswith("images archived*"):
+            continue
+        # Strip inline UI injections that appear mid-text
+        stripped = re.sub(r'View \d+ more(?: images?)?', '', stripped).strip()
+        if not stripped:
             continue
 
         # Inline formatting
@@ -204,23 +241,40 @@ def lines_to_html(lines):
         stripped = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', stripped)
 
         if stripped.startswith("- ") or stripped.startswith("* "):
-            if not in_list:
-                html.append("<ul>")
-                in_list = True
-            html.append(f"<li>{stripped[2:]}</li>")
+            # PDF download link — render as button
+            pdf_m = re.match(r'- \[([^\]]+)\]\((pdfs/[^)]+)\)', stripped)
+            if pdf_m:
+                if in_list:
+                    html.append(f"</{list_type}>")
+                    in_list = False
+                    list_type = None
+                label2, path2 = pdf_m.group(1), pdf_m.group(2)
+                html.append(f'<a class="pdf-download" href="{path2}" target="_blank">&#8675; {label2}</a>')
+            else:
+                if not in_list or list_type != "ul":
+                    if in_list:
+                        html.append(f"</{list_type}>")
+                    html.append("<ul>")
+                    in_list = True
+                    list_type = "ul"
+                html.append(f"<li>{stripped[2:]}</li>")
         elif re.match(r'^\d+\.\s', stripped):
-            if not in_list:
-                html.append("<ul>")
+            if not in_list or list_type != "ol":
+                if in_list:
+                    html.append(f"</{list_type}>")
+                html.append("<ol>")
                 in_list = True
+                list_type = "ol"
             html.append(f"<li>{re.sub(r'^\d+\.\s*', '', stripped)}</li>")
         else:
             if in_list:
-                html.append("</ul>")
+                html.append(f"</{list_type}>")
                 in_list = False
+                list_type = None
             html.append(f"<p>{stripped}</p>")
 
     if in_list:
-        html.append("</ul>")
+        html.append(f"</{list_type}>")
 
     return "\n".join(html)
 
@@ -267,6 +321,8 @@ def build_page(project_dir, force=False):
         title_lower = step_title.lower()
         if title_lower == "introduction":
             label = "INTRO"
+        elif title_lower == "downloads":
+            label = "FILES"
         elif title_lower in ("supplies", "parts", "things to gather", "what you need",
                              "materials", "tools", "tools and materials"):
             label = "SUPPLIES"
@@ -290,6 +346,16 @@ def build_page(project_dir, force=False):
         text_html = lines_to_html(step_lines)
         if text_html.strip():
             body.append(text_html)
+
+        # PDF download links in this step
+        for line in step_lines:
+            s = line.strip()
+            if s.startswith("- [") and "](pdfs/" in s:
+                import re as _re
+                m = _re.match(r'- \[([^\]]+)\]\((pdfs/[^)]+)\)', s)
+                if m:
+                    label, path = m.group(1), m.group(2)
+                    body.append(f'<a class="pdf-download" href="{path}" target="_blank">&#8675; {label}</a>')
 
     html = f"""<!DOCTYPE html>
 <html lang="en">

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-scrape.py  --  Scrape lonesoulsurfer's Instructables profile and output projects.json
+scrape.py  --  Scrape your Instructables profile and output projects.json
 
 Usage:
     python3 scrape.py
@@ -33,7 +33,10 @@ except ImportError:
     sys.exit(1)
 
 # ── CONFIG ──────────────────────────────────────────────────────────────────
-USERNAME    = "lonesoulsurfer"
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import USERNAME, DISPLAY_NAME
+
 BASE_URL    = "https://www.instructables.com"
 PROFILE_URL = f"{BASE_URL}/member/{USERNAME}/instructables/"
 OUTPUT_FILE = Path(__file__).parent.parent / "projects.json"
@@ -274,7 +277,7 @@ def fetch_project_detail(project, session):
 
 def main():
     print("=" * 60)
-    print("lonesoulsurfer Instructables scraper")
+    print(f"{DISPLAY_NAME} Instructables scraper")
     print("=" * 60)
 
     # Load existing data so we don't lose anything on a re-run
