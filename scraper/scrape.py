@@ -46,7 +46,7 @@ DELAY       = 0.6   # seconds between requests — be polite
 # First match wins, so put more specific terms first.
 CATEGORY_RULES = [
     # Junkbots first — very specific terms, must beat "robot" in electronics
-    ("junkbots",    ["junkbot", "junk yard", "junkyard", "mechanical bug",
+    ("junkbots",    ["junkbot", "mechanical bug",
                      "vacuum tube bug", "typewriter parts", "dancing, magnetic robot",
                      "robot mechanical beetle", "walking robot", "light sensitive junkbot",
                      "ladybug pendant"]),
@@ -82,7 +82,8 @@ CATEGORY_RULES = [
                      "canister", "knob", "display", "camera stand", "frame",
                      "milk crate", "skateboard", "fishing", "bike", "trike",
                      "rocket", "ray gun", "lathe", "soldering", "copper",
-                     "brass", "paint can", "spray can"]),
+                     "brass", "paint can", "spray can", "junk yard", "junkyard",
+                     "fish-bone sculpture", "sculpture"]),
 ]
 DEFAULT_CATEGORY = "making"
 
