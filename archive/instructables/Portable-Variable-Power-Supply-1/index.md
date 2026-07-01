@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Portable-Variable-Power-Supply-1/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -32,25 +34,25 @@ The power can vary from 2 volts to 25 volts and has a potentiometer to allow you
 
 Parts:
 
-1. 9v Battery Holder – eBay
+1. 9v Battery Holder – [eBay](https://www.ebay.com.au/itm/5PCS-9V-Battery-Holder-Box-Case-Pack-with-Wire-Lead-Cover-ON-OFF-Switch-New/162321778230?hash=item25cb21c636:g:F0UAAOSwImRYlW9c)
 
 2. 9V Battery
 
-3. 10K Potentiometer – eBay
+3. 10K Potentiometer – [eBay](https://www.ebay.com.au/itm/10pcs-10k-Log-Potentiometer-18T-Spline-10mm-Single-Horizontal-PCB/252494718370?hash=item3ac9dba5a2:g:obMAAOSwV0RXqozJ)
 
-4. Voltage meter – eBay
+4. Voltage meter – [eBay](https://www.ebay.com.au/p/Mini-Red-LED-Panel-Voltage-Meter-3-digital-Adjustment-Voltmeter-GP/18015900933?iid=282868814877&_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D2%26asc%3D20151029142714%26meid%3D7fdda48bb6d54f9e9480e99a69df9bd7%26pid%3D100005%26rk%3D3%26rkt%3D12%26sd%3D162286534916%26itm%3D282868814877&_trksid=p2047675.c100005.m1851)
 
-5. Bread Board Jumper Wires – eBay
+5. Bread Board Jumper Wires – [eBay](https://www.ebay.com.au/itm/Module-3-3V-5V-Breadboard-Board-830-Point-Solderless-65PCS-Jump-Cable-Wires/322392227587?epid=2137006037&hash=item4b1012ff03:g:cB0AAOSwZQRYfHGN)
 
-6. Voltage Regulator - eBay or eBay
+6. Voltage Regulator - [eBay](https://www.ebay.com/itm/Boost-Buck-DC-adjustable-step-up-down-Converter-XL6009-Module-Voltage-NEW/191673952440?epid=26017822539&hash=item2ca0a868b8:g:0CAAAOSwLVZVs4ch) or [eBay](https://www.ebay.com.au/itm/Boost-Buck-DC-DC-Adjustable-Step-Up-Down-Converter-XL6009-Module/112776945295?hash=item1a42079e8f:g:BHwAAOSwTmtauEsr)
 
-7. Banana Plug Socket Jack Connectors – eBay
+7. Banana Plug Socket Jack Connectors – [eBay](https://www.ebay.com.au/itm/272580293813?_trksid=p2060353.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 
-8. Alligator Test Lead Clips – eBay
+8. Alligator Test Lead Clips – [eBay](https://www.ebay.com.au/itm/2-Pair-Alligator-Test-Lead-Clip-to-Male-Banana-Plug-Cord-Cable-1M-Red-Black-CT-/291969847283?hash=item43fac24ff3:g:R94AAOSw-0xYN69e)
 
-9. Hook Clip Test Probe – eBay
+9. Hook Clip Test Probe – [eBay](https://www.ebay.com.au/itm/1-pair-2-Colors-Single-Hook-Clip-Mini-Grabber-Test-Probe-for-SMD-IC-Multimeter-/162354186452?hash=item25cd1048d4:g:FB4AAOSwa~BYdIH7)
 
-10. Banana Plug Multimeters Probe – eBay
+10. Banana Plug Multimeters Probe – [eBay](https://www.ebay.com.au/itm/1-Pair-4mm-Banana-Plug-Multimeters-Meter-Probe-Test-Lead-26-Long-F6/282209034819?_trksid=p2045573.c100507.m3226&_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3D32cbaaaf5eb245feaca55b36b0bba86c%26pid%3D100507%26rk%3D1%26rkt%3D1%26)
 
 11. Small piece of scrap plastic.
 

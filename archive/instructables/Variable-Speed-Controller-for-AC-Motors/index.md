@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Variable-Speed-Controller-for-AC-Motors/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -30,11 +32,11 @@ You can easily get all of these parts from any hardware or electrical store. I�
 
 Parts
 
-1. Light Dimmer Controller – eBay
+1. Light Dimmer Controller – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=light+dimmer+ac&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR10.TRC0.A0.H0.X400va+dimmer.TRS0&_nkw=400va+dimmer&_sacat=0)
 
-2. Extension Cord – eBay
+2. Extension Cord – [eBay](https://www.ebay.com.au/itm/ARLEC-240V-Power-Extension-Cord-Cable-Lead-AU-3-Pin-Plug-White-2m-3m-5m-10m-15m/171228383331?hash=item27de01c863:m:myUkCdS4puQu6fx1UU9tFyg)
 
-3. Junction box / Electrical box- eBay
+3. Junction box / Electrical box- [eBay](https://www.ebay.com.au/sch/i.html?_odkw=electrical+box&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xelectrical+box+light+switch.TRS0&_nkw=electrical+box+light+switch&_sacat=0)
 
 Tools:
 

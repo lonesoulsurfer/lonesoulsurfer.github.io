@@ -1,8 +1,10 @@
-# Secret Stash Bullet Shell 
+# Secret Stash Bullet Shell
 
 Source: https://www.instructables.com/Secret-Stash-Bullet-Shell/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -34,13 +36,13 @@ So without further ado - Here is my Secret Stash Bullet Shell
 
 Parts:
 
-1. 44 magnum bullet casing - Etsy
+1. 44 magnum bullet casing - [Etsy](https://www.etsy.com/au/listing/128246557/44-magnum-brass-bullet-shell-casings-10?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=44%20magnum%20bullet%20shell&ref=sr_gallery_6)
 
-2. Switch - eBay
+2. Switch - [eBay](http://www.ebay.com.au/itm/5-Pcs-NO-Momentary-Micro-Push-Button-Switch-Torch-ON-Button-Green-SY-AU-/252199497725?hash=item3ab842effd:g:OjEAAOSwAKxWYl3Y)
 
 3. Small piece of copper wire (for the loop)
 
-4. Dome nut (size M6 or 1/4 inch) - eBay
+4. Dome nut (size M6 or 1/4 inch) - [eBay](http://www.ebay.com.au/itm/Qty-10-Dome-Nut-M6-6mm-Stainless-Steel-2-Piece-Welded-Acorn-304-A2-70-SS-/301278744689?hash=item46259cd071:g:NaMAAOSwEK9T7Xws)
 
 Tools:
 

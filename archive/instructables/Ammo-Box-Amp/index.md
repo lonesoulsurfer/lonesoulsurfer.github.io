@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Ammo-Box-Amp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,7 +19,7 @@ Source: https://www.instructables.com/Ammo-Box-Amp/
 
 Ammo boxes are seriously cool. There is something about them that screams “HACK ME!”
 
-When I first come across Dustinbikes brilliant ible' on hacking a ammo box into a speaker, I knew I had to do something similar.
+When I first come across [Dustinbikes brilliant ible'](https://www.instructables.com/id/Ammo-Box-Speakers-1/)on hacking a ammo box into a speaker, I knew I had to do something similar.
 
 I recently purchased a pair from my local Army Disposal store and couldn't wait to start hacking these into something awesome. I didn't want to just make a speaker out of mine, so I decided to make a guitar amp out of one instead. It also works fantastically as an MP3 speaker and has a headphone jack as well so I get the best of all worlds.
 
@@ -40,21 +42,21 @@ Enjoy.
 
 Parts:
 
-1. Ammo Box - eBay or your local army disposal store
+1. Ammo Box - [eBay](http://www.ebay.com.au/sch/i.html?_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X30+CAL++BOX+AMMO&_nkw=30+CAL++BOX+AMMO&_sacat=0&_from=R40) or your local army disposal store
 
-2. Guitar Amp Kit - These can be found on eBay and I used this one. It's a 5w Tone Monster and sounds fantastic.
+2. Guitar Amp Kit - These can be found on eBay and I used [this](http://www.ebay.com.au/itm/181491564349?ssPageName=STRK:MEWAX:IT&_trksid=p3984.m1423.l2649) one. It's a 5w Tone Monster and sounds fantastic.
 
-3. Shotgun shell caps - yes you heard right! You can buy the shotgun shells from Etsy or visit your local gun range.
+3. Shotgun shell caps - yes you heard right! You can buy the shotgun shells from [Etsy](https://www.etsy.com/au/search?q=empty%20shotgun%20shells&ship_to=AU) or visit your local gun range.
 
-4. Speakers - The Tone Monster works best with 1 15W speaker or a couple of 5W speakers. saying that I wnet with a 17.5W speaker and it works beautifully. Search eBay for what you want to use. I was going to use these ones, but decided to go with only 1 speaker
+4. Speakers - The Tone Monster works best with 1 15W speaker or a couple of 5W speakers. saying that I wnet with a 17.5W speaker and it works beautifully. Search eBay for what you want to use. I was going to use [these](http://www.ebay.com.au/itm/5W-Watt-4-Ohm-Aluminum-Round-Internal-Magnet-Speaker-77mm-Diameter-/351099083404?pt=AU_Hi_Fi_Speakers&hash=item51bf22da8c)ones, but decided to go with only 1 speaker
 
-5. Computer fan grill - eBay
+5. Computer fan grill - [eBay](http://www.ebay.com.au/itm/281379555747?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649)
 
 6. 9v battery
 
 7. Various screws
 
-8. Volume Control Knobs - eBay
+8. Volume Control Knobs - [eBay](http://www.ebay.com.au/itm/5-Pcs-Silver-Tone-Volume-Control-Rotary-Aluminum-Potentiometer-Knobs-14mm-x-16mm-/181531732097?pt=AU_B_I_Electrical_Test_Equipment&hash=item2a44226881)
 
 Tools:
 

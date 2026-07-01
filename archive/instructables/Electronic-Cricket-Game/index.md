@@ -1,8 +1,10 @@
-# Electronic Cricket  Game
+# Electronic Cricket Game
 
 Source: https://www.instructables.com/Electronic-Cricket-Game/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -36,53 +38,53 @@ The project is made up of 2 different circuits. One for the actual cricket game 
 
 Cricket Game Parts
 
-1. Perf Board - eBay
+1. Perf Board - [eBay](https://www.ebay.com.au/itm/Small-Breadboard-Layout-Prototyping-Board/253716091720?epid=944019644&hash=item3b12a85348:g:1mkAAOSwRuVbNFsD)
 
-2. 555 Timer IC – eBay
+2. 555 Timer IC – [eBay](https://www.ebay.com.au/itm/10-20-50-100-PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/302152230012?hash=item4659ad247c:m:m0J3yUXSmG3OKjaZZGJ-W3A)
 
-3. 4017 IC - eBay
+3. 4017 IC - [eBay](https://www.ebay.com.au/itm/10PCS-CD4017-CD4017BE-4017-DECADE-COUNTER-DIVIDER-IC-S/191736127618?hash=item2ca45d2082:g:nDQAAOSwpRRWnZQp)
 
-4. 2 X 12K Resistors – eBay
+4. 2 X 12K Resistors – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistor.TRS0&_nkw=resistor&_sacat=0)
 
-6. 50K Potentiometer - eBay. This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's
+6. 50K Potentiometer - [eBay](https://www.ebay.com.au/itm/50K-Ohm-16mm-Linear-Potentiometer-18T-Spline-Single-Horizontal-PCB-Alpha-B50K/253032237677?epid=24004800694&hash=item3ae9e58a6d:g:Hz0AAOSwgv5ZXtFs). This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's
 
-7. 1uf Capactor – eBay
+7. 1uf Capactor – [eBay](https://www.ebay.com.au/itm/540Pc-24-Value-0-1uF-1000UF-Electrolytic-Capacitors-Assortment-Kit-Capacitor-Set/282961206984?epid=10019256496&hash=item41e1cd5ec8:g:SZ0AAOSwKMRa9UyO)
 
-8. 10p (0.01) Capacitor – eBay
+8. 10p (0.01) Capacitor – [eBay](https://www.ebay.com.au/itm/450pcs-10Value-50V-10pF-100nF-Ceramic-Capacitors-Assortment-Assorted-Kit-Box/163087715384?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20151005190540%26meid%3D0718c1ff640c4470870132e5d5dfefd6%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D163087715384&_trksid=p2045573.c100505.m3226)
 
-9. 2.2 uf Capacitor – eBay (you may have noticed that this isn’t in the schematic. I use this later in the build so the player has the ability to slow down the LED’s if they wish to. It isn’t necessary to add this if you don’t want to
+9. 2.2 uf Capacitor – [eBay](https://www.ebay.com.au/itm/540Pc-24-Value-0-1uF-1000UF-Electrolytic-Capacitors-Assortment-Kit-Capacitor-Set/282961206984?epid=10019256496&hash=item41e1cd5ec8:g:SZ0AAOSwKMRa9UyO) (you may have noticed that this isn’t in the schematic. I use this later in the build so the player has the ability to slow down the LED’s if they wish to. It isn’t necessary to add this if you don’t want to
 
-10. Momentary Button – eBay
+10. Momentary Button – [eBay](https://www.ebay.com.au/itm/NEW-12PCS-Push-Button-Momentary-Panel-Mount-Switch-Knob-Small-Mini-N-O-6-Color/153017747032?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3Da1d30390ba6f47b1853ac326ef7dad0b%26pid%3D100507%26rk%3D1%26rkt%3D1%26%26itm%3D153017747032&_trksid=p2045573.c100507.m3226)
 
-11. 2 X red LED’s - eBay
+11. 2 X red LED’s - [eBay](https://www.ebay.com.au/itm/LED-Diode-Kit-3mm-5mm-LED-Lights-Emitting-Diodes-Assorted-Clear-Bulbs-with-S1Z4/192493442090?epid=2282666457&hash=item2cd180d42a:g:slMAAOSwi4daubov)
 
 12. 4 X Green LED’s
 
 13. 2 X Blue LED’s
 
-14. 50K Potentiometer - eBay. This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's
+14. 50K Potentiometer - [eBay](https://www.ebay.com.au/itm/50K-Ohm-16mm-Linear-Potentiometer-18T-Spline-Single-Horizontal-PCB-Alpha-B50K/253032237677?epid=24004800694&hash=item3ae9e58a6d:g:Hz0AAOSwgv5ZXtFs). This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's
 
-15. On/off switch - eBay
+15. On/off switch - [eBay](https://www.ebay.com.au/itm/10-x-On-Off-On-Momentary-Mini-Toggle-Switch-Car-Motor-Dash-Dash-SPDT-3Pin-Sales/201939647988?hash=item2f048a7df4:g:ztcAAOSwIFtaCleh)
 
-16. 9V Battery Holder - eBay
+16. 9V Battery Holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0)
 
 17. 9 V Battery
 
 Scoring Circuit Parts
 
-1. 2 X 7 Segment displays – eBay
+1. 2 X 7 Segment displays – [eBay](https://www.ebay.com.au/itm/5-Pcs-10-Pin-1-Bit-7-Segment-1-Red-LED-Display-Digital-Tube-Common-Cathode-FT/132687817020?hash=item1ee4cf693c:g:eTwAAOSwkLJbJfUU)
 
-2. 10K Resistor - eBay
+2. 10K Resistor - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistor.TRS0&_nkw=resistor&_sacat=0)
 
-3. 20K resistor – eBay
+3. 20K resistor – e[Bay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistor.TRS0&_nkw=resistor&_sacat=0)
 
-4. 2 X Momentary switches – eBay
+4. 2 X Momentary switches – [eBay](https://www.ebay.com.au/itm/NEW-12PCS-Push-Button-Momentary-Panel-Mount-Switch-Knob-Small-Mini-N-O-6-Color/153017747032?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3Da1d30390ba6f47b1853ac326ef7dad0b%26pid%3D100507%26rk%3D1%26rkt%3D1%26%26itm%3D153017747032&_trksid=p2045573.c100507.m3226)
 
-5. 555 IC – eBay
+5. 555 IC – [eBay](https://www.ebay.com.au/itm/10-20-50-100-PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/302152230012?hash=item4659ad247c:m:m0J3yUXSmG3OKjaZZGJ-W3A)
 
-6. 2 X 4026 IC’s – eBay
+6. 2 X 4026 IC’s – [eBay](https://www.ebay.com.au/itm/5pcs-CD4026-CD4026BE-4026-IC-CMOS-Counters-Decade-Divider-DIP-16/191736128099?hash=item2ca45d2263:g:qzYAAOSwFqJWrvi7)
 
-7. Perf Board – eBay
+7. Perf Board – [eBay](https://www.ebay.com.au/itm/Small-Breadboard-Layout-Prototyping-Board/253716091720?epid=944019644&hash=item3b12a85348:g:1mkAAOSwRuVbNFsD)
 
 
 ## Step 2: Bread-boarding the Circuits
@@ -99,9 +101,9 @@ First things first - you should always breadboard your circuits first to make su
 
 Once you have made the circuits and everything is working as it should be, it's then time to move onto soldering the first one together which will be the actual cricket game.
 
-You can find the original circuit design website for the cricket game here
+You can find the original circuit design website for the cricket game [here](https://www.electroschematics.com/6158/electronic-cricket/)
 
-You can find the original circuit design website for the scoreboard here
+You can find the original circuit design website for the scoreboard h[ere](https://www.google.com.au/url?sa=i&source=images&cd=&ved=2ahUKEwiJ3-n-7pjcAhUCybwKHd9RD7sQjhx6BAgBEAM&url=http%3A%2F%2Fwww.gadgetronicx.com%2Ftwo-digit-counter-circuit-7-segment%2F&psig=AOvVaw1tjz96LktKnE63tb9gXMhF&ust=1531461012268847)
 
 
 ## Step 3: Cricket Match Game - Circuit

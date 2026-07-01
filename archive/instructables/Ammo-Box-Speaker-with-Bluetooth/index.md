@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Ammo-Box-Speaker-with-Bluetooth/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -36,25 +38,25 @@ Enjoy
 
 Parts:
 
-1. Amp - eBay
+1. Amp - [eBay](http://www.ebay.com.au/itm/12V-Mini-Hi-Fi-Amplifier-for-Cars-Motorcycle-Boat-Stereo-256-/181751903264?hash=item2a5141f420:g:rCQAAOSwrklVXZ9W)
 
-2. 2 x speakers. You can buy them on eBay or just salvage from a car or surround sound system.
+2. 2 x speakers. You can buy them on [eBay](http://www.ebay.com.au/itm/331693000571?_trksid=p2060353.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT) or just salvage from a car or surround sound system.
 
-3. 2 x computer fan covers. eBay
+3. 2 x computer fan covers. [eBay](http://www.ebay.ie/itm/SILVER-PIRATE-DESIGN-SKULL-AND-CROSSBONES-COMPUTER-COOLING-CASE-FAN-GRILL-80MM-/121856308793?hash=item1c5f33b639:g:cp4AAOSwT~9Wigkk)
 
-4. Knobs - eBay
+4. Knobs - [eBay](http://www.ebay.com.au/itm/New-3pcs-Electric-Guitar-Metal-Skull-Volume-Tone-Knobs-Chrome-/271455710105?hash=item3f34056b99:g:GicAAOSwjVVVyxr2)
 
 5. 12 battery - I used this one Century PS1280. You just need a 12v battery that will fit into the ammo box so use anything cheap that you can find
 
 6. Ammo box. You can get these on eBay or just visit your local army surplus store
 
-7. Bluetooth module - eBay
+7. Bluetooth module - [eBay](http://www.ebay.com.au/itm/USB-Bluetooth-Audio-Receiver-Adaptor-Wireless-Music-3-5mm-AUX-Dongle-A2DP-iPod-5-/121573140909?hash=item1c4e52e9ad:g:lHAAAOSwNSxVJsIS)
 
-8. 12v to 5v converter - eBay
+8. 12v to 5v converter - [eBay](http://www.ebay.com.au/itm/Black-12V-To-5V-3A-15W-Step-Down-Car-Charger-Converter-Module-With-USB-Cable-T60-/261967141790?hash=item3cfe755b9e:g:jvkAAOSwMmBVpOzs)
 
 9. A bunch of speaker wire and other wires as necessary
 
-10. 40mm vent cover - eBay
+10. 40mm vent cover - [eBay](http://www.ebay.com.au/itm/3pcs-40mm-4cm-Metal-Wire-Grill-Finger-Axial-Fan-Guard-Protector-for-PC-Computer-/111767674974?hash=item1a05df605e:g:BzMAAOSwKtlWriYB)
 
 11. 20mm PVC coupling
 
@@ -64,7 +66,7 @@ Parts:
 
 14. Various nuts and bolts
 
-15. on/off switch - eBay
+15. on/off switch - [eBay](http://www.ebay.com.au/itm/5pcs-12V-Heavy-Duty-Toggle-Flick-Switch-ON-OFF-Car-Dash-Light-Metal-SPST-12-Volt-/151191723314?hash=item2333ba9d32:g:Ot0AAOSwKtlWnI3T)
 
 Tools:
 

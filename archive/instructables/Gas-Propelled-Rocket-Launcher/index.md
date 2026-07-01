@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Gas-Propelled-Rocket-Launcher/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -32,25 +34,25 @@ The rest of the launcher is made from PVC pipe which you can get at any hardware
 
 Parts:
 
-1. Spark Generator – eBay. You could also probably use one of these as well, although you would have to solder it together. You could also try an arc lighter like this one as well
+1. Spark Generator – [eBay](http://www.ebay.com.au/itm/Electric-Gas-Lighter-Fire-Starter-Battery-BBQ-Stove-Cooker-Pulse-Igniter-GT-/201565562913?epid=923393386&hash=item2eee3e6821:g:AuQAAOSwXj5XF5zU). You could also probably use [one of these](http://www.ebay.com.au/itm/15KV-3-7V-High-Voltage-Inverter-Generator-Spark-Arc-Ignition-Coil-Module-DIY-Kit-/232386186768?hash=item361b4bce10:g:fDIAAOSwXXxZT6jn) as well, although you would have to solder it together. You could also try an arc lighter [like this one](http://www.ebay.com.au/itm/USB-Electronic-Pulses-Arc-Gases-Stove-Igniter-Lighter-BBQ-Kitchen-Cigarette/172819941175?_trkparms=aid%3D222007%26algo%3DSIM.MBE%26ao%3D2%26asc%3D45736%26meid%3D906d0f48067c446d9f1e40f19d3c6218%26pid%3D100005%26rk%3D1%26rkt%3D4%26sd%3D302420436470&_trksid=p2047675.c100005.m1851) as well
 
-2. BBQ Lighter – eBay
+2. BBQ Lighter – [eBay](http://www.ebay.com.au/itm/1-x-Hot-Kitchen-Gas-stove-Candle-BBQ-Refillable-Butane-Ignition-Rod-Gun-Lighter-/282599370845?hash=item41cc3c305d:g:6EEAAOSwyDxXgN0~)
 
 Bunnings is a hardware store in Australia but nearly any hardware store will stock these parts. It's probably going to be cheaper buying these parts from your local hardware store then eBay
 
-3. 25mm PVC Tee – eBay, Bunnings
+3. 25mm PVC Tee – [eBay](http://www.ebay.com.au/itm/T-Shape-Plain-Equal-Tee-White-PVC-U-Pipe-Coupling-Connect-Fittings-25x25mm-/301747834569?hash=item4641928ec9:g:JHAAAOSw~AVYuMWE), [Bunnings](https://www.bunnings.com.au/holman-25mm-press-pvc-plain-tee_p3142350)
 
-4. 25mm Coupling with male screw end – eBay, Bunnings
+4. 25mm Coupling with male screw end – eBay, [Bunnings](https://www.bunnings.com.au/holman-25mm-x-1-pvc-valve-socket_p3141914)
 
-5. 25mm Coupling with female screw end – eBay, Bunnings
+5. 25mm Coupling with female screw end – eBay, [Bunnings](https://www.bunnings.com.au/holman-25mm-x-1-press-pvc-faucet-socket_p3142083)
 
-6. 2 X 25mm Caps - eBay, Bunnings
+6. 2 X 25mm Caps - eBay, [Bunnings](https://www.bunnings.com.au/holman-25mm-press-pvc-cap-end_p3140471)
 
-7. 25mm PVC Tube – eBay, Bunnings
+7. 25mm PVC Tube – eBay, [Bunnings](https://www.bunnings.com.au/holman-25mm-x-1m-class-12-press-pvc-pipe_p4770100)
 
-8. Momentary on/off button – eBay
+8. Momentary on/off button – [eBay](http://www.ebay.com.au/itm/5-10PCS-PBS-110-ON-OFF-Push-button-Red-Black-Blue-Mini-Lockless-Momentary-Switch-/253064241495?var=&hash=item3aebcde157:m:mbpmBVuLc_HBNwDHuqriYaw)
 
-9. 2 x AAA battery holder – eBay
+9. 2 x AAA battery holder – [eBay](http://www.ebay.com.au/itm/2-Pieces-2-Pin-Black-Plastic-2-x-1-5V-AAA-Battery-Cell-Case-Holder-Y6Y2-R1G-A7A2-/253006599147?epid=1666860212&hash=item3ae85e53eb:g:tOYAAOSwqWNZACaZ)
 
 10. Wire. I used sold core wire
 
@@ -411,8 +413,7 @@ Now that you have finished your rocket, it’s time to give it a test run.
 
 Steps:
 
-1. In order for the gas inside the barrel to propel the rocket, you
-will need to add some tape around the barrel. When pushing on the rocket, the bottom section should slipe over the tape. The connection between the tape and the rocket should be quite tight. This will ensure you get some good height when launching.
+1. In order for the gas inside the barrel to propel the rocket, you will need to add some tape around the barrel. When pushing on the rocket, the bottom section should slipe over the tape. The connection between the tape and the rocket should be quite tight. This will ensure you get some good height when launching.
 
 2. Add some fuel into the barrel. How you add depends on how much comes up the nozzle of the gas tank and also how long the barrel is. You will need to probably experiment a couple of time before you work out the right mix of butane and air. If there is too much butane then you won’t get the height, and if there is too little then it won’t ignite
 

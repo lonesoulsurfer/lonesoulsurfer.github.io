@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Brass-and-Copper-Soldering/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -194,8 +196,7 @@ IMPORTANT
 
 4. In a joint like this one which needs to be air tight, it’s better to add too much then not enough. Excess solder can be cleaned-up and filed away.
 
-This is probably one of the easiest joints to solder. The part can easily sit straight, the joint is made to take solder, and any excess solder is hidden mostly inside the parts. However, this is great practice to understand how hot the metal needs to be and also how to get the solder flowing into the joint correctly.
-What would happen if you had to clamp 2 parts together sideways and solder these
+This is probably one of the easiest joints to solder. The part can easily sit straight, the joint is made to take solder, and any excess solder is hidden mostly inside the parts. However, this is great practice to understand how hot the metal needs to be and also how to get the solder flowing into the joint correctly. What would happen if you had to clamp 2 parts together sideways and solder these
 
 
 ## Step 8: Getting Started – Cleaning and Finishing

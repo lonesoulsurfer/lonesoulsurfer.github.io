@@ -1,8 +1,10 @@
-# Easy to Make -  Mini Stun Gun
+# Easy to Make - Mini Stun Gun
 
 Source: https://www.instructables.com/Easy-to-Make-Mini-Stun-Gun/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -12,17 +14,20 @@ Source: https://www.instructables.com/Easy-to-Make-Mini-Stun-Gun/
 ![Intro 2](images/intro_02.jpg)
 
 Hi all,
+
 I've been wanting to make this project for some time and I have finallly been able to get my hands on the right type of gas lighter to pull apart!
+
 Now this thing won't knock you down but It will give you a good old shock - especially if you hack it and add a bit more power to it.
 
-This is a really easy project which anyone with a little soldering skills can make.  All you really need is a "continuous piezo electric sparker" which takes a battery.  These are used to light gas BBQ's, heaters, etc and can be purchased from Amazon or Ebay. (see link in step 1)
+This is a really easy project which anyone with a little soldering skills can make. All you really need is a "continuous piezo electric sparker" which takes a battery. These are used to light gas BBQ's, heaters, etc and can be purchased from Amazon or Ebay. (see link in step 1)
 
 Remember to be careful - it is electricity afterall and I don't won't anyone to hurt themselves!
 
 Saying that, there is nothing bettter than to zap your brother on the arse and watch him jump!
 
 Check out the video below
-[http://youtu.be/fIh5bVoBzvk](http://youtu.be/fIh5bVoBzvk)
+
+http://youtu.be/fIh5bVoBzvk
 
 
 ## Step 1: Step 1 Parts and Tools
@@ -32,32 +37,35 @@ Check out the video below
 ![Step 1: Step 1 Parts and Tools image 2](images/step01_02.jpg)
 
 PARTS
+
 You will need the following parts to make your Mini Stun Gun
 
-1)   Piezo Electric Spark Starter.  These can be purchased from [Amazon](http://www.amazon.com/Camco-57533-Olympian-Multi-Sparker/dp/B000EDSTAG)
+1) Piezo Electric Spark Starter. These can be purchased from
+Amazon
 
-2)   AAA battery holder - it needs to hold 2 batteries
+2) AAA battery holder - it needs to hold 2 batteries
 
-3)   Thick electrical wire, as well as some normal, everyday electrical wire.
+3) Thick electrical wire, as well as some normal, everyday electrical wire.
 
-4)   Wire (this is to make the prongs at the end)
+4) Wire (this is to make the prongs at the end)
 
 TOOLS
+
 I used the following tools but just use whatever you have that will do the job
 
-1)   Dremmel
+1) Dremmel
 
-2)   Pliers
+2) Pliers
 
-3)   Soldering iron
+3) Soldering iron
 
-4)   Stanley knife
+4) Stanley knife
 
-5)   Hot glue gun
+5) Hot glue gun
 
-6)   Phillips Head Screwdriver
+6) Phillips Head Screwdriver
 
-7)   Heat Shrink Plastic
+7) Heat Shrink Plastic
 
 
 ## Step 2: Step 2 - Pulling the Piezo Sparker Lighter Apart
@@ -68,7 +76,7 @@ I used the following tools but just use whatever you have that will do the job
 
 ![Step 2: Step 2 - Pulling the Piezo Sparker Lighter Apart image 3](images/step02_03.jpg)
 
-Unscrew the casing around the Lighter.  Make sure you keep all of the screws -  you'll need these later.  Put aside the casing for later as welll.
+Unscrew the casing around the Lighter. Make sure you keep all of the screws - you'll need these later. Put aside the casing for later as welll.
 
 Carefully take out the insides - the wires from the battery terminals to the circuit board are quite weak, these came off on mine after some time so you might need to add a bit more solder to these.
 
@@ -81,7 +89,7 @@ Carefully take out the insides - the wires from the battery terminals to the cir
 
 This particullar lighter has a light at the end - Its up to you if you want to keep this or not but as I wanted max power (sounds like a Simpsons episode!) I removed the light and also the 2 wires that joined it up to the circuit board.
 
-You also need to remove the wires from the metal neck of the lighter.  One of these is wrapped in rubber, you can just cut this off at the base as you will be soldering another wire in its place.
+You also need to remove the wires from the metal neck of the lighter. One of these is wrapped in rubber, you can just cut this off at the base as you will be soldering another wire in its place.
 
 Ther other 2 wires should be cut off from the base of the metal neck.
 
@@ -94,11 +102,11 @@ Ther other 2 wires should be cut off from the base of the metal neck.
 
 ![Step 4: Step 4 - Adding the Bits You Need image 3](images/step04_03.jpg)
 
-Ok - You now need to add some heavy gage wire to the 2 main terminals that you just took off from the metal neck.  Make sure that these are long enough to hang out of the top of the lighter (you will see why later)
+Ok - You now need to add some heavy gage wire to the 2 main terminals that you just took off from the metal neck. Make sure that these are long enough to hang out of the top of the lighter (you will see why later)
 
 Remove the original wire and solder the heavy gage wire on.
 
-Next attach the AAA battery holder to the battery wires - make sure you put the positive wire from the circuit board to the positive termiinal on the battery holder  - do the same for the negatives.  I know this seems obvious but it's an easy mistakke to make.
+Next attach the AAA battery holder to the battery wires - make sure you put the positive wire from the circuit board to the positive termiinal on the battery holder - do the same for the negatives. I know this seems obvious but it's an easy mistakke to make.
 
 
 ## Step 5: Step 5 - Modifying the Ligher Casing and Adding the Bits Back In.
@@ -113,7 +121,6 @@ Next attach the AAA battery holder to the battery wires - make sure you put the 
 
 ![Step 5: Step 5 - Modifying the Ligher Casing and Adding the Bits Back In. image 5](images/step05_05.jpg)
 
-View 2 more
 Next you will need to get your dremmel out and grind off some of the plastic where the batterys are to go.
 
 You will also need to do a little grinding at the tip to make sure that the wires will fit correct.
@@ -133,13 +140,13 @@ Cut the wires at the end of the barrrel, strip the wires and tin the ends with s
 
 ![Step 6: Step 6 - Adding the Wire Ends image 4](images/step06_04.jpg)
 
-So now you should have the 2 wire ends tinned with solder.  The next step is to cut 2, 5cm lengths of wire.  You can use anything for this, just make sure that it doesn't bend easily.
+So now you should have the 2 wire ends tinned with solder. The next step is to cut 2, 5cm lengths of wire. You can use anything for this, just make sure that it doesn't bend easily.
 
 Tin the end of the 2 wires and add these to the end of the 2 heavy gage wires.
 
 Cover the soldered parts with heat shrink plastic.
 
-Once you are happy with the position and fit (you might need to dremmel some more if the fit is a bit off) glue down with hot glue.  Test everything first before gluing, nothing worse than having to pull everything apart when it's been hot glued down!
+Once you are happy with the position and fit (you might need to dremmel some more if the fit is a bit off) glue down with hot glue. Test everything first before gluing, nothing worse than having to pull everything apart when it's been hot glued down!
 
 I also added some glue to the wire terminals on the circuit board for added strength.
 
@@ -154,9 +161,9 @@ OK Now you are ready to put the casing back on - this should go on easliy but if
 
 Screw everything back into place (make sure you test it first and make sure it's working OK).
 
-Cut the wires so only a couple of centimeters are hanging out.  You will probably need to squeeze these together a little to get the cool spark effect.
+Cut the wires so only a couple of centimeters are hanging out. You will probably need to squeeze these together a little to get the cool spark effect.
 
-THAT'S IT!  You are now ready to scare the sh.t out of everyone.
+THAT'S IT! You are now ready to scare the sh.t out of everyone.
 
 
 ## Step 8: Conclusion

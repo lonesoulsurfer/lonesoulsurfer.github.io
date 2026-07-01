@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Home-made-Mini-Taser/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,7 +21,7 @@ Now I'm not saying that this mini taser will take down your enemies but it will 
 
 For those with brothers, sisters, children or any other human types that you need to control, then this taser will give you that power. My kids are now fully under my control,living in a constant state of nervousness and anticipation. All I need do is get the taser buzzing a couple of times and their mine.
 
-The idea came to me after seeing this 'ible by Plasmana. I figured I could make something similar and encase it in PVC. I didn't use disposable camera parts though as I wanted to have an actual spark as well.
+The idea came to me after seeing [this 'ible](https://www.instructables.com/id/How-to-build-the-Worlds-Smallest-Electronic-Shock/) by [Plasmana](https://www.instructables.com/member/Plasmana/). I figured I could make something similar and encase it in PVC. I didn't use disposable camera parts though as I wanted to have an actual spark as well.
 
 The taser is just a modified Piezo electric stove lighter. The difference with this lighter from other stove lighters though is it has a constant spark.
 
@@ -45,13 +47,13 @@ You'll need some basic soldering skills too make the taser, but other than that 
 
 Things:
 
-1. Piezo Lighter - Ebay
+1. Piezo Lighter - [Ebay](http://www.ebay.com.au/itm/Kitchen-Stove-Gas-Lighter-Piezo-Electric-Multi-Spark-No-Fuel-required-/262018103708?var=&hash=item3d017ef99c)
 
 2. 20mm PVC pipe
 
 3. 2 x 20mm PVC Caps
 
-4. Momentary switch - eBay (I used a momentary switch from a salvaged video player. I the I have indicated on eBay would work perfectly)
+4. Momentary switch - [eBay](http://www.ebay.com.au/itm/5-Pcs-NO-Momentary-Micro-Push-Button-Switch-Torch-ON-Button-Green-WS-/321743556130?hash=item4ae9690e22) (I used a momentary switch from a salvaged video player. I the I have indicated on eBay would work perfectly)
 
 5. 2 x aa battery holder
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Moog-Style-Synth/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,17 +17,17 @@ Source: https://www.instructables.com/Moog-Style-Synth/
 
 ![Intro 4](images/intro_04.jpg)
 
-First and foremost, I have to give a massive shout out to Pete McBennett who designed this awesome circuit. When I came across it on YouTube I couldn't believe the sound that he managed to get out of a handful of components. The synth has a MASSIVE sound and really growls with heavy bass through a good speaker.
+First and foremost, I have to give a massive shout out to [Pete McBennett](https://www.youtube.com/channel/UCk4mtz-tZbXdk1Xb0DSd2QQ) who designed this awesome circuit. When I came across it on YouTube I couldn't believe the sound that he managed to get out of a handful of components. The synth has a MASSIVE sound and really growls with heavy bass through a good speaker.
 
 The synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. The "growling" oscillator tonality is supplied via a PWM and a awesome high-resonance low pass filter.
 
 The light-control aspect which is controlled through 2 Light dependent resistors (LDR), gives amazing musical expression. The heart of the circuit is 5 op amps (LM358) and also a 2 Hex inverter drone synths via a CD40106 IC. The 2 two adjustable drone oscillators give this synth a total of three oscillators.
 
-The only addition that I included was an additional circuit with a couple of vactrols (LED and LDR facing each other, covered by heatshrink. check this ible on how to make one. This function turns the synth into an arpeggiator type synth and is a tonne of fun to play.
+The only addition that I included was an additional circuit with a couple of vactrols (LED and LDR facing each other, covered by heatshrink. check [this ible](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/) on how to make one. This function turns the synth into an arpeggiator type synth and is a tonne of fun to play.
 
 Ok that's enough babbling, time to watch the video and see this bad boy in action. If you like what you see and want to make your own, then unfortunately you'll have to keep reading.
 
-Hackaday have also reviewed this build so if you want to check that out just click the link
+Hackaday have also reviewed this build so if you want to check that out just [click the link](https://hackaday.com/2020/01/14/make-a-mean-sounding-synth-from-average-components/)
 
 
 ## Step 1: Parts Moog Synth Circuit
@@ -44,7 +46,7 @@ Hackaday have also reviewed this build so if you want to check that out just cli
 
 Here's the parts list. It's a bit of a big one. The case is from an old calculator which I gutted. You will need to design your own case and I have suggested one to use below.
 
-1. Resistors make sure that they are 1%. You will notice that there are some weird values for the top 10 resistors. These values are so the synth is in tune. I couldn’t manage to find the exact ones so used the closest values. You can also buy them in bulk on eBay and get most if not all of the values needed
+1. Resistors make sure that they are 1%. You will notice that there are some weird values for the top 10 resistors. These values are so the synth is in tune. I couldn’t manage to find the exact ones so used the closest values. You can also buy them in [bulk on eBay](https://www.ebay.com.au/itm/2425pcs-1-8W-97-Values-Assorted-Metal-Film-Resistors-Assortment-Kits-Set-1-FAST/223707620794?hash=item34160365ba:g:vG0AAOSwGpBdpoAA&frcectupt=true) and get most if not all of the values needed
 
 a. 10K X 4
 
@@ -84,29 +86,29 @@ r. 33K
 
 2. Capacitors
 
-a. 0.15uf (150nf) - eBay
+a. 0.15uf (150nf) - [eBay](https://www.ebay.com.au/itm/10pcs-2A154-0-15uf-150nf-150000pf-100V-Mylar-Film-Capacitor/112242683283?hash=item1a222f6d93:g:ve0AAOSw-0xYWMLY)
 
-b. 2.2uf- eBay
+b. 2.2uf- [eBay](https://www.ebay.com.au/itm/50PCS-50V-2-2uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-5X11mm/264397842631?hash=item3d8f56e8c7:g:SqUAAOSwtOVdHsHn&frcectupt=true)
 
-c. 4.7uf X 4- eBay
+c. 4.7uf X 4- [eBay](https://www.ebay.com.au/itm/6-3-100V-High-4-7uF-Frequency-1-4700uF-Low-ESR-Radial-Electrolytic-Capacitor/392360595773?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 
-d. .001uf (1nf) X 2- eBay.
+d. .001uf (1nf) X 2- [eBay](https://www.ebay.com.au/itm/50-x-Radial-Leads-Polyester-Film-Cap-Capacitors-Green-2A102J-100V-1nF-5/391286461768?epid=1745607970&_trkparms=ispr%3D1&hash=item5b1a7d9548:g:hUcAAOSwA81dIR3A&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qVQh9aTZ%2FO0lQu%2BacCd0loZruSl4KUhcdlDRJ4djwlfaOCRT2xBgdqvNGZRhcPMJKvKkexxK0d5H6ZluTa7Y%2FHWUwEleBhgNt2fv8QM8VJxEMJCPlHkZ4Dj%2F4uv3vqDuZlah7jsC4dHla%2BmXeit78cXv6TAYE%2BCNv09tP0gP%2FXCbH92kE4%2F55eKG7na52KXVWjV4ffhv5Fh5pdWc%2BIAlCWwe%2Bb1nVAHChE%2BDAVOziJskSA0%2F%2Bhd3LIbrB6%2BFg8b7CtjO2QFJ%2F0UGoSn%2Bz8dHob9Ieac%2FVmlJV2onVbHZfH9m8igmDt9%2BsOuSIlLeCLZQolf7WtHJo75jJIF1xwqnBStZtp21lpSMeWvDQW4l%2BlWNIdvfgoR4Y3anI%2FYmGHZ2GUi7MlrCxR0N1Of15MqTWBWizIYRxEhs76GvxGfXGHjE6jhN1r24US%2BCb7v7oYx5VhfFN7HvNJ8wnK8UeyeOd1TPIdoFM%2FPNUf%2BlWV4zH7P7lUtCP73Pye0q2Cj9rNha%2Fc2ImdO3G46AJu%2BTZt1%2Bg8B1y6EWjYjDI%2BclMrFTe%2BsmUxVSZXGt4ujKUdhCFOFODMIEd0xgMyUm4sTTR8QDctNKrXJK2dHuX0Qrhlw1AOboCO7asnrVbwfp2SSflYz5%2BzoWpCo5j%2BtYI%2FPgZE9FPJfP%2BqEMO8sW3dyezsqxWMfE%2F4Mug60L91e1wzOu%2Bro7uYAafv6xrP4%2FlcEG0V%2FMMYeBBqlfBNip4tOQ3bH11LEaQ%3D%3D&checksum=391286461768d6d7780aca964dd3b5b58ca9a0a7d46c&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qVQh9aTZ%2FO0lQu%2BacCd0loZruSl4KUhcdlDRJ4djwlfaOCRT2xBgdqvNGZRhcPMJKvKkexxK0d5H6ZluTa7Y%2FHWUwEleBhgNt2fv8QM8VJxEMJCPlHkZ4Dj%2F4uv3vqDuZlah7jsC4dHla%2BmXeit78cXv6TAYE%2BCNv09tP0gP%2FXCbH92kE4%2F55eKG7na52KXVWjV4ffhv5Fh5pdWc%2BIAlCWwe%2Bb1nVAHChE%2BDAVOziJskSA0%2F%2Bhd3LIbrB6%2BFg8b7CtjO2QFJ%2F0UGoSn%2Bz8dHob9Ieac%2FVmlJV2onVbHZfH9m8igmDt9%2BsOuSIlLeCLZQolf7WtHJo75jJIF1xwqnBStZtp21lpSMeWvDQW4l%2BlWNIdvfgoR4Y3anI%2FYmGHZ2GUi7MlrCxR0N1Of15MqTWBWizIYRxEhs76GvxGfXGHjE6jhN1r24US%2BCb7v7oYx5VhfFN7HvNJ8wnK8UeyeOd1TPIdoFM%2FPNUf%2BlWV4zH7P7lUtCP73Pye0q2Cj9rNha%2Fc2ImdO3G46AJu%2BTZt1%2Bg8B1y6EWjYjDI%2BclMrFTe%2BsmUxVSZXGt4ujKUdhCFOFODMIEd0xgMyUm4sTTR8QDctNKrXJK2dHuX0Qrhlw1AOboCO7asnrVbwfp2SSflYz5%2BzoWpCo5j%2BtYI%2FPgZE9FPJfP%2BqEMO8sW3dyezsqxWMfE%2F4Mug60L91e1wzOu%2Bro7uYAafv6xrP4%2FlcEG0V%2FMMYeBBqlfBNip4tOQ3bH11LEaQ%3D%3D&checksum=391286461768d6d7780aca964dd3b5b58ca9a0a7d46c).
 
-e. 0.1uf (100nf) X 2- eBay
+e. 0.1uf (100nf) X 2- [eBay](https://www.ebay.com.au/itm/10Pcs-Cbb-104J-630V-100Nf-0-1Uf-P10Mm-Metallized-Film-Capacitor-AU-YA/372847730656?hash=item56cf74dfe0:g:dV0AAOSw6-xa2bsg&frcectupt=true)
 
 3. IC’s
 
-a. CD40106- eBay
+a. CD40106- [eBay](https://www.ebay.com.au/itm/5PCS-CD40106-CD40106BE-40106-HEX-SCHMITT-TRIGGER-IC/232448784901?hash=item361f06fa05:g:56gAAOSwZA1ZkmzZ)
 
-b. Lm358 X 5- eBay
+b. Lm358 X 5- [eBay](https://www.ebay.com.au/itm/10Pcs-LM358-Low-Power-Dual-Op-Amplifier-Operational-Amp-8-DIP/162293558729?hash=item25c9732dc9:g:oJwAAOSwW4tcPp7d&frcectupt=true)
 
 4. Pots
 
-a. 50K - eBay
+a. 50K - [eBay](https://www.ebay.com.au/itm/2-5PCS-3-6Pin-6MM-5-20-50-100K-Ohm-Rotary-Potentiometer-Adjustable-Resistance/392309733750?_trkparms=ispr%3D1&hash=item5b577b7976:m:mWJYaGK4vg4nKsmjg0kHTTw&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qUINDu7ES9B4v3DnaTdVwTEBkgci41Npoq2ctD2VEOSx9N6bgv0w5f5id%2FHOV%2BYjrKdLmEQt1aJHsXPjljPoCBPc3a7tsllfOPHxhgfX49gLp33f6ekrbcyZBNzfkEkwSn0xwqukzXGMFBz5OVXvD8ALPnGVqDGn6J2OawpkHs%2FPOTJKouyNZP3QxJmJZUpGxNISd2TJjqq8RlWhMubvhtvChottV%2BSI5DBdOh0sPb%2FhEnQcNVPNzB9voqUonPW6DXTXbITo4Jvjly7wY8Xb0sPMjrsy3HO84Pp7XoC8oxxbIqzqJPpIpD7Ro0GGPgV4uzZyHJne2OF1lgA3vgrLEtnytKBx7W9uAJ0fWuZCfwEH%2BIRWjDukACr7Lknza%2FYxFH7XTaMMx108PPBQ4O1UyveBTUIQF5nIj%2FONe5eleJEy6Ets%2B4l%2FIPA9OjS3XzbhAUrbPIH2E0pxoc9fwCsRovf1bqGZoMZ7U77pzFDhTmNUr5GtwqLp50szj3WGj%2FSV%2FLN2%2FkFxCo0PY6Q%2F09N0LCMNqssJmI24fefnfJ%2FhL4iY%2BoqrDxLcYFQFtLw%2FojBdJdt72yhKJLgTyETA6yqUq%2Bc3hjMX5eKOq3A0vRxAO3y%2BkB9mae7EKIGI9eDMk8FNLzhtAm4AN%2BQ02Hw6HB4p6j0P4eK4auC4HH%2BZzow6sKHbmWgnNv8UFtXct2wPusaZw%2FUGpZHsVmkWsrK5kiYMPTEMpZUjp4%2F8EYKJVypKA3aqQlF7oOFRIGhaFjreLcvoQI%3D&checksum=392309733750e9e729fdb9074a05b55e36b90d0f909b&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qUINDu7ES9B4v3DnaTdVwTEBkgci41Npoq2ctD2VEOSx9N6bgv0w5f5id%2FHOV%2BYjrKdLmEQt1aJHsXPjljPoCBPc3a7tsllfOPHxhgfX49gLp33f6ekrbcyZBNzfkEkwSn0xwqukzXGMFBz5OVXvD8ALPnGVqDGn6J2OawpkHs%2FPOTJKouyNZP3QxJmJZUpGxNISd2TJjqq8RlWhMubvhtvChottV%2BSI5DBdOh0sPb%2FhEnQcNVPNzB9voqUonPW6DXTXbITo4Jvjly7wY8Xb0sPMjrsy3HO84Pp7XoC8oxxbIqzqJPpIpD7Ro0GGPgV4uzZyHJne2OF1lgA3vgrLEtnytKBx7W9uAJ0fWuZCfwEH%2BIRWjDukACr7Lknza%2FYxFH7XTaMMx108PPBQ4O1UyveBTUIQF5nIj%2FONe5eleJEy6Ets%2B4l%2FIPA9OjS3XzbhAUrbPIH2E0pxoc9fwCsRovf1bqGZoMZ7U77pzFDhTmNUr5GtwqLp50szj3WGj%2FSV%2FLN2%2FkFxCo0PY6Q%2F09N0LCMNqssJmI24fefnfJ%2FhL4iY%2BoqrDxLcYFQFtLw%2FojBdJdt72yhKJLgTyETA6yqUq%2Bc3hjMX5eKOq3A0vRxAO3y%2BkB9mae7EKIGI9eDMk8FNLzhtAm4AN%2BQ02Hw6HB4p6j0P4eK4auC4HH%2BZzow6sKHbmWgnNv8UFtXct2wPusaZw%2FUGpZHsVmkWsrK5kiYMPTEMpZUjp4%2F8EYKJVypKA3aqQlF7oOFRIGhaFjreLcvoQI%3D&checksum=392309733750e9e729fdb9074a05b55e36b90d0f909b)
 
-b. 100K X 3- eBay
+b. 100K X 3- [eBay](https://www.ebay.com.au/itm/2-5PCS-3-6Pin-6MM-5-20-50-100K-Ohm-Rotary-Potentiometer-Adjustable-Resistance/392309733750?_trkparms=ispr%3D1&hash=item5b577b7976:m:mWJYaGK4vg4nKsmjg0kHTTw&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qUINDu7ES9B4v3DnaTdVwTEBkgci41Npoq2ctD2VEOSx9N6bgv0w5f5id%2FHOV%2BYjrKdLmEQt1aJHsXPjljPoCBPc3a7tsllfOPHxhgfX49gLp33f6ekrbcyZBNzfkEkwSn0xwqukzXGMFBz5OVXvD8ALPnGVqDGn6J2OawpkHs%2FPOTJKouyNZP3QxJmJZUpGxNISd2TJjqq8RlWhMubvhtvChottV%2BSI5DBdOh0sPb%2FhEnQcNVPNzB9voqUonPW6DXTXbITo4Jvjly7wY8Xb0sPMjrsy3HO84Pp7XoC8oxxbIqzqJPpIpD7Ro0GGPgV4uzZyHJne2OF1lgA3vgrLEtnytKBx7W9uAJ0fWuZCfwEH%2BIRWjDukACr7Lknza%2FYxFH7XTaMMx108PPBQ4O1UyveBTUIQF5nIj%2FONe5eleJEy6Ets%2B4l%2FIPA9OjS3XzbhAUrbPIH2E0pxoc9fwCsRovf1bqGZoMZ7U77pzFDhTmNUr5GtwqLp50szj3WGj%2FSV%2FLN2%2FkFxCo0PY6Q%2F09N0LCMNqssJmI24fefnfJ%2FhL4iY%2BoqrDxLcYFQFtLw%2FojBdJdt72yhKJLgTyETA6yqUq%2Bc3hjMX5eKOq3A0vRxAO3y%2BkB9mae7EKIGI9eDMk8FNLzhtAm4AN%2BQ02Hw6HB4p6j0P4eK4auC4HH%2BZzow6sKHbmWgnNv8UFtXct2wPusaZw%2FUGpZHsVmkWsrK5kiYMPTEMpZUjp4%2F8EYKJVypKA3aqQlF7oOFRIGhaFjreLcvoQI%3D&checksum=392309733750e9e729fdb9074a05b55e36b90d0f909b&enc=AQAEAAACUBPxNw%2BVj6nta7CKEs3N0qUINDu7ES9B4v3DnaTdVwTEBkgci41Npoq2ctD2VEOSx9N6bgv0w5f5id%2FHOV%2BYjrKdLmEQt1aJHsXPjljPoCBPc3a7tsllfOPHxhgfX49gLp33f6ekrbcyZBNzfkEkwSn0xwqukzXGMFBz5OVXvD8ALPnGVqDGn6J2OawpkHs%2FPOTJKouyNZP3QxJmJZUpGxNISd2TJjqq8RlWhMubvhtvChottV%2BSI5DBdOh0sPb%2FhEnQcNVPNzB9voqUonPW6DXTXbITo4Jvjly7wY8Xb0sPMjrsy3HO84Pp7XoC8oxxbIqzqJPpIpD7Ro0GGPgV4uzZyHJne2OF1lgA3vgrLEtnytKBx7W9uAJ0fWuZCfwEH%2BIRWjDukACr7Lknza%2FYxFH7XTaMMx108PPBQ4O1UyveBTUIQF5nIj%2FONe5eleJEy6Ets%2B4l%2FIPA9OjS3XzbhAUrbPIH2E0pxoc9fwCsRovf1bqGZoMZ7U77pzFDhTmNUr5GtwqLp50szj3WGj%2FSV%2FLN2%2FkFxCo0PY6Q%2F09N0LCMNqssJmI24fefnfJ%2FhL4iY%2BoqrDxLcYFQFtLw%2FojBdJdt72yhKJLgTyETA6yqUq%2Bc3hjMX5eKOq3A0vRxAO3y%2BkB9mae7EKIGI9eDMk8FNLzhtAm4AN%2BQ02Hw6HB4p6j0P4eK4auC4HH%2BZzow6sKHbmWgnNv8UFtXct2wPusaZw%2FUGpZHsVmkWsrK5kiYMPTEMpZUjp4%2F8EYKJVypKA3aqQlF7oOFRIGhaFjreLcvoQI%3D&checksum=392309733750e9e729fdb9074a05b55e36b90d0f909b)
 
-5. LDR’s X 2- eBay
+5. LDR’s X 2- [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR5.TRC1.A0.H0.Xldr.TRS0&_nkw=ldr&_sacat=0)
 
 
 ## Step 2: Arpeggiator Circuit Parts and Others
@@ -125,45 +127,45 @@ Parts:
 
 Arpeggiator Circuit
 
-1. 555 Timer - eBay
+1. 555 Timer - [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/263770865456?hash=item3d69f7ff30:m:mN1oS6xfsjGS9CLz149posg&frcectupt=true)
 
-2. 10K pot - eBay
+2. 10K pot - [eBay](https://www.ebay.com.au/sch/i.html?_nkw=10k+potentiometer&_sop=15)
 
-3. 1M duel pot - eBay
+3. 1M duel pot - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=1m+duel+potentiometer&_sacat=0&LH_TitleDesc=0&_sop=15&_odkw=1+m+dual+potentiometer&_osacat=0)
 
-4. 100R resistor - eBay. Buy them in assorted lots
+4. 100R resistor - [eBay.](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xresistors+assorted.TRS0&_nkw=resistors+assorted&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=1m+duel+potentiometer) Buy them in assorted lots
 
 5. 1K resistor X 2
 
 6. 470R resistor
 
-8. Transistor BC547 - eBay
+8. Transistor BC547 - [eBay](https://www.ebay.com.au/itm/50pcs-BC547-TO-92-30V-Low-Power-NPN-Transistor-NEW/221893843223?hash=item33a9e75917:g:UE4AAOSwHjNWAhYq&frcectupt=true)
 
-9. Vactol X 2. (LDR and LED inside a piece of heat shrink). You can make your own easily - just check out this instructable
+9. Vactol X 2. (LDR and LED inside a piece of heat shrink). You can make your own easily - just check out t[his instructable](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/)
 
-10. Prototype Board - eBay
+10. Prototype Board - [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
 Power
 
 You can just a 9v battery to power the circuits or do what I did and use a mobile phone battery and a charging/voltage regulator.
 
-Check out this instructable on how to use a mobile phone battery to power the circuits
+Check out [this instructable](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/) on how to use a mobile phone battery to power the circuits
 
 Other Parts
 
-1. SPDT switches X 3 - eBay
+1. SPDT switches X 3 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1313.TR12.TRC2.A0.H0.Xspdt+switch.TRS0&_nkw=spdt+switch&_sacat=0)
 
-2. Momentary switches X 10 - eBay
+2. Momentary switches X 10 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xmomentary+switch.TRS0&_nkw=momentary+switch&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=spdt+switch)
 
-3. Pot knobs X 7 - eBay
+3. Pot knobs X 7 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xpotentiometer+knob.TRS0&_nkw=potentiometer+knob&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=momentary+switch)
 
 4. A whole lot of wire. I like to use ribbon wire
 
-5. Case. Mine is an old calculator. Use whatever you think would be cool
+5. Case. Mine is an [old calculator.](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xcalculator+printer.TRS0&_nkw=calculator+printer&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=large+calculator) Use whatever you think would be cool
 
-6. Acrylic sheets - eBay
+6. Acrylic sheets - [eBay](https://www.ebay.com.au/itm/Coloured-Acrylic-Sheets-Select-Panel-Size-FREE-SHIPPING/322537216743?_trkparms=ispr%3D1&hash=item4b18b75ae7:m:m1QUYoVI0HBWTWVWGvrtmRQ&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qXNoKIQ4YkDACMRGPGdykYQXfnpmbc6ZAChG3SCqmZWu4%2B1xv0802O8q9BPDvqDyQCwkR%2BTbO4VRkYf2DVbPdsK4hfmuqkL6F4rEZ%2BiLQTW8zURKhYu9UM3xZuh1YBl5JSTUnvLkqiewsiZEyQW1BOtrDXb%2B5nqDoMAfb5zUMtAqo0xGeO4NbkO%2FA%2B0nSoYV1ett0z6Afzpyq%2FYORLJVYWg0gWaJGXm517N%2BDTnaLpG7pI9xIkN6UVrIJQUWl7Mif4YJgXLKsu%2B4%2B8EtKncgLz2UBceSZp2YNyqDci8WRuCMCAUyI%2Fk8U6EBHD9j4XB%2FG%2Bu7%2ByUypjKdeg3WZYNdHONYgL8KjGyzEz3WEf%2B5iKSZjp7ekl989f438O%2F2Cdz2Do37lqkGuGnRz6WxXOyAeeKEq0lXGMnueFLFNCsKHMijx%2F1%2BganKU%2FM%2FJIGsBDasxfeubtqlBLbti9%2F6AXc4hpPdUO7pUEDg4VO06wQL1lC0wpbi%2BH1VPb8PMzIsekqoa6ru09JufRYCFTb9pUnm521wHbGOPnzp5k8XR4EPk4tgRqn3qLlbCBr0LrRUht7T5VAAjZRVAwmlTPM2NZFrOXUBC0LVynYCjphKxBlY3UprA2L4afyqMcIf%2F9f32MuSxFrYrnbxPH2hLv2W4UmekHhRiMcca86KwLaAiwdYzgIHUbtsSzyqyvoMLS59fBzdl45NRF%2FzLLhvrlWaDI4Nq2A2vS5FFI4DAz7WiQclSd8ew%3D%3D&checksum=3225372167433f06440ae4804e41925379b4ab106ca1&enc=AQAEAAACQBPxNw%2BVj6nta7CKEs3N0qXNoKIQ4YkDACMRGPGdykYQXfnpmbc6ZAChG3SCqmZWu4%2B1xv0802O8q9BPDvqDyQCwkR%2BTbO4VRkYf2DVbPdsK4hfmuqkL6F4rEZ%2BiLQTW8zURKhYu9UM3xZuh1YBl5JSTUnvLkqiewsiZEyQW1BOtrDXb%2B5nqDoMAfb5zUMtAqo0xGeO4NbkO%2FA%2B0nSoYV1ett0z6Afzpyq%2FYORLJVYWg0gWaJGXm517N%2BDTnaLpG7pI9xIkN6UVrIJQUWl7Mif4YJgXLKsu%2B4%2B8EtKncgLz2UBceSZp2YNyqDci8WRuCMCAUyI%2Fk8U6EBHD9j4XB%2FG%2Bu7%2ByUypjKdeg3WZYNdHONYgL8KjGyzEz3WEf%2B5iKSZjp7ekl989f438O%2F2Cdz2Do37lqkGuGnRz6WxXOyAeeKEq0lXGMnueFLFNCsKHMijx%2F1%2BganKU%2FM%2FJIGsBDasxfeubtqlBLbti9%2F6AXc4hpPdUO7pUEDg4VO06wQL1lC0wpbi%2BH1VPb8PMzIsekqoa6ru09JufRYCFTb9pUnm521wHbGOPnzp5k8XR4EPk4tgRqn3qLlbCBr0LrRUht7T5VAAjZRVAwmlTPM2NZFrOXUBC0LVynYCjphKxBlY3UprA2L4afyqMcIf%2F9f32MuSxFrYrnbxPH2hLv2W4UmekHhRiMcca86KwLaAiwdYzgIHUbtsSzyqyvoMLS59fBzdl45NRF%2FzLLhvrlWaDI4Nq2A2vS5FFI4DAz7WiQclSd8ew%3D%3D&checksum=3225372167433f06440ae4804e41925379b4ab106ca1)
 
-7. Audio Output Jack - 3.5mm and 6.35mm - eBay
+7. Audio Output Jack - [3.5mm](https://www.ebay.com.au/itm/5Pcs-3-5mm-Mono-Socket-Headphone-Audio-Jack-PCB-Panel-Mount-Connector-C6J4/183032398170?epid=2181730722&hash=item2a9d94c15a:g:4GQAAOSw5KtaZpuw) and [6.35mm](https://www.ebay.com.au/itm/Lots-0Pcs-1-4-6-35mm-Mono-AC-DC-Input-Jack-Socket-Electric-Guitar-Bass-Audio/123255030721?hash=item1cb29283c1:g:3eEAAOSwIeFbTVYw&frcectupt=true) - eBay
 
 
 ## Step 3: The "Moog" Circuit Schematic
@@ -174,8 +176,10 @@ This is the schematic that you will need to build. It's the main circuit and is 
 
 Make sure you breadboard it first so you can test and understand how it all goes together.
 
-I did add another circuit so I could control the LDR's with flashing LED's through a couple of vacrols. This circuit is in the next step and is optional to add.
+I did add another circuit so I could control the LDR's with flashing LED's through a couple of[vacrols](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/). This circuit is in the next step and is optional to add.
 
+
+- [LDRsynth With Drones](pdfs/LDRsynth With Drones.pdf)
 
 ## Step 4: Vactrol Circuit for Arpeggiator Sound Effect
 
@@ -183,7 +187,7 @@ I did add another circuit so I could control the LDR's with flashing LED's throu
 
 ![Step 4: Vactrol Circuit for Arpeggiator Sound Effect image 2](images/step04_02.jpg)
 
-This circuit creates an arpeggiator effect using some vactols (this this 'ible on how to make ta vactol, also known as a opticoupler). It gives the synth another sound effect which is fun to play around with. However, it isn't necessary to add this circuit if you don't want to.
+This circuit creates an arpeggiator effect using some vactols (this this 'ible on how to make ta [vactol](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/), also known as a opticoupler). It gives the synth another sound effect which is fun to play around with. However, it isn't necessary to add this circuit if you don't want to.
 
 NOTE: I forgot to add the capacitor from p[in 2 on the 555 timer initially. I have updated the schematic and it now incluides it.
 
@@ -353,7 +357,7 @@ Steps:
 
 2. Use the schematic and start to connect the rest of the components
 
-3. You will need to also make a couple of vactrols. They're simple to make and you only need some heat-shrink, white LED and a LDR. I did an 'ible on how to make one which can be found here.
+3. You will need to also make a couple of vactrols. They're simple to make and you only need some heat-shrink, white LED and a LDR. I did an 'ible on how to make one which can be found [here](https://www.instructables.com/id/How-to-Make-a-Optocoupler-Vactrol/).
 
 4. The circuit will need to be wired up to a switch later on so that's why there is 2 wires connected to one of the LDR legs on each vactrol. You need to be able to turn off the LDR's on the moog circuit when you want to use the arpeggitor and vice versa. This is done with a DPDT switch. I also found it necessary to turn off power to the arpeggiator when the moog was on as you can here a slight ticking if they are on at the same time.
 
@@ -642,10 +646,14 @@ To play the arpeggiator, just turn it on and start to play with the pots for spe
 
 I also added a pot that bypasses the momentary switches (keys) so you can play the synth with just one pot and the LDR’s. That’s a lot of fun to do and you can also play the arpeggiator with the one pot as well.
 
-I also used my Echo and Reverb box (make your own here) and played the synth through that as well. You get some great depth of sound when you hook it up to the synth. I definitely recommend that you also make one of these as it takes the synth to another sonic level.
+I also used my Echo and Reverb box ([make your own here](https://www.instructables.com/id/Echo-Reverb-Box/)) and played the synth through that as well. You get some great depth of sound when you hook it up to the synth. I definitely recommend that you also make one of these as it takes the synth to another sonic level.
 
 Experiment and see what sounds you can get out of your synth.
 
+
+## Downloads
+
+- [LDRsynth With Drones](pdfs/LDRsynth With Drones.pdf)
 
 ---
 *110 images archived*

@@ -1,8 +1,10 @@
-#  Mount a Video Camera on a Air Rocket
+# Mount a Video Camera on a Air Rocket
 
 Source: https://www.instructables.com/Mounting-a-Spy-Video-Camera-on-an-Compressed-Air/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -25,7 +27,7 @@ First check out my Youtube clup below of the rocket with video camera attached.
 
 The below is a link to make Magazine which ddescribes how to build a compressed air rocket launcher
 
-http://makeprojects.com/Project/Compressed-Air-Rocket/585/1
+[http://makeprojects.com/Project/Compressed-Air-Rocket/585/1](http://makeprojects.com/Project/Compressed-Air-Rocket/585/1)
 
 There are also some good instrucables - just type in compressed air rockets
 
@@ -42,13 +44,18 @@ Also, the rockets are only made of paper and masking tape. Check out the web or 
 
 ![Step 1: Step 1 - Parts image 3](images/step01_03.jpg)
 
-- Mini Spy Camera.  These can be purchased on Ebay.  The link below is the one that I purchased.
-http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-DV-/180605547227?pt=AU_Security_Equipment&hash=item2a0cedf2db
+Here are the parts you need:
 
-- Foam mattress - I used a thin cheap one brought at a camping store - This is used for protection of the camera
+- Mini Spy Camera. These can be purchased on Ebay. The link below is the one that I purchased.
+
+[http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-DV-/180605547227?pt=AU_Security_Equipment&hash=item2a0cedf2db](http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-DV-/180605547227?pt=AU_Security_Equipment&hash=item2a0cedf2db)
+
+- Foam mattress - I used a thin cheap one brought at a camping store - This is used for protection of the camera
 - Cable ties
 - Super glue
 - Masking tape
+
+.
 
 
 ## Step 2: Step - 2 Protecting the Video Camera
@@ -61,10 +68,13 @@ http://www.ebay.com.au/itm/Lighter-Spy-Camera-Cam-Camcorder-USB-Mini-DVR-Hidden-
 
 The rockets come down pretty fast, so to protect the camera you will need to wrap it in some protective foam.
 
-1.   Cut a peice of foam so it fits tightly around the lighter
-2.   Use cable ties to keep the foam secure
-3.   Superglue the join.
-4.   Make sure that you put a hole in the foam so you can see the led light that tells you if the device is on.
+1. Cut a peice of foam so it fits tightly around the lighter
+
+2. Use cable ties to keep the foam secure
+
+3. Superglue the join.
+
+4. Make sure that you put a hole in the foam so you can see the led light that tells you if the device is on.
 
 
 ## Step 3: Step 3 - Mounting the Camera to the Rocket
@@ -75,12 +85,13 @@ The rockets come down pretty fast, so to protect the camera you will need to wra
 
 I first tried to use cable ties to connect the video camera to the rocket, but as it is made of paper this wasn't a good idea.
 
-The best way is to use masking tape and wrap it around the camera and rocket body.  It's up to you which way you face the camera, either pointing up or down.  I tried it both ways - check out the Youtube clip at the start of the 'ible
+The best way is to use masking tape and wrap it around the camera and rocket body. It's up to you which way you face the camera, either pointing up or down. I tried it both ways - check out the Youtube clip at the start of the 'ible
 
-The camera does add some weight to the overall rocket which means it doesn't go up as far - and the rocket that I used was  tight around the launcher which caused a bit too much friction on launch.
+The camera does add some weight to the overall rocket which means it doesn't go up as far - and the rocket that I used was tight around the launcher which caused a bit too much friction on launch.
 
-My next ible is to add a parachute (I have tried a few times but with no sucess)  If anyone has any good ideas on how to do this please let me know.  I used the following idea from NASA (you'd expect it to work!) but had no luck.
-[http://www.nasa.gov/audience/foreducators/topnav/materials/listbytype/High_Power_Paper_Rockets.html](http://www.nasa.gov/audience/foreducators/topnav/materials/listbytype/High_Power_Paper_Rockets.html)
+My next ible is to add a parachute (I have tried a few times but with no sucess) If anyone has any good ideas on how to do this please let me know. I used the following idea from NASA (you'd expect it to work!) but had no luck.
+
+http://www.nasa.gov/audience/foreducators/topnav/materials/listbytype/High_Power_Paper_Rockets.html
 
 Have fun and post some videos if you make this 'ible.
 

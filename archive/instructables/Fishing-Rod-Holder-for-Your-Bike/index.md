@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Fishing-Rod-Holder-for-Your-Bike/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

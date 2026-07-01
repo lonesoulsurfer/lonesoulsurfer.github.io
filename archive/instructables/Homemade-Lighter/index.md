@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Homemade-Lighter/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -38,11 +40,11 @@ This can be as simple as just a permanent marker case and some rope in it, or yo
 
 Parts:
 
-1. Permanent Marker - eBay Newsagent
+1. Permanent Marker - [eBay](http://www.ebay.com.au/sch/i.html?_odkw=permanent+marker&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xpermanent+marker+artline.TRS0&_nkw=permanent+marker+artline&_sacat=0) Newsagent
 
-2. Cotton Rope - eBay
+2. Cotton Rope - [eBay](http://www.ebay.com.au/sch/i.html?_odkw=permanent+marker+artline&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR3.TRC2.A0.H0.Xcotton+rope.TRS0&_nkw=cotton+rope&_sacat=0)
 
-3. Methylated spirits- Hardware store. So it seems that methylated spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out this link to find out more. You can also use lighter fluid (Naphtha in the US) if you have it as well.
+3. Methylated spirits- Hardware store. So it seems that methylated spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out [this link](https://en.wikipedia.org/wiki/Denatured_alcohol) to find out more. You can also use lighter fluid (Naphtha in the US) if you have it as well.
 
 4. Used Lighter
 
@@ -306,13 +308,13 @@ Fuels:
 
 I like to use Methylated spirits as they burn very clean and don’t leave any sooty residue. You can however use a lot of different fuels to make your candle work. I would use an accelerate like petrol or thinners as these are highly combustible. However diesel might be ok.
 
-Mineral Turpentine - This works ok but it has a lot of oil in it so produces black smoke
+Mineral Turpentine- This works ok but it has a lot of oil in it so produces black smoke
 
-Perfume – As perfume is alcohol based it works very well. Plus added bonus, it smells good!
+Perfume –As perfume is alcohol based it works very well. Plus added bonus, it smells good!
 
-Rubbing Alcohol – Works just as well as mentholated spirits.
+Rubbing Alcohol –Works just as well as mentholated spirits.
 
-Hand Sanitiser - This has about 72% ethyl alcohol so burns very cleanly. It's a little thick though and doesn't absorb into the wick great. It does work though.
+Hand Sanitiser -This has about 72% ethyl alcohol so burns very cleanly. It's a little thick though and doesn't absorb into the wick great. It does work though.
 
 Wicks
 
@@ -320,15 +322,15 @@ Obviously anything cotton should work ok. The rope that I used is called cotton 
 
 Here are a few others that I tried
 
-Cotton wool - absorbs the fuel very well and will also burn just as good as a wick. You can just replace the top layer once if it gets too burnt.
+Cotton wool -absorbs the fuel very well and will also burn just as good as a wick. You can just replace the top layer once if it gets too burnt.
 
-Nylon rope - Don't use this. It works but it's basically plastic.
+Nylon rope -Don't use this. It works but it's basically plastic.
 
 Bandages - Actually these worked really well. Definitely a good substitute.
 
-Wool – I made a wick by tying a bunch of pieces of wool together and then wrapped wire around it to give it strength
+Wool –I made a wick by tying a bunch of pieces of wool together and then wrapped wire around it to give it strength
 
-Cotton T shirt - Cut into strands and stuffed inside the marker. Again not ideal but did the trick
+Cotton T shirt -Cut into strands and stuffed inside the marker. Again not ideal but did the trick
 
 
 ## Step 12: Final Thoughts
@@ -347,7 +349,7 @@ I'm really happy with the way the lighter works. The wicks don't burn (unless yo
 
 It's definitely a good idea to add a base. It does however made it a little less portable, especially if you want to keep it in your pocket. A better solution would be to use a rubber stopper like you use on a chair leg. Add a couple of washers for weight and maybe a magnet and I think this would be quite stable.
 
-Also, instead of moding the flint from the lighter, you could make one of these.(see the first image) and add it to the top of the pen. It would give it a cleaner finish and would also make changing the flint easier
+Also, instead of moding the flint from the lighter, you could [make one of these](https://www.instructables.com/id/Flint-and-Spark-Wheel-Fire-Starter/).(see the first image) and add it to the top of the pen. It would give it a cleaner finish and would also make changing the flint easier
 
 
 ---

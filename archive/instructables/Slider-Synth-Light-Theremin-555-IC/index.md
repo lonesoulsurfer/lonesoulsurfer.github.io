@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Slider-Synth-Light-Theremin-555-IC/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,15 +21,15 @@ Source: https://www.instructables.com/Slider-Synth-Light-Theremin-555-IC/
 
 I've been playing around with the 555 IC and never have I managed to get it to do anything until now. When I heard it come to life and start oscillating at me I was pretty damn happy with myself. If I can get it to make a sound, then anyone should be able to!
 
-I won't go into any details about the 555 IC - but if you want to know more you can check it out for yourself here.
+I won't go into any details about the 555 IC - but if you want to know more you can check it out for yourself [here](https://en.wikipedia.org/wiki/555_timer_IC).
 
 Basically this project uses a photo cell, also known as a CDS photoresister to change the pitch of the oscillating 555 IC. You use an LED to control the pitch, putting it closer to the photo cell shortens the pitch and moving it away lengthens the pitch.
 
-I wish I could claim the circuit but all credit for it goes to Dean Segovis over at Hack-a-week who came up with the idea.
+I wish I could claim the circuit but all credit for it goes to [Dean Segovis over at Hack-a-week](http://hackaweek.com/hacks/?attachment_id=1515) who came up with the idea.
 
 It's all my idea though to stick it into a NES controller. Don't really know if it is the smartest one I've ever had but you can be the judge of that. Don't worry, I didn't use an original NES controller, just a cheap knock-off.
 
-Hackaday were also nice enough to do a review on this project which can be found here
+[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) were also nice enough to do a review on this project which can be found [here](https://hackaday.com/tag/cds/)
 
 
 ## Step 1: Parts and Tools
@@ -46,41 +48,41 @@ Hackaday were also nice enough to do a review on this project which can be found
 
 Electrical Components
 
-You will be able to get all of these components at your local electrical hobby store. However I have linked them to eBay as well.
+You will be able to get all of thesecomponents at your local electrical hobby store. However I have linked them to eBay as well.
 
-1. 100 Ohm Resistor – eBay
+1. 100 Ohm Resistor – [eBay](https://www.ebay.com.au/itm/200Pcs-1-4W-Metal-Film-Resistors-1ohm-47ohm-100ohm-220ohm-470ohm-1K-10K-100K-1M/252706634640?hash=item3ad67d3b90:m:mFG-vc-9lvzKmIrjteHMqzw)
 
-2. Potentiometer 10K - eBay
+2. Potentiometer 10K - [eBay](https://www.ebay.com.au/itm/6mm-3pin-Knurled-Shaft-Single-Linear-B10K-Ohm-Rotary-Potentiometer-15mm/162933413158?hash=item25ef969526:m:mNP34lIqPW_xXIyb7OMIT4A)
 
-2. 2.2 uf Capacitor – eBay
+2. 2.2 uf Capacitor – [eBay](https://www.ebay.com.au/itm/2-2-uf-50-V-Electrolytic-capacitor-20-pcs/292465991779?hash=item441854e063:g:JNAAAOSwCY9ZtLEZ)
 
-3. 100 uf Capacitor – eBay
+3. 100 uf Capacitor – [eBay](https://www.ebay.com.au/itm/100-F-35V-High-Temp-Electrolytic-Capacitors-10-20-or-50-pack-100uF-Capacitor/201961792518?hash=item2f05dc6406:m:mBeyhv3yjNTxLr9W8MQ6SMg)
 
-4. Speaker - 8 Ohm 0.5W – eBay
+4. Speaker - 8 Ohm 0.5W – [eBay](https://www.ebay.com.au/itm/2-Pcs-8ohm-Loud-Speaker-8-0-5W-Small-Trumpet-36mm-Diameter-AU-NEW/302106509576?epid=22004488711&hash=item4656f38108:g:i84AAOSwZJBYAJFX)
 
-5. 3mm white LED – eBay
+5. 3mm white LED – [eBay](https://www.ebay.com.au/itm/20PCS-LED-3MM-Round-White-LED-Emitting-Red-Llight-Lamp-Super-Bright-SF/191931298476?hash=item2cafff32ac:g:oOAAAOSwIgNXlr8d)
 
-6. Photo Cell – eBay
+6. Photo Cell – [eBay](https://www.ebay.com.au/itm/20PCS-Photoresistor-LDR-CDS-5mm-Light-Dependent-Resistor-Sensor-GL5516-Arduino/222746709589?epid=22011020945&hash=item33dcbd0e55:g:03YAAOSwKytZL-uQ)
 
-7. LM555 IC – eBay
+7. LM555 IC – [eBay](https://www.ebay.com.au/itm/10x-555-TIMER-NE555-IC-8-PIN-DIP-Single-Bi-Polar-LM-LM555-NE-NE555P-AUS-STOCK/172142220155?hash=item281479d37b:g:p24AAOSwwpdW8HDA)
 
-8. 2 X CR2032 3v Batteries – eBay
+8. 2 X CR2032 3v Batteries – [eBay](https://www.ebay.com.au/itm/5Pcs-Lots-3V-Cell-Batteries-CR2032-3-Volt-Coin-Button-Cell-Battery-Bulk/182105983004?epid=1067613200&hash=item2a665cc81c:g:YwMAAOSwtPZXHcYu)
 
-9. CR2032 X 2 Battery Holder – eBay
+9. CR2032 X 2 Battery Holder – [eBay](https://www.ebay.com.au/itm/Black-CR2032-Button-Coin-Cell-Battery-Holder-Case-Box-W-On-Off-Switch-Lead-GA/182195809053?hash=item2a6bb76b1d:g:GOAAAOSwgY9Xe7nl)
 
-10. Perf Board – eBay
+10. Perf Board – [eBay](https://www.ebay.com.au/itm/10pcs-5cm-x-7cm-PCB-Prototyping-Perf-Boards-Breadboard-DIY/183113399570?hash=item2aa268bd12:g:iuwAAOSwqfZab4uO)
 
-11. 1 X tactile switch – eBay
+11. 1 X tactile switch – [eBay](https://www.ebay.com.au/itm/6-Pin-DPDT-Latching-Tact-Tactile-Push-Button-Pushbutton-Switch-20-Pcs-M9Q6-T0H7/253253294285?epid=24009135255&hash=item3af71298cd:g:tEEAAOSw9hdaBn-z)
 
 12. Thin wire. You can use the wire from the NES controller.
 
 Other Parts
 
-1. NES Controller – eBay
+1. NES Controller – [eBay](https://www.ebay.com.au/itm/HOT-USB-Controller-Gaming-Gamer-JoyStick-Joypad-For-NES-Windows-PC-for-MAC-Q4S7/282695225215?epid=560358643&hash=item41d1f2cf7f:g:o74AAOSwjZJZ77Zb)
 
-2. Plastic tubing 1/4" – eBay
+2. Plastic tubing 1/4" – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=strip+styrene+1%2F4%22&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xtube+styrene+1%2F4%22.TRS0&_nkw=tube+styrene+1%2F4%22&_sacat=0)
 
-3. Plastic tubing 3/16" - eBay
+3. Plastic tubing 3/16" - [eBay](https://www.ebay.com.au/sch/i.html?_odkw=tube+styrene+1%2F4%22&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xtube+styrene+3%2F16%22.TRS0&_nkw=tube+styrene+3%2F16%22&_sacat=0)
 
 Tools
 
@@ -96,7 +98,7 @@ Tools
 
 6. Hot glue
 
-7. Bread board and jumper wires - eBay
+7. [Bread board](https://www.ebay.com.au/itm/Breadboard-830-Point-Solderless-PCB-Bread-Board-MB-102-MB102-Test-Breadboard-TG/263532522395?_trkparms=aid%3D555019%26algo%3DPL.BANDIT%26ao%3D1%26asc%3D20151005190540%26meid%3D014c26d1eb15435e93d09cc9ae84deeb%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D263532522395&_trksid=p2045573.c100505.m3226) and j[umper wires](https://www.ebay.com.au/itm/65-Lots-Bread-Board-Solderless-Cord-Jumper-Line-Wire-For-PCB-Breadboard-Connect/162309145554?hash=item25ca6103d2:g:jQIAAOSwo4pYRRAv) - eBay
 
 
 ## Step 2: Schematics
@@ -119,7 +121,7 @@ I have added a link in the parts list if you don’t have one of these along wit
 
 I’ll go through each step in wiring the project up to a perf board and add images to try and make it as fool proof as possible.
 
-Also included an image of a 555 IC and what’s inside of it. For more info on this visit Wikipedia
+Also included an image of a 555 IC and what’s inside of it. For more info on this [visit Wikipedia](https://en.wikipedia.org/wiki/555_timer_IC)
 
 
 ## Step 3: Getting Started - Solder on the 555 IC

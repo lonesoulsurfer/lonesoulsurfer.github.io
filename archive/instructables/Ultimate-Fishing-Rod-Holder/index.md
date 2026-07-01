@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Ultimate-Fishing-Rod-Holder/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

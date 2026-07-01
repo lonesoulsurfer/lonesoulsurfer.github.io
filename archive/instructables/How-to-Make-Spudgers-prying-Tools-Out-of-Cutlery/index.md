@@ -1,8 +1,10 @@
-# How to Make Spudgers (prying Tools) Out of Cutlery 
+# How to Make Spudgers (prying Tools) Out of Cutlery
 
 Source: https://www.instructables.com/How-to-Make-Spudgers-prying-Tools-Out-of-Cutlery/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -42,8 +44,8 @@ The parts list is super simple - all you need is some old cutlery. I used a coup
 
 If you want to also make the case then you'll need the following:
 
-- Thin ply wood
-- hard wood edging
+1. Thin ply wood
+2. hard wood edging
 
 
 ## Step 1: Removing the Head of the Spoon
@@ -58,8 +60,8 @@ The spudger that I will take you through is one that is made from a spoon that h
 
 STEPS:
 
-- First you need to remove the head from the spoon. The one that I used had a little section that extended from the handle to the spoon head. i kept this part to form it into the small flat head section
-- To remove the spoon head I used a grinder and just cut it away. Just make a rough cut of the shape you want to small end to be as you will be shaping it later
+1. First you need to remove the head from the spoon. The one that I used had a little section that extended from the handle to the spoon head. i kept this part to form it into the small flat head section
+2. To remove the spoon head I used a grinder and just cut it away. Just make a rough cut of the shape you want to small end to be as you will be shaping it later
 
 
 ## Step 2: Shaping the Small, Flat Head
@@ -80,9 +82,9 @@ I make the most of the spudger, I made one end a small flat head and the other a
 
 STEPS:
 
-- On a belt sander (you can use a file as well) start to file away any excess material around the flat head. Initially I was going to give it a rounded edge but decided later on to make it flat which will give me more leverage
-- Once you have the basic design, you then need to start to thin out the thickness of the end. To to this I used the belt sander again and laid the spoon end onto the sander
-- Keep checking your work and continue to remove material until you have a screwdriver type shape. You might find that you have removed too much material at the end and it is very thin. Don't worry as we'll fix that later on. Note that you don't want it too thin as it will just bend when you use it to pry something open
+1. On a belt sander (you can use a file as well) start to file away any excess material around the flat head. Initially I was going to give it a rounded edge but decided later on to make it flat which will give me more leverage
+2. Once you have the basic design, you then need to start to thin out the thickness of the end. To to this I used the belt sander again and laid the spoon end onto the sander
+3. Keep checking your work and continue to remove material until you have a screwdriver type shape. You might find that you have removed too much material at the end and it is very thin. Don't worry as we'll fix that later on. Note that you don't want it too thin as it will just bend when you use it to pry something open
 
 
 ## Step 3: Filing & Sanding
@@ -105,10 +107,10 @@ Now that you have the shape of the small flat end, it's time to refine it.
 
 STEPS:
 
-- Use some files to remove any scratches and smooth out the finish on the flat section.
-- If you need to, file the end to make it a little thicker. You don't want it sharp - but you will need it thin enough to fit between pieces of plastic or whatever else you are trying to open is made from
-- Keep filing until you are happy with the final shape. As I mentioned before, this is where I decided to make the end flat and not curved and I just filed flat.
-- You can now use some sandpaper to give the filed sections a nice finish. I only had 220 grit paper available (there is currently a shortage of sandpaper!) but would have used 600 and 800 grit to really give it a nice, smooth finish
+1. Use some files to remove any scratches and smooth out the finish on the flat section.
+2. If you need to, file the end to make it a little thicker. You don't want it sharp - but you will need it thin enough to fit between pieces of plastic or whatever else you are trying to open is made from
+3. Keep filing until you are happy with the final shape. As I mentioned before, this is where I decided to make the end flat and not curved and I just filed flat.
+4. You can now use some sandpaper to give the filed sections a nice finish. I only had 220 grit paper available (there is currently a shortage of sandpaper!) but would have used 600 and 800 grit to really give it a nice, smooth finish
 
 
 ## Step 4: Shaping the Other End
@@ -129,9 +131,9 @@ Shaping a larger flat end is pretty straight forward - you just follow the same 
 
 STEPS:
 
-- First, you will need to remove some of the metal on the end to make it thinner. A belt sander works perfectly for this
-- Keep on refining until you are happy with the overall shape and thickness. Remember, not too thin or the end will just bend if you try and use it for prying.
-- Use some files and sandpaper to get the final finish that you want
+1. First, you will need to remove some of the metal on the end to make it thinner. A belt sander works perfectly for this
+2. Keep on refining until you are happy with the overall shape and thickness. Remember, not too thin or the end will just bend if you try and use it for prying.
+3. Use some files and sandpaper to get the final finish that you want
 
 
 ## Step 5: Polishing
@@ -148,9 +150,9 @@ The last thing to do is to polish up the spudger
 
 STEPS:
 
-- I have a polishing wheel on my grinder so used that to give the spudger a nice polished finish
-- Add some polishing cream and just polish until nice and shiny
-- Wipe any excess polishing cream off the spudger
+1. I have a polishing wheel on my grinder so used that to give the spudger a nice polished finish
+2. Add some polishing cream and just polish until nice and shiny
+3. Wipe any excess polishing cream off the spudger
 
 
 ## Step 6: Make More!
@@ -188,13 +190,13 @@ I also decided to make a small case to keep them all together. You obviously don
 
 STEPS:
 
-- You'll need 4 equal lengths of the hard wood edging. These will make the sides of the case.
-- You'll also need for equal lengths for the top and bottom sections of the case.
-- Make 2 frames out of the hard wood. I nailed these together using a brad gun but you could also glue as well.
-- For the base and top section of the case I used some white MDF. I would usually use ply wood for this but it is ridiculously expensive at the moment (COVID's fault!). Nail or glue these onto the 2 frames.
-- You might need to sand the edges to ensure the two frames fit together nicely
-- Add a couple hinges to one side. I used a couple of magnets as latches
-- I used some elastic glued down onto the case to keep the spudgers in place
+1. You'll need 4 equal lengths of the hard wood edging. These will make the sides of the case.
+2. You'll also need for equal lengths for the top and bottom sections of the case.
+3. Make 2 frames out of the hard wood. I nailed these together using a brad gun but you could also glue as well.
+4. For the base and top section of the case I used some white MDF. I would usually use ply wood for this but it is ridiculously expensive at the moment (COVID's fault!). Nail or glue these onto the 2 frames.
+5. You might need to sand the edges to ensure the two frames fit together nicely
+6. Add a couple hinges to one side. I used a couple of magnets as latches
+7. I used some elastic glued down onto the case to keep the spudgers in place
 
 
 ## Step 8: Making the Case - Lid

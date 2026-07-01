@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Mini-Explorers-Travel-Case/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -235,7 +237,12 @@ Steps:
 
 ![Step 8: Go and Test It Out! image 8](images/step08_08.jpg)
 
-View 5 more
+View
+5
+more
+View
+5
+more images
 
 
 ---

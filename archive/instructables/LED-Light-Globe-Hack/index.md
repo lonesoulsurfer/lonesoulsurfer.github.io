@@ -4,6 +4,8 @@ Source: https://www.instructables.com/LED-Light-Globe-Hack/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,13 +19,11 @@ Source: https://www.instructables.com/LED-Light-Globe-Hack/
 
 ![Intro 5](images/intro_05.jpg)
 
-![Intro 6](images/intro_06.jpg)
-
 Hack an LED screw globe and make it portable.
 
-I recently got my hands on an LED globe which came with a remote.  After a lot of use in the kid’s room it finally stopped working.  I think the reason why is that they have a dimmer in their room and the LED globe didn’t seem to like it too much when it was dimmed.
+I recently got my hands on an LED globe which came with a remote. After a lot of use in the kid’s room it finally stopped working. I think the reason why is that they have a dimmer in their room and the LED globe didn’t seem to like it too much when it was dimmed.
 
-Instead of just throwing it away I decided to see what was inside, and if there was any way that I could hack it to make it portable.  Well there was a way and here’s how to do it.
+Instead of just throwing it away I decided to see what was inside, and if there was any way that I could hack it to make it portable. Well there was a way and here’s how to do it.
 
 So if you ever have a need to turn a room blue, or like the look of the red light district – then this project is for you!
 
@@ -42,24 +42,41 @@ Enjoy
 
 Parts:
 
-1. LED Globe – [Ebay](http://www.ebay.com.au/itm/Silver-Mini-Cooling-Fan-Heatsink-Cooler-55mm-f-Computer-PC-VGA-Video-Card-New-/280914851144?pt=AU_Components&hash=item4167d47548)
+1. LED Globe –
+Ebay
+
 2. 9v battery
+
 3. 9v battery terminal - These can be purchased at any electronics store (or scavenged from a broken toy)
+
 4. Wires
-5. Toggle Switch – Ebay
-6. Box.  This could be anything that the battery can fit into.
-7. Heat-sink.  I used a video card one from an old PC - Ebay
+
+5. Toggle Switch –
+Ebay
+
+6. Box. This could be anything that the battery can fit into.
+
+7. Heat-sink. I used a video card one from an old PC -
+Ebay
+
 8. Screws
 
 Tools:
 
 1. Soldering iron
+
 2. Pliers
+
 3. Wire cutters
+
 4. Sharp scissors
+
 5. Screw driver
+
 6. Phillips head
+
 7. Drill
+
 8. Hot glue
 
 
@@ -77,18 +94,17 @@ Tools:
 
 ![Step 2: Pulling Apart the Globe image 6](images/step02_06.jpg)
 
-View 3 more
 This is the fun part!
 
 Steps:
 
-1. Un-screw the bottom of the globe.  You can see that I tried to cut mine off first before I realised that you can just un-screw it!
+1. Un-screw the bottom of the globe. You can see that I tried to cut mine off first before I realised that you can just un-screw it!
 
-2. Carefully pull out the insides.  Most of this is capacitors so be careful as they could still contain a charge.  Cut the red and black wires.
+2. Carefully pull out the insides. Most of this is capacitors so be careful as they could still contain a charge. Cut the red and black wires.
 
 3. Ply off the plastic diffuser with a screwdriver
 
-4.  Unscrew the circuit board from the heat-shield and lift up.
+4. Unscrew the circuit board from the heat-shield and lift up.
 
 
 ## Step 3: Adding the Heat-sink
@@ -105,16 +121,15 @@ Steps:
 
 ![Step 3: Adding the Heat-sink image 6](images/step03_06.jpg)
 
-View 3 more
-Next step is to add the heat-sink.  The LED’s can be quite hot and the LED globe is virtually one big heat-sink.  The heat-sink that I used was from an old PC.  It used to have a little fan in it which was used to cool the processor.
+Next step is to add the heat-sink. The LED’s can be quite hot and the LED globe is virtually one big heat-sink. The heat-sink that I used was from an old PC. It used to have a little fan in it which was used to cool the processor.
 
 Steps:
 
-1. Clean-up the heat-sink and remove any dust or glue present.  If it is the same as the one I used you will also need to remove the fan inside the heat-sink.
+1. Clean-up the heat-sink and remove any dust or glue present. If it is the same as the one I used you will also need to remove the fan inside the heat-sink.
 
 2. Drill a hole in the middle of the heat-sink for the red and black wires on the LED circuit board to go through.
 
-3. The circuit board has 3 holes in it where it was attached to the globe.  Use one of these and drill another hole in the heat-sink and use a screw to attach.
+3. The circuit board has 3 holes in it where it was attached to the globe. Use one of these and drill another hole in the heat-sink and use a screw to attach.
 
 
 ## Step 4: Modifying the Globes Diffuser
@@ -125,7 +140,8 @@ Steps:
 
 ![Step 4: Modifying the Globes Diffuser image 3](images/step04_03.jpg)
 
-Steps:
+Steps
+:
 
 1. Use a pair of sharp scissors to trim the diffuser
 
@@ -152,14 +168,13 @@ Steps:
 
 ![Step 5: Attaching to the Box image 8](images/step05_08.jpg)
 
-View 5 more
 Steps:
 
-1.  Fist if necessary, stain your box to give it a more finished look
+1. Fist if necessary, stain your box to give it a more finished look
 
-2. Next step is to attach the heat-sink to the box.  I used some screws from an old servo and screwed it into place
+2. Next step is to attach the heat-sink to the box. I used some screws from an old servo and screwed it into place
 
-3.  Hot glue the screws into place.
+3. Hot glue the screws into place.
 
 3. Make sure that the wires from the circuit board are threaded through the hole in the top of the box before screwing down..
 
@@ -180,9 +195,9 @@ Steps:
 
 2. Drill a hole in the side of the box and attach the toggle switch.
 
-3. Attach one of the wires from the LED and one from the battery terminal to the toggle switch.  The reason you need to add the switch is the LED’s continue to consume power even when turned off with the remote.
+3. Attach one of the wires from the LED and one from the battery terminal to the toggle switch. The reason you need to add the switch is the LED’s continue to consume power even when turned off with the remote.
 
-4.  Attach the 9v battery and test.
+4. Attach the 9v battery and test.
 
 
 ## Step 7: You’re Done!
@@ -201,12 +216,12 @@ Steps:
 
 ![Step 7: You’re Done! image 7](images/step07_07.jpg)
 
-View 3 more
 You should now have a very portable, bright LED light.
 
-The LED’s are so bright that they can change the colour of a room! 
+The LED’s are so bright that they can change the colour of a room!
+
 I love these things.
 
 
 ---
-*44 images archived*
+*43 images archived*

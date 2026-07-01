@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,13 +21,13 @@ Source: https://www.instructables.com/Driftwood-and-Beachcombing-Art/
 
 ![Intro 6](images/intro_06.jpg)
 
-I love the feel and look of driftwood, especially old planks and discarded peices of wood.  The patina that can occur when a peice of wood has been at sea for some time, the rusty stains and smooth, bleeched texture make this a fantastic material to design with.
+I love the feel and look of driftwood, especially old planks and discarded peices of wood. The patina that can occur when a peice of wood has been at sea for some time, the rusty stains and smooth, bleeched texture make this a fantastic material to design with.
 
 The best thing of all is the wood comes free, all you need to do is to look for it!
 
-I find the best places to find driftwood are at surf beaches and at beaches that people don't visit much.  It can take some time to find the right wood but who doesn't like walking on the beach ; )
+I find the best places to find driftwood are at surf beaches and at beaches that people don't visit much. It can take some time to find the right wood but who doesn't like walking on the beach ; )
 
-On my last visit to the beach, I discoved an old palllet (beachcombing heaven) which had some great patina running along the wood.  I got the pallet home and this is the outcome of my attempt to design 4 different objects, each one made to showcase the beautiful things that can be found at the beach.
+On my last visit to the beach, I discoved an old palllet (beachcombing heaven) which had some great patina running along the wood. I got the pallet home and this is the outcome of my attempt to design 4 different objects, each one made to showcase the beautiful things that can be found at the beach.
 
 Enjoy.
 
@@ -43,11 +45,17 @@ Enjoy.
 Tools:
 
 1. Circular Saw
+
 2. Hammer
+
 3. Ruler
+
 4. Nails
+
 5. Drop Saw
+
 6. Clamps
+
 7. Square Ruler
 
 
@@ -65,7 +73,6 @@ Tools:
 
 ![Step 2: Material image 6](images/step02_06.jpg)
 
-View 3 more
 Material:
 
 1.Drift wood. I used an old pallet I found at the beach. You can see that there are a lot of old, rusty nails. KEEP THESE. They are great to use instead of new nails and will keep the look of the design authentic.
@@ -87,7 +94,6 @@ Material:
 
 ![Step 3: Making the Display Shelves - Cutting the Wood image 6](images/step03_06.jpg)
 
-View 3 more
 Firstly I will be showing how I made the display shelving. Initially this was going to be a free standing shelf but I decided it would look better as a wall display.
 
 It is really important to have good think about what you are going to make before you start. What you end up with will be determined with what wood you have been able to find.
@@ -115,8 +121,9 @@ Steps:
 
 ![Step 4: Display Shelves - Assemble image 5](images/step04_05.jpg)
 
-- Glue shelves to the sides.
-- Use the rusty nails you kept and hammer one in to each shelf.
+Steps:
+1. Glue shelves to the sides.
+2. Use the rusty nails you kept and hammer one in to each shelf.
 
 
 ## Step 5: Display Shelves - Finished.
@@ -131,7 +138,6 @@ Steps:
 
 ![Step 5: Display Shelves - Finished. image 5](images/step05_05.jpg)
 
-View 2 more
 That's It!
 
 You should now have some pretty cool display shelves to put all of your beach treasures on.
@@ -166,9 +172,12 @@ Steps:
 
 ![Step 7: Driftwood Frame - Assemble image 3](images/step07_03.jpg)
 
-- Line-up the grooves
-- Assemble ; )
-- I had a shell that I found on a previously holiday which fitted perfectly in the frame.  You could put anything in it though.
+Once you have make all of the cuts it's time to assemble.
+
+Steps.
+1. Line-up the grooves
+2. Assemble ; )
+3. I had a shell that I found on a previously holiday which fitted perfectly in the frame. You could put anything in it though.
 
 
 ## Step 8: Feather Sculpture - Material
@@ -181,7 +190,7 @@ Steps:
 
 For this one all you need is some feathers and a nice peice of driftwood.
 
-The feathers I found were all the same and came from some type of gull.  The wood was pretty cool as it has a natural crack in it which the feathers fitted very nicely.
+The feathers I found were all the same and came from some type of gull. The wood was pretty cool as it has a natural crack in it which the feathers fitted very nicely.
 
 
 ## Step 9: Feather Sculpture - Assemble
@@ -196,10 +205,14 @@ The feathers I found were all the same and came from some type of gull.  The woo
 
 ![Step 9: Feather Sculpture - Assemble image 5](images/step09_05.jpg)
 
-- Stick in the feathers.  Make sure they look good ascetically.
-- Hot glue in the feathers
-- Put some beach sand on the glue.
-- Done.
+This is pretty easy to assemble - the only thing that you will need to get right is the feather assembly.
+
+Steps:
+
+1. Stick in the feathers. Make sure they look good ascetically.
+2. Hot glue in the feathers
+3. Put some beach sand on the glue.
+4. Done.
 
 
 ## Step 10: Display Stand - Assembly
@@ -216,8 +229,8 @@ The feathers I found were all the same and came from some type of gull.  The woo
 
 ![Step 10: Display Stand - Assembly image 6](images/step10_06.jpg)
 
-View 3 more
 I had a little bit of wood left and instead of just throwing it away I figured I may as well make something else : )
+
 On my holiday I found some great sea glass and stones so I thought a small display stand would be ideal to show these off.
 
 Steps:
@@ -241,10 +254,9 @@ Steps:
 
 ![Step 11: Done image 5](images/step11_05.jpg)
 
-View 2 more
-So that's it.  Really easy actually and all for free!
+So that's it. Really easy actually and all for free!
 
-making any of these things is simple - it just takes the right materials.  Good luck and happy hunting!
+making any of these things is simple - it just takes the right materials. Good luck and happy hunting!
 
 
 ---

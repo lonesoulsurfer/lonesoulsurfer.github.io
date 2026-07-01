@@ -4,6 +4,8 @@ Source: https://www.instructables.com/iPod-Finder/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -11,11 +13,9 @@ Source: https://www.instructables.com/iPod-Finder/
 
 ![Intro 2](images/intro_02.jpg)
 
-![Intro 3](images/intro_03.jpg)
-
 Find your lost iPod by whistling for it!
 
-If you have kids and if they have iPods then you’ll understand why I made this.  The amount of time that I had to spend searching for a lost iPod was doing my head in.   One day whilst searching for it yet again, I started whistling for it, calling for it like I would a dog (clearly becoming delusional).  Then it hit me – why not make it answer back!
+If you have kids and if they have iPods then you’ll understand why I made this. The amount of time that I had to spend searching for a lost iPod was doing my head in. One day whilst searching for it yet again, I started whistling for it, calling for it like I would a dog (clearly becoming delusional). Then it hit me – why not make it answer back!
 
 Enjoy
 
@@ -32,14 +32,20 @@ The parts list is really simple:
 
 Parts:
 
-1. iPod cover – [eBay](http://www.ebay.com.au/itm/Find-Key-Chain-Locater-Key-Finder-Locator-Keychain-B-L-/400437900114?pt=AU_Gadgets&hash=item5d3bf57352)
-2. Key finder – eBay
+1. iPod cover –
+eBay
+
+2. Key finder –
+eBay
+
 3. LED (any colour of your choosing)
 
 Tools:
 
 1. Soldering iron
+
 2. Stanley knife
+
 3. Dremmel
 
 
@@ -55,14 +61,13 @@ Tools:
 
 ![Step 2: Pulling Apart the Key Finder image 5](images/step02_05.jpg)
 
-View 2 more
 First thing is to pull apart the key finder.
 
-1. Use a small screwdriver and lever up the casing.  It comes away pretty easily.
+1. Use a small screwdriver and lever up the casing. It comes away pretty easily.
 
 2. De-solder the LED.
 
-3. Bend the legs of the other LED so they lay flat on the circuit board.  Be careful not to have them touch any of the contacts on the board themselves – it will run your battery down very quickly if you do.
+3. Bend the legs of the other LED so they lay flat on the circuit board. Be careful not to have them touch any of the contacts on the board themselves – it will run your battery down very quickly if you do.
 
 4. Solder into place as shown below
 
@@ -77,11 +82,11 @@ First thing is to pull apart the key finder.
 
 ![Step 3: Modding the IPod Case Â Part 1 image 4](images/step03_04.jpg)
 
-1. Decide how you want the circuit board to sit inside the case.  As you can see from the photos, the case I used has a hole on the back to show the Apple logo through.
+1. Decide how you want the circuit board to sit inside the case. As you can see from the photos, the case I used has a hole on the back to show the Apple logo through.
 
 2. The hole is slightly too small for the batteries to fit through so you will need to mark out where the batteries hit the side of the hole and dremmel.
 
-3. Next is to cut the rubber that fits inside the case.  Mark out with a Stanley knife where the circuit board will sit and cut out.
+3. Next is to cut the rubber that fits inside the case. Mark out with a Stanley knife where the circuit board will sit and cut out.
 
 
 ## Step 4: Modding the IPod Case Â Part 2
@@ -98,13 +103,11 @@ First thing is to pull apart the key finder.
 
 ![Step 4: Modding the IPod Case Â Part 2 image 6](images/step04_06.jpg)
 
-View 3 more
-
 1. Next you need to mark out where the speaker will sit in the case.
 
-2. Use a dremmel to cut out the area needed for the speaker.  Make sure you don’t go right to the edge; you want the rim of the speaker to sit against the case.
+2. Use a dremmel to cut out the area needed for the speaker. Make sure you don’t go right to the edge; you want the rim of the speaker to sit against the case.
 
-3. Put the circuit board and speaker into the case and test.  If everything sits flush, then you are ready to put the case back onto the iPod.  If it isn’t dremmel out the areas which are causing it not to sit flush.
+3. Put the circuit board and speaker into the case and test. If everything sits flush, then you are ready to put the case back onto the iPod. If it isn’t dremmel out the areas which are causing it not to sit flush.
 
 
 ## Step 5: Finished
@@ -113,10 +116,10 @@ View 3 more
 
 ![Step 5: Finished image 2](images/step05_02.jpg)
 
-So now you should have the circuit board and speaker sitting pretty flush inside the case.  The hole in the back of the case will have the batteries and LED poking out a bit, but I gave the iPod to my son and he said it didn’t even notice it when he held the iPod.
+So now you should have the circuit board and speaker sitting pretty flush inside the case. The hole in the back of the case will have the batteries and LED poking out a bit, but I gave the iPod to my son and he said it didn’t even notice it when he held the iPod.
 
 This mod could easily be used on an iPhone, as long as the case was thick enough to take the circuit board and speaker.
 
 
 ---
-*23 images archived*
+*22 images archived*

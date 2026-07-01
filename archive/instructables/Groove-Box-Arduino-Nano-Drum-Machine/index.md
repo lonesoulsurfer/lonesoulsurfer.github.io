@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -11,7 +13,7 @@ Source: https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/
 
 ![Intro 2](images/intro_02.jpg)
 
-In this build I recreate the awesome little drum synth called drum kid by Mattybrad. Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds. Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!
+In this build I recreate the awesome little drum synth called [drum kid](https://github.com/mattybrad/drumkid)by [Mattybrad](https://github.com/mattybrad). Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds. Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!
 
 I'm a total novice when it comes to coding so this solution wasn't elegant but works perfectly.
 
@@ -34,26 +36,28 @@ As always, I'm keen to get any feedback on what modules or sound effects you thi
 
 ![Supplies image 4](images/step01_04.jpg)
 
-I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+I've created a parts list which can be found in my [GitHub](https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine) page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 PARTS:
 
-- PCB - I've designed one for this build with the information on how to print your own in the next step
-- Front Panel - The panel is also a PCB so you'll also need to get this printed as well - check out the next step
-- Arduino Nano - Ali Express
-- Capacitor Polypropylene 100nf X 2
-- Capacitor Polarized 100uf X 1
-- Capacitor Polarized 1000uf X 1
-- Resistor Metal Film 10K X 1
-- Resistor Metal Film 270R X 1
-- Potentiometers 9mm Vertical 10K X 6
-- Switch Momentary (PN SKRCADD010) X 8
-- On/Off Toggle Switch Through Hole version X 1
-- LED Dot Matrix (TZT MAX7219) X 1
-- Female Header Pin Socket 15 Pin X 2
-- Audio Socket 3.5mm (PN - PJ-301M) X 3
-- Mini JST Connector and wire 2 Pin X 11
+1. PCB - I've designed one for this build with the information on how to print your own in the next step
+2. Front Panel - The panel is also a PCB so you'll also need to get this printed as well - check out the next step
+3. Arduino Nano - Ali Express
+4. Capacitor Polypropylene 100nf X 2
+5. Capacitor Polarized 100uf X 1
+6. Capacitor Polarized 1000uf X 1
+7. Resistor Metal Film 10K X 1
+8. Resistor Metal Film 270R X 1
+9. Potentiometers 9mm Vertical 10K X 6
+10. Switch Momentary (PN SKRCADD010) X 8
+11. On/Off Toggle Switch Through Hole version X 1
+12. LED Dot Matrix (TZT MAX7219) X 1
+13. Female Header Pin Socket 15 Pin X 2
+14. Audio Socket 3.5mm (PN - PJ-301M) X 3
+15. Mini JST Connector and wire 2 Pin X 11
 
+
+- [List of Parts](pdfs/List of Parts.pdf)
 
 ## Step 1: Getting Your Boards Printed
 
@@ -71,14 +75,14 @@ We all have different levels of knowledge, so when it comes to a build like this
 
 So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the holes is done in Fusion 360 (also free!)
 
-ll the files that you need to build your own Groove Box can be found in my GitHub page This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
+ll the files that you need to build your own Groove Box can be found in my [GitHub](https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine) pageThis includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
 
 STEPS:
 
-- You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.
-- If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.
-- NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
-- Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.
+1. You’ll need to send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.
+2. If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+3. NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
+4. Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.
 
 
 ## Step 2: Adding the Components Part 1
@@ -97,11 +101,12 @@ As the PCB is 2 sided, the order you add the components does matter. Of you get 
 
 STEPS:
 
-- As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.
-- I've included a mini JST connector to power the board. Solder the connecter next into place.
-- You can now add the capacitors, start with the polyester caps and then add the electrolytic caps
-- Now it's time to add the Arduino. I always included header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board
-- Add the header pins to the Arduino and then place them into the board and solder into place
+1. As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.
+2. I've included a mini JST connector to power the board. Solder the connecter next into place.
+3. You can now add the capacitors, start with the polyester caps and then add the electrolytic caps
+4. Now it's time to add the Arduino. I always included header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board
+5. Add the header pins to the Arduino and then place them into the board and solder into place
+
 That's the first side done, next, it's time to add the controls to the reverse side
 
 
@@ -123,13 +128,13 @@ The trickiest part here is to add the LED's. They need to be raised from the boa
 
 STEPS:
 
-- The LED's need to sit about 10mm off the PCB. I made a little jig/spacer out of some scrap metal to ensure that they are all even and are sitting off the board.
-- To find the right height of the LED's, add a couple of potentiometers into the board (don't solder then in place yet) Put an LED into the board and place the jog between the legs so the LED is resting on top of it. Place the front panel into place and have it resting on the potentiometers. If the top of the LED is showing through the front panel then your jig is the right height. Make adjustments where needed.
-- Take out the potentiometers, flip the board over and with the jig in place, solder one of the LED legs. Flip over and make sure the LED is sitting straight and then solder the other leg. Do this for all 5 LED's
-- Now you can move onto the momentary switches. Solder the legs into place and once done you can heat up the solder pads again and push down on the switches to make sure that they are sitting flat on the board
-- Solder the on/off switch into place
-- Now you can move onto the 4 audio jacks
-- Lastly, solder all of the 4 pots into place.
+1. The LED's need to sit about 10mm off the PCB. I made a little jig/spacer out of some scrap metal to ensure that they are all even and are sitting off the board.
+2. To find the right height of the LED's, add a couple of potentiometers into the board (don't solder then in place yet) Put an LED into the board and place the jog between the legs so the LED is resting on top of it. Place the front panel into place and have it resting on the potentiometers. If the top of the LED is showing through the front panel then your jig is the right height. Make adjustments where needed.
+3. Take out the potentiometers, flip the board over and with the jig in place, solder one of the LED legs. Flip over and make sure the LED is sitting straight and then solder the other leg. Do this for all 5 LED's
+4. Now you can move onto the momentary switches. Solder the legs into place and once done you can heat up the solder pads again and push down on the switches to make sure that they are sitting flat on the board
+5. Solder the on/off switch into place
+6. Now you can move onto the 4 audio jacks
+7. Lastly, solder all of the 4 pots into place.
 
 
 ## Step 4: Uploading the Sketch to the Arduino
@@ -138,16 +143,16 @@ STEPS:
 
 ![Step 4: Uploading the Sketch to the Arduino image 2](images/step05_02.jpg)
 
-If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
+If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out [this link](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE). It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
 
 STEPS:
 
-- Open the sketch in the software folder which will take you to Arduino IDE
-- Connect your Arduino and upload the sketch
-- There are a number of libraries that you may have to add if you haven't downloaded these already. This couldn't be simpler to do - just follow the following instructions - https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries/
-- Once the sketch is loaded to Arduino you can connect it to the PCB in preparation for testing.
-- You can now connect the PCB to a 9V to 12V power source and check that the groove box works. Plug a speaker in to the out jack and hit the start button. The Groove Box comes programmed already with a number of beats and you should be able to hear the first one play. Try turning the pots and see what changes you can make to the start-up beat.
-- If you're not hearing anything then you might need to do some troubleshooting.
+1. Open the sketch in the software folder which will take you to Arduino IDE
+2. Connect your Arduino and upload the sketch
+3. There are a number of libraries that you may have to add if you haven't downloaded these already. This couldn't be simpler to do - just follow the following instructions - https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries/
+4. Once the sketch is loaded to Arduino you can connect it to the PCB in preparation for testing.
+5. You can now connect the PCB to a 9V to 12V power source and check that the groove box works. Plug a speaker in to the out jack and hit the start button. The Groove Box comes programmed already with a number of beats and you should be able to hear the first one play. Try turning the pots and see what changes you can make to the start-up beat.
+6. If you're not hearing anything then you might need to do some troubleshooting.
 
 
 ## Step 5: Adding the Front Panel
@@ -166,11 +171,11 @@ STEPS:
 
 STEPS:
 
-- The front panel has been designed so it fits perfectly onto the PCB. Carefully place the front panel so it aligns with the components and push it into place. I usually start with the on/off switch and then align the pots and LED's with the holes in the front panel.
-- You may need to trim the little tabs on the pots if they have them.
-- Now you can add the nuts to the pots, audio jacks and on/off switches to secure the front panel to the PCB.
-- This is actually the 2nd iteration of the Groove Box, the first one had the audio jacks at the bottom which held the front panel well. However, the 2nd version I found that the front panel wasn't secured as well where the momentary switches are so I've modified the files to include a couple of M2 screws and nuts to help better secure it.
-- Now that the front panel is in place you can either make an individual case you house it in or add it to your Eurorack. You can see in the images that I've included it in my little Eurorack synth.
+1. The front panel has been designed so it fits perfectly onto the PCB. Carefully place the front panel so it aligns with the components and push it into place. I usually start with the on/off switch and then align the pots and LED's with the holes in the front panel.
+2. You may need to trim the little tabs on the pots if they have them.
+3. Now you can add the nuts to the pots, audio jacks and on/off switches to secure the front panel to the PCB.
+4. This is actually the 2nd iteration of the Groove Box, the first one had the audio jacks at the bottom which held the front panel well. However, the 2nd version I found that the front panel wasn't secured as well where the momentary switches are so I've modified the files to include a couple of M2 screws and nuts to help better secure it.
+5. Now that the front panel is in place you can either make an individual case you house it in or add it to your Eurorack. You can see in the images that I've included it in my little Eurorack synth.
 
 
 ## Step 6: How to Play the Groove Box
@@ -181,7 +186,7 @@ STEPS:
 
 ![Step 6: How to Play the Groove Box image 3](images/step07_03.jpg)
 
-Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my GitHub page
+Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my [GitHub](https://github.com/lonesoulsurfer/Groove_Box_Drum_Machine) page
 
 Inputs
 
@@ -189,47 +194,53 @@ There are 4 audio inputs included on the Groove Box. 2 of these are Sync outs fo
 
 Basic Functions
 
-- Press the start/stop button to start or stop the rhythm
-- Press buttons A/B/C/D to select different knob functions (see table below)
-- Turn any of the four knobs to alter the parameters in the current selected group (see table below)
-- Tap the tap tempo button repeatedly to set the tempo
-- Press buttons A+B together to load a session, then choose which session to load by pressing any of the buttons (or press multiple buttons together to cancel)
-- Press buttons C+D together to save a session, then choose which slot to save your session in by pressing any of the buttons (or press multiple buttons together to cancel)
-- Press buttons B+C together to change the current active memory bank, then choose a specific memory bank by pressing any of the buttons
+1. Press the start/stop button to start or stop the rhythm
+2. Press buttons A/B/C/D to select different knob functions (see table below)
+3. Turn any of the four knobs to alter the parameters in the current selected group (see table below)
+4. Tap the tap tempo button repeatedly to set the tempo
+5. Press buttons A+B together to load a session, then choose which session to load by pressing any of the buttons (or press multiple buttons together to cancel)
+6. Press buttons C+D together to save a session, then choose which slot to save your session in by pressing any of the buttons (or press multiple buttons together to cancel)
+7. Press buttons B+C together to change the current active memory bank, then choose a specific memory bank by pressing any of the buttons
+
 Other functions
 
 A few extra hidden functions:
 
-- Press buttons A+B+C together to reset your beat to default values. This will not affect any saved beats
-- Press buttons A+B+D together to generate a random beat. This will also not affect any saved beats
+1. Press buttons A+B+C together to reset your beat to default values. This will not affect any saved beats
+2. Press buttons A+B+D together to generate a random beat. This will also not affect any saved beats
+
 Parameters
 
 There are 16 different parameters which can be adjusted on DrumKid, split into four groups, with each group's four parameters controlled by the four knobs. The parameters are grouped as follows:
 
 Group A (randomness)
 
-- Chance
-- Zoom
-- Range
-- Midpoint
+1. Chance
+2. Zoom
+3. Range
+4. Midpoint
+
 Group B (effects)
 
-- Pitch
-- Crush
-- Crop
-- Drop
+1. Pitch
+2. Crush
+3. Crop
+4. Drop
+
 Group C (drone)
 
-- Drone
-- Modulate
-- Tuning
-- Note
+1. Drone
+2. Modulate
+3. Tuning
+4. Note
+
 Group D (rhythm)
 
-- Beat
-- Beats/bar (time signature)
-- Swing
-- Tempo
+1. Beat
+2. Beats/bar (time signature)
+3. Swing
+4. Tempo
+
 You can try out each parameter by starting a rhythm (using the start/stop button), then selecting a group and turning the different knobs. For example, try selecting group B (by pressing the B button) then turning the first knob, which will now control "pitch". You should hear the sound change. Below are descriptions of exactly what each parameter does, and how it can be used.
 
 Chance - The probability of extra drum hits being generated. At zero, the beat will be completely unchanged, while for higher values there will be lots of extra events, usually creating a busier, messier beat. This can be used in conjunction with zoom, midpoint, and range to create drum fills that transition organically from a simple beat.
@@ -320,6 +331,13 @@ Please note that the LED pattern for each beat is illustrated to help you find t
 
 24. Nihil ⚪⚪⚪⚫⚪
 
+
+- [manual - Groove Box](pdfs/manual - Groove Box.pdf)
+
+## Downloads
+
+- [List of Parts](pdfs/List of Parts.pdf)
+- [manual - Groove Box](pdfs/manual - Groove Box.pdf)
 
 ---
 *33 images archived*

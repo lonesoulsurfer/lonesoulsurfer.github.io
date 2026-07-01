@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Wireless-Dinner-or-Door-Bell/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -11,7 +13,7 @@ Source: https://www.instructables.com/Wireless-Dinner-or-Door-Bell/
 
 My makerspace (which is a very small shed!) is some distance from the house and I wanted some way to know when I'm wanted back in the house. I got a little tired of hearing someone yell from the top of the stairs that dinner is ready, so I built a remote controlled bell.
 
-The build is made from readily available parts and you will need to build a simple 555 circuit as well. For those new to making circuits, I recently completed an 'ible on getting started in building circuits so check it out here if you need help. The circuit I built in the 'ible is the same as the one needed in this one!
+The build is made from readily available parts and you will need to build a simple 555 circuit as well. For those new to making circuits, I recently completed an 'ible on getting started in building circuits so[check it out here](https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/)if you need help. The circuit I built in the 'ible is the same as the one needed in this one!
 
 How it works is there is a small solenoid that is connected to the 555 circuit. The circuit is activated my the remote which in turn makes the solenoid move up and down, striking the bell. You can control the speed of the solenoid with a potentiometer to either have a nice, slow ring or a manic fast one.
 
@@ -32,41 +34,41 @@ Parts
 
 Electronic Parts
 
-1. 555 Timer - eBay
+1. 555 Timer - [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-IC-NE555-DIP-8-Timers-NEW-GOOD-QUALITY/172772366259?hash=item283a0917b3:m:meg_PgLYK2INxLXCXBh4zAQ:rk:4:pf:0)
 
-2. 10K Resistor - Buy them as an assorted lot on eBay
+2. 10K Resistor - Buy them as an assorted lot on [eBay](https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/271860510973?epid=24025613485&hash=item3f4c2630fd:g:LMwAAOSwrklVSIC7:rk:9:pf:0)
 
-3. 6.8uf Capacitor - Buy them in assorted lots on eBay (You could also a 4.6uf or another value - up to you)
+3. 6.8uf Capacitor - Buy them in assorted lots on [eBay](https://www.ebay.com.au/itm/1uF-470uF-120pcs-12-Value-Electrolytic-Capacitors-Assortment-Kit-Assorted-Set/311708836381?hash=item48934b621d:g:WLAAAOSwCGVX6fec:rk:8:pf:0)(You could also a 4.6uf or another value - up to you)
 
-4. 50K potentiometer - eBay
+4. 50K potentiometer - [eBay](https://www.ebay.com.au/itm/5Pcs-50K-15mm-ohm-Linear-Taper-Rotary-Potentiometer-Panel-Pot/262558966745?epid=504299956&hash=item3d21bbe3d9:g:4BUAAOSwARZXnAum:rk:21:pf:0)
 
-5. Prototype board - eBay
+5. Prototype board - [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
-6. 2 X LED's - eBay
+6. 2 X LED's - [eBay](https://www.ebay.com.au/itm/50PCS-5mm-LED-White-Red-Green-Blue-UV-Bright-Pink-Light-Emitting-Diode/362233885966?hash=item5456d2750e:m:mFwwOxME1TGa8eTfUYNCQoQ:rk:2:pf:0)
 
 7. 2.2K Resistor
 
-8. Solenoid - eBay
+8. Solenoid - [eBay](https://www.ebay.com.au/itm/DC-9V-120g-2mm-Open-Frame-Actuator-Linear-Pull-Solenoid-Electromagnet/332344158553?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D54815%26meid%3D6a11eb72adc947ecb105e094a4dfcaa9%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D332344158553&_trksid=p2045573.c100505.m3226)
 
 9. Wires
 
-10. Remote control module - eBay
+10. Remote control module - [eBay](https://www.ebay.com.au/itm/DC-12v-10A-relay-1CH-wireless-RF-Remote-Control-Switch-Transmitter-Receiver-GH/132490522289?epid=922415752&hash=item1ed90ceeb1:g:ShQAAOSwIspacy2J:rk:8:pf:0)
 
-11. 9v (300ma) Wall adapter - eBay
+11. 9v (300ma) Wall adapter - e[Bay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=9v+300ma+wall&_sacat=0)
 
 Fire Alarm
 
 If you don't have a vintage fire alarm sitting around, then you can easily just make your own Here are the parts that you would need to build one
 
-1. Bike Bell - eBay
+1. Bike Bell - [eBay](https://www.ebay.com.au/itm/Traditional-Vintage-Bike-Bicycle-Cycling-Handlebar-Loud-Retro-Ding-Dond-Bell-New/152308907620?epid=940187294&hash=item2376517e64:g:pcsAAOSwcLxYICm3:rk:3:pf:0)
 
 2. Aluminium Flat Bar - eBay
 
 3. Various nuts and bolts
 
-5. Project box - eBay
+5. Project box - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC2.A0.H0.Xaluminium+project+box.TRS0&_nkw=aluminium+project+box&_sacat=0)
 
-If you want to find an old fire alarm - try eBay. I picked mine up at a junk shop for $5!
+If you want to find an old fire alarm - try [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xvintage+fire+alarm.TRS0&_nkw=vintage+fire+alarm&_sacat=0). I picked mine up at a junk shop for $5!
 
 
 ## Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8
@@ -81,7 +83,7 @@ If you want to find an old fire alarm - try eBay. I picked mine up at a junk sho
 
 ![Step 2: Making the Circuit - Connecting Pins 1, 2, 4 and 8 image 5](images/step02_05.jpg)
 
-The 555 circuit is quite simple to build. As mentioned in the intro, I recently did a intro to making your first circuit which you can use to help you build this circuit
+The 555 circuit is quite simple to build. As mentioned in the intro, I recently did a intro to [making your first circuit](https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/) which you can use to help you build this circuit
 
 Steps
 

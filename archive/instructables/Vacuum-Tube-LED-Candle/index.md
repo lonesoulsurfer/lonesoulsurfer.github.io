@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Vacuum-Tube-LED-Candle/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,21 +42,21 @@ For this ible’ I decided to mount one in a block of wood and add a flickering 
 
 Parts
 
-1. Vacuum tube. – eBay
+1. Vacuum tube. – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xvacuum+tube.TRS0&_nkw=vacuum+tube&_sacat=0)
 
 2. Wood. Any old piece of wood as long as it has some character
 
-3. 2 X AA Battery holder - eBay
+3. 2 X AA Battery holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xaa+x+2+battery+holder.TRS0&_nkw=aa+x+2+battery+holder&_sacat=0)
 
 4. 2 X AA Batteries
 
 5. Wires
 
-6. Switch – eBay. I used quite a large switch which was more time consuming to add. It would be simpler to add a smaller toggle switch – leave it up to you though.
+6. Switch – [eBay](http://www.ebay.com.au/itm/5Pcs-SPST-2Pin-Heavy-Duty-15A-250V-ON-OFF-Rocker-Toggle-Switch-Waterproof-Boot-/282412663943?hash=item41c11b4487:g:daQAAOSwuxFY2hHN). I used quite a large switch which was more time consuming to add. It would be simpler to add a smaller toggle switch – leave it up to you though.
 
-7. Brass strip – eBay
+7. Brass strip – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR2.TRC0.A0.H0.Xbrass+strip.TRS0&_nkw=brass+strip&_sacat=0)
 
-8. Flickering LED - eBay
+8. Flickering LED - [eBay](http://www.ebay.com.au/itm/10pc-Red-Randomly-Flickering-Flicker-Flash-Flashing-5mm-LED-for-candle-light-FR5-/140874098538?epid=1090107207&hash=item20ccc0276a:g:PIkAAMXQrNtRyk1s)
 
 Tools
 
@@ -72,7 +74,7 @@ Tools
 
 7. Double sided tape
 
-8. Oscillating multi tool
+8. [Oscillating multi tool](https://www.google.com.au/search?q=oscillating+multi+tool&oq=oscillating+multi+tool&aqs=chrome.0.0j69i60l2j0l3.6431j0j9&sourceid=chrome&ie=UTF-8)
 
 
 ## Step 2: Prepare the Wood
@@ -110,7 +112,7 @@ Steps:
 
 2. Place the battery holder onto the wood and trace around
 
-3. To make the initial cuts I used an oscillating multi tool which you can see an image of below. I found that this made the job of removing the battery section very easy.
+3. To make the initial cuts I used an [oscillating multi tool](https://www.google.com.au/search?q=oscillating+multi+tool&oq=oscillating+multi+tool&aqs=chrome.0.0j69i60l2j0l3.6431j0j9&sourceid=chrome&ie=UTF-8) which you can see an image of below. I found that this made the job of removing the battery section very easy.
 
 
 ## Step 4: Making the Battery Section - Chisling

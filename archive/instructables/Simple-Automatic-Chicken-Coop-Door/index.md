@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Simple-Automatic-Chicken-Coop-Door/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -31,7 +33,7 @@ The following Instructable will take you through how to wire-up the timer and an
 
 Your chickens ill thank you!
 
-I've also included a short video of the door in action.(if you are using a mobile, try this link)
+I've also included a short video of the door in action.(if you are using a mobile, try [this](https://www.youtube.com/watch?v=b85HCT4id6I&list=UU3KVtVSsFk13MCDUBh34Drw)link)
 
 Enjoy
 
@@ -52,43 +54,29 @@ Enjoy
 
 ![Step 1: Things to Gather image 7](images/step01_07.jpg)
 
-Parts:
+Parts: 1. Electric car antenna - you can get these from your local wreckers if you have one. Alternatively you can [get them on eBay](http://www.ebay.com.au/itm/Pro-Universal-Fits-for-Car-Auto-ELECTRIC-AERIAL-ANTENNA-WING-POWER-/271137139036?pt=AU_Car_Parts_Accessories&hash=item3f2108695c&_uhb=1)
 
-1. Electric car antenna - you can get these from your local wreckers if you have one. Alternatively you can get them on eBay
-
-2. Timer - I used this one from eBay
+2. Timer - I used [this one](http://www.ebay.com.au/itm/New-DIN-Rail-Digital-LCD-Power-Programmable-Timer-DC-12V-16A-Time-Relay-Switch-/321129865447?pt=AU_B_I_Electrical_Test_Equipment&hash=item4ac4d4e0e7&_uhb=1)from eBay
 
 3. Power supply. You can use either a 12v battery or a 12v power source. I went with a 12v battery so if there were any power outages then it would still keep on going. The battery I scavenged was also from the wreckers and only cost me $10
 
 4. Various wires
 
-5. Terminal Strip - eBay
+5. Terminal Strip - [eBay](http://www.ebay.com.au/itm/1x-Dual-Rows-Connector-12-Position-Wire-Barrier-Terminal-Strip-Block-10A-New-/131109573367?pt=AU_B_I_Electrical_Test_Equipment&hash=item1e86bd52f7&_uhb=1)
 
-6. Screws.
-- Small ones (they need to fit into the C channel
-- Larger ones to screw everything together
+6. Screws. - Small ones (they need to fit into the C channel - Larger ones to screw everything together
 
 7. Aluminium C channel - Hardware store
 
-8. Voltage Meter - eBay (optional)
+8. Voltage Meter - [eBay](http://www.ebay.com.au/itm/A-S0-Mini-DC-2-5-30V-Red-LED-Panel-Voltage-Meter-3-Digital-Display-Voltmeter-/281268289958?pt=AU_B_I_Electrical_Test_Equipment&hash=item417ce581a6&_uhb=1) (optional)
 
-9. Small switch (optional) - eBay
+9. Small switch (optional) - [eBay](https://www.ebay.com.au/itm/2-5Pcs-12mm-Mini-Round-Switch-Waterproof-Momentary-ON-OFF-Push-Button-6-Colors/263138802643?var=&hash=item3d444b7bd3&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVEH2Ke0KbaL1nd06aceKPoXc7PlKEpooSh%2B9K9p%2FaJbttVSw0OdmlTsT8KPbPO9gaGCVVTbrWpB5QBemgG4YF6afI63Rj5EDptGF19NyW%2B1%2F7io9QZweIUEa2CC6SooYw2NmYHVCX9GZMJRP6x0fBx5CRvZxT6Lt61eq8jhskGQ29oTA9BT114FXjUQc7wP%2FUVaUltO7bfOizWPkdu4joPez9Lrew32BJx7ANSKHpF%2FUNAouo5wjIDp3rVwdvLT%2BHqjqsn3TwVA6ypyHJZC74G5F6thL6M%2BTObzmuwYvhfdjIqBpCKSGAx9zDZcesUCFjOreUi4uz8tg2rBVzr9R5%2FCkG50lKw7h%2BCzoCO9Nn0EZhOL8tfNLP5nRasqXUlwbBZB6%2BVFUn4Ct2dZc1um4PhOqNzyomXBcs1uCMqCk893%2FCJBlBq0GvWnJLWRyCd9BnCRWs98nQm6IbJk8xCCLmOURaPKOojh%2BuP64az1bOVTKVLQvGWo2v9zNyDWmoEPZ7ajCF8W1RF9TSl6QklKbBlfcqR0HSKd55BT3vVqdgU3FCXRb6CB5kUq9U2KT6THZEfuLa7Y0P6%2B1%2BEfeTsnNmsrlI1Q8WmDPO55bWkQeje2VCOjFPrunYkdzryUpa8rbPnfKBo%2BuymjWN3%2BSXdyq5G9bg2WY%2BhvbnGJaausBlEtI%2B9rs%2Fo11HF%2FNk6laOMZLoO5EgMYB%2FYHRh3fu2msM3pfLj76gd2rKnnOlcG%2BUzH2862eavHIRzpQSpV7sug40VPjQeWeiW1oKhtWZlxhff1MxsdzAVtioePA4t5KrtSzfRiMMhLEDXGwMHF4r2FvMB5ygChor4sglrT9ogHzMJhk3zf1VKRrxJnlxVRNodXL5e1Us%2Fhii85MQU24Pb1XHSf%2F%2BugFTZyASHsLmPocpQ2DO1NLcUpI%2F3%2FtAcwqQYbtAKMMYJyvp12xiDis2LLR1zs09kSwS9s9OZTEGuIAh9CQ%3D%3D&checksum=263138802643a9566d46559e4e9496d43712b71880e8&frcectupt=true)
 
-10. Solar Panel - eBay
+10. Solar Panel - [eBay](http://www.ebay.com.au/itm/20W-12V-Solar-Panel-for-Camping-Boating-Caravan-Portable-Off-Grid-Applications-/111238998156?pt=AU_Solar&hash=item19e65c688c&_uhb=1)
 
-11. Solar regulator - eBay
+11. Solar regulator - [eBay](http://www.ebay.com.au/itm/130733614943?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1497.l2649)
 
-Tools:
-
-1. Bench Saw
-
-2. Hot glue
-
-3. Soldering iron
-
-4. Super Glue
-
-5. Drill
+Tools: 1. Bench Saw 2. Hot glue 3. Soldering iron 4. Super Glue 5. Drill
 
 
 ## Step 2: Testing the Antenna and Timer
@@ -103,11 +91,11 @@ Its a good idea to first test the antenna and timer to ensure that everything wo
 
 Steps:
 
-1.  Use the schematic below to help you with the wiring.
+1. Use the schematic below to help you with the wiring.
 
-2.  You can use either a 12v battery or power source to power your antenna and timer.  You need to make sure though that the antenna has constant power.  When the power is active the antenna retracts and when the green wire (usually green but it could be another colour) is attached to the red wire, the antenna will extend.
+2. You can use either a 12v battery or power source to power your antenna and timer. You need to make sure though that the antenna has constant power. When the power is active the antenna retracts and when the green wire (usually green but it could be another colour) is attached to the red wire, the antenna will extend.
 
-3.  if you have everything hooked-up correctly, then when the timer is on the antenna will retract, and when the timer is off it will extend.
+3. if you have everything hooked-up correctly, then when the timer is on the antenna will retract, and when the timer is off it will extend.
 
 
 ## Step 3: Planning the Door
@@ -120,9 +108,9 @@ Steps:
 
 So now you have tested the antenna out and if everything is working, you’ll now have to think how you are going to mount it inside your chicken coop.
 
-There are many types of coops and most people will probably have a unique arrangement.  Your door should be located in a spot where there is a lot of room and at a high spot in the coop.  The reason for this is so the antenna has enough room to move up and down.  Also, the battery etc can take up a lot of room, so you need to be wary of where this will go in the end.
+There are many types of coops and most people will probably have a unique arrangement. Your door should be located in a spot where there is a lot of room and at a high spot in the coop. The reason for this is so the antenna has enough room to move up and down. Also, the battery etc can take up a lot of room, so you need to be wary of where this will go in the end.
 
-Once you have decided where to put the door, you need to then design exactly how the door will work.  Depending on how your coop is made, this could be easy or really challenging.  As you can see from the photos below of my coop – I had a large area where the door to my coop is and decided to use this section to add the chicken door.
+Once you have decided where to put the door, you need to then design exactly how the door will work. Depending on how your coop is made, this could be easy or really challenging. As you can see from the photos below of my coop – I had a large area where the door to my coop is and decided to use this section to add the chicken door.
 
 
 ## Step 4: Making the Door - C Channel
@@ -147,18 +135,17 @@ Once you have decided where to put the door, you need to then design exactly how
 
 ![Step 4: Making the Door - C Channel image 10](images/step04_10.jpg)
 
-View 6 more
-The C channel is what will keep the door in the right position.  For those who don’t know, C Channel is usually a long piece of aluminium shaped like a “C”
+The C channel is what will keep the door in the right position. For those who don’t know, C Channel is usually a long piece of aluminium shaped like a “C”
 
 Steps:
 
-1. Cut 2 equal lengths of wood.  Mine were 1500mm by 80mm.  I used fence palings for all of the wood that I needed.
+1. Cut 2 equal lengths of wood. Mine were 1500mm by 80mm. I used fence palings for all of the wood that I needed.
 
-2. Next grab your C channel and drill some holes aprox 300 mm long the inside of the channel.  Use a larger bit and drill out the top of the hole so the screws you use sit flush in the channel.  Do this twice.
+2. Next grab your C channel and drill some holes aprox 300 mm long the inside of the channel. Use a larger bit and drill out the top of the hole so the screws you use sit flush in the channel. Do this twice.
 
-3. Screw the C channel into the wood as shown.  Make sure that the wood is as straight as possible when attaching the C channel.  You will probably have some bend in the channel once it is screwed into the wood, but once they are attached to the coop they should straighten out.
+3. Screw the C channel into the wood as shown. Make sure that the wood is as straight as possible when attaching the C channel. You will probably have some bend in the channel once it is screwed into the wood, but once they are attached to the coop they should straighten out.
 
-4. Next attach the wood and C channel to the coop.  Make sure that when attaching the C channel that the distance between both of them is the same from top to bottom.  Remember, the door needs to slide up and down along these channels so they need to be straight or it will jam.
+4. Next attach the wood and C channel to the coop. Make sure that when attaching the C channel that the distance between both of them is the same from top to bottom. Remember, the door needs to slide up and down along these channels so they need to be straight or it will jam.
 
 
 ## Step 5: Mounting the Antenna
@@ -179,25 +166,7 @@ Steps:
 
 ![Step 5: Mounting the Antenna image 8](images/step05_08.jpg)
 
-Once you have the C channels attached to the coop, you will then need to work out how to mount the Antenna so it is directly above.
-
-Steps:
-
-1. Out of some thicker wood, create a bracket like the one below. Having 2 sides on the wooden bracket will help give it more strength.
-2. Attach the wooden bracket to another piece of wood. This will be the backing. I just used a piece of fence paling.
-
-3. Decide where you want the antenna to be mounted on the bracket. Once you have worked out the best spot you need to screw it into the top of the bracket. The best way to do this is as follows:
-
-a. Use a piece of masking tape and put it across the 2 holes in the bottom of the antenna.
-b. Mark with a pen exactly where the middle is.
-c. Remove tape and stick it to the top of the bracket.
-d. Drill where marked
-
-You should now have 2 holes in the top of the bracket perfectly lined up with the antenna.
-
-4. Bolt the antenna into place
-
-5. I also added a cable tie by drilling a couple of holes into the backing and using a cable tie for extra support around the antenna.
+Once you have the C channels attached to the coop, you will then need to work out how to mount the Antenna so it is directly above. Steps: 1. Out of some thicker wood, create a bracket like the one below. Having 2 sides on the wooden bracket will help give it more strength. 2. Attach the wooden bracket to another piece of wood. This will be the backing. I just used a piece of fence paling. 3. Decide where you want the antenna to be mounted on the bracket. Once you have worked out the best spot you need to screw it into the top of the bracket. The best way to do this is as follows: a. Use a piece of masking tape and put it across the 2 holes in the bottom of the antenna. b. Mark with a pen exactly where the middle is. c. Remove tape and stick it to the top of the bracket. d. Drill where marked You should now have 2 holes in the top of the bracket perfectly lined up with the antenna. 4. Bolt the antenna into place 5. I also added a cable tie by drilling a couple of holes into the backing and using a cable tie for extra support around the antenna.
 
 
 ## Step 6: Attaching the Wires
@@ -214,22 +183,22 @@ You should now have 2 holes in the top of the bracket perfectly lined up with th
 
 ![Step 6: Attaching the Wires image 6](images/step06_06.jpg)
 
-View 3 more
 So now you have the antenna attached to the coop – the next step is to wire everything up.
 
-Steps.
+Steps
+.
 
 1. Cut a piece of wood the same length as the one you mounted the antenna to.
 
-2. Decide where you want the timer to go.  Remember, this bit of wood will need toget attached to the wooden bracket that the antenna is attached to so make sure you choose the best place to locate the time.  Glue on with hot glue.
+2. Decide where you want the timer to go. Remember, this bit of wood will need toget attached to the wooden bracket that the antenna is attached to so make sure you choose the best place to locate the time. Glue on with hot glue.
 
-3. Drill 2 holes in the wood at the top of the timer and 3 at the bottom.  These will be for the wires to go through
+3. Drill 2 holes in the wood at the top of the timer and 3 at the bottom. These will be for the wires to go through
 
-4. On the back you need to attach a wire terminal.  This should go pretty much behind the timer.  Screw into place.
+4. On the back you need to attach a wire terminal. This should go pretty much behind the timer. Screw into place.
 
-5. Add the wires to power the timer.  These are the ones that go into the top of the timer and attached them to the terminal.
+5. Add the wires to power the timer. These are the ones that go into the top of the timer and attached them to the terminal.
 
-**There is a schematic below which should hopefully help you as to how this is done.  It’s pretty easy really; just make sure that the positive and negative wires are in the right positions!**
+**There is a schematic below which should hopefully help you as to how this is done. It’s pretty easy really; just make sure that the positive and negative wires are in the right positions!**
 
 6. Attach the board to the wooden antenna bracket
 
@@ -250,19 +219,19 @@ Steps.
 
 ![Step 7: Attaching the Antenna to the Coop image 6](images/step07_06.jpg)
 
-View 3 more
 Once you have The antenna mounted in thew wooden bracket, its time to attach it to the coop.
 
-Care must be given as to where you mount the antenna as you will need it high enough so the door fully opens, and also it will have to be straight.  The good thing about most of these antennas is they do have some play in them so if you happen to have it a little crookedly, it shouldn’t matter too much.
+Care must be given as to where you mount the antenna as you will need it high enough so the door fully opens, and also it will have to be straight. The good thing about most of these antennas is they do have some play in them so if you happen to have it a little crookedly, it shouldn’t matter too much.
 
 Steps:
 
-1. Use some bolts and nuts to mount the antenna to the boards that the C channel is running along.  When mounting the antenna try and have it extended fully – this will help you mount it straight.
+1. Use some bolts and nuts to mount the antenna to the boards that the C channel is running along. When mounting the antenna try and have it extended fully – this will help you mount it straight.
 
 2. When mounting, if you find that the antenna is too long you can do a couple of things.
 
-a. Superglue the first length of antenna to the second length.  This way the antenna won’t fully extend.
-b. Cut the antenna.  You will need to be careful when doing this as I’m pretty sure that the antenna will have issues extending again if it is fully retracted.  You can cut it, just don’t retract until you have added the nut to the end (more on that later)
+a. Superglue the first length of antenna to the second length. This way the antenna won’t fully extend.
+
+b. Cut the antenna. You will need to be careful when doing this as I’m pretty sure that the antenna will have issues extending again if it is fully retracted. You can cut it, just don’t retract until you have added the nut to the end (more on that later)
 
 
 ## Step 8: Making a Door
@@ -279,7 +248,7 @@ Steps:
 
 1. First measure the gap between the C channels and the height from the ground to where the door needs to end.
 
-2. Cut out a piece of plywood to fit the gap.  You might have to trim 3-5 mm off one side of the plywood (I did)
+2. Cut out a piece of plywood to fit the gap. You might have to trim 3-5 mm off one side of the plywood (I did)
 
 3. Slip the door between the C channels making sure that the door moves smoothly up and down the C channel
 
@@ -300,22 +269,13 @@ Steps:
 
 ![Step 9: Attaching the Door to the Antenna image 7](images/step09_07.jpg)
 
-Now you are ready to attach the door to the antenna
-
-Steps:
-1. First – you need to find a way to attach the antenna to the door. He is how I did it and I have also suggested a couple of other ways.
-
-The Way I did it Initially
-1. First find a long, thin bolt. The door will be screwed onto this.
+Now you are ready to attach the door to the antenna Steps: 1. First – you need to find a way to attach the antenna to the door. He is how I did it and I have also suggested a couple of other ways. The Way I did it Initially 1. First find a long, thin bolt. The door will be screwed onto this.
 
 2. Next find fastener which has an insert screw in the side like the picture below. Use a small blow torch and solder the head of the bolt to the fastener.
 
 3. Cut the end of the antenna off and thread on the fastener / Bolt. Tighten up the insert nut.
 
-4. Now you should have a horizontal bolt sticking out from the vertical antenna. Make sure that the fastener is done-up tightly.
-
-A Better Way
-Recently I had to replace the bolt as it failed at the solder point. So, instead of soldering, I decided to just drill a hole through the neck of the bolt and threaded the antenna through it. To keep the bolt in place, use some drill stop collars like in the images below. These are great and will keep the bolt in place.
+4. Now you should have a horizontal bolt sticking out from the vertical antenna. Make sure that the fastener is done-up tightly. A Better Way Recently I had to replace the bolt as it failed at the solder point. So, instead of soldering, I decided to just drill a hole through the neck of the bolt and threaded the antenna through it. To keep the bolt in place, use some drill stop collars like in the images below. These are great and will keep the bolt in place.
 
 
 ## Step 10: Adding a Solar Panel and Voltage Meter
@@ -359,31 +319,7 @@ Steps:
 
 ![Step 11: Testing and Running image 5](images/step11_05.jpg)
 
-Hopefully you now have a function, automatic chicken coop door!
-
-So what’s next? You should now test it and make sure that everything is working as it should. Set the time so the antenna retracts (door opens) for the morning and have it shut at night. Keep an eye on it for the first few times and check the voltage level of the battery regularly.
-
-Timer -
-
-When using the timer it should be set on “auto”. This will mean it is using the times set to open and close.
-
-If you do need to lower the door for any reason, then you can change the timer to “on” and the door will lower.
-Raising and lowering can also be done by hand – all you have to do is carefully push the door up and down. Don’t go too fast or you will could possibly wreck the gears in the antenna.
-
-Power supply -
-
-You could easily run the antenna off the mains by using a 12v DC plug. It would all depend on how long your battery stays charged for. You don't really want to have to charge it every couple of weeks (kind of defeats the purpose of having an automated door!
-
-I will be adding a solar panel soon to the battery so it is being charged each day.
-
-Things I learnt
-Initially I thought that all of the C channel would have to be perfectly straight and that the antenna would need to aligned up just right. Turns out that the antenna has quite a bit of flex and there is some room for error - not much room mind you, but enough to enable you to install the antenna by sight.
-
-The important thing about the C channel is to have the same distance between them from top to bottom. Also to make sure that there are no bends or curves when mounting to the coop. If you can do this then you won't have any issues. The don't even have to be vertically straight - as long as everything else is mounted at about the same angle.
-
-Also, when you attach the door to the antenna there is some movement that the antenna can absorb. This is a good thing, especially if the antenna is not mounted perfectly straight.
-
-Thanks for looking and I hope this has inspired you to make your own automated chicken coop door.
+Hopefully you now have a function, automatic chicken coop door! So what’s next? You should now test it and make sure that everything is working as it should. Set the time so the antenna retracts (door opens) for the morning and have it shut at night. Keep an eye on it for the first few times and check the voltage level of the battery regularly. Timer - When using the timer it should be set on “auto”. This will mean it is using the times set to open and close. If you do need to lower the door for any reason, then you can change the timer to “on” and the door will lower. Raising and lowering can also be done by hand – all you have to do is carefully push the door up and down. Don’t go too fast or you will could possibly wreck the gears in the antenna. Power supply - You could easily run the antenna off the mains by using a 12v DC plug. It would all depend on how long your battery stays charged for. You don't really want to have to charge it every couple of weeks (kind of defeats the purpose of having an automated door! I will be adding a solar panel soon to the battery so it is being charged each day. Things I learnt Initially I thought that all of the C channel would have to be perfectly straight and that the antenna would need to aligned up just right. Turns out that the antenna has quite a bit of flex and there is some room for error - not much room mind you, but enough to enable you to install the antenna by sight. The important thing about the C channel is to have the same distance between them from top to bottom. Also to make sure that there are no bends or curves when mounting to the coop. If you can do this then you won't have any issues. The don't even have to be vertically straight - as long as everything else is mounted at about the same angle. Also, when you attach the door to the antenna there is some movement that the antenna can absorb. This is a good thing, especially if the antenna is not mounted perfectly straight. Thanks for looking and I hope this has inspired you to make your own automated chicken coop door.
 
 
 ---

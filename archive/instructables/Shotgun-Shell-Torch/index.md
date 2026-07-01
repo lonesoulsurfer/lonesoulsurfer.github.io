@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Shotgun-Shell-Torch/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,16 +42,15 @@ So go shoot a few rounds, collect the shells and keep reading to find hoe to mak
 
 ![Step 1: Bits to Harvest image 5](images/step01_05.jpg)
 
-Parts
-1. Shotgun shells. They can be purchased on Etsy or scavenged from a gun range. If you do have a local one, give them a ring and see if you can grab a few. They won't mind as they just throw them away anyhow.
+Parts 1. Shotgun shells. They can be purchased on Etsy or scavenged from a gun range. If you do have a local one, give them a ring and see if you can grab a few. They won't mind as they just throw them away anyhow.
 
-2. LED Globe. - Ebay
+2. LED Globe. - [Ebay](http://www.ebay.com.au/itm/290678300821?ssPageName=STRK:MEWAX:IT&_trksid=p3984.m1423.l2649)
 
-3. Micro switch. - I used one from an old circuit board but you can buy them on eBay
+3. Micro switch. - I used one from an old circuit board but you can buy them on [eBay](http://www.ebay.com.au/itm/100-Pcs-Mini-Micro-Momentary-Tactile-Tact-Switch-Push-Button-DIP-P4-6-6-5mm-New-/310831356352?pt=AU_B_I_Electrical_Test_Equipment&hash=item485efe19c0&_uhb=1)
 
-4. 12v battery holder - eBay
+4. 12v battery holder - [eBay](http://www.ebay.com.au/itm/5-x-23A-A23-Cells-Battery-Size-12V-Clip-Holder-Box-Case-/180649964983?pt=AU_Electronics_Batteries_Chargers&hash=item2a0f93b5b7&_uhb=1)
 
-5. Batteries. You can either use 4 LR44 button batteries or a 6v PX28A battery (which is just 4 LR44's in one battery)
+5. Batteries. You can either use 4 [LR44](http://www.ebay.com.au/itm/AG13-Alkaline-Battery-A76-357-303-LR44-Free-Postage-10-Pack-/151049571808?pt=AU_Electronics_Batteries_Chargers&hash=item232b418de0&_uhb=1) button batteries or a 6v [PX28A](http://www.ebay.com.au/itm/10X-4LR44-6V-BATTERY-CITRONELLA-BARK-DOG-COLLAR-L1325-PX28A-A544-V34PX-476A-/310672944349?pt=AU_Electronics_Batteries_Chargers&hash=item48558cecdd&_uhb=1) battery (which is just 4 LR44's in one battery)
 
 6. Thin wire
 

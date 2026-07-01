@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Arc-Lighter-in-a-Slot-Car-Controller/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -34,17 +36,17 @@ It’s not a hard build but it is a little squashy inside the controller so you 
 
 Parts
 
-1. Slot car controller – eBay
+1. Slot car controller – [eBay](https://www.ebay.com.au/itm/AFX-HAND-CONTROLLERS/372578461788?hash=item56bf68285c:g:j~cAAOSwQh1bmgCi:rk:11:pf:0)
 
-2. Arc Igniter – eBay
+2. Arc Igniter –[eBay](https://www.ebay.com.au/itm/Square-3-6V-High-Pressure-Generator-Module-Igniter-1-5A-Output-Voltage-20KV/232480339998?epid=502500899&hash=item3620e8781e:g:BoAAAOSwaIRZsT5n:rk:2:pf:1&frcectupt=true)
 
-3. Micro lever switch – eBay
+3. Micro lever switch – [eBay](https://www.ebay.com.au/itm/5pcs-micro-limit-switch-long-lever-arm-subminiature-kw4-3z-3-snap-actionATAU/392172961545?hash=item5b4f547f09:rk:16:pf:0&checksum=392172961545a388f6cf97034c15b710cd7a883aa39f&enc=AQADAAADAFjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVLctrEnpnqZEDelxjFAMNCTMiywufqbWZUOl%2FqhRDbbOCsnQBuB%2FUWkVYAeqMmx96CKhAS7HJ%2FH4tCUCM3vQCX5LUPja5N%2BjJBFKn8b%2F1nfKgtMUCOB9FEnU1VcY8oo1wRRMUeP%2B%2FnwSv1obqhy1MbJusvkST1oboIrReqho9gD7kEyoURRtjvavGUzmS%2BSgy%2FiigUryqtbv6Xx0HGhUPSCc3aCw%2F4Fcv8k9%2FFjoYQIaynP8%2FDIVSZ3v%2BhBQ3xkhpQJfdS3pqj6tpAxV8TZ%2BibbLosLQbSVSi5vNCmZZBRR0XX1MfwCPZvTvO5ILx2RIaw8tKbYeOi8smwbc%2FfqfOn89H7Q%2F6wF4OUvQnWq%2FgO18cdzsAcai0Yc7foDGH5X3al5cOeyRch6h8aJPMSD7t4it53rgIogv7%2BVZEadMwIQMS8o6cXM5SR3hZTCaDvnazF0Oic4HM%2FNHg5bP%2F3Usrzzb%2BUZGuxHjN32LUta%2BgzIiJYirvyCAfOKoIaRFaX6D3gbHGtgu%2FGkwWb8tCvEmlOqA8yIKwMCYqvNCf6Me8wuHdL2Q6OFPQmNSC4hCU2XiNxQZe8FSY9%2Fbz8M%2Bj%2BNIh2X5KqdEQCkEQDelaXryQm2pSozPcS2XZdqBauA%2Fsd0h5a%2FTuLXuyxOIg%2BV8JCGFiDvMM9%2BRH10pubDR4F8r38dPsT%2BTjKvJPjeZsCOFivpWBiEuW679uhzcRzwU%2BuxTje%2FEHYKPD5Afh9v0bd%2FmdIbavplAy%2F5dboTwv%2FNPoGJJ584dRqL6QBHFJFrsqdu07BEYh39cgcQnxT4zmzuJ8AvytAecwvq6q4GiUZgf6sGJcUTIi1q9uIrcNxz8D20KdEBGFIlDiD4mHXRrcobT7MzV0e6ic8KIe2ae%2FlfqoTpwfhWG8WIhBasnSaKADEXYaBvnqYBLu%2F8Y0SEO4xEqrJn83fA5Cah7LFTJcxuUK1zShxcKOA18qmyAR56jy99F95w%3D%3D)
 
-4. Brass rod – eBay
+4. Brass rod – [eBay](https://www.ebay.com.au/itm/2mm-x-50mm-Hardware-Solid-Brass-Round-Bar-Rod-Circular-Wire-Tube-Hobbies/143077199331?hash=item215010cde3:rk:5:pf:1&checksum=1430771993312a81f2dd67794ae6965b57391230b478&enc=AQADAAAC8FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVBV6M%2FkFIzDkaLXojUyz8EW9KDB5j04JijvvOGL19mVTziu4Bzai%2FPnqMybsHzjD6fk5PpbrA%2BAX9mrnMor8O26LgkgskxcvQhWa9zJt8Eh6%2BE8PkU%2FwENK%2Bi0I3pFgAndVu%2Fzu9FmDnSinrvYuv9xH8zW9gSc3nPlQ8Z25BrJn3vnCdmChvUMYSZP1PSCScrGA0SNzeWq%2FnPNaZ02RIwrwzIRCQ%2Fe6QxKhtnvYfGyt%2B0w0UUNQz3bD7w5dtcfmLyu%2Bejqz9ZO6p1jZnAk6D9WhEvBZ7SpGtb0orWZmAkS4iCmae5teTtv1Z9VIXUVA2ROTAiWD7DOOULVNDmnVDYcZaHBDIS3%2FCYdd61Z3%2BRIUX92xaw43NFc1z0RKyT08iKpvC8uT9Tha72UoYes9qe4odjHRui25r2RMESjSt3RCCVnHHpFOZtNUUbssU6B5O%2BQwGRkhJf2tnIGNXZ8mHujEiIEsC15gHY3oUKzxMms9ZOq0DOe9q%2FNbmvrQcRmaGpqd3Y8PSN5Yf%2FuWg1DhlsphY9Vo4hgvjRXfa4TFyFB1ViDLHg5ZYm7QqMUv7u%2FqRhF3X%2BVQfGGxnGy92fRJiiAGIVdVDPhchenoGdcaNJwvn%2Fa9Ej%2FE1kpaNTDj2DNfEAR5Y9nnuYn7flC3tU2qApSfP3Y%2FPVeDfv%2Fm%2BpROBnOnmuE2o0n7dgiqdd8%2BO0YRrjoRjMNOwxhKFb2uxa%2F1ttyiaNHlbpUr8djcPUHAOeuSvJpP5p0tajn9lhea1t52OvEMMDwGDrvZ%2FvLEFXPz9NdNfHCWSSMzJ4ZYC3rrdwEgzF64jKYABi6abTovLRg3rSSo%2BNMS%2BaGMabcupSYsnfjT7WEQdj7C8u%2FhXU4mKv112Hzuo5UtWSc9dhVX1RbO3mmVUaIT0eQJmXU1jqTCTuQ0llDoXq8hyBLZts1gpUe2SDLf%2Ft2cOyg4QHeJi989LO&frcectupt=true)
 
-5. Li-ion Battery (Small) – eBay
+5. Li-ion Battery (Small) – [eBay](https://www.ebay.com.au/itm/MOBILE-POWER-SOURCE-16340-LI-ION-BATTERY-3-7V-2000MAH-FOR-HEADLAMP-TOY-2PCS-17B/392133065989?hash=item5b4cf3bd05:g:3qAAAOSwtb1brz0X:rk:1:pf:1&frcectupt=true)
 
-6. Li-ion charger – eBay
+6. Li-ion charger – [eBay](https://www.ebay.com.au/itm/10pcs-DC-to-DC-5V-1A-Li-ion-18650-Lithium-Lipo-3-7v-Battery-Charger-Module-Board/112524739309?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m1438.l2649)
 
 Tools
 

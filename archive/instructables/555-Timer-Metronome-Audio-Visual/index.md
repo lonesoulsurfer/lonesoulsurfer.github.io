@@ -4,6 +4,8 @@ Source: https://www.instructables.com/555-Timer-Metronome-Audio-Visual/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,7 +21,7 @@ The tick, ticking of the metronome isn’t very loud so I added a output jack to
 
 Lastly, I used an old tobacco tin (I always have a bunch of these around to stick projects in) as the case which I think worked out well.
 
-This is a pretty easy 555 project so if you have some basic experience putting circuits together then it should be a cinch. If you want to learn about circuits, then I did an ‘ible on making your first circuit which can be found here
+This is a pretty easy 555 project so if you have some basic experience putting circuits together then it should be a cinch. If you want to learn about circuits, then I did an ‘ible on making your first circuit which can be found [here](https://www.instructables.com/id/How-to-Build-Your-1st-Circuit/)
 
 
 ## Step 1: Parts and Tools
@@ -32,31 +34,31 @@ This is a pretty easy 555 project so if you have some basic experience putting c
 
 Parts:
 
-1. 555 Timer – eBay
+1. 555 Timer – [eBay](https://www.ebay.com.au/itm/10-20-50-100PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/263770865456?hash=item3d69f7ff30&var&_trkparms=ispr%3D1&enc=AQADAAAC4FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVXRDIZzFRvPOpCg5qnj%2BzXQUZQ3Tm2KCpMCZAlSIM1gucm2aE0Kh1TEbHMCQG4JeMRPhQkmGzHuvsQb1q7GHF2zJy2ygG5sMlJHnciPeFWxWt34WLkcm0jgJ7C9hiUROy1wjVnue4zj9xnJva8ExLoAYCEMWCSv%2BkDFHkeisUx1yhY6OrLelVBuh3HH6lWWObF8kito7YZVhLDAGr4pCDKzAqS1h1PBwzn32zDA5N04SuRKi11RPF8i7CfxfHAX5wsBQ3b%2FoK8eT%2BZECchrqm9QdwSlaY8HGHk90%2FgvSZGx%2BWgR7ENikaFISJ%2FgV96rLi5Bejv%2BSsQTz03zK88K91LwPnWkX1AkTdTAJ%2BK4heD4eohSqlJoXFAbkusvVQGUIcgYvSknIC3eWw5q%2FCridSwNZ%2BoateKcS%2Bjx4%2BmgrIw35Hb%2BdjzN2KtFfhlJ9xrH%2F53Q4wrsTLXalvVdfuROs%2Fx1%2F7gs0J2kwxe1IWttbLjckQK7bp6ufvpJIUa4PdO1X%2BH6cWmXepv%2B0fFGhDkSHrFTKWRjcPPo6Lu1Co4k4RvA5aC3TU%2Fw7L3QS9nXcY47y%2F0yoWRTYWoueKxeJJq6C6PoMGXdKoZN92x1fjd%2FRqo994vgGnbmWjXofVI%2Fm4E9pU7c9s9ptykSquxVWXKFXHckTnFYkS3wp0dkCYIaii2V7P7lL70L3dCf4ayUlhN9Eg%2BQ%2FQmxGcQCQpYaBGPP8bAKtG7avhfN%2BlTtTSgsYEA7HsE771JjzMNzRuhAhGxCT7v6cQ4VwOZhvhvzQMBZoQpSHNglG%2F%2BYaB7EkaYMAs5vdtfLABebYE%2Bm375EEHdCxArDnk2gs8xLmXj5W0yEkVF60wey8anw%2FLAGHGIfNt5zF6Mk8l1QjgnsXVSBaFaitHp%2BuAe0o%2FOTzehs1MkyfjkVmzxDekVMPwEY99qvWQBPo%3D&checksum=263770865456d0916877704543d49d67cd36baa1c2b0&frcectupt=true)
 
-2. 2 X 22uf Capacitors – eBay (you can also use 10uf if you want to)
+2. 2 X 22uf Capacitors –[eBay](https://www.ebay.com.au/itm/50-100PCS-0-1-22UF-0-1-0-22-0-47-1-4-7-22UF-Electrolytic-capacitor-HOT-AU/323720284201?hash=item4b5f3b8829:m:mOwG6ziQTj2DaHOcniYtsOw) (you can also use 10uf if you want to)
 
-3. 3 X 1K Resistors – eBay
+3. 3 X 1K Resistors – [eBay](https://www.ebay.com.au/itm/100PC-1-6W-Metal-Film-Resistor-Tolerance-1-Full-Range-of-Values-0-to-10M/312423918540?hash=item48bdeaabcc:m:mEzu7yilmeDIBUw-KujJ0LQ)
 
-4. 2 X 3/5mm LED’s – eBay
+4. 2 X 3/5mm LED’s – [eBay](https://www.ebay.com.au/itm/300pcs-3mm-5mm-LED-Diodes-Emitting-White-Yellow-Red-Green-Blue-Assorted-Kit-DIY/312341507678?hash=item48b9012e5e:g:GOoAAOSwPSxbUvec&frcectupt=true)
 
-5. 1 X Prototype board – eBay
+5. 1 X Prototype board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
-6. 1 X 100K Pot – eBay (the schematic has a 250K pot which will also work fine
+6. 1 X 100K Pot – [eBay](https://www.ebay.com.au/itm/4Pcs-A100K-100K-Ohms-Audio-taper-Potentiometer-Logarithmic-Pot-Split-shaft-New/330819772223?hash=item4d06651f3f:g:bDMAAOSwzRpaNAll) (the schematic has a 250K pot which will also work fine
 
-7. 8 Ohm Speaker – eBay
+7. 8 Ohm Speaker – [eBay](https://www.ebay.com.au/itm/Audio-Speaker-1pc-40mm-8Ohm-8-0-5W-Stereo-Woofer-Trumpet-Horn-Loudspeaker-Power/163285175018?hash=item26048e0aea:g:ypQAAOSwuVtbr0Xl)
 
-8. Output audio jack – eBay
+8. Output audio jack – [eBay](https://www.ebay.com.au/itm/NEW-3-5mm-Female-5pin-Stereo-Headset-Interior-PCB-Mount-Audio-Jack-Socket-10-Pcs/123720223208?epid=18027027146&hash=item1cce4cc9e8:g:BkYAAOSw5VFWIwNt)
 
-9. Switch – eBay
+9. Switch – [eBay](https://www.ebay.com.au/itm/10-x-On-Off-On-Momentary-Mini-Toggle-Switch-Car-Motor-Dash-Dash-SPDT-3Pin-Sales/201939647988?hash=item2f048a7df4:g:ztcAAOSwIFtaCleh)
 
-10. Old tobacco tin for the case (or something similar)– eBay
+10. Old tobacco tin for the case (or something similar)– [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=tobacco+tin&_sacat=0)
 
 11. Thin wire (I use computer ribbon cable which I source from my local e-waste facility for free)
 
 12. 9v battery
 
-13. 9v battery holder – eBay
+13. 9v battery holder – [eBay](https://www.ebay.com.au/itm/Replacement-9V-Battery-Box-Case-Holder-Connector-F9Z4/233231320321?hash=item364dab8501&_trkparms=ispr%3D1&enc=AQADAAAC4FjVrDbVsZ8oH%2F8PNHtt9VX4%2Fw7FZcmMuqsX8uaFEduVlgePuulw4NrWcpFixsPu73lStkRhCdpRLkxincU60gPyu3BPq%2F4UR72Zk5jTf3Hj70PjbnKfPSYrs3ciKbc6LkaodVqx%2F3iB3h2UMDE8JbalOMt%2BUCNWt2JZ5CgvmijhlzH8h3jEZTtwtzIs%2FkL3NxHZTZkTgEf%2BnWEc5qrbPWfWzPttd6m%2BUxInD%2FpRCuTlhwwi352%2FSKibz7N4QiAnQKvfa3%2F1iWTctT8wzifIZlyTz5MLWmPpLP8Z6QX5oJl84exeqCQ%2FdBa3af9U%2F863gz%2FVHimer8MrqcZOOBxgIEM9Nx5WeAm0wwrK6if0bUkwpVq0MQsQgHjJRT8yAAwFwWQls084JwkYDreiCuBH5Yl8NS35ote9QQ5H%2F2JoktNE2sghiJBKhwHXVGBWdUsvsHweJwAjCqI3eLBSPMT1qRPvBStqKxN3FrWlkJMiv3DCN8ShSCXh4K1fP19fhb%2Fu0vL%2FAsPGei0lJu00CZHs3kLIXBpwxGczxrI0GyQiZDLHALppRCepv5vmaP0IfRV4O%2F7D3NL99xbvE7M4ZU%2FUfZStoLUBOrevxFelgUjzJLcu0GC83c3hW8Rg3M%2BaY4vx0uMJratTYGAFQxGQfySgVMAQDpBrt50wWiFMMngiz%2BlAm8F%2BsvgRC5WTfybATico61psqkTzZF0njd6yil8iyb9M1GcuvxryTfUPbumaona8ieMkxwLUd2FcfwxMZanBjqol7g4kQ0Rr%2BTV6cyS7UfVlxf0coTw1kbiGIZn0Pngdc45l7GWD%2B9Yn8dXuvShNLrwLQjW6p%2BvFBiJ2BlUmHDhE7fStemyarwHpfG2hCPRFFS69ZJPMi%2BVGTT39QaQLbV1HBh7r6%2BbbOm1Zl19St%2FwNaEhAztP8FnHlrZ%2FLlFV6Uvo%2BcjIw%2FbT6q92jrLc7FOAtrEJjuNEbHoatny1W6%2Fw%3D&checksum=233231320321f5cacc7630ee49beb3b27a620748c6b0)
 
 Tools:
 

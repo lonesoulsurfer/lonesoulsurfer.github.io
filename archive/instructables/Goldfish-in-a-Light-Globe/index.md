@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Goldfish-in-a-Light-Globe/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -51,23 +53,23 @@ NOTE: I have made a whole bunch of these now and have become pretty efficient at
 
 Bits and Pieces
 
-1. Globe – eBay
+1. Globe – [eBay](http://www.ebay.com.au/itm/Light-Bulb-Stand-Glass-Plant-Flower-Vase-Hydroponic-Container-Home-Wedding-Decor-/131344036704?hash=item1e94b6f360:g:JQ0AAOSwabhUYdjz)
 
-2. Rubber Goldfish – Ali Express
+2. Rubber Goldfish – [Ali Express](http://www.aliexpress.com/item/5pcs-lot-goldfish-model-sea-life-toys-Action-Figures-Model-PVC-plastic-girls-Collections-Toy-Figure/32355112590.html)
 
-3. LED’s – eBay
+3. LED’s – [eBay](http://www.ebay.com.au/itm/10-LED-Multi-Color-RGB-Submersible-Underwater-Party-Vase-Base-Light-Lamp-Remote-/261610188797?hash=item3ce92eaffd:g:iFYAAOSwPe1UKUoH)
 
-4. 15 RPM Motor – eBay
+4. 15 RPM Motor – [eBay](http://www.ebay.com.au/itm/DC-3V-0-3A-15RPM-Electrical-Geared-Box-Motor-for-Robot-WS-/221762105392?hash=item33a20d3030:g:WYgAAOSwqu9VRgOz)
 
-5. Vintage Light Socket – eBay
+5. Vintage Light Socket – [eBay](http://www.ebay.com.au/itm/E26-E27-Base-Vintage-Antique-Edison-Brass-Lamp-Light-Bulb-Holder-Socket-Decor-/271754228428?hash=item3f45d072cc:g:EG8AAOSwYGFUxiCZ)
 
 6. Thin music wire
 
 7. Small piece of copper tube
 
-8. 1 x CR2032 battery - eBay
+8. 1 x CR2032 battery - [eBay](http://www.ebay.com.au/itm/10x-Pack-MAXELL-CR2032-3v-220mah-lithium-Battery-button-cell-coin-for-calculator-/141308447096?hash=item20e6a3c978:g:PBcAAOSwd4tUI3WI)
 
-9. 1 x CR2032 battery holder – eBay
+9. 1 x CR2032 battery holder – [eBay](http://www.ebay.com.au/itm/10pcs-CR2032-CR2025-Cell-Coin-Button-Battery-Clip-Holder-Box-Case-General-Clip-/221298022151?hash=item338663d707:g:Ps8AAOSwu4BVvHSs)
 
 10. Wire
 

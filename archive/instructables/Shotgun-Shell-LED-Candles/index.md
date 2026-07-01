@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Shotgun-Shell-LED-Candles/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -46,13 +48,13 @@ This isn't a hard hack, you just need to get your hands on some clear shells and
 
 Parts:
 
-1. Shotgun shells - check Etsy or your local gun range!
+1. Shotgun shells - check [Etsy](https://www.etsy.com/au/search?q=clear%20shotgun%20shell&order=most_relevant) or your local gun range!
 
-2. Flickering LED's. I pulled mine out of some LED's candles but you can buy these on eBay
+2. Flickering LED's. I pulled mine out of some LED's candles but you can buy these on [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR0.TRC0.H0.Xflickering+LED.TRS0&_nkw=flickering+LED&ghostText=&_sacat=0)
 
 3. A piece of wood. Whatever you have lying around
 
-4. 2 x AAA battery holders - eBay
+4. 2 x AAA battery holders - [eBay](http://www.ebay.com.au/itm/5pcs-Battery-Holder-Box-Case-w-Wire-2-X-AAA-3V-/290562034551?pt=LH_DefaultDomain_15&hash=item43a6d8cb77)
 
 5. 4 x AAA batteries
 

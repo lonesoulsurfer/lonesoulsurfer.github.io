@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Simple-Metal-Lathe/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,7 +19,7 @@ Source: https://www.instructables.com/Simple-Metal-Lathe/
 
 I don't have many fancy tools and more times than not I have to improvise with what I've got. Not having many specialized tools doesn't need to be a hindrance though. If you have a drill, then you can turn this into a metal lathe very simply.
 
-Recently on a project that I was working on (check it out here) I had to work out a way to shape and reduce the size of a brass coupling, I could have used a grinder and files but this would have taken too much time and probably would have been uneven in spots. Turning it would mean that I could get the job done in way less time and a much better finish.
+Recently on a project that I was working on ([check it out here](https://www.instructables.com/id/Uber-Lighter-20/)) I had to work out a way to shape and reduce the size of a brass coupling, I could have used a grinder and files but this would have taken too much time and probably would have been uneven in spots. Turning it would mean that I could get the job done in way less time and a much better finish.
 
 You only need a very limited amount of parts to make this and if you don’t have the correct ones, then it’s very easy to improvise
 

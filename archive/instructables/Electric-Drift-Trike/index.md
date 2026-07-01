@@ -1,8 +1,10 @@
-# Electric Drift Trike 
+# Electric Drift Trike
 
 Source: https://www.instructables.com/Electric-Drift-Trike/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -36,23 +38,23 @@ I’m very happy with the finished product and so are my boys! Check out the vid
 
 Parts:
 
-1. Electric golf buggy. eBay. Also try your local golf club; they may have old ones that they can sell you. I was pretty lucky to get a couple down the tip but it’s also another good place to check out.
+1. Electric golf buggy. [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xelectric+golf+buggy.TRS0&_nkw=electric+golf+buggy&_sacat=0). Also try your local golf club; they may have old ones that they can sell you. I was pretty lucky to get a couple down the tip but it’s also another good place to check out.
 
-2. Trike slider – eBay. You can usually pick these up pretty cheap at places like Kmart or if you are in the US Walmart. You only need the front section
+2. Trike slider – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=electric+golf+buggy&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xtrike+slider.TRS0&_nkw=trike+slider&_sacat=0). You can usually pick these up pretty cheap at places like Kmart or if you are in the US Walmart. You only need the front section
 
 3. A bunch of bolts and nuts. The sizes will depend on how you attach the frame of the golf cart to the slider.
 
 4. Extra length of wire. You will probably have to extend the control wires
 
-5. Plastic, waterproof plug – eBay
+5. Plastic, waterproof plug – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR1.TRC0.A0.H0.XWaterproof+Electrical+Connector+Plug.TRS0&_nkw=Waterproof+Electrical+Connector+Plug&_sacat=0)
 
-6. 2 x 12V battery – eBay
+6. 2 x 12V battery – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=sla+battery+12v&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR3.TRC2.A0.H0.X12v+battery+7ah.TRS0&_nkw=12v+battery+7ah&_sacat=0)
 
-7. Battery clips – eBay
+7. Battery clips – [eBay](http://www.ebay.com.au/itm/50Pairs-Blue-Female-Male-Spade-Insulated-Electrical-Crimp-Terminal-Connectors-/122581953441?epid=620016462&hash=item1c8a742ba1:g:DL0AAOSw8d5ZW-uG)
 
 8. On/off switch – eBay.
 
-8. 10K Potentiometer – eBay. You don’t need this if you are going to use the original controller.
+8. 10K Potentiometer – [eBay](http://www.ebay.com.au/itm/10x-B10K-Ohm-Linear-Taper-Rotary-Potentiometer-15mm-Shaft-Nuts-Washers-/291715797011?hash=item43eb9dd013:g:agUAAOSwoudW8OTg). You don’t need this if you are going to use the original controller.
 
 9. On/off switch – eBay. Again you don’t need this if you are going to use the original controller.
 

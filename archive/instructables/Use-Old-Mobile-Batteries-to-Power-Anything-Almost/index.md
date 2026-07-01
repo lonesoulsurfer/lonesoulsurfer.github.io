@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Use-Old-Mobile-Batteries-to-Power-Anything
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -54,32 +56,34 @@ This is an easy project and only requires minimum soldering skills.
 
 Parts:
 
-- Mobile battery. Actually, you can use any li-ion battery such as ones that are used in digital camera's, MP3 players or whatever else uses them. Go to your local e-waste recycling plant or raid a phone recycling bin to get them for free. If you don't have any near you then you can always buy them on eBay.
+1. Mobile battery. Actually, you can use any li-ion battery such as ones that are used in digital camera's, MP3 players or whatever else uses them. Go to your local e-waste recycling plant or raid a phone recycling bin to get them for free. If you don't have any near you then you can always buy them on eBay.
+
 Modules for Charging and Power Conversion
 
 External Power Pack
 
-- Charging and step-up module - Ali Express. This is one of my favourite modules
-- 100K Potentiometer - Ali Express
-- SPDT Toggle switch - Ali Express
-- Project Box - Ali Express The one used was 100mm X 60mm X 30mm
-- Male Plug Connector - Ali Express
-- Wire. I used ribbon wire I pulled out of old PC's.
-- Insulated wire. This is used to connect the jack to the power box. I used an old audio cable (see image)
-- Banana plugs - Male & Female - Ali Express
-- Micro USB Adapter – Ali Express. This is needed as the one on the charging and step up module isn't accessible once it is in place in the case
-- Voltage meter - eBay
-- Mobile Battery - see step 1
+1. Charging and step-up module - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221101211849&origin=y&SearchText=Lithium+Li-ion+18650+3.7V+4.2V+Battery+Charger+%5C&spm=a2g0o.detail.1000002.0). This is one of my favourite modules
+2. 100K Potentiometer - [Ali Express](https://www.aliexpress.com/premium/100K-potentiometer.html?d=y&origin=y&catId=0&initiative_id=SB_20220817185108&SearchText=100K%20potentiometer&spm=a2g0o.home.1000002.0)
+3. SPDT Toggle switch - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220817185143&isPremium=y&SearchText=spdt+toggle+switch+mini&spm=a2g0o.productlist.1000002.0)
+4. Project Box - [Ali Express](https://www.aliexpress.com/item/1005002781859414.html?spm=a2g0o.order_list.0.0.396c1802gV7Gdg) The one used was 100mm X 60mm X 30mm
+5. Male Plug Connector - [Ali Express](https://www.aliexpress.com/item/33024078552.html?spm=a2g0o.order_list.0.0.396c1802gV7Gdg)
+6. Wire. I used ribbon wire I pulled out of old PC's.
+7. Insulated wire. This is used to connect the jack to the power box. I used an old audio cable (see image)
+8. Banana plugs - Male & Female - [Ali Express](https://www.aliexpress.com/item/1005002363841128.html?spm=a2g0o.order_list.0.0.396c1802gV7Gdg)
+9. Micro USB Adapter – [Ali Express](https://www.aliexpress.com/item/4000484202812.html?spm=a2g0o.productlist.0.0.6e07742dJ2JHfq&algo_pvid=b4075332-3ae6-407b-9fff-ca50f53f906e&aem_p4p_detail=202208171957412977229191788360013117570&algo_exp_id=b4075332-3ae6-407b-9fff-ca50f53f906e-4&pdp_ext_f=%7B%22sku_id%22%3A%2210000002007513401%22%7D&pdp_npi=2%40dis%21USD%211.78%210.89%21%21%211.58%21%21%402103255b16607914613786410e14f2%2110000002007513401%21sea&curPageLogUid=9uofR7xjxqZV&ad_pvid=202208171957412977229191788360013117570_5). This is needed as the one on the charging and step up module isn't accessible once it is in place in the case
+10. Voltage meter - [eBay](https://www.ebay.com.au/itm/0-36-DC-4-40V-LED-Digital-Mini-Voltmeter-Gauge-Voltage-Meter-Gauge-Panel-Tester/153584158553?hash=item23c2544759:m:mbaXYKe2LzBwhZzQYgKvViQ)
+11. Mobile Battery - see step 1
+
 Tools
 
-- Pliers
-- Wire Cutters
-- Soldering Iron
-- Small Files
-- Dremel (always comes in handy!)
-- Wire cutters
-- Superglue
-- Drill
+1. Pliers
+2. Wire Cutters
+3. Soldering Iron
+4. Small Files
+5. Dremel (always comes in handy!)
+6. Wire cutters
+7. Superglue
+8. Drill
 
 
 ## Step 1: Where to Find Old Mobile Batteries
@@ -146,10 +150,10 @@ You will need a way to charge the battery. The micro USB adapter will be connect
 
 STEPS:
 
-- First, you'll need to make a small hole in the case in order for the USB to be able to be accessed.
-- Mark on the box where you need to make the slit and with a small drill bit, drill 3 holes as closely as possible
-- Use a small, flat file to clean-up the slit. Measure the micro USB against the slit until it is large enough for a micro USB cable to access it
-- Add a little superglue to the bottom of the micro USB module and glue into place
+1. First, you'll need to make a small hole in the case in order for the USB to be able to be accessed.
+2. Mark on the box where you need to make the slit and with a small drill bit, drill 3 holes as closely as possible
+3. Use a small, flat file to clean-up the slit. Measure the micro USB against the slit until it is large enough for a micro USB cable to access it
+4. Add a little superglue to the bottom of the micro USB module and glue into place
 
 
 ## Step 4: Adding the Potentiometer to the Charging & Step-up Module
@@ -164,9 +168,9 @@ STEPS:
 
 STEPS:
 
-- Place the potentiometer into the through holes in the module
-- Carefully solder one leg into place. Make sure that the pot is sitting flush on the module
-- Solder the rest of the legs to the module. Note that the voltage out solder points are very close to the potentiometer solder points. Be careful that you don't add a solder bridge across both these.
+1. Place the potentiometer into the through holes in the module
+2. Carefully solder one leg into place. Make sure that the pot is sitting flush on the module
+3. Solder the rest of the legs to the module. Note that the voltage out solder points are very close to the potentiometer solder points. Be careful that you don't add a solder bridge across both these.
 
 
 ## Step 5: Making Some Holes in the Lid of the Box
@@ -187,10 +191,10 @@ So you'll need to drill a couple of holes for the pot, switch and also a rectang
 
 STEPS:
 
-- I like to use a step drill piece when drilling plastic but a normal drill bit will also be fine. Drill 2 holes in the lid and make sure you consider the battery inside the case, You should be fine adding the pot and switch anywhere you like but it's good practice to consider other components inside the case. You don't want to add a part and then realise something now won't fit.
-- Next, you'll need to cut out a section for the voltage display. I used a Dremal with a cutting wheel to do this but you could do it with a Stanley (exacto) knife as well. My cutout was a little crooked so I used an O ring to cover up my mistakes!
-- Lastly, you'll need to drill a couple of holes for the female banana plug connectors. These will allow you to easily change the voltage output connectors so you can use the box for multiple applications.
-- Once the cutouts have been make, connect the switch and voltage display into the case. Don't connect the pot to the case yet. This is connected to the module and you'll need to first add a bunch of wires to the solder points.
+1. I like to use a step drill piece when drilling plastic but a normal drill bit will also be fine. Drill 2 holes in the lid and make sure you consider the battery inside the case, You should be fine adding the pot and switch anywhere you like but it's good practice to consider other components inside the case. You don't want to add a part and then realise something now won't fit.
+2. Next, you'll need to cut out a section for the voltage display. I used a Dremal with a cutting wheel to do this but you could do it with a Stanley (exacto) knife as well. My cutout was a little crooked so I used an O ring to cover up my mistakes!
+3. Lastly, you'll need to drill a couple of holes for the female banana plug connectors. These will allow you to easily change the voltage output connectors so you can use the box for multiple applications.
+4. Once the cutouts have been make, connect the switch and voltage display into the case. Don't connect the pot to the case yet. This is connected to the module and you'll need to first add a bunch of wires to the solder points.
 
 
 ## Step 6: Adding the Banana Plug Connectors
@@ -209,10 +213,10 @@ I decided to add a separate step for the banana plugs as you need to pull them a
 
 STEPS:
 
-- The first thing to do is to pull apart the banana plug. Un-screw the nut and the rest of the parts will slide off the female connector.
-- Leave the first black ring on the connector and place it into the hole you drilled into the case. Do the same for the red one as well.
-- Next place the other black/red ring onto the female connector on the inside of the case
-- Place the washer, solder ring and lastly the nut into place and tighten up the nut.
+1. The first thing to do is to pull apart the banana plug. Un-screw the nut and the rest of the parts will slide off the female connector.
+2. Leave the first black ring on the connector and place it into the hole you drilled into the case. Do the same for the red one as well.
+3. Next place the other black/red ring onto the female connector on the inside of the case
+4. Place the washer, solder ring and lastly the nut into place and tighten up the nut.
 
 
 ## Step 7: Soldering Those Wires to the Module
@@ -227,11 +231,11 @@ Ok - now it's time to heat up the soldering iron and connect the pot and wires t
 
 STEPS:
 
-- Before you start to add the wires, add some solder to each of the solder points in the module
-- Also, when soldering the wires you'll need to orientate them in a way that ensures the pot will sit flat against the top of the case and not be in the way. Take a look at the pictures if this explanation makes no sense
-- First, push the pot into the holes in the module and solder them into place.
-- As I mentioned earlier, I used some ribbon wire recycles from old PC's. It's strong and works excellently in these types of projects.
-- Cut some lengths of wire and connect them to each of the solder points on the module
+1. Before you start to add the wires, add some solder to each of the solder points in the module
+2. Also, when soldering the wires you'll need to orientate them in a way that ensures the pot will sit flat against the top of the case and not be in the way. Take a look at the pictures if this explanation makes no sense
+3. First, push the pot into the holes in the module and solder them into place.
+4. As I mentioned earlier, I used some ribbon wire recycles from old PC's. It's strong and works excellently in these types of projects.
+5. Cut some lengths of wire and connect them to each of the solder points on the module
 
 
 ## Step 8: Connecting All Those Wires to the Components
@@ -250,10 +254,10 @@ I've provided a wiring schematic which will make it clear where those wires need
 
 STEPS:
 
-- Start with soldering the wires to the battery and switch (or don't - up to you!). Carefully add a little solder to each of the copper positive and negative points on the battery. Try not to keep the heat on the battery for too long as they don't really like it too much.
-- Next, solder the wires from the USB on the module to the Micro USB adapter
-- The wires connect to out on the module need to be connected to the female banan plugs. While you are there you can connect the wires from the voltage display also to the female banana plugs.
-- At this stage you can probably test it and see if everything is working correctly. Turn it on and see if the voltage display is working. If so, turn the pot and see if the voltage changes. If nothing happens you might need to turn the tiny pot on the module fully to the right. Give it another go. You should find that the voltage changes as you turn the pot.
+1. Start with soldering the wires to the battery and switch (or don't - up to you!). Carefully add a little solder to each of the copper positive and negative points on the battery. Try not to keep the heat on the battery for too long as they don't really like it too much.
+2. Next, solder the wires from the USB on the module to the Micro USB adapter
+3. The wires connect to out on the module need to be connected to the female banan plugs. While you are there you can connect the wires from the voltage display also to the female banana plugs.
+4. At this stage you can probably test it and see if everything is working correctly. Turn it on and see if the voltage display is working. If so, turn the pot and see if the voltage changes. If nothing happens you might need to turn the tiny pot on the module fully to the right. Give it another go. You should find that the voltage changes as you turn the pot.
 
 
 ## Step 9: Making the Power Connector
@@ -280,12 +284,12 @@ The last thing to is to make a power connector so you can power whatever you nee
 
 STEPS:
 
-- I used an old audio/visual cable I picked up from e-waste for the cable. The first thing to do is to cut off the male plugs off one end and trim the wire to what length you want to make it
-- Next, as this cable has 3 connections, snip away one of them so you are left with just 2
-- To add the male plug connector, strip both ends of the wire and solder both wires to the solder points on the connector. Make sure though that you push over the wires the connector cover so you can screw it into place once the wires are soldered on.
-- Next, strip the plastic coating off the wire on the other ends and secure these into the male banana plug connectors. I connected the ground (black) plug to the tip of the male connector and the positive to the sleeve. The great thing about using banana plugs is, you can always reverse them when plugging them into the power box if the thing you are trying to power is reversed.
-- I also brought some plug adapters of different sizes which means I can use the power box on multiple plug sizes.
-- The last thing to do is to is to set the voltage, plug it into your device and you are away!
+1. I used an old audio/visual cable I picked up from e-waste for the cable. The first thing to do is to cut off the male plugs off one end and trim the wire to what length you want to make it
+2. Next, as this cable has 3 connections, snip away one of them so you are left with just 2
+3. To add the male plug connector, strip both ends of the wire and solder both wires to the solder points on the connector. Make sure though that you push over the wires the connector cover so you can screw it into place once the wires are soldered on.
+4. Next, strip the plastic coating off the wire on the other ends and secure these into the male banana plug connectors. I connected the ground (black) plug to the tip of the male connector and the positive to the sleeve. The great thing about using banana plugs is, you can always reverse them when plugging them into the power box if the thing you are trying to power is reversed.
+5. I also brought some plug adapters of different sizes which means I can use the power box on multiple plug sizes.
+6. The last thing to do is to is to set the voltage, plug it into your device and you are away!
 
 
 ---

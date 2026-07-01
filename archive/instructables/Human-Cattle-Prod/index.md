@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Human-Cattle-Prod/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,21 +17,29 @@ Source: https://www.instructables.com/Human-Cattle-Prod/
 
 ![Intro 4](images/intro_04.jpg)
 
-![Intro 5](images/intro_05.jpg)
+Did you know Humans and cows have a lot in common? We are both mammals, we share 97% of our genome and we like to move in herds.
 
-Did you know Humans and cows have a lot in common?  We are both mammals, we share 97% of our genome and we like to move in herds.
-
-One of the biggest similarities is, we can both be stubborn if we want to.  Moving a stubborn cow is easy; you just prod it with a cattle prod and it soon gets the message.  Try moving one human or a bunch of them for that matter and you will soon find that bad language and yelling won’t get you anywhere.
+One of the biggest similarities is, we can both be stubborn if we want to. Moving a stubborn cow is easy; you just prod it with a cattle prod and it soon gets the message. Try moving one human or a bunch of them for that matter and you will soon find that bad language and yelling won’t get you anywhere.
 
 One day whilst trying to navigate my way through a large, stubborn crowd of humans, a thought came to me “If we are so similar to cows, then why not use the same methods to move humans?”
 
-From this idea was born The Human Cattle Prod.  Simple in design, small enough to keep in your pocket, The Human Cow Prod will allow you to take command of any situation.
+From this idea was born
+The Human Cattle Prod.
+Simple in design, small enough to keep in your pocket,
+The Human Cow Prod
+will allow you to take command of any situation.
 
-Now you too can have a Human Cattle Prod.  Just follow the simple steps below and become someone.
+Now you too can have a
+Human Cattle Prod
+. Just follow the simple steps below and become someone.
 
-What the below video to see the awesome power of The Human Cattle Prod in action:
+What the below video to see the awesome power of
+The Human Cattle Prod
+in action:
 
-Disclaimer – Human Cattle Prod.  Not suitable to be used on Humans or animals.  Actually I would suggest you don’t make this at all!
+Disclaimer –
+Human Cattle Prod
+. Not suitable to be used on Humans or animals. Actually I would suggest you don’t make this at all!
 
 
 ## Step 1: Things You Need
@@ -41,32 +51,42 @@ Disclaimer – Human Cattle Prod.  Not suitable to be used on Humans or animals.
 ![Step 1: Things You Need image 3](images/step01_03.jpg)
 
 Things:
-1.  Electronic bug swatter - [eBay](http://www.ebay.com.au/itm/2-Pieces-Red-Black-Cables-2-x-1-5V-AAA-Battery-Case-Holder-Box-/150959628301?pt=AU_Electronics_Batteries_Chargers&hash=item2325e5200d&_uhb=1)  This is a rechargeable one but if you want a different one just type into eBay "electronic bug swatter"
 
-2.  Cheap, plastic pump - [eBay](http://www.ebay.com.au/itm/2-Pieces-Red-Black-Cables-2-x-1-5V-AAA-Battery-Case-Holder-Box-/150959628301?pt=AU_Electronics_Batteries_Chargers&hash=item2325e5200d&_uhb=1).  I got mine from a $2 shop
+1. Electronic bug swatter -
+eBay
+This is a rechargeable one but if you want a different one just type into eBay "electronic bug swatter"
 
-3.  Micro momentary switch - [eBay](http://www.ebay.com.au/itm/2-Pieces-Red-Black-Cables-2-x-1-5V-AAA-Battery-Case-Holder-Box-/150959628301?pt=AU_Electronics_Batteries_Chargers&hash=item2325e5200d&_uhb=1).  i needed one slightly larger than the one the bug swatter came with
+2. Cheap, plastic pump -
+eBay
+. I got mine from a $2 shop
 
-4.  Aerial - [eBay](http://www.ebay.com.au/itm/2-Pieces-Red-Black-Cables-2-x-1-5V-AAA-Battery-Case-Holder-Box-/150959628301?pt=AU_Electronics_Batteries_Chargers&hash=item2325e5200d&_uhb=1)
+3. Micro momentary switch -
+eBay
+. i needed one slightly larger than the one the bug swatter came with
 
-5.  long, thin electrical wire
+4. Aerial -
+eBay
 
-6.  Piece of wire
+5. long, thin electrical wire
 
-7.   AAA x 2 battery holder - [eBay](http://www.ebay.com.au/itm/2-Pieces-Red-Black-Cables-2-x-1-5V-AAA-Battery-Case-Holder-Box-/150959628301?pt=AU_Electronics_Batteries_Chargers&hash=item2325e5200d&_uhb=1)
+6. Piece of wire
+
+7. AAA x 2 battery holder -
+eBay
 
 Material / Tools
-1.  Hot glue gun
 
-2.  Soldering iron
+1. Hot glue gun
 
-3.  Pliers
+2. Soldering iron
 
-4.  Screwdriver
+3. Pliers
 
-5.  wire cutters
+4. Screwdriver
 
-6.  Angle Grinder
+5. wire cutters
+
+6. Angle Grinder
 
 
 ## Step 2: Pull the Fly Zapper Apart
@@ -81,13 +101,13 @@ Material / Tools
 
 Steps:
 
-1.  Un-do all of the screws
+1. Un-do all of the screws
 
-2.  Cut the wires joining p to the mesh on the racket.
+2. Cut the wires joining p to the mesh on the racket.
 
-3.  Cut the battery wires.
+3. Cut the battery wires.
 
-4.  Remove one of the blues wires (you only need 1)
+4. Remove one of the blues wires (you only need 1)
 
 
 ## Step 3: Pull Apart the Pump
@@ -102,11 +122,11 @@ Steps:
 
 Steps:
 
-1.  Pull the plunger out - the cap which is in the body of the pump will also come out.
+1. Pull the plunger out - the cap which is in the body of the pump will also come out.
 
-2.  At the other end of the pump, lever out the metal ring with a screwdriver.
+2. At the other end of the pump, lever out the metal ring with a screwdriver.
 
-3.  Inside the pump there will probably be a ball bearing, push this out with a screwdriver.
+3. Inside the pump there will probably be a ball bearing, push this out with a screwdriver.
 
 
 ## Step 4: Modding the Pump
@@ -119,13 +139,13 @@ Steps:
 
 Steps:
 
-1.  On the circuit there is an LED which tells you if it is activated.  You need to drill a small hole in the body of the pump.  The circcuit should be located right at the front of the pump.
+1. On the circuit there is an LED which tells you if it is activated. You need to drill a small hole in the body of the pump. The circcuit should be located right at the front of the pump.
 
-2.  If the circuit board is a tight fit look where you can trim which affecting any of the components and trim away.
+2. If the circuit board is a tight fit look where you can trim which affecting any of the components and trim away.
 
-3.  The 2 wires on the circuit which were joined to the wire mesh on the racket need to be threaded through the hole at the font of the pump.
+3. The 2 wires on the circuit which were joined to the wire mesh on the racket need to be threaded through the hole at the font of the pump.
 
-4.  Line-up the led and push through the hole in the pump.  It's a little fiddly so you might need to use some needle nose pliers to ensure a clean line-up.
+4. Line-up the led and push through the hole in the pump. It's a little fiddly so you might need to use some needle nose pliers to ensure a clean line-up.
 
 
 ## Step 5: Adding the Aerial
@@ -144,18 +164,17 @@ Steps:
 
 ![Step 5: Adding the Aerial image 7](images/step05_07.jpg)
 
-View 3 more
 Steps.
 
-1.  Use an angle grinder and cut off the bottom of the aerial.
+1. Use an angle grinder and cut off the bottom of the aerial.
 
-2.  Do the same for the top of the aerial.  I did it on the second join.
+2. Do the same for the top of the aerial. I did it on the second join.
 
-3.  Thread one of the wires from the pump body through the aerial.
+3. Thread one of the wires from the pump body through the aerial.
 
-4.  If you are lucky then the aerial should fit snugly into the top of the pump.  If not, then use some super glue or hot glue to fix into place.
+4. If you are lucky then the aerial should fit snugly into the top of the pump. If not, then use some super glue or hot glue to fix into place.
 
-5.  Make sure that one of the wires is hanging out the side as below.
+5. Make sure that one of the wires is hanging out the side as below.
 
 
 ## Step 6: Adding the Batteries
@@ -170,19 +189,19 @@ Steps.
 
 Steps.
 
-1.  Solder on one of the batteries wires from the circuit board to the battery holder, making sure polarities are correct.
+1. Solder on one of the batteries wires from the circuit board to the battery holder, making sure polarities are correct.
 
-2.  Drill a hole into the body of the pump for the switch.
+2. Drill a hole into the body of the pump for the switch.
 
-3.  Add a longer micro switch to one of the wires and solder the other end to the battery holder.
+3. Add a longer micro switch to one of the wires and solder the other end to the battery holder.
 
-4.  Hot glue in the micro switch.
+4. Hot glue in the micro switch.
 
-5.  use a little sandpaper and rub a little of the chrome off on the bottom of the aerial as shown.
+5. use a little sandpaper and rub a little of the chrome off on the bottom of the aerial as shown.
 
-6.  Solder on the blue wire (one sticking out the side at the bottom of the aerial)
+6. Solder on the blue wire (one sticking out the side at the bottom of the aerial)
 
-7.  Add batteries, test and then replace the plug that came out when you removed the pump arm.
+7. Add batteries, test and then replace the plug that came out when you removed the pump arm.
 
 
 ## Step 7: Finishing Off the Wires
@@ -197,15 +216,15 @@ Steps.
 
 Steps.
 
-1.  Solder on a piece of strong wire to the wire that is coming out the top of the aerial.
+1. Solder on a piece of strong wire to the wire that is coming out the top of the aerial.
 
-2.  Use a piece of heat-shrink and cover the whole of the wire
+2. Use a piece of heat-shrink and cover the whole of the wire
 
-3.  Push down into the top of the aerial and when happy with the position, super glue into place.
+3. Push down into the top of the aerial and when happy with the position, super glue into place.
 
-4,  Trim the wire and remove a little of the heat-shrink.  I actually removed more of the wire and had it virtually flush with the aerial.
+4, Trim the wire and remove a little of the heat-shrink. I actually removed more of the wire and had it virtually flush with the aerial.
 
-5.  Lastly use a small file and run it along the top of the aerial.  It will reveal some of the copper under the silver and will make it work that much better.
+5. Lastly use a small file and run it along the top of the aerial. It will reveal some of the copper under the silver and will make it work that much better.
 
 
 ## Step 8: Done
@@ -220,10 +239,10 @@ Steps.
 
 That's it!
 
-Now you are ready to make a difference in the  world.  Moooo
+Now you are ready to make a difference in the world. Moooo
 
-Note: The Spark that does come out of the end of the Human cattle Prod is serious.  I have zapped myself a few times (believe me when I say by pure accident) and it felt like someone punched me.  So please be careful and don't use it on anyone (expect if you have a brother)
+Note: The Spark that does come out of the end of the Human cattle Prod is serious. I have zapped myself a few times (believe me when I say by pure accident) and it felt like someone punched me. So please be careful and don't use it on anyone (expect if you have a brother)
 
 
 ---
-*38 images archived*
+*37 images archived*

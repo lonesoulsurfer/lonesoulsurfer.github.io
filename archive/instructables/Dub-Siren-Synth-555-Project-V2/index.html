@@ -162,7 +162,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Dub Siren Synth - 555 Project V2</span>
 </nav>
-<h1>Dub Siren Synth - 555 Project V2</h1><div class="source"><a href="https://www.instructables.com/Dub-Siren-Synth-555-Project-V2/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>NOTE: I have done another version of this build which can be found in the below link. It's a better version and makes building this a whole lot easier</p>
+<h1>Dub Siren Synth - 555 Project V2</h1><div class="source"><a href="https://www.instructables.com/Dub-Siren-Synth-555-Project-V2/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Dub Siren Synth - 555 Project V2" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"></div><p>NOTE: I have done another version of this build which can be found in the below link. It's a better version and makes building this a whole lot easier</p>
 <p>https://www.instructables.com/Dub-Siren-V3-555-Project/</p>
 <p>My first dub siren build was a little over complicated. Although it worked well, you needed 3 x 9V batteries to power it which was overkill and I had to build the main circuit on a prototype board.</p>
 <p>The first video is a demo of the sounds that you can make with the dub siren. The second is a longer one of the build</p>
@@ -175,51 +175,54 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>Including a stereo module means you don't have to plug it into a speaker. Although you still can plug it into one if you want to and really get it pumping.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts image 4" loading="lazy"></div><p>Parts:</p>
 <ol>
 <li>Case. You can use anything to house the electronics, as long as it's big enough to do so. I used an old intercom speaker I found at a junk shop.</li>
-<li>Echo and reverb module - eBay</li>
-<li>Audio amplifier module - This is the one I used eBay but you could easily use a smaller one like this</li>
-<li>Speaker 8 ohm - eBay</li>
-<li>Li-po Battery - Get one out of an old phone or eBay</li>
-<li>Charging and voltage regulator module - eBay</li>
+<li>Echo and reverb module - <a href="https://www.ebay.com.au/itm/PT2399-Microphone-Reverb-Plate-Reverberation-Board-No-Preamplifier-Function/263004532089?hash=item3d3c4aad79:g:iuYAAOSwfpVZJ-Ts">eBay</a></li>
+<li>Audio amplifier module - This is the one I used <a href="https://www.ebay.com.au/itm/AMP-Module-Mini-Amplifier-Board-Power-TDA2822-DC-1-8-12V-3-5mm-Stereo-Qu-5V-I0V1/184328073764?hash=item2aeacf3224:g:1w4AAOSwJLde5da8&frcectupt=true">eBay</a> but you could easily use a smaller one <a href="https://www.ebay.com.au/itm/Power-TDA2030A-Audio-Amplifier-Module-Supply-5-12V-18W-Single-Board/264289188689?hash=item3d88dcfb51:g:QwUAAOSwQxxcuANw&frcectupt=true">like this</a></li>
+<li>Speaker 8 ohm - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=8+ohm+speaker&_sacat=0&_sop=15">eBay</a></li>
+<li>Li-po Battery - Get one out of an old phone or <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xphone+battery+samsung.TRS0&_nkw=phone+battery+samsung&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=phone+battery">eBay</a></li>
+<li>Charging and voltage regulator module - <a href="https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns">eBay</a></li>
 <li>Wires</li>
 </ol>
 <p>Dub Siren Circuit</p>
 <p>You can find the schematic, Board and Gerber flies in the next step.</p>
-<p>You'll need to send the gerber files which is in a zip file to a PCB manufacturer like JLCPCB who will print them for you.</p>
+<p>You'll need to send the gerber files which is in a zip file to a PCB manufacturer like <a href="https://www.google.com/search?q=jlcpcb&rlz=1C1GCEA_enUS807US807&oq=jlc&aqs=chrome.1.69i57j0l5j69i60l2.2055j0j7&sourceid=chrome&ie=UTF-8">JLCPCB</a>who will print them for you.</p>
 <p>The parts list is below:</p>
 <ol>
-<li>LM555n × 2 – eBay</li>
-<li>LM741 × 1 operational amplifier – eBay</li>
-<li>Momentary on/off button – Normally on - eBay</li>
-<li>2 X SPDT On/off switch – eBay</li>
-<li>3.5mm Output Jack – eBay</li>
-<li>Knobs – eBay</li>
-<li>50K X 5 pots - eBay</li>
-<li>47μF × 1 - eBay</li>
+<li>LM555n × 2 – <a href="https://www.ebay.com.au/itm/Useful-10-20-50PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC-TOP-Quality-M8Y7/193508715265?hash=item2d0e04ab01:g:u~YAAOSwZbJe4G3M&frcectupt=true">eBay</a></li>
+<li>LM741 × 1 operational amplifier – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xlm741.TRS0&_nkw=lm741&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=555+timer">eBay</a></li>
+<li>Momentary on/off button – Normally on - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xmomentary+switch.TRS0&_nkw=momentary+switch&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=phone+battery">eBay</a></li>
+<li>2 X SPDT On/off switch – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR3.TRC2.A0.H0.Xspdt+toggle+switch.TRS0&_nkw=spdt+toggle+switch&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=momentary+switch">eBay</a></li>
+<li>3.5mm Output Jack – <a href="https://www.ebay.com.au/itm/10Pcs-3-5mm-Headphones-Stereo-Audio-Socket-Jack-With-nut-5-Pin-PCB-BDAU/362132587283?epid=24013243930&hash=item5450c8c313:g:j6UAAOSwez5ZzOKb">eBay</a></li>
+<li>Knobs – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xpotentiometer+knobs.TRS0&_nkw=potentiometer+knobs&_sacat=0">eBay</a></li>
+<li>50K X 5 pots - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=potentiometer+50k&_sacat=0&LH_TitleDesc=0&_sop=15">eBay</a></li>
+<li>47μF × 1 - <a href="https://www.ebay.com.au/itm/50PCS-25V-47uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-5X11mm/264399626299?hash=item3d8f72203b:g:~KgAAOSwT8ZdHsHU&frcectupt=true">eBay</a></li>
 <li>47nF × 1</li>
-<li>220μF × 1 - eBay</li>
+<li>220μF × 1 - <a href="https://www.ebay.com.au/itm/20PCS-25V-220uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-8X12mm/254298576265?hash=item3b35605589:g:9xkAAOSwzYNdHsHP&frcectupt=true">eBay</a></li>
 <li>150nF × 1</li>
-<li>10μF × 1 - eBay</li>
+<li>10μF × 1 - <a href="https://www.ebay.com.au/itm/10V-50V-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitors-105C-1uF-3300uF/264388201105?var=564005352620&hash=item3d8ec3ca91:g:9xkAAOSwzYNdHsHP">eBay</a></li>
 </ol>
-<p>For the resistors - just by these in assorted lots - eBay</p>
+<p>For the resistors - just by these in assorted lots - <a href="https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/223222191255?epid=24025613485&hash=item33f9145497:g:-EAAAOSw1KRb46cC&frcectupt=true">eBay</a></p>
 <ol>
 <li>10K X 2</li>
 <li>68K X 2</li>
 <li>2.2K X 2</li>
-<li>560R X 4- you may need to buy these separate as they are not used often - eBay</li>
-<li>Right Angle Male Pin Header - eBay</li>
-<li>5mm LED – eBay</li>
-<li>2N3904 Transistor - eBay</li>
+<li>560R X 4- you may need to buy these separate as they are not used often - <a href="https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-360-390-430-470-510-560-620-820-Ohm/192076578770?hash=item2cb8a7ffd2:g:6pcAAOSwjDZYd168&frcectupt=true">eBay</a></li>
+<li>Right Angle Male Pin Header - <a href="https://www.ebay.com.au/itm/10-pcs-1x40-Pin-2-54mm-Right-Angle-Single-Row-Male-Pin-Header-Connector/301924786435?hash=item464c1ea103:g:iBgAAOSwAYtWG7Hy&frcectupt=true">eBay</a></li>
+<li>5mm LED – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=5mm+led&_sacat=0&_sop=15">eBay</a></li>
+<li>2N3904 Transistor - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR3.TRC1.A0.H0.X2n3904.TRS0&_nkw=2n3904&_sacat=0">eBay</a></li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Dub Siren Schematic and PCB Files</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 2: Dub Siren Schematic and PCB Files image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 2: Dub Siren Schematic and PCB Files image 2" loading="lazy"><img src="images/step02_03.jpg" alt="Step 2: Dub Siren Schematic and PCB Files image 3" loading="lazy"></div><p>I have started to design my own PCB's using Eagle.</p>
-<p>If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design.</p>
+<p>If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on <a href="https://learn.sparkfun.com/tutorials/using-eagle-schematic/all">schematic</a> and <a href="https://learn.sparkfun.com/tutorials/using-eagle-board-layout">board design</a>.</p>
 <p>They are easy to understand and once you get the hang of it, easier than you think.</p>
-<p>You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive.</p>
+<p>You can't attach zip files to Instructables pages so I have linked all of the files to my <a href="https://drive.google.com/drive/folders/1410Pu0V8KzUc93xflQobwn_AESKFg6e7?usp=sharing">Google drive</a>.</p>
 <p>The zip file has all of the gerber files which you need to get the PCB printed.</p>
 <p>Just save that file and sent it to your favourite PCB manufacture.</p>
-<p>I use JLCPCB but there are plenty of others you can use.</p>
+<p>I use <a href="https://jlcpcb.com/e?gclid=Cj0KCQjwuJz3BRDTARIsAMg-HxXQlC6JQ_bVu3kRlQAl3ErrFHUAW0t2TbWZCCef_iWWsQPk8QTpZg0aAqOpEALw_wcB">JLCPCB</a> but there are plenty of others you can use.</p>
 <p>I've also included a PCB which has all of the pots included on the circuit board.</p>
 <p>It means that you don't have to solder all of those wires to the circuit board.</p>
 <p>However, it will limit where you can add the pots to the case.</p>
-<p>Up to you which one you want to use.</p><h2><span class="step-num">STEP 3</span>Step 3: Dub Siren Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Dub Siren Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Dub Siren Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Dub Siren Circuit image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Dub Siren Circuit image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Dub Siren Circuit image 5" loading="lazy"></div><p>First thing to do is to put the dub siren together.</p>
+<p>Up to you which one you want to use.</p>
+<ul>
+<li><a href="pdfs/Dub Siren Pots Inc.pdf">Dub Siren Pots Inc</a></li>
+</ul><h2><span class="step-num">STEP 3</span>Step 3: Dub Siren Circuit</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 3: Dub Siren Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Dub Siren Circuit image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 3: Dub Siren Circuit image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 3: Dub Siren Circuit image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 3: Dub Siren Circuit image 5" loading="lazy"></div><p>First thing to do is to put the dub siren together.</p>
 <p>If you follow the values on the PCB you won't have any issues with getting it going.</p>
 <p>However, it's always good practice to test out the circuit before you move onto the next step.</p>
 <p>Steps:</p>
@@ -229,7 +232,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>I also suggest to connect the echo and audio modules up with the dub siren to make sure it all works. Before you do this though, you need to make a modification to the echo circuit in order to give it the echo effect.</li>
 </ol><h2><span class="step-num">STEP 4</span>Step 4: Modifying the Echo Circuit</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 4: Modifying the Echo Circuit image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 4: Modifying the Echo Circuit image 2" loading="lazy"><img src="images/step04_03.png" alt="Step 4: Modifying the Echo Circuit image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 4: Modifying the Echo Circuit image 4" loading="lazy"></div><p>This mod is one that the manufacturers suggest to do if you want to control the echo.</p>
 <p>I wish that they would just add the pot but unfortunately they have only have added a reverb pot.</p>
-<p>I did an Instructable on how to use this module so if you want further info check it out here</p>
+<p>I did an Instructable on how to use this module so if you want further info check it out <a href="https://www.instructables.com/id/Echo-Reverb-Box/">here</a></p>
 <p>Steps:</p>
 <ol>
 <li>First, locate the R27 resistor. It is labelled R27 and is near 3 small solder points. Those 3 solder points are where you will add the 2nd pot.</li>
@@ -240,7 +243,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>The below image is a guide on how all of the circuits join together.</p>
 <p>You can see that to power the dub siren i used a mobile phone battery.</p>
 <p>The charging module that it is connected to is also a voltage regulator (pretty neat hey!).</p>
-<p>I did an Instructable on how to use one of these modules and wire it up which you can find here.</p><h2><span class="step-num">STEP 6</span>Step 6: The Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: The Case image 4" loading="lazy"></div><p>For the case I went with an retro style intercom. You could use anything really, as long as it has enough room inside for all of the components. A cigar box would also make a great case.</p>
+<p>I did an Instructable on how to use one of these modules and wire it up which you can find <a href="https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/">here</a>.</p><h2><span class="step-num">STEP 6</span>Step 6: The Case</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 6: The Case image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 6: The Case image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 6: The Case image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 6: The Case image 4" loading="lazy"></div><p>For the case I went with an retro style intercom. You could use anything really, as long as it has enough room inside for all of the components. A cigar box would also make a great case.</p>
 <p>I'll go through how I modded the case in the following steps</p>
 <p>Steps:</p>
 <ol>
@@ -297,7 +300,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 </ol><h2><span class="step-num">STEP 13</span>Step 13: So Now What?</h2><div class="step-images"><img src="images/step13_01.jpg" alt="Step 13: So Now What? image 1" loading="lazy"><img src="images/step13_02.jpg" alt="Step 13: So Now What? image 2" loading="lazy"><img src="images/step13_03.jpg" alt="Step 13: So Now What? image 3" loading="lazy"></div><p>Well that's all there is to it. Now it's time to start to play around with your dub siren and see what sounds you can get out of it.</p>
 <p>As previously mentioned, I use the speed and pitch quite often on the dub siren but it does a bunch more sounds.</p>
 <p>Playing around with the echo will also give you some really rich, dimensional sound effects that will bring your dub siren playing to the next level.</p>
-<p>Download some dub reggae music as well and start to add some sound effects to it. And have fun!</p>
+<p>Download some dub reggae music as well and start to add some sound effects to it. And have fun!</p><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Dub Siren Pots Inc.pdf">Dub Siren Pots Inc</a></li>
+</ul>
 <div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
   <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
   <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">

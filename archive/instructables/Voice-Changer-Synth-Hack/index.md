@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Voice-Changer-Synth-Hack/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -25,11 +27,11 @@ I have no idea what brand of voice changer I used in this hack and I must admit,
 
 555 Synths I have Made:
 
-LIGHT THEREMIN IN A NES CONTROLLER
+[LIGHT THEREMIN IN A NES CONTROLLER](https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/)
 
-FIZZLE LOOP SYNTH - 555 TIMER
+[FIZZLE LOOP SYNTH - 555 TIMER](https://www.instructables.com/id/Fizzle-Loop-Synth-555-Timer/)
 
-CIGAR BOX SYNTH
+[CIGAR BOX SYNTH](https://www.instructables.com/id/Cigar-Box-Synth/)
 
 
 ## Step 1: Parts
@@ -46,11 +48,11 @@ You won't need many parts to make this. The main parts are a voice changer, some
 
 Parts:
 
-1. Voice changer - Try this or this on eBay
+1. Voice changer - [Try this](https://www.ebay.com.au/itm/Red-Voice-Changer-Loud-LED-Superbright-Children-Kids-Toy-10-Sound-Effects-Gift/292261114948?hash=item440c1eb444:g:gqoAAOSwRDtZwPCk) [or this](https://www.ebay.com.au/itm/Wireless-Mini-Handheld-8-Spy-Voice-Changer-Telemarketers-Phone-Disguiser/182056330479?epid=795208868&hash=item2a636724ef:g:4KsAAOSwh-1W6Qjz) on eBay
 
 2. Case. I used an old torch but you could use a cigar box, project box, the actual voice changer, whatever you want.
 
-3. 3.5mm Male jack - eBay
+3. 3.5mm Male jack - [eBay](https://www.ebay.com.au/itm/10-Pcs-Panel-PCB-Female-3-5mm-Headphone-Jack-Audio-Connectors-JR/132565480819?hash=item1edd84b573:g:a8UAAOSw~P9avdwj)
 
 4. A synth! If you are interested in making one, then you could try one of my 555 timer synths in the intro The most important thing when making a synth and using this is you need to have a female added so you can plug it in! You could also use one you have at home or even just download one on a app!
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Camera-Flash-to-Flashlight/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -44,25 +46,25 @@ Please note that this build was a rummage one and I just used parts that I had o
 
 Parts
 
-1. Vintage Camera Flash – eBay
+1. Vintage Camera Flash – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xvintage+camera+flash.TRS0&_nkw=vintage+camera+flash&_sacat=0)
 
-2. 3 X LED’s (1w) – eBay
+2. 3 X LED’s (1w) – [eBay](https://www.ebay.com.au/itm/10x-50x-1W-3W-5W-7W-SMD-COB-LED-Chip-With-Star-PCB-High-Power-Beads-White-Light/131934573125?hash=item1eb7e9d245:m:mItns0MNAB-Kjsc1kZiIH4g)
 
-3. Dimmer (actually a 3v motor speed control!) – eBay
+3. Dimmer (actually a 3v motor speed control!) – [eBay](https://www.ebay.com.au/itm/Low-Voltage-1-8V-3V-5V-6V-7-2V-12V-2A-30W-DC-Motor-Speed-Controller-PWM-TE1123/173770511836?hash=item28758795dc:g:c1UAAOSwk4hcbmMg&frcectupt=true)
 
-4. 2 X Solar Panels 4.5V – eBay.
+4. 2 X Solar Panels 4.5V – e[Bay.](https://www.ebay.com.au/itm/5FD4-5V-2W-25MA-45x25mm-Power-Bank-Charging-Module-Epoxy-Solar-Panel-DIY-Black/264213570190?hash=item3d845b228e:g:lR4AAOSwHNtcc88e&frcectupt=true)
 
-5. 3 X AAA battery holder – eBay.
+5. 3 X AAA battery holder – [eBay](https://www.ebay.com.au/itm/Cylindrical-Type-Plastic-Battery-Holder-For-3x-AAA-To-18650-Battery-Converter/263257837005?hash=item3d4b63cdcd:g:Kv4AAOSwaPtZ3gmV&frcectupt=true).
 
-6. 3 X AAA Rechargeable batteries – eBay
+6. 3 X AAA Rechargeable batteries – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1311.R1.TR10.TRC0.A0.H0.Xaaa+rechar.TRS0&_nkw=aaa+rechargeable+batteries&_sacat=293)
 
-7. Potentiometer Knob – eBay
+7. Potentiometer Knob – [eBay](https://www.ebay.com.au/sch/i.html?_osacat=293&_odkw=potentiometer+knob&_from=R40&_trksid=p2334524.m570.l1313.TR4.TRC1.A0.H0.TRS0&_nkw=potentiometer+knob&_sacat=293)
 
-8. Diode - eBay
+8. Diode - [eBay](https://www.ebay.com.au/itm/100PCS-1N4148-IN4148-Switching-Diode-Switching-Signal-Doide-DO-35/173189225751?hash=item2852e1dd17:g:4DsAAOSw~7BamM~r)
 
 9. Socket for DC charging - eBay
 
-10. 4.5V charger - eBay
+10. 4.5V charger - [eBay](https://www.ebay.com.au/itm/AC-to-DC-4-5V-1A-Converter-charger-Adapter-Power-Supply-1000mA-5-5X2-1-2-5X0-7/161388450978?hash=item25938054a2:g:YgQAAOSwRLZT4zeI)
 
 Tools
 

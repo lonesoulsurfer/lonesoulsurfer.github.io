@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Guitar-With-Built-in-Amp-and-Speaker/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -125,7 +127,7 @@ Power
 
 First thing to do is to locate where the power is connected to the circuit board. This is pretty easy as you can either just follow the wires from the power adapter to the circuit board or if it is battery powered, you can just use the battery terminals. Usually positive has a red wire, while the negative has a black. Mine even said "power" on the board.
 
-Jack (audio input) - for playing music through the speaker
+Jack (audio input) -for playing music through the speaker
 
 All of these speakers should have a male jack that is used to plug into the computer. Every set of headphones you own has one of these at the end of the wire.
 

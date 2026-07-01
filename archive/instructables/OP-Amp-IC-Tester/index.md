@@ -4,6 +4,8 @@ Source: https://www.instructables.com/OP-Amp-IC-Tester/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -31,7 +33,7 @@ Let’s get testing!
 
 Hackster did a review on this build also - link below if you want to check it out!
 
-Hackster Review
+[Hackster Review](https://www.hackster.io/news/a-low-cost-operational-amplifier-tester-to-find-faulty-ics-6dc61a6fe5a6)
 
 
 ## Step 1: Parts & Tools
@@ -54,18 +56,20 @@ The links below are to specific parts in the attached parts list
 
 PARTS:
 
-1. 9V Battery holder - eBay
+1. 9V Battery holder -[eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=9v+battery+holder+PCB&_sacat=0)
 
-2. 8 dip IC sockets - eBay
+2. 8 dip IC sockets - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=8+dip+IC+socket&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=9v+battery+holder+PCB)
 
-3. Slider switch - eBay
+3. Slider switch - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=switch+spdt+PCB+mini&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=switch+spdt+PCB)
 
 3. 9 V battery (only if you want to power the tester via a 9V battery. You can also power the board a few other ways.
 
-4.PCB pin headers, Male & female - eBay
+4.PCB pin headers, Male & female - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=pin+male+header+pcb&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=pin+male+pcb)
 
 5. The rest of the components like resistors, capacitors, LED's can be found on the attached list of parts
 
+
+- [Book2](pdfs/Book2.pdf)
 
 ## Step 2: How It All Works
 
@@ -94,9 +98,9 @@ The diagrams for each of the IC’s show the inverting and non-inverting inputs 
 
 I have created a folder in my Google drive which can be found in the below link that has the schematic, PCB and Gerber files
 
-Google Drive Files
+[Google Drive Files](https://drive.google.com/drive/folders/13PytBjeyiZ2nbiYv9zoZ_oaOPXhjzU8L?usp=sharing)
 
-If you wantb to get your own board printed, then just save the gerber zip file and email it to your favourite PCB manufacturer. I use JLCPCB (not affilated) who do a good job of printing the boards and are quick as well.
+If you wantb to get your own board printed, then just save the gerber zip file and email it to your favourite PCB manufacturer. I use[JLCPCB](https://jlcpcb.com/?gclid=Cj0KCQiA2af-BRDzARIsAIVQUOc5lDybfwXcCif6zTfM1BEXEQ8qkZD-hXFMAUGSv0o-h35Z_iy8m_kaAtcBEALw_wcB) (not affilated) who do a good job of printing the boards and are quick as well.
 
 I think I might do an instucatable soon on how to actually get a PCB printed. It isn't hard but there are a couple steps involved and I remember thinking back when I was starting - what the hell was a gerber file and how do I get one!
 
@@ -144,6 +148,10 @@ Add an op amp into each of the IC sockets and test to see if: A - the curcuit wo
 
 The good news is, you can use the tester to test other op amps! For example, if you want to test a 5532 op amp, then just plug it into the LM358 testing circuit. You shouldbe able to test quite a few different op amps with this tester so go ahead and test out what you have and see if you get a blinking LED.
 
+
+## Downloads
+
+- [Book2](pdfs/Book2.pdf)
 
 ---
 *26 images archived*

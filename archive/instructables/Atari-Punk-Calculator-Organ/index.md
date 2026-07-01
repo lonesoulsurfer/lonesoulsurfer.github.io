@@ -1,8 +1,10 @@
-# Atari Punk Calculator Organ 
+# Atari Punk Calculator Organ
 
 Source: https://www.instructables.com/Atari-Punk-Calculator-Organ/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -38,31 +40,31 @@ I reckon you could also add this to a small keyboard and add a pot to each key s
 
 Parts:
 
-1. 1K Resistor - eBay
+1. 1K Resistor - [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
-2. 2 X .01 uf Capacitor - eBay
+2. 2 X .01 uf Capacitor - [eBay](https://www.ebay.com.au/itm/100-x-0-01uF-50V-DIP-Low-Voltage-Ceramic-Disc-Capacitors-Q5M7/283029228493?epid=1369328520&hash=item41e5db4bcd:g:4XgAAOSwHZhbNBh2)
 
-3. 5 X 100K Potentiometers – eBay
+3. 5 X 100K Potentiometers – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.X100k+potentiometers.TRS0&_nkw=100k+potentiometers&_sacat=0)
 
-4. 5k Potentiometer - eBay
+4. 5k Potentiometer - [eBay](https://www.ebay.com.au/sch/i.html?_odkw=100k+potentiometers&_osacat=0&_from=R40&_trksid=m570.l1313&_nkw=5k+potentiometer&_sacat=0)
 
-5. 556 IC – eBay
+5. 556 IC – [eBay](https://www.ebay.com.au/itm/10-PCS-IC-NE556N-NE556-ST-TI-OSC-TIMER-DUAL-DIP-14-200mA/232430060619?hash=item361de9444b:g:8OYAAOSwKzpZfpu7)
 
-6. Speaker – I used this one from eBay The speaker should be an 8Ohm 2 to 3W one
+6. Speaker – I used this one from [eBay](https://www.ebay.com.au/itm/8Ohm-3W-Full-Range-Audio-Speaker-Stereo-Woofer-Loudspeaker-30mm-x-70mm/132601176701?epid=2261252059&hash=item1edfa5627d:g:KGYAAOSwjXNa5AD2) The speaker should be an 8Ohm 2 to 3W one
 
-7. Prototype Board – eBay
+7. Prototype Board – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
-8. 12 X Tactile switches – eBay
+8. 12 X Tactile switches – [eBay](https://www.ebay.com.au/itm/50PCS-6x6x6mm-Micro-Miniature-Momentary-Tactile-Tact-Touch-Push-Button-Switch/191736126583?hash=item2ca45d1c77:g:CBMAAOSwRbtaIkea)
 
-9. 12K Resistors – eBay
+9. 12K Resistors – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
-10. 2 X on/off switches – eBay
+10. 2 X on/off switches – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xon%2Foff+switch.TRS0&_nkw=on%2Foff+switch&_sacat=0)
 
 11. 9 v battery
 
-12. 9 v battery holder – eBay
+12. 9 v battery holder – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=on%2Foff+switch&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR11.TRC1.A0.H0.X9+v+battery+holder.TRS0&_nkw=9+v+battery+holder&_sacat=0)
 
-13. Case to put everything in. I used a vintage calculator which you can find similar ones on eBay
+13. Case to put everything in. I used a vintage calculator which you can find similar ones on [eBay](https://www.ebay.com.au/sch/i.html?_odkw=9+v+battery+holder&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xvintage+calculator.TRS0&_nkw=vintage+calculator&_sacat=0)
 
 Tools:
 

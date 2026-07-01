@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Floating-Fishing-Tackle-Box/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -29,7 +31,9 @@ It’s very simple and cheap to make and works like a charm. So if you need a wa
 ![Step 1: Parts image 2](images/step01_02.jpg)
 
 1. Small bucket
+
 2. Rope
+
 3. Inflatable ring
 
 
@@ -45,12 +49,16 @@ It’s very simple and cheap to make and works like a charm. So if you need a wa
 
 ![Step 2: Making the Float image 5](images/step02_05.jpg)
 
-View 2 more
 This is a very simple ible’ (sometimes the simplest are the best though)
+
 Steps:
+
 1. Blow up the ring
+
 2. Put the bucket inside the ring
+
 3. To secure the bucket into the ring, use a piece of rope and wrap it around the ring and handle of the bucket. Make sure you make a few wraps around the handle and ring.
+
 4. Lastly, make a loop in the end of the rope so you can secure it to something.
 
 

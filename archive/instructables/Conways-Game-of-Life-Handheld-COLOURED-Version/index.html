@@ -162,7 +162,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Conway's Game of Life - Handheld COLOURED Version</span>
 </nav>
-<h1>Conway's Game of Life - Handheld COLOURED Version</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Version/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I'm back again with a new and improved version of my Conway's Game of Life - Handheld Version This version has a number of improvements including, coloured screen, more games, different cell sizes and a lot cheaper to make!</p>
+<h1>Conway's Game of Life - Handheld COLOURED Version</h1><div class="source"><a href="https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Version/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Conway's Game of Life - Handheld COLOURED Version" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"><img src="images/intro_03.jpg" alt="Intro 3" loading="lazy"><img src="images/intro_04.jpg" alt="Intro 4" loading="lazy"></div><p>I'm back again with a new and improved version of my <a href="https://www.instructables.com/Conways-Game-of-Life-Handheld-Version-Powered-by-A/">Conway's Game of Life - Handheld Version</a> This version has a number of improvements including, coloured screen, more games, different cell sizes and a lot cheaper to make!</p>
 <p>See below for the full game overview</p>
 <p>Instead of using a Adafruit Trinket M0 (which are quite expensive), I've used a Raspberry Pi Pico Zero (which are cheap as chips!).</p>
 <p>I've also used a coloured TFT screen which are also inexpensive and gives the held held game a heap more options to play around with.</p>
@@ -175,26 +175,26 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>There are actually many types of cellular automation and I have included some in this build.</p>
 <p>Here is what you get in this updated hand held, coloured version. see the last step for a more detailed runthrough:</p>
 <p>Main Menu Navigation</p>
-<ul>
+<ol>
 <li>UP/DOWN: Navigate menu options</li>
 <li>A: Select menu item</li>
 <li>B: Go back to previous menu</li>
-</ul>
+</ol>
 <p>Color Modes</p>
-<ul>
+<ol>
 <li>All game modes support color! Press UP + DOWN together to toggle.</li>
-</ul>
+</ol>
 <p>Game Rules</p>
-<ul>
+<ol>
 <li>Hold button B down for 2 seconds in any game to bring up the rules for that game</li>
-</ul>
+</ol>
 <p>Cell Size</p>
-<ul>
+<ol>
 <li>There are 4 different cell sizes, from tiny to Large. Whist in a game, press left to change the size of the cell</li>
-</ul>
+</ol>
 <p>Tools</p>
 <p>Tools Menu Breakdown</p>
-<ul>
+<ol>
 <li>Sound: ON/OFF - Toggles all game sounds on or off</li>
 <li>Volume: Low/Medium/High</li>
 <li>World: Toroid/Open - Controls what happens at the edges of the game board</li>
@@ -210,16 +210,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Trail Mode: ON/OFF - Shows fading trails behind cells as they die</li>
 <li>In Mono mode = Gray fading trail (white → light gray → dark gray → black over 12 frames)</li>
 <li>In Color mode = Colored fading trail using age-based colors</li>
-</ul>
+</ol>
 <p>Game of Life Games</p>
 <p>PRESET - Classic Patterns</p>
-<ul>
+<ol>
 <li>Coe Ship - Spaceship that travels across the board</li>
 <li>Gosper Glider Gun - Continuously spawns gliders</li>
 <li>Diamond - 4-8-12 diamond pattern that evolves</li>
 <li>Pulsar - Achim's p144 oscillator (period-144 pattern)</li>
 <li>Glider - 56P6H1V0 spaceship pattern</li>
-</ul>
+</ol>
 <p>RANDOM - Chaotic Evolution</p>
 <p>SYMMETRIC - Creates symmetric initial patterns with different sizes</p>
 <p>CUSTOM - Draw Your Own games</p>
@@ -230,7 +230,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>CYCLIC CA - Multi-state cellular automaton where cells cycle through 6 states.</p>
 <p>RULE EXPLORER - Create Custom Rules</p>
 <p>Choose from 9 famous rule variations:</p>
-<ul>
+<ol>
 <li>Conway (B3/S23) - Classic Game of Life</li>
 <li>HighLife (B36/S23) - Like Conway, with replicators</li>
 <li>Maze (B3/S12345) - Creates maze-like patterns</li>
@@ -240,77 +240,112 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>2x2 (B36/S125) - Stable 2x2 blocks common</li>
 <li>NoDeath (B3/S012345678) - Cells never die once born</li>
 <li>Diamoeba (B35678/S5678) - Diamond-shaped amoebas</li>
-</ul>
+</ol>
 <p>Custom Rules - Create your own rules:</p>
-<ul>
+<ol>
 <li>Navigation:</li>
 <li>UP/DOWN: Switch between Birth and Survival rows</li>
 <li>LEFT/RIGHT: Move cursor (0-8 neighbors)</li>
 <li>A (short): Toggle number on/off</li>
 <li>B (2 seconds): Start game with custom rules</li>
 <li>B: Back to preset menu</li>
-</ul><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"></div><p>I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc.</p>
+</ol><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"></div><p>I have included a PDF of the parts list with links for all of the parts which you can find on this step in case you want to print it out etc.</p>
 <p>The PCB and front panel information can be found on the next step</p>
 <p>PARTS:</p>
-<p>Raspberry Pi Pico Zero X 1 - Ali Express</p>
-<p>Charging & voltage step-up module X 1 - Ali Express</p>
-<p>TFT Display 2.0 inch OLED LCD Drive IC ST7789V 240 X 320 X 1 - Ali Express</p>
+<p>Raspberry Pi Pico Zero X 1 - <a href="https://www.aliexpress.com/w/wholesale-Raspberry-Pi-Pico-Zero.html?spm=a2g0o.home.search.0">Ali Express</a></p>
+<p>Charging & voltage step-up module X 1 - [Ali Express](https://www.aliexpress.com/item/1005005656423941.html?invitation</p>
+<p>Code=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
+<p>BzNkVmWTlBPT0&src</p>
+<p>Sns=sns_More&spread</p>
+<p>Type=social</p>
+<p>Share&social_params=21926311787&biz</p>
+<p>Type=Product</p>
+<p>Detail&spread</p>
+<p>Code=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
+<p>BzNkVmWTlBPT0&aff_fcid=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&tt=MG&aff_fsk=_mtlLJJx&aff_platform=default&sk=_mtlLJJx&aff_trace_key=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&share</p>
+<p>Id=21926311787&business</p>
+<p>Type=Product</p>
+<p>Detail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmart</p>
+<p>Redirect=y)</p>
+<p>TFT Display 2.0 inch OLED LCD Drive IC ST7789V 240 X 320 X 1 - <a href="https://www.aliexpress.com/w/wholesale-TFT-Display-2.0-inch-OLED-LCD-Drive-IC-ST7789V-240.html?spm=a2g0o.detail.search.0">Ali Express</a></p>
 <p>Battery -</p>
-<p>Tactile Switch - Ali Express</p>
-<p>On/Off Switch - Ali Express</p>
-<p>Buzzer - Ali Express</p>
-<p>Micro Momentary Switch - Ali Express</p>
-<p>SMD Male Pin Headers - Ali Express</p>
-<p>M2 Screws - Ali Express</p>
-<p>M2 Spacers - Ali Express</p>
-<p>Ribbon Wire - Ali Express</p><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with basic soldering skills can make it.</p>
+<p>Tactile Switch - [Ali Express](https://www.aliexpress.com/item/1005007076344493.html?invitation</p>
+<p>Code=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
+<p>BzNkVmWTlBPT0&src</p>
+<p>Sns=sns_More&spread</p>
+<p>Type=social</p>
+<p>Share&social_params=21926321283&biz</p>
+<p>Type=Product</p>
+<p>Detail&spread</p>
+<p>Code=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdl</p>
+<p>BzNkVmWTlBPT0&aff_fcid=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&tt=MG&aff_fsk=_mqidysZ&aff_platform=default&sk=_mqidysZ&aff_trace_key=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&share</p>
+<p>Id=21926321283&business</p>
+<p>Type=Product</p>
+<p>Detail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmart</p>
+<p>Redirect=y)</p>
+<p>On/Off Switch - <a href="https://www.aliexpress.com/item/1005001517398513.html?spm=a2g0o.order_list.order_list_main.11.30491802K9cNyZ">Ali Express</a></p>
+<p>Buzzer -<a href="https://www.aliexpress.com/w/wholesale-Buzzer-9032-5020-7525-9650-1230.html?spm=a2g0o.detail.search.0">Ali Express</a></p>
+<p>Micro Momentary Switch - [Ali Express](https://www.aliexpress.com/item/1005006956741903.html?spm=a2g0o.productlist.main.6.3714VtyYVtyYWA&aem_p4p_detail=202512012013053186468671941280003530927&algo_pvid=77e41f87-a64a-474c-910f-b4c95e360006&algo_exp_id=77e41f87-a64a-474c-910f-b4c95e360006-5&pdp_ext_f=%7B%22order%22%3A%228%22%2C%22eval%22%3A%221%22%2C%22from</p>
+<p>Page%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%213.23%212.75%21%21%2114.75%2112.54%21%402103129017646487854512530eb65b%2112000038853341475%21sea%21AU%21129764711%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&cur</p>
+<p>Page</p>
+<p>LogUid=meKpY4AXI4Zs&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006956741903%7C_p_origin_prod%3A&search_p4p_id=202512012013053186468671941280003530927_2)</p>
+<p>SMD Male Pin Headers - <a href="https://www.aliexpress.com/item/1005008164411410.html?spm=a2g0o.order_list.order_list_main.47.30491802K9cNyZ">Ali Express</a></p>
+<p>M2 Screws - <a href="https://www.aliexpress.com/item/1005007159750547.html?spm=a2g0o.order_list.order_list_main.23.30491802K9cNyZ">Ali Express</a></p>
+<p>M2 Spacers - <a href="https://www.aliexpress.com/w/wholesale-spacer-M2-kit.html?spm=a2g0o.productlist.search.0">Ali Express</a></p>
+<p>Ribbon Wire - [Ali Express](https://www.aliexpress.com/item/1005007868158870.html?spm=a2g0o.productlist.main.5.c95f47bdP8JDuq&aem_p4p_detail=202601022008397380272548107300006821870&algo_pvid=2f9a9453-9b42-4b1b-85ab-ae9699014313&algo_exp_id=2f9a9453-9b42-4b1b-85ab-ae9699014313-4&pdp_ext_f=%7B%22order%22%3A%221354%22%2C%22eval%22%3A%221%22%2C%22from</p>
+<p>Page%22%3A%22search%22%7D&pdp_npi=6%40dis%21AUD%212.27%212.22%21%21%2110.44%2110.23%21%402101ea8c17674133197688477ec307%2112000042656642090%21sea%21AU%21129764711%21X%211%210%21n_tag%3A-29919%3Bd%3Abadc4977%3Bm03_new_user%3A-29895&cur</p>
+<p>Page</p>
+<p>LogUid=TGqy8VLWcAFl&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007868158870%7C_p_origin_prod%3A&search_p4p_id=202601022008397380272548107300006821870_5)</p>
+<ul>
+<li><a href="pdfs/Parts List.pdf">Parts List</a></li>
+</ul><h2><span class="step-num">STEP 1</span>Step 1: Getting the PCB & Front Panel Printed</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 1: Getting the PCB & Front Panel Printed image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 1: Getting the PCB & Front Panel Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting the PCB & Front Panel Printed image 3" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with basic soldering skills can make it.</p>
 <p>That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!).</p>
 <p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
-<p>I use JLCPCB (not affiliated) to get this done.</p>
+<p>I use <a href="https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE">JLCPCB</a> (not affiliated) to get this done.</p>
 <p>The front panel is actually just a PCB without any components included!</p>
-<p>The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)</p>
-<p>The files that you need to build your own Game of Life can be found in my GitHub page.</p>
+<p>The front design is done in a program called <a href="https://inkscape.org/">Inkscape</a> (available free) and the panel including the drilled holes is done in <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a> (also free!)</p>
+<p>The files that you need to build your own Game of Life can be found in my <a href="https://github.com/lonesoulsurfer/Game_of_Life_Colour_Handheld">GitHub</a> page.</p>
 <p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
 <p>Download the files to your computer</p>
 <p>STEPS:</p>
-<ul>
-<li>Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
-<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.</li>
+<ol>
+<li>Send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the PCB and front panel for you. Download all of the files from my <a href="https://github.com/lonesoulsurfer/Game_of_Life_Colour_Handheld">GitHub</a>page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.</li>
+<li>If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Momentary Switches</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Momentary Switches image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Momentary Switches image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Momentary Switches image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Momentary Switches image 4" loading="lazy"></div><p>The momentary switches used are SMD ones.</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding the Momentary Switches</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Momentary Switches image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Momentary Switches image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Momentary Switches image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Momentary Switches image 4" loading="lazy"></div><p>The momentary switches used are SMD ones.</p>
 <p>Actually, I've ensured that all of the components on the PCB are not through hole ones.</p>
 <p>This keeps the back of the hand held game clean, stops you from getting pricked by sharp pins etc, and stops any potential grounding of pins that shouldn't be grounded.</p>
 <p>Plus it just looks a whole lot better!</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>You need to make sure that you add the ‘up’ and ‘down’ switches first. It just makes it easy if you do it in this order.</li>
 <li>Add a little solder to one of the solder pads for the ‘up’ switch.</li>
 <li>Place the switch on top of the pads and then heat up the solder to secure it into place. If it looks good, you can then secure the other 3 feet on the switch</li>
 <li>Now do the same for the down switch</li>
 <li>You can now add the left and right switches into place along with the A and B switches</li>
 <li>There is one more momentary switch to add. This is a mirco momentary switch which is to be a rest for the raspberry Pi. I added this so you could easily reset the Pi and put it in Boot mode for when you want to update the sketch</li>
-</ul><h2><span class="step-num">STEP 3</span>Step 3: Adding the Charging/boost Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Charging/boost Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Charging/boost Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Charging/boost Module image 3" loading="lazy"></div><p>The charging and voltage booster module is a great little board.</p>
+</ol><h2><span class="step-num">STEP 3</span>Step 3: Adding the Charging/boost Module</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Charging/boost Module image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Charging/boost Module image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Charging/boost Module image 3" loading="lazy"></div><p>The charging and voltage booster module is a great little board.</p>
 <p>It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>First, lets set the output voltage to 5V from the Charging & voltage booster module. Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)</li>
 <li>Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.</li>
 <li>Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place</li>
 <li>Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.</li>
 <li>Bend the wire down so it is touching the solder pad on the PCB and trim.</li>
 <li>Add solder to the solder pad on the PCB and connect the wire to each. This will give you a good strong connection.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Adding the Raspberry Pi Zero</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Raspberry Pi Zero image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Raspberry Pi Zero image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Raspberry Pi Zero image 3" loading="lazy"></div><p>The raspberry Pi Zero is another great little board.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Adding the Raspberry Pi Zero</h2><div class="step-images"><img src="images/step05_01.jpg" alt="Step 4: Adding the Raspberry Pi Zero image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Adding the Raspberry Pi Zero image 2" loading="lazy"><img src="images/step05_03.jpg" alt="Step 4: Adding the Raspberry Pi Zero image 3" loading="lazy"></div><p>The raspberry Pi Zero is another great little board.</p>
 <p>It has less GP pins then a normal Raspberry Pi Pico but the same amount of Ram.</p>
 <p>Plus, as I mentioned earlier, they are pretty cheap at about $4 each.</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>As everything is surface mount on the PCB, you need to first solder into place some SMD header pins. Add these to both sections on the PCB</li>
 <li>Now, you can solder the Raspberry Pi Pico Zero into place on the header pins. Make sure that the USB connector is facing up.</li>
 <li>If you wanted to, you could add small, male header pins to the Raspberry Pi so it is removeable</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Rest of the Components to the PCB</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 4" loading="lazy"></div><p>Now you can go ahead and add the rest of the components to the PCB</p>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Rest of the Components to the PCB</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Rest of the Components to the PCB image 4" loading="lazy"></div><p>Now you can go ahead and add the rest of the components to the PCB</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>Solder the toggle switch into place. You will note that this has 6 solder points. You can trim off the 3 solder points next to the actual switch if you want to and just solder this into place via the 3 at the back.</li>
 <li>Next, lest solder the SMD male header pins for the screen. Now, you need to make sure that you solder these on straight or they won't line up with the female header pins on the screen.</li>
 <li>Solder the buzzer into place.</li>
@@ -318,12 +353,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Now add a resistor leg to each solder point and bend so they are lying flat with the battery.</li>
 <li>Add a little superglue to the battery and glue into place.</li>
 <li>Trim the wire if necessary and then solder onto the solder points on the PCB</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: Adding the Screen to the Front Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Screen to the Front Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Screen to the Front Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Screen to the Front Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Screen to the Front Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Screen to the Front Panel image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Screen to the Front Panel image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Screen to the Front Panel image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding the Screen to the Front Panel image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 6: Adding the Screen to the Front Panel image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 6: Adding the Screen to the Front Panel image 10" loading="lazy"></div><p>The screenis not directly connected to the PCB!</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: Adding the Screen to the Front Panel</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: Adding the Screen to the Front Panel image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: Adding the Screen to the Front Panel image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: Adding the Screen to the Front Panel image 3" loading="lazy"><img src="images/step07_04.jpg" alt="Step 6: Adding the Screen to the Front Panel image 4" loading="lazy"><img src="images/step07_05.jpg" alt="Step 6: Adding the Screen to the Front Panel image 5" loading="lazy"><img src="images/step07_06.jpg" alt="Step 6: Adding the Screen to the Front Panel image 6" loading="lazy"><img src="images/step07_07.jpg" alt="Step 6: Adding the Screen to the Front Panel image 7" loading="lazy"><img src="images/step07_08.jpg" alt="Step 6: Adding the Screen to the Front Panel image 8" loading="lazy"><img src="images/step07_09.jpg" alt="Step 6: Adding the Screen to the Front Panel image 9" loading="lazy"><img src="images/step07_10.jpg" alt="Step 6: Adding the Screen to the Front Panel image 10" loading="lazy"></div><p>The screenis not directly connected to the PCB!</p>
 <p>It is first connected to the front panel using the M2 screws and spacers and then ribbon wire connects the screen to the PCB.</p>
 <p>Initially I wanted to have the screen connected via header pins but I couldn't get this to work due to the header pins being SMD and the sizing of the ones I had were wrong.</p>
 <p>I think I'll re-visit this part sometime and look at including ribbon cable connectors to both the PCB and bottom side of the front panel.</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>The TFT screen that I purchased had the header pins already soldered into place. You will need to remove these if yours is the same. Just heat up the solder on the pin and use a pair of pliers to pull out each of the pins. Make sure you remove as much solder from the top of the holes as well.</li>
 <li>Place the screen against the front panel and secure it into place using some M2 X 8mm screws and nuts.</li>
 <li>Now add a M2 X 6mm spacer onto each of the screws.</li>
@@ -336,20 +371,20 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Add some solder to the solderpoints on thescreen and then solder each wire to the solder points.</li>
 <li>Now you can do the same thing for the solder points onthe PCB. To work out how long you need the wire, place the screen next to the PCB and then cut the wire where it meets up with the solder points on the PCB.</li>
 <li>Now test fit the front panel and PCB again. You might need to squeeze the wire and bend it so it lays flat and doesn't add to much pressure to the inside components.</li>
-</ul>
+</ol>
 <p>Now you are ready for testing so lets go and load up the Game of Life code to the Raspberry Pi</p><h2><span class="step-num">STEP 7</span>Step 7: How to Upload to Raspberry Pi Zero</h2><div class="step-images single"><img src="images/step08_01.png" alt="Step 7: How to Upload to Raspberry Pi Zero image 1" loading="lazy"></div><p>In you haven't installed Arduino on your computer, then this is the first thing you should do.</p>
 <p>Just follow the below instructions which are straight forward and you wont have any issues with loading the code to the Raspberry Pi Zero.</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>Install Arduino IDE. Download from https://www.arduino.cc/en/software</li>
 <li>Install version 2.0 or newer (recommended)</li>
 <li>Install RP2040 Board Support</li>
 <li>Open Arduino IDE</li>
 <li>Go to File → Preferences</li>
 <li>In "Additional Board Manager URLs", add:</li>
-</ul>
+</ol>
 <p>https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json</p>
-<ul>
+<ol>
 <li>Click OK</li>
 <li>Go to Tools → Board → Boards Manager</li>
 <li>Search for "pico"</li>
@@ -374,21 +409,21 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Select the port that appears (usually shows as "RP2040" or similar)</li>
 <li>Click the Upload button (right arrow icon)</li>
 <li>Wait for "Done uploading" message</li>
-</ul><h2><span class="step-num">STEP 8</span>Step 8: Attaching the PCB & Front Panel Together</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 9" loading="lazy"></div><p>Once the code is loaded, it’s then time to connect the front panel and PCB. Don't worry, once the front panel is connected into place, you can still access the Raspberry Pi</p>
+</ol><h2><span class="step-num">STEP 8</span>Step 8: Attaching the PCB & Front Panel Together</h2><div class="step-images"><img src="images/step09_01.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 1" loading="lazy"><img src="images/step09_02.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 2" loading="lazy"><img src="images/step09_03.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 3" loading="lazy"><img src="images/step09_04.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 4" loading="lazy"><img src="images/step09_05.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 5" loading="lazy"><img src="images/step09_06.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 6" loading="lazy"><img src="images/step09_07.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 7" loading="lazy"><img src="images/step09_08.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 8" loading="lazy"><img src="images/step09_09.jpg" alt="Step 8: Attaching the PCB & Front Panel Together image 9" loading="lazy"></div><p>Once the code is loaded, it’s then time to connect the front panel and PCB. Don't worry, once the front panel is connected into place, you can still access the Raspberry Pi</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>Make sure that the front panel and PCB are correctly pushed together with everything lining-up right.</li>
 <li>Now you can add a 4mm M2 screw to each of the holes in the PCB and screw them into the M2 spacers.</li>
 <li>That’s it – you have now completed your very own Game of Life – Handheld game console</li>
-</ul><h2><span class="step-num">STEP 9</span>Step 9: How to Use the Handheld Game of Life Coloured Version</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: How to Use the Handheld Game of Life Coloured Version image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: How to Use the Handheld Game of Life Coloured Version image 2" loading="lazy"></div><p>Conway's Game of Life - Complete User Guide</p>
+</ol><h2><span class="step-num">STEP 9</span>Step 9: How to Use the Handheld Game of Life Coloured Version</h2><div class="step-images"><img src="images/step10_01.jpg" alt="Step 9: How to Use the Handheld Game of Life Coloured Version image 1" loading="lazy"><img src="images/step10_02.jpg" alt="Step 9: How to Use the Handheld Game of Life Coloured Version image 2" loading="lazy"></div><p>Conway's Game of Life - Complete User Guide</p>
 <p>Main Menu Navigation</p>
-<ul>
+<ol>
 <li>UP/DOWN: Navigate menu options</li>
 <li>A: Select menu item</li>
 <li>B: Go back to previous menu</li>
-</ul>
+</ol>
 <p>During Gameplay</p>
-<ul>
+<ol>
 <li>UP: Increase speed (faster generations)</li>
 <li>DOWN: Decrease speed (slower generations)</li>
 <li>LEFT: Change cell size (Tiny → Small → Normal → Large)</li>
@@ -396,18 +431,18 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>UP + DOWN (together): Toggle COLOR/MONO mode</li>
 <li>B (short press): Return to menu</li>
 <li>B (2 second press): Show/hide game rules overlay</li>
-</ul>
+</ol>
 <p>RESET Button (hold 2 seconds): Enter bootloader mode for updates</p>
 <p>Edit Mode (Custom games)</p>
-<ul>
+<ol>
 <li>D-Pad: Move cursor</li>
 <li>A (short press): Toggle cell on/off</li>
 <li>B (2 second press): Start game</li>
 <li>B: Return to menu</li>
-</ul>
+</ol>
 <p>Tools</p>
 <p>Tools Menu Breakdown</p>
-<ul>
+<ol>
 <li>Sound: ON/OFF - Toggles all game sounds on or off</li>
 <li>Volume: Low/Medium/High</li>
 <li>World: Toroid/Open - Controls what happens at the edges of the game board</li>
@@ -423,26 +458,26 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Trail Mode: ON/OFF - Shows fading trails behind cells as they die</li>
 <li>In Mono mode = Gray fading trail (white → light gray → dark gray → black over 12 frames)</li>
 <li>In Color mode = Colored fading trail using age-based colors</li>
-</ul>
+</ol>
 <p>Main Menu Options</p>
 <p>PRESET - Classic Patterns</p>
-<ul>
+<ol>
 <li>Coe Ship - Spaceship that travels across the board</li>
 <li>Gosper Glider Gun - Continuously spawns gliders</li>
 <li>Diamond - 4-8-12 diamond pattern that evolves</li>
 <li>Pulsar - Achim's p144 oscillator (period-144 pattern)</li>
 <li>Glider - 56P6H1V0 spaceship pattern</li>
-</ul>
+</ol>
 <p>RANDOM - Chaotic Evolution</p>
-<ul>
+<ol>
 <li>Unpredictable patterns emerge</li>
 <li>May stabilize into oscillators</li>
 <li>May die out completely</li>
 <li>Game shows statistics when it stabilizes or dies</li>
-</ul>
+</ol>
 <p>SYMMETRIC - Creates symmetric initial patterns with different sizes</p>
 <p>CUSTOM - Draw Your Own</p>
-<ul>
+<ol>
 <li>Step 1: Choose Cell Size</li>
 <li>Tiny (2px cells): 160x120 grid</li>
 <li>Small (3px cells): 106x80 grid</li>
@@ -457,16 +492,16 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Hold B for 2 seconds to start</li>
 <li>While running, hold B for 800ms to return to edit mode</li>
 <li>Press B to return to menu</li>
-</ul>
+</ol>
 <p>ALT GAMES - Alternative Cellular Automata</p>
-<ul>
+<ol>
 <li>BRIAN'S BRAIN</li>
 <li>Small: Compact symmetric cluster</li>
 <li>Medium: Larger symmetric pattern (35% density)</li>
 <li>Large: Very large sparse pattern (18% density)</li>
 <li>Random: Scattered center-weighted distribution</li>
 <li>Custom: Draw your own pattern</li>
-<li>DAY & NIGHT - Complementary rule set where birth/survival rules mirror each other.</li>
+<li>DAY & NIGHT- Complementary rule set where birth/survival rules mirror each other.</li>
 <li>Very stable, creates intricate patterns</li>
 <li>Day/Night metaphor in color mode</li>
 <li>Often runs indefinitely</li>
@@ -477,9 +512,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>VrtclSym: Vertical mirror symmetry</li>
 <li>4WayRot: 4-way rotational symmetry</li>
 <li>Random: Random pattern type and size</li>
-</ul>
+</ol>
 <p>RULE EXPLORER - Create Custom Rules</p>
-<ul>
+<ol>
 <li>Choose from 9 famous rule variations:</li>
 <li>Conway (B3/S23) - Classic Game of Life</li>
 <li>HighLife (B36/S23) - Like Conway, with replicators</li>
@@ -490,23 +525,25 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>2x2 (B36/S125) - Stable 2x2 blocks common</li>
 <li>NoDeath (B3/S012345678) - Cells never die once born</li>
 <li>Diamoeba (B35678/S5678) - Diamond-shaped amoebas</li>
-<li>Custom Rules - Create your own rules:</li>
+<li>Custom Rules- Create your own rules:</li>
 <li>Navigation:</li>
 <li>UP/DOWN: Switch between Birth and Survival rows</li>
 <li>LEFT/RIGHT: Move cursor (0-8 neighbors)</li>
 <li>B (short): Toggle number on/off</li>
 <li>B (2 seconds): Start game with custom rules</li>
 <li>B: Back to preset menu</li>
-</ul>
+</ol>
 <p>How It Works:</p>
-<ul>
+<ol>
 <li>Birth row: Select how many neighbors cause birth (0-8)</li>
 <li>Survival row: Select how many neighbors keep cell alive (0-8)</li>
 <li>Example: Conway's Life is B3 (birth on 3) / S23 (survive on 2 or 3)</li>
-</ul>
+</ol>
 <p>Color Modes</p>
-<ul>
+<ol>
 <li>All game modes support color! Press UP + DOWN together to toggle.</li>
+</ol><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/Parts List.pdf">Parts List</a></li>
 </ul>
 <div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
   <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>

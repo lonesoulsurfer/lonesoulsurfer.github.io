@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Vintage-Radio-Mini-Amp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -42,18 +44,11 @@ Enjoy
 
 ![Step 1: Things to Gather image 3](images/step01_03.jpg)
 
-Materials
+Materials 1. Mini amp - I used [this](http://www.ebay.com.au/itm/Daphon-Battery-Powered-Portable-Amp-3W-Mini-Guitar-Amplifier-/231107744195?pt=AU_Amplifiers&hash=item35cf1851c3&_uhb=1) one but you could just make your own or buy a kit like [this](http://www.ebay.com.au/itm/111353408199) or [this](http://www.ebay.com.au/itm/TONE-MONSTER-MAH3-NO-SOLDER-Guitar-Amp-Kit-3W-4-SPK-Overdrive-HDPH-Cigar-Box-/111377376573?pt=LH_DefaultDomain_0&hash=item19ee9be53d&_uhb=1) 2. Vintage Radio. Ebay has heaps. Pick the one you want, just make sure that it is easy to open and has plenty of room inside
 
-1. Mini amp - I used this one but you could just make your own or buy a kit like this or this
+3. 9V battery holder - [eBay](http://www.ebay.com.au/itm/P4PM-2pcs-Single-Slots-1x-9V-Battery-Clip-Holder-Case-Box-with-Wire-Leads-DIY-/301021111326?pt=AU_Electronics_Batteries_Chargers&hash=item461641a41e&_uhb=1)
 
-2. Vintage Radio.
-Ebay has heaps. Pick the one you want, just make sure that it is easy to open and has plenty of room inside
-
-3. 9V battery holder - eBay
-
-Tools
-
-1. Soldering Iron and solder
+Tools 1. Soldering Iron and solder
 
 2. Screwdriver/Phillips head
 
@@ -86,17 +81,7 @@ Tools
 
 ![Step 2: Pulling Apart Your Radio image 7](images/step02_07.jpg)
 
-The first step is to pull apart your vintage radio.
-
-Steps.
-
-1. Take off the cowling. Mine was held together by a single screw on the back.
-
-2. Remove the insides. Before you start to take things apart, take a good look at everything and think about what you want to keep and will need. My radio was well engineered and it was a bit tricky trying to get the electronic out but I managed it in the end.
-
-3. Store the parts somewhere safe, you’ll find that you need some later on.
-
-4. Remove any dials, badges etc so you can give everything a good clean.
+The first step is to pull apart your vintage radio. Steps. 1. Take off the cowling. Mine was held together by a single screw on the back. 2. Remove the insides. Before you start to take things apart, take a good look at everything and think about what you want to keep and will need. My radio was well engineered and it was a bit tricky trying to get the electronic out but I managed it in the end. 3. Store the parts somewhere safe, you’ll find that you need some later on. 4. Remove any dials, badges etc so you can give everything a good clean.
 
 
 ## Step 3: Cleaning the Radio
@@ -111,15 +96,7 @@ Steps.
 
 ![Step 3: Cleaning the Radio image 5](images/step03_05.jpg)
 
-Now it's time to give your radio a good clean! The one I purchased had a lot of dirt on it that had built up over the years,
-
-Steps:
-
-1. Use hot soapy water to wipe down the cowl and front cover.
-
-2. Use ear cleaners to get into the hard to reach places.
-
-3. Wipe down with a towel to dry any excess water.
+Now it's time to give your radio a good clean! The one I purchased had a lot of dirt on it that had built up over the years, Steps: 1. Use hot soapy water to wipe down the cowl and front cover. 2. Use ear cleaners to get into the hard to reach places. 3. Wipe down with a towel to dry any excess water.
 
 
 ## Step 4: Taking Apart the Mini Amp

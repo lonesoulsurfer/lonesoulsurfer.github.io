@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Conways-Game-of-Life-Handheld-Version-Powe
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,7 +21,7 @@ Source: https://www.instructables.com/Conways-Game-of-Life-Handheld-Version-Powe
 
 ![Intro 6](images/intro_06.jpg)
 
-I’ve been fascinated with Conway’s Game of Life ever since I read ‘The Recursive Universe’ way back in 2012. Since then, I wanted a way that I could play the game just like you would play a Nintendo ‘Game & Watch’ – a pocket-sized version that I could whip out anytime and start to explore & build my own patterns.
+I’ve been fascinated with Conway’s Game of Life ever since I read ‘[The Recursive Universe](https://books.google.com.au/books?id=0FHqbtajb0wC&printsec=frontcover&redir_esc=y#v=onepage&q&f=false)’ way back in 2012. Since then, I wanted a way that I could play the game just like you would play a Nintendo ‘[Game & Watch](https://www.google.com/search?sca_esv=34443d8b2c0c5fa7&rlz=1C1GCEA_enAU1141AU1141&sxsrf=AE3TifPegSn3Y3lmAGJwoSP3rpSFpeFANQ:1756446570640&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMi5-_D5b5oEjBGcsLP5FUOaaUQ7bIbj4iFLgtkUUPL7iyT1obaAZOUoIS36H-sdAfzLkiFD0gpLK7WTzTqY-FIhr7O-NIYKmuyo6v8-mOxzdUVr41KBdhJUObj5-fCU5AQhxCrsA&q=game+%26+watch&sa=X&sqi=2&ved=2ahUKEwj6xKOvqa-PAxUtcWwGHXBxOZMQtKgLegQIDxAB&biw=1920&bih=911&dpr=1)’ – a pocket-sized version that I could whip out anytime and start to explore & build my own patterns.
 
 Fast-forward to 2025 and that idea has become reality! Arduino AI Assistant has been a massive help in building the code and there is absolutely no way that I could of done it without AI’s assistance. If you haven’t used it before and don’t know much about coding, then I strongly recommend that you give it a try.
 
@@ -37,27 +39,29 @@ Conways 'Game of Life' based on toroidal world: Edges wrap around (top connects 
 
 Game includes the following menus:
 
-- Preset patterns - 5 famous Conway patterns including Coe Ship, Gosper Glider Gun, 4-8-12 Diamond, Achim's p144, 56P6H1V0
-- Random generation - Starts with random cell pattern, auto-resets when pattern dies/repeats
-- Symmetric pattern generator - Generate symmetric patterns with 3 sizes Small, Medium, Large & Random. Symmetry type: Vertical, Horizontal, or 4-way Rotational
-- Custom builder - Interactive editor to design your own starting patterns
+1. Preset patterns - 5 famous Conway patterns including Coe Ship, Gosper Glider Gun, 4-8-12 Diamond, Achim's p144, 56P6H1V0
+2. Random generation - Starts with random cell pattern, auto-resets when pattern dies/repeats
+3. Symmetric pattern generator - Generate symmetric patterns with 3 sizes Small, Medium, Large & Random. Symmetry type: Vertical, Horizontal, or 4-way Rotational
+4. Custom builder - Interactive editor to design your own starting patterns
+
 Alternative Games
 
 Four Alternative cellular automata available to play in the Alt Menu. These include:
 
-- Brian's Brain - 3-state automaton (alive/dying/dead) 5 modes: Small/Medium/Large/Random/Custom Visual: solid pixels (alive), blinking pixels (dying)
-- Day & Night - Inverse Conway rules creating dense patterns 2 density options: Medium Start (~35%), Dense Start (~50%) Birth: 3,6,7,8 neighbors | Survival: 3,4,6,7,8 neighbors
-- Seeds - Birth-only automaton creating explosive patterns 2 modes: Random (symmetric center pattern) and Custom. Birth with exactly 2 neighbors, all cells die each generation
-- Cyclic CA - Multi-state cycling automaton 3 pattern types: Vertical Symmetry, 4-Way Rotational, Random 6 visual states with different blink/display patterns
-- Alt Games - See below
+1. Brian's Brain - 3-state automaton (alive/dying/dead) 5 modes: Small/Medium/Large/Random/Custom Visual: solid pixels (alive), blinking pixels (dying)
+2. Day & Night - Inverse Conway rules creating dense patterns 2 density options: Medium Start (~35%), Dense Start (~50%) Birth: 3,6,7,8 neighbors | Survival: 3,4,6,7,8 neighbors
+3. Seeds - Birth-only automaton creating explosive patterns 2 modes: Random (symmetric center pattern) and Custom. Birth with exactly 2 neighbors, all cells die each generation
+4. Cyclic CA - Multi-state cycling automaton 3 pattern types: Vertical Symmetry, 4-Way Rotational, Random 6 visual states with different blink/display patterns
+5. Alt Games - See below
+
 Features
 
-- Interactive pattern editor with blinking cursor
-- Real-time generation counter and cell statistics (some modes)
-- Comprehensive menu system with multiple submenus
-- Smart Detection: Automatically detects when patterns die out or start repeating
-- Automatic pattern detection and game reset (some modes)
-- Menu System: interface with pattern submenu
+1. Interactive pattern editor with blinking cursor
+2. Real-time generation counter and cell statistics (some modes)
+3. Comprehensive menu system with multiple submenus
+4. Smart Detection: Automatically detects when patterns die out or start repeating
+5. Automatic pattern detection and game reset (some modes)
+6. Menu System: interface with pattern submenu
 
 
 ## Supplies
@@ -80,13 +84,13 @@ I have included a PDF of the parts list with links for all of the parts which yo
 
 PARTS:
 
-Adafruit Trinket M0 X 1 - Ali Express
+Adafruit Trinket M0 X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-trinket-M0.html?spm=a2g0o.detail.search.0)
 
-Charging & voltage step-up module X 1 - Ali Express
+Charging & voltage step-up module X 1 - [Ali Express](https://www.aliexpress.com/item/1005005656423941.html?invitationCode=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21926311787&bizType=ProductDetail&spreadCode=Z2RJS0ZlUjdWeXFvTWJjdCtIcWRwMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&tt=MG&aff_fsk=_mtlLJJx&aff_platform=default&sk=_mtlLJJx&aff_trace_key=32541398e7fa42cb8605beb5c28e25dc-1756343760169-03338-_mtlLJJx&shareId=21926311787&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
 
-OLED Screen - 2.42 inch X 1 - Ali Express
+OLED Screen - 2.42 inch X 1 - [Ali Express](https://www.aliexpress.com/w/wholesale-oled-2.42.html?spm=a2g0o.detail.search.0)
 
-Resistors - Ali Express
+Resistors - [Ali Express](https://www.aliexpress.com/w/wholesale-resistor-metal-film.html?spm=a2g0o.productlist.search.0)
 
 1K X 1
 
@@ -102,16 +106,18 @@ Resistors - Ali Express
 
 39K X 1
 
-Battery - Ali Express
+Battery - [Ali Express](https://www.aliexpress.com/w/wholesale-EB425161LU.html?spm=a2g0o.productlist.search.0)
 
-Tactile Switch - Ali Express
+Tactile Switch - [Ali Express](https://www.aliexpress.com/item/1005007076344493.html?invitationCode=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21926321283&bizType=ProductDetail&spreadCode=Z2RJS0ZlUjdWeXBMbHJ1UzZEK2JNR2RJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&tt=MG&aff_fsk=_mqidysZ&aff_platform=default&sk=_mqidysZ&aff_trace_key=74110245658041378c13089ee305f490-1756352216155-08886-_mqidysZ&shareId=21926321283&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
 
-On/Off Switch - Ali Express
+On/Off Switch - [Ali Express](https://www.aliexpress.com/item/32828124825.html?invitationCode=U0ZjejE5SDZUR3Rvd3A4dlNzTHhPMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&srcSns=sns_More&spreadType=socialShare&social_params=21930568662&bizType=ProductDetail&spreadCode=U0ZjejE5SDZUR3Rvd3A4dlNzTHhPMmRJWDI2Qmpid1BLbVJRSE91aHMvTWpmdlBzNkVmWTlBPT0&aff_fcid=78cd7743d6d84c87a62a111f31d5ed0d-1756352449635-03501-_mMmygFX&tt=MG&aff_fsk=_mMmygFX&aff_platform=default&sk=_mMmygFX&aff_trace_key=78cd7743d6d84c87a62a111f31d5ed0d-1756352449635-03501-_mMmygFX&shareId=21930568662&businessType=ProductDetail&platform=AE&terminal_id=626fe2c0a06b403387f3a97d33b76738&afSmartRedirect=y)
 
 M2 Screws - Ali Express
 
 M2 Spacers - Ali Express
 
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ## Step 1: PCB & Front Panel
 
@@ -125,16 +131,16 @@ M2 Spacers - Ali Express
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
 
-The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer
+The files that you need to build your own Bleep Drum Synth can be found in my [GitHub](https://github.com/lonesoulsurfer/Conways_Game_of_life_Handheld) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc. Download the files to your computer
 
 STEPS:
 
-- Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
-- NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
-- Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
+1. Send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Conways_Game_of_life_Handheld) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+2. If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+3. NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
+4. Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
 
 ## Step 2: Adding the Screen to the Front Panel
@@ -163,13 +169,13 @@ I decided not to directly connect the screen to the PCB. Instead, I connected th
 
 STEPS:
 
-- The first thing to do is to add male header pins to the screen. When adding them, you need to make sure that the pins don't stick out the top as they will interfere with the front panel.
-- Put the header pins in place and whist holding onto the plastic pin holder, place the pins onto a flat surface and push down so the pins become level with the top of the screen.
-- Now add some solder to each to secure them into place.
-- Place the screen against the front panel and secure it into place using some M2 X 14mm screws and nuts.
-- Now add a M2 X 5mm spacer onto each of the screws.
-- Add another 2 M2 screws to the holes in the front panel in each bottom corner. Don’t add nuts to these, just add a M2 X 7mm spacer to each one
-- Now, to test fitment, place the PCB into place and push the screws through the holes in the PCB. You may need to grab a pair of plyers and manipulate the screws a little to ensure they go through the holes. Even though the holes in the front panel and PCB align perfectly, the screws sometimes need to be slightly bent to fit! No idea why this happens
+1. The first thing to do is to add male header pins to the screen. When adding them, you need to make sure that the pins don't stick out the top as they will interfere with the front panel.
+2. Put the header pins in place and whist holding onto the plastic pin holder, place the pins onto a flat surface and push down so the pins become level with the top of the screen.
+3. Now add some solder to each to secure them into place.
+4. Place the screen against the front panel and secure it into place using some M2 X 14mm screws and nuts.
+5. Now add a M2 X 5mm spacer onto each of the screws.
+6. Add another 2 M2 screws to the holes in the front panel in each bottom corner. Don’t add nuts to these, just add a M2 X 7mm spacer to each one
+7. Now, to test fitment, place the PCB into place and push the screws through the holes in the PCB. You may need to grab a pair of plyers and manipulate the screws a little to ensure they go through the holes. Even though the holes in the front panel and PCB align perfectly, the screws sometimes need to be slightly bent to fit! No idea why this happens
 
 
 ## Step 3: Adding the Momentary Switches
@@ -188,11 +194,11 @@ The momentary switches used are SMD ones. In my first version of this PCB, I had
 
 STEPS:
 
-- You need to make sure that you add the ‘up’ and ‘down’ switches first. It just makes it easy if you do it in this order.
-- Add a little solder to one of the solder pads for the ‘up’ switch.
-- Place the switch on top of the pads and then heat up the solder to secure it into place. If it looks good, you can then secure the other 3 feet on the switch
-- Now do the same for the down switch
-- You can now add the left and right switches into place along with the A and B switches
+1. You need to make sure that you add the ‘up’ and ‘down’ switches first. It just makes it easy if you do it in this order.
+2. Add a little solder to one of the solder pads for the ‘up’ switch.
+3. Place the switch on top of the pads and then heat up the solder to secure it into place. If it looks good, you can then secure the other 3 feet on the switch
+4. Now do the same for the down switch
+5. You can now add the left and right switches into place along with the A and B switches
 
 
 ## Step 4: Adding the Charging/boost Module & Trinket M0
@@ -207,13 +213,13 @@ The charging and voltage booster module is a great little board. It allows you t
 
 STEPS:
 
-- First, lets set the output voltage to 5V from the Charging & voltage booster module.Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
-- Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.
-- Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place
-- Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.
-- Bend the wire down so it is touching the solder pad on the PCB and trim.
-- Add solder to the solder pad on the PCB and connect the wire to each. This will give you a good strong connection.
-- Lastly, add the Trinket M0 to the PCB, making sure that you have it orientated correctly ( Micro USB pointing outwards)
+1. First, lets set the output voltage to 5V from the Charging & voltage booster module.Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
+2. Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.
+3. Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place
+4. Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.
+5. Bend the wire down so it is touching the solder pad on the PCB and trim.
+6. Add solder to the solder pad on the PCB and connect the wire to each. This will give you a good strong connection.
+7. Lastly, add the Trinket M0 to the PCB, making sure that you have it orientated correctly ( Micro USB pointing outwards)
 
 
 ## Step 5: Adding the Rest of the Components
@@ -238,15 +244,16 @@ Now you can go ahead and add the rest of the components to the PCB
 
 STEPS:
 
-- Add all of the resistors, ensuring you check the values before soldering into place.
-- Solder the toggle switch into place
-- Before you solder the female header into place, do this first. Trim the legs on the pins in the screen. You only want to take off the same thickness as the plastic sheeve that the pins are in.
-- Now place the female header onto the pins and put the front panel onto the PCB.
-- If you have trimmed the legs correctly, you will see that the front panel is sitting straight with the PCB. Now solder the female headers into place and remove the front panel.
-- To add the battery, first add some solder to the positive and negative solder points on the battery. Make sure your soldering iron is hot when doing this.
-- Now add a resistor leg to each solder point and bend so they are lying flat with the battery.
-- Add a little superglue to the battery and glue into place.
-- Trim the wire if necessary and then solder onto the solder points on the PCB
+1. Add all of the resistors, ensuring you check the values before soldering into place.
+2. Solder the toggle switch into place
+3. Before you solder the female header into place, do this first. Trim the legs on the pins in the screen. You only want to take off the same thickness as the plastic sheeve that the pins are in.
+4. Now place the female header onto the pins and put the front panel onto the PCB.
+5. If you have trimmed the legs correctly, you will see that the front panel is sitting straight with the PCB. Now solder the female headers into place and remove the front panel.
+6. To add the battery, first add some solder to the positive and negative solder points on the battery. Make sure your soldering iron is hot when doing this.
+7. Now add a resistor leg to each solder point and bend so they are lying flat with the battery.
+8. Add a little superglue to the battery and glue into place.
+9. Trim the wire if necessary and then solder onto the solder points on the PCB
+
 Now you are ready for testing so lets go and load up the Game of Life code to the Trinket
 
 
@@ -258,9 +265,9 @@ Now you are ready for testing so lets go and load up the Game of Life code to th
 
 ![Step 6: Arduino IDE Set-up image 3](images/step07_03.png)
 
-I went with Adafruit's Trinket M0 as it has plenty of space and capacity to store the code and run the game. You wouldn’t be able to run this from an Arduino Nano for example. Plus, the Trinket is small which makes it great for a project like this.
+I went with Adafruit's [Trinket M0](https://www.adafruit.com/product/3500?srsltid=AfmBOorlKcrPfT_WMRGWG9D_tu8clLowNE86_e1bms7mvAKCX78one8Q) as it has plenty of space and capacity to store the code and run the game. You wouldn’t be able to run this from an Arduino Nano for example. Plus, the Trinket is small which makes it great for a project like this.
 
-The first thing you will need to do is to set up Arduino IDE to be able to load code to the Trinket M0. This is straight forward and I have provided a step-by-step guide below. You can also go to Adafruit’s IDE set-up page as well if you need more info – link can be found here
+The first thing you will need to do is to set up Arduino IDE to be able to load code to the Trinket M0. This is straight forward and I have provided a step-by-step guide below. You can also go to Adafruit’s IDE set-up page as well if you need more info – link can be [found here](https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/arduino-ide-setup)
 
 Install Board Support:
 
@@ -268,13 +275,16 @@ Open the Arduino IDE and go to File > Preferences
 
 Add URLs:
 
-Enter the following URL into the Arduino IDE's preferences to add Adafruit's board repositories and hit 'OK' https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+Enter the following URL into the Arduino IDE's preferences to add Adafruit's board repositories and hit 'OK' [https://adafruit.github.io/arduino-board-index/package_adafruit_index.json](https://adafruit.github.io/arduino-board-index/package_adafruit_index.json)
 
 Here's a short description of each of the Adafruit supplied packages that will be available in the Board Manager when you add the URL:
 
-- Adafruit AVR Boards - Includes support for Flora, Gemma, Feather 32u4, ItsyBitsy 32u4, Trinket, & Trinket Pro.
-- Adafruit SAMD Boards - Includes support for Feather M0 and M4, Metro M0 and M4, ItsyBitsy M0 and M4, Circuit Playground Express, Gemma M0 and Trinket M0
-- Arduino Leonardo & Micro MIDI-USB - This adds MIDI over USB support for the Flora, Feather 32u4, Micro and Leonardo
+1. Adafruit AVR Boards - Includes support for Flora, Gemma, Feather 32u4, ItsyBitsy 32u4, Trinket, & Trinket Pro.
+2. 
+3. Adafruit SAMD Boards - Includes support for Feather M0 and M4, Metro M0 and M4, ItsyBitsy M0 and M4, Circuit Playground Express, Gemma M0 and Trinket M0
+4. 
+5. Arduino Leonardo & Micro MIDI-USB - This adds MIDI over USB support for the Flora, Feather 32u4, Micro and Leonardo
+
 Install SAMD Boards:
 
 Next go to Tools > Board > Board Manager
@@ -300,12 +310,12 @@ Loading the code up is simple now that you have down the previous step of settin
 
 STEPS:
 
-- I’m sure you would have done this already but if not, download the files from my GitHub page which includes the sketch.
-- Open the sketch and ensure that your Trinket M0 is connected
-- Find the Trinket M0 board on IDE (Tools > Board > Adafruit SAMD)
-- Upload the sketch to your Trinket
-- That’s it – it should load perfectly if you have everything set-up right.
-- Now you can turn on your Game of Life and see if it works. If you do find that you can’t see anything on the screen, then try this. Turn on the game and load up the code again. You should now see the game appear on the screen. Un-plug the Trinket from the USB and start to explore
+1. I’m sure you would have done this already but if not, download the files from my [GitHub](https://github.com/lonesoulsurfer/Conways_Game_of_life_Handheld) page which includes the sketch.
+2. Open the sketch and ensure that your Trinket M0 is connected
+3. Find the Trinket M0 board on IDE (Tools > Board > Adafruit SAMD)
+4. Upload the sketch to your Trinket
+5. That’s it – it should load perfectly if you have everything set-up right.
+6. Now you can turn on your Game of Life and see if it works. If you do find that you can’t see anything on the screen, then try this. Turn on the game and load up the code again. You should now see the game appear on the screen. Un-plug the Trinket from the USB and start to explore
 
 
 ## Step 8: Attaching the PCB & Front Panel
@@ -322,10 +332,10 @@ If everything is working, then it’s time to connect the front panel and PCB
 
 STEPS:
 
-- Make sure that the front panel and PCB are correctly pushed together with everything lining-up right.
-- Add a M2 nut to each of the screws to secure the PCB to the front panel
-- You’ll probably find that the screws are too long, you can trim them with a pair of wire cutters or a Dremel. Make sure you file any sharp edges down on the screws
-- That’s it – you have now completed your very own Game of Life – Handheld game console
+1. Make sure that the front panel and PCB are correctly pushed together with everything lining-up right.
+2. Add a M2 nut to each of the screws to secure the PCB to the front panel
+3. You’ll probably find that the screws are too long, you can trim them with a pair of wire cutters or a Dremel. Make sure you file any sharp edges down on the screws
+4. That’s it – you have now completed your very own Game of Life – Handheld game console
 
 
 ## Step 9: What Next?
@@ -348,11 +358,11 @@ Pattern Management
 
 • Pattern Save/Load: Store custom patterns in EEPROM with names
 
-• Pattern Library: More famous patterns (pulsar, Penta decathlon, etc.) this is a good source for patterns
+• Pattern Library: More famous patterns (pulsar, Penta decathlon, etc.) [this is a good source for patterns](https://playgameoflife.com/)
 
 • Random Seeds: Different randomization algorithms (sparse, dense, clusters) (done)
 
-• Symmetrical Patterns: Generate symmetric starting conditions (done)
+• Symmetrical Patterns: Generate symmetric starting conditions(done)
 
 Game Modes
 
@@ -411,7 +421,7 @@ Whilst putting this together, I started to code a Star Wars game that would also
 
 It's a lot of fun and I was initially inspired from the original Star Wars Arcade game that came out in 1983.
 
-You can find a link here to the GitHub page - just download the code and add it to the Trinket.
+You can find a [link here](https://github.com/lonesoulsurfer/Star_Wars_Handheld_Game) to the GitHub page - just download the code and add it to the Trinket.
 
 Here's a rundown of the game:
 
@@ -423,12 +433,13 @@ Experience the iconic Battle of Yavin in this comprehensive Star Wars arcade gam
 
 Button Configuration
 
-- SET (A Button): Fire/Select
-- UP: Move crosshair/ship up
-- DOWN: Move crosshair/ship down
-- LEFT: Move crosshair/ship left
-- RIGHT: Move crosshair/ship right
-- B Button: Alternative action
+1. SET (A Button): Fire/Select
+2. UP: Move crosshair/ship up
+3. DOWN: Move crosshair/ship down
+4. LEFT: Move crosshair/ship left
+5. RIGHT: Move crosshair/ship right
+6. B Button: Alternative action
+
 Game Stages
 
 1. Tatooine Sunset (Cinematic)
@@ -459,9 +470,10 @@ Objective: Destroy TIE Fighters approaching the Death Star
 
 Enemy Types:
 
-- TIE Fighters: Basic enemies with single-shot weapons
-- TIE Interceptors: Fast, weaving movement with burst fire
-- TIE Bombers: Slow but durable with spread-shot weapons
+1. TIE Fighters: Basic enemies with single-shot weapons
+2. TIE Interceptors: Fast, weaving movement with burst fire
+3. TIE Bombers: Slow but durable with spread-shot weapons
+
 Goal: Score 500 points to proceed to Death Star approach
 
 6. Death Star Approach (Cinematic)
@@ -496,19 +508,24 @@ Success: Triggers missile shaft sequence
 
 13. Death Star Explosion
 
-- Epic multi-phase explosion:
-- Chaotic destruction effects
+1. Epic multi-phase explosion:
+2. Chaotic destruction effects
+
 14. Victory!
 
 Congratulations screen with final score.
 
 Controls Tips
 
-- Continuous Fire: Hold SET button for rapid fire in most combat stages
-- Precision Targeting: Required for exhaust port - take your time!
-- Evasive Maneuvers: Keep moving to avoid enemy fire
-- Power-up Collection: Fly through power-ups to collect them
+1. Continuous Fire: Hold SET button for rapid fire in most combat stages
+2. Precision Targeting: Required for exhaust port - take your time!
+3. Evasive Maneuvers: Keep moving to avoid enemy fire
+4. Power-up Collection: Fly through power-ups to collect them
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *59 images archived*

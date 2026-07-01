@@ -1,8 +1,10 @@
-# Emergency Whiskey Kit 
+# Emergency Whiskey Kit
 
 Source: https://www.instructables.com/Emergency-Whiskey-Kit/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -40,15 +42,15 @@ The kit is very simple to make and only takes a minimal of tools and skill. The 
 
 Material
 
-1. Hip flask - eBay
+1. Hip flask - [eBay](http://www.ebay.com.au/itm/4-10oz-Whiskey-Pocket-Hip-Flask-Wine-Liquor-Alcohol-Funnel-Bar-Drink-Cap-KZAU-/400677208686?pt=AU_Barware&var=&hash=item5d4a39026e)
 
-2. Vintage lighter (or maybe some matches) - eBay
+2. Vintage lighter (or maybe some matches) - [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR10.TRC0.A0.H0.Xvinatge+lighter&_nkw=vinatge+lighter&_sacat=0)
 
-3. Little cup – eBay
+3. Little cup – [eBay](http://www.ebay.com.au/itm/Portable-Expandable-Stainless-Steel-Telescopic-Travel-Drinking-Cup-Mug-New-/110913955283?pt=AU_Dinnerware&hash=item19d2fca5d3)
 
-4. Small knife – eBay
+4. Small knife –[eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR3.TRC2.A0.H0.Xsmall+pocket+knife&_nkw=small+pocket+knife&_sacat=0)
 
-5. Wooden cigar case – eBay
+5. Wooden cigar case – [eBay](http://www.ebay.com.au/sch/i.html?_odkw=cigar+case&_from=R40%7CR40&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR10.TRC1.A0.H0.Xcigar+box+wooden&_nkw=cigar+box+wooden&_sacat=0)
 
 6. Small piece of thin cloth
 

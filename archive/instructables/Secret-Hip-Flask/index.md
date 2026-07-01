@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Secret-Hip-Flask/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,7 +42,7 @@ Parts:
 
 Tools
 
-1. Glue - a water resistant one such as Loctite Go2 Gel Adhesive
+1. Glue - a water resistant one such as [Loctite Go2 Gel Adhesive](https://www.bunnings.com.au/loctite-go2-gel-adhesive_p1230128)
 
 2. Dremel (or a saw)
 

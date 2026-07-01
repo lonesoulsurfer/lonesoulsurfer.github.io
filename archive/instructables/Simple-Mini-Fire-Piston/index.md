@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Simple-Mini-Fire-Piston/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -48,11 +50,11 @@ Parts:
 
 Fire Piston
 
-1. Aluminium rod – Bunnings
+1. Aluminium rod – [Bunnings](https://www.bunnings.com.au/metal-mate-6-3mm-x-1m-aluminium-solid-rod_p1130541)
 
-2. Aluminium tube – Bunnings
+2. Aluminium tube – [Bunnings](https://www.bunnings.com.au/metal-mate-10-x-1mm-1m-aluminium-round-tube_p1067742)
 
-3. Wooden button (used for screw holes) – Bunnings
+3. Wooden button (used for screw holes) – [Bunnings](https://www.bunnings.com.au/pinnacle-8mm-pine-cover-buttons-20-pack_p4020787)
 
 4. O rings – eBay. You can get these from Bunnings but I would suggest you purchase a bunch from eBay as they come in all types of sizes and gives you more options
 
@@ -238,7 +240,7 @@ HERE’S THE IMPORTANT BIT. Make sure you add a little bit of oil to the O ring.
 
 Making char cloth is super easy and there are plenty of good instructions on the net on how to make it.
 
-Check out this Wikipedia link to see how it all works
+Check out this [Wikipedia link](https://en.wikipedia.org/wiki/Char_cloth) to see how it all works
 
 Steps:
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Re-purpose-Broken-Power-Banks/
 
 ---
 
+![Cover](images/cover.png)
+
 
 ## Introduction
 
@@ -46,29 +48,31 @@ PARTS:
 
 Components
 
-- Old power bank. If you just want to build this power bank yourself you could just buy a li-po battery here
-- Power bank charging module - here
-- Voltage regulator - step up/step down module - here. There are quite a few different varieties that you could use so if you are looking for something a bit more robust then try here
-- 10K Potentiometer - here
-- Voltage meter display - here
-- Banana Plugs (male & female) while you are at it - you may as well get a couple of connectors like alligator clips
-- SPDT Switch - here
-- Momentary tactile switch - here
-- Wire
+1. Old power bank. If you just want to build this power bank yourself you could just buy a li-po battery [here](https://www.aliexpress.com/item/32991242474.html?spm=a2g0o.productlist.0.0.4d1d2028Lik7zN&algo_pvid=34ea0dfa-a2b0-4d92-8700-103fa59798f8&algo_exp_id=34ea0dfa-a2b0-4d92-8700-103fa59798f8-54&pdp_ext_f=%7B%22sku_id%22%3A%2266864078148%22%7D&pdp_pi=-1%3B12.07%3B-1%3B-1%40salePrice%3BAUD%3Bsearch-mainSearch)
+2. Power bank charging module - [here](https://www.aliexpress.com/premium/LED-Dual-USB-5V-2.4A-Micro%252FType%25252dC-USB-Mobile-Power.html?d=y&origin=y&catId=0&initiative_id=SB_20220116212105&SearchText=LED%20Dual%20USB%205V%202.4A%20Micro/Type-C%20USB%20Mobile%20Power)
+3. Voltage regulator - step up/step down module - [here](https://www.aliexpress.com/item/1005002858852690.html?spm=a2g0o.productlist.0.0.54792164HK11Cd&algo_pvid=37ab066e-5d7f-4cf2-9f7f-3f31ae2cbcf4&aem_p4p_detail=20220116212108609408538880180000034179&algo_exp_id=37ab066e-5d7f-4cf2-9f7f-3f31ae2cbcf4-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000022490006878%22%7D&pdp_pi=-1%3B2.76%3B-1%3B-1%40salePrice%3BAUD%3Bsearch-mainSearch). There are quite a few different varieties that you could use so if you are looking for something a bit more robust then try [here](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116212738&isPremium=y&SearchText=voltage+regulator+module+step+up+down)
+4. 10K Potentiometer - [here](https://www.aliexpress.com/item/1005002139655581.html?spm=a2g0o.productlist.0.0.7d236078OkJwBc&algo_pvid=9ee5c6c7-ebf2-4682-bd9c-a0b25314e39e&aem_p4p_detail=202201162131103952735205965920000061824&algo_exp_id=9ee5c6c7-ebf2-4682-bd9c-a0b25314e39e-5&pdp_ext_f=%7B%22sku_id%22%3A%2212000018872210791%22%7D&pdp_pi=-1%3B1.47%3B-1%3BAUD+2.67%40salePrice%3BAUD%3Bsearch-mainSearch)
+5. Voltage meter display - [here](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116213956&isPremium=y&SearchText=voltage+meter+display)
+6. Banana Plugs ([male](https://www.aliexpress.com/item/32694951313.html?spm=a2g0o.detail.1000060.2.6eff2e8c0Y6Ugs&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=bd52c0ee-6710-49b3-adba-dc9124ffc15e&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:bd52c0ee-6710-49b3-adba-dc9124ffc15e,tpp_buckets:668%232846%238107%231934&&pdp_ext_f=%7B%22sceneId%22:%223339%22,%22sku_id%22:%2260586282037%22%7D) & [female](https://www.aliexpress.com/item/32693928136.html?spm=a2g0o.productlist.0.0.70e84b96Wj65Ge&algo_pvid=034305ea-3bd9-4089-938f-e2f2448b740a&aem_p4p_detail=202201162123551335134734879620000055991&algo_exp_id=034305ea-3bd9-4089-938f-e2f2448b740a-18&pdp_ext_f=%7B%22sku_id%22%3A%2260631300307%22%7D&pdp_pi=-1%3B1.65%3B-1%3B-1%40salePrice%3BAUD%3Bsearch-mainSearch)) while you are at it - you may as well get a couple of connectors like [alligator clips](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116213150&isPremium=y&SearchText=banana+plug+alligator)
+7. SPDT Switch - [here](https://www.aliexpress.com/premium/spdt-toggle-switch.html?d=y&origin=y&catId=0&initiative_id=SB_20220116213825&SearchText=spdt%20toggle%20switch)
+8. Momentary tactile switch - [here](https://www.aliexpress.com/premium/tactile-switch-micro.html?d=y&origin=y&catId=0&initiative_id=SB_20220116213848&SearchText=tactile%20switch%20micro)
+9. Wire
+
 Case
 
-- Skirting board (hardwood). I used 20mm by 5mm but you can use whatever size you want
-- Acrylic - here
+1. Skirting board (hardwood). I used 20mm by 5mm but you can use whatever size you want
+2. Acrylic - [here](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220116215121&isPremium=y&SearchText=acrylic+3mm+a5)
+
 Tools
 
-- Dremel - comes in handy
-- Superglue
-- Spudger tools to open the power bank
-- Soldering iron
-- Files
-- Wire cutters
-- Sander
-- Drill
+1. Dremel - comes in handy
+2. Superglue
+3. Spudger tools to open the power bank
+4. Soldering iron
+5. Files
+6. Wire cutters
+7. Sander
+8. Drill
 
 
 ## Step 1: Pulling Your Power Bank Apart
@@ -89,9 +93,9 @@ At first glance, it might not look like your power bank can come apart - where t
 
 STEPS:
 
-- I had to remove the 2 front covers of the power bank to reveal a couple of small screws inside. To remove these I used a spudger tool
-- Once the screws were un-done the battery and circuit board just slipped right out
-- Remove the battery and circuit board from any plastic holder that may be in place so you are only left with the battery and circuit board
+1. I had to remove the 2 front covers of the power bank to reveal a couple of small screws inside. To remove these I used a [spudger tool](https://en.wikipedia.org/wiki/Spudger)
+2. Once the screws were un-done the battery and circuit board just slipped right out
+3. Remove the battery and circuit board from any plastic holder that may be in place so you are only left with the battery and circuit board
 
 
 ## Step 2: Testing the Power Bank Charging Module (and Battery)
@@ -110,12 +114,12 @@ The next thing to do is to check and see if the battery is ok by connecting the 
 
 STEPS:
 
-- The first thing to do is to remove the circuit board from the battery. Mine was spot welded to the battery so I used a pair of wire cutters to cut through the tabs. Be careful when you do this though - my battery was fully charged (def a problem with the circuit board) and I accidently touched the 2 tabs with the pliers and nearly melted one of them!
-- Make sure you mark which tab on the battery is ground and which is positive.
-- Add some solder to each of the tabs and to the solder points on the charging module and connect them together with some wires
-- To activate the charging module, you need to push a small tactile button on the side of the module. If nothing happens it could either be because the battery is flat or the module needs a re-boot. you can re-boot it simply by plugging in a micro USB to the front of it and connecting to mains power.
-- Try the button again. You should now get a % reading that shows you how much power is inside the battery.
-- Leave it to charge fully to 100%
+1. The first thing to do is to remove the circuit board from the battery. Mine was spot welded to the battery so I used a pair of wire cutters to cut through the tabs. Be careful when you do this though - my battery was fully charged (def a problem with the circuit board) and I accidently touched the 2 tabs with the pliers and nearly melted one of them!
+2. Make sure you mark which tab on the battery is ground and which is positive.
+3. Add some solder to each of the tabs and to the solder points on the charging module and connect them together with some wires
+4. To activate the charging module, you need to push a small tactile button on the side of the module. If nothing happens it could either be because the battery is flat or the module needs a re-boot. you can re-boot it simply by plugging in a micro USB to the front of it and connecting to mains power.
+5. Try the button again. You should now get a % reading that shows you how much power is inside the battery.
+6. Leave it to charge fully to 100%
 
 
 ## Step 3: Planning Out Where All the Components Will Go
@@ -126,9 +130,9 @@ Now its time to work out how to layout the components.
 
 STEPS:
 
-- Start to place each of the components around or on the battery. You want to make it as compact as possible whilst also practical.
-- There is a good chance that the layout will change (mine did) but it will give you a good place to start working out how big to make the case
-- Once you have a layout you like - it's then time to make the case
+1. Start to place each of the components around or on the battery. You want to make it as compact as possible whilst also practical.
+2. There is a good chance that the layout will change (mine did) but it will give you a good place to start working out how big to make the case
+3. Once you have a layout you like - it's then time to make the case
 
 
 ## Step 4: Making the Case
@@ -147,10 +151,10 @@ I went with some hardwood edging for the case. it's relatively cheap, cut to siz
 
 STEPS:
 
-- Measure each of the sides of the layout so you can get a rough outline of what lengths to cut the wood at
-- Cut each of the sides and place around the layout to make sure it fits ok
-- If you are happy with the size, it's then time to glue the case together. I used superglue to stick the wood together. You will add a base in the next step and this will help make the case strong.
-- Once the case has been glued, place it again over the layout to make sure you are happy with the size
+1. Measure each of the sides of the layout so you can get a rough outline of what lengths to cut the wood at
+2. Cut each of the sides and place around the layout to make sure it fits ok
+3. If you are happy with the size, it's then time to glue the case together. I used superglue to stick the wood together. You will add a base in the next step and this will help make the case strong.
+4. Once the case has been glued, place it again over the layout to make sure you are happy with the size
 
 
 ## Step 5: Making the Base & Top of the Power Bank
@@ -175,10 +179,10 @@ For the top and bottom of the case I used some acrylic that I had lying around t
 
 STEPS:
 
-- Mark out and cut the pieces of acrylic to size. you can see that I used a red and white piece - that's because it's what I had spare!
-- Superglue the bottom section onto the case. for the top section, add a couple dots of superglue and glue it also onto the case. you will need to take it off later so go gentle on the glue
-- Now it is time to sand the sides and make them flush. I used a belt sander which made the job easy. just keep on sanding until the acrylic is flush with the sides of the case
-- Lastly, pop off the top with a small screwdriver
+1. Mark out and cut the pieces of acrylic to size. you can see that I used a red and white piece - that's because it's what I had spare!
+2. Superglue the bottom section onto the case. for the top section, add a couple dots of superglue and glue it also onto the case. you will need to take it off later so go gentle on the glue
+3. Now it is time to sand the sides and make them flush. I used a belt sander which made the job easy. just keep on sanding until the acrylic is flush with the sides of the case
+4. Lastly, pop off the top with a small screwdriver
 
 
 ## Step 6: Making the Cutout for the Voltage Indicator Display & Output/inputs
@@ -203,24 +207,26 @@ STEPS:
 
 Let's start with the voltage indicator
 
-- Firstly, find the centre of the acrylic top and mark
-- Take measurements of the voltage indicator along with how far the indicator is away from the input/outputs on the module. the input/output USB's will need to slightly stick out of the case to enable you to use them
-- Once you have the measurements, mark on the acrylic and check them again to make sure they are right
-- I used a dremel to make the cutout but you could also do it with a drill and files as well
-- Check to see if the voltage indicator fits. make small adjustments where necessary until the display fits into the space
-- I didn't have to glue anything into place as it was a very tight fit. if yours is a little loose, then add some superglue around the indicator and stick into place
+1. Firstly, find the centre of the acrylic top and mark
+2. Take measurements of the voltage indicator along with how far the indicator is away from the input/outputs on the module. the input/output USB's will need to slightly stick out of the case to enable you to use them
+3. Once you have the measurements, mark on the acrylic and check them again to make sure they are right
+4. I used a dremel to make the cutout but you could also do it with a drill and files as well
+5. Check to see if the voltage indicator fits. make small adjustments where necessary until the display fits into the space
+6. I didn't have to glue anything into place as it was a very tight fit. if yours is a little loose, then add some superglue around the indicator and stick into place
+
 Next let's make the cutout on the case
 
-- Place the top onto the case and make where the input/output touches the case
-- The reason why you need to do this so you can access the output/input on the module once it has been secured inside the case
-- Use a dremel or some files to remove the section marked on the case
-- Test to make sure the module fits into the cutout section
-- Now do the same thing for the voltage display for the voltage regulator
-- Lastly, you need to add a tactile switch to the charging module. There is already one on it but you need to add one to the top of the case.
-- Solder a couple wires to the legs of the switch
-- Drill a couple small holes into the acrylic for the legs of the tactile switch to go into and thread the soldered wires through them
-- Solder the other ends of the wires to the solder points on the tactile switch on the module. Add a little glue to the legs to hold them in place.
-- Test to make sure it works and the voltage indicator display comes on
+1. Place the top onto the case and make where the input/output touches the case
+2. The reason why you need to do this so you can access the output/input on the module once it has been secured inside the case
+3. Use a dremel or some files to remove the section marked on the case
+4. Test to make sure the module fits into the cutout section
+
+1. Now do the same thing for the voltage display for the voltage regulator
+2. Lastly, you need to add a tactile switch to the charging module. There is already one on it but you need to add one to the top of the case.
+3. Solder a couple wires to the legs of the switch
+4. Drill a couple small holes into the acrylic for the legs of the tactile switch to go into and thread the soldered wires through them
+5. Solder the other ends of the wires to the solder points on the tactile switch on the module. Add a little glue to the legs to hold them in place.
+6. Test to make sure it works and the voltage indicator display comes on
 
 
 ## Step 7: Adding the Battery and Voltage Regulator to the Case
@@ -239,11 +245,11 @@ Time to secure the battery and add the voltage regulator
 
 STEPS:
 
-- You may of noticed that I put the voltage regulator up-side-down in the case. The reason was, the caps on the regulator stuck up above the height of the case so I had to come up with another way of adding it.
-- You will need to first remove the trimmer potentiometer from the regulator and replace it with a 10K potentiometer. I don't have any photos of this as I had already done it a while ago. You could also prob just buy a regulator with a pot already attached if you look around.
-- As the regulator is up-side-down, I decided to solder all the wires to the board along with the on/off swtich. A wiring diagram can be found on the next step.
-- Drill a hole into the side of the case for the potentiometer. As the wood is slightly too thick to add the pot nut, I had to add a little superglue to the pot and glue it onto the wood. Not ideal as adding glue to pots and switches can cause them to be damaged. However, if you use a small amount you'll be fine
-- Next, attach the toggle switch to the case
+1. You may of noticed that I put the voltage regulator up-side-down in the case. The reason was, the caps on the regulator stuck up above the height of the case so I had to come up with another way of adding it.
+2. You will need to first remove the trimmer potentiometer from the regulator and replace it with a 10K potentiometer. I don't have any photos of this as I had already done it a while ago. You could also prob just buy a regulator with a pot already attached if you look around.
+3. As the regulator is up-side-down, I decided to solder all the wires to the board along with the on/off swtich. A wiring diagram can be found on the next step.
+4. Drill a hole into the side of the case for the potentiometer. As the wood is slightly too thick to add the pot nut, I had to add a little superglue to the pot and glue it onto the wood. Not ideal as adding glue to pots and switches can cause them to be damaged. However, if you use a small amount you'll be fine
+5. Next, attach the toggle switch to the case
 
 
 ## Step 8: Wiring & Testing
@@ -262,10 +268,11 @@ I've included a wiring diagram to help make it clear
 
 STEPS:
 
-- Follow the wiring diagram attached and connect the battery up to the voltage indicator and regulator modules
-- Don't forget to connect the output of the regulator to the voltage meter and also the banana plugs
-- Before you close up the top section with superglue (I couldn't add screws because the wood for the case is too thin and there isn't enough material to add screws), test everything to make sure it works. This includes testing charging through the module and also connecting up a phone to make sure it is charging
-- If everything works, then you are ready to close up the top. Add some superglue long the top section of the case and carefully place the top onto the case, making sure everything is aligned.
+1. Follow the wiring diagram attached and connect the battery up to the voltage indicator and regulator modules
+2. Don't forget to connect the output of the regulator to the voltage meter and also the banana plugs
+3. Before you close up the top section with superglue (I couldn't add screws because the wood for the case is too thin and there isn't enough material to add screws), test everything to make sure it works. This includes testing charging through the module and also connecting up a phone to make sure it is charging
+4. If everything works, then you are ready to close up the top. Add some superglue long the top section of the case and carefully place the top onto the case, making sure everything is aligned.
+
 That's it! you have successfully re-used and re-built your power bank to be even more useful than before!
 
 

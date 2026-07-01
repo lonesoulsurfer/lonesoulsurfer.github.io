@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Simple-Homemade-Lighter/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -21,15 +23,15 @@ The main parts that go into making this is a schrader valve (air valve like the 
 
 Lighters I have made
 
-TRENCH LIGHTER V2
+[TRENCH LIGHTER V2](https://www.instructables.com/id/Trench-Lighter-V2/)
 
-UBER LIGHTER 2.0
+[UBER LIGHTER 2.0](https://www.instructables.com/id/Uber-Lighter-20/)
 
-UBER LIGHTER
+[UBER LIGHTER](https://www.instructables.com/id/Uber-Lighter/)
 
-ROPE LIGHTER (WINDPROOF)
+[ROPE LIGHTER (WINDPROOF)](https://www.instructables.com/id/Rope-Lighter/)
 
-MAKE A TRENCH LIGHTER
+[MAKE A TRENCH LIGHTER](https://www.instructables.com/id/Make-a-Trench-Lighter/)
 
 
 ## Step 1: Parts and Tools
@@ -44,19 +46,19 @@ MAKE A TRENCH LIGHTER
 
 Parts:
 
-1. Nutsert M8 - eBay
+1. Nutsert M8 - [eBay](https://www.ebay.com.au/itm/10Pcs-M3-M4-M5-M6-M8-M10-M12-Rivnuts-Nutserts-Steel-Stainless-Metric-Rivet-Nuts/223038831904?hash=item33ee267d20:m:mnyMOPIYVEYVgBpuIarFwLw)
 
-2. Bolt M8 - eBay
+2. Bolt M8 - [eBay](https://www.ebay.com.au/itm/M3-M4-M5-M6-M8-Coarse-Socket-Head-Cap-Screw-Allen-Bolts-Marine-Stainless-G316/272991105592?hash=item3f8f89b238:m:mRVleREqEWnGnzlubWR8RnQ)
 
-3. Schrader valve - eBay
+3. Schrader valve - [eBay](https://www.ebay.com.au/itm/2x-1-8-BSP-TRUCK-VAN-WHEELS-AIR-COMPRESSOR-TANKS-VALVE-500PSI-25MM-FOR-SCHRADER/121810547114?epid=1264055244&hash=item1c5c7971aa:g:Qc4AAOSw9V5bGLr8)
 
-4. Clipper Lighter – eBay
+4. Clipper Lighter – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=Schrader+valve&_sop=15&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR11.TRC1.A0.H0.Xclipper+lighter.TRS0&_nkw=clipper+lighter&_sacat=0)
 
-5. 1/2" Copper tube. about 70mm long (this will be the body of the lighter so up to you on how long you want to make it. - eBay or any hardware store in the plumbing section
+5. 1/2" Copper tube. about 70mm long (this will be the body of the lighter so up to you on how long you want to make it. - [eBay](https://www.ebay.com.au/itm/K-S-Round-Brass-Tube-1-2Inch-1pc-8139/122353517921?hash=item1c7cd68561:g:2~AAAOSw~AVYoGQJ) or any hardware store in the plumbing section
 
-6. 7mm ID copper tube. about 60mm long - eBay or any hobby shop that sells remote control cars and planes etc.
+6. 7mm ID copper tube. about 60mm long - [eBay](https://www.ebay.com.au/itm/Brass-Tube-2mm-3mm-4mm-5mm-6mm-7mm-300mm-long-0-45mm-wall-K-S-/231834172329?var=&hash=item35fa64bba9:m:m6bfFkI6Rz1Ogr6zunLA1mA) or any hobby shop that sells remote control cars and planes etc.
 
-7 Sash Cord (for the wick) - I have linked a 5mm thick sash cord to eBay as this should be the perfect size
+7 Sash Cord (for the wick) - I have linked a[5mm thick sash cord to eBay](https://www.ebay.com.au/itm/10-Meters-100-Pure-Cotton-Rope-Braided-Cord-String-Twine-Sash-5mm/332440589247?epid=8014488778&hash=item4d6700d3bf:g:XcYAAOSw43haQTjf) as this should be the perfect size
 
 8. Thin wire (also for the wick)
 
@@ -116,7 +118,7 @@ Steps:
 
 ![Step 3: Soldering the Valve Into Place image 5](images/step03_05.jpg)
 
-Time to solder the valve to the brass tube. If you have never done brass or copper soldering, I did a ‘ible which shows you how to do it.
+Time to solder the valve to the brass tube. If you have never done brass or copper soldering, [I did a ‘ible which shows you how to do it.](https://www.instructables.com/id/Brass-and-Copper-Soldering/)
 
 Steps:
 
@@ -147,7 +149,7 @@ Steps:
 
 ![Step 4: Rounding the Edges image 7](images/step04_07.jpg)
 
-There’s a simple way to round off the top of the lighter using a drill as a makeshift lathe. I also did an ‘ible on how to do this which can be found here. In this version, I just used a drill bit and some tape to make the shaft for the lathe!
+There’s a simple way to round off the top of the lighter using a drill as a makeshift lathe. I also did an ‘ible on how to do this [which can be found here](https://www.instructables.com/id/Simple-Metal-Lathe/). In this version, I just used a drill bit and some tape to make the shaft for the lathe!
 
 Steps:
 

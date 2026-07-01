@@ -4,6 +4,8 @@ Source: https://www.instructables.com/100-LED-Oscilloscope/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,23 +19,23 @@ Source: https://www.instructables.com/100-LED-Oscilloscope/
 
 ![Intro 5](images/intro_05.jpg)
 
-This is my next build using LED matrix's. You may have seen my last one - 81 LED Chaser, well this project uses 100 LED's and is an oscilloscope!
+This is my next build using LED matrix's. You may have seen my last one - [81 LED Chaser](https://www.instructables.com/81-LED-Chaser-555-Project/), well this project uses 100 LED's and is an oscilloscope!
 
 Admittedly, the resolution isn't great for checking measurements (it is only 100 pixels!). However, it is fantastic at visualizing audio waveforms via a mic.
 
 There are 4 IC's that make up the project. First there are the 4017 decade counter and a LM3914 LED driver which control the LED's. Next is a 555 timer for clock input and lastly a 386 op amp to increase the signal.
 
-If you want more technical detail of how it all works, then check out this link
+If you want more technical detail of how it all works, then check out[this](https://www.homemade-circuits.com/led-oscilloscope-circuit/)link
 
 I have used the 5mm X 5mm square LED's again for the LED matrix and they work great in a project like this. If you have ever tried to solder a bunch of round LED's into a PCB then you'll know that it can be hard keeping them straight. The square ones have a flat top which makes it wash to align them correctly and keep them straight and flat.
 
-This is a really fun little project and although it has a lot of LED's, the overall components is minimal and isn't hard to put together. Credit to Eddy Bergman who I was inspired by to build this project.
+This is a really fun little project and although it has a lot of LED's, the overall components is minimal and isn't hard to put together. Credit to [Eddy Bergman](https://www.eddybergman.com/2017/10/led-oscilloscope-with-100-leds.html?utm_source=pocket_mylist) who I was inspired by to build this project.
 
 Hackaday & Hackster IO have also done a feature of this project. links can be found below.
 
-Hackaday feature
+[Hackaday feature](https://hackaday.com/2022/03/29/cute-oscilloscope-uses-leds-for-display/)
 
-Hackster feature
+[Hackster feature](https://www.hackster.io/news/a-100-led-oscilloscope-911a9f0dbac8)
 
 
 ## Supplies
@@ -70,72 +72,78 @@ Step 1 has the information around the PCB.
 
 The best way to buy electronics is in bulk and I have added a link to each. I also used 5mm square LED's and they look awesome! You can also use round ones as well but I highly recommend that you just buy the square ones. I got 1000 for $14!
 
-Lastly, I have attached a PDF of the parts list and it can also be found on my GitHub Page
+Lastly, I have attached a PDF of the parts list and it can also be found on my [GitHub Page](https://github.com/lonesoulsurfer/100_LED_Oscilloscope)
 
 Components for the Circuit
 
-Potentiometer - 9mm 50K X 1 - Ali Express
+Potentiometer - 9mm 50K X 1 - [Ali Express](https://www.aliexpress.com/premium/50k-potentiometer.html?d=y&origin=y&catId=0&initiative_id=SB_20220322163404&SearchText=50k%20potentiometer)
 
-Potentiometer - Vertical - Ali Express
+Potentiometer - Vertical - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163510&isPremium=y&SearchText=potentiometer+vertical)
 
-- 500K X 1
-- 2K X 1
-- 50K X 1
-- 5K X 1
+1. 500K X 1
+2. 2K X 1
+3. 50K X 1
+4. 5K X 1
+
 Capacitors
 
-Polyester - Ali Express
+Polyester - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163552&isPremium=y&SearchText=capacitor+polyester+film)
 
-- 10nf X 1
-- 47nf X 1
-- 50nf X 1
-- 100nf X 2
-- 150nf X 1
-Polarized - Ali Express
+1. 10nf X 1
+2. 47nf X 1
+3. 50nf X 1
+4. 100nf X 2
+5. 150nf X 1
 
-- 470uf X 2
-- 10uf X 2
-Resistor Metal Film - Ali Express
+Polarized - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=AS_20220322163554&isPremium=y&SearchText=capacitor+eletrol%C3%ADtico)
 
-- 1K X 3
-- 120R X 1
-- 15K X 1
-- 10K X 3
-- 10R X 1
-- 100K X 1
-- 27K X 1
+1. 470uf X 2
+2. 10uf X 2
+
+Resistor Metal Film - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163727&isPremium=y&SearchText=resistor+metal+film)
+
+1. 1K X 3
+2. 120R X 1
+3. 15K X 1
+4. 10K X 3
+5. 10R X 1
+6. 100K X 1
+7. 27K X 1
+
 IC's
 
-- 555 X 1 - Ali express
-- 4017 X 1 - Ali express
-- LM3914 X 1 - Ali express
-- LM386 X 1 - Ali express
-Transistor - 2N3904 X 1 - Ali Express
+1. 555 X 1 - [Ali express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163754&isPremium=y&SearchText=555+ic)
+2. 4017 X 1 - [Ali express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163810&isPremium=y&SearchText=4017+ic)
+3. LM3914 X 1 - [Ali express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163823&isPremium=y&SearchText=lm3914)
+4. LM386 X 1 - [Ali express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163836&isPremium=y&SearchText=lm386)
 
-LED 5mm Square X 100 - Ali Express
+Transistor - 2N3904 X 1 - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322163857&isPremium=y&SearchText=2n3904)
 
-Mic electret X 1 - Ali Express
+LED 5mm Square X 100 -[Ali Express](https://www.aliexpress.com/item/10000205465099.html?spm=a2g0o.order_list.0.0.21ef1802iuiYRt)
 
-Toggle Switch SPDT X 1 - Ali Express
+Mic electret X 1 - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322164005&isPremium=y&SearchText=Mic+electret+pcb)
 
-Switch 6 Pin - 7mm x 7mm X 3 - Ali Express
+Toggle Switch SPDT X 1 -[Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220322164024&isPremium=y&SearchText=mini+toggle+switch+spdt)
 
-JST Connectors Micro JST 2.0 PH X 5 - Ali Express
+Switch 6 Pin - 7mm x 7mm X 3 - [Ali Express](https://www.aliexpress.com/item/1005003531201181.html?spm=a2g0o.productlist.0.0.352c399e2CoXSp&algo_pvid=707821b7-ca8b-49d7-bc72-abb5b5487965&aem_p4p_detail=202203221732133234300879372680032642298&algo_exp_id=707821b7-ca8b-49d7-bc72-abb5b5487965-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000026192379698%22%7D&pdp_pi=-1%3B1.13%3B-1%3B1.75%40salePrice%3BAUD%3Bsearch-mainSearch)
 
-BNC connector X 1 - Ali Express
+JST Connectors Micro JST 2.0 PH X 5 - [Ali Express](https://www.aliexpress.com/item/4001253349808.html?spm=a2g0o.order_list.0.0.21ef1802UygBPK)
+
+BNC connector X 1 - [Ali Express](https://www.aliexpress.com/item/1005003043754070.html?spm=a2g0o.productlist.0.0.76d4163296ziQZ&algo_pvid=c5d5aa59-acf8-49f4-9bd3-52036f644ec1&aem_p4p_detail=202203221732535618362893670800035926485&algo_exp_id=c5d5aa59-acf8-49f4-9bd3-52036f644ec1-7&pdp_ext_f=%7B%22sku_id%22%3A%2212000026650385710%22%7D&pdp_pi=-1%3B0.81%3B-1%3B1.97%40salePrice%3BAUD%3Bsearch-mainSearch)
 
 Parts for Front Panel and Case
 
-- Opal Acrylic A5 - eBay
-- Clear, adhesive A4 label - eBay
-- Ply wood
+1. Opal Acrylic A5 - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=a5+acrylic+opal+3mm&_sacat=0)
+2. Clear, adhesive A4 label - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=clear+transparent+glossy+self+adhesive+sticker+paper&_sacat=0&LH_TitleDesc=0&_odkw=Clear+Transparent+Glossy+Self+Adhesive+Sticker+Paper+Label+Laser+Print&_osacat=0)
+3. Ply wood
+
 Powering the PCB.
 
 You can use a 9v battery but I like to re-use old mobile batteries.
 
-- Mobile battery - If you want to find them just visit your local e-waste or check in the top drawer for an old phone! You can always just buy a new one on eBay as well...
-- Power module (this will increase the voltage from 3.7v to 9v - Ali Express
-- USB charging module (so you can charge the battery up) - Ali Express
+1. Mobile battery - If you want to find them just visit your local e-waste or check in the top drawer for an old phone! You can always just buy a new one on eBay as well...
+2. Power module (this will increase the voltage from 3.7v to 9v - [Ali Express](https://www.aliexpress.com/item/4000322402819.html?spm=a2g0o.9042311.0.0.27424c4dqABz91)
+3. USB charging module (so you can charge the battery up) - [Ali Express](https://www.aliexpress.com/item/32930640893.html?spm=a2g0o.9042311.0.0.27424c4dscumHq)
 
 
 ## Step 1: A Couple of Options in the Design
@@ -153,6 +161,9 @@ Version 2 (second schematic) has the fine horizontal directly connected to the P
 I have provided 2 PCB's (next step) so you can pick which one you want to get printed.
 
 
+- [LED Oscilloscope Schematic V1](pdfs/LED Oscilloscope Schematic V1.pdf)
+- [LED Oscilloscope Schematic V2](pdfs/LED Oscilloscope Schematic V2.pdf)
+
 ## Step 2: Printing the PCB
 
 ![Step 2: Printing the PCB image 1](images/step03_01.jpg)
@@ -161,7 +172,7 @@ I have provided 2 PCB's (next step) so you can pick which one you want to get pr
 
 The board is actually 2 sided. On one side are all of the components like capacitor, resistors, IC's etc. On the other side is the potentiometers and switches.
 
-To have the board printed, save the gerber zip file in the GitHub Page files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then check this 'ible out which is a step by step guide on how to get a PCB manufactured.
+To have the board printed, save the gerber zip file in the [GitHub Page](https://github.com/lonesoulsurfer/100_LED_Oscilloscope) files to your computer and email it to your favourite PCB manufacturer. I use JLCPCB (not affiliated) who do a good job of printing the boards and are quick as well. If you are thinking 'what the hell is a gerber file!', then[check this 'ible out](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/) which is a step by step guide on how to get a PCB manufactured.
 
 If you would like to play around with the schematic and board in Eagle, well I have also provided these in my Google Drive. You can also find a PDF of the schematic in the previous step
 
@@ -194,10 +205,10 @@ Adding the LED's isn't too hard (just a little time consuming), especially if yo
 
 STEPS:
 
-- To ensure that the LED's are sitting flat when you solder them into place, it's important that you add a couple to the bottom row as well. So firstly, add 10 LED's to the top row and a couple each side in the bottom row.
-- Next, solder one leg of each LED into place and check that they are straight before you solder the other leg.
-- Keep on adding row after row, checking your work as you go and making sure that the LED's are straight and sitting flat on the PCB.
-- Once you have added all of the LED's - it's time to start adding the components on the reverse side
+1. To ensure that the LED's are sitting flat when you solder them into place, it's important that you add a couple to the bottom row as well. So firstly, add 10 LED's to the top row and a couple each side in the bottom row.
+2. Next, solder one leg of each LED into place and check that they are straight before you solder the other leg.
+3. Keep on adding row after row, checking your work as you go and making sure that the LED's are straight and sitting flat on the PCB.
+4. Once you have added all of the LED's - it's time to start adding the components on the reverse side
 
 
 ## Step 4: Adding the Components to the PCB
@@ -226,12 +237,12 @@ STEPS:
 
 STEPS:
 
-- As always, start with the lowest profile parts first - in this case it's the resistors
-- Next I usually add the IC sockets and then JST connectors
-- Then move onto the capacitors and transistor
-- I had to solder into the the LED driver IC as i didn't have a IC socket big enough for it. Luckily there wasn't any issues with it.
-- Once all the components have been added, flip the board over and add the pots and switches
-- First, add the switches to the board. Note that they have an orientation. If you look at the one that I'm holding, you can see a small indent in the bottom of the switch. Make sure that the indent is at the top of the switch when you are soldering them into place. It will mean that you need to push the switch and lock it into place to turn it on. If you happen to put them in the wrong way - it won't really matter, it will just mean that you have to 'un-latch' the switch to turn it on
+1. As always, start with the lowest profile parts first - in this case it's the resistors
+2. Next I usually add the IC sockets and then JST connectors
+3. Then move onto the capacitors and transistor
+4. I had to solder into the the LED driver IC as i didn't have a IC socket big enough for it. Luckily there wasn't any issues with it.
+5. Once all the components have been added, flip the board over and add the pots and switches
+6. First, add the switches to the board. Note that they have an orientation. If you look at the one that I'm holding, you can see a small indent in the bottom of the switch. Make sure that the indent is at the top of the switch when you are soldering them into place. It will mean that you need to push the switch and lock it into place to turn it on. If you happen to put them in the wrong way - it won't really matter, it will just mean that you have to 'un-latch' the switch to turn it on
 
 
 ## Step 5: Testing the PCB (and a Small Mod I Did!)
@@ -254,11 +265,11 @@ Testing the board is relatively easy, all you need to do is to add a mic and a p
 
 STEPS:
 
-- Connect a mic and power source to the board
-- You should see a line of LED's light up
-- Play around with the knobs (see the last step on how to actually work the thing!) and see if the LED's move about
-- Play some music (making sure that the mic is turned on via the mic/probe switch) and see if you can get some waveforms happening.
-- Remember that the electret mic have a polarity so if you aren't seeing anything, try swapping the wires around connected to the legs and see if that helps.
+1. Connect a mic and power source to the board
+2. You should see a line of LED's light up
+3. Play around with the knobs (see the last step on how to actually work the thing!) and see if the LED's move about
+4. Play some music (making sure that the mic is turned on via the mic/probe switch) and see if you can get some waveforms happening.
+5. Remember that the electret mic have a polarity so if you aren't seeing anything, try swapping the wires around connected to the legs and see if that helps.
 
 
 ## Step 6: The Front Panel
@@ -273,16 +284,18 @@ STEPS:
 
 Like my 81 LED Chaser, I decided to keep the front panel pretty simple - there is already enough going on with all those LED's!
 
-I use inkscape to design my front panels. You can find the raw files in my Google Drive in case you want to play around with them. NOTE that there are 2 versions that I made of the circuit board. I only did a panel for version one which has a 'fine horizontal pot' but not on the actuacl PCB. See step 5 for further details
+I use [inkscape](https://inkscape.org/) to design my front panels. You can find the raw files in my [Google Drive](https://drive.google.com/drive/folders/1a7xgOPTSLFF6GpLcxMc8E30y4odtBAyN?usp=sharing) in case you want to play around with them. NOTE that there are 2 versions that I made of the circuit board. I only did a panel for version one which has a 'fine horizontal pot' but not on the actuacl PCB. See step 5 for further details
 
 STEPS:
 
-- Use the attached PDF copy of the front panel design.
-- The front panel needs to be printed on clear, adhesive paper. You can get this from eBay and have added a link to the parts page.
-- Cut out the image and carefully place onto the opal acrylic and remove any air bubbles.
-- Cut the acrylic to size if you haven't already
-- To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
+1. Use the attached PDF copy of the front panel design.
+2. The front panel needs to be printed on clear, adhesive paper. You can get this from eBay and have added a link to the parts page.
+3. Cut out the image and carefully place onto the opal acrylic and remove any air bubbles.
+4. Cut the acrylic to size if you haven't already
+5. To ensure the colours on the front panel don't get scratched, spray a few coats of clear acrylic onto the front panel. Make sure you give it a good coating each time and leave for an hour to dry before applying the next one. I used a satin finish clear coat on the final design.
 
+
+- [LED Oscilloscope V1](pdfs/LED Oscilloscope V1.pdf)
 
 ## Step 7: Drilling & Making Cut-outs on the Front Panel
 
@@ -306,15 +319,17 @@ Time to drill out the holes for the pots and switches and also cut out the secti
 
 STEPS:
 
-- I like to use a stepped drill bit to make the holes in the front panel. Carefully drill out each of the holes for the pots and switches
+1. I like to use a stepped drill bit to make the holes in the front panel. Carefully drill out each of the holes for the pots and switches
+
 NOTE: I highly recommend to use a drmel for the next step. It makes the job relatively easy. You could also use a small saw to remove the section
 
-- Attach a small cutting wheel to the dremel and carefully cut away the square section in the panel for the LED's
-- Tidy up the edges with a file and then see how the LED's fit. Re-work any sections if necessary until the PCB and LED's fits nicely into the front panel
+1. Attach a small cutting wheel to the dremel and carefully cut away the square section in the panel for the LED's
+2. Tidy up the edges with a file and then see how the LED's fit. Re-work any sections if necessary until the PCB and LED's fits nicely into the front panel
+
 NOTE: I was very close to actually not making the cutout for the LED's! The acrylic i used was 2mm and it diffused them quite nicely. However, I decided to take the hard road & make the cutout as I liked seeing all those LED's
 
-- Place the PCB into the front panel, mark where to drill the 4 holes to mount it and drill.
-- Secure the PCB to the front panel using some small screws and nuts. You may need to add some spacers between the front panel and PCB is you find it is bending inwards.
+1. Place the PCB into the front panel, mark where to drill the 4 holes to mount it and drill.
+2. Secure the PCB to the front panel using some small screws and nuts. You may need to add some spacers between the front panel and PCB is you find it is bending inwards.
 
 
 ## Step 8: Making the Case
@@ -335,17 +350,20 @@ I decided to make the case so the front panel was on a 45 degree angle. It helps
 
 STEPS:
 
-- The first thing you need to do is to cut a groove along the ply wood in order to secure the panel into. I used a dremel with a router attachment to do this.
+1. The first thing you need to do is to cut a groove along the ply wood in order to secure the panel into. I used a dremel with a router attachment to do this.
+
 NOTE: If you don't have one then you could always just stick the panel to the top of the case - easy!
 
-- Secure the wood with some clamps and run the bit near the top of the wood. Take your time and make sure you keep the dremel nice and straight.
-- Measure and cut the wood to size. The best way to do this is to just slip in the front panel into the groove of the wood and measure where to make the cuts
-- To give the case an angle, I just cut the side pieces of wood close to a triangle shape
-- Place the front panel into the grooves of the wood and with a small nail gun like a brad nailer, connect the sides to the base. You can also just glue them as well if you want to - I just get impatient waiting for the glue to dry!
+1. Secure the wood with some clamps and run the bit near the top of the wood. Take your time and make sure you keep the dremel nice and straight.
+2. Measure and cut the wood to size. The best way to do this is to just slip in the front panel into the groove of the wood and measure where to make the cuts
+3. To give the case an angle, I just cut the side pieces of wood close to a triangle shape
+4. Place the front panel into the grooves of the wood and with a small nail gun like a brad nailer, connect the sides to the base. You can also just glue them as well if you want to - I just get impatient waiting for the glue to dry!
+
 NOTE: Before you nail everything together - check out Step 5 which shows you how to add the pot. switch etc to the side of the case
 
-- The top section will need to be screwed into place so you can easily get inside the case
-- To finish off the wood I added some clear gloss on the body of the frame and base. Leave to dry for a few hours, give it a light sand and add another coat
+1. The top section will need to be screwed into place so you can easily get inside the case
+2. To finish off the wood I added some clear gloss on the body of the frame and base. Leave to dry for a few hours, give it a light sand and add another coat
+
 REMEMBER - you can make the shape of your case anyway you want to. This is just how I did it
 
 
@@ -369,10 +387,10 @@ As mentioned earlier, I made a modification to the PCB and added a fine horizont
 
 STEPS:
 
-- If you are using ply wood to build the case, then you might find that it is too thick to attach the pot, switch etc. To get past this,
-- I used a small router bit on my dremel and removed some of the wood on the side panels. If you reduce the thickness to about half then you should be able to attach everything to the side of the case.
-- Connect the switch, 50K pot to one side and the other add the BNC connector. FYI - The BNC connector is how you connect the oscilloscope probe to the PCB.
-- Lastly, drill a small hole just big enough to fit the mic. NOTE: These little mic's have a polarity so if you find that it isn't picking up any signal, then try and swap the wires connected to the mic
+1. If you are using ply wood to build the case, then you might find that it is too thick to attach the pot, switch etc. To get past this,
+2. I used a small router bit on my dremel and removed some of the wood on the side panels. If you reduce the thickness to about half then you should be able to attach everything to the side of the case.
+3. Connect the switch, 50K pot to one side and the other add the BNC connector. FYI - The BNC connector is how you connect the oscilloscope probe to the PCB.
+4. Lastly, drill a small hole just big enough to fit the mic. NOTE: These little mic's have a polarity so if you find that it isn't picking up any signal, then try and swap the wires connected to the mic
 
 
 ## Step 10: Adding a Power Source
@@ -397,12 +415,12 @@ You could power everything by a 9V battery. I like to use rechargeable batteries
 
 STEPS:
 
-- The step up power module (used to change the voltage from 3.7v to 9v) needs to be formatted to output 9v's. To do this you need to connect the top 2 solder pads with some solder. They are tiny so just add a little solder to your soldering iron and dab it on.
-- Add a dab of superglue to the back of the power module and glue it close to the battery terminals
-- Connect the input of the module to the battery using a couple resister legs
-- To charge the battery, you'll need to connect a charging module and be able to access it.. The easiest way is to make a small cutout into the side of the case and glue the USB module to it. You can then connect the USB module to the input on the charging module (the same solder points as the power module
-- Lastly, connect the wires from a mini JST connector to the output on the step up power module.
-- NOTE - Test to make sure that there is 9v's being generated from the step-up module. Those tiny solder pads can be tricky to connect.
+1. The step up power module (used to change the voltage from 3.7v to 9v) needs to be formatted to output 9v's. To do this you need to connect the top 2 solder pads with some solder. They are tiny so just add a little solder to your soldering iron and dab it on.
+2. Add a dab of superglue to the back of the power module and glue it close to the battery terminals
+3. Connect the input of the module to the battery using a couple resister legs
+4. To charge the battery, you'll need to connect a charging module and be able to access it.. The easiest way is to make a small cutout into the side of the case and glue the USB module to it. You can then connect the USB module to the input on the charging module (the same solder points as the power module
+5. Lastly, connect the wires from a mini JST connector to the output on the step up power module.
+6. NOTE - Test to make sure that there is 9v's being generated from the step-up module. Those tiny solder pads can be tricky to connect.
 
 
 ## Step 11: Connecting Everything Together
@@ -423,12 +441,12 @@ Now that you have everything added to the case, it's time to connect everything 
 
 STEPS:
 
-- Solder a JST plug onto the BNC plug, mic, power supply and fine horizontal pot and switch (if you are using version 1)
-- connect all of these to the PCB
-- Test to make sure that everything is working. Unfortunately I can't test the probe yet as I don't have one! I'm going to try my hand at making one and will do an 'ible if successful.
-- Screw the top section down
-- Add some knob's to the pots. They are quite close together so I would recommend using small ones. Or, don't bother at all with adding pots to the PCB!
-- I added the 'fine horizontal' to the side of the case as it makes it very easy to fine tune it. I also added a larger knob which gives you more control when tuning.
+1. Solder a JST plug onto the BNC plug, mic, power supply and fine horizontal pot and switch (if you are using version 1)
+2. connect all of these to the PCB
+3. Test to make sure that everything is working. Unfortunately I can't test the probe yet as I don't have one! I'm going to try my hand at making one and will do an 'ible if successful.
+4. Screw the top section down
+5. Add some knob's to the pots. They are quite close together so I would recommend using small ones. Or, don't bother at all with adding pots to the PCB!
+6. I added the 'fine horizontal' to the side of the case as it makes it very easy to fine tune it. I also added a larger knob which gives you more control when tuning.
 
 
 ## Step 12: How to Use the LED Oscillator
@@ -449,21 +467,28 @@ STEPS:
 
 ![Step 12: How to Use the LED Oscillator image 8](images/step13_08.jpg)
 
-Ok - so now that you have built it - how do you use it! Actually, it's really quite easy to get great waveforms appearing via an audio source such as music. I find that there are some songs that work better then others. I highly recommend that you try out 'Extra Kings' by the Avalanches - some beautiful waveforms are created when this is played. Actually, a lot of the avalanches songs look pretty good on the oscilloscope
+Ok - so now that you have built it - how do you use it! Actually, it's really quite easy to get great waveforms appearing via an audio source such as music. I find that there are some songs that work better then others. I highly recommend that you try out '[Extra Kings](https://www.youtube.com/watch?v=JSiwmjH_p8E)' by the Avalanches - some beautiful waveforms are created when this is played. Actually, a lot of the avalanches songs look pretty good on the oscilloscope
 
 STEPS:
 
-- Turn on the oscilloscope
-- You can control where the LED's are positioned in the matrix with the vertical control. Use the fine vertical to help you fine tune the LED's so they are only on one line
-- Turn on some music and see how it all looks
-- If you are finding that all of the matrix is filling up with blinking LED's, reduce the strength
-- Next, turn the horizontal pot until you start to see some waveforms. Use the fine horizonal to tune it even further
-- I added a switch to turn off the fine tune as I wanted the ability to really slow down the horizontal. Have a play around with this (version 2 doesn't have the switch)
-- Also play around with the speed, see if the waveforms change (for the better) if you speed up or slow down the rate.
+1. Turn on the oscilloscope
+2. You can control where the LED's are positioned in the matrix with the vertical control. Use the fine vertical to help you fine tune the LED's so they are only on one line
+3. Turn on some music and see how it all looks
+4. If you are finding that all of the matrix is filling up with blinking LED's, reduce the strength
+5. Next, turn the horizontal pot until you start to see some waveforms. Use the fine horizonal to tune it even further
+6. I added a switch to turn off the fine tune as I wanted the ability to really slow down the horizontal. Have a play around with this (version 2 doesn't have the switch)
+7. Also play around with the speed, see if the waveforms change (for the better) if you speed up or slow down the rate.
+
 Lastly - experiment and see what music works best and what types of waveforms are generated.
 
 I'll do an update on the probe once I have built one and tested.
 
+
+## Downloads
+
+- [LED Oscilloscope Schematic V1](pdfs/LED Oscilloscope Schematic V1.pdf)
+- [LED Oscilloscope Schematic V2](pdfs/LED Oscilloscope Schematic V2.pdf)
+- [LED Oscilloscope V1](pdfs/LED Oscilloscope V1.pdf)
 
 ---
 *97 images archived*

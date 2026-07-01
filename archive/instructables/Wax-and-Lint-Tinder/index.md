@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Wax-and-Lint-Tinder/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,7 +17,7 @@ Source: https://www.instructables.com/Wax-and-Lint-Tinder/
 
 There are a lot of different ways to make tinder for my flint and steel igniter. One of the most popular is char cloth. It's pretty easy to make and does a great job of lighting easily. The biggest problem with it though is it can be fragile. I wanted to find something a little more ridged for my survival kit.
 
-A search through the net also brought up lint! I recently used this in another ible' as tinder which can be found here. In the comments raptor_demon made the suggestion about adding wax to the lint and I thought that this was a brilliant idea.
+A search through the net also brought up lint! I recently used this in another ible' as tinder which can be found here. In the comments [raptor_demon](https://www.instructables.com/member/raptor_demon/) made the suggestion about adding wax to the lint and I thought that this was a brilliant idea.
 
 The following is a simple but very reliable tinder that you can make in about 3 minutes. It burns hot and lasts for over 3 minutes.
 
@@ -86,7 +88,7 @@ That's it really. Find a small, dry container to keep your tinder in and it shou
 
 Now you've made some, you're going to want to test it. I did, and the results can be seen in the video below. The tinder lit pretty much as soon as I got a spark and burnt for over 3 minutes! I was seriously impressed with how well this worked and how easy it is to make.
 
-If the video doesn't work try this link to YouTube
+If the video doesn't work try [this link to YouTube](https://www.youtube.com/watch?v=EFWjXmcNHgU&list=UU3KVtVSsFk13MCDUBh34Drw)
 
 NOTE: Lint is made up of cotton and man made fabrics. Synthetic fabrics can be dangerous when on fire as they can release some funky chemicals. It won't be a problem as you don't have to blow on the tinder to get it started. Just make sure your face isn't directly above the smoke and use outside.
 

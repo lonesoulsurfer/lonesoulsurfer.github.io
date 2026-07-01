@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Lightening-Detector-and-Counter/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,7 +21,7 @@ The detector is a simple design and anyone with some basic electronic skills sho
 
 The way it works is the circuit can detect discharge from lightning and counts up to 9 through a 7 segment display. Once you get past 9 it re-sets back to 0.
 
-A big shout-out to D.Mohankumar who designed the lightning counter and detector.
+A big shout-out to [D.Mohankumar](https://dmohankumar.wordpress.com/2015/11/09/lightning-counter-simple-design-14/) who designed the lightning counter and detector.
 
 The main components that make up the detector are an IC (CD 4033) and a 7 segment counter. Both a cheap and easy to find on eBay. Basically, the IC’s number 1 input pin is very sensitive to electric discharges such as lightning. Whenever lightning strikes the earth, it releases thousands of volts which can be detected by the IC. The IC then converts the signal into a numerical output on the 7 segment display.
 
@@ -42,31 +44,31 @@ I have listed all of the parts needed and have also added links to where you can
 
 Parts:
 
-1. IC – CD 4033 – eBay
+1. IC – CD 4033 – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1313.TR0.TRC0.H0.XCD4033BE+IC+COUNTR%2FDIVIDR+DECADE+16-DIP.TRS0&_nkw=CD4033BE+IC+COUNTR%2FDIVIDR+DECADE+16-DIP&_sacat=0)
 
-2. 7 Segment display (common cathode) – eBay
+2. 7 Segment display (common cathode) – [eBay](http://www.ebay.com.au/itm/5-pcs-LED-7-Segment-Display-1-Bit-Red-Common-Cathode-0-56-in-5O-/192286104395?epid=566156997&hash=item2cc5251b4b:g:YTQAAOSwMmBVwIAw)
 
-3. 100R Resistor – eBay
+3. 100R Resistor –[eBay](https://www.ebay.com.au/itm/100pcs-1-4W-Watt-0-25W-Metal-Film-Resistor-1-1R-to-1K-Ohm-Accessories-New-/222401836897?var=&hash=item33c82eb761:m:mfTU2Ec6OAWVd95hY9DXomw)
 
-4. 1K Resistor – eBay
+4. 1K Resistor – [eBay](http://www.ebay.com.au/itm/50-x-1-4W-250V-1-5K-ohm-1K5-Axial-Carbon-Film-Resistors-/201899887936?epid=1066822147&hash=item2f022bcd40:g:mrEAAOSwVm5Y-dpK)
 
-5. 9V battery holder – eBay
+5. 9V battery holder –[eBay](http://www.ebay.com.au/itm/Replacement-9V-Battery-Box-Case-Holder-Connector-CS-/202060412901?hash=item2f0bbd37e5:g:pO8AAOSwqd1Zwh7D)
 
-6. 1uF Capacitor – eBay
+6. 1uF Capacitor – [eBay](https://www.ebay.com.au/itm/30-100pcs-1uF-to-1000uF-25V-35V-50V-Aluminum-Electrolytic-Capacitors-/272776227430?var=&hash=item3f82baea66:m:mJXFbyIQXAnF-D6h8orZ8Aw)
 
-7. Antenna – eBay
+7. Antenna – [eBay](http://www.ebay.com.au/itm/Replacement-25-4cm-10-5-Sections-Telescopic-Antenna-Aerial-for-Radio-TV-L5D9-/282561182107?epid=1153505772&hash=item41c9f5799b:g:EvgAAOSwiA9ZX0gX)
 
-8. Sold core wire (breadboard wire) – eBay
+8. Sold core wire (breadboard wire) – [eBay](https://www.ebay.com.au/itm/400pcs-Breadboard-Jumper-Cable-Electronic-Wires-6cm-Kit-Experiment-Test-Tinned/252428303605?_trkparms=aid%3D555019%26algo%3DPL.BANDIT%26ao%3D1%26asc%3D20151005190705%26meid%3Dd59fb3a39e1545b3a3dfd8b3fdd96946%26pid%3D100506%26rk%3D1%26rkt%3D1%26&_trksid=p2045573.c100506.m3226)
 
-9. Blank PCB - eBay
+9. Blank PCB - [eBay](http://www.ebay.com.au/itm/Electronic-Kit-Circuit-Breadboards-Blank-PCB-Universal-DIY-Phototype-Board-HOT-/122680152992?hash=item1c904e93a0:g:1DUAAOSwsIZZpPvr)
 
 10. 9V Battery
 
-11. Project Box – eBay
+11. Project Box – [eBay](http://www.ebay.com.au/itm/5-Pcs-DIY-100x60x25mm-Plastic-Electronic-Project-Box-Enclosure-Instrument-Case-/131571667714?hash=item1ea2485302:g:72YAAOSw~OdVZWsl)
 
-12. 6pin DIP IC Socket Adapter - eBay
+12. 6pin DIP IC Socket Adapter - [eBay](https://www.ebay.com.au/itm/10PCS-16pin-DIP-IC-Socket-Adaptor-Solder-Type-Socket-Pitch-Dual-Wipe-Contact-/262857158981?hash=item3d3381f145:g:dDgAAOSwdGFYpqGv)
 
-13. Switch - eBay
+13. Switch - [eBay](https://www.ebay.com.au/itm/5-x-Heavy-Duty-Toggle-Flick-Switch-ON-OFF-Car-Dash-Light-Metal-SPST-Contacts-AU-/263024516128?epid=501119715&hash=item3d3d7b9c20:g:a7cAAOSwPh5ZN6AG)
 
 14. Various small screws etc
 

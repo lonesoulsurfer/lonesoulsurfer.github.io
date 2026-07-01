@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Make-a-Display-Stand-Out-of-Wood-and-Coppe
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

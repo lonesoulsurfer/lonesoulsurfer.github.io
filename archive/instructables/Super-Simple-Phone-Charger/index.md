@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Super-Simple-Phone-Charger/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,7 +19,7 @@ Source: https://www.instructables.com/Super-Simple-Phone-Charger/
 
 This could possibly be one of the most simplest phone chargers you can make. I wanted to make a charger that could use a 9v battery to power-up my phone. The worst thing about having a phone charger which you charge via USB is you never remember to charge it!
 
-After looking through a few 'ibles I came across this one by Hobbyman. I loved the simple design and the discussions around the batteries and charging modules. I actually went out and purchased an Ultrafire 18650 battery, charging module and a regulator but still haven't done anything with them. I was contemplating adding a phone charger inside an umbrella handle (still might!), but decided to make this simple charger instead.
+After looking through a few 'ibles I came across [this one](https://www.instructables.com/id/Cellphone-Charger/) by [Hobbyman](https://www.instructables.com/member/hobbyman/). I loved the simple design and the discussions around the batteries and charging modules. I actually went out and purchased an Ultrafire 18650 battery, charging module and a regulator but still haven't done anything with them. I was contemplating adding a phone charger inside an umbrella handle (still might!), but decided to make this simple charger instead.
 
 I wanted a way to have a charger that I could replace the battery whenever it went flat. This way if I'm away from mains power, I can just buy a battery from the shop and charge away.
 
@@ -36,9 +38,9 @@ I have charged my phone from flat to charged on one 9v energiser lithium battery
 
 Parts:
 
-1. Voltage regulator - eBay
+1. Voltage regulator - [eBay](http://www.ebay.com.au/itm/DC6-28V-To-5V-1-5A-USB-Output-Step-Down-Voltage-Buck-Module-for-Car-motorcycle-/191238811669?hash=item2c86b8b015)
 
-2. 9v battery holder - eBay
+2. 9v battery holder - [eBay](http://www.ebay.com.au/itm/Hot-9V-PP3-Battery-Holder-Box-DC-Case-With-Wire-Lead-ON-OFF-Switch-Cover-Case-/171738890298?hash=item27fc6f803a)
 
 3. 9v battery
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Nerf-Hack-Battery-Powered-Water-Pistol-V2/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -53,27 +55,27 @@ Bits
 
 1. Nerf Gun. I used a “strong arm’ Nerf gun but just use whatever you have lying around or buy a cheap one.
 
-2. Water pump – eBay
+2. Water pump – [eBay](http://www.ebay.com.au/itm/Windscreen-Washer-Pump-Water-Bottle-Single-Outlet-12V-For-Car-Truck-Bus-Van-/321587054935?hash=item4ae0150957:g:GIAAAOSwuTxV9PkJ)
 
 3. Cheap water pistol. This is a good source of parts which you can savage
 
 4. Thin tubing. You can get this from pet shops
 
-5. 2 x Li Ion battery holder – eBay
+5. 2 x Li Ion battery holder – [eBay](http://www.ebay.com.au/itm/High-Quality-Plastic-Battery-Holder-Storage-Box-Case-for-18650-With-Wire-Lead-/331640738187?var=&hash=item4d3754118b:m:mNxYaBhzpKBiojoy34PLbRA)
 
-6. 2 x Li Ion Batteries – eBay
+6. 2 x Li Ion Batteries – [eBay](http://www.ebay.com.au/itm/2x-For-UltraFire-3-7V-Protected-Li-ion-Rechargeable-18650-Battery-4000mAh-/191619105230?hash=item2c9d6381ce:g:ezcAAOSwu4BVlP4L)
 
-7. Lever switch – eBay
+7. Lever switch – [eBay](http://www.ebay.com.au/itm/5Pcs-AC-125V-250V-5A-SPDT-3Pin-Long-Hinge-Lever-Momentary-Micro-Switch-/331569772277?hash=item4d331936f5:g:4qIAAOSwPcVViv86)
 
 8. Drink bottle. I used an iced tea one but you could use whatever you have on hand. I would suggest though using one with a larger than usual lid as this will make it easier to attach to the nerf gun.
 
-9. T joints – eBay
+9. T joints – e[Bay](http://www.ebay.com.au/itm/181572341460?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 
 10. Various screws
 
-11. Charging Module – eBay
+11. Charging Module –[eBay](http://www.ebay.com.au/itm/2x-Micro-USB-1A-5V-18650-Lithium-Battery-Charging-Board-Charger-Module-SOZ-/161837789664?hash=item25ae48b1e0)
 
-12. Male and female jacks – eBay and eBay
+12. Male and female jacks – [eBay](http://www.ebay.com.au/itm/321742627473?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT) and [eBay](http://www.ebay.com.au/itm/261475595942?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 
 13. Spare lengths of wire
 

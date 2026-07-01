@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Executive-Decision-Maker/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

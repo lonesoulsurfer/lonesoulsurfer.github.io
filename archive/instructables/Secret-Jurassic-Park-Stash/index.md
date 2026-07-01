@@ -1,8 +1,10 @@
-# Secret "Jurassic Park" Stash 
+# Secret "Jurassic Park" Stash
 
 Source: https://www.instructables.com/Secret-Jurassic-Park-Stash/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction

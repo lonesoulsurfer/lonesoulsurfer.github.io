@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Book-Safe-With-Lock/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,7 +42,7 @@ Parts:
 
 1. A book. This will need to be a hard back book in relatively good condition. I also try to find a book with thick pages as it means less cutting and gluing.
 
-2. Lock - eBay
+2. Lock - [eBay](http://www.ebay.com.au/itm/Classical-Vintage-Drawer-Cabinet-Wardrobe-Cupboard-Door-Zinc-Alloy-Lock-Key-/282248232210?hash=item41b74e3d12:g:tkAAAOSwnbZYIDmg)
 
 3. Strip of wood. The size will depend on how deep your secret compartment is. The wood is used to line the inside of the compartment.
 
@@ -295,8 +297,7 @@ Lock Hole - Steps:
 
 4. Next place the wood back into the secret compartment, shut the front cover and try and lock the book. If you can't lock it then you will need to remove some more of the wood. Remove a little more and try again until the lock engages.
 
-Gluing the Wood - Steps:
-1. Add a generous amount of PVA glue to the bottom and side of each piece of wood and push into place.
+Gluing the Wood - Steps: 1. Add a generous amount of PVA glue to the bottom and side of each piece of wood and push into place.
 
 2. Don't worry if there are any gaps etc as these will be covered later with the thin cardboard.
 

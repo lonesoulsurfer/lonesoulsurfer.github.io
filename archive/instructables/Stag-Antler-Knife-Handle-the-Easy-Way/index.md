@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Stag-Antler-Knife-Handle-the-Easy-Way/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

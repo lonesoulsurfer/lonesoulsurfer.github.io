@@ -4,6 +4,8 @@ Source: https://www.instructables.com/From-Skateboard-to-Handplane/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -21,7 +23,7 @@ When body surfing, you use your hand out in front of you as a plane to help lift
 
 I decided to make my hand plane out of an old skateboard deck as the size and shape make for a perfect hand plane. I've seen some other hand planes on the net made from skateboards but all cut off the front and back of the board and use the middle, flat section. I think this is a little bonkers as the front (or back) of the skateboard are already curved, perfect for riding waves with.
 
-If you are looking for a little inspiration, check out my Pintrest page Handplanes
+If you are looking for a little inspiration, check out my Pintrest page [Handplanes](https://www.pinterest.com/marcusdunn/hand-planes/)
 
 
 ## Step 1: Watch the Video

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Old-Paint-Can-Secret-Stash/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -13,7 +15,7 @@ Source: https://www.instructables.com/Old-Paint-Can-Secret-Stash/
 
 ![Intro 3](images/intro_03.jpg)
 
-I recently made a secret stash out of a WD40 can which worked out really well. In the comments someone mentioned that a spray paint can – all old and crummy would be a great alternative to the WD40 can. I thought that this was a pretty good idea so instead of using a spray can, I used an old, crappy tin of paint that had been sitting around my shed for a couple of years.
+I recently made a secret [stash out of a WD40 can](https://www.instructables.com/id/Secret-Jurassic-Park-Stash/) which worked out really well. In the comments someone mentioned that a spray paint can – all old and crummy would be a great alternative to the WD40 can. I thought that this was a pretty good idea so instead of using a spray can, I used an old, crappy tin of paint that had been sitting around my shed for a couple of years.
 
 There are a couple of benefits on using a paint can over a spray can that I can see. Someone else in the comments mentioned that they had their shed broken into and all that was taken was the spray cans. Guess some kids wanted to do some tagging. The other benefit is that 90mm pluming parts fit nearly perfectly into the can, making the job pretty straight forward.
 
@@ -34,13 +36,13 @@ Parts:
 
 1. 1 litre paint can – preferably well used
 
-2. 90mm threaded coupling - Bunnings
+2. 90mm threaded coupling - [Bunnings](https://www.bunnings.com.au/holman-90mm-pvc-stormwater-threaded-insert-fitting_p4770411)
 
-3. 90mm screw cap - Bunnings
+3. 90mm screw cap - [Bunnings](https://www.bunnings.com.au/holman-90mm-threaded-pvc-storm-cap_p4770388)
 
-4. 90mm push on cap - Bunnings
+4. 90mm push on cap - [Bunnings](https://www.bunnings.com.au/holman-90mm-push-on-pvc-storm-cap_p4750196)
 
-5. 90mm PVC tube - Bunnings
+5. 90mm PVC tube - [Bunnings](https://www.bunnings.com.au/holman-90mm-threaded-pvc-storm-cap_p4770388)
 
 Tools
 

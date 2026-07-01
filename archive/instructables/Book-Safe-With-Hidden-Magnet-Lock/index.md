@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Book-Safe-With-Hidden-Magnet-Lock/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -13,7 +15,7 @@ Source: https://www.instructables.com/Book-Safe-With-Hidden-Magnet-Lock/
 
 ![Intro 3](images/intro_03.jpg)
 
-Over the years I’ve made a whole bunch of book safes. A couple of them I posted on Instructables and can be found here and here. To make the book safes that little more secure, I like to incorporate locks into them. Admittedly, the locks that I have designed in the past are simple and are easily located on the book. Plus, you need to take into consideration that a book after all is only paper, if you really wanted to get into it you could probably just rip it open!
+Over the years I’ve made a whole bunch of book safes. A couple of them I posted on Instructables and can be found [here](https://www.instructables.com/id/Book-Safe-With-Lock/) and [here](https://www.instructables.com/id/Super-Secret-Book-Safe/). To make the book safes that little more secure, I like to incorporate locks into them. Admittedly, the locks that I have designed in the past are simple and are easily located on the book. Plus, you need to take into consideration that a book after all is only paper, if you really wanted to get into it you could probably just rip it open!
 
 This time I wanted to disguise the lock so you wouldn’t know that the book even had one. This way if someone was looking for a secret book, then hopefully a cursory glance wouldn’t arouse any suspicions. I also have a petty large library so I can easily hide the book amongst my books.
 
@@ -42,23 +44,23 @@ Parts:
 
 1. Book. Make sure that you use a hard back book and it ok condition. That’s really all the stipulations there are (you might want to check that the book you are using isn’t valuable – you don’t want to wreck a rare 1st ed!)
 
-2. 6v Solenoid lock – eBay
+2. 6v Solenoid lock – [eBay](http://www.ebay.com.au/itm/DC-5V-6V-Mini-Solenoid-Electromagnetic-Electric-Control-Cabinet-Lock-DIY-Project-/132259233458?var=&hash=item1ecb43beb2:m:muwvy94JVi-LubsL4moudlQ)
 
 3. 9V battery
 
-4. 9V battery holder – eBay
+4. 9V battery holder – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0)
 
-5. Reed switch – eBay
+5. Reed switch – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xglass+reed+switch.TRS0&_nkw=glass+reed+switch&_sacat=0)
 
 6. Wires
 
-7. Magnet – eBay
+7. Magnet – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=9v+battery+holder&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xrare+earth+magnet.TRS0&_nkw=rare+earth+magnet&_sacat=0)
 
 8. Wood. I just used some straight edging purchased from a hardware store.
 
 9. Small screws
 
-10. Modge podge glue – eBay
+10. Modge podge glue – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=rare+earth+magnet&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.Xmodge+podge.TRS0&_nkw=modge+podge&_sacat=0)
 
 Tools
 

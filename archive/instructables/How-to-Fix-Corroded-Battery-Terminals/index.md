@@ -1,8 +1,10 @@
-# How to Fix Corroded Battery Terminals 
+# How to Fix Corroded Battery Terminals
 
 Source: https://www.instructables.com/How-to-Fix-Corroded-Battery-Terminals/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -44,7 +46,7 @@ Tools
 
 1. Battery Holders. I have a bunch of these lying around which are good for projects. You can also use the terminals from them to repair other electronic goods.
 
-2. You can also just buy these terminals from eBay
+2. You can also just buy these terminals from [eBay](https://www.ebay.com.au/itm/Metal-AA-Battery-Spring-Contact-Lamination-Plate-Terminal-Silver-Tone-16pcs/332497739219?epid=20012014045&hash=item4d6a68ddd3:g:9P0AAOSwqBpaSvC0)
 
 2. Small files
 
@@ -83,7 +85,7 @@ Tools
 
 Don’t use your fingers to try and remove the batteries. The potassium hydroxide inside the battery can irritate your skin (I know as I’ve touched it before!). Potassium hydroxide is a caustic agent and is the chemical that corrodes the terminals and destroys the batteries. You may have also seen a feathery crystalline structure forming around the battery and terminal as well. This is potassium carbonate and forms when the potassium hydroxide reacts with carbon dioxide in the air.
 
-For those who want to understand more about the chemical components inside an alkaline battery, please check out the following
+For those who want to understand more about the chemical components inside an alkaline battery, [please check out the following](https://en.wikipedia.org/wiki/Alkaline_battery)
 
 Steps:
 
@@ -287,7 +289,7 @@ Steps:
 
 Next thing to do is to neutralise any residual potassium hydroxide left of the terminals. There have been many comments left on how best to neutralise the corrosives from the potassium hydroxide. As potassium hydroxide is a strong base, then an acid like vinegar or lemon juice is probably the best thing to use when neutralising an alkaline like potassium hydroxide.
 
-Here's a little more information on acids and bases for those who are interested and how to neutralising.
+[Here's a little more information](https://www.labmanager.com/lab-health-and-safety/2009/04/how-to-neutralize-chemical-spills#.W5hIP-gzaUk) on acids and bases for those who are interested and how to neutralising.
 
 Steps:
 

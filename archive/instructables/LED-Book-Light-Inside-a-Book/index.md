@@ -4,6 +4,8 @@ Source: https://www.instructables.com/LED-Book-Light-Inside-a-Book/
 
 ---
 
+![Cover](images/cover.png)
+
 
 ## Introduction
 
@@ -42,19 +44,19 @@ Parts:
 
 1. A Book. Make it a large one as it will be easier to do. It will also need to be hardback
 
-2. Glue - I use Mod Podge as it drys clear and works excellent - eBay
+2. Glue - I use Mod Podge as it drys clear and works excellent - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=mod+podge&_sacat=0)
 
 3. Some pieces of wood (trim). Get yourself a length of it from your local hardware store.
 
-4. LED strip - eBay
+4. LED strip - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xled+strip+light+warm.TRS0&_nkw=led+strip+light+warm&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=led+strip+light)
 
-5. Charging Module - eBay
+5. Charging Module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
 
-6. Mobile Phone Battery - you can buy them on eBay or just recycle one from an old phone
+6. Mobile Phone Battery - you can buy them on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xsamsung+mobile+battery.TRS0&_nkw=samsung+mobile+battery&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=copper+strip+19mm) or just recycle one from an old phone
 
-7. Opal Light diffuser - sheet - Acrylic - eBay
+7. Opal Light diffuser - sheet - Acrylic - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR3.TRC2.A0.H0.Xopal+light+diffuser.TRS0&_nkw=opal+light+diffuser&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=led+strip+light+warm)
 
-8. Micro USB Adapter - eBay
+8. Micro USB Adapter -[eBay](https://www.ebay.com.au/itm/KQ-5Pcs-CJMCU-5V-Micro-USB-Board-Interface-Power-Switch-Adapter-Breakout-Module/333623439304?hash=item4dad81afc8:g:dH0AAOSwK~tdoXXg)
 
 9. Wires
 
@@ -280,7 +282,7 @@ Steps:
 
 ![Step 9: Adding the Battery, Charging Module and Sticking Down the LED's image 5](images/step09_05.jpg)
 
-I did an Instructable a little while ago which go through how to use the charging module and connect it to a battery. The great thing about these little modules is that also have a voltage regulator so you can set the voltage at 12v which is what the LED's need. Check out the link here to learn how to use them
+I did an Instructable a little while ago which go through how to use the charging module and connect it to a battery. The great thing about these little modules is that also have a voltage regulator so you can set the voltage at 12v which is what the LED's need. Check out the link [here](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/)to learn how to use them
 
 Steps:
 

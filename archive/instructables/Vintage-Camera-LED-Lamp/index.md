@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Vintage-Camera-LED-Lamp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -42,25 +44,25 @@ The build itself isn’t too difficult but you will need some basic electrical k
 
 Parts:
 
-1. Instamatic Camera - eBay. Actually you can use any old camera as long at it looks cool.
+1. Instamatic Camera - [eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR2.TRC0.A0.H0.Xinstamatic+vintage+camera.TRS0&_nkw=instamatic+vintage+camera&_sacat=0). Actually you can use any old camera as long at it looks cool.
 
-2. Film reel – eBay
+2. Film reel – [eBay](http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR12.TRC2.A0.H0.Xfilm+reel.TRS0&_nkw=film+reel&_sacat=0)
 
-3. 3.6v Power adapter – Ali Express Mine was 3.5 but 3.6 will be fine. Try not to get anything iover 200ma
+3. 3.6v Power adapter – [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20161022172904&SearchText=3.6v+power+adapter) Mine was 3.5 but 3.6 will be fine. Try not to get anything iover 200ma
 
-4. LED’s – eBay These are 1W LED's and are very bright and work great for this type of project. You uaually find them in LED light bulbs.
+4. LED’s – [eBay](http://www.ebay.com.au/itm/10PCS-3V-Brand-New-1W-Cool-White-High-Power-Led-Lamp-Beads-1-Watt-/272160628556?hash=item3f5e099f4c:g:ZX4AAOSwDk5T8V1c) These are 1W LED's and are very bright and work great for this type of project. You uaually find them in LED light bulbs.
 
-5. Power cord – eBay
+5. Power cord – [eBay](http://www.ebay.com.au/itm/3-3-Cotton-Cloth-Covered-Twisted-Electrical-Wire-Vintage-Lamp-Cord-Antique-Fan-/231861944108?var=&hash=item35fc0c7f2c:m:mBUv-RNzGTSjIIk1FFh68Cw)
 
 6. Lamp neck. Just get one from an op shop or thrift store
 
 7. Nuts, bolts and other screws you may need
 
-8. 1/4 inch nut insert - eBay This is used to attach the camera to the Tripod mount
+8. 1/4 inch nut insert - [eBay](http://www.ebay.com.au/itm/1-4-Inch-Thread-Dia-Metal-Rivet-Nut-Insert-Nutsert-50pcs-/252335840647?hash=item3ac0635d87:g:EqgAAOSw-CpYA8fm) This is used to attach the camera to the Tripod mount
 
 9. Heat shrink
 
-10. Tripod Mount - Use this eBay link if you just want to get a modern one or this eBay link if you want a more vintage looking one
+10. Tripod Mount - Use [this eBay link](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1311.R1.TR12.TRC2.A0.H0.Xtripod+mo.TRS0&_nkw=tripod+mount&_sacat=0) if you just want to get a modern one or [this eBay link](http://www.ebay.com.au/sch/i.html?_odkw=tripod+mount&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H1.Xvintage+tripod+mount.TRS0&_nkw=vintage+tripod+mount&_sacat=0) if you want a more vintage looking one
 
 Tools
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/How-to-Get-Free-18650-Batteries/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -56,28 +58,31 @@ Let's get started!!
 
 PARTS
 
-- 18650 Batteries - The first thing obviously that you'll need is to get your hands on some 18650 batteries. I get all of mine from E waste facilities where you can pick them up for free out of old laptops. You could also try computer repairers who would probably give them to you for free as well!
-- 18650 Battery Tester - Ali Express
-- 18650 Battery Holder - Ali Express
+1. 18650 Batteries - The first thing obviously that you'll need is to get your hands on some 18650 batteries. I get all of mine from E waste facilities where you can pick them up for free out of old laptops. You could also try computer repairers who would probably give them to you for free as well!
+2. 18650 Battery Tester - [Ali Express](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221124163837&origin=y&SearchText=Module+18650+Battery+Tester&spm=a2g0o.detail.1000002.0&dida=y)
+3. 18650 Battery Holder - [Ali Express](https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y)
+
 Parts needed if you want to build the portable, variable battery
 
-- 18650 Battery Charger Module - Ali Express
-- Step up Booster Module - Ali Express
-- Phone Charging Module - Ali Express
-- 18650 Battery Holder - Ali Express
-- Magnets 7mm X 3mm - Ali Express
-- Plastic Tube 8mm Dia - Ali Express
+1. 18650 Battery Charger Module - [Ali Express](https://www.aliexpress.com/premium/18650-battery-charger-type-c.html?spm=a2g0o.productlist.1000002.0&initiative_id=AS_20221124164006&dida=y)
+2. Step up Booster Module - [Ali Express](https://www.aliexpress.com/item/1005001578810552.html?spm=a2g0o.order_list.0.0.3eb61802fSYa9T)
+3. Phone Charging Module - [Ali Express](https://www.aliexpress.com/premium/5v-type-c-usb-mobile-power-bank-18650.html?spm=a2g0o.productlist.1000002.0&initiative_id=SB_20221124164249&dida=y)
+4. 18650 Battery Holder - [Ali Express](https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y)
+5. Magnets 7mm X 3mm - [Ali Express](https://www.aliexpress.com/item/1005004024695474.html?spm=a2g0o.order_list.0.0.3e7a1802ENe6uF)
+6. Plastic Tube 8mm Dia -[Ali Express](https://www.aliexpress.com/item/1005001780401160.html?spm=a2g0o.productlist.main.25.357b116btBS5Pv&algo_pvid=f4ba6277-c7dc-4aec-ad0c-107bdcaf237f&algo_exp_id=f4ba6277-c7dc-4aec-ad0c-107bdcaf237f-12&pdp_ext_f=%7B%22sku_id%22%3A%2212000017542563333%22%7D&pdp_npi=2%40dis%21AUD%214.51%213.38%21%21%21%21%21%40212248ba16693451290456439d076a%2112000017542563333%21sea&curPageLogUid=OhZufbons7ll)
+
 Parts you'll need if you want to build the phone charger
 
-- Power bank Module - Ali Express
-- 18650 Battery Holder - Ali Express
+1. Power bank Module - [Ali Express](https://www.aliexpress.com/item/1005002100956877.html?spm=a2g0o.productlist.main.87.619b529faZYRgR&algo_pvid=70d7e89c-03c7-4cdd-9590-787618ec74ae&aem_p4p_detail=20221124185337500948896192670013795726&algo_exp_id=70d7e89c-03c7-4cdd-9590-787618ec74ae-43&pdp_ext_f=%7B%22sku_id%22%3A%2212000018743671359%22%7D&pdp_npi=2%40dis%21AUD%217.74%215.34%21%21%21%21%21%402122457116693448171833182d0732%2112000018743671359%21sea&curPageLogUid=J7aaNTlYDMSg&ad_pvid=20221124185337500948896192670013795726_44&ad_pvid=20221124185337500948896192670013795726_44)
+2. 18650 Battery Holder - [Ali Express](https://www.aliexpress.com/premium/18650-battery-holder.html?spm=a2g0o.detail.1000002.0&initiative_id=SB_20221124164003&origin=y&dida=y)
+
 TOOLS
 
-- Multimeter
-- Soldering Iron
-- Pliers
-- Wire Cutters
-- Spudger (plying tool)
+1. Multimeter
+2. Soldering Iron
+3. Pliers
+4. Wire Cutters
+5. Spudger (plying tool)
 
 
 ## Step 1: Getting Battery Packs From Laptops
@@ -96,10 +101,10 @@ Most older style laptops have a removeable battery compartment. Newer ones use a
 
 STEPS:
 
-- The first thing to do is to find yourself an old laptop
-- Flip it over and you should see a section that looks like t is removable.
-- There are usually a couple of tabs that you have to push across which will release the battery
-- If you are at an Ewaste facility, take a look around and grab as many as you can.
+1. The first thing to do is to find yourself an old laptop
+2. Flip it over and you should see a section that looks like t is removable.
+3. There are usually a couple of tabs that you have to push across which will release the battery
+4. If you are at an Ewaste facility, take a look around and grab as many as you can.
 
 
 ## Step 2: Removing the Batteries From the Case
@@ -122,11 +127,11 @@ Now it's time to liberate the batteries from the case. This can be a little tric
 
 STEPS:
 
-- The battery cases all have a seam line. You can see this in the first 2 images. Identify the seam line as this is where you'll need to pry the case open from
-- Next, you need to use a spudger to help pry open the case. You can easily make your own and I've done an Instructable on how to which you can find here
-- Carefully push the spudger into the seam and start to pry up the case. If you are not getting any movement, try a different section of the case
-- Eventually the case will start to open. Keep on moving the spudger along the seam line, prying the case up. Be careful though to not damage the batteries inside
-- Once you are able to, remove the batteries and circuit protection board from the case
+1. The battery cases all have a seam line. You can see this in the first 2 images. Identify the seam line as this is where you'll need to pry the case open from
+2. Next, you need to use a spudger to help pry open the case. You can easily make your own and I've done an Instructable on how to which you can find [here](https://www.instructables.com/How-to-Make-Spudgers-prying-Tools-Out-of-Cutlery/)
+3. Carefully push the spudger into the seam and start to pry up the case. If you are not getting any movement, try a different section of the case
+4. Eventually the case will start to open. Keep on moving the spudger along the seam line, prying the case up. Be careful though to not damage the batteries inside
+5. Once you are able to, remove the batteries and circuit protection board from the case
 
 
 ## Step 3: Removing the Little Welded Strips From the Batteries
@@ -145,12 +150,12 @@ Now that you have freed the batteries, you'll need need to clean them up a littl
 
 STEPS:
 
-- Cut any wires connecting the batteries together
-- Start to cut away the nickel strips and remove the circuit board
-- In most cases, you'll probably end up with 2 batteries connected together. You now need to remove the nickel strips from the battery terminals
-- To do this I used a pair of wire cutters and by lightly grabbing hold of one end of the nickel, twisted the metal to break the weld spots. You can use some needle nose plyers as well to do the job
-- If there is any leftover metal or weld burrs on the battery, then cut these away with the wire cutters
-- Lastly, remove any stickers, glue etc from the batteries and give them a good clean
+1. Cut any wires connecting the batteries together
+2. Start to cut away the nickel strips and remove the circuit board
+3. In most cases, you'll probably end up with 2 batteries connected together. You now need to remove the nickel strips from the battery terminals
+4. To do this I used a pair of wire cutters and by lightly grabbing hold of one end of the nickel, twisted the metal to break the weld spots. You can use some needle nose plyers as well to do the job
+5. If there is any leftover metal or weld burrs on the battery, then cut these away with the wire cutters
+6. Lastly, remove any stickers, glue etc from the batteries and give them a good clean
 
 
 ## Step 4: Charging & Testing the Batteries
@@ -167,9 +172,9 @@ In most cases, I have found that the batteries hold over 2200 mAh which is great
 
 STEPS:
 
-- With the tester I got, there is an auto function which allows you to charge and then discharge the battery. This gives you the capacity and let's you know the condition of the battery.
-- You can also just charge the battery up and test it with a multimeter as well. However, this won't give you the mAh only the amperage.
-- If you do come across a battery that isn't taking charge then don't bother keeping it.
+1. With the tester I got, there is an auto function which allows you to charge and then discharge the battery. This gives you the capacity and let's you know the condition of the battery.
+2. You can also just charge the battery up and test it with a multimeter as well. However, this won't give you the mAh only the amperage.
+3. If you do come across a battery that isn't taking charge then don't bother keeping it.
 
 
 ## Step 5: Making a Portable, Variable Battery
@@ -188,11 +193,11 @@ I thought I would also include a couple of projects that you can do with the bat
 
 STEPS:
 
-- You will need a way to charge the battery up and also change the voltage. you can do this with a couple cheap modules.
-- superglue the charging module to a 18650 battery holder, making sure the the micro USB adapter is facing out. This way you will be able to add the USB cord easily
-- Place the step up booster module next to the charging one
-- Add a small switch to the battery holder and connect the positive wire to one of the legs
-- Next wire up every as shown in the diagram.
+1. You will need a way to charge the battery up and also change the voltage. you can do this with a couple cheap modules.
+2. superglue the charging module to a 18650 battery holder, making sure the the micro USB adapter is facing out. This way you will be able to add the USB cord easily
+3. Place the step up booster module next to the charging one
+4. Add a small switch to the battery holder and connect the positive wire to one of the legs
+5. Next wire up every as shown in the diagram.
 
 
 ## Step 6: Adding Magnets As Connectors
@@ -217,13 +222,13 @@ Initially I was thinking how cleaver I was coming up with magnets as a way to co
 
 STEPS:
 
-- I used 3 magnets in each connector. Place 2 magnets next to the tube, mark on the tube the height of the magnets and drill a small hole
-- Cut the tube so it is slightly bigger then the height of 3 magnets (8mm should be perfect)
-- Place 2 of the magnets inside the tube, then place stripped wire into the hole and lastly, place the other magnet on top
-- Add some superglue to the top magnet . This will hold all of the magnets into place
-- With some scrap plastic (I was a butter container lid!) cut out a couple small sections and glue these to the top of the connector
-- Trim with an exacto knife when dry
-- Do the same for the other connector, making sure that the magnets repel each other
+1. I used 3 magnets in each connector. Place 2 magnets next to the tube, mark on the tube the height of the magnets and drill a small hole
+2. Cut the tube so it is slightly bigger then the height of 3 magnets (8mm should be perfect)
+3. Place 2 of the magnets inside the tube, then place stripped wire into the hole and lastly, place the other magnet on top
+4. Add some superglue to the top magnet . This will hold all of the magnets into place
+5. With some scrap plastic (I was a butter container lid!) cut out a couple small sections and glue these to the top of the connector
+6. Trim with an exacto knife when dry
+7. Do the same for the other connector, making sure that the magnets repel each other
 
 
 ## Step 7: Using the Portable Battery
@@ -242,11 +247,11 @@ Before you go and connect it to something, make sure you check the output voltag
 
 STEPS:
 
-- Grab something you want to power. I gave an old radio a try. The voltage input required was 9 volts. I actually didn't think it would work as it look D cell batteries. spoiler - it did!
-- take off the battery holder and connect the magnets to the terminals inside the case. You need to make sure that you connect them to the 'live' terminals inside the case
-- Place the battery inside where the batteries usually go and close up the back
-- Turn on the device to see if everything is working as it should.
-- NOTE - you could also wire the battery directly to the circuit board if you wanted to as well. You'd have to open up the device and solder the wires into place
+1. Grab something you want to power. I gave an old radio a try. The voltage input required was 9 volts. I actually didn't think it would work as it look D cell batteries. spoiler - it did!
+2. take off the battery holder and connect the magnets to the terminals inside the case. You need to make sure that you connect them to the 'live' terminals inside the case
+3. Place the battery inside where the batteries usually go and close up the back
+4. Turn on the device to see if everything is working as it should.
+5. NOTE - you could also wire the battery directly to the circuit board if you wanted to as well. You'd have to open up the device and solder the wires into place
 
 
 ## Step 8: Make a Phone Charger
@@ -267,10 +272,11 @@ Here's a really simple and cheap project that you can make with the batteries. I
 
 STEPS:
 
-- First, add some superglue to the back of the module and stick it to the back of a battery holder
-- Connect the positive and negative wires from the battery holder to the solder points on the module
-- Charge the battery if necessary through the USB C connecter on the module
-- You can check the voltage of the battery by holding down the momentary button on the module
+1. First, add some superglue to the back of the module and stick it to the back of a battery holder
+2. Connect the positive and negative wires from the battery holder to the solder points on the module
+3. Charge the battery if necessary through the USB C connecter on the module
+4. You can check the voltage of the battery by holding down the momentary button on the module
+
 So what's next?
 
 I want to explore using a battery monitoring system (BMS) and see if I can make my own battery spot welder! There is definite opportunities to build a awesome battery pack to take camping as well!

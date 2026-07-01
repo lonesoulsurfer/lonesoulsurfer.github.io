@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Dub-Siren-Synth-555-Project-V2/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -44,47 +46,47 @@ Parts:
 
 1. Case. You can use anything to house the electronics, as long as it's big enough to do so. I used an old intercom speaker I found at a junk shop.
 
-2. Echo and reverb module - eBay
+2. Echo and reverb module - [eBay](https://www.ebay.com.au/itm/PT2399-Microphone-Reverb-Plate-Reverberation-Board-No-Preamplifier-Function/263004532089?hash=item3d3c4aad79:g:iuYAAOSwfpVZJ-Ts)
 
-3. Audio amplifier module - This is the one I used eBay but you could easily use a smaller one like this
+3. Audio amplifier module - This is the one I used [eBay](https://www.ebay.com.au/itm/AMP-Module-Mini-Amplifier-Board-Power-TDA2822-DC-1-8-12V-3-5mm-Stereo-Qu-5V-I0V1/184328073764?hash=item2aeacf3224:g:1w4AAOSwJLde5da8&frcectupt=true) but you could easily use a smaller one [like this](https://www.ebay.com.au/itm/Power-TDA2030A-Audio-Amplifier-Module-Supply-5-12V-18W-Single-Board/264289188689?hash=item3d88dcfb51:g:QwUAAOSwQxxcuANw&frcectupt=true)
 
-4. Speaker 8 ohm - eBay
+4. Speaker 8 ohm - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=8+ohm+speaker&_sacat=0&_sop=15)
 
-5. Li-po Battery - Get one out of an old phone or eBay
+5. Li-po Battery - Get one out of an old phone or [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xphone+battery+samsung.TRS0&_nkw=phone+battery+samsung&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=phone+battery)
 
-6. Charging and voltage regulator module - eBay
+6. Charging and voltage regulator module - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
 
 7. Wires
 
 Dub Siren Circuit
 
-You can find the schematic, Board and Gerber flies in the next step. You'll need to send the gerber files which is in a zip file to a PCB manufacturer like JLCPCB who will print them for you. The parts list is below:
+You can find the schematic, Board and Gerber flies in the next step. You'll need to send the gerber files which is in a zip file to a PCB manufacturer like [JLCPCB](https://www.google.com/search?q=jlcpcb&rlz=1C1GCEA_enUS807US807&oq=jlc&aqs=chrome.1.69i57j0l5j69i60l2.2055j0j7&sourceid=chrome&ie=UTF-8)who will print them for you. The parts list is below:
 
-1. LM555n × 2 – eBay
+1. LM555n × 2 – [eBay](https://www.ebay.com.au/itm/Useful-10-20-50PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC-TOP-Quality-M8Y7/193508715265?hash=item2d0e04ab01:g:u~YAAOSwZbJe4G3M&frcectupt=true)
 
-2. LM741 × 1 operational amplifier – eBay
+2. LM741 × 1 operational amplifier – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xlm741.TRS0&_nkw=lm741&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=555+timer)
 
-3. Momentary on/off button – Normally on - eBay
+3. Momentary on/off button – Normally on - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xmomentary+switch.TRS0&_nkw=momentary+switch&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=phone+battery)
 
-4. 2 X SPDT On/off switch – eBay
+4. 2 X SPDT On/off switch – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR3.TRC2.A0.H0.Xspdt+toggle+switch.TRS0&_nkw=spdt+toggle+switch&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=momentary+switch)
 
-5. 3.5mm Output Jack – eBay
+5. 3.5mm Output Jack – [eBay](https://www.ebay.com.au/itm/10Pcs-3-5mm-Headphones-Stereo-Audio-Socket-Jack-With-nut-5-Pin-PCB-BDAU/362132587283?epid=24013243930&hash=item5450c8c313:g:j6UAAOSwez5ZzOKb)
 
-6. Knobs – eBay
+6. Knobs – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xpotentiometer+knobs.TRS0&_nkw=potentiometer+knobs&_sacat=0)
 
-7. 50K X 5 pots - eBay
+7. 50K X 5 pots - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=potentiometer+50k&_sacat=0&LH_TitleDesc=0&_sop=15)
 
-8. 47μF × 1 - eBay
+8. 47μF × 1 - [eBay](https://www.ebay.com.au/itm/50PCS-25V-47uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-5X11mm/264399626299?hash=item3d8f72203b:g:~KgAAOSwT8ZdHsHU&frcectupt=true)
 
 9. 47nF × 1
 
-10. 220μF × 1 - eBay
+10. 220μF × 1 - [eBay](https://www.ebay.com.au/itm/20PCS-25V-220uF-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitor-8X12mm/254298576265?hash=item3b35605589:g:9xkAAOSwzYNdHsHP&frcectupt=true)
 
 11. 150nF × 1
 
-12. 10μF × 1 - eBay
+12. 10μF × 1 - [eBay](https://www.ebay.com.au/itm/10V-50V-High-Frequency-LOW-ESR-Radial-Electrolytic-Capacitors-105C-1uF-3300uF/264388201105?var=564005352620&hash=item3d8ec3ca91:g:9xkAAOSwzYNdHsHP)
 
-For the resistors - just by these in assorted lots - eBay
+For the resistors - just by these in assorted lots - [eBay](https://www.ebay.com.au/itm/300x-30-Values-Kinds-1-1-4W-Metal-Film-Resistor-Assorted-Kit-10PCS-Per-Each-New/223222191255?epid=24025613485&hash=item33f9145497:g:-EAAAOSw1KRb46cC&frcectupt=true)
 
 13. 10K X 2
 
@@ -92,13 +94,13 @@ For the resistors - just by these in assorted lots - eBay
 
 15. 2.2K X 2
 
-16. 560R X 4- you may need to buy these separate as they are not used often - eBay
+16. 560R X 4- you may need to buy these separate as they are not used often - [eBay](https://www.ebay.com.au/itm/100Pcs-1-4W-0-25W-Metal-Film-Resistor-1-360-390-430-470-510-560-620-820-Ohm/192076578770?hash=item2cb8a7ffd2:g:6pcAAOSwjDZYd168&frcectupt=true)
 
-17. Right Angle Male Pin Header - eBay
+17. Right Angle Male Pin Header - [eBay](https://www.ebay.com.au/itm/10-pcs-1x40-Pin-2-54mm-Right-Angle-Single-Row-Male-Pin-Header-Connector/301924786435?hash=item464c1ea103:g:iBgAAOSwAYtWG7Hy&frcectupt=true)
 
-18. 5mm LED – eBay
+18. 5mm LED – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=5mm+led&_sacat=0&_sop=15)
 
-19. 2N3904 Transistor - eBay
+19. 2N3904 Transistor - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR3.TRC1.A0.H0.X2n3904.TRS0&_nkw=2n3904&_sacat=0)
 
 
 ## Step 2: Dub Siren Schematic and PCB Files
@@ -109,12 +111,14 @@ For the resistors - just by these in assorted lots - eBay
 
 ![Step 2: Dub Siren Schematic and PCB Files image 3](images/step02_03.jpg)
 
-I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on schematic and board design. They are easy to understand and once you get the hang of it, easier than you think.
+I have started to design my own PCB's using Eagle. If you are interested in getting into designing your own then I highly recommend Sparkfun's tutorials on [schematic](https://learn.sparkfun.com/tutorials/using-eagle-schematic/all) and [board design](https://learn.sparkfun.com/tutorials/using-eagle-board-layout). They are easy to understand and once you get the hang of it, easier than you think.
 
-You can't attach zip files to Instructables pages so I have linked all of the files to my Google drive. The zip file has all of the gerber files which you need to get the PCB printed. Just save that file and sent it to your favourite PCB manufacture. I use JLCPCB but there are plenty of others you can use.
+You can't attach zip files to Instructables pages so I have linked all of the files to my [Google drive](https://drive.google.com/drive/folders/1410Pu0V8KzUc93xflQobwn_AESKFg6e7?usp=sharing). The zip file has all of the gerber files which you need to get the PCB printed. Just save that file and sent it to your favourite PCB manufacture. I use [JLCPCB](https://jlcpcb.com/e?gclid=Cj0KCQjwuJz3BRDTARIsAMg-HxXQlC6JQ_bVu3kRlQAl3ErrFHUAW0t2TbWZCCef_iWWsQPk8QTpZg0aAqOpEALw_wcB) but there are plenty of others you can use.
 
 I've also included a PCB which has all of the pots included on the circuit board. It means that you don't have to solder all of those wires to the circuit board. However, it will limit where you can add the pots to the case. Up to you which one you want to use.
 
+
+- [Dub Siren Pots Inc](pdfs/Dub Siren Pots Inc.pdf)
 
 ## Step 3: Dub Siren Circuit
 
@@ -149,7 +153,7 @@ Steps:
 
 ![Step 4: Modifying the Echo Circuit image 4](images/step04_04.jpg)
 
-This mod is one that the manufacturers suggest to do if you want to control the echo. I wish that they would just add the pot but unfortunately they have only have added a reverb pot. I did an Instructable on how to use this module so if you want further info check it out here
+This mod is one that the manufacturers suggest to do if you want to control the echo. I wish that they would just add the pot but unfortunately they have only have added a reverb pot. I did an Instructable on how to use this module so if you want further info check it out [here](https://www.instructables.com/id/Echo-Reverb-Box/)
 
 Steps:
 
@@ -168,7 +172,7 @@ Steps:
 
 The dub siren takes 4 circuits altogether. 3 are off the shelf ones you can get from eBay and the 4th is the dub siren PCB you'll need to get printed.
 
-The below image is a guide on how all of the circuits join together. You can see that to power the dub siren i used a mobile phone battery. The charging module that it is connected to is also a voltage regulator (pretty neat hey!). I did an Instructable on how to use one of these modules and wire it up which you can find here.
+The below image is a guide on how all of the circuits join together. You can see that to power the dub siren i used a mobile phone battery. The charging module that it is connected to is also a voltage regulator (pretty neat hey!). I did an Instructable on how to use one of these modules and wire it up which you can find [here](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/).
 
 
 ## Step 6: The Case
@@ -332,6 +336,10 @@ As previously mentioned, I use the speed and pitch quite often on the dub siren 
 
 Download some dub reggae music as well and start to add some sound effects to it. And have fun!
 
+
+## Downloads
+
+- [Dub Siren Pots Inc](pdfs/Dub Siren Pots Inc.pdf)
 
 ---
 *50 images archived*

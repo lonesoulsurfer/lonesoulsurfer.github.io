@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Dub-Siren-555-Timer/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -21,9 +23,9 @@ The dub siren is based around 2 x 555 timers and a LM741 Op amp. Adding a bunch 
 
 They are usually played with a reverb guitar pedal but I decided to add my own reverb circuit (no need to make this one as you can buy them on eBay) to the final build. Adding this circuit gives you some amazing sounds to help you play along to your favourite dub, hip hop, disco house or whatever else you want to play along to.
 
-The circuit wasn’t too difficult although the schematic look me a little to get my head around. I found that I only had to modify it a little (if you are going to add the revert circuit you will also need to do the modification) to get the sound I wanted. I’ve included the original schematic (you can also find it here) and also my modified one.
+The circuit wasn’t too difficult although the schematic look me a little to get my head around. I found that I only had to modify it a little (if you are going to add the revert circuit you will also need to do the modification) to get the sound I wanted. I’ve included the original schematic ([you can also find it here](https://jacoblysgaard.com/2009/08/dyi-dub-siren-%E2%80%93-the-complete-rubdown/)) and also my modified one.
 
-Hackaday were nice enough to do a review of this project which can be found here
+[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) were nice enough to do a review of this project which can be found [here](https://hackaday.com/2019/11/29/dub-siren-synth-does-it-the-old-school-way/)
 
 
 ## Step 1: Parts
@@ -42,35 +44,35 @@ Hackaday were nice enough to do a review of this project which can be found here
 
 Dub Siren
 
-1. LM555n × 2 – eBay
+1. LM555n × 2 – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1313.TR10.TRC0.A0.H0.X555+timer.TRS0&_nkw=555+timer&_sacat=0)
 
-2. LM741 × 1 operational amplifier – eBay
+2. LM741 × 1 operational amplifier – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xlm741.TRS0&_nkw=lm741&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=555+timer)
 
-3. Momentary on/off button – Normally on - eBay and off/on - eBay
+3. Momentary on/off button – Normally on - [eBay](https://www.ebay.com.au/itm/5PCS-Black-Mini-Push-Button-Momentary-N-O-Switch-PBS-110-OFF-ON/232435034133?hash=item361e352815:g:k50AAOSwjTlZg~wM) and off/on - [eBay](https://www.ebay.com.au/itm/Momentary-Switch-SPST-NO-DS-212-Round-Cap-Push-Button-Switch-16-mm-5A-250V/253777528081?hash=item3b1651c511:m:mXsHtZ7aAb0STMkivgRyoIA)
 
-4. 2 X On/off switch – eBay
+4. 2 X On/off switch – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xmini+toggle+switch.TRS0&_nkw=mini+toggle+switch&_sacat=0)
 
-5. 1/4” Output Jack – eBay (optional but I wanted a way that you could plug it into an amp)
+5. 1/4” Output Jack – [eBay](https://www.ebay.com.au/itm/2pcs-Mono-1-4inch-Output-Jack-Socket-Plate-for-Fender-Tele-Electric-Guitar/132747175229?hash=item1ee859253d:g:C1oAAOSw1H9bdin2) (optional but I wanted a way that you could plug it into an amp)
 
-6. 3.5mm Output Jack – eBay
+6. 3.5mm Output Jack – [eBay](https://www.ebay.com.au/itm/10-Pcs-Panel-PCB-Female-3-5mm-Headphone-Jack-Audio-Connectors-JR/132565480819?hash=item1edd84b573:g:a8UAAOSw~P9avdwj)
 
-7. 5mm LED – eBay
+7. 5mm LED – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR4.TRC1.A0.H0.X5mm+led.TRS0&_nkw=5mm+led&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=3.5mm+output+Jack+&LH_TitleDesc=0)
 
 8. 3 X 9V battery’s. Yes you need 3 9v Batteries! Each circuit will need it's own power source. There is too much noise if you don't. Smarter people then me will know how to isolate each circuit but I don't...yet.
 
-9. 3 X 9V battery Holders – eBay
+9. 3 X 9V battery Holders – [eBay](https://www.ebay.com.au/itm/Replacement-9V-Battery-Box-Case-Holder-Connector-A2R6/323144687061?hash=item4b3cec9dd5:g:~BQAAOSwhuxaqn0p)
 
-10. Knobs – eBay
+10. Knobs – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR11.TRC1.A0.H0.Xpotentiometer+knobs.TRS0&_nkw=potentiometer+knobs&_sacat=0)
 
 11. Case – I found mine at the dump. I think it was an old CB radio
 
-12. 50K X 5 pots - eBay
+12. 50K X 5 pots - [eBay](https://www.ebay.com.au/itm/2-5-10PCS-B500K-50K-1K-Ohm-3-Pins-Shaft-Linear-Rotary-Taper-Potentiometer-WH148/263838249404?hash=item3d6dfc31bc:m:mgx7CZa9H2tiDe7pctMa_2Q)
 
-13. Protoboard – eBay
+13. Protoboard – [eBay](https://www.ebay.com.au/itm/10x-DIY-Prototype-Paper-PCB-Experiment-Board-Bakelite-Circuit-Board-4-8x13-3cm/142759746052?hash=item213d24da04:g:sFUAAOSwcEha0XL3)
 
 14. Plenty of wire
 
-Caps – I got mine from eBay. Best to buy them in assorted lots. Ceramic - eBay Electrolytic - eBay
+Caps – I got mine from eBay. Best to buy them in assorted lots. Ceramic - [eBay](https://www.ebay.com.au/itm/450pcs-10Value-50V-10pF-100nF-Ceramic-Capacitors-Assortment-Assorted-Kit-Box/163087715384?hash=item25f8c90c38) Electrolytic - eBay
 
 15. 47μF × 1
 
@@ -98,7 +100,7 @@ Reverb Module and Amp
 
 2. 50K Pot
 
-3. Amp Module – eBay
+3. Amp Module – [eBay](https://www.ebay.com.au/itm/ammoon-High-Sensitivity-Mini-5W-9V-Amp-Amplifier-Speaker-for-Uke-Guitar-I6B3/132512979045?epid=12012787398&hash=item1eda639865:g:xDgAAOSwBOlajSEM)
 
 
 ## Step 2: The Circuit

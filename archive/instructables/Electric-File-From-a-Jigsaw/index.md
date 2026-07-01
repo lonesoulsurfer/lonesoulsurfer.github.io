@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Electric-File-From-a-Jigsaw/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

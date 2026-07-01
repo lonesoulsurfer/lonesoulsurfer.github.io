@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Lo-Fi-Voice-Sampler-Circuit-Bending-/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,7 +17,7 @@ Source: https://www.instructables.com/Lo-Fi-Voice-Sampler-Circuit-Bending-/
 
 ![Intro 4](images/intro_04.jpg)
 
-All credit goes to Dani Dögenigt on this build which happens to be my 100th Instructable!
+All credit goes to [Dani Dögenigt](http://www.dogenigt.com/2014/01/greeting-card-sampler-boxed.html) on this build which happens to be my 100th Instructable!
 
 I just want to take a moment and and give a massive shout out and a whole lot of thanks to Instrucables. What an amazing place to share ideas and connect with like minded people. It's allowed me to really expand my abilities and has given me an avenue to share a a bunch of projects with you all. Last but not least, I would like to thank anyone who has voted for me in a competition, you dudes rock!
 
@@ -23,7 +25,7 @@ Back to the project at hand... Whist traversing the hackaday website, I came acr
 
 The case comes from an old intercom that I had lying around. the great thing about these is they come in pairs so you can easily make 2 if you want.
 
-check out this website if you want to get a crash course in circuit bending
+check out this website if you want to get a crash course in [circuit bending](http://www.circuitbenders.co.uk/tips.html)
 
 The circuit I used is from a very cheapo voice recorder. Dani Dögenigt uses a similar one but is a lot harder to hack. The one I used is relativity simple to find sounds on and solder extra wires to. However, you do need some experience at soldering so if you are a beginner, this might not be the project for you.
 
@@ -50,21 +52,21 @@ The circuit I used is from a very cheapo voice recorder. Dani Dögenigt uses a s
 
 Parts
 
-1. Voice Recorder - eBay
+1. Voice Recorder - [eBay](http://www.ebay.com.au/itm/DC-3-5V-ISD1820-Sound-Recorder-Voice-Recording-Module-With-Micophone-Loudspeaker-/262705635880?var=&hash=item3d2a79e228:m:mKI6izvhOairC8dpEYdlimA)
 
-2. 4 X Momentary switches - eBay
+2. 4 X Momentary switches - [eBay](http://www.ebay.com.au/itm/7mm-MOMENTARY-PUSH-BUTTON-SWITCH-NON-LOCKING-GREEN-RED-OR-BLACK-1x-PIECE-/282349715980?hash=item41bd5ac20c:g:ilYAAOSwiONYP5lj)
 
-3. 4 x Toggle Switches - eBay
+3. 4 x Toggle Switches - [eBay](http://www.ebay.com.au/itm/1-Pcs-Red-3-Pin-ON-ON-Mini-Toggle-Switch-3-Position-SPDT-AC-6A-125V-3A-250V-New-/361337383612?hash=item542162eabc:g:yNsAAOSwu4BVnMVx)
 
-4. 2 x Potentiometer 1M - eBay
+4. 2 x Potentiometer 1M - [eBay](http://www.ebay.com.au/itm/Linear-Mono-Potentiometer-1K-2K-5K-10K-20K-50K-100K-500K-1M-ohm-Kit-Free-P-P-/222357232369?var=&hash=item33c5861af1:m:mql9bGZP0KR9JODR7YwFQPA)
 
-5. 2 x knobs for potentiometers - eBay
+5. 2 x knobs for potentiometers - [eBay](http://www.ebay.com.au/itm/10PCS-Aluminium-Potentiometer-Knobs-Volume-Control-Amplifier-Shaft-6MM-Gift-OZ-/132021422263?hash=item1ebd1708b7:g:XpkAAOSwGotWi5w0)
 
 6. Thin wire
 
-7. 2 x AA battery holder - eBay. You could use AAA as well.
+7. 2 x AA battery holder - [eBay](http://www.ebay.com.au/itm/5x-Black-Plastic-Battery-Case-Holder-Wire-2-x-1-5V-AAA-L3-/272300518003?hash=item3f66602a73:g:uk4AAOSwuzRXf1dv). You could use AAA as well.
 
-8. Audio input - eBay
+8. Audio input - [eBay](http://www.ebay.com.au/itm/2-Pcs-3-5mm-Stereo-Female-Jack-Socket-PCB-Mount-Stereo-Connector-Adapter-/331663510557?hash=item4d38af8c1d:m:m6VMPwPdMoHML7Kei1Aexug)
 
 9. Case to add the speaker, circuit board and all the bits into. You just use a project box or maybe something like a transistor or walkie talkie, or what ever you want really. I used a vintage intercom to house my parts in. I have also included some other case ideas in the images
 

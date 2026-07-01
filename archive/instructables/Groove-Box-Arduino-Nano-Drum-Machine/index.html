@@ -162,7 +162,7 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
   <a href="../../README.html">&larr; All Projects</a>
   <span class="nav-title">Groove Box - Arduino Nano Drum Machine</span>
 </nav>
-<h1>Groove Box - Arduino Nano Drum Machine</h1><div class="source"><a href="https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>In this build I recreate the awesome little drum synth called drum kid by Mattybrad.</p>
+<h1>Groove Box - Arduino Nano Drum Machine</h1><div class="source"><a href="https://www.instructables.com/Groove-Box-Arduino-Nano-Drum-Machine/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Groove Box - Arduino Nano Drum Machine" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"><img src="images/intro_02.jpg" alt="Intro 2" loading="lazy"></div><p>In this build I recreate the awesome little drum synth called <a href="https://github.com/mattybrad/drumkid">drum kid</a>by <a href="https://github.com/mattybrad">Mattybrad</a>.</p>
 <p>Whilst the original DrumKid had Midi in/out, I wanted a way to be able to use the drum machine as a trigger for my other recent builds.</p>
 <p>Luckily Mattybrad included a couple of LED's in the build (5 actually in total) that blink to 4/4 and 1/4 which I could tap into and use as tiggers!</p>
 <p>I'm a total novice when it comes to coding so this solution wasn't elegant but works perfectly.</p>
@@ -175,10 +175,10 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>The plan is to build my own modular synth that anyone can make and play and have it powered by 9V's so it is portable.</p>
 <p>I've put together a small trial case just so I can get a feel for what it could look like which is what you see if the video.</p>
 <p>This will be scrapped and re-built on once I have done a couple more modules.</p>
-<p>As always, I'm keen to get any feedback on what modules or sound effects you think I should add so please let me know in the comments.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step.</p>
+<p>As always, I'm keen to get any feedback on what modules or sound effects you think I should add so please let me know in the comments.</p><h2><span class="step-num">SUPPLIES</span>Supplies</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Supplies image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Supplies image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Supplies image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Supplies image 4" loading="lazy"></div><p>I've created a parts list which can be found in my <a href="https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine">GitHub</a> page and in the PDF file attached to this step.</p>
 <p>The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.</p>
 <p>PARTS:</p>
-<ul>
+<ol>
 <li>PCB - I've designed one for this build with the information on how to print your own in the next step</li>
 <li>Front Panel - The panel is also a PCB so you'll also need to get this printed as well - check out the next step</li>
 <li>Arduino Nano - Ali Express</li>
@@ -194,31 +194,35 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Female Header Pin Socket 15 Pin X 2</li>
 <li>Audio Socket 3.5mm (PN - PJ-301M) X 3</li>
 <li>Mini JST Connector and wire 2 Pin X 11</li>
+</ol>
+<ul>
+<li><a href="pdfs/List of Parts.pdf">List of Parts</a></li>
 </ul><h2><span class="step-num">STEP 1</span>Step 1: Getting Your Boards Printed</h2><div class="step-images"><img src="images/step02_01.jpg" alt="Step 1: Getting Your Boards Printed image 1" loading="lazy"><img src="images/step02_02.jpg" alt="Step 1: Getting Your Boards Printed image 2" loading="lazy"><img src="images/step02_03.png" alt="Step 1: Getting Your Boards Printed image 3" loading="lazy"><img src="images/step02_04.png" alt="Step 1: Getting Your Boards Printed image 4" loading="lazy"><img src="images/step02_05.png" alt="Step 1: Getting Your Boards Printed image 5" loading="lazy"></div><p>We all have different levels of knowledge, so when it comes to a build like this I always try my best to provide a clear step by step guide.</p>
 <p>If however, you're an old hand at this type of thing then you can probably skip a bunch of the steps.</p>
 <p>So with that said, the first thing you will need to do is to get the front panel and PCB printed.</p>
 <p>I use JLCPCB (not affliated) to get this done.</p>
 <p>The front panel is actually just a PCB without any components included!</p>
 <p>The front design is done in a program called Inkscape (available free) and the panel including the holes is done in Fusion 360 (also free!)</p>
-<p>ll the files that you need to build your own Groove Box can be found in my GitHub page This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
+<p>ll the files that you need to build your own Groove Box can be found in my <a href="https://github.com/lonesoulsurfer/Groove-Box-Drum-Machine">GitHub</a> page</p>
+<p>This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.</p>
 <p>STEPS:</p>
-<ul>
-<li>You’ll need to send the Gerber files to a PCB manufacturer like JLCPCB who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.</li>
-<li>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find here.</li>
+<ol>
+<li>You’ll need to send the Gerber files to a PCB manufacturer like <a href="https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE">JLCPCB</a> who will print the boards for you. Jump into the Github folder you downloaded, find the Gerber files and then send them off to your PCB manufacturer of choice. Keep them zipped as well when you send them.</li>
+<li>If you have no idea how to do this well, I've put together an Instructable on how to get your broads printed which you can find <a href="https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/">here</a>.</li>
 <li>NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!</li>
 <li>Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and the manufacturer will add it to the back where I have indicated. You can also just hit 'No' when asked if you want to remove the order number. However, this costs $2.</li>
-</ul><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components Part 1 image 5" loading="lazy"></div><p>As the PCB is 2 sided, the order you add the components does matter. Of you get it wrong it's not the end of the world but it might make it a little harder to add some components</p>
+</ol><h2><span class="step-num">STEP 2</span>Step 2: Adding the Components Part 1</h2><div class="step-images"><img src="images/step03_01.jpg" alt="Step 2: Adding the Components Part 1 image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 2: Adding the Components Part 1 image 2" loading="lazy"><img src="images/step03_03.jpg" alt="Step 2: Adding the Components Part 1 image 3" loading="lazy"><img src="images/step03_04.jpg" alt="Step 2: Adding the Components Part 1 image 4" loading="lazy"><img src="images/step03_05.jpg" alt="Step 2: Adding the Components Part 1 image 5" loading="lazy"></div><p>As the PCB is 2 sided, the order you add the components does matter. Of you get it wrong it's not the end of the world but it might make it a little harder to add some components</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.</li>
 <li>I've included a mini JST connector to power the board. Solder the connecter next into place.</li>
 <li>You can now add the capacitors, start with the polyester caps and then add the electrolytic caps</li>
 <li>Now it's time to add the Arduino. I always included header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board</li>
 <li>Add the header pins to the Arduino and then place them into the board and solder into place</li>
-</ul>
+</ol>
 <p>That's the first side done, next, it's time to add the controls to the reverse side</p><h2><span class="step-num">STEP 3</span>Step 3: Adding the Components Part 2</h2><div class="step-images"><img src="images/step04_01.jpg" alt="Step 3: Adding the Components Part 2 image 1" loading="lazy"><img src="images/step04_02.jpg" alt="Step 3: Adding the Components Part 2 image 2" loading="lazy"><img src="images/step04_03.jpg" alt="Step 3: Adding the Components Part 2 image 3" loading="lazy"><img src="images/step04_04.jpg" alt="Step 3: Adding the Components Part 2 image 4" loading="lazy"><img src="images/step04_05.jpg" alt="Step 3: Adding the Components Part 2 image 5" loading="lazy"><img src="images/step04_06.jpg" alt="Step 3: Adding the Components Part 2 image 6" loading="lazy"></div><p>The trickiest part here is to add the LED's. They need to be raised from the board to ensure that the tops poke out the holes in the front panel.</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>The LED's need to sit about 10mm off the PCB. I made a little jig/spacer out of some scrap metal to ensure that they are all even and are sitting off the board.</li>
 <li>To find the right height of the LED's, add a couple of potentiometers into the board (don't solder then in place yet) Put an LED into the board and place the jog between the legs so the LED is resting on top of it. Place the front panel into place and have it resting on the potentiometers. If the top of the LED is showing through the front panel then your jig is the right height. Make adjustments where needed.</li>
 <li>Take out the potentiometers, flip the board over and with the jig in place, solder one of the LED legs. Flip over and make sure the LED is sitting straight and then solder the other leg. Do this for all 5 LED's</li>
@@ -226,27 +230,28 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Solder the on/off switch into place</li>
 <li>Now you can move onto the 4 audio jacks</li>
 <li>Lastly, solder all of the 4 pots into place.</li>
-</ul><h2><span class="step-num">STEP 4</span>Step 4: Uploading the Sketch to the Arduino</h2><div class="step-images"><img src="images/step05_01.png" alt="Step 4: Uploading the Sketch to the Arduino image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Uploading the Sketch to the Arduino image 2" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
+</ol><h2><span class="step-num">STEP 4</span>Step 4: Uploading the Sketch to the Arduino</h2><div class="step-images"><img src="images/step05_01.png" alt="Step 4: Uploading the Sketch to the Arduino image 1" loading="lazy"><img src="images/step05_02.jpg" alt="Step 4: Uploading the Sketch to the Arduino image 2" loading="lazy"></div><p>If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out <a href="https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE">this link</a>.</p>
+<p>It's really straight forward and doesn't need any special tools - just a computer and a USB cord.</p>
 <p>STEPS:</p>
-<ul>
+<ol>
 <li>Open the sketch in the software folder which will take you to Arduino IDE</li>
 <li>Connect your Arduino and upload the sketch</li>
 <li>There are a number of libraries that you may have to add if you haven't downloaded these already. This couldn't be simpler to do - just follow the following instructions - https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries/</li>
 <li>Once the sketch is loaded to Arduino you can connect it to the PCB in preparation for testing.</li>
 <li>You can now connect the PCB to a 9V to 12V power source and check that the groove box works. Plug a speaker in to the out jack and hit the start button. The Groove Box comes programmed already with a number of beats and you should be able to hear the first one play. Try turning the pots and see what changes you can make to the start-up beat.</li>
 <li>If you're not hearing anything then you might need to do some troubleshooting.</li>
-</ul><h2><span class="step-num">STEP 5</span>Step 5: Adding the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Front Panel image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Front Panel image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Front Panel image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Adding the Front Panel image 6" loading="lazy"></div><p>STEPS:</p>
-<ul>
+</ol><h2><span class="step-num">STEP 5</span>Step 5: Adding the Front Panel</h2><div class="step-images"><img src="images/step06_01.jpg" alt="Step 5: Adding the Front Panel image 1" loading="lazy"><img src="images/step06_02.jpg" alt="Step 5: Adding the Front Panel image 2" loading="lazy"><img src="images/step06_03.jpg" alt="Step 5: Adding the Front Panel image 3" loading="lazy"><img src="images/step06_04.jpg" alt="Step 5: Adding the Front Panel image 4" loading="lazy"><img src="images/step06_05.jpg" alt="Step 5: Adding the Front Panel image 5" loading="lazy"><img src="images/step06_06.jpg" alt="Step 5: Adding the Front Panel image 6" loading="lazy"></div><p>STEPS:</p>
+<ol>
 <li>The front panel has been designed so it fits perfectly onto the PCB. Carefully place the front panel so it aligns with the components and push it into place. I usually start with the on/off switch and then align the pots and LED's with the holes in the front panel.</li>
 <li>You may need to trim the little tabs on the pots if they have them.</li>
 <li>Now you can add the nuts to the pots, audio jacks and on/off switches to secure the front panel to the PCB.</li>
 <li>This is actually the 2nd iteration of the Groove Box, the first one had the audio jacks at the bottom which held the front panel well. However, the 2nd version I found that the front panel wasn't secured as well where the momentary switches are so I've modified the files to include a couple of M2 screws and nuts to help better secure it.</li>
 <li>Now that the front panel is in place you can either make an individual case you house it in or add it to your Eurorack. You can see in the images that I've included it in my little Eurorack synth.</li>
-</ul><h2><span class="step-num">STEP 6</span>Step 6: How to Play the Groove Box</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: How to Play the Groove Box image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: How to Play the Groove Box image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: How to Play the Groove Box image 3" loading="lazy"></div><p>Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my GitHub page</p>
+</ol><h2><span class="step-num">STEP 6</span>Step 6: How to Play the Groove Box</h2><div class="step-images"><img src="images/step07_01.jpg" alt="Step 6: How to Play the Groove Box image 1" loading="lazy"><img src="images/step07_02.jpg" alt="Step 6: How to Play the Groove Box image 2" loading="lazy"><img src="images/step07_03.jpg" alt="Step 6: How to Play the Groove Box image 3" loading="lazy"></div><p>Playing the Groove Box is really straight forward (don't be put off by the instructions below!) You can find the full manual on how to play the Groove Box below (thanks again to Matt Bradshaw for putting these together) You can also find the instructions on my <a href="https://github.com/lonesoulsurfer/Groove_Box_Drum_Machine">GitHub</a> page</p>
 <p>Inputs</p>
 <p>There are 4 audio inputs included on the Groove Box. 2 of these are Sync outs for 4/4 time signature, 1 is 1/4 time signature and the other is Audio out.</p>
 <p>Basic Functions</p>
-<ul>
+<ol>
 <li>Press the start/stop button to start or stop the rhythm</li>
 <li>Press buttons A/B/C/D to select different knob functions (see table below)</li>
 <li>Turn any of the four knobs to alter the parameters in the current selected group (see table below)</li>
@@ -254,43 +259,43 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Press buttons A+B together to load a session, then choose which session to load by pressing any of the buttons (or press multiple buttons together to cancel)</li>
 <li>Press buttons C+D together to save a session, then choose which slot to save your session in by pressing any of the buttons (or press multiple buttons together to cancel)</li>
 <li>Press buttons B+C together to change the current active memory bank, then choose a specific memory bank by pressing any of the buttons</li>
-</ul>
+</ol>
 <p>Other functions</p>
 <p>A few extra hidden functions:</p>
-<ul>
+<ol>
 <li>Press buttons A+B+C together to reset your beat to default values. This will not affect any saved beats</li>
 <li>Press buttons A+B+D together to generate a random beat. This will also not affect any saved beats</li>
-</ul>
+</ol>
 <p>Parameters</p>
 <p>There are 16 different parameters which can be adjusted on DrumKid, split into four groups, with each group's four parameters controlled by the four knobs. The parameters are grouped as follows:</p>
 <p>Group A (randomness)</p>
-<ul>
+<ol>
 <li>Chance</li>
 <li>Zoom</li>
 <li>Range</li>
 <li>Midpoint</li>
-</ul>
+</ol>
 <p>Group B (effects)</p>
-<ul>
+<ol>
 <li>Pitch</li>
 <li>Crush</li>
 <li>Crop</li>
 <li>Drop</li>
-</ul>
+</ol>
 <p>Group C (drone)</p>
-<ul>
+<ol>
 <li>Drone</li>
 <li>Modulate</li>
 <li>Tuning</li>
 <li>Note</li>
-</ul>
+</ol>
 <p>Group D (rhythm)</p>
-<ul>
+<ol>
 <li>Beat</li>
 <li>Beats/bar (time signature)</li>
 <li>Swing</li>
 <li>Tempo</li>
-</ul>
+</ol>
 <p>You can try out each parameter by starting a rhythm (using the start/stop button), then selecting a group and turning the different knobs.</p>
 <p>For example, try selecting group B (by pressing the B button) then turning the first knob, which will now control "pitch".</p>
 <p>You should hear the sound change.</p>
@@ -365,6 +370,12 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <li>Unsquare ⚪⚪⚫⚪⚪</li>
 <li>Nihil ⚪⚪⚪⚫⚪</li>
 </ol>
+<ul>
+<li><a href="pdfs/manual - Groove Box.pdf">manual - Groove Box</a></li>
+</ul><h2><span class="step-num">FILES</span>Downloads</h2><ul>
+<li><a href="pdfs/List of Parts.pdf">List of Parts</a></li>
+<li><a href="pdfs/manual - Groove Box.pdf">manual - Groove Box</a></li>
+</ul>
 <div class="lb-overlay" id="lb" onclick="this.classList.remove('active')">
   <span class="lb-close" onclick="document.getElementById('lb').classList.remove('active')">&times;</span>
   <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electronic Cricket  Game</title>
+<title>Electronic Cricket Game</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -160,9 +160,9 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <body>
 <nav class="nav">
   <a href="../../README.html">&larr; All Projects</a>
-  <span class="nav-title">Electronic Cricket  Game</span>
+  <span class="nav-title">Electronic Cricket Game</span>
 </nav>
-<h1>Electronic Cricket  Game</h1><div class="source"><a href="https://www.instructables.com/Electronic-Cricket-Game/" target="_blank">View on Instructables &rarr;</a></div><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>Build your own electronic, handheld cricket game. Cricket Test matches are known for being played over 5 days and sometimes there’s still not a winner – 5 days!!!</p>
+<h1>Electronic Cricket Game</h1><div class="source"><a href="https://www.instructables.com/Electronic-Cricket-Game/" target="_blank">View on Instructables &rarr;</a></div><img class="cover-img" src="images/cover.jpg" alt="Electronic Cricket Game" loading="lazy"><hr><h2><span class="step-num">INTRO</span>Introduction</h2><div class="step-images single"><img src="images/intro_01.jpg" alt="Intro 1" loading="lazy"></div><p>Build your own electronic, handheld cricket game. Cricket Test matches are known for being played over 5 days and sometimes there’s still not a winner – 5 days!!!</p>
 <p>I think you need to have been brought up watching cricket matches on TV and playing games in the street as a kid to be able to really appreciate it.</p>
 <p>These days, it’s very rare that I find the time to watch a whole test match through to the bitter end.</p>
 <p>I just don’t have the time (or the patience) to sit and watch a whole game.</p>
@@ -175,38 +175,39 @@ a:hover { color: #d4cfc8; text-decoration: underline; }
 <p>If you are a beginner, I would start with a few 555 timer projects first and then try your hand at this.</p><h2><span class="step-num">STEP 1</span>Step 1: Parts and Tools</h2><div class="step-images"><img src="images/step01_01.jpg" alt="Step 1: Parts and Tools image 1" loading="lazy"><img src="images/step01_02.jpg" alt="Step 1: Parts and Tools image 2" loading="lazy"><img src="images/step01_03.jpg" alt="Step 1: Parts and Tools image 3" loading="lazy"><img src="images/step01_04.jpg" alt="Step 1: Parts and Tools image 4" loading="lazy"><img src="images/step01_05.jpg" alt="Step 1: Parts and Tools image 5" loading="lazy"></div><p>The project is made up of 2 different circuits. One for the actual cricket game and one for scoring. I have listed the parts for each circuit below</p>
 <p>Cricket Game Parts</p>
 <ol>
-<li>Perf Board - eBay</li>
-<li>555 Timer IC – eBay</li>
-<li>4017 IC - eBay</li>
-<li>2 X 12K Resistors – eBay</li>
-<li>50K Potentiometer - eBay. This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's</li>
-<li>1uf Capactor – eBay</li>
-<li>10p (0.01) Capacitor – eBay</li>
-<li>2.2 uf Capacitor – eBay (you may have noticed that this isn’t in the schematic. I use this later in the build so the player has the ability to slow down the LED’s if they wish to. It isn’t necessary to add this if you don’t want to</li>
-<li>Momentary Button – eBay</li>
-<li>2 X red LED’s - eBay</li>
+<li>Perf Board - <a href="https://www.ebay.com.au/itm/Small-Breadboard-Layout-Prototyping-Board/253716091720?epid=944019644&hash=item3b12a85348:g:1mkAAOSwRuVbNFsD">eBay</a></li>
+<li>555 Timer IC – <a href="https://www.ebay.com.au/itm/10-20-50-100-PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/302152230012?hash=item4659ad247c:m:m0J3yUXSmG3OKjaZZGJ-W3A">eBay</a></li>
+<li>4017 IC - <a href="https://www.ebay.com.au/itm/10PCS-CD4017-CD4017BE-4017-DECADE-COUNTER-DIVIDER-IC-S/191736127618?hash=item2ca45d2082:g:nDQAAOSwpRRWnZQp">eBay</a></li>
+<li>2 X 12K Resistors – <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistor.TRS0&_nkw=resistor&_sacat=0">eBay</a></li>
+<li>50K Potentiometer - <a href="https://www.ebay.com.au/itm/50K-Ohm-16mm-Linear-Potentiometer-18T-Spline-Single-Horizontal-PCB-Alpha-B50K/253032237677?epid=24004800694&hash=item3ae9e58a6d:g:Hz0AAOSwgv5ZXtFs">eBay</a>. This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's</li>
+<li>1uf Capactor – <a href="https://www.ebay.com.au/itm/540Pc-24-Value-0-1uF-1000UF-Electrolytic-Capacitors-Assortment-Kit-Capacitor-Set/282961206984?epid=10019256496&hash=item41e1cd5ec8:g:SZ0AAOSwKMRa9UyO">eBay</a></li>
+<li>10p (0.01) Capacitor – <a href="https://www.ebay.com.au/itm/450pcs-10Value-50V-10pF-100nF-Ceramic-Capacitors-Assortment-Assorted-Kit-Box/163087715384?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20151005190540%26meid%3D0718c1ff640c4470870132e5d5dfefd6%26pid%3D100505%26rk%3D1%26rkt%3D1%26%26itm%3D163087715384&_trksid=p2045573.c100505.m3226">eBay</a></li>
+<li>2.2 uf Capacitor – <a href="https://www.ebay.com.au/itm/540Pc-24-Value-0-1uF-1000UF-Electrolytic-Capacitors-Assortment-Kit-Capacitor-Set/282961206984?epid=10019256496&hash=item41e1cd5ec8:g:SZ0AAOSwKMRa9UyO">eBay</a> (you may have noticed that this isn’t in the schematic. I use this later in the build so the player has the ability to slow down the LED’s if they wish to. It isn’t necessary to add this if you don’t want to</li>
+<li>Momentary Button – <a href="https://www.ebay.com.au/itm/NEW-12PCS-Push-Button-Momentary-Panel-Mount-Switch-Knob-Small-Mini-N-O-6-Color/153017747032?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3Da1d30390ba6f47b1853ac326ef7dad0b%26pid%3D100507%26rk%3D1%26rkt%3D1%26%26itm%3D153017747032&_trksid=p2045573.c100507.m3226">eBay</a></li>
+<li>2 X red LED’s - <a href="https://www.ebay.com.au/itm/LED-Diode-Kit-3mm-5mm-LED-Lights-Emitting-Diodes-Assorted-Clear-Bulbs-with-S1Z4/192493442090?epid=2282666457&hash=item2cd180d42a:g:slMAAOSwi4daubov">eBay</a></li>
 <li>4 X Green LED’s</li>
 <li>2 X Blue LED’s</li>
-<li>50K Potentiometer - eBay. This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's</li>
-<li>On/off switch - eBay</li>
-<li>9V Battery Holder - eBay</li>
+<li>50K Potentiometer - <a href="https://www.ebay.com.au/itm/50K-Ohm-16mm-Linear-Potentiometer-18T-Spline-Single-Horizontal-PCB-Alpha-B50K/253032237677?epid=24004800694&hash=item3ae9e58a6d:g:Hz0AAOSwgv5ZXtFs">eBay</a>. This is used instead of the 100R resistor on the LED's. It gives you the ability to control the brightness of the LED's</li>
+<li>On/off switch - <a href="https://www.ebay.com.au/itm/10-x-On-Off-On-Momentary-Mini-Toggle-Switch-Car-Motor-Dash-Dash-SPDT-3Pin-Sales/201939647988?hash=item2f048a7df4:g:ztcAAOSwIFtaCleh">eBay</a></li>
+<li>9V Battery Holder - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0">eBay</a></li>
 <li>9 V Battery</li>
 </ol>
 <p>Scoring Circuit Parts</p>
 <ol>
-<li>2 X 7 Segment displays – eBay</li>
-<li>10K Resistor - eBay</li>
-<li>20K resistor – eBay</li>
-<li>2 X Momentary switches – eBay</li>
-<li>555 IC – eBay</li>
-<li>2 X 4026 IC’s – eBay</li>
-<li>Perf Board – eBay</li>
+<li>2 X 7 Segment displays – <a href="https://www.ebay.com.au/itm/5-Pcs-10-Pin-1-Bit-7-Segment-1-Red-LED-Display-Digital-Tube-Common-Cathode-FT/132687817020?hash=item1ee4cf693c:g:eTwAAOSwkLJbJfUU">eBay</a></li>
+<li>10K Resistor - <a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistor.TRS0&_nkw=resistor&_sacat=0">eBay</a></li>
+<li>20K resistor – e<a href="https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xresistor.TRS0&_nkw=resistor&_sacat=0">Bay</a></li>
+<li>2 X Momentary switches – <a href="https://www.ebay.com.au/itm/NEW-12PCS-Push-Button-Momentary-Panel-Mount-Switch-Knob-Small-Mini-N-O-6-Color/153017747032?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160630134829%26meid%3Da1d30390ba6f47b1853ac326ef7dad0b%26pid%3D100507%26rk%3D1%26rkt%3D1%26%26itm%3D153017747032&_trksid=p2045573.c100507.m3226">eBay</a></li>
+<li>555 IC – <a href="https://www.ebay.com.au/itm/10-20-50-100-PCS-NE555P-NE555-DIP-8-SINGLE-BIPOLAR-TIMERS-IC/302152230012?hash=item4659ad247c:m:m0J3yUXSmG3OKjaZZGJ-W3A">eBay</a></li>
+<li>2 X 4026 IC’s – <a href="https://www.ebay.com.au/itm/5pcs-CD4026-CD4026BE-4026-IC-CMOS-Counters-Decade-Divider-DIP-16/191736128099?hash=item2ca45d2263:g:qzYAAOSwFqJWrvi7">eBay</a></li>
+<li>Perf Board – <a href="https://www.ebay.com.au/itm/Small-Breadboard-Layout-Prototyping-Board/253716091720?epid=944019644&hash=item3b12a85348:g:1mkAAOSwRuVbNFsD">eBay</a></li>
 </ol><h2><span class="step-num">STEP 2</span>Step 2: Bread-boarding the Circuits</h2><div class="step-images"><img src="images/step02_01.png" alt="Step 2: Bread-boarding the Circuits image 1" loading="lazy"><img src="images/step02_02.png" alt="Step 2: Bread-boarding the Circuits image 2" loading="lazy"><img src="images/step02_03.gif" alt="Step 2: Bread-boarding the Circuits image 3" loading="lazy"><img src="images/step02_04.gif" alt="Step 2: Bread-boarding the Circuits image 4" loading="lazy"></div><p>First things first - you should always breadboard your circuits first to make sure that the work.</p>
 <p>The initial schematic that I used for the scoreboard worked really well but I accidentally deleted it and couldn't find it again on-line.</p>
 <p>I did find another and it seemed to do the trick.</p>
 <p>Once you have made the circuits and everything is working as it should be, it's then time to move onto soldering the first one together which will be the actual cricket game.</p>
-<p>You can find the original circuit design website for the cricket game here</p>
-<p>You can find the original circuit design website for the scoreboard here</p><h2><span class="step-num">STEP 3</span>Step 3: Cricket Match Game - Circuit</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Cricket Match Game - Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cricket Match Game - Circuit image 2" loading="lazy"></div><p>This circuit is pretty straight forward but like the scoreboard, it will need a lot of wires to connect all of the LED's together.</p>
+<p>You can find the original circuit design website for the cricket game <a href="https://www.electroschematics.com/6158/electronic-cricket/">here</a></p>
+<p>You can find the original circuit design website for the scoreboard h[ere](https://www.google.com.au/url?sa=i&source=images&cd=&ved=2ahUKEwiJ3-n-7pjc</p>
+<p>AhUCybwKHd9RD7sQjhx6BAgBEAM&url=http%3A%2F%2Fwww.gadgetronicx.com%2Ftwo-digit-counter-circuit-7-segment%2F&psig=AOvVaw1tjz96LktKnE63tb9gXMhF&ust=1531461012268847)</p><h2><span class="step-num">STEP 3</span>Step 3: Cricket Match Game - Circuit</h2><div class="step-images"><img src="images/step03_01.png" alt="Step 3: Cricket Match Game - Circuit image 1" loading="lazy"><img src="images/step03_02.jpg" alt="Step 3: Cricket Match Game - Circuit image 2" loading="lazy"></div><p>This circuit is pretty straight forward but like the scoreboard, it will need a lot of wires to connect all of the LED's together.</p>
 <p>Note that there is a 100R resistor that connects the negative from the LED's to ground.</p>
 <p>I decided to replace this with a 50K potentiometer so I could dim the LED's as they were very bright.</p>
 <p>Up to you though if you want to replace it or not.</p>

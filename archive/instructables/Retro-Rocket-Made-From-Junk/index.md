@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Retro-Rocket-Made-From-Junk/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -31,19 +33,19 @@ It's obviously nigh on impossible to try and replicate this actual rocket and if
 
 Ray Gun Builds
 
-Ray Gun with Sound effects V2
+[Ray Gun with Sound effects V2](https://www.instructables.com/Ray-Gun-With-Sound-Effects-V2/)
 
-Ray Gun with Laser Sound Effects
+[Ray Gun with Laser Sound Effects](https://www.instructables.com/Ray-Gun-With-Laser-Sound-Effects/)
 
-Make a Ray Gun
+[Make a Ray Gun](https://www.instructables.com/member/lonesoulsurfer/instructables/)
 
 Junkbots
 
-Light Sensitive Junkbot
+[Light Sensitive Junkbot](https://www.instructables.com/Light-Sensitive-Junkbot/)
 
-Micro Junkbot Display
+[Micro Junkbot Display](https://www.instructables.com/Micro-Junkbot-Display/)
 
-The Art of Making Junkbots
+[The Art of Making Junkbots](https://www.instructables.com/The-Art-of-Making-Junkbots/)
 
 
 ## Step 1: Parts & Tools

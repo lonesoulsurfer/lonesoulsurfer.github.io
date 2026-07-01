@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Rusty-Tools-to-Rustic-Art/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -23,13 +25,13 @@ Turn some rusty tools into works of rustic art.
 
 I have a recycling centre near me that has a shop where you can buy all types of wondrous junk. Whilst doing a little rummaging I came across a bunch of old rusty tools which looked like treasure to me
 
-I have wanted to make some rustic sculptures ever since I discovered Oriol Cabrero’s art. He takes some random parts and makes beautiful and simple sculptures out of them. I’ve taken some inspiration from some of his sculptures and have made my own versions whist a couple are all me.
+I have wanted to make some rustic sculptures ever since I discovered [Oriol Cabrero’s](https://www.google.com.au/search?q=Oriol+Cabrero%E2%80%99s&oq=Oriol+Cabrero%E2%80%99s&aqs=chrome..69i57j0l2.1250j0j4&sourceid=chrome&ie=UTF-8) art. He takes some random parts and makes beautiful and simple sculptures out of them. I’ve taken some inspiration from some of his sculptures and have made my own versions whist a couple are all me.
 
 It’s really hard making an ible” on this type of subject as it comes down to personal taste and creativity. However, hopefully I can explain a few techniques I have learnt and help you get started on making your own rustic art.
 
 The wood that I used is all drift wood. You could just any old wood really but I have always liked working with found wood.
 
-Lastly, if you need some inspiration, check out this Pinterest page
+Lastly, if you need some inspiration, check out [this Pinterest page](https://au.pinterest.com/marcusdunn/rustic-art/)
 
 
 ## Step 1: Parts to Gather

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Push-Puppet-Automata/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,7 +19,7 @@ As a kid I was always amazed by push puppets. You know the the little (usually w
 
 recently I was thinking how I could make one move and have it sound activated. I initially started to think about an arduino to do the job but couldn't find any good tutorials. I needed to have the microphone convert the sound signal into movement for the servo. I wanted to use a solenoid initially but realized that it probably wouldn't be strong enough to move the spring.
 
-I decided to use some little bits instead. I had some modules from a competition I won sitting in a draw and decided to see what I could do with them. Luckily, I had just the right ones to do what I needed!
+I decided to use some [little bits](http://littlebits.cc/shop) instead. I had some modules from a competition I won sitting in a draw and decided to see what I could do with them. Luckily, I had just the right ones to do what I needed!
 
 The build isn't too complicated, but you will need to find a photo frame that has some depth like the one I used. I purchased the one I used from Kmart (Australia). You could also just make one out of wood if your that way inclined.
 
@@ -41,23 +43,23 @@ Parts:
 
 2. Little bits: At a minimum, you will need the following:
 
-Servo
+[Servo](http://littlebits.cc/bits/servo)
 
-Microphone
+[Microphone](http://littlebits.cc/bits/sound-trigger)
 
-Power
+[Power](http://littlebits.cc/bits/usb-power)
 
 I also used:
 
-LED
+[LED](http://littlebits.cc/bits/long-led)
 
 Get one of these if you don't want to solder
 
-wire
+[wire](http://littlebits.cc/bits/wire-bit)
 
-3. 3 x AA battery holder - ebay
+3. 3 x AA battery holder - [ebay](http://www.ebay.com.au/itm/Hard-Plastic-Storage-Holder-Case-Box-For-3-X-AA-Battery-With-Wire-Leads-/380930673781?hash=item58b13ccc75:g:zv8AAOSwcnpTnqQG)
 
-4. Push puppet - eBay
+4. Push puppet - [eBay](http://www.ebay.com.au/itm/281748577193?_trksid=p2060353.m1438.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 
 5. Toggle switch
 

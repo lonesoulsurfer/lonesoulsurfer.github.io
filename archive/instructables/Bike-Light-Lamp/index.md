@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Bike-Light-Lamp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,15 +42,15 @@ This is a pretty easy project and the finished build (in my humble opinion) look
 
 Parts:
 
-1. Bike Light (vintage) - eBay You can also get a retro looking one from eBay for cheap!
+1. Bike Light (vintage) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xbike+light+vintage.TRS0&_nkw=bike+light+vintage&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=bike+light) You can also get a retro looking one from [eBay](https://www.ebay.com.au/itm/2016-Retro-Bicycle-Bike-3-LED-Front-Light-Headlight-Vintage-Flashlight-Lamp-RNU/192958493719?_trkparms=ispr%3D1&hash=item2ced38f417:m:mM4q0Zo5hFsA8ADUUrw66tw&enc=AQAEAAAB4BPxNw%2BVj6nta7CKEs3N0qXta35MhILRjFGxLINIw5Wx9Kddh%2Bv%2Bkihxv0QIyVYJXUHVArj2nA0X3nvBrlktOyVVwB4YoDKgQBjGqHLa1h0%2FItlAE%2ByrcEkj6YFuSuoVBLn1Eyw2AfJeqjF6IrrseP5gLHgkb28uWxrV1MYXxyzvKNxR9MbC7EPBXxeAeGrotf6bAtmqscklnCzJiIT%2FvmbZ4wY%2B%2B%2Bgu1Y7P3DcL%2FE14m0536gDroroiglvLxXrY0jmkrVqn6Xi%2BPtaxCkpt7Kuyh%2B18zkvxxYhxdtsYoNZ9aoZKMgYHtRvkwcbU9ANKTV0EtU1EjHHJ99fn1o6X7A83jcN4bvMhtXgiXExbK5ir%2F9jP%2BuOKdFGsezLUBkrNUln6qfZTXIYWKNaDw9dzFkbGC9aaZ0KaNQ6uFcCTXX2NH6UzrRuAuIXu%2Ft%2BNba3K%2BcKm6KtQ3tqj4PuVozOc4M4G40RSMh7twAjPcQhMoo69DIrjM0KMee1697XIt5G3KDPlvT7nL15mtZdUsWQbltM%2FEEN8UP9ln4KY%2FoNlmTuApkydWONsf1dQSntsC%2FKSS7N21B%2F5o0eTfH1np82lJcUOiRiS%2Fpy%2FnFMTwNug3wvpveGvHmZQm62s6aDgXXMRKw%3D%3D&checksum=192958493719d6e5bdf8dfb546028fd1e8ea39688c1c&frcectupt=true)for cheap!
 
-2. Drum stand - eBay
+2. Drum stand - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xdrum+stand.TRS0&_nkw=drum+stand&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=bike+light+vintage)
 
-3. 12v DC power supply - eBay
+3. 12v DC power supply - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.X12v+dc+power+adapter.TRS0&_nkw=12v+dc+power+adapter&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=drum+stand)
 
-4. LED Globe - eBay
+4. LED Globe - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=led+globe+12v+g4&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=led+globe+12v)
 
-5. G4 globe holder - eBay
+5. G4 globe holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=MR11+MR16+G5.3+G4+Lamp+Holder&_sacat=0)
 
 6. You might need a few other bits and pieces as every build will be different.
 

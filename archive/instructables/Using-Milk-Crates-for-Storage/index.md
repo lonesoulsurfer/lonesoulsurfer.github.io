@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Using-Milk-Crates-for-Storage/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

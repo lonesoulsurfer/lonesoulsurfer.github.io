@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Convert-Any-Radio-Into-a-Guitar-Amp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -27,7 +29,7 @@ When you get your hands on a radio that you want to hack, there is a good change
 
 So if you have a vintage radio lying about gathering dust, it’s time to crack it open and turn it into something beautiful.
 
-Check out this website - it has some wicked ideas on how to convert radio's into amps and is a great source of information
+Check out [this website](http://www.radio-guitar-amps.com/) - it has some wicked ideas on how to convert radio's into amps and is a great source of information
 
 
 ## Step 1: Check Out the Video
@@ -40,9 +42,9 @@ I have also recently hacked another radio I found and made a video of it. This i
 
 I'm having issues with posting clips so if you don't see the right one then try either of the 2 links below
 
-Link 1
+[Link 1](https://www.youtube.com/watch?v=6IqswC_Rydo&list=UU3KVtVSsFk13MCDUBh34Drw)
 
-Link 2
+[Link 2](https://www.youtube.com/watch?v=o6tTHIfKfjs&list=UU3KVtVSsFk13MCDUBh34Drw)
 
 
 ## Step 2: Things to Gather
@@ -61,7 +63,7 @@ Parts
 
 1. Vintage radio - check out your local thrift store or op shop. If you have no luck at these places, then there is always eBay!
 
-2. 1/4 mono, input jack - eBay
+2. 1/4 mono, input jack - [eBay](http://www.ebay.com.au/itm/Hot-New-1-4-Mono-Female-Input-Jack-Socket-Plug-Fr-Electric-Guitar-Bass-/140749667726?pt=AU_Laptop_Accessories&hash=item20c5557d8e)
 
 3. Wire - any old lengths
 
@@ -229,9 +231,9 @@ The US on the other hand has an abundance of very cool vintage radio’s availab
 
 For anyone interested in going further with their hacks or want more credible info then my ramblings, then check out the below websites
 
-Radio-Guitar-Amps
+[Radio-Guitar-Amps](http://www.radio-guitar-amps.com/)
 
-Cigar Box Nation
+[Cigar Box Nation](http://www.cigarboxnation.com/group/vintage-radios-converted-into-guitar-amps)
 
 Lonesoulsurfer
 

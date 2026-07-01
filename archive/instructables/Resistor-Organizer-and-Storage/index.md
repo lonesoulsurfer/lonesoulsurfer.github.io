@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Resistor-Organizer-and-Storage/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -30,13 +32,13 @@ I hit upon the idea of using test tubes to store the resistors. They are cheap t
 
 Parts
 
-1. 60 X Plastic Test tubes with lids– eBay. The ones I used have a 16mm ID
+1. 60 X Plastic Test tubes with lids– [eBay.](https://www.ebay.com.au/itm/20pcs-Test-Tubes-100x16mm-Premium-Non-Graduated-Plastic-Test-Tubes-Red-Z6D4-L5C2/173457625421?hash=item2862e1514d:rk:1:pf:0) The ones I used have a 16mm ID
 
-2. Test tube holder – eBay
+2. Test tube holder – [eBay](https://www.ebay.com.au/itm/Plastic-3-Layers-Lab-Test-Tube-Rack-Holder-Centrifugal-Pipe-Stand-40-50-Holes/332214638251?hash=item4d598916ab:rk:1:pf:0&var)
 
 3. Piece of dowel – Hardware Store. I think it was 10mm but to be sure, just take one of the lids from the test tubes to the hardware store to work out the size
 
-4. Resistors – buy them in assorted lots on eBay
+4. Resistors – buy them in assorted lots on [eBay](https://www.ebay.com.au/itm/600pcs-30-Value-1-4W-Resistance-1-Metal-Film-Resistor-Assorted-Kit-Each-20pcs/322935569736?epid=24011254706&hash=item4b3075bd48:g:ZfMAAOSwBahVSH49:rk:1:pf:0)
 
 Tools
 

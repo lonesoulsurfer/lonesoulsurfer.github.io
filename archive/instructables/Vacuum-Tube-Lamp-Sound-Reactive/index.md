@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Vacuum-Tube-Lamp-Sound-Reactive/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,7 +17,7 @@ Source: https://www.instructables.com/Vacuum-Tube-Lamp-Sound-Reactive/
 
 I’ve said it before and I’ll say it again – Vacuum tubes are an amazing thing to behold! I actually think I might have a slight vacuum tube obsession. Every time I come across some vacuum tubes on my journeys I’m compelled to buy them.
 
-The problem I have though is what to do with them all! Most just sit in a draw and I periodically pull them out and to admire them. I've made a display in the past (check out the ‘ible here) but unfortunately I had to damage the bottom of the tube to enable it to be illuminated with an LED.
+The problem I have though is what to do with them all! Most just sit in a draw and I periodically pull them out and to admire them. I've made a display in the past ([check out the ‘ible here](https://www.instructables.com/id/Vacuum-Tube-LED-Candle/)) but unfortunately I had to damage the bottom of the tube to enable it to be illuminated with an LED.
 
 Initially I thought about using the heater coils inside the tube as they will softly glow at low voltages. The problem though is they get very hot and could be dangerous to touch. Instead, I decided to light them up with LED’s but this time I didn't want to have to damage the tube. I also included a circuit where the LED’s react to sound, making them flash and dance to music. I also included a way to turn this function off so the LED’s are just on.
 
@@ -42,35 +44,35 @@ Enough said. Now it’s time to build it.
 
 Sound Controlled Circuit – Parts
 
-1. 3 X LED’s – Green – eBay
+1. 3 X LED’s – Green – [eBay](https://www.ebay.com.au/itm/50PCS-5mm-LED-White-Red-Green-Blue-UV-Bright-Pink-Light-Emitting-Diode/362233885966?hash=item5456d2750e:m:mFwwOxME1TGa8eTfUYNCQoQ:rk:2:pf:0)
 
-2. 2 X 9014 Transistors – eBay
+2. 2 X 9014 Transistors – [eBay](https://www.ebay.com.au/itm/50X-S9014-Transistor-Npn-General-TO92-Package-SS9014-New-Ic-xn/282907910927?hash=item41dea0230f:rk:1:pf:0)
 
-3. 10K, 1M and 4.7K Resistors - eBay (buy them in assorted lots)
+3. 10K, 1M and 4.7K Resistors - [eBay](https://www.ebay.com.au/itm/600x-30-Values-1-4W-Metal-Film-Resistors-Resistance-Assortment-Kit-V3/142999398803?_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D1%26asc%3D20140106155344%26meid%3D1e39faf4e7704714b46eeb1daa797398%26pid%3D100005%26rk%3D3%26rkt%3D12%26sd%3D222708655898%26itm%3D142999398803&_trksid=p2047675.c100005.m1851) (buy them in assorted lots)
 
-4. 47uf and 1uf capacitors – eBay (buy them in assorted lots)
+4. 47uf and 1uf capacitors –[eBay](https://www.ebay.com.au/itm/500Pcs-lot-0-1UF-1000UF-24Values-Electrolytic-Capacitors-16-50V-mix-Electro-M3N7-/253795493405) (buy them in assorted lots)
 
-5. Electret Condenser Microphone – eBay
+5. Electret Condenser Microphone – [eBay](https://www.ebay.com.au/itm/Small-Electret-Condenser-Microphone-MIC-Capsule-20-Pcs/271950965252?epid=1738720227&hash=item3f518a6a04:g:-4EAAOSwAaJaSeWT:rk:7:pf:0)
 
 Other Parts
 
-6. Toggle Switch - 6 Pin 3 Position SPDT – eBay
+6. Toggle Switch - 6 Pin 3 Position SPDT – [eBay](https://www.ebay.com.au/itm/5pcs-AC-125V-6A-3-Position-3Pin-SPDT-ON-OFF-ON-Micro-Mini-Toggle-Switch-TE460/232164669648?hash=item360e17b8d0:rk:1:pf:0)
 
-7. 3.6v 18650 battery – eBay. Or you can pull them from old laptops which is what I did
+7. 3.6v 18650 battery – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR7.TRC1.A0.H0.X18650+samsung.TRS0&_nkw=18650+samsung&_sacat=0). Or you can pull them from old laptops which is what I did
 
-8. 18650 battery holder – eBay
+8. 18650 battery holder – [eBay](https://www.ebay.com.au/itm/High-Quality-Plastic-Battery-Holder-Storage-Box-Case-for-18650-With-Wire-Lead/282064215114?hash=item41ac565c4a:m:mAXemnLhdvAtePIM07Hw4hQ:rk:9:pf:0)
 
-9. 18650 battery charger module (10 for $2.95!) – eBay
+9. 18650 battery charger module (10 for $2.95!) – [eBay](https://www.ebay.com.au/itm/10pcs-TP4056-Micro-USB-Charger-Module-5V-1A-18650-Lithium-Battery-Charg-Board-GB/182665993197?hash=item2a87bddbed:g:JrYAAOSwvc1ZZvYT:rk:2:pf:0)
 
 10. Wires. I like to use computer ribbon cable. You can usually pick it up for free at an e-waste recycling plant.
 
 11. Nice piece of wood for the base
 
-12. A small piece of brass strip. I get mine from the local hobby store. You can also get it on eBay
+12. A small piece of brass strip. I get mine from the local hobby store. You can also get it on [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR10.TRC0.A0.H0.Xbrass+strip.TRS0&_nkw=brass+strip&_sacat=0)
 
 13. Small hardware like washers, screws etc
 
-14. Last but not least: Vacuum tubes – eBay. Try and get them in lots if you can - you will have more choices to use. You can also find them in older electronics or junk stores
+14. Last but not least: Vacuum tubes – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xvacuum+tube.TRS0&_nkw=vacuum+tube&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=brass+strip). Try and get them in lots if you can - you will have more choices to use. You can also find them in older electronics or junk stores
 
 Tools
 
@@ -273,7 +275,7 @@ Steps:
 
 ![Step 8: Making the Sound Activated Circuit image 7](images/step08_07.jpg)
 
-The circuit used is quite simple and allows you to have the LED's controlled by sound. I have made another 'ible which can be found here, which used a more complicated circuit. You only need a couple of transistors and a few other parts to make this one.
+The circuit used is quite simple and allows you to have the LED's controlled by sound. I have made another 'ible which can be[found here](https://www.instructables.com/id/Sound-Controlled-LEDs-Pocket-Disco/), which used a more complicated circuit. You only need a couple of transistors and a few other parts to make this one.
 
 I will also be calling the different legs on the transistors by their correct names. The diagram below of the transistor will help you follow
 

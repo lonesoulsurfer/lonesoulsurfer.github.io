@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Lamp-FroFrom-a-Paint-Spray-Can/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,13 +42,13 @@ The build is straight forward and you only need a few parts to be able to build 
 
 PARTS:
 
-- Paint Spray Can. I got mine from a place called Office Works but you can get one from any hardware store.
-- Metal clamp, I used a 2" one - Ali Express
-- LED Board 5V - Ali Express
-- Dimmer Module - Ali Express
-- Braided Cord - Ali Express
-- Aluminium Strip - Hardware store
-- Small screws and nuts
+1. Paint Spray Can. I got mine from a place called Office Works but you can get one from any hardware store.
+2. Metal clamp, I used a 2" one - [Ali Express](https://www.aliexpress.com/item/1005004687333816.html?spm=a2g0o.detail.1000014.9.6905507bxuWgWe&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40000.326746.0&scm_id=1007.40000.326746.0&scm-url=1007.40000.326746.0&pvid=9428383c-2ff1-40cf-bf56-7bd033eadac8&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40000.326746.0,pvid:9428383c-2ff1-40cf-bf56-7bd033eadac8,tpp_buckets:668%232846%238113%23685&pdp_npi=3%40dis%21AUD%218.88%216.66%21%21%21%21%21%402101f04d16856796420512305e4887%2112000030101599317%21rec%21AU%21129764711)
+3. LED Board 5V - [Ali Express](https://www.aliexpress.com/item/1005005122843105.html?spm=a2g0o.order_list.order_list_main.41.39611802twqCq8)
+4. Dimmer Module - [Ali Express](https://www.aliexpress.com/item/1005003768954449.html?spm=a2g0o.order_list.order_list_main.47.d8da1802W3WnFl)
+5. Braided Cord - [Ali Express](https://www.aliexpress.com/item/1005003644909366.html?spm=a2g0o.order_list.order_list_main.35.d8da1802W3WnFl)
+6. Aluminium Strip - Hardware store
+7. Small screws and nuts
 
 
 ## Step 1: Removing the Bottom of the Spray Can
@@ -67,12 +69,12 @@ First you need to make sure that the can is totally empty and there is no pressu
 
 STEPS:
 
-- You could just cut off the bottom of the can with a grinder but this might leave sharp edges so I decided to cut out the bottom of the can with an adjustable circle cutting drill piece. This way the edges wouldn't be sharp and there is less chance that you could cut yourself on it
-- Place the bit into the middle of the can and start to drill. Adjust the cutting blade if necessary.
-- The can might wobble around a bit once the blade starts to cut round the bottom of the can. Just hold it as steady as you can until the cutting bit starts to grab.
-- You probably won't be able to cut right through so use a hammer to tap the bottom and it will break away from the can.
-- Clean the inside of the can and remove any residual paint.
-- File any sharp edges.
+1. You could just cut off the bottom of the can with a grinder but this might leave sharp edges so I decided to cut out the bottom of the can with an adjustable circle cutting drill piece. This way the edges wouldn't be sharp and there is less chance that you could cut yourself on it
+2. Place the bit into the middle of the can and start to drill. Adjust the cutting blade if necessary.
+3. The can might wobble around a bit once the blade starts to cut round the bottom of the can. Just hold it as steady as you can until the cutting bit starts to grab.
+4. You probably won't be able to cut right through so use a hammer to tap the bottom and it will break away from the can.
+5. Clean the inside of the can and remove any residual paint.
+6. File any sharp edges.
 
 
 ## Step 2: Removing the Nozzle and Enlarging the Hole
@@ -87,9 +89,9 @@ The potentiometer from the dimmer module needs to be connected to where the nozz
 
 STEPS:
 
-- Remove the nozzle and put aside. You'll be modding this later to act as a knob for the on/off/dimmer pot later on.
-- Drill out the top of the nozzle with a drill piece.
-- If you find that there is still some metal around the hole, then use a dremel with a engraving bit to remove this and clean up the edges
+1. Remove the nozzle and put aside. You'll be modding this later to act as a knob for the on/off/dimmer pot later on.
+2. Drill out the top of the nozzle with a drill piece.
+3. If you find that there is still some metal around the hole, then use a dremel with a engraving bit to remove this and clean up the edges
 
 
 ## Step 3: Adding a Bracket to the Spray Can
@@ -116,14 +118,14 @@ I didn't do this step until I had added the braided cord but it will be easier t
 
 STEPS:
 
-- The bracket is made from 10mm strip of aluminium. You need to bend the aluminium around something that has a similar diameter as the spray can.
-- Once that is done you then need to work out how long to make the arms of the bracket. Up to you on how long you make them.
-- Trim the aluminium to the length required
-- Drill a couple holes into the end of each arm of the bracket - this is where you'll add a couple screws to connect it to the spray can.
-- Also drill a hole into the top of the bracket. This is where you'll connect the clamp later on
-- Measure and drill a couple more holes into the spray can so you can connect the bracket into place. Place them near the top of the spray can opposite each other.
-- To secure the bracket I used a couple screws and nuts. It can be tricky to get the nuts onto the screws inside the spray can but if you use a pair of needle nose pliers to hold the nut you will be able to get them into place
-- Oh and I also added a couple small O rings to each of the screws so the aluminium brackets wasn't touching directly the spray can.
+1. The bracket is made from 10mm strip of aluminium. You need to bend the aluminium around something that has a similar diameter as the spray can.
+2. Once that is done you then need to work out how long to make the arms of the bracket. Up to you on how long you make them.
+3. Trim the aluminium to the length required
+4. Drill a couple holes into the end of each arm of the bracket - this is where you'll add a couple screws to connect it to the spray can.
+5. Also drill a hole into the top of the bracket. This is where you'll connect the clamp later on
+6. Measure and drill a couple more holes into the spray can so you can connect the bracket into place. Place them near the top of the spray can opposite each other.
+7. To secure the bracket I used a couple screws and nuts. It can be tricky to get the nuts onto the screws inside the spray can but if you use a pair of needle nose pliers to hold the nut you will be able to get them into place
+8. Oh and I also added a couple small O rings to each of the screws so the aluminium brackets wasn't touching directly the spray can.
 
 
 ## Step 4: Adding the Braided Wire
@@ -148,12 +150,12 @@ STEPS:
 
 STEPS:
 
-- Drill a hole into the spray can a third of the way up from the top of the can. This should be at the back of the can
-- Thread the braided wire though the hole and tie a knot into the wire. This will make sure that it can't be pulled through
-- I made my wire quite long to enable it to be plugged in from a height.
-- To be able to connect it to a 5V power adapter, you'll need to add a USB connector to the end of the wire. I just trimmed one from a USB cord I had lying around
-- Remove the plastic around the wires and keep the red and black wires. The red is positive and black negative. Tin the ends with some solder
-- Connect the USB to the braided wire and use some heat shrink to protect the connections
+1. Drill a hole into the spray can a third of the way up from the top of the can. This should be at the back of the can
+2. Thread the braided wire though the hole and tie a knot into the wire. This will make sure that it can't be pulled through
+3. I made my wire quite long to enable it to be plugged in from a height.
+4. To be able to connect it to a 5V power adapter, you'll need to add a USB connector to the end of the wire. I just trimmed one from a USB cord I had lying around
+5. Remove the plastic around the wires and keep the red and black wires. The red is positive and black negative. Tin the ends with some solder
+6. Connect the USB to the braided wire and use some heat shrink to protect the connections
 
 
 ## Step 5: Connecting the Dimmer Circuit and LED's
@@ -172,9 +174,9 @@ The dimmer circuit also works as an on/off switch.
 
 STEPS:
 
-- Connect the braided wire (the end with the knot in it) to the power out on the dimmer module
-- Next, solder a couple wires to the LED board, taking note of which one is positive and negative
-- Connect the ends of the wire to the output of the module. These say 'motor' as the module can also be used to control the speed of a motor as well.
+1. Connect the braided wire (the end with the knot in it) to the power out on the dimmer module
+2. Next, solder a couple wires to the LED board, taking note of which one is positive and negative
+3. Connect the ends of the wire to the output of the module. These say 'motor' as the module can also be used to control the speed of a motor as well.
 
 
 ## Step 6: Adding the Dimmer Switch & LED's to the Spray Can
@@ -203,14 +205,14 @@ The module now needs to be connected to the hole in the top of the spray can.
 
 STEPS:
 
-- Add a small washer over the potentiometer.
-- Use a pair of needle nose pliers to hold the module and push it into the spray can until the potentiometer is sticking out the top hole. The braided wire should hold this into place.
-- Add another small washer to the pot and then secure into place with the nut provided.
-- Make sure that the pot is centred in the top of the spray can before you do the nut up tight.
-- To secure the LED's inside the can, I made a small bracket out of the aluminium strip.
-- I then added some good quality, double sided tape and stuck it to the inside of the can.
-- The LED board can then be stuck to the bottom of the bracket
-- Give everything a test before going on.
+1. Add a small washer over the potentiometer.
+2. Use a pair of needle nose pliers to hold the module and push it into the spray can until the potentiometer is sticking out the top hole. The braided wire should hold this into place.
+3. Add another small washer to the pot and then secure into place with the nut provided.
+4. Make sure that the pot is centred in the top of the spray can before you do the nut up tight.
+5. To secure the LED's inside the can, I made a small bracket out of the aluminium strip.
+6. I then added some good quality, double sided tape and stuck it to the inside of the can.
+7. The LED board can then be stuck to the bottom of the bracket
+8. Give everything a test before going on.
 
 
 ## Step 7: Adding the Clamp
@@ -223,9 +225,9 @@ STEPS:
 
 STEPS:
 
-- The clamp that I used has a hole in each of the handles so there was no need to add one. However, if yours doesn't, then drill a small hole into the top of one of the handles
-- Connect the clamp to the bracket on the spray can with a screw and bolt. You may need to trim the screw if it is too long.
-- I also added a couple of washers between the bracket and clamp so it could be moved easily. This then gives you 4 ways you can position the lamp to ensure you have it pointed where you need the light
+1. The clamp that I used has a hole in each of the handles so there was no need to add one. However, if yours doesn't, then drill a small hole into the top of one of the handles
+2. Connect the clamp to the bracket on the spray can with a screw and bolt. You may need to trim the screw if it is too long.
+3. I also added a couple of washers between the bracket and clamp so it could be moved easily. This then gives you 4 ways you can position the lamp to ensure you have it pointed where you need the light
 
 
 ## Step 8: Modding the Nozzle
@@ -250,12 +252,13 @@ To be able to attach the nozzle to the pot, you'll need to add a pot knob to the
 
 STEPS:
 
-- The pot knob that I used can be found in the parts list.
-- First, remove the some of the plastic gussets inside the nozzle. How much you remove will depend on how big your pot knob is. The better the fit the more likely you'll secure the knob inside the nozzle straight
-- Once the knob sits nicely inside the nozzle, add some hot glue and push the knob inside
-- Add more hot glue if necessary around the sides and allow to dry
-- Trim the knob so it nearly sits flush with the bottom of the nozzle.
-- Push onto the top of the pot and test out to make sure everything works as it should.
+1. The pot knob that I used can be found in the parts list.
+2. First, remove the some of the plastic gussets inside the nozzle. How much you remove will depend on how big your pot knob is. The better the fit the more likely you'll secure the knob inside the nozzle straight
+3. Once the knob sits nicely inside the nozzle, add some hot glue and push the knob inside
+4. Add more hot glue if necessary around the sides and allow to dry
+5. Trim the knob so it nearly sits flush with the bottom of the nozzle.
+6. Push onto the top of the pot and test out to make sure everything works as it should.
+
 Thanks it!
 
 

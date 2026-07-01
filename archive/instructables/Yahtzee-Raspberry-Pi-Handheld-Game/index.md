@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Yahtzee-Raspberry-Pi-Handheld-Game/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -50,15 +52,18 @@ Over time this has been finessed, improved and worked on until I was happy (almo
 
 ![Supplies image 7](images/step01_07.jpg)
 
-As usual, I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+As usual, I've created a parts list which can be found in my GitHubpage and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ## Step 1: About the AI
 
 ![Step 1: About the AI image 1](images/step02_01.jpg)
 
+How the Yahtzee AI Works
 When I first went on the journey to add a player 1 vs the computer, I didn't think it would take me down such a deep rabbit hole. The game of Yahtzee is a game of subtle nuances that revealed themselves to me when I tried (and still trying) to make an AI 'God Mode'. I wanted an unbeatable opponent, someone that always knows the right rolls and holds and could use probability, strategy and learned weights to never lose. The below is an outline of where I am currently.
 
 **In a Nutshell**
@@ -85,19 +90,21 @@ One key rule it follows hard: Pairs beat nothing, but a straight run beats a pai
 
 Rather than using gut feel, the AI uses hardcoded probability tables to calculate the exact odds of completing any hand from its current dice. These are precomputed two-dimensional tables:
 
-- Of-a-Kind table: probability of hitting 2-, 3-, 4-, or 5-of-a-kind when rerolling a specific number of dice (e.g. holding 3-of-a-kind and rerolling 2 dice has roughly a 7.4% chance of hitting 5-of-a-kind in one roll).
-- Large Straight table: probability of completing a Large Straight based on how many values are still missing and how many rolls remain.
-- Small Straight table: same for Small Straight.
+1. Of-a-Kind table: probability of hitting 2-, 3-, 4-, or 5-of-a-kind when rerolling a specific number of dice (e.g. holding 3-of-a-kind and rerolling 2 dice has roughly a 7.4% chance of hitting 5-of-a-kind in one roll).
+2. Large Straight table: probability of completing a Large Straight based on how many values are still missing and how many rolls remain.
+3. Small Straight table: same for Small Straight.
+
 For each possible way to hold the dice, the AI computes an Expected Value (EV) — the average score it can realistically expect if it plays that way. It then picks whichever hold pattern produces the highest EV, adjusted by the learned weights described below. This EV approach is the core engine; everything else (special cases, endgame logic, opponent model) either feeds into it or overrides it when warranted.
 
 **Locked Decisions: When EV Doesn't Apply**
 
 Some situations are so mathematically clear that the AI locks the decision before any EV comparison or opponent-model adjustment is allowed to interfere:
 
-- 4-of-a-kind with Yahtzee open: always reroll the 5th die — the chance of completing a Yahtzee is too valuable to ignore.
-- 3-of-a-kind with Yahtzee open (or high value): always hold the triple and chase the 4th (and potentially 5th) match.
-- Yahtzee or Large Straight already in hand: always stop.
-- Small Straight in hand with Large Straight already used: always stop and bank the guaranteed 30 points.
+1. 4-of-a-kind with Yahtzee open: always reroll the 5th die — the chance of completing a Yahtzee is too valuable to ignore.
+2. 3-of-a-kind with Yahtzee open (or high value): always hold the triple and chase the 4th (and potentially 5th) match.
+3. Yahtzee or Large Straight already in hand: always stop.
+4. Small Straight in hand with Large Straight already used: always stop and bank the guaranteed 30 points.
+
 These decisions set a 'decision made' flag that prevents any downstream logic — conservative opponent overrides, endgame risk adjustments, trailing/leading adjustments — from cancelling them.
 
 **How It Decides Whether to Roll Again**
@@ -114,9 +121,10 @@ It also reads the score. If the AI is losing by a decent amount, it plays more a
 
 Difficulty directly affects how much better the EV of rerolling needs to be before the AI commits to it:
 
-- Normal: EV of rerolling must exceed current score by at least 3 points before it takes the risk.
-- Hard: EV must match or exceed current score (break-even is enough to reroll).
-- God Mode: Will reroll even if EV is slightly lower than the current score — always chasing the maximum.
+1. Normal: EV of rerolling must exceed current score by at least 3 points before it takes the risk.
+2. Hard: EV must match or exceed current score (break-even is enough to reroll).
+3. God Mode: Will reroll even if EV is slightly lower than the current score — always chasing the maximum.
+
 **The Three Difficulty Levels**
 
 Normal — Plays a solid but forgiving game. Stops rolling if it has a decent score, won't chase long shots. Good for casual play.
@@ -159,17 +167,19 @@ Category timing. For each of the 13 scoring categories, the AI tracks the averag
 
 What you tend to do. The AI quietly tracks your playing style — how often you hit the upper bonus, how many Yahtzee's you roll, how aggressive you are (measured by reroll rate and chase attempts), and your average score. It uses this to calibrate its own play:
 
-- Against a strong player (average score over ~250 per category) it plays harder, rerolling on scores it might otherwise accept.
-- Against a conservative player it locks in moderate scores more readily, since you're unlikely to punish it with a spectacular turn.
-- If you frequently score Yahtzee's, the AI prioritizes chasing its own Yahtzee more urgently.
+1. Against a strong player (average score over ~250 per category) it plays harder, rerolling on scores it might otherwise accept.
+2. Against a conservative player it locks in moderate scores more readily, since you're unlikely to punish it with a spectacular turn.
+3. If you frequently score Yahtzee's, the AI prioritizes chasing its own Yahtzee more urgently.
+
 **The Four Strategies It Tests Against Itself**
 
 When you use the Train AI option in the Tools menu, the AI plays against itself to practice. It runs four different versions of itself with slightly different personalities:
 
-- Aggressive — Goes hard for Yahtzee's and big straights, willing to sacrifice safe points
-- Balanced — Uses whatever it's currently learned as its best approach
-- Conservative — Prioritizes guaranteed points and the upper bonus over risky special hands
-- Experimental — A slightly randomized version, trying things a bit differently each time
+1. Aggressive — Goes hard for Yahtzee's and big straights, willing to sacrifice safe points
+2. Balanced — Uses whatever it's currently learned as its best approach
+3. Conservative — Prioritizes guaranteed points and the upper bonus over risky special hands
+4. Experimental — A slightly randomized version, trying things a bit differently each time
+
 After each batch of self-play games, it looks at which personality won the most and nudges its main strategy a little in that direction. It's a slow process — you won't see it transform overnight — but over dozens of games it genuinely does shift toward what's been working.
 
 Each strategy variant stores its own set of 8 weight values alongside its performance record (wins, games played, total score). The system uses exploration vs exploitation here too — it mostly picks the variant with the best recent win rate, but occasionally gives the others a shot so they can keep accumulating data.
@@ -178,10 +188,11 @@ Each strategy variant stores its own set of 8 weight values alongside its perfor
 
 Once the AI has decided to stop rolling, it chooses which scoring category to use. This is more nuanced than it might appear:
 
-- It calculates an expected value for every open category given the current dice.
-- Upper section categories are weighted by a bonus feasibility score — if the 35-point bonus is still realistically achievable, upper section slots get a boost proportional to how much they contribute toward hitting 63.
-- It also considers opportunity cost — using a high-value slot (like Sixes) for a weak result is penalized more than using a low-value slot (like Ones) for the same score.
-- In the final 1–2 turns, category selection becomes critical and the AI commits fully to what it needs: it won't squander a Yahtzee chase on a 3-of-a-kind slot, and it won't take Chance if a more targeted category is still reachable.
+1. It calculates an expected value for every open category given the current dice.
+2. Upper section categories are weighted by a bonus feasibility score — if the 35-point bonus is still realistically achievable, upper section slots get a boost proportional to how much they contribute toward hitting 63.
+3. It also considers opportunity cost — using a high-value slot (like Sixes) for a weak result is penalized more than using a low-value slot (like Ones) for the same score.
+4. In the final 1–2 turns, category selection becomes critical and the AI commits fully to what it needs: it won't squander a Yahtzee chase on a 3-of-a-kind slot, and it won't take Chance if a more targeted category is still reachable.
+
 **What Gets Displayed in the Stats Screens**
 
 The AI Statistics screen (accessible from the Tools menu) shows six pages of data including: overall win rate and score history, reroll improvement rates per score bracket, hold pattern frequency, endgame win rates in close games and blowouts, the four strategy variant performances, Chance category timing, turn-10 score position history, and the current live values of all 8 learned weights. The graphs also track early-game vs recent-game average score so you can see whether the AI is improving over time.
@@ -203,18 +214,18 @@ God Mode is the closest the AI gets to theoretically optimal Yahtzee play. It us
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front panel design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
 
-The files that you need to build the Yahzee game can be found in my GitHub page. This also includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer
+The files that you need to build the Yahzee game can be found in my [GitHub](https://github.com/lonesoulsurfer/Yahtzee_Handheld_Game) page. This also includes the parts list, Gerber files for the PCB & front panel, schematic, Code. Download the files to your computer
 
 STEPS:
 
-Send the Gerber files (zipped) to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+Send the Gerber files (zipped) to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Yahtzee_Handheld_Game)page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
 
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
-- JLCPCB used to print an order number onto the PCB which was super annoying, especially if you didn't specify where to add it. Now you don't have to worry about it as they no longer do it
-- when choosing the surface finish pick Lead Free HASL as this will ensure that there is no lead in the panel or PCB.
-- You can pick whatever colour you want to choose for your front panel and PCB. I used black.
+1. If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+2. JLCPCB used to print an order number onto the PCB which was super annoying, especially if you didn't specify where to add it. Now you don't have to worry about it as they no longer do it
+3. when choosing the surface finish pick Lead Free HASL as this will ensure that there is no lead in the panel or PCB.
+4. You can pick whatever colour you want to choose for your front panel and PCB. I used black.
 
 
 ## Step 3: Adding the Screen
@@ -239,13 +250,13 @@ The following step ensures that you can remove the front panel easily and withou
 
 STEPS:
 
-- First, trim the tops of the header pins where they are soldered. You just want to remove a small bit of the top of the header pin so they won’t interfere with the front panel.
-- In the front panel, there are 4 holes where the TFT screen will be attached. Add a 20mm M2 screw (I like to use hex socket head screws) to each and then add a M2 nut to secure the screws into place
-- Now, place the screen on top of the screws and align it to the front panel. The screen should sit flat to the front panel as the nuts you added earlier act like spacers.
-- Now - you need to add a small M2 spacer (5mm) to each of the screws. Use the smallest one in the assorted pack that I have recommended to get in the parts list
-- Remove the plastic section off the male header pin. This will ensure that they fir right in the female header pin
-- You can now add the low profile female header pins to the male ones on the TFT screen and do a test fit. You will need to trim the male header pins a little in order for them to sit right in the female header. What I usually do here is, lay a female header pins on top of the male ones and mark out how much to cut of the male header pins. It probably about 3mm that you need to remove.
-- Don’t solder the female header pins yet to the PCB, we’ll do that near the end
+1. First, trim the tops of the header pins where they are soldered. You just want to remove a small bit of the top of the header pin so they won’t interfere with the front panel.
+2. In the front panel, there are 4 holes where the TFT screen will be attached. Add a 20mm M2 screw (I like to use hex socket head screws) to each and then add a M2 nut to secure the screws into place
+3. Now, place the screen on top of the screws and align it to the front panel. The screen should sit flat to the front panel as the nuts you added earlier act like spacers.
+4. Now - you need to add a small M2 spacer (5mm) to each of the screws. Use the smallest one in the assorted pack that I have recommended to get in the parts list
+5. Remove the plastic section off the male header pin. This will ensure that they fir right in the female header pin
+6. You can now add the low profile female header pins to the male ones on the TFT screen and do a test fit. You will need to trim the male header pins a little in order for them to sit right in the female header. What I usually do here is, lay a female header pins on top of the male ones and mark out how much to cut of the male header pins. It probably about 3mm that you need to remove.
+7. Don’t solder the female header pins yet to the PCB, we’ll do that near the end
 
 
 ## Step 4: Solder the Pins on the 7 Seg Display & Pi
@@ -266,9 +277,10 @@ This is a good time to get a couple of the other components ready to solder into
 
 STEPS:
 
-- Let’s start with the 7-segment display. It’s important that you solder into place the male header pins first. Also make sure that you have the PCB up the right way – not like me on the first crack at this!!
-- Now you can add the 7 segment displays into place and also solder these. Again, making sure that they are in the right way. (the decimal point on the bottom)
-- Let’s move onto the Raspberry Pi. Place each of the header pins into the holes on the Pi and just solder 1 leg of each of the 3 header pin sections.
+1. Let’s start with the 7-segment display. It’s important that you solder into place the male header pins first. Also make sure that you have the PCB up the right way – not like me on the first crack at this!!
+2. Now you can add the 7 segment displays into place and also solder these. Again, making sure that they are in the right way. (the decimal point on the bottom)
+3. Let’s move onto the Raspberry Pi. Place each of the header pins into the holes on the Pi and just solder 1 leg of each of the 3 header pin sections.
+
 Ok - now move onto the next step
 
 
@@ -288,14 +300,14 @@ Ok - now move onto the next step
 
 STEPS:
 
-- Place the Pi into the PCB and solder the rest of the legs to the solder points on the Pi.This ensures that the Pi fits perfectly into the PCB. You can now solder the header pins to the PCB to secure the Pi into place
-- The charging and voltage booster module is a great little board. It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.
-- First, let’s set the output voltage to 5V from the Charging & voltage booster module. Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
-- Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.
-- Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place
-- Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.
-- Bend the wire down so it is touching the solder pad on the PCB and trim.
-- Add solder to the solder pad on the PCB and connect the wire to each. This will give you a good strong connection.
+1. Place the Pi into the PCB and solder the rest of the legs to the solder points on the Pi.This ensures that the Pi fits perfectly into the PCB. You can now solder the header pins to the PCB to secure the Pi into place
+2. The charging and voltage booster module is a great little board. It allows you to add say a 3.6V battery like a mobile one, and you can increase the output voltage via a small potentiometer located on the board.
+3. First, let’s set the output voltage to 5V from the Charging & voltage booster module. Connect the module up to a power source (this could be mobile phone battery, variable power source or whatever you have around, as long as it is lower than 5V’s)
+4. Now with a multimeter, check the voltage output. You need to try and get as close as possible to 5V’s so turn the potentiometer until you reach 5Vs.
+5. Now you can add the module to the PCB. I added a little superglue to the bottom of the board to ensure it was secured into place
+6. Add some solder to each of the solder points on the module and then add some wire from a resistor leg to each solder point.
+7. Bend the wire down so it is touching the solder pad on the PCB and trim.
+8. Add solder to the solder pad on the PCB and connect the wire to each. This will give you a good strong connection.
 
 
 ## Step 6: Adding the Buttons and Switches
@@ -316,13 +328,13 @@ I’ve used a red and black momentary buttons to help differentiate the button c
 
 STEPS:
 
-- This is pretty straight forward, you are just soldering the button switches into place. However, it is important to make sure that they are straight on the PCB or the front panel won’t fit correctly so here’s what you do to ensure that they are all align correctly.
-- Place the front panel onto the PCB. This will act as a template in order to ensure that the button switch is aligned correctly
-- Place the button switch into place and solder the legs to the PCB. Press down on top of the button and use the soldering iron to remelt each of the solder points for the switch. This will correctly seat the switch if it isn’t already.
-- Do the same for the rest of the button switches,
-- Now you can solder into place the 2 slide switches. One is for on/off and the other is used when charging the battery. I had to add one for the battery charging because if you don’t have it there, you need to have the game on whist charging. The other option would have been to add the main switch after the battery charging module. However, these little modules can draw a very slight charge which will flatten the battery over time.
-- Note that I used a push button on/off switch in my prototype. I didn’t like it so I moved it to the slide switch!
-- You can now remove the front panel
+1. This is pretty straight forward, you are just soldering the button switches into place. However, it is important to make sure that they are straight on the PCB or the front panel won’t fit correctly so here’s what you do to ensure that they are all align correctly.
+2. Place the front panel onto the PCB. This will act as a template in order to ensure that the button switch is aligned correctly
+3. Place the button switch into place and solder the legs to the PCB. Press down on top of the button and use the soldering iron to remelt each of the solder points for the switch. This will correctly seat the switch if it isn’t already.
+4. Do the same for the rest of the button switches,
+5. Now you can solder into place the 2 slide switches. One is for on/off and the other is used when charging the battery. I had to add one for the battery charging because if you don’t have it there, you need to have the game on whist charging. The other option would have been to add the main switch after the battery charging module. However, these little modules can draw a very slight charge which will flatten the battery over time.
+6. Note that I used a push button on/off switch in my prototype. I didn’t like it so I moved it to the slide switch!
+7. You can now remove the front panel
 
 
 ## Step 7: Adding the Battery
@@ -341,10 +353,10 @@ I have used a phone battery as the power source. These work great and even an ol
 
 STEPS:
 
-- First, add some solder to the positive and negative solder points on the battery. Make sure your soldering iron is hot when doing this and try and do it as quickly as possible.
-- Now add a resistor leg to each solder point and bend so they are lying flat with the battery.
-- Add a little superglue to the battery and glue into place.
-- Trim the wire if necessary and then solder onto the solder points on the PCB
+1. First, add some solder to the positive and negative solder points on the battery. Make sure your soldering iron is hot when doing this and try and do it as quickly as possible.
+2. Now add a resistor leg to each solder point and bend so they are lying flat with the battery.
+3. Add a little superglue to the battery and glue into place.
+4. Trim the wire if necessary and then solder onto the solder points on the PCB
 
 
 ## Step 8: Uploading the Code
@@ -355,24 +367,28 @@ So - I have provided an exact, step by step guide on how to Upload the code to y
 
 **Step 1 — Install the Arduino IDE**
 
-- Go to https://www.arduino.cc/en/software
-- Download Arduino IDE 2.x for your operating system
-- Run the installer and follow the prompts
-- Open the Arduino IDE once installed
+1. Go to https://www.arduino.cc/en/software
+2. Download Arduino IDE 2.x for your operating system
+3. Run the installer and follow the prompts
+4. Open the Arduino IDE once installed
+
 **Step 2 — Add the RP2040 Board Package**
 
 The Arduino IDE does not support the RP2040 out of the box. You need to add it via a custom board URL.
 
-- Open Arduino IDE
-- Go to File → Preferences (macOS: Arduino IDE → Settings)
-- Find the "Additional boards manager URLs" field
-- Paste this URL:
-- Click OK
-- Go to Tools → Board → Boards Manager
-- Search for rp2040
-- Find "Raspberry Pi Pico/RP2040 by Earle F. Philhower, III"
-- Click Install — this downloads around 500MB and may take a few minutes
-- Close the Boards Manager when done
+1. Open Arduino IDE
+2. Go to File → Preferences (macOS: Arduino IDE → Settings)
+3. Find the "Additional boards manager URLs" field
+4. Paste this URL:
+
+https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
+1. Click OK
+2. Go to Tools → Board → Boards Manager
+3. Search for rp2040
+4. Find "Raspberry Pi Pico/RP2040 by Earle F. Philhower, III"
+5. Click Install — this downloads around 500MB and may take a few minutes
+6. Close the Boards Manager when done
+
 **Step 3 — Install the Required Libraries**
 
 Go to Tools → Manage Libraries and search for and install each of the following:
@@ -389,23 +405,28 @@ SPI and EEPROM are both built into the RP2040 board package and do not need sepa
 
 The code is split across two .ino files. Arduino requires all files in a sketch to be in the same folder, and that folder name must exactly match the main .ino filename.
 
-- Create a folder named exactly:
-- Place both files inside it:
-- Yahtzee_v1_fixed.ino
-- Blackjack_V1.ino
-- In Arduino IDE go to File → Open
-- Navigate into the Yahtzee_v1_fixed folder and open Yahtzee_v1_fixed.ino
+1. Create a folder named exactly:
+
+Yahtzee_v1
+1. Place both files inside it:
+2. Yahtzee_v1_fixed.ino
+3. Blackjack_V1.ino
+4. In Arduino IDE go to File → Open
+5. Navigate into the Yahtzee_v1_fixed folder and open Yahtzee_v1_fixed.ino
+
 Both files should appear as two tabs at the top of the IDE. If you only see one tab, the folder name or file placement is wrong — fix that before continuing.
 
 **Step 5 — Select the Waveshare RP2040 Zero Board**
 
-- Go to Tools → Board → Raspberry Pi RP2040 Boards
-- Select "Waveshare RP2040 Zero"
+1. Go to Tools → Board → Raspberry Pi RP2040 Boards
+2. Select "Waveshare RP2040 Zero"
+
 If you don't see "Waveshare RP2040 Zero" listed, select "Raspberry Pi Pico" instead — the RP2040 Zero is pin
 
 compatible and this will work correctly.
 
-- Set the following options under the Tools menu:
+1. Set the following options under the Tools menu:
+
 Setting Value:
 
 Flash Size - 2MB (no FS)
@@ -422,42 +443,51 @@ Debug Level - None
 
 The RP2040 Zero needs to be in bootloader mode before it will accept an upload.
 
-- Unplug the board from USB if currently connected
-- Hold down the BOOT button on the RP2040 Zero — this is the small button labelled BOOT on the board
-- While holding BOOT, plug the USB-C cable into the board and into your computer
-- Release the BOOT button after plugging in
+1. Unplug the board from USB if currently connected
+2. Hold down the BOOT button on the RP2040 Zero — this is the small button labelled BOOT on the board
+3. While holding BOOT, plug the USB-C cable into the board and into your computer
+4. Release the BOOT button after plugging in
+
 Your computer will now recognise the board as a USB storage drive called RPI-RP2. You do not need to do anything with this drive — the Arduino IDE handles everything automatically from here.
 
+Tip:
+If your computer doesn't show the RPI-RP2 drive, your USB cable is likely charge-only. Try a different cable.
 **Step 7 — Select the COM Port**
 
-- Go to Tools → Port
-- Select the port for the RP2040 Zero:
-- Windows: will appear as COM3, COM4, or similar
-- macOS: will appear as /dev/cu.usbmodem...
-- Linux: will appear as /dev/ttyACM0
+1. Go to Tools → Port
+2. Select the port for the RP2040 Zero:
+3. Windows: will appear as COM3, COM4, or similar
+4. macOS: will appear as /dev/cu.usbmodem...
+5. Linux: will appear as /dev/ttyACM0
+
 If no port appears, unplug and replug the cable and try again. Make sure you completed Step 6 (BOOTSEL mode) correctly.
 
 **Step 8 — Compile and Upload**
 
-- Click the Upload button (the → arrow in the top-left toolbar), or go to Sketch → Upload
-- The IDE will compile the code first — expect 30–90 seconds on the first compile
-- It will then automatically flash the binary to the board
-- Watch the bottom console for progress — a successful upload ends with something like:
-- The board will automatically reboot and start running the game immediately
+1. Click the Upload button (the → arrow in the top-left toolbar), or go to Sketch → Upload
+2. The IDE will compile the code first — expect 30–90 seconds on the first compile
+3. It will then automatically flash the binary to the board
+4. Watch the bottom console for progress — a successful upload ends with something like:
+
+Wrote XXXXX bytes to flash
+1. The board will automatically reboot and start running the game immediately
+
 If compilation fails, the most common causes are:
 
-- A library is missing — re-check Step 3
-- Wrong board selected — re-check Step 5
-- Both .ino files are not in the same correctly-named folder — re-check Step 4
+1. A library is missing — re-check Step 3
+2. Wrong board selected — re-check Step 5
+3. Both .ino files are not in the same correctly-named folder — re-check Step 4
+
 **Step 9 — Verify It's Working**
 
 The board reboots automatically after upload. Within one or two seconds you should see the intro animation on the ST7789 TFT display.
 
 If the screen stays blank:
 
-- Check all wiring against the pin table below
-- Confirm your TFT uses the ST7789 driver chip (not ST7735 — different driver)
-- The code uses SPI1 (the secondary SPI bus) — make sure you are wired to GP10/GP11, not GP18/GP19 which are the default SPI0 pins
+1. Check all wiring against the pin table below
+2. Confirm your TFT uses the ST7789 driver chip (not ST7735 — different driver)
+3. The code uses SPI1 (the secondary SPI bus) — make sure you are wired to GP10/GP11, not GP18/GP19 which are the default SPI0 pins
+
 **Step 10 — Future Uploads (No BOOTSEL Needed)**
 
 After the first successful upload, all subsequent uploads do not require holding the BOOT button. The Arduino IDE can reset the board into bootloader mode automatically over USB.
@@ -477,17 +507,18 @@ Just make your changes and click Upload — it will handle the reset for you. If
 
 The goal of Yahtzee is to roll 5 dice in 13 rounds and try and get a higher score than your opponent. Sounds pretty simple and a game based on luck right! Well, just like any good game, there is some luck involved but also a good chunk of skill and a little bit of je ne sais quoi!
 
-You can find the rules in the actual game itself under tools. Also check out the official rules here.
+You can find the rules in the actual game itself under tools. Also check out the official rules [here](http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://instructions.hasbro.com/api/download/00950_en-ca_yahtzee-classic.pdf).
 
 **Hardware Overview**
 
 The console has 10 buttons and two displays:
 
-- ButtonLabel / PositionPrimary Function
-- 5 × Hold buttons - Hold dice 1–5 during a turn
-- ROLL - Roll dice / confirm in menus
-- Navigation button - Scroll menus up & down / view upper/lower scorecard
-- ENTER - Confirm button & Select menu item / confirm category
+1. ButtonLabel / PositionPrimary Function
+2. 5 × Hold buttons - Hold dice 1–5 during a turn
+3. ROLL - Roll dice / confirm in menus
+4. Navigation button - Scroll menus up & down / view upper/lower scorecard
+5. ENTER - Confirm button & Select menu item / confirm category
+
 The TFT screen shows menus, dice, the scorecard, and all AI information. The 5-digit 7-segment display shows the current dice values, with a decimal point lit on any die that is held.
 
 **Turning On / Start Screen**
@@ -510,9 +541,10 @@ After selecting 1 vs Computer, choose one of three difficulty levels with UP / D
 
 DifficultyDescription
 
-- Normal - Conservative, forgiving play. Targets ~50–60% win rate. Learns within a moderate aggression band.
-- Hard - Balanced aggressive strategy. Targets ~60–70% win rate. This is the default.
-- God Mode - Maximum aggression, fixed strategy. Targets ~85–95% win rate. Does not adapt — it is always at full aggression.
+1. Normal -Conservative, forgiving play. Targets ~50–60% win rate. Learns within a moderate aggression band.
+2. Hard -Balanced aggressive strategy. Targets ~60–70% win rate. This is the default.
+3. God Mode -Maximum aggression, fixed strategy. Targets ~85–95% win rate. Does not adapt — it is always at full aggression.
+
 Each difficulty stores its learned behaviour independently, so playing Normal does not affect the Hard AI's memory or strategy.
 
 **Playing a Turn**
@@ -543,19 +575,20 @@ From the main menu, select Tools with ENTER. Navigate with UP / DOWN, select wit
 
 ItemWhat it does
 
-7-Seg Bright - Adjust the brightness of the 7-segment dice display. Press ENTER to enter adjustment mode, then UP/DOWN to change level, ENTER to confirm.
+7-Seg Bright -Adjust the brightness of the 7-segment dice display. Press ENTER to enter adjustment mode, then UP/DOWN to change level, ENTER to confirm.
 
-- Sound - Toggle sound on/off and set volume (1–3).
-- Auto-Advance - Toggle automatic first-roll at turn start.
-- Statistics - View overall game stats: high score, win/loss record, most Yahtzees in a game. Hold ROLL for 3 seconds to reset these stats.
-- AI Stats - Six pages of detailed AI learning data (see below).
-- AI Speed - Set how fast the AI takes its turn: Slow (5s) → Medium (3.5s) → Fast (2.5s) → Instant (0.5s). Press ENTER to cycle.
-- Train AI - Run AI self-play training games (see below).
-- Export Stats - Dumps all AI learning data to the Serial Monitor at 115200 baud as a CSV. Useful for analysis in Excel or Google Sheets.
-- AI Graphs - Six live performance graphs (see below).
-- Game Rules - On-screen Yahtzee rules reference, 4 pages.
-- Blackjack - Launches the built-in Blackjack game. Hold ROLL for 3 seconds from the Blackjack menu to return to Yahtzee.
-- Back - Return to the main menu.
+1. Sound -Toggle sound on/off and set volume (1–3).
+2. Auto-Advance -Toggle automatic first-roll at turn start.
+3. Statistics -View overall game stats: high score, win/loss record, most Yahtzees in a game. Hold ROLL for 3 seconds to reset these stats.
+4. AI Stats -Six pages of detailed AI learning data (see below).
+5. AI Speed -Set how fast the AI takes its turn: Slow (5s) → Medium (3.5s) → Fast (2.5s) → Instant (0.5s). Press ENTER to cycle.
+6. Train AI -Run AI self-play training games (see below).
+7. Export Stats -Dumps all AI learning data to the Serial Monitor at 115200 baud as a CSV. Useful for analysis in Excel or Google Sheets.
+8. AI Graphs -Six live performance graphs (see below).
+9. Game Rules -On-screen Yahtzee rules reference, 4 pages.
+10. Blackjack -Launches the built-in Blackjack game. Hold ROLL for 3 seconds from the Blackjack menu to return to Yahtzee.
+11. Back -Return to the main menu.
+
 **AI Training (Self-Play)**
 
 Select Tools → Train AI. Use UP / DOWN to choose how many games to run (10–500, default 50). The display estimates how long it will take (~5 games per second). Press ENTER to start or ROLL to cancel.
@@ -572,23 +605,28 @@ Navigate pages with UP / DOWN, press ENTER to go back.
 
 PageShows
 
-- Learned Weights - Current strategy weights the AI has converged on: how much it prioritises Yahtzee, straights, Full House, 3-of-a-kind, and the upper bonus. Win rate vs human, games played, self-play training games.
-- Opponent Model - What the AI has learned about your play style: your average score, how often you achieve the upper bonus, your risk level (based on how often you go for Yahtzees and straights), and your total Yahtzees scored.
-- Strategy Variants - Win rates and average scores for the four competing strategy variants (Aggressive, Balanced, Conservative, Experimental). Shows which variant is currently winning and how many games each has played.
-- Category Usage - Win rate when the AI scores each of the 13 categories, plus turn-phase performance (how often it wins when leading vs trailing at turn 10).
-- Decision Quality - Reroll quality stats — how often rerolling improved the score, broken down by score bracket. Shows Chance timing win rates by game phase and weight health indicators (flags any weights stuck at their min/max limits).
-- Bonus Analytics - Upper bonus pursuit stats: near-misses, overkills, win rate when bonus is abandoned, and average score differential at turn 10.
+1. Learned Weights -Current strategy weights the AI has converged on: how much it prioritises Yahtzee, straights, Full House, 3-of-a-kind, and the upper bonus. Win rate vs human, games played, self-play training games.
+2. Opponent Model -What the AI has learned about your play style: your average score, how often you achieve the upper bonus, your risk level (based on how often you go for Yahtzees and straights), and your total Yahtzees scored.
+3. Strategy Variants -Win rates and average scores for the four competing strategy variants (Aggressive, Balanced, Conservative, Experimental). Shows which variant is currently winning and how many games each has played.
+4. Category Usage -Win rate when the AI scores each of the 13 categories, plus turn-phase performance (how often it wins when leading vs trailing at turn 10).
+5. Decision Quality -Reroll quality stats — how often rerolling improved the score, broken down by score bracket. Shows Chance timing win rates by game phase and weight health indicators (flags any weights stuck at their min/max limits).
+6. Bonus Analytics -Upper bonus pursuit stats: near-misses, overkills, win rate when bonus is abandoned, and average score differential at turn 10.
+
 **AI Performance Graphs (6 Pages)**
 
 Navigate with UP / DOWN, back with ENTER.
 
-- Learning progress — early vs recent win rate trend
-- Strategy variant comparison — bar chart of win rates
-- Decision quality over time
-- Score distribution histogram
-- Category efficiency — how well each category is being used
-- Win rate trends
+1. Learning progress — early vs recent win rate trend
+2. Strategy variant comparison — bar chart of win rates
+3. Decision quality over time
+4. Score distribution histogram
+5. Category efficiency — how well each category is being used
+6. Win rate trends
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *51 images archived*

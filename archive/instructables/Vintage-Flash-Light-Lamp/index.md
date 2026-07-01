@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Vintage-Flash-Light-Lamp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -40,15 +42,15 @@ There a short video bellow with the lamp in action.
 
 Parts
 
-1. Vintage Torch (flashlight) - check out eBay
+1. Vintage Torch (flashlight) - [check out eBay](http://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR3.TRC1.A0.H0.Xvintage+flashlight.TRS0&_nkw=vintage+flashlight&ghostText=&_sacat=0)
 
-2. Camera Tripod - Best to get something a little vintage to match the torch. Again check out eBay.
+2. Camera Tripod - Best to get something a little vintage to match the torch. Again [check out eBay](http://www.ebay.com.au/sch/i.html?_odkw=vintage+flashlight&_from=R40&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR3.TRC1.A0.H0.Xvintage+tripod.TRS0&_nkw=vintage+tripod&ghostText=&_sacat=0).
 
-3. 12v G4 LED Globe - eBay
+3. 12v G4 LED Globe - [eBay](http://www.ebay.com.au/itm/48-SMD-3014-LED-G4-Car-Light-Bulb-Warm-Pure-White-12V-6W-240LM-DIY-Decoration-/191191597935?pt=LH_DefaultDomain_15&var=&hash=item2c83e8436f)
 
-4. 12v Adapter. Choose the correct one for your country - eBay
+4. 12v Adapter. Choose the correct one for your country - [eBay](http://www.ebay.com.au/itm/AU-100-240V-AC-to-DC-12V-1000mA-1A-Power-Adapter-Plug-/180640156396?pt=AU_Laptop_Accessories&hash=item2a0efe0aec)
 
-5. Bi Pin Socket - eBay
+5. Bi Pin Socket - [eBay](http://www.ebay.com.au/itm/40pcs-GU5-3-G4-MR16-MR11-LED-halogen-CFL-bulb-Holder-base-Socket-Wire-Connetor-/321468381831?pt=LH_DefaultDomain_15&var=&hash=item4ad9023a87)
 
 7. 15mm PVC pipe - this is used to hold the bi pin socket in place
 
@@ -56,9 +58,9 @@ Parts
 
 9. A nut (1/4 inch) that fits onto the the camera mount screw on the tripod
 
-10. Metal ruler - eBay
+10. Metal ruler - [eBay](http://www.ebay.com.au/itm/Steel-Stainless-Metal-Ruler-Marker-Measurement-Tool-Conversion-Table-/390962330005?pt=LH_DefaultDomain_15&hash=item5b072bb995)
 
-11. Momentary switch - eBay
+11. Momentary switch - [eBay](http://www.ebay.com.au/itm/5pcs-Black-Mini-Round-Switch-12mm-Waterproof-Momentary-Push-button-Switch-Sales-/321590978045?pt=LH_DefaultDomain_15&hash=item4ae050e5fd)
 
 Tools and Material:
 

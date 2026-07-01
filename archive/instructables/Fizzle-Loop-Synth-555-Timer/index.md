@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Fizzle-Loop-Synth-555-Timer/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -13,7 +15,7 @@ Source: https://www.instructables.com/Fizzle-Loop-Synth-555-Timer/
 
 ![Intro 3](images/intro_03.jpg)
 
-The fizzle loop synth came into being after mashing a couple of simple 555 projects together to make one. At the heart of the fizzle loop is a Vactrol – a simple little part that is made from an LED and a photo resister such as a CdS.
+The fizzle loop synth came into being after mashing a couple of simple 555 projects together to make one. At the heart of the fizzle loop is a [Vactrol](https://en.wikipedia.org/wiki/Resistive_opto-isolator) – a simple little part that is made from an LED and a photo resister such as a CdS.
 
 Calling this a synth might be pushing it a little - it's more a sophisticated noise maker but it's still a lot of fun to use and play with.
 
@@ -40,47 +42,47 @@ Parts
 
 The Light Theremin Circuit
 
-1. Photo Cell – eBay
+1. Photo Cell – [eBay](https://www.ebay.com.au/itm/20PCS-Photoresistor-LDR-CDS-5mm-Light-Dependent-Resistor-Sensor-GL5516-Arduino/222746709589?epid=22011020945&hash=item33dcbd0e55:g:03YAAOSwKytZL-uQ)
 
-2. 555 IC -- eBay
+2. 555 IC -- [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X555+ic.TRS0&_nkw=555+ic&_sacat=0)
 
-3. Red LED – eBay
+3. Red LED – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=555+ic&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR6.TRC0.A0.H0.Xred+5mm+led.TRS0&_nkw=red+5mm+led&_sacat=0)
 
-4. 100 ohm resistor – eBay
+4. 100 ohm resistor – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
-5. 3.3 uf capacitor – eBay
+5. 3.3 uf capacitor – [eBay](https://www.ebay.com.au/itm/50V-0-1-0-22-1-2-2-3-3-4-7-6-8-10-22-33-47-82-100-150-uF-Electrolytic-Capacitor/253243249769?hash=item3af6795469:m:mTDA8ibHzNWgXevoOM4m55A)
 
-6. 100 uf Capacitor – eBay
+6. 100 uf Capacitor – [eBay](https://www.ebay.com.au/itm/50V-0-1-0-22-1-2-2-3-3-4-7-6-8-10-22-33-47-82-100-150-uF-Electrolytic-Capacitor/253243249769?hash=item3af6795469:m:mTDA8ibHzNWgXevoOM4m55A)
 
-7. Speaker – 8 ohm 5w (or whatever else you have lying around - try a few different sizes) - eBay
+7. Speaker – 8 ohm 5w (or whatever else you have lying around - try a few different sizes) -[eBay](https://www.ebay.com.au/sch/i.html?_odkw=speaker+8ohm+3w&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xspeaker+8ohm+5w.TRS0&_nkw=speaker+8ohm+5w&_sacat=0)
 
-8. 5K potentiometer – eBay
+8. 5K potentiometer – [eBay](https://www.ebay.com.au/itm/2PCS-5K-Ohm-B5K-Knurled-Shaft-Linear-Rotary-Taper-Potentiometer/262875602892?hash=item3d349b5fcc:g:kjUAAOSw32lYto0x)
 
-9. 6V Battery holder – eBay
+9. 6V Battery holder – [eBay](https://www.ebay.com.au/itm/4-x-AA-Battery-Holder-Box-6V-DC-Case-For-Receiver-Car-Plane-Boat-DIY-Plug/252452556886?hash=item3ac7585056:g:xBEAAOSwZZ5asfU9)
 
 10. 4 X AA Batterys
 
-11. 2 X on-off switch – eBay
+11. 2 X on-off switch – [eBay](https://www.ebay.com.au/itm/10-x-On-Off-On-3Pin-Mini-Momentary-Toggle-Switch-Car-Dashboard-SPDT-Pole-Sales/322288826331?epid=940115809&hash=item4b09e937db:g:0ScAAOSwPCVX-wtc)
 
-12. Momentary switch - eBay
+12. Momentary switch - [eBay](https://www.ebay.com.au/itm/Modern-6Pcs-7mm-Momentary-Push-Button-Press-Switch-On-Off-Push-Switch/122373408432?hash=item1c7e0606b0:m:moGc4OmEnaeSCWzcP_rbFKg)
 
-13. 1uf Capacitor - eBay
+13. 1uf Capacitor - [eBay](https://www.ebay.com.au/itm/1uF-50V-Electrolytic-Capacitor-20-pcs/302685444075?hash=item46797557eb:g:luUAAOSw0UdXqx4j)
 
 Flashing Light Circuit
 
-1. 1k Resistor – eBay
+1. 1k Resistor – [eBay](https://www.ebay.com.au/itm/100PCS-1-4W-Metal-Film-Resistor-0-25W-1-Full-Range-of-Values-0-to-10M/262943308104?hash=item3d38a47948:m:m9AAPzkedx9P_upvXOpgF9Q)
 
-2. 555 IC - eBay
+2. 555 IC - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X555+ic.TRS0&_nkw=555+ic&_sacat=0)
 
-3. 10uf Capacitor – eBay
+3. 10uf Capacitor – [eBay](https://www.ebay.com.au/itm/100-Pcs-4-x-5mm-10uF-25V-Aluminum-Electrolytic-Capacitors-CT/302142817648?epid=1369130363&hash=item46591d8570:g:~woAAOSwux5YMCF0)
 
-5. 2 X 100K Potentiometer – eBay
+5. 2 X 100K Potentiometer – [eBay](https://www.ebay.com.au/itm/2PCS-100K-ohm-Linear-Taper-Rotary-Potentiometer-Panel-pot-B100K-15mm-WH148-3-Pin/282614198699?hash=item41cd1e71ab:g:BcYAAOSweC1ZlV-p)
 
-6. 5mm white LED – eBay
+6. 5mm white LED – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR0.TRC0.H0.X5mm+white+led.TRS0&_nkw=5mm+white+led&_sacat=0)
 
 7. 9v Battery
 
-8. 9V battery holder – eBay
+8. 9V battery holder – [eBay](https://www.ebay.com.au/sch/i.html?_odkw=5mm+white+led&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR11.TRC1.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0)
 
 Other Parts
 
@@ -124,7 +126,7 @@ Another 100K pot (so there are 2 pots in total) has been added to give more opti
 
 ![Step 3: Light Theremin Circuit image 2](images/step03_02.jpg)
 
-The second part to the synth is a light Theremin circuit. I made a project recently using this circuit which can be found here.
+The second part to the synth is a light Theremin circuit. I made a project recently using this circuit which can be found [here.](https://www.instructables.com/id/Slider-Synth-Light-Theremin-555-IC/)
 
 This uses a photo cell which acts like a resistor, to change the frequency of the sound with light. We will be attaching the 2 circuits together through the LED on the first circuit and the photo cell on the other using a Vactrol.
 
@@ -185,8 +187,7 @@ I know that this is self-evident but make sure that the LED in the vactrol is co
 
 Make sure that once you have built the circuit, you test and make sure that it’s working. You can do this by touching an LED’s legs to the resistor and one of the LED legs from the Vactrol. If it doesn’t work check over the circuit and see what you missed. I forgot to attach pin 8 to positive!
 
-Steps:
-1. Make sure that you add some good lengths of wire to the potentiometers.
+Steps: 1. Make sure that you add some good lengths of wire to the potentiometers.
 
 2. The LED section is there you solder the LED inside the Vectrol. Make sure that when you solder it into the perf board that the legs from the photo cell are near to where you are going to make the other circuit.
 

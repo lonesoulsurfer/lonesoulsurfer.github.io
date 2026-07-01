@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Convert-Any-Tape-Player-to-a-Guitar-Amp/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,7 +17,7 @@ Source: https://www.instructables.com/Convert-Any-Tape-Player-to-a-Guitar-Amp/
 
 ![Intro 4](images/intro_04.jpg)
 
-Tape players are pretty much obsolete these days. The only place you can find tapes is either the thrift shop or the back of grannies cupboard. After making an ible' on how to convert a radio to an amp, I thought I'd try a tape player.
+Tape players are pretty much obsolete these days. The only place you can find tapes is either the thrift shop or the back of grannies cupboard. After making [an ible'](https://www.instructables.com/id/Convert-Any-Radio-Into-a-Guitar-Amp/) on how to convert a radio to an amp, I thought I'd try a tape player.
 
 All Tape players (and radios) have an amplifier built into them – it’s how your able to increase the volume. What this hack allows you to do is to tap into the Tape players amplifier so you can play guitar through it. You may be thinking why in hell would I want to do that! Well hacking a tape player gives you the most amazing vintage tone. The distinct “Lo-fidelity” sounds made from hacking the tape player are great. It’s a real raw and dirty sound which is perfect for playing some bluesy riffs.
 
@@ -23,7 +25,7 @@ I found this tape player at the tip and thought why not give it a new purpose. T
 
 I've also made a video of the build as well which you can find on the next step.
 
-Check out this website - it has some wicked ideas on how to convert radio's and tape players into amps and is a great source of information
+Check out[this website](http://www.radio-guitar-amps.com/) - it has some wicked ideas on how to convert radio's and tape players into amps and is a great source of information
 
 
 ## Step 1: Watch the Video
@@ -41,9 +43,9 @@ Apologies for my playing!
 
 Parts:
 
-1. Tape Player – You probably have one sitting around gathering dust. If not, try eBay, op/thrift shop, garage sales, dad’s shed!
+1. Tape Player – You probably have one sitting around gathering dust. If not, try [eBay](http://www.ebay.com.au/sch/i.html?_odkw=cassette+recorder&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xcassette+player.TRS0&_nkw=cassette+player&_sacat=0), op/thrift shop, garage sales, dad’s shed!
 
-2. Input audio Jack (6.5mm) – eBay
+2. Input audio Jack (6.5mm) – [eBay](http://www.ebay.com.au/itm/10-Pcs-6-35mm-1-4-Mono-Chassis-Socket-Jack-Connector-/151858594079?hash=item235b7a411f:g:FUsAAOSwwbdWKdtQ)
 
 3. Wire
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/LED-Ring-Lamp-1/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -46,27 +48,27 @@ Parts:
 
 Note - You will be able to get the brass/copper pieces from most hobby stores (expect for the bell)
 
-1. LED Ring - eBay
+1. LED Ring - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=Angel+Eyes+Halo+Ring+Light+&_sacat=0&_sop=15)
 
-2. Copper Tube 10mm OD - eBay
+2. Copper Tube 10mm OD - [eBay](https://www.ebay.com.au/itm/Round-Brass-Tube-Copper-Pipe-OD-4-25mm-Wall-1-2mm-For-Model-Making-Engineering/183881427848?var=691555695878&hash=item2ad02feb88:g:OIsAAOSwS4ddKVHN&frcectupt=true)
 
-3. Barrel Hinge 8mm - eBay
+3. Barrel Hinge 8mm - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=Brass+Cabinet+Hidden+Barrel+Hinge&_sacat=0&_sop=15)
 
-4. Chicago screw 8mm - eBay
+4. Chicago screw 8mm - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xchicago+screw.TRS0&_nkw=chicago+screw&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=Brass+Cabinet+Hidden+Barrel+Hinge)
 
-5. Copper plate 19mm - eBay
+5. Copper plate 19mm - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=copper+strip+19mm&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=copper+strip19mm)
 
-6. Brass hex coupling M6 - eBay
+6. Brass hex coupling M6 - [eBay](https://www.ebay.com.au/itm/Select-Size-M5-M6-Solid-Brass-Computer-Case-Motherboard-Coupling-Hex-Nuts/272368736570?hash=item3f6a71193a:g:Nc0AAOSwDiBZJbur&frcectupt=true)
 
-7. Brass bell. This might be a little tricky to find. Mine was from an old fire alarm. you could use this one or hunt around eBay or junk shops for a real brass one.
+7. Brass bell. This might be a little tricky to find. Mine was from an old fire alarm. you could use [this one](https://www.aliexpress.com/item/32801225906.html?spm=a2g0o.productlist.0.0.19b258c2xRo1Dm&algo_pvid=6edbd167-213c-46ad-804a-af3212ce1628&algo_expid=6edbd167-213c-46ad-804a-af3212ce1628-6&btsid=0ab6fa8115946914606755457ee752&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_) or hunt around eBay or junk shops for a real brass one.
 
 8. Piece of wood for the base. I used some reclaimed wood I found at the beach as I wanted it to look aged. The size of the wood I used was 90mm X 125mm. You can use any wood you like and make the base larger as well if desired.
 
 9. SPDT Toggle switch - eBay
 
-11. Li-po battery. You could use a mobile battery or do what I did and use an old laptop one.
+11. Li-po battery. You could use a [mobile battery](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xsamsung+mobile+battery.TRS0&_nkw=samsung+mobile+battery&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=copper+strip+19mm) or do what I did and use an old laptop one.
 
-12. Charging and voltage regulator - eBay
+12. Charging and voltage regulator - [eBay](https://www.ebay.com.au/itm/3-7V-9V-5V-2A-Adjustable-Step-Up-18650-Lithium-Battery-Charging-Discharge-I-J3Q3/264335034952?epid=23035413437&hash=item3d8b988a48:g:j~wAAOSw4YZc55Ns)
 
 13. Wire
 
@@ -243,7 +245,7 @@ Steps:
 
 ![Step 8: Adding Power and All the Rest of the Parts image 8](images/step08_08.jpg)
 
-If you have seen any of my other builds of late, you'll notice that I have been using the charging module in a lot of builds. I even did an 'ible on how to wire one up which can be found here.
+If you have seen any of my other builds of late, you'll notice that I have been using the charging module in a lot of builds. I even did an 'ible on how to wire one up which can be found [here](https://www.instructables.com/id/Reuse-Old-Mobile-Phone-Batteries/).
 
 Steps:
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Super-Simple-Chicken-Feeder/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

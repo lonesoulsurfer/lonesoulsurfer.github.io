@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Simple-Fire-Piston/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -15,13 +17,13 @@ Source: https://www.instructables.com/Simple-Fire-Piston/
 
 Make a simple fire piston from off the shelf parts.
 
-For some time now I’ve wanted to make my own fire piston after seeing click springs fantastic version. Unfortunately I don’t have any of the tools that he uses, plus it seemed like a complicated build. After a little research I found that you could make a simpler version with off the shelf parts. Matter-of-fact, you might even have these parts lying around the shed!
+For some time now I’ve wanted to make my own fire piston after seeing [click springs](https://en.wikipedia.org/wiki/Char_cloth) fantastic version. Unfortunately I don’t have any of the tools that he uses, plus it seemed like a complicated build. After a little research I found that you could make a simpler version with off the shelf parts. Matter-of-fact, you might even have these parts lying around the shed!
 
 For those who may be new to a fire piston, what it does is allow you to ignite char cloth without any form of fire. Once the char cloth is lit, then you can use this to light your fire. It works by compressing and heating air until it reaches temperatures of 260°C (500°F). This is hot enough to ignite the char cloth and create an ember which can be used to light your fire.
 
 In step 7 I go through how to make Char cloth.
 
-Check out this link if you would like to learn more about the fire piston.
+[Check out this link](https://en.wikipedia.org/wiki/Fire_piston) if you would like to learn more about the fire piston.
 
 It doesn’t take any real skill to make one of these and you only need basic tools. The hardest part is getting the seal right on the push rod. This took me a few goes but I learnt a lot so hopefully you won’t have to waste as much time as I did!
 
@@ -254,7 +256,7 @@ Adding a Nut
 
 Making char cloth is super easy and there are plenty of good instructions on the net on how to make it. The below shows you how to do it. link for more
 
-Check out this wikipedia link to see how it all works
+Check out this [wikipedia link](https://en.wikipedia.org/wiki/Char_cloth) to see how it all works
 
 Steps:
 

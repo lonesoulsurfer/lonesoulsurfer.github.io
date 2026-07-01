@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Bleep-Drum-Synth-Powered-by-Arduino/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -19,9 +21,9 @@ Source: https://www.instructables.com/Bleep-Drum-Synth-Powered-by-Arduino/
 
 ![Intro 6](images/intro_06.jpg)
 
-In this build I recreate the fantastic Bleep Labs 'Bleep Drum' into a Eurorack format module. I'm working on building my own 'simple' 9v Eurorack which this synth will be a part of.
+In this build I recreate the fantastic Bleep Labs '[Bleep Drum](https://bleeplabs.com/product/bleep-drum-midi/)' into a Eurorack format module. I'm working on building my own 'simple' 9v Eurorack which this synth will be a part of.
 
-Check out my other recent builds to see the other modules already designed.
+Check out my other [recent builds](https://www.instructables.com/member/lonesoulsurfer/instructables/) to see the other modules already designed.
 
 So what is the Bleep Drum Synth? Well it's an Arduino based drum machine that allows you to play drum tracks using 4 different samples and record them so you can layer them them up and create some great drum beats.
 
@@ -49,11 +51,12 @@ Here's a rundown of the features:
 
 The main goal with building this module is to create my own 'simple to build' modular synth. I wanted to keep everything as easy as possible with each module built with the following aims:
 
-- Can be powered by 9V (and 12V)
-- Easy to build with minimum components
-- Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
-- Can fit into any modular synth Eurorack (include the ability to power the module via normal module power sources)
-- Has to sound great!
+1. Can be powered by 9V (and 12V)
+2. Easy to build with minimum components
+3. Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
+4. Can fit into any modular synth Eurorack (include the ability to power the module via normal module power sources)
+5. Has to sound great!
+
 Let's get building!
 
 
@@ -69,10 +72,12 @@ Let's get building!
 
 ![Supplies image 5](images/step01_05.jpg)
 
-I've created a parts list which can be found in my GitHub page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
+I've created a parts list which can be found in my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page and in the PDF file attached to this step. The PDF includes links and images of each of the parts which will make it easy to order the correct ones for this build.
 
 The parts list attached doesn't included the PCB or front panel. You'll need to jump to the next step which goes through how to get yours printed.
 
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ## Step 1: Getting the PCB & Front Panel Printed
 
@@ -84,16 +89,16 @@ The parts list attached doesn't included the PCB or front panel. You'll need to 
 
 We all have different levels of knowledge, so when it comes to a build like this I want to make sure that I'm providing enough information so anyone with some basic soldering skills can make it. That includes ensuring there are instructions on how to get your own PCB's printed (which is super easy!)
 
-So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use JLCPCB (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called Inkscape (available free) and the panel including the drilled holes is done in Fusion 360 (also free!)
+So with that said, the first thing you will need to do is to get the front panel and PCB printed. I use [JLCPCB](https://jlcpcb.com/?from=VGS&utm_source=google&utm_medium=cpc&utm_campaign=14177189905&gad_source=1&gbraid=0AAAAABS1QqkiD3-WAMC-R-0N6a2KKPawu&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sfAjCecAjlW7BgEzggjBf0WNDCA4-ZMBy2IrNS7NcwcA4naAhj0_2xoCA-4QAvD_BwE) (not affiliated) to get this done. The front panel is actually just a PCB without any components included! The front design is done in a program called [Inkscape](https://inkscape.org/) (available free) and the panel including the drilled holes is done in [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) (also free!)
 
-The files that you need to build your own Bleep Drum Synth can be found in my GitHub page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
+The files that you need to build your own Bleep Drum Synth can be found in my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page. This includes the parts list, Gerber files for the PCB & front panel, schematic, Arduino script etc.
 
 STEPS:
 
-- Send the Gerber files to a PCB manufacturer like JLCPCB who will print the PCB and front panel for you. Download all of the files from my GitHub page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
-- If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found here.
-- NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
-- Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
+1. Send the Gerber files to a PCB manufacturer like [JLCPCB](https://jlcpcb.com/?from=VGBA&gad_source=1&gclid=CjwKCAiAjfyqBhAsEiwA-UdzJCxT2LUX1iS0CvS4HVuZlxetrU2JQNyu0nueQUivgEq7MzfoGlH54RoClQ8QAvD_BwE) who will print the PCB and front panel for you. Download all of the files from my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page to your computer and send the zipped Gerber files off to the PCB manufacturer of choice.
+2. If you have no idea what any of the above means , then check out the Instructable I made on how to get your broads printed which can be found [here](https://www.instructables.com/How-to-Get-a-PCB-Printed-Using-Gerber-Files/).
+3. NOTE: The manufacture will include an order number on both the PCB and front panel. It doesn't really matter where it is on the PCB but you don't want it on the front on the front panel!
+4. Over at JLCPCB you can 'specify a location' once the Gerber files have been loaded so click this for the front panel and specify in the comment section that you want the order number on the back of the panel. The manufacturer will add it to the back where indicated.
 
 
 ## Step 2: Adding the Components Part 1
@@ -112,10 +117,10 @@ As the PCB is 2 sided, the order you add the components does matter. If you get 
 
 STEPS:
 
-- As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.
-- I've included a mini JST connector to power the board. Solder the connecter next into place.
-- A quick note on powering the synth. As I only need positive and ground I have used a JST connector to connect it to power. However, I have included space to add a Eurorack 16 pin adapter in case you want to power it using traditional Eurorack power sources
-- You can now add the capacitors, start with the polyester caps and then add the electrolytic caps.
+1. As always, start with the lowest profile components, in this case it's the resistors and diodes. Its always good practice to check your resistors values before soldering in case you have to troubleshoot later on.
+2. I've included a mini JST connector to power the board. Solder the connecter next into place.
+3. A quick note on powering the synth. As I only need positive and ground I have used a JST connector to connect it to power. However, I have included space to add a Eurorack 16 pin adapter in case you want to power it using traditional Eurorack power sources
+4. You can now add the capacitors, start with the polyester caps and then add the electrolytic caps.
 
 
 ## Step 3: Adding the Arduino
@@ -128,9 +133,9 @@ STEPS:
 
 STEPS:
 
-- Now it's time to add the Arduino. I always include header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board. Plus, if the Arduino fails for whatever reason, you can easily remove and replace it.
-- Add the header pins to the Arduino and then place them into the board and solder into place.
-- You can then remove the Arduino Nano from the header pins to make it easier to add the rest of the components to the other side of the board
+1. Now it's time to add the Arduino. I always include header pins so the Arduino is removable. It helps if you have to replace the Arduino and also allows you to program it when it isn't in the board. Plus, if the Arduino fails for whatever reason, you can easily remove and replace it.
+2. Add the header pins to the Arduino and then place them into the board and solder into place.
+3. You can then remove the Arduino Nano from the header pins to make it easier to add the rest of the components to the other side of the board
 
 
 ## Step 4: Adding the Components Part 2
@@ -147,10 +152,10 @@ Now it's time time to add the components to the front of the PCB.
 
 STEPS:
 
-- First, place the RGB LED into place, making sure that it's sitting up a little bit from the board. This way it will poke through the front panel
-- Now you can add the 5 momentary switches. I usually put them all into place and then solder the legs into place. Flip the PCB over and make sure that they are all sitting fat. If not, then just re-heat the solder and push down on the switch
-- Next add the audio jacks and then the larger momentary switches
-- Lastly, solder the pots into place
+1. First, place the RGB LED into place, making sure that it's sitting up a little bit from the board. This way it will poke through the front panel
+2. Now you can add the 5 momentary switches. I usually put them all into place and then solder the legs into place. Flip the PCB over and make sure that they are all sitting fat. If not, then just re-heat the solder and push down on the switch
+3. Next add the audio jacks and then the larger momentary switches
+4. Lastly, solder the pots into place
 
 
 ## Step 5: Adding the Front Panel
@@ -167,26 +172,26 @@ STEPS:
 
 STEPS:
 
-- The front panel has been designed so it fits perfectly onto the PCB. Carefully place the front panel so it aligns with the components and push it into place. I usually start with the on/off switch and then align the pots and LED with the holes in the front panel.
-- You may need to trim the little tabs on the pots if they have them.
-- As there is nothing to secure the bottom of the front panel to the PCB, I have added a couple holes so you can add some spaces (M2) and ensure that the bottom section is connected.
-- You can add the nuts to the pots, audio jacks and on/off switch to secure the front panel to the PCB.
-- Now that the front panel is in place, you can either make an individual case to house it in or add it to your Eurorack.
+1. The front panel has been designed so it fits perfectly onto the PCB. Carefully place the front panel so it aligns with the components and push it into place. I usually start with the on/off switch and then align the pots and LED with the holes in the front panel.
+2. You may need to trim the little tabs on the pots if they have them.
+3. As there is nothing to secure the bottom of the front panel to the PCB, I have added a couple holes so you can add some spaces (M2) and ensure that the bottom section is connected.
+4. You can add the nuts to the pots, audio jacks and on/off switch to secure the front panel to the PCB.
+5. Now that the front panel is in place, you can either make an individual case to house it in or add it to your Eurorack.
 
 
 ## Step 6: Uploading the Sketch to the Arduino
 
 ![Step 6: Uploading the Sketch to the Arduino image 1](images/step07_01.png)
 
-If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out this link. It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
+If you are new to Arduino and want learn how to upload a sketch to Arduino - then check out [this link](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE). It's really straight forward and doesn't need any special tools - just a computer and a USB cord.
 
 STEPS:
 
-- Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my GitHub page
-- Connect your Arduino and upload the sketch
-- Once the sketch is loaded to Arduino you can connect it to the PCB for testing.
-- Connect the PCB to a 9V to 12V power source and check that the Drum synth works. Plug a speaker in to the out jack and hit the start button. Check out the 'How to Play' in the last step and start to create some beats. if you hear sounds then you have successfully loaded the sketch and solder the PCB correctly.
-- If you're not hearing anything, then you might need to do some troubleshooting.
+1. Open the sketch in the software folder which will take you to Arduino IDE. This cane be found on my [GitHub](https://github.com/lonesoulsurfer/Bleep_Drum_Modular_Synth) page
+2. Connect your Arduino and upload the sketch
+3. Once the sketch is loaded to Arduino you can connect it to the PCB for testing.
+4. Connect the PCB to a 9V to 12V power source and check that the Drum synth works. Plug a speaker in to the out jack and hit the start button. Check out the 'How to Play' in the last step and start to create some beats. if you hear sounds then you have successfully loaded the sketch and solder the PCB correctly.
+5. If you're not hearing anything, then you might need to do some troubleshooting.
 
 
 ## Step 7: How to Play
@@ -229,6 +234,10 @@ Pink – Pots control noise.
 
 All other controls are the same.
 
+
+## Downloads
+
+- [Parts List](pdfs/Parts List.pdf)
 
 ---
 *37 images archived*

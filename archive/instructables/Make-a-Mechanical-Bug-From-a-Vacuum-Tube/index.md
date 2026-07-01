@@ -1,8 +1,10 @@
-# Make a Mechanical Bug From a Vacuum Tube  
+# Make a Mechanical Bug From a Vacuum Tube
 
 Source: https://www.instructables.com/Make-a-Mechanical-Bug-From-a-Vacuum-Tube/
 
 ---
+
+![Cover](images/cover.jpg)
 
 
 ## Introduction
@@ -40,19 +42,20 @@ You don't need very many parts to build your own Martian
 
 PARTS:
 
-- Vacuum Tube - eBay
-- Copper or brass Rod - K&S METAL #8162 1/16′ (1.59mm) - eBay
-- Copper or brass Rod - K&S METAL #8161 3/64′ (1.19mm) - eBay
-- Copper or brass tube - K&S METAL #8118 3/32′ (3.38mm) OD - eBay.
-- NOTE - The rod needs to be able to fit inside the tube. You can get the rod and tube from hobby shops as well
-- For the eye I used a 2.5mm audio jack input socket (eBay) and a small copper surround. I have no idea what the copper surround was from! You could use a piece of copper tube in it's place
+1. Vacuum Tube - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=vacuum+tube&_sacat=0)
+2. Copper or brass Rod - K&S METAL #8162 1/16′ (1.59mm) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=k%26s+8162+1%2F16%E2%80%B2&_sacat=0&LH_TitleDesc=0&_odkw=k%26s+metal+8162+1%2F16%E2%80%B2&_osacat=0)
+3. Copper or brass Rod - K&S METAL #8161 3/64′ (1.19mm) - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=K%26S+8161+3%2F64%E2%80%B2&_sacat=0&LH_TitleDesc=0&_odkw=k%26s+8162+1%2F16%E2%80%B2&_osacat=0)
+4. Copper or brass tube - K&S METAL #8118 3/32′ (3.38mm) OD - [eBay.](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=K%26S+8118+3%2F32%E2%80%B2+&_sacat=0&LH_TitleDesc=0&_odkw=K%26S+8161+3%2F64%E2%80%B2&_osacat=0)
+5. NOTE - The rod needs to be able to fit inside the tube. You can get the rod and tube from hobby shops as well
+6. For the eye I used a 2.5mm audio jack input socket ([eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=2.5mm+audio+socket+pcb&_sacat=0&LH_TitleDesc=0&_odkw=2.5mm+audio+socket&_osacat=0)) and a small copper surround. I have no idea what the copper surround was from! You could use a piece of copper tube in it's place
+
 TOOLS
 
-- Solder iron
-- Wire cutters
-- Super glue
-- Files
-- Dremel (comes in handy! You could use a small wire saw as well)
+1. Solder iron
+2. Wire cutters
+3. Super glue
+4. Files
+5. Dremel (comes in handy! You could use a small wire saw as well)
 
 
 ## Step 1: Making the Legs
@@ -71,10 +74,10 @@ The legs are made from brass (or copper) rod and tube. You can design your legs 
 
 STEPS:
 
-- To start with, you need to make a template on paper of the shape and size that you want the legs to be. The size will depend on how big your tube is. I used relatively small tubes so my legs aren't very big.
-- You will also need to mark out the length of the tube that you are going to use. Doing this will ensure each leg is the same size and length.
-- I made the total length of each leg 6.5mm
-- There is also a sequence that the leg has to be bent in in order to fit the tube on.
+1. To start with, you need to make a template on paper of the shape and size that you want the legs to be. The size will depend on how big your tube is. I used relatively small tubes so my legs aren't very big.
+2. You will also need to mark out the length of the tube that you are going to use. Doing this will ensure each leg is the same size and length.
+3. I made the total length of each leg 6.5mm
+4. There is also a sequence that the leg has to be bent in in order to fit the tube on.
 
 
 ## Step 2: Bending the Legs
@@ -99,10 +102,10 @@ STEPS:
 
 STEPS:
 
-- Cut a piece of the larger rode and file the ends.
-- Place the piece of brass against the template, mark where the bend need to be and bend it with a pair of pliers. place back on the template to ensure it has been bent at the right angle
-- Grab the tube and cut 2 pieces. One will be added to the bend just done and the other smaller piece will be added after the first bend. File any burrs or rough edges.
-- place the leg back onto the template and make the last bend. If you make all the bends at once you won't be able to put the smaller piece of tube into place.
+1. Cut a piece of the larger rode and file the ends.
+2. Place the piece of brass against the template, mark where the bend need to be and bend it with a pair of pliers. place back on the template to ensure it has been bent at the right angle
+3. Grab the tube and cut 2 pieces. One will be added to the bend just done and the other smaller piece will be added after the first bend. File any burrs or rough edges.
+4. place the leg back onto the template and make the last bend. If you make all the bends at once you won't be able to put the smaller piece of tube into place.
 
 
 ## Step 3: Adding a Brace to the Leg
@@ -127,12 +130,12 @@ The brace is made from a thinner piece of brass rod. I added this so it looked l
 
 STEPS:
 
-- Cut the piece of rod so it fits between both bends in the leg
-- File any rough edges
-- Heat up the soldering iron and hold into place the piece of rod. I used a piece of rag to hold it as it will get hot
-- Add some solder to one end and connect the rod to the leg with the solder.
-- place the leg into something to hold it for you (helping hand is good) and add solder to the other end. Brass conducts heat very well so it won't take too much to solder the brace into place
-- Now that you have made one leg, it's time to make another 5!
+1. Cut the piece of rod so it fits between both bends in the leg
+2. File any rough edges
+3. Heat up the soldering iron and hold into place the piece of rod. I used a piece of rag to hold it as it will get hot
+4. Add some solder to one end and connect the rod to the leg with the solder.
+5. place the leg into something to hold it for you (helping hand is good) and add solder to the other end. Brass conducts heat very well so it won't take too much to solder the brace into place
+6. Now that you have made one leg, it's time to make another 5!
 
 
 ## Step 4: Filing the Legs of the Vacuum Tube
@@ -145,10 +148,10 @@ I think there must be some coating on the legs of vacuum tubes as solder doesn't
 
 STEPS:
 
-- If you are also having problems soldering to the leg of the vacuum tube (give it a test), then you might have to do the following:
-- Grab a small file and give the outside and the inside of each leg a file
-- Try to get the legs so they look like bare metal
-- Go and see if you can add some solder to them now. if not, you may have to pick a different vacuum tube
+1. If you are also having problems soldering to the leg of the vacuum tube (give it a test), then you might have to do the following:
+2. Grab a small file and give the outside and the inside of each leg a file
+3. Try to get the legs so they look like bare metal
+4. Go and see if you can add some solder to them now. if not, you may have to pick a different vacuum tube
 
 
 ## Step 5: Bend the Legs
@@ -165,10 +168,10 @@ STEPS:
 
 STEPS:
 
-- It makes it easier to connect the copper legs to the legs of the vacuum tube if you bend them parallel
-- Before you start to bend the legs, you first need to plan and decide how many legs your Martian is going to have! Some vacuum tubes have 7 legs and some have 9 . You may want to make a 8 legged Martian or a 6 leg one with a tube that has 9. It's up to you.
-- Once you have decided how many legs the little critter is going to have, use a pair of needle nose pliers and carefully bend each leg 90 degrees.
-- Try and lay out the legs on the direction that you want to attach the brass legs
+1. It makes it easier to connect the copper legs to the legs of the vacuum tube if you bend them parallel
+2. Before you start to bend the legs, you first need to plan and decide how many legs your Martian is going to have! Some vacuum tubes have 7 legs and some have 9 . You may want to make a 8 legged Martian or a 6 leg one with a tube that has 9. It's up to you.
+3. Once you have decided how many legs the little critter is going to have, use a pair of needle nose pliers and carefully bend each leg 90 degrees.
+4. Try and lay out the legs on the direction that you want to attach the brass legs
 
 
 ## Step 6: Make a Jig
@@ -187,10 +190,10 @@ Soldering the brass legs onto the vacuum tube legs is quite tricky. To make it e
 
 STEPS:
 
-- Grab a piece of scrap wood and drill a hole slightly bigger than the diameter of the vacuum tube
-- I then roughly marked out where each brass leg will sit on the wood
-- Place the tube into the hole (add some tape to the tube it is moving around in the hole) and align the legs to the markings you made on the wood. This will help to make each of the legs parallel to each other
-- grab a piece of blu-tack as well - you'll need this to hold the brass leg into place whilst you are soldering it to the vacuum tube
+1. Grab a piece of scrap wood and drill a hole slightly bigger than the diameter of the vacuum tube
+2. I then roughly marked out where each brass leg will sit on the wood
+3. Place the tube into the hole (add some tape to the tube it is moving around in the hole) and align the legs to the markings you made on the wood. This will help to make each of the legs parallel to each other
+4. grab a piece of blu-tack as well - you'll need this to hold the brass leg into place whilst you are soldering it to the vacuum tube
 
 
 ## Step 7: Soldering the Legs to the Vacuum Tube
@@ -217,10 +220,10 @@ So now it's time to solder all those legs you made to the vacuum tube. This is w
 
 STEPS:
 
-- Place the tube into the jig and align the legs up to the markings you have made
-- Place a piece of blu tack onto the wood and secure one of the brass legs so it is resting on the bent leg of the vacuum tube
-- heat up the soldering iron as hot as it will go and add some solder to the 2 legs. it might take a a little time for the solder to stick to both legs.
-- Once the solder is dry, remove the blu tack (I just pulled the tube out of the jig) and do the same for the other 5 legs
+1. Place the tube into the jig and align the legs up to the markings you have made
+2. Place a piece of blu tack onto the wood and secure one of the brass legs so it is resting on the bent leg of the vacuum tube
+3. heat up the soldering iron as hot as it will go and add some solder to the 2 legs. it might take a a little time for the solder to stick to both legs.
+4. Once the solder is dry, remove the blu tack (I just pulled the tube out of the jig) and do the same for the other 5 legs
 
 
 ## Step 8: Making the Eye
@@ -245,10 +248,10 @@ The eye was made from a 2.5mm jack socket and a small copper surround that I had
 
 STEPS:
 
-- First I removed a section from the coppers surround and filed off the edges
-- I then used a curved file and filed the inside of the surround so it would fit the same profile as the round vacuum tube
-- Next, I removed most of the plastic on the 2.5mm jack socket so it could fit into the copper surround and then secured it into place with the small nut on the audio socket
-- Lastly, I added some superglue and stuck it onto the vacuum tube
+1. First I removed a section from the coppers surround and filed off the edges
+2. I then used a curved file and filed the inside of the surround so it would fit the same profile as the round vacuum tube
+3. Next, I removed most of the plastic on the 2.5mm jack socket so it could fit into the copper surround and then secured it into place with the small nut on the audio socket
+4. Lastly, I added some superglue and stuck it onto the vacuum tube
 
 
 ---

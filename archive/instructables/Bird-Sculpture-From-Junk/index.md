@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Bird-Sculpture-From-Junk/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Make-a-Trench-Lighter/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -21,7 +23,7 @@ The lighter uses zippo lighter fuel as an accelerate and works in pretty much th
 
 There are some tricky sections to make in this trench lighter. if you are a novice at soldering, then I would probably brush up on my skills before I attempted to make one. However, if you are willing to take the plunge, then hopefully this ible’ will be of some benefit.
 
-Music in the YouTube clip is by DJ RHH.
+Music in the YouTube clip is by [DJ RHH.](https://soundcloud.com/djrhh/return-of-the-drifter)
 
 So without further ado – let’s get cracking
 
@@ -44,11 +46,11 @@ Parts:
 
 1. Old lighter x 2. Try and make it the larger kind as the sparkwheel is larger and so is the flint.
 
-2. 2 x 15mm copper caps. Hardware store or eBay. Cheaper from the hardware store
+2. 2 x 15mm copper caps. [Hardware](https://www.bunnings.com.au/kinetic-15mm-copper-capillary-end-cap_p4880053) store or [eBay](http://www.ebay.com.au/itm/End-Feed-15mm-Stop-end-Fitting-Cap-stop-to-Solder-for-Copper-MULTIBUY-/151231506107?var=&hash=item233619a6bb:m:muEwy8pvobKYoWuFD7l9BDA). Cheaper from the hardware store
 
-3. 12.7mm (1/2") copper tube. You can find this in the plumbing section at your hardware store. This tube will fit inside the 15mm caps
+3. 12.7mm (1/2") copper tube. You can find this in the plumbing section at your [hardware store](https://www.bunnings.com.au/kembla-1-2-x-1-5m-copper-straight-length_p4910028). This tube will fit inside the 15mm caps
 
-4. 4mm brass or copper tube. Hobby shop or eBay . If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube
+4. 4mm brass or copper tube. Hobby shop or [eBay](http://www.ebay.com.au/itm/Brass-Tube-Pipe-Tubing-Round-Inner-2mm-3mm-4mm-5mm-6mm-Long-300mm-Wall-0-5mm-/161447898764?var=&hash=item25970b6e8c:m:mHYxboMQ1UebxoeGm1qSaPw). If you are using a small Bic lighter sparkwheel and spring, you can probably use 3mm tube
 
 5. Brass strip. Hobby shop. Don't get it too thick or you will never be able to bend it. Same goes with too thin! This is used as a bracket for the sparkwheel
 
@@ -56,9 +58,9 @@ Parts:
 
 7. 2 x small screws. The screw needs to be slightly smaller than the small brass tube (4mm). These are used to hold the spring into place
 
-8. Domed nut (M5) - Hardware store or eBay
+8. Domed nut (M5) - Hardware store or [eBay](http://www.ebay.com.au/itm/SOLID-BRASS-HEX-DOME-NUTS-ACORN-CAP-NUTS-FOR-BOLTS-SCREWS-M3-4-5-6-8-10-12-20-/222132399860?var=&hash=item33b81f6ef4:m:mKaga9Si1qUKIh1gsSUBoeg)
 
-9. Bolt M5 - Hardware Store or eBay
+9. Bolt M5 - Hardware Store or [eBay](http://www.ebay.com.au/itm/M4-M5-M6-Solid-Brass-Hex-Head-Cap-Screws-Bolt-Hex-Tap-Bolts-Full-Thread-DIN933-/322127098942?var=&hash=item4b0045743e:m:mVi_3CLhvC2jeCHHb_PoTEw)
 
 Tools:
 

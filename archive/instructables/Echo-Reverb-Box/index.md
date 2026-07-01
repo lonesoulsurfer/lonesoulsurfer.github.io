@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Echo-Reverb-Box/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -27,11 +29,11 @@ I brought 2 of these echo modules (I do each time I buy them, I usually kill one
 
 Projects I've used this module in
 
-Sound Bending Synth
+[Sound Bending Synth](https://www.instructables.com/id/Sound-Bending-Synth/)
 
-Dub Siren Synth
+[Dub Siren Synth](https://www.instructables.com/id/Dub-Siren-555-Timer/)
 
-Hackaday have also been nice enough to review this project. The article can be found here
+[Hackaday](https://hackaday.com/?gclid=CjwKCAiA58fvBRAzEiwAQW-hzTZV1eEwLdO0Vsn_N4EfrDxyIFbPlYwbiKsXVcXBxF25Cwtvi60QjhoCY7cQAvD_BwE) have also been nice enough to review this project. The article can be found [here](https://hackaday.com/2019/11/22/echo-and-reverb-in-a-pretty-little-box/)
 
 
 ## Step 1: So What Can You Do With a Echo & Reverb Box?
@@ -54,7 +56,7 @@ What can't you do! Oh the things you can do!
 
 there are millions more but I've run out of room...
 
-If you want to know more about the IC that is at the heart of this module - then check out this page on the PT2399 IC
+If you want to know more about the IC that is at the heart of this module - then check out this page on the [PT2399 IC](https://www.electrosmash.com/pt2399-analysis)
 
 
 ## Step 2: Parts & Tools
@@ -67,29 +69,29 @@ If you want to know more about the IC that is at the heart of this module - then
 
 Parts
 
-1. Reverb module – eBay (buy 2 in case one gets damaged)
+1. Reverb module – [eBay](https://www.ebay.com.au/itm/PT2399-Microphone-Reverb-Plate-Reverberation-Board-No-Preamplifier-Function/263004532089?hash=item3d3c4aad79:g:iuYAAOSwfpVZJ-Ts)(buy 2 in case one gets damaged)
 
-2. 2 X 50K Potentiometers – eBay
+2. 2 X 50K Potentiometers – [eBay](https://www.ebay.com.au/itm/2-5PCS-3-6Pin-6MM-Rotary-Potentiometer-Adjustable-Resistance-5-20-50-100K-Ohm/392335538338?_trkparms=ispr%3D1&hash=item5b590538a2:m:mqOtDVMgaJzNUj3E3gGFQAg&enc=AQAEAAAB4BPxNw%2BVj6nta7CKEs3N0qXcrTjjKMg7bdZW%2FexUB9HKmFQYIpIQsTNdhcN2%2BADELKJkKNOaTxy6Afgfw4xNmbk1qhgseD%2F65oDLYyeBU3SUiFtLUTtuQsp4FGybp9ooXQ9FZYBZ6viTg3%2BiZdsjAhLc8DisbTlSXiQo1ykJiUmcxwtxa9gJlBO%2Fq7zFBgaPo0GW%2B7CIe7hQ2o%2FPrHMUoIbL1sEVvi%2BcaEwx%2BJbDW3WdUwxR2%2Bsd3PFJ%2F96Yj910B64Oa8teyNeC%2FeorARPAMA20%2BzvjrUaFh98l2RnFI9%2BCWs4PRdhNIdXeutpQcEbSdoEfAJqObjYxugptQSc%2F3xnTi04T6PZkRmVlm0ElDSCBfpWmOv179v7m6REQh%2BOHoBp10G8shZ4vbxJxFkfTZJvljBZNg4B3uaoe%2FL7%2FGOVXB82m15IrBaicq3PxyqXbLyZXSjYOQAiOfWVgDx6sMcZ%2FQ%2BkzKOURdEy4fkfuJKZcgNhEMfx7TYxKD94WsZ%2FWuRF%2B8IDozjwFsgPKbEPgV1fgBJGPmW7om4US599omwW2KlD9LC%2BuWQdrJe1dBBSjq1QpX1H4tBlwXG12oVM9AjFf0tZzfst1uT1Ol5Mi2ok1EGK1fbSedsXBNtAQxA35lQ%3D%3D&checksum=3923355383389d655c87aa474c50bf9f7bc44d4f1ca3&frcectupt=true)
 
-3. 2 X Pot knobs - eBay
+3. 2 X Pot knobs - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2542782.m570.l1311.R3.TR11.TRC1.A0.H0.Xpoten.TRS0&_nkw=potentiometer+knob&_sacat=0)
 
-4. 2 X 3.5mm Jack inputs – eBay
+4. 2 X 3.5mm Jack inputs – [eBay](https://www.ebay.com.au/itm/10Pcs-PJ-392-3-Pin-3-5mm-Stereo-Headphone-Audio-Video-Jack-Socket-Plug-Wv/293023325026?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 
-5. 2 X 6.5mm Jack inputs – eBay
+5. 2 X 6.5mm Jack inputs – [eBay](https://www.ebay.com.au/itm/2Pcs-1-4-inch-6-35Mm-Stereo-Input-Jack-Plug-Socket-For-Electric-Guitar-Bass-S2F5/303222519650?epid=4027262361&hash=item4699787762:g:EikAAOSwqktdKTAv)
 
-6. SPDT switch. I pulled mine out of some old electronics – eBay
+6. SPDT switch. I pulled mine out of some old electronics – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR1.TRC0.A0.H0.Xspdt+switch.TRS0&_nkw=spdt+switch&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=spdt+switch+toggle)
 
-7. Momentary switch – eBay
+7. Momentary switch – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xmomentary+switch.TRS0&_nkw=momentary+switch&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=spdt+switch)
 
-8. 3mm LED – eBay
+8. 3mm LED – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.X3mm+led.TRS0&_nkw=3mm+led&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=momentary+switch)
 
-9. 330R Resistor . Buy them in assortment lots- eBay
+9. 330R Resistor . Buy them in assortment lots- [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1311.R1.TR1.TRC0.A0.H0.Xresistor+asso.TRS0&_nkw=resistor+assortment&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=3mm+led)
 
-10. Case – eBay, Jcar (Australian electronics store)
+10. Case – [eBay,](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.Xproject+bo.TRS0&_nkw=project+box&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=resistor+assortment) Jcar (Australian electronics store)
 
-11. You’ll also need a couple of 3.5mm male jacks which you can get from eBay
+11. You’ll also need a couple of 3.5mm male jacks which you can get from [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR2.TRC0.A0.H0.X3.5+cable.TRS0&_nkw=3.5+cable&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=project+box)
 
-12. 9V battery holder – eBay
+12. 9V battery holder – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313.TR11.TRC1.A0.H0.X9v+battery+holder.TRS0&_nkw=9v+battery+holder&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=3.5+cable)
 
 13. 9v Battery
 

@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Secret-Drawer-Book-Switch/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -52,17 +54,17 @@ PARTS:
 
 2. Ply wood - 4mm sheet
 
-3. Solenoid lock - eBay
+3. Solenoid lock - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=solenoid+lock&_sacat=0&_sop=15)
 
-4. 9V battery holder - eBay
+4. 9V battery holder - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=9v+battery+holder&_sacat=0&LH_TitleDesc=0&_odkw=Key+Switch+ON%2FOFF+Lock&_osacat=0&_sop=15)
 
-5. Key lock switch (optional) I wanted a couple ways to open the drawer so included a key lock switch as well. - eBay
+5. Key lock switch (optional) I wanted a couple ways to open the drawer so included a key lock switch as well. - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=Key+Switch+ON%2FOFF+Lock&_sacat=0&_sop=15)
 
-6. Fan Switch - eBay
+6. Fan Switch - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_nkw=Ceiling+Fan+Lamp+Wall+Light+Pull+Chain&_sacat=0&_sop=15)
 
-7. Aluminium Strip - 20mm - eBay
+7. Aluminium Strip - 20mm - [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=aluminium+flat+bar+20mm&_sacat=0)
 
-8. Spring 40mm long X 20mm wide - eBay
+8. Spring 40mm long X 20mm wide - [eBay](https://www.ebay.com.au/itm/312891060814?_trkparms=ispr%3D1&hash=item48d9c2b24e:g:7vgAAOSwHGFcrXEi&amdata=enc%3AAQAFAAACgBaobrjLl8XobRIiIML1V4Imu%252Fn%252BzU5L90Z278x5ickkRjLZq23gAR%252BKma9gM2Z1hmjml0Kqcde9gJmuou1SnDNYrlX0Wse7vMGLx1U9AtFY4APPf7nIuc5CnJxEzwDhpcDZ3SKNi5Uh%252FVPNi2uQVCULRZ5x38JOpfK%252F2Gi7ZBfb8oRV3bIZZ0we5xapteb31Ut7RaAir58IYRR3WSx70Ohygaj2m9sLC2ega6VgrgmgCFBW77%252FUjwTsdnQvPQzkLcGiSeiukIu4S8RkOrAh%252B5Nub2QnWqTp9dY6ZoLLkfE6pGBMMpLuVjjwV%252FwLEkVgs29Xxb35etl4iopcPFCjRRiDy3iVIPaZKQ1Vy62h%252BY7BMuum3KiUMREKOsXOd6MFTW4PtV6SWrRFvfgb2U%252BN9WdaFHXrGY9H8E9FmounMs2P6AUyRRxVONjZaRNrRpLdX47xQYoGSAj5EvhoMAPT9zSG%252F%252F8Hg4OOyKVfS%252B5kwBgzakCIhBds1R8lzPbqzeANp5xvygq0lkjgqkroDSDps2K%252FzZ76rzTFuwygHg8wpJitXEq%252BXu62LfIPBUGaTjF1%252B5ViC5k77COjHZjHUutZc7O7%252BehUM3i%252FIrwygm83maJtrzcD5AORqaekCxfmUnqqpbUqXk%252BeVgnmStBAHBmME%252BHF8Wz41KNnwV3L%252B8jd2cVNV3bYyrFuIFkKgb2YQL%252FhN%252BYY%252FfjiQygJPClaayDxmAMYaoa1HJJ5XhBQ68aEtRIJWNHvLLhMkI%252F01vXUx8mrimg3MlLvFfW6VXTr5L9%252BGo%252B%252BDElf1%252Br9ZvLhiWfA2sEkfjegixuYxAIs1t%252Fz2cVvtn%252BSnG0jSUUAVl8jN4vAYE4%253D%7Ccksum%3A3128910608144fbeb096e2c74c82b10a2a8d2f2a4bdd%7Campid%3APL_CLK%7Cclp%3A2334524)
 
 9. Various small screws
 

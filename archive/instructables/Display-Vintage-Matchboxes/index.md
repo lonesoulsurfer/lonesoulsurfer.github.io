@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Display-Vintage-Matchboxes/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 

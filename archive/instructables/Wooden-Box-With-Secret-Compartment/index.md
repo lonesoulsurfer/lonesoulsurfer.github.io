@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Wooden-Box-With-Secret-Compartment/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -48,7 +50,12 @@ I also made a short video of it in action. I didn't bother doing a whole build v
 
 ![Supplies image 8](images/step01_08.jpg)
 
-View 5 more
+View
+5
+more
+View
+5
+more images
 
 
 ## Step 1: Routing a Groove & Cutting the Wood for the Box
@@ -65,12 +72,12 @@ The first thing to do is to use a router and make a groove for the ply wood lid.
 
 STEPS:
 
-- First secure the piece of wood firmly to a flat surface using clamps
-- Next decide how far down the side of the box you will want to place the lid. I like to make the groove very close to the top so I am utilizing as much of the inside section as I can
-- With a router (or dremel with a routing bit and tool), make the groove in the wood. Go nice and slow
-- If necessary, use something like a small screwdriver to remove any sawdust and burrs of wood left inside the groove
-- Now it's time to work out what size you want to make the actual box. You could make a smaller one then mine or larger if you prefer - all up tp you. The dimensions of my box can be found in the image on this step
-- Measure, mark and cut the wood to size
+1. First secure the piece of wood firmly to a flat surface using clamps
+2. Next decide how far down the side of the box you will want to place the lid. I like to make the groove very close to the top so I am utilizing as much of the inside section as I can
+3. With a router (or dremel with a routing bit and tool), make the groove in the wood. Go nice and slow
+4. If necessary, use something like a small screwdriver to remove any sawdust and burrs of wood left inside the groove
+5. Now it's time to work out what size you want to make the actual box. You could make a smaller one then mine or larger if you prefer - all up tp you. The dimensions of my box can be found in the image on this step
+6. Measure, mark and cut the wood to size
 
 
 ## Step 2: Making the Box
@@ -91,10 +98,10 @@ You could use wood glue to connect the sides up but as I hate waiting I used a n
 
 STEPS:
 
-- First connect a short and long side together, making sure that the groove in the top of the sides matches up. I have a jig that ensures that the sides are square which comes in handy for a project like this
-- Add a couple nails and then add another long side and do the same thing.
-- Don't put the other small side yet. You need to modify this to make the drawer section.
-- Lastly, cut a piece of ply wood for the base and nail this top the bottom of the box. It's important that you cut the ply wood so it includes the 4th short wall of the case as well.
+1. First connect a short and long side together, making sure that the groove in the top of the sides matches up. I have a jig that ensures that the sides are square which comes in handy for a project like this
+2. Add a couple nails and then add another long side and do the same thing.
+3. Don't put the other small side yet. You need to modify this to make the drawer section.
+4. Lastly, cut a piece of ply wood for the base and nail this top the bottom of the box. It's important that you cut the ply wood so it includes the 4th short wall of the case as well.
 
 
 ## Step 3: Making the Drawer Runners
@@ -111,10 +118,10 @@ The runners for the drawer are made from some C channel aluminium.
 
 STEPS:
 
-- Place the C channel inside the box and mark where it ends inside the box
-- Use a cutting wheel on a grinder and cut 2 pieces of equal length.
-- Place back inside the box and make sure that it is flush with the 2 longer sections on the inside of the box
-- Don't secure the C channel yet to the inside of the box - you'll do that later
+1. Place the C channel inside the box and mark where it ends inside the box
+2. Use a cutting wheel on a grinder and cut 2 pieces of equal length.
+3. Place back inside the box and make sure that it is flush with the 2 longer sections on the inside of the box
+4. Don't secure the C channel yet to the inside of the box - you'll do that later
 
 
 ## Step 4: Making the Drawer
@@ -141,10 +148,10 @@ The drawer is made from some square dowel for the sides and some thin ply wood f
 
 STEPS:
 
-- Place the C channel inside the box and measure the distance between them and also the length of the C channel
-- Cut a piece of ply wood to fit and check by placing it in the C channel whist it is inside the box. If it slides in and out you have your measurements right
-- Next, cut the square dowel to make sides for the drawer and either glue or nail gun these into place.
-- Place it again into the c channel and make sure it slides nice and easy back and forth. Sand the top section of the drawer if it is catching anywhere
+1. Place the C channel inside the box and measure the distance between them and also the length of the C channel
+2. Cut a piece of ply wood to fit and check by placing it in the C channel whist it is inside the box. If it slides in and out you have your measurements right
+3. Next, cut the square dowel to make sides for the drawer and either glue or nail gun these into place.
+4. Place it again into the c channel and make sure it slides nice and easy back and forth. Sand the top section of the drawer if it is catching anywhere
 
 
 ## Step 5: Modding and Adding the Other Side Wall
@@ -169,12 +176,12 @@ The 4th side wall for the box is going to be partial used as the drawer front an
 
 STEPS:
 
-- First, cut the side wall in half, about 2/3 the down.
-- Sand the cut section so it is nice and flat
-- At this stage you can secure the C channel inside the box. Scratch up the sides that will be touching the inside of the box, add some superglue and stick them into place
-- Place the drawer inside and while the box is sitting on a flat surface, place the smaller section of the side wall against the drawer and nail into place.
-- Next, place the larger side wall section on top of the smaller one and while pushing down on it, also nail it into place
-- Test to make sure that the drawer opens. It should be tight but will a bit of a pull should open. Sand the top of the drawer section if it is really tight and try again.
+1. First, cut the side wall in half, about 2/3 the down.
+2. Sand the cut section so it is nice and flat
+3. At this stage you can secure the C channel inside the box. Scratch up the sides that will be touching the inside of the box, add some superglue and stick them into place
+4. Place the drawer inside and while the box is sitting on a flat surface, place the smaller section of the side wall against the drawer and nail into place.
+5. Next, place the larger side wall section on top of the smaller one and while pushing down on it, also nail it into place
+6. Test to make sure that the drawer opens. It should be tight but will a bit of a pull should open. Sand the top of the drawer section if it is really tight and try again.
 
 
 ## Step 6: Adding a Base to the Inside of the Box and Making a Lid
@@ -189,12 +196,12 @@ STEPS:
 
 STEPS:
 
-- To now need to make another base for the inside of the box to cover the and hide the drawer. Just a piece of ply wood so it just fits inside the box (should be as tight a fit as you can make it).
-- Add some superglue tot he top of the C channel and glue the base to them
-- To make the lid, measure the distance between the grooves in the top of the box and cut a piece of ply wood to fit
-- Slide it in place and make any modifications necessary for a nice smooth fit
-- To enable easy opening of the lid, I added a small dowel knob to the top of the lid section.
-- Now it time to paint the box. I used some 'aged teak' stain and gave it one coat.
+1. To now need to make another base for the inside of the box to cover the and hide the drawer. Just a piece of ply wood so it just fits inside the box (should be as tight a fit as you can make it).
+2. Add some superglue tot he top of the C channel and glue the base to them
+3. To make the lid, measure the distance between the grooves in the top of the box and cut a piece of ply wood to fit
+4. Slide it in place and make any modifications necessary for a nice smooth fit
+5. To enable easy opening of the lid, I added a small dowel knob to the top of the lid section.
+6. Now it time to paint the box. I used some 'aged teak' stain and gave it one coat.
 
 
 ## Step 7: Adding Some Aluminium to the Box to Help Hide the Drawer

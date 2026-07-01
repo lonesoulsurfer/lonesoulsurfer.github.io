@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Uber-Lighter/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -62,15 +64,15 @@ Sparkwheel
 
 The Rest of the Parts
 
-1. Cotton Rope – I used 8mm sash rope which again you can find in a hardware store or eBay
+1. Cotton Rope – I used 8mm sash rope which again you can find in a hardware store or [eBay](https://www.ebay.com.au/sch/i.html?_odkw=sash+rope&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.Xsash+rope+8mm.TRS0&_nkw=sash+rope+8mm&_sacat=0)
 
 2. Cotton wool
 
-3. 10mm Insert – eBay
+3. 10mm Insert – [eBay](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p4712.m570.l1313.TR0.TRC0.H0.X10%2F50X+Large+Flange+Nutsert+Zinc+Plated+Steel+Rivet+Nut+Rivnut+Nutsert+M4%2F6%2F8%2F1.TRS0&_nkw=10%2F50X+Large+Flange+Nutsert+Zinc+Plated+Steel+Rivet+Nut+Rivnut+Nutsert+M4%2F6%2F8%2F10&_sacat=0)
 
-4. 10mm Eye bolt – eBay
+4. 10mm Eye bolt – [eBay](http://www.ebay.com.au/itm/M6-M8-M10-M12-Metric-Thread-316-Marine-Stainless-Steel-Lifting-Eye-Bolt-lia-/182346058457?var=&hash=item2a74ac0ad9:m:mAvceX2C38AkkURcY17cZ_g)
 
-5. Methylated spirits (or lighter fluid) - Hardware store. So it seems that methylated spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out this link to find out more. You can also use lighter fluid (Naphtha in the US) if you have it as well.
+5. Methylated spirits (or lighter fluid) - Hardware store. So it seems that methylated spirits is called many different names. In the US it's called denatured alcohol (be careful of denatured alcohol though as it has Methanol in it which can be very dangerous) , methyl hydrate, or fonduefuel. In Europe, it may be called spirits. check out [this link](https://en.wikipedia.org/wiki/Denatured_alcohol) to find out more. You can also use lighter fluid (Naphtha in the US) if you have it as well.
 
 Tools:
 
@@ -153,8 +155,7 @@ Steps:
 
 Steps:
 
-Adding the screw
-It's best adding the screw first before you cut the copper tube. Reason being, you need to lock the tube in a vice to be able to force the screw into the end of the tube
+Adding the screw It's best adding the screw first before you cut the copper tube. Reason being, you need to lock the tube in a vice to be able to force the screw into the end of the tube
 
 1. Secure the copper tube in a vice. You will probably squash the tube but don't worry, you won't need this bit
 

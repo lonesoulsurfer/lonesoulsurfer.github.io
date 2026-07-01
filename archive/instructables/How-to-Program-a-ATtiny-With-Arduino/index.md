@@ -4,6 +4,8 @@ Source: https://www.instructables.com/How-to-Program-a-ATtiny-With-Arduino/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -44,19 +46,20 @@ PARTS:
 
 Hardware
 
-- ATtiny - There are many types but in this Ible' I'll be using a ATtiny 85 which is a pretty popular one - Ali Express
-- Arduino Uno. Prob could use other Arduino's but this is what I used - Ali Express
-- Arduino USB 2.0 CABLE TYPE A/MICRO. This is what you use to connect the Arduino to the PC - Ali Express
+1. ATtiny - There are many types but in this Ible' I'll be using a ATtiny 85 which is a pretty popular one - [Ali Express](https://www.aliexpress.com/w/wholesale-attiny-85.html?spm=a2g0o.productlist.search.0)
+2. Arduino Uno. Prob could use other Arduino's but this is what I used - [Ali Express](https://www.aliexpress.com/w/wholesale-arduino-uno.html?spm=a2g0o.productlist.search.0)
+3. Arduino USB 2.0 CABLE TYPE A/MICRO. This is what you use to connect the Arduino to the PC - [Ali Express](https://www.aliexpress.com/w/wholesale-arduino-usb-cord.html?spm=a2g0o.productlist.search.0)
+
 Additional Parts
 
-- 16 Pin ZIF Test DIP IC - Ali Express
-- Prototype board - Ali Express
-- Male to male jumper wires - Ali Express
-- Female 8 Pin sockets - Ali Express
-- 220R Resistor - Ali Express
-- LED - Red 3mm - Ali Express
-- 10uf Capacitor - Ali Express
-- Small piece of ply wood (forms the base to attached the Arduino and prototype board to)
+1. 16 Pin ZIF Test DIP IC - [Ali Express](https://www.aliexpress.com/w/wholesale-14-Pin-ZIF-Test-DIP-IC-.html?spm=a2g0o.productlist.search.0)
+2. Prototype board - [Ali Express](https://www.aliexpress.com/item/1005002879273095.html?spm=a2g0o.productlist.main.5.53edOiBiOiBiCo&algo_pvid=dff6f61e-e599-4763-bedc-3136d3c9c139&algo_exp_id=dff6f61e-e599-4763-bedc-3136d3c9c139-2&pdp_npi=4%40dis%21AUD%213.75%213.30%21%21%212.43%212.14%21%402101c5a417151460306541120ecd07%2112000036451082897%21sea%21AU%21135072183%21&curPageLogUid=HMQwAzmnmkzm&utparam-url=scene%3Asearch%7Cquery_from%3A)
+3. Male to male jumper wires - [Ali Express](https://www.aliexpress.com/w/wholesale-male-to-male-jumper-wires.html?spm=a2g0o.detail.search.0)
+4. Female 8 Pin sockets - [Ali Express](https://www.aliexpress.com/w/wholesale-female-8-pin-header.html?spm=a2g0o.productlist.search.0)
+5. 220R Resistor - [Ali Express](https://www.aliexpress.com/w/wholesale-220R-resistor.html?spm=a2g0o.productlist.search.0)
+6. LED - Red 3mm - [Ali Express](https://www.aliexpress.com/w/wholesale-3mm-led-red.html?spm=a2g0o.productlist.search.0)
+7. 10uf Capacitor - [Ali Express](https://www.aliexpress.com/w/wholesale-10uf-capacitor.html?spm=a2g0o.productlist.search.0)
+8. Small piece of ply wood (forms the base to attached the Arduino and prototype board to)
 
 
 ## Step 1: Creating a Development Board for the ATtiny
@@ -81,11 +84,11 @@ If you wanted to you could just use a breadboard for this part. However, I wante
 
 STEPS:
 
-- Solder the 16 Pin ZIF Test IC to to the prototype board
-- Next, add the 8 pin female header to the board and align them to the pins on the ZIF test IC
-- To be able to run the 'blink test' I decided to also connect he LED and resistor straight to the prototype board. Check out the wire diagram in the image to see how to connect these parts together
-- Cathode (Ground Leg) - Pin 4
-- Anode (positive) connect one side to a 220R resistor and the other leg of the resistor to pin 3
+1. Solder the 16 Pin ZIF Test IC to to the prototype board
+2. Next, add the 8 pin female header to the board and align them to the pins on the ZIF test IC
+3. To be able to run the 'blink test' I decided to also connect he LED and resistor straight to the prototype board. Check out the wire diagram in the image to see how to connect these parts together
+4. Cathode (Ground Leg) - Pin 4
+5. Anode (positive) connect one side to a 220R resistor and the other leg of the resistor to pin 3
 
 
 ## Step 2: Connecting the Development Board to the Arduino
@@ -102,11 +105,12 @@ I wanted to have the development board and Arduino permanently together so I add
 
 STEPS:
 
-- Cut a small piece of plywood so it fits the Arduino and development board on it
-- Place the Arduino onto the ply wood, mark and drill some holes where the mounting holes are on the Arduino
-- Use some small screw and nuts to secure the Arduino to the ply wood
-- Do the same with the development board. You'll need to drill your own mounting holes into the prototype board
-- Lastly, use the jumper wires to connect the Arduino to the development board. I've included a wiring diagram to show you how to connect these together
+1. Cut a small piece of plywood so it fits the Arduino and development board on it
+2. Place the Arduino onto the ply wood, mark and drill some holes where the mounting holes are on the Arduino
+3. Use some small screw and nuts to secure the Arduino to the ply wood
+4. Do the same with the development board. You'll need to drill your own mounting holes into the prototype board
+5. Lastly, use the jumper wires to connect the Arduino to the development board. I've included a wiring diagram to show you how to connect these together
+
 That's it - you are now ready to start programming your ATtiny
 
 
@@ -118,10 +122,10 @@ If you are new to all of this then you'll need to download the Arduino software.
 
 STEPS:
 
-- First download a copy of Arduino IDE from the following link and install on your computer
-- https://www.arduino.cc/en/software
-- Open it up and connect your Arduino (I'm using a Arduino Uno) to your computer via a USB cable
-- Once connected, go to 'select board' and click on the Arduino Uno connection
+1. First download a copy of Arduino IDE from the following link and install on your computer
+2. [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+3. Open it up and connect your Arduino (I'm using a Arduino Uno) to your computer via a USB cable
+4. Once connected, go to 'select board' and click on the Arduino Uno connection
 
 
 ## Step 4: Turning the Arduino Into a Programmer
@@ -130,15 +134,15 @@ STEPS:
 
 ![Step 4: Turning the Arduino Into a Programmer image 2](images/step05_02.jpg)
 
-To program the ATtiny you now need to set the Arduino as a programmer. The Arduino ISP sketch turns your Arduino into an in-circuit programmer to re-program the ATtiny chip. This is really is to do so just follow the steps below.
+To program the ATtiny you now need to set the Arduino as a programmer. The Arduino ISPsketchturns your Arduino into an in-circuit programmer to re-program the ATtiny chip. This is really is to do so just follow the steps below.
 
 STEPS:
 
-- To upload Arduino ISP sketch to your Arduino, follow this path in Arduino IDE - Files / Examples / ArduinoISP (image 1)
-- Once you do this, another screen will pop up. You'll notice at the top left hand corner it is named Arduino ISP. (image 2)
-- Now run this sketch and upload it to your Arduino
-- You have now turned your Arduino into a programmer, ready to program your ATtiny!
-- Now it is time to set up the ATtiny by installing its core files
+1. To upload Arduino ISP sketch to your Arduino, follow this path in Arduino IDE - Files / Examples / ArduinoISP(image 1)
+2. Once you do this, another screen will pop up. You'll notice at the top left hand corner it is named Arduino ISP. (image 2)
+3. Now run this sketch and upload it to your Arduino
+4. You have now turned your Arduino into a programmer, ready to program your ATtiny!
+5. Now it is time to set up the ATtiny by installing its core files
 
 
 ## Step 5: Installing the ATtiny Core Files
@@ -151,13 +155,13 @@ STEPS:
 
 The ATtiny core files allow your Arduino to find the ATtiny and program it.
 
-- To install these files, open: files / preferences. (image 1)
-- Copy and past the following URL where it says 'Additional Boards Manager URL's “https://raw.githubusercontent.com/sleemanj/optiboot/master/dists/package_gogo_diy_attiny_index.json” (image 2)
-- Hit 'OK' This will install the core files.
-- To install the core files do the following - open: Tools / Board / Boards Manager
-- Next, type in 'ATtiny' into the search bar at the top left. The core files you just added named 'DIY ATtiny' will come up. (image 3)
-- Hit 'Install' to load them
-- Now if you go back into Tools / Board you will see DIY ATtiny which has a list of all the ATtiny's available
+1. To install these files, open: files / preferences.(image 1)
+2. Copy and past the following URL where it says 'Additional Boards Manager URL's “[https://raw.githubusercontent.com/sleemanj/optiboot/master/dists/package_gogo_diy_attiny_index.json](https://github.com/sleemanj)” (image 2)
+3. Hit 'OK' This will install the core files.
+4. To install the core files do the following - open: Tools / Board / Boards Manager
+5. Next, type in 'ATtiny' into the search bar at the top left. The core files you just added named 'DIY ATtiny' will come up. (image 3)
+6. Hit 'Install' to load them
+7. Now if you go back into Tools / Boardyouwill see DIY ATtinywhich has a list of all the ATtiny's available
 
 
 ## Step 6: Burning the Bootloader to the ATtiny
@@ -172,12 +176,12 @@ the bootloader is a piece of firmware in your microcontroller that allows you to
 
 STEPS:
 
-- First, you need to make sure that the Arduino is set up as a programmer. Go to Tools / Programmer / Arduino as ISP
-- Now you have to set-up the ATtiny in preparation for the Bootloader.
-- Go to the dropdown, select other board and port and select ATiny85
-- Now go to Tools / Programmer / DIY ATtiny: Arduino as ISP and hit 'DIY ATiny: Arduino as ISP' (image 2)
-- Now you can install the bootloader by simply going to: Tools / Burn Bootloader. If successful it will come up with a message saying 'done burning bootloader' (image 3)
-- After burning the Bootloader, the ATtiny is now ready to be programmed. The best and most common way to ensure everything is working is to load up the blink sketch which we'll do in the next step.
+1. First, you need to make sure that the Arduino is set up as a programmer. Go to Tools / Programmer / Arduino as ISP
+2. Now you have to set-up the ATtiny in preparation for the Bootloader.
+3. Go to the dropdown, select other board and port and select ATiny85
+4. Now go to Tools / Programmer / DIY ATtiny: Arduino as ISPand hit 'DIY ATiny: Arduino as ISP' (image 2)
+5. Now you can install the bootloader by simply going to: Tools / Burn Bootloader. If successful it will come up with a message saying 'done burning bootloader' (image 3)
+6. After burning the Bootloader, the ATtiny is now ready to be programmed. The best and most common way to ensure everything is working is to load up the blink sketch which we'll do in the next step.
 
 
 ## Step 7: Loading the Blink Sketch
@@ -192,10 +196,11 @@ All the blink sketch does is flash an LED on and off. However, if it is successf
 
 STEPS:
 
-- In Arduino IDE, go to File / New Sketch
-- Copy the code in the supporting file below and paste it into the sketch screen (image 1)
-- To upload the program you need to go open the following: Sketch / Upload Using Programmer (image 2)
-- If everything works as it should you will see the LED blinking on and off.
+1. In Arduino IDE, go to File / New Sketch
+2. Copy the code in the supporting file below and paste it into the sketch screen (image 1)
+3. To upload the program you need to go open the following: Sketch / Upload Using Programmer(image 2)
+4. If everything works as it should you will see the LED blinking on and off.
+
 Congrats - you have just programmed your first ATtiny. Now go on-line and look up projects that you can do for the ATtiny. There are a heap of fun ideas and projects to build using this great little chip.
 
 

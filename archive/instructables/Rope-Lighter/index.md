@@ -4,6 +4,8 @@ Source: https://www.instructables.com/Rope-Lighter/
 
 ---
 
+![Cover](images/cover.jpg)
+
 
 ## Introduction
 
@@ -17,7 +19,7 @@ Rope lighters (also known as Sheppard's lighter) were billed as windproof lighte
 
 What makes it unique is that conventional fuel is not needed, and there is no flame. The method of operation is to strike the attached sparkwheel to create sparks, which are caught on a charred cotton rope, that has been partially withdrawn from a metal tube housing. Once an ember is generated, it is windproof, and is extinguished by retracting the cord back inside the tube and an attached lid snuffs it out. It's also an easy way to create a live ember and when combined with tinder, can be coaxed into a flame for starting campfires.
 
-I've made a couple different lighters recently which can be found here and here.
+I've made a couple different lighters recently which can be found [here](https://www.instructables.com/id/Make-a-Trench-Lighter/) and [here](https://www.instructables.com/id/Sparkwheel-Firestarter-Tinder-Holder-V2/).
 
 This is a really fun project and if you have some basic soldering skills you'll be able to make one.
 
