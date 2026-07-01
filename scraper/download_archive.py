@@ -204,34 +204,62 @@ def extract_page_data(page, url):
                 const bodyEl = section.querySelector('[class*="_stepBody_"]') || section;
                 const parts = [];
 
+                // Convert element content to markdown, preserving <a href> as [text](url)
+                function inlineMd(el) {
+                    let out = '';
+                    const kids = Array.from(el.childNodes);
+                    for (let ci = 0; ci < kids.length; ci++) {
+                        const child = kids[ci];
+                        if (child.nodeType === 3) {
+                            out += child.textContent;
+                        } else if (child.nodeType === 1) {
+                            const tag = child.tagName.toLowerCase();
+                            if (tag === 'a') {
+                                const href = child.getAttribute('href') || '';
+                                const label = child.innerText.trim();
+                                if (href.indexOf('http') === 0 && label) {
+                                    out += '[' + label + '](' + href + ')';
+                                } else {
+                                    out += child.innerText || '';
+                                }
+                            } else if (tag === 'br') {
+                                out += ' ';
+                            } else if (tag !== 'script' && tag !== 'style') {
+                                out += inlineMd(child);
+                            }
+                        }
+                    }
+                    return out.replace(/\s+/g, ' ').trim();
+                }
+
                 function nodeToMd(el) {
                     const kids = Array.from(el.childNodes);
                     for (let ci = 0; ci < kids.length; ci++) {
                         const child = kids[ci];
                         if (child.nodeType === 3) {
-                            const t = child.textContent.replace(/\\s+/g, ' ').trim();
+                            const t = child.textContent.replace(/\s+/g, ' ').trim();
                             if (t) parts.push(t);
                         } else if (child.nodeType === 1) {
                             const tag = child.tagName.toLowerCase();
                             if (tag === 'p') {
-                                const pt = child.innerText.trim();
+                                const pt = inlineMd(child);
                                 if (pt) { parts.push(pt); parts.push(''); }
                             } else if (tag === 'ul') {
                                 const lis = child.querySelectorAll(':scope > li');
                                 for (let i = 0; i < lis.length; i++) {
-                                    parts.push('- ' + lis[i].innerText.trim());
+                                    parts.push('- ' + inlineMd(lis[i]));
                                 }
                                 parts.push('');
                             } else if (tag === 'ol') {
                                 const lis = child.querySelectorAll(':scope > li');
                                 for (let i = 0; i < lis.length; i++) {
-                                    parts.push((i + 1) + '. ' + lis[i].innerText.trim());
+                                    parts.push((i + 1) + '. ' + inlineMd(lis[i]));
                                 }
                                 parts.push('');
                             } else if (tag === 'li') {
-                                parts.push('- ' + child.innerText.trim());
+                                parts.push('- ' + inlineMd(child));
                             } else if (tag === 'h3' || tag === 'h4' || tag === 'h5') {
-                                const ht = child.innerText.trim();
+                                const ht = inlineMd(child);
                                 if (ht) { parts.push('**' + ht + '**'); parts.push(''); }
                             } else if (tag === 'br') {
                                 parts.push('');
