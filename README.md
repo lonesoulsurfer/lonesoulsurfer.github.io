@@ -2,7 +2,7 @@
 
 Personal project index and offline archive for all my Instructables.
 
-**Live site:** lonesoulsurfer.github.io
+**Live site:** [lonesoulsurfer.github.io](https://lonesoulsurfer.github.io)
 
 ---
 
@@ -12,7 +12,7 @@ This site was built using a tool I put together that automatically scrapes your 
 
 Check out the tool here:
 
-**github.com/lonesoulsurfer/instructables-archive**
+**[github.com/lonesoulsurfer/instructables-archive](https://github.com/lonesoulsurfer/instructables-archive)**
 
 It includes a one-click setup script. Download the ZIP, double-click run.bat (Windows) or run.sh (Mac/Linux), answer three questions, and it handles everything else automatically.
 
@@ -29,4 +29,4 @@ It includes a one-click setup script. Download the ZIP, double-click run.bat (Wi
 
 ## My Instructables profile
 
-instructables.com/member/lonesoulsurfer
+[instructables.com/member/lonesoulsurfer](https://www.instructables.com/member/lonesoulsurfer/)
